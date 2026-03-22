@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}Bloom Burrow — DIY Wedding Flower Bar{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="{{ url_for('index') }}" class="logo">🌸 Bloom Burrow</a>
+      <nav class="nav-links">
+        <a href="{{ url_for('index') }}" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">Home</a>
+        <a href="{{ url_for('packages') }}" class="nav-link {% if request.endpoint == 'packages' %}active{% endif %}">Packages</a>
+        {% if current_user.is_authenticated %}
+          {% if current_user.is_admin %}
+            <a href="{{ url_for('admin_dashboard') }}" class="nav-link {% if request.endpoint == 'admin_dashboard' %}active{% endif %}">Admin Panel</a>
+          {% else %}
+            <a href="{{ url_for('dashboard') }}" class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">My Bookings</a>
+          {% endif %}
+
+          <!-- ── Notification bell ── -->
+          <div class="notif-bell" id="notifBell">
+            <button class="notif-btn" id="notifBtn" type="button" aria-label="Chat notifications">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                   fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+              <span class="notif-count {% if nav_total_unread == 0 %}notif-count--hidden{% endif %}"
+                    id="notifCount">{{ nav_total_unread if nav_total_unread > 0 else '' }}</span>
+            </button>
+
+            <div class="notif-dropdown" id="notifDropdown">
+              <div class="notif-header">
+                <span>💬 Chat Notifications</span>
+              </div>
+              <div id="notifList">
+                {% if nav_notifications %}
+                  {% for n in nav_notifications %}
+                  <a href="{{ url_for('chat', booking_id=n.booking_id) }}"
+                     class="notif-item" onclick="closeNotifDropdown()">
+                    <div class="notif-item-info">
+                      <span class="notif-item-title">#{{ n.booking_ref }} · {{ n.chat_with }}</span>
+                      <span class="notif-item-date">{{ n.label }} &nbsp;·&nbsp; {{ n.date }}</span>
+                    </div>
+                    <span class="unread-badge">{{ n.unread }}</span>
+                  </a>
+                  {% endfor %}
+                {% else %}
+                  <div class="notif-empty" id="notifEmpty">No unread messages 🌸</div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+          <a href="{{ url_for('logout') }}" class="btn btn-ghost btn-logout">Log out</a>
+        {% else %}
+          <a href="{{ url_for('login') }}" class="nav-link">Log in</a>
+          <a href="{{ url_for('register') }}" class="btn btn-primary">Get Started</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+
+  <!-- Flash messages -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      <div class="flash-container container">
+        {% for category, message in messages %}
+          <div class="flash flash-{{ category }}">{{ message }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <!-- Page content -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">🌸 Bloom Burrow</span>
+      <p class="footer-tagline">Bringing fresh flowers to your special day.</p>
+      <div class="footer-divider"></div>
+      <p class="footer-text">&copy; 2025 Bloom Burrow · Singapore</p>
+      <p class="footer-text">bloomburrow.sg</p>
+    </div>
+  </footer>
+
+<!-- Custom flower cursor -->
+<script>
+(function () {
+  var el = document.createElement('div');
+  el.id = 'flower-cursor';
+  el.textContent = '🌸';
+  document.body.appendChild(el);
+
+  /* Show cursor only after first mouse move (avoids 0,0 flash) */
+  var shown = false;
+
+  document.addEventListener('mousemove', function (e) {
+    el.style.left = e.clientX + 'px';
+    el.style.top  = e.clientY + 'px';
+    if (!shown) { el.style.opacity = '1'; shown = true; }
+  });
+
+  /* Bloom when hovering interactive elements */
+  var sel = 'a, button, input, select, textarea, label, [role="button"]';
+  document.addEventListener('mouseover', function (e) {
+    if (e.target.closest(sel)) document.body.classList.add('cursor-hover');
+  });
+  document.addEventListener('mouseout', function (e) {
+    if (e.target.closest(sel)) document.body.classList.remove('cursor-hover');
+  });
+
+  /* Hide when mouse exits the browser window */
+  document.documentElement.addEventListener('mouseleave', function () {
+    el.style.opacity = '0'; shown = false;
+  });
+  document.documentElement.addEventListener('mouseenter', function (e) {
+    el.style.left = e.clientX + 'px';
+    el.style.top  = e.clientY + 'px';
+    el.style.opacity = '1'; shown = true;
+  });
+})();
+</script>
+
+{% block scripts %}{% endblock %}
+
+{% if current_user.is_authenticated %}
+<script>
+  const notifBtn      = document.getElementById('notifBtn');
+  const notifDropdown = document.getElementById('notifDropdown');
+  const notifCount    = document.getElementById('notifCount');
+  const notifList     = document.getElementById('notifList');
+
+  // Toggle dropdown open/close
+  notifBtn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    notifDropdown.classList.toggle('notif-dropdown--open');
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!document.getElementById('notifBell').contains(e.target)) {
+      notifDropdown.classList.remove('notif-dropdown--open');
+    }
+  });
+
+  function closeNotifDropdown() {
+    notifDropdown.classList.remove('notif-dropdown--open');
+  }
+
+  // Build a single notification item element
+  function buildNotifItem(n) {
+    const a = document.createElement('a');
+    a.href = '/chat/' + n.booking_id;
+    a.className = 'notif-item';
+    a.onclick = closeNotifDropdown;
+    a.innerHTML =
+      '<div class="notif-item-info">' +
+        '<span class="notif-item-title">#' + n.booking_ref + ' · ' + n.chat_with + '</span>' +
+        '<span class="notif-item-date">' + n.label + ' &nbsp;·&nbsp; ' + n.date + '</span>' +
+      '</div>' +
+      '<span class="unread-badge">' + n.unread + '</span>';
+    return a;
+  }
+
+  // Poll every 5 seconds
+  async function pollNotifications() {
+    try {
+      const res  = await fetch('/notifications/poll');
+      const data = await res.json();
+
+      // Update badge
+      if (data.total > 0) {
+        notifCount.textContent = data.total;
+        notifCount.classList.remove('notif-count--hidden');
+      } else {
+        notifCount.textContent = '';
+        notifCount.classList.add('notif-count--hidden');
+      }
+
+      // Rebuild dropdown list
+      notifList.innerHTML = '';
+      if (data.items.length > 0) {
+        data.items.forEach(n => notifList.appendChild(buildNotifItem(n)));
+      } else {
+        const empty = document.createElement('div');
+        empty.className = 'notif-empty';
+        empty.textContent = 'No unread messages 🌸';
+        notifList.appendChild(empty);
+      }
+    } catch (e) { /* silent */ }
+  }
+
+  setInterval(pollNotifications, 5000);
+</script>
+{% endif %}
+
+</body>
+</html>

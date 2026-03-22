@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Curriculum — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>📚 Full Curriculum</h1>
+  <p>Singapore-aligned path from Kindergarten to Deep Learning. Complete topics in order — prerequisites are shown on each topic page.</p>
+  <a href="/graph" class="btn btn-outline">View as Graph 🕸️</a>
+</div>
+
+{% for level in levels_order %}
+{% set ldata = levels[level] %}
+<section class="level-section {% if not ldata.accessible %}level-locked{% endif %}"
+         id="{{ level | replace(' ', '-') | replace('(', '') | replace(')', '') | replace('/', '-') }}">
+  <div class="level-header">
+    <div class="level-header-left">
+      <h2 class="level-title">
+        {{ level }}
+        {% if not ldata.accessible %}
+        <span class="level-lock-badge">🔒 Not in your plan — <a href="/account">enable in settings</a></span>
+        {% endif %}
+      </h2>
+      <p class="level-desc">{{ ldata.desc }}</p>
+    </div>
+    <div class="level-progress-mini">
+      <span class="level-count">{{ ldata.done }}/{{ ldata.total }}</span>
+      <div class="mini-bar-outer">
+        <div class="mini-bar-inner" style="width:{{ (ldata.done / ldata.total * 100) | int if ldata.total else 0 }}%"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="topic-grid">
+    {% for tid, t in ldata.topics.items() %}
+    {% set is_done = progress.get(tid, {}).get('complete', False) %}
+    {% set qs = progress.get(tid, {}).get('quiz_score') %}
+    {% set qt = progress.get(tid, {}).get('quiz_total') %}
+    <a href="/topic/{{ tid }}" class="topic-card {% if is_done %}done{% endif %}" style="border-top: 4px solid {{ t.color }}">
+      <div class="tc-emoji">{{ t.emoji }}</div>
+      <div class="tc-body">
+        <div class="tc-name">{{ t.name }}</div>
+        <div class="tc-tagline">{{ t.tagline }}</div>
+        <div class="tc-meta">
+          <span>⏱️ {{ t.hours }}h</span>
+          {% if is_done %}
+            <span class="badge-done">✅ Done{% if qs is not none %} · {{ qs }}/{{ qt }}{% endif %}</span>
+          {% endif %}
+          {% if t.prereqs %}
+            <span class="prereq-count">🔗 {{ t.prereqs | length }} prereq{% if t.prereqs | length > 1 %}s{% endif %}</span>
+          {% else %}
+            <span class="no-prereq">🟢 Start anytime</span>
+          {% endif %}
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

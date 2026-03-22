@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard — Bloom Burrow{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">Admin Dashboard 🌿</h1>
+    <p class="page-subtitle">Manage all accounts and bookings</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <!-- ── Stats ── -->
+    <div class="admin-stats">
+      <div class="stat-card">
+        <div class="stat-number">{{ users|length }}</div>
+        <div class="stat-label">Registered Accounts</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">{{ bookings|length }}</div>
+        <div class="stat-label">Total Orders</div>
+      </div>
+      <div class="stat-card stat-card--warning">
+        <div class="stat-number">{{ pending_count }}</div>
+        <div class="stat-label">Awaiting Review</div>
+      </div>
+      <div class="stat-card {% if total_unread > 0 %}stat-card--chat{% endif %}">
+        <div class="stat-number">{{ total_unread }}</div>
+        <div class="stat-label">Unread Messages</div>
+      </div>
+      <div class="stat-card stat-card--success">
+        <div class="stat-number">S${{ total_revenue }}</div>
+        <div class="stat-label">Confirmed Revenue</div>
+      </div>
+    </div>
+
+    <!-- ── Financial Stats ── -->
+    <div class="admin-stats admin-stats--financials">
+      <div class="stat-card stat-card--cost">
+        <div class="stat-number">S${{ total_cost }}</div>
+        <div class="stat-label">Total Cost</div>
+        <div class="stat-hint">confirmed bookings only</div>
+      </div>
+      <div class="stat-card {% if profit >= 0 %}stat-card--success{% else %}stat-card--danger{% endif %}">
+        <div class="stat-number">S${{ profit }}</div>
+        <div class="stat-label">Profit</div>
+        <div class="stat-hint">revenue − cost</div>
+      </div>
+      <div class="stat-card stat-card--purple">
+        <div class="stat-number">
+          {% if profit_per_hour %}S${{ profit_per_hour }}{% else %}—{% endif %}
+        </div>
+        <div class="stat-label">Profit / Hour</div>
+        <div class="stat-hint">{{ total_hours }}h logged</div>
+      </div>
+    </div>
+
+    <!-- ── Accounts table ── -->
+    <div class="admin-section-header">
+      <h2 class="admin-section-title">Registered Accounts</h2>
+    </div>
+    <div class="table-wrapper">
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Signed Up</th>
+            <th>Bookings</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for u in users %}
+          <tr>
+            <td class="td-muted">{{ u.id }}</td>
+            <td><strong>{{ u.name }}</strong></td>
+            <td>{{ u.email }}</td>
+            <td class="td-muted">{{ u.created_at.strftime('%d %b %Y') }}</td>
+            <td><span class="count-badge">{{ u.bookings|length }}</span></td>
+          </tr>
+          {% else %}
+          <tr>
+            <td colspan="5" class="empty-row">No accounts registered yet.</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ── Orders (card layout) ── -->
+    <div class="admin-section-header" style="margin-top: 3rem;">
+      <h2 class="admin-section-title">All Orders</h2>
+    </div>
+
+    {% if bookings %}
+      <div class="admin-orders-list">
+        {% for b in bookings %}
+        <div class="admin-order-card {% if b.payment_status == 'Payment Submitted' %}admin-order-card--highlight{% endif %}">
+
+          <!-- Row 1: info -->
+          <div class="admin-order-row admin-order-info">
+
+            <div class="admin-order-col">
+              <span class="order-ref-badge">#{{ b.booking_ref }}</span>
+              <span class="status-badge status-{{ b.status.lower() }}">{{ b.status }}</span>
+            </div>
+
+            <div class="admin-order-col admin-order-col--customer">
+              <span class="order-field-label">Customer</span>
+              <span class="order-field-value"><strong>{{ b.user.name }}</strong></span>
+              <span class="order-field-sub">{{ b.user.email }}</span>
+              {% if b.phone %}
+                <span class="order-field-sub">+65 {{ b.phone }}</span>
+              {% endif %}
+            </div>
+
+            <div class="admin-order-col">
+              <span class="order-field-label">Package</span>
+              <span class="order-field-value">{{ packages[b.package].label if b.package in packages else b.package ~ ' Pax' }}</span>
+            </div>
+
+            <div class="admin-order-col">
+              <span class="order-field-label">Price</span>
+              <span class="order-field-value order-price">S${{ b.price }}</span>
+            </div>
+
+            <div class="admin-order-col">
+              <span class="order-field-label">Event Date & Time</span>
+              <span class="order-field-value">{{ b.event_date }}</span>
+              {% if b.event_start_time and b.event_end_time %}
+                <span class="order-field-sub">{{ b.event_start_time }} – {{ b.event_end_time }}</span>
+              {% endif %}
+            </div>
+
+            <div class="admin-order-col">
+              <span class="order-field-label">Venue</span>
+              <span class="order-field-value">{{ b.event_venue }}</span>
+            </div>
+
+            <div class="admin-order-col">
+              <span class="order-field-label">Booked On</span>
+              <span class="order-field-value td-muted">{{ b.created_at.strftime('%d %b %Y') }}</span>
+            </div>
+
+          </div>
+
+          <!-- Row 2: actions -->
+          <div class="admin-order-row admin-order-actions">
+
+            <div class="admin-action-group">
+              <span class="order-field-label">Payment</span>
+              <span class="payment-status-pill payment-{{ b.payment_status | lower | replace(' ', '-') }}">
+                {{ b.payment_status }}
+              </span>
+            </div>
+
+            <div class="admin-action-group">
+              <span class="order-field-label">Screenshot</span>
+              {% if b.payment_screenshot %}
+                <a href="{{ url_for('static', filename='uploads/' ~ b.payment_screenshot) }}"
+                   target="_blank" class="screenshot-link">View ↗</a>
+              {% else %}
+                <span class="td-muted">—</span>
+              {% endif %}
+            </div>
+
+            <div class="admin-action-group admin-action-group--notes">
+              <span class="order-field-label">Notes</span>
+              <span class="order-field-value td-muted">{{ b.notes or '—' }}</span>
+            </div>
+
+            <div class="admin-action-group">
+              <a href="{{ url_for('chat', booking_id=b.id) }}" class="btn-chat-admin">
+                💬 Chat
+                {% if unread_counts[b.id] > 0 %}
+                  <span class="unread-badge">{{ unread_counts[b.id] }}</span>
+                {% endif %}
+              </a>
+            </div>
+
+            <div class="admin-action-group">
+              <span class="order-field-label">Update Status</span>
+              <form method="POST" action="{{ url_for('admin_update_status', booking_id=b.id) }}" class="status-form">
+                <select name="status" class="status-select">
+                  <option value="Pending"   {% if b.status == 'Pending'   %}selected{% endif %}>Pending</option>
+                  <option value="Confirmed" {% if b.status == 'Confirmed' %}selected{% endif %}>Confirmed</option>
+                  <option value="Cancelled" {% if b.status == 'Cancelled' %}selected{% endif %}>Cancelled</option>
+                </select>
+                <button type="submit" class="btn btn-sm">Save</button>
+              </form>
+            </div>
+
+            <div class="admin-action-group admin-financials-group">
+              <span class="order-field-label">Cost (S$) &amp; Hours</span>
+              <form method="POST" action="{{ url_for('admin_update_financials', booking_id=b.id) }}" class="financials-form">
+                <input type="number" name="cost" min="0" step="0.01"
+                       value="{{ b.cost or '' }}" placeholder="Cost S$"
+                       class="financials-input">
+                <input type="number" name="hours_spent" min="0" step="0.5"
+                       value="{{ b.hours_spent or '' }}" placeholder="Hours"
+                       class="financials-input financials-input--short">
+                <button type="submit" class="btn btn-sm btn-sm--ghost">💾</button>
+              </form>
+            </div>
+
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <div class="empty-icon">🌿</div>
+        <h2 class="empty-title">No orders yet</h2>
+        <p class="empty-text">Orders will appear here once customers book.</p>
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{% endblock %}

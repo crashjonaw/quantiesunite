@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}Packages — Bloom Burrow{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">Our Packages</h1>
+    <p class="page-subtitle">Fresh flowers, expert florists, and everything you need — all included.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="packages-grid">
+      {% for key, pkg in packages.items() %}
+      <a href="{{ url_for('book', package_key=key) }}" class="package-card {% if key == '120' %}package-card--featured{% endif %}">
+        {% if pkg.badge %}
+          <span class="badge {% if pkg.badge == 'PROMO' %}badge-promo{% elif pkg.badge == 'POPULAR' %}badge-popular{% else %}badge-neutral{% endif %}">
+            {{ pkg.badge }}
+          </span>
+        {% endif %}
+        <h3 class="package-title">{{ pkg.label }}</h3>
+        <div class="package-price">
+          <span class="price-amount">S${{ pkg.price }}</span>
+          {% if pkg.original_price %}
+            <span class="price-original">S${{ pkg.original_price }}</span>
+          {% endif %}
+        </div>
+        <p class="package-desc">{{ pkg.description }}</p>
+        <ul class="package-features">
+          {% for f in pkg.features %}
+            <li>✓ {{ f }}</li>
+          {% endfor %}
+        </ul>
+        <span class="btn btn-primary btn-full">
+          Book This Package
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">What to Expect</h2>
+      <p class="section-subtitle">A glimpse of the Bloom Burrow experience</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall">
+        <img src="{{ url_for('static', filename='images/bouquet1.jpg') }}" alt="Wrapped flower bouquet" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/flowerbar.jpg') }}" alt="Flower bar setup at event" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/cone.jpg') }}" alt="Heart cone flower holder" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item gallery-item--tall">
+        <img src="{{ url_for('static', filename='images/vase.jpg') }}" alt="Mixed flower vase arrangement" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

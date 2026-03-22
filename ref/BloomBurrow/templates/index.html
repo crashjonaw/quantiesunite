@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% block title %}Bloom Burrow — DIY Wedding Flower Bar{% endblock %}
+
+{% block content %}
+
+<!-- Hero -->
+<section class="hero hero--photo">
+  <div class="hero-overlay"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="badge badge-promo">🌷 Wedding & Events</span>
+      <h1 class="hero-title">Your Dream<br>DIY Flower Bar</h1>
+      <p class="hero-subtitle">
+        Let your guests pick, mix, and create their own bouquet to bring home.
+        A beautiful activity for weddings, parties, and events — guided by our professional florists.
+      </p>
+      <div class="hero-actions">
+        <a href="{{ url_for('packages') }}" class="btn btn-primary btn-lg">View Packages</a>
+        <a href="{{ url_for('register') }}" class="btn btn-secondary btn-lg hero-register-btn">Create Account</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features strip -->
+<section class="features-strip">
+  <div class="container features-grid">
+    <div class="feature-item">
+      <span class="feature-icon">💐</span>
+      <div>
+        <h4 class="feature-title">Fresh Flowers</h4>
+        <p class="feature-desc">Seasonal blooms delivered on the day</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🚚</span>
+      <div>
+        <h4 class="feature-title">Full Setup</h4>
+        <p class="feature-desc">Delivery, set-up & tear down included</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">👩‍🌾</span>
+      <div>
+        <h4 class="feature-title">Expert Florists</h4>
+        <p class="feature-desc">2 florists on-site to guide your guests</p>
+      </div>
+    </div>
+    <div class="feature-item">
+      <span class="feature-icon">🎁</span>
+      <div>
+        <h4 class="feature-title">Guests Keep Bouquets</h4>
+        <p class="feature-desc">A meaningful keepsake to bring home</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Packages -->
+<section class="section" style="background: var(--off-white);">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Our Packages</h2>
+      <p class="section-subtitle">Choose the package that fits your guest count</p>
+    </div>
+    <div class="packages-grid">
+      {% for key, pkg in packages.items() %}
+      <a href="{{ url_for('book', package_key=key) }}" class="package-card {% if key == '80' %}package-card--featured{% endif %}">
+        {% if pkg.badge %}
+          <span class="badge {% if pkg.badge == 'PROMO' %}badge-promo{% elif pkg.badge == 'POPULAR' %}badge-popular{% else %}badge-neutral{% endif %}">
+            {{ pkg.badge }}
+          </span>
+        {% endif %}
+        <h3 class="package-title">{{ pkg.label }}</h3>
+        <div class="package-price">
+          <span class="price-amount">S${{ pkg.price }}</span>
+          {% if pkg.original_price %}
+            <span class="price-original">S${{ pkg.original_price }}</span>
+          {% endif %}
+        </div>
+        <p class="package-desc">{{ pkg.description }}</p>
+        <ul class="package-features">
+          {% for f in pkg.features %}
+            <li>✓ {{ f }}</li>
+          {% endfor %}
+        </ul>
+        <span class="btn btn-primary btn-full">
+          Book This Package
+        </span>
+      </a>
+      {% endfor %}
+    </div>
+
+    <!-- Add-on card -->
+    <div class="addon-standalone-card">
+      <div class="addon-standalone-body">
+        <div class="addon-standalone-top">
+          <span class="badge badge-promo">✨ Promo Add-on</span>
+          <div class="addon-standalone-price">
+            S$88 <s class="addon-standalone-original">S$128</s>
+          </div>
+        </div>
+        <h3 class="addon-standalone-title">Wedding Reception Table Styling</h3>
+        <p class="addon-standalone-desc">
+          Elevate your wedding reception with professional table styling by our florists.
+          Includes a beautifully arranged floral centrepiece and <strong>6 keepsake photos</strong> of your table setup.
+          Available as an add-on with any Bloom Burrow package.
+        </p>
+        <ul class="package-features addon-standalone-features">
+          <li>✓ Professional floral table arrangement</li>
+          <li>✓ 6 professional photos included</li>
+          <li>✓ Styled on the day of your event</li>
+          <li>✓ Available with any package</li>
+        </ul>
+        <p class="addon-standalone-note">Select this add-on when booking your package →</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- What to Expect -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">What to Expect</h2>
+      <p class="section-subtitle">A glimpse of the Bloom Burrow experience</p>
+    </div>
+    <div class="gallery-grid gallery-grid--5">
+      <div class="gallery-item gallery-item--tall">
+        <img src="{{ url_for('static', filename='images/bouquet1.jpg') }}" alt="Wrapped flower bouquet" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/flowerbar.jpg') }}" alt="Flower bar setup at event" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item">
+        <img src="{{ url_for('static', filename='images/cone.jpg') }}" alt="Heart cone flower holder" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item gallery-item--tall">
+        <img src="{{ url_for('static', filename='images/vase.jpg') }}" alt="Mixed flower vase arrangement" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+      <div class="gallery-item gallery-item--wedding">
+        <div class="gallery-wedding-label">✨ Wedding Reception Table Styling Add-on</div>
+        <img src="{{ url_for('static', filename='images/wedding_reception.jpg') }}" alt="Wedding reception table styling" onerror="this.parentElement.classList.add('gallery-placeholder')">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Burrow -->
+<section class="section burrow-section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Meet the Burrow 🐰</h2>
+      <p class="section-subtitle">The fluffy hearts behind Bloom Burrow</p>
+    </div>
+
+    <!-- Intro text -->
+    <div class="burrow-intro-block">
+      <p class="burrow-intro-text">
+        Bloom Burrow was born from a love of flowers and the quiet joy of watching something beautiful come together.
+        Our rabbits are the spirit of the brand — gentle, warm, and a little bit magical.
+        Every flower bar we set up carries that same feeling: a space where your guests can slow down,
+        get creative, and leave with something they made with their own hands.
+      </p>
+    </div>
+
+    <!-- Media gallery -->
+    <div class="burrow-gallery burrow-gallery--3col">
+
+      <!-- r2 photo -->
+      <div class="burrow-item burrow-item--full">
+        <img src="{{ url_for('static', filename='images/r2.jpg') }}" alt="Bloom Burrow rabbit" class="burrow-media">
+      </div>
+
+      <!-- r4 photo -->
+      <div class="burrow-item burrow-item--full">
+        <img src="{{ url_for('static', filename='images/r4.jpg') }}" alt="Bloom Burrow rabbit" class="burrow-media">
+      </div>
+
+      <!-- r6 video -->
+      <div class="burrow-item burrow-item--full burrow-item--video">
+        <video class="burrow-media" autoplay muted loop playsinline>
+          <source src="{{ url_for('static', filename='videos/r6.mp4') }}" type="video/mp4">
+        </video>
+        <span class="burrow-video-badge">▶</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}{% endblock %}

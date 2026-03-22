@@ -1,0 +1,337 @@
+{% extends "base.html" %}
+{% block title %}{{ t.name }} — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="topic-header" style="border-left: 5px solid {{ t.color }}">
+  <div class="topic-header-left">
+    <span class="topic-emoji">{{ t.emoji }}</span>
+    <div>
+      <div class="topic-level-badge">{{ t.sg }}</div>
+      <h1 class="topic-title">{{ t.name }}</h1>
+      <p class="topic-tagline">{{ t.tagline }}</p>
+    </div>
+  </div>
+  <div class="topic-meta">
+    <span class="meta-chip">⏱️ ~{{ t.hours }}h</span>
+    {% if complete %}
+      <span class="meta-chip success">✅ Complete
+        {% if quiz_score is not none %} · Quiz: {{ quiz_score }}/{{ quiz_total }}{% endif %}
+      </span>
+    {% else %}
+      <span class="meta-chip pending">📖 In Progress</span>
+    {% endif %}
+  </div>
+</div>
+
+{% if not level_accessible %}
+<div class="level-locked-banner">
+  <div class="llb-icon">🎯</div>
+  <div class="llb-body">
+    <strong>This level is above your current target</strong>
+    <p>Your account is set to <em>{{ current_user.target_level }}</em>.
+       To access <em>{{ t.level }}</em> topics, raise your target level in your account settings.</p>
+    <a href="/account" class="btn btn-primary btn-sm" style="margin-top:12px">Go to Account Settings →</a>
+  </div>
+</div>
+{% elif not unlocked %}
+<div class="locked-banner">
+  🔒 Complete the prerequisite topics first to unlock this lesson.
+  <div class="prereq-list">
+    {% for pid, pt in prereq_topics.items() %}
+    <a href="/topic/{{ pid }}" class="prereq-chip">
+      {{ pt.emoji }} {{ pt.name }}
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% else %}
+
+<!-- PREREQUISITES -->
+{% if prereq_topics %}
+<div class="sidebar-section">
+  <h4>Prerequisites</h4>
+  <div class="chip-row">
+    {% for pid, pt in prereq_topics.items() %}
+    <a href="/topic/{{ pid }}" class="chip prereq-chip">{{ pt.emoji }} {{ pt.name }}</a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+<!-- PAGE PROGRESS BAR -->
+{% if content and content.sections %}
+<div class="page-progress-bar">
+  <div class="page-progress-steps">
+    {% for section in content.sections %}
+    <button class="page-step" data-page="{{ loop.index0 }}" onclick="goToPage({{ loop.index0 }})">
+      <span class="page-step-num">{{ loop.index }}</span>
+      <span class="page-step-title">{{ section.title }}</span>
+    </button>
+    {% endfor %}
+    <button class="page-step page-step-quiz" data-page="quiz" onclick="window.location='/topic/{{ tid }}/quiz'">
+      <span class="page-step-num">🏆</span>
+      <span class="page-step-title">Quiz</span>
+    </button>
+  </div>
+  <div class="page-progress-track">
+    <div class="page-progress-fill" id="progress-fill"></div>
+  </div>
+</div>
+{% endif %}
+
+<!-- LESSON CONTENT (PAGINATED) -->
+<div class="lesson-container">
+  {% if content and content.sections %}
+    {% for section in content.sections %}
+    {% set i = loop.index0 %}
+    <div class="lesson-page" id="page-{{ i }}" {% if i != 0 %}style="display:none"{% endif %}>
+      <div class="lesson-section" id="section-{{ i }}">
+        <div class="section-page-indicator">Page {{ loop.index }} of {{ content.sections | length }}</div>
+        <h2 class="section-heading">{{ section.title }}</h2>
+        <div class="section-body rich-content">{{ section.body | safe }}</div>
+
+        <!-- MID-LESSON CHECK QUESTION -->
+        {% if section.check %}
+        <div class="check-question" id="check-{{ i }}" data-answer="{{ section.check.a | lower }}">
+          <div class="check-label">🧪 Quick Check</div>
+          <p class="check-q">{{ section.check.q }}</p>
+          <div class="check-input-row">
+            <input type="text" class="check-input" placeholder="Your answer…" id="check-input-{{ i }}"/>
+            <button class="btn btn-sm" onclick="submitCheck({{ i }})">Check</button>
+          </div>
+          <div class="check-hint hidden" id="hint-{{ i }}">💡 Hint: {{ section.check.hint }}</div>
+          <div class="check-feedback hidden" id="feedback-{{ i }}"></div>
+          <button class="hint-btn" onclick="showHint({{ i }})">Show Hint</button>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- PAGE NAVIGATION -->
+      <div class="page-nav">
+        {% if i > 0 %}
+        <button class="btn btn-outline page-nav-btn" onclick="goToPage({{ i - 1 }})">
+          ← Previous
+        </button>
+        {% else %}
+        <div></div>
+        {% endif %}
+
+        <span class="page-nav-counter">{{ loop.index }} / {{ content.sections | length }}</span>
+
+        {% if i < content.sections | length - 1 %}
+        <button class="btn btn-primary page-nav-btn" onclick="goToPage({{ i + 1 }})">
+          Next →
+        </button>
+        {% else %}
+        <a href="/topic/{{ tid }}/quiz" class="btn btn-primary page-nav-btn">
+          Take the Quiz 🏆
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  {% endif %}
+
+  <!-- WHAT THIS UNLOCKS (shown on last page) -->
+  {% if unlocks_topics %}
+  <div class="unlocks-section" id="unlocks-section" style="display:none">
+    <h4>🔓 Completing this topic unlocks:</h4>
+    <div class="chip-row">
+      {% for uid, ut in unlocks_topics.items() %}
+      <a href="/topic/{{ uid }}" class="chip unlock-chip" style="border-color:{{ ut.color }}">
+        {{ ut.emoji }} {{ ut.name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+const TOTAL_PAGES = {{ content.sections | length if content and content.sections else 0 }};
+let currentPage = 0;
+
+function goToPage(p) {
+  if (p < 0 || p >= TOTAL_PAGES) return;
+
+  // Hide current page
+  const cur = document.getElementById('page-' + currentPage);
+  if (cur) cur.style.display = 'none';
+
+  // Show target page
+  const target = document.getElementById('page-' + p);
+  if (target) target.style.display = 'block';
+
+  currentPage = p;
+
+  // Update progress bar
+  const fill = document.getElementById('progress-fill');
+  if (fill) fill.style.width = ((p + 1) / TOTAL_PAGES * 100) + '%';
+
+  // Update step indicators
+  document.querySelectorAll('.page-step').forEach(function(el) {
+    const pg = el.dataset.page;
+    if (pg === 'quiz') return;
+    el.classList.toggle('active', parseInt(pg) === p);
+    el.classList.toggle('visited', parseInt(pg) < p);
+  });
+
+  // Show unlocks on last page
+  const unlocks = document.getElementById('unlocks-section');
+  if (unlocks) unlocks.style.display = (p === TOTAL_PAGES - 1) ? 'block' : 'none';
+
+  // Scroll to top of lesson
+  document.querySelector('.lesson-container').scrollIntoView({behavior: 'smooth', block: 'start'});
+
+  // Re-render KaTeX on new page
+  if (typeof renderMathInElement !== 'undefined') {
+    renderMathInElement(target, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });
+  }
+
+  // Initialize any Chart.js charts on this page
+  initChartsOnPage(target);
+
+  // Initialize interactive elements
+  initInteractiveElements(target);
+}
+
+// ── Chart.js initialization ─────────────────────────────
+function initChartsOnPage(container) {
+  if (typeof Chart === 'undefined') return;
+  container.querySelectorAll('canvas[data-chart]').forEach(function(canvas) {
+    if (canvas.dataset.initialized) return;
+    try {
+      var config = JSON.parse(canvas.dataset.chart);
+      // Apply dark theme defaults
+      config.options = config.options || {};
+      config.options.plugins = config.options.plugins || {};
+      config.options.plugins.legend = config.options.plugins.legend || {};
+      config.options.plugins.legend.labels = config.options.plugins.legend.labels || {};
+      config.options.plugins.legend.labels.color = '#e6edf3';
+      config.options.scales = config.options.scales || {};
+      ['x','y'].forEach(function(axis) {
+        config.options.scales[axis] = config.options.scales[axis] || {};
+        config.options.scales[axis].ticks = config.options.scales[axis].ticks || {};
+        config.options.scales[axis].ticks.color = '#8b949e';
+        config.options.scales[axis].grid = config.options.scales[axis].grid || {};
+        config.options.scales[axis].grid.color = '#30363d';
+      });
+      new Chart(canvas, config);
+      canvas.dataset.initialized = 'true';
+    } catch(e) { console.warn('Chart init error:', e); }
+  });
+}
+
+// ── Interactive element initialization ──────────────────
+function initInteractiveElements(container) {
+  // Sliders that update a display
+  container.querySelectorAll('.interactive-slider').forEach(function(slider) {
+    if (slider.dataset.initialized) return;
+    var target = document.getElementById(slider.dataset.target);
+    var callback = slider.dataset.callback;
+    slider.addEventListener('input', function() {
+      if (target) target.textContent = slider.value;
+      if (callback && typeof window[callback] === 'function') {
+        window[callback](parseFloat(slider.value));
+      }
+    });
+    slider.dataset.initialized = 'true';
+    // Trigger initial
+    slider.dispatchEvent(new Event('input'));
+  });
+
+  // Toggle/reveal panels
+  container.querySelectorAll('.reveal-btn').forEach(function(btn) {
+    if (btn.dataset.initialized) return;
+    btn.addEventListener('click', function() {
+      var panel = document.getElementById(btn.dataset.reveal);
+      if (panel) {
+        panel.classList.toggle('revealed');
+        btn.textContent = panel.classList.contains('revealed') ? '▲ Hide' : '▼ Show Solution';
+      }
+    });
+    btn.dataset.initialized = 'true';
+  });
+
+  // Tabbed content panels
+  container.querySelectorAll('.tab-container').forEach(function(tc) {
+    if (tc.dataset.initialized) return;
+    var tabs = tc.querySelectorAll('.tab-btn');
+    var panels = tc.querySelectorAll('.tab-panel');
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        panels.forEach(function(p) { p.style.display = 'none'; });
+        tab.classList.add('active');
+        var target = document.getElementById(tab.dataset.tab);
+        if (target) target.style.display = 'block';
+      });
+    });
+    tc.dataset.initialized = 'true';
+  });
+}
+
+// ── Check questions ─────────────────────────────────────
+function submitCheck(i) {
+  var input = document.getElementById('check-input-' + i);
+  var checkDiv = document.getElementById('check-' + i);
+  var answer = checkDiv.dataset.answer.trim().toLowerCase();
+  var userVal = input.value.trim().toLowerCase();
+  var feedback = document.getElementById('feedback-' + i);
+  feedback.classList.remove('hidden');
+  if (userVal === answer) {
+    feedback.className = 'check-feedback correct';
+    feedback.textContent = '✅ Correct! Well done.';
+    input.disabled = true;
+    checkDiv.querySelector('.btn').disabled = true;
+  } else {
+    feedback.className = 'check-feedback incorrect';
+    feedback.textContent = '❌ Not quite — try again!';
+  }
+}
+
+function showHint(i) {
+  document.getElementById('hint-' + i).classList.remove('hidden');
+}
+
+// Enter key on check inputs
+document.querySelectorAll('.check-input').forEach(function(inp) {
+  inp.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      var id = inp.id.replace('check-input-', '');
+      submitCheck(parseInt(id));
+    }
+  });
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', function(e) {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.key === 'ArrowRight' || e.key === 'l') goToPage(currentPage + 1);
+  if (e.key === 'ArrowLeft' || e.key === 'h') goToPage(currentPage - 1);
+});
+
+// Initialize first page on load
+document.addEventListener('DOMContentLoaded', function() {
+  var firstPage = document.getElementById('page-0');
+  if (firstPage) {
+    initChartsOnPage(firstPage);
+    initInteractiveElements(firstPage);
+    // Set first step active
+    var step = document.querySelector('.page-step[data-page="0"]');
+    if (step) step.classList.add('active');
+    var fill = document.getElementById('progress-fill');
+    if (fill && TOTAL_PAGES > 0) fill.style.width = (1 / TOTAL_PAGES * 100) + '%';
+  }
+});
+</script>
+{% endblock %}

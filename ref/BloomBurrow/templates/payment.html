@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block title %}Complete Payment — Bloom Burrow{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">Complete Your Payment 🌿</h1>
+    <p class="page-subtitle">One last step to confirm your booking</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container--narrow">
+
+    <!-- Progress steps -->
+    <div class="progress-steps">
+      <div class="step step--done">
+        <div class="step-circle">✓</div>
+        <span class="step-label">Booking Details</span>
+      </div>
+      <div class="step-line step-line--done"></div>
+      <div class="step step--active">
+        <div class="step-circle">2</div>
+        <span class="step-label">Payment</span>
+      </div>
+      <div class="step-line"></div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <span class="step-label">Confirmation</span>
+      </div>
+    </div>
+
+    <div class="card">
+
+      <!-- Order summary -->
+      <div class="payment-summary">
+        <h3 class="summary-title">Order Summary</h3>
+        <div class="summary-row">
+          <span>Package</span><span>{{ pkg.label }}</span>
+        </div>
+        <div class="summary-row">
+          <span>Guests</span><span>{{ booking.pax }} pax</span>
+        </div>
+        <div class="summary-row">
+          <span>Event Date</span><span>{{ booking.event_date }}</span>
+        </div>
+        <div class="summary-row summary-row--total">
+          <span>Amount to Pay</span><span class="pay-amount">S${{ booking.price }}</span>
+        </div>
+      </div>
+
+      <!-- QR code instructions -->
+      <div class="payment-instructions">
+        <h3 class="payment-instructions-title">How to Pay</h3>
+        <ol class="payment-steps-list">
+          <li>Open your <strong>PayLah!</strong> app on your phone.</li>
+          <li>Tap <strong>Scan &amp; Pay</strong> and scan the QR code below.</li>
+          <li>Enter the exact amount: <strong>S${{ booking.price }}</strong>.</li>
+          <li>Complete the payment and take a <strong>screenshot</strong> of the confirmation screen.</li>
+          <li>Upload the screenshot below and click <strong>Submit</strong>.</li>
+        </ol>
+      </div>
+
+      <!-- QR code -->
+      <div class="qr-wrapper">
+        <p class="qr-label">Scan to pay via PayLah!</p>
+        <img src="{{ url_for('static', filename='images/qr.jpg') }}"
+             alt="PayLah QR Code"
+             class="qr-image">
+        <p class="qr-amount">S${{ booking.price }}</p>
+      </div>
+
+      <!-- Upload form -->
+      <form method="POST" enctype="multipart/form-data" class="form" style="margin-top: 2rem;">
+        <div class="form-group">
+          <label class="form-label" for="screenshot">
+            Upload Payment Screenshot <span class="required">*</span>
+          </label>
+          <div class="upload-area" id="uploadArea">
+            <input type="file" id="screenshot" name="screenshot"
+                   accept=".jpg,.jpeg,image/jpeg" required class="upload-input">
+            <div class="upload-placeholder" id="uploadPlaceholder">
+              <span class="upload-icon">📎</span>
+              <span class="upload-text">Click to choose image or drag &amp; drop</span>
+              <span class="upload-hint">JPG only — max 10 MB</span>
+            </div>
+            <div class="upload-preview" id="uploadPreview" style="display:none;">
+              <img id="previewImg" src="" alt="Preview">
+              <span id="previewName" class="upload-filename"></span>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full btn-lg">
+          Submit Payment Proof →
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const input       = document.getElementById('screenshot');
+  const placeholder = document.getElementById('uploadPlaceholder');
+  const preview     = document.getElementById('uploadPreview');
+  const previewImg  = document.getElementById('previewImg');
+  const previewName = document.getElementById('previewName');
+  const uploadArea  = document.getElementById('uploadArea');
+
+  input.addEventListener('change', function () {
+    const file = this.files[0];
+    if (!file) return;
+    previewName.textContent = file.name;
+    const reader = new FileReader();
+    reader.onload = e => {
+      previewImg.src = e.target.result;
+      placeholder.style.display = 'none';
+      preview.style.display = 'flex';
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Drag and drop
+  uploadArea.addEventListener('dragover', e => { e.preventDefault(); uploadArea.classList.add('drag-over'); });
+  uploadArea.addEventListener('dragleave', () => uploadArea.classList.remove('drag-over'));
+  uploadArea.addEventListener('drop', e => {
+    e.preventDefault();
+    uploadArea.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file) {
+      const dt = new DataTransfer();
+      dt.items.add(file);
+      input.files = dt.files;
+      input.dispatchEvent(new Event('change'));
+    }
+  });
+</script>
+
+{% endblock %}

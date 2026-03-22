@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+{% block title %}Chat — Booking #{{ booking.booking_ref }} — Bloom Burrow{% endblock %}
+
+{% block content %}
+<section class="section" style="padding: 40px 0;">
+  <div class="container container--narrow">
+
+    <!-- Back link -->
+    {% if current_user.is_admin %}
+      <a href="{{ url_for('admin_dashboard') }}" class="back-link">← Back to Admin</a>
+    {% else %}
+      <a href="{{ url_for('dashboard') }}" class="back-link">← Back to My Bookings</a>
+    {% endif %}
+
+    <!-- Booking info header -->
+    <div class="chat-booking-info">
+      <div>
+        <h2 class="chat-booking-title">
+          💬 {{ packages[booking.package].label }} Package
+          <span class="status-badge status-{{ booking.status.lower() }}" style="font-size:0.7rem; vertical-align:middle;">{{ booking.status }}</span>
+        </h2>
+        <p class="chat-booking-meta">
+          Booking #{{ booking.booking_ref }} &nbsp;·&nbsp;
+          {{ booking.event_date }} &nbsp;·&nbsp;
+          {{ booking.event_venue }}
+          {% if current_user.is_admin %}
+            &nbsp;·&nbsp; <strong>{{ booking.user.name }}</strong> ({{ booking.user.email }})
+          {% endif %}
+        </p>
+      </div>
+    </div>
+
+    <!-- Chat window -->
+    <div class="chat-window" id="chatWindow">
+      {% if messages %}
+        {% for m in messages %}
+        <div class="chat-bubble-wrap {% if m.sender_id == current_user.id %}chat-mine{% else %}chat-theirs{% endif %}"
+             data-id="{{ m.id }}">
+          <div class="chat-bubble">
+            <p class="chat-text">{{ m.body }}</p>
+          </div>
+          <span class="chat-meta">
+            {% if m.sender_id != current_user.id %}<strong>{{ m.sender.name }}</strong> · {% endif %}
+            {{ m.created_at.strftime('%d %b, %H:%M') }}
+          </span>
+        </div>
+        {% endfor %}
+      {% else %}
+        <div class="chat-empty" id="chatEmpty">
+          <span>🌸</span>
+          <p>No messages yet. Send the first one!</p>
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Message input -->
+    <form class="chat-input-form" id="chatForm" autocomplete="off">
+      <input type="text" id="chatInput" name="body" class="chat-input"
+             placeholder="Type a message…" required maxlength="2000" autofocus>
+      <button type="submit" class="chat-send-btn">Send ↑</button>
+    </form>
+
+  </div>
+</section>
+
+<script>
+  const BOOKING_ID  = {{ booking.id }};
+  const POLL_MS     = 3000;   // poll every 3 seconds
+  const chatWindow  = document.getElementById('chatWindow');
+  const chatForm    = document.getElementById('chatForm');
+  const chatInput   = document.getElementById('chatInput');
+  const chatEmpty   = document.getElementById('chatEmpty');
+
+  // Track the highest message id we've seen
+  let lastId = {{ messages[-1].id if messages else 0 }};
+
+  function scrollToBottom() {
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+  }
+
+  function buildBubble(msg) {
+    const wrap = document.createElement('div');
+    wrap.className = 'chat-bubble-wrap ' + (msg.is_mine ? 'chat-mine' : 'chat-theirs');
+    wrap.dataset.id = msg.id;
+
+    const bubble = document.createElement('div');
+    bubble.className = 'chat-bubble';
+    const p = document.createElement('p');
+    p.className = 'chat-text';
+    p.textContent = msg.body;
+    bubble.appendChild(p);
+
+    const meta = document.createElement('span');
+    meta.className = 'chat-meta';
+    meta.textContent = msg.is_mine ? msg.time : msg.sender + ' · ' + msg.time;
+
+    wrap.appendChild(bubble);
+    wrap.appendChild(meta);
+    return wrap;
+  }
+
+  // Send message via AJAX
+  chatForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const body = chatInput.value.trim();
+    if (!body) return;
+
+    chatInput.value = '';
+    chatInput.focus();
+
+    try {
+      const res = await fetch('/chat/{{ booking.id }}', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'X-Requested-With': 'XMLHttpRequest',
+        },
+        body: 'body=' + encodeURIComponent(body),
+      });
+      const data = await res.json();
+      if (data.ok) {
+        if (chatEmpty) chatEmpty.remove();
+        chatWindow.appendChild(buildBubble(data));
+        lastId = data.id;
+        scrollToBottom();
+      }
+    } catch (err) {
+      console.error('Send failed:', err);
+    }
+  });
+
+  // Poll for new messages
+  async function poll() {
+    try {
+      const res  = await fetch(`/chat/{{ booking.id }}/poll?after=${lastId}`);
+      const msgs = await res.json();
+      if (msgs.length > 0) {
+        if (chatEmpty) chatEmpty.remove();
+        msgs.forEach(m => {
+          chatWindow.appendChild(buildBubble(m));
+          lastId = m.id;
+        });
+        scrollToBottom();
+      }
+    } catch (err) { /* silent */ }
+  }
+
+  // Initial scroll + start polling
+  scrollToBottom();
+  setInterval(poll, POLL_MS);
+</script>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}My Bookings — Bloom Burrow{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container">
+    <h1 class="page-title">Welcome, {{ current_user.name }} 🌿</h1>
+    <p class="page-subtitle">Manage your Bloom Burrow bookings</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% if bookings %}
+      <div class="bookings-list">
+        {% for b in bookings %}
+        <div class="booking-card">
+          <div class="booking-header">
+            <div>
+              <h3 class="booking-title">Booking #{{ b.booking_ref }} — {{ packages[b.package].label if b.package in packages else b.package ~ ' Pax' }}</h3>
+              <p class="booking-meta">{{ b.pax }} pax &nbsp;·&nbsp; S${{ b.price }}</p>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:6px;">
+              <span class="status-badge status-{{ b.status.lower() }}">{{ b.status }}</span>
+              <span class="payment-status-pill payment-{{ b.payment_status | lower | replace(' ', '-') }}">{{ b.payment_status }}</span>
+            </div>
+          </div>
+          <div class="booking-details">
+            <div class="booking-detail">
+              <span class="detail-label">📅 Event Date</span>
+              <span class="detail-value">{{ b.event_date }}</span>
+            </div>
+            <div class="booking-detail">
+              <span class="detail-label">📍 Venue</span>
+              <span class="detail-value">{{ b.event_venue }}</span>
+            </div>
+            {% if b.notes %}
+            <div class="booking-detail">
+              <span class="detail-label">📝 Notes</span>
+              <span class="detail-value">{{ b.notes }}</span>
+            </div>
+            {% endif %}
+            <div class="booking-detail">
+              <span class="detail-label">🕐 Booked on</span>
+              <span class="detail-value">{{ b.created_at.strftime('%d %b %Y') }}</span>
+            </div>
+          </div>
+          <div class="booking-actions">
+            {% if b.payment_status == 'Awaiting Payment' and b.status != 'Cancelled' %}
+              <a href="{{ url_for('payment', booking_id=b.id) }}" class="btn btn-primary btn-sm">Complete Payment →</a>
+            {% endif %}
+            {% if b.status != 'Cancelled' %}
+              <a href="{{ url_for('chat', booking_id=b.id) }}" class="btn btn-chat btn-sm">
+                💬 Chat with Vendor
+                {% if unread_counts[b.id] > 0 %}
+                  <span class="unread-badge">{{ unread_counts[b.id] }}</span>
+                {% endif %}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="empty-state">
+        <div class="empty-icon">🌿</div>
+        <h2 class="empty-title">No bookings yet</h2>
+        <p class="empty-text">Browse our packages and book your flower bar experience.</p>
+        <a href="{{ url_for('packages') }}" class="btn btn-primary">View Packages</a>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+{% endblock %}

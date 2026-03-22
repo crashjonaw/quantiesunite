@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block title %}Quiz: {{ t.name }} — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="quiz-page">
+  <div class="quiz-header" style="border-left:5px solid {{ t.color }}">
+    <a href="/topic/{{ tid }}" class="back-link">← Back to Lesson</a>
+    <h1>{{ t.emoji }} Quiz: {{ t.name }}</h1>
+    <p class="quiz-instruction">Answer all questions then click <strong>Submit</strong>. You need <strong>70%</strong> to pass and unlock the next topics.</p>
+  </div>
+
+  <form id="quiz-form">
+    {% for q in quiz %}
+    {% set i = loop.index0 %}
+    <div class="quiz-question" id="q-{{ i }}">
+      <div class="q-number">Question {{ i + 1 }} of {{ quiz | length }}</div>
+      <p class="q-text">{{ q.question }}</p>
+      <div class="q-input-row">
+        <input type="text"
+               class="q-input"
+               name="q{{ i }}"
+               id="qi-{{ i }}"
+               placeholder="Your answer…"
+               autocomplete="off"/>
+      </div>
+      <div class="q-result hidden" id="qr-{{ i }}"></div>
+    </div>
+    {% endfor %}
+
+    <div class="quiz-controls">
+      <button type="button" class="btn btn-primary btn-large" id="submit-btn" onclick="submitQuiz()">
+        Submit Quiz 🏆
+      </button>
+    </div>
+  </form>
+
+  <div id="quiz-result" class="quiz-result hidden">
+    <div id="result-banner"></div>
+    <div id="result-details"></div>
+    <div class="result-actions">
+      <a href="/topic/{{ tid }}" class="btn btn-outline">← Back to Lesson</a>
+      <a href="/curriculum" class="btn btn-primary">Continue Learning →</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const TID = "{{ tid }}";
+const TOTAL = {{ quiz | length }};
+
+async function submitQuiz() {
+  const answers = {};
+  for (let i = 0; i < TOTAL; i++) {
+    const inp = document.getElementById('qi-' + i);
+    answers[String(i)] = inp ? inp.value : "";
+  }
+
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('submit-btn').textContent = 'Submitting…';
+
+  const resp = await fetch('/api/quiz/submit', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({tid: TID, answers: answers})
+  });
+  const data = await resp.json();
+
+  // Show per-question feedback
+  data.results.forEach(function(r, i) {
+    const qr = document.getElementById('qr-' + i);
+    const inp = document.getElementById('qi-' + i);
+    qr.classList.remove('hidden');
+    inp.disabled = true;
+    if (r.correct) {
+      qr.className = 'q-result correct';
+      qr.innerHTML = '✅ Correct!';
+    } else {
+      qr.className = 'q-result incorrect';
+      qr.innerHTML = '❌ Correct answer: <strong>' + escHtml(r.correct_answer) + '</strong>'
+        + (r.explanation ? '<br><em>' + escHtml(r.explanation) + '</em>' : '');
+    }
+  });
+
+  // Show summary
+  const resultDiv = document.getElementById('quiz-result');
+  const banner = document.getElementById('result-banner');
+  const details = document.getElementById('result-details');
+  resultDiv.classList.remove('hidden');
+  document.getElementById('quiz-form').querySelector('.quiz-controls').remove();
+
+  const pct = Math.round(data.score / data.total * 100);
+  if (data.passed) {
+    banner.className = 'result-banner pass';
+    banner.innerHTML = '🎉 Passed! <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong> — Topic unlocked!';
+  } else {
+    banner.className = 'result-banner fail';
+    banner.innerHTML = '😅 Score: <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong> — Need 70% to pass. Review the lesson and try again!';
+  }
+
+  details.innerHTML = '<p>Review the highlighted questions above, then try again if needed.</p>';
+  resultDiv.scrollIntoView({behavior:'smooth'});
+}
+
+function escHtml(str) {
+  return String(str)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+// Allow Enter to move to next question
+document.querySelectorAll('.q-input').forEach(function(inp, idx) {
+  inp.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      const next = document.getElementById('qi-' + (idx + 1));
+      if (next) { next.focus(); }
+      else { submitQuiz(); }
+    }
+  });
+});
+</script>
+{% endblock %}

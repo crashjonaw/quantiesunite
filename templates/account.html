@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block title %}My Account — QuantiesUnite{% endblock %}
+
+{% block content %}
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% for cat, msg in messages %}
+  <div class="alert alert-{{ cat }}">{{ msg }}</div>
+  {% endfor %}
+{% endwith %}
+
+<div class="page-header">
+  <div class="account-header-row">
+    <div class="account-avatar">{{ user.username[0] | upper }}</div>
+    <div>
+      <h1>{{ user.username }}</h1>
+      <p class="text-muted">{{ user.email }}</p>
+      <div class="account-badges">
+        <span class="badge badge-free">🎓 Free Plan</span>
+        {% if user.is_admin %}
+        <span class="badge badge-admin">👑 Admin</span>
+        {% endif %}
+        <span class="badge badge-joined">Joined {{ user.created_at[:10] }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRESS SUMMARY -->
+<div class="account-stats-row">
+  <div class="acc-stat">
+    <span class="acc-stat-num">{{ done }}</span>
+    <span class="acc-stat-label">Topics Complete</span>
+  </div>
+  <div class="acc-stat">
+    <span class="acc-stat-num">{{ total }}</span>
+    <span class="acc-stat-label">Total Topics</span>
+  </div>
+  <div class="acc-stat">
+    <span class="acc-stat-num">{{ (done / total * 100) | int if total else 0 }}%</span>
+    <span class="acc-stat-label">Overall Progress</span>
+  </div>
+  <div class="acc-stat" style="border-color: var(--accent)">
+    <span class="acc-stat-num" style="color:var(--accent)">{{ enabled_levels | length }}</span>
+    <span class="acc-stat-label">Levels Enabled</span>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     LEVEL SELECTOR (the main feature)
+     ════════════════════════════════════ -->
+<div class="account-section">
+  <h2 class="account-section-title">🎯 Learning Level</h2>
+  <p class="text-muted" style="margin-bottom:20px">
+    Choose your <strong>target level</strong>. All levels below it are automatically enabled —
+    so you won't see content that's too advanced. You can always raise it later.
+  </p>
+
+  <form method="POST" action="/account/level" id="level-form">
+    <div class="level-selector">
+      {% for level in levels_order %}
+      {% set is_enabled = level in enabled_levels %}
+      {% set is_current = level == user.target_level %}
+      <label class="level-selector-item {% if is_current %}current{% elif is_enabled %}enabled{% else %}locked{% endif %}"
+             for="lvl-{{ loop.index }}">
+        <div class="level-sel-left">
+          <input type="radio" name="target_level" id="lvl-{{ loop.index }}"
+                 value="{{ level }}"
+                 {% if is_current %}checked{% endif %}
+                 onchange="document.getElementById('level-form').submit()"/>
+          <div class="level-sel-indicator {% if is_current %}active{% elif is_enabled %}on{% endif %}">
+            {% if is_current %}🎯{% elif is_enabled %}✅{% else %}🔒{% endif %}
+          </div>
+          <div>
+            <div class="level-sel-name">{{ level }}</div>
+            <div class="level-sel-desc">{{ level_descriptions.get(level, '') }}</div>
+          </div>
+        </div>
+        <div class="level-sel-right">
+          {% set level_count = namespace(n=0) %}
+          {% for tid, t in [] %} {% endfor %}
+          {% if is_current %}
+            <span class="level-sel-badge target">← your target</span>
+          {% elif is_enabled %}
+            <span class="level-sel-badge included">included</span>
+          {% else %}
+            <span class="level-sel-badge above">above target</span>
+          {% endif %}
+        </div>
+      </label>
+      {% endfor %}
+    </div>
+  </form>
+
+  <p class="level-hint">
+    💡 Selecting a higher level <strong>automatically includes all lower levels</strong>.
+    The current selection is highlighted in blue.
+  </p>
+</div>
+
+<!-- ════════════════════════════════════
+     ACCOUNT SETTINGS
+     ════════════════════════════════════ -->
+<div class="account-two-col">
+
+  <!-- Change username -->
+  <div class="account-section">
+    <h2 class="account-section-title">👤 Change Username</h2>
+    <form method="POST" action="/account/username" class="settings-form">
+      <div class="form-group">
+        <label class="form-label">New Username</label>
+        <input type="text" name="username" class="form-input"
+               value="{{ user.username }}" minlength="3" required/>
+      </div>
+      <button type="submit" class="btn btn-outline btn-sm">Update Username</button>
+    </form>
+  </div>
+
+  <!-- Change password -->
+  <div class="account-section">
+    <h2 class="account-section-title">🔐 Change Password</h2>
+    <form method="POST" action="/account/password" class="settings-form">
+      <div class="form-group">
+        <label class="form-label">Current Password</label>
+        <input type="password" name="current_password" class="form-input" required/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">New Password</label>
+        <input type="password" name="new_password" class="form-input" minlength="6" required/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm New Password</label>
+        <input type="password" name="confirm_password" class="form-input" minlength="6" required/>
+      </div>
+      <button type="submit" class="btn btn-outline btn-sm">Update Password</button>
+    </form>
+  </div>
+
+</div>
+
+<!-- ════════════════════════════════════
+     DANGER ZONE
+     ════════════════════════════════════ -->
+<div class="account-section danger-section">
+  <h2 class="account-section-title" style="color:var(--danger)">⚠️ Danger Zone</h2>
+  <div class="danger-row">
+    <div>
+      <strong>Reset all progress</strong>
+      <p class="text-muted">Remove all topic completions and quiz scores. Cannot be undone.</p>
+    </div>
+    <button class="btn btn-danger btn-sm" onclick="confirmReset()">Reset Progress</button>
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+function confirmReset() {
+  if (confirm('Reset ALL your progress? This cannot be undone.')) {
+    fetch('/api/reset', {method: 'POST'}).then(() => location.reload());
+  }
+}
+</script>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Search — QuantiesUnite{% endblock %}
+{% block content %}
+<div class="page-header">
+  <h1>🔍 Search Topics</h1>
+  <form action="/search" method="get" class="search-form">
+    <input type="text" name="q" value="{{ query }}" placeholder="Search topics, levels, keywords…" class="search-input" autofocus/>
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+</div>
+
+{% if query %}
+  {% if results %}
+    <p class="search-count">{{ results | length }} result(s) for "<strong>{{ query }}</strong>"</p>
+    <div class="topic-grid">
+      {% for t in results %}
+      <a href="/topic/{{ t.id }}" class="topic-card" style="border-top: 4px solid {{ t.color }}">
+        <div class="tc-emoji">{{ t.emoji }}</div>
+        <div class="tc-body">
+          <div class="tc-name">{{ t.name }}</div>
+          <div class="tc-tagline">{{ t.tagline }}</div>
+          <div class="tc-meta"><span>{{ t.level }}</span><span>⏱️ {{ t.hours }}h</span></div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-msg">No topics found for "<strong>{{ query }}</strong>". Try a different search.</p>
+  {% endif %}
+{% endif %}
+{% endblock %}

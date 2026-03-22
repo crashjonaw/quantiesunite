@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}QuantiesUnite{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- KaTeX for LaTeX math rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"/>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'\\\\(',right:'\\\\)',display:false},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+  <!-- Chart.js for data visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+<nav class="navbar">
+  <a class="nav-brand" href="/">
+    <span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span>
+  </a>
+  <div class="nav-links">
+    {% if current_user %}
+      <a href="/" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">🏠 Home</a>
+      <a href="/graph" class="nav-link {% if request.endpoint == 'graph_page' %}active{% endif %}">🕸️ Graph</a>
+      <a href="/curriculum" class="nav-link {% if request.endpoint == 'curriculum' %}active{% endif %}">📚 Curriculum</a>
+      <a href="/progress" class="nav-link {% if request.endpoint == 'progress_page' %}active{% endif %}">📈 Progress</a>
+      <a href="/search" class="nav-link {% if request.endpoint == 'search' %}active{% endif %}">🔍 Search</a>
+      {% if current_user.is_admin %}
+      <a href="/admin" class="nav-link admin-link {% if request.endpoint == 'admin_panel' %}active{% endif %}">👑 Admin</a>
+      {% endif %}
+      <!-- User menu -->
+      <div class="user-menu-wrap">
+        <button class="user-menu-btn" onclick="toggleUserMenu()" id="user-menu-btn">
+          <span class="user-avatar-nav">{{ current_user.username[0] | upper }}</span>
+          <span class="user-name-nav">{{ current_user.username }}</span>
+          <span class="chevron">▾</span>
+        </button>
+        <div class="user-dropdown" id="user-dropdown">
+          <div class="dropdown-header">
+            <div class="dropdown-avatar">{{ current_user.username[0] | upper }}</div>
+            <div>
+              <div class="dropdown-name">{{ current_user.username }}</div>
+              <div class="dropdown-email">{{ current_user.email }}</div>
+              <span class="badge badge-free-sm">Free Plan</span>
+            </div>
+          </div>
+          <div class="dropdown-divider"></div>
+          <a href="/account" class="dropdown-item">👤 My Account</a>
+          <a href="/progress" class="dropdown-item">📈 My Progress</a>
+          <div class="dropdown-divider"></div>
+          <a href="/logout" class="dropdown-item dropdown-item-danger">🚪 Sign Out</a>
+        </div>
+      </div>
+    {% else %}
+      <a href="/login" class="nav-link">Sign In</a>
+      <a href="/register" class="btn btn-primary btn-sm">Get Started Free</a>
+    {% endif %}
+  </div>
+</nav>
+
+<!-- Flash messages (outside main so they appear at top) -->
+<div class="flash-container">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in messages %}
+    <div class="flash flash-{{ cat }}" onclick="this.remove()">
+      {{ msg }}
+      <button class="flash-close" onclick="this.parentElement.remove()">×</button>
+    </div>
+    {% endfor %}
+  {% endwith %}
+</div>
+
+<main class="main-content">
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  <p>QuantiesUnite · Singapore Mathematics from First Principles · Kindergarten → Deep Learning</p>
+</footer>
+
+<script>
+function toggleUserMenu() {
+  const dd = document.getElementById('user-dropdown');
+  dd.classList.toggle('open');
+}
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+  const btn = document.getElementById('user-menu-btn');
+  const dd  = document.getElementById('user-dropdown');
+  if (btn && dd && !btn.contains(e.target) && !dd.contains(e.target)) {
+    dd.classList.remove('open');
+  }
+});
+// Auto-dismiss flash messages
+setTimeout(function() {
+  document.querySelectorAll('.flash').forEach(function(el) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(-10px)';
+    setTimeout(() => el.remove(), 400);
+  });
+}, 4000);
+</script>
+
+{% block scripts %}{% endblock %}
+</body>
+</html>

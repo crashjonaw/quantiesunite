@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bloom-bar
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: MAIL_USERNAME
+        sync: false        # you will fill this in Render's dashboard
+      - key: MAIL_PASSWORD
+        sync: false        # you will fill this in Render's dashboard

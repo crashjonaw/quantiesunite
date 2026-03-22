@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}Booking Received — Bloom Burrow{% endblock %}
+
+{% block content %}
+
+<section class="section">
+  <div class="container container--narrow">
+
+    <!-- Progress steps -->
+    <div class="progress-steps" style="margin-bottom: 2.5rem;">
+      <div class="step step--done">
+        <div class="step-circle">✓</div>
+        <span class="step-label">Booking Details</span>
+      </div>
+      <div class="step-line step-line--done"></div>
+      <div class="step step--done">
+        <div class="step-circle">✓</div>
+        <span class="step-label">Payment</span>
+      </div>
+      <div class="step-line step-line--done"></div>
+      <div class="step step--active">
+        <div class="step-circle">✓</div>
+        <span class="step-label">Confirmation</span>
+      </div>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <div class="success-icon">🌿</div>
+      <h1 class="success-title">You're all set!</h1>
+      <p class="success-subtitle">
+        Your booking request and payment screenshot have been submitted.<br>
+        We'll review your payment and confirm your booking within <strong>24 hours</strong>.
+      </p>
+
+      <div class="success-summary">
+        <div class="summary-row">
+          <span>Booking #</span><span>{{ booking.booking_ref }}</span>
+        </div>
+        <div class="summary-row">
+          <span>Package</span><span>{{ pkg.label }}</span>
+        </div>
+        <div class="summary-row">
+          <span>Event Date</span><span>{{ booking.event_date }}</span>
+        </div>
+        <div class="summary-row">
+          <span>Venue</span><span>{{ booking.event_venue }}</span>
+        </div>
+        <div class="summary-row summary-row--total">
+          <span>Amount Paid</span><span>S${{ booking.price }}</span>
+        </div>
+      </div>
+
+      <p class="success-note">
+        Keep an eye on your email — we'll be in touch shortly to confirm everything.
+      </p>
+
+      <a href="{{ url_for('dashboard') }}" class="btn btn-primary" style="margin-top: 1.5rem;">
+        View My Bookings
+      </a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
