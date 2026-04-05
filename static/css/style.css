@@ -151,8 +151,61 @@ html, body {
   border-color: #e2e8f0;
 }
 [data-theme="bright"] #graph-svg { background: #f0f2f5; }
-[data-theme="bright"] #graph-toolbar { background: rgba(255,255,255,0.95); }
-[data-theme="bright"] .graph-tooltip { background: #ffffffe0; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
+[data-theme="bright"] #graph-toolbar { background: rgba(255,255,255,0.95); border-color: #e2e8f0; color: #333; }
+[data-theme="bright"] #graph-search { background: #f1f5f9; border-color: #e2e8f0; color: #333; }
+[data-theme="bright"] .graph-tooltip { background: #ffffffee; box-shadow: 0 8px 32px rgba(0,0,0,0.12); color: #333; border-color: #e2e8f0; }
+[data-theme="bright"] .graph-btn { background: #f1f5f9; border-color: #e2e8f0; color: #333; }
+
+/* ── Bright theme — comprehensive overrides ────────────────────── */
+/* Check questions */
+[data-theme="bright"] .check-question { background: #f8fafc; border-color: rgba(65,105,225,0.15); }
+[data-theme="bright"] .check-input { background: #fff; border-color: #e2e8f0; color: #333; }
+
+/* Page progress bar */
+[data-theme="bright"] .page-progress-bar { background: #fff; border-color: #e2e8f0; }
+[data-theme="bright"] .page-step { background: #fff; border-color: #e2e8f0; color: #64748b; }
+[data-theme="bright"] .page-step:hover { border-color: var(--accent); color: #333; }
+[data-theme="bright"] .page-step.active { background: rgba(65,105,225,0.06); border-color: var(--accent); color: var(--accent); }
+[data-theme="bright"] .page-step-num { background: #f1f5f9; }
+[data-theme="bright"] .page-step.active .page-step-num { background: rgba(65,105,225,0.15); }
+[data-theme="bright"] .page-nav { background: #fff; }
+[data-theme="bright"] .page-nav-counter { color: #64748b; }
+
+/* Lesson containers */
+[data-theme="bright"] .lesson-container { color: #333; }
+[data-theme="bright"] .section-page-indicator { color: #94a3b8; }
+[data-theme="bright"] .section-heading { border-color: #e2e8f0; }
+
+/* Hero sections (dashboard, trophies, admin) — keep gradient */
+[data-theme="bright"] .dash-hero-bg { background: linear-gradient(135deg, #f8fafc 0%, #e8ecff 30%, #eef0ff 50%, #e8ecff 70%, #f8fafc 100%); }
+[data-theme="bright"] .dash-hero-bg::after { background: radial-gradient(ellipse at 30% 20%, rgba(65,105,225,0.06) 0%, transparent 50%); }
+[data-theme="bright"] .dash-hero-title { background: linear-gradient(135deg, #1a3a8a, #333, #4169E1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+[data-theme="bright"] .dash-hero-sub { color: #64748b; }
+
+/* Tables */
+[data-theme="bright"] table { border-color: #e2e8f0; }
+[data-theme="bright"] th { background: #f8fafc; color: #333; }
+[data-theme="bright"] td { border-color: #f1f5f9; }
+
+/* Buttons */
+[data-theme="bright"] .btn-primary { background: var(--accent); color: #fff; }
+[data-theme="bright"] .btn-sm { color: #333; }
+[data-theme="bright"] .btn-large { color: #fff; }
+
+/* Misc elements */
+[data-theme="bright"] .badge { background: #f1f5f9; color: #64748b; }
+[data-theme="bright"] .chip { background: #f1f5f9; border-color: #e2e8f0; color: #333; }
+[data-theme="bright"] .formula-box { background: linear-gradient(135deg, rgba(65,105,225,0.03), rgba(65,105,225,0.08)); border-color: rgba(65,105,225,0.15); }
+[data-theme="bright"] .diagram-container { background: #fafafa; border-color: #e2e8f0; }
+[data-theme="bright"] .diagram-caption { color: #64748b; }
+[data-theme="bright"] .coming-soon-box { background: #f8fafc; border-color: #e2e8f0; }
+[data-theme="bright"] .code-block { background: #1e1e1e; }
+[data-theme="bright"] .back-link { color: #64748b; }
+[data-theme="bright"] .back-link:hover { color: #333; }
+
+/* Footer */
+[data-theme="bright"] .footer { background: #f8fafc; border-top: 1px solid #e2e8f0; }
+[data-theme="bright"] .footer p { color: #64748b; }
 
 /* ── Navbar ─────────────────────────────────────────────────────── */
 .navbar {
@@ -740,7 +793,7 @@ html, body {
 
 /* ── Check questions ────────────────────────────────────────────── */
 .check-question {
-  background: #1a1f2e; border: 1px solid #4169E140;
+  background: var(--bg3); border: 1px solid rgba(65,105,225,0.25);
   border-radius: 10px; padding: 18px 20px; margin-top: 20px;
 }
 .check-label {
