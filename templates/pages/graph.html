@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title %}Curriculum Graph — QuantiesUnite{% endblock %}
+
+{% block head %}
+<style>
+  .main-content { padding: 0; max-width: 100%; }
+  body { overflow: hidden; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div id="graph-ui">
+  <!-- Toolbar -->
+  <div id="graph-toolbar">
+    <span class="brand-small"><strong>Q</strong>uanties<strong>U</strong>nite · Curriculum Graph</span>
+    <div class="toolbar-controls">
+      <input type="text" id="graph-search" placeholder="🔍 Search topics…" />
+      <select id="level-filter">
+        <option value="all">All Levels</option>
+        <option value="Kindergarten">Kindergarten</option>
+        <option value="Primary 1–2">Primary 1–2</option>
+        <option value="Primary 3–4">Primary 3–4</option>
+        <option value="Primary 5–6">Primary 5–6</option>
+        <option value="Sec 1–2">Sec 1–2</option>
+        <option value="Sec 3–4">Sec 3–4</option>
+        <option value="J1–2">J1–2</option>
+        <option value="Linear Algebra">Linear Algebra</option>
+        <option value="Probability &amp; Statistics">Probability &amp; Statistics</option>
+        <option value="Python">Python</option>
+        <option value="Deep Learning">Deep Learning</option>
+        <option value="Deep Learning Advanced">Deep Learning Advanced</option>
+      </select>
+      <button id="reset-zoom-btn" class="graph-btn">⟳ Reset</button>
+      <a href="/curriculum" class="graph-btn">← Curriculum</a>
+    </div>
+  </div>
+
+  <!-- Legend (clickable — click to highlight that level's nodes) -->
+  <div id="graph-legend">
+    <div class="legend-title">Click to highlight level:</div>
+    <div class="legend-item" data-level="Kindergarten"         onclick="legendClick(this)"><span class="legend-dot" style="background:#7FFFD4"></span>KG</div>
+    <div class="legend-item" data-level="Primary 1–2"          onclick="legendClick(this)"><span class="legend-dot" style="background:#90EE90"></span>P1–2</div>
+    <div class="legend-item" data-level="Primary 3–4"          onclick="legendClick(this)"><span class="legend-dot" style="background:#98FB98"></span>P3–4</div>
+    <div class="legend-item" data-level="Primary 5–6"           onclick="legendClick(this)"><span class="legend-dot" style="background:#3CB371"></span>P5–6</div>
+    <div class="legend-item" data-level="Sec 1–2"              onclick="legendClick(this)"><span class="legend-dot" style="background:#4169E1"></span>SEC 1-2</div>
+    <div class="legend-item" data-level="Sec 3–4"              onclick="legendClick(this)"><span class="legend-dot" style="background:#1E90FF"></span>SEC 3-4</div>
+    <div class="legend-item" data-level="J1–2"                 onclick="legendClick(this)"><span class="legend-dot" style="background:#9400D3"></span>J1–2</div>
+    <div class="legend-item" data-level="Linear Algebra"       onclick="legendClick(this)"><span class="legend-dot" style="background:#FF4500"></span>Lin Alg</div>
+    <div class="legend-item" data-level="Probability &amp; Statistics" onclick="legendClick(this)"><span class="legend-dot" style="background:#FF6347"></span>Prob</div>
+    <div class="legend-item" data-level="Python"               onclick="legendClick(this)"><span class="legend-dot" style="background:#FFD700"></span>Python</div>
+    <div class="legend-item" data-level="Deep Learning"        onclick="legendClick(this)"><span class="legend-dot" style="background:#FF1493"></span>DL</div>
+    <div class="legend-item" data-level="Deep Learning Advanced" onclick="legendClick(this)"><span class="legend-dot" style="background:#C71585"></span>DL Adv</div>
+    <div class="legend-item legend-reset" id="legend-reset" onclick="legendReset()" style="display:none">
+      <span style="font-size:0.9rem">✕</span> Clear
+    </div>
+  </div>
+
+  <!-- SVG canvas -->
+  <svg id="graph-svg"></svg>
+
+  <!-- Tooltip -->
+  <div id="graph-tooltip" class="graph-tooltip hidden">
+    <div id="tt-emoji" class="tt-emoji"></div>
+    <div id="tt-name" class="tt-name"></div>
+    <div id="tt-level" class="tt-level"></div>
+    <div id="tt-tagline" class="tt-tagline"></div>
+    <div id="tt-hours" class="tt-hours"></div>
+    <div id="tt-status" class="tt-status"></div>
+    <div id="tt-actions" class="tt-actions" style="display:none; margin-top:8px; padding-top:8px; border-top:1px solid rgba(255,255,255,0.15);">
+      <button id="tt-enter-btn" class="graph-btn" style="width:100%; font-size:0.85rem; margin-bottom:6px; background:#22c55e; color:#fff;">▶ Enter Module</button>
+      <button id="tt-target-btn" class="graph-btn" style="width:100%; font-size:0.85rem; margin-bottom:6px;">🎯 Add Target</button>
+      <button id="tt-mindmap-btn" class="graph-btn" style="width:100%; font-size:0.85rem; display:none; background:#9333ea; color:#fff;">🧠 View Mindmap</button>
+    </div>
+    <div id="tt-hint" class="tt-hint">Click popup or Enter button to open lesson</div>
+  </div>
+
+  <!-- Instructions -->
+  <div id="graph-instructions">
+    🖱️ Drag to pan &nbsp;·&nbsp; Scroll to zoom &nbsp;·&nbsp; Hover: <span style="color:#FFD700">■</span> prerequisites <span style="color:#22c55e">■</span> unlocks &nbsp;·&nbsp; Click to select &nbsp;·&nbsp; Double-click to open lesson
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>const IS_ADMIN = {{ 'true' if current_user and current_user.is_admin else 'false' }};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="{{ url_for('static', filename='js/graph.js') }}"></script>
+{% endblock %}

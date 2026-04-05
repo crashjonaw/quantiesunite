@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}Create Account — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span>
+    </div>
+    <h1 class="auth-title">Create your free account</h1>
+    <p class="auth-sub">Start learning from Kindergarten to Deep Learning — completely free</p>
+
+    <!-- Free plan badge -->
+    <div class="plan-badge-free">
+      <span class="plan-icon">🎓</span>
+      <div>
+        <strong>Free Plan</strong>
+        <span>· All 85+ topics · All levels · No time limits</span>
+      </div>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+
+    <form method="POST" action="/register" class="auth-form">
+      <div class="form-group">
+        <label class="form-label">Username <span class="form-hint">(min 3 characters)</span></label>
+        <input type="text" name="username" class="form-input"
+               placeholder="MathExplorer" minlength="3" required autofocus
+               autocomplete="username"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email</label>
+        <input type="email" name="email" class="form-input"
+               placeholder="you@example.com" required
+               autocomplete="email"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password <span class="form-hint">(min 6 characters)</span></label>
+        <input type="password" name="password" class="form-input"
+               placeholder="••••••••" minlength="6" required
+               autocomplete="new-password" id="pw"/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm Password</label>
+        <input type="password" name="confirm" class="form-input"
+               placeholder="••••••••" minlength="6" required
+               autocomplete="new-password" id="pw2"/>
+        <div class="pw-match-msg" id="pw-match"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">I'm currently in</label>
+        <select name="grade" id="grade-select" class="form-input grade-select">
+          <option value="Kindergarten">Kindergarten</option>
+          <option value="Primary 1–2">Primary 1–2</option>
+          <option value="Primary 3–4">Primary 3–4</option>
+          <option value="Primary 5–6">Primary 5–6</option>
+          <option value="Sec 1–2">Secondary 1–2</option>
+          <option value="Sec 3–4">Secondary 3–4</option>
+          <option value="J1–2">JC 1–2</option>
+        </select>
+        <p class="grade-hint" id="grade-hint">All topics start fresh — perfect for beginners!</p>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full" id="reg-btn">
+        Create Free Account 🚀
+      </button>
+    </form>
+
+    <p class="auth-footer">
+      Already have an account?
+      <a href="/login" class="auth-link">Sign in →</a>
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const pw = document.getElementById('pw');
+const pw2 = document.getElementById('pw2');
+const msg = document.getElementById('pw-match');
+const btn = document.getElementById('reg-btn');
+
+function checkMatch() {
+  if (!pw2.value) { msg.textContent = ''; return; }
+  if (pw.value === pw2.value) {
+    msg.textContent = '✅ Passwords match';
+    msg.style.color = '#22c55e';
+    btn.disabled = false;
+  } else {
+    msg.textContent = '❌ Passwords do not match';
+    msg.style.color = '#ef4444';
+    btn.disabled = true;
+  }
+}
+pw.addEventListener('input', checkMatch);
+pw2.addEventListener('input', checkMatch);
+
+// Grade hint
+const gradeSelect = document.getElementById('grade-select');
+const gradeHint   = document.getElementById('grade-hint');
+const hints = {
+  'Kindergarten': 'All topics start fresh — perfect for beginners!',
+  'Primary 1–2':  'Kindergarten topics will be marked complete.',
+  'Primary 3–4':  'Kindergarten & Primary 1–2 topics will be marked complete.',
+  'Primary 5–6':  'Kindergarten through Primary 3–4 topics will be marked complete.',
+  'Sec 1–2':      'Kindergarten through Primary 5–6 topics will be marked complete.',
+  'Sec 3–4':      'Kindergarten through Sec 1–2 topics will be marked complete.',
+  'J1–2':         'Kindergarten through Sec 3–4 topics will be marked complete.'
+};
+gradeSelect.addEventListener('change', () => {
+  gradeHint.textContent = hints[gradeSelect.value] || '';
+});
+</script>
+{% endblock %}

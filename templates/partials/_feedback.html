@@ -1,0 +1,23 @@
+<!-- Feedback FAB + Modal -->
+{% if current_user %}
+<button class="feedback-fab" onclick="document.getElementById('feedback-overlay').classList.add('open')">
+  <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+  Submit Feedback?
+</button>
+<div class="feedback-overlay" id="feedback-overlay">
+  <div class="feedback-modal">
+    <button class="feedback-close" onclick="closeFeedback()">&times;</button>
+    <h3>Submit Feedback</h3>
+    <form id="feedback-form" onsubmit="return submitFeedback(event)">
+      <label for="fb-desc">What's on your mind?</label>
+      <textarea id="fb-desc" name="description" placeholder="Describe the issue, error, or suggestion in detail..." required></textarea>
+      <div class="feedback-success" id="fb-success">Feedback submitted — thank you!</div>
+      <div class="feedback-error" id="fb-error"></div>
+      <div class="feedback-modal-actions">
+        <button type="button" class="feedback-btn-cancel" onclick="closeFeedback()">Cancel</button>
+        <button type="submit" class="feedback-btn-submit" id="fb-submit-btn">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endif %}

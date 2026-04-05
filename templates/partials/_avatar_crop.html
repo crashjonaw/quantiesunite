@@ -1,0 +1,149 @@
+<!-- ═══ Avatar Crop Modal ═══ -->
+<div class="crop-overlay" id="crop-overlay">
+  <div class="crop-modal">
+    <div class="crop-header">
+      <h3 class="crop-title">Crop Profile Picture</h3>
+      <button class="crop-close" onclick="closeCropModal()">&times;</button>
+    </div>
+    <div class="crop-body">
+      <div class="crop-canvas">
+        <img id="crop-image" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="display:none;"/>
+      </div>
+    </div>
+    <div class="crop-footer">
+      <div class="crop-actions-left">
+        <button class="btn btn-outline btn-sm" onclick="cropRotate(-90)" title="Rotate left">&#8634;</button>
+        <button class="btn btn-outline btn-sm" onclick="cropRotate(90)" title="Rotate right">&#8635;</button>
+        <button class="btn btn-outline btn-sm" onclick="cropReset()" title="Reset">Reset</button>
+      </div>
+      <div class="crop-actions-right">
+        <button class="btn btn-outline btn-sm" onclick="closeCropModal()">Cancel</button>
+        <button class="btn btn-primary btn-sm" id="crop-save-btn" onclick="saveCroppedAvatar()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden file input shared by all avatar triggers -->
+<input type="file" id="avatar-file-input" accept="image/jpeg,image/png,image/gif,image/webp" hidden/>
+
+<script>
+var _cropper = null;
+
+/* ── Open the crop modal with a file ──────────────────────────── */
+function openAvatarPicker() {
+  document.getElementById('avatar-file-input').click();
+}
+
+document.getElementById('avatar-file-input').addEventListener('change', function() {
+  var file = this.files && this.files[0];
+  if (!file) return;
+
+  // Client-side size check
+  if (file.size > 5 * 1024 * 1024) {
+    alert('File too large. Maximum 5 MB.');
+    this.value = '';
+    return;
+  }
+
+  // Validate type
+  if (!file.type.match(/^image\/(jpeg|png|gif|webp)$/)) {
+    alert('Invalid file type. Use JPG, PNG, GIF, or WebP.');
+    this.value = '';
+    return;
+  }
+
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    var img = document.getElementById('crop-image');
+    img.style.display = '';
+    img.src = e.target.result;
+
+    // Destroy previous cropper
+    if (_cropper) { _cropper.destroy(); _cropper = null; }
+
+    // Show modal
+    document.getElementById('crop-overlay').classList.add('open');
+
+    // Init Cropper.js after image loads
+    img.onload = function() {
+      _cropper = new Cropper(img, {
+        aspectRatio: 1,
+        viewMode: 1,
+        dragMode: 'move',
+        autoCropArea: 0.9,
+        cropBoxResizable: true,
+        cropBoxMovable: true,
+        guides: false,
+        center: true,
+        highlight: false,
+        background: false,
+        responsive: true,
+      });
+    };
+  };
+  reader.readAsDataURL(file);
+
+  // Reset so same file can be re-selected
+  this.value = '';
+});
+
+/* ── Crop controls ────────────────────────────────────────────── */
+function cropRotate(deg) { if (_cropper) _cropper.rotate(deg); }
+function cropReset() { if (_cropper) _cropper.reset(); }
+
+function closeCropModal() {
+  document.getElementById('crop-overlay').classList.remove('open');
+  if (_cropper) { _cropper.destroy(); _cropper = null; }
+}
+
+/* ── Save cropped image ───────────────────────────────────────── */
+function saveCroppedAvatar() {
+  if (!_cropper) return;
+
+  var btn = document.getElementById('crop-save-btn');
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+
+  // Get cropped canvas at 256x256
+  var canvas = _cropper.getCroppedCanvas({
+    width: 256,
+    height: 256,
+    imageSmoothingEnabled: true,
+    imageSmoothingQuality: 'high',
+  });
+
+  canvas.toBlob(function(blob) {
+    var formData = new FormData();
+    formData.append('avatar', blob, 'avatar.jpg');
+
+    fetch('/account/avatar', {
+      method: 'POST',
+      body: formData
+    }).then(function(r) {
+      if (r.redirected) {
+        // Server redirected — just reload
+        location.reload();
+      } else {
+        return r.text().then(function() { location.reload(); });
+      }
+    }).catch(function() {
+      alert('Upload failed. Please try again.');
+      btn.disabled = false;
+      btn.textContent = 'Save';
+    });
+  }, 'image/jpeg', 0.85);
+}
+
+// Close on background click
+document.getElementById('crop-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeCropModal();
+});
+
+// Close on Escape
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && document.getElementById('crop-overlay').classList.contains('open')) {
+    closeCropModal();
+  }
+});
+</script>

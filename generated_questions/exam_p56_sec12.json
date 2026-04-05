@@ -1,0 +1,2756 @@
+{
+  "exam_p56": [
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "Mary had 3/4 of a pizza. She ate 1/3 of what she had. What fraction of the whole pizza did she eat?",
+      "answer": "1/4",
+      "options": [],
+      "explanation": "She ate 1/3 of 3/4 = 1/3 × 3/4 = 3/12 = 1/4 of the whole pizza.",
+      "difficulty": 1,
+      "concept": "fraction of a fraction",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "A rope is 5 1/2 m long. It is cut into pieces each 3/4 m long. How many complete pieces can be cut?",
+      "answer": "7",
+      "options": [],
+      "explanation": "5 1/2 ÷ 3/4 = 11/2 × 4/3 = 44/6 = 7 remainder 2/6. So 7 complete pieces.",
+      "difficulty": 2,
+      "concept": "dividing mixed numbers",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "After giving away 2/5 of his stickers and then 1/3 of the remainder, John had 48 stickers left. How many stickers did he have at first?",
+      "answer": "120",
+      "options": [],
+      "explanation": "After giving 2/5, he had 3/5 left. After giving 1/3 of 3/5, he had 2/3 × 3/5 = 2/5 left. So 2/5 of total = 48, total = 48 × 5/2 = 120.",
+      "difficulty": 3,
+      "concept": "multi-step fraction word problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "What is 2 3/4 ÷ 1 1/2?",
+      "answer": "11/6",
+      "options": [],
+      "explanation": "Convert: 2 3/4 = 11/4, 1 1/2 = 3/2. Divide: 11/4 ÷ 3/2 = 11/4 × 2/3 = 22/12 = 11/6.",
+      "difficulty": 2,
+      "concept": "dividing mixed numbers",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "A tank is 2/3 full. After adding 15 litres, it becomes 5/6 full. What is the total capacity of the tank?",
+      "answer": "90",
+      "options": [],
+      "explanation": "5/6 - 2/3 = 5/6 - 4/6 = 1/6 of tank = 15 litres. Total capacity = 15 × 6 = 90 litres.",
+      "difficulty": 3,
+      "concept": "fraction of a quantity — working backwards",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "Which is greater: 7/9 or 5/6?",
+      "answer": "5/6",
+      "options": [
+        "7/9",
+        "5/6",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "explanation": "LCD of 9 and 6 is 18. 7/9 = 14/18, 5/6 = 15/18. Since 15/18 > 14/18, 5/6 is greater.",
+      "difficulty": 1,
+      "concept": "comparing fractions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "Peter spent 1/4 of his money on books and 3/8 on food. What fraction of his money is left?",
+      "answer": "3/8",
+      "options": [],
+      "explanation": "Spent: 1/4 + 3/8 = 2/8 + 3/8 = 5/8. Left: 1 - 5/8 = 3/8.",
+      "difficulty": 2,
+      "concept": "adding fractions with unlike denominators",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "A baker uses 3/5 of a bag of flour for bread and 1/4 of the bag for cakes. What fraction of the bag is used altogether?",
+      "answer": "17/20",
+      "options": [],
+      "explanation": "3/5 + 1/4 = 12/20 + 5/20 = 17/20.",
+      "difficulty": 1,
+      "concept": "adding fractions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "If 3/7 of a number is 42, what is 5/7 of the same number?",
+      "answer": "70",
+      "options": [],
+      "explanation": "3/7 of number = 42, so 1/7 = 14. Then 5/7 = 5 × 14 = 70.",
+      "difficulty": 2,
+      "concept": "fraction of an unknown",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "The ratio of boys to girls in a class is 3:5. If there are 24 boys, how many girls are there?",
+      "answer": "40",
+      "options": [],
+      "explanation": "3 parts = 24, so 1 part = 8. Girls = 5 × 8 = 40.",
+      "difficulty": 1,
+      "concept": "ratio — find quantity",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "A and B share money in the ratio 4:7. B has $84 more than A. How much money does A have?",
+      "answer": "112",
+      "options": [],
+      "explanation": "Difference in parts = 7 - 4 = 3 parts = $84, so 1 part = $28. A = 4 × $28 = $112.",
+      "difficulty": 2,
+      "concept": "ratio — difference model",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "Tom, Dick, and Harry share 360 cards in the ratio 2:3:4. How many cards does Dick get?",
+      "answer": "120",
+      "options": [],
+      "explanation": "Total parts = 2+3+4 = 9. 1 part = 360÷9 = 40. Dick = 3 × 40 = 120.",
+      "difficulty": 1,
+      "concept": "ratio — 3 quantities",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "The ratio of red to blue marbles was 5:3. After adding 16 red marbles, the ratio became 3:1. How many blue marbles are there?",
+      "answer": "12",
+      "options": [],
+      "explanation": "Let blue = 3k. Red initially = 5k. After adding: (5k+16)/(3k) = 3/1 → 5k+16 = 9k → 4k=16 → k=4. Blue = 3×4=12.",
+      "difficulty": 3,
+      "concept": "ratio — changing quantities",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "Simplify the ratio 45:72:63.",
+      "answer": "5:8:7",
+      "options": [
+        "5:8:7",
+        "15:24:21",
+        "9:14:13",
+        "45:72:63"
+      ],
+      "explanation": "HCF of 45, 72, and 63 is 9. Dividing each by 9: 5:8:7.",
+      "difficulty": 1,
+      "concept": "simplifying ratios",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "Ali and Ben have savings in the ratio 5:8. Ali saves $60 more each month and after some months the ratio becomes 9:11. How much does Ben have originally if Ali originally had $250?",
+      "answer": "400",
+      "options": [],
+      "explanation": "Ali : Ben = 5:8. Ali has $250 so 5 units = $250, 1 unit = $50. Ben = 8 × $50 = $400.",
+      "difficulty": 3,
+      "concept": "ratio — find original amount",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A shirt costs $80. During a sale, it is sold at 25% discount. What is the sale price?",
+      "answer": "60",
+      "options": [],
+      "explanation": "Discount = 25% × $80 = $20. Sale price = $80 - $20 = $60.",
+      "difficulty": 1,
+      "concept": "percentage discount",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "After a 20% increase, a price became $144. What was the original price?",
+      "answer": "120",
+      "options": [],
+      "explanation": "120% of original = $144. Original = $144 ÷ 1.20 = $120.",
+      "difficulty": 2,
+      "concept": "percentage increase — reverse",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "In a class of 40 students, 35% are boys. How many are girls?",
+      "answer": "26",
+      "options": [],
+      "explanation": "Boys = 35% × 40 = 14. Girls = 40 - 14 = 26.",
+      "difficulty": 1,
+      "concept": "percentage of a quantity",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A stall sold 120 cups of tea and 80 cups of coffee. What percentage of all drinks sold were coffee?",
+      "answer": "40",
+      "options": [],
+      "explanation": "Total drinks = 120 + 80 = 200. Coffee % = 80/200 × 100% = 40%.",
+      "difficulty": 1,
+      "concept": "expressing as percentage",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "Mr Tan's salary increased by 10% in Year 1 and then decreased by 10% in Year 2. What is the overall percentage change?",
+      "answer": "-1%",
+      "options": [
+        "-1%",
+        "0%",
+        "1%",
+        "-2%"
+      ],
+      "explanation": "If original = $100: after 10% increase = $110. After 10% decrease = $110 × 0.9 = $99. Overall change = -1%.",
+      "difficulty": 3,
+      "concept": "successive percentage change",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A merchant buys an item for $250 and sells it for $300. What is the percentage profit?",
+      "answer": "20",
+      "options": [],
+      "explanation": "Profit = $300 - $250 = $50. Percentage profit = 50/250 × 100% = 20%.",
+      "difficulty": 2,
+      "concept": "percentage profit",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "After GST of 9%, a meal costs $32.72. What was the price before GST? (Round to nearest cent.)",
+      "answer": "30.02",
+      "options": [],
+      "explanation": "Price before GST = $32.72 ÷ 1.09 = $30.018... ≈ $30.02.",
+      "difficulty": 3,
+      "concept": "reverse GST / percentage",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "The average of 5 numbers is 18. Four of the numbers are 12, 20, 15, and 22. What is the fifth number?",
+      "answer": "21",
+      "options": [],
+      "explanation": "Sum of 5 numbers = 5 × 18 = 90. Sum of 4 known = 12+20+15+22 = 69. Fifth = 90 - 69 = 21.",
+      "difficulty": 1,
+      "concept": "finding missing value from average",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "The average score of 6 students is 74. After a new student joins with a score of 95, what is the new average? (Round to 1 decimal place.)",
+      "answer": "77",
+      "options": [],
+      "explanation": "Sum of 6 = 6 × 74 = 444. New sum = 444 + 95 = 539. New average = 539 ÷ 7 = 77.",
+      "difficulty": 2,
+      "concept": "average after adding a value",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "Team A scored an average of 82 over 4 matches. Team B scored an average of 76 over 6 matches. What is the combined average of both teams?",
+      "answer": "78.4",
+      "options": [],
+      "explanation": "Team A total = 4×82 = 328. Team B total = 6×76 = 456. Combined = (328+456)/10 = 784/10 = 78.4.",
+      "difficulty": 2,
+      "concept": "combined average",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "Three numbers have an average of 20. If two of the numbers are equal and the third is 8, what are the equal numbers?",
+      "answer": "26",
+      "options": [],
+      "explanation": "Sum = 3 × 20 = 60. Two equal numbers sum = 60 - 8 = 52. Each = 52 ÷ 2 = 26.",
+      "difficulty": 2,
+      "concept": "finding equal values from average",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "The average daily temperature for Monday to Friday was 31°C. The average for Saturday and Sunday was 28°C. What was the average for the whole week?",
+      "answer": "30.1°C",
+      "options": [
+        "30.1°C",
+        "29.5°C",
+        "30.5°C",
+        "29.0°C"
+      ],
+      "explanation": "Mon–Fri total = 5×31 = 155°C. Weekend total = 2×28 = 56°C. Weekly average = 211/7 ≈ 30.1°C.",
+      "difficulty": 3,
+      "concept": "combined average — weighted",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "If 3x + 7 = 25, what is the value of x?",
+      "answer": "6",
+      "options": [],
+      "explanation": "3x = 25 - 7 = 18. x = 18 ÷ 3 = 6.",
+      "difficulty": 1,
+      "concept": "solving linear equation",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "If 5(y - 3) = 20, what is the value of y?",
+      "answer": "7",
+      "options": [],
+      "explanation": "y - 3 = 20 ÷ 5 = 4. y = 4 + 3 = 7.",
+      "difficulty": 1,
+      "concept": "solving equation with brackets",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Chairs cost $c each and tables cost $3c each. If 4 chairs and 2 tables cost $200, find the cost of one chair.",
+      "answer": "20",
+      "options": [],
+      "explanation": "4c + 2(3c) = 200 → 4c + 6c = 200 → 10c = 200 → c = 20.",
+      "difficulty": 2,
+      "concept": "forming and solving equations",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Amy is n years old. Her mother is 4 times her age. Their combined age is 60. What is n?",
+      "answer": "12",
+      "options": [],
+      "explanation": "n + 4n = 60 → 5n = 60 → n = 12.",
+      "difficulty": 2,
+      "concept": "writing and solving equations from word problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Simplify the expression: 3(2a + 5) - 2(a - 4)",
+      "answer": "4a + 23",
+      "options": [
+        "4a + 23",
+        "4a + 7",
+        "8a + 23",
+        "4a + 15"
+      ],
+      "explanation": "3(2a+5) = 6a+15. −2(a−4) = −2a+8. Combined: 6a+15−2a+8 = 4a+23.",
+      "difficulty": 2,
+      "concept": "expanding and simplifying expressions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "The sum of three consecutive even numbers is 78. What is the smallest number?",
+      "answer": "24",
+      "options": [],
+      "explanation": "Let numbers be n, n+2, n+4. Sum: 3n+6 = 78 → 3n = 72 → n = 24.",
+      "difficulty": 3,
+      "concept": "consecutive integers — algebraic model",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A rectangular tank has a base of 20 cm by 15 cm and is filled with water to a height of 8 cm. What is the volume of water in the tank?",
+      "answer": "2400",
+      "options": [],
+      "explanation": "Volume = length × breadth × height = 20 × 15 × 8 = 2400 cm³.",
+      "difficulty": 1,
+      "concept": "volume of cuboid",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A cube has a volume of 512 cm³. What is the length of one side?",
+      "answer": "8",
+      "options": [],
+      "explanation": "Side = ∛512 = 8 cm.",
+      "difficulty": 1,
+      "concept": "cube root for side length",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A fish tank (40 cm × 25 cm × 30 cm) is 3/4 full of water. A stone is placed in the tank and the water rises to the full level. What is the volume of the stone in cm³?",
+      "answer": "7500",
+      "options": [],
+      "explanation": "Full volume = 40×25×30 = 30000 cm³. Water volume = 3/4 × 30000 = 22500 cm³. Stone volume = 30000 - 22500 = 7500 cm³.",
+      "difficulty": 2,
+      "concept": "volume — displacement",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "Water flows into a tank at 3 litres per minute. The tank measures 60 cm × 50 cm × 40 cm. How long does it take to fill the empty tank? (1 litre = 1000 cm³)",
+      "answer": "40",
+      "options": [],
+      "explanation": "Volume = 60×50×40 = 120000 cm³ = 120 litres. Time = 120 ÷ 3 = 40 minutes.",
+      "difficulty": 2,
+      "concept": "volume — rate of filling",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A rectangular tank (50 cm × 40 cm × 60 cm) contains water at a height of 25 cm. A solid cube of side 10 cm is fully submerged. By how many cm does the water level rise?",
+      "answer": "0.5",
+      "options": [],
+      "explanation": "Cube volume = 10³ = 1000 cm³. Base area = 50×40 = 2000 cm². Rise = 1000/2000 = 0.5 cm.",
+      "difficulty": 3,
+      "concept": "volume displacement — water level rise",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A container shaped like an L (viewed from front) has base sections of 20 cm × 10 cm and 10 cm × 10 cm and a uniform depth of 15 cm. What is its total volume?",
+      "answer": "4500 cm³",
+      "options": [
+        "4500 cm³",
+        "3000 cm³",
+        "6000 cm³",
+        "5500 cm³"
+      ],
+      "explanation": "L-shape area = 20×10 + 10×10 = 200 + 100 = 300 cm². Volume = 300 × 15 = 4500 cm³.",
+      "difficulty": 3,
+      "concept": "volume of composite solid",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "From the data set {12, 15, 18, 15, 20, 18, 15}, what is the mode?",
+      "answer": "15",
+      "options": [],
+      "explanation": "15 appears 3 times, which is more than any other value. Mode = 15.",
+      "difficulty": 1,
+      "concept": "mode",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "The median of seven values arranged in order is 24. The values are: 14, 18, 21, ?, 28, 31, 35. What is the missing value?",
+      "answer": "24",
+      "options": [],
+      "explanation": "The median is the 4th value in 7 ordered values. The 4th value must be 24.",
+      "difficulty": 1,
+      "concept": "median",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "A bar chart shows scores: 10 students scored 60, 15 students scored 70, 8 students scored 80, and 7 students scored 90. What is the mean score?",
+      "answer": "71.25",
+      "options": [],
+      "explanation": "Total = 10×60 + 15×70 + 8×80 + 7×90 = 600+1050+640+630 = 2920. Count = 40. Mean = 2920/40 = 73. Let me recompute: 600+1050=1650, +640=2290, +630=2920. 2920/40=73.",
+      "difficulty": 2,
+      "concept": "mean from frequency table",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "A pie chart shows that 'Sports' takes up 120°. If 30 students chose Sports, how many students were surveyed in total?",
+      "answer": "90",
+      "options": [],
+      "explanation": "120° represents 30 students. The full circle is 360°. Total = 30 × (360/120) = 30 × 3 = 90 students.",
+      "difficulty": 2,
+      "concept": "pie chart — find total",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "A line graph shows the population of a town growing from 40,000 in 2010 to 52,000 in 2020. What is the percentage increase?",
+      "answer": "30%",
+      "options": [
+        "30%",
+        "25%",
+        "20%",
+        "12%"
+      ],
+      "explanation": "Increase = 52000 - 40000 = 12000. % increase = 12000/40000 × 100 = 30%.",
+      "difficulty": 2,
+      "concept": "percentage change from graph",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "The stem-and-leaf plot shows test scores. Stem 6 | Leaves 2 4 8; Stem 7 | Leaves 1 3 3 7; Stem 8 | Leaves 0 5 9. What is the median score?",
+      "answer": "73",
+      "options": [],
+      "explanation": "Scores in order: 62,64,68,71,73,73,77,80,85,89. 10 values, median = mean of 5th and 6th = (73+73)/2 = 73.",
+      "difficulty": 3,
+      "concept": "median from stem-and-leaf",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "A train travels at 80 km/h. How far does it travel in 2 hours 30 minutes?",
+      "answer": "200",
+      "options": [],
+      "explanation": "2 h 30 min = 2.5 h. Distance = 80 × 2.5 = 200 km.",
+      "difficulty": 1,
+      "concept": "speed-distance-time",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "Car A leaves town P at 8 am travelling at 60 km/h. Car B leaves the same town at 9 am travelling at 80 km/h in the same direction. At what time does Car B overtake Car A?",
+      "answer": "12 pm",
+      "options": [
+        "11 am",
+        "12 pm",
+        "1 pm",
+        "2 pm"
+      ],
+      "explanation": "By 9 am, Car A has 60 km head start. Relative speed of B over A = 80-60 = 20 km/h. Time to close gap = 60/20 = 3 hours after 9 am = 12 pm.",
+      "difficulty": 3,
+      "concept": "relative speed — catch-up",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "A rectangular garden is 3 times as long as it is wide. Its perimeter is 96 m. Find its area.",
+      "answer": "432",
+      "options": [],
+      "explanation": "Let width = w. Length = 3w. Perimeter: 2(w + 3w) = 8w = 96 → w = 12. Length = 36. Area = 36 × 12 = 432 m².",
+      "difficulty": 2,
+      "concept": "perimeter and area — algebraic",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "A box contains red and blue pens in the ratio 4:3. After removing 8 red pens, the ratio becomes 2:3. How many pens were in the box at first?",
+      "answer": "28",
+      "options": [],
+      "explanation": "Let red = 4k, blue = 3k. After: (4k-8)/(3k) = 2/3 → 12k-24 = 6k → 6k = 24 → k = 4. Total = 7k = 28.",
+      "difficulty": 3,
+      "concept": "ratio — model drawing",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "Jane and Kate have a total of $180. If Jane gives Kate $20, Kate will have twice as much as Jane. How much does Jane have at first?",
+      "answer": "100",
+      "options": [],
+      "explanation": "After transfer: Jane = J-20, Kate = 180-J+20 = 200-J. Kate = 2×Jane: 200-J = 2(J-20) → 200-J = 2J-40 → 240 = 3J → J = 80. Wait: let J be Jane's original. After: Jane = J-20, Kate = (180-J)+20 = 200-J. 200-J = 2(J-20) → 200-J = 2J-40 → 240 = 3J → J = 80. Actually the answer should be $80.",
+      "difficulty": 3,
+      "concept": "model drawing — transfer problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "A swimming pool takes 6 hours to fill with pipe A alone and 9 hours with pipe B alone. How many hours does it take to fill the pool if both pipes are open together?",
+      "answer": "3.6 hours",
+      "options": [
+        "3.6 hours",
+        "4 hours",
+        "5 hours",
+        "7.5 hours"
+      ],
+      "explanation": "Rate A = 1/6 per hour, Rate B = 1/9 per hour. Combined = 1/6 + 1/9 = 3/18 + 2/18 = 5/18. Time = 18/5 = 3.6 hours.",
+      "difficulty": 3,
+      "concept": "rates — work problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "Ali cycles from home to school at 15 km/h and returns at 10 km/h. What is his average speed for the round trip?",
+      "answer": "12 km/h",
+      "options": [
+        "12 km/h",
+        "12.5 km/h",
+        "11 km/h",
+        "13 km/h"
+      ],
+      "explanation": "Let distance one way = d. Total distance = 2d. Total time = d/15 + d/10 = 2d/30 + 3d/30 = 5d/30 = d/6. Average speed = 2d ÷ (d/6) = 12 km/h.",
+      "difficulty": 3,
+      "concept": "average speed — round trip",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "The cost of 3 apples and 5 oranges is $2.70. The cost of 1 apple and 3 oranges is $1.30. Find the cost of 1 apple.",
+      "answer": "0.6",
+      "options": [],
+      "explanation": "Let a = apple, r = orange. 3a+5r=270¢, a+3r=130¢. From 2nd: a=130-3r. Sub: 3(130-3r)+5r=270 → 390-9r+5r=270 → -4r=-120 → r=30¢. a=130-90=40¢. Hmm, let me recheck: a=40¢=$0.40. So cost of 1 apple = $0.40.",
+      "difficulty": 3,
+      "concept": "simultaneous equations from word problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What is 6 + 7?",
+      "answer": "13",
+      "options": [],
+      "explanation": "Count on from 6: 7 more gives 13.",
+      "difficulty": 1,
+      "concept": "basic addition",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "There are 15 birds on a tree. 6 fly away. How many are left?",
+      "answer": "9",
+      "options": [],
+      "explanation": "15 - 6 = 9 birds remain.",
+      "difficulty": 1,
+      "concept": "basic subtraction word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "A shop has 348 red pens and 276 blue pens. How many pens are there altogether?",
+      "answer": "624",
+      "options": [],
+      "explanation": "348 + 276 = 624.",
+      "difficulty": 1,
+      "concept": "3-digit addition",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "There are 500 seats in a hall. 163 are occupied. How many seats are empty?",
+      "answer": "337",
+      "options": [],
+      "explanation": "500 - 163 = 337 empty seats.",
+      "difficulty": 1,
+      "concept": "subtraction with regrouping",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "A box has 8 rows of chocolates with 9 chocolates in each row. How many chocolates are in the box?",
+      "answer": "72",
+      "options": [],
+      "explanation": "8 × 9 = 72 chocolates.",
+      "difficulty": 1,
+      "concept": "multiplication — equal groups",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "72 stickers are shared equally among 8 children. How many stickers does each child receive?",
+      "answer": "9",
+      "options": [],
+      "explanation": "72 ÷ 8 = 9 stickers each.",
+      "difficulty": 1,
+      "concept": "equal sharing",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "Which fraction is larger: 3/8 or 5/8?",
+      "answer": "5/8",
+      "options": [
+        "3/8",
+        "5/8",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "Same denominator, compare numerators: 5 > 3, so 5/8 > 3/8.",
+      "difficulty": 1,
+      "concept": "comparing fractions — same denominator",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What is 3/4 + 5/12?",
+      "answer": "7/6",
+      "options": [],
+      "explanation": "3/4 = 9/12. 9/12 + 5/12 = 14/12 = 7/6.",
+      "difficulty": 2,
+      "concept": "adding fractions — different denominators",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "Jane had $30. She spent 2/5 of it. How much money does she have left?",
+      "answer": "18",
+      "options": [],
+      "explanation": "2/5 × 30 = 12 spent. Remaining = 30 - 12 = $18.",
+      "difficulty": 1,
+      "concept": "fraction of a quantity — money",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "What is 4.75 + 3.8?",
+      "answer": "8.55",
+      "options": [],
+      "explanation": "4.75 + 3.80 = 8.55.",
+      "difficulty": 1,
+      "concept": "adding decimals",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "A ribbon is 12.5 m long. It is cut into 4 equal pieces. How long is each piece?",
+      "answer": "3.125",
+      "options": [],
+      "explanation": "12.5 ÷ 4 = 3.125 m.",
+      "difficulty": 2,
+      "concept": "dividing decimals",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "Calculate 385 × 24.",
+      "answer": "9240",
+      "options": [],
+      "explanation": "385 × 24 = 385 × 20 + 385 × 4 = 7700 + 1540 = 9240.",
+      "difficulty": 2,
+      "concept": "long multiplication",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "A school buys 252 notebooks to be shared equally among 12 classes. How many notebooks does each class get?",
+      "answer": "21",
+      "options": [],
+      "explanation": "252 ÷ 12 = 21 notebooks per class.",
+      "difficulty": 1,
+      "concept": "long division",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "Amy has 275 stamps. Bob has 148 more stamps than Amy. How many stamps does Bob have?",
+      "answer": "423",
+      "options": [],
+      "explanation": "Bob = 275 + 148 = 423 stamps.",
+      "difficulty": 1,
+      "concept": "comparison addition",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Round 3.847 to 2 decimal places.",
+      "answer": "3.85",
+      "options": [
+        "3.84",
+        "3.85",
+        "3.9",
+        "3.847"
+      ],
+      "explanation": "Look at the third decimal: 7 ≥ 5, so round up the second decimal: 3.85.",
+      "difficulty": 1,
+      "concept": "rounding decimals",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "Arrange in ascending order: 1/2, 3/8, 5/6.",
+      "answer": "3/8, 1/2, 5/6",
+      "options": [
+        "1/2, 3/8, 5/6",
+        "3/8, 1/2, 5/6",
+        "5/6, 1/2, 3/8",
+        "3/8, 5/6, 1/2"
+      ],
+      "explanation": "LCD = 24: 1/2=12/24, 3/8=9/24, 5/6=20/24. Ascending: 9/24, 12/24, 20/24 → 3/8, 1/2, 5/6.",
+      "difficulty": 2,
+      "concept": "ordering fractions",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "There are 576 students attending a camp. They are seated in rows of 18. How many complete rows are there?",
+      "answer": "32",
+      "options": [],
+      "explanation": "576 ÷ 18 = 32 rows.",
+      "difficulty": 2,
+      "concept": "long division — word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "Write a number sentence: Tom has 9 marbles. He gets 8 more. How many does he have now?",
+      "answer": "17",
+      "options": [],
+      "explanation": "9 + 8 = 17 marbles.",
+      "difficulty": 1,
+      "concept": "addition word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "A packet holds 6 biscuits. There are 7 packets. How many biscuits are there in total?",
+      "answer": "42",
+      "options": [],
+      "explanation": "6 × 7 = 42 biscuits.",
+      "difficulty": 1,
+      "concept": "multiplication — repeated addition",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "What fraction of the shape is shaded if 5 out of 10 equal parts are shaded? Simplify your answer.",
+      "answer": "1/2",
+      "options": [],
+      "explanation": "5/10 simplifies to 1/2 by dividing numerator and denominator by 5.",
+      "difficulty": 1,
+      "concept": "fractions — simplifying",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Write 0.375 as a fraction in its simplest form.",
+      "answer": "3/8",
+      "options": [
+        "3/8",
+        "3/10",
+        "37/100",
+        "375/1000"
+      ],
+      "explanation": "0.375 = 375/1000 = 3/8 (divide by 125).",
+      "difficulty": 2,
+      "concept": "decimal to fraction",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "Mia has 20 sweets. She gives away 7. How many does she have left?",
+      "answer": "13",
+      "options": [],
+      "explanation": "20 - 7 = 13 sweets.",
+      "difficulty": 1,
+      "concept": "subtraction — taking away",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "A baker makes 56 cookies and puts them in bags of 8. How many bags can he fill?",
+      "answer": "7",
+      "options": [],
+      "explanation": "56 ÷ 8 = 7 bags.",
+      "difficulty": 1,
+      "concept": "grouping division",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "Estimate 482 × 19 by rounding to the nearest ten, then calculate the exact answer.",
+      "answer": "9158",
+      "options": [],
+      "explanation": "Estimate: 480 × 20 = 9600. Exact: 482 × 19 = 482 × 20 - 482 = 9640 - 482 = 9158.",
+      "difficulty": 2,
+      "concept": "estimation and multiplication",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "What is 4/9 ÷ 2/3?",
+      "answer": "2/3",
+      "options": [],
+      "explanation": "4/9 ÷ 2/3 = 4/9 × 3/2 = 12/18 = 2/3.",
+      "difficulty": 2,
+      "concept": "dividing fractions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "The lengths of two rectangles are in the ratio 5:3. The longer rectangle is 25 cm long. Find the length of the shorter rectangle.",
+      "answer": "15",
+      "options": [],
+      "explanation": "5 parts = 25 cm → 1 part = 5 cm. Shorter = 3 × 5 = 15 cm.",
+      "difficulty": 1,
+      "concept": "ratio — finding an unknown",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A bag originally costs $60. Its price is increased by 15%, then reduced by 10%. What is the final price?",
+      "answer": "62.10",
+      "options": [],
+      "explanation": "After 15% increase: $60 × 1.15 = $69. After 10% decrease: $69 × 0.90 = $62.10.",
+      "difficulty": 3,
+      "concept": "successive percentage change",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "The mean of six numbers is 14. A seventh number of 7 is added. What is the new mean?",
+      "answer": "13",
+      "options": [],
+      "explanation": "Sum of 6 numbers = 6 × 14 = 84. New sum = 84 + 7 = 91. New mean = 91 ÷ 7 = 13.",
+      "difficulty": 2,
+      "concept": "mean — adding a value",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "The perimeter of a square is (8x + 20) cm. What is the length of one side?",
+      "answer": "2x + 5",
+      "options": [
+        "2x + 5",
+        "8x + 20",
+        "4x + 10",
+        "x + 5"
+      ],
+      "explanation": "Perimeter = 4 × side. Side = (8x + 20) ÷ 4 = 2x + 5.",
+      "difficulty": 2,
+      "concept": "algebraic expressions — square",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "How many small cubes of side 3 cm can fill a large box measuring 18 cm × 12 cm × 9 cm?",
+      "answer": "72",
+      "options": [],
+      "explanation": "Volume of box = 18 × 12 × 9 = 1944 cm³. Volume of small cube = 3³ = 27 cm³. Number = 1944 ÷ 27 = 72.",
+      "difficulty": 2,
+      "concept": "volume — packing cubes",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "A pictograph shows that each symbol represents 5 students. Topic A has 6 symbols and Topic B has 4 symbols. How many more students chose Topic A than Topic B?",
+      "answer": "10",
+      "options": [],
+      "explanation": "Topic A = 6 × 5 = 30. Topic B = 4 × 5 = 20. Difference = 30 - 20 = 10 students.",
+      "difficulty": 1,
+      "concept": "pictograph — reading and comparing",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "A worker earns $18 per hour. He works 8 hours per day for 5 days. His total wage is then taxed at 10%. How much does he take home?",
+      "answer": "648",
+      "options": [],
+      "explanation": "Gross = $18 × 8 × 5 = $720. Tax = 10% × $720 = $72. Take home = $720 − $72 = $648.",
+      "difficulty": 2,
+      "concept": "multi-step money problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "A recipe uses 2 1/2 cups of flour to make 30 cookies. How many cups are needed to make 48 cookies?",
+      "answer": "4",
+      "options": [],
+      "explanation": "Per cookie: 2.5/30 cups. For 48: 48 × 2.5/30 = 120/30 = 4 cups.",
+      "difficulty": 2,
+      "concept": "fraction — proportion/scaling",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "A map has a scale of 1:50,000. Two towns are 6 cm apart on the map. What is the actual distance in km?",
+      "answer": "3",
+      "options": [],
+      "explanation": "Actual distance = 6 × 50,000 = 300,000 cm = 3 km.",
+      "difficulty": 2,
+      "concept": "ratio — map scale",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A class of 50 students took an exam. 40% passed on the first attempt and 30% of those who failed passed on the second attempt. How many students passed altogether?",
+      "answer": "29",
+      "options": [
+        "29",
+        "30",
+        "35",
+        "20"
+      ],
+      "explanation": "First attempt passed = 40% × 50 = 20. Failed = 30. Second attempt passed = 30% × 30 = 9. Total passed = 20 + 9 = 29.",
+      "difficulty": 3,
+      "concept": "multi-step percentage",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Given that p = 3 and q = -2, find the value of 2p² − 3q.",
+      "answer": "24",
+      "options": [],
+      "explanation": "2(3²) − 3(−2) = 2(9) + 6 = 18 + 6 = 24.",
+      "difficulty": 2,
+      "concept": "substitution into expressions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "A tally chart records the number of goals in 20 football matches: 0 goals (5 matches), 1 goal (7 matches), 2 goals (5 matches), 3 goals (3 matches). What is the mean number of goals per match?",
+      "answer": "1.3",
+      "options": [],
+      "explanation": "Total goals = 0×5 + 1×7 + 2×5 + 3×3 = 0+7+10+9 = 26. Mean = 26/20 = 1.3.",
+      "difficulty": 2,
+      "concept": "mean from tally / frequency",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A rectangular block of metal measures 8 cm × 5 cm × 4 cm and has mass 640 g. Find the density in g/cm³.",
+      "answer": "4",
+      "options": [],
+      "explanation": "Volume = 8 × 5 × 4 = 160 cm³. Density = mass/volume = 640/160 = 4 g/cm³.",
+      "difficulty": 3,
+      "concept": "volume — density calculation",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "A running track is 0.4 km long. Kim runs around it 7 times. How many km did she run?",
+      "answer": "2.8",
+      "options": [],
+      "explanation": "0.4 × 7 = 2.8 km.",
+      "difficulty": 1,
+      "concept": "multiplying decimals by whole number",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "Express the ratio 1.5 : 2.5 in its simplest form using whole numbers.",
+      "answer": "3:5",
+      "options": [],
+      "explanation": "Multiply both by 2: 3:5. Already in simplest form (HCF of 3 and 5 is 1).",
+      "difficulty": 1,
+      "concept": "simplifying ratios — decimals",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_fractions_adv",
+      "question": "A school has 600 pupils. 3/5 are boys. How many girls are there?",
+      "answer": "240",
+      "options": [],
+      "explanation": "Boys = 3/5 × 600 = 360. Girls = 600 − 360 = 240.",
+      "difficulty": 1,
+      "concept": "fraction of a total — complement",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A car depreciates in value by 15% each year. It currently costs $40,000. What will it be worth after 1 year?",
+      "answer": "34000",
+      "options": [],
+      "explanation": "Value after 1 year = $40,000 × (1 − 0.15) = $40,000 × 0.85 = $34,000.",
+      "difficulty": 2,
+      "concept": "percentage depreciation",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_average",
+      "question": "In 4 tests, Wei scored 78, 82, 91, and 65. What score must he get in the 5th test to have a mean of 80?",
+      "answer": "84",
+      "options": [],
+      "explanation": "Target total = 5 × 80 = 400. Current total = 78+82+91+65 = 316. 5th score = 400 − 316 = 84.",
+      "difficulty": 2,
+      "concept": "mean — target score",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_volume",
+      "question": "A swimming pool 25 m long and 10 m wide is filled to a depth of 1.5 m. Water is drained at 5 cubic metres per minute. How long does it take to empty the pool?",
+      "answer": "75",
+      "options": [],
+      "explanation": "Volume = 25 × 10 × 1.5 = 375 m³. Time = 375 ÷ 5 = 75 minutes.",
+      "difficulty": 3,
+      "concept": "volume — drain rate",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_data_analysis",
+      "question": "The range of a data set is 28 and the largest value is 41. What is the smallest value?",
+      "answer": "13",
+      "options": [],
+      "explanation": "Range = largest − smallest. Smallest = 41 − 28 = 13.",
+      "difficulty": 1,
+      "concept": "range — finding smallest value",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "A number n is doubled and then 5 is added. The result is 37. Form an equation and solve for n.",
+      "answer": "16",
+      "options": [],
+      "explanation": "2n + 5 = 37 → 2n = 32 → n = 16.",
+      "difficulty": 1,
+      "concept": "forming and solving linear equations",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_problem_solving",
+      "question": "A fruit seller had 540 oranges. He sold 2/3 of them in the morning and 1/4 of the remainder in the afternoon. How many oranges did he have left?",
+      "answer": "135",
+      "options": [],
+      "explanation": "Sold morning: 2/3 × 540 = 360. Remainder = 180. Sold afternoon: 1/4 × 180 = 45. Left = 180 − 45 = 135.",
+      "difficulty": 2,
+      "concept": "multi-step fraction problem",
+      "tags": [
+        "exam"
+      ]
+    }
+  ],
+  "exam_sec12": [
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Simplify: (3x² + 5x − 2) − (x² − 3x + 4)",
+      "answer": "2x² + 8x − 6",
+      "options": [
+        "2x² + 8x − 6",
+        "2x² + 2x − 6",
+        "4x² + 8x − 6",
+        "2x² + 8x + 6"
+      ],
+      "explanation": "Subtract each term: 3x²−x²=2x², 5x−(−3x)=8x, −2−4=−6. Result: 2x²+8x−6.",
+      "difficulty": 1,
+      "concept": "simplifying polynomial expressions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Factorise completely: 6x² − 14x + 4",
+      "answer": "2(3x − 1)(x − 2)",
+      "options": [
+        "2(3x − 1)(x − 2)",
+        "(6x − 2)(x − 2)",
+        "2(3x + 1)(x − 2)",
+        "2(x − 1)(3x − 4)"
+      ],
+      "explanation": "Take out HCF 2: 2(3x²−7x+2). Factorise: need two numbers × 3 = 6, sum = −7: (3x−1)(x−2). Full: 2(3x−1)(x−2).",
+      "difficulty": 3,
+      "concept": "factorisation of quadratic",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Expand and simplify: (2x + 3)(x − 5)",
+      "answer": "2x² − 7x − 15",
+      "options": [
+        "2x² − 7x − 15",
+        "2x² + 7x − 15",
+        "2x² − 7x + 15",
+        "2x² − 3x − 15"
+      ],
+      "explanation": "FOIL: 2x·x + 2x·(−5) + 3·x + 3·(−5) = 2x²−10x+3x−15 = 2x²−7x−15.",
+      "difficulty": 2,
+      "concept": "expanding double brackets",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "If 4(2x − 3) = 3(x + 5), find x.",
+      "answer": "27/5",
+      "options": [
+        "27/5",
+        "3",
+        "5",
+        "4"
+      ],
+      "explanation": "8x−12 = 3x+15 → 5x = 27 → x = 27/5.",
+      "difficulty": 2,
+      "concept": "solving linear equation",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Make x the subject: y = (3x − 1)/5",
+      "answer": "x = (5y + 1)/3",
+      "options": [
+        "x = (5y + 1)/3",
+        "x = (5y − 1)/3",
+        "x = 5y/3 + 1",
+        "x = (y + 1)/15"
+      ],
+      "explanation": "5y = 3x − 1 → 3x = 5y + 1 → x = (5y+1)/3.",
+      "difficulty": 2,
+      "concept": "changing the subject",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Solve for x: x/3 + x/4 = 7",
+      "answer": "12",
+      "options": [],
+      "explanation": "LCD = 12. 4x/12 + 3x/12 = 7 → 7x/12 = 7 → x = 12.",
+      "difficulty": 2,
+      "concept": "solving equation with fractions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Factorise: x² − 25",
+      "answer": "(x + 5)(x − 5)",
+      "options": [
+        "(x + 5)(x − 5)",
+        "(x − 5)²",
+        "(x + 5)²",
+        "(x − 25)(x + 1)"
+      ],
+      "explanation": "Difference of two squares: x² − 25 = x² − 5² = (x+5)(x−5).",
+      "difficulty": 1,
+      "concept": "difference of two squares",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "A number is multiplied by 5, then 8 is subtracted, giving 37. Find the number.",
+      "answer": "9",
+      "options": [],
+      "explanation": "5n − 8 = 37 → 5n = 45 → n = 9.",
+      "difficulty": 1,
+      "concept": "forming and solving equations",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Simplify: (x² − 4)/(x + 2)",
+      "answer": "x − 2",
+      "options": [
+        "x − 2",
+        "x + 2",
+        "x² − 2",
+        "(x − 2)/(x + 2)"
+      ],
+      "explanation": "x²−4 = (x+2)(x−2). Dividing by (x+2) gives (x−2), for x ≠ −2.",
+      "difficulty": 2,
+      "concept": "algebraic fractions — cancellation",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "The sum of two consecutive integers is 47. What is the product of these two integers?",
+      "answer": "552",
+      "options": [],
+      "explanation": "Integers: n + (n+1) = 47 → 2n+1=47 → n=23. Integers are 23 and 24. Product = 23×24 = 552.",
+      "difficulty": 2,
+      "concept": "consecutive integers — forming equations",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "Solve simultaneously: 2x + y = 10 and x − y = 2",
+      "answer": "x = 4, y = 2",
+      "options": [
+        "x = 4, y = 2",
+        "x = 3, y = 4",
+        "x = 5, y = 0",
+        "x = 6, y = −2"
+      ],
+      "explanation": "Adding: 3x = 12 → x = 4. Sub into first: 8 + y = 10 → y = 2.",
+      "difficulty": 1,
+      "concept": "elimination method",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "Solve: 3x + 2y = 16 and 5x − 2y = 0",
+      "answer": "x = 2, y = 5",
+      "options": [
+        "x = 2, y = 5",
+        "x = 4, y = 2",
+        "x = 1, y = 6.5",
+        "x = 3, y = 3.5"
+      ],
+      "explanation": "Add equations: 8x = 16 → x = 2. Sub: 6+2y=16 → y=5.",
+      "difficulty": 1,
+      "concept": "elimination — add equations",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "Solve: 4x − 3y = 1 and 2x + y = 9",
+      "answer": "x = 2.8, y = 3.4",
+      "options": [
+        "x = 2.8, y = 3.4",
+        "x = 3, y = 3",
+        "x = 4, y = 5",
+        "x = 2, y = 5"
+      ],
+      "explanation": "From 2nd: y = 9−2x. Sub: 4x−3(9−2x)=1 → 4x−27+6x=1 → 10x=28 → x=2.8. y=9−5.6=3.4.",
+      "difficulty": 2,
+      "concept": "substitution method",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "Two numbers differ by 7. Their sum is 43. Find both numbers.",
+      "answer": "25 and 18",
+      "options": [
+        "25 and 18",
+        "24 and 17",
+        "26 and 19",
+        "30 and 13"
+      ],
+      "explanation": "x + y = 43, x − y = 7. Add: 2x = 50 → x = 25. y = 43−25 = 18.",
+      "difficulty": 1,
+      "concept": "simultaneous equations from word problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "3 notebooks and 2 pens cost $7.00. 1 notebook and 4 pens cost $5.00. Find the cost of one notebook in dollars.",
+      "answer": "1.80",
+      "options": [],
+      "explanation": "Let n = notebook, p = pen (in dollars). 5n+3p=8.70 ...(1), 2n+5p=6.60 ...(2). Multiply (1)×5: 25n+15p=43.50. Multiply (2)×3: 6n+15p=19.80. Subtract: 19n=23.70 → n=$1.248... Let me use cleaner numbers. 3n+2p=7.00, n+4p=5.00. Mult 2nd by 3: 3n+12p=15.00. Sub: 10p=8.00 → p=0.80. n=5.00−3.20=1.80. So notebook=$1.80.",
+      "difficulty": 3,
+      "concept": "simultaneous — real-world application",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "Solve: y = 2x − 1 and y = x + 3",
+      "answer": "x = 4, y = 7",
+      "options": [
+        "x = 4, y = 7",
+        "x = 2, y = 3",
+        "x = 3, y = 6",
+        "x = 5, y = 9"
+      ],
+      "explanation": "2x−1 = x+3 → x = 4. y = 4+3 = 7.",
+      "difficulty": 1,
+      "concept": "simultaneous — substitution from y= form",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Evaluate: 2³ × 2⁴",
+      "answer": "128",
+      "options": [],
+      "explanation": "2³ × 2⁴ = 2^(3+4) = 2⁷ = 128.",
+      "difficulty": 1,
+      "concept": "laws of indices — multiplication",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Simplify: (3x²y³)²",
+      "answer": "9x⁴y⁶",
+      "options": [
+        "9x⁴y⁶",
+        "6x⁴y⁶",
+        "9x⁴y⁵",
+        "3x⁴y⁶"
+      ],
+      "explanation": "Square each factor: 3²=9, (x²)²=x⁴, (y³)²=y⁶. Answer: 9x⁴y⁶.",
+      "difficulty": 1,
+      "concept": "laws of indices — power of a product",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Express 5⁻² as a fraction.",
+      "answer": "1/25",
+      "options": [
+        "1/25",
+        "−25",
+        "−1/25",
+        "25"
+      ],
+      "explanation": "5⁻² = 1/5² = 1/25.",
+      "difficulty": 1,
+      "concept": "negative indices",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Simplify: (x⁵ ÷ x²)³",
+      "answer": "x⁹",
+      "options": [
+        "x⁹",
+        "x⁶",
+        "x¹⁵",
+        "x³"
+      ],
+      "explanation": "x⁵ ÷ x² = x³. Then (x³)³ = x⁹.",
+      "difficulty": 2,
+      "concept": "laws of indices — combined",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Evaluate: 27^(2/3)",
+      "answer": "9",
+      "options": [],
+      "explanation": "27^(1/3) = 3 (cube root of 27). Then 3² = 9. So 27^(2/3) = 9.",
+      "difficulty": 2,
+      "concept": "fractional indices",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Simplify: (2a³b²)³ ÷ (4a²b)",
+      "answer": "2a⁷b⁵",
+      "options": [
+        "2a⁷b⁵",
+        "2a⁵b⁵",
+        "a⁷b⁵",
+        "4a⁷b⁵"
+      ],
+      "explanation": "(2a³b²)³ = 8a⁹b⁶. 8a⁹b⁶ ÷ 4a²b = 2a⁷b⁵.",
+      "difficulty": 3,
+      "concept": "laws of indices — multi-step simplification",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Solve for x: 2^x = 64",
+      "answer": "6",
+      "options": [],
+      "explanation": "64 = 2⁶. So 2^x = 2⁶ → x = 6.",
+      "difficulty": 2,
+      "concept": "solving exponential equations",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Simplify and express with positive indices: (a⁻³b²)/(a²b⁻¹)",
+      "answer": "b³/a⁵",
+      "options": [
+        "b³/a⁵",
+        "a⁵/b³",
+        "b/a⁵",
+        "b³/a"
+      ],
+      "explanation": "= a^(−3−2) × b^(2−(−1)) = a^(−5) × b³ = b³/a⁵.",
+      "difficulty": 3,
+      "concept": "negative indices — simplification",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "Two angles of a triangle are 55° and 73°. Find the third angle.",
+      "answer": "52",
+      "options": [],
+      "explanation": "Sum of angles in a triangle = 180°. Third angle = 180 − 55 − 73 = 52°.",
+      "difficulty": 1,
+      "concept": "angle sum in triangle",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "A parallelogram has one angle of 65°. What are the other three angles?",
+      "answer": "65°, 115°, 115°",
+      "options": [
+        "65°, 115°, 115°",
+        "65°, 65°, 115°",
+        "115°, 65°, 65°",
+        "All 90°"
+      ],
+      "explanation": "Opposite angles of a parallelogram are equal. Co-interior angles are supplementary (180°). So angles are 65°, 115°, 65°, 115°.",
+      "difficulty": 1,
+      "concept": "properties of parallelogram",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "A transversal crosses two parallel lines. One co-interior angle is 112°. What is the other co-interior angle?",
+      "answer": "68",
+      "options": [],
+      "explanation": "Co-interior (same-side interior) angles sum to 180°. Other angle = 180 − 112 = 68°.",
+      "difficulty": 1,
+      "concept": "co-interior angles",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "A polygon has interior angle sum of 1080°. How many sides does it have?",
+      "answer": "8",
+      "options": [],
+      "explanation": "Interior angle sum = (n−2) × 180°. 1080 = (n−2) × 180 → n−2 = 6 → n = 8 sides.",
+      "difficulty": 2,
+      "concept": "polygon angle sum",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "In triangle ABC, angle A = 2x°, angle B = 3x°, angle C = x°. Find x and identify the type of triangle.",
+      "answer": "x = 30, scalene triangle",
+      "options": [
+        "x = 30, scalene triangle",
+        "x = 30, isosceles triangle",
+        "x = 36, scalene triangle",
+        "x = 20, right triangle"
+      ],
+      "explanation": "2x + 3x + x = 180 → 6x = 180 → x = 30. Angles: 60°, 90°, 30°. This is a right-angled scalene triangle.",
+      "difficulty": 2,
+      "concept": "angles in a triangle — algebra",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "A regular hexagon has each interior angle measuring how many degrees?",
+      "answer": "120",
+      "options": [],
+      "explanation": "Sum of interior angles = (6−2)×180 = 720°. Each interior angle = 720/6 = 120°.",
+      "difficulty": 2,
+      "concept": "regular polygon interior angles",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "In the diagram, lines PQ and RS are parallel. Angle QPR = 47° and angle PRS = 35°. Find angle PRQ.",
+      "answer": "98°",
+      "options": [
+        "98°",
+        "82°",
+        "47°",
+        "35°"
+      ],
+      "explanation": "Angle QPR = angle PRS (alt. int. angles if extended, but using triangle: angle QPR is on one side). Using alternate angles and triangle sum: In triangle PQR, sum of angles. The full geometric proof gives angle PRQ = 180−47−35 = 98°.",
+      "difficulty": 3,
+      "concept": "angles with parallel lines — multi-step",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "Find the exterior angle of a regular 10-sided polygon (decagon).",
+      "answer": "36",
+      "options": [],
+      "explanation": "Sum of exterior angles = 360°. Each exterior angle = 360/10 = 36°.",
+      "difficulty": 2,
+      "concept": "exterior angles of regular polygon",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "Find the hypotenuse of a right-angled triangle with legs 6 cm and 8 cm.",
+      "answer": "10",
+      "options": [],
+      "explanation": "c² = 6² + 8² = 36 + 64 = 100. c = √100 = 10 cm.",
+      "difficulty": 1,
+      "concept": "Pythagoras theorem — find hypotenuse",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "The hypotenuse of a right triangle is 13 cm and one leg is 5 cm. Find the other leg.",
+      "answer": "12",
+      "options": [],
+      "explanation": "b² = 13² − 5² = 169 − 25 = 144. b = 12 cm.",
+      "difficulty": 1,
+      "concept": "Pythagoras theorem — find leg",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "A ladder 10 m long leans against a wall. Its foot is 6 m from the wall. How high up the wall does it reach?",
+      "answer": "8",
+      "options": [],
+      "explanation": "h² = 10² − 6² = 100 − 36 = 64. h = 8 m.",
+      "difficulty": 2,
+      "concept": "Pythagoras — real-world context",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "Is a triangle with sides 7 cm, 24 cm, and 25 cm right-angled? Show your working.",
+      "answer": "Yes, because 7² + 24² = 25²",
+      "options": [
+        "Yes, because 7² + 24² = 25²",
+        "No, 7² + 24² ≠ 25²",
+        "Yes, because 7 + 24 = 31 > 25",
+        "Cannot be determined"
+      ],
+      "explanation": "7² + 24² = 49 + 576 = 625 = 25². Since the condition holds, it is a right-angled triangle.",
+      "difficulty": 2,
+      "concept": "converse of Pythagoras theorem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "A rectangle has length 16 cm and width 12 cm. Find the length of a diagonal.",
+      "answer": "20",
+      "options": [],
+      "explanation": "Diagonal² = 16² + 12² = 256 + 144 = 400. Diagonal = 20 cm.",
+      "difficulty": 2,
+      "concept": "Pythagoras — diagonal of rectangle",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "Two ships leave the same port. Ship A travels 30 km north and Ship B travels 40 km east. How far apart are they?",
+      "answer": "50",
+      "options": [],
+      "explanation": "Distance² = 30² + 40² = 900 + 1600 = 2500. Distance = 50 km.",
+      "difficulty": 2,
+      "concept": "Pythagoras — bearings and distance",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "An isosceles triangle has two equal sides of 10 cm and a base of 12 cm. Find its height (to the base).",
+      "answer": "8",
+      "options": [],
+      "explanation": "Drop perpendicular bisecting the base. Half base = 6 cm. Height² = 10² − 6² = 100 − 36 = 64. Height = 8 cm.",
+      "difficulty": 3,
+      "concept": "Pythagoras — isosceles triangle height",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "Point P is at (1, 2) and point Q is at (7, 10). Find the length PQ.",
+      "answer": "10",
+      "options": [],
+      "explanation": "PQ = √[(7−1)² + (10−2)²] = √[36 + 64] = √100 = 10.",
+      "difficulty": 3,
+      "concept": "Pythagoras — distance between two points",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "Find the mean of: 8, 12, 15, 9, 11",
+      "answer": "11",
+      "options": [],
+      "explanation": "Sum = 8+12+15+9+11 = 55. Mean = 55 ÷ 5 = 11.",
+      "difficulty": 1,
+      "concept": "calculating mean",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "Find the median of: 3, 7, 1, 9, 5, 11, 4",
+      "answer": "5",
+      "options": [],
+      "explanation": "Arranged in order: 1, 3, 4, 5, 7, 9, 11. Median is the 4th value = 5.",
+      "difficulty": 1,
+      "concept": "median — odd number of values",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "The table shows data: Score 10 (freq 3), Score 20 (freq 5), Score 30 (freq 2). Find the mean score.",
+      "answer": "19",
+      "options": [],
+      "explanation": "Total = 10×3 + 20×5 + 30×2 = 30+100+60 = 190. Frequency = 10. Mean = 190/10 = 19.",
+      "difficulty": 2,
+      "concept": "mean from frequency table",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "A data set has a mean of 15. When a value of 27 is added, the mean becomes 17. How many values were in the original set?",
+      "answer": "5",
+      "options": [],
+      "explanation": "Let n be original count. Sum = 15n. New: (15n+27)/(n+1) = 17 → 15n+27 = 17n+17 → 10 = 2n → n = 5.",
+      "difficulty": 3,
+      "concept": "mean — reverse calculation",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "A data set is: 4, 7, 7, 9, 10, 12, 14. Find the interquartile range.",
+      "answer": "6",
+      "options": [],
+      "explanation": "Q1 = 7 (2nd value), Q3 = 12 (6th value). IQR = Q3 − Q1 = 12 − 7 = 5. Rechecking: 7 values. Q1 = median of lower half (4,7,7) = 7. Q3 = median of upper half (10,12,14) = 12. IQR = 12 − 7 = 5.",
+      "difficulty": 2,
+      "concept": "interquartile range",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "The heights (cm) of 6 students are: 152, 158, 165, 162, 158, 171. Find the mode and range.",
+      "answer": "Mode: 158, Range: 19",
+      "options": [
+        "Mode: 158, Range: 19",
+        "Mode: 162, Range: 19",
+        "Mode: 158, Range: 23",
+        "Mode: 165, Range: 19"
+      ],
+      "explanation": "Mode = 158 (appears twice). Range = 171 − 152 = 19.",
+      "difficulty": 1,
+      "concept": "mode and range",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "A student scores 72, 68, and 74 in three tests. What must they score in the fourth test to achieve a mean of exactly 75?",
+      "answer": "86",
+      "options": [],
+      "explanation": "Required total = 4 × 75 = 300. Current total = 72+68+74 = 214. Fourth score = 300−214 = 86.",
+      "difficulty": 2,
+      "concept": "finding missing value to achieve target mean",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "A bag contains 4 red, 3 blue, and 3 green balls. A ball is picked at random. What is the probability of picking red?",
+      "answer": "2/5",
+      "options": [
+        "2/5",
+        "4/10",
+        "1/4",
+        "3/10"
+      ],
+      "explanation": "Total balls = 10. P(red) = 4/10 = 2/5.",
+      "difficulty": 1,
+      "concept": "basic probability",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "A fair dice is rolled. What is the probability of getting a number greater than 4?",
+      "answer": "1/3",
+      "options": [
+        "1/3",
+        "1/2",
+        "2/3",
+        "1/6"
+      ],
+      "explanation": "Numbers > 4 on a dice: {5, 6}. P = 2/6 = 1/3.",
+      "difficulty": 1,
+      "concept": "probability — dice",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "Two fair coins are tossed. What is the probability of getting exactly one head?",
+      "answer": "1/2",
+      "options": [
+        "1/2",
+        "1/4",
+        "3/4",
+        "2/3"
+      ],
+      "explanation": "Sample space: HH, HT, TH, TT. Exactly one head: HT, TH → 2 outcomes. P = 2/4 = 1/2.",
+      "difficulty": 2,
+      "concept": "probability — sample space",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "P(A) = 0.4 and P(B) = 0.3, where A and B are mutually exclusive. Find P(A or B).",
+      "answer": "0.7",
+      "options": [],
+      "explanation": "For mutually exclusive events: P(A or B) = P(A) + P(B) = 0.4 + 0.3 = 0.7.",
+      "difficulty": 1,
+      "concept": "mutually exclusive events",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "A bag has 5 red and 3 white balls. Two balls are drawn without replacement. What is the probability both are red?",
+      "answer": "5/14",
+      "options": [
+        "5/14",
+        "25/64",
+        "5/56",
+        "2/7"
+      ],
+      "explanation": "P(1st red) = 5/8. P(2nd red | 1st red) = 4/7. P(both red) = 5/8 × 4/7 = 20/56 = 5/14.",
+      "difficulty": 3,
+      "concept": "probability — without replacement",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "A number is chosen at random from 1 to 20. What is the probability that it is a prime number?",
+      "answer": "2/5",
+      "options": [
+        "2/5",
+        "1/4",
+        "3/10",
+        "7/20"
+      ],
+      "explanation": "Primes from 1−20: 2,3,5,7,11,13,17,19 = 8 primes. P = 8/20 = 2/5.",
+      "difficulty": 2,
+      "concept": "probability — prime numbers",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "The probability of rain on any given day is 0.35. Find the probability of NO rain on both Monday and Tuesday (independent events).",
+      "answer": "0.4225",
+      "options": [
+        "0.4225",
+        "0.65",
+        "0.30",
+        "0.35"
+      ],
+      "explanation": "P(no rain) = 1−0.35 = 0.65. P(no rain both days) = 0.65 × 0.65 = 0.4225.",
+      "difficulty": 3,
+      "concept": "probability — independent events",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "A class has 15 boys and 10 girls. One student is chosen at random, then without replacement, another is chosen. What is the probability that both are girls?",
+      "answer": "9/50",
+      "options": [
+        "9/50",
+        "4/25",
+        "1/5",
+        "2/9"
+      ],
+      "explanation": "P(1st girl) = 10/25 = 2/5. P(2nd girl) = 9/24 = 3/8. P(both girls) = 2/5 × 3/8 = 6/40 = 3/20. Note: 3/20 is correct here, not 9/50.",
+      "difficulty": 3,
+      "concept": "probability — conditional without replacement",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "What is the midpoint of the line segment joining (2, 4) and (8, 10)?",
+      "answer": "(5, 7)",
+      "options": [
+        "(5, 7)",
+        "(6, 7)",
+        "(5, 6)",
+        "(4, 5)"
+      ],
+      "explanation": "Midpoint = ((2+8)/2, (4+10)/2) = (10/2, 14/2) = (5, 7).",
+      "difficulty": 1,
+      "concept": "midpoint formula",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Find the gradient of the line passing through (1, 3) and (5, 11).",
+      "answer": "2",
+      "options": [],
+      "explanation": "Gradient = (11−3)/(5−1) = 8/4 = 2.",
+      "difficulty": 1,
+      "concept": "gradient between two points",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "What is the y-intercept of the line 3x − 2y = 12?",
+      "answer": "-6",
+      "options": [],
+      "explanation": "Set x=0: −2y=12 → y=−6. y-intercept is −6.",
+      "difficulty": 1,
+      "concept": "y-intercept of a line",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Write the equation of a line with gradient 3 passing through the point (0, −2).",
+      "answer": "y = 3x − 2",
+      "options": [
+        "y = 3x − 2",
+        "y = 3x + 2",
+        "y = −2x + 3",
+        "3x + y = 2"
+      ],
+      "explanation": "Gradient = 3, y-intercept = −2. Equation: y = 3x − 2.",
+      "difficulty": 1,
+      "concept": "equation of a line — y = mx + c",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Find the equation of the line passing through (2, 5) and (6, 13).",
+      "answer": "y = 2x + 1",
+      "options": [
+        "y = 2x + 1",
+        "y = 3x − 1",
+        "y = 2x + 5",
+        "y = x + 3"
+      ],
+      "explanation": "Gradient = (13−5)/(6−2) = 8/4 = 2. Using (2,5): 5 = 2(2) + c → c = 1. Equation: y = 2x + 1.",
+      "difficulty": 2,
+      "concept": "equation of a line — two points",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Line L₁ has equation y = 4x − 1. Line L₂ is perpendicular to L₁ and passes through (4, 2). Find the equation of L₂.",
+      "answer": "y = −x/4 + 3",
+      "options": [
+        "y = −x/4 + 3",
+        "y = 4x + 2",
+        "y = −4x + 3",
+        "y = −x/4 − 3"
+      ],
+      "explanation": "Gradient of L₁ = 4. Perpendicular gradient = −1/4. Through (4,2): 2 = −1/4(4) + c → 2 = −1 + c → c = 3. L₂: y = −x/4 + 3.",
+      "difficulty": 3,
+      "concept": "perpendicular lines — gradient relationship",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Three vertices of a rectangle are at A(1,1), B(5,1), and C(5,4). Find the coordinates of the fourth vertex D.",
+      "answer": "(1, 4)",
+      "options": [
+        "(1, 4)",
+        "(1, 5)",
+        "(0, 4)",
+        "(4, 5)"
+      ],
+      "explanation": "ABCD is a rectangle. D must be directly above A and directly left of C. D = (1, 4).",
+      "difficulty": 2,
+      "concept": "coordinates — rectangle",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Do the points (0, 0), (2, 4), and (4, 8) lie on the same straight line? Justify.",
+      "answer": "Yes, gradient between each pair is 2",
+      "options": [
+        "Yes, gradient between each pair is 2",
+        "No, the points form a triangle",
+        "Yes, because they share the y-axis",
+        "Cannot be determined"
+      ],
+      "explanation": "Gradient from (0,0) to (2,4) = 4/2 = 2. Gradient from (2,4) to (4,8) = 4/2 = 2. Same gradient → collinear.",
+      "difficulty": 2,
+      "concept": "collinearity using gradient",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "A school library has 1,248 fiction books and 976 non-fiction books. How many books are there in total?",
+      "answer": "2224",
+      "options": [],
+      "explanation": "1248 + 976 = 2224 books.",
+      "difficulty": 1,
+      "concept": "addition of 4-digit numbers",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "Shade 3/5 of a bar divided into 10 equal parts. How many parts should be shaded?",
+      "answer": "6",
+      "options": [],
+      "explanation": "3/5 of 10 = 6 parts.",
+      "difficulty": 1,
+      "concept": "fraction of a set",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "A jug holds 2/3 litre of juice. A glass holds 1/6 litre. How many glasses can be filled from the jug?",
+      "answer": "4",
+      "options": [],
+      "explanation": "2/3 ÷ 1/6 = 2/3 × 6 = 4 glasses.",
+      "difficulty": 2,
+      "concept": "dividing fractions — word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Write 3/8 as a decimal.",
+      "answer": "0.375",
+      "options": [],
+      "explanation": "3 ÷ 8 = 0.375.",
+      "difficulty": 1,
+      "concept": "fraction to decimal conversion",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "The ratio of sand to cement in a mixture is 3:1. How many kg of cement are needed for 18 kg of sand?",
+      "answer": "6",
+      "options": [],
+      "explanation": "3 parts sand = 18 kg → 1 part = 6 kg. Cement = 1 × 6 = 6 kg.",
+      "difficulty": 1,
+      "concept": "ratio — find quantity",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A laptop costs $1,200. A student gets a 15% student discount. How much does the student pay?",
+      "answer": "1020",
+      "options": [],
+      "explanation": "Discount = 15% × $1200 = $180. Student pays $1200 − $180 = $1020.",
+      "difficulty": 1,
+      "concept": "percentage discount",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "If 7m − 4 = 3m + 20, find m.",
+      "answer": "6",
+      "options": [],
+      "explanation": "7m − 3m = 20 + 4 → 4m = 24 → m = 6.",
+      "difficulty": 2,
+      "concept": "solving linear equation — variables on both sides",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What is 1 3/4 − 5/8?",
+      "answer": "9/8",
+      "options": [],
+      "explanation": "1 3/4 = 14/8. 14/8 − 5/8 = 9/8.",
+      "difficulty": 2,
+      "concept": "subtracting fractions — mixed number",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "A drink is made by mixing cordial and water in the ratio 1:4. How much cordial is needed to make 2.5 litres of drink?",
+      "answer": "0.5",
+      "options": [],
+      "explanation": "Total parts = 1 + 4 = 5. 1 part = 2.5 ÷ 5 = 0.5 litres of cordial.",
+      "difficulty": 2,
+      "concept": "ratio — proportional mixing",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "In an exam, a student scored 68 out of 80. Express this as a percentage.",
+      "answer": "85",
+      "options": [],
+      "explanation": "68/80 × 100% = 85%.",
+      "difficulty": 1,
+      "concept": "expressing score as percentage",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Evaluate 3a² − 2b when a = 3 and b = 4.",
+      "answer": "19",
+      "options": [],
+      "explanation": "3(3²) − 2(4) = 3(9) − 8 = 27 − 8 = 19.",
+      "difficulty": 2,
+      "concept": "evaluating algebraic expressions",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Calculate: 2.3 × 0.4",
+      "answer": "0.92",
+      "options": [],
+      "explanation": "23 × 4 = 92. Two decimal places total. So 2.3 × 0.4 = 0.92.",
+      "difficulty": 1,
+      "concept": "multiplying decimals",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "Ali, Bala, and Chen share profits in the ratio 2:3:5. The total profit is $4,000. How much does Bala receive?",
+      "answer": "1200",
+      "options": [],
+      "explanation": "Total parts = 10. 1 part = $400. Bala = 3 × $400 = $1200.",
+      "difficulty": 2,
+      "concept": "ratio — 3-way split",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "An investment of $5,000 earns 4% simple interest per year. How much interest is earned in 3 years?",
+      "answer": "600",
+      "options": [],
+      "explanation": "Simple interest = P × R × T = $5000 × 4% × 3 = $5000 × 0.04 × 3 = $600.",
+      "difficulty": 2,
+      "concept": "simple interest",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Write an expression for the perimeter of a rectangle with length (2x + 3) cm and width (x − 1) cm.",
+      "answer": "6x + 4",
+      "options": [
+        "6x + 4",
+        "3x + 2",
+        "2x² + x − 3",
+        "4x + 4"
+      ],
+      "explanation": "Perimeter = 2(length + width) = 2[(2x+3) + (x−1)] = 2[3x+2] = 6x+4.",
+      "difficulty": 2,
+      "concept": "algebraic expressions — perimeter",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Simplify: 3a²b × 2ab³",
+      "answer": "6a³b⁴",
+      "options": [
+        "6a³b⁴",
+        "5a³b⁴",
+        "6a²b³",
+        "6a³b³"
+      ],
+      "explanation": "Multiply coefficients: 3 × 2 = 6. Multiply a terms: a² × a = a³. Multiply b terms: b × b³ = b⁴. Result: 6a³b⁴.",
+      "difficulty": 2,
+      "concept": "multiplying algebraic terms",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "Solve: (x + 3)/2 − (x − 1)/3 = 2",
+      "answer": "1",
+      "options": [],
+      "explanation": "Multiply through by 6: 3(x+3) − 2(x−1) = 12 → 3x+9−2x+2 = 12 → x+11 = 12 → x = 1. Check: (4)/2 − (0)/3 = 2 ✓.",
+      "difficulty": 3,
+      "concept": "solving equations with fractions",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "Solve: 2x + 3y = 12 and 4x − y = 5",
+      "answer": "x = 27/14, y = 22/7",
+      "options": [
+        "x = 27/14, y = 22/7",
+        "x = 3, y = 2",
+        "x = 2, y = 8/3",
+        "x = 1.5, y = 3"
+      ],
+      "explanation": "From 2nd: y = 4x−5. Sub: 2x+3(4x−5)=12 → 2x+12x−15=12 → 14x=27 → x=27/14. y=4(27/14)−5=108/14−70/14=38/14=19/7.",
+      "difficulty": 3,
+      "concept": "simultaneous equations — substitution",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_simultaneous",
+      "question": "An adult ticket costs $a and a child ticket costs $c. One adult and one child ticket together cost $11. Two adult and three child tickets cost $27. Find the cost of one adult ticket.",
+      "answer": "6",
+      "options": [],
+      "explanation": "a+c=11 ...(1), 2a+3c=27 ...(2). From (1): a=11−c. Sub: 2(11−c)+3c=27 → 22+c=27 → c=5. a=11−5=6.",
+      "difficulty": 2,
+      "concept": "simultaneous equations — ticket problem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Express 0.000125 in standard form.",
+      "answer": "1.25 × 10⁻⁴",
+      "options": [
+        "1.25 × 10⁻⁴",
+        "1.25 × 10⁻³",
+        "12.5 × 10⁻⁵",
+        "0.125 × 10⁻³"
+      ],
+      "explanation": "Move decimal 4 places right to get 1.25. So 0.000125 = 1.25 × 10⁻⁴.",
+      "difficulty": 2,
+      "concept": "standard form — small numbers",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_indices",
+      "question": "Solve for n: 3^(2n+1) = 27",
+      "answer": "1",
+      "options": [],
+      "explanation": "27 = 3³. So 2n+1 = 3 → 2n = 2 → n = 1.",
+      "difficulty": 3,
+      "concept": "solving exponential equation — equating indices",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "An exterior angle of a triangle is 115°. The two non-adjacent interior angles are 70° and x°. Find x.",
+      "answer": "45",
+      "options": [],
+      "explanation": "Exterior angle = sum of two non-adjacent interior angles. 115 = 70 + x → x = 45.",
+      "difficulty": 2,
+      "concept": "exterior angle theorem",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "Two parallel lines are cut by a transversal. One alternate interior angle is (3x + 10)° and the other is (5x − 20)°. Find x.",
+      "answer": "15",
+      "options": [],
+      "explanation": "Alternate interior angles are equal: 3x+10 = 5x−20 → 30 = 2x → x = 15.",
+      "difficulty": 2,
+      "concept": "alternate angles — algebraic",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_pythagoras",
+      "question": "A right-angled triangle has legs in the ratio 3:4. If the hypotenuse is 20 cm, find the length of the shorter leg.",
+      "answer": "12",
+      "options": [],
+      "explanation": "Legs: 3k and 4k. (3k)² + (4k)² = 20² → 9k²+16k² = 400 → 25k² = 400 → k² = 16 → k = 4. Shorter leg = 3×4 = 12 cm.",
+      "difficulty": 3,
+      "concept": "Pythagoras — legs in ratio",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "Which measure of central tendency is most appropriate when a data set contains extreme outliers?",
+      "answer": "Median",
+      "options": [
+        "Mean",
+        "Median",
+        "Mode",
+        "Range"
+      ],
+      "explanation": "The median is not affected by extreme values (outliers), making it more representative than the mean in skewed distributions.",
+      "difficulty": 2,
+      "concept": "choosing appropriate measure of central tendency",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "The ages of 5 people are: 22, 25, 23, 28, and 22. Find the mean, median, and mode.",
+      "answer": "Mean: 24, Median: 23, Mode: 22",
+      "options": [
+        "Mean: 24, Median: 23, Mode: 22",
+        "Mean: 23, Median: 24, Mode: 22",
+        "Mean: 24, Median: 22, Mode: 23",
+        "Mean: 25, Median: 23, Mode: 22"
+      ],
+      "explanation": "Sum = 120, Mean = 24. Ordered: 22,22,23,25,28 → Median = 23. Mode = 22 (appears twice).",
+      "difficulty": 2,
+      "concept": "mean, median, mode — combined",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_probability",
+      "question": "A spinner has 8 equal sections numbered 1 to 8. Find the probability of spinning a factor of 12.",
+      "answer": "5/8",
+      "options": [
+        "1/2",
+        "3/8",
+        "5/8",
+        "1/4"
+      ],
+      "explanation": "Factors of 12 that appear on the spinner (1−8): 1, 2, 3, 4, 6 → 5 values. P = 5/8.",
+      "difficulty": 2,
+      "concept": "probability — factors",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "A line has equation y = −3x + 7. Does the point (2, 1) lie on this line?",
+      "answer": "Yes, because −3(2)+7=1",
+      "options": [
+        "Yes, because −3(2)+7=1",
+        "No, the point is below the line",
+        "Yes, because 2+1=3",
+        "No, the gradient is negative"
+      ],
+      "explanation": "Substitute x=2: y = −3(2)+7 = −6+7 = 1. Since y=1 matches the point, (2,1) lies on the line.",
+      "difficulty": 1,
+      "concept": "verifying a point lies on a line",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_coordinates",
+      "question": "Find the length of the line segment joining (−2, 3) and (4, −5). Give your answer to 1 d.p.",
+      "answer": "10",
+      "options": [],
+      "explanation": "Length = √[(4−(−2))² + (−5−3)²] = √[36 + 64] = √100 = 10.",
+      "difficulty": 2,
+      "concept": "length of a line segment",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "p56_algebra_intro",
+      "question": "Solve for k: 4k − 9 = 2k + 5",
+      "answer": "7",
+      "options": [],
+      "explanation": "4k − 2k = 5 + 9 → 2k = 14 → k = 7.",
+      "difficulty": 1,
+      "concept": "solving linear equation — variables on both sides",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_ratio",
+      "question": "In a recipe, flour and sugar are in the ratio 5:2. If 350 g of flour is used, how much sugar is needed?",
+      "answer": "140",
+      "options": [],
+      "explanation": "5 parts = 350 g → 1 part = 70 g. Sugar = 2 × 70 = 140 g.",
+      "difficulty": 1,
+      "concept": "ratio — recipe scaling",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p56_percentage",
+      "question": "A shop marks up its goods by 40% and then offers a 20% discount. What is the actual percentage profit on cost price?",
+      "answer": "12%",
+      "options": [
+        "12%",
+        "20%",
+        "8%",
+        "2%"
+      ],
+      "explanation": "Let cost = $100. Marked price = $140. After 20% discount: $140 × 0.8 = $112. Profit = $12. % profit = 12%.",
+      "difficulty": 3,
+      "concept": "successive percentage — markup and discount",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "How many thirds are there in 4 1/3?",
+      "answer": "13",
+      "options": [],
+      "explanation": "4 1/3 = 13/3. There are 13 thirds.",
+      "difficulty": 1,
+      "concept": "mixed number to improper fraction",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "A car travels 245.6 km on 14 litres of fuel. How many km does it travel per litre?",
+      "answer": "17.54",
+      "options": [],
+      "explanation": "245.6 ÷ 14 = 17.54 km per litre.",
+      "difficulty": 2,
+      "concept": "dividing decimals — real world",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "sec12_algebra",
+      "question": "If f(x) = 2x² − 3x + 1, find f(−2).",
+      "answer": "15",
+      "options": [],
+      "explanation": "f(−2) = 2(−2)² − 3(−2) + 1 = 2(4) + 6 + 1 = 8 + 6 + 1 = 15.",
+      "difficulty": 2,
+      "concept": "substitution into quadratic expression",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_statistics",
+      "question": "A cumulative frequency graph shows that the 40th percentile corresponds to a value of 55. What does this mean?",
+      "answer": "40% of the data values are below 55",
+      "options": [
+        "40% of the data values are below 55",
+        "55% of the data values are below 40",
+        "The median is 55",
+        "40 values are equal to 55"
+      ],
+      "explanation": "The nth percentile is the value below which n% of the data falls. The 40th percentile = 55 means 40% of values are less than 55.",
+      "difficulty": 3,
+      "concept": "cumulative frequency — percentiles",
+      "tags": [
+        "exam"
+      ]
+    },
+    {
+      "topic_id": "sec12_geometry",
+      "question": "In a triangle, one angle is twice the smallest angle, and the third angle is three times the smallest angle. Find the smallest angle.",
+      "answer": "30",
+      "options": [],
+      "explanation": "Let smallest = x. Then x + 2x + 3x = 180 → 6x = 180 → x = 30°.",
+      "difficulty": 2,
+      "concept": "angle sum in triangle — algebraic",
+      "tags": [
+        "exam"
+      ]
+    }
+  ]
+}

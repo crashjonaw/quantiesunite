@@ -1,0 +1,406 @@
+{% extends "base.html" %}
+{% block title %}Dashboard — QuantiesUnite{% endblock %}
+
+{% block content %}
+
+<!-- ═══ Achievement toast (newly earned) ═══ -->
+{% if new_achievements %}
+<div id="achievement-toast" class="dash-toast">
+  {% for aid in new_achievements %}
+  {% set a = data.all_achievements.get(aid, {}) %}
+  <div class="dash-toast-item">
+    <span class="dash-toast-emoji">{{ a.emoji }}</span>
+    <span class="dash-toast-text"><strong>{{ a.name }}</strong> unlocked!</span>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<!-- ═══ Hero header with gradient ═══ -->
+<div class="dash-hero">
+  <div class="dash-hero-bg"></div>
+  <div class="dash-hero-content">
+    <div class="dash-hero-identity">
+      {% if current_avatar_url %}
+      <img src="{{ current_avatar_url }}" class="dash-hero-avatar dash-hero-avatar-img" alt=""/>
+      {% else %}
+      <div class="dash-hero-avatar">{{ user.username[0] | upper }}</div>
+      {% endif %}
+      <div>
+        <h1 class="dash-hero-title">{{ data.profile.display_name or user.username }}</h1>
+        <p class="dash-hero-sub">
+          {% if data.profile.bio %}{{ data.profile.bio }}{% else %}
+          {% if data.profile.school %}{{ data.profile.school }} · {% endif %}
+          Member since {{ user.created_at[:10] }}{% endif %}
+        </p>
+      </div>
+    </div>
+
+    <div class="dash-hero-stats">
+      <div class="dash-hero-stat dash-hero-stat-streak">
+        <div class="dash-hero-circle">
+          <span class="dash-hero-medal">🔥</span>
+          <span class="dash-hero-num">{{ data.streak.current_streak }}</span>
+        </div>
+        <span class="dash-hero-label">Day Streak</span>
+      </div>
+      <div class="dash-hero-stat">
+        <div class="dash-hero-circle">
+          <span class="dash-hero-medal">✅</span>
+          <span class="dash-hero-num">{{ data.topics_done }}<small>/{{ total_topics }}</small></span>
+        </div>
+        <span class="dash-hero-label">Topics Done</span>
+      </div>
+      <div class="dash-hero-stat">
+        <div class="dash-hero-circle">
+          <span class="dash-hero-medal">📝</span>
+          <span class="dash-hero-num">{{ data.avg_quiz_score }}%</span>
+        </div>
+        <span class="dash-hero-label">Avg Score</span>
+      </div>
+      <div class="dash-hero-stat">
+        <div class="dash-hero-circle">
+          <span class="dash-hero-medal">⏱️</span>
+          <span class="dash-hero-num">{{ data.study_hours }}<small>h</small>{{ data.study_minutes }}<small>m</small></span>
+        </div>
+        <span class="dash-hero-label">Study Time</span>
+      </div>
+      <div class="dash-hero-stat">
+        <div class="dash-hero-circle">
+          <span class="dash-hero-medal">📝</span>
+          <span class="dash-hero-num">{{ exams_passed }}<small>/{{ exams_total }}</small></span>
+        </div>
+        <span class="dash-hero-label">Exams Passed</span>
+      </div>
+    </div>
+
+    <!-- Overall progress bar in hero -->
+    <div class="dash-hero-progress">
+      <div class="dash-hero-progress-label">
+        <span>Overall Progress</span>
+        <span>{{ (data.topics_done / total_topics * 100) | int if total_topics else 0 }}%</span>
+      </div>
+      <div class="dash-hero-progress-bar">
+        <div class="dash-hero-progress-fill" style="width:{{ (data.topics_done / total_topics * 100) | int if total_topics else 0 }}%"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dash-page">
+
+  <!-- ═══ SECTION: Activity Heatmap ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">📅</div>
+      <div>
+        <h2 class="dash-section-title">Activity Heatmap</h2>
+        <p class="dash-section-desc">Your learning activity over the past year.</p>
+      </div>
+    </div>
+    <div class="dash-card">
+      <div class="heatmap-months">
+        <span></span>
+        <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span>
+        <span>May</span><span>Jun</span><span>Jul</span><span>Aug</span>
+        <span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+      </div>
+      <div class="heatmap-container">
+        <div class="heatmap-days">
+          <span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span><span>Sun</span>
+        </div>
+        <div class="heatmap-grid" id="heatmap-grid"></div>
+      </div>
+      <div class="heatmap-legend">
+        <span class="heatmap-legend-label">Less</span>
+        <span class="heatmap-cell" data-level="0"></span>
+        <span class="heatmap-cell" data-level="1"></span>
+        <span class="heatmap-cell" data-level="2"></span>
+        <span class="heatmap-cell" data-level="3"></span>
+        <span class="heatmap-cell" data-level="4"></span>
+        <span class="heatmap-legend-label">More</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Period Summaries ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">📊</div>
+      <div>
+        <h2 class="dash-section-title">Activity Summary</h2>
+        <p class="dash-section-desc">Snapshots of your recent learning.</p>
+      </div>
+    </div>
+    <div class="dash-summary-grid">
+      <div class="dash-card">
+        <h3 class="dash-card-heading">Last 7 Days</h3>
+        <div class="dash-mini-stats">
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_7d.active_days or 0 }}</span><span class="dash-mini-label">Active Days</span></div>
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_7d.quizzes_taken or 0 }}</span><span class="dash-mini-label">Quizzes</span></div>
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_7d.topics_completed or 0 }}</span><span class="dash-mini-label">Completed</span></div>
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_7d.total_points or 0 }}</span><span class="dash-mini-label">Points</span></div>
+        </div>
+      </div>
+      <div class="dash-card">
+        <h3 class="dash-card-heading">Last 30 Days</h3>
+        <div class="dash-mini-stats">
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_30d.active_days or 0 }}</span><span class="dash-mini-label">Active Days</span></div>
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_30d.quizzes_taken or 0 }}</span><span class="dash-mini-label">Quizzes</span></div>
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_30d.topics_completed or 0 }}</span><span class="dash-mini-label">Completed</span></div>
+          <div class="dash-mini-item"><span class="dash-mini-num">{{ data.summary_30d.total_points or 0 }}</span><span class="dash-mini-label">Points</span></div>
+        </div>
+      </div>
+      <div class="dash-card">
+        <h3 class="dash-card-heading">Weekly Activity</h3>
+        <div class="dash-chart-wrap"><canvas id="weekly-chart"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Quiz Performance ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">🎯</div>
+      <div>
+        <h2 class="dash-section-title">Quiz Performance</h2>
+        <p class="dash-section-desc">Your strongest and weakest quiz topics.</p>
+      </div>
+    </div>
+
+    {% if data.best_topics or data.worst_topics %}
+    <div class="dash-perf-grid">
+      <!-- Strongest -->
+      <div class="dash-card">
+        <h3 class="dash-card-heading" style="color: var(--success);">Strongest Topics</h3>
+        {% if data.best_topics %}
+        <div class="dash-topic-list">
+          {% for t in data.best_topics %}
+          <a href="/topic/{{ t.tid }}" class="dash-topic-item dash-topic-best">
+            <div class="dash-topic-left">
+              <span class="dash-topic-emoji">{{ t.emoji }}</span>
+              <span class="dash-topic-name">{{ t.name }}</span>
+            </div>
+            <div class="dash-topic-score">
+              <span class="dash-topic-pct">{{ t.pct }}%</span>
+              <span class="dash-topic-detail">{{ t.score }}/{{ t.total }}</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="dash-empty-note">No quiz data yet</p>
+        {% endif %}
+      </div>
+      <!-- Weakest -->
+      <div class="dash-card">
+        <h3 class="dash-card-heading" style="color: var(--danger);">Needs Improvement</h3>
+        {% if data.worst_topics %}
+        <div class="dash-topic-list">
+          {% for t in data.worst_topics %}
+          <a href="/topic/{{ t.tid }}/quiz" class="dash-topic-item dash-topic-weak">
+            <div class="dash-topic-left">
+              <span class="dash-topic-emoji">{{ t.emoji }}</span>
+              <span class="dash-topic-name">{{ t.name }}</span>
+            </div>
+            <div class="dash-topic-score">
+              <span class="dash-topic-pct">{{ t.pct }}%</span>
+              <span class="dash-topic-detail">{{ t.score }}/{{ t.total }}</span>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="dash-empty-note">No weak areas found</p>
+        {% endif %}
+      </div>
+    </div>
+    {% else %}
+    <div class="dash-empty">
+      <div class="dash-empty-icon-wrap"><span class="dash-empty-icon">🎯</span></div>
+      <p class="dash-empty-title">No quiz scores yet</p>
+      <p class="dash-empty-desc">Complete a quiz to see your performance analysis here!</p>
+      <a href="/curriculum" class="btn btn-primary btn-sm">Start Learning</a>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ═══ SECTION: Achievements ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">🏆</div>
+      <div>
+        <h2 class="dash-section-title">Achievements</h2>
+        <p class="dash-section-desc">{{ data.achievements | length }} of {{ data.all_achievements | length }} unlocked.</p>
+      </div>
+    </div>
+    <div class="dash-achievements-grid">
+      {% for aid, meta in data.all_achievements.items() %}
+      {% set earned = aid in (data.achievements | map(attribute='id') | list) %}
+      <div class="dash-ach {% if earned %}dash-ach-earned{% else %}dash-ach-locked{% endif %}"
+           title="{{ meta.desc }}{% if not earned %} (locked){% endif %}">
+        {% if earned %}<div class="dash-ach-shine"></div>{% endif %}
+        <span class="dash-ach-emoji">{{ meta.emoji if earned else '🔒' }}</span>
+        <span class="dash-ach-name">{{ meta.name }}</span>
+        <span class="dash-ach-desc">{{ meta.desc }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Recent Activity ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">📋</div>
+      <div>
+        <h2 class="dash-section-title">Recent Activity</h2>
+        <p class="dash-section-desc">Your latest learning events.</p>
+      </div>
+    </div>
+    {% if data.recent_activity %}
+    <div class="dash-activity-list">
+      {% for act in data.recent_activity %}
+      <div class="dash-act">
+        <div class="dash-act-icon">
+          {% if act.activity_type == 'login' %}👋
+          {% elif act.activity_type == 'quiz_attempt' %}📝
+          {% elif act.activity_type == 'quiz_pass' %}✅
+          {% elif act.activity_type == 'quiz_perfect' %}💯
+          {% elif act.activity_type == 'topic_complete' %}🏆
+          {% elif act.activity_type == 'lesson_view' %}📖
+          {% else %}📌{% endif %}
+        </div>
+        <div class="dash-act-body">
+          <span class="dash-act-type">
+            {% if act.activity_type == 'login' %}Logged in
+            {% elif act.activity_type == 'quiz_attempt' %}Quiz attempt
+            {% elif act.activity_type == 'quiz_pass' %}Quiz passed
+            {% elif act.activity_type == 'quiz_perfect' %}Perfect score
+            {% elif act.activity_type == 'topic_complete' %}Topic completed
+            {% elif act.activity_type == 'lesson_view' %}Studied lesson
+            {% else %}{{ act.activity_type }}{% endif %}
+          </span>
+          {% if act.topic_name %}
+          <span class="dash-act-topic">{{ act.topic_emoji }} {{ act.topic_name }}</span>
+          {% endif %}
+          {% if act.detail %}<span class="dash-act-detail">{{ act.detail }}</span>{% endif %}
+        </div>
+        <div class="dash-act-meta">
+          <span class="dash-act-points">+{{ act.points }}pt</span>
+          <span class="dash-act-date">{{ act.activity_date }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="dash-empty">
+      <div class="dash-empty-icon-wrap"><span class="dash-empty-icon">📋</span></div>
+      <p class="dash-empty-title">No activity yet</p>
+      <p class="dash-empty-desc">Start learning to see your activity here!</p>
+      <a href="/curriculum" class="btn btn-primary btn-sm">Start Learning</a>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- Quick links -->
+  <div class="dash-quicklinks">
+    <a href="{{ url_for('account.edit_profile') }}" class="btn btn-outline btn-sm">Edit Profile</a>
+    <a href="{{ url_for('account.account') }}" class="btn btn-outline btn-sm">Account Settings</a>
+    <a href="{{ url_for('learning.progress_page') }}" class="btn btn-outline btn-sm">Full Progress</a>
+    <a href="{{ url_for('learning.trophies_page') }}" class="btn btn-outline btn-sm">Trophies</a>
+    <a href="{{ url_for('learning.curriculum') }}" class="btn btn-outline btn-sm">Curriculum</a>
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+/* ── Heatmap rendering ─────────────────────────────────────────── */
+(function() {
+  var heatmapData = {{ data.heatmap | tojson }};
+  var grid = document.getElementById('heatmap-grid');
+  if (!grid) return;
+
+  var lookup = {};
+  heatmapData.forEach(function(d) { lookup[d.date] = d.count; });
+
+  var today = new Date();
+  var cells = [];
+  for (var i = 364; i >= 0; i--) {
+    var d = new Date(today);
+    d.setDate(d.getDate() - i);
+    var key = d.toISOString().slice(0, 10);
+    var count = lookup[key] || 0;
+    var level = count === 0 ? 0 : count <= 2 ? 1 : count <= 4 ? 2 : count <= 7 ? 3 : 4;
+    cells.push({date: key, count: count, level: level, day: d.getDay()});
+  }
+
+  var firstDay = cells[0].day;
+  var padDays = (firstDay === 0) ? 6 : firstDay - 1;
+  for (var p = 0; p < padDays; p++) {
+    cells.unshift({date: '', count: 0, level: -1, day: -1});
+  }
+
+  cells.forEach(function(c) {
+    var el = document.createElement('span');
+    el.className = 'heatmap-cell';
+    if (c.level >= 0) {
+      el.setAttribute('data-level', c.level);
+      el.title = c.date + ': ' + c.count + ' activities';
+    } else {
+      el.style.visibility = 'hidden';
+    }
+    grid.appendChild(el);
+  });
+})();
+
+/* ── Weekly chart ──────────────────────────────────────────────── */
+(function() {
+  var weeklyData = {{ data.weekly_activity | tojson }};
+  var ctx = document.getElementById('weekly-chart');
+  if (!ctx || !weeklyData.length) return;
+
+  var isDark = document.documentElement.getAttribute('data-theme') !== 'bright';
+  var gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
+  var textColor = isDark ? 'rgba(255,255,255,0.5)' : '#888';
+
+  new Chart(ctx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: weeklyData.map(function(w) { return w.week; }),
+      datasets: [{
+        label: 'Points',
+        data: weeklyData.map(function(w) { return w.points; }),
+        backgroundColor: 'rgba(65, 105, 225, 0.5)',
+        borderColor: '#4169E1',
+        borderWidth: 1,
+        borderRadius: 4,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { ticks: { color: textColor, font: {size: 10}, maxRotation: 45 }, grid: { display: false } },
+        y: { ticks: { color: textColor, font: {size: 10} }, grid: { color: gridColor }, beginAtZero: true }
+      }
+    }
+  });
+})();
+
+/* ── Achievement toast auto-dismiss ────────────────────────────── */
+(function() {
+  var toast = document.getElementById('achievement-toast');
+  if (toast) {
+    setTimeout(function() {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(-20px)';
+      setTimeout(function() { toast.remove(); }, 500);
+    }, 5000);
+  }
+})();
+</script>
+{% endblock %}

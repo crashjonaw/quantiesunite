@@ -1,0 +1,380 @@
+{% extends "base.html" %}
+{% block title %}Admin Dashboard — QuantiesUnite{% endblock %}
+
+{% block content %}
+
+<!-- ═══ Hero header ═══ -->
+<div class="adash-hero">
+  <div class="adash-hero-bg"></div>
+  <div class="adash-hero-content">
+    <div class="adash-hero-top">
+      <div>
+        <h1 class="adash-hero-title">Admin Dashboard</h1>
+        <p class="adash-hero-sub">Platform analytics, user activity & policy monitoring.</p>
+      </div>
+      <div class="adash-hero-actions">
+        <a href="{{ url_for('admin.admin_panel') }}" class="btn btn-outline btn-sm" style="color:#fff; border-color:rgba(255,255,255,0.3);">User Management</a>
+      </div>
+    </div>
+
+    <!-- Stat circles -->
+    <div class="adash-hero-stats">
+      <div class="adash-hstat">
+        <div class="adash-hcircle"><span class="adash-hicon">👥</span><span class="adash-hnum">{{ data.overview.total_users }}</span></div>
+        <span class="adash-hlabel">Total Users</span>
+      </div>
+      <div class="adash-hstat">
+        <div class="adash-hcircle"><span class="adash-hicon">📊</span><span class="adash-hnum">{{ data.overview.dau }}</span></div>
+        <span class="adash-hlabel">Active Today</span>
+      </div>
+      <div class="adash-hstat-divider"></div>
+      <div class="adash-hstat">
+        <div class="adash-hcircle"><span class="adash-hicon">📅</span><span class="adash-hnum">{{ data.overview.wau }}</span></div>
+        <span class="adash-hlabel">This Week</span>
+      </div>
+      <div class="adash-hstat">
+        <div class="adash-hcircle"><span class="adash-hicon">📈</span><span class="adash-hnum">{{ data.overview.mau }}</span></div>
+        <span class="adash-hlabel">This Month</span>
+      </div>
+      <div class="adash-hstat-divider"></div>
+      <div class="adash-hstat">
+        <div class="adash-hcircle adash-hcircle-warn"><span class="adash-hicon">🚨</span><span class="adash-hnum">{{ data.overview.open_violations }}</span></div>
+        <span class="adash-hlabel">Open Alerts</span>
+      </div>
+      <div class="adash-hstat">
+        <div class="adash-hcircle adash-hcircle-danger"><span class="adash-hicon">🔴</span><span class="adash-hnum">{{ data.overview.critical_violations }}</span></div>
+        <span class="adash-hlabel">Critical</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="adash-page">
+
+  <!-- ═══ ALERTS BANNER (if critical violations exist) ═══ -->
+  {% if data.overview.critical_violations > 0 %}
+  <div class="adash-alert-banner">
+    <span class="adash-alert-icon">🚨</span>
+    <div>
+      <strong>{{ data.overview.critical_violations }} critical alert{{ 's' if data.overview.critical_violations != 1 else '' }}</strong> requiring attention.
+      <span class="text-muted">Users may be scraping content or attempting brute-force access.</span>
+    </div>
+    <a href="#violations-section" class="btn btn-sm" style="background:rgba(255,255,255,0.15); color:#fff; border:1px solid rgba(255,255,255,0.3);">View Alerts</a>
+  </div>
+  {% endif %}
+
+  <!-- ═══ SECTION: Platform Overview ═══ -->
+  <section class="adash-section">
+    <div class="adash-section-header">
+      <div class="adash-section-icon">📊</div>
+      <div>
+        <h2 class="adash-section-title">Platform Overview</h2>
+        <p class="adash-section-desc">Content and engagement metrics.</p>
+      </div>
+    </div>
+    <div class="adash-overview-grid">
+      <div class="adash-card adash-metric">
+        <div class="adash-metric-num">{{ data.overview.total_completions }}</div>
+        <div class="adash-metric-label">Topic Completions</div>
+      </div>
+      <div class="adash-card adash-metric">
+        <div class="adash-metric-num">{{ data.overview.total_quiz_attempts }}</div>
+        <div class="adash-metric-label">Quiz Attempts</div>
+      </div>
+      <div class="adash-card adash-metric">
+        <div class="adash-metric-num">{{ data.overview.total_questions }}</div>
+        <div class="adash-metric-label">Questions in Bank</div>
+      </div>
+      <div class="adash-card adash-metric">
+        <div class="adash-metric-num">{{ total_topics }}</div>
+        <div class="adash-metric-label">Total Topics</div>
+      </div>
+      <div class="adash-card adash-metric">
+        <div class="adash-metric-num">{{ data.overview.users_this_week }}</div>
+        <div class="adash-metric-label">New Users (7d)</div>
+      </div>
+      <div class="adash-card adash-metric">
+        <div class="adash-metric-num">{{ data.overview.users_this_month }}</div>
+        <div class="adash-metric-label">New Users (30d)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Charts (User Growth + DAU) ═══ -->
+  <section class="adash-section">
+    <div class="adash-section-header">
+      <div class="adash-section-icon">📈</div>
+      <div>
+        <h2 class="adash-section-title">Growth & Engagement</h2>
+        <p class="adash-section-desc">User registrations and daily active users.</p>
+      </div>
+    </div>
+    <div class="adash-charts-grid">
+      <div class="adash-card">
+        <h3 class="adash-card-heading">User Registrations (90 days)</h3>
+        <div class="adash-chart-wrap"><canvas id="growth-chart"></canvas></div>
+      </div>
+      <div class="adash-card">
+        <h3 class="adash-card-heading">Daily Active Users (30 days)</h3>
+        <div class="adash-chart-wrap"><canvas id="dau-chart"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Flagged Users & Violations ═══ -->
+  <section class="adash-section" id="violations-section">
+    <div class="adash-section-header">
+      <div class="adash-section-icon">🚨</div>
+      <div>
+        <h2 class="adash-section-title">Policy Violations & Flagged Users</h2>
+        <p class="adash-section-desc">Users who triggered rate limits or suspicious activity detection.</p>
+      </div>
+    </div>
+
+    {% if data.flagged_users %}
+    <div class="adash-flagged-list">
+      {% for fu in data.flagged_users %}
+      <div class="adash-flagged {% if fu.critical_count > 0 %}adash-flagged-critical{% endif %}">
+        <div class="adash-flagged-left">
+          <div class="adash-flagged-avatar {% if fu.critical_count > 0 %}avatar-critical{% else %}avatar-warning{% endif %}">
+            {{ (fu.username or '?')[0] | upper }}
+          </div>
+          <div>
+            <div class="adash-flagged-name">
+              {{ fu.username or 'Unknown' }}
+              {% if fu.critical_count > 0 %}<span class="adash-severity-tag critical">CRITICAL</span>{% endif %}
+              {% if fu.warning_count > 0 %}<span class="adash-severity-tag warning">{{ fu.warning_count }} warning{{ 's' if fu.warning_count != 1 else '' }}</span>{% endif %}
+            </div>
+            <div class="adash-flagged-detail">
+              {{ fu.total_violations }} violation{{ 's' if fu.total_violations != 1 else '' }} · Last: {{ fu.last_violation[:16] }}
+            </div>
+            <div class="adash-flagged-types">
+              {% for label in fu.violation_labels %}
+              <span class="adash-type-badge">{{ label }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="adash-flagged-actions">
+          <a href="{{ url_for('admin.admin_user_detail', uid=fu.user_id) }}" class="btn btn-outline btn-sm">View User</a>
+          <button class="btn btn-sm" style="background:#15803d; color:#fff;"
+                  onclick="resolveAll({{ fu.user_id }})">Resolve All</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="adash-empty">
+      <div class="adash-empty-icon-wrap"><span class="adash-empty-icon">✅</span></div>
+      <p class="adash-empty-title">No flagged users</p>
+      <p class="adash-empty-desc">All clear — no policy violations detected.</p>
+    </div>
+    {% endif %}
+
+    <!-- Recent violations log -->
+    {% if data.recent_violations %}
+    <h3 class="adash-sub-heading">Recent Violation Log</h3>
+    <div class="adash-violation-log">
+      {% for v in data.recent_violations %}
+      <div class="adash-vlog-item {% if v.severity == 'critical' %}vlog-critical{% endif %}">
+        <div class="adash-vlog-icon">
+          {% set vt = data.violation_types.get(v.violation_type, {}) %}
+          {{ vt.get('icon', '⚠️') }}
+        </div>
+        <div class="adash-vlog-body">
+          <span class="adash-vlog-type">{{ vt.get('name', v.violation_type) }}</span>
+          <span class="adash-vlog-user">{{ v.username or 'uid:' ~ v.user_id }}</span>
+          {% if v.ip_address %}<span class="adash-vlog-ip">{{ v.ip_address }}</span>{% endif %}
+          <span class="adash-vlog-detail">{{ v.detail }}</span>
+        </div>
+        <div class="adash-vlog-meta">
+          <span class="adash-severity-tag {{ v.severity }}">{{ v.severity }}</span>
+          <span class="adash-vlog-date">{{ v.created_at[:16] }}</span>
+          <button class="adash-resolve-btn" onclick="resolveOne({{ v.id }})" title="Resolve">✓</button>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- Violation timeline chart -->
+    {% if data.violation_timeline %}
+    <div class="adash-card" style="margin-top:20px;">
+      <h3 class="adash-card-heading">Violations Over Time (30 days)</h3>
+      <div class="adash-chart-wrap"><canvas id="violation-chart"></canvas></div>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ═══ SECTION: Top Users ═══ -->
+  <section class="adash-section">
+    <div class="adash-section-header">
+      <div class="adash-section-icon">🏆</div>
+      <div>
+        <h2 class="adash-section-title">Most Active Users</h2>
+        <p class="adash-section-desc">Top users by activity points.</p>
+      </div>
+    </div>
+    {% if data.top_users %}
+    <div class="adash-table-wrap">
+      <table class="adash-table">
+        <thead>
+          <tr><th>#</th><th>User</th><th>Points</th><th>Events</th><th>Active Days</th><th>Last Active</th><th></th></tr>
+        </thead>
+        <tbody>
+          {% for u in data.top_users %}
+          <tr>
+            <td class="adash-rank">{{ loop.index }}</td>
+            <td><strong>{{ u.username }}</strong><br><span class="text-muted" style="font-size:0.75rem;">{{ u.email }}</span></td>
+            <td><strong>{{ u.total_points }}</strong></td>
+            <td>{{ u.total_events }}</td>
+            <td>{{ u.active_days }}</td>
+            <td>{{ u.last_active }}</td>
+            <td><a href="{{ url_for('admin.admin_user_detail', uid=u.user_id) }}" class="btn btn-outline btn-sm" style="font-size:0.7rem; padding:2px 8px;">View</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% else %}
+    <div class="adash-empty">
+      <div class="adash-empty-icon-wrap"><span class="adash-empty-icon">📊</span></div>
+      <p class="adash-empty-title">No activity data yet</p>
+      <p class="adash-empty-desc">User activity will appear here once users start learning.</p>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ═══ SECTION: Top Topics ═══ -->
+  <section class="adash-section">
+    <div class="adash-section-header">
+      <div class="adash-section-icon">📚</div>
+      <div>
+        <h2 class="adash-section-title">Most Popular Topics</h2>
+        <p class="adash-section-desc">Topics by completion count and quiz engagement.</p>
+      </div>
+    </div>
+    {% if data.top_topics %}
+    <div class="adash-table-wrap">
+      <table class="adash-table">
+        <thead>
+          <tr><th>Topic</th><th>Level</th><th>Completions</th><th>Users</th><th>Quiz Attempts</th><th>Avg Score</th></tr>
+        </thead>
+        <tbody>
+          {% for t in data.top_topics %}
+          <tr>
+            <td>{{ t.emoji }} <strong>{{ t.name }}</strong></td>
+            <td><span class="adash-level-tag">{{ t.level }}</span></td>
+            <td>{{ t.completions }}</td>
+            <td>{{ t.unique_users }}</td>
+            <td>{{ t.quiz_attempts }}</td>
+            <td>{% if t.avg_score is not none %}{{ t.avg_score }}%{% else %}—{% endif %}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+  </section>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+/* ── Chart helpers ─────────────────────────────────────────────── */
+var isDark = document.documentElement.getAttribute('data-theme') !== 'bright';
+var gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
+var textColor = isDark ? 'rgba(255,255,255,0.5)' : '#888';
+var chartOpts = {
+  responsive: true, maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { ticks: { color: textColor, font:{size:10}, maxRotation:45 }, grid: { display:false } },
+    y: { ticks: { color: textColor, font:{size:10} }, grid: { color: gridColor }, beginAtZero: true }
+  }
+};
+
+/* ── User Growth chart ─────────────────────────────────────────── */
+(function() {
+  var data = {{ data.user_growth | tojson }};
+  var ctx = document.getElementById('growth-chart');
+  if (!ctx || !data.length) return;
+  new Chart(ctx.getContext('2d'), {
+    type: 'line',
+    data: {
+      labels: data.map(function(d) { return d.reg_date; }),
+      datasets: [{
+        label: 'Registrations',
+        data: data.map(function(d) { return d.count; }),
+        borderColor: '#4169E1', backgroundColor: 'rgba(65,105,225,0.15)',
+        borderWidth: 2, fill: true, tension: 0.3, pointRadius: 2,
+      }]
+    },
+    options: chartOpts
+  });
+})();
+
+/* ── DAU chart ─────────────────────────────────────────────────── */
+(function() {
+  var data = {{ data.dau_chart | tojson }};
+  var ctx = document.getElementById('dau-chart');
+  if (!ctx || !data.length) return;
+  new Chart(ctx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: data.map(function(d) { return d.activity_date; }),
+      datasets: [{
+        label: 'Active Users',
+        data: data.map(function(d) { return d.dau; }),
+        backgroundColor: 'rgba(34,197,94,0.5)', borderColor: '#22c55e',
+        borderWidth: 1, borderRadius: 3,
+      }]
+    },
+    options: chartOpts
+  });
+})();
+
+/* ── Violation timeline chart ──────────────────────────────────── */
+(function() {
+  var data = {{ data.violation_timeline | tojson }};
+  var ctx = document.getElementById('violation-chart');
+  if (!ctx || !data.length) return;
+  new Chart(ctx.getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: data.map(function(d) { return d.vdate; }),
+      datasets: [
+        {
+          label: 'Warnings', data: data.map(function(d) { return d.count - d.critical; }),
+          backgroundColor: 'rgba(251,191,36,0.6)', borderColor: '#f59e0b',
+          borderWidth: 1, borderRadius: 3,
+        },
+        {
+          label: 'Critical', data: data.map(function(d) { return d.critical; }),
+          backgroundColor: 'rgba(239,68,68,0.6)', borderColor: '#ef4444',
+          borderWidth: 1, borderRadius: 3,
+        },
+      ]
+    },
+    options: Object.assign({}, chartOpts, {
+      plugins: { legend: { display: true, labels: { color: textColor, font:{size:11} } } },
+      scales: Object.assign({}, chartOpts.scales, { x: Object.assign({}, chartOpts.scales.x, { stacked: true }), y: Object.assign({}, chartOpts.scales.y, { stacked: true }) })
+    })
+  });
+})();
+
+/* ── Resolve actions ───────────────────────────────────────────── */
+function resolveOne(vid) {
+  fetch('/api/admin/violation/' + vid + '/resolve', {method:'POST'})
+    .then(function() { location.reload(); });
+}
+function resolveAll(uid) {
+  if (confirm('Resolve all violations for this user?')) {
+    fetch('/api/admin/user/' + uid + '/resolve-all', {method:'POST'})
+      .then(function() { location.reload(); });
+  }
+}
+</script>
+{% endblock %}

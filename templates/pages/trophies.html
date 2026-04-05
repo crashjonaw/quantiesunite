@@ -1,0 +1,211 @@
+{% extends "base.html" %}
+{% block title %}Trophies — QuantiesUnite{% endblock %}
+
+{% block content %}
+
+<!-- ═══ Hero header with gradient ═══ -->
+<div class="trophy-hero">
+  <div class="trophy-hero-bg"></div>
+  <div class="trophy-hero-content">
+    <h1 class="trophy-hero-title">Trophy Cabinet</h1>
+    <p class="trophy-hero-sub">Your achievements, medals, and milestones — all in one place.</p>
+    <div class="trophy-hero-stats">
+      <div class="trophy-stat trophy-stat-gold">
+        <div class="trophy-stat-circle">
+          <span class="trophy-stat-medal">&#127942;</span>
+          <span class="trophy-stat-num">{{ gold_count }}</span>
+        </div>
+        <span class="trophy-stat-label">Gold</span>
+      </div>
+      <div class="trophy-stat trophy-stat-silver">
+        <div class="trophy-stat-circle">
+          <span class="trophy-stat-medal">&#129352;</span>
+          <span class="trophy-stat-num">{{ silver_count }}</span>
+        </div>
+        <span class="trophy-stat-label">Silver</span>
+      </div>
+      <div class="trophy-stat trophy-stat-bronze">
+        <div class="trophy-stat-circle">
+          <span class="trophy-stat-medal">&#129353;</span>
+          <span class="trophy-stat-num">{{ bronze_count }}</span>
+        </div>
+        <span class="trophy-stat-label">Bronze</span>
+      </div>
+      <div class="trophy-stat trophy-stat-levels">
+        <div class="trophy-stat-circle">
+          <span class="trophy-stat-medal">&#127942;</span>
+          <span class="trophy-stat-num">{{ levels_earned }}<small>/{{ level_trophies|length }}</small></span>
+        </div>
+        <span class="trophy-stat-label">Levels Mastered</span>
+      </div>
+      <div class="trophy-stat trophy-stat-exams">
+        <div class="trophy-stat-circle">
+          <span class="trophy-stat-medal">📝</span>
+          <span class="trophy-stat-num">{{ exams_passed }}<small>/{{ exam_trophies|length }}</small></span>
+        </div>
+        <span class="trophy-stat-label">Exams Passed</span>
+      </div>
+      <div class="trophy-stat trophy-stat-milestones">
+        <div class="trophy-stat-circle">
+          <span class="trophy-stat-medal">&#11088;</span>
+          <span class="trophy-stat-num">{{ milestones_earned }}<small>/{{ milestones|length }}</small></span>
+        </div>
+        <span class="trophy-stat-label">Milestones</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trophy-page">
+
+  <!-- ═══ SECTION 1: Quiz Medals ═══ -->
+  <section class="trophy-section">
+    <div class="trophy-section-header">
+      <div class="trophy-section-icon">&#127942;</div>
+      <div>
+        <h2 class="trophy-section-title">Quiz Medals</h2>
+        <p class="trophy-section-desc">Score 100% for Gold, 90%+ for Silver, 70%+ for Bronze.</p>
+      </div>
+    </div>
+    {% if quiz_medals %}
+    <div class="trophy-grid">
+      {% for m in quiz_medals %}
+      <a href="/topic/{{ m.tid }}/quiz" class="trophy-card trophy-earned trophy-{{ m.medal }}">
+        <div class="trophy-card-shine"></div>
+        <div class="trophy-medal-badge">
+          {% if m.medal == 'gold' %}&#127942;{% elif m.medal == 'silver' %}&#129352;{% else %}&#129353;{% endif %}
+        </div>
+        <div class="trophy-card-inner">
+          <span class="trophy-card-emoji">{{ m.emoji }}</span>
+          <span class="trophy-card-name">{{ m.name }}</span>
+          <div class="trophy-card-score">
+            <span class="trophy-score-num">{{ m.pct }}%</span>
+            <span class="trophy-score-detail">{{ m.score }}/{{ m.total }}</span>
+          </div>
+          <span class="trophy-card-level-tag">{{ m.level }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <div class="trophy-empty">
+      <div class="trophy-empty-icon-wrap">
+        <span class="trophy-empty-icon">&#127942;</span>
+      </div>
+      <p class="trophy-empty-title">No medals yet</p>
+      <p class="trophy-empty-desc">Complete a quiz with 70%+ to earn your first medal!</p>
+      <a href="/curriculum" class="btn btn-primary btn-sm">Start Learning</a>
+    </div>
+    {% endif %}
+  </section>
+
+  <!-- ═══ SECTION 2: Level Mastery ═══ -->
+  <section class="trophy-section">
+    <div class="trophy-section-header">
+      <div class="trophy-section-icon">&#127895;</div>
+      <div>
+        <h2 class="trophy-section-title">Level Mastery</h2>
+        <p class="trophy-section-desc">Complete every module in a level to earn its mastery trophy.</p>
+      </div>
+    </div>
+    <div class="trophy-mastery-grid">
+      {% for lt in level_trophies %}
+      <div class="trophy-mastery-card {% if lt.earned %}trophy-mastery-earned{% else %}trophy-mastery-locked{% endif %}">
+        {% if lt.earned %}<div class="trophy-card-shine"></div>{% endif %}
+        <div class="trophy-mastery-top">
+          <span class="trophy-mastery-emoji">{{ lt.emoji }}</span>
+          {% if lt.earned %}
+          <span class="trophy-mastery-check">&#10003;</span>
+          {% endif %}
+        </div>
+        <h3 class="trophy-mastery-name">{{ lt.name }}</h3>
+        <span class="trophy-mastery-level">{{ lt.level }}</span>
+        <div class="trophy-mastery-progress">
+          <div class="trophy-mastery-bar">
+            <div class="trophy-mastery-bar-fill {% if lt.earned %}bar-complete{% endif %}" style="width:{{ (lt.done / lt.total * 100)|round if lt.total else 0 }}%"></div>
+          </div>
+          <span class="trophy-mastery-count">{{ lt.done }}/{{ lt.total }}</span>
+        </div>
+        {% if lt.earned %}
+        <div class="trophy-mastery-earned-tag">Mastered</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Exam Trophies ═══ -->
+  <section class="trophy-section">
+    <div class="trophy-section-header">
+      <div class="trophy-section-icon">📝</div>
+      <div>
+        <h2 class="trophy-section-title">Exam Trophies</h2>
+        <p class="trophy-section-desc">Pass each grade exam to earn these trophies and unlock the next level.</p>
+      </div>
+    </div>
+    <div class="trophy-mastery-grid">
+      {% for et in exam_trophies %}
+      <div class="trophy-mastery-card {% if et.passed %}trophy-mastery-earned{% else %}trophy-mastery-locked{% endif %}">
+        {% if et.passed %}<div class="trophy-card-shine"></div>{% endif %}
+        <div class="trophy-mastery-top">
+          <span class="trophy-mastery-emoji">{{ et.emoji }}</span>
+          {% if et.passed %}
+          <span class="trophy-mastery-check">&#10003;</span>
+          {% endif %}
+        </div>
+        <h3 class="trophy-mastery-name">{{ et.name }}</h3>
+        {% if et.passed and et.best_score is not none %}
+        <span class="trophy-mastery-level">{{ et.best_score }}/{{ et.total }} ({{ et.pct }}%)</span>
+        {% elif et.attempts > 0 %}
+        <span class="trophy-mastery-level">Best: {{ et.best_score }}/{{ et.total }} · {{ et.attempts }} attempt{{ 's' if et.attempts != 1 else '' }}</span>
+        {% else %}
+        <span class="trophy-mastery-level">Not attempted</span>
+        {% endif %}
+        {% if et.passed %}
+        <div class="trophy-mastery-earned-tag">Passed</div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 3: Milestones ═══ -->
+  <section class="trophy-section">
+    <div class="trophy-section-header">
+      <div class="trophy-section-icon">&#11088;</div>
+      <div>
+        <h2 class="trophy-section-title">Milestones</h2>
+        <p class="trophy-section-desc">Hit these milestones as you progress through your learning journey.</p>
+      </div>
+    </div>
+    <div class="trophy-milestone-list">
+      {% for m in milestones %}
+      <div class="trophy-milestone {% if m.earned %}trophy-milestone-done{% endif %}">
+        {% if m.earned %}<div class="trophy-card-shine"></div>{% endif %}
+        <div class="trophy-milestone-left">
+          <span class="trophy-milestone-emoji">{{ m.emoji }}</span>
+        </div>
+        <div class="trophy-milestone-center">
+          <span class="trophy-milestone-name">{{ m.name }}</span>
+          <span class="trophy-milestone-desc">{{ m.desc }}</span>
+          <div class="trophy-milestone-bar-wrap">
+            <div class="trophy-milestone-bar">
+              <div class="trophy-milestone-bar-fill {% if m.earned %}bar-complete{% endif %}" style="width:{{ (m.progress / m.threshold * 100)|round if m.threshold else 0 }}%"></div>
+            </div>
+            <span class="trophy-milestone-count">{{ m.progress }}/{{ m.threshold }}</span>
+          </div>
+        </div>
+        <div class="trophy-milestone-right">
+          {% if m.earned %}
+          <span class="trophy-milestone-check">&#10003;</span>
+          {% else %}
+          <span class="trophy-milestone-pct">{{ ((m.progress / m.threshold * 100)|round)|int if m.threshold else 0 }}%</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+</div>
+{% endblock %}

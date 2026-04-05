@@ -1,16 +1,22 @@
 """
 QuantiesUnite — Lesson Content & Quiz Data
 Loads authored content from modules/<topic_id>/ subfolders.
-Falls back to a generic placeholder for topics without authored lessons.
+Quiz questions are served from the SQLite question bank with random sampling.
+Falls back to legacy quiz.py for modules not yet migrated.
 """
 
+import database as db
 from modules import LESSONS
+
+# Default quiz size per attempt
+QUIZ_SIZE = 10
 
 
 # ── Generic lesson fallback ──────────────────────────────────────────────────
 
 def _generic_lesson(tid, t):
     return {
+      "type": "flat",
       "sections": [
         {"title": f"Introduction to {t['name']}",
          "body": f"""<p class='intro-text'>{t['tagline']}</p>
@@ -20,6 +26,7 @@ def _generic_lesson(tid, t):
          The quiz below tests the core concepts you should master.</div>""",
          "check": None},
       ],
+      "concepts": [],
       "quiz": [
         {"question": f"What level is '{t['name']}' part of?", "answer": t["level"].lower(),
          "explanation": f"'{t['name']}' belongs to the {t['level']} level."},
@@ -39,8 +46,30 @@ def get_lesson_content(tid):
     return None
 
 
-def get_quiz(tid):
+def get_quiz(tid, n=QUIZ_SIZE, must_include_ids=None):
+    """Get quiz questions for a topic. Samples from DB question bank.
+    must_include_ids: question IDs to always include (e.g. previously wrong).
+    Falls back to legacy quiz.py if no DB questions exist."""
+    # Try DB first
+    q_count = db.get_question_count(tid)
+    if q_count > 0:
+        return db.sample_quiz(tid, n=n, must_include_ids=must_include_ids)
+
+    # Fallback to legacy in-memory quiz
     content = get_lesson_content(tid)
     if content:
-        return content.get("quiz", [])
+        legacy = content.get("quiz", [])
+        # Add synthetic IDs for legacy questions
+        return [{"id": -(i+1), **q} for i, q in enumerate(legacy)]
     return []
+
+
+def get_concept(tid, concept_id):
+    """Return a single concept dict from a concept-structured module."""
+    content = get_lesson_content(tid)
+    if not content or content.get("type") != "concepts":
+        return None
+    for c in content.get("concepts", []):
+        if c["id"] == concept_id:
+            return c
+    return None

@@ -36,7 +36,7 @@ QUIZ = [
         "id": "q_independence_coin_flips",
         "type": "true_false",
         "question": "If you flip a fair coin 100 times and get 60 heads, the probability of heads on the 101st flip is less than 0.5",
-        "correct": false,
+        "correct": False,
         "explanation": "Each flip is independent. Past results do not affect future probabilities. P(H on flip 101) = 0.5 always."
     },
     {
@@ -96,7 +96,7 @@ QUIZ = [
         "id": "q_pairwise_independence",
         "type": "true_false",
         "question": "If A and B are independent, and B and C are independent, then A and C must be independent",
-        "correct": false,
+        "correct": False,
         "explanation": "Independence is not transitive. Three events can be pairwise independent without being mutually independent."
     }
 ]

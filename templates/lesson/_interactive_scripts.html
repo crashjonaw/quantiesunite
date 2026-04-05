@@ -1,0 +1,228 @@
+{# Shared interactive lesson scripts - pagination, charts, MCQ, checks #}
+{# Expects: concept (with concept.sections) #}
+<script>
+const TOTAL_PAGES = {{ concept.sections | length if concept.sections else 0 }};
+let currentPage = 0;
+
+function goToPage(p) {
+  if (p < 0 || p >= TOTAL_PAGES) return;
+  var cur = document.getElementById('page-' + currentPage);
+  if (cur) cur.style.display = 'none';
+  var target = document.getElementById('page-' + p);
+  if (target) target.style.display = 'block';
+  currentPage = p;
+
+  var fill = document.getElementById('progress-fill');
+  if (fill) fill.style.width = ((p + 1) / TOTAL_PAGES * 100) + '%';
+
+  document.querySelectorAll('.page-step').forEach(function(el) {
+    var pg = parseInt(el.dataset.page);
+    el.classList.toggle('active', pg === p);
+    el.classList.toggle('visited', pg < p);
+  });
+
+  var endSec = document.getElementById('unlocks-end');
+  if (endSec) endSec.style.display = (p === TOTAL_PAGES - 1) ? 'block' : 'none';
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+
+  if (typeof renderMathInElement !== 'undefined') {
+    renderMathInElement(target, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false}
+      ],
+      throwOnError: false
+    });
+  }
+  initChartsOnPage(target);
+  initInteractiveElements(target);
+}
+
+function getChartThemeColors() {
+  var isDark = document.documentElement.getAttribute('data-theme') !== 'bright';
+  return {
+    label: isDark ? '#e6edf3' : '#333',
+    grid: isDark ? '#30363d' : '#e5e7eb'
+  };
+}
+
+function applyChartThemeColors(chart) {
+  var colors = getChartThemeColors();
+  if (chart.options.plugins && chart.options.plugins.legend && chart.options.plugins.legend.labels) {
+    chart.options.plugins.legend.labels.color = colors.label;
+  }
+  if (chart.options.plugins && chart.options.plugins.title) {
+    chart.options.plugins.title.color = colors.label;
+  }
+  ['x','y'].forEach(function(axis) {
+    if (chart.options.scales && chart.options.scales[axis]) {
+      if (chart.options.scales[axis].ticks) chart.options.scales[axis].ticks.color = colors.label;
+      if (chart.options.scales[axis].title) chart.options.scales[axis].title.color = colors.label;
+      if (chart.options.scales[axis].grid) chart.options.scales[axis].grid.color = colors.grid;
+    }
+  });
+  chart.update();
+}
+
+function updateAllChartsTheme() {
+  if (typeof Chart === 'undefined') return;
+  document.querySelectorAll('canvas[data-chart][data-initialized]').forEach(function(canvas) {
+    var chart = Chart.getChart(canvas);
+    if (chart) applyChartThemeColors(chart);
+  });
+}
+
+function initChartsOnPage(container) {
+  if (typeof Chart === 'undefined' || !container) return;
+  var colors = getChartThemeColors();
+  container.querySelectorAll('canvas[data-chart]').forEach(function(canvas) {
+    if (canvas.dataset.initialized) return;
+    try {
+      var cfg = JSON.parse(canvas.dataset.chart);
+      cfg.options = cfg.options || {};
+      cfg.options.responsive = true;
+      cfg.options.plugins = cfg.options.plugins || {};
+      cfg.options.plugins.legend = cfg.options.plugins.legend || {};
+      cfg.options.plugins.legend.labels = cfg.options.plugins.legend.labels || {};
+      cfg.options.plugins.legend.labels.color = colors.label;
+      if (cfg.options.plugins.title) {
+        cfg.options.plugins.title.color = colors.label;
+      }
+
+      cfg.options.scales = cfg.options.scales || {};
+      ['x','y'].forEach(function(axis) {
+        cfg.options.scales[axis] = cfg.options.scales[axis] || {};
+        cfg.options.scales[axis].ticks = cfg.options.scales[axis].ticks || {};
+        cfg.options.scales[axis].ticks.color = colors.label;
+        cfg.options.scales[axis].title = cfg.options.scales[axis].title || {};
+        cfg.options.scales[axis].title.color = colors.label;
+        cfg.options.scales[axis].grid = cfg.options.scales[axis].grid || {};
+        cfg.options.scales[axis].grid.color = colors.grid;
+      });
+      new Chart(canvas, cfg);
+      canvas.dataset.initialized = 'true';
+    } catch(e) { console.warn('Chart init error:', canvas.id, e); }
+  });
+}
+
+function initInteractiveElements(container) {
+  if (!container) return;
+
+  container.querySelectorAll('.interactive-slider').forEach(function(slider) {
+    if (slider.dataset.initialized) return;
+    var displayEl = document.getElementById(slider.dataset.target);
+    var cb = slider.dataset.callback;
+    slider.addEventListener('input', function() {
+      if (displayEl) displayEl.textContent = slider.value;
+      if (cb && typeof window[cb] === 'function') window[cb](parseFloat(slider.value));
+    });
+    slider.dataset.initialized = 'true';
+    slider.dispatchEvent(new Event('input'));
+  });
+
+  container.querySelectorAll('.reveal-btn').forEach(function(btn) {
+    if (btn.dataset.initialized) return;
+    btn.addEventListener('click', function() {
+      var panel = document.getElementById(btn.dataset.reveal);
+      if (panel) {
+        panel.classList.toggle('revealed');
+        btn.textContent = panel.classList.contains('revealed') ? 'Hide' : 'Show Solution';
+      }
+    });
+    btn.dataset.initialized = 'true';
+  });
+
+  container.querySelectorAll('.tab-container').forEach(function(tc) {
+    if (tc.dataset.initialized) return;
+    var tabs = tc.querySelectorAll('.tab-btn');
+    var panels = tc.querySelectorAll('.tab-panel');
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        panels.forEach(function(p) { p.style.display = 'none'; });
+        tab.classList.add('active');
+        var tp = document.getElementById(tab.dataset.tab);
+        if (tp) tp.style.display = 'block';
+      });
+    });
+    if (tabs.length) tabs[0].click();
+    tc.dataset.initialized = 'true';
+  });
+
+  container.querySelectorAll('.mcq-option').forEach(function(btn) {
+    if (btn.dataset.initialized) return;
+    btn.addEventListener('click', function() {
+      var group = btn.closest('.mcq-group');
+      if (!group) return;
+      group.querySelectorAll('.mcq-option').forEach(function(b) {
+        b.classList.remove('selected', 'correct', 'incorrect');
+      });
+      btn.classList.add('selected');
+      var feedback = group.querySelector('.mcq-feedback');
+      if (feedback) {
+        if (btn.dataset.correct === 'true') {
+          btn.classList.add('correct');
+          feedback.innerHTML = '<span class="correct-text">Correct! ' + (btn.dataset.explanation || '') + '</span>';
+        } else {
+          btn.classList.add('incorrect');
+          feedback.innerHTML = '<span class="incorrect-text">Not quite. ' + (btn.dataset.explanation || 'Try again.') + '</span>';
+        }
+        feedback.style.display = 'block';
+      }
+    });
+    btn.dataset.initialized = 'true';
+  });
+}
+
+function checkMCQ(btn, i) {
+  var checkDiv = document.getElementById('check-' + i);
+  if (checkDiv.dataset.answered) return;
+  var feedback = document.getElementById('feedback-' + i);
+  var isCorrect = btn.dataset.correct === 'true';
+  /* Highlight all buttons */
+  checkDiv.querySelectorAll('.check-mcq-btn').forEach(function(b) {
+    b.disabled = true;
+    if (b.dataset.correct === 'true') b.classList.add('correct');
+    else if (b === btn && !isCorrect) b.classList.add('incorrect');
+  });
+  feedback.classList.remove('hidden');
+  if (isCorrect) {
+    feedback.className = 'check-feedback correct';
+    feedback.textContent = 'Correct! Well done.';
+  } else {
+    feedback.className = 'check-feedback incorrect';
+    feedback.textContent = 'Not quite. The correct answer is highlighted above.';
+  }
+  checkDiv.dataset.answered = 'true';
+}
+
+function showHint(i) {
+  document.getElementById('hint-' + i).classList.remove('hidden');
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+  if (e.key === 'ArrowRight' || e.key === 'l') goToPage(currentPage + 1);
+  if (e.key === 'ArrowLeft'  || e.key === 'h') goToPage(currentPage - 1);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var firstPage = document.getElementById('page-0');
+  if (firstPage) {
+    initChartsOnPage(firstPage);
+    initInteractiveElements(firstPage);
+    var step = document.querySelector('.page-step[data-page="0"]');
+    if (step) step.classList.add('active');
+    var fill = document.getElementById('progress-fill');
+    if (fill && TOTAL_PAGES > 0) fill.style.width = (1 / TOTAL_PAGES * 100) + '%';
+  }
+  if (typeof renderMathInElement !== 'undefined' && firstPage) {
+    renderMathInElement(firstPage, {
+      delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\(',right:'\\)',display:false}],
+      throwOnError: false
+    });
+  }
+});
+</script>

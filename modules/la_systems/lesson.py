@@ -3,23 +3,23 @@ SECTIONS = [
         "title": "Fundamental Definitions: Linear Equations and Systems",
         "body": """
 <h3>Linear Equation (First-Principles Definition)</h3>
-<p>A <strong>linear equation in n variables</strong> \\(x_1, x_2, \ldots, x_n\\) is an equation of the form:</p>
+<p>A <strong>linear equation in n variables</strong> \\(x_1, x_2, \\ldots, x_n\\) is an equation of the form:</p>
 
-$$a_1 x_1 + a_2 x_2 + \cdots + a_n x_n = b$$
+$$a_1 x_1 + a_2 x_2 + \\\cdots + a_n x_n = b$$
 
-<p>where \\(a_1, a_2, \ldots, a_n, b \\in \\mathbb{R}\\) (or \\(\\mathbb{C}\\)), and "linear" means each variable appears with exponent exactly 1 (no squares, products, or transcendental functions).</p>
+<p>where \\(a_1, a_2, \\ldots, a_n, b \\in \\mathbb{R}\\) (or \\(\\mathbb{C}\\)), and "linear" means each variable appears with exponent exactly 1 (no squares, products, or transcendental functions).</p>
 
 <h3>System of Linear Equations</h3>
 <p>A <strong>system of m linear equations in n unknowns</strong> is a collection:</p>
 
 $$\\begin{align}
-a_{11}x_1 + a_{12}x_2 + \cdots + a_{1n}x_n &= b_1 \\\\
-a_{21}x_1 + a_{22}x_2 + \cdots + a_{2n}x_n &= b_2 \\\\
+a_{11}x_1 + a_{12}x_2 + \\\cdots + a_{1n}x_n &= b_1 \\\\
+a_{21}x_1 + a_{22}x_2 + \\\cdots + a_{2n}x_n &= b_2 \\\\
 &\\vdots \\\\
-a_{m1}x_1 + a_{m2}x_2 + \cdots + a_{mn}x_n &= b_m
+a_{m1}x_1 + a_{m2}x_2 + \\\cdots + a_{mn}x_n &= b_m
 \\end{align}$$
 
-<p>A <strong>solution</strong> is a vector \\((x_1^*, x_2^*, \ldots, x_n^*) \\in \\mathbb{R}^n\\) that satisfies <em>all m equations simultaneously</em>.</p>
+<p>A <strong>solution</strong> is a vector \\((x_1^*, x_2^*, \\ldots, x_n^*) \\in \\mathbb{R}^n\\) that satisfies <em>all m equations simultaneously</em>.</p>
 
 <div class="example-box">
 <h4>Example System</h4>
@@ -38,10 +38,10 @@ $$A\\mathbf{x} = \\mathbf{b}$$
 <p>where \\(A\\) is the \\(m \\times n\\) <strong>coefficient matrix</strong>:</p>
 
 $$A = \\begin{pmatrix}
-a_{11} & a_{12} & \\cdots & a_{1n} \\\\
-a_{21} & a_{22} & \\cdots & a_{2n} \\\\
+a_{11} & a_{12} & \\\\cdots & a_{1n} \\\\
+a_{21} & a_{22} & \\\\cdots & a_{2n} \\\\
 \\vdots & \\vdots & \\ddots & \\vdots \\\\
-a_{m1} & a_{m2} & \\cdots & a_{mn}
+a_{m1} & a_{m2} & \\\\cdots & a_{mn}
 \\end{pmatrix}$$
 
 <p>\\(\\mathbf{x}\\) is the \\(n \\times 1\\) <strong>unknown vector</strong> \\(= \\begin{pmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_n \\end{pmatrix}\\), and \\(\\mathbf{b}\\) is the \\(m \\times 1\\) <strong>constant vector</strong> \\(= \\begin{pmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_m \\end{pmatrix}\\).</p>
@@ -173,12 +173,12 @@ x + y &= 5
         "title": "Matrix Form and the Augmented Matrix",
         "body": """
 <h3>Matrix Notation</h3>
-<p>The system \\(a_{11}x_1 + \cdots + a_{1n}x_n = b_1, \ldots\\) can be written:</p>
+<p>The system \\(a_{11}x_1 + \\\cdots + a_{1n}x_n = b_1, \\ldots\\) can be written:</p>
 
 $$\\begin{pmatrix}
-a_{11} & a_{12} & \\cdots & a_{1n} \\\\
+a_{11} & a_{12} & \\\\cdots & a_{1n} \\\\
 \\vdots & \\vdots & \\ddots & \\vdots \\\\
-a_{m1} & a_{m2} & \\cdots & a_{mn}
+a_{m1} & a_{m2} & \\\\cdots & a_{mn}
 \\end{pmatrix}
 \\begin{pmatrix}
 x_1 \\\\ \\vdots \\\\ x_n
@@ -194,10 +194,10 @@ b_1 \\\\ \\vdots \\\\ b_m
 <p>To solve the system algorithmically, we form the <strong>augmented matrix</strong> \\([A | \\mathbf{b}]\\), combining coefficient and constant vectors:</p>
 
 $$[A | \\mathbf{b}] = \\left[\\begin{array}{cccc|c}
-a_{11} & a_{12} & \\cdots & a_{1n} & b_1 \\\\
-a_{21} & a_{22} & \\cdots & a_{2n} & b_2 \\\\
+a_{11} & a_{12} & \\\\cdots & a_{1n} & b_1 \\\\
+a_{21} & a_{22} & \\\\cdots & a_{2n} & b_2 \\\\
 \\vdots & \\vdots & \\ddots & \\vdots & \\vdots \\\\
-a_{m1} & a_{m2} & \\cdots & a_{mn} & b_m
+a_{m1} & a_{m2} & \\\\cdots & a_{mn} & b_m
 \\end{array}\\right]$$
 
 <p>The vertical bar is a visual separator; the augmented matrix is still just an \\(m \\times (n+1)\\) matrix.</p>
@@ -258,7 +258,7 @@ $$\\left[\\begin{array}{ccc|c}
 
 <div class="step">
 <strong>Operation 2 (Row Scaling):</strong> Multiply a row by a non-zero constant. Notation: \\(R_i \\rightarrow c \\cdot R_i\\) for \\(c \\neq 0\\)
-<p>Justification: If \\(\\mathbf{x}\\) satisfies \\(a_1 x_1 + \cdots + a_n x_n = b\\), it also satisfies \\(ca_1 x_1 + \cdots + ca_n x_n = cb\\).</p>
+<p>Justification: If \\(\\mathbf{x}\\) satisfies \\(a_1 x_1 + \\\cdots + a_n x_n = b\\), it also satisfies \\(ca_1 x_1 + \\\cdots + ca_n x_n = cb\\).</p>
 </div>
 
 <div class="step">
@@ -472,133 +472,5 @@ $$\\text{rank}(A) + \\text{nullity}(A) = n$$
 <li>Detects inconsistency and dependence.</li>
 </ul>
 """
-    }
-]
-
-        <div class='example-box'>
-        <p><strong>Example of unique solution:</strong></p>
-        <pre class='code-block'>x + y = 3
-x - y = 1</pre>
-        <p>Augmented matrix: [1  1 | 3]
-                         [1 -1 | 1]</p>
-        <p>Adding the equations: 2x = 4, so x = 2. Then y = 1. <strong>Unique solution: (2, 1)</strong></p>
-
-        <p><strong>Example of infinitely many solutions:</strong></p>
-        <pre class='code-block'>x + y = 2
-2x + 2y = 4</pre>
-        <p>The second equation is 2× the first, so they're the same constraint. Any (x, y) with x + y = 2 works.</p>
-
-        <p><strong>Example of no solution:</strong></p>
-        <pre class='code-block'>x + y = 2
-x + y = 3</pre>
-        <p>No pair (x, y) can satisfy both equations. <strong>Inconsistent system.</strong></p>
-        </div>
-        """
-    },
-    {
-        "title": "Geometric Interpretation in 2D and 3D",
-        "body": """
-        <p>Linear equations have beautiful geometric meanings. Each linear equation defines a geometric object:</p>
-
-        <p><strong>In 2D:</strong> A linear equation ax + by = c defines a <strong>line</strong>. A system of two equations represents two lines.</p>
-        <ul>
-        <li><strong>Unique solution:</strong> Two lines intersect at exactly one point.</li>
-        <li><strong>Infinitely many solutions:</strong> Two lines are identical (coincident).</li>
-        <li><strong>No solution:</strong> Two lines are parallel (never meet).</li>
-        </ul>
-
-        <p><strong>In 3D:</strong> A linear equation ax + by + cz = d defines a <strong>plane</strong>. A system of three equations represents three planes.</p>
-        <ul>
-        <li><strong>Unique solution:</strong> Three planes meet at exactly one point.</li>
-        <li><strong>Infinitely many solutions:</strong> Planes intersect in a line (1D) or a plane (2D).</li>
-        <li><strong>No solution:</strong> Planes don't have a common point (e.g., two parallel planes, or a "wedge" with no center).</li>
-        </ul>
-
-        <p><strong>Higher dimensions:</strong> Each equation defines a hyperplane (a (n-1)-dimensional object in n-dimensional space). The same logic applies: the solution is the intersection of these hyperplanes.</p>
-
-        <div class='example-box'>
-        <p><strong>Geometric example in 2D:</strong></p>
-        <pre class='code-block'>y = x      (line through origin, slope 1)
-y = -x + 2 (line with slope -1, y-intercept 2)</pre>
-        <p>These lines intersect where x = -x + 2, so 2x = 2, thus x = 1, y = 1. <strong>Unique solution: (1, 1)</strong> = intersection point.</p>
-
-        <p>If we had y = x and y = x + 1, these are parallel (same slope, different intercepts). <strong>No solution.</strong></p>
-        </div>
-
-        <p><strong>Rank and the rank theorem:</strong> The number of independent equations determines the dimension of the solution set:</p>
-        <ul>
-        <li>If rank(A) = rank([A|b]) = n (number of variables), the solution is unique.</li>
-        <li>If rank(A) = rank([A|b]) < n, there are infinitely many solutions (dimension n - rank).</li>
-        <li>If rank(A) < rank([A|b]), the system is inconsistent (no solution).</li>
-        </ul>
-        """
-    },
-    {
-        "title": "Homogeneous and Inhomogeneous Systems",
-        "body": """
-        <p><strong>Homogeneous System:</strong> When b = 0 (all right-hand sides are zero), we have Ax = 0. This system always has at least one solution: <strong>x = 0</strong> (the trivial solution).</p>
-
-        <p>A homogeneous system either has:</p>
-        <ul>
-        <li><strong>Only the trivial solution x = 0:</strong> When rank(A) = n (full column rank).</li>
-        <li><strong>Infinitely many solutions:</strong> When rank(A) < n. The solution space is a subspace of dimension n - rank(A).</li>
-        </ul>
-
-        <p><strong>Inhomogeneous System:</strong> When b ≠ 0, we have Ax = b. This system may have:</p>
-        <ul>
-        <li>No solution (inconsistent)</li>
-        <li>Exactly one solution</li>
-        <li>Infinitely many solutions</li>
-        </ul>
-
-        <p><strong>Key relationship:</strong> If xₚ is a particular solution to Ax = b, and xₕ is any solution to Ax = 0, then xₚ + xₕ is also a solution to Ax = b.</p>
-        <p><strong>General solution to Ax = b:</strong> x = xₚ + xₕ, where xₚ is a particular solution and xₕ ranges over all solutions to the homogeneous system Ax = 0.</p>
-
-        <div class='example-box'>
-        <p><strong>Homogeneous example:</strong></p>
-        <pre class='code-block'>2x + 3y = 0
-x - y = 0</pre>
-        <p>From the second equation, x = y. Substituting: 2y + 3y = 0, so y = 0. Thus x = 0. <strong>Only the trivial solution: (0, 0)</strong></p>
-
-        <p><strong>Inhomogeneous example:</strong></p>
-        <pre class='code-block'>2x + 3y = 7
-x - y = 1</pre>
-        <p>Particular solution (by inspection): (2, 1). The associated homogeneous system 2x + 3y = 0, x - y = 0 has only the trivial solution. So <strong>unique solution: (2, 1)</strong></p>
-        </div>
-
-        <p><strong>Why this matters:</strong> Understanding the structure of solutions (particular + homogeneous) is essential for:</p>
-        <ul>
-        <li>Solving differential equations</li>
-        <li>Understanding linear regression (least squares)</li>
-        <li>Analyzing stability and null spaces in applied mathematics</li>
-        </ul>
-        """
-    },
-    {
-        "title": "Applications and Practical Perspectives",
-        "body": """
-        <p>Systems of linear equations appear everywhere in applied mathematics, engineering, and science:</p>
-
-        <p><strong>1. Circuit Analysis (Kirchhoff's Laws):</strong> For an electrical circuit, Kirchhoff's voltage law (KVL) and current law (KCL) produce a system of linear equations in unknown currents and voltages.</p>
-
-        <p><strong>2. Network Flow Problems:</strong> In transportation networks, conservation of flow at each node gives linear constraints. Finding feasible flows means solving a system of equations.</p>
-
-        <p><strong>3. Least Squares Regression:</strong> Fitting a line y = mx + b to data points (x₁, y₁), ..., (xₙ, yₙ) reduces to solving a (usually overdetermined) system of equations.</p>
-
-        <p><strong>4. Structural Analysis:</strong> In engineering, equilibrium of forces at each joint gives a system of linear equations in unknown forces.</p>
-
-        <p><strong>5. Polynomial Interpolation:</strong> Finding a polynomial of degree n that passes through n+1 points requires solving a system of linear equations (the Vandermonde system).</p>
-
-        <div class='example-box'>
-        <p><strong>Simple regression example:</strong> Fit y = mx + b to points (1, 2) and (2, 3).</p>
-        <pre class='code-block'>2 = m(1) + b  →  m + b = 2
-3 = m(2) + b  →  2m + b = 3</pre>
-        <p>System: m + b = 2 and 2m + b = 3. Subtracting: m = 1. Then b = 1. <strong>Line: y = x + 1</strong></p>
-        </div>
-
-        <p><strong>Computational complexity:</strong> Solving an n × n system via Gaussian elimination requires O(n³) operations. For modern applications with millions of variables, specialized algorithms (iterative methods, sparse matrix techniques) are essential.</p>
-
-        <p><strong>Numerical stability:</strong> In practice, floating-point arithmetic introduces errors. Systems with high condition numbers (ill-conditioned) amplify these errors significantly, requiring careful numerical handling.</p>
-        """
     }
 ]

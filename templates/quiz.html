@@ -1,29 +1,59 @@
 {% extends "base.html" %}
 {% block title %}Quiz: {{ t.name }} — QuantiesUnite{% endblock %}
 
+{% block body_class %}age-{{ get_age_group(t.level) }}{% endblock %}
+
 {% block content %}
 <div class="quiz-page">
   <div class="quiz-header" style="border-left:5px solid {{ t.color }}">
     <a href="/topic/{{ tid }}" class="back-link">← Back to Lesson</a>
+    {% if is_practice is defined and is_practice %}
+    <h1>{{ t.emoji }} More Practice: {{ t.name }}</h1>
+    <p class="quiz-instruction">Extra practice questions — prioritising ones you haven't seen or got wrong before.</p>
+    {% if practice_stats is defined and practice_stats %}
+    <div class="practice-stats-bar">
+      <span class="ps-item ps-unseen">{{ practice_stats.unseen }} unseen</span>
+      <span class="ps-item ps-wrong">{{ practice_stats.wrong }} to retry</span>
+      <span class="ps-item ps-mastered">{{ practice_stats.mastered }} mastered</span>
+      <span class="ps-item ps-total">{{ practice_stats.total_in_bank }} total</span>
+    </div>
+    {% endif %}
+    {% else %}
     <h1>{{ t.emoji }} Quiz: {{ t.name }}</h1>
     <p class="quiz-instruction">Answer all questions then click <strong>Submit</strong>. You need <strong>70%</strong> to pass and unlock the next topics.</p>
+    {% endif %}
   </div>
 
   <form id="quiz-form">
     {% for q in quiz %}
-    {% set i = loop.index0 %}
-    <div class="quiz-question" id="q-{{ i }}">
-      <div class="q-number">Question {{ i + 1 }} of {{ quiz | length }}</div>
-      <p class="q-text">{{ q.question }}</p>
+    {% set qid = q.id %}
+    <div class="quiz-question" data-qid="{{ qid }}" id="q-{{ loop.index0 }}">
+      <div class="q-number">Question {{ loop.index }} of {{ quiz | length }}</div>
+      <div class="q-text">{{ q.question | safe }}</div>
+
+      {% if q.options is defined and q.options %}
+      <!-- Multiple Choice -->
+      <div class="q-options">
+        {% for opt in q.options %}
+        <label class="q-option">
+          <input type="radio" name="q{{ qid }}" value="{{ opt }}" />
+          <span class="q-option-text">{{ opt | safe }}</span>
+        </label>
+        {% endfor %}
+      </div>
+      {% else %}
+      <!-- Fill in the blank -->
       <div class="q-input-row">
         <input type="text"
                class="q-input"
-               name="q{{ i }}"
-               id="qi-{{ i }}"
+               name="q{{ qid }}"
+               id="qi-{{ qid }}"
                placeholder="Your answer…"
                autocomplete="off"/>
       </div>
-      <div class="q-result hidden" id="qr-{{ i }}"></div>
+      {% endif %}
+
+      <div class="q-result hidden" id="qr-{{ loop.index0 }}"></div>
     </div>
     {% endfor %}
 
@@ -39,7 +69,12 @@
     <div id="result-details"></div>
     <div class="result-actions">
       <a href="/topic/{{ tid }}" class="btn btn-outline">← Back to Lesson</a>
+      {% if is_practice is defined and is_practice %}
+      <a href="/topic/{{ tid }}/practice" class="btn btn-primary">More Practice →</a>
+      {% else %}
+      <a href="/topic/{{ tid }}/practice" class="btn btn-outline hidden" id="practice-btn">More Practice</a>
       <a href="/curriculum" class="btn btn-primary">Continue Learning →</a>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -48,14 +83,26 @@
 {% block scripts %}
 <script>
 const TID = "{{ tid }}";
-const TOTAL = {{ quiz | length }};
+// Build ordered list of question objects from the rendered form
+const QUIZ_QUESTIONS = [
+{% for q in quiz %}
+  {id: {{ q.id }}, question: {{ q.question | tojson }}, answer: {{ q.answer | tojson }}},
+{% endfor %}
+];
 
 async function submitQuiz() {
   const answers = {};
-  for (let i = 0; i < TOTAL; i++) {
-    const inp = document.getElementById('qi-' + i);
-    answers[String(i)] = inp ? inp.value : "";
-  }
+  QUIZ_QUESTIONS.forEach(function(q) {
+    var qid = q.id;
+    var radios = document.querySelectorAll('input[name="q' + qid + '"][type="radio"]');
+    if (radios.length > 0) {
+      var checked = document.querySelector('input[name="q' + qid + '"]:checked');
+      answers[String(qid)] = checked ? checked.value : "";
+    } else {
+      var inp = document.getElementById('qi-' + qid);
+      answers[String(qid)] = inp ? inp.value : "";
+    }
+  });
 
   document.getElementById('submit-btn').disabled = true;
   document.getElementById('submit-btn').textContent = 'Submitting…';
@@ -63,43 +110,80 @@ async function submitQuiz() {
   const resp = await fetch('/api/quiz/submit', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({tid: TID, answers: answers})
+    body: JSON.stringify({tid: TID, answers: answers, questions: QUIZ_QUESTIONS})
   });
   const data = await resp.json();
 
+  var showAnswers = data.show_answers;
+  var attemptNum = data.attempt || 1;
+
   // Show per-question feedback
   data.results.forEach(function(r, i) {
-    const qr = document.getElementById('qr-' + i);
-    const inp = document.getElementById('qi-' + i);
+    var qid = r.question_id;
+    var qr = document.getElementById('qr-' + i);
     qr.classList.remove('hidden');
-    inp.disabled = true;
+
+    // Disable inputs
+    var radios = document.querySelectorAll('input[name="q' + qid + '"]');
+    radios.forEach(function(radio) { radio.disabled = true; });
+    var inp = document.getElementById('qi-' + qid);
+    if (inp) inp.disabled = true;
+
+    // Highlight correct/incorrect options
+    if (radios.length > 0) {
+      radios.forEach(function(radio) {
+        var label = radio.closest('.q-option');
+        if (showAnswers && radio.value === r.correct_answer) {
+          label.classList.add('option-correct');
+        } else if (radio.checked && !r.correct) {
+          label.classList.add('option-incorrect');
+        }
+      });
+    }
+
     if (r.correct) {
       qr.className = 'q-result correct';
-      qr.innerHTML = '✅ Correct!';
+      qr.innerHTML = '✅ Correct!' + (showAnswers && r.explanation ? '<br><em>' + escHtml(r.explanation) + '</em>' : '');
     } else {
       qr.className = 'q-result incorrect';
-      qr.innerHTML = '❌ Correct answer: <strong>' + escHtml(r.correct_answer) + '</strong>'
-        + (r.explanation ? '<br><em>' + escHtml(r.explanation) + '</em>' : '');
+      if (showAnswers) {
+        qr.innerHTML = '❌ Correct answer: <strong>' + escHtml(r.correct_answer) + '</strong>'
+          + (r.explanation ? '<br><em>' + escHtml(r.explanation) + '</em>' : '');
+      } else {
+        qr.innerHTML = '❌ Incorrect — answers revealed after attempt 3 (this is attempt ' + attemptNum + ')';
+      }
     }
   });
 
   // Show summary
-  const resultDiv = document.getElementById('quiz-result');
-  const banner = document.getElementById('result-banner');
-  const details = document.getElementById('result-details');
+  var resultDiv = document.getElementById('quiz-result');
+  var banner = document.getElementById('result-banner');
+  var details = document.getElementById('result-details');
   resultDiv.classList.remove('hidden');
   document.getElementById('quiz-form').querySelector('.quiz-controls').remove();
 
-  const pct = Math.round(data.score / data.total * 100);
+  var pct = Math.round(data.score / data.total * 100);
   if (data.passed) {
     banner.className = 'result-banner pass';
-    banner.innerHTML = '🎉 Passed! <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong> — Topic unlocked!';
+    banner.innerHTML = '🎉 Passed! <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong> — Topic unlocked!'
+      + '<br><a href="/topic/' + TID + '/practice" class="btn btn-outline btn-sm" style="margin-top:10px;">📝 More Practice</a>';
   } else {
     banner.className = 'result-banner fail';
     banner.innerHTML = '😅 Score: <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong> — Need 70% to pass. Review the lesson and try again!';
+    if (!showAnswers) {
+      banner.innerHTML += '<br><small>💡 Answers will be revealed after attempt 3 (this was attempt ' + attemptNum + ')</small>';
+    }
   }
 
-  details.innerHTML = '<p>Review the highlighted questions above, then try again if needed.</p>';
+  // Show More Practice button only after passing
+  var practiceBtn = document.getElementById('practice-btn');
+  if (practiceBtn && data.passed) {
+    practiceBtn.classList.remove('hidden');
+  }
+
+  details.innerHTML = showAnswers
+    ? '<p>Review the highlighted questions above, then try again if needed.</p>'
+    : '<p>Try again to improve your score! Correct answers will be shown after your 3rd attempt.</p>';
   resultDiv.scrollIntoView({behavior:'smooth'});
 }
 
@@ -111,12 +195,12 @@ function escHtml(str) {
     .replace(/"/g,'&quot;');
 }
 
-// Allow Enter to move to next question
+// Allow Enter to move to next question (text inputs only)
 document.querySelectorAll('.q-input').forEach(function(inp, idx) {
   inp.addEventListener('keydown', function(e) {
     if (e.key === 'Enter') {
-      const next = document.getElementById('qi-' + (idx + 1));
-      if (next) { next.focus(); }
+      var inputs = document.querySelectorAll('.q-input');
+      if (idx + 1 < inputs.length) { inputs[idx + 1].focus(); }
       else { submitQuiz(); }
     }
   });

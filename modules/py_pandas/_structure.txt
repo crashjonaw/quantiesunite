@@ -1,0 +1,86 @@
+RESTRUCTURED py_pandas MODULE
+==============================
+
+Directory Structure:
+.
+├── 01_series_and_dataframes/
+│   ├── __init__.py
+│   └── lesson.py (3 sections)
+├── 02_data_selection_and_filtering/
+│   ├── __init__.py
+│   └── lesson.py (4 sections)
+├── 03_data_cleaning_missing_values/
+│   ├── __init__.py
+│   └── lesson.py (4 sections)
+├── 04_groupby_and_aggregation/
+│   ├── __init__.py
+│   └── lesson.py (4 sections)
+├── 05_merging_and_joining/
+│   ├── __init__.py
+│   └── lesson.py (4 sections)
+└── quiz.py (retained at root)
+
+DELETED FILES:
+- lesson.py (old flat structure)
+- checks.py (old flat structure)
+
+CONTENT BREAKDOWN:
+==================
+
+01_series_and_dataframes:
+  - Series: One-Dimensional Data
+  - DataFrames: Two-Dimensional Data
+  - Index: The Alignment Mechanism
+
+02_data_selection_and_filtering:
+  - Label-Based Selection with .loc
+  - Position-Based Selection with .iloc
+  - Boolean Filtering: Conditional Selection
+  - Advanced Selection Techniques
+
+03_data_cleaning_missing_values:
+  - Detecting and Understanding Missing Values
+  - Strategies for Handling Missing Data
+  - Data Type Conversion and Validation
+  (plus sub-section: Type Coercion and Error Handling)
+
+04_groupby_and_aggregation:
+  - GroupBy: The Split-Apply-Combine Pattern
+  - Aggregation: Computing Group Statistics
+  - Transform and Apply: Beyond Aggregation
+  (plus sub-section: Comparison of methods)
+
+05_merging_and_joining:
+  - Merge Operations: SQL-Like Joins
+  - Index-Based Joins and Concatenation
+  - Advanced: Multi-Key Joins and Validation
+  (plus sub-section: Performance optimization)
+
+STYLING:
+========
+All lessons include dark theme CSS:
+- Text: #e6edf3
+- Background: #0d1117
+- Surface: #161b22
+- Accent: #4f8ef7
+
+CSS Classes implemented:
+- .concept-box (accent left border)
+- .worked-example (light accent background)
+- .warning-box (red left border)
+- .success-box (green left border)
+- code (inline syntax highlighting)
+- pre (code block styling)
+- h2, h3 (heading styling)
+
+CONTENT PHILOSOPHY:
+====================
+- First-principles explanations
+- Practical worked examples
+- Warning boxes for common pitfalls
+- Success boxes for best practices
+- HTML+CSS embedded in SECTIONS
+- Real-world data scenarios
+
+Total sections: 19 concept sections across 5 modules
+All files pass Python syntax validation.

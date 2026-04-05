@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}{{ concept.title }} — {{ t.name }} — QuantiesUnite{% endblock %}
+
+{% block body_class %}age-{{ get_age_group(t.level) }}{% endblock %}
+
+{% block content %}
+
+<!-- Module + Concept Header -->
+<div class="topic-header" style="border-left: 5px solid {{ t.color }}">
+  <div class="topic-header-left">
+    <span class="topic-emoji">{{ t.emoji }}</span>
+    <div>
+      <div class="topic-level-badge">{{ t.sg }}</div>
+      <div class="concept-breadcrumb">
+        <a href="/topic/{{ tid }}/overview" class="breadcrumb-module">{{ t.name }}</a>
+        <span class="breadcrumb-sep">&#8250;</span>
+        <span class="breadcrumb-concept">{{ concept.title }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="topic-meta">
+    <span class="meta-chip">{{ cur_idx + 1 }} / {{ concepts | length }} concepts</span>
+    {% if complete %}
+      <span class="meta-chip success">Module Complete
+        {% if quiz_score is not none %} &middot; {{ quiz_score }}/{{ quiz_total }}{% endif %}
+      </span>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Two-column layout: sidebar + main -->
+<div class="concept-layout">
+  {% include "lesson/_sidebar.html" %}
+
+  <div class="concept-main">
+    {% include "lesson/_page_progress.html" %}
+
+    <!-- Lesson Pages -->
+    <div class="lesson-container">
+      {% for section in concept.sections %}
+      {% set i = loop.index0 %}
+      <div class="lesson-page" id="page-{{ i }}" {% if i != 0 %}style="display:none"{% endif %}>
+        <div class="lesson-section">
+          <div class="section-page-indicator">Page {{ loop.index }} of {{ concept.sections | length }}</div>
+          <h2 class="section-heading">{{ section.title }}</h2>
+          <div class="section-body rich-content">{{ section.body | safe }}</div>
+
+          {% with section=section, i=i %}
+            {% include "lesson/_check_question.html" %}
+          {% endwith %}
+        </div>
+
+        {% with i=i, concept=concept, tid=tid, prev_concept=prev_concept, next_concept=next_concept %}
+          {% include "lesson/_page_nav.html" %}
+        {% endwith %}
+      </div>
+      {% endfor %}
+
+      {% if not next_concept %}
+      <div class="unlocks-end-section" id="unlocks-end" style="display:none">
+        <div class="congrats-box">
+          <h3>You've reached the end of all concepts!</h3>
+          <p>Ready to test your knowledge? Take the module quiz{% if complete %}, or practise with extra questions{% endif %}.</p>
+          <a href="/topic/{{ tid }}/quiz" class="btn btn-primary">Take the Module Quiz</a>
+          {% if complete %}
+          <a href="/topic/{{ tid }}/practice" class="btn btn-outline">More Practice</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+{% include "lesson/_interactive_scripts.html" %}
+{% endblock %}

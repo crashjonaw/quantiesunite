@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}User: {{ u.username }} — Admin — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="admin-page">
+
+  <!-- Breadcrumb -->
+  <div class="admin-breadcrumb">
+    <a href="/admin" class="breadcrumb-link">👑 Admin Panel</a>
+    <span class="breadcrumb-sep">›</span>
+    <span>{{ u.username }}</span>
+  </div>
+
+  <!-- User profile card -->
+  <div class="admin-user-profile">
+    <div class="aup-left">
+      <div class="account-avatar" style="width:56px;height:56px;font-size:1.6rem">
+        {{ u.username[0] | upper }}
+      </div>
+      <div>
+        <h1 class="aup-name">
+          {{ u.username }}
+          {% if u.is_admin %}<span class="badge badge-admin">👑 Admin</span>{% endif %}
+          {% if u.id == current_user.id %}<span class="badge badge-joined">you</span>{% endif %}
+        </h1>
+        <p class="text-muted">{{ u.email }}</p>
+        <p class="text-muted" style="font-size:0.78rem">
+          Joined {{ u.created_at[:10] if u.created_at else '?' }} ·
+          Target level: <strong>{{ u.target_level }}</strong> ·
+          Plan: <span class="badge badge-free">Free</span>
+        </p>
+      </div>
+    </div>
+    <div class="aup-actions">
+      {% if u.id != current_user.id %}
+      <form method="POST" action="/admin/toggle-admin/{{ u.id }}"
+            onsubmit="return confirm('Toggle admin for {{ u.username }}?')" style="display:inline">
+        <button class="btn btn-outline btn-sm">
+          {{ '↓ Demote to User' if u.is_admin else '↑ Make Admin' }}
+        </button>
+      </form>
+      <form method="POST" action="/admin/delete-user/{{ u.id }}"
+            onsubmit="return confirm('DELETE {{ u.username }}? Cannot be undone.')" style="display:inline">
+        <button class="btn btn-danger btn-sm">🗑 Delete User</button>
+      </form>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Overall progress bar -->
+  <div class="aup-overall">
+    <div class="aup-ov-left">
+      <span class="aup-ov-pct">{{ (total_done / total_all * 100) | int if total_all else 0 }}%</span>
+      <div>
+        <div class="aup-ov-label">Overall Progress</div>
+        <div class="text-muted">{{ total_done }} / {{ total_all }} topics complete</div>
+      </div>
+    </div>
+    <div class="aup-ov-bar-wrap">
+      <div class="aup-ov-bar-outer">
+        <div class="aup-ov-bar-inner"
+             style="width: {{ (total_done / total_all * 100) | int if total_all else 0 }}%"></div>
+      </div>
+      <div class="text-muted" style="font-size:0.75rem;text-align:right;margin-top:4px">
+        {{ enabled_levels | length }} levels enabled
+      </div>
+    </div>
+  </div>
+
+  <!-- Level-by-level breakdown -->
+  {% for level in levels_order %}
+  {% set lb = level_breakdown[level] %}
+  <div class="aup-level-section">
+    <div class="aup-level-header">
+      <div class="aup-level-left">
+        <h3 class="aup-level-name">
+          {{ level }}
+          {% if level not in enabled_levels %}
+          <span class="level-lock-badge">🔒 not enabled</span>
+          {% endif %}
+        </h3>
+        <span class="aup-level-count">{{ lb.done }}/{{ lb.total }} complete</span>
+      </div>
+      <div class="aup-level-bar-wrap">
+        <div class="aup-level-bar-outer">
+          <div class="aup-level-bar-inner" style="width:{{ lb.pct }}%"></div>
+        </div>
+        <span class="aup-level-pct">{{ lb.pct }}%</span>
+      </div>
+    </div>
+
+    <div class="aup-topic-table">
+      {% for t in lb.topics %}
+      <div class="aup-topic-row {% if t.complete %}aup-done{% endif %}">
+        <span class="aup-t-emoji">{{ t.emoji }}</span>
+        <a href="/topic/{{ t.id }}" class="aup-t-name">{{ t.name }}</a>
+        <div class="aup-t-right">
+          {% if t.complete %}
+            <span class="aup-badge-done">✅ Done</span>
+            {% if t.quiz_score is not none %}
+            <span class="aup-quiz-score">Quiz: {{ t.quiz_score }}/{{ t.quiz_total }}</span>
+            {% endif %}
+            {% if t.completed_at %}
+            <span class="aup-date">{{ t.completed_at[:10] }}</span>
+            {% endif %}
+          {% else %}
+            <span class="aup-badge-pending">–</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+
+</div>
+{% endblock %}

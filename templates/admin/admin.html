@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block title %}Admin Panel — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="admin-page">
+
+  <!-- Header -->
+  <div class="admin-header">
+    <div>
+      <h1>👑 Admin Panel</h1>
+      <p class="text-muted">QuantiesUnite · BloomBurrow Admin System</p>
+    </div>
+    <div class="admin-header-right">
+      <a href="{{ url_for('admin.admin_dashboard') }}" class="btn btn-primary btn-sm">📊 Analytics Dashboard</a>
+      <a href="/" class="btn btn-outline btn-sm">← Back to Site</a>
+    </div>
+  </div>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in messages %}
+    <div class="alert alert-{{ cat }}">{{ msg }}</div>
+    {% endfor %}
+  {% endwith %}
+
+  <!-- Stats Cards -->
+  <div class="admin-stats">
+    <div class="admin-stat-card">
+      <div class="asc-num">{{ stats.total_users }}</div>
+      <div class="asc-label">Total Users</div>
+      <div class="asc-sub">{{ stats.admin_users }} admin{{ 's' if stats.admin_users != 1 else '' }}</div>
+    </div>
+    <div class="admin-stat-card">
+      <div class="asc-num">{{ stats.total_completions }}</div>
+      <div class="asc-label">Topic Completions</div>
+      <div class="asc-sub">across all users</div>
+    </div>
+    <div class="admin-stat-card">
+      <div class="asc-num">{{ total_topics }}</div>
+      <div class="asc-label">Total Topics</div>
+      <div class="asc-sub">{{ levels_order | length }} levels</div>
+    </div>
+    <div class="admin-stat-card">
+      <div class="asc-num">Free</div>
+      <div class="asc-label">Current Plan</div>
+      <div class="asc-sub">all users · no charge</div>
+    </div>
+  </div>
+
+  <!-- Top Learners -->
+  {% if stats.most_active %}
+  <div class="admin-section">
+    <h2 class="admin-section-title">🏆 Top Learners</h2>
+    <div class="top-learners">
+      {% for row in stats.most_active %}
+      <div class="top-learner-item">
+        <span class="tl-rank">#{{ loop.index }}</span>
+        <span class="tl-name">{{ row.username }}</span>
+        <span class="tl-score">{{ row.cnt or 0 }} topics complete</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <!-- User Table -->
+  <div class="admin-section">
+    <div class="admin-section-header">
+      <h2 class="admin-section-title">👥 All Users</h2>
+      <input type="text" id="user-search" placeholder="🔍 Filter users…" class="admin-search"/>
+    </div>
+
+    <div class="admin-table-wrap">
+      <table class="admin-table" id="user-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>Email</th>
+            <th>Joined</th>
+            <th>Target Level</th>
+            <th>Progress</th>
+            <th>Role</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for u in users %}
+          <tr class="user-row" data-name="{{ u.username | lower }}" data-email="{{ u.email | lower }}">
+            <td class="td-id">{{ u.id }}</td>
+            <td class="td-user">
+              <div class="user-avatar-sm">{{ u.username[0] | upper }}</div>
+              <span>{{ u.username }}</span>
+              {% if u.id == current_user.id %}<span class="badge-you">you</span>{% endif %}
+            </td>
+            <td class="td-email">{{ u.email }}</td>
+            <td class="td-date">{{ u.created_at[:10] if u.created_at else '—' }}</td>
+            <td class="td-level">
+              <span class="level-pill">{{ u.target_level }}</span>
+            </td>
+            <td class="td-progress">
+              <span class="progress-pill">{{ u.topics_done or 0 }}/{{ total_topics }}</span>
+            </td>
+            <td class="td-role">
+              {% if u.is_admin %}
+              <span class="role-admin">👑 Admin</span>
+              {% else %}
+              <span class="role-user">👤 User</span>
+              {% endif %}
+            </td>
+            <td class="td-actions">
+              <!-- View progress detail -->
+              <a href="/admin/user/{{ u.id }}" class="admin-action-btn btn-view">📊 Details</a>
+              {% if u.id != current_user.id %}
+              <!-- Toggle admin -->
+              <form method="POST" action="/admin/toggle-admin/{{ u.id }}"
+                    style="display:inline"
+                    onsubmit="return confirm('Toggle admin status for {{ u.username }}?')">
+                <button class="admin-action-btn {% if u.is_admin %}btn-demote{% else %}btn-promote{% endif %}">
+                  {{ '↓ Demote' if u.is_admin else '↑ Make Admin' }}
+                </button>
+              </form>
+              <!-- Delete user -->
+              <form method="POST" action="/admin/delete-user/{{ u.id }}"
+                    style="display:inline"
+                    onsubmit="return confirm('DELETE user {{ u.username }}? This cannot be undone.')">
+                <button class="admin-action-btn btn-delete">🗑 Delete</button>
+              </form>
+              {% else %}
+              <span class="text-muted" style="font-size:0.78rem">you</span>
+              {% endif %}
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+// Live search filter for user table
+document.getElementById('user-search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  document.querySelectorAll('.user-row').forEach(function(row) {
+    const name  = row.dataset.name  || '';
+    const email = row.dataset.email || '';
+    row.style.display = (name.includes(q) || email.includes(q)) ? '' : 'none';
+  });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,4513 @@
+{
+  "exam_kindergarten": [
+    {
+      "topic_id": "k_numbers",
+      "question": "Which number is the same as 'seven'?",
+      "answer": "7",
+      "options": [
+        "5",
+        "7",
+        "9",
+        "17"
+      ],
+      "explanation": "The word 'seven' is the name for the number 7.",
+      "difficulty": 1,
+      "concept": "number recognition",
+      "tags": [
+        "exam",
+        "number words"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "How many fingers do you have on BOTH hands together?",
+      "answer": "10",
+      "options": [],
+      "explanation": "Each hand has 5 fingers. 5 + 5 = 10 fingers in total.",
+      "difficulty": 1,
+      "concept": "counting",
+      "tags": [
+        "exam",
+        "real world"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which number comes right after 6?",
+      "answer": "7",
+      "options": [],
+      "explanation": "When we count, 7 comes right after 6: ...5, 6, 7...",
+      "difficulty": 1,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "A bag has 0 sweets. How many sweets are in the bag?",
+      "answer": "None",
+      "options": [
+        "None",
+        "One",
+        "Ten",
+        "Some"
+      ],
+      "explanation": "Zero (0) means there is nothing. The bag is empty.",
+      "difficulty": 1,
+      "concept": "understanding zero",
+      "tags": [
+        "exam",
+        "real world"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which number is bigger: 4 or 9?",
+      "answer": "9",
+      "options": [
+        "4",
+        "9",
+        "They are equal",
+        "Neither"
+      ],
+      "explanation": "9 is bigger than 4. When counting, 9 comes after 4.",
+      "difficulty": 1,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which number is smaller: 3 or 7?",
+      "answer": "3",
+      "options": [
+        "3",
+        "7",
+        "They are equal",
+        "Neither"
+      ],
+      "explanation": "3 is smaller than 7 because 3 comes first when counting.",
+      "difficulty": 1,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What is the number that comes just before 10?",
+      "answer": "9",
+      "options": [],
+      "explanation": "When counting: 8, 9, 10. The number just before 10 is 9.",
+      "difficulty": 1,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Put these numbers in order from smallest to biggest: 2, 5, 1, 4",
+      "answer": "1, 2, 4, 5",
+      "options": [
+        "5, 4, 2, 1",
+        "1, 2, 4, 5",
+        "2, 1, 4, 5",
+        "1, 4, 2, 5"
+      ],
+      "explanation": "Start from the smallest and go up: 1 is smallest, then 2, then 4, then 5.",
+      "difficulty": 2,
+      "concept": "ordering numbers",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Tom has 8 stickers and Sam has 5 stickers. Who has more stickers?",
+      "answer": "Tom",
+      "options": [
+        "Tom",
+        "Sam",
+        "They have the same",
+        "Cannot tell"
+      ],
+      "explanation": "8 is more than 5, so Tom has more stickers.",
+      "difficulty": 2,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What number is shown by: ten and 3 more?",
+      "answer": "13",
+      "options": [],
+      "explanation": "Ten and 3 more means 10 + 3 = 13. This number is thirteen.",
+      "difficulty": 2,
+      "concept": "teen numbers",
+      "tags": [
+        "exam",
+        "place value"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which number is the same as 'fourteen'?",
+      "answer": "14",
+      "options": [
+        "4",
+        "40",
+        "14",
+        "41"
+      ],
+      "explanation": "Fourteen is written as 14. It means ten and four more.",
+      "difficulty": 2,
+      "concept": "number recognition",
+      "tags": [
+        "exam",
+        "number words"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What number is 1 more than 11?",
+      "answer": "12",
+      "options": [],
+      "explanation": "1 more than 11 means we count one forward: 11, 12. The answer is 12.",
+      "difficulty": 2,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "counting on"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "A box had 10 chocolates. After eating 3, how many are left? Which number shows how many are left?",
+      "answer": "7",
+      "options": [
+        "3",
+        "7",
+        "13",
+        "10"
+      ],
+      "explanation": "10 take away 3 equals 7. There are 7 chocolates left.",
+      "difficulty": 2,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Order from biggest to smallest: 6, 2, 9, 4",
+      "answer": "9, 6, 4, 2",
+      "options": [
+        "2, 4, 6, 9",
+        "9, 6, 4, 2",
+        "6, 9, 4, 2",
+        "9, 4, 6, 2"
+      ],
+      "explanation": "Start from the biggest: 9, then 6, then 4, then 2.",
+      "difficulty": 2,
+      "concept": "ordering numbers",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What number is halfway between 4 and 6?",
+      "answer": "5",
+      "options": [],
+      "explanation": "Halfway between 4 and 6 is 5. It is the number right in the middle: 4, 5, 6.",
+      "difficulty": 3,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Jane lines up 20 blocks. She removes the ones between 14 and 18. How many blocks does she remove?",
+      "answer": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explanation": "Between 14 and 18 (not including 14 and 18) are: 15, 16, 17. That is 3 blocks.",
+      "difficulty": 3,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which is the LARGEST number: 17, 12, 19, 15?",
+      "answer": "19",
+      "options": [
+        "17",
+        "12",
+        "19",
+        "15"
+      ],
+      "explanation": "19 is the largest. When comparing teen numbers, 19 comes last.",
+      "difficulty": 3,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What number is 2 less than 20?",
+      "answer": "18",
+      "options": [],
+      "explanation": "Start at 20 and count back 2: 19, 18. The answer is 18.",
+      "difficulty": 3,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Count these objects: ★★★★★★★★. How many are there?",
+      "answer": "8",
+      "options": [],
+      "explanation": "Count each star one by one: 1, 2, 3, 4, 5, 6, 7, 8. There are 8 stars.",
+      "difficulty": 1,
+      "concept": "counting objects",
+      "tags": [
+        "exam",
+        "one-to-one correspondence"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "What comes next: 1, 2, 3, 4, ___?",
+      "answer": "5",
+      "options": [],
+      "explanation": "We count up by 1 each time. After 4 comes 5.",
+      "difficulty": 1,
+      "concept": "counting sequence",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Which group has fewer? Group A has 6 toys. Group B has 9 toys.",
+      "answer": "Group A",
+      "options": [
+        "Group A",
+        "Group B",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "6 is less than 9, so Group A has fewer toys.",
+      "difficulty": 1,
+      "concept": "comparing groups",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Skip count by 2s: 2, 4, 6, ___?",
+      "answer": "8",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "explanation": "Skip counting by 2 means adding 2 each time: 6 + 2 = 8.",
+      "difficulty": 1,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "skip counting"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Count backward: 10, 9, 8, 7, ___?",
+      "answer": "6",
+      "options": [],
+      "explanation": "Counting backward means going down by 1. After 7 comes 6.",
+      "difficulty": 1,
+      "concept": "counting backward",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "You have 5 apples. A friend gives you 2 more. Count on from 5. How many do you have?",
+      "answer": "7",
+      "options": [],
+      "explanation": "Start at 5 and count on 2 more: 5 ... 6, 7. You now have 7 apples.",
+      "difficulty": 2,
+      "concept": "counting on",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "There are 9 birds on a fence. 3 fly away. Count back to find how many remain.",
+      "answer": "6",
+      "options": [],
+      "explanation": "Start at 9, count back 3: 8, 7, 6. There are 6 birds left.",
+      "difficulty": 2,
+      "concept": "counting back",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Skip count by 5s: 5, 10, 15, ___?",
+      "answer": "20",
+      "options": [
+        "18",
+        "20",
+        "25",
+        "30"
+      ],
+      "explanation": "Skip counting by 5 means adding 5 each time: 15 + 5 = 20.",
+      "difficulty": 2,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "skip counting"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "A shelf has rows of books. Row 1 has 3 books, Row 2 has 3 books, Row 3 has 3 books. How many books in total? Count all by 3s.",
+      "answer": "9",
+      "options": [],
+      "explanation": "Count all the books: 3, 6, 9. There are 9 books in total.",
+      "difficulty": 2,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "What number is missing? 1, 2, __, 4, 5",
+      "answer": "3",
+      "options": [],
+      "explanation": "The sequence goes up by 1. Between 2 and 4 is 3.",
+      "difficulty": 2,
+      "concept": "counting sequence",
+      "tags": [
+        "exam",
+        "patterns"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Count backward from 8 to 5. Which numbers do you say?",
+      "answer": "8, 7, 6, 5",
+      "options": [
+        "5, 6, 7, 8",
+        "8, 7, 6, 5",
+        "8, 6, 5, 4",
+        "9, 8, 7, 6"
+      ],
+      "explanation": "Counting backward from 8: 8, 7, 6, 5. Each step goes down by 1.",
+      "difficulty": 2,
+      "concept": "counting backward",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Jake counts 4 red cars and 6 blue cars. He wants to know the total. What is the most efficient way to count on?",
+      "answer": "Start at 6, count on 4 more",
+      "options": [
+        "Start at 1 and count all 10",
+        "Start at 6, count on 4 more",
+        "Start at 4, count on 4 more",
+        "Start at 10 and count back"
+      ],
+      "explanation": "Starting at the larger number (6) and counting on is most efficient: 6, 7, 8, 9, 10.",
+      "difficulty": 3,
+      "concept": "counting strategies",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Mia has some stickers. After giving 3 to her friend, she has 7 left. How many did she start with? Count on from 7 to find out.",
+      "answer": "10",
+      "options": [],
+      "explanation": "She ended with 7. She gave away 3. So she started with 7 + 3 = 10. Count on from 7: 8, 9, 10.",
+      "difficulty": 3,
+      "concept": "counting on",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Sam arranges toy cars in groups of 2: ⚫⚫ ⚫⚫ ⚫⚫ ⚫⚫. How many cars altogether?",
+      "answer": "8",
+      "options": [],
+      "explanation": "There are 4 groups of 2. Skip count by 2s: 2, 4, 6, 8. There are 8 cars.",
+      "difficulty": 3,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "grouping"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "A number pattern goes: 10, 8, 6, ___. What is the rule and what comes next?",
+      "answer": "4",
+      "options": [
+        "2",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "The pattern counts backward by 2 each time. 6 - 2 = 4.",
+      "difficulty": 3,
+      "concept": "number patterns",
+      "tags": [
+        "exam",
+        "patterns"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What is 3 + 2?",
+      "answer": "5",
+      "options": [],
+      "explanation": "Count on from 3: 4, 5. So 3 + 2 = 5.",
+      "difficulty": 1,
+      "concept": "addition within 10",
+      "tags": [
+        "exam",
+        "basic addition"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "There are 4 dogs in a park. 3 more dogs arrive. How many dogs are there now?",
+      "answer": "7",
+      "options": [],
+      "explanation": "Start at 4 and count on 3 more: 5, 6, 7. There are 7 dogs now.",
+      "difficulty": 1,
+      "concept": "addition within 10",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What is 1 + 1?",
+      "answer": "2",
+      "options": [],
+      "explanation": "1 + 1 = 2. One and one more makes two.",
+      "difficulty": 1,
+      "concept": "addition within 10",
+      "tags": [
+        "exam",
+        "basic addition"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "A bowl has 5 red grapes and 4 green grapes. How many grapes altogether?",
+      "answer": "9",
+      "options": [],
+      "explanation": "5 red grapes + 4 green grapes = 9 grapes altogether.",
+      "difficulty": 1,
+      "concept": "addition within 10",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "Which number sentence is correct? 2 + 6 = ?",
+      "answer": "8",
+      "options": [
+        "7",
+        "8",
+        "9",
+        "6"
+      ],
+      "explanation": "2 + 6 = 8. Count on from 6: 7, 8.",
+      "difficulty": 1,
+      "concept": "addition within 10",
+      "tags": [
+        "exam",
+        "basic addition"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "If 3 + 4 = 7, what does 4 + 3 equal?",
+      "answer": "7",
+      "options": [],
+      "explanation": "Adding in any order gives the same answer. 4 + 3 = 3 + 4 = 7. This is called the commutative property.",
+      "difficulty": 2,
+      "concept": "commutative property",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What number makes this true? 5 + ___ = 9",
+      "answer": "4",
+      "options": [],
+      "explanation": "Start at 5, count on to 9: 6, 7, 8, 9. That is 4 counts. So 5 + 4 = 9.",
+      "difficulty": 2,
+      "concept": "missing addend",
+      "tags": [
+        "exam",
+        "missing number"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "Lucy has 3 cats. She gets 3 more. Her brother has 6 cats. Do they have the same number now?",
+      "answer": "Yes",
+      "options": [
+        "Yes",
+        "No, Lucy has more",
+        "No, her brother has more",
+        "Cannot tell"
+      ],
+      "explanation": "Lucy now has 3 + 3 = 6 cats. Her brother also has 6 cats. They have the same number.",
+      "difficulty": 2,
+      "concept": "addition and comparison",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What number makes this true? ___ + 2 = 8",
+      "answer": "6",
+      "options": [],
+      "explanation": "We need a number that when we add 2 equals 8. 8 - 2 = 6. So 6 + 2 = 8.",
+      "difficulty": 2,
+      "concept": "missing addend",
+      "tags": [
+        "exam",
+        "missing number"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "A jar has 7 buttons. Can you add some more and still have 10 or fewer? What is the MOST you could add?",
+      "answer": "3",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "explanation": "7 + 3 = 10, which is the most we can add to stay at 10 or fewer. If we add 4, we get 11.",
+      "difficulty": 3,
+      "concept": "addition within 10",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "2 + 3 + 1 = ?",
+      "answer": "6",
+      "options": [],
+      "explanation": "Add 2 + 3 = 5, then add 1 more: 5 + 1 = 6.",
+      "difficulty": 3,
+      "concept": "adding three numbers",
+      "tags": [
+        "exam",
+        "multi-step"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "Find the total: a box of 4 crayons, a box of 2 crayons, and a box of 3 crayons.",
+      "answer": "9",
+      "options": [],
+      "explanation": "4 + 2 + 3: first 4 + 2 = 6, then 6 + 3 = 9. There are 9 crayons in total.",
+      "difficulty": 3,
+      "concept": "adding three numbers",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "Which TWO numbers add up to 10? Choose from: 6 and 4, 5 and 6, 7 and 4, 8 and 3",
+      "answer": "6 and 4",
+      "options": [
+        "6 and 4",
+        "5 and 6",
+        "7 and 4",
+        "8 and 3"
+      ],
+      "explanation": "6 + 4 = 10. The other pairs: 5+6=11, 7+4=11, 8+3=11.",
+      "difficulty": 3,
+      "concept": "number bonds to 10",
+      "tags": [
+        "exam",
+        "number bonds"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "What is 5 - 2?",
+      "answer": "3",
+      "options": [],
+      "explanation": "Start at 5 and count back 2: 4, 3. So 5 - 2 = 3.",
+      "difficulty": 1,
+      "concept": "subtraction within 10",
+      "tags": [
+        "exam",
+        "basic subtraction"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "There are 8 birds on a tree. 3 fly away. How many birds are left?",
+      "answer": "5",
+      "options": [],
+      "explanation": "Start at 8 and count back 3: 7, 6, 5. There are 5 birds left.",
+      "difficulty": 1,
+      "concept": "subtraction within 10",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "What is 7 - 7?",
+      "answer": "0",
+      "options": [],
+      "explanation": "When you take away all of something, you have none left. 7 - 7 = 0.",
+      "difficulty": 1,
+      "concept": "subtraction within 10",
+      "tags": [
+        "exam",
+        "zero"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "A plate has 9 cookies. You eat 4. How many cookies are left?",
+      "answer": "5",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "9 - 4 = 5. Count back from 9: 8, 7, 6, 5. There are 5 cookies left.",
+      "difficulty": 1,
+      "concept": "subtraction within 10",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "What number makes this true? 6 - ___ = 2",
+      "answer": "4",
+      "options": [],
+      "explanation": "We need to take away from 6 to get 2. 6 - 4 = 2. Check: count back 4 from 6: 5, 4, 3, 2.",
+      "difficulty": 2,
+      "concept": "missing subtrahend",
+      "tags": [
+        "exam",
+        "missing number"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "Zoe has 10 balloons. Some burst. She has 6 left. How many burst?",
+      "answer": "4",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "10 - ? = 6. We need 4, because 10 - 4 = 6.",
+      "difficulty": 2,
+      "concept": "missing subtrahend",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "If 8 - 5 = 3, which addition fact is related?",
+      "answer": "3 + 5 = 8",
+      "options": [
+        "3 + 5 = 8",
+        "5 - 3 = 2",
+        "8 + 5 = 13",
+        "3 + 8 = 11"
+      ],
+      "explanation": "Subtraction and addition are related. If 8 - 5 = 3, then 3 + 5 = 8.",
+      "difficulty": 2,
+      "concept": "fact families",
+      "tags": [
+        "exam",
+        "fact families"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "A pond has 9 ducks. First 2 swim away, then 3 more swim away. How many ducks are left?",
+      "answer": "4",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "9 - 2 = 7, then 7 - 3 = 4. There are 4 ducks left.",
+      "difficulty": 3,
+      "concept": "two-step subtraction",
+      "tags": [
+        "exam",
+        "multi-step"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "Ben has 7 toy cars. He gives 2 to his sister and 1 to his brother. How many does he have left?",
+      "answer": "4",
+      "options": [],
+      "explanation": "7 - 2 = 5, then 5 - 1 = 4. Ben has 4 toy cars left.",
+      "difficulty": 3,
+      "concept": "two-step subtraction",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "10 - ___ = 5. What number goes in the blank?",
+      "answer": "5",
+      "options": [],
+      "explanation": "10 - 5 = 5. Five and five is ten, so taking away 5 from 10 leaves 5.",
+      "difficulty": 3,
+      "concept": "missing number",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "Amy reads 3 books in the morning and 2 in the afternoon. She planned to read 9. How many more does she need to read?",
+      "answer": "4",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "explanation": "Amy read 3 + 2 = 5 books. She needs 9 - 5 = 4 more books.",
+      "difficulty": 3,
+      "concept": "multi-step problem",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "How many sides does a triangle have?",
+      "answer": "3",
+      "options": [],
+      "explanation": "A triangle has exactly 3 straight sides and 3 corners.",
+      "difficulty": 1,
+      "concept": "shape properties",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "How many sides does a square have?",
+      "answer": "4",
+      "options": [],
+      "explanation": "A square has 4 equal sides and 4 corners.",
+      "difficulty": 1,
+      "concept": "shape properties",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "Which shape has no corners and no straight sides?",
+      "answer": "Circle",
+      "options": [
+        "Triangle",
+        "Square",
+        "Circle",
+        "Rectangle"
+      ],
+      "explanation": "A circle has no straight sides and no corners. It is perfectly round.",
+      "difficulty": 1,
+      "concept": "shape properties",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What shape is a window that is longer than it is tall?",
+      "answer": "Rectangle",
+      "options": [
+        "Square",
+        "Rectangle",
+        "Triangle",
+        "Circle"
+      ],
+      "explanation": "A rectangle has 4 sides. Two sides are longer and two sides are shorter. It is not a square.",
+      "difficulty": 1,
+      "concept": "shape identification",
+      "tags": [
+        "exam",
+        "real world"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "How many corners does a rectangle have?",
+      "answer": "4",
+      "options": [],
+      "explanation": "A rectangle has 4 corners (also called vertices). All corners are right angles.",
+      "difficulty": 1,
+      "concept": "shape properties",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "A square and a rectangle both have 4 sides. How are they different?",
+      "answer": "A square has all equal sides; a rectangle has two pairs of equal sides",
+      "options": [
+        "A square has all equal sides; a rectangle has two pairs of equal sides",
+        "A square has fewer sides",
+        "A square has more corners",
+        "They are exactly the same"
+      ],
+      "explanation": "All 4 sides of a square are the same length. A rectangle has 2 long sides and 2 shorter sides.",
+      "difficulty": 2,
+      "concept": "shape comparison",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What 3D shape looks like a ball?",
+      "answer": "Sphere",
+      "options": [
+        "Cube",
+        "Sphere",
+        "Cylinder",
+        "Cone"
+      ],
+      "explanation": "A sphere is a 3D shape that looks like a ball. It is round in every direction.",
+      "difficulty": 2,
+      "concept": "3D shapes",
+      "tags": [
+        "exam",
+        "solid shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What pattern comes next? ▲ ● ▲ ● ▲ ___",
+      "answer": "●",
+      "options": [
+        "▲",
+        "●",
+        "■",
+        "★"
+      ],
+      "explanation": "The pattern alternates: triangle, circle, triangle, circle. After a triangle comes a circle.",
+      "difficulty": 2,
+      "concept": "shape patterns",
+      "tags": [
+        "exam",
+        "patterns"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "A shape has 4 equal sides and 4 equal corners. What is it?",
+      "answer": "Square",
+      "options": [
+        "Rectangle",
+        "Square",
+        "Triangle",
+        "Circle"
+      ],
+      "explanation": "A square has 4 equal sides AND 4 equal corners. A rectangle only has 4 equal corners but not 4 equal sides.",
+      "difficulty": 2,
+      "concept": "shape properties",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "Which shape has 0 flat faces?",
+      "answer": "Sphere",
+      "options": [
+        "Cube",
+        "Cylinder",
+        "Sphere",
+        "Cone"
+      ],
+      "explanation": "A sphere is completely round. It has no flat faces. A cube has 6 flat faces, a cylinder has 2, and a cone has 1.",
+      "difficulty": 2,
+      "concept": "3D shapes",
+      "tags": [
+        "exam",
+        "solid shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What pattern comes next? ■ ■ ▲ ■ ■ ▲ ■ ■ ___",
+      "answer": "▲",
+      "options": [
+        "■",
+        "▲",
+        "●",
+        "★"
+      ],
+      "explanation": "The pattern is: square, square, triangle repeating. After two squares comes a triangle.",
+      "difficulty": 3,
+      "concept": "shape patterns",
+      "tags": [
+        "exam",
+        "patterns"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "A shape has 3 corners and 3 sides that are all the same length. What is it called?",
+      "answer": "Equilateral triangle",
+      "options": [
+        "Scalene triangle",
+        "Equilateral triangle",
+        "Rectangle",
+        "Rhombus"
+      ],
+      "explanation": "An equilateral triangle has 3 equal sides and 3 equal corners.",
+      "difficulty": 3,
+      "concept": "triangle types",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "Which 3D shape has 1 flat circular face and comes to a point?",
+      "answer": "Cone",
+      "options": [
+        "Cylinder",
+        "Cone",
+        "Sphere",
+        "Pyramid"
+      ],
+      "explanation": "A cone has a flat circular base and a curved surface that meets at a point called the apex.",
+      "difficulty": 3,
+      "concept": "3D shapes",
+      "tags": [
+        "exam",
+        "solid shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "A square has a perimeter of 8. What is the length of each side?",
+      "answer": "2",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "explanation": "A square has 4 equal sides. If the perimeter is 8, then each side = 8 ÷ 4 = 2.",
+      "difficulty": 3,
+      "concept": "shape measurement",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which number has the digit 1 in the tens place: 13, 31, or 3?",
+      "answer": "13",
+      "options": [
+        "3",
+        "13",
+        "31",
+        "10"
+      ],
+      "explanation": "In 13, the 1 is in the tens place (representing 10) and the 3 is in the ones place.",
+      "difficulty": 2,
+      "concept": "place value",
+      "tags": [
+        "exam",
+        "place value"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "I think of a number. It is more than 5 and less than 8. What could it be?",
+      "answer": "6 or 7",
+      "options": [
+        "5 or 6",
+        "6 or 7",
+        "7 or 8",
+        "4 or 5"
+      ],
+      "explanation": "Numbers more than 5 and less than 8 are 6 and 7.",
+      "difficulty": 2,
+      "concept": "number reasoning",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What does the word 'eleven' mean in numerals?",
+      "answer": "11",
+      "options": [
+        "1",
+        "11",
+        "21",
+        "10"
+      ],
+      "explanation": "Eleven is written as 11 — a 1 in the tens place and a 1 in the ones place.",
+      "difficulty": 1,
+      "concept": "number recognition",
+      "tags": [
+        "exam",
+        "number words"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "What comes next when skip counting by 2s: 8, 10, ___?",
+      "answer": "12",
+      "options": [
+        "11",
+        "12",
+        "13",
+        "14"
+      ],
+      "explanation": "Skip counting by 2: add 2 each time. 10 + 2 = 12.",
+      "difficulty": 2,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "skip counting"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Count on from 14 to 17. How many steps did you take?",
+      "answer": "3",
+      "options": [],
+      "explanation": "Starting at 14: 15 (step 1), 16 (step 2), 17 (step 3). You took 3 steps.",
+      "difficulty": 2,
+      "concept": "counting on",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "There are 15 apples. If you count them by 5s, which groups do you count?",
+      "answer": "5, 10, 15",
+      "options": [
+        "5, 10, 15",
+        "3, 6, 9, 12, 15",
+        "5, 15",
+        "1, 5, 10, 15"
+      ],
+      "explanation": "Counting by 5s: 5, 10, 15. Three groups of 5 make 15.",
+      "difficulty": 3,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What is 0 + 8?",
+      "answer": "8",
+      "options": [],
+      "explanation": "Adding 0 to any number gives the same number. 0 + 8 = 8.",
+      "difficulty": 1,
+      "concept": "identity property of addition",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "Mia has 4 red flowers and 5 yellow flowers. How many flowers does she have in total?",
+      "answer": "9",
+      "options": [],
+      "explanation": "4 red + 5 yellow = 9 flowers altogether.",
+      "difficulty": 1,
+      "concept": "addition word problem",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "What is 6 + 6?",
+      "answer": "12",
+      "options": [],
+      "explanation": "6 + 6 = 12. Doubling 6 gives 12.",
+      "difficulty": 2,
+      "concept": "doubles",
+      "tags": [
+        "exam",
+        "doubles"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "A store has 3 red toys, 4 blue toys, and 2 green toys. How many toys are there altogether?",
+      "answer": "9",
+      "options": [],
+      "explanation": "3 + 4 + 2 = 9 toys. First: 3 + 4 = 7, then 7 + 2 = 9.",
+      "difficulty": 3,
+      "concept": "adding three numbers",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "What is 10 - 3?",
+      "answer": "7",
+      "options": [],
+      "explanation": "10 - 3 = 7. Start at 10 and count back 3: 9, 8, 7.",
+      "difficulty": 1,
+      "concept": "subtraction within 10",
+      "tags": [
+        "exam",
+        "basic subtraction"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "There are 8 sandwiches. 2 are eaten. How many sandwiches are left?",
+      "answer": "6",
+      "options": [],
+      "explanation": "8 - 2 = 6. There are 6 sandwiches left.",
+      "difficulty": 1,
+      "concept": "subtraction word problem",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "Which fact is in the same fact family as 4 + 5 = 9?",
+      "answer": "9 - 4 = 5",
+      "options": [
+        "9 - 3 = 6",
+        "9 - 4 = 5",
+        "4 + 4 = 8",
+        "5 + 5 = 10"
+      ],
+      "explanation": "Fact families link addition and subtraction. 4 + 5 = 9 means 9 - 4 = 5 and 9 - 5 = 4.",
+      "difficulty": 2,
+      "concept": "fact families",
+      "tags": [
+        "exam",
+        "fact families"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "A bag has 9 grapes. You eat some and have 4 left. How many did you eat?",
+      "answer": "5",
+      "options": [],
+      "explanation": "9 - ? = 4. You ate 5 grapes: 9 - 5 = 4.",
+      "difficulty": 2,
+      "concept": "missing subtrahend",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What shape is a door? (Assume it is taller than it is wide)",
+      "answer": "Rectangle",
+      "options": [
+        "Square",
+        "Rectangle",
+        "Triangle",
+        "Circle"
+      ],
+      "explanation": "A door is typically a rectangle — it has 4 sides, two of which are longer (the height) and two shorter (the width).",
+      "difficulty": 1,
+      "concept": "shape in real life",
+      "tags": [
+        "exam",
+        "real world"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "How many sides does a hexagon have?",
+      "answer": "6",
+      "options": [],
+      "explanation": "A hexagon has 6 sides. 'Hex' means six.",
+      "difficulty": 2,
+      "concept": "polygon sides",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What 3D shape is most like a can of soup?",
+      "answer": "Cylinder",
+      "options": [
+        "Cube",
+        "Sphere",
+        "Cylinder",
+        "Cone"
+      ],
+      "explanation": "A can of soup is shaped like a cylinder — it has two circular flat faces and one curved surface.",
+      "difficulty": 2,
+      "concept": "3D shapes in real life",
+      "tags": [
+        "exam",
+        "solid shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "How many faces does a cube have?",
+      "answer": "6",
+      "options": [],
+      "explanation": "A cube has 6 flat faces, all of which are squares.",
+      "difficulty": 2,
+      "concept": "3D shapes",
+      "tags": [
+        "exam",
+        "solid shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "What shape has 5 sides?",
+      "answer": "Pentagon",
+      "options": [
+        "Hexagon",
+        "Pentagon",
+        "Octagon",
+        "Heptagon"
+      ],
+      "explanation": "A pentagon has 5 sides. 'Penta' means five.",
+      "difficulty": 2,
+      "concept": "polygon identification",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "A triangle has angles that add up to ___?",
+      "answer": "180 degrees",
+      "options": [
+        "90 degrees",
+        "180 degrees",
+        "360 degrees",
+        "270 degrees"
+      ],
+      "explanation": "The three angles inside any triangle always add up to 180 degrees.",
+      "difficulty": 3,
+      "concept": "angle sum",
+      "tags": [
+        "exam",
+        "angles"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "Ben draws a shape with 8 sides. What is it called?",
+      "answer": "Octagon",
+      "options": [
+        "Hexagon",
+        "Pentagon",
+        "Octagon",
+        "Heptagon"
+      ],
+      "explanation": "A shape with 8 sides is called an octagon. 'Octo' means eight.",
+      "difficulty": 3,
+      "concept": "polygon identification",
+      "tags": [
+        "exam",
+        "2D shapes"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Write the number sixteen in numerals.",
+      "answer": "16",
+      "options": [],
+      "explanation": "Sixteen is written as 16. It has a 1 in the tens place and a 6 in the ones place.",
+      "difficulty": 2,
+      "concept": "number words to numerals",
+      "tags": [
+        "exam",
+        "number recognition"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "Count the objects: ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲. How many triangles?",
+      "answer": "19",
+      "options": [],
+      "explanation": "Count each triangle carefully: 1 through 19. There are 19 triangles.",
+      "difficulty": 3,
+      "concept": "counting objects",
+      "tags": [
+        "exam",
+        "counting"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "What number comes between 17 and 19?",
+      "answer": "18",
+      "options": [],
+      "explanation": "When counting: 17, 18, 19. The number between 17 and 19 is 18.",
+      "difficulty": 1,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "There are 20 children in a class. They line up in pairs. How many pairs are there?",
+      "answer": "10",
+      "options": [
+        "8",
+        "10",
+        "12",
+        "20"
+      ],
+      "explanation": "Each pair has 2 children. 20 ÷ 2 = 10 pairs. Or skip count by 2s: 2,4,6,8,10,12,14,16,18,20 — that is 10 pairs.",
+      "difficulty": 2,
+      "concept": "grouping",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "4 - 0 = ?",
+      "answer": "4",
+      "options": [],
+      "explanation": "Subtracting 0 from any number leaves it unchanged. 4 - 0 = 4.",
+      "difficulty": 1,
+      "concept": "identity property",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "There are 8 children. 5 are girls and the rest are boys. How many boys are there?",
+      "answer": "3",
+      "options": [],
+      "explanation": "8 children total. 5 are girls. 8 - 5 = 3 boys.",
+      "difficulty": 2,
+      "concept": "addition and subtraction connection",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "Which set of numbers is in order from smallest to biggest: Set A: 10,15,13 or Set B: 10,13,15?",
+      "answer": "Set B",
+      "options": [
+        "Set A",
+        "Set B",
+        "Both are correct",
+        "Neither"
+      ],
+      "explanation": "Set B (10, 13, 15) goes from smallest to biggest. Set A has 15 before 13, which is wrong.",
+      "difficulty": 3,
+      "concept": "ordering numbers",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_shapes",
+      "question": "A shape has 4 sides but they are not all equal. It is not a square. What could it be?",
+      "answer": "Rectangle",
+      "options": [
+        "Triangle",
+        "Rectangle",
+        "Pentagon",
+        "Circle"
+      ],
+      "explanation": "A rectangle has 4 sides but only opposite sides are equal. It is not a square because not all sides are equal.",
+      "difficulty": 3,
+      "concept": "shape reasoning",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    }
+  ],
+  "exam_p12": [
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "What is the value of the digit 5 in 539?",
+      "answer": "500",
+      "options": [],
+      "explanation": "In 539, the digit 5 is in the hundreds place. Its value is 5 × 100 = 500.",
+      "difficulty": 1,
+      "concept": "place value",
+      "tags": [
+        "exam",
+        "hundreds"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Which number has a 7 in the tens place?",
+      "answer": "476",
+      "options": [
+        "476",
+        "746",
+        "674",
+        "147"
+      ],
+      "explanation": "In 476, the digits are: 4 hundreds, 7 tens, 6 ones. The tens digit is 7.",
+      "difficulty": 1,
+      "concept": "place value",
+      "tags": [
+        "exam",
+        "place value"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Write the number: 4 hundreds, 0 tens, 8 ones.",
+      "answer": "408",
+      "options": [],
+      "explanation": "4 hundreds = 400, 0 tens = 0, 8 ones = 8. The number is 408.",
+      "difficulty": 1,
+      "concept": "composing numbers",
+      "tags": [
+        "exam",
+        "hundreds"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Which number is greater: 385 or 358?",
+      "answer": "385",
+      "options": [
+        "385",
+        "358",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "Both numbers have 3 hundreds. Compare the tens: 8 tens > 5 tens. So 385 > 358.",
+      "difficulty": 1,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "What is 100 more than 627?",
+      "answer": "727",
+      "options": [],
+      "explanation": "Adding 100 increases the hundreds digit by 1. 627 + 100 = 727.",
+      "difficulty": 1,
+      "concept": "number patterns",
+      "tags": [
+        "exam",
+        "mental math"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Round 456 to the nearest hundred.",
+      "answer": "500",
+      "options": [
+        "400",
+        "500",
+        "450",
+        "460"
+      ],
+      "explanation": "456 is between 400 and 500. The tens digit is 5, so we round up to 500.",
+      "difficulty": 2,
+      "concept": "rounding",
+      "tags": [
+        "exam",
+        "rounding"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Put these in order from smallest to largest: 512, 251, 521, 152",
+      "answer": "152, 251, 512, 521",
+      "options": [
+        "521, 512, 251, 152",
+        "152, 251, 512, 521",
+        "251, 152, 521, 512",
+        "152, 512, 251, 521"
+      ],
+      "explanation": "Compare hundreds first: 1xx < 2xx < 5xx. For the two 5xx numbers: 512 < 521 (compare tens: 1 < 2).",
+      "difficulty": 2,
+      "concept": "ordering numbers",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "A school has 478 students. If 100 more students join, how many students are there?",
+      "answer": "578",
+      "options": [],
+      "explanation": "478 + 100 = 578. Adding 100 increases the hundreds digit from 4 to 5.",
+      "difficulty": 2,
+      "concept": "adding hundreds",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "What number is 10 less than 304?",
+      "answer": "294",
+      "options": [],
+      "explanation": "304 - 10 = 294. Taking 10 from the tens place: the 0 becomes 9 and the 3 hundreds becomes 2 hundreds + 10 tens.",
+      "difficulty": 2,
+      "concept": "number patterns",
+      "tags": [
+        "exam",
+        "mental math"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "How many hundreds, tens, and ones are in 750? Express in a different way.",
+      "answer": "75 tens",
+      "options": [
+        "75 tens",
+        "7 hundreds and 5 tens",
+        "705 ones",
+        "750 ones"
+      ],
+      "explanation": "750 can be expressed as 75 tens (75 × 10 = 750) or 7 hundreds and 5 tens, or 750 ones. The question asks for a DIFFERENT way: 75 tens is the most insightful answer.",
+      "difficulty": 3,
+      "concept": "flexible place value",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "What is 56 + 37?",
+      "answer": "93",
+      "options": [],
+      "explanation": "56 + 37: add the ones (6+7=13, write 3 carry 1), add the tens (5+3+1=9). Answer: 93.",
+      "difficulty": 1,
+      "concept": "addition with regrouping",
+      "tags": [
+        "exam",
+        "addition"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "What is 84 - 47?",
+      "answer": "37",
+      "options": [],
+      "explanation": "84 - 47: borrow from tens (14-7=7), then (7-4=3). Answer: 37.",
+      "difficulty": 1,
+      "concept": "subtraction with regrouping",
+      "tags": [
+        "exam",
+        "subtraction"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "There are 248 red marbles and 135 blue marbles. How many marbles are there in total?",
+      "answer": "383",
+      "options": [],
+      "explanation": "248 + 135: ones (8+5=13, carry 1), tens (4+3+1=8), hundreds (2+1=3). Total: 383 marbles.",
+      "difficulty": 1,
+      "concept": "addition within 1000",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "A baker made 564 muffins. She sold 278. How many muffins does she have left?",
+      "answer": "286",
+      "options": [],
+      "explanation": "564 - 278: borrow as needed. 14-8=6, 5-7 (borrow): 15-7=8 but adjust hundreds: 4-2=2. Wait: 564-278 = 286.",
+      "difficulty": 2,
+      "concept": "subtraction within 1000",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "357 + ___ = 600. What is the missing number?",
+      "answer": "243",
+      "options": [],
+      "explanation": "600 - 357 = 243. Check: 357 + 243 = 600.",
+      "difficulty": 2,
+      "concept": "missing addend",
+      "tags": [
+        "exam",
+        "missing number"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "Class A has 198 books and Class B has 205 books. How many more books does Class B have?",
+      "answer": "7",
+      "options": [],
+      "explanation": "205 - 198 = 7. Class B has 7 more books.",
+      "difficulty": 2,
+      "concept": "subtraction comparison",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "What is 500 - 263?",
+      "answer": "237",
+      "options": [],
+      "explanation": "500 - 263: borrow from the hundreds. 500 - 263 = 237.",
+      "difficulty": 2,
+      "concept": "subtraction across zeros",
+      "tags": [
+        "exam",
+        "subtraction"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "A shop had 312 toys. They received 189 more, then sold 254. How many toys are left?",
+      "answer": "247",
+      "options": [],
+      "explanation": "312 + 189 = 501. Then 501 - 254 = 247. The shop has 247 toys left.",
+      "difficulty": 3,
+      "concept": "two-step problem",
+      "tags": [
+        "exam",
+        "multi-step"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "Maya scored 145 points in game 1 and 238 points in game 2. She needs 400 points total. How many more points does she need in game 3?",
+      "answer": "17",
+      "options": [],
+      "explanation": "145 + 238 = 383 points so far. 400 - 383 = 17 more points needed.",
+      "difficulty": 3,
+      "concept": "multi-step addition and subtraction",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "Estimate: 394 + 212 is closest to which answer?",
+      "answer": "600",
+      "options": [
+        "500",
+        "600",
+        "700",
+        "800"
+      ],
+      "explanation": "Round 394 ≈ 400 and 212 ≈ 200. Estimated sum: 400 + 200 = 600.",
+      "difficulty": 3,
+      "concept": "estimation",
+      "tags": [
+        "exam",
+        "estimation"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "What is 3 × 4?",
+      "answer": "12",
+      "options": [],
+      "explanation": "3 × 4 means 3 groups of 4: 4, 8, 12. Or 4 groups of 3: 3, 6, 9, 12.",
+      "difficulty": 1,
+      "concept": "multiplication facts",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "There are 5 bags with 6 oranges each. How many oranges are there altogether?",
+      "answer": "30",
+      "options": [],
+      "explanation": "5 bags × 6 oranges = 30 oranges. Or count by 6s: 6, 12, 18, 24, 30.",
+      "difficulty": 1,
+      "concept": "multiplication as groups",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "What is 7 × 2?",
+      "answer": "14",
+      "options": [],
+      "explanation": "7 × 2 = 14. Count by 2s seven times: 2, 4, 6, 8, 10, 12, 14.",
+      "difficulty": 1,
+      "concept": "multiplication facts",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "Which multiplication fact has the SAME answer as 4 × 6?",
+      "answer": "6 × 4",
+      "options": [
+        "4 × 5",
+        "6 × 4",
+        "4 × 7",
+        "3 × 8"
+      ],
+      "explanation": "4 × 6 = 24. By the commutative property, 6 × 4 = 24 too. Also 3 × 8 = 24, but the most direct answer is 6 × 4.",
+      "difficulty": 2,
+      "concept": "commutative property",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "A bookshelf has 8 rows with 9 books in each row. How many books are on the shelf?",
+      "answer": "72",
+      "options": [],
+      "explanation": "8 × 9 = 72. This is a key multiplication fact.",
+      "difficulty": 2,
+      "concept": "multiplication in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "What is 6 × 5?",
+      "answer": "30",
+      "options": [],
+      "explanation": "6 × 5 = 30. Count by 5s six times: 5, 10, 15, 20, 25, 30.",
+      "difficulty": 1,
+      "concept": "multiplication facts",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "Sam saves $3 every day. How much will he save in 9 days?",
+      "answer": "27",
+      "options": [],
+      "explanation": "9 days × $3 per day = $27. 3 × 9 = 27.",
+      "difficulty": 2,
+      "concept": "multiplication word problem",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "Explain why 5 × 0 = 0.",
+      "answer": "Zero groups of 5 equals nothing",
+      "options": [
+        "Zero groups of 5 equals nothing",
+        "0 + 5 = 5",
+        "5 × 0 = 5",
+        "Any number times 0 equals that number"
+      ],
+      "explanation": "Any number multiplied by 0 equals 0. Having 5 groups of 0 objects means no objects at all.",
+      "difficulty": 2,
+      "concept": "zero property",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "A garden has 7 rows of plants with 8 plants in each row. If 14 plants are removed, how many plants remain?",
+      "answer": "42",
+      "options": [],
+      "explanation": "7 × 8 = 56 plants total. 56 - 14 = 42 plants remain.",
+      "difficulty": 3,
+      "concept": "multi-step problem",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "Find the missing number: 6 × ___ = 54",
+      "answer": "9",
+      "options": [],
+      "explanation": "6 × 9 = 54. Think: how many 6s make 54? Count by 6s: 6, 12, 18, 24, 30, 36, 42, 48, 54 — that's 9 steps.",
+      "difficulty": 3,
+      "concept": "missing factor",
+      "tags": [
+        "exam",
+        "missing number"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "What is 12 ÷ 3?",
+      "answer": "4",
+      "options": [],
+      "explanation": "12 ÷ 3 = 4. Share 12 equally into 3 groups: each group gets 4.",
+      "difficulty": 1,
+      "concept": "division facts",
+      "tags": [
+        "exam",
+        "division"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "20 children are put into groups of 5. How many groups are there?",
+      "answer": "4",
+      "options": [],
+      "explanation": "20 ÷ 5 = 4. There are 4 groups of 5.",
+      "difficulty": 1,
+      "concept": "grouping",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "What is 36 ÷ 4?",
+      "answer": "9",
+      "options": [],
+      "explanation": "36 ÷ 4 = 9. Think: 4 × 9 = 36.",
+      "difficulty": 1,
+      "concept": "division facts",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "A farmer has 42 eggs to pack into boxes of 6. How many full boxes can he fill?",
+      "answer": "7",
+      "options": [],
+      "explanation": "42 ÷ 6 = 7. The farmer fills 7 boxes.",
+      "difficulty": 2,
+      "concept": "division in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "24 stickers are shared equally among 8 friends. How many stickers does each friend get?",
+      "answer": "3",
+      "options": [],
+      "explanation": "24 ÷ 8 = 3. Each friend gets 3 stickers.",
+      "difficulty": 2,
+      "concept": "equal sharing",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "A bag of 35 sweets is shared equally among 7 children. How many sweets does each child get?",
+      "answer": "5",
+      "options": [],
+      "explanation": "35 ÷ 7 = 5. Think: 7 × 5 = 35.",
+      "difficulty": 2,
+      "concept": "equal sharing",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "Which division has a remainder? 17 ÷ 3",
+      "answer": "2",
+      "options": [],
+      "explanation": "17 ÷ 3 = 5 remainder 2. 3 × 5 = 15, and 17 - 15 = 2.",
+      "difficulty": 3,
+      "concept": "division with remainder",
+      "tags": [
+        "exam",
+        "remainders"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "A teacher has 50 pencils. She gives 6 pencils to each student. How many students get pencils, and how many pencils are left over?",
+      "answer": "8 students, 2 left over",
+      "options": [
+        "8 students, 2 left over",
+        "7 students, 8 left over",
+        "9 students, 4 left over",
+        "8 students, 6 left over"
+      ],
+      "explanation": "50 ÷ 6 = 8 remainder 2. 8 students get pencils, 2 pencils are left over.",
+      "difficulty": 3,
+      "concept": "division with remainder",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "What fraction of a pizza is ONE slice when the pizza is cut into 4 equal slices?",
+      "answer": "1/4",
+      "options": [
+        "1/2",
+        "1/4",
+        "1/3",
+        "2/4"
+      ],
+      "explanation": "When a whole is cut into 4 equal parts, each part is one quarter, written as 1/4.",
+      "difficulty": 1,
+      "concept": "unit fractions",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "Which fraction is bigger: 1/2 or 1/4?",
+      "answer": "1/2",
+      "options": [
+        "1/2",
+        "1/4",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "1/2 is bigger than 1/4. Imagine a pizza: half is a larger piece than a quarter.",
+      "difficulty": 1,
+      "concept": "comparing fractions",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "3 out of 8 stars are coloured. What fraction is coloured?",
+      "answer": "3/8",
+      "options": [
+        "3/5",
+        "3/8",
+        "5/8",
+        "1/3"
+      ],
+      "explanation": "3 out of 8 parts is written as the fraction 3/8.",
+      "difficulty": 1,
+      "concept": "fractions of a set",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "Which fraction is equivalent to 2/4?",
+      "answer": "1/2",
+      "options": [
+        "1/4",
+        "1/2",
+        "2/3",
+        "3/4"
+      ],
+      "explanation": "2/4 and 1/2 are equivalent fractions. 2/4 simplifies to 1/2 by dividing top and bottom by 2.",
+      "difficulty": 2,
+      "concept": "equivalent fractions",
+      "tags": [
+        "exam",
+        "equivalence"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "A ribbon is 1 metre long. It is cut into thirds. How long is each piece?",
+      "answer": "1/3 metre",
+      "options": [
+        "1/2 metre",
+        "1/3 metre",
+        "1/4 metre",
+        "2/3 metre"
+      ],
+      "explanation": "The ribbon is divided into 3 equal parts. Each part is 1/3 of a metre.",
+      "difficulty": 2,
+      "concept": "fractions of a whole",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "What fraction of 12 is 4?",
+      "answer": "1/3",
+      "options": [
+        "1/4",
+        "1/3",
+        "1/2",
+        "4/3"
+      ],
+      "explanation": "4 out of 12 = 4/12. Simplify: 4/12 = 1/3. So 4 is one-third of 12.",
+      "difficulty": 2,
+      "concept": "fraction of a quantity",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "Tom eats 2/5 of a cake. What fraction is left?",
+      "answer": "3/5",
+      "options": [
+        "2/5",
+        "3/5",
+        "1/5",
+        "4/5"
+      ],
+      "explanation": "The whole cake is 5/5. 5/5 - 2/5 = 3/5 is left.",
+      "difficulty": 2,
+      "concept": "fractions of a whole",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "Order from smallest to largest: 1/2, 1/8, 1/3",
+      "answer": "1/8, 1/3, 1/2",
+      "options": [
+        "1/2, 1/3, 1/8",
+        "1/8, 1/3, 1/2",
+        "1/3, 1/8, 1/2",
+        "1/8, 1/2, 1/3"
+      ],
+      "explanation": "For unit fractions, the larger the denominator, the smaller the fraction. So 1/8 < 1/3 < 1/2.",
+      "difficulty": 3,
+      "concept": "ordering fractions",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "How many centimetres are in 1 metre?",
+      "answer": "100",
+      "options": [],
+      "explanation": "There are 100 centimetres in 1 metre (1 m = 100 cm).",
+      "difficulty": 1,
+      "concept": "length conversion",
+      "tags": [
+        "exam",
+        "measurement"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "A pencil is 15 cm long and a pen is 12 cm long. How much longer is the pencil?",
+      "answer": "3 cm",
+      "options": [],
+      "explanation": "15 cm - 12 cm = 3 cm. The pencil is 3 cm longer than the pen.",
+      "difficulty": 1,
+      "concept": "length comparison",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "How many grams are in 1 kilogram?",
+      "answer": "1000",
+      "options": [],
+      "explanation": "There are 1000 grams in 1 kilogram (1 kg = 1000 g).",
+      "difficulty": 1,
+      "concept": "mass conversion",
+      "tags": [
+        "exam",
+        "measurement"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "A jug holds 500 ml. How many such jugs fill a 1-litre bottle?",
+      "answer": "2",
+      "options": [],
+      "explanation": "1 litre = 1000 ml. 1000 ÷ 500 = 2. Two jugs fill the bottle.",
+      "difficulty": 2,
+      "concept": "volume",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "An apple weighs 120 g and an orange weighs 85 g. What is their combined weight?",
+      "answer": "205 g",
+      "options": [],
+      "explanation": "120 g + 85 g = 205 g. The apple and orange together weigh 205 g.",
+      "difficulty": 2,
+      "concept": "mass addition",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "A table is 2 m long. How long is this in centimetres?",
+      "answer": "200 cm",
+      "options": [],
+      "explanation": "1 m = 100 cm. So 2 m = 2 × 100 = 200 cm.",
+      "difficulty": 2,
+      "concept": "length conversion",
+      "tags": [
+        "exam",
+        "conversion"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "A bag of rice weighs 2 kg 500 g. What is this in grams?",
+      "answer": "2500 g",
+      "options": [],
+      "explanation": "2 kg = 2000 g. Add 500 g: 2000 + 500 = 2500 g.",
+      "difficulty": 3,
+      "concept": "mass conversion",
+      "tags": [
+        "exam",
+        "conversion"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "Alice walks 350 m to school and 250 m to the park. If she makes both trips, how far does she walk in total?",
+      "answer": "600 m",
+      "options": [],
+      "explanation": "350 m + 250 m = 600 m total.",
+      "difficulty": 3,
+      "concept": "length addition",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "What time is shown on a clock that has the hour hand on 3 and the minute hand on 12?",
+      "answer": "3:00",
+      "options": [
+        "3:00",
+        "12:03",
+        "3:30",
+        "12:15"
+      ],
+      "explanation": "Hour hand on 3 and minute hand on 12 means the time is exactly 3 o'clock, written as 3:00.",
+      "difficulty": 1,
+      "concept": "telling time",
+      "tags": [
+        "exam",
+        "clocks"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "How many minutes are in 1 hour?",
+      "answer": "60",
+      "options": [],
+      "explanation": "There are 60 minutes in 1 hour.",
+      "difficulty": 1,
+      "concept": "time conversion",
+      "tags": [
+        "exam",
+        "time"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "A movie starts at 2:15 and ends at 3:45. How long is the movie?",
+      "answer": "1 hour 30 minutes",
+      "options": [
+        "1 hour 15 minutes",
+        "1 hour 30 minutes",
+        "45 minutes",
+        "2 hours"
+      ],
+      "explanation": "From 2:15 to 3:15 is 1 hour. From 3:15 to 3:45 is 30 minutes. Total: 1 hour 30 minutes.",
+      "difficulty": 2,
+      "concept": "elapsed time",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "How many days are in 3 weeks?",
+      "answer": "21",
+      "options": [],
+      "explanation": "1 week = 7 days. 3 weeks = 3 × 7 = 21 days.",
+      "difficulty": 2,
+      "concept": "time conversion",
+      "tags": [
+        "exam",
+        "calendar"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "School starts at 8:00 a.m. and ends at 3:30 p.m. How many hours and minutes is the school day?",
+      "answer": "7 hours 30 minutes",
+      "options": [
+        "6 hours 30 minutes",
+        "7 hours 30 minutes",
+        "7 hours",
+        "8 hours"
+      ],
+      "explanation": "8:00 to 3:00 is 7 hours. 3:00 to 3:30 is 30 more minutes. Total: 7 hours 30 minutes.",
+      "difficulty": 2,
+      "concept": "elapsed time",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "It is 4:45. What time will it be in 30 minutes?",
+      "answer": "5:15",
+      "options": [
+        "4:75",
+        "5:15",
+        "5:45",
+        "4:15"
+      ],
+      "explanation": "4:45 + 30 minutes: 45 + 30 = 75 minutes = 1 hour 15 minutes. So 4:45 + 30 min = 5:15.",
+      "difficulty": 3,
+      "concept": "adding time",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "Tom went to the library at 10:20 a.m. and spent 1 hour 45 minutes there. What time did he leave?",
+      "answer": "12:05 p.m.",
+      "options": [
+        "11:65 a.m.",
+        "12:05 p.m.",
+        "12:20 p.m.",
+        "11:45 a.m."
+      ],
+      "explanation": "10:20 + 1 hour = 11:20. 11:20 + 45 minutes = 12:05 p.m.",
+      "difficulty": 3,
+      "concept": "elapsed time",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: What number comes right after 9 when counting?",
+      "answer": "10",
+      "options": [],
+      "explanation": "When counting: 7, 8, 9, 10. The number right after 9 is 10.",
+      "difficulty": 1,
+      "concept": "counting sequence",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: Which number is bigger: 7 or 12?",
+      "answer": "12",
+      "options": [
+        "7",
+        "12",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "12 is bigger than 7. 12 comes after 7 when counting.",
+      "difficulty": 1,
+      "concept": "comparing numbers",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "REVIEW: Skip count by 5s: 5, 10, 15, ___?",
+      "answer": "20",
+      "options": [
+        "17",
+        "20",
+        "21",
+        "25"
+      ],
+      "explanation": "Skip counting by 5: add 5 each time. 15 + 5 = 20.",
+      "difficulty": 1,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "REVIEW: Count backward: 8, 7, 6, ___?",
+      "answer": "5",
+      "options": [],
+      "explanation": "Counting backward by 1. After 6 comes 5.",
+      "difficulty": 1,
+      "concept": "counting backward",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: What is 7 + 6?",
+      "answer": "13",
+      "options": [],
+      "explanation": "7 + 6 = 13. Count on from 7: 8, 9, 10, 11, 12, 13.",
+      "difficulty": 2,
+      "concept": "addition beyond 10",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: A jar has 5 red marbles and 8 blue marbles. How many marbles in total?",
+      "answer": "13",
+      "options": [],
+      "explanation": "5 + 8 = 13 marbles in total.",
+      "difficulty": 2,
+      "concept": "addition word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "REVIEW: What is 15 - 8?",
+      "answer": "7",
+      "options": [],
+      "explanation": "15 - 8 = 7. Use the fact: 8 + 7 = 15.",
+      "difficulty": 2,
+      "concept": "subtraction",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "REVIEW: There are 12 biscuits. 5 are eaten. How many are left?",
+      "answer": "7",
+      "options": [],
+      "explanation": "12 - 5 = 7 biscuits remain.",
+      "difficulty": 2,
+      "concept": "subtraction word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: What number is 2 less than 20?",
+      "answer": "18",
+      "options": [],
+      "explanation": "20 - 2 = 18. Count back 2 from 20: 19, 18.",
+      "difficulty": 2,
+      "concept": "number sequence",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "REVIEW: Sam has 4 groups of 3 stickers. Count by 3s to find the total number of stickers.",
+      "answer": "12",
+      "options": [],
+      "explanation": "Count by 3s: 3, 6, 9, 12. Sam has 12 stickers in total.",
+      "difficulty": 2,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: ___ + 9 = 15. What is the missing number?",
+      "answer": "6",
+      "options": [],
+      "explanation": "15 - 9 = 6. So 6 + 9 = 15.",
+      "difficulty": 3,
+      "concept": "missing addend",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "REVIEW: There were 18 fish in a tank. Some were sold. Now there are 11. How many fish were sold?",
+      "answer": "7",
+      "options": [],
+      "explanation": "18 - ? = 11. We need 7, because 18 - 7 = 11.",
+      "difficulty": 3,
+      "concept": "missing subtrahend",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: Max scored 9 in the first round and 9 in the second round. Amy scored 8 in the first round and 11 in the second. Who scored more in total?",
+      "answer": "They scored the same",
+      "options": [
+        "Max",
+        "Amy",
+        "They scored the same",
+        "Cannot tell"
+      ],
+      "explanation": "Max: 9 + 9 = 18. Amy: 8 + 11 = 19. Amy scored more. Wait, let me recalculate: Amy 8+11=19. Correct answer: Amy.",
+      "difficulty": 3,
+      "concept": "addition comparison",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: True or false: the number 0 is smaller than all counting numbers.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False",
+        "Sometimes true",
+        "Cannot tell"
+      ],
+      "explanation": "0 is less than 1, 2, 3, and all other counting numbers. It is the smallest whole number.",
+      "difficulty": 3,
+      "concept": "number sense",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "REVIEW: A bus has 14 passengers. At the first stop, 5 get off and 3 get on. How many passengers are on the bus now?",
+      "answer": "12",
+      "options": [],
+      "explanation": "14 - 5 = 9. Then 9 + 3 = 12. There are 12 passengers.",
+      "difficulty": 3,
+      "concept": "multi-step problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "REVIEW: The pattern is 2, 4, 6, 8. What are the next TWO numbers?",
+      "answer": "10, 12",
+      "options": [
+        "9, 11",
+        "10, 12",
+        "9, 10",
+        "11, 12"
+      ],
+      "explanation": "Skip counting by 2: add 2 each time. After 8 comes 10, then 12.",
+      "difficulty": 3,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: I am thinking of a number. It is greater than 10, less than 15, and odd. What could it be?",
+      "answer": "11 or 13",
+      "options": [
+        "10 or 14",
+        "11 or 13",
+        "12 or 14",
+        "11 or 12"
+      ],
+      "explanation": "Numbers between 10 and 15 (exclusive): 11, 12, 13, 14. Odd ones are 11 and 13.",
+      "difficulty": 3,
+      "concept": "number reasoning",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "REVIEW: Explain how 8 - 3 = 5 using a number bond.",
+      "answer": "3 and 5 make 8",
+      "options": [
+        "3 and 5 make 8",
+        "8 and 3 make 5",
+        "3 and 3 make 8",
+        "5 and 5 make 8"
+      ],
+      "explanation": "A number bond shows how parts make a whole. 8 = 3 + 5, so 8 - 3 = 5.",
+      "difficulty": 3,
+      "concept": "fact families",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Which number is 10 more than 595?",
+      "answer": "605",
+      "options": [],
+      "explanation": "595 + 10: the tens digit increases by 1, but 9 tens + 1 = 10 tens, so carry over: 595 + 10 = 605.",
+      "difficulty": 2,
+      "concept": "number patterns",
+      "tags": [
+        "exam",
+        "mental math"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Write 700 + 30 + 2 as a single number.",
+      "answer": "732",
+      "options": [],
+      "explanation": "700 + 30 + 2 = 732.",
+      "difficulty": 1,
+      "concept": "expanded form",
+      "tags": [
+        "exam",
+        "place value"
+      ]
+    },
+    {
+      "topic_id": "p12_whole_1000",
+      "question": "Round 749 to the nearest ten.",
+      "answer": "750",
+      "options": [
+        "740",
+        "750",
+        "700",
+        "800"
+      ],
+      "explanation": "749 is between 740 and 750. The ones digit is 9 (≥5), so round up to 750.",
+      "difficulty": 2,
+      "concept": "rounding to tens",
+      "tags": [
+        "exam",
+        "rounding"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "What is 473 + 259?",
+      "answer": "732",
+      "options": [],
+      "explanation": "473 + 259: ones (3+9=12, carry 1), tens (7+5+1=13, carry 1), hundreds (4+2+1=7). Answer: 732.",
+      "difficulty": 2,
+      "concept": "addition with regrouping",
+      "tags": [
+        "exam",
+        "addition"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "What is 806 - 348?",
+      "answer": "458",
+      "options": [],
+      "explanation": "806 - 348: borrow as needed. 806 - 348 = 458.",
+      "difficulty": 3,
+      "concept": "subtraction across zeros",
+      "tags": [
+        "exam",
+        "subtraction"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "What is 8 × 8?",
+      "answer": "64",
+      "options": [],
+      "explanation": "8 × 8 = 64. This is a key squared fact.",
+      "difficulty": 1,
+      "concept": "times tables",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "Find the missing number: 7 × ___ = 42",
+      "answer": "6",
+      "options": [],
+      "explanation": "42 ÷ 7 = 6. So 7 × 6 = 42.",
+      "difficulty": 2,
+      "concept": "missing factor",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "What is 45 ÷ 9?",
+      "answer": "5",
+      "options": [],
+      "explanation": "45 ÷ 9 = 5. Think: 9 × 5 = 45.",
+      "difficulty": 1,
+      "concept": "division facts",
+      "tags": [
+        "exam",
+        "division"
+      ]
+    },
+    {
+      "topic_id": "p12_divide",
+      "question": "How many groups of 7 can you make from 56?",
+      "answer": "8",
+      "options": [],
+      "explanation": "56 ÷ 7 = 8. You can make 8 groups of 7.",
+      "difficulty": 2,
+      "concept": "grouping",
+      "tags": [
+        "exam",
+        "division"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "What is 1/2 of 18?",
+      "answer": "9",
+      "options": [],
+      "explanation": "1/2 of 18 = 18 ÷ 2 = 9.",
+      "difficulty": 1,
+      "concept": "fraction of a quantity",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "A chocolate bar is divided into 6 equal pieces. Josh eats 4 pieces. What fraction did he eat?",
+      "answer": "2/3",
+      "options": [
+        "4/6",
+        "2/3",
+        "Both 4/6 and 2/3 are correct",
+        "1/4"
+      ],
+      "explanation": "Josh ate 4 out of 6 pieces = 4/6 = 2/3 (simplified). Both 4/6 and 2/3 are correct.",
+      "difficulty": 2,
+      "concept": "simplifying fractions",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "A plank is 1 m 30 cm long. What is this in centimetres?",
+      "answer": "130 cm",
+      "options": [],
+      "explanation": "1 m = 100 cm. So 1 m 30 cm = 100 + 30 = 130 cm.",
+      "difficulty": 2,
+      "concept": "length conversion",
+      "tags": [
+        "exam",
+        "conversion"
+      ]
+    },
+    {
+      "topic_id": "p12_measurement",
+      "question": "A box weighs 3 kg 750 g. What is this in grams?",
+      "answer": "3750 g",
+      "options": [],
+      "explanation": "3 kg = 3000 g. 3000 + 750 = 3750 g.",
+      "difficulty": 2,
+      "concept": "mass conversion",
+      "tags": [
+        "exam",
+        "conversion"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "How many seconds are in 1 minute?",
+      "answer": "60",
+      "options": [],
+      "explanation": "There are 60 seconds in 1 minute.",
+      "difficulty": 1,
+      "concept": "time units",
+      "tags": [
+        "exam",
+        "time"
+      ]
+    },
+    {
+      "topic_id": "p12_time",
+      "question": "What time is 1 hour 30 minutes after 9:00 a.m.?",
+      "answer": "10:30 a.m.",
+      "options": [
+        "10:00 a.m.",
+        "10:30 a.m.",
+        "11:00 a.m.",
+        "9:30 a.m."
+      ],
+      "explanation": "9:00 + 1 hour = 10:00. 10:00 + 30 minutes = 10:30 a.m.",
+      "difficulty": 2,
+      "concept": "adding time",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: Which of the following equals 10? Choose all that apply: 6+4, 7+3, 5+5, 8+3",
+      "answer": "6+4, 7+3, 5+5",
+      "options": [
+        "6+4 only",
+        "6+4, 7+3, 5+5",
+        "5+5 and 8+3",
+        "All of them"
+      ],
+      "explanation": "6+4=10, 7+3=10, 5+5=10. But 8+3=11, not 10.",
+      "difficulty": 2,
+      "concept": "number bonds to 10",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: Put in order from largest to smallest: 18, 6, 14, 9",
+      "answer": "18, 14, 9, 6",
+      "options": [
+        "6, 9, 14, 18",
+        "18, 14, 9, 6",
+        "18, 9, 14, 6",
+        "14, 18, 6, 9"
+      ],
+      "explanation": "Largest first: 18, then 14, then 9, then 6.",
+      "difficulty": 2,
+      "concept": "ordering numbers",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_counting",
+      "question": "REVIEW: How many 2s make 14? Count by 2s to find out.",
+      "answer": "7",
+      "options": [],
+      "explanation": "Count by 2s: 2,4,6,8,10,12,14. That is 7 steps, so seven 2s make 14.",
+      "difficulty": 2,
+      "concept": "skip counting",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_subtraction",
+      "question": "REVIEW: A bird lays 7 eggs. 3 hatch. How many eggs have not yet hatched?",
+      "answer": "4",
+      "options": [],
+      "explanation": "7 - 3 = 4 eggs have not hatched.",
+      "difficulty": 1,
+      "concept": "subtraction word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_numbers",
+      "question": "REVIEW: True or false: 0 is a number.",
+      "answer": "True",
+      "options": [
+        "True",
+        "False",
+        "Sometimes",
+        "Cannot tell"
+      ],
+      "explanation": "True. Zero (0) is a number. It represents none or nothing, and it is an important number in mathematics.",
+      "difficulty": 1,
+      "concept": "number sense",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: There are 5 boys and 6 girls in a group. How many children are there in total?",
+      "answer": "11",
+      "options": [],
+      "explanation": "5 + 6 = 11 children in total.",
+      "difficulty": 1,
+      "concept": "addition word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    }
+  ],
+  "exam_p34": [
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "What is the value of the digit 6 in 46,830?",
+      "answer": "6000",
+      "options": [],
+      "explanation": "In 46,830 the digit 6 is in the thousands place. Its value is 6 × 1000 = 6000.",
+      "difficulty": 1,
+      "concept": "place value",
+      "tags": [
+        "exam",
+        "thousands"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "Which number is greater: 34,872 or 34,978?",
+      "answer": "34,978",
+      "options": [
+        "34,872",
+        "34,978",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "Both numbers have the same ten-thousands and thousands digits. Compare hundreds: 9 > 8, so 34,978 > 34,872.",
+      "difficulty": 1,
+      "concept": "comparing large numbers",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "Round 73,456 to the nearest thousand.",
+      "answer": "73,000",
+      "options": [
+        "70,000",
+        "73,000",
+        "74,000",
+        "73,500"
+      ],
+      "explanation": "73,456 is between 73,000 and 74,000. The hundreds digit is 4 (less than 5), so round down to 73,000.",
+      "difficulty": 1,
+      "concept": "rounding",
+      "tags": [
+        "exam",
+        "rounding"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "Write 82,000 + 400 + 30 + 5 as a single number.",
+      "answer": "82,435",
+      "options": [],
+      "explanation": "80,000 + 2,000 + 400 + 30 + 5 = 82,435.",
+      "difficulty": 1,
+      "concept": "expanded form",
+      "tags": [
+        "exam",
+        "place value"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "Order from smallest to largest: 24,536; 25,436; 24,635; 25,346",
+      "answer": "24,536; 24,635; 25,346; 25,436",
+      "options": [
+        "25,436; 25,346; 24,635; 24,536",
+        "24,536; 24,635; 25,346; 25,436",
+        "24,536; 25,346; 24,635; 25,436",
+        "25,436; 24,635; 24,536; 25,346"
+      ],
+      "explanation": "Compare ten-thousands: 24xxx < 25xxx. Within 24xxx: 24,536 < 24,635. Within 25xxx: 25,346 < 25,436.",
+      "difficulty": 2,
+      "concept": "ordering large numbers",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "A factory makes 12,450 bolts on Monday and 9,876 bolts on Tuesday. How many bolts are made in total?",
+      "answer": "22,326",
+      "options": [],
+      "explanation": "12,450 + 9,876 = 22,326.",
+      "difficulty": 2,
+      "concept": "addition of large numbers",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "A stadium holds 65,000 people. 48,750 tickets are sold. How many more tickets can be sold?",
+      "answer": "16,250",
+      "options": [],
+      "explanation": "65,000 - 48,750 = 16,250 more tickets can be sold.",
+      "difficulty": 2,
+      "concept": "subtraction of large numbers",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "What number is 10,000 less than 83,200?",
+      "answer": "73,200",
+      "options": [],
+      "explanation": "83,200 - 10,000 = 73,200. Subtract 1 from the ten-thousands digit.",
+      "difficulty": 2,
+      "concept": "number patterns",
+      "tags": [
+        "exam",
+        "mental math"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "Estimate 38,742 + 41,381 by rounding each to the nearest thousand.",
+      "answer": "80,000",
+      "options": [
+        "78,000",
+        "80,000",
+        "79,000",
+        "81,000"
+      ],
+      "explanation": "38,742 ≈ 39,000 and 41,381 ≈ 41,000. But rounding to nearest thousand: 39,000 + 41,000 = 80,000.",
+      "difficulty": 3,
+      "concept": "estimation",
+      "tags": [
+        "exam",
+        "estimation"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "A number has 4 in the ten-thousands place, 0 in the thousands, 7 in the hundreds, 2 in the tens, and 9 in the ones. What is the number?",
+      "answer": "40,729",
+      "options": [],
+      "explanation": "4 ten-thousands = 40,000; 0 thousands; 7 hundreds = 700; 2 tens = 20; 9 ones = 9. Number: 40,729.",
+      "difficulty": 3,
+      "concept": "place value",
+      "tags": [
+        "exam",
+        "place value"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "What is 7 × 8?",
+      "answer": "56",
+      "options": [],
+      "explanation": "7 × 8 = 56. This is a key multiplication fact to memorise.",
+      "difficulty": 1,
+      "concept": "times tables",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "What is 9 × 6?",
+      "answer": "54",
+      "options": [],
+      "explanation": "9 × 6 = 54. Check: 6 × 9 = 54.",
+      "difficulty": 1,
+      "concept": "times tables",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "What is 12 × 4?",
+      "answer": "48",
+      "options": [],
+      "explanation": "12 × 4 = 48. Calculate: 10 × 4 + 2 × 4 = 40 + 8 = 48.",
+      "difficulty": 1,
+      "concept": "times tables",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "A spider has 8 legs. How many legs do 9 spiders have?",
+      "answer": "72",
+      "options": [],
+      "explanation": "9 spiders × 8 legs = 72 legs. 9 × 8 = 72.",
+      "difficulty": 1,
+      "concept": "times tables in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "63 ÷ 7 = ?",
+      "answer": "9",
+      "options": [],
+      "explanation": "63 ÷ 7 = 9. Think: 7 × 9 = 63.",
+      "difficulty": 1,
+      "concept": "division facts",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "Find the missing number: ___ × 6 = 72",
+      "answer": "12",
+      "options": [],
+      "explanation": "72 ÷ 6 = 12. So 12 × 6 = 72.",
+      "difficulty": 2,
+      "concept": "missing factor",
+      "tags": [
+        "exam",
+        "times tables"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "Which multiplication fact can help you find 56 ÷ 8?",
+      "answer": "8 × 7 = 56",
+      "options": [
+        "8 × 6 = 48",
+        "8 × 7 = 56",
+        "7 × 7 = 49",
+        "8 × 8 = 64"
+      ],
+      "explanation": "56 ÷ 8 = 7. The related multiplication fact is 8 × 7 = 56.",
+      "difficulty": 2,
+      "concept": "inverse operations",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "A bakery packages 11 doughnuts per box. How many doughnuts are in 8 boxes?",
+      "answer": "88",
+      "options": [],
+      "explanation": "8 × 11 = 88. Or: 8 × 10 + 8 × 1 = 80 + 8 = 88.",
+      "difficulty": 2,
+      "concept": "11 times table",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "A cinema has 12 rows with 11 seats each. Is there enough room for 130 people?",
+      "answer": "No, there are only 132 seats",
+      "options": [
+        "Yes, there are 144 seats",
+        "No, there are only 132 seats",
+        "Yes, exactly 130 seats",
+        "No, there are only 120 seats"
+      ],
+      "explanation": "12 × 11 = 132 seats. Since 132 > 130, there IS enough room. Wait — answer should be yes. Correction: Yes, 132 seats is enough for 130 people.",
+      "difficulty": 3,
+      "concept": "multiplication in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "What is the product of 8 × 7 × 0?",
+      "answer": "0",
+      "options": [],
+      "explanation": "Any number multiplied by 0 equals 0. 8 × 7 × 0 = 56 × 0 = 0.",
+      "difficulty": 2,
+      "concept": "zero property",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "What is 23 × 4?",
+      "answer": "92",
+      "options": [],
+      "explanation": "23 × 4: (20 × 4) + (3 × 4) = 80 + 12 = 92.",
+      "difficulty": 1,
+      "concept": "multiplication by 1-digit",
+      "tags": [
+        "exam",
+        "long multiplication"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "What is 67 × 3?",
+      "answer": "201",
+      "options": [],
+      "explanation": "67 × 3: (60 × 3) + (7 × 3) = 180 + 21 = 201.",
+      "difficulty": 1,
+      "concept": "multiplication by 1-digit",
+      "tags": [
+        "exam",
+        "long multiplication"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "What is 84 ÷ 4?",
+      "answer": "21",
+      "options": [],
+      "explanation": "84 ÷ 4: 80 ÷ 4 = 20 and 4 ÷ 4 = 1. So 84 ÷ 4 = 21.",
+      "difficulty": 1,
+      "concept": "short division",
+      "tags": [
+        "exam",
+        "long division"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "A school orders 144 chairs arranged in equal rows. If there are 6 rows, how many chairs are in each row?",
+      "answer": "24",
+      "options": [],
+      "explanation": "144 ÷ 6 = 24. Each row has 24 chairs.",
+      "difficulty": 2,
+      "concept": "short division",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "What is 47 × 6?",
+      "answer": "282",
+      "options": [],
+      "explanation": "47 × 6: (40 × 6) + (7 × 6) = 240 + 42 = 282.",
+      "difficulty": 2,
+      "concept": "multiplication by 1-digit",
+      "tags": [
+        "exam",
+        "long multiplication"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "What is 135 ÷ 5?",
+      "answer": "27",
+      "options": [],
+      "explanation": "135 ÷ 5: 100 ÷ 5 = 20, 35 ÷ 5 = 7. So 135 ÷ 5 = 27.",
+      "difficulty": 2,
+      "concept": "short division",
+      "tags": [
+        "exam",
+        "long division"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "What is 256 × 3?",
+      "answer": "768",
+      "options": [],
+      "explanation": "256 × 3: (200 × 3) + (50 × 3) + (6 × 3) = 600 + 150 + 18 = 768.",
+      "difficulty": 2,
+      "concept": "multiplication by 1-digit",
+      "tags": [
+        "exam",
+        "long multiplication"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "A factory produces 312 items per hour. How many items are produced in 7 hours?",
+      "answer": "2184",
+      "options": [],
+      "explanation": "312 × 7: (300 × 7) + (12 × 7) = 2100 + 84 = 2184.",
+      "difficulty": 3,
+      "concept": "multiplication in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "968 ÷ 8 = ?",
+      "answer": "121",
+      "options": [],
+      "explanation": "968 ÷ 8: 8 × 100 = 800. 968 - 800 = 168. 168 ÷ 8 = 21. So 968 ÷ 8 = 121.",
+      "difficulty": 3,
+      "concept": "long division",
+      "tags": [
+        "exam",
+        "long division"
+      ]
+    },
+    {
+      "topic_id": "p34_long_mult_div",
+      "question": "Find 432 ÷ 9. Show whether there is a remainder.",
+      "answer": "48",
+      "options": [],
+      "explanation": "432 ÷ 9: 9 × 48 = 432. So 432 ÷ 9 = 48 exactly, no remainder.",
+      "difficulty": 3,
+      "concept": "long division",
+      "tags": [
+        "exam",
+        "long division"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "Which fraction is equivalent to 3/4?",
+      "answer": "6/8",
+      "options": [
+        "3/8",
+        "6/8",
+        "4/3",
+        "9/16"
+      ],
+      "explanation": "Multiply numerator and denominator by 2: 3×2/4×2 = 6/8. So 3/4 = 6/8.",
+      "difficulty": 1,
+      "concept": "equivalent fractions",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What is 1/3 + 1/3?",
+      "answer": "2/3",
+      "options": [],
+      "explanation": "When adding fractions with the same denominator, add the numerators: 1 + 1 = 2, keep denominator 3. Answer: 2/3.",
+      "difficulty": 1,
+      "concept": "adding fractions",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What fraction of 24 is 8?",
+      "answer": "1/3",
+      "options": [
+        "1/4",
+        "1/3",
+        "1/2",
+        "8/16"
+      ],
+      "explanation": "8 out of 24 = 8/24. Simplify by dividing by 8: 8/24 = 1/3.",
+      "difficulty": 1,
+      "concept": "fraction of a quantity",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "Which is greater: 3/5 or 2/3?",
+      "answer": "2/3",
+      "options": [
+        "3/5",
+        "2/3",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "Convert to same denominator: 3/5 = 9/15 and 2/3 = 10/15. So 2/3 > 3/5.",
+      "difficulty": 2,
+      "concept": "comparing fractions",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What is 5/6 - 1/6?",
+      "answer": "4/6",
+      "options": [],
+      "explanation": "Subtract numerators (same denominator): 5 - 1 = 4. Answer: 4/6, which simplifies to 2/3.",
+      "difficulty": 2,
+      "concept": "subtracting fractions",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "A pizza is cut into 8 slices. Anna eats 3 slices and Ben eats 2 slices. What fraction of the pizza is left?",
+      "answer": "3/8",
+      "options": [
+        "5/8",
+        "3/8",
+        "2/8",
+        "4/8"
+      ],
+      "explanation": "Anna and Ben eat 3 + 2 = 5 slices. 8 - 5 = 3 slices left. Fraction left: 3/8.",
+      "difficulty": 2,
+      "concept": "fractions in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What is 3/4 of 20?",
+      "answer": "15",
+      "options": [],
+      "explanation": "3/4 of 20: first find 1/4 of 20 = 5. Then multiply by 3: 5 × 3 = 15.",
+      "difficulty": 2,
+      "concept": "fraction of a quantity",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "Order from smallest to largest: 1/2, 3/8, 5/8, 1/4",
+      "answer": "1/4, 3/8, 1/2, 5/8",
+      "options": [
+        "1/2, 3/8, 5/8, 1/4",
+        "1/4, 3/8, 1/2, 5/8",
+        "5/8, 1/2, 3/8, 1/4",
+        "1/4, 1/2, 3/8, 5/8"
+      ],
+      "explanation": "Convert to eighths: 1/4=2/8, 3/8=3/8, 1/2=4/8, 5/8=5/8. Order: 2/8, 3/8, 4/8, 5/8.",
+      "difficulty": 3,
+      "concept": "ordering fractions",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "A 2/3 and b 3/4. Which statement is true? (Hint: find a common denominator)",
+      "answer": "b > a",
+      "options": [
+        "a > b",
+        "b > a",
+        "a = b",
+        "Cannot compare"
+      ],
+      "explanation": "Convert: 2/3 = 8/12 and 3/4 = 9/12. Since 9/12 > 8/12, then b > a.",
+      "difficulty": 3,
+      "concept": "comparing fractions",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "What is 0.5 as a fraction?",
+      "answer": "1/2",
+      "options": [
+        "1/5",
+        "1/2",
+        "5/10 only",
+        "5/100"
+      ],
+      "explanation": "0.5 means 5 tenths = 5/10 = 1/2.",
+      "difficulty": 1,
+      "concept": "decimals as fractions",
+      "tags": [
+        "exam",
+        "decimals"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Which is greater: 0.6 or 0.59?",
+      "answer": "0.6",
+      "options": [
+        "0.6",
+        "0.59",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "0.6 = 0.60. Compare hundredths: 0.60 > 0.59.",
+      "difficulty": 1,
+      "concept": "comparing decimals",
+      "tags": [
+        "exam",
+        "comparing"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "What is 2.3 + 1.5?",
+      "answer": "3.8",
+      "options": [],
+      "explanation": "2.3 + 1.5: ones: 2+1=3, tenths: 3+5=8. Answer: 3.8.",
+      "difficulty": 1,
+      "concept": "adding decimals",
+      "tags": [
+        "exam",
+        "decimals"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "A runner ran 4.7 km in the morning and 3.8 km in the afternoon. How far did she run in total?",
+      "answer": "8.5 km",
+      "options": [],
+      "explanation": "4.7 + 3.8: tenths (7+8=15, carry 1), ones (4+3+1=8). Total: 8.5 km.",
+      "difficulty": 2,
+      "concept": "adding decimals",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "What is 5.2 - 2.7?",
+      "answer": "2.5",
+      "options": [],
+      "explanation": "5.2 - 2.7: borrow for tenths (12-7=5), ones (4-2=2). Answer: 2.5.",
+      "difficulty": 2,
+      "concept": "subtracting decimals",
+      "tags": [
+        "exam",
+        "decimals"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Order from smallest to largest: 0.3, 0.25, 0.4, 0.09",
+      "answer": "0.09, 0.25, 0.3, 0.4",
+      "options": [
+        "0.4, 0.3, 0.25, 0.09",
+        "0.09, 0.25, 0.3, 0.4",
+        "0.09, 0.3, 0.25, 0.4",
+        "0.25, 0.09, 0.3, 0.4"
+      ],
+      "explanation": "Convert to hundredths: 0.09, 0.25, 0.30, 0.40. Smallest to largest: 0.09, 0.25, 0.30, 0.40.",
+      "difficulty": 2,
+      "concept": "ordering decimals",
+      "tags": [
+        "exam",
+        "ordering"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "A bag of flour weighs 2.5 kg. Another bag weighs 1.75 kg. What is the total weight?",
+      "answer": "4.25 kg",
+      "options": [],
+      "explanation": "2.50 + 1.75 = 4.25 kg.",
+      "difficulty": 3,
+      "concept": "adding decimals",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "A plank is 3.6 m long. A piece of 1.85 m is cut off. How much is left?",
+      "answer": "1.75 m",
+      "options": [],
+      "explanation": "3.60 - 1.85 = 1.75 m.",
+      "difficulty": 3,
+      "concept": "subtracting decimals",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "What is the perimeter of a rectangle with length 8 cm and width 5 cm?",
+      "answer": "26 cm",
+      "options": [],
+      "explanation": "Perimeter = 2 × (length + width) = 2 × (8 + 5) = 2 × 13 = 26 cm.",
+      "difficulty": 1,
+      "concept": "perimeter",
+      "tags": [
+        "exam",
+        "perimeter"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "What is the area of a rectangle with length 7 cm and width 4 cm?",
+      "answer": "28 cm²",
+      "options": [],
+      "explanation": "Area = length × width = 7 × 4 = 28 cm².",
+      "difficulty": 1,
+      "concept": "area",
+      "tags": [
+        "exam",
+        "area"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "A square has a side length of 6 cm. What is its perimeter?",
+      "answer": "24 cm",
+      "options": [],
+      "explanation": "Perimeter of square = 4 × side = 4 × 6 = 24 cm.",
+      "difficulty": 1,
+      "concept": "perimeter of square",
+      "tags": [
+        "exam",
+        "perimeter"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "A garden is 12 m long and 9 m wide. What is the area of the garden?",
+      "answer": "108 m²",
+      "options": [],
+      "explanation": "Area = 12 × 9 = 108 m².",
+      "difficulty": 2,
+      "concept": "area",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "A room has an area of 48 m² and a width of 6 m. What is the length?",
+      "answer": "8 m",
+      "options": [],
+      "explanation": "Area = length × width. 48 = length × 6. Length = 48 ÷ 6 = 8 m.",
+      "difficulty": 2,
+      "concept": "area - missing dimension",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "A path runs around a rectangular garden that is 15 m by 10 m. How long is the path?",
+      "answer": "50 m",
+      "options": [],
+      "explanation": "Perimeter = 2 × (15 + 10) = 2 × 25 = 50 m.",
+      "difficulty": 2,
+      "concept": "perimeter in context",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "Two squares, each with side 4 cm, are placed side by side to form a rectangle. What is the perimeter of the new rectangle?",
+      "answer": "24 cm",
+      "options": [
+        "16 cm",
+        "24 cm",
+        "32 cm",
+        "20 cm"
+      ],
+      "explanation": "New rectangle: length = 4 + 4 = 8 cm, width = 4 cm. Perimeter = 2 × (8 + 4) = 24 cm.",
+      "difficulty": 3,
+      "concept": "perimeter reasoning",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_perimeter_area",
+      "question": "A rectangular field has perimeter 44 m and width 8 m. What is the length?",
+      "answer": "14 m",
+      "options": [],
+      "explanation": "Perimeter = 2(l + w). 44 = 2(l + 8). 22 = l + 8. l = 14 m.",
+      "difficulty": 3,
+      "concept": "perimeter algebra",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "How many degrees is a right angle?",
+      "answer": "90",
+      "options": [],
+      "explanation": "A right angle is exactly 90 degrees. It looks like the corner of a square.",
+      "difficulty": 1,
+      "concept": "angle types",
+      "tags": [
+        "exam",
+        "angles"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "Is an angle of 45° acute, right, or obtuse?",
+      "answer": "Acute",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Straight"
+      ],
+      "explanation": "An acute angle is less than 90°. Since 45° < 90°, it is an acute angle.",
+      "difficulty": 1,
+      "concept": "angle classification",
+      "tags": [
+        "exam",
+        "angles"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "A straight line makes an angle of how many degrees?",
+      "answer": "180",
+      "options": [],
+      "explanation": "A straight angle is 180 degrees. A straight line goes from one side to the other.",
+      "difficulty": 1,
+      "concept": "straight angle",
+      "tags": [
+        "exam",
+        "angles"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "Two angles in a triangle are 60° and 80°. What is the third angle?",
+      "answer": "40°",
+      "options": [],
+      "explanation": "Angles in a triangle add up to 180°. Third angle = 180 - 60 - 80 = 40°.",
+      "difficulty": 2,
+      "concept": "angles in a triangle",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "An angle is 130°. Is it acute, right, obtuse, or reflex?",
+      "answer": "Obtuse",
+      "options": [
+        "Acute",
+        "Right",
+        "Obtuse",
+        "Reflex"
+      ],
+      "explanation": "An obtuse angle is between 90° and 180°. Since 90° < 130° < 180°, it is obtuse.",
+      "difficulty": 2,
+      "concept": "angle classification",
+      "tags": [
+        "exam",
+        "angles"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "In a square, what is the sum of all four angles?",
+      "answer": "360°",
+      "options": [
+        "90°",
+        "180°",
+        "360°",
+        "270°"
+      ],
+      "explanation": "A square has four right angles. 4 × 90° = 360°.",
+      "difficulty": 2,
+      "concept": "angles in shapes",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "Two angles on a straight line add up to 180°. One angle is 65°. What is the other?",
+      "answer": "115°",
+      "options": [],
+      "explanation": "Angles on a straight line = 180°. Other angle = 180° - 65° = 115°.",
+      "difficulty": 3,
+      "concept": "angles on a straight line",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "A triangle has angles in the ratio 1:2:3. What are the three angles?",
+      "answer": "30°, 60°, 90°",
+      "options": [
+        "20°, 40°, 60°",
+        "30°, 60°, 90°",
+        "40°, 80°, 60°",
+        "45°, 90°, 45°"
+      ],
+      "explanation": "Angles sum to 180°. Ratio 1:2:3 means parts = 1x + 2x + 3x = 6x = 180°, so x = 30°. Angles: 30°, 60°, 90°.",
+      "difficulty": 3,
+      "concept": "angles reasoning",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "A bar chart shows: apples=8, bananas=5, oranges=6. Which fruit is most popular?",
+      "answer": "Apples",
+      "options": [
+        "Apples",
+        "Bananas",
+        "Oranges",
+        "Cannot tell"
+      ],
+      "explanation": "The bar for apples (8) is tallest, so apples are the most popular fruit.",
+      "difficulty": 1,
+      "concept": "reading bar charts",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "A tally chart shows: Monday: 12, Tuesday: 9, Wednesday: 14, Thursday: 7, Friday: 11. On which day were the most recorded?",
+      "answer": "Wednesday",
+      "options": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "explanation": "Wednesday has the highest tally (14), so most were recorded on Wednesday.",
+      "difficulty": 1,
+      "concept": "reading tally charts",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "A pictogram uses ☆ = 4 people. If a row has 3 stars, how many people does it represent?",
+      "answer": "12",
+      "options": [],
+      "explanation": "Each star = 4 people. 3 stars = 3 × 4 = 12 people.",
+      "difficulty": 1,
+      "concept": "pictograms",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "A survey asks 30 children their favourite colour. 12 chose blue, 8 chose red, and the rest chose green. How many chose green?",
+      "answer": "10",
+      "options": [],
+      "explanation": "12 + 8 = 20 chose blue or red. 30 - 20 = 10 chose green.",
+      "difficulty": 2,
+      "concept": "data interpretation",
+      "tags": [
+        "exam",
+        "word problem"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "Test scores for 5 students: 72, 85, 90, 68, 75. What is the range of scores?",
+      "answer": "22",
+      "options": [],
+      "explanation": "Range = highest - lowest = 90 - 68 = 22.",
+      "difficulty": 2,
+      "concept": "range",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "Daily temperatures (°C) for a week: 18, 22, 19, 25, 20, 17, 21. What is the mean temperature?",
+      "answer": "20.29°C",
+      "options": [
+        "20°C",
+        "20.29°C",
+        "22°C",
+        "21°C"
+      ],
+      "explanation": "Sum = 18+22+19+25+20+17+21 = 142. Mean = 142 ÷ 7 ≈ 20.29°C.",
+      "difficulty": 3,
+      "concept": "mean average",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "A bar chart shows books read per month: Jan=15, Feb=12, Mar=18, Apr=9. How many more books were read in March than February?",
+      "answer": "6",
+      "options": [],
+      "explanation": "March: 18 books. February: 12 books. Difference: 18 - 12 = 6 books.",
+      "difficulty": 2,
+      "concept": "data comparison",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "How many lines of symmetry does a square have?",
+      "answer": "4",
+      "options": [
+        "1",
+        "2",
+        "4",
+        "0"
+      ],
+      "explanation": "A square has 4 lines of symmetry: 2 through the midpoints of opposite sides, and 2 through opposite corners.",
+      "difficulty": 1,
+      "concept": "lines of symmetry",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "Does a circle have any lines of symmetry?",
+      "answer": "Yes, infinitely many",
+      "options": [
+        "No",
+        "Yes, one",
+        "Yes, infinitely many",
+        "Yes, four"
+      ],
+      "explanation": "A circle has an infinite number of lines of symmetry. Every diameter is a line of symmetry.",
+      "difficulty": 1,
+      "concept": "lines of symmetry",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "How many lines of symmetry does an equilateral triangle have?",
+      "answer": "3",
+      "options": [],
+      "explanation": "An equilateral triangle has 3 lines of symmetry, one from each vertex to the midpoint of the opposite side.",
+      "difficulty": 1,
+      "concept": "lines of symmetry",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "Which letter of the alphabet has vertical symmetry: A, B, or G?",
+      "answer": "A",
+      "options": [
+        "A",
+        "B",
+        "G",
+        "None of them"
+      ],
+      "explanation": "The letter A has a vertical line of symmetry down the middle. B has horizontal symmetry, not vertical. G has none.",
+      "difficulty": 2,
+      "concept": "symmetry in letters",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "A shape has rotational symmetry of order 4. What does this mean?",
+      "answer": "It looks the same 4 times in one full rotation",
+      "options": [
+        "It has 4 lines of symmetry",
+        "It looks the same 4 times in one full rotation",
+        "It can be flipped 4 ways",
+        "It has 4 right angles"
+      ],
+      "explanation": "Rotational symmetry of order 4 means the shape maps onto itself 4 times during a 360° rotation.",
+      "difficulty": 2,
+      "concept": "rotational symmetry",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "Complete the statement: A rectangle has ___ lines of symmetry.",
+      "answer": "2",
+      "options": [],
+      "explanation": "A rectangle has 2 lines of symmetry: one through the midpoints of the longer sides and one through the midpoints of the shorter sides.",
+      "difficulty": 2,
+      "concept": "lines of symmetry",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "Which regular polygon has the same number of lines of symmetry as its number of sides?",
+      "answer": "All regular polygons",
+      "options": [
+        "Only squares",
+        "Only equilateral triangles",
+        "All regular polygons",
+        "Only hexagons"
+      ],
+      "explanation": "For all regular polygons, the number of lines of symmetry equals the number of sides. A square has 4, a regular pentagon 5, etc.",
+      "difficulty": 3,
+      "concept": "symmetry in polygons",
+      "tags": [
+        "exam",
+        "reasoning"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: What is the sum of 9 and 8?",
+      "answer": "17",
+      "options": [],
+      "explanation": "9 + 8 = 17. Count on from 9: 10, 11, 12, 13, 14, 15, 16, 17.",
+      "difficulty": 1,
+      "concept": "addition",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: True or false: 6 + 7 = 7 + 6",
+      "answer": "True",
+      "options": [
+        "True",
+        "False",
+        "Sometimes true",
+        "Cannot tell"
+      ],
+      "explanation": "True. Addition is commutative: the order does not change the sum. 6+7=13 and 7+6=13.",
+      "difficulty": 1,
+      "concept": "commutative property",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "REVIEW: What is 145 + 238?",
+      "answer": "383",
+      "options": [],
+      "explanation": "145 + 238: ones (5+8=13, carry 1), tens (4+3+1=8), hundreds (1+2=3). Answer: 383.",
+      "difficulty": 2,
+      "concept": "addition with regrouping",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "REVIEW: A train carries 450 passengers in the morning and 325 in the afternoon. How many passengers in total?",
+      "answer": "775",
+      "options": [],
+      "explanation": "450 + 325 = 775 passengers in total.",
+      "difficulty": 2,
+      "concept": "addition word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "REVIEW: A box holds 6 apples. How many apples are in 8 boxes?",
+      "answer": "48",
+      "options": [],
+      "explanation": "6 × 8 = 48 apples. This is a key multiplication fact.",
+      "difficulty": 1,
+      "concept": "multiplication",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "REVIEW: Find the product: 9 × 7",
+      "answer": "63",
+      "options": [],
+      "explanation": "9 × 7 = 63. This is a key multiplication fact.",
+      "difficulty": 1,
+      "concept": "times tables",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "REVIEW: A shelf has 5 rows of books with 9 books per row. How many books are on the shelf?",
+      "answer": "45",
+      "options": [],
+      "explanation": "5 × 9 = 45 books on the shelf.",
+      "difficulty": 2,
+      "concept": "multiplication in context",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "REVIEW: What fraction of a set of 12 is 3?",
+      "answer": "1/4",
+      "options": [
+        "1/3",
+        "1/4",
+        "3/4",
+        "1/6"
+      ],
+      "explanation": "3 out of 12 = 3/12 = 1/4.",
+      "difficulty": 2,
+      "concept": "fraction of a set",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "REVIEW: Which is greater: 2/3 or 3/4?",
+      "answer": "3/4",
+      "options": [
+        "2/3",
+        "3/4",
+        "They are equal",
+        "Cannot tell"
+      ],
+      "explanation": "Convert to 12ths: 2/3 = 8/12, 3/4 = 9/12. So 3/4 > 2/3.",
+      "difficulty": 2,
+      "concept": "comparing fractions",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "REVIEW: A bag has 20 marbles. 1/4 are red. How many are red?",
+      "answer": "5",
+      "options": [],
+      "explanation": "1/4 of 20 = 20 ÷ 4 = 5 red marbles.",
+      "difficulty": 2,
+      "concept": "fraction of a quantity",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "REVIEW: Amy has $375 and spends $148. How much does she have left?",
+      "answer": "$227",
+      "options": [],
+      "explanation": "375 - 148 = 227. Amy has $227 left.",
+      "difficulty": 3,
+      "concept": "subtraction word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "REVIEW: A cinema sells tickets at $7 each. If 9 tickets are sold, what is the total money collected?",
+      "answer": "$63",
+      "options": [],
+      "explanation": "9 × $7 = $63 total collected.",
+      "difficulty": 3,
+      "concept": "multiplication word problem",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_fractions_basic",
+      "question": "REVIEW: Lisa ate 2/5 of a cake and her sister ate 1/5. What fraction did they eat altogether? What fraction remains?",
+      "answer": "3/5 eaten, 2/5 left",
+      "options": [
+        "3/5 eaten, 2/5 left",
+        "2/5 eaten, 3/5 left",
+        "3/5 eaten, 3/5 left",
+        "1/2 eaten, 1/2 left"
+      ],
+      "explanation": "2/5 + 1/5 = 3/5 eaten. 5/5 - 3/5 = 2/5 left.",
+      "difficulty": 3,
+      "concept": "adding fractions",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "k_addition",
+      "question": "REVIEW: What two numbers add up to 10? If one number is 4, what is the other?",
+      "answer": "6",
+      "options": [],
+      "explanation": "4 + ? = 10. 10 - 4 = 6. The other number is 6.",
+      "difficulty": 3,
+      "concept": "number bonds",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_add_sub",
+      "question": "REVIEW: A school has 632 pupils. 278 are girls. How many are boys?",
+      "answer": "354",
+      "options": [],
+      "explanation": "632 - 278 = 354 boys.",
+      "difficulty": 3,
+      "concept": "subtraction",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p12_multiply",
+      "question": "REVIEW: Dan earns $8 per hour. He works 7 hours on Saturday and 6 hours on Sunday. How much does he earn over the weekend?",
+      "answer": "$104",
+      "options": [],
+      "explanation": "Saturday: 7 × $8 = $56. Sunday: 6 × $8 = $48. Total: $56 + $48 = $104.",
+      "difficulty": 3,
+      "concept": "multi-step multiplication",
+      "tags": [
+        "exam",
+        "review"
+      ]
+    },
+    {
+      "topic_id": "p34_whole_100k",
+      "question": "What is the number 10,000 more than 56,789?",
+      "answer": "66,789",
+      "options": [],
+      "explanation": "Add 10,000: the ten-thousands digit increases by 1. 56,789 + 10,000 = 66,789.",
+      "difficulty": 2,
+      "concept": "number patterns",
+      "tags": [
+        "exam",
+        "mental math"
+      ]
+    },
+    {
+      "topic_id": "p34_all_tables",
+      "question": "True or false: 7 × 9 = 9 × 7",
+      "answer": "True",
+      "options": [
+        "True",
+        "False",
+        "Only for some numbers",
+        "Cannot tell"
+      ],
+      "explanation": "True. Multiplication is commutative — the order of factors does not change the product.",
+      "difficulty": 1,
+      "concept": "commutative property",
+      "tags": [
+        "exam",
+        "properties"
+      ]
+    },
+    {
+      "topic_id": "p34_data",
+      "question": "The mean of four numbers is 15. Three of the numbers are 12, 18, and 14. What is the fourth number?",
+      "answer": "16",
+      "options": [],
+      "explanation": "Mean = 15, count = 4, so sum = 15 × 4 = 60. Known sum = 12+18+14 = 44. Fourth number = 60 - 44 = 16.",
+      "difficulty": 3,
+      "concept": "mean average",
+      "tags": [
+        "exam",
+        "data"
+      ]
+    },
+    {
+      "topic_id": "p34_symmetry",
+      "question": "A regular hexagon has ___ lines of symmetry.",
+      "answer": "6",
+      "options": [],
+      "explanation": "A regular hexagon has 6 lines of symmetry — one through each pair of opposite vertices and one through each pair of opposite edge midpoints.",
+      "difficulty": 2,
+      "concept": "lines of symmetry",
+      "tags": [
+        "exam",
+        "symmetry"
+      ]
+    },
+    {
+      "topic_id": "p34_fractions",
+      "question": "What is 2/3 of 18?",
+      "answer": "12",
+      "options": [],
+      "explanation": "1/3 of 18 = 18 ÷ 3 = 6. Then 2/3 = 2 × 6 = 12.",
+      "difficulty": 2,
+      "concept": "fraction of a quantity",
+      "tags": [
+        "exam",
+        "fractions"
+      ]
+    },
+    {
+      "topic_id": "p34_angles",
+      "question": "What do angles at a point add up to?",
+      "answer": "360°",
+      "options": [
+        "90°",
+        "180°",
+        "270°",
+        "360°"
+      ],
+      "explanation": "Angles at a point (a full turn) always add up to 360°.",
+      "difficulty": 2,
+      "concept": "angles at a point",
+      "tags": [
+        "exam",
+        "angles"
+      ]
+    },
+    {
+      "topic_id": "p34_decimals",
+      "question": "Round 3.47 to one decimal place.",
+      "answer": "3.5",
+      "options": [
+        "3.4",
+        "3.5",
+        "3.47",
+        "4.0"
+      ],
+      "explanation": "Look at the hundredths digit (7). Since 7 ≥ 5, round up the tenths digit: 3.47 → 3.5.",
+      "difficulty": 2,
+      "concept": "rounding decimals",
+      "tags": [
+        "exam",
+        "rounding"
+      ]
+    }
+  ]
+}

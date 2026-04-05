@@ -1,0 +1,11 @@
+<!-- Flash messages -->
+<div class="flash-container">
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% for cat, msg in messages %}
+    <div class="flash flash-{{ cat }}" onclick="this.remove()">
+      {{ msg }}
+      <button class="flash-close" onclick="this.parentElement.remove()">&times;</button>
+    </div>
+    {% endfor %}
+  {% endwith %}
+</div>

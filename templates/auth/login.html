@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Sign In — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-logo">
+      <span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span>
+    </div>
+    <h1 class="auth-title">Welcome back</h1>
+    <p class="auth-sub">Sign in to continue your learning journey</p>
+
+    {% if error %}
+    <div class="alert alert-danger">{{ error }}</div>
+    {% endif %}
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% for cat, msg in messages %}
+      <div class="alert alert-{{ cat }}">{{ msg }}</div>
+      {% endfor %}
+    {% endwith %}
+
+    <form method="POST" action="/login{% if request.args.get('next') %}?next={{ request.args.get('next') }}{% endif %}" class="auth-form">
+      <div class="form-group">
+        <label class="form-label">Email or Username</label>
+        <input type="text" name="identifier" class="form-input" placeholder="you@example.com"
+               autocomplete="username" required autofocus/>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" name="password" class="form-input" placeholder="••••••••"
+               autocomplete="current-password" required/>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Sign In →</button>
+    </form>
+
+    <p class="auth-footer">
+      Don't have an account?
+      <a href="/register" class="auth-link">Create one free →</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

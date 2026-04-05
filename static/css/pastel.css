@@ -1,0 +1,204 @@
+/*
+ * Pastel Color Templates — self-contained, bright-theme only.
+ *
+ * Activated by: data-pastel="blue|pink|yellow|green" on <html>
+ * Only applies when data-theme="bright" is also set.
+ * Does NOT modify any existing CSS variables or classes.
+ * Safe to remove this file entirely to revert to defaults.
+ */
+
+/* ═══════════════════════════════════════════════════════════════════
+   PASTEL SWATCH PICKER (in dropdown menu)
+   ═══════════════════════════════════════════════════════════════════ */
+
+.pastel-picker-row {
+  display: flex; align-items: center; justify-content: space-between;
+  cursor: default; padding: 8px 14px;
+}
+.pastel-picker-row:hover { background: transparent; }
+.pastel-picker-label {
+  font-size: 0.78rem; font-weight: 600; color: var(--text-muted, #888);
+}
+.pastel-swatches {
+  display: flex; gap: 6px; align-items: center;
+}
+.pastel-swatch {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 2px solid transparent; cursor: pointer;
+  transition: transform 0.15s, border-color 0.2s, box-shadow 0.2s;
+  padding: 0; display: flex; align-items: center; justify-content: center;
+  background: none;
+}
+.pastel-swatch:hover {
+  transform: scale(1.2);
+}
+.pastel-swatch.active {
+  border-color: var(--accent, #4169E1);
+  box-shadow: 0 0 0 2px rgba(65,105,225,0.25);
+}
+
+/* Swatch colors — match the deeper navbar tones */
+.pastel-sw-blue   { background: #93c5fd; }
+.pastel-sw-pink   { background: #f9a8d4; }
+.pastel-sw-yellow { background: #fde047; }
+.pastel-sw-green  { background: #86efac; }
+
+/* "None" swatch — circle with line-through */
+.pastel-swatch[data-pastel=""] {
+  background: var(--bg2, #1e2228);
+  color: var(--text-muted, #888);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LIGHT BLUE TEMPLATE
+   ═══════════════════════════════════════════════════════════════════ */
+
+[data-theme="bright"][data-pastel="blue"] body {
+  background-color: #dbeafe;
+}
+[data-theme="bright"][data-pastel="blue"] .main-content {
+  background-color: #dbeafe;
+}
+[data-theme="bright"][data-pastel="blue"] .navbar {
+  background-color: #93c5fd;
+  border-bottom: 1px solid #7db8fc;
+}
+[data-theme="bright"][data-pastel="blue"] .footer {
+  background-color: #bfdbfe;
+}
+
+/* Cards — semi-transparent white for layered look */
+[data-theme="bright"][data-pastel="blue"] .dash-card,
+[data-theme="bright"][data-pastel="blue"] .adash-card,
+[data-theme="bright"][data-pastel="blue"] .trophy-card,
+[data-theme="bright"][data-pastel="blue"] .trophy-mastery-card,
+[data-theme="bright"][data-pastel="blue"] .trophy-milestone,
+[data-theme="bright"][data-pastel="blue"] .trophy-empty,
+[data-theme="bright"][data-pastel="blue"] .adash-flagged,
+[data-theme="bright"][data-pastel="blue"] .adash-table-wrap,
+[data-theme="bright"][data-pastel="blue"] .adash-empty,
+[data-theme="bright"][data-pastel="blue"] .dash-empty,
+[data-theme="bright"][data-pastel="blue"] .dash-ach,
+[data-theme="bright"][data-pastel="blue"] .account-section,
+[data-theme="bright"][data-pastel="blue"] .admin-stat-card,
+[data-theme="bright"][data-pastel="blue"] .lp-card {
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LIGHT PINK TEMPLATE
+   ═══════════════════════════════════════════════════════════════════ */
+
+[data-theme="bright"][data-pastel="pink"] body {
+  background-color: #fce7f3;
+}
+[data-theme="bright"][data-pastel="pink"] .main-content {
+  background-color: #fce7f3;
+}
+[data-theme="bright"][data-pastel="pink"] .navbar {
+  background-color: #f9a8d4;
+  border-bottom: 1px solid #f494c7;
+}
+[data-theme="bright"][data-pastel="pink"] .footer {
+  background-color: #fbcfe8;
+}
+
+[data-theme="bright"][data-pastel="pink"] .dash-card,
+[data-theme="bright"][data-pastel="pink"] .adash-card,
+[data-theme="bright"][data-pastel="pink"] .trophy-card,
+[data-theme="bright"][data-pastel="pink"] .trophy-mastery-card,
+[data-theme="bright"][data-pastel="pink"] .trophy-milestone,
+[data-theme="bright"][data-pastel="pink"] .trophy-empty,
+[data-theme="bright"][data-pastel="pink"] .adash-flagged,
+[data-theme="bright"][data-pastel="pink"] .adash-table-wrap,
+[data-theme="bright"][data-pastel="pink"] .adash-empty,
+[data-theme="bright"][data-pastel="pink"] .dash-empty,
+[data-theme="bright"][data-pastel="pink"] .dash-ach,
+[data-theme="bright"][data-pastel="pink"] .account-section,
+[data-theme="bright"][data-pastel="pink"] .admin-stat-card,
+[data-theme="bright"][data-pastel="pink"] .lp-card {
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LIGHT YELLOW TEMPLATE
+   ═══════════════════════════════════════════════════════════════════ */
+
+[data-theme="bright"][data-pastel="yellow"] body {
+  background-color: #fef9c3;
+}
+[data-theme="bright"][data-pastel="yellow"] .main-content {
+  background-color: #fef9c3;
+}
+[data-theme="bright"][data-pastel="yellow"] .navbar {
+  background-color: #fde047;
+  border-bottom: 1px solid #facc15;
+}
+[data-theme="bright"][data-pastel="yellow"] .footer {
+  background-color: #fef08a;
+}
+
+[data-theme="bright"][data-pastel="yellow"] .dash-card,
+[data-theme="bright"][data-pastel="yellow"] .adash-card,
+[data-theme="bright"][data-pastel="yellow"] .trophy-card,
+[data-theme="bright"][data-pastel="yellow"] .trophy-mastery-card,
+[data-theme="bright"][data-pastel="yellow"] .trophy-milestone,
+[data-theme="bright"][data-pastel="yellow"] .trophy-empty,
+[data-theme="bright"][data-pastel="yellow"] .adash-flagged,
+[data-theme="bright"][data-pastel="yellow"] .adash-table-wrap,
+[data-theme="bright"][data-pastel="yellow"] .adash-empty,
+[data-theme="bright"][data-pastel="yellow"] .dash-empty,
+[data-theme="bright"][data-pastel="yellow"] .dash-ach,
+[data-theme="bright"][data-pastel="yellow"] .account-section,
+[data-theme="bright"][data-pastel="yellow"] .admin-stat-card,
+[data-theme="bright"][data-pastel="yellow"] .lp-card {
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   LIGHT GREEN TEMPLATE
+   ═══════════════════════════════════════════════════════════════════ */
+
+[data-theme="bright"][data-pastel="green"] body {
+  background-color: #dcfce7;
+}
+[data-theme="bright"][data-pastel="green"] .main-content {
+  background-color: #dcfce7;
+}
+[data-theme="bright"][data-pastel="green"] .navbar {
+  background-color: #86efac;
+  border-bottom: 1px solid #6ee79a;
+}
+[data-theme="bright"][data-pastel="green"] .footer {
+  background-color: #bbf7d0;
+}
+
+[data-theme="bright"][data-pastel="green"] .dash-card,
+[data-theme="bright"][data-pastel="green"] .adash-card,
+[data-theme="bright"][data-pastel="green"] .trophy-card,
+[data-theme="bright"][data-pastel="green"] .trophy-mastery-card,
+[data-theme="bright"][data-pastel="green"] .trophy-milestone,
+[data-theme="bright"][data-pastel="green"] .trophy-empty,
+[data-theme="bright"][data-pastel="green"] .adash-flagged,
+[data-theme="bright"][data-pastel="green"] .adash-table-wrap,
+[data-theme="bright"][data-pastel="green"] .adash-empty,
+[data-theme="bright"][data-pastel="green"] .dash-empty,
+[data-theme="bright"][data-pastel="green"] .dash-ach,
+[data-theme="bright"][data-pastel="green"] .account-section,
+[data-theme="bright"][data-pastel="green"] .admin-stat-card,
+[data-theme="bright"][data-pastel="green"] .lp-card {
+  background-color: rgba(255,255,255,0.6);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════
+   DARK THEME: pastel has no effect (selection persists but hidden)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* Intentionally empty — pastel only applies to bright theme.
+   The user's selection is remembered in localStorage and reapplied
+   automatically when they switch back to bright mode. */

@@ -1,0 +1,16 @@
+{# Page progress bar - expects: concept #}
+{% if concept.sections %}
+<div class="page-progress-bar">
+  <div class="page-progress-steps">
+    {% for section in concept.sections %}
+    <button class="page-step" data-page="{{ loop.index0 }}" onclick="goToPage({{ loop.index0 }})">
+      <span class="page-step-num">{{ loop.index }}</span>
+      <span class="page-step-title">{{ section.title }}</span>
+    </button>
+    {% endfor %}
+  </div>
+  <div class="page-progress-track">
+    <div class="page-progress-fill" id="progress-fill"></div>
+  </div>
+</div>
+{% endif %}

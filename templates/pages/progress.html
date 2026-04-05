@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% block title %}My Progress — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1>📈 My Progress</h1>
+  <p>{{ done }} of {{ total }} topics complete</p>
+</div>
+
+<div class="big-progress">
+  <div class="big-pct">{{ (done/total*100)|int if total else 0 }}%</div>
+  <div class="big-bar-outer">
+    <div class="big-bar-inner" style="width:{{ (done/total*100)|int if total else 0 }}%"></div>
+  </div>
+  <div class="big-label">{{ done }} / {{ total }} topics</div>
+</div>
+
+<div class="level-progress-grid">
+  {% for level in levels_order %}
+  {% set ls = level_stats[level] %}
+  <div class="lp-card">
+    <div class="lp-name">{{ level }}</div>
+    <div class="lp-bar-outer">
+      <div class="lp-bar-inner" style="width:{{ (ls.done / ls.total * 100)|int if ls.total else 0 }}%; background: #4169E1"></div>
+    </div>
+    <div class="lp-count">{{ ls.done }}/{{ ls.total }}</div>
+  </div>
+  {# Show exam gate after each level (if one exists) #}
+  {% if exam_gates is defined %}
+  {% for eg in exam_gates %}
+  {% if eg.from_level == level %}
+  <a href="/exams" class="exam-gate {% if eg.passed %}exam-gate-passed{% else %}exam-gate-locked{% endif %}" style="border-left: 3px solid {{ eg.color }};">
+    <span class="exam-gate-icon">{% if eg.passed %}✅{% else %}📝{% endif %}</span>
+    <span class="exam-gate-name">{{ eg.name }}</span>
+    {% if eg.passed %}
+    <span class="exam-gate-score">{{ eg.best_score }}/{{ eg.total }}</span>
+    {% else %}
+    <span class="exam-gate-status">{% if eg.attempts > 0 %}{{ eg.attempts }} attempt{{ 's' if eg.attempts != 1 else '' }}{% else %}Not taken{% endif %}</span>
+    {% endif %}
+  </a>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+  {% endfor %}
+</div>
+
+{% if target_data %}
+<div class="targets-section">
+  <h3>🎯 My Targets</h3>
+  {% for target in target_data %}
+  <div class="target-card" style="margin-bottom:1.5rem; padding:1rem; border-radius:8px; background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+      <h4 style="margin:0;">{{ target.emoji }} {{ target.name }}</h4>
+      <button class="btn btn-sm" onclick="removeTarget('{{ target.tid }}')" style="font-size:0.75rem; padding:2px 8px; background:rgba(255,0,0,0.2); border:1px solid rgba(255,0,0,0.3); border-radius:4px; color:#ff6b6b; cursor:pointer;">✕ Remove</button>
+    </div>
+    <div class="lp-bar-outer" style="margin-bottom:0.5rem;">
+      <div class="lp-bar-inner" style="width:{{ (target.done / target.total * 100)|int if target.total else 0 }}%; background: #FFD700"></div>
+    </div>
+    <div style="font-size:0.85rem; margin-bottom:0.75rem;">{{ target.done }}/{{ target.total }} topics completed</div>
+    <div style="display:flex; flex-wrap:wrap; gap:0.4rem;">
+      {% for topic in target.topics %}
+      <a href="/topic/{{ topic.id }}" style="display:inline-flex; align-items:center; gap:4px; padding:2px 8px; border-radius:4px; font-size:0.8rem; text-decoration:none;
+        {% if topic.is_target %}background:rgba(255,215,0,0.2); border:1px solid rgba(255,215,0,0.4); color:#FFD700;
+        {% elif topic.complete %}background:rgba(34,197,94,0.15); border:1px solid rgba(34,197,94,0.3); color:#22c55e;
+        {% else %}background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); color:#888;
+        {% endif %}">
+        {% if topic.complete %}✅{% elif topic.is_target %}🎯{% else %}○{% endif %}
+        {{ topic.emoji }} {{ topic.name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<div class="completed-list">
+  <h3>Completed Topics</h3>
+  {% set any_done = namespace(val=false) %}
+  {% for tid, pdata in progress.items() %}
+    {% if pdata.get('complete') %}
+      {% set any_done.val = true %}
+      {% set t = topics.get(tid) %}
+      {% if t %}
+      <div class="completed-item">
+        <span>{{ t.emoji }} {{ t.name }}</span>
+        <span class="completed-level">{{ t.level }}</span>
+        {% if pdata.get('quiz_score') is not none %}
+        <span class="completed-score">{{ pdata.quiz_score }}/{{ pdata.quiz_total }}</span>
+        {% endif %}
+      </div>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+  {% if not any_done.val %}
+  <p class="empty-msg">No topics completed yet. <a href="/curriculum">Start learning →</a></p>
+  {% endif %}
+</div>
+
+<div class="danger-zone">
+  <button class="btn btn-danger" onclick="confirmReset()">🗑️ Reset All Progress</button>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function removeTarget(tid) {
+  fetch('/api/targets/remove', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({topic_id:tid})}).then(() => location.reload());
+}
+function confirmReset() {
+  if (confirm('Reset all your progress? This cannot be undone.')) {
+    fetch('/api/reset', {method:'POST'}).then(() => location.reload());
+  }
+}
+</script>
+{% endblock %}

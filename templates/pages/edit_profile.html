@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block title %}Edit Profile — QuantiesUnite{% endblock %}
+
+{% block content %}
+
+<!-- ═══ Hero header ═══ -->
+<div class="dash-hero">
+  <div class="dash-hero-bg"></div>
+  <div class="dash-hero-content">
+    <div class="dash-hero-identity">
+      {% if current_avatar_url %}
+      <img src="{{ current_avatar_url }}" class="dash-hero-avatar dash-hero-avatar-img" alt=""/>
+      {% else %}
+      <div class="dash-hero-avatar">{{ user.username[0] | upper }}</div>
+      {% endif %}
+      <div>
+        <h1 class="dash-hero-title">Edit Profile</h1>
+        <p class="dash-hero-sub">Update your photo, name, and personal details.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dash-page">
+
+  <!-- ═══ SECTION: Profile Picture ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">📷</div>
+      <div>
+        <h2 class="dash-section-title">Profile Picture</h2>
+        <p class="dash-section-desc">Choose a photo that represents you.</p>
+      </div>
+    </div>
+    <div class="dash-card">
+      <div class="avatar-upload-section">
+        <div class="avatar-upload-preview" onclick="openAvatarPicker()" style="cursor:pointer;" title="Click to change photo">
+          {% if current_avatar_url %}
+          <img src="{{ current_avatar_url }}" class="avatar-upload-img" alt="" id="avatar-preview"/>
+          {% else %}
+          <div class="avatar-upload-placeholder" id="avatar-preview">{{ user.username[0] | upper }}</div>
+          {% endif %}
+        </div>
+        <div class="avatar-upload-controls">
+          <button class="btn btn-outline btn-sm" onclick="openAvatarPicker()">Choose Photo</button>
+          {% if current_avatar_url %}
+          <form method="POST" action="/account/avatar/remove" style="display:inline;">
+            <button type="submit" class="btn btn-sm" style="background:rgba(239,68,68,0.1); color:var(--danger); border:1px solid rgba(239,68,68,0.3);">Remove</button>
+          </form>
+          {% endif %}
+          <p class="avatar-upload-hint">JPG, PNG, GIF or WebP. Max 5 MB. Crop and resize in the editor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Personal Details ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">👤</div>
+      <div>
+        <h2 class="dash-section-title">Personal Details</h2>
+        <p class="dash-section-desc">This information is shown on your dashboard and profile.</p>
+      </div>
+    </div>
+    <div class="dash-card">
+      <form method="POST" action="/account/profile" class="dash-profile-form">
+        <div class="dash-form-grid">
+          <div class="form-group">
+            <label class="form-label">Display Name</label>
+            <input type="text" name="display_name" class="form-input"
+                   value="{{ profile.display_name or '' }}" placeholder="{{ user.username }}"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">School / Organisation</label>
+            <input type="text" name="school" class="form-input"
+                   value="{{ profile.school or '' }}" placeholder="e.g. Raffles Institution"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Grade / Year</label>
+            <input type="text" name="grade" class="form-input"
+                   value="{{ profile.grade or '' }}" placeholder="e.g. Secondary 3"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Bio</label>
+            <input type="text" name="bio" class="form-input"
+                   value="{{ profile.bio or '' }}" placeholder="A bit about yourself"/>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm" style="margin-top:16px;">Save Changes</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION: Account Info (read-only) ═══ -->
+  <section class="dash-section">
+    <div class="dash-section-header">
+      <div class="dash-section-icon">🔒</div>
+      <div>
+        <h2 class="dash-section-title">Account Info</h2>
+        <p class="dash-section-desc">Your login details. Change these in <a href="{{ url_for('account.account') }}" style="color:var(--accent);">Account Settings</a>.</p>
+      </div>
+    </div>
+    <div class="dash-card">
+      <div class="dash-form-grid">
+        <div class="form-group">
+          <label class="form-label">Username</label>
+          <input type="text" class="form-input" value="{{ user.username }}" disabled/>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email</label>
+          <input type="text" class="form-input" value="{{ user.email }}" disabled/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick links -->
+  <div class="dash-quicklinks">
+    <a href="{{ url_for('dashboard.dashboard') }}" class="btn btn-outline btn-sm">Dashboard</a>
+    <a href="{{ url_for('account.account') }}" class="btn btn-outline btn-sm">Account Settings</a>
+  </div>
+
+</div>
+
+{% endblock %}

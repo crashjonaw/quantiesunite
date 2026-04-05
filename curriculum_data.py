@@ -152,7 +152,7 @@ LEVEL_DESCRIPTIONS = {
     "Kindergarten": "Counting, shapes, and the very first ideas in mathematics.",
     "Primary 1–2": "Singapore P1–P2: Numbers to 1,000, times tables, simple fractions.",
     "Primary 3–4": "Singapore P3–P4: Long division, decimals, geometry, data.",
-    "P5–P6": "Singapore P5–P6: Ratio, percentage, algebra, volume — PSLE exam-ready.",
+    "Primary 5–6": "Singapore P5–P6: Ratio, percentage, algebra, volume — PSLE exam-ready.",
     "Sec 1–2": "Singapore Sec 1–2: Algebra, Pythagoras, coordinates, probability.",
     "Sec 3–4": "Singapore Sec 3–4: Quadratics, trigonometry, calculus preview, advanced trig (E-Math + A-Math).",
     "J1–2": "Singapore JC (H2 Math): Full calculus, complex numbers, probability distributions.",
@@ -161,6 +161,21 @@ LEVEL_DESCRIPTIONS = {
     "Python": "Programming track: Python for scientific computing and data science.",
     "Deep Learning": "Neural networks from scratch: gradient descent, backpropagation.",
     "Deep Learning Advanced": "LSTM and Transformer architectures from first principles.",
+}
+
+LEVEL_TROPHY_NAMES = {
+    "Kindergarten":            {"name": "Kindergarten Champion",     "emoji": "🌟"},
+    "Primary 1–2":             {"name": "Primary School Starter",    "emoji": "🏫"},
+    "Primary 3–4":             {"name": "Primary School Builder",    "emoji": "🧱"},
+    "Primary 5–6":             {"name": "Primary School Master",     "emoji": "🎓"},
+    "Sec 1–2":                 {"name": "Secondary Scholar",         "emoji": "📚"},
+    "Sec 3–4":                 {"name": "O-Level Champion",          "emoji": "🏅"},
+    "J1–2":                    {"name": "JC Conqueror",              "emoji": "🎯"},
+    "Linear Algebra":          {"name": "Matrix Master",             "emoji": "🔢"},
+    "Probability & Statistics": {"name": "Probability Pro",          "emoji": "🎲"},
+    "Python":                  {"name": "Python Programmer",         "emoji": "🐍"},
+    "Deep Learning":           {"name": "Neural Network Novice",     "emoji": "🧠"},
+    "Deep Learning Advanced":  {"name": "Deep Learning Grandmaster", "emoji": "🤖"},
 }
 
 

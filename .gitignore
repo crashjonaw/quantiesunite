@@ -1,1 +1,12 @@
-*__pycache__/*
+__pycache__/
+*.pyc
+*.pyo
+quantiesunite.db
+static/uploads/avatars/*
+!static/uploads/avatars/.gitkeep
+generated_questions/latex_quiz/
+generated_questions/latex_exam/
+playwright/debug.csv
+playwright/debug_archive_*
+*.output
+/convert_*.py

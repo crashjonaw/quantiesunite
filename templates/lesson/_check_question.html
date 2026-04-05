@@ -1,0 +1,19 @@
+{# Quick check MCQ widget - expects: section, i #}
+{% if section.check %}
+<div class="check-question" id="check-{{ i }}">
+  <div class="check-label">Quick Check</div>
+  <p class="check-q">{{ section.check.q }}</p>
+  <div class="check-mcq-options">
+    {% for opt in section.check.options %}
+    <button class="mcq-option check-mcq-btn"
+            data-correct="{{ 'true' if opt.correct else 'false' }}"
+            onclick="checkMCQ(this, {{ i }})">
+      {{ opt.text }}
+    </button>
+    {% endfor %}
+  </div>
+  <div class="check-hint hidden" id="hint-{{ i }}">Hint: {{ section.check.hint }}</div>
+  <div class="check-feedback hidden" id="feedback-{{ i }}"></div>
+  <button class="hint-btn" onclick="showHint({{ i }})">Show Hint</button>
+</div>
+{% endif %}

@@ -1,0 +1,24 @@
+{# Page navigation (prev/next) - expects: i, concept, tid, prev_concept, next_concept, loop #}
+<div class="page-nav">
+  {% if i > 0 %}
+  <button class="btn btn-outline page-nav-btn" onclick="goToPage({{ i - 1 }})">&#8592; Previous</button>
+  {% elif prev_concept %}
+  <a href="/topic/{{ tid }}/learn/{{ prev_concept.id }}" class="btn btn-outline page-nav-btn">
+    &#8592; {{ prev_concept.title }}
+  </a>
+  {% else %}
+  <a href="/topic/{{ tid }}/overview" class="btn btn-outline page-nav-btn">&#8592; Module Overview</a>
+  {% endif %}
+
+  <span class="page-nav-counter">{{ i + 1 }} / {{ concept.sections | length }}</span>
+
+  {% if i < concept.sections | length - 1 %}
+  <button class="btn btn-primary page-nav-btn" onclick="goToPage({{ i + 1 }})">Next &#8594;</button>
+  {% elif next_concept %}
+  <a href="/topic/{{ tid }}/learn/{{ next_concept.id }}" class="btn btn-primary page-nav-btn">
+    {{ next_concept.title }} &#8594;
+  </a>
+  {% else %}
+  <a href="/topic/{{ tid }}/quiz" class="btn btn-primary page-nav-btn">Take the Quiz &#127942;</a>
+  {% endif %}
+</div>

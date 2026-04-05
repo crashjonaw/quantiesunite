@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Slow Down — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="rate-limit-warning">
+  <h2>You're moving too fast!</h2>
+  <p>To protect our content, we limit how quickly you can browse lessons.</p>
+  <div class="rl-timer" id="rl-countdown">{{ wait_seconds }}s</div>
+  <p>Please wait before continuing. Use this time to review what you've read!</p>
+  <p style="margin-top:1.5rem;">
+    <a href="/" class="btn btn-outline" style="color:#fff; border-color:rgba(255,255,255,0.4);">Back to Home</a>
+  </p>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+(function() {
+  var remaining = {{ wait_seconds }};
+  var el = document.getElementById('rl-countdown');
+  var interval = setInterval(function() {
+    remaining--;
+    if (remaining <= 0) {
+      clearInterval(interval);
+      el.textContent = 'Ready!';
+      // Auto-reload to the page they were trying to visit
+      setTimeout(function() { location.reload(); }, 500);
+    } else {
+      el.textContent = remaining + 's';
+    }
+  }, 1000);
+})();
+</script>
+{% endblock %}

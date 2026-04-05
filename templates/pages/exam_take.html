@@ -1,0 +1,336 @@
+{% extends "base.html" %}
+{% block title %}{{ exam.name }} — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="quiz-page">
+  <div class="quiz-header" style="border-left:5px solid {{ exam.color }}">
+    <a href="/exams" class="back-link">← Back to Exams</a>
+    <h1>{{ exam.emoji }} {{ exam.name }}</h1>
+    <p class="quiz-instruction">{{ exam.description }}</p>
+    <div class="practice-stats-bar">
+      <span class="ps-item" style="background:rgba(65,105,225,0.12); color:#4169E1;">{{ quiz|length }} questions</span>
+      <span class="ps-item" style="background:rgba(34,197,94,0.12); color:#22c55e;">{{ exam.pass_percent }}% to pass</span>
+      {% if timed %}
+      <span class="ps-item" style="background:rgba(239,68,68,0.12); color:#ef4444;">⏱️ {{ time_limit_min }} minutes</span>
+      {% else %}
+      <span class="ps-item" style="background:rgba(139,92,246,0.12); color:#8b5cf6;">📝 Untimed</span>
+      {% endif %}
+    </div>
+    {% if timed and time_limit_min %}
+    <div class="exam-timer" id="exam-timer">
+      <span class="exam-timer-icon">⏱️</span>
+      <span class="exam-timer-display" id="timer-display">{{ time_limit_min }}:00</span>
+    </div>
+    {% endif %}
+  </div>
+
+  <form id="quiz-form">
+    {% for q in quiz %}
+    {% set qid = q.id %}
+    <div class="quiz-question" data-qid="{{ qid }}" id="q-{{ loop.index0 }}">
+      <div class="q-number">Question {{ loop.index }} of {{ quiz | length }}</div>
+      <div class="q-text">{{ q.question | safe }}</div>
+
+      {% if q.options is defined and q.options %}
+      <div class="q-options">
+        {% for opt in q.options %}
+        <label class="q-option">
+          <input type="radio" name="q{{ qid }}" value="{{ opt }}" />
+          <span class="q-option-text">{{ opt }}</span>
+        </label>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="q-input-row">
+        <input type="text" class="q-input" name="q{{ qid }}" id="qi-{{ qid }}"
+               placeholder="Your answer…" autocomplete="off"/>
+      </div>
+      {% endif %}
+
+      <div class="q-result hidden" id="qr-{{ loop.index0 }}"></div>
+    </div>
+    {% endfor %}
+
+    <div class="quiz-controls">
+      <button type="button" class="btn btn-primary btn-large" id="submit-btn" onclick="submitExam()">
+        Submit Exam 📝
+      </button>
+    </div>
+  </form>
+
+  <div id="quiz-result" class="quiz-result hidden">
+    <div id="result-banner"></div>
+
+    <!-- Module Breakdown -->
+    <div id="module-breakdown" class="exam-breakdown hidden">
+      <h3 class="exam-breakdown-title">Module Performance</h3>
+      <div id="breakdown-list" class="exam-breakdown-list"></div>
+    </div>
+
+    <!-- Insights -->
+    <div id="exam-insights" class="exam-insights hidden">
+      <div id="strong-section" class="exam-insight-section" style="display:none;">
+        <h4 style="color:var(--success);">Strong Areas</h4>
+        <div id="strong-list" class="exam-insight-list"></div>
+      </div>
+      <div id="weak-section" class="exam-insight-section" style="display:none;">
+        <h4 style="color:var(--danger);">Needs Revision</h4>
+        <div id="weak-list" class="exam-insight-list"></div>
+      </div>
+    </div>
+
+    <!-- Review toggle -->
+    <div class="exam-review-toggle">
+      <button class="btn btn-outline btn-sm" onclick="toggleReview()">
+        📋 Review All Questions
+      </button>
+    </div>
+    <div id="exam-review-section" class="hidden"></div>
+
+    <div id="result-details"></div>
+    <div class="result-actions">
+      <a href="/exams" class="btn btn-outline">← Back to Exams</a>
+      <a href="/curriculum" class="btn btn-primary">Continue Learning →</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+const EXAM_ID = "{{ exam_id }}";
+const EXAM_QUESTIONS = [
+{% for q in quiz %}
+  {id: {{ q.id }}, topic_id: {{ q.topic_id | tojson }}, question: {{ q.question | tojson }}, answer: {{ q.answer | tojson }}},
+{% endfor %}
+];
+
+async function submitExam() {
+  const answers = {};
+  EXAM_QUESTIONS.forEach(function(q) {
+    var qid = q.id;
+    var radios = document.querySelectorAll('input[name="q' + qid + '"][type="radio"]');
+    if (radios.length > 0) {
+      var checked = document.querySelector('input[name="q' + qid + '"]:checked');
+      answers[String(qid)] = checked ? checked.value : "";
+    } else {
+      var inp = document.getElementById('qi-' + qid);
+      answers[String(qid)] = inp ? inp.value : "";
+    }
+  });
+
+  document.getElementById('submit-btn').disabled = true;
+  document.getElementById('submit-btn').textContent = 'Submitting…';
+
+  const resp = await fetch('/api/exam/submit', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({exam_id: EXAM_ID, answers: answers, questions: EXAM_QUESTIONS})
+  });
+  const data = await resp.json();
+
+  var showAnswers = data.show_answers;
+  var attemptNum = data.attempt || 1;
+
+  data.results.forEach(function(r, i) {
+    var qid = r.question_id;
+    var qr = document.getElementById('qr-' + i);
+    qr.classList.remove('hidden');
+
+    var radios = document.querySelectorAll('input[name="q' + qid + '"]');
+    radios.forEach(function(radio) { radio.disabled = true; });
+    var inp = document.getElementById('qi-' + qid);
+    if (inp) inp.disabled = true;
+
+    if (radios.length > 0) {
+      radios.forEach(function(radio) {
+        var label = radio.closest('.q-option');
+        if (showAnswers && radio.value === r.correct_answer) {
+          label.classList.add('option-correct');
+        } else if (radio.checked && !r.correct) {
+          label.classList.add('option-incorrect');
+        }
+      });
+    }
+
+    if (r.correct) {
+      qr.className = 'q-result correct';
+      qr.innerHTML = '✅ Correct!' + (showAnswers && r.explanation ? '<br><em>' + escHtml(r.explanation) + '</em>' : '');
+    } else {
+      qr.className = 'q-result incorrect';
+      if (showAnswers) {
+        qr.innerHTML = '❌ Correct answer: <strong>' + escHtml(r.correct_answer) + '</strong>'
+          + (r.explanation ? '<br><em>' + escHtml(r.explanation) + '</em>' : '');
+      } else {
+        qr.innerHTML = '❌ Incorrect — answers revealed after attempt 3 (this is attempt ' + attemptNum + ')';
+      }
+    }
+  });
+
+  var resultDiv = document.getElementById('quiz-result');
+  var banner = document.getElementById('result-banner');
+  var details = document.getElementById('result-details');
+  resultDiv.classList.remove('hidden');
+  document.getElementById('quiz-form').querySelector('.quiz-controls').remove();
+
+  var pct = Math.round(data.score / data.total * 100);
+  if (data.passed) {
+    banner.className = 'result-banner pass';
+    banner.innerHTML = '🎉 Exam Passed! <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong>'
+      + (data.exam_name ? '<br>' + data.exam_name + ' — Congratulations!' : '');
+  } else {
+    banner.className = 'result-banner fail';
+    banner.innerHTML = '📝 Score: <strong>' + data.score + '/' + data.total + ' (' + pct + '%)</strong> — Need '
+      + data.pass_percent + '% to pass.';
+    if (!showAnswers) {
+      banner.innerHTML += '<br><small>Answers will be revealed after attempt 3 (this was attempt ' + attemptNum + ')</small>';
+    }
+  }
+
+  details.innerHTML = showAnswers
+    ? '<p>Review the highlighted questions above.</p>'
+    : '<p>Review the material and try again. Answers shown after your 3rd attempt.</p>';
+
+  // ── Module Breakdown ──
+  if (data.module_breakdown && data.module_breakdown.length > 0) {
+    var breakdownDiv = document.getElementById('module-breakdown');
+    var breakdownList = document.getElementById('breakdown-list');
+    breakdownDiv.classList.remove('hidden');
+
+    data.module_breakdown.forEach(function(m) {
+      var barColor = m.pct >= 80 ? '#22c55e' : m.pct >= 50 ? '#f59e0b' : '#ef4444';
+      var row = document.createElement('div');
+      row.className = 'exam-bd-row';
+      row.innerHTML =
+        '<div class="exam-bd-left">' +
+          '<span class="exam-bd-emoji">' + escHtml(m.emoji) + '</span>' +
+          '<span class="exam-bd-name">' + escHtml(m.name) + '</span>' +
+        '</div>' +
+        '<div class="exam-bd-right">' +
+          '<div class="exam-bd-bar"><div class="exam-bd-fill" style="width:' + m.pct + '%; background:' + barColor + '"></div></div>' +
+          '<span class="exam-bd-score">' + m.correct + '/' + m.total + ' (' + m.pct + '%)</span>' +
+        '</div>';
+      breakdownList.appendChild(row);
+    });
+  }
+
+  // ── Insights ──
+  var insightsDiv = document.getElementById('exam-insights');
+  if ((data.strong_modules && data.strong_modules.length) || (data.weak_modules && data.weak_modules.length)) {
+    insightsDiv.classList.remove('hidden');
+  }
+  if (data.strong_modules && data.strong_modules.length) {
+    document.getElementById('strong-section').style.display = 'block';
+    var strongList = document.getElementById('strong-list');
+    data.strong_modules.forEach(function(m) {
+      var chip = document.createElement('a');
+      chip.href = '/topic/' + m.topic_id + '/overview';
+      chip.className = 'exam-insight-chip strong';
+      chip.innerHTML = escHtml(m.emoji) + ' ' + escHtml(m.name) + ' <span>' + m.pct + '%</span>';
+      strongList.appendChild(chip);
+    });
+  }
+  if (data.weak_modules && data.weak_modules.length) {
+    document.getElementById('weak-section').style.display = 'block';
+    var weakList = document.getElementById('weak-list');
+    data.weak_modules.forEach(function(m) {
+      var chip = document.createElement('a');
+      chip.href = '/topic/' + m.topic_id + '/overview';
+      chip.className = 'exam-insight-chip weak';
+      chip.innerHTML = escHtml(m.emoji) + ' ' + escHtml(m.name) + ' <span>' + m.pct + '%</span>';
+      weakList.appendChild(chip);
+    });
+  }
+
+  // ── Store results for review toggle ──
+  window._examResults = data.results;
+  window._showAnswers = showAnswers;
+
+  resultDiv.scrollIntoView({behavior:'smooth'});
+}
+
+function escHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+document.querySelectorAll('.q-input').forEach(function(inp, idx) {
+  inp.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') {
+      var inputs = document.querySelectorAll('.q-input');
+      if (idx + 1 < inputs.length) { inputs[idx + 1].focus(); }
+      else { submitExam(); }
+    }
+  });
+});
+
+/* ── Review toggle ─────────────────────────────────────────────── */
+function toggleReview() {
+  var section = document.getElementById('exam-review-section');
+  if (!section.classList.contains('hidden')) {
+    section.classList.add('hidden');
+    return;
+  }
+  section.classList.remove('hidden');
+  if (section.innerHTML) return; // already built
+
+  var results = window._examResults || [];
+  var showAns = window._showAnswers || false;
+  var html = '<div class="exam-review-list">';
+  results.forEach(function(r, i) {
+    var cls = r.correct ? 'exam-rv-correct' : 'exam-rv-incorrect';
+    html += '<div class="exam-rv-item ' + cls + '">';
+    html += '<div class="exam-rv-num">' + (i + 1) + '</div>';
+    html += '<div class="exam-rv-body">';
+    html += '<p class="exam-rv-q">' + escHtml(r.question) + '</p>';
+    html += '<p class="exam-rv-your">Your answer: <strong>' + escHtml(r.user || '(blank)') + '</strong></p>';
+    if (r.correct) {
+      html += '<p class="exam-rv-status">✅ Correct</p>';
+    } else {
+      html += '<p class="exam-rv-status">❌ Incorrect</p>';
+      if (showAns && r.correct_answer) {
+        html += '<p class="exam-rv-ans">Correct answer: <strong>' + escHtml(r.correct_answer) + '</strong></p>';
+      }
+    }
+    if (showAns && r.explanation) {
+      html += '<p class="exam-rv-exp"><em>' + escHtml(r.explanation) + '</em></p>';
+    }
+    html += '</div></div>';
+  });
+  html += '</div>';
+  section.innerHTML = html;
+}
+
+/* ── Exam Timer ────────────────────────────────────────────────── */
+(function() {
+  var timerEl = document.getElementById('timer-display');
+  if (!timerEl) return; // untimed mode
+
+  var totalSeconds = {{ time_limit_min or 0 }} * 60;
+  if (totalSeconds <= 0) return;
+
+  var interval = setInterval(function() {
+    totalSeconds--;
+    if (totalSeconds <= 0) {
+      clearInterval(interval);
+      timerEl.textContent = '0:00';
+      timerEl.style.color = '#ef4444';
+      // Auto-submit when time runs out
+      alert('Time is up! Your exam will be submitted now.');
+      submitExam();
+      return;
+    }
+    var mins = Math.floor(totalSeconds / 60);
+    var secs = totalSeconds % 60;
+    timerEl.textContent = mins + ':' + (secs < 10 ? '0' : '') + secs;
+
+    // Warning colors
+    if (totalSeconds <= 60) {
+      timerEl.style.color = '#ef4444';
+      timerEl.style.fontWeight = '800';
+    } else if (totalSeconds <= 300) {
+      timerEl.style.color = '#f59e0b';
+    }
+  }, 1000);
+})();
+</script>
+{% endblock %}

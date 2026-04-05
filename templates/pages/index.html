@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block title %}QuantiesUnite — Learn Mathematics from First Principles{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <div class="hero-text">
+    <h1 class="hero-title">Learn Mathematics<br><span class="gradient-text">from First Principles</span></h1>
+    <p class="hero-sub">From kindergarten counting to graduate-level Deep Learning with LSTM &amp; Transformers — aligned to the Singapore curriculum.</p>
+    <div class="hero-actions">
+      <a href="/curriculum" class="btn btn-primary">Start Learning →</a>
+      <a href="/graph" class="btn btn-outline">Explore the Graph 🕸️</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="stat-card">
+      <span class="stat-num">85+</span>
+      <span class="stat-label">Topics</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">13</span>
+      <span class="stat-label">Levels</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">{{ done }}/{{ total }}</span>
+      <span class="stat-label">Completed</span>
+    </div>
+  </div>
+</div>
+
+{% if done > 0 %}
+<section class="progress-banner">
+  <div class="progress-banner-inner">
+    <span>Your progress: <strong>{{ done }} of {{ total }} topics complete ({{ percent }}%)</strong></span>
+    <div class="progress-bar-outer"><div class="progress-bar-inner" style="width:{{ percent }}%"></div></div>
+    <a href="/progress" class="btn btn-sm">View Details →</a>
+  </div>
+</section>
+{% endif %}
+
+<section class="path-overview">
+  <h2 class="section-title">Your Learning Path</h2>
+  <div class="path-cards">
+    <a href="/curriculum#Kindergarten" class="path-card" style="border-color:#7FFFD4">
+      <div class="path-card-shine"></div>
+      <div class="path-icon">🔢</div>
+      <h3>Kindergarten</h3>
+      <p>Numbers, counting, addition, subtraction</p>
+    </a>
+    <div class="path-arrow">→</div>
+    <a href="/curriculum#Primary-1–2" class="path-card" style="border-color:#3CB371">
+      <div class="path-card-shine"></div>
+      <div class="path-icon">🏫</div>
+      <h3>Singapore Primary</h3>
+      <p>P1–P6: MOE-aligned arithmetic, fractions, algebra</p>
+    </a>
+    <div class="path-arrow">→</div>
+    <a href="/curriculum#Sec-1–2" class="path-card" style="border-color:#4169E1">
+      <div class="path-card-shine"></div>
+      <div class="path-icon">📐</div>
+      <h3>Sec 1–4 &amp; J1–2</h3>
+      <p>Geometry, algebra, calculus, vectors, statistics</p>
+    </a>
+    <div class="path-arrow">→</div>
+    <a href="/curriculum#Linear-Algebra" class="path-card" style="border-color:#FF4500">
+      <div class="path-card-shine"></div>
+      <div class="path-icon">🔢</div>
+      <h3>Linear Algebra</h3>
+      <p>Vector spaces, eigenvalues, SVD</p>
+    </a>
+    <div class="path-arrow">→</div>
+    <a href="/curriculum#Deep-Learning" class="path-card" style="border-color:#C71585">
+      <div class="path-card-shine"></div>
+      <div class="path-icon">🤖</div>
+      <h3>Deep Learning</h3>
+      <p>LSTM &amp; Transformer models</p>
+    </a>
+  </div>
+</section>
+
+<section class="feature-grid">
+  <div class="feature-card">
+    <div class="feature-icon">🕸️</div>
+    <h3>Interactive Topic Graph</h3>
+    <p>See how every topic connects. Hover to highlight prerequisite chains — know exactly what to learn next.</p>
+    <a href="/graph" class="btn btn-sm">Open Graph</a>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🧪</div>
+    <h3>Mid-Lesson Check Questions</h3>
+    <p>Answer quick questions as you read each section. Immediate feedback keeps you on track.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon">🏆</div>
+    <h3>End-of-Topic Quiz</h3>
+    <p>Score 70%+ to unlock the next topics. Learn at your own pace — no time limits.</p>
+  </div>
+  <div class="feature-card">
+    <div class="feature-icon"><img src="{{ url_for('static', filename='img/flag_singapore.png') }}" alt="Singapore Flag" width="48" style="border-radius:3px;"/></div>
+    <h3>Singapore Curriculum Aligned</h3>
+    <p>Modules map to MOE P5–6, Sec, and JC syllabuses — so school and deep learning coexist.</p>
+  </div>
+</section>
+{% endblock %}

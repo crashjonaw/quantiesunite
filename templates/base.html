@@ -1,108 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>{% block title %}QuantiesUnite{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&family=Nunito:wght@400;600;700;800&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
   <!-- KaTeX for LaTeX math rendering -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"/>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'\\\\(',right:'\\\\)',display:false},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+    onload="renderMathInElement(document.body, {delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false},{left:'\\\\(',right:'\\\\)',display:false},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
   <!-- Chart.js for data visualizations -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- Cropper.js for avatar cropping -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/cropperjs@1.6.2/dist/cropper.min.js"></script>
+  <!-- Apply saved theme + pastel before paint to prevent flash -->
+  <script>
+    (function() {
+      var serverTheme = "{{ user_theme or '' }}";
+      var serverPastel = "{{ user_pastel or '' }}";
+      var theme = serverTheme || localStorage.getItem('qu-theme');
+      var pastel = serverPastel || localStorage.getItem('qu-pastel');
+      if (theme) { document.documentElement.setAttribute('data-theme', theme); localStorage.setItem('qu-theme', theme); }
+      if (pastel) { document.documentElement.setAttribute('data-pastel', pastel); localStorage.setItem('qu-pastel', pastel); }
+    })();
+  </script>
+  <!-- Pastel color template (self-contained, bright-theme only) -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/pastel.css') }}"/>
   {% block head %}{% endblock %}
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
 
-<nav class="navbar">
-  <a class="nav-brand" href="/">
-    <span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span>
-  </a>
-  <div class="nav-links">
-    {% if current_user %}
-      <a href="/" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">🏠 Home</a>
-      <a href="/graph" class="nav-link {% if request.endpoint == 'graph_page' %}active{% endif %}">🕸️ Graph</a>
-      <a href="/curriculum" class="nav-link {% if request.endpoint == 'curriculum' %}active{% endif %}">📚 Curriculum</a>
-      <a href="/progress" class="nav-link {% if request.endpoint == 'progress_page' %}active{% endif %}">📈 Progress</a>
-      <a href="/search" class="nav-link {% if request.endpoint == 'search' %}active{% endif %}">🔍 Search</a>
-      {% if current_user.is_admin %}
-      <a href="/admin" class="nav-link admin-link {% if request.endpoint == 'admin_panel' %}active{% endif %}">👑 Admin</a>
-      {% endif %}
-      <!-- User menu -->
-      <div class="user-menu-wrap">
-        <button class="user-menu-btn" onclick="toggleUserMenu()" id="user-menu-btn">
-          <span class="user-avatar-nav">{{ current_user.username[0] | upper }}</span>
-          <span class="user-name-nav">{{ current_user.username }}</span>
-          <span class="chevron">▾</span>
-        </button>
-        <div class="user-dropdown" id="user-dropdown">
-          <div class="dropdown-header">
-            <div class="dropdown-avatar">{{ current_user.username[0] | upper }}</div>
-            <div>
-              <div class="dropdown-name">{{ current_user.username }}</div>
-              <div class="dropdown-email">{{ current_user.email }}</div>
-              <span class="badge badge-free-sm">Free Plan</span>
-            </div>
-          </div>
-          <div class="dropdown-divider"></div>
-          <a href="/account" class="dropdown-item">👤 My Account</a>
-          <a href="/progress" class="dropdown-item">📈 My Progress</a>
-          <div class="dropdown-divider"></div>
-          <a href="/logout" class="dropdown-item dropdown-item-danger">🚪 Sign Out</a>
-        </div>
-      </div>
-    {% else %}
-      <a href="/login" class="nav-link">Sign In</a>
-      <a href="/register" class="btn btn-primary btn-sm">Get Started Free</a>
-    {% endif %}
-  </div>
-</nav>
-
-<!-- Flash messages (outside main so they appear at top) -->
-<div class="flash-container">
-  {% with messages = get_flashed_messages(with_categories=true) %}
-    {% for cat, msg in messages %}
-    <div class="flash flash-{{ cat }}" onclick="this.remove()">
-      {{ msg }}
-      <button class="flash-close" onclick="this.parentElement.remove()">×</button>
-    </div>
-    {% endfor %}
-  {% endwith %}
-</div>
+{% include "partials/_navbar.html" %}
+{% include "partials/_flash_messages.html" %}
 
 <main class="main-content">
   {% block content %}{% endblock %}
 </main>
 
-<footer class="footer">
-  <p>QuantiesUnite · Singapore Mathematics from First Principles · Kindergarten → Deep Learning</p>
-</footer>
+{% include "partials/_footer.html" %}
+
+{% include "partials/_feedback.html" %}
+{% if current_user %}{% include "partials/_avatar_crop.html" %}{% endif %}
 
 <script>
-function toggleUserMenu() {
-  const dd = document.getElementById('user-dropdown');
-  dd.classList.toggle('open');
+/* ── Pastel color template ─────────────────────────────────────── */
+function setPastel(color) {
+  if (color) {
+    var currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    if (currentTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'bright');
+      localStorage.setItem('qu-theme', 'bright');
+      updateThemeIcon('bright');
+      if (typeof updateAllChartsTheme === 'function') updateAllChartsTheme();
+    }
+    document.documentElement.setAttribute('data-pastel', color);
+    localStorage.setItem('qu-pastel', color);
+  } else {
+    document.documentElement.removeAttribute('data-pastel');
+    localStorage.removeItem('qu-pastel');
+  }
+  document.querySelectorAll('.pastel-swatch').forEach(function(s) {
+    s.classList.toggle('active', s.getAttribute('data-pastel') === color);
+  });
+  _savePreferences();
 }
-// Close dropdown when clicking outside
+document.addEventListener('DOMContentLoaded', function() {
+  var current = localStorage.getItem('qu-pastel') || '';
+  document.querySelectorAll('.pastel-swatch').forEach(function(s) {
+    s.classList.toggle('active', s.getAttribute('data-pastel') === current);
+  });
+});
+
+/* ── Print protection ──────────────────────────────────────────── */
+document.addEventListener('keydown', function(e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'p') {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }
+});
+window.addEventListener('beforeprint', function(e) {
+  e.preventDefault();
+});
+
+/* ── User menu toggle ──────────────────────────────────────────── */
+function toggleUserMenu() {
+  var dd = document.getElementById('user-dropdown');
+  if (dd) dd.classList.toggle('open');
+}
 document.addEventListener('click', function(e) {
-  const btn = document.getElementById('user-menu-btn');
-  const dd  = document.getElementById('user-dropdown');
+  var btn = document.getElementById('user-menu-btn');
+  var dd  = document.getElementById('user-dropdown');
   if (btn && dd && !btn.contains(e.target) && !dd.contains(e.target)) {
     dd.classList.remove('open');
   }
 });
-// Auto-dismiss flash messages
+
+/* ── Flash auto-dismiss ────────────────────────────────────────── */
 setTimeout(function() {
   document.querySelectorAll('.flash').forEach(function(el) {
     el.style.opacity = '0';
     el.style.transform = 'translateY(-10px)';
-    setTimeout(() => el.remove(), 400);
+    setTimeout(function() { el.remove(); }, 400);
   });
 }, 4000);
+
+/* ── Theme toggle (dark / bright) ──────────────────────────────── */
+function toggleTheme() {
+  var html = document.documentElement;
+  var current = html.getAttribute('data-theme') || 'dark';
+  var next = (current === 'dark') ? 'bright' : 'dark';
+  html.setAttribute('data-theme', next);
+  localStorage.setItem('qu-theme', next);
+  updateThemeIcon(next);
+  if (typeof updateAllChartsTheme === 'function') updateAllChartsTheme();
+  _savePreferences();
+}
+function _savePreferences() {
+  var theme = localStorage.getItem('qu-theme') || '';
+  var pastel = localStorage.getItem('qu-pastel') || '';
+  fetch('/api/preferences', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({theme: theme, pastel: pastel})
+  }).catch(function() {});
+}
+function updateThemeIcon(theme) {
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  btn.classList.toggle('is-bright', theme === 'bright');
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var theme = document.documentElement.getAttribute('data-theme') || 'dark';
+  updateThemeIcon(theme);
+});
+
+/* ── Feedback modal ────────────────────────────────────────────── */
+function closeFeedback() {
+  document.getElementById('feedback-overlay').classList.remove('open');
+  document.getElementById('fb-success').style.display = 'none';
+  document.getElementById('fb-error').style.display = 'none';
+  document.getElementById('feedback-form').reset();
+  document.getElementById('fb-submit-btn').disabled = false;
+}
+function submitFeedback(e) {
+  e.preventDefault();
+  var btn = document.getElementById('fb-submit-btn');
+  btn.disabled = true;
+  var desc = document.getElementById('fb-desc').value.trim();
+  fetch('/api/feedback', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({description: desc, page_url: window.location.pathname + (typeof currentPage !== 'undefined' ? '#page-' + currentPage : ''), theme: document.documentElement.getAttribute('data-theme') || 'dark'})
+  }).then(function(r) { return r.json(); }).then(function(data) {
+    if (data.ok) {
+      document.getElementById('fb-success').style.display = 'block';
+      document.getElementById('fb-error').style.display = 'none';
+      setTimeout(closeFeedback, 1500);
+    } else {
+      document.getElementById('fb-error').textContent = data.error || 'Something went wrong.';
+      document.getElementById('fb-error').style.display = 'block';
+      btn.disabled = false;
+    }
+  }).catch(function() {
+    document.getElementById('fb-error').textContent = 'Network error. Please try again.';
+    document.getElementById('fb-error').style.display = 'block';
+    btn.disabled = false;
+  });
+  return false;
+}
+document.addEventListener('click', function(e) {
+  var overlay = document.getElementById('feedback-overlay');
+  if (overlay && e.target === overlay) closeFeedback();
+});
 </script>
 
 {% block scripts %}{% endblock %}

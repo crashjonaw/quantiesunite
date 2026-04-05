@@ -1,0 +1,139 @@
+[watcher] QuantiesUnite Telegram Watcher started
+[watcher] Polling every 30s for commands from @crashjaw
+[watcher] Admin requested: redeploy
+=====================================
+  Starting QuantiesUnite
+=====================================
+
+Patching cloudflared config...
+Cleaning up old processes...
+Installing Python packages if needed...
+
+Starting Flask server...
+tab 1 of window id 1288
+Waiting for Flask to start...
+Starting Cloudflare Tunnel...
+tab 1 of window id 1290
+
+=====================================
+QuantiesUnite is now running.
+Local:   http://localhost:5001
+Public:  https://quantiesunite.sg
+=====================================
+[watcher] Admin requested: redeploy
+=====================================
+  Starting QuantiesUnite
+=====================================
+
+Patching cloudflared config...
+Cleaning up old processes...
+Installing Python packages if needed...
+
+Starting Flask server...
+tab 1 of window id 1305
+Waiting for Flask to start...
+Starting Cloudflare Tunnel...
+tab 1 of window id 1307
+
+=====================================
+QuantiesUnite is now running.
+Local:   http://localhost:5001
+Public:  https://quantiesunite.sg
+=====================================
+[watcher] Admin requested: redeploy
+=====================================
+  Starting QuantiesUnite
+=====================================
+
+Patching cloudflared config...
+Cleaning up old processes...
+Installing Python packages if needed...
+
+Starting Flask server...
+tab 1 of window id 1320
+Waiting for Flask to start...
+Starting Cloudflare Tunnel...
+tab 1 of window id 1321
+
+=====================================
+QuantiesUnite is now running.
+Local:   http://localhost:5001
+Public:  https://quantiesunite.sg
+=====================================
+[watcher] Admin requested: redeploy
+=====================================
+  Starting QuantiesUnite
+=====================================
+
+Patching cloudflared config...
+Cleaning up old processes...
+Installing Python packages if needed...
+
+Starting Flask server...
+tab 1 of window id 1328
+Waiting for Flask to start...
+Starting Cloudflare Tunnel...
+tab 1 of window id 1329
+
+=====================================
+QuantiesUnite is now running.
+Local:   http://localhost:5001
+Public:  https://quantiesunite.sg
+=====================================
+[watcher] Admin requested: restart loop
+[watcher] Claude started with PID 35191
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35191) died — auto-restarting
+[watcher] Claude started with PID 35356
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35356) died — auto-restarting
+[watcher] Claude started with PID 35403
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35403) died — auto-restarting
+[watcher] Claude started with PID 35433
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35433) died — auto-restarting
+[watcher] Claude started with PID 35464
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35464) died — auto-restarting
+[watcher] Claude started with PID 35526
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35526) died — auto-restarting
+[watcher] Claude started with PID 35569
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35569) died — auto-restarting
+[watcher] Claude started with PID 35599
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35599) died — auto-restarting
+[watcher] Claude started with PID 35629
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35629) died — auto-restarting
+[watcher] Claude started with PID 35680
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35680) died — auto-restarting
+[watcher] Claude started with PID 35708
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35708) died — auto-restarting
+[watcher] Claude started with PID 35741
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35741) died — auto-restarting
+[watcher] Claude started with PID 35788
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35788) died — auto-restarting
+[watcher] Claude started with PID 35817
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35817) died — auto-restarting
+[watcher] Claude started with PID 35848
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35848) died — auto-restarting
+[watcher] Claude started with PID 35902
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35902) died — auto-restarting
+[watcher] Claude started with PID 35968
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35968) died — auto-restarting
+[watcher] Claude started with PID 35997
+You've hit your limit · resets 11pm (Asia/Singapore)
+[watcher] Claude loop (PID 35997) died — auto-restarting
+[watcher] Claude started with PID 36033
+You've hit your limit · resets 11pm (Asia/Singapore)

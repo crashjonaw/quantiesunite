@@ -1,0 +1,22 @@
+{# Concept sidebar navigation - expects: tid, t, concepts, concept #}
+<aside class="concept-sidebar">
+  <div class="sidebar-header">{{ t.name }}</div>
+  {% for c in concepts %}
+  <a href="/topic/{{ tid }}/learn/{{ c.id }}"
+     class="sidebar-concept-link {% if c.id == concept.id %}active{% endif %}">
+    <span class="sidebar-concept-num">{{ loop.index }}</span>
+    <span class="sidebar-concept-title">{{ c.title }}</span>
+  </a>
+  {% endfor %}
+  <div class="sidebar-divider"></div>
+  <a href="/topic/{{ tid }}/quiz" class="sidebar-concept-link sidebar-quiz-link">
+    <span class="sidebar-concept-num">&#127942;</span>
+    <span class="sidebar-concept-title">Module Quiz</span>
+  </a>
+  {% if complete %}
+  <a href="/topic/{{ tid }}/practice" class="sidebar-concept-link sidebar-practice-link">
+    <span class="sidebar-concept-num">&#128221;</span>
+    <span class="sidebar-concept-title">More Practice</span>
+  </a>
+  {% endif %}
+</aside>
