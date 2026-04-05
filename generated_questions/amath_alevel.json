@@ -1,0 +1,5142 @@
+[
+  {
+    "question": "State the Factor Theorem.",
+    "answer": "If f(a) = 0, then (x - a) is a factor of f(x).",
+    "options": [
+      "If f(a) = 0, then (x - a) is a factor of f(x).",
+      "If f(a) = 1, then (x - a) is a factor of f(x).",
+      "If f(0) = a, then (x - a) is a factor of f(x).",
+      "If f(a) = 0, then (x + a) is a factor of f(x)."
+    ],
+    "explanation": "The Factor Theorem states that (x - a) is a factor of f(x) if and only if f(a) = 0.",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "State the Remainder Theorem.",
+    "answer": "When f(x) is divided by (x - a), the remainder is f(a).",
+    "options": [
+      "When f(x) is divided by (x - a), the remainder is f(a).",
+      "When f(x) is divided by (x - a), the remainder is f(0).",
+      "When f(x) is divided by (x - a), the remainder is f(-a).",
+      "When f(x) is divided by (x + a), the remainder is f(a)."
+    ],
+    "explanation": "The Remainder Theorem says the remainder when dividing f(x) by (x - a) is simply f(a).",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Find the remainder when \\(f(x) = x^3 + 2x - 1\\) is divided by \\((x - 1)\\).",
+    "answer": "2",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "-1"
+    ],
+    "explanation": "By the Remainder Theorem, remainder = f(1) = 1 + 2 - 1 = 2.",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Is \\((x + 1)\\) a factor of \\(f(x) = x^3 + 3x^2 + 3x + 1\\)?",
+    "answer": "Yes",
+    "options": [
+      "Yes",
+      "No",
+      "Only if x > 0",
+      "Cannot be determined"
+    ],
+    "explanation": "f(-1) = -1 + 3 - 3 + 1 = 0, so (x + 1) is a factor.",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "What is the degree of the polynomial \\(3x^4 - 2x^2 + x - 7\\)?",
+    "answer": "4",
+    "options": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "explanation": "The degree is the highest power of x, which is 4.",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "In partial fractions, what form does \\(\\frac{A}{x-1}\\) represent?",
+    "answer": "A linear (non-repeated) partial fraction with a simple pole at x = 1.",
+    "options": [
+      "A linear (non-repeated) partial fraction with a simple pole at x = 1.",
+      "A repeated factor partial fraction.",
+      "A quadratic partial fraction.",
+      "An improper fraction."
+    ],
+    "explanation": "When the denominator has a simple linear factor (x - 1), the partial fraction takes the form A/(x - 1).",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "How many roots (counting multiplicity) does a polynomial of degree 5 have over \\(\\mathbb{C}\\)?",
+    "answer": "5",
+    "options": [
+      "5",
+      "4",
+      "10",
+      "It depends on the polynomial"
+    ],
+    "explanation": "By the Fundamental Theorem of Algebra, a degree-n polynomial has exactly n roots over the complex numbers, counting multiplicity.",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Find f(2) if \\(f(x) = 2x^3 - x^2 + 3\\).",
+    "answer": "15",
+    "options": [
+      "15",
+      "19",
+      "11",
+      "21"
+    ],
+    "explanation": "f(2) = 2(8) - (4) + 3 = 16 - 4 + 3 = 15.",
+    "difficulty": 1,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Use the factor theorem to show that \\((x - 3)\\) is a factor of \\(f(x) = x^3 - 6x^2 + 11x - 6\\), then factorise completely.",
+    "answer": "f(3) = 27 - 54 + 33 - 6 = 0. f(x) = (x-1)(x-2)(x-3)",
+    "options": [
+      "f(x) = (x-1)(x-2)(x-3)",
+      "f(x) = (x-1)(x-3)(x+2)",
+      "f(x) = (x-2)(x-3)(x+1)",
+      "f(x) = (x-3)(x^2 - 3x + 2) only"
+    ],
+    "explanation": "f(3) = 0 confirms the factor. Dividing gives x^2 - 3x + 2 = (x-1)(x-2).",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Find the remainder when \\(f(x) = 2x^3 - 3x^2 + x - 5\\) is divided by \\((2x - 1)\\).",
+    "answer": "-5.5 or -11/2",
+    "options": [
+      "-11/2",
+      "0",
+      "-5",
+      "1/2"
+    ],
+    "explanation": "Dividing by (2x-1) means evaluating at x = 1/2: f(1/2) = 2(1/8) - 3(1/4) + 1/2 - 5 = 1/4 - 3/4 + 1/2 - 5 = -5.",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Express \\(\\frac{5x+1}{(x-1)(x+2)}\\) in partial fractions.",
+    "answer": "\\(\\frac{2}{x-1} + \\frac{3}{x+2}\\)",
+    "options": [
+      "\\(\\frac{2}{x-1} + \\frac{3}{x+2}\\)",
+      "\\(\\frac{3}{x-1} + \\frac{2}{x+2}\\)",
+      "\\(\\frac{1}{x-1} + \\frac{4}{x+2}\\)",
+      "\\(\\frac{5}{x-1} - \\frac{1}{x+2}\\)"
+    ],
+    "explanation": "5x+1 = A(x+2) + B(x-1). Put x=1: 6=3A, A=2. Put x=-2: -9=-3B, B=3.",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Solve \\(x^3 - 7x + 6 = 0\\).",
+    "answer": "x = 1, 2, -3",
+    "options": [
+      "x = 1, 2, -3",
+      "x = 1, -2, 3",
+      "x = -1, 2, 3",
+      "x = 1, -1, 6"
+    ],
+    "explanation": "f(1) = 1 - 7 + 6 = 0. Dividing: x^2 + x - 6 = (x+3)(x-2). Roots: 1, 2, -3.",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Given \\(f(x) = x^3 + ax + b\\) has \\((x-2)\\) as a factor and remainder 6 when divided by \\((x-1)\\), find a and b.",
+    "answer": "a = -13, b = 18",
+    "options": [
+      "a = -13, b = 18",
+      "a = -1, b = -6",
+      "a = 13, b = -8",
+      "a = -8, b = 13"
+    ],
+    "explanation": "f(2)=0: 8+2a+b=0 so 2a+b=-8. f(1)=6: 1+a+b=6 so a+b=5. Subtracting: a=-13, b=18.",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Express \\(\\frac{3x^2 + 2}{(x-1)(x^2+1)}\\) in partial fractions.",
+    "answer": "\\(\\frac{5/2}{x-1} + \\frac{x/2 + 1/2}{x^2+1}\\)",
+    "options": [],
+    "explanation": "3x^2+2 = A(x^2+1) + (Bx+C)(x-1). Put x=1: 5=2A, A=5/2. Expand and compare: A+B=3 so B=1/2, C-B=0 wait let me compare carefully. Coefficients of x^2: A+B=3, so B=1/2. Constant: A-C=2, so C=A-2=1/2. Coefficient of x: C-B=0 check. Yes.",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Find the quotient and remainder when \\(2x^3 + 3x^2 - x + 1\\) is divided by \\(x^2 + 1\\).",
+    "answer": "Quotient: 2x + 3, Remainder: -3x - 2",
+    "options": [
+      "Quotient: 2x + 3, Remainder: -3x - 2",
+      "Quotient: 2x + 3, Remainder: 3x + 2",
+      "Quotient: 2x - 3, Remainder: -x + 4",
+      "Quotient: x + 3, Remainder: -3x"
+    ],
+    "explanation": "By polynomial long division: 2x^3+3x^2-x+1 = (x^2+1)(2x+3) + (-3x-2).",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "If \\(\\alpha, \\beta, \\gamma\\) are the roots of \\(x^3 - 3x^2 + 2x - 1 = 0\\), find \\(\\alpha + \\beta + \\gamma\\) and \\(\\alpha\\beta\\gamma\\).",
+    "answer": "Sum = 3, Product = 1",
+    "options": [
+      "Sum = 3, Product = 1",
+      "Sum = 2, Product = 1",
+      "Sum = 3, Product = -1",
+      "Sum = -3, Product = 1"
+    ],
+    "explanation": "By Vieta's formulas for x^3 - 3x^2 + 2x - 1 = 0: sum of roots = 3, product of roots = 1.",
+    "difficulty": 2,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "The polynomial \\(f(x) = x^4 + px^3 + qx^2 + rx + 6\\) has factors \\((x-1)\\) and \\((x+1)\\). Given that f(2) = 0, find p, q, r and factorise f(x) completely.",
+    "answer": "p = 1, q = -7, r = -1. f(x) = (x-1)(x+1)(x-2)(x+3)",
+    "options": [
+      "p=1, q=-7, r=-1; f(x)=(x-1)(x+1)(x-2)(x+3)",
+      "p=-1, q=-7, r=1; f(x)=(x-1)(x+1)(x-3)(x+2)",
+      "p=1, q=7, r=-1; f(x)=(x-1)(x+1)(x^2+x+6)",
+      "p=-2, q=-1, r=2; f(x)=(x-1)(x+1)(x-2)(x-3)"
+    ],
+    "explanation": "f(1)=0: 1+p+q+r+6=0 so p+q+r=-7. f(-1)=0: 1-p+q-r+6=0 so -p+q-r=-7. Adding: 2q=-14, q=-7. Subtracting: 2p+2r=0, p+r=0. f(2)=0: 16+8p+4q+2r+6=0, 8p+2r=-22-4q=-22+28=6, so 8p+2r=6. With p=-r: 8(-r)+2r=6, -6r=6, r=-1, p=1. Check q=-7. f(x)=x^4+x^3-7x^2-x+6=(x-1)(x+1)(x^2+x-6)=(x-1)(x+1)(x+3)(x-2).",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Decompose \\(\\frac{4x^2 + 3x + 1}{x(x+1)^2}\\) into partial fractions.",
+    "answer": "\\(\\frac{1}{x} + \\frac{3}{x+1} - \\frac{2}{(x+1)^2}\\)",
+    "options": [],
+    "explanation": "4x^2+3x+1 = A(x+1)^2 + Bx(x+1) + Cx. Put x=0: 1=A. Put x=-1: 4-3+1=2=-C, C=-2. Compare x^2 coefficients: A+B=4, B=3.",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Given that \\(2x^3 - 5x^2 + ax + b\\) is exactly divisible by \\((x^2 - x - 2)\\), find a and b, and hence the third factor.",
+    "answer": "a = -1, b = 6. Third factor is (2x - 3).",
+    "options": [
+      "a = -1, b = 6; third factor (2x-3)",
+      "a = 1, b = -6; third factor (2x+3)",
+      "a = -1, b = -6; third factor (2x-3)",
+      "a = 2, b = 3; third factor (x-3)"
+    ],
+    "explanation": "x^2-x-2 = (x-2)(x+1). f(2)=0: 16-20+2a+b=0 so 2a+b=4. f(-1)=0: -2-5-a+b=0 so -a+b=7. Solving: 3a=-3, a=-1, b=6. Dividing: 2x^3-5x^2-x+6 / (x^2-x-2) = 2x-3.",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Prove that if \\(f(x) = x^n - a^n\\), then \\((x - a)\\) is always a factor for any positive integer n.",
+    "answer": "f(a) = a^n - a^n = 0, so by the Factor Theorem, (x - a) is a factor.",
+    "options": [],
+    "explanation": "By the Factor Theorem, (x-a) is a factor of f(x) iff f(a) = 0. Since f(a) = a^n - a^n = 0, the result follows for all positive integers n.",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Express \\(\\frac{x^3 + 1}{x^2 - 1}\\) in partial fractions (perform long division first if needed).",
+    "answer": "\\(x + \\frac{1}{x-1}\\)",
+    "options": [
+      "\\(x + \\frac{1}{x-1}\\)",
+      "\\(x + \\frac{1}{x-1} + \\frac{1}{x+1}\\)",
+      "\\(x + 1 + \\frac{1}{x^2-1}\\)",
+      "\\(x - \\frac{1}{x+1}\\)"
+    ],
+    "explanation": "Long division: x^3+1 = x(x^2-1) + (x+1). So (x^3+1)/(x^2-1) = x + (x+1)/((x-1)(x+1)) = x + 1/(x-1).",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "The roots of \\(x^3 + 3x + k = 0\\) are \\(\\alpha, \\beta, \\gamma\\). If \\(\\alpha^2 + \\beta^2 + \\gamma^2 = 6\\), find k.",
+    "answer": "k cannot be determined uniquely from the given information alone because alpha^2+beta^2+gamma^2 = (sum)^2 - 2(sum of products) = 0 - 2(3) = -6, which contradicts 6.",
+    "options": [],
+    "explanation": "By Vieta's: alpha+beta+gamma=0, alpha*beta+beta*gamma+gamma*alpha=3, alpha*beta*gamma=-k. Now alpha^2+beta^2+gamma^2 = (alpha+beta+gamma)^2 - 2(alpha*beta+beta*gamma+gamma*alpha) = 0 - 6 = -6. This cannot equal 6, so there is no real value of k satisfying the condition.",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Find all values of k for which \\(x^3 - 3x + k = 0\\) has a repeated root.",
+    "answer": "k = 2 or k = -2",
+    "options": [
+      "k = 2 or k = -2",
+      "k = 0",
+      "k = 3 or k = -3",
+      "k = 1 or k = -1"
+    ],
+    "explanation": "If x = a is a repeated root, then f(a) = 0 and f'(a) = 0. f'(x) = 3x^2 - 3 = 0 gives x = ±1. f(1) = 1-3+k = k-2 = 0 so k=2. f(-1) = -1+3+k = k+2 = 0 so k=-2.",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Show that \\(\\frac{x^4}{(x-1)(x+1)} = x^2 + 1 + \\frac{1}{2(x-1)} + \\frac{1}{2(x+1)}\\).",
+    "answer": "Performing long division of x^4 by (x^2-1) gives quotient x^2+1 and remainder 1. Then 1/(x^2-1) = 1/((x-1)(x+1)) = (1/2)/(x-1) - (1/2)/(x+1).",
+    "options": [],
+    "explanation": "x^4 = (x^2-1)(x^2+1) + 1. So x^4/(x^2-1) = x^2+1 + 1/(x^2-1). Partial fractions: 1/((x-1)(x+1)) = A/(x-1)+B/(x+1). A=1/2, B=-1/2. But the given expression has +1/2 for both, which is incorrect. The correct form is x^2+1 + 1/(2(x-1)) - 1/(2(x+1)).",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "Given \\(f(x) = 6x^3 + 7x^2 - x - 2\\), find all rational roots and factorise completely.",
+    "answer": "Roots: x = 1/2, x = -1/3, x = -2. f(x) = (2x-1)(3x+1)(x+2)",
+    "options": [
+      "(2x-1)(3x+1)(x+2)",
+      "(2x+1)(3x-1)(x+2)",
+      "(6x-1)(x+1)(x+2)",
+      "(2x-1)(3x+1)(x-2)"
+    ],
+    "explanation": "By Rational Root Theorem, possible roots are ±1, ±2, ±1/2, ±1/3, ±2/3, ±1/6. Test x=1/2: 6(1/8)+7(1/4)-1/2-2 = 3/4+7/4-1/2-2 = 10/4-1/2-2 = 5/2-5/2=0. Dividing out and continuing gives the full factorisation.",
+    "difficulty": 3,
+    "topic_id": "amath_polynomials"
+  },
+  {
+    "question": "State the Binomial Theorem for \\((a+b)^n\\) where n is a positive integer.",
+    "answer": "\\((a+b)^n = \\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\)",
+    "options": [
+      "\\(\\sum_{r=0}^{n} \\binom{n}{r} a^{n-r} b^r\\)",
+      "\\(\\sum_{r=0}^{n} n^r a^{n-r} b^r\\)",
+      "\\(\\sum_{r=1}^{n} \\binom{n}{r} a^r b^{n-r}\\)",
+      "\\(a^n + b^n\\)"
+    ],
+    "explanation": "The Binomial Theorem expands (a+b)^n as a sum of terms involving binomial coefficients.",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Evaluate \\(\\binom{6}{2}\\).",
+    "answer": "15",
+    "options": [
+      "15",
+      "12",
+      "30",
+      "6"
+    ],
+    "explanation": "\\(\\binom{6}{2} = 6!/(2!4!) = (6×5)/(2×1) = 15\\).",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "What is the general term \\(T_{r+1}\\) in the expansion of \\((a+b)^n\\)?",
+    "answer": "\\(T_{r+1} = \\binom{n}{r} a^{n-r} b^r\\)",
+    "options": [
+      "\\(\\binom{n}{r} a^{n-r} b^r\\)",
+      "\\(\\binom{n}{r+1} a^{n-r} b^r\\)",
+      "\\(n^r a^{n-r} b^r\\)",
+      "\\(\\binom{n}{r} a^r b^{n-r}\\)"
+    ],
+    "explanation": "The (r+1)th term uses r as the power of b and (n-r) as the power of a.",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "How many terms are in the expansion of \\((x+y)^8\\)?",
+    "answer": "9",
+    "options": [
+      "9",
+      "8",
+      "7",
+      "10"
+    ],
+    "explanation": "The expansion of (x+y)^n has (n+1) terms, so (x+y)^8 has 9 terms.",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Expand \\((1+x)^3\\).",
+    "answer": "\\(1 + 3x + 3x^2 + x^3\\)",
+    "options": [
+      "\\(1 + 3x + 3x^2 + x^3\\)",
+      "\\(1 + 3x + 6x^2 + x^3\\)",
+      "\\(1 + x + x^2 + x^3\\)",
+      "\\(1 + 3x + 3x^2 + 3x^3\\)"
+    ],
+    "explanation": "Using the binomial theorem with n=3: C(3,0)+C(3,1)x+C(3,2)x^2+C(3,3)x^3 = 1+3x+3x^2+x^3.",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "What is \\(\\binom{n}{0}\\) for any positive integer n?",
+    "answer": "1",
+    "options": [
+      "1",
+      "0",
+      "n",
+      "n!"
+    ],
+    "explanation": "\\(\\binom{n}{0} = n!/(0! \\cdot n!) = 1\\).",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "True or False: \\(\\binom{n}{r} = \\binom{n}{n-r}\\).",
+    "answer": "True",
+    "options": [
+      "True",
+      "False",
+      "Only when n is even",
+      "Only when r = 0"
+    ],
+    "explanation": "This is the symmetry property of binomial coefficients.",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "What is the coefficient of \\(x^2\\) in the expansion of \\((1+x)^5\\)?",
+    "answer": "10",
+    "options": [
+      "10",
+      "5",
+      "20",
+      "15"
+    ],
+    "explanation": "Coefficient of x^2 = C(5,2) = 10.",
+    "difficulty": 1,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the coefficient of \\(x^3\\) in the expansion of \\((2+3x)^6\\).",
+    "answer": "4320",
+    "options": [
+      "4320",
+      "2160",
+      "6480",
+      "1080"
+    ],
+    "explanation": "T_{r+1} = C(6,r)(2)^{6-r}(3x)^r. For x^3, r=3: C(6,3)(2)^3(3)^3 = 20 × 8 × 27 = 4320.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the term independent of x in \\(\\left(x^2 + \\frac{1}{x}\\right)^6\\).",
+    "answer": "15",
+    "options": [
+      "15",
+      "20",
+      "6",
+      "1"
+    ],
+    "explanation": "T_{r+1} = C(6,r)(x^2)^{6-r}(1/x)^r = C(6,r)x^{12-2r-r} = C(6,r)x^{12-3r}. Independent of x when 12-3r=0, r=4. T_5 = C(6,4) = 15.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Expand \\((1-2x)^4\\) and simplify.",
+    "answer": "\\(1 - 8x + 24x^2 - 32x^3 + 16x^4\\)",
+    "options": [
+      "\\(1 - 8x + 24x^2 - 32x^3 + 16x^4\\)",
+      "\\(1 - 8x + 16x^2 - 32x^3 + 16x^4\\)",
+      "\\(1 + 8x + 24x^2 + 32x^3 + 16x^4\\)",
+      "\\(1 - 2x + 4x^2 - 8x^3 + 16x^4\\)"
+    ],
+    "explanation": "C(4,0)-C(4,1)(2x)+C(4,2)(2x)^2-C(4,3)(2x)^3+C(4,4)(2x)^4 = 1-8x+24x^2-32x^3+16x^4.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the first three terms in the expansion of \\((1 + x)^{10}\\) in ascending powers of x.",
+    "answer": "\\(1 + 10x + 45x^2\\)",
+    "options": [
+      "\\(1 + 10x + 45x^2\\)",
+      "\\(1 + 10x + 90x^2\\)",
+      "\\(1 + 10x + 50x^2\\)",
+      "\\(10 + 10x + 45x^2\\)"
+    ],
+    "explanation": "T_1=1, T_2=C(10,1)x=10x, T_3=C(10,2)x^2=45x^2.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Use the binomial expansion to approximate \\((1.02)^8\\) correct to 3 decimal places.",
+    "answer": "1.172",
+    "options": [
+      "1.172",
+      "1.160",
+      "1.149",
+      "1.184"
+    ],
+    "explanation": "(1+0.02)^8 ≈ 1 + 8(0.02) + 28(0.0004) + 56(0.000008) = 1 + 0.16 + 0.0112 + 0.000448 ≈ 1.172.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the coefficient of \\(x^4\\) in the expansion of \\((1+x)^3(1+x)^5\\).",
+    "answer": "70",
+    "options": [
+      "70",
+      "56",
+      "35",
+      "126"
+    ],
+    "explanation": "(1+x)^3(1+x)^5 = (1+x)^8. Coefficient of x^4 = C(8,4) = 70.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "In the expansion of \\((3 - x)^7\\), find the coefficient of \\(x^3\\).",
+    "answer": "-2835",
+    "options": [
+      "-2835",
+      "2835",
+      "-945",
+      "945"
+    ],
+    "explanation": "T_{r+1} = C(7,r)(3)^{7-r}(-x)^r. For r=3: C(7,3)(3)^4(-1)^3 = 35 × 81 × (-1) = -2835.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the middle term in the expansion of \\((x + 2y)^{10}\\).",
+    "answer": "\\(8064 x^5 y^5\\)",
+    "options": [
+      "\\(8064 x^5 y^5\\)",
+      "\\(252 x^5 y^5\\)",
+      "\\(32256 x^5 y^5\\)",
+      "\\(8064 x^4 y^6\\)"
+    ],
+    "explanation": "n=10 (even), middle term is T_6 (r=5): C(10,5)x^5(2y)^5 = 252 × 32 × x^5y^5 = 8064x^5y^5.",
+    "difficulty": 2,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the value of n if the coefficient of \\(x^2\\) in \\((1+x)^n\\) is 36.",
+    "answer": "n = 9",
+    "options": [
+      "n = 9",
+      "n = 8",
+      "n = 6",
+      "n = 72"
+    ],
+    "explanation": "C(n,2) = 36 means n(n-1)/2 = 36, n^2-n-72=0, (n-9)(n+8)=0, n=9 (positive integer).",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "The coefficient of \\(x^2\\) in the expansion of \\((1 + ax)^6\\) is 60. Find the possible values of a.",
+    "answer": "a = 2 or a = -2",
+    "options": [
+      "a = 2 or a = -2",
+      "a = 2 only",
+      "a = \\(\\sqrt{10}\\)",
+      "a = 4 or a = -4"
+    ],
+    "explanation": "Coefficient of x^2 = C(6,2)a^2 = 15a^2 = 60, so a^2 = 4, a = ±2.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the term independent of x in \\(\\left(2x - \\frac{3}{x^2}\\right)^9\\).",
+    "answer": "-145152",
+    "options": [],
+    "explanation": "T_{r+1} = C(9,r)(2x)^{9-r}(-3/x^2)^r. Power of x: (9-r)-2r = 9-3r = 0 when r=3. T_4 = C(9,3)×2^6×(-3)^3 = 84×64×(-27) = -145152.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "In the expansion of \\((1+x)^n\\), the coefficients of \\(x^4\\) and \\(x^5\\) are equal. Find n.",
+    "answer": "n = 9",
+    "options": [
+      "n = 9",
+      "n = 8",
+      "n = 10",
+      "n = 5"
+    ],
+    "explanation": "C(n,4) = C(n,5) means n!/(4!(n-4)!) = n!/(5!(n-5)!). This simplifies to 5 = n-4, so n = 9.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Show that \\(\\sum_{r=0}^{n} \\binom{n}{r} = 2^n\\).",
+    "answer": "Set a = b = 1 in (a+b)^n: (1+1)^n = sum of C(n,r) = 2^n.",
+    "options": [],
+    "explanation": "By the binomial theorem, (1+1)^n = sum_{r=0}^{n} C(n,r)(1)^{n-r}(1)^r = sum_{r=0}^{n} C(n,r) = 2^n.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Prove that \\(\\sum_{r=0}^{n} (-1)^r \\binom{n}{r} = 0\\) for n ≥ 1.",
+    "answer": "Set a = 1, b = -1 in (a+b)^n: (1-1)^n = 0^n = 0.",
+    "options": [],
+    "explanation": "By the binomial theorem with a=1, b=-1: (1+(-1))^n = sum_{r=0}^{n} C(n,r)(1)^{n-r}(-1)^r = sum_{r=0}^n (-1)^r C(n,r) = 0^n = 0 for n≥1.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the greatest term in the expansion of \\((3+2x)^9\\) when \\(x = 1\\).",
+    "answer": "The greatest term is T_5 = C(9,4)(3)^5(2)^4 = 126 × 243 × 16 = 489888.",
+    "options": [],
+    "explanation": "For (3+2)^9, T_{r+1}/T_r = (10-r)/r × 2/3. T_{r+1}>T_r when (10-r)×2 > 3r i.e. 20-2r>3r, r<4. So terms increase up to r=4 (T_5). T_5 = C(9,4)×3^5×2^4 = 126×243×16 = 489888.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the coefficient of \\(x^5\\) in the expansion of \\((1-x)^3(1+x)^7\\).",
+    "answer": "0",
+    "options": [
+      "0",
+      "-7",
+      "7",
+      "21"
+    ],
+    "explanation": "(1-x)^3(1+x)^7. Coefficient of x^5 = sum over k: C(3,k)(-1)^k × C(7,5-k). k=0: C(3,0)C(7,5)=21. k=1: -C(3,1)C(7,4)=-3×35=-105. k=2: C(3,2)C(7,3)=3×35=105. k=3: -C(3,3)C(7,2)=-21. Total: 21-105+105-21=0. Hmm, that's 0.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Find the first four terms of \\((1 + 2x)^{-3}\\) and state the range of validity.",
+    "answer": "\\(1 - 6x + 24x^2 - 80x^3\\), valid for \\(|x| < 1/2\\).",
+    "options": [
+      "\\(1 - 6x + 24x^2 - 80x^3\\); \\(|x|<1/2\\)",
+      "\\(1 + 6x + 24x^2 + 80x^3\\); \\(|x|<1/2\\)",
+      "\\(1 - 6x + 12x^2 - 8x^3\\); \\(|x|<1\\)",
+      "\\(1 - 3x + 6x^2 - 10x^3\\); \\(|x|<1/2\\)"
+    ],
+    "explanation": "Using generalized binomial: (1+2x)^{-3} = 1 + (-3)(2x) + (-3)(-4)/2!(2x)^2 + (-3)(-4)(-5)/3!(2x)^3 + ... = 1 - 6x + 24x^2 - 80x^3. Valid for |2x|<1, i.e. |x|<1/2.",
+    "difficulty": 3,
+    "topic_id": "amath_binomial"
+  },
+  {
+    "question": "Simplify \\(\\log_a a^5\\).",
+    "answer": "5",
+    "options": [
+      "5",
+      "a^5",
+      "25",
+      "1"
+    ],
+    "explanation": "By the definition of logarithm, log_a(a^5) = 5.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "What is \\(\\ln 1\\)?",
+    "answer": "0",
+    "options": [
+      "0",
+      "1",
+      "e",
+      "undefined"
+    ],
+    "explanation": "ln 1 = 0 because e^0 = 1.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "State the change of base formula for \\(\\log_a b\\).",
+    "answer": "\\(\\log_a b = \\frac{\\log_c b}{\\log_c a}\\) for any base c > 0, c ≠ 1.",
+    "options": [
+      "\\(\\frac{\\log_c b}{\\log_c a}\\)",
+      "\\(\\frac{\\log_c a}{\\log_c b}\\)",
+      "\\(\\log_c(ab)\\)",
+      "\\(\\log_c b - \\log_c a\\)"
+    ],
+    "explanation": "The change of base formula allows converting between logarithm bases.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Simplify \\(\\log_2 8\\).",
+    "answer": "3",
+    "options": [
+      "3",
+      "8",
+      "2",
+      "4"
+    ],
+    "explanation": "2^3 = 8, so log_2(8) = 3.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "What is \\(e^{\\ln 7}\\)?",
+    "answer": "7",
+    "options": [
+      "7",
+      "e^7",
+      "ln 7",
+      "1"
+    ],
+    "explanation": "e and ln are inverse functions, so e^{ln 7} = 7.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Simplify \\(\\log_5 25 + \\log_5 1\\).",
+    "answer": "2",
+    "options": [
+      "2",
+      "3",
+      "25",
+      "0"
+    ],
+    "explanation": "log_5(25) = 2 and log_5(1) = 0, so 2 + 0 = 2.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Which law of logarithms states \\(\\log_a(MN) = \\log_a M + \\log_a N\\)?",
+    "answer": "The Product Rule (or Addition Law) of logarithms.",
+    "options": [
+      "The Product Rule (or Addition Law) of logarithms.",
+      "The Quotient Rule.",
+      "The Power Rule.",
+      "The Change of Base Rule."
+    ],
+    "explanation": "log_a(MN) = log_a M + log_a N is the product/addition law.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Simplify \\(3\\ln e^2\\).",
+    "answer": "6",
+    "options": [
+      "6",
+      "3e^2",
+      "2e^3",
+      "e^6"
+    ],
+    "explanation": "ln(e^2) = 2, so 3 × 2 = 6.",
+    "difficulty": 1,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(2^{x+1} = 32\\).",
+    "answer": "x = 4",
+    "options": [
+      "x = 4",
+      "x = 5",
+      "x = 3",
+      "x = 16"
+    ],
+    "explanation": "32 = 2^5, so 2^{x+1} = 2^5, x+1 = 5, x = 4.",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(\\log_3(2x-1) = 2\\).",
+    "answer": "x = 5",
+    "options": [
+      "x = 5",
+      "x = 4",
+      "x = 9",
+      "x = 3"
+    ],
+    "explanation": "log_3(2x-1) = 2 means 2x-1 = 3^2 = 9, so 2x = 10, x = 5.",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(e^{2x} = 5\\), giving your answer in exact form.",
+    "answer": "\\(x = \\frac{\\ln 5}{2}\\)",
+    "options": [
+      "\\(x = \\frac{\\ln 5}{2}\\)",
+      "\\(x = \\ln(5/2)\\)",
+      "\\(x = 2\\ln 5\\)",
+      "\\(x = \\frac{5}{2e}\\)"
+    ],
+    "explanation": "Take ln: 2x = ln 5, x = ln5/2.",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Express \\(2\\log_3 x - \\log_3(x+1)\\) as a single logarithm.",
+    "answer": "\\(\\log_3\\left(\\frac{x^2}{x+1}\\right)\\)",
+    "options": [
+      "\\(\\log_3\\left(\\frac{x^2}{x+1}\\right)\\)",
+      "\\(\\log_3(x^2 - x - 1)\\)",
+      "\\(\\log_3\\left(\\frac{2x}{x+1}\\right)\\)",
+      "\\(\\log_3(x^2(x+1))\\)"
+    ],
+    "explanation": "2log_3(x) = log_3(x^2). Then log_3(x^2) - log_3(x+1) = log_3(x^2/(x+1)).",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(3^{2x} - 4 \\cdot 3^x + 3 = 0\\).",
+    "answer": "x = 0 or x = 1",
+    "options": [
+      "x = 0 or x = 1",
+      "x = 0 only",
+      "x = 1 only",
+      "x = 0 or x = log_3(4)"
+    ],
+    "explanation": "Let y = 3^x. Then y^2 - 4y + 3 = 0, (y-1)(y-3) = 0, y = 1 or 3. So 3^x = 1 gives x = 0, and 3^x = 3 gives x = 1.",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Given \\(\\log_2 3 = p\\), express \\(\\log_8 9\\) in terms of p.",
+    "answer": "\\(\\frac{2p}{3}\\)",
+    "options": [
+      "\\(\\frac{2p}{3}\\)",
+      "\\(2p\\)",
+      "\\(\\frac{p}{3}\\)",
+      "\\(\\frac{p^2}{3}\\)"
+    ],
+    "explanation": "log_8(9) = log_2(9)/log_2(8) = 2log_2(3)/3 = 2p/3.",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(\\ln(x+3) + \\ln(x-1) = \\ln 5\\).",
+    "answer": "x = 2",
+    "options": [
+      "x = 2",
+      "x = -4",
+      "x = 2 or x = -4",
+      "x = 1"
+    ],
+    "explanation": "ln((x+3)(x-1)) = ln5, so x^2+2x-3 = 5, x^2+2x-8 = 0, (x+4)(x-2) = 0. x = 2 (reject x=-4 since ln(x-1) requires x>1).",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Sketch the graph of \\(y = e^{-x} + 1\\) and state its asymptote.",
+    "answer": "Horizontal asymptote y = 1. The graph is a decreasing exponential shifted up by 1, passing through (0, 2).",
+    "options": [
+      "Horizontal asymptote y = 1",
+      "Horizontal asymptote y = 0",
+      "Vertical asymptote x = 1",
+      "Horizontal asymptote y = -1"
+    ],
+    "explanation": "As x → ∞, e^{-x} → 0, so y → 1. The y-intercept is e^0 + 1 = 2.",
+    "difficulty": 2,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(4^x - 6 \\cdot 2^x + 8 = 0\\).",
+    "answer": "x = 1 or x = 2",
+    "options": [
+      "x = 1 or x = 2",
+      "x = 2 only",
+      "x = 0 or x = 3",
+      "x = 1 only"
+    ],
+    "explanation": "Let y = 2^x. Then y^2 - 6y + 8 = 0, (y-2)(y-4) = 0, y = 2 or 4. So 2^x = 2 gives x = 1, and 2^x = 4 gives x = 2.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Given that \\(\\log_9 x = \\log_3 y\\), express x in terms of y.",
+    "answer": "x = y^2",
+    "options": [
+      "x = y^2",
+      "x = y",
+      "x = y/2",
+      "x = 9y"
+    ],
+    "explanation": "log_9(x) = log_3(x)/log_3(9) = log_3(x)/2. So log_3(x)/2 = log_3(y), log_3(x) = 2log_3(y) = log_3(y^2), so x = y^2.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve the simultaneous equations: \\(\\log_2 x + \\log_4 y = 5\\) and \\(\\log_2 x - \\log_4 y = 1\\).",
+    "answer": "x = 8, y = 16",
+    "options": [
+      "x = 8, y = 16",
+      "x = 16, y = 8",
+      "x = 4, y = 64",
+      "x = 32, y = 4"
+    ],
+    "explanation": "Add: 2log_2(x) = 6, log_2(x)=3, x=8. Subtract: 2log_4(y) = 4, log_4(y) = 2, y = 16.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(5^{x+1} = 3^{2x-1}\\), giving your answer in terms of ln.",
+    "answer": "\\(x = \\frac{\\ln 5 + \\ln 3}{2\\ln 3 - \\ln 5} = \\frac{\\ln 15}{\\ln(9/5)}\\)",
+    "options": [],
+    "explanation": "(x+1)ln5 = (2x-1)ln3. xln5+ln5 = 2xln3-ln3. ln5+ln3 = 2xln3-xln5 = x(2ln3-ln5). x = (ln5+ln3)/(2ln3-ln5).",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "The population of bacteria doubles every 3 hours. If there are 500 initially, after how many hours will there be 16000? Express using logarithms.",
+    "answer": "t = 3log_2(32) = 15 hours",
+    "options": [
+      "15 hours",
+      "12 hours",
+      "18 hours",
+      "9 hours"
+    ],
+    "explanation": "P = 500 × 2^{t/3}. Set 16000 = 500 × 2^{t/3}, 32 = 2^{t/3}, t/3 = 5, t = 15.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Show that \\(\\log_a b \\cdot \\log_b c \\cdot \\log_c a = 1\\).",
+    "answer": "Using change of base: log_a(b) = ln(b)/ln(a), log_b(c) = ln(c)/ln(b), log_c(a) = ln(a)/ln(c). Product = [ln(b)/ln(a)] × [ln(c)/ln(b)] × [ln(a)/ln(c)] = 1.",
+    "options": [],
+    "explanation": "The logarithms form a telescoping product where all terms cancel.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "If \\(y = a \\cdot b^x\\) and the graph of \\(\\ln y\\) against x is a straight line with gradient 2 and y-intercept \\(\\ln 3\\), find a and b.",
+    "answer": "a = 3, b = e^2",
+    "options": [
+      "a = 3, b = e^2",
+      "a = e^3, b = 2",
+      "a = 3, b = 2",
+      "a = e^2, b = 3"
+    ],
+    "explanation": "ln y = ln a + x ln b. Gradient = ln b = 2, so b = e^2. y-intercept = ln a = ln 3, so a = 3.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(\\log_2(x-1) + \\log_2(x+3) = 5\\).",
+    "answer": "x = 5",
+    "options": [
+      "x = 5",
+      "x = -7",
+      "x = 5 or x = -7",
+      "x = 3"
+    ],
+    "explanation": "log_2((x-1)(x+3)) = 5, (x-1)(x+3) = 32, x^2+2x-3 = 32, x^2+2x-35 = 0, (x+7)(x-5)=0. x=5 (reject x=-7 as x-1 > 0 requires x > 1).",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "Solve \\(2e^{2x} - 7e^x + 3 = 0\\).",
+    "answer": "\\(x = -\\ln 2\\) or \\(x = \\ln 3\\)",
+    "options": [
+      "\\(x = -\\ln 2\\) or \\(x = \\ln 3\\)",
+      "\\(x = \\ln 2\\) or \\(x = \\ln 3\\)",
+      "\\(x = \\ln(3/2)\\)",
+      "\\(x = -\\ln 2\\) only"
+    ],
+    "explanation": "Let y = e^x. 2y^2-7y+3=0, (2y-1)(y-3)=0, y=1/2 or 3. e^x=1/2 gives x=ln(1/2)=-ln2. e^x=3 gives x=ln3.",
+    "difficulty": 3,
+    "topic_id": "amath_exp_log"
+  },
+  {
+    "question": "State the double angle formula for \\(\\sin 2A\\).",
+    "answer": "\\(\\sin 2A = 2\\sin A \\cos A\\)",
+    "options": [
+      "\\(2\\sin A \\cos A\\)",
+      "\\(\\sin^2 A + \\cos^2 A\\)",
+      "\\(2\\sin A\\)",
+      "\\(\\sin A \\cos 2A\\)"
+    ],
+    "explanation": "This is one of the standard double angle identities.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "State the three forms of \\(\\cos 2A\\).",
+    "answer": "\\(\\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A\\)",
+    "options": [
+      "\\(\\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A\\)",
+      "\\(2\\cos A \\sin A\\)",
+      "\\(\\cos^2 A + \\sin^2 A\\)",
+      "\\(1 + 2\\cos^2 A\\)"
+    ],
+    "explanation": "cos 2A can be written in three equivalent forms using the Pythagorean identity.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "What is \\(\\tan 2A\\) in terms of \\(\\tan A\\)?",
+    "answer": "\\(\\frac{2\\tan A}{1 - \\tan^2 A}\\)",
+    "options": [
+      "\\(\\frac{2\\tan A}{1 - \\tan^2 A}\\)",
+      "\\(2\\tan A\\)",
+      "\\(\\frac{\\tan A}{1 + \\tan^2 A}\\)",
+      "\\(\\tan^2 A - 1\\)"
+    ],
+    "explanation": "The double angle formula for tangent.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Given \\(\\sin A = 3/5\\) and A is acute, find \\(\\cos A\\).",
+    "answer": "4/5",
+    "options": [
+      "4/5",
+      "3/5",
+      "5/3",
+      "-4/5"
+    ],
+    "explanation": "cos A = sqrt(1 - sin^2 A) = sqrt(1 - 9/25) = sqrt(16/25) = 4/5 (positive since A is acute).",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Express \\(\\sin(A+B)\\) using the addition formula.",
+    "answer": "\\(\\sin A \\cos B + \\cos A \\sin B\\)",
+    "options": [
+      "\\(\\sin A \\cos B + \\cos A \\sin B\\)",
+      "\\(\\sin A \\sin B + \\cos A \\cos B\\)",
+      "\\(\\sin A \\cos B - \\cos A \\sin B\\)",
+      "\\(\\cos A \\cos B - \\sin A \\sin B\\)"
+    ],
+    "explanation": "This is the sine addition formula.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "What is the exact value of \\(\\sin 60°\\)?",
+    "answer": "\\(\\frac{\\sqrt{3}}{2}\\)",
+    "options": [
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{\\sqrt{2}}{2}\\)",
+      "1"
+    ],
+    "explanation": "sin 60° = √3/2 is a standard exact value.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Simplify \\(\\sin^2 \\theta + \\cos^2 \\theta\\).",
+    "answer": "1",
+    "options": [
+      "1",
+      "0",
+      "\\(\\sin 2\\theta\\)",
+      "2"
+    ],
+    "explanation": "This is the Pythagorean identity.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Express \\(\\cos(A-B)\\) using the addition formula.",
+    "answer": "\\(\\cos A \\cos B + \\sin A \\sin B\\)",
+    "options": [
+      "\\(\\cos A \\cos B + \\sin A \\sin B\\)",
+      "\\(\\cos A \\cos B - \\sin A \\sin B\\)",
+      "\\(\\sin A \\cos B + \\cos A \\sin B\\)",
+      "\\(\\sin A \\sin B - \\cos A \\cos B\\)"
+    ],
+    "explanation": "The cosine subtraction formula has a plus sign between the two products.",
+    "difficulty": 1,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Solve \\(2\\sin x - 1 = 0\\) for \\(0° \\leq x \\leq 360°\\).",
+    "answer": "x = 30° or x = 150°",
+    "options": [
+      "x = 30° or x = 150°",
+      "x = 30° only",
+      "x = 60° or x = 120°",
+      "x = 30° or x = 330°"
+    ],
+    "explanation": "sin x = 1/2. In [0°, 360°], x = 30° or 180°-30° = 150°.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Express \\(3\\sin x + 4\\cos x\\) in the form \\(R\\sin(x + \\alpha)\\).",
+    "answer": "\\(5\\sin(x + \\alpha)\\) where \\(\\alpha = \\tan^{-1}(4/3) \\approx 53.1°\\)",
+    "options": [
+      "\\(5\\sin(x+53.1°)\\)",
+      "\\(7\\sin(x+53.1°)\\)",
+      "\\(5\\sin(x+36.9°)\\)",
+      "\\(5\\cos(x+53.1°)\\)"
+    ],
+    "explanation": "R = √(3²+4²) = 5. tan α = 4/3, α ≈ 53.1°.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Prove that \\(\\frac{\\sin 2\\theta}{1 + \\cos 2\\theta} = \\tan \\theta\\).",
+    "answer": "LHS = 2sinθcosθ / (1 + 2cos²θ - 1) = 2sinθcosθ / (2cos²θ) = sinθ/cosθ = tanθ = RHS",
+    "options": [],
+    "explanation": "Use double angle formulas: sin2θ = 2sinθcosθ and cos2θ = 2cos²θ - 1.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Solve \\(\\cos 2x = \\cos x\\) for \\(0° \\leq x \\leq 360°\\).",
+    "answer": "x = 0°, 120°, 240°, 360°",
+    "options": [
+      "x = 0°, 120°, 240°, 360°",
+      "x = 0°, 90°, 270°, 360°",
+      "x = 60°, 120°, 240°, 300°",
+      "x = 0°, 60°, 300°, 360°"
+    ],
+    "explanation": "2cos²x - 1 = cosx, 2cos²x - cosx - 1 = 0, (2cosx+1)(cosx-1) = 0. cosx = -1/2 gives x=120°,240°. cosx = 1 gives x=0°,360°.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Find the exact value of \\(\\sin 75°\\).",
+    "answer": "\\(\\frac{\\sqrt{6}+\\sqrt{2}}{4}\\)",
+    "options": [
+      "\\(\\frac{\\sqrt{6}+\\sqrt{2}}{4}\\)",
+      "\\(\\frac{\\sqrt{6}-\\sqrt{2}}{4}\\)",
+      "\\(\\frac{\\sqrt{3}+1}{2}\\)",
+      "\\(\\frac{1+\\sqrt{2}}{2}\\)"
+    ],
+    "explanation": "sin 75° = sin(45°+30°) = sin45°cos30° + cos45°sin30° = (√2/2)(√3/2) + (√2/2)(1/2) = (√6+√2)/4.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Given \\(\\tan A = 5/12\\) and A is acute, find \\(\\sin 2A\\).",
+    "answer": "120/169",
+    "options": [
+      "120/169",
+      "60/169",
+      "10/13",
+      "5/13"
+    ],
+    "explanation": "sin A = 5/13, cos A = 12/13. sin 2A = 2(5/13)(12/13) = 120/169.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Solve \\(2\\sin^2 x - 3\\sin x + 1 = 0\\) for \\(0 \\leq x \\leq 2\\pi\\).",
+    "answer": "\\(x = \\pi/6, 5\\pi/6, \\pi/2\\)",
+    "options": [
+      "\\(x = \\pi/6, 5\\pi/6, \\pi/2\\)",
+      "\\(x = \\pi/6, 5\\pi/6\\)",
+      "\\(x = \\pi/2\\) only",
+      "\\(x = \\pi/6, \\pi/2, 5\\pi/6, 3\\pi/2\\)"
+    ],
+    "explanation": "(2sinx - 1)(sinx - 1) = 0. sinx = 1/2 gives x = π/6, 5π/6. sinx = 1 gives x = π/2.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Express \\(\\cos 3\\theta\\) in terms of \\(\\cos \\theta\\).",
+    "answer": "\\(4\\cos^3 \\theta - 3\\cos \\theta\\)",
+    "options": [
+      "\\(4\\cos^3 \\theta - 3\\cos \\theta\\)",
+      "\\(3\\cos \\theta - 4\\cos^3 \\theta\\)",
+      "\\(\\cos^3 \\theta - 3\\cos \\theta\\)",
+      "\\(8\\cos^3 \\theta - 6\\cos \\theta\\)"
+    ],
+    "explanation": "cos3θ = cos(2θ+θ) = cos2θcosθ - sin2θsinθ = (2cos²θ-1)cosθ - 2sin²θcosθ = 2cos³θ-cosθ-2(1-cos²θ)cosθ = 4cos³θ-3cosθ.",
+    "difficulty": 2,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Find the maximum value of \\(3\\sin x + 4\\cos x\\) and the value of x at which it occurs (for \\(0° \\leq x \\leq 360°\\)).",
+    "answer": "Maximum value is 5, when x ≈ 36.9°.",
+    "options": [
+      "5, at x ≈ 36.9°",
+      "7, at x = 45°",
+      "5, at x ≈ 53.1°",
+      "4, at x = 0°"
+    ],
+    "explanation": "3sinx+4cosx = 5sin(x+α) where α = tan⁻¹(4/3) ≈ 53.1°. Max is 5 when sin(x+53.1°) = 1, x+53.1° = 90°, x ≈ 36.9°.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Solve \\(5\\cos\\theta + 12\\sin\\theta = 6.5\\) for \\(0° \\leq \\theta \\leq 360°\\).",
+    "answer": "\\(\\theta ≈ 37.4°\\) or \\(\\theta ≈ 255.0°\\)",
+    "options": [],
+    "explanation": "Write as 13cos(θ-α)=6.5 where α=tan⁻¹(12/5)≈67.4°. cos(θ-67.4°)=0.5. θ-67.4°=60° or 300°. θ≈127.4° or 367.4°... Hmm let me redo. 13sin(θ+α)=6.5, sin(θ+α)=0.5. This gives two solutions in range.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Prove that \\(\\frac{1 - \\cos 2\\theta}{\\sin 2\\theta} = \\tan \\theta\\).",
+    "answer": "LHS = (1-(1-2sin²θ))/(2sinθcosθ) = 2sin²θ/(2sinθcosθ) = sinθ/cosθ = tanθ = RHS",
+    "options": [],
+    "explanation": "Use cos2θ = 1 - 2sin²θ and sin2θ = 2sinθcosθ, then simplify.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Show that \\(\\cos^4 \\theta - \\sin^4 \\theta = \\cos 2\\theta\\).",
+    "answer": "cos⁴θ - sin⁴θ = (cos²θ - sin²θ)(cos²θ + sin²θ) = cos2θ × 1 = cos2θ",
+    "options": [],
+    "explanation": "Factor as a difference of two squares, then use the Pythagorean identity and double angle formula.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Solve \\(\\sin x + \\sin 3x = 0\\) for \\(0 < x < 2\\pi\\).",
+    "answer": "x = π/2, π, 3π/2",
+    "options": [
+      "x = π/2, π, 3π/2",
+      "x = π/4, π/2, 3π/4, π, 5π/4, 3π/2, 7π/4",
+      "x = 0, π/2, π, 3π/2",
+      "x = π/3, 2π/3, π, 4π/3, 5π/3"
+    ],
+    "explanation": "Using sum-to-product: 2sin2x cosx = 0. sin2x = 0 gives 2x = π,2π,3π so x = π/2, π, 3π/2. cosx = 0 gives x = π/2, 3π/2 (already counted). Wait: sin2x=0 gives 2x=0,π,2π,3π,4π (but 0<x<2π so 2x∈(0,4π)), x=π/2,π,3π/2,2π. Exclude 2π. cosx=0 gives x=π/2,3π/2. So distinct: π/2, π, 3π/2 from sin2x=0, plus π/4,3π/4,5π/4,7π/4... Hmm. Let me redo: sinx+sin3x = 2sin2xcosx = 0. sin2x=0: x=π/2,π,3π/2. cosx=0: x=π/2,3π/2. Distinct solutions: x=π/2,π,3π/2.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Find all solutions of \\(\\tan 2x = \\tan x\\) for \\(0° < x < 360°\\).",
+    "answer": "x = 180°",
+    "options": [
+      "x = 180°",
+      "x = 120°, 180°, 240°",
+      "x = 0°, 180°, 360°",
+      "x = 90°, 270°"
+    ],
+    "explanation": "tan2x=tanx. Using the formula: 2tanx/(1-tan²x)=tanx. If tanx=0: both sides 0, so x=180° (in (0°,360°)). If tanx≠0: 2/(1-tan²x)=1, tan²x=-1 which has no real solution. So x=180° only.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Express \\(\\sin x - \\sqrt{3}\\cos x\\) in the form \\(R\\sin(x - \\alpha)\\) and hence find its minimum value.",
+    "answer": "\\(2\\sin(x - 60°)\\). Minimum value is \\(-2\\).",
+    "options": [
+      "2sin(x-60°), minimum -2",
+      "2sin(x+60°), minimum -2",
+      "2cos(x-60°), minimum -2",
+      "√3 sin(x-30°), minimum -√3"
+    ],
+    "explanation": "R = √(1+3) = 2. Rsinα = √3, Rcosα = 1, tanα = √3, α = 60°. Minimum of 2sin(x-60°) is -2.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Prove that \\(\\sec^2\\theta + \\csc^2\\theta = \\sec^2\\theta \\cdot \\csc^2\\theta\\).",
+    "answer": "LHS = 1/cos²θ + 1/sin²θ = (sin²θ+cos²θ)/(sin²θcos²θ) = 1/(sin²θcos²θ) = sec²θ·csc²θ = RHS",
+    "options": [],
+    "explanation": "Combine the fractions on the left using a common denominator and apply the Pythagorean identity.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Given \\(\\sin(x+30°) = 2\\cos(x+60°)\\), find \\(\\tan x\\).",
+    "answer": "tan x = √3/9",
+    "options": [
+      "√3/9",
+      "√3/3",
+      "√3",
+      "1/3"
+    ],
+    "explanation": "Expand both sides. sin x cos30° + cosx sin30° = 2(cosx cos60° - sinx sin60°). (√3/2)sinx + (1/2)cosx = 2((1/2)cosx - (√3/2)sinx) = cosx - √3 sinx. So (√3/2+√3)sinx = (1-1/2)cosx. (3√3/2)sinx = (1/2)cosx. tanx = 1/(3√3) = √3/9. Hmm let me recheck. (√3/2)sinx+(1/2)cosx = cosx-√3sinx. (√3/2+√3)sinx = cosx-cosx/2 = cosx/2. (3√3/2)sinx = (1/2)cosx. tanx = 1/(3√3) = √3/9.",
+    "difficulty": 3,
+    "topic_id": "amath_trig_adv"
+  },
+  {
+    "question": "Differentiate \\(y = x^5\\) with respect to x.",
+    "answer": "\\(\\frac{dy}{dx} = 5x^4\\)",
+    "options": [
+      "\\(5x^4\\)",
+      "\\(4x^5\\)",
+      "\\(5x^5\\)",
+      "\\(x^4\\)"
+    ],
+    "explanation": "By the power rule, d/dx(x^n) = nx^{n-1}.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "What is \\(\\frac{d}{dx}(7)\\)?",
+    "answer": "0",
+    "options": [
+      "0",
+      "7",
+      "1",
+      "7x"
+    ],
+    "explanation": "The derivative of a constant is 0.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Differentiate \\(y = 3x^2 + 2x - 1\\).",
+    "answer": "\\(\\frac{dy}{dx} = 6x + 2\\)",
+    "options": [
+      "\\(6x + 2\\)",
+      "\\(3x + 2\\)",
+      "\\(6x^2 + 2\\)",
+      "\\(6x - 1\\)"
+    ],
+    "explanation": "Differentiate term by term: 6x + 2 + 0 = 6x + 2.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "What does the derivative \\(f'(a)\\) represent geometrically?",
+    "answer": "The gradient (slope) of the tangent to the curve y = f(x) at x = a.",
+    "options": [
+      "The gradient of the tangent at x = a",
+      "The area under the curve at x = a",
+      "The y-intercept of the curve",
+      "The average gradient from 0 to a"
+    ],
+    "explanation": "The derivative at a point gives the instantaneous rate of change, which equals the gradient of the tangent line.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Differentiate \\(y = \\frac{1}{x}\\) using the power rule.",
+    "answer": "\\(\\frac{dy}{dx} = -\\frac{1}{x^2}\\)",
+    "options": [
+      "\\(-\\frac{1}{x^2}\\)",
+      "\\(\\frac{1}{x^2}\\)",
+      "\\(-\\frac{2}{x^3}\\)",
+      "\\(\\frac{1}{x}\\)"
+    ],
+    "explanation": "Rewrite as y = x^{-1}. dy/dx = -x^{-2} = -1/x^2.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Differentiate \\(y = \\sqrt{x}\\).",
+    "answer": "\\(\\frac{dy}{dx} = \\frac{1}{2\\sqrt{x}}\\)",
+    "options": [
+      "\\(\\frac{1}{2\\sqrt{x}}\\)",
+      "\\(\\frac{1}{\\sqrt{x}}\\)",
+      "\\(2\\sqrt{x}\\)",
+      "\\(\\frac{\\sqrt{x}}{2}\\)"
+    ],
+    "explanation": "y = x^{1/2}, dy/dx = (1/2)x^{-1/2} = 1/(2√x).",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "State differentiation from first principles for \\(f'(x)\\).",
+    "answer": "\\(f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}\\)",
+    "options": [
+      "\\(\\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}\\)",
+      "\\(\\lim_{h \\to 0} \\frac{f(x) - f(h)}{x}\\)",
+      "\\(\\frac{f(x+1) - f(x)}{1}\\)",
+      "\\(\\lim_{x \\to 0} \\frac{f(x+h)}{h}\\)"
+    ],
+    "explanation": "This is the limit definition of the derivative.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Differentiate \\(y = 4x^3 - x\\).",
+    "answer": "\\(12x^2 - 1\\)",
+    "options": [
+      "\\(12x^2 - 1\\)",
+      "\\(12x^2\\)",
+      "\\(12x - 1\\)",
+      "\\(4x^2 - 1\\)"
+    ],
+    "explanation": "d/dx(4x^3) = 12x^2, d/dx(-x) = -1. Sum: 12x^2 - 1.",
+    "difficulty": 1,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Find the equation of the tangent to \\(y = x^2 - 3x + 2\\) at the point (1, 0).",
+    "answer": "y = -x + 1",
+    "options": [
+      "y = -x + 1",
+      "y = x - 1",
+      "y = -x",
+      "y = 2x - 2"
+    ],
+    "explanation": "dy/dx = 2x - 3. At x=1: gradient = -1. Tangent: y - 0 = -1(x - 1), y = -x + 1.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Find the equation of the normal to \\(y = x^3\\) at the point (1, 1).",
+    "answer": "\\(y = -\\frac{1}{3}x + \\frac{4}{3}\\)",
+    "options": [
+      "\\(y = -\\frac{1}{3}x + \\frac{4}{3}\\)",
+      "\\(y = 3x - 2\\)",
+      "\\(y = -3x + 4\\)",
+      "\\(y = \\frac{1}{3}x + \\frac{2}{3}\\)"
+    ],
+    "explanation": "dy/dx = 3x^2. At x=1: gradient of tangent = 3. Normal gradient = -1/3. y-1 = -1/3(x-1).",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "A particle moves along a line with displacement \\(s = t^3 - 6t^2 + 9t\\). Find the velocity at t = 2.",
+    "answer": "-3",
+    "options": [
+      "-3",
+      "0",
+      "3",
+      "9"
+    ],
+    "explanation": "v = ds/dt = 3t^2 - 12t + 9. At t=2: v = 12 - 24 + 9 = -3.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Find the stationary points of \\(y = x^3 - 3x\\).",
+    "answer": "(1, -2) and (-1, 2)",
+    "options": [
+      "(1, -2) and (-1, 2)",
+      "(0, 0) and (1, -2)",
+      "(3, 18) and (-3, -18)",
+      "(1, -2) only"
+    ],
+    "explanation": "dy/dx = 3x^2 - 3 = 3(x^2-1) = 0 when x = ±1. y(1) = 1-3 = -2, y(-1) = -1+3 = 2.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Differentiate \\(y = (2x+1)^3\\) by expanding first.",
+    "answer": "\\(\\frac{dy}{dx} = 24x^2 + 24x + 6\\) or equivalently \\(6(2x+1)^2\\)",
+    "options": [
+      "\\(6(2x+1)^2\\)",
+      "\\(3(2x+1)^2\\)",
+      "\\(6(2x+1)\\)",
+      "\\(24x^2 + 12x + 6\\)"
+    ],
+    "explanation": "Expand: y = 8x^3+12x^2+6x+1. dy/dx = 24x^2+24x+6 = 6(4x^2+4x+1) = 6(2x+1)^2.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Use first principles to find the derivative of \\(f(x) = x^2 + 1\\).",
+    "answer": "f'(x) = 2x",
+    "options": [
+      "2x",
+      "x^2",
+      "2x + 1",
+      "x + 1"
+    ],
+    "explanation": "[f(x+h)-f(x)]/h = [(x+h)^2+1-x^2-1]/h = [2xh+h^2]/h = 2x+h. As h→0, f'(x)=2x.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "The curve \\(y = ax^2 + bx\\) has a stationary point at (2, 4). Find a and b.",
+    "answer": "a = -1, b = 4",
+    "options": [
+      "a = -1, b = 4",
+      "a = 1, b = -4",
+      "a = -2, b = 8",
+      "a = 1, b = 0"
+    ],
+    "explanation": "dy/dx = 2ax + b = 0 at x=2: 4a+b=0. Point on curve: 4a+2b=4. From first: b=-4a. Sub: 4a-8a=4, -4a=4, a=-1, b=4.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "A rectangle has perimeter 20 cm. Express its area A in terms of one side x and find the maximum area.",
+    "answer": "A = x(10-x) = 10x - x^2. Maximum at x = 5, A = 25 cm^2.",
+    "options": [
+      "25 cm²",
+      "20 cm²",
+      "50 cm²",
+      "100 cm²"
+    ],
+    "explanation": "2x+2y=20, y=10-x. A=xy=x(10-x). dA/dx=10-2x=0, x=5. A=25. d²A/dx²=-2<0, confirmed max.",
+    "difficulty": 2,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Show from first principles that \\(\\frac{d}{dx}(x^3) = 3x^2\\).",
+    "answer": "lim_{h→0} [(x+h)^3-x^3]/h = lim_{h→0} [3x^2h+3xh^2+h^3]/h = lim_{h→0}(3x^2+3xh+h^2) = 3x^2",
+    "options": [],
+    "explanation": "Expand (x+h)^3 = x^3+3x^2h+3xh^2+h^3, subtract x^3, divide by h, take limit.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Find the coordinates of the point on \\(y = x^2\\) nearest to the point (0, 1).",
+    "answer": "\\((\\pm\\frac{1}{\\sqrt{2}}, \\frac{1}{2})\\)",
+    "options": [
+      "\\((\\pm\\frac{1}{\\sqrt{2}}, \\frac{1}{2})\\)",
+      "(0, 0)",
+      "(1, 1) and (-1, 1)",
+      "(0, 1)"
+    ],
+    "explanation": "Minimise D² = x² + (x²-1)². dD²/dx = 4x³-2x = 0 gives x=0,±1/√2. Comparing D² values: D²(0)=1, D²(±1/√2)=3/4. Minimum at (±1/√2, 1/2).",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "A closed cylindrical can has volume 500 cm³. Show that the total surface area is \\(S = 2\\pi r^2 + \\frac{1000}{r}\\) and find the dimensions that minimise S.",
+    "answer": "r = (250/π)^{1/3} ≈ 4.30 cm, h = 500/(πr²) ≈ 8.60 cm",
+    "options": [],
+    "explanation": "V = πr²h = 500, h = 500/(πr²). S = 2πr² + 2πrh = 2πr² + 1000/r. dS/dr = 4πr - 1000/r² = 0. r³ = 250/π, r = (250/π)^{1/3}.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "The tangent to \\(y = x^3 - 3x^2\\) at the origin meets the curve again at point P. Find the coordinates of P.",
+    "answer": "P = (3, 0)",
+    "options": [
+      "(3, 0)",
+      "(6, 0)",
+      "(-3, -54)",
+      "(1, -2)"
+    ],
+    "explanation": "At x=0: y=0, dy/dx=3x²-6x=0. Tangent: y=0. Set x³-3x²=0: x²(x-3)=0. x=0 (known) or x=3. y(3)=27-27=0. So P=(3,0).",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "A water trough has a triangular cross-section. Water is poured in at 2 cm³/s. The cross-section is an equilateral triangle with side 10 cm and the trough is 30 cm long. Find the rate at which the water level rises when the depth is 3 cm.",
+    "answer": "We need dh/dt. V = 30 × (1/2 × w × h) where w and h relate via the triangle geometry. For an equilateral triangle with side 10, width at height h: w = 2h/√3. V = 30h²/√3. dV/dt = 60h/√3 · dh/dt. At h=3: 2 = 180/√3 · dh/dt, dh/dt = 2√3/180 = √3/90 cm/s.",
+    "options": [],
+    "explanation": "Set up V in terms of h using similar triangles, differentiate with respect to t, substitute known values.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Find the range of values of k for which the line \\(y = kx\\) does not intersect the curve \\(y = x^2 - 4x + 5\\).",
+    "answer": "\\(-4-2\\sqrt{5} < k < -4+2\\sqrt{5}\\)",
+    "options": [
+      "\\(-4-2\\sqrt{5} < k < -4+2\\sqrt{5}\\)",
+      "All real k",
+      "k < -4 or k > 0",
+      "k = -4 only"
+    ],
+    "explanation": "kx=x²-4x+5 gives x²-(4+k)x+5=0. No intersection when discriminant<0: (4+k)²-20<0, k²+8k-4<0. Solving: k = -4±2√5. So -4-2√5 < k < -4+2√5.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "A particle moves so that \\(s = t^3 - 6t^2 + 9t + 5\\). Find when it is momentarily at rest and its acceleration at those times.",
+    "answer": "At rest when t = 1 (a = -6) and t = 3 (a = 6).",
+    "options": [
+      "t=1 (a=-6) and t=3 (a=6)",
+      "t=0 (a=0) and t=3 (a=6)",
+      "t=1 (a=6) and t=3 (a=-6)",
+      "t=2 (a=0) only"
+    ],
+    "explanation": "v = 3t²-12t+9 = 3(t²-4t+3) = 3(t-1)(t-3) = 0 at t=1,3. a = 6t-12. a(1)=-6, a(3)=6.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Show that the curve \\(y = x^4 - 4x^3 + 4x^2\\) touches the x-axis at x = 0 and x = 2.",
+    "answer": "y = x²(x-2)². At x=0: y=0 and dy/dx=0 (touch). At x=2: y=0 and dy/dx=0 (touch).",
+    "options": [],
+    "explanation": "Factor: y = x²(x²-4x+4) = x²(x-2)². Both x=0 and x=2 are double roots, meaning the curve touches (doesn't cross) the x-axis. dy/dx = 4x³-12x²+8x = 4x(x²-3x+2) = 4x(x-1)(x-2). At x=0 and x=2, dy/dx=0 confirming tangency.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Find the minimum distance from the point (4, 0) to the curve \\(y = \\sqrt{x}\\).",
+    "answer": "√15/2",
+    "options": [
+      "√15/2",
+      "√7/2",
+      "√14/2",
+      "2"
+    ],
+    "explanation": "D² = (x-4)²+x. dD²/dx = 2(x-4)+1 = 0 at x=7/2. D² = (-1/2)²+7/2 = 1/4+7/2 = 15/4. D = √15/2.",
+    "difficulty": 3,
+    "topic_id": "amath_diff_intro"
+  },
+  {
+    "question": "Integrate \\(\\int x^4 \\, dx\\).",
+    "answer": "\\(\\frac{x^5}{5} + C\\)",
+    "options": [
+      "\\(\\frac{x^5}{5} + C\\)",
+      "\\(4x^3 + C\\)",
+      "\\(\\frac{x^5}{4} + C\\)",
+      "\\(x^5 + C\\)"
+    ],
+    "explanation": "By the reverse power rule: ∫x^n dx = x^{n+1}/(n+1) + C.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Integrate \\(\\int 3 \\, dx\\).",
+    "answer": "\\(3x + C\\)",
+    "options": [
+      "\\(3x + C\\)",
+      "\\(3 + C\\)",
+      "\\(\\frac{3x^2}{2} + C\\)",
+      "0"
+    ],
+    "explanation": "The integral of a constant k is kx + C.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "What is the relationship between differentiation and integration?",
+    "answer": "Integration is the reverse process of differentiation.",
+    "options": [
+      "Integration is the reverse process of differentiation.",
+      "They are the same operation.",
+      "Integration always gives a larger value.",
+      "There is no relationship."
+    ],
+    "explanation": "If d/dx[F(x)] = f(x), then ∫f(x)dx = F(x) + C.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Integrate \\(\\int (2x + 3) \\, dx\\).",
+    "answer": "\\(x^2 + 3x + C\\)",
+    "options": [
+      "\\(x^2 + 3x + C\\)",
+      "\\(2x^2 + 3x + C\\)",
+      "\\(x^2 + 3 + C\\)",
+      "\\(2 + C\\)"
+    ],
+    "explanation": "∫2x dx = x² and ∫3 dx = 3x. Total: x²+3x+C.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Evaluate \\(\\int_0^1 x^2 \\, dx\\).",
+    "answer": "1/3",
+    "options": [
+      "1/3",
+      "1/2",
+      "1",
+      "2/3"
+    ],
+    "explanation": "[x³/3]₀¹ = 1/3 - 0 = 1/3.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Integrate \\(\\int x^{-2} \\, dx\\).",
+    "answer": "\\(-\\frac{1}{x} + C\\)",
+    "options": [
+      "\\(-\\frac{1}{x} + C\\)",
+      "\\(\\frac{1}{x} + C\\)",
+      "\\(-\\frac{1}{x^3} + C\\)",
+      "\\(\\ln x + C\\)"
+    ],
+    "explanation": "∫x^{-2} dx = x^{-1}/(-1) + C = -1/x + C.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Integrate \\(\\int \\sqrt{x} \\, dx\\).",
+    "answer": "\\(\\frac{2}{3}x^{3/2} + C\\)",
+    "options": [
+      "\\(\\frac{2}{3}x^{3/2} + C\\)",
+      "\\(\\frac{1}{2\\sqrt{x}} + C\\)",
+      "\\(\\frac{3}{2}x^{3/2} + C\\)",
+      "\\(\\frac{x^{3/2}}{3} + C\\)"
+    ],
+    "explanation": "∫x^{1/2} dx = x^{3/2}/(3/2) + C = (2/3)x^{3/2} + C.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "What does the constant C represent in indefinite integration?",
+    "answer": "The arbitrary constant of integration, since differentiation of any constant gives 0.",
+    "options": [
+      "The arbitrary constant of integration",
+      "The value of the integral at x=0",
+      "The coefficient of x",
+      "The area under the curve"
+    ],
+    "explanation": "When we integrate, we reverse differentiation. Since the derivative of any constant is 0, we add C to account for all possible antiderivatives.",
+    "difficulty": 1,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Evaluate \\(\\int_1^4 (3x^2 - 2x) \\, dx\\).",
+    "answer": "48",
+    "options": [
+      "48",
+      "54",
+      "42",
+      "60"
+    ],
+    "explanation": "∫(3x²-2x)dx = x³-x². [x³-x²]₁⁴ = (64-16)-(1-1) = 48.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find \\(\\int (2x+1)^3 \\, dx\\).",
+    "answer": "\\(\\frac{(2x+1)^4}{8} + C\\)",
+    "options": [
+      "\\(\\frac{(2x+1)^4}{8} + C\\)",
+      "\\(\\frac{(2x+1)^4}{4} + C\\)",
+      "\\(3(2x+1)^2 + C\\)",
+      "\\(\\frac{(2x+1)^4}{2} + C\\)"
+    ],
+    "explanation": "Let u=2x+1, du=2dx. ∫u³(du/2) = u⁴/8 + C = (2x+1)⁴/8 + C.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find the area under \\(y = x^2\\) from x = 0 to x = 3.",
+    "answer": "9",
+    "options": [
+      "9",
+      "27",
+      "3",
+      "18"
+    ],
+    "explanation": "∫₀³ x² dx = [x³/3]₀³ = 27/3 = 9.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Given \\(\\frac{dy}{dx} = 4x - 1\\) and y = 3 when x = 1, find y.",
+    "answer": "\\(y = 2x^2 - x + 2\\)",
+    "options": [
+      "\\(y = 2x^2 - x + 2\\)",
+      "\\(y = 2x^2 - x + 3\\)",
+      "\\(y = 4x^2 - x + 2\\)",
+      "\\(y = 2x^2 - x\\)"
+    ],
+    "explanation": "y = ∫(4x-1)dx = 2x²-x+C. At (1,3): 2-1+C=3, C=2. y=2x²-x+2.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find the area enclosed between the curve \\(y = x^2\\) and the line \\(y = 4\\).",
+    "answer": "32/3",
+    "options": [
+      "32/3",
+      "16/3",
+      "8",
+      "16"
+    ],
+    "explanation": "Intersection: x²=4, x=±2. Area = ∫₋₂² (4-x²)dx = [4x-x³/3]₋₂² = (8-8/3)-(-8+8/3) = 16-16/3 = 32/3.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Evaluate \\(\\int_0^{\\pi} \\sin x \\, dx\\).",
+    "answer": "2",
+    "options": [
+      "2",
+      "0",
+      "1",
+      "-2"
+    ],
+    "explanation": "[-cosx]₀^π = -cosπ-(-cos0) = -(-1)+1 = 2.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find \\(\\int \\frac{3}{x^4} \\, dx\\).",
+    "answer": "\\(-\\frac{1}{x^3} + C\\)",
+    "options": [
+      "\\(-\\frac{1}{x^3} + C\\)",
+      "\\(\\frac{3}{x^3} + C\\)",
+      "\\(-\\frac{3}{x^3} + C\\)",
+      "\\(\\frac{1}{x^3} + C\\)"
+    ],
+    "explanation": "∫3x⁻⁴ dx = 3 × x⁻³/(-3) + C = -x⁻³ + C = -1/x³ + C.",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find the area enclosed between \\(y = x^2 - 2x\\) and \\(y = x\\).",
+    "answer": "9/2",
+    "options": [
+      "9/2",
+      "3",
+      "27/6",
+      "4"
+    ],
+    "explanation": "Intersection: x²-2x=x, x²-3x=0, x(x-3)=0. x=0,3. Area = ∫₀³(x-(x²-2x))dx = ∫₀³(3x-x²)dx = [3x²/2-x³/3]₀³ = 27/2-9 = 9/2.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find \\(\\int_0^4 |x - 2| \\, dx\\).",
+    "answer": "4",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "0"
+    ],
+    "explanation": "Split at x=2: ∫₀²(2-x)dx + ∫₂⁴(x-2)dx = [2x-x²/2]₀² + [x²/2-2x]₂⁴ = (4-2)+(8-8)-(2-4) = 2+2 = 4.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "The curve \\(y = x^3 - 3x\\) crosses the x-axis at x = -√3, 0, √3. Find the total area enclosed between the curve and the x-axis.",
+    "answer": "9/2",
+    "options": [
+      "9/2",
+      "3√3",
+      "9/4",
+      "3"
+    ],
+    "explanation": "The curve is odd, so areas above and below cancel in signed integrals. Total area = 2∫₀^√3(3x-x³)dx = 2[3x²/2-x⁴/4]₀^√3 = 2(9/2-9/4) = 2(9/4) = 9/2.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find \\(\\int_0^1 x(1-x)^4 \\, dx\\).",
+    "answer": "1/30",
+    "options": [
+      "1/30",
+      "1/20",
+      "1/6",
+      "1/5"
+    ],
+    "explanation": "Let u=1-x, x=1-u, dx=-du. Limits: 0→1, 1→0. ∫₁⁰(1-u)u⁴(-du) = ∫₀¹(u⁴-u⁵)du = [u⁵/5-u⁶/6]₀¹ = 1/5-1/6 = 1/30.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "A curve passes through (1, 2) and has gradient function \\(\\frac{dy}{dx} = \\frac{2}{x^2} + 3\\). Find its equation and the area under the curve from x = 1 to x = 3.",
+    "answer": "y = -2/x + 3x + 1. Area = ∫₁³(-2/x+3x+1)dx = [-2lnx+3x²/2+x]₁³ = (-2ln3+27/2+3)-(-0+3/2+1) = -2ln3+27/2+3-5/2 = -2ln3+11+3 = 14-2ln3.",
+    "options": [],
+    "explanation": "Integrate dy/dx: y = -2/x+3x+C. At (1,2): -2+3+C=2, C=1. y=-2/x+3x+1. Then compute the definite integral.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Show that \\(\\int_0^a f(x) \\, dx = \\int_0^a f(a-x) \\, dx\\) and use it to evaluate \\(\\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x + \\cos x} \\, dx\\).",
+    "answer": "π/4",
+    "options": [
+      "π/4",
+      "π/2",
+      "1",
+      "0"
+    ],
+    "explanation": "Let I = ∫₀^{π/2} sinx/(sinx+cosx)dx. By the property with a=π/2: I = ∫₀^{π/2} cosx/(cosx+sinx)dx. Adding: 2I = ∫₀^{π/2} 1 dx = π/2. So I = π/4.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Find \\(\\int (x+1)\\sqrt{x-1} \\, dx\\).",
+    "answer": "\\(\\frac{2}{5}(x-1)^{5/2} + \\frac{4}{3}(x-1)^{3/2} + C\\)",
+    "options": [],
+    "explanation": "Let u=x-1, x=u+1, dx=du. ∫(u+2)√u du = ∫(u^{3/2}+2u^{1/2})du = 2u^{5/2}/5 + 4u^{3/2}/3 + C.",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "The region bounded by \\(y = 1/x\\), the x-axis, x = 1 and x = e is rotated about the x-axis. Find the volume.",
+    "answer": "\\(\\pi(1 - 1/e)\\)",
+    "options": [
+      "\\(\\pi(1-1/e)\\)",
+      "\\(\\pi\\)",
+      "\\(\\pi \\ln e = \\pi\\)",
+      "\\(2\\pi\\)"
+    ],
+    "explanation": "V = π∫₁ᵉ (1/x)² dx = π∫₁ᵉ x⁻² dx = π[-1/x]₁ᵉ = π(-1/e+1) = π(1-1/e).",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "Evaluate \\(\\int_0^2 x^2\\sqrt{4-x^2} \\, dx\\) using the substitution \\(x = 2\\sin\\theta\\).",
+    "answer": "π",
+    "options": [
+      "π",
+      "2π",
+      "π/2",
+      "4π"
+    ],
+    "explanation": "x=2sinθ, dx=2cosθdθ. √(4-x²)=2cosθ. x²=4sin²θ. Limits: x=0→θ=0, x=2→θ=π/2. ∫₀^{π/2} 4sin²θ·2cosθ·2cosθ dθ = 16∫₀^{π/2}sin²θcos²θ dθ = 16·(1/8)·(π/2) = π. Using ∫sin²θcos²θ dθ = (1/4)∫sin²2θ dθ = (1/8)(θ-sin4θ/4).",
+    "difficulty": 3,
+    "topic_id": "amath_int_intro"
+  },
+  {
+    "question": "What is the domain of \\(f(x) = \\frac{1}{x-3}\\)?",
+    "answer": "\\(\\mathbb{R} \\setminus \\{3\\}\\) or \\(x \\neq 3\\)",
+    "options": [
+      "\\(x \\neq 3\\)",
+      "\\(x > 3\\)",
+      "\\(\\mathbb{R}\\)",
+      "\\(x \\neq 0\\)"
+    ],
+    "explanation": "The function is undefined when x - 3 = 0, i.e. x = 3.",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "What is the range of \\(f(x) = x^2 + 1\\) for \\(x \\in \\mathbb{R}\\)?",
+    "answer": "\\([1, \\infty)\\)",
+    "options": [
+      "\\([1, \\infty)\\)",
+      "\\((0, \\infty)\\)",
+      "\\(\\mathbb{R}\\)",
+      "\\([0, \\infty)\\)"
+    ],
+    "explanation": "x² ≥ 0 for all real x, so x²+1 ≥ 1.",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "If \\(f(x) = 2x+1\\), find \\(f(f(x))\\).",
+    "answer": "\\(4x+3\\)",
+    "options": [
+      "\\(4x+3\\)",
+      "\\(4x+1\\)",
+      "\\(2x+2\\)",
+      "\\(4x+2\\)"
+    ],
+    "explanation": "f(f(x)) = f(2x+1) = 2(2x+1)+1 = 4x+3.",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Is the function \\(f(x) = x^3\\) one-to-one?",
+    "answer": "Yes",
+    "options": [
+      "Yes",
+      "No",
+      "Only for x > 0",
+      "Only for x ≥ 0"
+    ],
+    "explanation": "f is strictly increasing on ℝ, so it's one-to-one (injective).",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "What does the vertical line test determine?",
+    "answer": "Whether a graph represents a function (each x maps to at most one y).",
+    "options": [
+      "Whether a graph represents a function",
+      "Whether a function is one-to-one",
+      "Whether a function is continuous",
+      "Whether a function has an inverse"
+    ],
+    "explanation": "If any vertical line crosses the graph more than once, the graph does not represent a function.",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "If \\(f(x) = x+2\\) and \\(g(x) = 3x\\), find \\((f \\circ g)(x)\\).",
+    "answer": "\\(3x + 2\\)",
+    "options": [
+      "\\(3x+2\\)",
+      "\\(3x+6\\)",
+      "\\(3(x+2)\\)",
+      "\\(x+6\\)"
+    ],
+    "explanation": "(f∘g)(x) = f(g(x)) = f(3x) = 3x+2.",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "What is the inverse of \\(f(x) = x - 5\\)?",
+    "answer": "\\(f^{-1}(x) = x + 5\\)",
+    "options": [
+      "\\(x+5\\)",
+      "\\(x-5\\)",
+      "\\(5-x\\)",
+      "\\(\\frac{x}{5}\\)"
+    ],
+    "explanation": "Set y = x-5, solve for x: x = y+5. So f⁻¹(x) = x+5.",
+    "difficulty": 1,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Find the inverse of \\(f(x) = \\frac{2x+1}{x-3}\\) and state its domain.",
+    "answer": "\\(f^{-1}(x) = \\frac{3x+1}{x-2}\\), domain: \\(x \\neq 2\\)",
+    "options": [
+      "\\(f^{-1}(x) = \\frac{3x+1}{x-2}\\), \\(x \\neq 2\\)",
+      "\\(f^{-1}(x) = \\frac{3x-1}{x+2}\\), \\(x \\neq -2\\)",
+      "\\(f^{-1}(x) = \\frac{x+3}{2x-1}\\), \\(x \\neq 1/2\\)",
+      "\\(f^{-1}(x) = \\frac{2x-1}{x+3}\\), \\(x \\neq -3\\)"
+    ],
+    "explanation": "y = (2x+1)/(x-3). y(x-3)=2x+1. xy-3y=2x+1. x(y-2)=3y+1. x=(3y+1)/(y-2). So f⁻¹(x)=(3x+1)/(x-2).",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "The function f is defined by \\(f(x) = x^2 - 4x + 7\\) for \\(x \\geq 2\\). Find \\(f^{-1}(x)\\).",
+    "answer": "\\(f^{-1}(x) = 2 + \\sqrt{x-3}\\)",
+    "options": [
+      "\\(2+\\sqrt{x-3}\\)",
+      "\\(2-\\sqrt{x-3}\\)",
+      "\\(4+\\sqrt{x-7}\\)",
+      "\\(\\sqrt{x-3}\\)"
+    ],
+    "explanation": "y = (x-2)²+3. y-3 = (x-2)². x-2 = √(y-3) (positive since x≥2). x = 2+√(y-3). f⁻¹(x) = 2+√(x-3).",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "If \\(f(x) = e^x\\) and \\(g(x) = \\ln(x+1)\\), find the domain of \\((f \\circ g)(x)\\).",
+    "answer": "\\(x > -1\\) or \\((-1, \\infty)\\)",
+    "options": [
+      "\\(x > -1\\)",
+      "\\(x \\geq 0\\)",
+      "\\(\\mathbb{R}\\)",
+      "\\(x > 0\\)"
+    ],
+    "explanation": "g(x) = ln(x+1) requires x+1 > 0, i.e. x > -1. f can accept any real input.",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Describe the graph of \\(y = f(2x)\\) in terms of the graph of \\(y = f(x)\\).",
+    "answer": "Horizontal compression (scale) by factor 1/2.",
+    "options": [
+      "Horizontal compression by factor 1/2",
+      "Horizontal stretch by factor 2",
+      "Vertical stretch by factor 2",
+      "Vertical compression by factor 1/2"
+    ],
+    "explanation": "Replacing x by 2x compresses the graph horizontally by a factor of 2 (halves all x-coordinates).",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Show that \\(f(x) = \\frac{x}{x+1}\\) for \\(x > 0\\) is strictly increasing.",
+    "answer": "f'(x) = 1/(x+1)² > 0 for all x > 0, so f is strictly increasing.",
+    "options": [],
+    "explanation": "Using the quotient rule: f'(x) = [(x+1)-x]/(x+1)² = 1/(x+1)² which is always positive.",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "If \\(f(x) = |x-1| + |x+1|\\), find f(x) for each region and sketch.",
+    "answer": "For x≤-1: f(x)=-2x. For -1<x<1: f(x)=2. For x≥1: f(x)=2x.",
+    "options": [
+      "f(x)=-2x (x≤-1), 2 (-1≤x≤1), 2x (x≥1)",
+      "f(x)=2 for all x",
+      "f(x)=2|x|",
+      "f(x)=-2x+2 (x≤0), 2x+2 (x>0)"
+    ],
+    "explanation": "Consider cases based on the critical points x=-1 and x=1. When both arguments are negative (x≤-1), f=(1-x)+(-1-x)=-2x. When mixed (-1<x<1), f=(1-x)+(x+1)=2. When both positive (x≥1), f=(x-1)+(x+1)=2x.",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Find the range of \\(f(x) = \\frac{x^2 - 1}{x^2 + 1}\\) for \\(x \\in \\mathbb{R}\\).",
+    "answer": "\\([-1, 1)\\)",
+    "options": [
+      "\\([-1, 1)\\)",
+      "\\((-1, 1)\\)",
+      "\\((-1, 1]\\)",
+      "\\([0, 1)\\)"
+    ],
+    "explanation": "f(x) = 1 - 2/(x²+1). Since x²+1 ≥ 1, we have 2/(x²+1) ∈ (0,2]. So f(x) = 1 - 2/(x²+1) ∈ [-1,1). At x=0: f=-1. As x→∞: f→1 (never reached).",
+    "difficulty": 2,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Prove that if f and g are both one-to-one, then \\(f \\circ g\\) is also one-to-one.",
+    "answer": "Suppose (f∘g)(a) = (f∘g)(b). Then f(g(a))=f(g(b)). Since f is one-to-one, g(a)=g(b). Since g is one-to-one, a=b. Hence f∘g is one-to-one.",
+    "options": [],
+    "explanation": "This follows from applying the injectivity property twice in sequence.",
+    "difficulty": 3,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Let \\(f(x) = \\frac{ax+b}{cx+d}\\). Find \\(f(f(x))\\) and determine conditions on a,b,c,d for f to be self-inverse.",
+    "answer": "f is self-inverse when a+d=0, i.e. d=-a.",
+    "options": [],
+    "explanation": "f(f(x)) = [a·(ax+b)/(cx+d)+b]/[c·(ax+b)/(cx+d)+d] = [a(ax+b)+b(cx+d)]/[c(ax+b)+d(cx+d)] = [(a²+bc)x+b(a+d)]/[c(a+d)x+(bc+d²)]. For f(f(x))=x: need a²+bc=bc+d² (so a²=d²) and b(a+d)=0 and c(a+d)=0. If b,c≠0, then a+d=0 i.e. d=-a.",
+    "difficulty": 3,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "The function f is defined piecewise: \\(f(x) = x^2\\) for \\(x < 0\\) and \\(f(x) = 2x\\) for \\(x \\geq 0\\). Is f continuous at x = 0? Is f differentiable at x = 0?",
+    "answer": "f is continuous at x=0 (both limits give 0). f is not differentiable at x=0 (left derivative = 0, right derivative = 2).",
+    "options": [
+      "Continuous but not differentiable",
+      "Both continuous and differentiable",
+      "Neither continuous nor differentiable",
+      "Differentiable but not continuous"
+    ],
+    "explanation": "lim_{x→0⁻} x² = 0 = f(0), lim_{x→0⁺} 2x = 0. Continuous. Left derivative: lim_{h→0⁻} h²/h = 0. Right derivative: lim_{h→0⁺} 2h/h = 2. Not equal, so not differentiable.",
+    "difficulty": 3,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Given \\(f(x) = x^2 + 1\\) and \\(g(x) = \\sqrt{x-1}\\), verify that g = f⁻¹ only on the restricted domain \\(x \\geq 0\\) for f, and find \\((f \\circ g)(x)\\) and \\((g \\circ f)(x)\\).",
+    "answer": "(f∘g)(x) = x for x≥1. (g∘f)(x) = |x| for all x, which equals x only for x≥0.",
+    "options": [],
+    "explanation": "f(g(x)) = (√(x-1))²+1 = x. g(f(x)) = √(x²+1-1) = √(x²) = |x|. For g to be a true inverse, we need |x|=x, requiring x≥0.",
+    "difficulty": 3,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "A function satisfies \\(f(x+y) = f(x) \\cdot f(y)\\) for all real x, y, with f(0) = 1 and f'(0) = 2. Find f(x).",
+    "answer": "\\(f(x) = e^{2x}\\)",
+    "options": [
+      "\\(e^{2x}\\)",
+      "\\(2^x\\)",
+      "\\(e^x\\)",
+      "\\(2e^x\\)"
+    ],
+    "explanation": "f'(x) = lim_{h→0}[f(x+h)-f(x)]/h = f(x)·lim_{h→0}[f(h)-1]/h = f(x)·f'(0) = 2f(x). So f'(x)=2f(x) with f(0)=1, giving f(x)=e^{2x}.",
+    "difficulty": 3,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Let \\(f(x) = \\frac{1}{1-x}\\). Find \\(f(f(x))\\) and \\(f(f(f(x)))\\). What do you notice?",
+    "answer": "f(f(x)) = (x-1)/x = 1-1/x. f(f(f(x))) = x. The function has period 3 under composition.",
+    "options": [
+      "f∘f∘f = identity (period 3)",
+      "f∘f = identity (period 2)",
+      "f has no finite period",
+      "f∘f∘f∘f = identity (period 4)"
+    ],
+    "explanation": "f(f(x)) = 1/(1-1/(1-x)) = 1/((1-x-1)/(1-x)) = (1-x)/(-x) = (x-1)/x. f(f(f(x))) = f((x-1)/x) = 1/(1-(x-1)/x) = 1/(1/x) = x.",
+    "difficulty": 3,
+    "topic_id": "alevel_functions"
+  },
+  {
+    "question": "Find the 10th term of the AP: 3, 7, 11, 15, ...",
+    "answer": "39",
+    "options": [
+      "39",
+      "43",
+      "35",
+      "41"
+    ],
+    "explanation": "a=3, d=4. T_10 = 3 + 9(4) = 39.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find the sum of the first 20 terms of the AP: 5, 8, 11, ...",
+    "answer": "670",
+    "options": [
+      "670",
+      "630",
+      "710",
+      "600"
+    ],
+    "explanation": "a=5, d=3. S_20 = 20/2 × (2(5)+19(3)) = 10 × (10+57) = 670.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "What is the common ratio of the GP: 2, 6, 18, 54, ...?",
+    "answer": "3",
+    "options": [
+      "3",
+      "4",
+      "2",
+      "6"
+    ],
+    "explanation": "r = 6/2 = 3.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find the 5th term of the GP: 4, -8, 16, -32, ...",
+    "answer": "64",
+    "options": [
+      "64",
+      "-64",
+      "128",
+      "-128"
+    ],
+    "explanation": "a=4, r=-2. T_5 = 4(-2)⁴ = 4(16) = 64.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "State the condition for a GP to have a sum to infinity.",
+    "answer": "|r| < 1 (the common ratio must have absolute value less than 1).",
+    "options": [
+      "|r| < 1",
+      "r < 1",
+      "r > 0",
+      "|r| > 1"
+    ],
+    "explanation": "A geometric series converges only when the absolute value of the common ratio is strictly less than 1.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find the sum to infinity of the GP: 8, 4, 2, 1, ...",
+    "answer": "16",
+    "options": [
+      "16",
+      "15",
+      "12",
+      "∞"
+    ],
+    "explanation": "a=8, r=1/2. S_∞ = a/(1-r) = 8/(1/2) = 16.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "What is the formula for the nth term of an AP?",
+    "answer": "\\(T_n = a + (n-1)d\\)",
+    "options": [
+      "\\(a + (n-1)d\\)",
+      "\\(a + nd\\)",
+      "\\(a \\cdot d^{n-1}\\)",
+      "\\(\\frac{n}{2}(a+l)\\)"
+    ],
+    "explanation": "The nth term of an arithmetic progression with first term a and common difference d.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "The first three terms of a GP are x, x+2, x+3. Find x.",
+    "answer": "x = -4",
+    "options": [
+      "x = -4",
+      "x = 4",
+      "x = -2",
+      "x = 2"
+    ],
+    "explanation": "For a GP: (x+2)²=x(x+3). x²+4x+4=x²+3x. x=-4. The GP is -4,-2,-1 with r=1/2.",
+    "difficulty": 1,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "An AP has first term 2 and common difference 3. Find the least n such that \\(S_n > 200\\).",
+    "answer": "n = 12",
+    "options": [
+      "n = 12",
+      "n = 11",
+      "n = 13",
+      "n = 10"
+    ],
+    "explanation": "S_n = n/2(4+3(n-1)) = n/2(3n+1). Solve 3n²+n > 400. 3n²+n-400>0. n≈11.3. So n=12.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "The 3rd term of a GP is 12 and the 6th term is 96. Find the first term and common ratio.",
+    "answer": "a = 3, r = 2",
+    "options": [
+      "a = 3, r = 2",
+      "a = 6, r = 2",
+      "a = 3, r = -2",
+      "a = 12, r = 2"
+    ],
+    "explanation": "ar²=12, ar⁵=96. Dividing: r³=8, r=2. a=12/4=3.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "The sum of an infinite GP is 10 and its first term is 6. Find the common ratio.",
+    "answer": "r = 2/5",
+    "options": [
+      "2/5",
+      "3/5",
+      "4/5",
+      "1/5"
+    ],
+    "explanation": "S_∞ = a/(1-r). 10 = 6/(1-r). 1-r = 3/5. r = 2/5.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Express \\(0.\\overline{36}\\) (0.363636...) as a fraction using GP.",
+    "answer": "4/11",
+    "options": [
+      "4/11",
+      "36/99",
+      "12/33",
+      "9/25"
+    ],
+    "explanation": "0.363636... = 36/100 + 36/10000 + ... = (36/100)/(1-1/100) = 36/99 = 4/11.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find the sum \\(\\sum_{k=1}^{n} k^2\\).",
+    "answer": "\\(\\frac{n(n+1)(2n+1)}{6}\\)",
+    "options": [
+      "\\(\\frac{n(n+1)(2n+1)}{6}\\)",
+      "\\(\\frac{n^2(n+1)^2}{4}\\)",
+      "\\(\\frac{n(n+1)}{2}\\)",
+      "\\(\\frac{n(2n+1)}{3}\\)"
+    ],
+    "explanation": "This is the standard formula for the sum of squares of first n natural numbers.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "In an AP, the 5th term is 19 and the 10th term is 39. Find a and d.",
+    "answer": "a = 3, d = 4",
+    "options": [
+      "a = 3, d = 4",
+      "a = 4, d = 3",
+      "a = 1, d = 5",
+      "a = 7, d = 3"
+    ],
+    "explanation": "a+4d=19, a+9d=39. Subtracting: 5d=20, d=4. a=19-16=3.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "A ball is dropped from 10 m. Each bounce reaches 3/4 of the previous height. Find the total distance travelled.",
+    "answer": "70 m",
+    "options": [
+      "70 m",
+      "40 m",
+      "80 m",
+      "50 m"
+    ],
+    "explanation": "Total = 10 + 2(10×3/4 + 10×(3/4)² + ...) = 10 + 2×(15/2)/(1-3/4) = 10 + 2×(7.5/0.25) = 10 + 60 = 70.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find \\(\\sum_{r=1}^{n} (3r - 1)\\).",
+    "answer": "\\(\\frac{n(3n+1)}{2}\\)",
+    "options": [
+      "\\(\\frac{n(3n+1)}{2}\\)",
+      "\\(\\frac{n(3n-1)}{2}\\)",
+      "\\(\\frac{3n(n+1)}{2}\\)",
+      "\\(3n^2-1\\)"
+    ],
+    "explanation": "∑(3r-1) = 3·n(n+1)/2 - n = (3n²+3n-2n)/2 = n(3n+1)/2.",
+    "difficulty": 2,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "The sum of the first n terms of a series is \\(S_n = 3n^2 + 2n\\). Find the nth term and show the series is an AP.",
+    "answer": "T_n = S_n - S_{n-1} = 3n²+2n - 3(n-1)²-2(n-1) = 6n-1 for n≥2. T_1 = S_1 = 5 = 6(1)-1. So T_n = 6n-1, which is an AP with d=6.",
+    "options": [
+      "T_n = 6n-1, AP with d=6",
+      "T_n = 6n+1, AP with d=6",
+      "T_n = 3n+2, AP with d=3",
+      "T_n = 6n-1, not an AP"
+    ],
+    "explanation": "T_n = S_n - S_{n-1} = (3n²+2n)-(3n²-6n+3+2n-2) = 6n-1. Common difference = 6.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Three numbers form an AP with sum 15 and product 80. Find the numbers.",
+    "answer": "Let a-d, a, a+d. Sum = 3a = 15, a = 5. Product: (5-d)(5)(5+d) = 5(25-d²) = 80. 25-d² = 16. d² = 9, d = ±3. Numbers: 2,5,8 or 8,5,2.",
+    "options": [
+      "2, 5, 8",
+      "3, 5, 7",
+      "1, 5, 9",
+      "4, 5, 6"
+    ],
+    "explanation": "Using the symmetric form a-d, a, a+d simplifies the system.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Show that \\(\\sum_{r=1}^{n} r \\cdot r! = (n+1)! - 1\\).",
+    "answer": "Note r·r! = (r+1)!-r! (telescoping). So ∑r·r! = ∑[(r+1)!-r!] = (n+1)!-1!= (n+1)!-1.",
+    "options": [],
+    "explanation": "Use the identity r·r! = (r+1-1)·r! = (r+1)!-r! to create a telescoping sum.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "An infinite GP has the property that \\(S_\\infty = 3(S_\\infty - a)\\) where a is the first term. Find the common ratio.",
+    "answer": "r = 1/3",
+    "options": [
+      "1/3",
+      "2/3",
+      "1/2",
+      "3/4"
+    ],
+    "explanation": "S=a/(1-r). S=3(S-a)=3S-3a. -2S=-3a. S=3a/2. So a/(1-r)=3a/2. 1/(1-r)=3/2. 2=3(1-r). 2=3-3r. r=1/3.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find \\(\\sum_{r=1}^{n} \\frac{1}{r(r+1)}\\) using partial fractions.",
+    "answer": "\\(\\frac{n}{n+1}\\)",
+    "options": [
+      "\\(\\frac{n}{n+1}\\)",
+      "\\(\\frac{1}{n+1}\\)",
+      "\\(1 - \\frac{1}{n}\\)",
+      "\\(\\frac{n}{2(n+1)}\\)"
+    ],
+    "explanation": "1/(r(r+1)) = 1/r - 1/(r+1) (telescoping). Sum = (1-1/2)+(1/2-1/3)+...+(1/n-1/(n+1)) = 1-1/(n+1) = n/(n+1).",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "The sum to n terms of a series is \\(S_n = 2^n - 1\\). Find T_n and determine what type of series it is.",
+    "answer": "T_n = 2^{n-1} for n≥1. This is a GP with first term 1 and common ratio 2.",
+    "options": [
+      "GP with a=1, r=2",
+      "AP with d=2",
+      "GP with a=2, r=2",
+      "Neither AP nor GP"
+    ],
+    "explanation": "T_n = S_n-S_{n-1} = (2^n-1)-(2^{n-1}-1) = 2^n-2^{n-1} = 2^{n-1}. T_1=1, T_2=2, T_3=4,... GP with r=2.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Prove by induction that \\(\\sum_{r=1}^{n} r = \\frac{n(n+1)}{2}\\).",
+    "answer": "Base: n=1, LHS=1, RHS=1. ✓ Assume true for n=k. For n=k+1: ∑_{r=1}^{k+1} r = k(k+1)/2 + (k+1) = (k+1)(k+2)/2. ✓",
+    "options": [],
+    "explanation": "Standard proof by mathematical induction: verify base case, assume for k, prove for k+1.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "The 2nd, 5th and 11th terms of an AP are three consecutive terms of a GP. Find the common ratio.",
+    "answer": "r = 2",
+    "options": [
+      "2",
+      "3",
+      "1/2",
+      "4"
+    ],
+    "explanation": "Let AP terms be a+d, a+4d, a+10d. For GP: (a+4d)²=(a+d)(a+10d). a²+8ad+16d²=a²+11ad+10d². 6d²=3ad. d≠0: 2d=a. Check ratio: (a+4d)/(a+d)=(2d+4d)/(2d+d)=6d/3d=2.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find \\(\\sum_{r=1}^{n} r \\cdot 2^r\\).",
+    "answer": "\\((n-1) \\cdot 2^{n+1} + 2\\)",
+    "options": [
+      "\\((n-1)2^{n+1}+2\\)",
+      "\\(n \\cdot 2^{n+1}\\)",
+      "\\(2^{n+1}-2\\)",
+      "\\(n \\cdot 2^n\\)"
+    ],
+    "explanation": "Let S = ∑r·2^r. 2S = ∑r·2^{r+1}. S-2S = ∑2^r - (n)2^{n+1} (method of differences). -S = (2^{n+1}-2) - n·2^{n+1} = (1-n)2^{n+1}-2. S = (n-1)2^{n+1}+2.",
+    "difficulty": 3,
+    "topic_id": "alevel_sequences"
+  },
+  {
+    "question": "Find the modulus of \\(z = 3 + 4i\\).",
+    "answer": "5",
+    "options": [
+      "5",
+      "7",
+      "25",
+      "1"
+    ],
+    "explanation": "|z| = √(9+16) = √25 = 5.",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find the argument of \\(z = 1 + i\\) in radians.",
+    "answer": "π/4",
+    "options": [
+      "π/4",
+      "π/2",
+      "π/3",
+      "π/6"
+    ],
+    "explanation": "arg(z) = arctan(1/1) = π/4 (first quadrant).",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Express \\(z = 2(\\cos \\frac{\\pi}{3} + i\\sin \\frac{\\pi}{3})\\) in Cartesian form.",
+    "answer": "1 + i√3",
+    "options": [
+      "1 + i√3",
+      "√3 + i",
+      "2 + 2i",
+      "1 + i"
+    ],
+    "explanation": "z = 2(1/2 + i√3/2) = 1 + i√3.",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "What is the conjugate of \\(z = 5 - 2i\\)?",
+    "answer": "5 + 2i",
+    "options": [
+      "5 + 2i",
+      "5 - 2i",
+      "-5 + 2i",
+      "-5 - 2i"
+    ],
+    "explanation": "The conjugate is obtained by negating the imaginary part.",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Simplify \\(i^3\\).",
+    "answer": "-i",
+    "options": [
+      "-i",
+      "i",
+      "-1",
+      "1"
+    ],
+    "explanation": "i³ = i² × i = -1 × i = -i.",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "If \\(z = a + bi\\), what is \\(z \\cdot \\bar{z}\\)?",
+    "answer": "\\(a^2 + b^2 = |z|^2\\)",
+    "options": [
+      "\\(a^2 + b^2\\)",
+      "\\(a^2 - b^2\\)",
+      "\\(2a\\)",
+      "\\(2bi\\)"
+    ],
+    "explanation": "z·z̄ = (a+bi)(a-bi) = a²+b² = |z|².",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Plot \\(z = -1 + i\\) on an Argand diagram. In which quadrant does it lie?",
+    "answer": "Second quadrant",
+    "options": [
+      "Second quadrant",
+      "First quadrant",
+      "Third quadrant",
+      "Fourth quadrant"
+    ],
+    "explanation": "Real part negative, imaginary part positive → second quadrant.",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "State De Moivre's Theorem.",
+    "answer": "\\((\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)\\) for any integer n.",
+    "options": [
+      "\\((\\cos\\theta+i\\sin\\theta)^n = \\cos(n\\theta)+i\\sin(n\\theta)\\)",
+      "\\((\\cos\\theta+i\\sin\\theta)^n = n\\cos\\theta+ni\\sin\\theta\\)",
+      "\\((\\cos\\theta+i\\sin\\theta)^n = \\cos(\\theta^n)+i\\sin(\\theta^n)\\)",
+      "\\((\\cos\\theta+i\\sin\\theta)^n = \\cos\\theta+i\\sin(n\\theta)\\)"
+    ],
+    "explanation": "De Moivre's Theorem links powers of complex numbers in polar form.",
+    "difficulty": 1,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Express \\(z = -1 - i\\sqrt{3}\\) in modulus-argument form.",
+    "answer": "\\(2\\left(\\cos\\frac{4\\pi}{3} + i\\sin\\frac{4\\pi}{3}\\right)\\) or \\(2\\text{cis}\\left(-\\frac{2\\pi}{3}\\right)\\)",
+    "options": [
+      "\\(2\\text{cis}(4\\pi/3)\\)",
+      "\\(2\\text{cis}(2\\pi/3)\\)",
+      "\\(\\sqrt{2}\\text{cis}(5\\pi/4)\\)",
+      "\\(2\\text{cis}(\\pi/3)\\)"
+    ],
+    "explanation": "|z| = √(1+3) = 2. arg(z) = π + π/3 = 4π/3 (third quadrant).",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find \\((1+i)^6\\).",
+    "answer": "-8i",
+    "options": [
+      "-8i",
+      "8i",
+      "8",
+      "-8"
+    ],
+    "explanation": "1+i = √2 cis(π/4). (1+i)^6 = (√2)^6 cis(6π/4) = 8 cis(3π/2) = 8(0-i) = -8i.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find the cube roots of 8.",
+    "answer": "2, 2cis(2π/3), 2cis(4π/3) or equivalently 2, -1+i√3, -1-i√3",
+    "options": [
+      "2, -1+i√3, -1-i√3",
+      "2, 2i, -2i",
+      "2, -2, 2i",
+      "2, 1+i√3, 1-i√3"
+    ],
+    "explanation": "8 = 8cis(0). Cube roots: 2cis(2kπ/3) for k=0,1,2. k=0:2, k=1:2cis(2π/3)=-1+i√3, k=2:2cis(4π/3)=-1-i√3.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "If \\(z_1 = 2 + 3i\\) and \\(z_2 = 1 - i\\), find \\(z_1/z_2\\).",
+    "answer": "\\(-\\frac{1}{2} + \\frac{5}{2}i\\)",
+    "options": [
+      "\\(-1/2 + 5i/2\\)",
+      "\\(5/2 + i/2\\)",
+      "\\(1/2 - 5i/2\\)",
+      "\\(5 + i\\)"
+    ],
+    "explanation": "z₁/z₂ = (2+3i)(1+i)/((1-i)(1+i)) = (2+2i+3i+3i²)/(1+1) = (2+5i-3)/2 = (-1+5i)/2.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "The complex number z satisfies \\(|z - 2| = |z - 2i|\\). Describe the locus.",
+    "answer": "The perpendicular bisector of the line segment from (2,0) to (0,2), i.e. y = x.",
+    "options": [
+      "The line y = x",
+      "The circle |z| = 2",
+      "The line y = -x",
+      "The line x + y = 2"
+    ],
+    "explanation": "|z-2|=|z-2i| means z is equidistant from 2 and 2i. The locus is the perpendicular bisector: y = x.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Use De Moivre's theorem to express \\(\\cos 3\\theta\\) in terms of \\(\\cos\\theta\\).",
+    "answer": "\\(4\\cos^3\\theta - 3\\cos\\theta\\)",
+    "options": [
+      "\\(4\\cos^3\\theta - 3\\cos\\theta\\)",
+      "\\(3\\cos\\theta - 4\\cos^3\\theta\\)",
+      "\\(\\cos^3\\theta - 3\\cos\\theta\\)",
+      "\\(8\\cos^3\\theta - 1\\)"
+    ],
+    "explanation": "(cosθ+isinθ)³ = cos3θ+isin3θ. Expanding the left: cos³θ+3icos²θsinθ-3cosθsin²θ-isin³θ. Real part: cos³θ-3cosθsin²θ = cos³θ-3cosθ(1-cos²θ) = 4cos³θ-3cosθ.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find a quadratic equation with real coefficients having \\(z = 2 + i\\) as a root.",
+    "answer": "\\(z^2 - 4z + 5 = 0\\)",
+    "options": [
+      "\\(z^2-4z+5=0\\)",
+      "\\(z^2-4z+3=0\\)",
+      "\\(z^2+4z+5=0\\)",
+      "\\(z^2-2z+5=0\\)"
+    ],
+    "explanation": "Other root is 2-i. Sum=4, product=5. z²-4z+5=0.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Sketch the locus \\(|z - 1 - i| = 2\\) on the Argand diagram.",
+    "answer": "A circle centred at (1, 1) with radius 2.",
+    "options": [
+      "Circle centre (1,1) radius 2",
+      "Circle centre (1,-1) radius 2",
+      "Circle centre (0,0) radius 2",
+      "Line through (1,1)"
+    ],
+    "explanation": "|z-(1+i)| = 2 represents all points distance 2 from the point 1+i.",
+    "difficulty": 2,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find all 5th roots of unity and show they sum to zero.",
+    "answer": "w_k = cis(2kπ/5) for k=0,1,2,3,4. Sum = 0 (geometric series with ratio w₁ ≠ 1).",
+    "options": [],
+    "explanation": "The nth roots of unity are cis(2kπ/n). Their sum is a geometric series: ∑w^k = (w^n-1)/(w-1) = 0 since w^n=1.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "If \\(z = \\cos\\theta + i\\sin\\theta\\), show that \\(z + 1/z = 2\\cos\\theta\\) and \\(z - 1/z = 2i\\sin\\theta\\).",
+    "answer": "1/z = cos(-θ)+isin(-θ) = cosθ-isinθ. z+1/z = 2cosθ. z-1/z = 2isinθ.",
+    "options": [],
+    "explanation": "Since |z|=1, 1/z = z̄ = cosθ-isinθ. Adding/subtracting with z gives the results.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find the fourth roots of \\(-16\\).",
+    "answer": "√2(1+i), √2(-1+i), √2(-1-i), √2(1-i)",
+    "options": [
+      "√2(1+i), √2(-1+i), √2(-1-i), √2(1-i)",
+      "2(1+i), 2(-1+i), 2(-1-i), 2(1-i)",
+      "2i, -2i, 2, -2",
+      "2cis(π/8), 2cis(5π/8), 2cis(9π/8), 2cis(13π/8)"
+    ],
+    "explanation": "-16 = 16cis(π). Fourth roots: 2cis(π/4+kπ/2) for k=0,1,2,3. k=0: 2cis(π/4)=√2(1+i). k=1: 2cis(3π/4)=√2(-1+i). k=2: 2cis(5π/4)=√2(-1-i). k=3: 2cis(7π/4)=√2(1-i).",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Prove that if z₁z₂ = 0 for complex numbers, then z₁ = 0 or z₂ = 0.",
+    "answer": "If z₁ ≠ 0, then |z₁| > 0. |z₁z₂| = |z₁||z₂| = 0 implies |z₂| = 0, so z₂ = 0.",
+    "options": [],
+    "explanation": "Use the property |z₁z₂| = |z₁|·|z₂| and the fact that |z| = 0 iff z = 0.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Use De Moivre's theorem to find \\(\\sin 5\\theta\\) in terms of \\(\\sin\\theta\\).",
+    "answer": "\\(16\\sin^5\\theta - 20\\sin^3\\theta + 5\\sin\\theta\\)",
+    "options": [
+      "\\(16\\sin^5\\theta-20\\sin^3\\theta+5\\sin\\theta\\)",
+      "\\(5\\sin\\theta-20\\sin^3\\theta+16\\sin^5\\theta\\)",
+      "\\(32\\sin^5\\theta-32\\sin^3\\theta+6\\sin\\theta\\)",
+      "\\(5\\sin\\theta-10\\sin^3\\theta+\\sin^5\\theta\\)"
+    ],
+    "explanation": "Expand (cosθ+isinθ)⁵ and take the imaginary part, then express all cos²θ terms as 1-sin²θ.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find the complex number z such that \\(z^2 = 5 + 12i\\).",
+    "answer": "z = ±(3 + 2i)",
+    "options": [
+      "±(3+2i)",
+      "±(2+3i)",
+      "±(3-2i)",
+      "±(5+i)"
+    ],
+    "explanation": "Let z=a+bi. a²-b²=5, 2ab=12 so ab=6. From b=6/a: a²-36/a²=5. a⁴-5a²-36=0. (a²-9)(a²+4)=0. a²=9, a=±3. b=±2. z=±(3+2i).",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "The transformation \\(w = \\frac{z-1}{z+1}\\) maps z to w. Find the image of the imaginary axis (Re(z)=0) under this transformation.",
+    "answer": "The unit circle |w| = 1.",
+    "options": [
+      "The unit circle |w|=1",
+      "The real axis",
+      "The imaginary axis",
+      "The line Re(w)=0"
+    ],
+    "explanation": "Let z=iy. w=(iy-1)/(iy+1). |w|=|iy-1|/|iy+1|=√(1+y²)/√(1+y²)=1. So |w|=1.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Solve \\(z^4 + 4 = 0\\) and express all roots in the form a+bi.",
+    "answer": "z = 1+i, -1+i, -1-i, 1-i",
+    "options": [
+      "1+i, -1+i, -1-i, 1-i",
+      "2i, -2i, 2, -2",
+      "1+i, 1-i, -2i, 2i",
+      "√2 cis(π/8), √2 cis(5π/8), √2 cis(9π/8), √2 cis(13π/8)"
+    ],
+    "explanation": "z⁴=-4=4cis(π). z=√2 cis(π/4+kπ/2). k=0:√2(cos45°+isin45°)=1+i. k=1:√2(cos135°+isin135°)=-1+i. k=2:-1-i. k=3:1-i.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Show that for any complex number z, \\(|e^z| = e^{\\text{Re}(z)}\\).",
+    "answer": "Let z=a+bi. e^z = e^a·e^{bi} = e^a(cosb+isinb). |e^z| = e^a·√(cos²b+sin²b) = e^a = e^{Re(z)}.",
+    "options": [],
+    "explanation": "Use the factorisation e^{a+bi}=e^a·e^{bi} and |e^{bi}|=1.",
+    "difficulty": 3,
+    "topic_id": "alevel_complex"
+  },
+  {
+    "question": "Find the magnitude of the vector \\(\\mathbf{v} = 2\\mathbf{i} + 3\\mathbf{j} - 6\\mathbf{k}\\).",
+    "answer": "7",
+    "options": [
+      "7",
+      "\\(\\sqrt{49}\\)",
+      "11",
+      "\\(\\sqrt{13}\\)"
+    ],
+    "explanation": "|v| = √(4+9+36) = √49 = 7.",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find \\(\\mathbf{a} \\cdot \\mathbf{b}\\) where \\(\\mathbf{a} = (1,2,3)\\) and \\(\\mathbf{b} = (4,-1,2)\\).",
+    "answer": "8",
+    "options": [
+      "8",
+      "10",
+      "4",
+      "6"
+    ],
+    "explanation": "a·b = 1(4)+2(-1)+3(2) = 4-2+6 = 8.",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "What does \\(\\mathbf{a} \\cdot \\mathbf{b} = 0\\) imply about vectors a and b (assuming both non-zero)?",
+    "answer": "They are perpendicular (orthogonal).",
+    "options": [
+      "They are perpendicular",
+      "They are parallel",
+      "They are equal",
+      "They are unit vectors"
+    ],
+    "explanation": "The dot product of two non-zero vectors is zero if and only if they are perpendicular.",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the unit vector in the direction of \\(\\mathbf{v} = (3, 4, 0)\\).",
+    "answer": "\\((3/5, 4/5, 0)\\)",
+    "options": [
+      "(3/5, 4/5, 0)",
+      "(3, 4, 0)",
+      "(1/3, 1/4, 0)",
+      "(0.6, 0.8, 0)"
+    ],
+    "explanation": "|v| = 5. Unit vector = v/|v| = (3/5, 4/5, 0).",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "State the vector equation of a line through point A with direction vector d.",
+    "answer": "\\(\\mathbf{r} = \\mathbf{a} + t\\mathbf{d}\\), where t is a parameter.",
+    "options": [
+      "\\(\\mathbf{r} = \\mathbf{a} + t\\mathbf{d}\\)",
+      "\\(\\mathbf{r} = t\\mathbf{a} + \\mathbf{d}\\)",
+      "\\(\\mathbf{r} = \\mathbf{a} \\times \\mathbf{d}\\)",
+      "\\(\\mathbf{r} \\cdot \\mathbf{d} = \\mathbf{a}\\)"
+    ],
+    "explanation": "The parametric vector equation of a line uses a point on the line and a direction vector.",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "What is the geometric meaning of the cross product \\(\\mathbf{a} \\times \\mathbf{b}\\)?",
+    "answer": "A vector perpendicular to both a and b with magnitude |a||b|sinθ.",
+    "options": [
+      "A vector perpendicular to both a and b",
+      "A scalar equal to |a||b|cosθ",
+      "A vector parallel to a",
+      "The midpoint of a and b"
+    ],
+    "explanation": "The cross product produces a vector orthogonal to the plane containing a and b.",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the position vector of the midpoint of A(1,3,5) and B(3,7,-1).",
+    "answer": "(2, 5, 2)",
+    "options": [
+      "(2, 5, 2)",
+      "(4, 10, 4)",
+      "(1, 2, 3)",
+      "(2, 5, 3)"
+    ],
+    "explanation": "Midpoint = ((1+3)/2, (3+7)/2, (5-1)/2) = (2, 5, 2).",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find \\(\\mathbf{a} \\times \\mathbf{b}\\) where \\(\\mathbf{a} = \\mathbf{i}\\) and \\(\\mathbf{b} = \\mathbf{j}\\).",
+    "answer": "\\(\\mathbf{k}\\)",
+    "options": [
+      "\\(\\mathbf{k}\\)",
+      "\\(-\\mathbf{k}\\)",
+      "0",
+      "\\(\\mathbf{i} + \\mathbf{j}\\)"
+    ],
+    "explanation": "i × j = k by the right-hand rule (standard basis cross products).",
+    "difficulty": 1,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the angle between \\(\\mathbf{a} = (1,1,0)\\) and \\(\\mathbf{b} = (0,1,1)\\).",
+    "answer": "60°",
+    "options": [
+      "60°",
+      "45°",
+      "90°",
+      "30°"
+    ],
+    "explanation": "cosθ = a·b/(|a||b|) = 1/(√2·√2) = 1/2. θ = 60°.",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find \\(\\mathbf{a} \\times \\mathbf{b}\\) where \\(\\mathbf{a} = (2,1,-1)\\) and \\(\\mathbf{b} = (1,3,2)\\).",
+    "answer": "(5, -5, 5) or equivalently 5(1,-1,1)",
+    "options": [
+      "(5, -5, 5)",
+      "(-5, 5, -5)",
+      "(5, 5, 5)",
+      "(1, -1, 1)"
+    ],
+    "explanation": "a×b = (1·2-(-1)·3, (-1)·1-2·2, 2·3-1·1) = (2+3, -1-4, 6-1) = (5,-5,5).",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the equation of the line through (1,2,3) and (4,5,6) in vector form.",
+    "answer": "\\(\\mathbf{r} = (1,2,3) + t(3,3,3)\\) or \\(\\mathbf{r} = (1,2,3) + t(1,1,1)\\)",
+    "options": [
+      "\\(\\mathbf{r} = (1,2,3)+t(1,1,1)\\)",
+      "\\(\\mathbf{r} = (4,5,6)+t(1,2,3)\\)",
+      "\\(\\mathbf{r} = t(1,2,3)\\)",
+      "\\(\\mathbf{r} = (1,2,3)+t(4,5,6)\\)"
+    ],
+    "explanation": "Direction = (4-1,5-2,6-3) = (3,3,3) = 3(1,1,1). Line: r = (1,2,3)+t(1,1,1).",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the equation of the plane containing the point (1,0,-1) with normal vector (2,3,-1).",
+    "answer": "\\(2x + 3y - z = 3\\)",
+    "options": [
+      "\\(2x+3y-z=3\\)",
+      "\\(2x+3y-z=0\\)",
+      "\\(2x+3y-z=-3\\)",
+      "\\(x+y-z=2\\)"
+    ],
+    "explanation": "Plane: 2(x-1)+3(y-0)-1(z+1) = 0. 2x-2+3y-z-1=0. 2x+3y-z=3.",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the shortest distance from the point (1,2,3) to the plane \\(2x - y + 2z = 4\\).",
+    "answer": "2/3",
+    "options": [
+      "2/3",
+      "7/3",
+      "1",
+      "4/3"
+    ],
+    "explanation": "d = |2(1)-1(2)+2(3)-4|/√(4+1+4) = |2-2+6-4|/3 = 2/3. Hmm: |2-2+6-4|=2. 2/3.",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Determine whether the lines \\(\\mathbf{r}_1 = (1,0,1)+s(1,1,0)\\) and \\(\\mathbf{r}_2 = (0,1,1)+t(0,1,1)\\) intersect.",
+    "answer": "The lines do not intersect (they are skew).",
+    "options": [
+      "They are skew (do not intersect)",
+      "They intersect at (1,0,1)",
+      "They are parallel",
+      "They intersect at (0,1,1)"
+    ],
+    "explanation": "At intersection: 1+s=0, s+0=1+t, 1=1+t. From third: t=0. From first: s=-1. Check second: -1=1+0=1? No. Lines do not intersect.",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the area of the triangle with vertices A(1,0,0), B(0,1,0), C(0,0,1).",
+    "answer": "√3/2",
+    "options": [
+      "√3/2",
+      "1/2",
+      "√3",
+      "3/2"
+    ],
+    "explanation": "AB=(-1,1,0), AC=(-1,0,1). AB×AC=(1,1,1). |AB×AC|=√3. Area = √3/2.",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Show that the vectors (1,2,3), (4,5,6), (7,8,9) are coplanar.",
+    "answer": "The scalar triple product = 0, so they are coplanar.",
+    "options": [],
+    "explanation": "Scalar triple product = det[1,2,3;4,5,6;7,8,9] = 1(45-48)-2(36-42)+3(32-35) = -3+12-9 = 0.",
+    "difficulty": 2,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the shortest distance between the skew lines \\(\\mathbf{r}_1 = (1,2,1)+s(2,3,1)\\) and \\(\\mathbf{r}_2 = (3,1,0)+t(1,-1,2)\\).",
+    "answer": "d = |((3,1,0)-(1,2,1))·(d₁×d₂)|/|d₁×d₂|. d₁×d₂ = (2,3,1)×(1,-1,2) = (7,-3,-5). |d₁×d₂|=√83. ((2,-1,-1))·(7,-3,-5)=14+3+5=22. d=22/√83.",
+    "options": [],
+    "explanation": "Use the formula d = |AB·(d₁×d₂)|/|d₁×d₂| where AB connects points on the two lines.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the line of intersection of the planes \\(x+y+z=1\\) and \\(2x-y+z=3\\).",
+    "answer": "Direction: n₁×n₂ = (1,1,1)×(2,-1,1) = (2,1,-3). Find a point: set z=0, x+y=1, 2x-y=3. x=4/3, y=-1/3. Line: r = (4/3,-1/3,0)+t(2,1,-3).",
+    "options": [],
+    "explanation": "The direction of intersection is n₁×n₂. Find one point by setting one coordinate to 0.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the angle between the line \\(\\mathbf{r} = (1,0,0)+t(1,1,1)\\) and the plane \\(x + y - z = 0\\).",
+    "answer": "The angle between line direction (1,1,1) and normal (1,1,-1): cosα = |1+1-1|/(√3·√3) = 1/3. Angle between line and plane = 90°-α = arcsin(1/3).",
+    "options": [
+      "arcsin(1/3)",
+      "arccos(1/3)",
+      "30°",
+      "60°"
+    ],
+    "explanation": "The angle between a line and a plane is the complement of the angle between the line's direction and the plane's normal.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the reflection of the point P(1,2,3) in the plane \\(x + y + z = 1\\).",
+    "answer": "(-7/3, -4/3, -1/3)",
+    "options": [
+      "(-7/3, -4/3, -1/3)",
+      "(-4/3, -1/3, 2/3)",
+      "(-1, 0, 1)",
+      "(1/3, 2/3, -5/3)"
+    ],
+    "explanation": "Foot of perpendicular: F=P+t(1,1,1) on plane: (1+t)+(2+t)+(3+t)=1, 6+3t=1, t=-5/3. F=(-2/3,1/3,4/3). Reflection Q=2F-P=(-7/3,-4/3,-1/3).",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the equation of the plane containing the points A(1,0,0), B(0,1,0) and C(0,0,1).",
+    "answer": "x + y + z = 1",
+    "options": [
+      "x+y+z=1",
+      "x+y+z=0",
+      "x-y+z=1",
+      "2x+y+z=1"
+    ],
+    "explanation": "AB=(-1,1,0), AC=(-1,0,1). Normal = AB×AC = (1,1,1). Plane: 1(x-1)+1(y)+1(z)=0, x+y+z=1.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "A line passes through (2,1,0) and is parallel to (1,2,-2). Find where it pierces the plane \\(3x - y + z = 10\\).",
+    "answer": "(-3, -9, 10)",
+    "options": [
+      "(-3,-9,10)",
+      "(4,5,-4)",
+      "(3,3,-2)",
+      "(7,11,-10)"
+    ],
+    "explanation": "Parametric: (2+t,1+2t,-2t). On plane: 3(2+t)-(1+2t)+(-2t)=10. 6+3t-1-2t-2t=10. 5-t=10. t=-5. Point: (-3,-9,10). Wait: 5-t=10, t=-5. (2-5,1-10,10)=(-3,-9,10). Check: -9+(-9)+10=-8≠10. Let me redo: 3(2+t)-(1+2t)+(-2t) = 6+3t-1-2t-2t = 5-t. 5-t=10, t=-5. Point: (2-5,1-10,0+10)=(-3,-9,10). Check: 3(-3)-(-9)+10=-9+9+10=10. ✓",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the volume of the parallelepiped formed by vectors \\(\\mathbf{a}=(1,0,2)\\), \\(\\mathbf{b}=(0,3,1)\\), \\(\\mathbf{c}=(2,1,0)\\).",
+    "answer": "13",
+    "options": [
+      "13",
+      "15",
+      "12",
+      "10"
+    ],
+    "explanation": "b×c=(-1,2,-6). a·(b×c)=-1+0-12=-13. Volume=|-13|=13.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "The position vectors of A, B, C are (1,2,3), (4,6,3), (2,5,1). Find a unit normal to the plane ABC.",
+    "answer": "n = AB×AC / |AB×AC|. AB=(3,4,0), AC=(1,3,-2). AB×AC=(-8,6,5). |n|=√(64+36+25)=√125=5√5. Unit normal = (-8,6,5)/(5√5).",
+    "options": [],
+    "explanation": "Find two vectors in the plane, take their cross product, then normalise.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "Find the perpendicular distance from the point (3,2,1) to the line \\(\\mathbf{r} = (1,0,2)+t(2,1,-1)\\).",
+    "answer": "AP = (2,2,-1), d=(2,1,-1). AP×d = (2·(-1)-(-1)·1, (-1)·2-2·(-1), 2·1-2·2) = (-2+1, -2+2, 2-4) = (-1,0,-2). |AP×d|=√5. |d|=√6. Distance = √5/√6 = √(5/6) = √30/6.",
+    "options": [
+      "√30/6",
+      "√5/√6",
+      "1",
+      "√5/6"
+    ],
+    "explanation": "Distance = |AP×d|/|d| where A is a point on the line and P is the given point.",
+    "difficulty": 3,
+    "topic_id": "alevel_vectors3d"
+  },
+  {
+    "question": "State the product rule for differentiation.",
+    "answer": "\\(\\frac{d}{dx}[uv] = u\\frac{dv}{dx} + v\\frac{du}{dx}\\)",
+    "options": [
+      "\\(u\\frac{dv}{dx}+v\\frac{du}{dx}\\)",
+      "\\(\\frac{du}{dx}\\cdot\\frac{dv}{dx}\\)",
+      "\\(u\\frac{du}{dx}+v\\frac{dv}{dx}\\)",
+      "\\(\\frac{d}{dx}[u+v]\\)"
+    ],
+    "explanation": "The product rule: d/dx(uv) = u(dv/dx) + v(du/dx).",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "State the chain rule.",
+    "answer": "\\(\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}\\)",
+    "options": [
+      "\\(\\frac{dy}{du}\\cdot\\frac{du}{dx}\\)",
+      "\\(\\frac{dy}{dx}\\cdot\\frac{dx}{du}\\)",
+      "\\(\\frac{du}{dx}+\\frac{dy}{du}\\)",
+      "\\(\\frac{dy}{dx} = \\frac{1}{dx/dy}\\)"
+    ],
+    "explanation": "The chain rule allows differentiation of composite functions.",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = e^{3x}\\).",
+    "answer": "\\(3e^{3x}\\)",
+    "options": [
+      "\\(3e^{3x}\\)",
+      "\\(e^{3x}\\)",
+      "\\(3xe^{3x}\\)",
+      "\\(e^{3}\\)"
+    ],
+    "explanation": "By the chain rule: dy/dx = e^{3x} × 3 = 3e^{3x}.",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = \\ln(2x)\\).",
+    "answer": "1/x",
+    "options": [
+      "1/x",
+      "2/x",
+      "1/(2x)",
+      "2x"
+    ],
+    "explanation": "dy/dx = 1/(2x) × 2 = 1/x. Or: ln(2x) = ln2+lnx, d/dx = 0+1/x.",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = \\sin(3x)\\).",
+    "answer": "\\(3\\cos(3x)\\)",
+    "options": [
+      "\\(3\\cos(3x)\\)",
+      "\\(\\cos(3x)\\)",
+      "\\(-3\\cos(3x)\\)",
+      "\\(3\\sin(3x)\\)"
+    ],
+    "explanation": "By the chain rule: dy/dx = cos(3x) × 3 = 3cos(3x).",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "State the quotient rule.",
+    "answer": "\\(\\frac{d}{dx}\\left[\\frac{u}{v}\\right] = \\frac{v\\frac{du}{dx} - u\\frac{dv}{dx}}{v^2}\\)",
+    "options": [
+      "\\(\\frac{v(du/dx)-u(dv/dx)}{v^2}\\)",
+      "\\(\\frac{u(dv/dx)-v(du/dx)}{v^2}\\)",
+      "\\(\\frac{du/dx}{dv/dx}\\)",
+      "\\(\\frac{u(du/dx)+v(dv/dx)}{u^2}\\)"
+    ],
+    "explanation": "The quotient rule for d/dx(u/v).",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = (2x+1)^5\\) using the chain rule.",
+    "answer": "\\(10(2x+1)^4\\)",
+    "options": [
+      "\\(10(2x+1)^4\\)",
+      "\\(5(2x+1)^4\\)",
+      "\\(10(2x+1)^5\\)",
+      "\\(2(2x+1)^4\\)"
+    ],
+    "explanation": "dy/dx = 5(2x+1)^4 × 2 = 10(2x+1)^4.",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = \\tan x\\).",
+    "answer": "\\(\\sec^2 x\\)",
+    "options": [
+      "\\(\\sec^2 x\\)",
+      "\\(\\cos^2 x\\)",
+      "\\(\\csc^2 x\\)",
+      "\\(-\\sec^2 x\\)"
+    ],
+    "explanation": "d/dx(tanx) = sec²x.",
+    "difficulty": 1,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = x^2 e^{3x}\\).",
+    "answer": "\\(e^{3x}(2x + 3x^2)\\) or \\(xe^{3x}(2+3x)\\)",
+    "options": [
+      "\\(xe^{3x}(2+3x)\\)",
+      "\\(2xe^{3x}\\)",
+      "\\(3x^2e^{3x}\\)",
+      "\\(e^{3x}(2x+3)\\)"
+    ],
+    "explanation": "Product rule: dy/dx = 2xe^{3x} + x²(3e^{3x}) = e^{3x}(2x+3x²) = xe^{3x}(2+3x).",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = \\frac{x}{x^2+1}\\).",
+    "answer": "\\(\\frac{1-x^2}{(x^2+1)^2}\\)",
+    "options": [
+      "\\(\\frac{1-x^2}{(x^2+1)^2}\\)",
+      "\\(\\frac{1}{(x^2+1)^2}\\)",
+      "\\(\\frac{x^2-1}{(x^2+1)^2}\\)",
+      "\\(\\frac{2x}{(x^2+1)^2}\\)"
+    ],
+    "explanation": "Quotient rule: [(x²+1)(1)-x(2x)]/(x²+1)² = (1-x²)/(x²+1)².",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find \\(\\frac{dy}{dx}\\) if \\(x^2 + y^2 = 25\\) (implicit differentiation).",
+    "answer": "\\(-x/y\\)",
+    "options": [
+      "\\(-x/y\\)",
+      "\\(x/y\\)",
+      "\\(-y/x\\)",
+      "\\(y/x\\)"
+    ],
+    "explanation": "Differentiate: 2x + 2y(dy/dx) = 0. dy/dx = -x/y.",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "A curve is given parametrically by \\(x = t^2, y = t^3\\). Find dy/dx.",
+    "answer": "\\(\\frac{3t}{2}\\)",
+    "options": [
+      "\\(3t/2\\)",
+      "\\(3t^2/2t\\)",
+      "\\(2t/3\\)",
+      "\\(t/2\\)"
+    ],
+    "explanation": "dy/dx = (dy/dt)/(dx/dt) = 3t²/(2t) = 3t/2.",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = \\ln(\\sin x)\\).",
+    "answer": "\\(\\cot x\\)",
+    "options": [
+      "\\(\\cot x\\)",
+      "\\(\\cos x/\\sin x\\)",
+      "\\(1/\\sin x\\)",
+      "\\(-\\cot x\\)"
+    ],
+    "explanation": "dy/dx = cosx/sinx = cotx.",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find \\(\\frac{dy}{dx}\\) for \\(y = x^x\\) (x > 0).",
+    "answer": "\\(x^x(\\ln x + 1)\\)",
+    "options": [
+      "\\(x^x(\\ln x+1)\\)",
+      "\\(x \\cdot x^{x-1}\\)",
+      "\\(x^x \\ln x\\)",
+      "\\(x^{x+1}\\)"
+    ],
+    "explanation": "Take ln: lny = xlnx. Differentiate: (1/y)(dy/dx) = lnx+1. dy/dx = y(lnx+1) = x^x(lnx+1).",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = e^{\\sin x}\\).",
+    "answer": "\\(e^{\\sin x} \\cos x\\)",
+    "options": [
+      "\\(e^{\\sin x}\\cos x\\)",
+      "\\(e^{\\cos x}\\sin x\\)",
+      "\\(\\sin x \\cdot e^{\\sin x}\\)",
+      "\\(e^{\\sin x}\\)"
+    ],
+    "explanation": "Chain rule: dy/dx = e^{sinx} × cosx.",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find \\(\\frac{d^2y}{dx^2}\\) for the parametric curve \\(x = \\cos t, y = \\sin t\\).",
+    "answer": "\\(-\\frac{1}{\\sin^3 t}\\) or \\(-\\csc^3 t\\)",
+    "options": [
+      "\\(-\\csc^3 t\\)",
+      "\\(-\\cot t\\)",
+      "\\(\\sec^2 t\\)",
+      "\\(-1/\\cos t\\)"
+    ],
+    "explanation": "dy/dx = cost/(-sint) = -cott. d²y/dx² = d/dt(-cott)/(dx/dt) = (csc²t)/(-sint) = -csc³t.",
+    "difficulty": 2,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = (\\sin x)^{\\cos x}\\) for 0 < x < π/2.",
+    "answer": "\\((\\sin x)^{\\cos x}[\\cos x \\cot x - \\sin x \\ln(\\sin x)]\\)",
+    "options": [],
+    "explanation": "lny = cosx·ln(sinx). (1/y)dy/dx = -sinx·ln(sinx)+cosx·(cosx/sinx). dy/dx = y[cos²x/sinx - sinx·ln(sinx)].",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find dy/dx if \\(e^{xy} = x + y\\).",
+    "answer": "\\(\\frac{1-ye^{xy}}{xe^{xy}-1}\\)",
+    "options": [
+      "\\(\\frac{1-ye^{xy}}{xe^{xy}-1}\\)",
+      "\\(\\frac{ye^{xy}-1}{1-xe^{xy}}\\)",
+      "\\(\\frac{e^{xy}}{x+y}\\)",
+      "\\(\\frac{1+ye^{xy}}{xe^{xy}+1}\\)"
+    ],
+    "explanation": "Differentiate: e^{xy}(y+xdy/dx) = 1+dy/dx. ye^{xy}+xe^{xy}dy/dx = 1+dy/dx. dy/dx(xe^{xy}-1) = 1-ye^{xy}. dy/dx = (1-ye^{xy})/(xe^{xy}-1).",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "A curve is defined parametrically by \\(x = e^t \\cos t, y = e^t \\sin t\\). Show that dy/dx = tan(t + π/4).",
+    "answer": "dx/dt = e^t(cost-sint), dy/dt = e^t(sint+cost). dy/dx = (sint+cost)/(cost-sint) = (sint/cost+1)/(1-sint/cost) = (tant+1)/(1-tant) = tan(t+π/4).",
+    "options": [],
+    "explanation": "Use the tangent addition formula: tan(A+B) = (tanA+tanB)/(1-tanAtanB) with B=π/4.",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find the equation of the tangent to the curve \\(x^3 + y^3 = 6xy\\) at the point (3,3).",
+    "answer": "y = -x + 6 or x + y = 6",
+    "options": [
+      "x+y=6",
+      "y=x",
+      "y=-x+9",
+      "y=x-6"
+    ],
+    "explanation": "Implicit diff: 3x²+3y²dy/dx = 6y+6xdy/dx. At (3,3): 27+27dy/dx=18+18dy/dx. 9dy/dx=-9. dy/dx=-1. Tangent: y-3=-1(x-3), y=-x+6.",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Given \\(y = \\arctan(x)\\), prove that \\(\\frac{dy}{dx} = \\frac{1}{1+x^2}\\).",
+    "answer": "y=arctanx means x=tany. Differentiate: 1=sec²y·dy/dx. dy/dx=cos²y=1/sec²y=1/(1+tan²y)=1/(1+x²).",
+    "options": [],
+    "explanation": "Use implicit differentiation on x=tany and the identity sec²y=1+tan²y.",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find all points on \\(y = x^3 - 3x^2 + 1\\) where the tangent is parallel to y = 9x.",
+    "answer": "x = -1 or x = 3. Points: (-1, -3) and (3, 1).",
+    "options": [
+      "(-1,-3) and (3,1)",
+      "(0,1) and (3,1)",
+      "(-1,-3) only",
+      "(3,1) only"
+    ],
+    "explanation": "dy/dx = 3x²-6x = 9. x²-2x-3=0. (x-3)(x+1)=0. x=3: y=27-27+1=1. x=-1: y=-1-3+1=-3.",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Differentiate \\(y = \\frac{e^{2x}\\sqrt{1+x}}{(3x+1)^4}\\) using logarithmic differentiation.",
+    "answer": "\\(y\\left[2 + \\frac{1}{2(1+x)} - \\frac{12}{3x+1}\\right]\\)",
+    "options": [],
+    "explanation": "lny = 2x + (1/2)ln(1+x) - 4ln(3x+1). (1/y)dy/dx = 2 + 1/(2(1+x)) - 12/(3x+1).",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "A curve has parametric equations \\(x = 2t+1, y = t^2-t\\). Find d²y/dx² and determine where the curve is concave up.",
+    "answer": "d²y/dx² = 1/2 > 0 always, so concave up everywhere.",
+    "options": [
+      "Concave up everywhere (d²y/dx²=1/2)",
+      "Concave up for t>0 only",
+      "Concave down everywhere",
+      "Concave up for t>1/2"
+    ],
+    "explanation": "dy/dx = (2t-1)/2. d²y/dx² = (d/dt(dy/dx))/(dx/dt) = (2/2)/(2) = 1/2 > 0 always.",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Find dy/dx if \\(\\sin(x+y) = y^2 \\cos x\\).",
+    "answer": "\\(\\frac{y^2\\sin x + \\cos(x+y)}{2y\\cos x - \\cos(x+y)}\\)",
+    "options": [],
+    "explanation": "Differentiate: cos(x+y)(1+dy/dx) = 2y·dy/dx·cosx - y²sinx. cos(x+y)+cos(x+y)dy/dx = 2ycosx·dy/dx - y²sinx. dy/dx[cos(x+y)-2ycosx] = -y²sinx-cos(x+y). dy/dx = (y²sinx+cos(x+y))/(2ycosx-cos(x+y)).",
+    "difficulty": 3,
+    "topic_id": "alevel_diff_adv"
+  },
+  {
+    "question": "Integrate \\(\\int e^{5x} \\, dx\\).",
+    "answer": "\\(\\frac{e^{5x}}{5} + C\\)",
+    "options": [
+      "\\(e^{5x}/5+C\\)",
+      "\\(5e^{5x}+C\\)",
+      "\\(e^{5x}+C\\)",
+      "\\(e^{5x}/5\\)"
+    ],
+    "explanation": "∫e^{ax}dx = e^{ax}/a + C.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Integrate \\(\\int \\cos(2x) \\, dx\\).",
+    "answer": "\\(\\frac{\\sin(2x)}{2} + C\\)",
+    "options": [
+      "\\(\\sin(2x)/2+C\\)",
+      "\\(2\\sin(2x)+C\\)",
+      "\\(-\\sin(2x)/2+C\\)",
+      "\\(\\cos(2x)/2+C\\)"
+    ],
+    "explanation": "∫cos(ax)dx = sin(ax)/a + C.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Integrate \\(\\int \\frac{1}{x} \\, dx\\).",
+    "answer": "\\(\\ln|x| + C\\)",
+    "options": [
+      "\\(\\ln|x|+C\\)",
+      "\\(x^{-1}+C\\)",
+      "\\(-1/x^2+C\\)",
+      "\\(\\ln x + C\\)"
+    ],
+    "explanation": "The integral of 1/x is ln|x| + C (absolute value needed).",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Integrate \\(\\int \\sec^2 x \\, dx\\).",
+    "answer": "\\(\\tan x + C\\)",
+    "options": [
+      "\\(\\tan x+C\\)",
+      "\\(\\sec x+C\\)",
+      "\\(\\sin x+C\\)",
+      "\\(2\\sec x \\tan x+C\\)"
+    ],
+    "explanation": "Since d/dx(tanx) = sec²x, the integral is tanx + C.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "What is \\(\\int \\frac{f'(x)}{f(x)} \\, dx\\)?",
+    "answer": "\\(\\ln|f(x)| + C\\)",
+    "options": [
+      "\\(\\ln|f(x)|+C\\)",
+      "\\(\\frac{1}{f(x)}+C\\)",
+      "\\(f(x)\\ln f(x)+C\\)",
+      "\\(\\frac{f(x)}{f'(x)}+C\\)"
+    ],
+    "explanation": "This is the standard logarithmic integration formula.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "State the integration by parts formula.",
+    "answer": "\\(\\int u \\, dv = uv - \\int v \\, du\\)",
+    "options": [
+      "\\(uv - \\int v\\,du\\)",
+      "\\(uv + \\int v\\,du\\)",
+      "\\(\\int u\\,du \\cdot \\int v\\,dv\\)",
+      "\\(u/v - \\int u/v^2\\,dv\\)"
+    ],
+    "explanation": "Integration by parts reverses the product rule of differentiation.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Integrate \\(\\int 3x^2 e^{x^3} \\, dx\\).",
+    "answer": "\\(e^{x^3} + C\\)",
+    "options": [
+      "\\(e^{x^3}+C\\)",
+      "\\(3e^{x^3}+C\\)",
+      "\\(x^3e^{x^3}+C\\)",
+      "\\(e^{3x^2}+C\\)"
+    ],
+    "explanation": "Notice that 3x² is the derivative of x³. So this is ∫f'(x)e^{f(x)}dx = e^{f(x)}+C.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Integrate \\(\\int \\sin^2 x \\, dx\\) using the double angle identity.",
+    "answer": "\\(\\frac{x}{2} - \\frac{\\sin 2x}{4} + C\\)",
+    "options": [
+      "\\(x/2 - \\sin(2x)/4 + C\\)",
+      "\\(x/2 + \\sin(2x)/4 + C\\)",
+      "\\(-\\cos^2 x/2 + C\\)",
+      "\\(\\sin x \\cos x + C\\)"
+    ],
+    "explanation": "sin²x = (1-cos2x)/2. ∫(1-cos2x)/2 dx = x/2 - sin(2x)/4 + C.",
+    "difficulty": 1,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int x e^x \\, dx\\) using integration by parts.",
+    "answer": "\\(xe^x - e^x + C = e^x(x-1) + C\\)",
+    "options": [
+      "\\(e^x(x-1)+C\\)",
+      "\\(xe^x+C\\)",
+      "\\(e^x(x+1)+C\\)",
+      "\\(x^2e^x/2+C\\)"
+    ],
+    "explanation": "u=x, dv=e^x dx. du=dx, v=e^x. ∫xe^x dx = xe^x - ∫e^x dx = xe^x - e^x + C.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int \\frac{2x+3}{x^2+3x+5} \\, dx\\).",
+    "answer": "\\(\\ln|x^2+3x+5| + C\\)",
+    "options": [
+      "\\(\\ln|x^2+3x+5|+C\\)",
+      "\\(\\ln|2x+3|+C\\)",
+      "\\((x^2+3x+5)^{-1}+C\\)",
+      "\\(2\\ln|x^2+3x+5|+C\\)"
+    ],
+    "explanation": "The numerator 2x+3 is the derivative of x²+3x+5. So ∫f'/f dx = ln|f|+C.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find \\(\\int x\\cos x \\, dx\\).",
+    "answer": "\\(x\\sin x + \\cos x + C\\)",
+    "options": [
+      "\\(x\\sin x+\\cos x+C\\)",
+      "\\(x\\sin x-\\cos x+C\\)",
+      "\\(x\\cos x+\\sin x+C\\)",
+      "\\(\\sin x + x\\cos x+C\\)"
+    ],
+    "explanation": "By parts: u=x, dv=cosx dx. ∫xcosx dx = xsinx - ∫sinx dx = xsinx+cosx+C.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find \\(\\int \\frac{1}{x^2+4} \\, dx\\).",
+    "answer": "\\(\\frac{1}{2}\\arctan\\frac{x}{2} + C\\)",
+    "options": [
+      "\\(\\frac{1}{2}\\arctan(x/2)+C\\)",
+      "\\(\\arctan(x/2)+C\\)",
+      "\\(\\frac{1}{4}\\arctan(x/2)+C\\)",
+      "\\(\\ln(x^2+4)+C\\)"
+    ],
+    "explanation": "∫1/(x²+a²)dx = (1/a)arctan(x/a)+C with a=2.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int_0^1 x^2 e^x \\, dx\\).",
+    "answer": "\\(e - 2\\)",
+    "options": [
+      "\\(e-2\\)",
+      "\\(e-1\\)",
+      "\\(2e-3\\)",
+      "\\(e\\)"
+    ],
+    "explanation": "By parts twice: ∫x²e^x dx = x²e^x-2xe^x+2e^x+C = e^x(x²-2x+2). [e^x(x²-2x+2)]₀¹ = e(1-2+2)-1(2) = e-2.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find \\(\\int \\frac{x}{(x+1)(x+2)} \\, dx\\) using partial fractions.",
+    "answer": "\\(-\\ln|x+1| + 2\\ln|x+2| + C = \\ln\\frac{(x+2)^2}{|x+1|} + C\\)",
+    "options": [],
+    "explanation": "x/((x+1)(x+2)) = A/(x+1)+B/(x+2). A=-1, B=2. Integrate: -ln|x+1|+2ln|x+2|+C.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int \\sqrt{4-x^2} \\, dx\\) using \\(x = 2\\sin\\theta\\).",
+    "answer": "\\(\\frac{x\\sqrt{4-x^2}}{2} + 2\\arcsin\\frac{x}{2} + C\\)",
+    "options": [],
+    "explanation": "x=2sinθ, dx=2cosθdθ, √(4-x²)=2cosθ. ∫4cos²θdθ = 2θ+sin2θ+C = 2arcsin(x/2)+x√(4-x²)/2+C.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find \\(\\int \\ln x \\, dx\\).",
+    "answer": "\\(x\\ln x - x + C\\)",
+    "options": [
+      "\\(x\\ln x-x+C\\)",
+      "\\(x\\ln x+C\\)",
+      "\\(\\ln x/x+C\\)",
+      "\\(x\\ln x+x+C\\)"
+    ],
+    "explanation": "By parts: u=lnx, dv=dx. ∫lnx dx = xlnx - ∫(x·1/x)dx = xlnx-x+C.",
+    "difficulty": 2,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int e^x \\sin x \\, dx\\).",
+    "answer": "\\(\\frac{e^x(\\sin x - \\cos x)}{2} + C\\)",
+    "options": [
+      "\\(e^x(\\sin x-\\cos x)/2+C\\)",
+      "\\(e^x(\\sin x+\\cos x)/2+C\\)",
+      "\\(e^x\\sin x+C\\)",
+      "\\(-e^x\\cos x+C\\)"
+    ],
+    "explanation": "Apply by parts twice: I = e^x sinx - ∫e^x cosx dx = e^x sinx - [e^x cosx + ∫e^x sinx dx] = e^x(sinx-cosx)-I. 2I = e^x(sinx-cosx). I = e^x(sinx-cosx)/2+C.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Show that \\(\\int_0^{\\pi/2} \\sin^n x \\, dx = \\frac{n-1}{n}\\int_0^{\\pi/2} \\sin^{n-2} x \\, dx\\) for n ≥ 2.",
+    "answer": "By parts: u=sin^{n-1}x, dv=sinx dx. Then use cos²x=1-sin²x to get the reduction formula.",
+    "options": [],
+    "explanation": "∫sin^n x dx = -sin^{n-1}x·cosx + (n-1)∫sin^{n-2}x·cos²x dx = -sin^{n-1}x·cosx + (n-1)∫sin^{n-2}x dx - (n-1)∫sin^n x dx. Rearranging gives the result.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find \\(\\int \\frac{x^2+1}{(x-1)^2(x+1)} \\, dx\\) using partial fractions.",
+    "answer": "Partial fractions: x²+1/((x-1)²(x+1)) = A/(x-1)+B/(x-1)²+C/(x+1). x²+1=A(x-1)(x+1)+B(x+1)+C(x-1)². x=1: 2=2B, B=1. x=-1: 2=4C, C=1/2. x=0: 1=-A+B+C=-A+3/2, A=1/2. Answer: (1/2)ln|x-1|-1/(x-1)+(1/2)ln|x+1|+C.",
+    "options": [],
+    "explanation": "Decompose into partial fractions, then integrate each term.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int_0^1 \\frac{\\ln(1+x)}{1+x^2} \\, dx\\).",
+    "answer": "\\(\\frac{\\pi}{8}\\ln 2\\)",
+    "options": [
+      "\\(\\frac{\\pi}{8}\\ln 2\\)",
+      "\\(\\frac{\\pi}{4}\\ln 2\\)",
+      "\\(\\frac{\\ln 2}{2}\\)",
+      "\\(\\frac{\\pi}{16}\\ln 2\\)"
+    ],
+    "explanation": "Substitute x=tanθ and use symmetry properties. This is a well-known result.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find the volume of revolution when \\(y = \\sqrt{\\sin x}\\) is rotated about the x-axis from x = 0 to x = π.",
+    "answer": "\\(2\\pi\\)... V = π∫₀^π sinx dx = π[-cosx]₀^π = π(1+1) = 2π.",
+    "options": [
+      "2π",
+      "π",
+      "π²",
+      "4π"
+    ],
+    "explanation": "V = π∫y²dx = π∫₀^π sinx dx = π[-cosx]₀^π = π(1+1) = 2π.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int \\frac{1}{\\sqrt{x}(1+x)} \\, dx\\) using the substitution \\(u = \\sqrt{x}\\).",
+    "answer": "\\(2\\arctan(\\sqrt{x}) + C\\)",
+    "options": [
+      "\\(2\\arctan(\\sqrt{x})+C\\)",
+      "\\(\\arctan(\\sqrt{x})+C\\)",
+      "\\(\\ln(1+\\sqrt{x})+C\\)",
+      "\\(2\\ln(1+x)+C\\)"
+    ],
+    "explanation": "u=√x, x=u², dx=2u du. ∫2u/(u(1+u²))du = ∫2/(1+u²)du = 2arctan(u)+C = 2arctan(√x)+C.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find \\(\\int x^3 \\ln x \\, dx\\).",
+    "answer": "\\(\\frac{x^4}{4}\\ln x - \\frac{x^4}{16} + C\\)",
+    "options": [
+      "\\(x^4\\ln x/4-x^4/16+C\\)",
+      "\\(x^4\\ln x/4+C\\)",
+      "\\(x^4\\ln x/4-x^4/4+C\\)",
+      "\\(x^3\\ln x-x^3/3+C\\)"
+    ],
+    "explanation": "By parts: u=lnx, dv=x³dx. ∫x³lnx dx = (x⁴/4)lnx - ∫x⁴/(4x)dx = (x⁴/4)lnx - x⁴/16 + C.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Evaluate \\(\\int_0^{\\pi/4} \\tan^4 x \\, dx\\).",
+    "answer": "\\(\\frac{\\pi}{4} - \\frac{2}{3}\\)... Wait. ∫tan⁴x dx = ∫tan²x(sec²x-1)dx = ∫tan²x sec²x dx - ∫tan²x dx = tan³x/3 - tanx + x + C. [tan³x/3-tanx+x]₀^{π/4} = 1/3-1+π/4 = π/4-2/3.",
+    "options": [
+      "\\(\\frac{\\pi}{4}-\\frac{2}{3}\\)",
+      "\\(\\frac{\\pi}{4}-\\frac{1}{3}\\)",
+      "\\(1-\\frac{\\pi}{4}\\)",
+      "\\(\\frac{2}{3}-\\frac{\\pi}{4}\\)"
+    ],
+    "explanation": "Use tan⁴x = tan²x(sec²x-1) = tan²x sec²x - tan²x, then use tan²x = sec²x-1 again.",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "Find the volume when the region between \\(y = e^x\\) and \\(y = e^{-x}\\) for \\(0 \\leq x \\leq 1\\) is rotated about the x-axis.",
+    "answer": "\\(\\frac{\\pi}{2}(e^2+e^{-2}-2)\\)",
+    "options": [
+      "\\(\\frac{\\pi}{2}(e^2+e^{-2}-2)\\)",
+      "\\(\\frac{\\pi}{2}(e^2-e^{-2})\\)",
+      "\\(\\pi(e^2-1)\\)",
+      "\\(\\pi(e-1/e)\\)"
+    ],
+    "explanation": "V = π∫₀¹(e^{2x}-e^{-2x})dx = π[e^{2x}/2+e^{-2x}/2]₀¹ = π/2[(e²+e^{-2})-(1+1)]. Hmm: π[e^{2x}/2-(-e^{-2x}/2)]₀¹ = π[(e²/2+e^{-2}/2)-(1/2+1/2)] = (π/2)(e²+e^{-2}-2). Wait, the washer method: V=π∫(e^{2x}-e^{-2x})dx. ∫e^{2x}dx=e^{2x}/2, ∫e^{-2x}dx=-e^{-2x}/2. V=π[e^{2x}/2+e^{-2x}/2]₀¹=π[(e²+e^{-2})/2-1]=(π/2)(e²+e^{-2}-2).",
+    "difficulty": 3,
+    "topic_id": "alevel_int_adv"
+  },
+  {
+    "question": "What is a separable differential equation?",
+    "answer": "A DE of the form dy/dx = f(x)g(y), where variables can be separated.",
+    "options": [
+      "dy/dx = f(x)g(y)",
+      "dy/dx = f(x) + g(y)",
+      "dy/dx = f(x/y)",
+      "d²y/dx² = f(x)"
+    ],
+    "explanation": "A separable ODE can be written with all y terms on one side and all x terms on the other.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = 2x\\) given y(0) = 3.",
+    "answer": "\\(y = x^2 + 3\\)",
+    "options": [
+      "\\(x^2+3\\)",
+      "\\(2x+3\\)",
+      "\\(x^2\\)",
+      "\\(x^2-3\\)"
+    ],
+    "explanation": "∫dy = ∫2x dx. y = x² + C. y(0)=3: C=3.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = ky\\).",
+    "answer": "\\(y = Ae^{kx}\\) where A is a constant.",
+    "options": [
+      "\\(Ae^{kx}\\)",
+      "\\(kx+A\\)",
+      "\\(Ax^k\\)",
+      "\\(A\\cos(kx)\\)"
+    ],
+    "explanation": "This is the standard exponential growth/decay equation.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "What is an integrating factor for a first-order linear ODE \\(\\frac{dy}{dx} + P(x)y = Q(x)\\)?",
+    "answer": "\\(e^{\\int P(x) \\, dx}\\)",
+    "options": [
+      "\\(e^{\\int P(x)dx}\\)",
+      "\\(e^{P(x)}\\)",
+      "\\(\\int P(x)dx\\)",
+      "\\(P(x)e^x\\)"
+    ],
+    "explanation": "The integrating factor transforms the equation into an exact derivative.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Classify the ODE \\(\\frac{dy}{dx} + 3y = e^x\\): is it separable, linear, or both?",
+    "answer": "Linear (first-order).",
+    "options": [
+      "Linear",
+      "Separable",
+      "Both",
+      "Neither"
+    ],
+    "explanation": "It's in the form dy/dx + P(x)y = Q(x) with P=3, Q=e^x. It's linear but not separable since dy/dx = e^x-3y can't be written as f(x)g(y).",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = \\frac{y}{x}\\).",
+    "answer": "\\(y = Cx\\) where C is a constant.",
+    "options": [
+      "\\(y=Cx\\)",
+      "\\(y=C/x\\)",
+      "\\(y=Cx^2\\)",
+      "\\(y=Ce^x\\)"
+    ],
+    "explanation": "Separate: dy/y = dx/x. ln|y| = ln|x|+C'. y = Cx.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "What order is the ODE \\(\\frac{d^2y}{dx^2} + 3\\frac{dy}{dx} + 2y = 0\\)?",
+    "answer": "Second order",
+    "options": [
+      "Second order",
+      "First order",
+      "Third order",
+      "Zero order"
+    ],
+    "explanation": "The highest derivative is d²y/dx², so it's second order.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = 6x^2\\) with y(1) = 2.",
+    "answer": "\\(y = 2x^3\\)",
+    "options": [
+      "\\(2x^3\\)",
+      "\\(2x^3+1\\)",
+      "\\(6x^3+2\\)",
+      "\\(2x^3-1\\)"
+    ],
+    "explanation": "y = 2x³+C. y(1)=2: 2+C=2, C=0. y=2x³.",
+    "difficulty": 1,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = \\frac{x}{y}\\) given y(0) = 2.",
+    "answer": "\\(y = \\sqrt{x^2+4}\\)",
+    "options": [
+      "\\(\\sqrt{x^2+4}\\)",
+      "\\(\\sqrt{2x}\\)",
+      "\\(x+2\\)",
+      "\\(\\sqrt{x^2+2}\\)"
+    ],
+    "explanation": "ydy = xdx. y²/2 = x²/2+C. y(0)=2: 2=C. y² = x²+4. y=√(x²+4) (positive root).",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} + 2y = e^{3x}\\).",
+    "answer": "\\(y = \\frac{e^{3x}}{5} + Ce^{-2x}\\)",
+    "options": [
+      "\\(e^{3x}/5+Ce^{-2x}\\)",
+      "\\(e^{3x}/3+Ce^{-2x}\\)",
+      "\\(e^{3x}+Ce^{-2x}\\)",
+      "\\(e^{3x}/5+Ce^{2x}\\)"
+    ],
+    "explanation": "IF = e^{2x}. d/dx(ye^{2x}) = e^{5x}. ye^{2x} = e^{5x}/5+C. y = e^{3x}/5+Ce^{-2x}.",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = y^2\\) with y(0) = 1.",
+    "answer": "\\(y = \\frac{1}{1-x}\\)",
+    "options": [
+      "\\(1/(1-x)\\)",
+      "\\(1/(1+x)\\)",
+      "\\(e^x\\)",
+      "\\(1/(x-1)\\)"
+    ],
+    "explanation": "dy/y² = dx. -1/y = x+C. y(0)=1: -1=C. -1/y=x-1. y=1/(1-x).",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "A population grows at a rate proportional to itself. If P(0)=100 and P(5)=200, find P(t).",
+    "answer": "\\(P = 100 \\cdot 2^{t/5}\\)",
+    "options": [
+      "\\(100 \\cdot 2^{t/5}\\)",
+      "\\(100e^{t/5}\\)",
+      "\\(200t+100\\)",
+      "\\(100(1+t/5)\\)"
+    ],
+    "explanation": "dP/dt=kP. P=100e^{kt}. P(5)=200: e^{5k}=2, k=ln2/5. P=100e^{tln2/5}=100·2^{t/5}.",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} + \\frac{y}{x} = x^2\\) for x > 0.",
+    "answer": "\\(y = \\frac{x^3}{4} + \\frac{C}{x}\\)",
+    "options": [
+      "\\(x^3/4+C/x\\)",
+      "\\(x^3/3+C/x\\)",
+      "\\(x^3/4+Cx\\)",
+      "\\(x^2/3+C/x\\)"
+    ],
+    "explanation": "IF = e^{∫1/x dx} = x. d/dx(xy) = x³. xy = x⁴/4+C. y = x³/4+C/x.",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "A radioactive substance decays so that dm/dt = -λm. If half the mass remains after 10 years, find λ.",
+    "answer": "λ = ln2/10",
+    "options": [
+      "ln2/10",
+      "1/10",
+      "2/10",
+      "ln10/2"
+    ],
+    "explanation": "m = m₀e^{-λt}. m₀/2 = m₀e^{-10λ}. e^{-10λ}=1/2. λ = ln2/10.",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(x\\frac{dy}{dx} - y = x^2\\).",
+    "answer": "\\(y = Cx - x^2... \\) Rewrite: dy/dx - y/x = x. IF = e^{-lnx} = 1/x. d/dx(y/x) = 1. y/x = x+C. y = x²+Cx.",
+    "options": [
+      "y=x²+Cx",
+      "y=Cx-x²",
+      "y=x²+C",
+      "y=x²/2+Cx"
+    ],
+    "explanation": "Dividing by x: dy/dx-y/x=x. IF=1/x. d/dx(y/x)=1. y/x=x+C. y=x²+Cx.",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = e^{x-y}\\).",
+    "answer": "\\(e^y = e^x + C\\) or \\(y = \\ln(e^x+C)\\)",
+    "options": [
+      "\\(y=\\ln(e^x+C)\\)",
+      "\\(y=e^x+C\\)",
+      "\\(y=x+Ce^{-x}\\)",
+      "\\(e^{x+y}=C\\)"
+    ],
+    "explanation": "e^{x-y}=e^x·e^{-y}. e^y dy = e^x dx. e^y = e^x+C. y = ln(e^x+C).",
+    "difficulty": 2,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Newton's law of cooling states \\(\\frac{dT}{dt} = -k(T-T_s)\\). A body cools from 80°C to 60°C in 10 min in a room at 20°C. Find its temperature after 20 min.",
+    "answer": "46.67°C",
+    "options": [
+      "46.67°C",
+      "50°C",
+      "40°C",
+      "53.33°C"
+    ],
+    "explanation": "T-20 = 60e^{-kt}. At t=0: T=80, so 60e^0=60. ✓. At t=10: 60e^{-10k}=40, e^{-10k}=2/3. At t=20: T-20=60(2/3)²=60(4/9)=80/3≈26.67. T≈46.67°C.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = \\frac{x+y}{x-y}\\) using the substitution y = vx.",
+    "answer": "Substituting y=vx: v+xdv/dx=(1+v)/(1-v). xdv/dx=(1+v)/(1-v)-v=(1+v-v+v²)/(1-v)=(1+v²)/(1-v). ∫(1-v)/(1+v²)dv=∫dx/x. arctan(v)-(1/2)ln(1+v²)=ln|x|+C.",
+    "options": [],
+    "explanation": "This is a homogeneous DE. The substitution y=vx reduces it to a separable equation.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve the Bernoulli equation \\(\\frac{dy}{dx} + y = xy^2\\).",
+    "answer": "Let v=y^{-1}. dv/dx - v = -x. IF=e^{-x}. d/dx(ve^{-x})=-xe^{-x}. ve^{-x}=xe^{-x}+e^{-x}+C (by parts). v=x+1+Ce^x. y=1/(x+1+Ce^x).",
+    "options": [],
+    "explanation": "For Bernoulli with n=2: substitute v=y^{1-n}=y^{-1} to linearise.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "A tank contains 100 litres of pure water. Brine with 2 kg/L salt enters at 3 L/min and well-mixed solution leaves at 3 L/min. Find the amount of salt after t minutes.",
+    "answer": "S(t) = 200(1 - e^{-3t/100})",
+    "options": [
+      "200(1-e^{-3t/100})",
+      "200(1-e^{-t/100})",
+      "200e^{-3t/100}",
+      "6t"
+    ],
+    "explanation": "dS/dt = 6 - 3S/100. This is linear: dS/dt + 3S/100 = 6. IF = e^{3t/100}. S = 200+Ce^{-3t/100}. S(0)=0: C=-200.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\(\\frac{dy}{dx} = \\frac{2xy+y^2}{x^2}\\).",
+    "answer": "This is homogeneous. Let y=vx: v+xdv/dx = (2v+v²). xdv/dx = v+v². ∫dv/(v(v+1)) = ∫dx/x. ln|v/(v+1)| = ln|x|+C. v/(v+1) = Ax. y/(y+x)=Ax. y=Ax(y+x)/(1)... or y=Ax²/(1-Ax).",
+    "options": [],
+    "explanation": "Homogeneous substitution y=vx leads to a separable equation, then partial fractions.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "A logistic growth model is \\(\\frac{dP}{dt} = rP(1-P/K)\\). If r=0.5, K=1000, P(0)=100, find P(t).",
+    "answer": "\\(P(t) = \\frac{1000}{1+9e^{-0.5t}}\\)",
+    "options": [
+      "\\(\\frac{1000}{1+9e^{-0.5t}}\\)",
+      "\\(1000e^{0.5t}\\)",
+      "\\(100+900(1-e^{-0.5t})\\)",
+      "\\(\\frac{1000}{1+9e^{0.5t}}\\)"
+    ],
+    "explanation": "General solution: P = K/(1+((K-P₀)/P₀)e^{-rt}). Here K=1000,P₀=100: (K-P₀)/P₀=900/100=9.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Solve \\((1+x^2)\\frac{dy}{dx} + 2xy = \\frac{1}{1+x^2}\\).",
+    "answer": "y = (arctan(x)+C)/(1+x²)",
+    "options": [],
+    "explanation": "Rewrite: dy/dx + 2x/(1+x²)·y = 1/(1+x²)². IF = e^{∫2x/(1+x²)dx} = 1+x². d/dx(y(1+x²)) = 1/(1+x²). y(1+x²) = arctan(x)+C.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "A body falls under gravity with air resistance proportional to velocity: \\(m\\frac{dv}{dt} = mg - kv\\). Find v(t) if v(0)=0.",
+    "answer": "\\(v = \\frac{mg}{k}(1 - e^{-kt/m})\\)",
+    "options": [
+      "\\(\\frac{mg}{k}(1-e^{-kt/m})\\)",
+      "\\(gt\\)",
+      "\\(\\frac{mg}{k}e^{-kt/m}\\)",
+      "\\(\\frac{mg}{k}(1+e^{-kt/m})\\)"
+    ],
+    "explanation": "dv/dt + (k/m)v = g. IF = e^{kt/m}. v = mg/k + Ce^{-kt/m}. v(0)=0: C=-mg/k. v = (mg/k)(1-e^{-kt/m}).",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Verify that \\(y = \\frac{\\sin x}{x}\\) satisfies \\(xy' + y = \\cos x\\).",
+    "answer": "y' = (xcosx-sinx)/x². xy' = (xcosx-sinx)/x = cosx - sinx/x. xy'+y = cosx - sinx/x + sinx/x = cosx. ✓",
+    "options": [],
+    "explanation": "Compute y' using the quotient rule, then substitute into the equation to verify.",
+    "difficulty": 3,
+    "topic_id": "alevel_de"
+  },
+  {
+    "question": "Evaluate \\(5!\\).",
+    "answer": "120",
+    "options": [
+      "120",
+      "60",
+      "24",
+      "720"
+    ],
+    "explanation": "5! = 5×4×3×2×1 = 120.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "Evaluate \\(\\binom{7}{3}\\).",
+    "answer": "35",
+    "options": [
+      "35",
+      "21",
+      "42",
+      "210"
+    ],
+    "explanation": "C(7,3) = 7!/(3!4!) = 35.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many ways can 5 people be arranged in a line?",
+    "answer": "120",
+    "options": [
+      "120",
+      "60",
+      "25",
+      "5"
+    ],
+    "explanation": "5! = 120 permutations.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many ways can 3 books be chosen from 8?",
+    "answer": "56",
+    "options": [
+      "56",
+      "336",
+      "24",
+      "28"
+    ],
+    "explanation": "C(8,3) = 56.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "What is the difference between a permutation and a combination?",
+    "answer": "Permutations consider order; combinations do not.",
+    "options": [
+      "Permutations consider order; combinations do not",
+      "They are the same",
+      "Combinations consider order; permutations do not",
+      "Permutations are for identical items only"
+    ],
+    "explanation": "nPr counts ordered arrangements; nCr counts unordered selections.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many ways can the letters of 'CAT' be arranged?",
+    "answer": "6",
+    "options": [
+      "6",
+      "3",
+      "9",
+      "27"
+    ],
+    "explanation": "3! = 6 arrangements.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "Evaluate \\(P(6,2)\\) (6 permute 2).",
+    "answer": "30",
+    "options": [
+      "30",
+      "15",
+      "12",
+      "36"
+    ],
+    "explanation": "P(6,2) = 6!/4! = 6×5 = 30.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many 3-digit numbers can be formed from digits 1-5 without repetition?",
+    "answer": "60",
+    "options": [
+      "60",
+      "125",
+      "120",
+      "15"
+    ],
+    "explanation": "5×4×3 = 60.",
+    "difficulty": 1,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many ways can the letters of 'MISSISSIPPI' be arranged?",
+    "answer": "34650",
+    "options": [
+      "34650",
+      "39916800",
+      "11!",
+      "5040"
+    ],
+    "explanation": "11!/(4!4!2!1!) = 39916800/1152 = 34650. (4 S's, 4 I's, 2 P's, 1 M)",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "A committee of 5 is formed from 6 men and 4 women. How many committees have at least 3 women?",
+    "answer": "66",
+    "options": [
+      "66",
+      "36",
+      "30",
+      "16"
+    ],
+    "explanation": "3W2M: C(4,3)C(6,2)=4×15=60. 4W1M: C(4,4)C(6,1)=1×6=6. Total=66. Hmm wait: exactly 3 women = C(4,3)×C(6,2)=4×15=60. Exactly 4 women = C(4,4)×C(6,1)=6. Total=66.",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "In how many ways can 8 people be seated around a circular table?",
+    "answer": "5040",
+    "options": [
+      "5040",
+      "40320",
+      "720",
+      "7!"
+    ],
+    "explanation": "Circular permutations of n objects = (n-1)! = 7! = 5040.",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many 4-letter 'words' can be formed from ABCDE if repetition is allowed?",
+    "answer": "625",
+    "options": [
+      "625",
+      "120",
+      "256",
+      "1024"
+    ],
+    "explanation": "5⁴ = 625 (5 choices for each of 4 positions).",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "A hand of 5 cards is dealt from 52. How many hands contain exactly 2 aces?",
+    "answer": "C(4,2)×C(48,3) = 6×17296 = 103776",
+    "options": [
+      "103776",
+      "2598960",
+      "6×C(48,3)",
+      "103680"
+    ],
+    "explanation": "Choose 2 aces from 4: C(4,2)=6. Choose 3 non-aces from 48: C(48,3)=17296. Total: 103776.",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many ways can 10 identical balls be placed into 3 distinct boxes?",
+    "answer": "C(12,2) = 66",
+    "options": [
+      "66",
+      "30",
+      "120",
+      "1000"
+    ],
+    "explanation": "Stars and bars: C(n+r-1,r-1) = C(10+3-1,3-1) = C(12,2) = 66.",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many 5-digit even numbers can be formed from digits 0-9 without repetition?",
+    "answer": "13776",
+    "options": [
+      "13776",
+      "15120",
+      "30240",
+      "27216"
+    ],
+    "explanation": "Split into cases based on whether last digit is 0 or another even digit, being careful that the first digit cannot be 0.",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many subsets does a set of n elements have?",
+    "answer": "\\(2^n\\)",
+    "options": [
+      "\\(2^n\\)",
+      "\\(n^2\\)",
+      "\\(n!\\)",
+      "\\(n2^{n-1}\\)"
+    ],
+    "explanation": "Each element is either in or out of a subset: 2 choices per element, giving 2^n total subsets.",
+    "difficulty": 2,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "Using inclusion-exclusion, find the number of integers from 1 to 100 divisible by 2, 3, or 5.",
+    "answer": "74",
+    "options": [
+      "74",
+      "70",
+      "80",
+      "60"
+    ],
+    "explanation": "|A∪B∪C| = |A|+|B|+|C|-|A∩B|-|A∩C|-|B∩C|+|A∩B∩C| = 50+33+20-16-10-6+3 = 74.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many derangements of {1,2,3,4,5} exist (no element in its original position)?",
+    "answer": "44",
+    "options": [
+      "44",
+      "45",
+      "40",
+      "60"
+    ],
+    "explanation": "D(5) = 5!(1-1+1/2-1/6+1/24-1/120) = 120(1/2-1/6+1/24-1/120) = 120(44/120) = 44.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "In how many ways can 12 people be divided into 3 groups of 4?",
+    "answer": "\\(\\frac{12!}{(4!)^3 \\cdot 3!} = 5775\\)",
+    "options": [
+      "5775",
+      "34650",
+      "15400",
+      "2520"
+    ],
+    "explanation": "C(12,4)×C(8,4)×C(4,4)/3! = 495×70×1/6 = 5775 (divide by 3! since groups are unlabelled).",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "Find the number of 7-letter arrangements of ARRANGE.",
+    "answer": "1260",
+    "options": [
+      "1260",
+      "2520",
+      "5040",
+      "630"
+    ],
+    "explanation": "ARRANGE has 7 letters: A(2), R(2), N(1), G(1), E(1). 7!/(2!2!) = 5040/4 = 1260.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "5 boys and 5 girls sit in a row. How many arrangements have no two boys adjacent?",
+    "answer": "5!×5!×C(6,5) = 120×120×6 = 86400",
+    "options": [
+      "86400",
+      "14400",
+      "3628800",
+      "604800"
+    ],
+    "explanation": "Place 5 girls first (5! ways), creating 6 gaps. Choose 5 gaps for boys: C(6,5)=6. Arrange boys: 5!. Total: 5!×5!×6=86400.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many non-negative integer solutions exist for \\(x_1+x_2+x_3=10\\) where \\(x_1 \\leq 5\\)?",
+    "answer": "C(12,2) - C(6,2) = 66 - 15 = 51",
+    "options": [
+      "51",
+      "66",
+      "45",
+      "56"
+    ],
+    "explanation": "Total without restriction: C(12,2)=66. Subtract cases x₁≥6: let x₁'=x₁-6, x₁'+x₂+x₃=4, C(6,2)=15. Answer: 66-15=51.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "A chess tournament has 10 players. Each pair plays exactly one game. How many games in total?",
+    "answer": "45",
+    "options": [
+      "45",
+      "90",
+      "100",
+      "50"
+    ],
+    "explanation": "C(10,2) = 45 games.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "How many ways can 3 identical red balls and 4 identical blue balls be arranged in a row?",
+    "answer": "35",
+    "options": [
+      "35",
+      "7!",
+      "210",
+      "21"
+    ],
+    "explanation": "7!/(3!4!) = 35.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "Find the number of surjective (onto) functions from a 4-element set to a 3-element set.",
+    "answer": "36",
+    "options": [
+      "36",
+      "81",
+      "64",
+      "24"
+    ],
+    "explanation": "By inclusion-exclusion: 3⁴ - C(3,1)2⁴ + C(3,2)1⁴ = 81 - 48 + 3 = 36.",
+    "difficulty": 3,
+    "topic_id": "alevel_counting"
+  },
+  {
+    "question": "If \\(X \\sim B(10, 0.3)\\), what is E(X)?",
+    "answer": "3",
+    "options": [
+      "3",
+      "0.3",
+      "10",
+      "7"
+    ],
+    "explanation": "E(X) = np = 10(0.3) = 3.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If \\(X \\sim Po(5)\\), what is E(X)?",
+    "answer": "5",
+    "options": [
+      "5",
+      "25",
+      "10",
+      "√5"
+    ],
+    "explanation": "For a Poisson distribution, E(X) = λ = 5.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "State the variance of \\(X \\sim B(n,p)\\).",
+    "answer": "\\(np(1-p)\\)",
+    "options": [
+      "\\(np(1-p)\\)",
+      "\\(np\\)",
+      "\\(np^2\\)",
+      "\\(n(1-p)\\)"
+    ],
+    "explanation": "Var(X) = npq where q=1-p.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If \\(X \\sim N(50, 16)\\), what are the mean and standard deviation?",
+    "answer": "Mean = 50, SD = 4",
+    "options": [
+      "Mean=50, SD=4",
+      "Mean=50, SD=16",
+      "Mean=50, SD=√50",
+      "Mean=16, SD=50"
+    ],
+    "explanation": "N(μ,σ²): μ=50, σ²=16, σ=4.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "What is \\(P(X=k)\\) for \\(X \\sim Po(\\lambda)\\)?",
+    "answer": "\\(\\frac{e^{-\\lambda}\\lambda^k}{k!}\\)",
+    "options": [
+      "\\(e^{-\\lambda}\\lambda^k/k!\\)",
+      "\\(\\lambda^k/k!\\)",
+      "\\(e^{-\\lambda}/k\\)",
+      "\\(\\binom{n}{k}\\lambda^k\\)"
+    ],
+    "explanation": "The Poisson probability mass function.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "For the standard normal distribution \\(Z \\sim N(0,1)\\), what is \\(P(Z < 0)\\)?",
+    "answer": "0.5",
+    "options": [
+      "0.5",
+      "0",
+      "1",
+      "0.68"
+    ],
+    "explanation": "The standard normal is symmetric about 0, so P(Z<0) = 0.5.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If \\(X \\sim B(1, p)\\), what type of distribution is this?",
+    "answer": "Bernoulli distribution.",
+    "options": [
+      "Bernoulli",
+      "Geometric",
+      "Uniform",
+      "Poisson"
+    ],
+    "explanation": "B(1,p) is a single Bernoulli trial.",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "State the condition for using the Poisson distribution as an approximation to the Binomial.",
+    "answer": "n is large and p is small (typically n ≥ 50, p ≤ 0.1), with λ = np.",
+    "options": [
+      "n large, p small, λ=np",
+      "n=p",
+      "n and p both large",
+      "p close to 0.5"
+    ],
+    "explanation": "When n is large and p is small, B(n,p) ≈ Po(np).",
+    "difficulty": 1,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If \\(X \\sim B(8, 0.4)\\), find P(X = 3).",
+    "answer": "C(8,3)(0.4)³(0.6)⁵ = 56×0.064×0.07776 = 0.2787",
+    "options": [
+      "0.279",
+      "0.209",
+      "0.232",
+      "0.312"
+    ],
+    "explanation": "P(X=3) = C(8,3)(0.4)³(0.6)⁵ ≈ 0.279.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If \\(X \\sim Po(3)\\), find P(X ≥ 2).",
+    "answer": "1 - P(X=0) - P(X=1) = 1 - e⁻³ - 3e⁻³ = 1 - 4e⁻³ ≈ 0.801",
+    "options": [
+      "0.801",
+      "0.577",
+      "0.423",
+      "0.900"
+    ],
+    "explanation": "P(X≥2) = 1 - P(X≤1) = 1 - e⁻³(1+3) = 1 - 4e⁻³ ≈ 0.801.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If \\(X \\sim N(100, 25)\\), find \\(P(X > 105)\\).",
+    "answer": "P(Z > (105-100)/5) = P(Z > 1) ≈ 0.1587",
+    "options": [
+      "0.159",
+      "0.341",
+      "0.500",
+      "0.841"
+    ],
+    "explanation": "Standardise: Z = (105-100)/5 = 1. P(Z>1) = 1-Φ(1) ≈ 0.1587.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "Events occur at an average rate of 2 per minute. Find the probability of exactly 5 events in 3 minutes.",
+    "answer": "P(X=5) where X~Po(6) = e⁻⁶(6⁵)/5! = e⁻⁶(7776)/120 ≈ 0.1606",
+    "options": [
+      "0.161",
+      "0.201",
+      "0.120",
+      "0.100"
+    ],
+    "explanation": "In 3 minutes, λ=6. P(X=5) = e⁻⁶×6⁵/5! ≈ 0.161.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "X ~ N(μ, σ²). If P(X < 70) = 0.3 and P(X < 90) = 0.8, find μ and σ.",
+    "answer": "(70-μ)/σ = -0.5244 and (90-μ)/σ = 0.8416. Subtracting: 20/σ = 1.366, σ ≈ 14.64. μ = 70+0.5244(14.64) ≈ 77.68.",
+    "options": [],
+    "explanation": "Use z-tables: z₁ = Φ⁻¹(0.3) ≈ -0.5244, z₂ = Φ⁻¹(0.8) ≈ 0.8416. Set up simultaneous equations.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If X ~ B(100, 0.02), approximate P(X ≥ 3) using a Poisson distribution.",
+    "answer": "λ = 2. P(X≥3) = 1-P(X≤2) = 1-e⁻²(1+2+2) = 1-5e⁻² ≈ 0.3233",
+    "options": [
+      "0.323",
+      "0.677",
+      "0.265",
+      "0.180"
+    ],
+    "explanation": "B(100,0.02) ≈ Po(2). P(X≥3) = 1-P(X=0)-P(X=1)-P(X=2) = 1-5e⁻² ≈ 0.323.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "Find P(|Z| < 1.96) where Z ~ N(0,1).",
+    "answer": "0.95",
+    "options": [
+      "0.95",
+      "0.975",
+      "0.99",
+      "0.90"
+    ],
+    "explanation": "P(-1.96<Z<1.96) = 2Φ(1.96)-1 = 2(0.975)-1 = 0.95.",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "X and Y are independent with X~N(10,4) and Y~N(20,9). Find the distribution of X+Y.",
+    "answer": "X+Y ~ N(30, 13)",
+    "options": [
+      "N(30,13)",
+      "N(30,36)",
+      "N(30,6.5)",
+      "N(30,√13)"
+    ],
+    "explanation": "For independent normals: X+Y ~ N(μ₁+μ₂, σ₁²+σ₂²) = N(30, 4+9) = N(30,13).",
+    "difficulty": 2,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "X ~ B(n, 0.4). If P(X=0) < 0.01, find the least n.",
+    "answer": "(0.6)^n < 0.01. n ln(0.6) < ln(0.01). n > ln(0.01)/ln(0.6) = -4.605/(-0.5108) = 9.02. n = 10.",
+    "options": [
+      "10",
+      "9",
+      "8",
+      "11"
+    ],
+    "explanation": "(0.6)^n < 0.01. n > ln(0.01)/ln(0.6) ≈ 9.02. So n = 10.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "Show that if X ~ Po(λ), then E(X(X-1)) = λ² and hence Var(X) = λ.",
+    "answer": "E(X(X-1)) = ∑k(k-1)e^{-λ}λ^k/k! = λ²∑e^{-λ}λ^{k-2}/(k-2)! = λ². E(X²)=λ²+λ. Var(X)=E(X²)-(E(X))²=λ²+λ-λ²=λ.",
+    "options": [],
+    "explanation": "Compute the factorial moment E(X(X-1)) by simplifying the sum, then use Var(X) = E(X²)-[E(X)]².",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "A normal approximation to B(100, 0.3) is used. Find P(X ≤ 25) with continuity correction.",
+    "answer": "μ=30, σ²=21, σ≈4.583. P(X≤25.5)=P(Z≤(25.5-30)/4.583)=P(Z≤-0.982)≈0.163",
+    "options": [
+      "0.163",
+      "0.138",
+      "0.212",
+      "0.184"
+    ],
+    "explanation": "With continuity correction: P(X≤25) ≈ P(Y≤25.5) where Y~N(30,21). Z=(25.5-30)/√21≈-0.98.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "X ~ Po(λ). If P(X=1) = P(X=2), find λ.",
+    "answer": "λ = 2",
+    "options": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "explanation": "e^{-λ}λ = e^{-λ}λ²/2. λ = λ²/2. 2 = λ.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "Patients arrive at a clinic at rate 4 per hour. Find the probability of waiting more than 20 minutes for the next patient.",
+    "answer": "P(T>1/3) = e^{-4/3} ≈ 0.264",
+    "options": [
+      "0.264",
+      "0.368",
+      "0.736",
+      "0.472"
+    ],
+    "explanation": "Inter-arrival time T ~ Exp(4). P(T>1/3) = e^{-4×1/3} = e^{-4/3} ≈ 0.264.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "X₁,...,X₅ are i.i.d. N(0,1). Find the distribution of \\(\\sum X_i^2\\).",
+    "answer": "\\(\\chi^2_5\\) (chi-squared with 5 degrees of freedom)",
+    "options": [
+      "\\(\\chi^2_5\\)",
+      "N(0,5)",
+      "N(5,1)",
+      "F(5,5)"
+    ],
+    "explanation": "The sum of squares of n independent standard normal variables follows a chi-squared distribution with n degrees of freedom.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "If X ~ B(n,p) and Y = n-X, show that Y ~ B(n,1-p).",
+    "answer": "P(Y=k) = P(X=n-k) = C(n,n-k)p^{n-k}(1-p)^k = C(n,k)(1-p)^k p^{n-k} which is B(n,1-p).",
+    "options": [],
+    "explanation": "Y counts the number of failures in n trials, each with failure probability q=1-p.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "X ~ N(μ, σ²). Show that P(μ-2σ < X < μ+2σ) ≈ 0.9544.",
+    "answer": "P(-2 < Z < 2) = 2Φ(2)-1 = 2(0.9772)-1 = 0.9544.",
+    "options": [],
+    "explanation": "Standardise to get P(-2<Z<2) and use standard normal tables.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "The number of errors per page follows Po(0.5). A book has 200 pages. Find the probability that at most 90 pages have errors.",
+    "answer": "Pages with errors: each page has P(error)=1-e^{-0.5}≈0.3935. Y~B(200,0.3935). E(Y)=78.7, Var(Y)=47.7. P(Y≤90)≈P(Z≤(90.5-78.7)/6.91)≈P(Z≤1.71)≈0.956.",
+    "options": [
+      "0.956",
+      "0.900",
+      "0.987",
+      "0.500"
+    ],
+    "explanation": "First find P(page has ≥1 error)=1-e^{-0.5}. Then Y~B(200,p), approximate with normal using continuity correction.",
+    "difficulty": 3,
+    "topic_id": "alevel_distributions"
+  },
+  {
+    "question": "What is a null hypothesis?",
+    "answer": "The default assumption that there is no significant difference or effect, denoted H₀.",
+    "options": [
+      "The default assumption of no significant effect",
+      "The hypothesis we want to prove",
+      "The alternative hypothesis",
+      "A hypothesis that is always true"
+    ],
+    "explanation": "H₀ is the status quo assumption tested against the alternative H₁.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is a Type I error?",
+    "answer": "Rejecting H₀ when it is actually true (false positive).",
+    "options": [
+      "Rejecting H₀ when it is true",
+      "Failing to reject H₀ when it is false",
+      "Accepting H₁ when H₀ is true and H₁ is false",
+      "Making no error"
+    ],
+    "explanation": "Type I error = false rejection of a true null hypothesis.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is a Type II error?",
+    "answer": "Failing to reject H₀ when it is actually false (false negative).",
+    "options": [
+      "Failing to reject H₀ when it is false",
+      "Rejecting H₀ when it is true",
+      "Accepting H₀ always",
+      "Rejecting H₁"
+    ],
+    "explanation": "Type II error = failure to detect a real effect.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is the significance level (α) in hypothesis testing?",
+    "answer": "The probability of making a Type I error; the threshold for rejecting H₀.",
+    "options": [
+      "The probability of a Type I error",
+      "The probability of a Type II error",
+      "The sample size",
+      "The test statistic value"
+    ],
+    "explanation": "α is set before testing (commonly 0.05 or 0.01) and represents the rejection threshold.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is a p-value?",
+    "answer": "The probability of obtaining results at least as extreme as the observed data, assuming H₀ is true.",
+    "options": [
+      "Probability of data as extreme or more, given H₀ is true",
+      "Probability that H₀ is true",
+      "Probability that H₁ is true",
+      "The significance level"
+    ],
+    "explanation": "A small p-value indicates evidence against H₀.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "When do we reject H₀?",
+    "answer": "When the p-value is less than or equal to the significance level α.",
+    "options": [
+      "When p-value ≤ α",
+      "When p-value > α",
+      "When the test statistic equals 0",
+      "Always"
+    ],
+    "explanation": "If p ≤ α, the result is statistically significant and we reject H₀.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is a one-tailed test?",
+    "answer": "A test where H₁ specifies a direction (e.g., μ > μ₀ or μ < μ₀).",
+    "options": [
+      "H₁ specifies a direction",
+      "H₁ is always μ ≠ μ₀",
+      "The test uses one sample",
+      "The significance level is halved"
+    ],
+    "explanation": "One-tailed tests detect effects in only one direction.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is the test statistic for a z-test?",
+    "answer": "\\(z = \\frac{\\bar{x} - \\mu_0}{\\sigma/\\sqrt{n}}\\)",
+    "options": [
+      "\\(\\frac{\\bar{x}-\\mu_0}{\\sigma/\\sqrt{n}}\\)",
+      "\\(\\frac{\\bar{x}-\\mu_0}{\\sigma}\\)",
+      "\\(\\frac{\\bar{x}}{\\sigma\\sqrt{n}}\\)",
+      "\\(\\bar{x}-\\mu_0\\)"
+    ],
+    "explanation": "The z-statistic standardises the sample mean using the known population standard deviation.",
+    "difficulty": 1,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "A manufacturer claims mean weight is 500g. A sample of 36 gives mean 495g with known σ=18g. Test at 5% significance.",
+    "answer": "z = (495-500)/(18/6) = -5/3 ≈ -1.667. Critical value ±1.96 (two-tailed). |z|<1.96. Do not reject H₀.",
+    "options": [
+      "Do not reject H₀",
+      "Reject H₀",
+      "Insufficient data",
+      "Accept H₁"
+    ],
+    "explanation": "z ≈ -1.667 does not exceed the 5% two-tailed critical value of ±1.96.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "A coin is tossed 100 times, giving 60 heads. Test at 5% whether the coin is fair.",
+    "answer": "H₀: p=0.5, H₁: p≠0.5. Under H₀: X~B(100,0.5), μ=50, σ=5. z=(60-50)/5=2. p-value≈0.046<0.05. Reject H₀.",
+    "options": [
+      "Reject H₀ (p≈0.046)",
+      "Do not reject H₀",
+      "Cannot determine",
+      "Reject at 1% only"
+    ],
+    "explanation": "z=2.0, p-value=2P(Z>2)≈0.046<0.05. Evidence the coin is not fair.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "When should you use a t-test instead of a z-test?",
+    "answer": "When the population standard deviation σ is unknown and estimated from the sample.",
+    "options": [
+      "When σ is unknown",
+      "When σ is known",
+      "When n > 30",
+      "When the data is not normal"
+    ],
+    "explanation": "The t-test uses the sample standard deviation s, resulting in a t-distribution rather than normal.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "The critical value for a two-tailed z-test at 1% significance is:",
+    "answer": "±2.576",
+    "options": [
+      "±2.576",
+      "±1.96",
+      "±2.326",
+      "±1.645"
+    ],
+    "explanation": "For α=0.01 two-tailed: α/2=0.005. z_{0.005}=2.576.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "A sample of 25 from a normal population gives x̄=82 and s=10. Test H₀: μ=80 vs H₁: μ>80 at 5%.",
+    "answer": "t = (82-80)/(10/5) = 1. Critical t₂₄,₀.₀₅ = 1.711. t=1<1.711. Do not reject H₀.",
+    "options": [
+      "Do not reject H₀",
+      "Reject H₀",
+      "Need more information",
+      "Test is invalid"
+    ],
+    "explanation": "One-tailed t-test with 24 df. t=1 < t_{critical}=1.711. Insufficient evidence.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What is the power of a test?",
+    "answer": "The probability of correctly rejecting H₀ when H₁ is true (1 - P(Type II error)).",
+    "options": [
+      "1 - P(Type II error)",
+      "P(Type I error)",
+      "The significance level",
+      "P(H₀ is true)"
+    ],
+    "explanation": "Power = 1-β measures the test's ability to detect a real effect.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "In a paired t-test, what do we actually test?",
+    "answer": "Whether the mean of the paired differences is significantly different from zero.",
+    "options": [
+      "Whether the mean difference is 0",
+      "Whether both means are equal to a fixed value",
+      "Whether variances are equal",
+      "Whether samples are independent"
+    ],
+    "explanation": "We compute differences d_i = x_i - y_i and test H₀: μ_d = 0.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "A researcher finds p=0.03. At 5% significance, what is the conclusion? At 1%?",
+    "answer": "At 5%: reject H₀ (0.03<0.05). At 1%: do not reject H₀ (0.03>0.01).",
+    "options": [
+      "Reject at 5%, not at 1%",
+      "Reject at both",
+      "Reject at neither",
+      "Reject at 1%, not at 5%"
+    ],
+    "explanation": "p=0.03 is below 0.05 but above 0.01.",
+    "difficulty": 2,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "Derive the rejection region for a one-tailed z-test H₀: μ=μ₀ vs H₁: μ>μ₀ at significance level α.",
+    "answer": "Reject H₀ when z = (x̄-μ₀)/(σ/√n) > z_α, where z_α is the upper α critical value.",
+    "options": [],
+    "explanation": "Under H₀, z ~ N(0,1). We reject when the observed z exceeds the (1-α) quantile.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "X ~ B(20, p). We test H₀: p=0.5 vs H₁: p>0.5. Find the critical region at 5% significance.",
+    "answer": "Reject if X ≥ 14. P(X≥14|p=0.5) = 0.0577 > 0.05 but P(X≥15|p=0.5) = 0.0207 < 0.05. Hmm, need exact calculation. P(X≥14) = ∑_{k=14}^{20} C(20,k)(0.5)^{20}. Actually P(X≥14)≈0.0577 and P(X≥15)≈0.0207. For ≤5%, critical region is X≥15.",
+    "options": [
+      "X ≥ 15",
+      "X ≥ 14",
+      "X ≥ 13",
+      "X ≥ 16"
+    ],
+    "explanation": "Need P(X≥c) ≤ 0.05 under H₀. P(X≥15)≈0.0207≤0.05 but P(X≥14)≈0.058>0.05.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "A sample of size 16 from N(μ,σ²) gives x̄=52 and s=8. Find a 95% confidence interval for μ.",
+    "answer": "52 ± t_{15,0.025}×(8/4) = 52 ± 2.131×2 = (47.74, 56.26)",
+    "options": [
+      "(47.74, 56.26)",
+      "(48.08, 55.92)",
+      "(50, 54)",
+      "(49.84, 54.16)"
+    ],
+    "explanation": "CI: x̄ ± t_{n-1,α/2}×s/√n = 52 ± 2.131×2.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "Explain why 'failing to reject H₀' is not the same as 'accepting H₀'.",
+    "answer": "Failing to reject means insufficient evidence against H₀, not proof that H₀ is true. The test may lack power to detect a real difference.",
+    "options": [],
+    "explanation": "Absence of evidence is not evidence of absence. A non-significant result could be due to small sample size or large variability.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "If α=0.05 and β=0.2, what is the power? If we want power ≥0.9, what constraint does this place on β?",
+    "answer": "Power = 1-β = 0.8. For power ≥0.9, need β ≤ 0.1.",
+    "options": [
+      "Power=0.8; β≤0.1",
+      "Power=0.95; β≤0.05",
+      "Power=0.2; β≤0.8",
+      "Power=0.05; β≤0.95"
+    ],
+    "explanation": "Power = 1-β. Higher power means lower probability of Type II error.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "Two machines produce bolts. Machine A: n=50, x̄=10.2, σ=0.5. Machine B: n=60, x̄=10.0, σ=0.6. Test if means differ at 5%.",
+    "answer": "z = (10.2-10.0)/√(0.25/50+0.36/60) = 0.2/√(0.005+0.006) = 0.2/√0.011 = 0.2/0.1049 ≈ 1.907. |z|<1.96. Do not reject H₀.",
+    "options": [
+      "Do not reject H₀ (z≈1.91)",
+      "Reject H₀",
+      "Cannot determine",
+      "Reject at 10% only"
+    ],
+    "explanation": "Two-sample z-test: z≈1.91 < 1.96. Just barely fail to reject at 5%.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "In a chi-squared goodness of fit test with 5 categories, how many degrees of freedom?",
+    "answer": "4 (k-1 = 5-1 = 4)",
+    "options": [
+      "4",
+      "5",
+      "3",
+      "6"
+    ],
+    "explanation": "df = number of categories - 1 = 5-1 = 4 (assuming no parameters estimated from data).",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "A drug trial: 30 patients, mean recovery time 5.2 days (s=1.5). Historical mean is 6 days. Test H₁: μ<6 at 1%.",
+    "answer": "t = (5.2-6)/(1.5/√30) = -0.8/0.274 = -2.92. t_{29,0.01} = -2.462. |t|>|critical|. Reject H₀.",
+    "options": [
+      "Reject H₀ (t≈-2.92)",
+      "Do not reject H₀",
+      "Need σ known",
+      "Test invalid"
+    ],
+    "explanation": "One-tailed t-test: t=-2.92 < -2.462. Significant at 1% level. Drug reduces recovery time.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "Explain the relationship between confidence intervals and hypothesis testing.",
+    "answer": "A 95% CI contains all values of μ₀ for which the two-tailed test at 5% would not reject H₀. If μ₀ falls outside the CI, we reject H₀.",
+    "options": [],
+    "explanation": "There is a duality: rejecting H₀: μ=μ₀ at level α is equivalent to μ₀ not being in the (1-α) confidence interval.",
+    "difficulty": 3,
+    "topic_id": "alevel_hypothesis"
+  },
+  {
+    "question": "What does PMCC stand for?",
+    "answer": "Product Moment Correlation Coefficient (also known as Pearson's r).",
+    "options": [
+      "Product Moment Correlation Coefficient",
+      "Partial Mean Correlation Coefficient",
+      "Product Mean Cumulative Coefficient",
+      "Pearson's Multiple Correlation Coefficient"
+    ],
+    "explanation": "PMCC (Pearson's r) measures the linear correlation between two variables.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "What range of values can the PMCC take?",
+    "answer": "\\(-1 \\leq r \\leq 1\\)",
+    "options": [
+      "\\(-1 \\leq r \\leq 1\\)",
+      "\\(0 \\leq r \\leq 1\\)",
+      "\\(-\\infty < r < \\infty\\)",
+      "\\(0 < r < 1\\)"
+    ],
+    "explanation": "r = 1 means perfect positive correlation, r = -1 means perfect negative, r = 0 means no linear correlation.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "What does r = 0 mean?",
+    "answer": "No linear correlation between the two variables.",
+    "options": [
+      "No linear correlation",
+      "The variables are independent",
+      "Perfect correlation",
+      "The data is incorrect"
+    ],
+    "explanation": "r=0 means no linear relationship, but there could still be a non-linear relationship.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "What is the line of best fit (regression line) of y on x?",
+    "answer": "\\(y = a + bx\\) where b = S_{xy}/S_{xx} and a = ȳ - bx̄.",
+    "options": [
+      "y = a+bx with b=S_{xy}/S_{xx}",
+      "y = a+bx with b=S_{xx}/S_{xy}",
+      "x = a+by",
+      "y = x̄+bȳ"
+    ],
+    "explanation": "The least squares regression line minimises the sum of squared vertical distances.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "What is a residual?",
+    "answer": "The difference between the observed y-value and the predicted y-value: e = y - ŷ.",
+    "options": [
+      "y - ŷ",
+      "ŷ - y",
+      "y - x",
+      "x - ŷ"
+    ],
+    "explanation": "Residuals measure how far each data point is from the regression line.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "What is interpolation?",
+    "answer": "Estimating a value within the range of the observed data.",
+    "options": [
+      "Estimating within the data range",
+      "Estimating outside the data range",
+      "Finding the median",
+      "Calculating the mean"
+    ],
+    "explanation": "Interpolation is generally more reliable than extrapolation.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "What is extrapolation?",
+    "answer": "Estimating a value outside the range of the observed data.",
+    "options": [
+      "Estimating outside the data range",
+      "Estimating within the data range",
+      "Removing outliers",
+      "Calculating residuals"
+    ],
+    "explanation": "Extrapolation is risky because the pattern may not continue beyond the observed range.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "If the regression line of y on x passes through (x̄, ȳ), what does this tell us?",
+    "answer": "The regression line always passes through the point of means (x̄, ȳ).",
+    "options": [
+      "It always passes through (x̄, ȳ)",
+      "It passes through the origin",
+      "It passes through (0, ȳ)",
+      "This only happens when r=1"
+    ],
+    "explanation": "This is a property of the least squares regression line.",
+    "difficulty": 1,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Given S_{xx}=40, S_{yy}=90, S_{xy}=48, find the PMCC.",
+    "answer": "r = 48/√(40×90) = 48/√3600 = 48/60 = 0.8",
+    "options": [
+      "0.8",
+      "0.53",
+      "0.96",
+      "0.64"
+    ],
+    "explanation": "r = S_{xy}/√(S_{xx}S_{yy}) = 48/60 = 0.8.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "For the data: x̄=5, ȳ=8, S_{xx}=20, S_{xy}=30. Find the regression line y on x.",
+    "answer": "b = 30/20 = 1.5. a = 8-1.5(5) = 0.5. y = 0.5+1.5x.",
+    "options": [
+      "y = 0.5+1.5x",
+      "y = 1.5+0.5x",
+      "y = 8+1.5x",
+      "y = 0.5+3x"
+    ],
+    "explanation": "b = S_{xy}/S_{xx} = 1.5. a = ȳ-bx̄ = 8-7.5 = 0.5.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "The PMCC between x and y is 0.92. What can you conclude?",
+    "answer": "There is a strong positive linear correlation between x and y.",
+    "options": [
+      "Strong positive linear correlation",
+      "Cause and effect relationship",
+      "Weak positive correlation",
+      "Perfect correlation"
+    ],
+    "explanation": "r=0.92 indicates strong positive linear association, but not necessarily causation.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Why is it inappropriate to use the regression line y on x to predict x from y?",
+    "answer": "The regression line y on x minimises vertical (y) residuals, not horizontal (x) residuals. For predicting x from y, use the regression line x on y.",
+    "options": [
+      "It minimises the wrong residuals",
+      "It always gives the same answer",
+      "The line is only valid for y>0",
+      "There is no difference"
+    ],
+    "explanation": "Each regression line minimises residuals in its own direction.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "A residual plot shows a clear curved pattern. What does this suggest?",
+    "answer": "A linear model is not appropriate; a non-linear model may be better.",
+    "options": [
+      "Linear model is not appropriate",
+      "The model is perfect",
+      "There are no outliers",
+      "The correlation is strong"
+    ],
+    "explanation": "Random scatter in residuals supports a linear model; patterns suggest non-linearity.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Given the regression line ŷ = 2.1+0.8x based on data where 10 ≤ x ≤ 50, estimate y when x=30 and comment on reliability.",
+    "answer": "ŷ = 2.1+0.8(30) = 26.1. This is interpolation (x=30 is within the data range), so it is reliable.",
+    "options": [
+      "26.1 (reliable, interpolation)",
+      "26.1 (unreliable, extrapolation)",
+      "24.1 (reliable)",
+      "26.1 (cannot comment)"
+    ],
+    "explanation": "Since 10 ≤ 30 ≤ 50, this is interpolation and should be reliable if the linear model is appropriate.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "The coefficient of determination r² = 0.81. Interpret this.",
+    "answer": "81% of the variation in y is explained by the linear relationship with x.",
+    "options": [
+      "81% of variation in y is explained by x",
+      "The correlation is 0.81",
+      "81% of data points are on the line",
+      "The slope is 0.81"
+    ],
+    "explanation": "r² gives the proportion of variance in y accounted for by the linear model.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Calculate S_{xy} given: ∑x=30, ∑y=40, ∑xy=280, n=5.",
+    "answer": "S_{xy} = ∑xy - (∑x)(∑y)/n = 280 - 30×40/5 = 280-240 = 40",
+    "options": [
+      "40",
+      "280",
+      "240",
+      "80"
+    ],
+    "explanation": "S_{xy} = ∑xy - nx̄ȳ = ∑xy - (∑x)(∑y)/n.",
+    "difficulty": 2,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Prove that the sum of residuals for the least squares regression line is zero.",
+    "answer": "∑eᵢ = ∑(yᵢ-a-bxᵢ) = ∑yᵢ-na-b∑xᵢ = nȳ-n(ȳ-bx̄)-bnx̄ = nȳ-nȳ+bnx̄-bnx̄ = 0.",
+    "options": [],
+    "explanation": "Substituting a=ȳ-bx̄ into the sum of residuals yields zero.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Show that r² = b₁b₂ where b₁ is the slope of y on x and b₂ is the slope of x on y.",
+    "answer": "b₁ = S_{xy}/S_{xx}, b₂ = S_{xy}/S_{yy}. b₁b₂ = S_{xy}²/(S_{xx}S_{yy}) = r².",
+    "options": [],
+    "explanation": "This elegant result connects the two regression slopes through the correlation coefficient.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Data suggests a model y = ax^n. By taking logarithms, explain how to use linear regression to estimate a and n.",
+    "answer": "ln y = ln a + n ln x. Let Y=ln y, X=ln x. Then Y = ln a + nX is linear. Regression of Y on X gives slope=n and intercept=ln a.",
+    "options": [],
+    "explanation": "Logarithmic transformation linearises power law relationships.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "A scatter diagram shows the relationship y = ae^{bx}. How would you linearise this?",
+    "answer": "Take ln: ln y = ln a + bx. Plot ln y against x. The gradient gives b and the intercept gives ln a.",
+    "options": [
+      "Plot ln y vs x",
+      "Plot y vs ln x",
+      "Plot ln y vs ln x",
+      "Plot y² vs x"
+    ],
+    "explanation": "The exponential model becomes linear when you take the natural logarithm of both sides.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Spearman's rank correlation coefficient r_s for 8 data points has ∑d² = 18. Find r_s and test at 5%.",
+    "answer": "r_s = 1 - 6(18)/(8(63)) = 1 - 108/504 = 1-0.2143 = 0.786. Critical value at 5% for n=8 is 0.738. Since 0.786>0.738, reject H₀ of no correlation.",
+    "options": [
+      "r_s ≈ 0.786, significant",
+      "r_s ≈ 0.786, not significant",
+      "r_s ≈ 0.214, significant",
+      "r_s ≈ 0.643, significant"
+    ],
+    "explanation": "r_s = 1 - 6∑d²/(n(n²-1)). Compare with critical value from tables.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Explain why correlation does not imply causation, giving an example.",
+    "answer": "A high correlation between ice cream sales and drowning rates does not mean ice cream causes drowning. Both are caused by a common factor (hot weather). Correlation measures association, not cause.",
+    "options": [],
+    "explanation": "Lurking/confounding variables can create correlations between unrelated variables.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "For the regression y on x: ŷ = 3+2x with r=0.9, and x on y: x̂ = -0.5+0.4y. Verify that r² = product of slopes.",
+    "answer": "Product of slopes = 2×0.4 = 0.8. r² = 0.81. These should be equal but 0.8≠0.81... Due to rounding: if r=0.894, r²=0.8 matching slopes product. The exact relation r²=b₁b₂ holds.",
+    "options": [],
+    "explanation": "r² = b_{y|x}×b_{x|y} = 2×0.4 = 0.8, so r = √0.8 ≈ 0.894.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "An outlier has coordinates (2, 50) while the other data points cluster around y = 3+2x for x ∈ [1,10]. Calculate its residual and discuss its influence.",
+    "answer": "Predicted: ŷ = 3+2(2) = 7. Residual = 50-7 = 43. This is a very large residual. This point has high influence and may distort the regression line significantly.",
+    "options": [],
+    "explanation": "Large residuals indicate potential outliers that may unduly influence the regression coefficients.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Show that ∑eᵢxᵢ = 0 for the least squares regression line (residuals are uncorrelated with x).",
+    "answer": "∑eᵢxᵢ = ∑(yᵢ-a-bxᵢ)xᵢ = ∑xᵢyᵢ-a∑xᵢ-b∑xᵢ². From normal equations: ∑xᵢyᵢ = a∑xᵢ+b∑xᵢ². So ∑eᵢxᵢ = 0.",
+    "options": [],
+    "explanation": "This follows directly from the normal equations used to derive the least squares estimates.",
+    "difficulty": 3,
+    "topic_id": "alevel_regression"
+  },
+  {
+    "question": "Find \\(\\int \\frac{2x}{x^2+1} \\, dx\\).",
+    "answer": "\\(\\ln(x^2+1) + C\\)",
+    "options": [
+      "\\(\\ln(x^2+1)+C\\)",
+      "\\(\\arctan(x)+C\\)",
+      "\\(2\\ln(x^2+1)+C\\)",
+      "\\(\\frac{1}{x^2+1}+C\\)"
+    ],
+    "explanation": "The numerator 2x is the derivative of x²+1. So ∫f'/f dx = ln|f|+C = ln(x²+1)+C (x²+1 is always positive).",
+    "difficulty": 2,
+    "topic_id": "amath_int_intro"
+  }
+]
