@@ -35,6 +35,13 @@
 
   svg.call(zoom);
 
+  // ── Glow filter for completed nodes ─────────────────────────────────────────
+  const glowFilter = svg.append("defs").append("filter").attr("id", "glow");
+  glowFilter.append("feGaussianBlur").attr("stdDeviation", "4").attr("result", "blur");
+  glowFilter.append("feMerge").selectAll("feMergeNode")
+    .data(["blur", "SourceGraphic"]).join("feMergeNode")
+    .attr("in", d => d);
+
   // ── Arrow marker ────────────────────────────────────────────────────────────
   svg.append("defs").append("marker")
     .attr("id", "arrowhead")
@@ -117,11 +124,22 @@
     .on("mouseenter", (event, d) => { if (!selectedNode) handleHover(d, true); })
     .on("mouseleave", (event, d) => { if (!selectedNode) handleHover(d, false); });
 
+  // Glowing green ring for completed nodes (rendered behind the main circle)
+  nodeSel.filter(d => d.complete)
+    .append("circle")
+    .attr("r", 26)
+    .attr("fill", "none")
+    .attr("stroke", "#22c55e")
+    .attr("stroke-width", 3)
+    .attr("stroke-opacity", 0.5)
+    .attr("class", "node-glow")
+    .style("filter", "url(#glow)");
+
   // Node circles
   nodeSel.append("circle")
     .attr("r", d => d.complete ? 20 : 16)
     .attr("fill", d => d.color)
-    .attr("stroke", d => d.complete ? "#fff" : (d.unlocked ? d.color : "#666"))
+    .attr("stroke", d => d.complete ? "#22c55e" : (d.unlocked ? d.color : "#666"))
     .attr("stroke-width", d => d.complete ? 3 : 2)
     .attr("fill-opacity", d => d.unlocked ? 1.0 : 0.35)
     .attr("class", "node-circle");
