@@ -46,7 +46,10 @@ html, body {
   --danger: #dc2626;
 }
 [data-theme="bright"] body {
-  background: #f8fafc;
+  background: #ffffff;
+}
+[data-theme="bright"] .main-content {
+  background: #ffffff;
 }
 [data-theme="bright"] .navbar {
   background: #0d1117ee;
@@ -63,14 +66,6 @@ html, body {
 [data-theme="bright"] .navbar .theme-toggle-btn { border-color: #30363d; }
 [data-theme="bright"] .navbar .theme-toggle-btn:hover { background: rgba(255,255,255,0.08); }
 [data-theme="bright"] .navbar .admin-link { color: #f59e0b; }
-[data-theme="bright"] .nav-link:hover,
-[data-theme="bright"] .nav-link.active {
-  background: #f1f5f9;
-  color: #1a1a2e;
-}
-[data-theme="bright"] .main-content {
-  background: #f8fafc;
-}
 [data-theme="bright"] .footer {
   background: #f1f5f9;
   color: #64748b;
