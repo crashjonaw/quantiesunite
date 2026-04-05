@@ -58,6 +58,51 @@
 </div>
 {% endif %}
 
+{% if content and content.type == "concepts" %}
+<!-- ══════════════════════════════════════════════════════════
+     CONCEPT-STRUCTURED MODULE — show concept cards overview
+     ══════════════════════════════════════════════════════════ -->
+<div class="concepts-overview">
+  <div class="concepts-overview-header">
+    <h2>📖 Core Concepts in This Module</h2>
+    <p>Work through each concept in order. Each one builds on the last.</p>
+  </div>
+
+  <div class="concept-cards-grid">
+    {% for concept in content.concepts %}
+    <a href="/topic/{{ tid }}/learn/{{ concept.id }}" class="concept-card" style="border-top: 4px solid {{ t.color }}">
+      <div class="concept-card-number">{{ loop.index }}</div>
+      <div class="concept-card-body">
+        <h3 class="concept-card-title">{{ concept.title }}</h3>
+        <p class="concept-card-pages">{{ concept.sections | length }} page{% if concept.sections | length != 1 %}s{% endif %}</p>
+      </div>
+      <div class="concept-card-arrow">→</div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="concepts-overview-footer">
+    <a href="/topic/{{ tid }}/learn/{{ content.concepts[0].id }}" class="btn btn-primary btn-lg">
+      Start Learning →
+    </a>
+    {% if content.quiz %}
+    <a href="/topic/{{ tid }}/quiz" class="btn btn-outline btn-lg">
+      🏆 Take the Module Quiz
+    </a>
+    {% if complete %}
+    <a href="/topic/{{ tid }}/practice" class="btn btn-outline btn-lg">
+      📝 More Practice
+    </a>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+
+{% else %}
+<!-- ══════════════════════════════════════════════════════════
+     FLAT MODULE — paginated sections (legacy)
+     ══════════════════════════════════════════════════════════ -->
+
 <!-- PAGE PROGRESS BAR -->
 {% if content and content.sections %}
 <div class="page-progress-bar">
@@ -147,6 +192,7 @@
   {% endif %}
 </div>
 {% endif %}
+{% endif %}{# end concepts/flat check #}
 {% endblock %}
 
 {% block scripts %}

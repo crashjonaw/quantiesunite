@@ -60,10 +60,7 @@
 [data-theme="bright"][data-pastel="blue"] .main-content {
   background-color: #dbeafe;
 }
-[data-theme="bright"][data-pastel="blue"] .navbar {
-  background-color: #93c5fd;
-  border-bottom: 1px solid #7db8fc;
-}
+/* Navbar stays dark — no override here */
 [data-theme="bright"][data-pastel="blue"] .footer {
   background-color: #bfdbfe;
 }
@@ -97,10 +94,7 @@
 [data-theme="bright"][data-pastel="pink"] .main-content {
   background-color: #fce7f3;
 }
-[data-theme="bright"][data-pastel="pink"] .navbar {
-  background-color: #f9a8d4;
-  border-bottom: 1px solid #f494c7;
-}
+/* Navbar stays dark — no override here */
 [data-theme="bright"][data-pastel="pink"] .footer {
   background-color: #fbcfe8;
 }
@@ -133,10 +127,7 @@
 [data-theme="bright"][data-pastel="yellow"] .main-content {
   background-color: #fef9c3;
 }
-[data-theme="bright"][data-pastel="yellow"] .navbar {
-  background-color: #fde047;
-  border-bottom: 1px solid #facc15;
-}
+/* Navbar stays dark — no override here */
 [data-theme="bright"][data-pastel="yellow"] .footer {
   background-color: #fef08a;
 }
@@ -169,10 +160,7 @@
 [data-theme="bright"][data-pastel="green"] .main-content {
   background-color: #dcfce7;
 }
-[data-theme="bright"][data-pastel="green"] .navbar {
-  background-color: #86efac;
-  border-bottom: 1px solid #6ee79a;
-}
+/* Navbar stays dark — no override here */
 [data-theme="bright"][data-pastel="green"] .footer {
   background-color: #bbf7d0;
 }

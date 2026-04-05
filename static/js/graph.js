@@ -17,6 +17,11 @@
   let allNodes = data.nodes;
   let allLinks = data.links;
 
+  // ── State ───────────────────────────────────────────────────────────────────
+  let selectedNode = null;
+  let clickTimer = null;
+  let _tooltipDragging = false;
+
   // ── SVG & zoom setup ────────────────────────────────────────────────────────
   const svg = d3.select("#graph-svg")
     .attr("width", W)
@@ -43,13 +48,23 @@
     .attr("d", "M0,-5L10,0L0,5")
     .attr("fill", "#555");
 
+  // Prereq arrows (green — leads TO the hovered node)
   svg.append("defs").append("marker")
-    .attr("id", "arrowhead-highlight")
+    .attr("id", "arrowhead-prereq")
     .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 22)
-    .attr("refY", 0)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
+    .attr("refX", 22).attr("refY", 0)
+    .attr("markerWidth", 6).attr("markerHeight", 6)
+    .attr("orient", "auto")
+    .append("path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "#22c55e");
+
+  // Downstream arrows (yellow — leads AWAY from the hovered node)
+  svg.append("defs").append("marker")
+    .attr("id", "arrowhead-downstream")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 22).attr("refY", 0)
+    .attr("markerWidth", 6).attr("markerHeight", 6)
     .attr("orient", "auto")
     .append("path")
     .attr("d", "M0,-5L10,0L0,5")
@@ -85,9 +100,22 @@
     .join("g")
     .attr("class", "graph-node")
     .call(drag(simulation))
-    .on("click", (event, d) => { window.location.href = "/topic/" + d.id; })
-    .on("mouseenter", (event, d) => handleHover(d, true))
-    .on("mouseleave", (event, d) => handleHover(d, false));
+    .on("click", (event, d) => {
+      event.stopPropagation();
+      // Single click = select node and show card
+      if (clickTimer) { clearTimeout(clickTimer); clickTimer = null; }
+      clickTimer = setTimeout(() => {
+        clickTimer = null;
+        selectNode(d, event);
+      }, 250);
+    })
+    .on("dblclick", (event, d) => {
+      event.stopPropagation();
+      if (clickTimer) { clearTimeout(clickTimer); clickTimer = null; }
+      window.location.href = "/topic/" + d.id + "/overview";
+    })
+    .on("mouseenter", (event, d) => { if (!selectedNode) handleHover(d, true); })
+    .on("mouseleave", (event, d) => { if (!selectedNode) handleHover(d, false); });
 
   // Node circles
   nodeSel.append("circle")
@@ -145,9 +173,9 @@
 
   // ── Hover: highlight connected graph ────────────────────────────────────────
   function getConnected(node) {
-    // BFS both upstream (prereqs) and downstream (unlocks) through all links
     const nodeSet = new Set([node.id]);
-    const linkSet = new Set();
+    const upstreamLinks = new Set();
+    const downstreamLinks = new Set();
 
     // Build adjacency
     const upstream = {};
@@ -161,55 +189,47 @@
       upstream[t].push({ node: s, idx: i });
     });
 
-    // BFS upward (prerequisites)
+    // BFS upward (prerequisites → green)
     let queue = [node.id];
     while (queue.length) {
       const cur = queue.shift();
       (upstream[cur] || []).forEach(({ node: n, idx }) => {
-        linkSet.add(idx);
+        upstreamLinks.add(idx);
         if (!nodeSet.has(n)) { nodeSet.add(n); queue.push(n); }
       });
     }
-    // BFS downward (what this unlocks)
+    // BFS downward (what this unlocks → yellow)
     queue = [node.id];
     while (queue.length) {
       const cur = queue.shift();
       (downstream[cur] || []).forEach(({ node: n, idx }) => {
-        linkSet.add(idx);
+        downstreamLinks.add(idx);
         if (!nodeSet.has(n)) { nodeSet.add(n); queue.push(n); }
       });
     }
-    return { nodeSet, linkSet };
+    const linkSet = new Set([...upstreamLinks, ...downstreamLinks]);
+    return { nodeSet, linkSet, upstreamLinks, downstreamLinks };
   }
 
   function handleHover(d, entering) {
     if (entering) {
-      const { nodeSet, linkSet } = getConnected(d);
-
-      // Dim everything first
+      const { nodeSet, upstreamLinks, downstreamLinks } = getConnected(d);
       nodeSel.attr("opacity", 0.12);
       linkSel.attr("stroke-opacity", 0.05).attr("stroke", "#444").attr("marker-end", "url(#arrowhead)");
-
-      // Highlight connected nodes
       nodeSel.filter(n => nodeSet.has(n.id)).attr("opacity", 1);
-
-      // Highlight connected links
-      linkSel.filter((l, i) => linkSet.has(i))
-        .attr("stroke", "#FFD700")
-        .attr("stroke-opacity", 1)
-        .attr("stroke-width", 2.5)
-        .attr("marker-end", "url(#arrowhead-highlight)");
-
-      showTooltip(d);
+      // Prereq arrows = green
+      linkSel.filter((l, i) => upstreamLinks.has(i))
+        .attr("stroke", "#22c55e").attr("stroke-opacity", 1)
+        .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-prereq)");
+      // Downstream arrows = yellow
+      linkSel.filter((l, i) => downstreamLinks.has(i))
+        .attr("stroke", "#FFD700").attr("stroke-opacity", 1)
+        .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-downstream)");
+      showTooltipHover(d);
     } else {
-      // Restore
       nodeSel.attr("opacity", 1);
-      linkSel
-        .attr("stroke", "#444")
-        .attr("stroke-opacity", 0.5)
-        .attr("stroke-width", 1.5)
-        .attr("marker-end", "url(#arrowhead)");
-
+      linkSel.attr("stroke", "#444").attr("stroke-opacity", 0.5)
+        .attr("stroke-width", 1.5).attr("marker-end", "url(#arrowhead)");
       hideTooltip();
     }
   }
@@ -217,7 +237,7 @@
   // ── Tooltip ─────────────────────────────────────────────────────────────────
   const tooltip = document.getElementById("graph-tooltip");
 
-  function showTooltip(d) {
+  function fillTooltipContent(d) {
     document.getElementById("tt-emoji").textContent = d.emoji;
     document.getElementById("tt-name").textContent = d.name;
     document.getElementById("tt-level").textContent = d.level + " · " + d.sg;
@@ -234,16 +254,174 @@
       statusEl.textContent = "🔒 Complete prerequisites first";
       statusEl.style.color = "#888";
     }
+  }
+
+  function showTooltipHover(d) {
+    fillTooltipContent(d);
+    document.getElementById("tt-actions").style.display = "none";
+    tooltip.style.pointerEvents = "none";
     tooltip.classList.remove("hidden");
   }
 
   svg.on("mousemove", function(event) {
-    tooltip.style.left = (event.clientX + 18) + "px";
-    tooltip.style.top = (event.clientY - 10) + "px";
+    if (!selectedNode) {
+      tooltip.style.left = (event.clientX + 18) + "px";
+      tooltip.style.top = (event.clientY - 10) + "px";
+    }
   });
 
   function hideTooltip() {
     tooltip.classList.add("hidden");
+    tooltip.style.pointerEvents = "none";
+  }
+
+  // ── Select node (single click) — pin tooltip with action buttons ───────────
+  function selectNode(d, event) {
+    if (selectedNode && selectedNode.id === d.id) {
+      deselectNode();
+      return;
+    }
+    selectedNode = d;
+
+    const { nodeSet, upstreamLinks, downstreamLinks } = getConnected(d);
+    nodeSel.attr("opacity", 0.12);
+    linkSel.attr("stroke-opacity", 0.05).attr("stroke", "#444").attr("marker-end", "url(#arrowhead)");
+    nodeSel.filter(n => nodeSet.has(n.id)).attr("opacity", 1);
+    // Prereq arrows = green
+    linkSel.filter((l, i) => upstreamLinks.has(i))
+      .attr("stroke", "#22c55e").attr("stroke-opacity", 1)
+      .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-prereq)");
+    // Downstream arrows = yellow
+    linkSel.filter((l, i) => downstreamLinks.has(i))
+      .attr("stroke", "#FFD700").attr("stroke-opacity", 1)
+      .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-downstream)");
+
+    // Pin tooltip near the node
+    fillTooltipContent(d);
+    const transform = d3.zoomTransform(svg.node());
+    const screenX = transform.applyX(d.x);
+    const screenY = transform.applyY(d.y);
+    tooltip.style.left = (screenX + 30) + "px";
+    tooltip.style.top = (screenY - 10) + "px";
+    tooltip.style.pointerEvents = "auto";
+    tooltip.classList.remove("hidden");
+
+    // Show action buttons
+    const actionsEl = document.getElementById("tt-actions");
+    const targetBtn = document.getElementById("tt-target-btn");
+    const enterBtn = document.getElementById("tt-enter-btn");
+    actionsEl.style.display = "block";
+
+    enterBtn.onclick = (e) => { e.stopPropagation(); window.location.href = "/topic/" + d.id + "/overview"; };
+
+    if (userTargets.has(d.id)) {
+      targetBtn.textContent = "✕ Remove Target";
+      targetBtn.onclick = (e) => { e.stopPropagation(); toggleTarget(d.id, false); };
+    } else {
+      targetBtn.textContent = "🎯 Add Target";
+      targetBtn.onclick = (e) => { e.stopPropagation(); toggleTarget(d.id, true); };
+    }
+
+    const mindmapBtn = document.getElementById("tt-mindmap-btn");
+    if (d.complete || (typeof IS_ADMIN !== 'undefined' && IS_ADMIN)) {
+      mindmapBtn.style.display = "block";
+      mindmapBtn.onclick = (e) => { e.stopPropagation(); window.location.href = "/topic/" + d.id + "/mindmap"; };
+    } else {
+      mindmapBtn.style.display = "none";
+    }
+
+    // Make tooltip clickable to enter module (but not when dragging)
+    tooltip.style.cursor = "pointer";
+    tooltip.onclick = (e) => {
+      if (e.target.tagName === "BUTTON") return;
+      if (e.target.closest(".tt-drag-handle")) return;
+      if (_tooltipDragging) return;
+      window.location.href = "/topic/" + d.id + "/overview";
+    };
+  }
+
+  function deselectNode() {
+    selectedNode = null;
+    nodeSel.attr("opacity", 1);
+    linkSel.attr("stroke", "#444").attr("stroke-opacity", 0.5)
+      .attr("stroke-width", 1.5).attr("marker-end", "url(#arrowhead)");
+    hideTooltip();
+  }
+
+  // Click SVG background to deselect
+  svg.on("click", (event) => {
+    if (!selectedNode) return;
+    if (_tooltipDragging) return;
+    deselectNode();
+  });
+
+  // ── Draggable tooltip ──────────────────────────────────────────────────────
+  let _tooltipDragOffset = { x: 0, y: 0 };
+  (function initDraggableTooltip() {
+    let handle = tooltip.querySelector(".tt-drag-handle");
+    if (!handle) {
+      handle = document.createElement("div");
+      handle.className = "tt-drag-handle";
+      handle.innerHTML = "⠿";
+      tooltip.prepend(handle);
+    }
+    handle.addEventListener("mousedown", startDrag);
+    handle.addEventListener("touchstart", startDrag, { passive: false });
+
+    function startDrag(e) {
+      e.preventDefault(); e.stopPropagation();
+      _tooltipDragging = true;
+      const rect = tooltip.getBoundingClientRect();
+      const cx = e.touches ? e.touches[0].clientX : e.clientX;
+      const cy = e.touches ? e.touches[0].clientY : e.clientY;
+      _tooltipDragOffset.x = cx - rect.left;
+      _tooltipDragOffset.y = cy - rect.top;
+      document.addEventListener("mousemove", onDrag);
+      document.addEventListener("mouseup", endDrag);
+      document.addEventListener("touchmove", onDrag, { passive: false });
+      document.addEventListener("touchend", endDrag);
+    }
+    function onDrag(e) {
+      if (!_tooltipDragging) return;
+      e.preventDefault();
+      const cx = e.touches ? e.touches[0].clientX : e.clientX;
+      const cy = e.touches ? e.touches[0].clientY : e.clientY;
+      tooltip.style.left = (cx - _tooltipDragOffset.x) + "px";
+      tooltip.style.top = (cy - _tooltipDragOffset.y) + "px";
+    }
+    function endDrag() {
+      document.removeEventListener("mousemove", onDrag);
+      document.removeEventListener("mouseup", endDrag);
+      document.removeEventListener("touchmove", onDrag);
+      document.removeEventListener("touchend", endDrag);
+      setTimeout(() => { _tooltipDragging = false; }, 50);
+    }
+  })();
+
+  // ── Target add/remove ─────────────────────────────────────────────────────
+  function toggleTarget(topicId, add) {
+    const url = add ? "/api/targets/add" : "/api/targets/remove";
+    fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ topic_id: topicId })
+    }).then(r => r.json()).then(data => {
+      if (data.ok) {
+        if (add) userTargets.add(topicId);
+        else userTargets.delete(topicId);
+        // Update button text
+        const btn = document.getElementById("tt-target-btn");
+        if (btn) {
+          if (userTargets.has(topicId)) {
+            btn.textContent = "✕ Remove Target";
+            btn.onclick = (e) => { e.stopPropagation(); toggleTarget(topicId, false); };
+          } else {
+            btn.textContent = "🎯 Add Target";
+            btn.onclick = (e) => { e.stopPropagation(); toggleTarget(topicId, true); };
+          }
+        }
+      }
+    });
   }
 
   // ── Drag ────────────────────────────────────────────────────────────────────
