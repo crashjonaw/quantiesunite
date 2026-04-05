@@ -4310,9 +4310,25 @@ html, body {
 }
 .trophy-card:hover { transform: translateY(-3px); }
 .trophy-earned { border-color: rgba(255,215,0,0.3); }
-.trophy-gold { border-color: rgba(255,215,0,0.4); }
-.trophy-silver { border-color: rgba(192,192,192,0.4); }
-.trophy-bronze { border-color: rgba(205,127,50,0.4); }
+.trophy-gold {
+  border-color: rgba(255,215,0,0.5);
+  background: linear-gradient(145deg, rgba(255,215,0,0.08), rgba(255,215,0,0.03));
+}
+.trophy-gold:hover { box-shadow: 0 8px 24px rgba(255,215,0,0.15); }
+.trophy-gold .trophy-score-num { color: #FFD700; }
+
+.trophy-silver {
+  border-color: rgba(192,192,192,0.5);
+  background: linear-gradient(145deg, rgba(192,192,192,0.08), rgba(192,192,192,0.03));
+}
+.trophy-silver:hover { box-shadow: 0 8px 24px rgba(192,192,192,0.12); }
+
+.trophy-bronze {
+  border-color: rgba(205,127,50,0.5);
+  background: linear-gradient(145deg, rgba(205,127,50,0.08), rgba(205,127,50,0.03));
+}
+.trophy-bronze:hover { box-shadow: 0 8px 24px rgba(205,127,50,0.12); }
+.trophy-bronze .trophy-score-num { color: #CD7F32; }
 .trophy-card-shine {
   position: absolute; inset: 0;
   background: linear-gradient(135deg, transparent 40%, rgba(255,215,0,0.06) 50%, transparent 60%);

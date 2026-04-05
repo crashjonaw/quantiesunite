@@ -35,10 +35,9 @@ SECTIONS = [
 
         <p><strong>Step 1: Set up the problem</strong></p>
         <div class='worked-example'>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;<br>
-              12 ) 456
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+       ___
+12 ) 456</pre>
         </div>
 
         <p><strong>Step 2: Does 12 fit into 4? No. Into 45? Yes!</strong></p>
@@ -47,46 +46,50 @@ SECTIONS = [
             <p>12 × 3 = 36 ✓ (fits)</p>
             <p>12 × 4 = 48 ✗ (too big)</p>
             <p>So 12 goes into 45 three times. Write 3 above the 5.</p>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br>
-              12 ) 456
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+      3
+       ___
+12 ) 456</pre>
         </div>
 
         <p><strong>Step 3: Multiply 3 × 12 and subtract</strong></p>
         <div class='worked-example'>
             <p>3 × 12 = 36. Subtract: 45 - 36 = 9.</p>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br>
-              12 ) 456<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-36<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+      3
+       ___
+12 ) 456
+    -36
+     ──
+      9</pre>
         </div>
 
         <p><strong>Step 4: Bring down the next digit (6)</strong></p>
         <div class='worked-example'>
             <p>The 9 remainder becomes 96 when we bring down the 6.</p>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3<br>
-              12 ) 456<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-36<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;96
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+      3
+       ___
+12 ) 456
+    -36
+     ──
+      96</pre>
         </div>
 
         <p><strong>Step 5: Divide again: How many times does 12 go into 96?</strong></p>
         <div class='worked-example'>
             <p>12 × 8 = 96 ✓ (exactly!)</p>
             <p>Write 8 above the 6.</p>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;38<br>
-              12 ) 456<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-36<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;96<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-96<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+      38
+       ___
+12 ) 456
+    -36
+     ──
+      96
+    -96
+     ──
+       0</pre>
         </div>
 
         <p style='font-weight: bold;'>456 ÷ 12 = 38</p>
@@ -99,14 +102,16 @@ SECTIONS = [
         <h3>Example 1: When There's a Remainder (457 ÷ 12)</h3>
 
         <div class='worked-example'>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;38 R1<br>
-              12 ) 457<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-36<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;97<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-96<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+      38 R1
+       ___
+12 ) 457
+    -36
+     ──
+      97
+    -96
+     ──
+       1</pre>
             <p><strong>457 ÷ 12 = 38 R1</strong></p>
             <p><em>Check: (38 × 12) + 1 = 456 + 1 = 457 ✓</em></p>
         </div>
@@ -114,14 +119,16 @@ SECTIONS = [
         <h3>Example 2: 345 ÷ 15</h3>
 
         <div class='worked-example'>
-            <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23<br>
-              15 ) 345<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-30<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;45<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;-45<br>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0
-            </p>
+            <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
+      23
+       ___
+15 ) 345
+    -30
+     ──
+      45
+    -45
+     ──
+       0</pre>
             <p>Step 1: Does 15 fit into 3? No. Into 34? Yes! 15 × 2 = 30. Write 2.</p>
             <p>Step 2: 34 - 30 = 4. Bring down 5 to make 45.</p>
             <p>Step 3: 15 × 3 = 45. Write 3. No remainder.</p>
