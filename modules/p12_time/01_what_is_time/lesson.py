@@ -15,21 +15,21 @@ SECTIONS = [
 
   <circle cx="50" cy="90" r="5" fill='#22c55e'/>
   <text x="50" y="120" text-anchor='middle' font-size='12' fill='#161b22'>Wake up</text>
-  <text x="50" y="135" text-anchor='middle' font-size='10' fill='#8b949e'>7 AM</text>
+  <text x="50" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>7 AM</text>
 
   <circle cx="150" cy="90" r="5" fill='#fbbf24'/>
   <text x="150" y="120" text-anchor='middle' font-size='12' fill='#161b22'>Lunch</text>
-  <text x="150" y="135" text-anchor='middle' font-size='10' fill='#8b949e'>12 PM</text>
+  <text x="150" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>12 PM</text>
 
   <circle cx="250" cy="90" r="5" fill='#f97316'/>
   <text x="250" y="120" text-anchor='middle' font-size='12' fill='#161b22'>School ends</text>
-  <text x="250" y="135" text-anchor='middle' font-size='10' fill='#8b949e'>3 PM</text>
+  <text x="250" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>3 PM</text>
 
   <circle cx="350" cy="90" r="5" fill='#8b5cf6'/>
   <text x="350" y="120" text-anchor='middle' font-size='12' fill='#161b22'>Bedtime</text>
-  <text x="350" y="135" text-anchor='middle' font-size='10' fill='#8b949e'>9 PM</text>
+  <text x="350" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>9 PM</text>
 
-  <text x="200" y="190" text-anchor='middle' font-size='11' fill='#8b949e'>↑ Time moves forward all day long</text>
+  <text x="200" y="190" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>↑ Time moves forward all day long</text>
 </svg>
 <p><strong>Why learn time?</strong> Time helps us plan our day, meet with friends, and know when to do important things!</p>"""
     },
@@ -48,33 +48,33 @@ SECTIONS = [
   <!-- Seconds box -->
   <rect x="20" y="50" width="110" height="100" fill='#e0f2fe' stroke='#0284c7' stroke-width="2" rx="6"/>
   <text x="75" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='#161b22'>⏱️ Seconds</text>
-  <text x="75" y="95" text-anchor='middle' font-size='11' fill='#8b949e'>Very short</text>
-  <text x="75" y="110" text-anchor='middle' font-size='11' fill='#8b949e'>time</text>
-  <text x="75" y="130" text-anchor='middle' font-size='10' fill='#8b949e'>⏱️ Snap your</text>
-  <text x="75" y="145" text-anchor='middle' font-size='10' fill='#8b949e'>fingers</text>
+  <text x="75" y="95" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Very short</text>
+  <text x="75" y="110" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>time</text>
+  <text x="75" y="130" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>⏱️ Snap your</text>
+  <text x="75" y="145" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>fingers</text>
 
   <!-- Minutes box -->
   <rect x="145" y="50" width="110" height="100" fill='#fef3c7' stroke='#d97706' stroke-width="2" rx="6"/>
   <text x="200" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='#161b22'>⏲️ Minutes</text>
-  <text x="200" y="95" text-anchor='middle' font-size='11' fill='#8b949e'>Medium</text>
-  <text x="200" y="110" text-anchor='middle' font-size='11' fill='#8b949e'>time</text>
-  <text x="200" y="130" text-anchor='middle' font-size='10' fill='#8b949e'>🎵 Sing a</text>
-  <text x="200" y="145" text-anchor='middle' font-size='10' fill='#8b949e'>song</text>
+  <text x="200" y="95" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Medium</text>
+  <text x="200" y="110" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>time</text>
+  <text x="200" y="130" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>🎵 Sing a</text>
+  <text x="200" y="145" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>song</text>
 
   <!-- Hours box -->
   <rect x="270" y="50" width="110" height="100" fill='#dcfce7' stroke='#16a34a' stroke-width="2" rx="6"/>
   <text x="325" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='#161b22'>⏰ Hours</text>
-  <text x="325" y="95" text-anchor='middle' font-size='11' fill='#8b949e'>Long</text>
-  <text x="325" y="110" text-anchor='middle' font-size='11' fill='#8b949e'>time</text>
-  <text x="325" y="130" text-anchor='middle' font-size='10' fill='#8b949e'>🎬 Watch a</text>
-  <text x="325" y="145" text-anchor='middle' font-size='10' fill='#8b949e'>movie</text>
+  <text x="325" y="95" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Long</text>
+  <text x="325" y="110" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>time</text>
+  <text x="325" y="130" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>🎬 Watch a</text>
+  <text x="325" y="145" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>movie</text>
 
   <!-- Real examples -->
   <text x="20" y="190" font-size='12' fill='#161b22'>Real examples:</text>
-  <text x="20" y="210" font-size='11' fill='#8b949e'>• Brushing teeth = 2 minutes</text>
-  <text x="20" y="230" font-size='11' fill='#8b949e'>• Playing at recess = 15 minutes</text>
-  <text x="20" y="250" font-size='11' fill='#8b949e'>• Math lesson = 1 hour</text>
-  <text x="20" y="270" font-size='11' fill='#8b949e'>• Whole school day = 6 hours</text>
+  <text x="20" y="210" font-size='11' fill='currentColor' opacity='0.6'>• Brushing teeth = 2 minutes</text>
+  <text x="20" y="230" font-size='11' fill='currentColor' opacity='0.6'>• Playing at recess = 15 minutes</text>
+  <text x="20" y="250" font-size='11' fill='currentColor' opacity='0.6'>• Math lesson = 1 hour</text>
+  <text x="20" y="270" font-size='11' fill='currentColor' opacity='0.6'>• Whole school day = 6 hours</text>
 </svg>"""
     },
     {
@@ -99,10 +99,10 @@ SECTIONS = [
   <rect x="220" y="20" width="160" height="160" fill='#f3f4f6' stroke='#6b7280' stroke-width="2" rx="6"/>
   <text x="300" y="45" text-anchor='middle' font-size='13' font-weight='bold' fill='#161b22'>Digital Clock</text>
 
-  <rect x="240" y="70" width="120" height="60" fill='#e6edf3' stroke='#374151' stroke-width="2" rx="4"/>
+  <rect x="240" y="70" width="120" height="60" fill='currentColor' stroke='#374151' stroke-width="2" rx="4"/>
   <text x="300" y="115" text-anchor='middle' font-size='36' fill='#22c55e' font-family='monospace' font-weight='bold'>3:00</text>
 
-  <text x="300" y="155" text-anchor='middle' font-size='10' fill='#8b949e'>Shows numbers</text>
+  <text x="300" y="155" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Shows numbers</text>
 </svg>
 <p>An <strong>analog clock</strong> has hands that point to numbers. A <strong>digital clock</strong> shows numbers on a screen.</p>
 <p>In this lesson, we focus on <strong>analog clocks</strong> because understanding how the hands move teaches us how time works!</p>"""
@@ -116,27 +116,27 @@ SECTIONS = [
   <!-- 60 seconds = 1 minute -->
   <rect x="20" y="50" width="360" height="50" fill='#dbeafe' stroke='#3b82f6' stroke-width="1" rx="4"/>
   <text x="40" y="75" font-size='12' fill='#161b22'>60 seconds = <strong>1 minute</strong></text>
-  <text x="290" y="75" font-size='11' fill='#8b949e'>⏱️ Tick tock</text>
+  <text x="290" y="75" font-size='11' fill='currentColor' opacity='0.6'>⏱️ Tick tock</text>
 
   <!-- 60 minutes = 1 hour -->
   <rect x="20" y="110" width="360" height="50" fill='#fef3c7' stroke='#f59e0b' stroke-width="1" rx="4"/>
   <text x="40" y="135" font-size='12' fill='#161b22'>60 minutes = <strong>1 hour</strong></text>
-  <text x="290" y="135" font-size='11' fill='#8b949e'>🕐 Clock hands</text>
+  <text x="290" y="135" font-size='11' fill='currentColor' opacity='0.6'>🕐 Clock hands</text>
 
   <!-- 24 hours = 1 day -->
   <rect x="20" y="170" width="360" height="50" fill='#dbeafe' stroke='#3b82f6' stroke-width="1" rx="4"/>
   <text x="40" y="195" font-size='12' fill='#161b22'>24 hours = <strong>1 day</strong></text>
-  <text x="290" y="195" font-size='11' fill='#8b949e'>🌅→🌆→🌙</text>
+  <text x="290" y="195" font-size='11' fill='currentColor' opacity='0.6'>🌅→🌆→🌙</text>
 
   <!-- 7 days = 1 week -->
   <rect x="20" y="230" width="360" height="50" fill='#d1fae5' stroke='#10b981' stroke-width="1" rx="4"/>
   <text x="40" y="255" font-size='12' fill='#161b22'>7 days = <strong>1 week</strong></text>
-  <text x="290" y="255" font-size='11' fill='#8b949e'>📅 School week</text>
+  <text x="290" y="255" font-size='11' fill='currentColor' opacity='0.6'>📅 School week</text>
 
   <!-- 12 months = 1 year -->
   <rect x="20" y="290" width="360" height="50" fill='#f5d3e4' stroke='#ec4899' stroke-width="1" rx="4"/>
   <text x="40" y="315" font-size='12' fill='#161b22'>12 months = <strong>1 year</strong></text>
-  <text x="290" y="315" font-size='11' fill='#8b949e'>🎂 Birthday!</text>
+  <text x="290" y="315" font-size='11' fill='currentColor' opacity='0.6'>🎂 Birthday!</text>
 </svg>
 <p style="text-align: center; margin-top: 20px; font-size: 12">All of these build up—seconds become minutes, minutes become hours, hours become days, and so on!</p>"""
     }

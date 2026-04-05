@@ -20,14 +20,14 @@ SECTIONS = [
 <svg width="100%" viewBox="0 0 400 300" class="formula-box">
   <!-- Flat square (2D) -->
   <g>
-    <text x="50" y="20" fill='#e6edf3' font-size='14' font-weight='bold'>2D: Area</text>
+    <text x="50" y="20" fill='currentColor' font-size='14' font-weight='bold'>2D: Area</text>
     <rect x="20" y="40" width="80" height="80" fill='none' stroke='#58a6ff' stroke-width="2"/>
-    <text x="45" y="140" fill='#e6edf3' font-size='12'>4 × 4 = 16 sq units</text>
+    <text x="45" y="140" fill='currentColor' font-size='12'>4 × 4 = 16 sq units</text>
   </g>
 
   <!-- 3D cube -->
   <g>
-    <text x="250" y="20" fill='#e6edf3' font-size='14' font-weight='bold'>3D: Volume</text>
+    <text x="250" y="20" fill='currentColor' font-size='14' font-weight='bold'>3D: Volume</text>
     <!-- Front face -->
     <rect x="220" y="50" width="70" height="70" fill='#3d444d' stroke='#58a6ff' stroke-width="2"/>
     <!-- Top face -->
@@ -38,7 +38,7 @@ SECTIONS = [
     <line x1="220" y1="50" x2="245" y2="25" stroke='#58a6ff' stroke-width="2"/>
     <line x1="290" y1="50" x2="315" y2="25" stroke='#58a6ff' stroke-width="2"/>
     <line x1="290" y1="120" x2="315" y2="95" stroke='#58a6ff' stroke-width="2"/>
-    <text x="230" y="140" fill='#e6edf3' font-size='12'>4 × 4 × 4 = 64 cubic units</text>
+    <text x="230" y="140" fill='currentColor' font-size='12'>4 × 4 × 4 = 64 cubic units</text>
   </g>
 </svg>"""
     },
@@ -53,7 +53,7 @@ SECTIONS = [
 <svg width="100%" viewBox="0 0 400 300" class="formula-box">
   <!-- 2×2×2 cube made of unit cubes -->
   <g>
-    <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>A 2 × 2 × 2 cube has 8 unit cubes</text>
+    <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>A 2 × 2 × 2 cube has 8 unit cubes</text>
 
     <!-- Layer 1 (back) -->
     <rect x="60" y="80" width="40" height="40" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5"/>
@@ -67,7 +67,7 @@ SECTIONS = [
     <rect x="70" y="100" width="40" height="40" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" opacity='0.6'/>
     <rect x="110" y="100" width="40" height="40" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" opacity='0.6'/>
 
-    <text x="60" y="220" fill='#e6edf3' font-size='12'>Volume = 2 × 2 × 2 = 8 cubic units</text>
+    <text x="60" y="220" fill='currentColor' font-size='12'>Volume = 2 × 2 × 2 = 8 cubic units</text>
   </g>
 </svg>
 
@@ -111,19 +111,19 @@ SECTIONS = [
 </div>
 
 <svg width="100%" viewBox="0 0 400 200" class="formula-box">
-  <text x="20" y="30" fill='#e6edf3' font-size='13' font-weight='bold'>Size Comparison</text>
+  <text x="20" y="30" fill='currentColor' font-size='13' font-weight='bold'>Size Comparison</text>
 
   <!-- Small cube (cm³) -->
   <g>
     <rect x="40" y="50" width="40" height="40" fill='none' stroke='#58a6ff' stroke-width="2"/>
-    <text x="35" y="110" fill='#e6edf3' font-size='11' text-anchor='middle'>1 cm³</text>
+    <text x="35" y="110" fill='currentColor' font-size='11' text-anchor='middle'>1 cm³</text>
     <text x="60" y="140" fill='#a0aec0' font-size='10' text-anchor='middle'>(sugar cube)</text>
   </g>
 
   <!-- Large cube (m³) -->
   <g>
     <rect x="180" y="50" width="120" height="120" fill='none' stroke='#79c0ff' stroke-width="2" stroke-dasharray="5,5"/>
-    <text x="240" y="175" fill='#e6edf3' font-size='11' text-anchor='middle'>1 m³</text>
+    <text x="240" y="175" fill='currentColor' font-size='11' text-anchor='middle'>1 m³</text>
     <text x="240" y="195" fill='#a0aec0' font-size='10' text-anchor='middle'>(1,000,000 cm³)</text>
   </g>
 </svg>"""
@@ -163,21 +163,21 @@ SECTIONS = [
 </div>
 
 <svg width="100%" viewBox="0 0 400 180" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>Quick Reference</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Quick Reference</text>
 
   <rect x="20" y="40" width="160" height="120" fill='#3d444d' stroke='#58a6ff' stroke-width="2" rx="4"/>
   <text x="30" y="60" fill='#79c0ff' font-size='12' font-weight='bold'>Volume</text>
-  <text x="30" y="85" fill='#e6edf3' font-size='11'>1 cm³</text>
-  <text x="30" y="105" fill='#e6edf3' font-size='11'>1 m³ = 1,000,000 cm³</text>
-  <text x="30" y="125" fill='#e6edf3' font-size='11'>Units: cm³, m³</text>
-  <text x="30" y="145" fill='#e6edf3' font-size='11'>Measured: 3D space</text>
+  <text x="30" y="85" fill='currentColor' font-size='11'>1 cm³</text>
+  <text x="30" y="105" fill='currentColor' font-size='11'>1 m³ = 1,000,000 cm³</text>
+  <text x="30" y="125" fill='currentColor' font-size='11'>Units: cm³, m³</text>
+  <text x="30" y="145" fill='currentColor' font-size='11'>Measured: 3D space</text>
 
   <rect x="220" y="40" width="160" height="120" fill='#3d444d' stroke='#79c0ff' stroke-width="2" rx="4"/>
   <text x="230" y="60" fill='#79c0ff' font-size='12' font-weight='bold'>Capacity</text>
-  <text x="230" y="85" fill='#e6edf3' font-size='11'>1 mL</text>
-  <text x="230" y="105" fill='#e6edf3' font-size='11'>1 L = 1000 mL</text>
-  <text x="230" y="125" fill='#e6edf3' font-size='11'>Units: mL, L</text>
-  <text x="230" y="145" fill='#e6edf3' font-size='11'>What it can hold</text>
+  <text x="230" y="85" fill='currentColor' font-size='11'>1 mL</text>
+  <text x="230" y="105" fill='currentColor' font-size='11'>1 L = 1000 mL</text>
+  <text x="230" y="125" fill='currentColor' font-size='11'>Units: mL, L</text>
+  <text x="230" y="145" fill='currentColor' font-size='11'>What it can hold</text>
 </svg>"""
     }
 ]

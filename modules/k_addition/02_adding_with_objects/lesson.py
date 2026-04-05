@@ -77,19 +77,19 @@ SECTIONS = [
   <circle cx="40" cy="50" r="10" fill='#4169E1' opacity='0.7'/>
   <circle cx="60" cy="50" r="10" fill='#4169E1' opacity='0.7'/>
   <circle cx="40" cy="80" r="10" fill='#4169E1' opacity='0.7'/>
-  <text x="60" y="110" font-size='14' font-weight='bold' fill='#e6edf3'>3</text>
+  <text x="60" y="110" font-size='14' font-weight='bold' fill='currentColor'>3</text>
 
   <!-- Plus sign -->
-  <text x="135" y="75" font-size='28' font-weight='bold' fill='#8b949e'>+</text>
+  <text x="135" y="75" font-size='28' font-weight='bold' fill='currentColor' opacity='0.6'>+</text>
 
   <!-- Second box with 2 objects -->
   <rect x="160" y="20" width="80" height="100" fill='none' stroke='#22c55e' stroke-width="2" rx="5"/>
   <circle cx="180" cy="50" r="10" fill='#22c55e' opacity='0.7'/>
   <circle cx="200" cy="50" r="10" fill='#22c55e' opacity='0.7'/>
-  <text x="200" y="110" font-size='14' font-weight='bold' fill='#e6edf3'>2</text>
+  <text x="200" y="110" font-size='14' font-weight='bold' fill='currentColor'>2</text>
 
   <!-- Equals sign -->
-  <text x="275" y="75" font-size='28' font-weight='bold' fill='#8b949e'>=</text>
+  <text x="275" y="75" font-size='28' font-weight='bold' fill='currentColor' opacity='0.6'>=</text>
 
   <!-- Result box with 5 objects -->
   <rect x="300" y="20" width="80" height="100" fill='none' stroke='#f59e0b' stroke-width="2" rx="5"/>
@@ -98,7 +98,7 @@ SECTIONS = [
   <circle cx="360" cy="40" r="8" fill='#f59e0b' opacity='0.7'/>
   <circle cx="330" cy="65" r="8" fill='#f59e0b' opacity='0.7'/>
   <circle cx="350" cy="65" r="8" fill='#f59e0b' opacity='0.7'/>
-  <text x="350" y="110" font-size='14' font-weight='bold' fill='#e6edf3'>5</text>
+  <text x="350" y="110" font-size='14' font-weight='bold' fill='currentColor'>5</text>
 </svg>"""
     },
 

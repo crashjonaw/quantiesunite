@@ -14,7 +14,7 @@ SECTIONS = [
 </div>
 <p>Notice: We know there are 3 friends (the divisor) and 12 cookies (the dividend). We're looking for the amount each friend gets (the quotient).</p>
 <svg viewBox="0 0 500 240" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>Sharing 12 Cookies Among 3 Friends</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>Sharing 12 Cookies Among 3 Friends</text>
 
   <!-- Friend 1 with plate -->
   <circle cx="70" cy="110" r="40" fill='none' stroke='#4f8ef7' stroke-width="2"/>
@@ -22,7 +22,7 @@ SECTIONS = [
   <circle cx="80" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="50" cy="110" r="8" fill='#f59e0b'/>
   <circle cx="90" cy="110" r="8" fill='#f59e0b'/>
-  <text x="70" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>Friend 1</text>
+  <text x="70" y="175" text-anchor='middle' fill='currentColor' font-size='12'>Friend 1</text>
   <text x="70" y="190" text-anchor='middle' fill='#22c55e' font-size='14' font-weight='bold'>4 cookies</text>
 
   <!-- Friend 2 with plate -->
@@ -31,7 +31,7 @@ SECTIONS = [
   <circle cx="260" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="230" cy="110" r="8" fill='#f59e0b'/>
   <circle cx="270" cy="110" r="8" fill='#f59e0b'/>
-  <text x="250" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>Friend 2</text>
+  <text x="250" y="175" text-anchor='middle' fill='currentColor' font-size='12'>Friend 2</text>
   <text x="250" y="190" text-anchor='middle' fill='#22c55e' font-size='14' font-weight='bold'>4 cookies</text>
 
   <!-- Friend 3 with plate -->
@@ -40,10 +40,10 @@ SECTIONS = [
   <circle cx="440" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="410" cy="110" r="8" fill='#f59e0b'/>
   <circle cx="450" cy="110" r="8" fill='#f59e0b'/>
-  <text x="430" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>Friend 3</text>
+  <text x="430" y="175" text-anchor='middle' fill='currentColor' font-size='12'>Friend 3</text>
   <text x="430" y="190" text-anchor='middle' fill='#22c55e' font-size='14' font-weight='bold'>4 cookies</text>
 
-  <text x="250" y="230" text-anchor='middle' fill='#e6edf3' font-size='13'>12 ÷ 3 = 4</text>
+  <text x="250" y="230" text-anchor='middle' fill='currentColor' font-size='13'>12 ÷ 3 = 4</text>
 </svg>"""
     },
     {
@@ -58,34 +58,34 @@ SECTIONS = [
   <strong>Result:</strong> Each child gets 3 candies (15 ÷ 5 = 3)
 </div>
 <svg viewBox="0 0 450 200" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
-  <text x="225" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Sharing in Rounds</text>
+  <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Sharing in Rounds</text>
 
   <!-- Round 1 -->
-  <text x="40" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>Round 1:</text>
+  <text x="40" y="50" fill='currentColor' font-size='13' font-weight='bold'>Round 1:</text>
   <circle cx="40" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="70" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="100" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="130" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="160" cy="75" r="6" fill='#f59e0b'/>
-  <text x="40" y="100" fill='#e6edf3' font-size='12'>5 given out</text>
+  <text x="40" y="100" fill='currentColor' font-size='12'>5 given out</text>
 
   <!-- Round 2 -->
-  <text x="220" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>Round 2:</text>
+  <text x="220" y="50" fill='currentColor' font-size='13' font-weight='bold'>Round 2:</text>
   <circle cx="220" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="250" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="280" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="310" cy="75" r="6" fill='#f59e0b'/>
   <circle cx="340" cy="75" r="6" fill='#f59e0b'/>
-  <text x="220" y="100" fill='#e6edf3' font-size='12'>10 given out</text>
+  <text x="220" y="100" fill='currentColor' font-size='12'>10 given out</text>
 
   <!-- Round 3 -->
-  <text x="50" y="145" fill='#e6edf3' font-size='13' font-weight='bold'>Round 3:</text>
+  <text x="50" y="145" fill='currentColor' font-size='13' font-weight='bold'>Round 3:</text>
   <circle cx="50" cy="170" r="6" fill='#f59e0b'/>
   <circle cx="80" cy="170" r="6" fill='#f59e0b'/>
   <circle cx="110" cy="170" r="6" fill='#f59e0b'/>
   <circle cx="140" cy="170" r="6" fill='#f59e0b'/>
   <circle cx="170" cy="170" r="6" fill='#f59e0b'/>
-  <text x="50" y="195" fill='#e6edf3' font-size='12'>15 given out</text>
+  <text x="50" y="195" fill='currentColor' font-size='12'>15 given out</text>
 
   <text x="300" y="170" fill='#22c55e' font-size='13' font-weight='bold'>Each gets 3!</text>
 </svg>"""
@@ -132,7 +132,7 @@ SECTIONS = [
   <li>Count how many each group has</li>
 </ol>
 <svg viewBox="0 0 450 240" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
-  <text x="225" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Drawing a Sharing Problem: 12 ÷ 3</text>
+  <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Drawing a Sharing Problem: 12 ÷ 3</text>
 
   <!-- Three baskets -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
@@ -160,9 +160,9 @@ SECTIONS = [
   <circle cx="375" cy="120" r="7" fill='#f59e0b'/>
 
   <!-- Labels -->
-  <text x="80" y="200" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 1</text>
-  <text x="225" y="200" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 2</text>
-  <text x="370" y="200" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 3</text>
+  <text x="80" y="200" text-anchor='middle' fill='currentColor' font-size='12'>Group 1</text>
+  <text x="225" y="200" text-anchor='middle' fill='currentColor' font-size='12'>Group 2</text>
+  <text x="370" y="200" text-anchor='middle' fill='currentColor' font-size='12'>Group 3</text>
 
   <text x="80" y="225" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>4 items</text>
   <text x="225" y="225" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>4 items</text>

@@ -72,20 +72,20 @@ SECTIONS = [
         "body": """<div class="concept-box">
 <p>We show the solution to an inequality on a <strong>number line</strong>.</p>
 <svg width="350" height="100" viewBox="0 0 350 100" style="border-radius: 4px; margin: 12px 0; display: block">
-  <line x1="30" y1="50" x2="300" y2="50" stroke='#e6edf3' stroke-width="2"/>
-  <text x="30" y="70" text-anchor='middle' fill='#e6edf3' font-size='12'>0</text>
-  <text x="80" y="70" text-anchor='middle' fill='#e6edf3' font-size='12'>2</text>
-  <text x="130" y="70" text-anchor='middle' fill='#e6edf3' font-size='12'>4</text>
-  <text x="180" y="70" text-anchor='middle' fill='#e6edf3' font-size='12'>6</text>
-  <text x="230" y="70" text-anchor='middle' fill='#e6edf3' font-size='12'>8</text>
-  <text x="280" y="70" text-anchor='middle' fill='#e6edf3' font-size='12'>10</text>
-  <line x1="30" y1="45" x2="30" y2="55" stroke='#e6edf3' stroke-width="2"/>
-  <line x1="80" y1="45" x2="80" y2="55" stroke='#e6edf3' stroke-width="2"/>
-  <line x1="130" y1="45" x2="130" y2="55" stroke='#e6edf3' stroke-width="2"/>
-  <line x1="180" y1="45" x2="180" y2="55" stroke='#e6edf3' stroke-width="2"/>
-  <line x1="230" y1="45" x2="230" y2="55" stroke='#e6edf3' stroke-width="2"/>
-  <line x1="280" y1="45" x2="280" y2="55" stroke='#e6edf3' stroke-width="2"/>
-  <text x="150" y="25" fill='#e6edf3' font-size='12'>x &lt; 5: Open circle at 5, shade left</text>
+  <line x1="30" y1="50" x2="300" y2="50" stroke='currentColor' stroke-width="2"/>
+  <text x="30" y="70" text-anchor='middle' fill='currentColor' font-size='12'>0</text>
+  <text x="80" y="70" text-anchor='middle' fill='currentColor' font-size='12'>2</text>
+  <text x="130" y="70" text-anchor='middle' fill='currentColor' font-size='12'>4</text>
+  <text x="180" y="70" text-anchor='middle' fill='currentColor' font-size='12'>6</text>
+  <text x="230" y="70" text-anchor='middle' fill='currentColor' font-size='12'>8</text>
+  <text x="280" y="70" text-anchor='middle' fill='currentColor' font-size='12'>10</text>
+  <line x1="30" y1="45" x2="30" y2="55" stroke='currentColor' stroke-width="2"/>
+  <line x1="80" y1="45" x2="80" y2="55" stroke='currentColor' stroke-width="2"/>
+  <line x1="130" y1="45" x2="130" y2="55" stroke='currentColor' stroke-width="2"/>
+  <line x1="180" y1="45" x2="180" y2="55" stroke='currentColor' stroke-width="2"/>
+  <line x1="230" y1="45" x2="230" y2="55" stroke='currentColor' stroke-width="2"/>
+  <line x1="280" y1="45" x2="280" y2="55" stroke='currentColor' stroke-width="2"/>
+  <text x="150" y="25" fill='currentColor' font-size='12'>x &lt; 5: Open circle at 5, shade left</text>
 </svg>
 <p><strong>Symbols on the number line:</strong></p>
 <ul >

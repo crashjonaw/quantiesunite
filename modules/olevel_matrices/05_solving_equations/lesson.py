@@ -53,44 +53,44 @@ SECTIONS = [
             <svg viewBox="0 0 500 180" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Equation form -->
                 <g>
-                    <text x="50" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>Equation Form</text>
-                    <text x="50" y="45" font-size='12' fill='#e6edf3'>2x + 3y = 7</text>
-                    <text x="50" y="65" font-size='12' fill='#e6edf3'>1x − 1y = 1</text>
+                    <text x="50" y="20" font-size='12' fill='currentColor' font-weight='bold'>Equation Form</text>
+                    <text x="50" y="45" font-size='12' fill='currentColor'>2x + 3y = 7</text>
+                    <text x="50" y="65" font-size='12' fill='currentColor'>1x − 1y = 1</text>
                 </g>
 
                 <!-- Arrow -->
                 <path d="M 180 45 L 220 45" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead3)"/>
-                <text x="200" y="30" font-size='10' fill='#8b949e' text-anchor='middle'>rewrite as</text>
+                <text x="200" y="30" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>rewrite as</text>
 
                 <!-- Matrix form -->
                 <g>
-                    <text x="250" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>Matrix Form AX = B</text>
+                    <text x="250" y="20" font-size='12' fill='currentColor' font-weight='bold'>Matrix Form AX = B</text>
 
                     <!-- A -->
                     <rect x="240" y="35" width="50" height="50" fill='none' stroke='#4f8ef7' stroke-width="2"/>
                     <text x="252" y="55" font-size='12' fill='#4f8ef7'>2  3</text>
                     <text x="252" y="75" font-size='12' fill='#4f8ef7'>1  −1</text>
-                    <text x="265" y="100" font-size='10' fill='#8b949e' text-anchor='middle'>A</text>
+                    <text x="265" y="100" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>A</text>
 
                     <!-- X -->
                     <rect x="300" y="35" width="35" height="50" fill='none' stroke='#2dd4bf' stroke-width="2"/>
                     <text x="310" y="55" font-size='12' fill='#2dd4bf'>x</text>
                     <text x="310" y="75" font-size='12' fill='#2dd4bf'>y</text>
-                    <text x="317" y="100" font-size='10' fill='#8b949e' text-anchor='middle'>X</text>
+                    <text x="317" y="100" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>X</text>
 
                     <!-- = -->
-                    <text x="345" y="60" font-size='14' fill='#e6edf3'>=</text>
+                    <text x="345" y="60" font-size='14' fill='currentColor'>=</text>
 
                     <!-- B -->
                     <rect x="360" y="35" width="35" height="50" fill='none' stroke='#f85149' stroke-width="2"/>
                     <text x="370" y="55" font-size='12' fill='#f85149'>7</text>
                     <text x="370" y="75" font-size='12' fill='#f85149'>1</text>
-                    <text x="377" y="100" font-size='10' fill='#8b949e' text-anchor='middle'>B</text>
+                    <text x="377" y="100" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>B</text>
                 </g>
 
                 <defs>
                     <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                        <polygon points="0 0, 10 3, 0 6" fill='#8b949e'/>
+                        <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6'/>
                     </marker>
                 </defs>
             </svg>
@@ -180,36 +180,36 @@ SECTIONS = [
             <svg viewBox="0 0 660 160" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- One solution -->
                 <g>
-                    <text x="100" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>One Solution (det ≠ 0)</text>
+                    <text x="100" y="20" font-size='12' fill='currentColor' font-weight='bold'>One Solution (det ≠ 0)</text>
                     <rect x="20" y="30" width="160" height="120" fill='none' stroke='#30363d' stroke-width="1"/>
 
                     <!-- Two intersecting lines -->
                     <line x1="30" y1="140" x2="170" y2="40" stroke='#4f8ef7' stroke-width="2"/>
                     <line x1="30" y1="50" x2="170" y2="130" stroke='#2dd4bf' stroke-width="2"/>
                     <circle cx="100" cy="90" r="3" fill='#f85149'/>
-                    <text x="100" y="150" font-size='10' fill='#8b949e' text-anchor='middle'>Lines intersect</text>
+                    <text x="100" y="150" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Lines intersect</text>
                 </g>
 
                 <!-- No solution -->
                 <g>
-                    <text x="300" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>No Solution (det = 0)</text>
+                    <text x="300" y="20" font-size='12' fill='currentColor' font-weight='bold'>No Solution (det = 0)</text>
                     <rect x="220" y="30" width="160" height="120" fill='none' stroke='#30363d' stroke-width="1"/>
 
                     <!-- Two parallel lines -->
                     <line x1="230" y1="80" x2="370" y2="80" stroke='#4f8ef7' stroke-width="2"/>
                     <line x1="230" y1="110" x2="370" y2="110" stroke='#2dd4bf' stroke-width="2"/>
-                    <text x="300" y="150" font-size='10' fill='#8b949e' text-anchor='middle'>Parallel lines</text>
+                    <text x="300" y="150" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Parallel lines</text>
                 </g>
 
                 <!-- Infinite solutions -->
                 <g>
-                    <text x="500" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>Infinite Solutions (det = 0)</text>
+                    <text x="500" y="20" font-size='12' fill='currentColor' font-weight='bold'>Infinite Solutions (det = 0)</text>
                     <rect x="420" y="30" width="160" height="120" fill='none' stroke='#30363d' stroke-width="1"/>
 
                     <!-- Same line -->
                     <line x1="430" y1="140" x2="570" y2="40" stroke='#4f8ef7' stroke-width="2"/>
                     <line x1="430" y1="140" x2="570" y2="40" stroke='#2dd4bf' stroke-width="2" stroke-dasharray="5,5"/>
-                    <text x="500" y="150" font-size='10' fill='#8b949e' text-anchor='middle'>Same line</text>
+                    <text x="500" y="150" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Same line</text>
                 </g>
             </svg>
 

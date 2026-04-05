@@ -14,7 +14,7 @@ SECTIONS = [
   <text x="65" y="100" font-size='16' fill='#8b6914' font-weight='bold'>Whole</text>
 
   <!-- Arrow -->
-  <text x="150" y="100" font-size='20' fill='#8b949e'>→</text>
+  <text x="150" y="100" font-size='20' fill='currentColor' opacity='0.6'>→</text>
 
   <!-- Two halves -->
   <text x="200" y="30" font-size='14' font-weight='bold' fill='#161b22'>Cut into 2 equal pieces:</text>
@@ -25,7 +25,7 @@ SECTIONS = [
   <text x="260" y="100" font-size='14' fill='#8b6914' font-weight='bold'>½</text>
 
   <!-- Labels -->
-  <text x="190" y="150" font-size='12' fill='#8b949e'>Same size</text>
+  <text x="190" y="150" font-size='12' fill='currentColor' opacity='0.6'>Same size</text>
   <line x1="210" y1="140" x2="215" y2="135" stroke='#555' stroke-width="1"/>
   <line x1="267" y1="140" x2="262" y2="135" stroke='#555' stroke-width="1"/>
 </svg>
@@ -70,14 +70,14 @@ SECTIONS = [
   <circle cx="245" cy="195" r="25" fill='none' stroke='#8b949e' stroke-width="2"/>
   <line x1="245" y1="170" x2="245" y2="145" stroke='#8b949e' stroke-width="2"/>
   <line x1="245" y1="170" x2="260" y2="185" stroke='#8b949e' stroke-width="2"/>
-  <text x="235" y="215" font-size='12' fill='#8b949e'>30 minutes</text>
+  <text x="235" y="215" font-size='12' fill='currentColor' opacity='0.6'>30 minutes</text>
 
   <!-- Money -->
   <text x="350" y="150" font-size='14' font-weight='bold' fill='#161b22'>Half the money:</text>
   <rect x="330" y="175" width="35" height="20" fill='#90ee90' stroke='#27ae60' stroke-width="1" rx="2"/>
   <text x="340" y="188" font-size='11' fill='#27ae60' font-weight='bold'>£5</text>
-  <text x="330" y="210" font-size='12' fill='#8b949e'>If you had £10</text>
-  <text x="330" y="225" font-size='12' fill='#8b949e'>and split it in half</text>
+  <text x="330" y="210" font-size='12' fill='currentColor' opacity='0.6'>If you had £10</text>
+  <text x="330" y="225" font-size='12' fill='currentColor' opacity='0.6'>and split it in half</text>
 </svg>"""
     },
     {
@@ -98,14 +98,14 @@ SECTIONS = [
 
   <!-- Fraction notation -->
   <text x="190" y="100" font-size='40' fill='#161b22' font-weight='bold'>½</text>
-  <text x="240" y="80" font-size='12' fill='#8b949e'>(one shaded piece out of two)</text>
+  <text x="240" y="80" font-size='12' fill='currentColor' opacity='0.6'>(one shaded piece out of two)</text>
 
   <!-- Example 2 -->
   <text x="30" y="180" font-size='14' font-weight='bold' fill='#161b22'>Example: Half of a chocolate bar</text>
   <rect x="30" y="195" width="50" height="15" fill='#8b6914' stroke='#5d4b0f' stroke-width="1" rx="1"/>
   <rect x="85" y="195" width="50" height="15" fill='#d4a574' stroke='#5d4b0f' stroke-width="1" rx="1"/>
   <text x="35" y="207" font-size='11' fill='#ffd699' font-weight='bold'>½</text>
-  <text x="195" y="205" font-size='12' fill='#8b949e'>(the dark piece)</text>
+  <text x="195" y="205" font-size='12' fill='currentColor' opacity='0.6'>(the dark piece)</text>
 </svg>
 <div class="worked-example formula-box">
   <strong>Real-world scenario:</strong> You and your friend share a sandwich. Your friend gets one half, you get one half. You both got \\(\\frac{1}{2}\\) of the sandwich!
@@ -120,14 +120,14 @@ SECTIONS = [
   <text x="45" y="85" font-size='14' fill='#c0392b' font-weight='bold'>½</text>
 
   <!-- Plus sign -->
-  <text x="95" y="85" font-size='32' fill='#8b949e' font-weight='bold'>+</text>
+  <text x="95" y="85" font-size='32' fill='currentColor' opacity='0.6' font-weight='bold'>+</text>
 
   <!-- Second half -->
   <rect x="130" y="40" width="50" height="70" fill='#99ccff' stroke='#4f8ef7' stroke-width="2" rx="4"/>
   <text x="145" y="85" font-size='14' fill='#2c3e50' font-weight='bold'>½</text>
 
   <!-- Equals -->
-  <text x="200" y="85" font-size='32' fill='#8b949e' font-weight='bold'>=</text>
+  <text x="200" y="85" font-size='32' fill='currentColor' opacity='0.6' font-weight='bold'>=</text>
 
   <!-- Whole -->
   <rect x="240" y="40" width="100" height="70" fill='#b3d9ff' stroke='#4f8ef7' stroke-width="2" rx="4"/>

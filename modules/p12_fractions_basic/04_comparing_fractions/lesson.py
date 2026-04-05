@@ -13,7 +13,7 @@ SECTIONS = [
   <rect x="20" y="50" width="80" height="80" fill='#ffc96d' stroke='#d4a574' stroke-width="2" rx="4"/>
   <line x1="60" y1="50" x2="60" y2="130" stroke='#d4a574' stroke-width="2"/>
   <text x="35" y="97" font-size='14' fill='#8b6914' font-weight='bold'>½</text>
-  <text x="70" y="97" font-size='12' fill='#ccc'>empty</text>
+  <text x="70" y="97" font-size='12' fill='currentColor' opacity='0.6'>empty</text>
 
   <!-- Quarter -->
   <text x="180" y="30" font-size='14' font-weight='bold' fill='#161b22'>A quarter (¼):</text>
@@ -44,7 +44,7 @@ SECTIONS = [
   <line x1="80" y1="60" x2="80" y2="140" stroke='#d4a574' stroke-width="2"/>
   <text x="60" y="105" font-size='14' fill='#8b6914' font-weight='bold'>½</text>
   <text x="95" y="105" font-size='14' fill='#8b6914' font-weight='bold'>½</text>
-  <text x="30" y="160" font-size='12' fill='#8b949e'>BIG pieces!</text>
+  <text x="30" y="160" font-size='12' fill='currentColor' opacity='0.6'>BIG pieces!</text>
 
   <!-- Pizza cut into 4 -->
   <text x="250" y="30" font-size='14' font-weight='bold' fill='#161b22'>Pizza cut into 4 pieces (quarters):</text>
@@ -55,11 +55,11 @@ SECTIONS = [
   <text x="335" y="88" font-size='11' fill='#8b6914' font-weight='bold'>¼</text>
   <text x="305" y="118" font-size='11' fill='#8b6914' font-weight='bold'>¼</text>
   <text x="335" y="118" font-size='11' fill='#8b6914' font-weight='bold'>¼</text>
-  <text x="260" y="160" font-size='12' fill='#8b949e'>SMALL pieces!</text>
+  <text x="260" y="160" font-size='12' fill='currentColor' opacity='0.6'>SMALL pieces!</text>
 
   <!-- Comparison -->
   <text x="30" y="200" font-size='14' font-weight='bold' fill='#161b22'>Comparison:</text>
-  <text x="30" y="225" font-size='13' fill='#8b949e'>Same pizza. More cuts = Smaller pieces. Fewer cuts = Bigger pieces!</text>
+  <text x="30" y="225" font-size='13' fill='currentColor' opacity='0.6'>Same pizza. More cuts = Smaller pieces. Fewer cuts = Bigger pieces!</text>
 </svg>
 <div class="worked-example formula-box">
   <strong>Why is this true?</strong>
@@ -80,7 +80,7 @@ SECTIONS = [
   <line x1="50" y1="50" x2="50" y2="100" stroke='#e74c3c' stroke-width="2"/>
   <text x="32" y="80" font-size='13' fill='#c0392b' font-weight='bold'>½</text>
 
-  <text x="100" y="80" font-size='18' fill='#8b949e' font-weight='bold'>&gt;</text>
+  <text x="100" y="80" font-size='18' fill='currentColor' opacity='0.6' font-weight='bold'>&gt;</text>
 
   <rect x="140" y="50" width="60" height="50" fill='#b3d9ff' stroke='#4f8ef7' stroke-width="2" rx="3"/>
   <line x1="170" y1="50" x2="170" y2="100" stroke='#4f8ef7' stroke-width="2"/>
@@ -91,7 +91,7 @@ SECTIONS = [
   <text x="175" y="93" font-size='11' fill='#4f8ef7' font-weight='bold'>¼</text>
 
   <text x="220" y="80" font-size='14' fill='#27ae60' font-weight='bold'>✓ YES!</text>
-  <text x="220" y="105" font-size='12' fill='#8b949e'>½ is bigger</text>
+  <text x="220" y="105" font-size='12' fill='currentColor' opacity='0.6'>½ is bigger</text>
 
   <!-- Comparison 2: 3/4 vs 1/4 -->
   <text x="20" y="150" font-size='13' font-weight='bold' fill='#161b22'>Is ¾ bigger than ¼?</text>
@@ -103,7 +103,7 @@ SECTIONS = [
   <text x="26" y="210" font-size='10' fill='#c0392b' font-weight='bold'>¼</text>
   <text x="44" y="210" font-size='10' fill='#c0392b' font-weight='bold'>¼</text>
 
-  <text x="100" y="195" font-size='18' fill='#8b949e' font-weight='bold'>&gt;</text>
+  <text x="100" y="195" font-size='18' fill='currentColor' opacity='0.6' font-weight='bold'>&gt;</text>
 
   <rect x="140" y="170" width="60" height="50" fill='#b3d9ff' stroke='#4f8ef7' stroke-width="2" rx="3"/>
   <line x1="170" y1="170" x2="170" y2="220" stroke='#4f8ef7' stroke-width="2"/>
@@ -114,8 +114,8 @@ SECTIONS = [
   <text x="175" y="213" font-size='11' fill='#4f8ef7' font-weight='bold'>¼</text>
 
   <text x="220" y="195" font-size='14' fill='#27ae60' font-weight='bold'>✓ YES!</text>
-  <text x="220" y="220" font-size='12' fill='#8b949e'>¾ (3 pieces)</text>
-  <text x="220" y="235" font-size='12' fill='#8b949e'>is bigger than ¼ (1 piece)</text>
+  <text x="220" y="220" font-size='12' fill='currentColor' opacity='0.6'>¾ (3 pieces)</text>
+  <text x="220" y="235" font-size='12' fill='currentColor' opacity='0.6'>is bigger than ¼ (1 piece)</text>
 
   <!-- Comparison 3: 3/4 vs 1/2 -->
   <text x="20" y="280" font-size='13' font-weight='bold' fill='#161b22'>Is ¾ bigger than ½?</text>
@@ -127,7 +127,7 @@ SECTIONS = [
   <text x="28" y="346" font-size='11' fill='#c0392b' font-weight='bold'>½</text>
   <text x="55" y="346" font-size='11' fill='#c0392b' font-weight='bold'>½</text>
 
-  <text x="100" y="325" font-size='18' fill='#8b949e' font-weight='bold'>&lt;</text>
+  <text x="100" y="325" font-size='18' fill='currentColor' opacity='0.6' font-weight='bold'>&lt;</text>
 
   <rect x="140" y="300" width="60" height="50" fill='#b3d9ff' stroke='#4f8ef7' stroke-width="2" rx="3"/>
   <line x1="170" y1="300" x2="170" y2="350" stroke='#4f8ef7' stroke-width="2"/>
@@ -138,7 +138,7 @@ SECTIONS = [
   <text x="175" y="343" font-size='11' fill='#4f8ef7' font-weight='bold'>¼</text>
 
   <text x="220" y="325" font-size='14' fill='#27ae60' font-weight='bold'>✓ YES!</text>
-  <text x="220" y="350" font-size='12' fill='#8b949e'>¾ is bigger than ½</text>
+  <text x="220" y="350" font-size='12' fill='currentColor' opacity='0.6'>¾ is bigger than ½</text>
 </svg>"""
     },
     {
@@ -150,15 +150,15 @@ SECTIONS = [
 
   <rect x="20" y="50" width="150" height="30" fill='#ff9999' stroke='#e74c3c' stroke-width="2" rx="3"/>
   <text x="100" y="72" font-size='14' fill='#c0392b' font-weight='bold'>½</text>
-  <text x="180" y="72" font-size='12' fill='#8b949e'>BIGGEST piece</text>
+  <text x="180" y="72" font-size='12' fill='currentColor' opacity='0.6'>BIGGEST piece</text>
 
   <rect x="20" y="100" width="100" height="30" fill='#b3d9ff' stroke='#4f8ef7' stroke-width="2" rx="3"/>
   <text x="70" y="122" font-size='14' fill='#4f8ef7' font-weight='bold'>¼</text>
-  <text x="180" y="122" font-size='12' fill='#8b949e'>smaller</text>
+  <text x="180" y="122" font-size='12' fill='currentColor' opacity='0.6'>smaller</text>
 
   <rect x="20" y="150" width="60" height="30" fill='#a8e6a8' stroke='#27ae60' stroke-width="2" rx="3"/>
   <text x="50" y="172" font-size='12' fill='#27ae60' font-weight='bold'>⅛</text>
-  <text x="180" y="172" font-size='12' fill='#8b949e'>SMALLEST piece</text>
+  <text x="180" y="172" font-size='12' fill='currentColor' opacity='0.6'>SMALLEST piece</text>
 </svg>
 <div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px">
   <strong>Pattern:</strong> \\(\\frac{1}{2}\\) > \\(\\frac{1}{4}\\) > \\(\\frac{1}{8}\\) (bigger denominator = smaller piece)

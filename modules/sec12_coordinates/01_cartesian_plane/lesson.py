@@ -42,25 +42,25 @@ SECTIONS = [
   <line x1="0" y1="-120" x2="0" y2="120" stroke='#8b949e' stroke-width="2"/>
 
   <!-- Arrow markers -->
-  <polygon points="120,0 115,-5 115,5" fill='#8b949e'/>
-  <polygon points="0,-120 -5,-115 5,-115" fill='#8b949e'/>
+  <polygon points="120,0 115,-5 115,5" fill='currentColor' opacity='0.6'/>
+  <polygon points="0,-120 -5,-115 5,-115" fill='currentColor' opacity='0.6'/>
 
   <!-- Axis labels -->
-  <text x="110" y="-10" fill='#e6edf3' font-size='14' font-weight='bold'>x</text>
-  <text x="5" y="-110" fill='#e6edf3' font-size='14' font-weight='bold'>y</text>
+  <text x="110" y="-10" fill='currentColor' font-size='14' font-weight='bold'>x</text>
+  <text x="5" y="-110" fill='currentColor' font-size='14' font-weight='bold'>y</text>
 
   <!-- Origin label -->
-  <text x="-15" y="15" fill='#e6edf3' font-size='12'>O</text>
+  <text x="-15" y="15" fill='currentColor' font-size='12'>O</text>
 
   <!-- Scale marks and numbers -->
-  <text x="18" y="12" fill='#e6edf3' font-size='10'>1</text>
-  <text x="38" y="12" fill='#e6edf3' font-size='10'>2</text>
-  <text x="58" y="12" fill='#e6edf3' font-size='10'>3</text>
-  <text x="78" y="12" fill='#e6edf3' font-size='10'>4</text>
-  <text x="-22" y="-18" fill='#e6edf3' font-size='10'>1</text>
-  <text x="-22" y="-38" fill='#e6edf3' font-size='10'>2</text>
-  <text x="-22" y="-58" fill='#e6edf3' font-size='10'>3</text>
-  <text x="-22" y="-78" fill='#e6edf3' font-size='10'>4</text>
+  <text x="18" y="12" fill='currentColor' font-size='10'>1</text>
+  <text x="38" y="12" fill='currentColor' font-size='10'>2</text>
+  <text x="58" y="12" fill='currentColor' font-size='10'>3</text>
+  <text x="78" y="12" fill='currentColor' font-size='10'>4</text>
+  <text x="-22" y="-18" fill='currentColor' font-size='10'>1</text>
+  <text x="-22" y="-38" fill='currentColor' font-size='10'>2</text>
+  <text x="-22" y="-58" fill='currentColor' font-size='10'>3</text>
+  <text x="-22" y="-78" fill='currentColor' font-size='10'>4</text>
 </svg>
 
 <p><strong>Why "Cartesian"?</strong> Named after French philosopher René Descartes, who connected algebra and geometry by using coordinates to describe locations.</p></body></html>"""
@@ -113,10 +113,10 @@ SECTIONS = [
   <line x1="0" y1="-120" x2="0" y2="120" stroke='#8b949e' stroke-width="2"/>
 
   <!-- Quadrant labels -->
-  <text x="30" y="-35" fill='#e6edf3' font-size='12' font-weight='bold'>I (+,+)</text>
-  <text x="-70" y="-35" fill='#e6edf3' font-size='12' font-weight='bold'>II (-,+)</text>
-  <text x="-70" y="50" fill='#e6edf3' font-size='12' font-weight='bold'>III (-,-)</text>
-  <text x="30" y="50" fill='#e6edf3' font-size='12' font-weight='bold'>IV (+,-)</text>
+  <text x="30" y="-35" fill='currentColor' font-size='12' font-weight='bold'>I (+,+)</text>
+  <text x="-70" y="-35" fill='currentColor' font-size='12' font-weight='bold'>II (-,+)</text>
+  <text x="-70" y="50" fill='currentColor' font-size='12' font-weight='bold'>III (-,-)</text>
+  <text x="30" y="50" fill='currentColor' font-size='12' font-weight='bold'>IV (+,-)</text>
 </svg>
 
 <div class="worked-example">
@@ -187,8 +187,8 @@ SECTIONS = [
   <text x="65" y="30" fill='#f85149' font-weight='bold'>(3, -2)</text>
 
   <!-- Origin -->
-  <circle cx="0" cy="0" r="2" fill='#e6edf3'/>
-  <text x="-15" y="15" fill='#e6edf3' font-size='12'>(0, 0)</text>
+  <circle cx="0" cy="0" r="2" fill='currentColor'/>
+  <text x="-15" y="15" fill='currentColor' font-size='12'>(0, 0)</text>
 </svg>
 
 <div class="worked-example">

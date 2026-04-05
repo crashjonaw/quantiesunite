@@ -14,31 +14,31 @@ SECTIONS = [
   12 ÷ 4 = 3 (dividing by 4 gives us back the 3)
 </div>
 <svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>Multiplication and Division: A Two-Way Street</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>Multiplication and Division: A Two-Way Street</text>
 
   <!-- Multiplication box -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
     <rect x="20" y="60" width="150" height="80" rx="5"/>
   </g>
-  <text x="95" y="80" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>Multiplication</text>
-  <text x="95" y="105" text-anchor='middle' fill='#e6edf3' font-size='14'>3 × 4</text>
-  <text x="95" y="125" text-anchor='middle' fill='#e6edf3' font-size='14'>=</text>
+  <text x="95" y="80" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Multiplication</text>
+  <text x="95" y="105" text-anchor='middle' fill='currentColor' font-size='14'>3 × 4</text>
+  <text x="95" y="125" text-anchor='middle' fill='currentColor' font-size='14'>=</text>
   <text x="95" y="145" text-anchor='middle' fill='#22c55e' font-size='16' font-weight='bold'>12</text>
 
   <!-- Arrow right -->
-  <text x="190" y="110" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>→</text>
+  <text x="190" y="110" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>→</text>
 
   <!-- Division box -->
   <g fill='none' stroke='#22c55e' stroke-width="2">
     <rect x="220" y="60" width="150" height="80" rx="5"/>
   </g>
-  <text x="295" y="80" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>Division</text>
-  <text x="295" y="105" text-anchor='middle' fill='#e6edf3' font-size='14'>12 ÷ 3</text>
-  <text x="295" y="125" text-anchor='middle' fill='#e6edf3' font-size='14'>=</text>
+  <text x="295" y="80" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Division</text>
+  <text x="295" y="105" text-anchor='middle' fill='currentColor' font-size='14'>12 ÷ 3</text>
+  <text x="295" y="125" text-anchor='middle' fill='currentColor' font-size='14'>=</text>
   <text x="295" y="145" text-anchor='middle' fill='#22c55e' font-size='16' font-weight='bold'>4</text>
 
   <!-- Arrow left -->
-  <text x="395" y="110" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>←</text>
+  <text x="395" y="110" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>←</text>
 </svg>
 <p><strong>Think of it like this:</strong> Multiplication <strong>puts things together</strong>, division <strong>takes them apart</strong>.</p>"""
     },
@@ -55,18 +55,18 @@ SECTIONS = [
   No! The answer is wrong. (Actually 15 ÷ 3 = 5)
 </div>
 <svg viewBox="0 0 480 220" style="width:100%;max-width:480px;height:auto;display:block;margin:16px auto;">
-  <text x="240" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Checking Division with Multiplication</text>
+  <text x="240" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Checking Division with Multiplication</text>
 
   <!-- Problem -->
-  <text x="40" y="70" fill='#e6edf3' font-size='13' font-weight='bold'>Problem: 24 ÷ 6 = ?</text>
+  <text x="40" y="70" fill='currentColor' font-size='13' font-weight='bold'>Problem: 24 ÷ 6 = ?</text>
 
   <!-- Step 1: Solve -->
-  <text x="40" y="110" fill='#e6edf3' font-size='13'>Step 1: Solve the division</text>
-  <text x="60" y="135" fill='#e6edf3' font-size='12'>24 ÷ 6 = 4</text>
+  <text x="40" y="110" fill='currentColor' font-size='13'>Step 1: Solve the division</text>
+  <text x="60" y="135" fill='currentColor' font-size='12'>24 ÷ 6 = 4</text>
 
   <!-- Step 2: Check -->
-  <text x="40" y="170" fill='#e6edf3' font-size='13'>Step 2: Check with multiplication</text>
-  <text x="60" y="195" fill='#e6edf3' font-size='12'>4 × 6 = 24 ✓</text>
+  <text x="40" y="170" fill='currentColor' font-size='13'>Step 2: Check with multiplication</text>
+  <text x="60" y="195" fill='currentColor' font-size='12'>4 × 6 = 24 ✓</text>
   <text x="240" y="195" fill='#22c55e' font-size='13' font-weight='bold'>Correct!</text>
 </svg>"""
     },
@@ -118,21 +118,21 @@ SECTIONS = [
   <li><strong>Understand patterns:</strong> You see how numbers relate to each other</li>
 </ul>
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Connected Operations</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Connected Operations</text>
 
   <!-- Circle 1: Fact group -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
     <circle cx="150" cy="120" r="60"/>
   </g>
-  <text x="150" y="105" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>2 × 5</text>
-  <text x="150" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>5 × 2</text>
-  <text x="150" y="145" text-anchor='middle' fill='#e6edf3' font-size='13'>10 ÷ 2</text>
+  <text x="150" y="105" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>2 × 5</text>
+  <text x="150" y="125" text-anchor='middle' fill='currentColor' font-size='13'>5 × 2</text>
+  <text x="150" y="145" text-anchor='middle' fill='currentColor' font-size='13'>10 ÷ 2</text>
   <text x="150" y="165" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>10 ÷ 5</text>
 
-  <text x="320" y="80" fill='#e6edf3' font-size='13' font-weight='bold'>All related!</text>
-  <text x="320" y="105" fill='#e6edf3' font-size='12'>They all involve</text>
-  <text x="320" y="125" fill='#e6edf3' font-size='12'>the same three</text>
-  <text x="320" y="145" fill='#e6edf3' font-size='12'>numbers:</text>
+  <text x="320" y="80" fill='currentColor' font-size='13' font-weight='bold'>All related!</text>
+  <text x="320" y="105" fill='currentColor' font-size='12'>They all involve</text>
+  <text x="320" y="125" fill='currentColor' font-size='12'>the same three</text>
+  <text x="320" y="145" fill='currentColor' font-size='12'>numbers:</text>
   <text x="320" y="170" fill='#22c55e' font-size='14' font-weight='bold'>2, 5, and 10</text>
 </svg>"""
     },
@@ -152,7 +152,7 @@ SECTIONS = [
   <strong>Remember:</strong> If you know one number fact, you can always find the others by thinking of multiplication and division as opposites. They're all connected!
 </div>
 <svg viewBox="0 0 400 200" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
-  <text x="200" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Fact Family for 4, 5, and 20</text>
+  <text x="200" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Fact Family for 4, 5, and 20</text>
 
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
     <rect x="30" y="60" width="160" height="35" rx="3"/>
@@ -161,10 +161,10 @@ SECTIONS = [
     <rect x="210" y="110" width="160" height="35" rx="3"/>
   </g>
 
-  <text x="110" y="85" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>4 × 5 = 20</text>
-  <text x="290" y="85" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>5 × 4 = 20</text>
-  <text x="110" y="135" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>20 ÷ 4 = 5</text>
-  <text x="290" y="135" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>20 ÷ 5 = 4</text>
+  <text x="110" y="85" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>4 × 5 = 20</text>
+  <text x="290" y="85" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>5 × 4 = 20</text>
+  <text x="110" y="135" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>20 ÷ 4 = 5</text>
+  <text x="290" y="135" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>20 ÷ 5 = 4</text>
 
   <text x="200" y="175" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>All use: 4, 5, and 20</text>
 </svg>"""

@@ -12,16 +12,16 @@ Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
 </div>
 <svg viewBox="0 0 500 120" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <line x1="40" y1="60" x2="490" y2="60" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="40" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="90" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="140" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="190" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="240" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="290" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="340" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="390" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="440" cy="60" r="4" fill='#e6edf3'/>
-  <circle cx="490" cy="60" r="4" fill='#e6edf3'/>
+  <circle cx="40" cy="60" r="4" fill='currentColor'/>
+  <circle cx="90" cy="60" r="4" fill='currentColor'/>
+  <circle cx="140" cy="60" r="4" fill='currentColor'/>
+  <circle cx="190" cy="60" r="4" fill='currentColor'/>
+  <circle cx="240" cy="60" r="4" fill='currentColor'/>
+  <circle cx="290" cy="60" r="4" fill='currentColor'/>
+  <circle cx="340" cy="60" r="4" fill='currentColor'/>
+  <circle cx="390" cy="60" r="4" fill='currentColor'/>
+  <circle cx="440" cy="60" r="4" fill='currentColor'/>
+  <circle cx="490" cy="60" r="4" fill='currentColor'/>
 
   <text x="35" y="85" font-size='14' font-weight='bold'>0</text>
   <text x="85" y="85" font-size='14'>1</text>

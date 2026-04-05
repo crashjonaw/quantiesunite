@@ -19,19 +19,19 @@ SECTIONS = [
                 <!-- Original square -->
                 <rect x="40" y="40" width="80" height="80" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
                 <circle cx="80" cy="80" r="3" fill='#fbbf24'/>
-                <text x="80" y="135" text-anchor='middle' fill='#e6edf3' font-size='11'>0°</text>
+                <text x="80" y="135" text-anchor='middle' fill='currentColor' font-size='11'>0°</text>
 
                 <!-- 90° rotation -->
                 <rect x="190" y="40" width="80" height="80" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
                 <circle cx="230" cy="80" r="3" fill='#fbbf24'/>
-                <text x="230" y="135" text-anchor='middle' fill='#e6edf3' font-size='11'>90°</text>
+                <text x="230" y="135" text-anchor='middle' fill='currentColor' font-size='11'>90°</text>
 
                 <!-- 180° rotation -->
                 <rect x="340" y="40" width="80" height="80" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
                 <circle cx="380" cy="80" r="3" fill='#fbbf24'/>
-                <text x="380" y="135" text-anchor='middle' fill='#e6edf3' font-size='11'>180°</text>
+                <text x="380" y="135" text-anchor='middle' fill='currentColor' font-size='11'>180°</text>
 
-                <text x="250" y="30" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>All look identical!</text>
+                <text x="250" y="30" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>All look identical!</text>
             </svg>
         </div>
 
@@ -108,19 +108,19 @@ SECTIONS = [
                 <!-- 0° -->
                 <polygon points="80,140 50,60 110,60" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
                 <circle cx="80" cy="85" r="2" fill='#fbbf24'/>
-                <text x="80" y="160" text-anchor='middle' fill='#e6edf3' font-size='11'>0°</text>
+                <text x="80" y="160" text-anchor='middle' fill='currentColor' font-size='11'>0°</text>
 
                 <!-- 120° -->
                 <polygon points="230,140 200,60 260,60" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
                 <circle cx="230" cy="85" r="2" fill='#fbbf24'/>
-                <text x="230" y="160" text-anchor='middle' fill='#e6edf3' font-size='11'>120°</text>
+                <text x="230" y="160" text-anchor='middle' fill='currentColor' font-size='11'>120°</text>
 
                 <!-- 240° -->
                 <polygon points="380,140 350,60 410,60" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
                 <circle cx="380" cy="85" r="2" fill='#fbbf24'/>
-                <text x="380" y="160" text-anchor='middle' fill='#e6edf3' font-size='11'>240°</text>
+                <text x="380" y="160" text-anchor='middle' fill='currentColor' font-size='11'>240°</text>
 
-                <text x="250" y="30" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Equilateral Triangle: Order 3 (rotations of 120°)</text>
+                <text x="250" y="30" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Equilateral Triangle: Order 3 (rotations of 120°)</text>
             </svg>
         </div>
 
@@ -132,14 +132,14 @@ SECTIONS = [
                 <!-- 0° -->
                 <text x="80" y="90" fill='#60a5fa' font-size='48' font-weight='bold'>S</text>
                 <circle cx="80" cy="80" r="2" fill='#fbbf24'/>
-                <text x="80" y="150" text-anchor='middle' fill='#e6edf3' font-size='11'>0°</text>
+                <text x="80" y="150" text-anchor='middle' fill='currentColor' font-size='11'>0°</text>
 
                 <!-- 180° -->
                 <text x="260" y="90" fill='#60a5fa' font-size='48' font-weight='bold' transform='rotate(180 260 80)'>S</text>
                 <circle cx="260" cy="80" r="2" fill='#fbbf24'/>
-                <text x="260" y="150" text-anchor='middle' fill='#e6edf3' font-size='11'>180°</text>
+                <text x="260" y="150" text-anchor='middle' fill='currentColor' font-size='11'>180°</text>
 
-                <text x="175" y="30" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Letter S: Order 2</text>
+                <text x="175" y="30" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Letter S: Order 2</text>
             </svg>
         </div>
 
@@ -248,7 +248,7 @@ SECTIONS = [
                 <!-- Center -->
                 <circle cx="200" cy="150" r="3" fill='#ef4444'/>
 
-                <text x="200" y="280" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Regular Hexagon: Rotate 60° each time → Order 6</text>
+                <text x="200" y="280" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Regular Hexagon: Rotate 60° each time → Order 6</text>
             </svg>
         </div>
 

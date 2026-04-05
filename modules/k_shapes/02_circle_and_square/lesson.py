@@ -16,10 +16,10 @@ SECTIONS = [
   <line x1="200" y1="150" x2="165" y2="210" stroke='#ef4444' stroke-width="2"/>
   <line x1="200" y1="150" x2="140" y2="100" stroke='#ef4444' stroke-width="2"/>
   <!-- Labels -->
-  <text x="240" y="145" font-size='14' font-weight='bold' fill='#e6edf3'>radius</text>
-  <text x="190" y="140" font-size='14' font-weight='bold' fill='#e6edf3'>center</text>
+  <text x="240" y="145" font-size='14' font-weight='bold' fill='currentColor'>radius</text>
+  <text x="190" y="140" font-size='14' font-weight='bold' fill='currentColor'>center</text>
   <!-- Key facts -->
-  <text x="200" y="280" text-anchor='middle' font-size='13' fill='#e6edf3' font-weight='bold'>0 sides  •  0 corners  •  1 curved edge</text>
+  <text x="200" y="280" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>0 sides  •  0 corners  •  1 curved edge</text>
 </svg>
 <p><strong>Special properties of circles:</strong></p>
 <ul>
@@ -49,12 +49,12 @@ SECTIONS = [
   <rect x="210" y="190" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
   <rect x="100" y="190" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
   <!-- Side labels -->
-  <text x="160" y="60" text-anchor='middle' font-size='12' fill='#e6edf3'>side</text>
-  <text x="240" y="140" text-anchor='middle' font-size='12' fill='#e6edf3'>side</text>
-  <text x="160" y="230" text-anchor='middle' font-size='12' fill='#e6edf3'>side</text>
-  <text x="60" y="140" text-anchor='middle' font-size='12' fill='#e6edf3'>side</text>
+  <text x="160" y="60" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
+  <text x="240" y="140" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
+  <text x="160" y="230" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
+  <text x="60" y="140" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
   <!-- Key facts -->
-  <text x="200" y="260" text-anchor='middle' font-size='13' fill='#e6edf3' font-weight='bold'>4 EQUAL sides  •  4 right corners</text>
+  <text x="200" y="260" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>4 EQUAL sides  •  4 right corners</text>
 </svg>
 <p><strong>What makes a square special:</strong></p>
 <ul>

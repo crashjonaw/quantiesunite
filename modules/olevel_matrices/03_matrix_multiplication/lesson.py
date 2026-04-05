@@ -76,54 +76,54 @@ SECTIONS = [
 
             <svg viewBox="0 0 500 250" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Matrix A -->
-                <text x="20" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>A =</text>
+                <text x="20" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
                 <rect x="50" y="10" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2"/>
                 <text x="65" y="35" font-size='13' fill='#4f8ef7'>1</text>
                 <text x="95" y="35" font-size='13' fill='#4f8ef7'>2</text>
                 <text x="125" y="35" font-size='13' fill='#4f8ef7'>3</text>
-                <text x="65" y="55" font-size='13' fill='#e6edf3'>4</text>
-                <text x="95" y="55" font-size='13' fill='#e6edf3'>5</text>
-                <text x="125" y="55" font-size='13' fill='#e6edf3'>6</text>
-                <text x="65" y="75" font-size='13' fill='#e6edf3'>7</text>
-                <text x="95" y="75" font-size='13' fill='#e6edf3'>8</text>
-                <text x="125" y="75" font-size='13' fill='#e6edf3'>9</text>
-                <text x="90" y="110" font-size='11' fill='#8b949e' text-anchor='middle'>(3 × 3)</text>
+                <text x="65" y="55" font-size='13' fill='currentColor'>4</text>
+                <text x="95" y="55" font-size='13' fill='currentColor'>5</text>
+                <text x="125" y="55" font-size='13' fill='currentColor'>6</text>
+                <text x="65" y="75" font-size='13' fill='currentColor'>7</text>
+                <text x="95" y="75" font-size='13' fill='currentColor'>8</text>
+                <text x="125" y="75" font-size='13' fill='currentColor'>9</text>
+                <text x="90" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 3)</text>
 
                 <!-- Matrix B -->
-                <text x="160" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>B =</text>
+                <text x="160" y="20" font-size='12' fill='currentColor' font-weight='bold'>B =</text>
                 <rect x="195" y="10" width="60" height="80" fill='none' stroke='#4f8ef7' stroke-width="2"/>
                 <text x="210" y="35" font-size='13' fill='#4f8ef7'>2</text>
                 <text x="240" y="35" font-size='13' fill='#4f8ef7'>1</text>
-                <text x="210" y="55" font-size='13' fill='#e6edf3'>0</text>
-                <text x="240" y="55" font-size='13' fill='#e6edf3'>3</text>
-                <text x="210" y="75" font-size='13' fill='#e6edf3'>4</text>
-                <text x="240" y="75" font-size='13' fill='#e6edf3'>2</text>
-                <text x="225" y="110" font-size='11' fill='#8b949e' text-anchor='middle'>(3 × 2)</text>
+                <text x="210" y="55" font-size='13' fill='currentColor'>0</text>
+                <text x="240" y="55" font-size='13' fill='currentColor'>3</text>
+                <text x="210" y="75" font-size='13' fill='currentColor'>4</text>
+                <text x="240" y="75" font-size='13' fill='currentColor'>2</text>
+                <text x="225" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
 
                 <!-- Arrow -->
                 <path d="M 280 50 L 320 50" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead)"/>
 
                 <!-- Result -->
-                <text x="335" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>AB =</text>
+                <text x="335" y="20" font-size='12' fill='currentColor' font-weight='bold'>AB =</text>
                 <rect x="375" y="10" width="60" height="80" fill='none' stroke='#2dd4bf' stroke-width="2"/>
                 <text x="390" y="35" font-size='13' fill='#2dd4bf'>?</text>
                 <text x="420" y="35" font-size='13' fill='#2dd4bf'>?</text>
-                <text x="390" y="55" font-size='13' fill='#e6edf3'>?</text>
-                <text x="420" y="55" font-size='13' fill='#e6edf3'>?</text>
-                <text x="390" y="75" font-size='13' fill='#e6edf3'>?</text>
-                <text x="420" y="75" font-size='13' fill='#e6edf3'>?</text>
-                <text x="405" y="110" font-size='11' fill='#8b949e' text-anchor='middle'>(3 × 2)</text>
+                <text x="390" y="55" font-size='13' fill='currentColor'>?</text>
+                <text x="420" y="55" font-size='13' fill='currentColor'>?</text>
+                <text x="390" y="75" font-size='13' fill='currentColor'>?</text>
+                <text x="420" y="75" font-size='13' fill='currentColor'>?</text>
+                <text x="405" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
 
                 <!-- Example calculation -->
-                <text x="20" y="150" font-size='11' fill='#8b949e' font-style="italic">Example: Element (1,1) = Row 1 of A · Column 1 of B</text>
-                <text x="20" y="170" font-size='12' fill='#e6edf3' font-family='monospace'>(1 × 2) + (2 × 0) + (3 × 4) = 2 + 0 + 12 = <strong style="color: #2dd4bf;">14</strong></text>
+                <text x="20" y="150" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,1) = Row 1 of A · Column 1 of B</text>
+                <text x="20" y="170" font-size='12' fill='currentColor' font-family='monospace'>(1 × 2) + (2 × 0) + (3 × 4) = 2 + 0 + 12 = <strong style="color: #2dd4bf;">14</strong></text>
 
-                <text x="20" y="200" font-size='11' fill='#8b949e' font-style="italic">Example: Element (1,2) = Row 1 of A · Column 2 of B</text>
-                <text x="20" y="220" font-size='12' fill='#e6edf3' font-family='monospace'>(1 × 1) + (2 × 3) + (3 × 2) = 1 + 6 + 6 = <strong style="color: #2dd4bf;">13</strong></text>
+                <text x="20" y="200" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,2) = Row 1 of A · Column 2 of B</text>
+                <text x="20" y="220" font-size='12' fill='currentColor' font-family='monospace'>(1 × 1) + (2 × 3) + (3 × 2) = 1 + 6 + 6 = <strong style="color: #2dd4bf;">13</strong></text>
 
                 <defs>
                     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                        <polygon points="0 0, 10 3, 0 6" fill='#8b949e'/>
+                        <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6'/>
                     </marker>
                 </defs>
             </svg>

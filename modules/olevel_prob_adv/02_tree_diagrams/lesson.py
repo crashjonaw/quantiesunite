@@ -39,10 +39,10 @@ SECTIONS = [
             <circle cx="250" cy="300" r="15" fill='#4f8ef7' stroke='#30363d' stroke-width="2"/>
 
             <!-- Labels for first stage -->
-            <text x="160" y="135" fill='#e6edf3' font-size='14' font-family='monospace'>p₁</text>
-            <text x="160" y="275" fill='#e6edf3' font-size='14' font-family='monospace'>p₂</text>
-            <text x="270" y="85" fill='#e6edf3' font-size='14' font-family='monospace'>Event A</text>
-            <text x="270" y="315" fill='#e6edf3' font-size='14' font-family='monospace'>Event B</text>
+            <text x="160" y="135" fill='currentColor' font-size='14' font-family='monospace'>p₁</text>
+            <text x="160" y="275" fill='currentColor' font-size='14' font-family='monospace'>p₂</text>
+            <text x="270" y="85" fill='currentColor' font-size='14' font-family='monospace'>Event A</text>
+            <text x="270" y="315" fill='currentColor' font-size='14' font-family='monospace'>Event B</text>
 
             <!-- Second stage branches from A -->
             <line x1="265" y1="115" x2="370" y2="50" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
@@ -59,16 +59,16 @@ SECTIONS = [
             <circle cx="400" cy="350" r="12" fill='#4f8ef7' stroke='#30363d' stroke-width="2"/>
 
             <!-- Second stage labels -->
-            <text x="310" y="75" fill='#e6edf3' font-size='12' font-family='monospace'>q₁</text>
-            <text x="310" y="130" fill='#e6edf3' font-size='12' font-family='monospace'>q₂</text>
-            <text x="310" y="230" fill='#e6edf3' font-size='12' font-family='monospace'>q₃</text>
-            <text x="310" y="330" fill='#e6edf3' font-size='12' font-family='monospace'>q₄</text>
+            <text x="310" y="75" fill='currentColor' font-size='12' font-family='monospace'>q₁</text>
+            <text x="310" y="130" fill='currentColor' font-size='12' font-family='monospace'>q₂</text>
+            <text x="310" y="230" fill='currentColor' font-size='12' font-family='monospace'>q₃</text>
+            <text x="310" y="330" fill='currentColor' font-size='12' font-family='monospace'>q₄</text>
 
             <!-- Outcome labels -->
-            <text x="420" y="55" fill='#e6edf3' font-size='12' font-family='monospace'>A∩C</text>
-            <text x="420" y="155" fill='#e6edf3' font-size='12' font-family='monospace'>A∩D</text>
-            <text x="420" y="255" fill='#e6edf3' font-size='12' font-family='monospace'>B∩C</text>
-            <text x="420" y="355" fill='#e6edf3' font-size='12' font-family='monospace'>B∩D</text>
+            <text x="420" y="55" fill='currentColor' font-size='12' font-family='monospace'>A∩C</text>
+            <text x="420" y="155" fill='currentColor' font-size='12' font-family='monospace'>A∩D</text>
+            <text x="420" y="255" fill='currentColor' font-size='12' font-family='monospace'>B∩C</text>
+            <text x="420" y="355" fill='currentColor' font-size='12' font-family='monospace'>B∩D</text>
         </svg>
 
         <p><strong>Reading the diagram:</strong> Start at the root (left). Each path to a leaf represents one complete sequence of outcomes. Labels on branches are probabilities. The product of probabilities along a path equals the probability of that complete outcome.</p>

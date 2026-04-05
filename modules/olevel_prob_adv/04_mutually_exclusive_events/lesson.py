@@ -79,18 +79,18 @@ SECTIONS = [
             <circle cx="350" cy="175" r="100" fill='#7ee787' opacity='0.3' stroke='#7ee787' stroke-width="2"/>
 
             <!-- Labels -->
-            <text x="110" y="140" fill='#e6edf3' font-size='16' font-weight='bold'>A</text>
-            <text x="390" y="140" fill='#e6edf3' font-size='16' font-weight='bold'>B</text>
-            <text x="250" y="185" fill='#e6edf3' font-size='14' font-weight='bold'>A ∩ B</text>
+            <text x="110" y="140" fill='currentColor' font-size='16' font-weight='bold'>A</text>
+            <text x="390" y="140" fill='currentColor' font-size='16' font-weight='bold'>B</text>
+            <text x="250" y="185" fill='currentColor' font-size='14' font-weight='bold'>A ∩ B</text>
 
             <!-- Descriptive text -->
-            <text x="20" y="30" fill='#e6edf3' font-size='14'>Blue region: Only A</text>
-            <text x="20" y="55" fill='#e6edf3' font-size='14'>Green region: Only B</text>
-            <text x="20" y="80" fill='#e6edf3' font-size='14'>Purple overlap: Both A and B</text>
+            <text x="20" y="30" fill='currentColor' font-size='14'>Blue region: Only A</text>
+            <text x="20" y="55" fill='currentColor' font-size='14'>Green region: Only B</text>
+            <text x="20" y="80" fill='currentColor' font-size='14'>Purple overlap: Both A and B</text>
 
             <!-- Formula annotation -->
-            <text x="20" y="310" fill='#e6edf3' font-size='13' font-family='monospace'>P(A or B) = P(A) + P(B) − P(A ∩ B)</text>
-            <text x="20" y="330" fill='#8b949e' font-size='12' font-family='monospace'>= (blue area) + (green area) − (purple area counted twice)</text>
+            <text x="20" y="310" fill='currentColor' font-size='13' font-family='monospace'>P(A or B) = P(A) + P(B) − P(A ∩ B)</text>
+            <text x="20" y="330" fill='currentColor' opacity='0.6' font-size='12' font-family='monospace'>= (blue area) + (green area) − (purple area counted twice)</text>
         </svg>
 
         <div class="worked-example">

@@ -14,7 +14,7 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 450 380" xmlns="http://www.w3.org/2000/svg">
-      <text x="225" y="25" font-size='16' font-weight='bold' fill='#e6edf3' text-anchor='middle'>100 Squares: 25 Are Shaded (25%)</text>
+      <text x="225" y="25" font-size='16' font-weight='bold' fill='currentColor' text-anchor='middle'>100 Squares: 25 Are Shaded (25%)</text>
 
       <g id="grid">
         <!-- Row 1 (10 squares) -->
@@ -138,7 +138,7 @@ SECTIONS = [
         <rect x="200" y="230" width="18" height="18" fill='#999' stroke='#30363d' stroke-width="0.5"/>
       </g>
 
-      <text x="225" y="300" font-size='18' font-weight='bold' text-anchor='middle' fill='#e6edf3'>25 out of 100 = 25%</text>
+      <text x="225" y="300" font-size='18' font-weight='bold' text-anchor='middle' fill='currentColor'>25 out of 100 = 25%</text>
       <text x="225" y="325" font-size='12' text-anchor='middle' fill='#a0aec0'>(10 × 10 grid: 25 blue squares, 75 gray squares)</text>
     </svg>
   </div>
@@ -176,19 +176,19 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Comparing Different Amounts</text>
+      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Comparing Different Amounts</text>
 
-      <text x="50" y="60" font-size='12' fill='#e6edf3'>School A: 42 out of 56</text>
+      <text x="50" y="60" font-size='12' fill='currentColor'>School A: 42 out of 56</text>
       <rect x="50" y="70" width="150" height="30" fill='none' stroke='#30363d' stroke-width="2"/>
       <rect x="50" y="70" width="112.5" height="30" fill='#4169E1' opacity='0.6'/>
-      <text x="125" y="92" font-size='11' text-anchor='middle' fill='#e6edf3'>75%</text>
+      <text x="125" y="92" font-size='11' text-anchor='middle' fill='currentColor'>75%</text>
 
-      <text x="50" y="130" font-size='12' fill='#e6edf3'>School B: 105 out of 140</text>
+      <text x="50" y="130" font-size='12' fill='currentColor'>School B: 105 out of 140</text>
       <rect x="50" y="140" width="200" height="30" fill='none' stroke='#30363d' stroke-width="2"/>
       <rect x="50" y="140" width="150" height="30" fill='#4169E1' opacity='0.6'/>
-      <text x="150" y="162" font-size='11' text-anchor='middle' fill='#e6edf3'>75%</text>
+      <text x="150" y="162" font-size='11' text-anchor='middle' fill='currentColor'>75%</text>
 
-      <text x="300" y="120" font-size='13' font-weight='bold' fill='#e6edf3'>Same%,different sizes!</text>
+      <text x="300" y="120" font-size='13' font-weight='bold' fill='currentColor'>Same%,different sizes!</text>
     </svg>
   </div>
 </div>"""
@@ -223,22 +223,22 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Three Forms of the Same Amount</text>
+      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Three Forms of the Same Amount</text>
 
       <rect x="50" y="60" width="100" height="50" fill='#4169E1' opacity='0.3' stroke='#30363d' stroke-width="2" rx="5"/>
-      <text x="100" y="92" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>50%</text>
+      <text x="100" y="92" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>50%</text>
 
-      <text x="170" y="92" font-size='18' fill='#e6edf3'>=</text>
+      <text x="170" y="92" font-size='18' fill='currentColor'>=</text>
 
       <rect x="200" y="60" width="100" height="50" fill='#22c55e' opacity='0.3' stroke='#30363d' stroke-width="2" rx="5"/>
-      <text x="250" y="92" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>1/2</text>
+      <text x="250" y="92" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>1/2</text>
 
-      <text x="320" y="92" font-size='18' fill='#e6edf3'>=</text>
+      <text x="320" y="92" font-size='18' fill='currentColor'>=</text>
 
       <rect x="350" y="60" width="100" height="50" fill='#f59e0b' opacity='0.3' stroke='#30363d' stroke-width="2" rx="5"/>
-      <text x="400" y="92" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>0.5</text>
+      <text x="400" y="92" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>0.5</text>
 
-      <text x="250" y="160" font-size='12' text-anchor='middle' fill='#e6edf3'>All three represent the same fraction of a whole!</text>
+      <text x="250" y="160" font-size='12' text-anchor='middle' fill='currentColor'>All three represent the same fraction of a whole!</text>
     </svg>
   </div>
 </div>"""

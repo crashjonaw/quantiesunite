@@ -15,31 +15,31 @@ SECTIONS = [
   <!-- Tick marks and numbers -->
   <g font-size='14' text-anchor='middle'>
     <line x1="20" y1="35" x2="20" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="20" y="60" fill='#e6edf3'>0</text>
+    <text x="20" y="60" fill='currentColor'>0</text>
 
     <line x1="70" y1="35" x2="70" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="70" y="60" fill='#e6edf3'>1</text>
+    <text x="70" y="60" fill='currentColor'>1</text>
 
     <line x1="120" y1="35" x2="120" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="120" y="60" fill='#e6edf3'>2</text>
+    <text x="120" y="60" fill='currentColor'>2</text>
 
     <line x1="170" y1="35" x2="170" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="170" y="60" fill='#e6edf3'>3</text>
+    <text x="170" y="60" fill='currentColor'>3</text>
 
     <line x1="220" y1="35" x2="220" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="220" y="60" fill='#e6edf3'>4</text>
+    <text x="220" y="60" fill='currentColor'>4</text>
 
     <line x1="270" y1="35" x2="270" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="270" y="60" fill='#e6edf3'>5</text>
+    <text x="270" y="60" fill='currentColor'>5</text>
 
     <line x1="320" y1="35" x2="320" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="320" y="60" fill='#e6edf3'>6</text>
+    <text x="320" y="60" fill='currentColor'>6</text>
 
     <line x1="370" y1="35" x2="370" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="370" y="60" fill='#e6edf3'>7</text>
+    <text x="370" y="60" fill='currentColor'>7</text>
 
     <line x1="420" y1="35" x2="420" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="420" y="60" fill='#e6edf3'>8</text>
+    <text x="420" y="60" fill='currentColor'>8</text>
   </g>
 </svg>
 
@@ -69,17 +69,17 @@ SECTIONS = [
     <line x1="20" y1="50" x2="430" y2="50" stroke='#4169E1' stroke-width="3"/>
     <g font-size='14' text-anchor='middle'>
       <line x1="20" y1="45" x2="20" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="20" y="70" fill='#e6edf3'>0</text>
+      <text x="20" y="70" fill='currentColor'>0</text>
       <line x1="70" y1="45" x2="70" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="70" y="70" fill='#e6edf3'>1</text>
+      <text x="70" y="70" fill='currentColor'>1</text>
       <line x1="120" y1="45" x2="120" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="120" y="70" fill='#e6edf3'>2</text>
+      <text x="120" y="70" fill='currentColor'>2</text>
       <line x1="170" y1="45" x2="170" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="170" y="70" fill='#e6edf3'>3</text>
+      <text x="170" y="70" fill='currentColor'>3</text>
       <line x1="220" y1="45" x2="220" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="220" y="70" fill='#e6edf3'>4</text>
+      <text x="220" y="70" fill='currentColor'>4</text>
       <line x1="270" y1="45" x2="270" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="270" y="70" fill='#e6edf3'>5</text>
+      <text x="270" y="70" fill='currentColor'>5</text>
     </g>
     <circle cx="170" cy="50" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
     <text x="170" y="25" text-anchor='middle' font-size='12' font-weight='bold'>Start here: 3</text>
@@ -91,17 +91,17 @@ SECTIONS = [
     <line x1="20" y1="60" x2="430" y2="60" stroke='#4169E1' stroke-width="3"/>
     <g font-size='14' text-anchor='middle'>
       <line x1="20" y1="55" x2="20" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="20" y="80" fill='#e6edf3'>0</text>
+      <text x="20" y="80" fill='currentColor'>0</text>
       <line x1="70" y1="55" x2="70" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="70" y="80" fill='#e6edf3'>1</text>
+      <text x="70" y="80" fill='currentColor'>1</text>
       <line x1="120" y1="55" x2="120" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="120" y="80" fill='#e6edf3'>2</text>
+      <text x="120" y="80" fill='currentColor'>2</text>
       <line x1="170" y1="55" x2="170" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="170" y="80" fill='#e6edf3'>3</text>
+      <text x="170" y="80" fill='currentColor'>3</text>
       <line x1="220" y1="55" x2="220" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="220" y="80" fill='#e6edf3'>4</text>
+      <text x="220" y="80" fill='currentColor'>4</text>
       <line x1="270" y1="55" x2="270" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="270" y="80" fill='#e6edf3'>5</text>
+      <text x="270" y="80" fill='currentColor'>5</text>
     </g>
     <circle cx="170" cy="60" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
     <circle cx="270" cy="60" r="8" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>

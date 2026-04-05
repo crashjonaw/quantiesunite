@@ -14,7 +14,7 @@ SECTIONS = [
         "title": "Understanding Arrays: Rows × Columns",
         "body": """<p>Look at this array of dots:</p>
 <svg viewBox="0 0 500 280" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>3 Rows × 4 Columns = 12 Dots</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>3 Rows × 4 Columns = 12 Dots</text>
   <!-- Grid of dots -->
   <!-- Row 1 -->
   <circle cx="80" cy="70" r="10" fill='#4f8ef7'/>
@@ -45,7 +45,7 @@ SECTIONS = [
 
   <!-- Multiplication -->
   <text x="350" y="100" fill='#f59e0b' font-size='20' font-weight='bold'>3 × 4</text>
-  <text x="350" y="135" fill='#e6edf3' font-size='14'>= 12 dots</text>
+  <text x="350" y="135" fill='currentColor' font-size='14'>= 12 dots</text>
 </svg>
 <p style="text-align: center; margin-top: 20px;"><strong>3 rows of 4 = 4 + 4 + 4 = 12</strong></p>
 <p style="text-align: center;"><strong>OR 4 columns of 3 = 3 + 3 + 3 + 3 = 12</strong></p>"""
@@ -55,10 +55,10 @@ SECTIONS = [
         "body": """<p>Here's something amazing: <strong>3 × 4 = 4 × 3</strong></p>
 <p>When you rotate an array, the multiplication sentence changes, but the total stays the same!</p>
 <svg viewBox="0 0 500 300" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Same Array, Different Views</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Same Array, Different Views</text>
 
   <!-- Left array: 3×4 -->
-  <text x="100" y="60" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>3 rows × 4 cols</text>
+  <text x="100" y="60" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>3 rows × 4 cols</text>
   <circle cx="60" cy="90" r="8" fill='#4f8ef7'/>
   <circle cx="100" cy="90" r="8" fill='#4f8ef7'/>
   <circle cx="140" cy="90" r="8" fill='#4f8ef7'/>
@@ -74,11 +74,11 @@ SECTIONS = [
   <text x="100" y="210" text-anchor='middle' fill='#f59e0b' font-size='16' font-weight='bold'>3 × 4 = 12</text>
 
   <!-- Rotation arrow -->
-  <text x="250" y="130" fill='#e6edf3' font-size='24'>⟲</text>
-  <text x="250" y="165" fill='#e6edf3' font-size='12'>rotate</text>
+  <text x="250" y="130" fill='currentColor' font-size='24'>⟲</text>
+  <text x="250" y="165" fill='currentColor' font-size='12'>rotate</text>
 
   <!-- Right array: 4×3 -->
-  <text x="400" y="60" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>4 rows × 3 cols</text>
+  <text x="400" y="60" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>4 rows × 3 cols</text>
   <circle cx="360" cy="90" r="8" fill='#22c55e'/>
   <circle cx="400" cy="90" r="8" fill='#22c55e'/>
   <circle cx="440" cy="90" r="8" fill='#22c55e'/>

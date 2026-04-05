@@ -61,7 +61,7 @@ SECTIONS = [
 
             <svg viewBox="0 0 500 150" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Matrix A -->
-                <text x="30" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>A =</text>
+                <text x="30" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
                 <rect x="80" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2"/>
                 <text x="95" y="35" font-size='14' fill='#4f8ef7'>1</text>
                 <text x="125" y="35" font-size='14' fill='#4f8ef7'>2</text>
@@ -69,10 +69,10 @@ SECTIONS = [
                 <text x="125" y="55" font-size='14' fill='#4f8ef7'>4</text>
 
                 <!-- Plus sign -->
-                <text x="160" y="45" font-size='20' fill='#e6edf3' font-weight='bold' text-anchor='middle'>+</text>
+                <text x="160" y="45" font-size='20' fill='currentColor' font-weight='bold' text-anchor='middle'>+</text>
 
                 <!-- Matrix B -->
-                <text x="190" y="20" font-size='12' fill='#e6edf3' font-weight='bold'>B =</text>
+                <text x="190" y="20" font-size='12' fill='currentColor' font-weight='bold'>B =</text>
                 <rect x="240" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2"/>
                 <text x="255" y="35" font-size='14' fill='#4f8ef7'>5</text>
                 <text x="285" y="35" font-size='14' fill='#4f8ef7'>6</text>
@@ -80,7 +80,7 @@ SECTIONS = [
                 <text x="285" y="55" font-size='14' fill='#4f8ef7'>8</text>
 
                 <!-- Equals sign -->
-                <text x="320" y="45" font-size='20' fill='#e6edf3' font-weight='bold' text-anchor='middle'>=</text>
+                <text x="320" y="45" font-size='20' fill='currentColor' font-weight='bold' text-anchor='middle'>=</text>
 
                 <!-- Matrix Result -->
                 <rect x="350" y="10" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2"/>
@@ -92,7 +92,7 @@ SECTIONS = [
                 <!-- Annotations -->
                 <path d="M 95 65 L 95 85" stroke='#8b949e' stroke-width="1" stroke-dasharray="5,5"/>
                 <path d="M 365 65 L 365 85" stroke='#8b949e' stroke-width="1" stroke-dasharray="5,5"/>
-                <text x="95" y="105" font-size='11' fill='#8b949e' text-anchor='middle'>1+5=6</text>
+                <text x="95" y="105" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>1+5=6</text>
             </svg>
         </div>
 
@@ -147,7 +147,7 @@ SECTIONS = [
                 <text x="30" y="35" font-size='16' fill='#4f8ef7' font-weight='bold'>3</text>
 
                 <!-- Multiplication sign -->
-                <text x="55" y="35" font-size='16' fill='#e6edf3' text-anchor='middle'>×</text>
+                <text x="55" y="35" font-size='16' fill='currentColor' text-anchor='middle'>×</text>
 
                 <!-- Matrix -->
                 <rect x="75" y="15" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2"/>
@@ -157,7 +157,7 @@ SECTIONS = [
                 <text x="120" y="60" font-size='14' fill='#4f8ef7'>4</text>
 
                 <!-- Equals -->
-                <text x="155" y="35" font-size='16' fill='#e6edf3' text-anchor='middle'>=</text>
+                <text x="155" y="35" font-size='16' fill='currentColor' text-anchor='middle'>=</text>
 
                 <!-- Result -->
                 <rect x="175" y="15" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2"/>
@@ -167,7 +167,7 @@ SECTIONS = [
                 <text x="220" y="60" font-size='14' fill='#2dd4bf'>12</text>
 
                 <!-- Annotation -->
-                <text x="320" y="45" font-size='11' fill='#8b949e'>(each element × 3)</text>
+                <text x="320" y="45" font-size='11' fill='currentColor' opacity='0.6'>(each element × 3)</text>
             </svg>
         </div>
 

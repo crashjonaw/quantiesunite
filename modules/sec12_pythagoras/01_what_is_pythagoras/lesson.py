@@ -12,20 +12,20 @@ SECTIONS = [
 
 <svg width="400" height="300" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Triangle -->
-  <polygon points="50,250 50,50 350,250" fill='none' stroke='#e6edf3' stroke-width="3"/>
+  <polygon points="50,250 50,50 350,250" fill='none' stroke='currentColor' stroke-width="3"/>
 
   <!-- Right angle marker -->
-  <rect x="50" y="200" width="50" height="50" fill='none' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="50" y="200" width="50" height="50" fill='none' stroke='currentColor' stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="25" y="160" font-size='18' font-weight='bold' fill='#e6edf3'>a</text>
-  <text x="200" y="280" font-size='18' font-weight='bold' fill='#e6edf3'>b</text>
+  <text x="25" y="160" font-size='18' font-weight='bold' fill='currentColor'>a</text>
+  <text x="200" y="280" font-size='18' font-weight='bold' fill='currentColor'>b</text>
   <text x="210" y="140" font-size='18' font-weight='bold' fill='#58a6ff'>c (hypotenuse)</text>
 
   <!-- Vertex labels -->
-  <text x="30" y="50" font-size='16' fill='#e6edf3'>A</text>
-  <text x="30" y="270" font-size='16' fill='#e6edf3'>C (right angle)</text>
-  <text x="350" y="270" font-size='16' fill='#e6edf3'>B</text>
+  <text x="30" y="50" font-size='16' fill='currentColor'>A</text>
+  <text x="30" y="270" font-size='16' fill='currentColor'>C (right angle)</text>
+  <text x="350" y="270" font-size='16' fill='currentColor'>B</text>
 </svg>
 
 <div class='info-box'>
@@ -57,10 +57,10 @@ SECTIONS = [
 <svg width="500" height="420" viewBox="0 0 500 420" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- 3-4-5 right triangle scaled: a=90 (vert), b=120 (horiz), c=150 (hyp) -->
   <!-- Triangle vertices: C=(170,230) A=(170,140) B=(290,230) -->
-  <polygon points="170,230 170,140 290,230" fill='rgba(88,166,255,0.1)' stroke='#e6edf3' stroke-width="2"/>
+  <polygon points="170,230 170,140 290,230" fill='rgba(88,166,255,0.1)' stroke='currentColor' stroke-width="2"/>
 
   <!-- Right angle marker at C -->
-  <polyline points="170,215 185,215 185,230" fill='none' stroke='#e6edf3' stroke-width="1.5"/>
+  <polyline points="170,215 185,215 185,230" fill='none' stroke='currentColor' stroke-width="1.5"/>
 
   <!-- Square on side a (vertical, left of triangle): 90×90 -->
   <rect x="80" y="140" width="90" height="90" fill='rgba(121,192,255,0.12)' stroke='#79c0ff' stroke-width="2" stroke-dasharray="5,5"/>
@@ -79,8 +79,8 @@ SECTIONS = [
   <text x="275" y="130" font-size='18' font-weight='bold' fill='#58a6ff' text-anchor='middle'>c² = 25</text>
 
   <!-- Side labels -->
-  <text x="148" y="192" font-size='14' font-weight='bold' fill='#e6edf3'>a=3</text>
-  <text x="218" y="225" font-size='14' font-weight='bold' fill='#e6edf3'>b=4</text>
+  <text x="148" y="192" font-size='14' font-weight='bold' fill='currentColor'>a=3</text>
+  <text x="218" y="225" font-size='14' font-weight='bold' fill='currentColor'>b=4</text>
   <text x="240" y="172" font-size='14' font-weight='bold' fill='#58a6ff'>c=5</text>
 
   <!-- Equation at bottom -->
@@ -102,7 +102,7 @@ SECTIONS = [
   <!-- Classic proof: large (a+b)² square with 4 congruent right triangles, inner tilted c² square -->
   <!-- Using a=100, b=200 so a+b=300. Triangle legs a=100, b=200. c²=a²+b²=50000, c≈224 -->
   <!-- Outer square from (60,40) to (360,340), side=300 -->
-  <rect x="60" y="40" width="300" height="300" fill='none' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="60" y="40" width="300" height="300" fill='none' stroke='currentColor' stroke-width="2"/>
 
   <!-- 4 congruent right triangles (legs a=100, b=200) arranged inside -->
   <!-- T1: top-left, hyp goes from (160,40) to (60,240) -->
@@ -125,10 +125,10 @@ SECTIONS = [
   <text x="45" y="295" font-size='14' fill='#79c0ff' text-anchor='middle'>a</text>
 
   <!-- Triangle labels -->
-  <text x="90" y="110" font-size='12' fill='#e6edf3'>½ab</text>
-  <text x="305" y="80" font-size='12' fill='#e6edf3'>½ab</text>
-  <text x="325" y="290" font-size='12' fill='#e6edf3'>½ab</text>
-  <text x="110" y="315" font-size='12' fill='#e6edf3'>½ab</text>
+  <text x="90" y="110" font-size='12' fill='currentColor'>½ab</text>
+  <text x="305" y="80" font-size='12' fill='currentColor'>½ab</text>
+  <text x="325" y="290" font-size='12' fill='currentColor'>½ab</text>
+  <text x="110" y="315" font-size='12' fill='currentColor'>½ab</text>
 
   <!-- Overall label -->
   <text x="210" y="380" font-size='15' font-weight='bold' fill='#56d364' text-anchor='middle'>(a+b)² = 4·(½ab) + c²</text>

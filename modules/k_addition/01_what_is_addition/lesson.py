@@ -108,21 +108,21 @@ SECTIONS = [
 <h3>What Each Part Means</h3>
 <svg viewBox="0 0 500 95" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 20px auto;">
   <!-- Numbers and symbols -->
-  <text x="60" y="50" text-anchor='middle' fill='#e6edf3' font-size='32' font-weight='bold'>2</text>
+  <text x="60" y="50" text-anchor='middle' fill='currentColor' font-size='32' font-weight='bold'>2</text>
   <text x="150" y="50" text-anchor='middle' fill='#4169E1' font-size='32' font-weight='bold'>+</text>
-  <text x="240" y="50" text-anchor='middle' fill='#e6edf3' font-size='32' font-weight='bold'>3</text>
+  <text x="240" y="50" text-anchor='middle' fill='currentColor' font-size='32' font-weight='bold'>3</text>
   <text x="330" y="50" text-anchor='middle' fill='#4169E1' font-size='32' font-weight='bold'>=</text>
-  <text x="420" y="50" text-anchor='middle' fill='#e6edf3' font-size='32' font-weight='bold'>5</text>
+  <text x="420" y="50" text-anchor='middle' fill='currentColor' font-size='32' font-weight='bold'>5</text>
 
   <!-- Labels below -->
-  <text x="60" y="75" text-anchor='middle' fill='#8b949e' font-size='12'><tspan font-weight='bold'>first</tspan></text>
-  <text x="60" y="88" text-anchor='middle' fill='#8b949e' font-size='12'>group</text>
+  <text x="60" y="75" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'><tspan font-weight='bold'>first</tspan></text>
+  <text x="60" y="88" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>group</text>
 
-  <text x="240" y="75" text-anchor='middle' fill='#8b949e' font-size='12'><tspan font-weight='bold'>second</tspan></text>
-  <text x="240" y="88" text-anchor='middle' fill='#8b949e' font-size='12'>group</text>
+  <text x="240" y="75" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'><tspan font-weight='bold'>second</tspan></text>
+  <text x="240" y="88" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>group</text>
 
-  <text x="420" y="75" text-anchor='middle' fill='#8b949e' font-size='12'><tspan font-weight='bold'>the</tspan></text>
-  <text x="420" y="88" text-anchor='middle' fill='#8b949e' font-size='12'>total</text>
+  <text x="420" y="75" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'><tspan font-weight='bold'>the</tspan></text>
+  <text x="420" y="88" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>total</text>
 </svg>"""
     },
 

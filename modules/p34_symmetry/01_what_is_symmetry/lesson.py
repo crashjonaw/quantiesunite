@@ -34,7 +34,7 @@ SECTIONS = [
                 <rect x="195" y="70" width="10" height="80" fill='#4f46e5' stroke='#312e81' stroke-width="1"/>
                 <circle cx="200" cy="65" r="8" fill='#4f46e5' stroke='#312e81' stroke-width="1"/>
 
-                <text x="200" y="160" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>Butterfly: Perfect Symmetry</text>
+                <text x="200" y="160" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Butterfly: Perfect Symmetry</text>
             </svg>
         </div>
         """
@@ -85,7 +85,7 @@ SECTIONS = [
                 <!-- Right triangle (mirror) -->
                 <polygon points="200,30 260,110 240,110" fill='#60a5fa' opacity='0.8' stroke='#1e40af' stroke-width="2"/>
 
-                <text x="200" y="145" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Reflective Symmetry</text>
+                <text x="200" y="145" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Reflective Symmetry</text>
             </svg>
         </div>
 
@@ -110,7 +110,7 @@ SECTIONS = [
                 <rect x="240" y="35" width="80" height="80" fill='none' stroke='#22c55e' stroke-width="2"/>
                 <text x="265" y="65" fill='#22c55e' font-size='11'>180°</text>
 
-                <text x="200" y="145" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Rotational Symmetry (Order 2)</text>
+                <text x="200" y="145" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Rotational Symmetry (Order 2)</text>
             </svg>
         </div>
 
@@ -128,24 +128,24 @@ SECTIONS = [
                 <!-- Circle -->
                 <circle cx="60" cy="60" r="40" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="2"/>
                 <line x1="20" y1="60" x2="100" y2="60" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
-                <text x="60" y="110" text-anchor='middle' fill='#e6edf3' font-size='11'>Circle (∞)</text>
+                <text x="60" y="110" text-anchor='middle' fill='currentColor' font-size='11'>Circle (∞)</text>
 
                 <!-- Square -->
                 <rect x="140" y="20" width="60" height="60" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="2"/>
                 <line x1="170" y1="10" x2="170" y2="90" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
                 <line x1="140" y1="50" x2="200" y2="50" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
-                <text x="170" y="110" text-anchor='middle' fill='#e6edf3' font-size='11'>Square (4)</text>
+                <text x="170" y="110" text-anchor='middle' fill='currentColor' font-size='11'>Square (4)</text>
 
                 <!-- Equilateral Triangle -->
                 <polygon points="310,80 270,20 350,20" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="2"/>
                 <line x1="310" y1="80" x2="310" y2="20" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
-                <text x="310" y="110" text-anchor='middle' fill='#e6edf3' font-size='11'>Equilateral △ (3)</text>
+                <text x="310" y="110" text-anchor='middle' fill='currentColor' font-size='11'>Equilateral △ (3)</text>
 
                 <!-- Rectangle -->
                 <rect x="380" y="30" width="80" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="2"/>
                 <line x1="420" y1="20" x2="420" y2="90" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
                 <line x1="380" y1="55" x2="460" y2="55" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
-                <text x="420" y="110" text-anchor='middle' fill='#e6edf3' font-size='11'>Rectangle (2)</text>
+                <text x="420" y="110" text-anchor='middle' fill='currentColor' font-size='11'>Rectangle (2)</text>
             </svg>
         </div>
 

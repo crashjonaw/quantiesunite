@@ -13,22 +13,22 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 550 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="275" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Recipe: Same Relationship, Different Amounts</text>
+      <text x="275" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='currentColor'>Recipe: Same Relationship, Different Amounts</text>
 
-      <text x="50" y="70" font-size='12' fill='#e6edf3'>Normal recipe (2:3)</text>
+      <text x="50" y="70" font-size='12' fill='currentColor'>Normal recipe (2:3)</text>
       <rect x="50" y="80" width="80" height="40" fill='#f59e0b' opacity='0.6' stroke='#30363d' stroke-width="2"/>
       <rect x="140" y="80" width="120" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
       <text x="90" y="105" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>2 flour</text>
       <text x="200" y="105" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>3 sugar</text>
 
-      <text x="50" y="160" font-size='12' fill='#e6edf3'>Double recipe (4:6)</text>
+      <text x="50" y="160" font-size='12' fill='currentColor'>Double recipe (4:6)</text>
       <rect x="50" y="170" width="160" height="40" fill='#f59e0b' opacity='0.6' stroke='#30363d' stroke-width="2"/>
       <rect x="220" y="170" width="240" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
       <text x="130" y="195" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>4 flour</text>
       <text x="340" y="195" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>6 sugar</text>
 
-      <text x="50" y="250" font-size='11' fill='#e6edf3'>2:3 = 4:6 = 6:9 = 8:12...</text>
-      <text x="50" y="270" font-size='11' fill='#e6edf3'>All equivalent! Same relationship, different scale.</text>
+      <text x="50" y="250" font-size='11' fill='currentColor'>2:3 = 4:6 = 6:9 = 8:12...</text>
+      <text x="50" y="270" font-size='11' fill='currentColor'>All equivalent! Same relationship, different scale.</text>
     </svg>
   </div>
 
@@ -66,16 +66,16 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='13' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Scaling Up Ratio 2:3</text>
+      <text x="250" y="30" font-size='13' font-weight='bold' text-anchor='middle' fill='currentColor'>Scaling Up Ratio 2:3</text>
 
-      <text x="50" y="70" font-size='11' fill='#e6edf3'>Start: 2:3</text>
+      <text x="50" y="70" font-size='11' fill='currentColor'>Start: 2:3</text>
       <circle cx="70" cy="90" r="10" fill='#4169E1'/>
       <circle cx="95" cy="90" r="10" fill='#4169E1'/>
       <circle cx="130" cy="90" r="10" fill='#22c55e'/>
       <circle cx="155" cy="90" r="10" fill='#22c55e'/>
       <circle cx="180" cy="90" r="10" fill='#22c55e'/>
 
-      <text x="50" y="140" font-size='11' fill='#e6edf3'>×2: 4:6</text>
+      <text x="50" y="140" font-size='11' fill='currentColor'>×2: 4:6</text>
       <circle cx="70" cy="160" r="8" fill='#4169E1'/>
       <circle cx="90" cy="160" r="8" fill='#4169E1'/>
       <circle cx="110" cy="160" r="8" fill='#4169E1'/>
@@ -87,14 +87,14 @@ SECTIONS = [
       <circle cx="235" cy="160" r="8" fill='#22c55e'/>
       <circle cx="255" cy="160" r="8" fill='#22c55e'/>
 
-      <text x="50" y="210" font-size='11' fill='#e6edf3'>×3: 6:9</text>
+      <text x="50" y="210" font-size='11' fill='currentColor'>×3: 6:9</text>
 
-      <text x="300" y="70" font-size='11' fill='#e6edf3'>Original ratio 2:3:</text>
-      <text x="300" y="90" font-size='11' fill='#e6edf3'>For every 2 blue,</text>
-      <text x="300" y="110" font-size='11' fill='#e6edf3'>there are 3 green</text>
-      <text x="300" y="140" font-size='11' fill='#e6edf3'>Double it (×2): 4:6</text>
-      <text x="300" y="160" font-size='11' fill='#e6edf3'>Still "2 blue for every 3 green"</text>
-      <text x="300" y="180" font-size='11' fill='#e6edf3'>just with bigger numbers</text>
+      <text x="300" y="70" font-size='11' fill='currentColor'>Original ratio 2:3:</text>
+      <text x="300" y="90" font-size='11' fill='currentColor'>For every 2 blue,</text>
+      <text x="300" y="110" font-size='11' fill='currentColor'>there are 3 green</text>
+      <text x="300" y="140" font-size='11' fill='currentColor'>Double it (×2): 4:6</text>
+      <text x="300" y="160" font-size='11' fill='currentColor'>Still "2 blue for every 3 green"</text>
+      <text x="300" y="180" font-size='11' fill='currentColor'>just with bigger numbers</text>
     </svg>
   </div>
 
@@ -161,39 +161,39 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 550 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="275" y="30" font-size='13' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Ratio Table: Flour to Sugar (ratio 2:1)</text>
+      <text x="275" y="30" font-size='13' font-weight='bold' text-anchor='middle' fill='currentColor'>Ratio Table: Flour to Sugar (ratio 2:1)</text>
 
       <rect x="50" y="50" width="150" height="40" fill='#4169E1' opacity='0.3' stroke='#30363d' stroke-width="2"/>
       <rect x="200" y="50" width="150" height="40" fill='#22c55e' opacity='0.3' stroke='#30363d' stroke-width="2"/>
 
-      <text x="125" y="75" font-size='12' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Flour (cups)</text>
-      <text x="275" y="75" font-size='12' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Sugar (cups)</text>
+      <text x="125" y="75" font-size='12' font-weight='bold' text-anchor='middle' fill='currentColor'>Flour (cups)</text>
+      <text x="275" y="75" font-size='12' font-weight='bold' text-anchor='middle' fill='currentColor'>Sugar (cups)</text>
 
       <rect x="50" y="90" width="150" height="35" fill='#4169E1' opacity='0.2' stroke='#30363d' stroke-width="1"/>
       <rect x="200" y="90" width="150" height="35" fill='#22c55e' opacity='0.2' stroke='#30363d' stroke-width="1"/>
-      <text x="125" y="115" font-size='11' text-anchor='middle' fill='#e6edf3'>2</text>
-      <text x="275" y="115" font-size='11' text-anchor='middle' fill='#e6edf3'>1</text>
+      <text x="125" y="115" font-size='11' text-anchor='middle' fill='currentColor'>2</text>
+      <text x="275" y="115" font-size='11' text-anchor='middle' fill='currentColor'>1</text>
 
       <rect x="50" y="125" width="150" height="35" fill='#4169E1' opacity='0.2' stroke='#30363d' stroke-width="1"/>
       <rect x="200" y="125" width="150" height="35" fill='#22c55e' opacity='0.2' stroke='#30363d' stroke-width="1"/>
-      <text x="125" y="150" font-size='11' text-anchor='middle' fill='#e6edf3'>4</text>
-      <text x="275" y="150" font-size='11' text-anchor='middle' fill='#e6edf3'>2</text>
+      <text x="125" y="150" font-size='11' text-anchor='middle' fill='currentColor'>4</text>
+      <text x="275" y="150" font-size='11' text-anchor='middle' fill='currentColor'>2</text>
 
       <rect x="50" y="160" width="150" height="35" fill='#4169E1' opacity='0.2' stroke='#30363d' stroke-width="1"/>
       <rect x="200" y="160" width="150" height="35" fill='#22c55e' opacity='0.2' stroke='#30363d' stroke-width="1"/>
-      <text x="125" y="185" font-size='11' text-anchor='middle' fill='#e6edf3'>6</text>
-      <text x="275" y="185" font-size='11' text-anchor='middle' fill='#e6edf3'>3</text>
+      <text x="125" y="185" font-size='11' text-anchor='middle' fill='currentColor'>6</text>
+      <text x="275" y="185" font-size='11' text-anchor='middle' fill='currentColor'>3</text>
 
       <rect x="50" y="195" width="150" height="35" fill='#4169E1' opacity='0.2' stroke='#30363d' stroke-width="1"/>
       <rect x="200" y="195" width="150" height="35" fill='#22c55e' opacity='0.2' stroke='#30363d' stroke-width="1"/>
-      <text x="125" y="220" font-size='11' text-anchor='middle' fill='#e6edf3'>8</text>
-      <text x="275" y="220" font-size='11' text-anchor='middle' fill='#e6edf3'>4</text>
+      <text x="125" y="220" font-size='11' text-anchor='middle' fill='currentColor'>8</text>
+      <text x="275" y="220" font-size='11' text-anchor='middle' fill='currentColor'>4</text>
 
-      <text x="50" y="270" font-size='11' fill='#e6edf3'>×1 ×2 ×3 ×4</text>
-      <text x="350" y="115" font-size='11' fill='#e6edf3'>2:1 (×1)</text>
-      <text x="350" y="150" font-size='11' fill='#e6edf3'>4:2 (×2)</text>
-      <text x="350" y="185" font-size='11' fill='#e6edf3'>6:3 (×3)</text>
-      <text x="350" y="220" font-size='11' fill='#e6edf3'>8:4 (×4)</text>
+      <text x="50" y="270" font-size='11' fill='currentColor'>×1 ×2 ×3 ×4</text>
+      <text x="350" y="115" font-size='11' fill='currentColor'>2:1 (×1)</text>
+      <text x="350" y="150" font-size='11' fill='currentColor'>4:2 (×2)</text>
+      <text x="350" y="185" font-size='11' fill='currentColor'>6:3 (×3)</text>
+      <text x="350" y="220" font-size='11' fill='currentColor'>8:4 (×4)</text>
     </svg>
   </div>
 

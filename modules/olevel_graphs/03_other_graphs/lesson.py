@@ -29,7 +29,7 @@ SECTIONS = [
     <line x1="200" y1="50" x2="200" y2="250" stroke='#30363d' stroke-width="1" />
     <path d="M 50 250 Q 150 100, 200 150 Q 250 200, 350 50" stroke='#58a6ff' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
     <text x="360" y="155">x</text>
     <text x="190" y="40">y</text>
     <text x="200" y="270" fill='#ffa657'>S-shape</text>
@@ -77,12 +77,12 @@ SECTIONS = [
     <path d="M 170 150 Q 120 190, 60 240" stroke='#ffa657' stroke-width="2" fill='none' />
     <path d="M 230 150 Q 280 210, 340 260" stroke='#ffa657' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
     <text x="360" y="155">x</text>
     <text x="190" y="40">y</text>
     <text x="200" y="270">O</text>
-    <text x="210" y="35" fill='#8b949e'>x = 0</text>
-    <text x="280" y="150" fill='#8b949e'>y = 0</text>
+    <text x="210" y="35" fill='currentColor' opacity='0.6'>x = 0</text>
+    <text x="280" y="150" fill='currentColor' opacity='0.6'>y = 0</text>
   </g>
 </svg>
 
@@ -126,7 +126,7 @@ SECTIONS = [
     <path d="M 50 240 Q 100 220, 150 180 Q 200 100, 250 50 Q 300 40, 350 35" stroke='#58a6ff' stroke-width="2" fill='none' />
     <path d="M 50 50 Q 100 70, 150 110 Q 200 170, 250 220 Q 300 240, 350 245" stroke='#ffa657' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
     <text x="360" y="255">x</text>
     <text x="40" y="40">y</text>
     <text x="300" y="30" fill='#58a6ff'>a > 1 (growth)</text>
@@ -171,7 +171,7 @@ SECTIONS = [
     <line x1="50" y1="50" x2="50" y2="230" stroke='#30363d' stroke-width="1" />
     <path d="M 50 140 Q 80 80, 110 140 Q 140 200, 170 140 Q 200 80, 230 140 Q 260 200, 290 140 Q 320 80, 350 140" stroke='#58a6ff' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='10' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='10' fill='currentColor'>
     <text x="360" y="145">x</text>
     <text x="40" y="50">y</text>
     <text x="45" y="155">O</text>

@@ -15,7 +15,7 @@ SECTIONS = [
 <p>The decimal point (.) tells us where the whole number part ends and the fractional part begins.</p>
 
 <svg viewBox="0 0 600 140" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>The Decimal Point</text>
+  <text x="300" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>The Decimal Point</text>
   <text x="150" y="60" text-anchor='middle' fill='#4f8ef7' font-size='28' font-weight='bold'>3</text>
   <text x="200" y="70" text-anchor='middle' fill='#ef4444' font-size='40' font-weight='bold'>.</text>
   <text x="270" y="60" text-anchor='middle' fill='#22c55e' font-size='28' font-weight='bold'>7</text>
@@ -56,13 +56,13 @@ SECTIONS = [
 
 <svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <rect x="20" y="20" width="460" height="150" fill='#1e293b' stroke='#4f8ef7' stroke-width="2" rx="4"/>
-  <text x="250" y="45" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>Compare These:</text>
-  <text x="60" y="80" fill='#e6edf3' font-size='12'><tspan x="60" dy="0">Fraction:</tspan> <tspan x="60" dy="18" font-weight='bold' fill='#4f8ef7' font-size='14'>2 50/100 dollars</tspan></text>
-  <text x="60" y="130" fill='#e6edf3' font-size='12'><tspan x="60" dy="0">Decimal:</tspan> <tspan x="60" dy="18" font-weight='bold' fill='#22c55e' font-size='14'>$2.50 — much easier!</tspan></text>
-  <text x="300" y="110" fill='#8b949e' font-size='11' font-style="italic">Decimals are easier to:</text>
-  <text x="300" y="128" fill='#8b949e' font-size='10'>• Write</text>
-  <text x="300" y="143" fill='#8b949e' font-size='10'>• Compare</text>
-  <text x="300" y="158" fill='#8b949e' font-size='10'>• Add/subtract</text>
+  <text x="250" y="45" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Compare These:</text>
+  <text x="60" y="80" fill='currentColor' font-size='12'><tspan x="60" dy="0">Fraction:</tspan> <tspan x="60" dy="18" font-weight='bold' fill='#4f8ef7' font-size='14'>2 50/100 dollars</tspan></text>
+  <text x="60" y="130" fill='currentColor' font-size='12'><tspan x="60" dy="0">Decimal:</tspan> <tspan x="60" dy="18" font-weight='bold' fill='#22c55e' font-size='14'>$2.50 — much easier!</tspan></text>
+  <text x="300" y="110" fill='currentColor' opacity='0.6' font-size='11' font-style="italic">Decimals are easier to:</text>
+  <text x="300" y="128" fill='currentColor' opacity='0.6' font-size='10'>• Write</text>
+  <text x="300" y="143" fill='currentColor' opacity='0.6' font-size='10'>• Compare</text>
+  <text x="300" y="158" fill='currentColor' opacity='0.6' font-size='10'>• Add/subtract</text>
 </svg>
         """
     },
@@ -130,30 +130,30 @@ SECTIONS = [
 <p>Remember place value with whole numbers? Hundreds, tens, ones? With decimals, we extend that pattern to the RIGHT of the decimal point.</p>
 
 <svg viewBox="0 0 700 160" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="350" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Place Value Extended</text>
+  <text x="350" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Place Value Extended</text>
 
   <!-- Boxes for place values -->
   <rect x="20" y="40" width="90" height="50" fill='#1e293b' stroke='#4f8ef7' stroke-width="2" rx="2"/>
-  <text x="65" y="55" text-anchor='middle' fill='#e6edf3' font-size='10'>ones</text>
+  <text x="65" y="55" text-anchor='middle' fill='currentColor' font-size='10'>ones</text>
   <text x="65" y="70" text-anchor='middle' fill='#4f8ef7' font-size='14' font-weight='bold'>5</text>
-  <text x="65" y="85" text-anchor='middle' fill='#8b949e' font-size='9'>5 × 1</text>
+  <text x="65" y="85" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='9'>5 × 1</text>
 
   <!-- Decimal point -->
   <text x="125" y="75" text-anchor='middle' fill='#ef4444' font-size='28' font-weight='bold'>.</text>
 
   <rect x="140" y="40" width="90" height="50" fill='#1e293b' stroke='#22c55e' stroke-width="2" rx="2"/>
-  <text x="185" y="55" text-anchor='middle' fill='#e6edf3' font-size='10'>tenths</text>
+  <text x="185" y="55" text-anchor='middle' fill='currentColor' font-size='10'>tenths</text>
   <text x="185" y="70" text-anchor='middle' fill='#22c55e' font-size='14' font-weight='bold'>3</text>
-  <text x="185" y="85" text-anchor='middle' fill='#8b949e' font-size='9'>3 × 0.1</text>
+  <text x="185" y="85" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='9'>3 × 0.1</text>
 
   <rect x="260" y="40" width="90" height="50" fill='#1e293b' stroke='#f59e0b' stroke-width="2" rx="2"/>
-  <text x="305" y="55" text-anchor='middle' fill='#e6edf3' font-size='10'>hundredths</text>
+  <text x="305" y="55" text-anchor='middle' fill='currentColor' font-size='10'>hundredths</text>
   <text x="305" y="70" text-anchor='middle' fill='#f59e0b' font-size='14' font-weight='bold'>7</text>
-  <text x="305" y="85" text-anchor='middle' fill='#8b949e' font-size='9'>7 × 0.01</text>
+  <text x="305" y="85" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='9'>7 × 0.01</text>
 
   <!-- Number below -->
-  <text x="350" y="130" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>5.37</text>
-  <text x="350" y="155" text-anchor='middle' fill='#8b949e' font-size='11'>= 5 + 0.3 + 0.07</text>
+  <text x="350" y="130" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>5.37</text>
+  <text x="350" y="155" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='11'>= 5 + 0.3 + 0.07</text>
 </svg>
 
 <div class="success-box">

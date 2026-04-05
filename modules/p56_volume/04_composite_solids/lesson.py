@@ -25,18 +25,18 @@ SECTIONS = [
 </div>
 
 <svg width="100%" viewBox="0 0 400 280" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>L-Shaped Composite Solid (Top View)</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>L-Shaped Composite Solid (Top View)</text>
 
   <!-- Vertical part of L -->
   <rect x="60" y="80" width="40" height="100" fill='#58a6ff' stroke='#79c0ff' stroke-width="2" opacity='0.6'/>
-  <text x="80" y="140" fill='#e6edf3' font-size='11' font-weight='bold' text-anchor='middle'>Part 1</text>
+  <text x="80" y="140" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>Part 1</text>
 
   <!-- Horizontal part of L -->
   <rect x="100" y="160" width="100" height="40" fill='#1f6feb' stroke='#79c0ff' stroke-width="2" opacity='0.6'/>
-  <text x="150" y="185" fill='#e6edf3' font-size='11' font-weight='bold' text-anchor='middle'>Part 2</text>
+  <text x="150" y="185" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>Part 2</text>
 
   <!-- Show them separately below -->
-  <text x="20" y="250" fill='#e6edf3' font-size='12'>V_total = V_Part1 + V_Part2</text>
+  <text x="20" y="250" fill='currentColor' font-size='12'>V_total = V_Part1 + V_Part2</text>
 </svg>"""
     },
     {
@@ -135,7 +135,7 @@ new Chart(document.getElementById('vol_composite_add'), {
 </div>
 
 <svg width="100%" viewBox="0 0 400 280" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>Cube with Hole Removed</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Cube with Hole Removed</text>
 
   <!-- Outer cube (hollow) -->
   <g>
@@ -147,7 +147,7 @@ new Chart(document.getElementById('vol_composite_add'), {
   </g>
 
   <!-- Formula below -->
-  <text x="20" y="230" fill='#e6edf3' font-size='12'>V = V_outer - V_hole = 216 - 8 = 208 cm³</text>
+  <text x="20" y="230" fill='currentColor' font-size='12'>V = V_outer - V_hole = 216 - 8 = 208 cm³</text>
 
   <text x="20" y="255" fill='#a0aec0' font-size='11'>Remove the unwanted part from the total</text>
 </svg>"""

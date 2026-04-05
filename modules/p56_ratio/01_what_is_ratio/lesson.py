@@ -12,7 +12,7 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='18' font-weight='bold' fill='#e6edf3'>3 red balls : 5 blue balls</text>
+      <text x="50" y="30" font-size='18' font-weight='bold' fill='currentColor'>3 red balls : 5 blue balls</text>
 
       <circle cx="80" cy="100" r="20" fill='#ef4444'/>
       <circle cx="130" cy="100" r="20" fill='#ef4444'/>
@@ -23,7 +23,7 @@ SECTIONS = [
       <circle cx="400" cy="100" r="20" fill='#4169E1'/>
       <circle cx="450" cy="100" r="20" fill='#4169E1'/>
 
-      <text x="250" y="160" font-size='20' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Ratio = 3 : 5</text>
+      <text x="250" y="160" font-size='20' font-weight='bold' text-anchor='middle' fill='currentColor'>Ratio = 3 : 5</text>
     </svg>
   </div>
 
@@ -102,26 +102,26 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 520 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="260" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Order Matters!</text>
+      <text x="260" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Order Matters!</text>
 
-      <text x="30" y="70" font-size='14' font-weight='bold' fill='#e6edf3'>Ratio 3:2 (Red:Blue)</text>
+      <text x="30" y="70" font-size='14' font-weight='bold' fill='currentColor'>Ratio 3:2 (Red:Blue)</text>
       <circle cx="55" cy="110" r="15" fill='#ef4444'/>
       <circle cx="90" cy="110" r="15" fill='#ef4444'/>
       <circle cx="125" cy="110" r="15" fill='#ef4444'/>
       <circle cx="175" cy="110" r="15" fill='#4169E1'/>
       <circle cx="210" cy="110" r="15" fill='#4169E1'/>
-      <text x="130" y="150" font-size='12' text-anchor='middle' fill='#e6edf3'>3 red, 2 blue</text>
+      <text x="130" y="150" font-size='12' text-anchor='middle' fill='currentColor'>3 red, 2 blue</text>
 
-      <text x="295" y="70" font-size='14' font-weight='bold' fill='#e6edf3'>Ratio 2:3 (Red:Blue)</text>
+      <text x="295" y="70" font-size='14' font-weight='bold' fill='currentColor'>Ratio 2:3 (Red:Blue)</text>
       <circle cx="315" cy="110" r="15" fill='#ef4444'/>
       <circle cx="350" cy="110" r="15" fill='#ef4444'/>
       <circle cx="400" cy="110" r="15" fill='#4169E1'/>
       <circle cx="435" cy="110" r="15" fill='#4169E1'/>
       <circle cx="470" cy="110" r="15" fill='#4169E1'/>
-      <text x="390" y="150" font-size='12' text-anchor='middle' fill='#e6edf3'>2 red, 3 blue</text>
+      <text x="390" y="150" font-size='12' text-anchor='middle' fill='currentColor'>2 red, 3 blue</text>
 
-      <text x="30" y="195" font-size='12' fill='#e6edf3'>If problem says "ratio of boys to girls is 2:3"</text>
-      <text x="30" y="215" font-size='12' fill='#e6edf3'>Boys come FIRST: 2 (boys) : 3 (girls)</text>
+      <text x="30" y="195" font-size='12' fill='currentColor'>If problem says "ratio of boys to girls is 2:3"</text>
+      <text x="30" y="215" font-size='12' fill='currentColor'>Boys come FIRST: 2 (boys) : 3 (girls)</text>
       <text x="30" y="235" font-size='12' font-weight='bold' fill='#f59e0b'>NOT 3:2</text>
     </svg>
   </div>
@@ -163,7 +163,7 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="28" font-size='15' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Comparing Quantities</text>
+      <text x="250" y="28" font-size='15' font-weight='bold' text-anchor='middle' fill='currentColor'>Comparing Quantities</text>
 
       <!-- Alice's apples -->
       <text x="30" y="65" font-size='13' font-weight='bold' fill='#f59e0b'>Alice: 5 apples</text>
@@ -184,14 +184,14 @@ SECTIONS = [
 
       <!-- Difference section -->
       <text x="260" y="75" font-size='14' font-weight='bold' fill='#4169E1'>DIFFERENCE</text>
-      <text x="260" y="100" font-size='13' fill='#e6edf3'>5 - 3 = 2</text>
-      <text x="260" y="120" font-size='12' fill='#8b949e'>Alice has 2 more apples</text>
+      <text x="260" y="100" font-size='13' fill='currentColor'>5 - 3 = 2</text>
+      <text x="260" y="120" font-size='12' fill='currentColor' opacity='0.6'>Alice has 2 more apples</text>
 
       <!-- Ratio section -->
       <text x="260" y="170" font-size='14' font-weight='bold' fill='#FF4500'>RATIO</text>
-      <text x="260" y="195" font-size='13' fill='#e6edf3'>5 : 3</text>
-      <text x="260" y="215" font-size='12' fill='#8b949e'>For every 5 of Alice's,</text>
-      <text x="260" y="235" font-size='12' fill='#8b949e'>Ben has 3</text>
+      <text x="260" y="195" font-size='13' fill='currentColor'>5 : 3</text>
+      <text x="260" y="215" font-size='12' fill='currentColor' opacity='0.6'>For every 5 of Alice's,</text>
+      <text x="260" y="235" font-size='12' fill='currentColor' opacity='0.6'>Ben has 3</text>
     </svg>
   </div>
 

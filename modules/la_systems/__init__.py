@@ -10,7 +10,7 @@ A comprehensive module covering systems of linear equations with concept-based s
 5. 05_applications - Real-world applications and theory
 
 Dark theme styling:
-- Text: #e6edf3
+- Text: currentColor
 - Background: #0d1117
 - Surface: #161b22
 - Accent: #4f8ef7

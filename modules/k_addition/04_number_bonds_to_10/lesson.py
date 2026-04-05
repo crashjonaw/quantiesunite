@@ -125,8 +125,8 @@ SECTIONS = [
   </g>
 
   <!-- Labels -->
-  <text x="220" y="55" font-size='12' fill='#e6edf3'><tspan font-weight='bold'>6</tspan> (blue)</text>
-  <text x="220" y="90" font-size='12' fill='#e6edf3'><tspan font-weight='bold'>4</tspan> (green)</text>
+  <text x="220" y="55" font-size='12' fill='currentColor'><tspan font-weight='bold'>6</tspan> (blue)</text>
+  <text x="220" y="90" font-size='12' fill='currentColor'><tspan font-weight='bold'>4</tspan> (green)</text>
 </svg>"""
     },
 

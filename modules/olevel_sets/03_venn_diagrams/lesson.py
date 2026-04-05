@@ -25,14 +25,14 @@ SECTIONS = [
   <circle cx="320" cy="150" r="100" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="140" y="155" font-size='18' fill='#e6edf3' font-weight='bold'>A</text>
-  <text x="360" y="155" font-size='18' fill='#e6edf3' font-weight='bold'>B</text>
+  <text x="140" y="155" font-size='18' fill='currentColor' font-weight='bold'>A</text>
+  <text x="360" y="155" font-size='18' fill='currentColor' font-weight='bold'>B</text>
 
   <!-- Region labels -->
-  <text x="100" y="150" font-size='12' fill='#8b949e' text-anchor='middle'>Only A</text>
-  <text x="250" y="150" font-size='12' fill='#8b949e' text-anchor='middle'>A ∩ B</text>
-  <text x="400" y="150" font-size='12' fill='#8b949e' text-anchor='middle'>Only B</text>
-  <text x="250" y="260" font-size='11' fill='#8b949e' text-anchor='middle'>Outside (neither)</text>
+  <text x="100" y="150" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Only A</text>
+  <text x="250" y="150" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>A ∩ B</text>
+  <text x="400" y="150" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Only B</text>
+  <text x="250" y="260" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Outside (neither)</text>
 </svg>
 
 <div class="formula-box">
@@ -81,18 +81,18 @@ SECTIONS = [
   <circle cx="250" cy="270" r="120" fill='rgba(79, 142, 247, 0.15)' stroke='#4f8ef7' stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="100" y="80" font-size='18' fill='#e6edf3' font-weight='bold'>A</text>
-  <text x="400" y="80" font-size='18' fill='#e6edf3' font-weight='bold'>B</text>
-  <text x="250" y="360" font-size='18' fill='#e6edf3' font-weight='bold'>C</text>
+  <text x="100" y="80" font-size='18' fill='currentColor' font-weight='bold'>A</text>
+  <text x="400" y="80" font-size='18' fill='currentColor' font-weight='bold'>B</text>
+  <text x="250" y="360" font-size='18' fill='currentColor' font-weight='bold'>C</text>
 
   <!-- Region labels -->
-  <text x="105" y="180" font-size='10' fill='#8b949e' text-anchor='middle'>Only A</text>
-  <text x="395" y="180" font-size='10' fill='#8b949e' text-anchor='middle'>Only B</text>
-  <text x="250" y="300" font-size='10' fill='#8b949e' text-anchor='middle'>Only C</text>
-  <text x="180" y="220" font-size='9' fill='#8b949e' text-anchor='middle'>A∩C</text>
-  <text x="320" y="220" font-size='9' fill='#8b949e' text-anchor='middle'>B∩C</text>
-  <text x="250" y="130" font-size='9' fill='#8b949e' text-anchor='middle'>A∩B</text>
-  <text x="250" y="200" font-size='10' fill='#8b949e' text-anchor='middle' font-weight='bold'>A∩B∩C</text>
+  <text x="105" y="180" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Only A</text>
+  <text x="395" y="180" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Only B</text>
+  <text x="250" y="300" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Only C</text>
+  <text x="180" y="220" font-size='9' fill='currentColor' opacity='0.6' text-anchor='middle'>A∩C</text>
+  <text x="320" y="220" font-size='9' fill='currentColor' opacity='0.6' text-anchor='middle'>B∩C</text>
+  <text x="250" y="130" font-size='9' fill='currentColor' opacity='0.6' text-anchor='middle'>A∩B</text>
+  <text x="250" y="200" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle' font-weight='bold'>A∩B∩C</text>
 </svg>
 
 <div class="concept-box">
@@ -160,9 +160,9 @@ SECTIONS = [
   <rect x="10" y="10" width="230" height="160" fill='#161b22' stroke='#30363d' stroke-width="1"/>
   <circle cx="80" cy="90" r="50" fill='#0d1117' stroke='#4f8ef7' stroke-width="2"/>
   <circle cx="170" cy="90" r="50" fill='#0d1117' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="35" font-size='11' fill='#8b949e'>(A ∪ B)' shaded</text>
-  <text x="80" y="95" font-size='12' fill='#e6edf3'>A</text>
-  <text x="170" y="95" font-size='12' fill='#e6edf3'>B</text>
+  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>(A ∪ B)' shaded</text>
+  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
+  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
 </svg>
 
 <p style="font-size: 0.9em; margin: 12px 0"><strong>Right side: A' ∩ B'</strong> — Elements in both complements</p>
@@ -172,9 +172,9 @@ SECTIONS = [
   <rect x="10" y="10" width="230" height="160" fill='#161b22' stroke='#30363d' stroke-width="1"/>
   <circle cx="80" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
   <circle cx="170" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="35" font-size='11' fill='#8b949e'>A' ∩ B' shaded</text>
-  <text x="80" y="95" font-size='12' fill='#e6edf3'>A</text>
-  <text x="170" y="95" font-size='12' fill='#e6edf3'>B</text>
+  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>A' ∩ B' shaded</text>
+  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
+  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
 </svg>
 
 <p style="padding: 10px; border-radius: 4px; margin-top: 12px"><strong>Key insight:</strong> Both diagrams shade the same region—outside both circles. This proves (A ∪ B)' = A' ∩ B'</p>
@@ -188,10 +188,10 @@ SECTIONS = [
   <circle cx="80" cy="90" r="50" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
   <circle cx="170" cy="90" r="50" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
   <path d="M 120 50 L 130 60 M 120 130 L 130 120" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="5,5"/>
-  <text x="30" y="35" font-size='11' fill='#8b949e'>(A ∩ B)' = everything but</text>
-  <text x="65" y="55" font-size='11' fill='#8b949e'>overlap</text>
-  <text x="80" y="95" font-size='12' fill='#e6edf3'>A</text>
-  <text x="170" y="95" font-size='12' fill='#e6edf3'>B</text>
+  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>(A ∩ B)' = everything but</text>
+  <text x="65" y="55" font-size='11' fill='currentColor' opacity='0.6'>overlap</text>
+  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
+  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
 </svg>
 
 <p style="font-size: 0.9em; margin: 12px 0"><strong>Right side: A' ∪ B'</strong> — Everything outside A OR outside B</p>
@@ -203,9 +203,9 @@ SECTIONS = [
   <rect x="10" y="10" width="230" height="160" fill='rgba(79, 142, 247, 0.1)'/>
   <circle cx="80" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
   <circle cx="170" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="35" font-size='11' fill='#8b949e'>A' ∪ B' = left OR right</text>
-  <text x="80" y="95" font-size='12' fill='#e6edf3'>A</text>
-  <text x="170" y="95" font-size='12' fill='#e6edf3'>B</text>
+  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>A' ∪ B' = left OR right</text>
+  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
+  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
 </svg>
 
 <p style="padding: 10px; border-radius: 4px; margin-top: 12px"><strong>Again:</strong> Both diagrams shade the same regions—the complement of the overlap. This proves (A ∩ B)' = A' ∪ B'</p>

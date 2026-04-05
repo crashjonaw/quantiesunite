@@ -255,7 +255,7 @@ if (ctx8) {
     <!-- Arrow marker definition -->
     <defs>
       <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-        <polygon points="0 0, 10 3, 0 6" fill='#e6edf3'/>
+        <polygon points="0 0, 10 3, 0 6" fill='currentColor'/>
       </marker>
     </defs>
   </svg>

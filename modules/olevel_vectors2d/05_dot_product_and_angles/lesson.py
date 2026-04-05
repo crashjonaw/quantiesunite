@@ -48,7 +48,7 @@ SECTIONS = [
                 </marker>
             </defs>
 
-            <text x="150" y="25" fill='#e6edf3' font-size='13' font-weight='bold' text-anchor='middle'>Angle Between Vectors</text>
+            <text x="150" y="25" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Angle Between Vectors</text>
 
             <!-- Vector 1 -->
             <circle cx="100" cy="120" r="4" fill='#4f8ef7'/>
@@ -64,8 +64,8 @@ SECTIONS = [
             <text x="145" y="115" fill='#f85149' font-size='11'>θ</text>
 
             <!-- Information -->
-            <text x="50" y="220" fill='#8b949e' font-size='11'>θ = 0°: vectors point same direction</text>
-            <text x="50" y="240" fill='#8b949e' font-size='11'>θ = 90°: vectors perpendicular</text>
+            <text x="50" y="220" fill='currentColor' opacity='0.6' font-size='11'>θ = 0°: vectors point same direction</text>
+            <text x="50" y="240" fill='currentColor' opacity='0.6' font-size='11'>θ = 90°: vectors perpendicular</text>
         </svg>
         """
     },
@@ -238,7 +238,7 @@ SECTIONS = [
                 </marker>
             </defs>
 
-            <text x="200" y="25" fill='#e6edf3' font-size='12' font-weight='bold' text-anchor='middle'>Projection of \\(\\vec{u}\\) onto \\(\\vec{v}\\)</text>
+            <text x="200" y="25" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Projection of \\(\\vec{u}\\) onto \\(\\vec{v}\\)</text>
 
             <!-- Vector v (base) -->
             <circle cx="80" cy="150" r="4" fill='#4f8ef7'/>

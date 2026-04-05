@@ -27,7 +27,7 @@ SECTIONS = [
     <path d="M 100 130 Q 200 50, 300 130" stroke='#ffa657' stroke-width="2" fill='none' />
     <path d="M 100 190 Q 200 110, 300 190" stroke='#79c0ff' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
     <text x="360" y="165">x</text>
     <text x="190" y="40">y</text>
     <text x="250" y="90" fill='#58a6ff'>y = x²</text>
@@ -77,7 +77,7 @@ SECTIONS = [
     <path d="M 50 160 Q 150 80, 250 160" stroke='#ffa657' stroke-width="2" fill='none' />
     <path d="M 150 160 Q 250 80, 350 160" stroke='#79c0ff' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
     <text x="360" y="165">x</text>
     <text x="190" y="40">y</text>
     <text x="250" y="90" fill='#58a6ff'>y = x²</text>
@@ -151,7 +151,7 @@ SECTIONS = [
     <path d="M 50 150 Q 125 90, 200 150 Q 275 210, 350 250" stroke='#ffa657' stroke-width="2" fill='none' />
     <path d="M 50 150 Q 200 70, 350 150" stroke='#79c0ff' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='10' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='10' fill='currentColor'>
     <text x="360" y="155">x</text>
     <text x="190" y="40">y</text>
     <text x="280" y="80" fill='#58a6ff'>original</text>
@@ -208,7 +208,7 @@ SECTIONS = [
     <path d="M 100 260 Q 150 180, 200 140 Q 250 180, 300 260" stroke='#ffa657' stroke-width="2" fill='none' opacity='0.8' />
     <path d="M 100 100 Q 150 80, 200 100 Q 250 140, 300 200" stroke='#79c0ff' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='10' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='10' fill='currentColor'>
     <text x="360" y="265">x</text>
     <text x="40" y="60">y</text>
     <text x="45" y="275">O</text>

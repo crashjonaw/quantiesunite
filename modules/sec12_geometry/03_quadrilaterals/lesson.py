@@ -36,8 +36,8 @@ SECTIONS = [
   <text x="245" y="25" fill='#79c0ff' font-size='12' font-weight='bold'>C</text>
   <text x="360" y="125" fill='#79c0ff' font-size='12' font-weight='bold'>D</text>
 
-  <text x="50" y="130" fill='#e6edf3' font-size='11'>Triangle 1: A + B + part of C = 180°</text>
-  <text x="50" y="150" fill='#e6edf3' font-size='11'>Triangle 2: part of C + D + part of A = 180°</text>
+  <text x="50" y="130" fill='currentColor' font-size='11'>Triangle 1: A + B + part of C = 180°</text>
+  <text x="50" y="150" fill='currentColor' font-size='11'>Triangle 2: part of C + D + part of A = 180°</text>
 </svg>
 </div>
 
@@ -98,8 +98,8 @@ SECTIONS = [
   <text x="140" y="135" fill='#a371f7' font-size='11' font-weight='bold'>b</text>
 
   <!-- Properties text -->
-  <text x="50" y="220" fill='#e6edf3' font-size='11'>Opposite angles equal: x and x, y and y</text>
-  <text x="50" y="235" fill='#e6edf3' font-size='11'>Opposite sides equal: a and a, b and b</text>
+  <text x="50" y="220" fill='currentColor' font-size='11'>Opposite angles equal: x and x, y and y</text>
+  <text x="50" y="235" fill='currentColor' font-size='11'>Opposite sides equal: a and a, b and b</text>
 </svg>
 
 <h4>Special Types of Parallelograms</h4>
@@ -144,10 +144,10 @@ SECTIONS = [
   <circle cx="280" cy="50" r="2" fill='#f85149'/>
   <circle cx="320" cy="130" r="2" fill='#f85149'/>
 
-  <text x="85" y="130" fill='#e6edf3' font-size='11' font-weight='bold'>A</text>
-  <text x="115" y="50" fill='#e6edf3' font-size='11' font-weight='bold'>B</text>
-  <text x="285" y="50" fill='#e6edf3' font-size='11' font-weight='bold'>C</text>
-  <text x="320" y="130" fill='#e6edf3' font-size='11' font-weight='bold'>D</text>
+  <text x="85" y="130" fill='currentColor' font-size='11' font-weight='bold'>A</text>
+  <text x="115" y="50" fill='currentColor' font-size='11' font-weight='bold'>B</text>
+  <text x="285" y="50" fill='currentColor' font-size='11' font-weight='bold'>C</text>
+  <text x="320" y="130" fill='currentColor' font-size='11' font-weight='bold'>D</text>
 </svg>
 </div>
 
@@ -167,40 +167,40 @@ SECTIONS = [
 <svg width="100%" height="310" viewBox="0 0 500 310" class="formula-box">
   <!-- Quadrilateral (top) -->
   <rect x="150" y="20" width="200" height="40" fill='#161b22' stroke='#58a6ff' stroke-width="2" rx="5"/>
-  <text x="200" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>Quadrilateral</text>
+  <text x="200" y="50" fill='currentColor' font-size='13' font-weight='bold'>Quadrilateral</text>
 
   <!-- Trapezium -->
   <rect x="30" y="100" width="120" height="40" fill='#161b22' stroke='#56d364' stroke-width="2" rx="5"/>
-  <text x="40" y="130" fill='#e6edf3' font-size='12' font-weight='bold'>Trapezium</text>
+  <text x="40" y="130" fill='currentColor' font-size='12' font-weight='bold'>Trapezium</text>
   <line x1="150" y1="60" x2="70" y2="100" stroke='#30363d' stroke-width="1"/>
 
   <!-- Parallelogram -->
   <rect x="190" y="100" width="120" height="40" fill='#161b22' stroke='#56d364' stroke-width="2" rx="5"/>
-  <text x="200" y="130" fill='#e6edf3' font-size='12' font-weight='bold'>Parallelogram</text>
+  <text x="200" y="130" fill='currentColor' font-size='12' font-weight='bold'>Parallelogram</text>
   <line x1="250" y1="60" x2="250" y2="100" stroke='#30363d' stroke-width="1"/>
 
   <!-- Kite -->
   <rect x="350" y="100" width="120" height="40" fill='#161b22' stroke='#56d364' stroke-width="2" rx="5"/>
-  <text x="365" y="130" fill='#e6edf3' font-size='12' font-weight='bold'>Kite</text>
+  <text x="365" y="130" fill='currentColor' font-size='12' font-weight='bold'>Kite</text>
   <line x1="350" y1="60" x2="400" y2="100" stroke='#30363d' stroke-width="1"/>
 
   <!-- Rectangle -->
   <rect x="115" y="180" width="120" height="40" fill='#161b22' stroke='#a371f7' stroke-width="2" rx="5"/>
-  <text x="135" y="210" fill='#e6edf3' font-size='12' font-weight='bold'>Rectangle</text>
+  <text x="135" y="210" fill='currentColor' font-size='12' font-weight='bold'>Rectangle</text>
   <line x1="250" y1="100" x2="175" y2="180" stroke='#30363d' stroke-width="1"/>
 
   <!-- Rhombus -->
   <rect x="265" y="180" width="120" height="40" fill='#161b22' stroke='#a371f7' stroke-width="2" rx="5"/>
-  <text x="285" y="210" fill='#e6edf3' font-size='12' font-weight='bold'>Rhombus</text>
+  <text x="285" y="210" fill='currentColor' font-size='12' font-weight='bold'>Rhombus</text>
   <line x1="250" y1="100" x2="325" y2="180" stroke='#30363d' stroke-width="1"/>
 
   <!-- Square -->
   <rect x="190" y="260" width="120" height="40" fill='#161b22' stroke='#f85149' stroke-width="2.5" rx="5"/>
-  <text x="220" y="290" fill='#e6edf3' font-size='12' font-weight='bold'>Square</text>
+  <text x="220" y="290" fill='currentColor' font-size='12' font-weight='bold'>Square</text>
   <line x1="175" y1="220" x2="240" y2="260" stroke='#30363d' stroke-width="1"/>
   <line x1="325" y1="220" x2="260" y2="260" stroke='#30363d' stroke-width="1"/>
 
-  <text x="20" y="25" fill='#e6edf3' font-size='10' font-style="italic">Hierarchy: boxes below inherit properties from boxes above</text>
+  <text x="20" y="25" fill='currentColor' font-size='10' font-style="italic">Hierarchy: boxes below inherit properties from boxes above</text>
 </svg>
 </div>
 """

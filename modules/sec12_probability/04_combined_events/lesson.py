@@ -62,16 +62,16 @@ SECTIONS = [
 <h4>Tree Diagram: Coin Then Die</h4>
 
 <svg width="100%" height="240" viewBox="0 0 600 240" style="border-radius: 4px">
-  <text x="300" y="20" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Tree Diagram: Flip Coin, Then Roll Die</text>
+  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Tree Diagram: Flip Coin, Then Roll Die</text>
 
   <circle cx="100" cy="100" r="5" fill='#d29922'/>
-  <text x="100" y="130" text-anchor='middle' fill='#e6edf3' font-size='11'>Start</text>
+  <text x="100" y="130" text-anchor='middle' fill='currentColor' font-size='11'>Start</text>
 
   <line x1="105" y1="95" x2="180" y2="60" stroke='#30363d' stroke-width="2"/>
-  <text x="140" y="70" fill='#8b949e' font-size='11'>H (1/2)</text>
+  <text x="140" y="70" fill='currentColor' opacity='0.6' font-size='11'>H (1/2)</text>
 
   <line x1="105" y1="105" x2="180" y2="140" stroke='#30363d' stroke-width="2"/>
-  <text x="140" y="135" fill='#8b949e' font-size='11'>T (1/2)</text>
+  <text x="140" y="135" fill='currentColor' opacity='0.6' font-size='11'>T (1/2)</text>
 
   <circle cx="185" cy="60" r="4" fill='#da3633'/>
   <circle cx="185" cy="140" r="4" fill='#da3633'/>
@@ -83,20 +83,20 @@ SECTIONS = [
   <line x1="189" y1="72" x2="270" y2="110" stroke='#30363d' stroke-width="1"/>
   <line x1="189" y1="76" x2="270" y2="130" stroke='#30363d' stroke-width="1"/>
 
-  <text x="295" y="35" fill='#8b949e' font-size='9'>(H,1): 1/12</text>
-  <text x="295" y="55" fill='#8b949e' font-size='9'>(H,2): 1/12</text>
-  <text x="295" y="75" fill='#8b949e' font-size='9'>(H,3): 1/12</text>
-  <text x="295" y="95" fill='#8b949e' font-size='9'>(H,4): 1/12</text>
-  <text x="295" y="115" fill='#8b949e' font-size='9'>(H,5): 1/12</text>
-  <text x="295" y="135" fill='#8b949e' font-size='9'>(H,6): 1/12</text>
+  <text x="295" y="35" fill='currentColor' opacity='0.6' font-size='9'>(H,1): 1/12</text>
+  <text x="295" y="55" fill='currentColor' opacity='0.6' font-size='9'>(H,2): 1/12</text>
+  <text x="295" y="75" fill='currentColor' opacity='0.6' font-size='9'>(H,3): 1/12</text>
+  <text x="295" y="95" fill='currentColor' opacity='0.6' font-size='9'>(H,4): 1/12</text>
+  <text x="295" y="115" fill='currentColor' opacity='0.6' font-size='9'>(H,5): 1/12</text>
+  <text x="295" y="135" fill='currentColor' opacity='0.6' font-size='9'>(H,6): 1/12</text>
 
   <line x1="189" y1="136" x2="270" y2="150" stroke='#30363d' stroke-width="1"/>
   <line x1="189" y1="140" x2="270" y2="170" stroke='#30363d' stroke-width="1"/>
   <line x1="189" y1="144" x2="270" y2="190" stroke='#30363d' stroke-width="1"/>
 
-  <text x="295" y="155" fill='#8b949e' font-size='9'>(T,1): 1/12</text>
-  <text x="295" y="175" fill='#8b949e' font-size='9'>(T,2): 1/12</text>
-  <text x="295" y="195" fill='#8b949e' font-size='9'>... (6 total)</text>
+  <text x="295" y="155" fill='currentColor' opacity='0.6' font-size='9'>(T,1): 1/12</text>
+  <text x="295" y="175" fill='currentColor' opacity='0.6' font-size='9'>(T,2): 1/12</text>
+  <text x="295" y="195" fill='currentColor' opacity='0.6' font-size='9'>... (6 total)</text>
 </svg>
 
 <p><strong>How to read it:</strong></p>
@@ -114,16 +114,16 @@ SECTIONS = [
 <h4>Tree Diagram: Spinner Twice (Red, Blue, Green)</h4>
 
 <svg width="100%" height="220" viewBox="0 0 500 220" style="border-radius: 4px">
-  <text x="250" y="20" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Spin Twice</text>
+  <text x="250" y="20" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Spin Twice</text>
 
   <circle cx="80" cy="80" r="5" fill='#d29922'/>
   <line x1="85" y1="70" x2="150" y2="40" stroke='#30363d' stroke-width="2"/>
   <line x1="85" y1="80" x2="150" y2="80" stroke='#30363d' stroke-width="2"/>
   <line x1="85" y1="90" x2="150" y2="120" stroke='#30363d' stroke-width="2"/>
 
-  <text x="115" y="55" fill='#8b949e' font-size='11'>R (1/3)</text>
-  <text x="115" y="88" fill='#8b949e' font-size='11'>B (1/3)</text>
-  <text x="115" y="118" fill='#8b949e' font-size='11'>G (1/3)</text>
+  <text x="115" y="55" fill='currentColor' opacity='0.6' font-size='11'>R (1/3)</text>
+  <text x="115" y="88" fill='currentColor' opacity='0.6' font-size='11'>B (1/3)</text>
+  <text x="115" y="118" fill='currentColor' opacity='0.6' font-size='11'>G (1/3)</text>
 
   <circle cx="155" cy="40" r="4" fill='#da3633'/>
   <circle cx="155" cy="80" r="4" fill='#da3633'/>
@@ -141,14 +141,14 @@ SECTIONS = [
   <line x1="159" y1="123" x2="220" y2="165" stroke='#30363d' stroke-width="1"/>
   <line x1="159" y1="129" x2="220" y2="190" stroke='#30363d' stroke-width="1"/>
 
-  <text x="240" y="25" fill='#8b949e' font-size='9'>(R,R): 1/9</text>
-  <text x="240" y="50" fill='#8b949e' font-size='9'>(R,B): 1/9</text>
-  <text x="240" y="75" fill='#8b949e' font-size='9'>(R,G): 1/9</text>
-  <text x="240" y="90" fill='#8b949e' font-size='9'>(B,R): 1/9</text>
-  <text x="240" y="115" fill='#8b949e' font-size='9'>(B,B): 1/9</text>
-  <text x="240" y="140" fill='#8b949e' font-size='9'>(B,G): 1/9</text>
-  <text x="240" y="170" fill='#8b949e' font-size='9'>(G,R): 1/9</text>
-  <text x="240" y="195" fill='#8b949e' font-size='9'>(G,G): 1/9</text>
+  <text x="240" y="25" fill='currentColor' opacity='0.6' font-size='9'>(R,R): 1/9</text>
+  <text x="240" y="50" fill='currentColor' opacity='0.6' font-size='9'>(R,B): 1/9</text>
+  <text x="240" y="75" fill='currentColor' opacity='0.6' font-size='9'>(R,G): 1/9</text>
+  <text x="240" y="90" fill='currentColor' opacity='0.6' font-size='9'>(B,R): 1/9</text>
+  <text x="240" y="115" fill='currentColor' opacity='0.6' font-size='9'>(B,B): 1/9</text>
+  <text x="240" y="140" fill='currentColor' opacity='0.6' font-size='9'>(B,G): 1/9</text>
+  <text x="240" y="170" fill='currentColor' opacity='0.6' font-size='9'>(G,R): 1/9</text>
+  <text x="240" y="195" fill='currentColor' opacity='0.6' font-size='9'>(G,G): 1/9</text>
 </svg>
 
 <p><strong>Total outcomes:</strong> 3 × 3 = 9 (shown by 9 paths from start to end)</p>

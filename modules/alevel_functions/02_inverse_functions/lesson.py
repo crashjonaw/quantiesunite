@@ -92,7 +92,7 @@ $$x = \\frac{3y+1}{y-2}$$
 </g>
 <g class="diag">
 <line x1="50" y1="350" x2="350" y2="50" />
-<text x="320" y="80" class="label" fill='#8b949e'>y = x</text>
+<text x="320" y="80" class="label" fill='currentColor' opacity='0.6'>y = x</text>
 </g>
 <g class="curve">
 <path d="M 100 320 Q 150 250, 200 200 Q 250 150, 300 100" />

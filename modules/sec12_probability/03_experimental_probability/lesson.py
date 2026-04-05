@@ -133,7 +133,7 @@ SECTIONS = [
 </div>
 
 <svg width="100%" height="200" viewBox="0 0 620 200" style="border-radius: 4px; margin: 15px 0">
-  <text x="300" y="20" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Experimental P(Heads) Approaching Theoretical P = 0.5</text>
+  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Experimental P(Heads) Approaching Theoretical P = 0.5</text>
 
   <line x1="50" y1="50" x2="550" y2="50" stroke='#30363d' stroke-width="1"/>
   <line x1="50" y1="150" x2="550" y2="150" stroke='#30363d' stroke-width="1"/>
@@ -143,24 +143,24 @@ SECTIONS = [
   <line x1="50" y1="100" x2="550" y2="100" stroke='#d29922' stroke-width="2" stroke-dasharray="5,5"/>
 
   <circle cx="120" cy="65" r="5" fill='#da3633'/>
-  <text x="120" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>10</text>
+  <text x="120" y="175" text-anchor='middle' fill='currentColor' font-size='12'>10</text>
 
   <circle cx="210" cy="92" r="5" fill='#da3633'/>
-  <text x="210" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>100</text>
+  <text x="210" y="175" text-anchor='middle' fill='currentColor' font-size='12'>100</text>
 
   <circle cx="300" cy="99" r="5" fill='#da3633'/>
-  <text x="300" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>1000</text>
+  <text x="300" y="175" text-anchor='middle' fill='currentColor' font-size='12'>1000</text>
 
   <circle cx="390" cy="100" r="5" fill='#da3633'/>
-  <text x="390" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>10K</text>
+  <text x="390" y="175" text-anchor='middle' fill='currentColor' font-size='12'>10K</text>
 
   <circle cx="480" cy="101" r="5" fill='#da3633'/>
-  <text x="480" y="175" text-anchor='middle' fill='#e6edf3' font-size='12'>100K</text>
+  <text x="480" y="175" text-anchor='middle' fill='currentColor' font-size='12'>100K</text>
 
   <text x="570" y="107" fill='#d29922' font-size='11'>Theory</text>
-  <text x="30" y="95" fill='#e6edf3' font-size='11'>P = 1.0</text>
-  <text x="30" y="155" fill='#e6edf3' font-size='11'>P = 0</text>
-  <text x="300" y="30" fill='#8b949e' font-size='11'>Number of Trials →</text>
+  <text x="30" y="95" fill='currentColor' font-size='11'>P = 1.0</text>
+  <text x="30" y="155" fill='currentColor' font-size='11'>P = 0</text>
+  <text x="300" y="30" fill='currentColor' opacity='0.6' font-size='11'>Number of Trials →</text>
 </svg>
 
 <div class="success-box">

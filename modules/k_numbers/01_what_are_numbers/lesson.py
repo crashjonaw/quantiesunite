@@ -130,18 +130,18 @@ SECTIONS = [
 <svg viewBox="0 0 400 150" style="width: 100%; height: auto; margin: 20px 0;">
   <!-- Digits box -->
   <rect x="20" y="20" width="150" height="100" fill='none' stroke='#4169E1' stroke-width="2" rx="5"/>
-  <text x="100" y="45" text-anchor='middle' font-size='14' fill='#e6edf3' font-weight='bold'>Digits (10 symbols)</text>
+  <text x="100" y="45" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>Digits (10 symbols)</text>
   <text x="100" y="70" text-anchor='middle' font-size='16' fill='#4169E1'>0 1 2 3 4 5 6 7 8 9</text>
-  <text x="100" y="100" text-anchor='middle' font-size='12' fill='#8b949e'>(building blocks)</text>
+  <text x="100" y="100" text-anchor='middle' font-size='12' fill='currentColor' opacity='0.6'>(building blocks)</text>
 
   <!-- Arrow -->
   <text x="200" y="75" text-anchor='middle' font-size='18' fill='#4169E1'>→</text>
 
   <!-- Numbers box -->
   <rect x="230" y="20" width="150" height="100" fill='none' stroke='#4169E1' stroke-width="2" rx="5"/>
-  <text x="310" y="45" text-anchor='middle' font-size='14' fill='#e6edf3' font-weight='bold'>Numbers</text>
+  <text x="310" y="45" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>Numbers</text>
   <text x="310" y="70" text-anchor='middle' font-size='16' fill='#4169E1'>10, 25, 100, 7493</text>
-  <text x="310" y="100" text-anchor='middle' font-size='12' fill='#8b949e'>(made from digits)</text>
+  <text x="310" y="100" text-anchor='middle' font-size='12' fill='currentColor' opacity='0.6'>(made from digits)</text>
 </svg>
 
 <div class="mcq-group">

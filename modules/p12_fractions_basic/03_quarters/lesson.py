@@ -14,7 +14,7 @@ SECTIONS = [
   <text x="60" y="100" font-size='16' fill='#2c3e50' font-weight='bold'>Whole</text>
 
   <!-- Arrow -->
-  <text x="150" y="100" font-size='20' fill='#8b949e'>→</text>
+  <text x="150" y="100" font-size='20' fill='currentColor' opacity='0.6'>→</text>
 
   <!-- Four quarters -->
   <text x="200" y="30" font-size='14' font-weight='bold' fill='#161b22'>Cut into 4 equal pieces:</text>
@@ -31,7 +31,7 @@ SECTIONS = [
   <text x="242" y="112" font-size='12' fill='#4f8ef7' font-weight='bold'>¼</text>
 
   <!-- Labels -->
-  <text x="190" y="145" font-size='12' fill='#8b949e'>All equal size</text>
+  <text x="190" y="145" font-size='12' fill='currentColor' opacity='0.6'>All equal size</text>
 </svg>
 <div class="concept-box" style="background: #e8f4f8; padding: 12px; margin: 12px 0; border-radius: 4px">
   <strong>Key fact:</strong> \\(\\frac{1}{4}\\) + \\(\\frac{1}{4}\\) + \\(\\frac{1}{4}\\) + \\(\\frac{1}{4}\\) = 1 whole. Four quarters always equal one whole!
@@ -66,7 +66,7 @@ SECTIONS = [
   <circle cx="90" cy="240" r="30" fill='none' stroke='#8b949e' stroke-width="2"/>
   <line x1="90" y1="210" x2="90" y2="185" stroke='#8b949e' stroke-width="2" stroke-linecap="round"/>
   <line x1="90" y1="210" x2="110" y2="230" stroke='#8b949e' stroke-width="2" stroke-linecap="round"/>
-  <text x="55" y="280" font-size='12' fill='#8b949e'>15 minutes = ¼ hour</text>
+  <text x="55" y="280" font-size='12' fill='currentColor' opacity='0.6'>15 minutes = ¼ hour</text>
 
   <!-- Rectangle ribbon -->
   <text x="240" y="180" font-size='14' font-weight='bold' fill='#161b22'>Ribbon cut into quarters:</text>
@@ -113,10 +113,10 @@ SECTIONS = [
   <text x="265" y="82" font-size='11' fill='#c0392b' font-weight='bold'>¼</text>
 
   <rect x="295" y="50" width="20" height="50" fill='#d3d3d3' stroke='#8b949e' stroke-width="2" rx="2"/>
-  <text x="295" y="82" font-size='11' fill='#8b949e' font-weight='bold'>—</text>
+  <text x="295" y="82" font-size='11' fill='currentColor' opacity='0.6' font-weight='bold'>—</text>
 
-  <text x="220" y="130" font-size='12' fill='#8b949e'>= ¾ (three quarters)</text>
-  <text x="220" y="150" font-size='11' fill='#8b949e'>The shaded pieces</text>
+  <text x="220" y="130" font-size='12' fill='currentColor' opacity='0.6'>= ¾ (three quarters)</text>
+  <text x="220" y="150" font-size='11' fill='currentColor' opacity='0.6'>The shaded pieces</text>
 
   <!-- Comparison -->
   <text x="30" y="190" font-size='14' font-weight='bold' fill='#161b22'>¾ is a lot! Almost the whole thing:</text>
@@ -152,7 +152,7 @@ SECTIONS = [
   <text x="112" y="85" font-size='11' fill='#4f8ef7' font-weight='bold'>¼</text>
 
   <!-- Plus signs -->
-  <text x="140" y="90" font-size='20' fill='#8b949e' font-weight='bold'>+ + + = </text>
+  <text x="140" y="90" font-size='20' fill='currentColor' opacity='0.6' font-weight='bold'>+ + + = </text>
 
   <!-- Whole -->
   <rect x="260" y="50" width="100" height="60" fill='#b3d9ff' stroke='#4f8ef7' stroke-width="2" rx="2"/>

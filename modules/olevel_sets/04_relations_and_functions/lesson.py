@@ -64,10 +64,10 @@ SECTIONS = [
   <line x1="175" y1="100" x2="265" y2="100" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="3,3"/>
 
   <!-- Labels -->
-  <text x="175" y="315" font-size='14' fill='#e6edf3' text-anchor='middle'>x</text>
-  <text x="25" y="160" font-size='14' fill='#e6edf3' text-anchor='middle'>y</text>
-  <text x="270" y="85" font-size='12' fill='#e6edf3'>(3, 2)</text>
-  <text x="175" y="150" font-size='11' fill='#8b949e'>O</text>
+  <text x="175" y="315" font-size='14' fill='currentColor' text-anchor='middle'>x</text>
+  <text x="25" y="160" font-size='14' fill='currentColor' text-anchor='middle'>y</text>
+  <text x="270" y="85" font-size='12' fill='currentColor'>(3, 2)</text>
+  <text x="175" y="150" font-size='11' fill='currentColor' opacity='0.6'>O</text>
 </svg>
 """
     },
@@ -118,27 +118,27 @@ SECTIONS = [
   <circle cx="60" cy="80" r="5" fill='#4f8ef7'/>
   <circle cx="60" cy="120" r="5" fill='#4f8ef7'/>
   <circle cx="60" cy="160" r="5" fill='#4f8ef7'/>
-  <text x="10" y="210" font-size='12' fill='#e6edf3'>A = {1,2,3}</text>
-  <text x="35" y="75" font-size='11' fill='#8b949e'>1</text>
-  <text x="35" y="125" font-size='11' fill='#8b949e'>2</text>
-  <text x="35" y="165" font-size='11' fill='#8b949e'>3</text>
+  <text x="10" y="210" font-size='12' fill='currentColor'>A = {1,2,3}</text>
+  <text x="35" y="75" font-size='11' fill='currentColor' opacity='0.6'>1</text>
+  <text x="35" y="125" font-size='11' fill='currentColor' opacity='0.6'>2</text>
+  <text x="35" y="165" font-size='11' fill='currentColor' opacity='0.6'>3</text>
 
   <!-- Right set -->
   <rect x="260" y="60" width="60" height="120" fill='transparent' stroke='#4f8ef7' stroke-width="1" stroke-dasharray="2,2"/>
   <circle cx="290" cy="90" r="5" fill='#4f8ef7'/>
   <circle cx="290" cy="130" r="5" fill='#4f8ef7'/>
   <circle cx="290" cy="170" r="5" fill='#4f8ef7'/>
-  <text x="260" y="210" font-size='12' fill='#e6edf3'>B = {a,b,c}</text>
-  <text x="300" y="100" font-size='11' fill='#8b949e'>a</text>
-  <text x="300" y="140" font-size='11' fill='#8b949e'>b</text>
-  <text x="300" y="180" font-size='11' fill='#8b949e'>c</text>
+  <text x="260" y="210" font-size='12' fill='currentColor'>B = {a,b,c}</text>
+  <text x="300" y="100" font-size='11' fill='currentColor' opacity='0.6'>a</text>
+  <text x="300" y="140" font-size='11' fill='currentColor' opacity='0.6'>b</text>
+  <text x="300" y="180" font-size='11' fill='currentColor' opacity='0.6'>c</text>
 
   <!-- Arrows for relation -->
   <line x1="65" y1="80" x2="260" y2="130" stroke='#4f8ef7' stroke-width="1.5"/>
   <line x1="65" y1="80" x2="260" y2="170" stroke='#4f8ef7' stroke-width="1.5"/>
   <line x1="65" y1="120" x2="260" y2="170" stroke='#4f8ef7' stroke-width="1.5"/>
 
-  <text x="160" y="25" font-size='11' fill='#8b949e'>R: 1→{b,c}, 2→{c}</text>
+  <text x="160" y="25" font-size='11' fill='currentColor' opacity='0.6'>R: 1→{b,c}, 2→{c}</text>
 </svg>
 
 <p style="margin-top: 12px">The arrows show which pairs are in the relation. Notice 3 has no outgoing arrows.</p>

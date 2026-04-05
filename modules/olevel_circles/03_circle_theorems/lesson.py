@@ -18,7 +18,7 @@ SECTIONS = [
 
 <svg width="360" height="320" class="formula-box">
   <circle cx="180" cy="160" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="160" r="4" fill='#e6edf3'/>
+  <circle cx="180" cy="160" r="4" fill='currentColor'/>
   <circle cx="100" cy="100" r="4" fill='#f85149'/>
   <circle cx="260" cy="100" r="4" fill='#f85149'/>
   <circle cx="220" cy="230" r="4" fill='#a371f7'/>
@@ -34,8 +34,8 @@ SECTIONS = [
   <text x="85" y="85" fill='#f85149' font-size='11'>A</text>
   <text x="265" y="85" fill='#f85149' font-size='11'>B</text>
   <text x="225" y="245" fill='#a371f7' font-size='11'>P</text>
-  <text x="165" y="150" fill='#e6edf3' font-size='11'>O</text>
-  <text x="180" y="295" fill='#e6edf3' font-size='12' text-anchor='middle'>∠AOB = 2 × ∠APB (always!)</text>
+  <text x="165" y="150" fill='currentColor' font-size='11'>O</text>
+  <text x="180" y="295" fill='currentColor' font-size='12' text-anchor='middle'>∠AOB = 2 × ∠APB (always!)</text>
 </svg>
 
 <h4>Key Observation</h4>
@@ -71,7 +71,7 @@ SECTIONS = [
 
 <svg width="380" height="300" class="formula-box">
   <circle cx="190" cy="150" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="190" cy="150" r="4" fill='#e6edf3'/>
+  <circle cx="190" cy="150" r="4" fill='currentColor'/>
   <line x1="90" y1="150" x2="290" y2="150" stroke='#f85149' stroke-width="2"/>
   <circle cx="90" cy="150" r="4" fill='#f85149'/>
   <circle cx="290" cy="150" r="4" fill='#f85149'/>
@@ -82,10 +82,10 @@ SECTIONS = [
   <text x="80" y="170" fill='#f85149' font-size='11'>A</text>
   <text x="295" y="170" fill='#f85149' font-size='11'>B</text>
   <text x="185" y="35" fill='#a371f7' font-size='11'>P</text>
-  <text x="180" y="160" fill='#e6edf3' font-size='10'>O</text>
+  <text x="180" y="160" fill='currentColor' font-size='10'>O</text>
   <path d="M 200 80 A 20 20 0 0 0 225 95" fill='none' stroke='#a371f7' stroke-width="1.5"/>
   <text x="230" y="85" fill='#a371f7' font-size='12' font-weight='bold'>90°</text>
-  <text x="190" y="290" fill='#e6edf3' font-size='12' text-anchor='middle'>P is on the circle, AB is a diameter → ∠APB = 90°</text>
+  <text x="190" y="290" fill='currentColor' font-size='12' text-anchor='middle'>P is on the circle, AB is a diameter → ∠APB = 90°</text>
 </svg>
 
 <h4>Practical Application</h4>
@@ -126,7 +126,7 @@ SECTIONS = [
 
 <svg width="380" height="340" class="formula-box">
   <circle cx="190" cy="170" r="110" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="190" cy="170" r="4" fill='#e6edf3'/>
+  <circle cx="190" cy="170" r="4" fill='currentColor'/>
   <circle cx="100" cy="100" r="5" fill='#f85149'/>
   <circle cx="280" cy="100" r="5" fill='#f85149'/>
   <circle cx="300" cy="200" r="5" fill='#a371f7'/>
@@ -139,12 +139,12 @@ SECTIONS = [
   <text x="285" y="90" fill='#f85149' font-size='12' font-weight='bold'>B</text>
   <text x="310" y="205" fill='#a371f7' font-size='12' font-weight='bold'>C</text>
   <text x="65" y="250" fill='#a371f7' font-size='12' font-weight='bold'>D</text>
-  <text x="185" y="160" fill='#e6edf3' font-size='10'>O</text>
+  <text x="185" y="160" fill='currentColor' font-size='10'>O</text>
   <path d="M 115 110 A 20 20 0 0 0 125 125" fill='none' stroke='#f85149' stroke-width="1.5"/>
   <text x="115" y="130" fill='#f85149' font-size='10'>∠A</text>
   <path d="M 290 120 A 20 20 0 0 0 280 130" fill='none' stroke='#a371f7' stroke-width="1.5"/>
   <text x="300" y="145" fill='#a371f7' font-size='10'>∠C</text>
-  <text x="190" y="320" fill='#e6edf3' font-size='12' text-anchor='middle'>∠A + ∠C = 180° (opposite angles in cyclic quadrilateral)</text>
+  <text x="190" y="320" fill='currentColor' font-size='12' text-anchor='middle'>∠A + ∠C = 180° (opposite angles in cyclic quadrilateral)</text>
 </svg>
 
 <h4>Why Is This True?</h4>
@@ -183,7 +183,7 @@ SECTIONS = [
 
 <svg width="400" height="340" viewBox="0 0 400 340" class="formula-box">
   <circle cx="200" cy="170" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="200" cy="170" r="4" fill='#e6edf3'/>
+  <circle cx="200" cy="170" r="4" fill='currentColor'/>
   <circle cx="200" cy="70" r="4" fill='#f85149'/>
   <circle cx="280" cy="220" r="4" fill='#f85149'/>
   <circle cx="140" cy="240" r="4" fill='#a371f7'/>
@@ -198,8 +198,8 @@ SECTIONS = [
   <text x="195" y="55" fill='#f85149' font-size='11'>A (tangent point)</text>
   <text x="285" y="225" fill='#f85149' font-size='11'>B</text>
   <text x="130" y="250" fill='#a371f7' font-size='11'>C</text>
-  <text x="185" y="160" fill='#e6edf3' font-size='10'>O</text>
-  <text x="200" y="320" fill='#e6edf3' font-size='12' text-anchor='middle'>Angle between tangent and chord AB equals inscribed angle ∠ACB</text>
+  <text x="185" y="160" fill='currentColor' font-size='10'>O</text>
+  <text x="200" y="320" fill='currentColor' font-size='12' text-anchor='middle'>Angle between tangent and chord AB equals inscribed angle ∠ACB</text>
 </svg>
 
 <h4>Why Is This Useful?</h4>

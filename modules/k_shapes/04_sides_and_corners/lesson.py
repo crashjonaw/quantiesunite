@@ -9,14 +9,14 @@ SECTIONS = [
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <!-- Circle -->
   <circle cx="80" cy="100" r="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="3"/>
-  <text x="80" y="160" text-anchor='middle' font-size='12' fill='#e6edf3'>0 sides</text>
+  <text x="80" y="160" text-anchor='middle' font-size='12' fill='currentColor'>0 sides</text>
 
   <!-- Triangle -->
   <polygon points="200,150 200,50 270,150" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
   <text x="200" y="40" font-size='11' fill='#ef4444' font-weight='bold'>side 1</text>
   <text x="260" y="110" font-size='11' fill='#ef4444' font-weight='bold'>side 2</text>
   <text x="230" y="165" font-size='11' fill='#ef4444' font-weight='bold'>side 3</text>
-  <text x="200" y="170" text-anchor='middle' font-size='12' fill='#e6edf3'>3 sides</text>
+  <text x="200" y="170" text-anchor='middle' font-size='12' fill='currentColor'>3 sides</text>
 
   <!-- Square -->
   <rect x="340" y="50" width="100" height="100" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
@@ -24,7 +24,7 @@ SECTIONS = [
   <text x="460" y="105" font-size='11' fill='#22c55e' font-weight='bold'>right</text>
   <text x="390" y="165" font-size='11' fill='#22c55e' font-weight='bold'>bottom</text>
   <text x="320" y="105" font-size='11' fill='#22c55e' font-weight='bold'>left</text>
-  <text x="390" y="170" text-anchor='middle' font-size='12' fill='#e6edf3'>4 sides</text>
+  <text x="390" y="170" text-anchor='middle' font-size='12' fill='currentColor'>4 sides</text>
 </svg>
 <p><strong>Why count sides?</strong> By counting sides, we can quickly identify what shape something is:</p>
 <ul>
@@ -43,14 +43,14 @@ SECTIONS = [
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <!-- Circle (no corners) -->
   <circle cx="80" cy="100" r="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="3"/>
-  <text x="80" y="160" text-anchor='middle' font-size='12' fill='#e6edf3'>0 corners</text>
+  <text x="80" y="160" text-anchor='middle' font-size='12' fill='currentColor'>0 corners</text>
 
   <!-- Triangle (3 corners) -->
   <polygon points="200,150 200,50 270,150" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
   <circle cx="200" cy="150" r="6" fill='#ef4444'/>
   <circle cx="200" cy="50" r="6" fill='#ef4444'/>
   <circle cx="270" cy="150" r="6" fill='#ef4444'/>
-  <text x="200" y="170" text-anchor='middle' font-size='12' fill='#e6edf3'>3 corners</text>
+  <text x="200" y="170" text-anchor='middle' font-size='12' fill='currentColor'>3 corners</text>
 
   <!-- Square (4 corners with right angle markers) -->
   <rect x="340" y="50" width="100" height="100" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
@@ -63,7 +63,7 @@ SECTIONS = [
   <rect x="430" y="50" width="10" height="10" fill='none' stroke='#22c55e' stroke-width="1.5"/>
   <rect x="430" y="140" width="10" height="10" fill='none' stroke='#22c55e' stroke-width="1.5"/>
   <rect x="340" y="140" width="10" height="10" fill='none' stroke='#22c55e' stroke-width="1.5"/>
-  <text x="390" y="170" text-anchor='middle' font-size='12' fill='#e6edf3'>4 corners (right angles)</text>
+  <text x="390" y="170" text-anchor='middle' font-size='12' fill='currentColor'>4 corners (right angles)</text>
 </svg>
 <p><strong>Important fact:</strong> The number of sides always equals the number of corners (except for circles, which have neither)!</p>
 <div class="concept-box">
@@ -80,14 +80,14 @@ A circle has 0 sides and 0 corners.
         "body": """<p>Most shapes have <strong>corners</strong>, and many of those corners are <strong>right angles</strong>. A <strong>right angle</strong> is exactly \\(90°\\) — it's the angle you see in the corner of a book or door!</p>
 <svg viewBox="0 0 500 300" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <!-- Right angle example -->
-  <text x="50" y="30" font-size='14' font-weight='bold' fill='#e6edf3'>Right Angle (90°)</text>
+  <text x="50" y="30" font-size='14' font-weight='bold' fill='currentColor'>Right Angle (90°)</text>
   <line x1="80" y1="120" x2="150" y2="120" stroke='#22c55e' stroke-width="3"/>
   <line x1="80" y1="120" x2="80" y2="50" stroke='#22c55e' stroke-width="3"/>
   <rect x="80" y="50" width="20" height="20" fill='none' stroke='#22c55e' stroke-width="2"/>
   <text x="95" y="45" font-size='12' fill='#22c55e'>90°</text>
 
   <!-- Shapes with right angles -->
-  <text x="50" y="170" font-size='14' font-weight='bold' fill='#e6edf3'>Shapes with Right Angles:</text>
+  <text x="50" y="170" font-size='14' font-weight='bold' fill='currentColor'>Shapes with Right Angles:</text>
 
   <!-- Square -->
   <rect x="40" y="190" width="60" height="60" fill='#22c55e30' stroke='#22c55e' stroke-width="2"/>
@@ -95,8 +95,8 @@ A circle has 0 sides and 0 corners.
   <rect x="92" y="190" width="8" height="8" fill='none' stroke='#22c55e' stroke-width="1.5"/>
   <rect x="92" y="242" width="8" height="8" fill='none' stroke='#22c55e' stroke-width="1.5"/>
   <rect x="40" y="242" width="8" height="8" fill='none' stroke='#22c55e' stroke-width="1.5"/>
-  <text x="70" y="270" text-anchor='middle' font-size='12' fill='#e6edf3'>Square</text>
-  <text x="70" y="285" text-anchor='middle' font-size='11' fill='#8b949e'>(4 right angles)</text>
+  <text x="70" y="270" text-anchor='middle' font-size='12' fill='currentColor'>Square</text>
+  <text x="70" y="285" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(4 right angles)</text>
 
   <!-- Rectangle -->
   <rect x="150" y="190" width="90" height="60" fill='#f59e0b30' stroke='#f59e0b' stroke-width="2"/>
@@ -104,13 +104,13 @@ A circle has 0 sides and 0 corners.
   <rect x="232" y="190" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="232" y="242" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="150" y="242" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <text x="195" y="270" text-anchor='middle' font-size='12' fill='#e6edf3'>Rectangle</text>
-  <text x="195" y="285" text-anchor='middle' font-size='11' fill='#8b949e'>(4 right angles)</text>
+  <text x="195" y="270" text-anchor='middle' font-size='12' fill='currentColor'>Rectangle</text>
+  <text x="195" y="285" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(4 right angles)</text>
 
   <!-- Triangle (often no right angles) -->
   <polygon points="300,250 300,190 360,250" fill='#ef444450' stroke='#ef4444' stroke-width="2"/>
-  <text x="330" y="270" text-anchor='middle' font-size='12' fill='#e6edf3'>Triangle</text>
-  <text x="330" y="285" text-anchor='middle' font-size='11' fill='#8b949e'>(usually no right angles)</text>
+  <text x="330" y="270" text-anchor='middle' font-size='12' fill='currentColor'>Triangle</text>
+  <text x="330" y="285" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(usually no right angles)</text>
 </svg>
 <button class="reveal-btn" data-reveal="reveal4">▼ Can you find right angles?</button>
 <div class="reveal-panel" id="reveal4">

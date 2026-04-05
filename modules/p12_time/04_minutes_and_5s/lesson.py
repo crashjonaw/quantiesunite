@@ -14,16 +14,16 @@ SECTIONS = [
   <circle cx="200" cy="140" r="90" fill='#1f2937' stroke='#e5e7eb' stroke-width="3"/>
 
   <!-- Numbers with their minute equivalents -->
-  <text x="200" y="65" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>12</text>
+  <text x="200" y="65" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>12</text>
   <text x="200" y="58" text-anchor='middle' fill='#22c55e' font-size='12'>0 min</text>
 
-  <text x="268" y="150" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>3</text>
+  <text x="268" y="150" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>3</text>
   <text x="278" y="150" text-anchor='middle' fill='#22c55e' font-size='12'>15 min</text>
 
-  <text x="200" y="230" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>6</text>
+  <text x="200" y="230" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>6</text>
   <text x="200" y="250" text-anchor='middle' fill='#22c55e' font-size='12'>30 min</text>
 
-  <text x="132" y="150" text-anchor='middle' fill='#e6edf3' font-size='18' font-weight='bold'>9</text>
+  <text x="132" y="150" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>9</text>
   <text x="110" y="150" text-anchor='middle' fill='#22c55e' font-size='12'>45 min</text>
 
   <!-- Center dot -->
@@ -55,17 +55,17 @@ SECTIONS = [
   <circle cx="200" cy="160" r="80" fill='#1f2937' stroke='#e5e7eb' stroke-width="3"/>
 
   <!-- All 12 numbers -->
-  <text x="200" y="88" text-anchor='middle' fill='#e6edf3' font-size='14'>12</text>
-  <text x="234" y="98" text-anchor='middle' fill='#e6edf3' font-size='14'>1</text>
-  <text x="263" y="120" text-anchor='middle' fill='#e6edf3' font-size='14'>2</text>
-  <text x="280" y="150" text-anchor='middle' fill='#e6edf3' font-size='14'>3</text>
-  <text x="263" y="200" text-anchor='middle' fill='#e6edf3' font-size='14'>5</text>
-  <text x="234" y="222" text-anchor='middle' fill='#e6edf3' font-size='14'>7</text>
-  <text x="200" y="232" text-anchor='middle' fill='#e6edf3' font-size='14'>6</text>
-  <text x="166" y="222" text-anchor='middle' fill='#e6edf3' font-size='14'>8</text>
-  <text x="137" y="200" text-anchor='middle' fill='#e6edf3' font-size='14'>9</text>
-  <text x="120" y="150" text-anchor='middle' fill='#e6edf3' font-size='14'>10</text>
-  <text x="137" y="120" text-anchor='middle' fill='#e6edf3' font-size='14'>11</text>
+  <text x="200" y="88" text-anchor='middle' fill='currentColor' font-size='14'>12</text>
+  <text x="234" y="98" text-anchor='middle' fill='currentColor' font-size='14'>1</text>
+  <text x="263" y="120" text-anchor='middle' fill='currentColor' font-size='14'>2</text>
+  <text x="280" y="150" text-anchor='middle' fill='currentColor' font-size='14'>3</text>
+  <text x="263" y="200" text-anchor='middle' fill='currentColor' font-size='14'>5</text>
+  <text x="234" y="222" text-anchor='middle' fill='currentColor' font-size='14'>7</text>
+  <text x="200" y="232" text-anchor='middle' fill='currentColor' font-size='14'>6</text>
+  <text x="166" y="222" text-anchor='middle' fill='currentColor' font-size='14'>8</text>
+  <text x="137" y="200" text-anchor='middle' fill='currentColor' font-size='14'>9</text>
+  <text x="120" y="150" text-anchor='middle' fill='currentColor' font-size='14'>10</text>
+  <text x="137" y="120" text-anchor='middle' fill='currentColor' font-size='14'>11</text>
 
   <!-- Minutes outside the clock -->
   <text x="200" y="72" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>0</text>
@@ -104,65 +104,65 @@ SECTIONS = [
   <!-- Time 1: 2:17 -->
   <g>
     <circle cx="90" cy="90" r="40" fill='#1f2937' stroke='#e5e7eb' stroke-width="2"/>
-    <text x="90" y="58" text-anchor='middle' fill='#e6edf3' font-size='11'>12</text>
-    <text x="120" y="95" text-anchor='middle' fill='#e6edf3' font-size='11'>3</text>
-    <text x="90" y="125" text-anchor='middle' fill='#e6edf3' font-size='11'>6</text>
-    <text x="60" y="95" text-anchor='middle' fill='#e6edf3' font-size='11'>9</text>
+    <text x="90" y="58" text-anchor='middle' fill='currentColor' font-size='11'>12</text>
+    <text x="120" y="95" text-anchor='middle' fill='currentColor' font-size='11'>3</text>
+    <text x="90" y="125" text-anchor='middle' fill='currentColor' font-size='11'>6</text>
+    <text x="60" y="95" text-anchor='middle' fill='currentColor' font-size='11'>9</text>
     <!-- Hour hand to 2 -->
     <line x1="90" y1="90" x2="98" y2="68" stroke='#4f8ef7' stroke-width="3" stroke-linecap="round"/>
     <!-- Minute hand to 3.4 (between 3 and 4) -->
     <line x1="90" y1="90" x2="118" y2="88" stroke='#22c55e' stroke-width="2" stroke-linecap="round"/>
     <circle cx="90" cy="90" r="2" fill='#e5e7eb'/>
     <text x="90" y="150" text-anchor='middle' font-size='12' font-weight='bold' fill='#161b22'>2:17</text>
-    <text x="90" y="163" text-anchor='middle' font-size='10' fill='#8b949e'>(counting by 5s)</text>
+    <text x="90" y="163" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>(counting by 5s)</text>
   </g>
 
   <!-- Time 2: 5:33 -->
   <g>
     <circle cx="280" cy="90" r="40" fill='#1f2937' stroke='#e5e7eb' stroke-width="2"/>
-    <text x="280" y="58" text-anchor='middle' fill='#e6edf3' font-size='11'>12</text>
-    <text x="310" y="95" text-anchor='middle' fill='#e6edf3' font-size='11'>3</text>
-    <text x="280" y="125" text-anchor='middle' fill='#e6edf3' font-size='11'>6</text>
-    <text x="250" y="95" text-anchor='middle' fill='#e6edf3' font-size='11'>9</text>
+    <text x="280" y="58" text-anchor='middle' fill='currentColor' font-size='11'>12</text>
+    <text x="310" y="95" text-anchor='middle' fill='currentColor' font-size='11'>3</text>
+    <text x="280" y="125" text-anchor='middle' fill='currentColor' font-size='11'>6</text>
+    <text x="250" y="95" text-anchor='middle' fill='currentColor' font-size='11'>9</text>
     <!-- Hour hand to 5 -->
     <line x1="280" y1="90" x2="298" y2="108" stroke='#4f8ef7' stroke-width="3" stroke-linecap="round"/>
     <!-- Minute hand between 6 and 7 -->
     <line x1="280" y1="90" x2="283" y2="130" stroke='#22c55e' stroke-width="2" stroke-linecap="round"/>
     <circle cx="280" cy="90" r="2" fill='#e5e7eb'/>
     <text x="280" y="150" text-anchor='middle' font-size='12' font-weight='bold' fill='#161b22'>5:33</text>
-    <text x="280" y="163" text-anchor='middle' font-size='10' fill='#8b949e'>(between 30 & 35)</text>
+    <text x="280" y="163" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>(between 30 & 35)</text>
   </g>
 
   <!-- Time 3: 8:52 -->
   <g>
     <circle cx="90" cy="250" r="40" fill='#1f2937' stroke='#e5e7eb' stroke-width="2"/>
-    <text x="90" y="218" text-anchor='middle' fill='#e6edf3' font-size='11'>12</text>
-    <text x="120" y="255" text-anchor='middle' fill='#e6edf3' font-size='11'>3</text>
-    <text x="90" y="285" text-anchor='middle' fill='#e6edf3' font-size='11'>6</text>
-    <text x="60" y="255" text-anchor='middle' fill='#e6edf3' font-size='11'>9</text>
+    <text x="90" y="218" text-anchor='middle' fill='currentColor' font-size='11'>12</text>
+    <text x="120" y="255" text-anchor='middle' fill='currentColor' font-size='11'>3</text>
+    <text x="90" y="285" text-anchor='middle' fill='currentColor' font-size='11'>6</text>
+    <text x="60" y="255" text-anchor='middle' fill='currentColor' font-size='11'>9</text>
     <!-- Hour hand to 8 -->
     <line x1="90" y1="250" x2="78" y2="225" stroke='#4f8ef7' stroke-width="3" stroke-linecap="round"/>
     <!-- Minute hand between 10 and 11 -->
     <line x1="90" y1="250" x2="72" y2="250" stroke='#22c55e' stroke-width="2" stroke-linecap="round"/>
     <circle cx="90" cy="250" r="2" fill='#e5e7eb'/>
     <text x="90" y="310" text-anchor='middle' font-size='12' font-weight='bold' fill='#161b22'>8:52</text>
-    <text x="90" y="323" text-anchor='middle' font-size='10' fill='#8b949e'>(near 50, count to 52)</text>
+    <text x="90" y="323" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>(near 50, count to 52)</text>
   </g>
 
   <!-- Time 4: 11:26 -->
   <g>
     <circle cx="280" cy="250" r="40" fill='#1f2937' stroke='#e5e7eb' stroke-width="2"/>
-    <text x="280" y="218" text-anchor='middle' fill='#e6edf3' font-size='11'>12</text>
-    <text x="310" y="255" text-anchor='middle' fill='#e6edf3' font-size='11'>3</text>
-    <text x="280" y="285" text-anchor='middle' fill='#e6edf3' font-size='11'>6</text>
-    <text x="250" y="255" text-anchor='middle' fill='#e6edf3' font-size='11'>9</text>
+    <text x="280" y="218" text-anchor='middle' fill='currentColor' font-size='11'>12</text>
+    <text x="310" y="255" text-anchor='middle' fill='currentColor' font-size='11'>3</text>
+    <text x="280" y="285" text-anchor='middle' fill='currentColor' font-size='11'>6</text>
+    <text x="250" y="255" text-anchor='middle' fill='currentColor' font-size='11'>9</text>
     <!-- Hour hand to 11 -->
     <line x1="280" y1="250" x2="283" y2="218" stroke='#4f8ef7' stroke-width="3" stroke-linecap="round"/>
     <!-- Minute hand between 5 and 6 -->
     <line x1="280" y1="250" x2="306" y2="253" stroke='#22c55e' stroke-width="2" stroke-linecap="round"/>
     <circle cx="280" cy="250" r="2" fill='#e5e7eb'/>
     <text x="280" y="310" text-anchor='middle' font-size='12' font-weight='bold' fill='#161b22'>11:26</text>
-    <text x="280" y="323" text-anchor='middle' font-size='10' fill='#8b949e'>(between 25 & 30)</text>
+    <text x="280" y="323" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>(between 25 & 30)</text>
   </g>
 
   <!-- Explanation -->
@@ -179,7 +179,7 @@ SECTIONS = [
   <!-- AM side -->
   <rect x="20" y="50" width="170" height="220" fill='#fff7ed' stroke='#ea580c' stroke-width="2" rx="6"/>
   <text x="105" y="80" text-anchor='middle' font-size='14' font-weight='bold' fill='#161b22'>🌅 AM</text>
-  <text x="105" y="100" text-anchor='middle' font-size='11' fill='#8b949e'>(Ante Meridiem)</text>
+  <text x="105" y="100" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(Ante Meridiem)</text>
   <text x="105" y="120" text-anchor='middle' font-size='11' font-weight='bold' fill='#161b22'>Morning Time</text>
 
   <text x="30" y="145" font-size='11' fill='#161b22;'>6:00 AM = sunrise</text>
@@ -187,12 +187,12 @@ SECTIONS = [
   <text x="30" y="181" font-size='11' fill='#161b22;'>8:00 AM = school</text>
   <text x="30" y="199" font-size='11' fill='#161b22;'>12:00 PM = noon</text>
 
-  <text x="105" y="235" text-anchor='middle' font-size='10' fill='#8b949e'>Before noon</text>
+  <text x="105" y="235" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Before noon</text>
 
   <!-- PM side -->
   <rect x="210" y="50" width="170" height="220" fill='#e0e7ff' stroke='#6366f1' stroke-width="2" rx="6"/>
   <text x="295" y="80" text-anchor='middle' font-size='14' font-weight='bold' fill='#161b22'>🌆 PM</text>
-  <text x="295" y="100" text-anchor='middle' font-size='11' fill='#8b949e'>(Post Meridiem)</text>
+  <text x="295" y="100" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(Post Meridiem)</text>
   <text x="295" y="120" text-anchor='middle' font-size='11' font-weight='bold' fill='#161b22'>Afternoon/Evening</text>
 
   <text x="220" y="145" font-size='11' fill='#161b22;'>1:00 PM = afternoon</text>
@@ -200,7 +200,7 @@ SECTIONS = [
   <text x="220" y="181" font-size='11' fill='#161b22;'>6:00 PM = dinner</text>
   <text x="220" y="199" font-size='11' fill='#161b22;'>9:00 PM = bedtime</text>
 
-  <text x="295" y="235" text-anchor='middle' font-size='10' fill='#8b949e'>After noon</text>
+  <text x="295" y="235" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>After noon</text>
 </svg>
 <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
 <p style="margin: 0; font-weight: bold;">Remember:</p>

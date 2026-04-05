@@ -24,7 +24,7 @@ SECTIONS = [
 <svg width="400" height="300" class="worked-example">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill='#8b949e' />
+      <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6' />
     </marker>
   </defs>
   <g id="grid">
@@ -32,7 +32,7 @@ SECTIONS = [
     <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
     <line x1="50" y1="250" x2="350" y2="50" stroke='#58a6ff' stroke-width="2" />
   </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
     <text x="360" y="255">x</text>
     <text x="40" y="40">y</text>
     <text x="45" y="265">O</text>
@@ -117,7 +117,7 @@ SECTIONS = [
     <line x1="100" y1="250" x2="300" y2="100" stroke='#58a6ff' stroke-width="2" />
     <line x1="150" y1="250" x2="300" y2="50" stroke='#ffa657' stroke-width="2" />
   </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
     <text x="360" y="255">x</text>
     <text x="40" y="40">y</text>
     <text x="200" y="30" fill='#58a6ff'>m₁ = 2</text>
@@ -162,7 +162,7 @@ SECTIONS = [
 <svg width="400" height="300" class="worked-example">
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill='#8b949e' />
+      <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6' />
     </marker>
   </defs>
   <g id="grid">
@@ -172,7 +172,7 @@ SECTIONS = [
   </g>
   <circle cx="50" cy="50" r="4" fill='#79c0ff' />
   <circle cx="200" cy="150" r="4" fill='#79c0ff' />
-  <g id="labels" font-family='Arial' font-size='12' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
     <text x="360" y="255">x</text>
     <text x="40" y="40">y</text>
     <text x="45" y="265">O</text>

@@ -32,11 +32,11 @@ SECTIONS = [
             </defs>
 
             <!-- Left diagram: Triangle rule -->
-            <text x="100" y="20" fill='#e6edf3' font-size='14' font-weight='bold'>Triangle Rule: \\(\\vec{u} + \\vec{v}\\)</text>
+            <text x="100" y="20" fill='currentColor' font-size='14' font-weight='bold'>Triangle Rule: \\(\\vec{u} + \\vec{v}\\)</text>
 
             <!-- Start point -->
             <circle cx="50" cy="100" r="4" fill='#4f8ef7'/>
-            <text x="35" y="105" fill='#8b949e' font-size='12'>A</text>
+            <text x="35" y="105" fill='currentColor' opacity='0.6' font-size='12'>A</text>
 
             <!-- First vector u -->
             <line x1="50" y1="100" x2="150" y2="100" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrowHead)"/>
@@ -44,7 +44,7 @@ SECTIONS = [
 
             <!-- End of u (point B) -->
             <circle cx="150" cy="100" r="4" fill='#4f8ef7'/>
-            <text x="150" y="85" fill='#8b949e' font-size='12'>B</text>
+            <text x="150" y="85" fill='currentColor' opacity='0.6' font-size='12'>B</text>
 
             <!-- Second vector v from B -->
             <line x1="150" y1="100" x2="180" y2="160" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrowHead)"/>
@@ -52,18 +52,18 @@ SECTIONS = [
 
             <!-- End of v (point C) -->
             <circle cx="180" cy="160" r="4" fill='#2da44e'/>
-            <text x="185" y="160" fill='#8b949e' font-size='12'>C</text>
+            <text x="185" y="160" fill='currentColor' opacity='0.6' font-size='12'>C</text>
 
             <!-- Resultant from A to C -->
             <line x1="50" y1="100" x2="180" y2="160" stroke='#f85149' stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrowHead)"/>
             <text x="105" y="125" fill='#f85149' font-size='12' font-weight='bold'>\\(\\vec{u}+\\vec{v}\\)</text>
 
             <!-- Right diagram: Parallelogram rule -->
-            <text x="280" y="20" fill='#e6edf3' font-size='14' font-weight='bold'>Parallelogram Rule</text>
+            <text x="280" y="20" fill='currentColor' font-size='14' font-weight='bold'>Parallelogram Rule</text>
 
             <!-- Start point -->
             <circle cx="230" cy="100" r="4" fill='#4f8ef7'/>
-            <text x="215" y="105" fill='#8b949e' font-size='12'>O</text>
+            <text x="215" y="105" fill='currentColor' opacity='0.6' font-size='12'>O</text>
 
             <!-- Vector u to the right -->
             <line x1="230" y1="100" x2="330" y2="100" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrowHead)"/>
@@ -123,33 +123,33 @@ SECTIONS = [
         <svg viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; margin: 20px 0;">
             <defs>
                 <marker id="arrow3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                    <polygon points="0 0, 10 3, 0 6" fill='#e6edf3' />
+                    <polygon points="0 0, 10 3, 0 6" fill='currentColor' />
                 </marker>
             </defs>
 
             <!-- k < 0: reverses direction -->
-            <text x="20" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>k = -2 (reverse &amp; scale)</text>
-            <circle cx="50" cy="70" r="3" fill='#e6edf3'/>
+            <text x="20" y="25" fill='currentColor' font-size='12' font-weight='bold'>k = -2 (reverse &amp; scale)</text>
+            <circle cx="50" cy="70" r="3" fill='currentColor'/>
             <line x1="50" y1="70" x2="10" y2="70" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow3)"/>
 
             <!-- 0 < k < 1: shrinks -->
-            <text x="140" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>k = 0.5 (shrink)</text>
-            <circle cx="170" cy="70" r="3" fill='#e6edf3'/>
+            <text x="140" y="25" fill='currentColor' font-size='12' font-weight='bold'>k = 0.5 (shrink)</text>
+            <circle cx="170" cy="70" r="3" fill='currentColor'/>
             <line x1="170" y1="70" x2="190" y2="70" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow3)"/>
 
             <!-- k > 1: stretches -->
-            <text x="250" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>k = 2 (stretch)</text>
-            <circle cx="280" cy="70" r="3" fill='#e6edf3'/>
+            <text x="250" y="25" fill='currentColor' font-size='12' font-weight='bold'>k = 2 (stretch)</text>
+            <circle cx="280" cy="70" r="3" fill='currentColor'/>
             <line x1="280" y1="70" x2="350" y2="70" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow3)"/>
 
             <!-- k = 0: zero vector -->
-            <text x="410" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>k = 0 (disappears)</text>
-            <circle cx="440" cy="70" r="4" fill='#8b949e'/>
-            <text x="435" y="100" fill='#8b949e' font-size='11' text-anchor='middle'>zero vector</text>
+            <text x="410" y="25" fill='currentColor' font-size='12' font-weight='bold'>k = 0 (disappears)</text>
+            <circle cx="440" cy="70" r="4" fill='currentColor' opacity='0.6'/>
+            <text x="435" y="100" fill='currentColor' opacity='0.6' font-size='11' text-anchor='middle'>zero vector</text>
 
             <!-- Reference vector -->
-            <text x="50" y="160" fill='#8b949e' font-size='11'>Original \\(\\vec{v}\\) →</text>
-            <circle cx="50" cy="140" r="3" fill='#8b949e'/>
+            <text x="50" y="160" fill='currentColor' opacity='0.6' font-size='11'>Original \\(\\vec{v}\\) →</text>
+            <circle cx="50" cy="140" r="3" fill='currentColor' opacity='0.6'/>
             <line x1="50" y1="140" x2="110" y2="140" stroke='#8b949e' stroke-width="2" marker-end="url(#arrow3)"/>
         </svg>
 

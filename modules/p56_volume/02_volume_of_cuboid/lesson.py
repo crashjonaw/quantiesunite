@@ -21,7 +21,7 @@ SECTIONS = [
 </div>
 
 <svg width="100%" viewBox="0 0 400 300" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>Cuboid with Dimensions</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Cuboid with Dimensions</text>
 
   <!-- Front face -->
   <rect x="100" y="100" width="100" height="60" fill='#3d444d' stroke='#58a6ff' stroke-width="2"/>
@@ -43,7 +43,7 @@ SECTIONS = [
   <text x="220" y="120" fill='#79c0ff' font-size='12' font-weight='bold'>w</text>
 
   <!-- Formula -->
-  <text x="20" y="260" fill='#e6edf3' font-size='12'>V = l × w × h</text>
+  <text x="20" y="260" fill='currentColor' font-size='12'>V = l × w × h</text>
 </svg>"""
     },
     {
@@ -160,11 +160,11 @@ new Chart(document.getElementById('vol_cuboid_example'), {
 </div>
 
 <svg width="100%" viewBox="0 0 400 280" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>Stacking Layers Concept</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Stacking Layers Concept</text>
 
   <!-- Base -->
   <rect x="50" y="180" width="100" height="70" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.6'/>
-  <text x="100" y="235" fill='#e6edf3' font-size='11' text-anchor='middle' font-weight='bold'>Base Area</text>
+  <text x="100" y="235" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Base Area</text>
 
   <!-- One layer up -->
   <rect x="60" y="150" width="100" height="20" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5"/>
@@ -179,7 +179,7 @@ new Chart(document.getElementById('vol_cuboid_example'), {
   <line x1="200" y1="90" x2="200" y2="180" stroke='#79c0ff' stroke-width="2" marker-end="url(#arrowhead)"/>
   <text x="215" y="140" fill='#79c0ff' font-size='11' font-weight='bold'>Height</text>
 
-  <text x="20" y="260" fill='#e6edf3' font-size='12'>V = Base Area × Height = Stacking layers</text>
+  <text x="20" y="260" fill='currentColor' font-size='12'>V = Base Area × Height = Stacking layers</text>
 </svg>"""
     }
 ]

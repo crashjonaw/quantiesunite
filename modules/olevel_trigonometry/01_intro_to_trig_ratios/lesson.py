@@ -34,8 +34,8 @@ SECTIONS = [
   <text x="75" y="190" class="trig-label">θ</text>
 
   <!-- Side labels with color coding -->
-  <text x="150" y="240" class="trig-label" text-anchor='middle' fill='#8b949e'>Adjacent</text>
-  <text x="265" y="125" class="trig-label" fill='#8b949e'>Opposite</text>
+  <text x="150" y="240" class="trig-label" text-anchor='middle' fill='currentColor' opacity='0.6'>Adjacent</text>
+  <text x="265" y="125" class="trig-label" fill='currentColor' opacity='0.6'>Opposite</text>
   <text x="120" y="110" class="trig-label" text-anchor='middle' fill='#4f8ef7'>Hypotenuse</text>
 </svg>
 

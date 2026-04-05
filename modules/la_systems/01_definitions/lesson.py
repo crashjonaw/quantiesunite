@@ -117,16 +117,16 @@ $$y = \\frac{6}{5}$$
   <line x1="100" y1="325" x2="400" y2="25" stroke='#4f8ef7' stroke-width="2.5"/>
 
   <!-- Intersection point: x=2.2, y=1.2 -->
-  <circle cx="310" cy="115" r="5" fill='#4f8ef7' stroke='#e6edf3' stroke-width="1"/>
+  <circle cx="310" cy="115" r="5" fill='#4f8ef7' stroke='currentColor' stroke-width="1"/>
 
   <!-- Labels -->
   <text x="10" y="25" font-size='13' fill='#4f8ef7' font-weight='bold'>2x + 3y = 8</text>
   <text x="10" y="45" font-size='13' fill='#4f8ef7' font-weight='bold'>x - y = 1</text>
-  <text x="315" y="105" font-size='11' fill='#e6edf3' font-weight='bold'>Solution</text>
+  <text x="315" y="105" font-size='11' fill='currentColor' font-weight='bold'>Solution</text>
 
   <!-- Axis labels -->
-  <text x="370" y="190" font-size='12' fill='#e6edf3'>x</text>
-  <text x="210" y="20" font-size='12' fill='#e6edf3'>y</text>
+  <text x="370" y="190" font-size='12' fill='currentColor'>x</text>
+  <text x="210" y="20" font-size='12' fill='currentColor'>y</text>
 </svg>
 
 <div class="concept-box">

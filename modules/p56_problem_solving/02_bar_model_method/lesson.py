@@ -32,10 +32,10 @@ SECTIONS = [
 
 <svg width="100%" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="100" height="40" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="70" y="50" font-size='14' fill='#e6edf3' text-anchor='middle'>Ben: 5</text>
+  <text x="70" y="50" font-size='14' fill='currentColor' text-anchor='middle'>Ben: 5</text>
 
   <rect x="20" y="70" width="160" height="40" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="100" y="100" font-size='14' fill='#e6edf3' text-anchor='middle'>Amy: 8</text>
+  <text x="100" y="100" font-size='14' fill='currentColor' text-anchor='middle'>Amy: 8</text>
 
   <line x1="180" y1="20" x2="180" y2="110" stroke='#30363d' stroke-width="1" stroke-dasharray="3,3"/>
   <text x="210" y="70" font-size='12' fill='#79c0ff'>Total: 5 + 8 = 13</text>
@@ -73,18 +73,18 @@ SECTIONS = [
 
 <svg width="100%" height="160" viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="60" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="50" y="40" font-size='12' fill='#e6edf3' text-anchor='middle'>6</text>
+  <text x="50" y="40" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
 
-  <text x="15" y="50" font-size='11' fill='#e6edf3'>Ben:</text>
+  <text x="15" y="50" font-size='11' fill='currentColor'>Ben:</text>
 
   <rect x="20" y="70" width="60" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
   <rect x="90" y="70" width="60" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
   <rect x="160" y="70" width="60" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="50" y="90" font-size='12' fill='#e6edf3' text-anchor='middle'>6</text>
-  <text x="120" y="90" font-size='12' fill='#e6edf3' text-anchor='middle'>6</text>
-  <text x="190" y="90" font-size='12' fill='#e6edf3' text-anchor='middle'>6</text>
+  <text x="50" y="90" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
+  <text x="120" y="90" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
+  <text x="190" y="90" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
 
-  <text x="15" y="100" font-size='11' fill='#e6edf3'>Ali:</text>
+  <text x="15" y="100" font-size='11' fill='currentColor'>Ali:</text>
 
   <line x1="230" y1="70" x2="250" y2="85" stroke='#30363d' stroke-width="1"/>
   <text x="260" y="90" font-size='12' fill='#79c0ff'>3 units = 3 × 6 = 18</text>
@@ -102,18 +102,18 @@ SECTIONS = [
 
 <svg width="100%" height="160" viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="50" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="45" y="40" font-size='11' fill='#e6edf3' text-anchor='middle'>?</text>
-  <text x="15" y="50" font-size='11' fill='#e6edf3'>Ben:</text>
+  <text x="45" y="40" font-size='11' fill='currentColor' text-anchor='middle'>?</text>
+  <text x="15" y="50" font-size='11' fill='currentColor'>Ben:</text>
 
   <rect x="20" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
   <rect x="80" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
   <rect x="140" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
   <rect x="200" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="45" y="90" font-size='10' fill='#e6edf3' text-anchor='middle'>?</text>
-  <text x="105" y="90" font-size='10' fill='#e6edf3' text-anchor='middle'>?</text>
-  <text x="165" y="90" font-size='10' fill='#e6edf3' text-anchor='middle'>?</text>
-  <text x="225" y="90" font-size='10' fill='#e6edf3' text-anchor='middle'>?</text>
-  <text x="15" y="110" font-size='11' fill='#e6edf3'>Amy:</text>
+  <text x="45" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
+  <text x="105" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
+  <text x="165" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
+  <text x="225" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
+  <text x="15" y="110" font-size='11' fill='currentColor'>Amy:</text>
 
   <line x1="260" y1="70" x2="280" y2="85" stroke='#30363d' stroke-width="1"/>
   <text x="290" y="90" font-size='12' fill='#79c0ff'>5 units = 100</text>
@@ -160,24 +160,24 @@ SECTIONS = [
 
 <svg width="100%" height="110" viewBox="0 0 500 110" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="120" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="80" y="40" font-size='12' fill='#e6edf3' text-anchor='middle'>60 mL</text>
-  <text x="15" y="50" font-size='10' fill='#e6edf3'>A:</text>
+  <text x="80" y="40" font-size='12' fill='currentColor' text-anchor='middle'>60 mL</text>
+  <text x="15" y="50" font-size='10' fill='currentColor'>A:</text>
 
   <rect x="20" y="60" width="80" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="60" y="80" font-size='12' fill='#e6edf3' text-anchor='middle'>40 mL</text>
-  <text x="15" y="100" font-size='10' fill='#e6edf3'>B:</text>
+  <text x="60" y="80" font-size='12' fill='currentColor' text-anchor='middle'>40 mL</text>
+  <text x="15" y="100" font-size='10' fill='currentColor'>B:</text>
 </svg>
 
 <p><strong>Bar Model - AFTER:</strong></p>
 
 <svg width="100%" height="110" viewBox="0 0 500 110" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="105" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="70" y="40" font-size='12' fill='#e6edf3' text-anchor='middle'>45 mL</text>
-  <text x="15" y="50" font-size='10' fill='#e6edf3'>A:</text>
+  <text x="70" y="40" font-size='12' fill='currentColor' text-anchor='middle'>45 mL</text>
+  <text x="15" y="50" font-size='10' fill='currentColor'>A:</text>
 
   <rect x="20" y="60" width="95" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="70" y="80" font-size='12' fill='#e6edf3' text-anchor='middle'>55 mL</text>
-  <text x="15" y="100" font-size='10' fill='#e6edf3'>B:</text>
+  <text x="70" y="80" font-size='12' fill='currentColor' text-anchor='middle'>55 mL</text>
+  <text x="15" y="100" font-size='10' fill='currentColor'>B:</text>
 </svg>
 
 <p><strong>Solution:</strong></p>
@@ -197,12 +197,12 @@ SECTIONS = [
 
 <svg width="100%" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="100" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="70" y="40" font-size='12' fill='#e6edf3' text-anchor='middle'>28</text>
-  <text x="15" y="50" font-size='10' fill='#e6edf3'>Tom after:</text>
+  <text x="70" y="40" font-size='12' fill='currentColor' text-anchor='middle'>28</text>
+  <text x="15" y="50" font-size='10' fill='currentColor'>Tom after:</text>
 
   <rect x="20" y="70" width="100" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="70" y="90" font-size='12' fill='#e6edf3' text-anchor='middle'>28</text>
-  <text x="15" y="110" font-size='10' fill='#e6edf3'>Jerry after:</text>
+  <text x="70" y="90" font-size='12' fill='currentColor' text-anchor='middle'>28</text>
+  <text x="15" y="110" font-size='10' fill='currentColor'>Jerry after:</text>
 </svg>
 
 <p><strong>Calculation:</strong></p>
@@ -235,7 +235,7 @@ SECTIONS = [
 
 <svg width="100%" height="80" viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <rect x="20" y="20" width="200" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="120" y="40" font-size='12' fill='#e6edf3' text-anchor='middle'>10 × $3 = $30</text>
+  <text x="120" y="40" font-size='12' fill='currentColor' text-anchor='middle'>10 × $3 = $30</text>
 </svg>
 
 <p><strong>Step 2: Find the difference</strong></p>

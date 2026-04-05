@@ -43,8 +43,8 @@ SECTIONS = [
   <line x1="0" y1="-120" x2="0" y2="120" stroke='#8b949e' stroke-width="2"/>
 
   <!-- Plotting (2, 3) -->
-  <circle cx="0" cy="0" r="3" fill='#e6edf3' opacity='0.7'/>
-  <text x="-20" y="20" fill='#e6edf3' font-size='10'>Start (0,0)</text>
+  <circle cx="0" cy="0" r="3" fill='currentColor' opacity='0.7'/>
+  <text x="-20" y="20" fill='currentColor' font-size='10'>Start (0,0)</text>
 
   <!-- Arrow showing horizontal movement -->
   <path d="M 5,-5 L 35,-5" stroke='#58a6ff' stroke-width="2" fill='none' marker-end="url(#arrowhead)"/>
@@ -123,7 +123,7 @@ SECTIONS = [
   <text x="45" y="72" fill='#a371f7' font-weight='bold'>D(2, -3)</text>
 
   <!-- Origin -->
-  <circle cx="0" cy="0" r="2" fill='#e6edf3'/>
+  <circle cx="0" cy="0" r="2" fill='currentColor'/>
 </svg>
 
 <div class="success-box">

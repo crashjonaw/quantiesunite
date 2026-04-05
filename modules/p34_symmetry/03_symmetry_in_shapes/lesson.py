@@ -21,7 +21,7 @@ SECTIONS = [
                 <!-- Line from bottom-right to opposite midpoint -->
                 <line x1="220" y1="200" x2="115" y2="125" stroke='#22c55e' stroke-width="1.5" stroke-dasharray="5,5"/>
 
-                <text x="150" y="230" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Equilateral: 3 lines of symmetry</text>
+                <text x="150" y="230" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Equilateral: 3 lines of symmetry</text>
             </svg>
         </div>
 
@@ -36,7 +36,7 @@ SECTIONS = [
                 <!-- Vertical line only -->
                 <line x1="150" y1="50" x2="150" y2="200" stroke='#ef4444' stroke-width="2" stroke-dasharray="5,5"/>
 
-                <text x="150" y="230" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Isosceles: 1 line of symmetry</text>
+                <text x="150" y="230" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Isosceles: 1 line of symmetry</text>
             </svg>
         </div>
 
@@ -51,7 +51,7 @@ SECTIONS = [
                 <!-- Show that no line works with X -->
                 <text x="150" y="130" text-anchor='middle' fill='#ef4444' font-size='24' font-weight='bold'>✗</text>
 
-                <text x="150" y="230" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Scalene: 0 lines of symmetry</text>
+                <text x="150" y="230" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Scalene: 0 lines of symmetry</text>
             </svg>
         </div>
 
@@ -88,7 +88,7 @@ SECTIONS = [
                 <!-- Diagonal 2 -->
                 <line x1="195" y1="45" x2="105" y2="135" stroke='#22c55e' stroke-width="1.5" stroke-dasharray="5,5"/>
 
-                <text x="150" y="180" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Square: 4 lines of symmetry</text>
+                <text x="150" y="180" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Square: 4 lines of symmetry</text>
             </svg>
         </div>
 
@@ -110,7 +110,7 @@ SECTIONS = [
                 <line x1="105" y1="55" x2="245" y2="125" stroke='#8b5cf6' stroke-width="1" stroke-dasharray="3,3" opacity='0.4'/>
                 <text x="255" y="85" fill='#8b5cf6' font-size='11'>✗</text>
 
-                <text x="175" y="180" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Rectangle: 2 lines of symmetry</text>
+                <text x="175" y="180" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Rectangle: 2 lines of symmetry</text>
             </svg>
         </div>
 
@@ -128,7 +128,7 @@ SECTIONS = [
                 <!-- Diagonal 2 (horizontal) -->
                 <line x1="90" y1="90" x2="210" y2="90" stroke='#ef4444' stroke-width="1.5" stroke-dasharray="5,5"/>
 
-                <text x="150" y="180" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Rhombus: 2 lines of symmetry</text>
+                <text x="150" y="180" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Rhombus: 2 lines of symmetry</text>
             </svg>
         </div>
         """
@@ -154,7 +154,7 @@ SECTIONS = [
                 <!-- Center point -->
                 <circle cx="150" cy="90" r="3" fill='#ffffff' stroke='#ffffff' stroke-width="1"/>
 
-                <text x="150" y="180" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>Circle: ∞ lines of symmetry</text>
+                <text x="150" y="180" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Circle: ∞ lines of symmetry</text>
             </svg>
         </div>
 
@@ -205,7 +205,7 @@ SECTIONS = [
                 <circle cx="280" cy="60" r="2" fill='#fbbf24'/>
                 <circle cx="120" cy="60" r="2" fill='#fbbf24'/>
 
-                <text x="200" y="260" text-anchor='middle' fill='#e6edf3' font-size='11'>Mirror the right half across the fold line</text>
+                <text x="200" y="260" text-anchor='middle' fill='currentColor' font-size='11'>Mirror the right half across the fold line</text>
             </svg>
         </div>
 

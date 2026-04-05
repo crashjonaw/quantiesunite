@@ -27,7 +27,7 @@ SECTIONS = [
         "title": "Let's See It with Pictures",
         "body": """<p>Here's what 3 × 4 looks like when we draw it:</p>
 <svg viewBox="0 0 400 180" style="width:100%; max-width:500px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="200" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>3 groups of 4 apples</text>
+  <text x="200" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>3 groups of 4 apples</text>
   <!-- Group 1 -->
   <circle cx="60" cy="70" r="12" fill='#f59e0b'/>
   <circle cx="100" cy="70" r="12" fill='#f59e0b'/>
@@ -44,7 +44,7 @@ SECTIONS = [
   <circle cx="140" cy="150" r="12" fill='#f59e0b'/>
   <circle cx="180" cy="150" r="12" fill='#f59e0b'/>
   <!-- Equals -->
-  <text x="250" y="110" fill='#e6edf3' font-size='20' font-weight='bold'>=</text>
+  <text x="250" y="110" fill='currentColor' font-size='20' font-weight='bold'>=</text>
   <!-- Total -->
   <text x="320" y="110" fill='#22c55e' font-size='28' font-weight='bold'>12</text>
 </svg>

@@ -5,20 +5,20 @@ SECTIONS = [
         "body": """<p>Remember: <strong>multiplication is just a shortcut for repeated addition.</strong></p>
 <p>Instead of adding the same number over and over, we can multiply.</p>
 <svg viewBox="0 0 500 200" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="30" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Multiplication = Fast Addition</text>
+  <text x="250" y="30" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Multiplication = Fast Addition</text>
 
   <!-- Addition -->
-  <text x="50" y="80" fill='#e6edf3' font-size='14'>The slow way:</text>
+  <text x="50" y="80" fill='currentColor' font-size='14'>The slow way:</text>
   <text x="50" y="105" fill='#4f8ef7' font-size='14' font-weight='bold'>5 + 5 + 5 + 5</text>
-  <text x="50" y="130" fill='#e6edf3' font-size='12'>= 20</text>
+  <text x="50" y="130" fill='currentColor' font-size='12'>= 20</text>
 
   <!-- Arrow -->
-  <text x="250" y="105" fill='#e6edf3' font-size='24'>→</text>
+  <text x="250" y="105" fill='currentColor' font-size='24'>→</text>
 
   <!-- Multiplication -->
-  <text x="350" y="80" fill='#e6edf3' font-size='14'>The fast way:</text>
+  <text x="350" y="80" fill='currentColor' font-size='14'>The fast way:</text>
   <text x="350" y="105" fill='#22c55e' font-size='14' font-weight='bold'>4 × 5</text>
-  <text x="350" y="130" fill='#e6edf3' font-size='12'>= 20</text>
+  <text x="350" y="130" fill='currentColor' font-size='12'>= 20</text>
 </svg>
 <p style="text-align: center; margin-top: 20px;"><strong>Same answer, much faster!</strong></p>"""
     },
@@ -50,17 +50,17 @@ SECTIONS = [
         "title": "Connecting to Number Lines",
         "body": """<p>You can also see multiplication on a <strong>number line</strong> as repeated jumps!</p>
 <svg viewBox="0 0 550 150" style="width:100%; max-width:600px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="275" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Number Line: 4 jumps of 3 = 4 × 3 = 12</text>
+  <text x="275" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Number Line: 4 jumps of 3 = 4 × 3 = 12</text>
 
   <!-- Number line -->
-  <line x1="50" y1="70" x2="500" y2="70" stroke='#e6edf3' stroke-width="2"/>
+  <line x1="50" y1="70" x2="500" y2="70" stroke='currentColor' stroke-width="2"/>
 
   <!-- Numbers -->
-  <text x="50" y="95" text-anchor='middle' fill='#e6edf3' font-size='13'>0</text>
-  <text x="112" y="95" text-anchor='middle' fill='#e6edf3' font-size='13'>3</text>
-  <text x="174" y="95" text-anchor='middle' fill='#e6edf3' font-size='13'>6</text>
-  <text x="236" y="95" text-anchor='middle' fill='#e6edf3' font-size='13'>9</text>
-  <text x="298" y="95" text-anchor='middle' fill='#e6edf3' font-size='13'>12</text>
+  <text x="50" y="95" text-anchor='middle' fill='currentColor' font-size='13'>0</text>
+  <text x="112" y="95" text-anchor='middle' fill='currentColor' font-size='13'>3</text>
+  <text x="174" y="95" text-anchor='middle' fill='currentColor' font-size='13'>6</text>
+  <text x="236" y="95" text-anchor='middle' fill='currentColor' font-size='13'>9</text>
+  <text x="298" y="95" text-anchor='middle' fill='currentColor' font-size='13'>12</text>
   <text x="360" y="95" text-anchor='middle' fill='#a0aec0' font-size='13'>15</text>
   <text x="422" y="95" text-anchor='middle' fill='#a0aec0' font-size='13'>18</text>
   <text x="484" y="95" text-anchor='middle' fill='#a0aec0' font-size='13'>21</text>

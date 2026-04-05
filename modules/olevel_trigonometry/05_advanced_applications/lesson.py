@@ -46,9 +46,9 @@ SECTIONS = [
   <text x="150" y="15" class="label">C</text>
 
   <!-- Side labels -->
-  <text x="130" y="210" class="label" fill='#8b949e'>a</text>
-  <text x="255" y="125" class="label" fill='#8b949e'>b</text>
-  <text x="70" y="120" class="label" fill='#8b949e'>c</text>
+  <text x="130" y="210" class="label" fill='currentColor' opacity='0.6'>a</text>
+  <text x="255" y="125" class="label" fill='currentColor' opacity='0.6'>b</text>
+  <text x="70" y="120" class="label" fill='currentColor' opacity='0.6'>c</text>
 
   <!-- Angle labels -->
   <text x="45" y="205" class="angle-label">∠A</text>
@@ -216,7 +216,7 @@ SECTIONS = [
 <svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px 0;">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-      <polygon points="0 0, 10 5, 0 10" fill='#8b949e'/>
+      <polygon points="0 0, 10 5, 0 10" fill='currentColor' opacity='0.6'/>
     </marker>
   </defs>
 

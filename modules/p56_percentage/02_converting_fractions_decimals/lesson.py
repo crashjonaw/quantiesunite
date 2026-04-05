@@ -28,22 +28,22 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Move Decimal 2 Places Left</text>
+      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Move Decimal 2 Places Left</text>
 
-      <text x="50" y="70" font-size='13' fill='#e6edf3'>65%</text>
-      <text x="150" y="70" font-size='13' fill='#e6edf3'>(= 65.)</text>
-      <text x="250" y="70" font-size='13' fill='#e6edf3'>→</text>
-      <text x="320" y="70" font-size='13' fill='#e6edf3'>0.65</text>
+      <text x="50" y="70" font-size='13' fill='currentColor'>65%</text>
+      <text x="150" y="70" font-size='13' fill='currentColor'>(= 65.)</text>
+      <text x="250" y="70" font-size='13' fill='currentColor'>→</text>
+      <text x="320" y="70" font-size='13' fill='currentColor'>0.65</text>
 
-      <text x="50" y="110" font-size='13' fill='#e6edf3'>8%</text>
-      <text x="150" y="110" font-size='13' fill='#e6edf3'>(= 8.)</text>
-      <text x="250" y="110" font-size='13' fill='#e6edf3'>→</text>
-      <text x="320" y="110" font-size='13' fill='#e6edf3'>0.08</text>
+      <text x="50" y="110" font-size='13' fill='currentColor'>8%</text>
+      <text x="150" y="110" font-size='13' fill='currentColor'>(= 8.)</text>
+      <text x="250" y="110" font-size='13' fill='currentColor'>→</text>
+      <text x="320" y="110" font-size='13' fill='currentColor'>0.08</text>
 
-      <text x="50" y="150" font-size='13' fill='#e6edf3'>150%</text>
-      <text x="150" y="150" font-size='13' fill='#e6edf3'>(= 150.)</text>
-      <text x="250" y="150" font-size='13' fill='#e6edf3'>→</text>
-      <text x="320" y="150" font-size='13' fill='#e6edf3'>1.50</text>
+      <text x="50" y="150" font-size='13' fill='currentColor'>150%</text>
+      <text x="150" y="150" font-size='13' fill='currentColor'>(= 150.)</text>
+      <text x="250" y="150" font-size='13' fill='currentColor'>→</text>
+      <text x="320" y="150" font-size='13' fill='currentColor'>1.50</text>
 
       <text x="250" y="175" font-size='11' text-anchor='middle' fill='#999'>Notice: % > 100 gives decimal > 1</text>
     </svg>
@@ -82,19 +82,19 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 180" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Move Decimal 2 Places Right</text>
+      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Move Decimal 2 Places Right</text>
 
-      <text x="50" y="70" font-size='13' fill='#e6edf3'>0.42</text>
-      <text x="200" y="70" font-size='13' fill='#e6edf3'>→</text>
-      <text x="290" y="70" font-size='13' fill='#e6edf3'>42%</text>
+      <text x="50" y="70" font-size='13' fill='currentColor'>0.42</text>
+      <text x="200" y="70" font-size='13' fill='currentColor'>→</text>
+      <text x="290" y="70" font-size='13' fill='currentColor'>42%</text>
 
-      <text x="50" y="110" font-size='13' fill='#e6edf3'>0.08</text>
-      <text x="200" y="110" font-size='13' fill='#e6edf3'>→</text>
-      <text x="290" y="110" font-size='13' fill='#e6edf3'>8%</text>
+      <text x="50" y="110" font-size='13' fill='currentColor'>0.08</text>
+      <text x="200" y="110" font-size='13' fill='currentColor'>→</text>
+      <text x="290" y="110" font-size='13' fill='currentColor'>8%</text>
 
-      <text x="50" y="150" font-size='13' fill='#e6edf3'>2.5</text>
-      <text x="200" y="150" font-size='13' fill='#e6edf3'>→</text>
-      <text x="290" y="150" font-size='13' fill='#e6edf3'>250%</text>
+      <text x="50" y="150" font-size='13' fill='currentColor'>2.5</text>
+      <text x="200" y="150" font-size='13' fill='currentColor'>→</text>
+      <text x="290" y="150" font-size='13' fill='currentColor'>250%</text>
 
       <text x="250" y="175" font-size='11' text-anchor='middle' fill='#999'>Notice: decimal > 1 gives % > 100</text>
     </svg>
@@ -188,22 +188,22 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Conversion Steps</text>
+      <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Conversion Steps</text>
 
       <rect x="50" y="60" width="100" height="50" fill='#4169E1' opacity='0.3' stroke='#30363d' stroke-width="2" rx="5"/>
-      <text x="100" y="92" font-size='14' font-weight='bold' text-anchor='middle' fill='#e6edf3'>48%</text>
+      <text x="100" y="92" font-size='14' font-weight='bold' text-anchor='middle' fill='currentColor'>48%</text>
 
-      <text x="160" y="92" font-size='16' fill='#e6edf3'>→</text>
+      <text x="160" y="92" font-size='16' fill='currentColor'>→</text>
 
       <rect x="190" y="60" width="120" height="50" fill='#22c55e' opacity='0.3' stroke='#30363d' stroke-width="2" rx="5"/>
-      <text x="250" y="92" font-size='13' text-anchor='middle' fill='#e6edf3'>48/100</text>
+      <text x="250" y="92" font-size='13' text-anchor='middle' fill='currentColor'>48/100</text>
 
-      <text x="320" y="92" font-size='16' fill='#e6edf3'>→</text>
+      <text x="320" y="92" font-size='16' fill='currentColor'>→</text>
 
       <rect x="350" y="60" width="100" height="50" fill='#f59e0b' opacity='0.3' stroke='#30363d' stroke-width="2" rx="5"/>
-      <text x="400" y="92" font-size='13' text-anchor='middle' fill='#e6edf3'>12/25</text>
+      <text x="400" y="92" font-size='13' text-anchor='middle' fill='currentColor'>12/25</text>
 
-      <text x="250" y="150" font-size='11' text-anchor='middle' fill='#e6edf3'>Divide both by GCF of 4</text>
+      <text x="250" y="150" font-size='11' text-anchor='middle' fill='currentColor'>Divide both by GCF of 4</text>
     </svg>
   </div>
 </div>"""

@@ -12,24 +12,24 @@ SECTIONS = [
   <circle cx="80" cy="220" r="4" fill='#ef4444'/>
   <circle cx="80" cy="60" r="4" fill='#ef4444'/>
   <circle cx="150" cy="220" r="4" fill='#ef4444'/>
-  <text x="80" y="250" text-anchor='middle' font-size='12' fill='#e6edf3'>Tall</text>
+  <text x="80" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Tall</text>
 
   <!-- Flat triangle -->
   <polygon points="220,220 340,220 280,80" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
   <circle cx="220" cy="220" r="4" fill='#ef4444'/>
   <circle cx="340" cy="220" r="4" fill='#ef4444'/>
   <circle cx="280" cy="80" r="4" fill='#ef4444'/>
-  <text x="280" y="250" text-anchor='middle' font-size='12' fill='#e6edf3'>Flat</text>
+  <text x="280" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Flat</text>
 
   <!-- Wide triangle -->
   <polygon points="370,220 470,220 420,90" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
   <circle cx="370" cy="220" r="4" fill='#ef4444'/>
   <circle cx="470" cy="220" r="4" fill='#ef4444'/>
   <circle cx="420" cy="90" r="4" fill='#ef4444'/>
-  <text x="420" y="250" text-anchor='middle' font-size='12' fill='#e6edf3'>Wide</text>
+  <text x="420" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Wide</text>
 
   <!-- Key fact -->
-  <text x="250" y="290" text-anchor='middle' font-size='13' fill='#e6edf3' font-weight='bold'>Always 3 sides  •  Always 3 corners</text>
+  <text x="250" y="290" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Always 3 sides  •  Always 3 corners</text>
 </svg>
 <p><strong>Properties of triangles:</strong></p>
 <ul>
@@ -57,7 +57,7 @@ SECTIONS = [
   <rect x="122" y="80" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="122" y="212" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="50" y="212" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <text x="90" y="250" text-anchor='middle' font-size='12' fill='#e6edf3'>Tall</text>
+  <text x="90" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Tall</text>
 
   <!-- Rectangle 2 (horizontal orientation) -->
   <rect x="200" y="120" width="140" height="80" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3"/>
@@ -70,10 +70,10 @@ SECTIONS = [
   <rect x="332" y="120" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="332" y="192" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="200" y="192" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <text x="270" y="250" text-anchor='middle' font-size='12' fill='#e6edf3'>Wide</text>
+  <text x="270" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Wide</text>
 
   <!-- Key fact -->
-  <text x="250" y="290" text-anchor='middle' font-size='13' fill='#e6edf3' font-weight='bold'>4 sides (2 long, 2 short)  •  4 right corners</text>
+  <text x="250" y="290" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>4 sides (2 long, 2 short)  •  4 right corners</text>
 </svg>
 <p><strong>Properties of rectangles:</strong></p>
 <ul>

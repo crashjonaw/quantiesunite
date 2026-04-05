@@ -9,14 +9,14 @@ SECTIONS = [
 <p>An equation is like a <strong>balance scale</strong>. Both sides must stay equal.</p>
 <p>The golden rule: <strong>Whatever you do to one side, do to the other.</strong></p>
 <svg width="300" height="160" style="border-radius: 4px; margin: 12px 0; display: block">
-  <line x1="30" y1="120" x2="270" y2="120" stroke='#e6edf3' stroke-width="2"/>
-  <circle cx="80" cy="120" r="8" fill='none' stroke='#e6edf3' stroke-width="2"/>
-  <circle cx="100" cy="120" r="8" fill='none' stroke='#e6edf3' stroke-width="2"/>
-  <rect x="150" y="110" width="100" height="20" fill='none' stroke='#e6edf3' stroke-width="2"/>
-  <text x="80" y="45" text-anchor='middle' fill='#e6edf3' font-size='14'>2x</text>
-  <text x="100" y="45" text-anchor='middle' fill='#e6edf3' font-size='14'>+5</text>
-  <text x="200" y="45" text-anchor='middle' fill='#e6edf3' font-size='14'>= 13</text>
-  <text x="150" y="140" text-anchor='middle' fill='#e6edf3' font-size='12'>Balance</text>
+  <line x1="30" y1="120" x2="270" y2="120" stroke='currentColor' stroke-width="2"/>
+  <circle cx="80" cy="120" r="8" fill='none' stroke='currentColor' stroke-width="2"/>
+  <circle cx="100" cy="120" r="8" fill='none' stroke='currentColor' stroke-width="2"/>
+  <rect x="150" y="110" width="100" height="20" fill='none' stroke='currentColor' stroke-width="2"/>
+  <text x="80" y="45" text-anchor='middle' fill='currentColor' font-size='14'>2x</text>
+  <text x="100" y="45" text-anchor='middle' fill='currentColor' font-size='14'>+5</text>
+  <text x="200" y="45" text-anchor='middle' fill='currentColor' font-size='14'>= 13</text>
+  <text x="150" y="140" text-anchor='middle' fill='currentColor' font-size='12'>Balance</text>
 </svg>
 <div class="worked-example concept-box">
 <p><strong>Solve: 2x + 5 = 13</strong></p>

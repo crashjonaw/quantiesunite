@@ -65,9 +65,9 @@ SECTIONS = [
   <!-- Halves line -->
   <text x="10" y="25" font-size='12' font-weight='bold'>Halves:</text>
   <line x1="80" y1="20" x2="300" y2="20" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="80" cy="20" r="3" fill='#e6edf3'/>
-  <circle cx="190" cy="20" r="3" fill='#e6edf3'/>
-  <circle cx="300" cy="20" r="3" fill='#e6edf3'/>
+  <circle cx="80" cy="20" r="3" fill='currentColor'/>
+  <circle cx="190" cy="20" r="3" fill='currentColor'/>
+  <circle cx="300" cy="20" r="3" fill='currentColor'/>
   <text x="75" y="40" font-size='11'>0</text>
   <text x="183" y="40" font-size='11'>1/2</text>
   <text x="295" y="40" font-size='11'>1</text>
@@ -75,10 +75,10 @@ SECTIONS = [
   <!-- Thirds line -->
   <text x="10" y="85" font-size='12' font-weight='bold'>Thirds:</text>
   <line x1="80" y1="80" x2="300" y2="80" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="80" cy="80" r="3" fill='#e6edf3'/>
+  <circle cx="80" cy="80" r="3" fill='currentColor'/>
   <circle cx="153" cy="80" r="3" fill='blue'/>
   <circle cx="227" cy="80" r="3" fill='blue'/>
-  <circle cx="300" cy="80" r="3" fill='#e6edf3'/>
+  <circle cx="300" cy="80" r="3" fill='currentColor'/>
   <text x="75" y="100" font-size='11'>0</text>
   <text x="148" y="100" font-size='11'>1/3</text>
   <text x="222" y="100" font-size='11'>2/3</text>
@@ -87,11 +87,11 @@ SECTIONS = [
   <!-- Quarters line -->
   <text x="10" y="145" font-size='12' font-weight='bold'>Quarters:</text>
   <line x1="80" y1="140" x2="300" y2="140" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="80" cy="140" r="3" fill='#e6edf3'/>
+  <circle cx="80" cy="140" r="3" fill='currentColor'/>
   <circle cx="135" cy="140" r="3" fill='green'/>
   <circle cx="190" cy="140" r="3" fill='green'/>
   <circle cx="245" cy="140" r="3" fill='green'/>
-  <circle cx="300" cy="140" r="3" fill='#e6edf3'/>
+  <circle cx="300" cy="140" r="3" fill='currentColor'/>
   <text x="75" y="160" font-size='11'>0</text>
   <text x="130" y="160" font-size='11'>1/4</text>
   <text x="185" y="160" font-size='11'>2/4</text>

@@ -16,22 +16,22 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 550 220" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="275" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>From Digits to Words</text>
+  <text x="275" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>From Digits to Words</text>
 
   <!-- Left side: digits -->
   <rect x="20" y="50" width="200" height="60" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="2" rx="4"/>
-  <text x="120" y="90" text-anchor='middle' fill='#e6edf3' font-size='28' font-weight='bold'>347</text>
+  <text x="120" y="90" text-anchor='middle' fill='currentColor' font-size='28' font-weight='bold'>347</text>
 
   <!-- Arrow -->
   <text x="275" y="90" text-anchor='middle' fill='#ec4899' font-size='20' font-weight='bold'>→</text>
 
   <!-- Right side: words -->
   <rect x="330" y="50" width="200" height="60" fill='#22c55e30' stroke='#22c55e' stroke-width="2" rx="4"/>
-  <text x="430" y="90" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Three hundred</text>
-  <text x="430" y="110" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>and forty-seven</text>
+  <text x="430" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Three hundred</text>
+  <text x="430" y="110" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>and forty-seven</text>
 
   <!-- Breakdown -->
-  <text x="30" y="140" text-anchor='start' fill='#e6edf3' font-size='12' font-weight='bold'>Breaking it down:</text>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Breaking it down:</text>
   <text x="30" y="160" text-anchor='start' fill='#4f8ef7' font-size='12'>300 = "Three hundred"</text>
   <text x="30" y="180" text-anchor='start' fill='#22c55e' font-size='12'>47 = "forty-seven"</text>
 </svg>"""
@@ -43,40 +43,40 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 300" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Number Names to 1000</text>
+  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Number Names to 1000</text>
 
   <!-- Row 1 -->
   <rect x="20" y="40" width="100" height="40" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="70" y="68" text-anchor='middle' fill='#e6edf3' font-size='13'>100</text>
+  <text x="70" y="68" text-anchor='middle' fill='currentColor' font-size='13'>100</text>
 
   <rect x="130" y="40" width="450" height="40" fill='none' stroke='#808080' stroke-width="1" rx="3"/>
-  <text x="140" y="68" text-anchor='start' fill='#e6edf3' font-size='12'>One hundred</text>
+  <text x="140" y="68" text-anchor='start' fill='currentColor' font-size='12'>One hundred</text>
 
   <!-- Row 2 -->
   <rect x="20" y="90" width="100" height="40" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="70" y="118" text-anchor='middle' fill='#e6edf3' font-size='13'>250</text>
+  <text x="70" y="118" text-anchor='middle' fill='currentColor' font-size='13'>250</text>
 
   <rect x="130" y="90" width="450" height="40" fill='none' stroke='#808080' stroke-width="1" rx="3"/>
-  <text x="140" y="118" text-anchor='start' fill='#e6edf3' font-size='12'>Two hundred and fifty</text>
+  <text x="140" y="118" text-anchor='start' fill='currentColor' font-size='12'>Two hundred and fifty</text>
 
   <!-- Row 3 -->
   <rect x="20" y="140" width="100" height="40" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="70" y="168" text-anchor='middle' fill='#e6edf3' font-size='13'>508</text>
+  <text x="70" y="168" text-anchor='middle' fill='currentColor' font-size='13'>508</text>
 
   <rect x="130" y="140" width="450" height="40" fill='none' stroke='#808080' stroke-width="1" rx="3"/>
-  <text x="140" y="168" text-anchor='start' fill='#e6edf3' font-size='12'>Five hundred and eight</text>
+  <text x="140" y="168" text-anchor='start' fill='currentColor' font-size='12'>Five hundred and eight</text>
 
   <!-- Row 4 -->
   <rect x="20" y="190" width="100" height="40" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="70" y="218" text-anchor='middle' fill='#e6edf3' font-size='13'>1000</text>
+  <text x="70" y="218" text-anchor='middle' fill='currentColor' font-size='13'>1000</text>
 
   <rect x="130" y="190" width="450" height="40" fill='none' stroke='#808080' stroke-width="1" rx="3"/>
-  <text x="140" y="218" text-anchor='start' fill='#e6edf3' font-size='12'>One thousand</text>
+  <text x="140" y="218" text-anchor='start' fill='currentColor' font-size='12'>One thousand</text>
 
   <!-- Key note -->
   <rect x="20" y="245" width="560" height="50" fill='#f59e0b15' stroke='#f59e0b' stroke-width="1" stroke-dasharray="3,3" rx="3"/>
   <text x="30" y="265" text-anchor='start' fill='#f59e0b' font-size='11' font-weight='bold'>TIP:</text>
-  <text x="30" y="280" text-anchor='start' fill='#e6edf3' font-size='11'>Always use "and" between hundreds and tens-ones (e.g., "three hundred AND fifty-six")</text>
+  <text x="30" y="280" text-anchor='start' fill='currentColor' font-size='11'>Always use "and" between hundreds and tens-ones (e.g., "three hundred AND fifty-six")</text>
 </svg>"""
     },
     {
@@ -87,22 +87,22 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 240" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>From Words to Digits</text>
+  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>From Words to Digits</text>
 
   <!-- Example 1 -->
   <rect x="20" y="40" width="560" height="45" fill='#22c55e15' stroke='#22c55e' stroke-width="1" rx="3"/>
-  <text x="30" y="60" text-anchor='start' fill='#e6edf3' font-size='12' font-weight='bold'>Example 1: "Four hundred and sixty-three"</text>
-  <text x="30" y="80" text-anchor='start' fill='#e6edf3' font-size='12'>Hundreds = 4, Tens-ones = 63 → Answer: <strong class="accent-heading">463</strong></text>
+  <text x="30" y="60" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 1: "Four hundred and sixty-three"</text>
+  <text x="30" y="80" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 4, Tens-ones = 63 → Answer: <strong class="accent-heading">463</strong></text>
 
   <!-- Example 2 -->
   <rect x="20" y="100" width="560" height="45" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="30" y="120" text-anchor='start' fill='#e6edf3' font-size='12' font-weight='bold'>Example 2: "Seven hundred and five"</text>
-  <text x="30" y="140" text-anchor='start' fill='#e6edf3' font-size='12'>Hundreds = 7, Tens-ones = 05 (no tens!) → Answer: <strong class="accent-heading">705</strong></text>
+  <text x="30" y="120" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 2: "Seven hundred and five"</text>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 7, Tens-ones = 05 (no tens!) → Answer: <strong class="accent-heading">705</strong></text>
 
   <!-- Example 3 -->
   <rect x="20" y="160" width="560" height="45" fill='#f59e0b15' stroke='#f59e0b' stroke-width="1" rx="3"/>
-  <text x="30" y="180" text-anchor='start' fill='#e6edf3' font-size='12' font-weight='bold'>Example 3: "Nine hundred and twelve"</text>
-  <text x="30" y="200" text-anchor='start' fill='#e6edf3' font-size='12'>Hundreds = 9, Tens-ones = 12 → Answer: <strong class="accent-heading">912</strong></text>
+  <text x="30" y="180" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 3: "Nine hundred and twelve"</text>
+  <text x="30" y="200" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 9, Tens-ones = 12 → Answer: <strong class="accent-heading">912</strong></text>
 </svg>"""
     },
     {
@@ -112,22 +112,22 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 220" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Using Zero as a Placeholder</text>
+  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Using Zero as a Placeholder</text>
 
   <!-- Case 1: No tens -->
   <rect x="20" y="45" width="260" height="60" fill='#ec489930' stroke='#ec4899' stroke-width="2" rx="3"/>
-  <text x="150" y="65" text-anchor='middle' fill='#e6edf3' font-size='12'>No tens place</text>
-  <text x="150" y="85" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>"Five hundred and three" = 503</text>
+  <text x="150" y="65" text-anchor='middle' fill='currentColor' font-size='12'>No tens place</text>
+  <text x="150" y="85" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>"Five hundred and three" = 503</text>
 
   <!-- Case 2: No ones -->
   <rect x="320" y="45" width="260" height="60" fill='#f59e0b30' stroke='#f59e0b' stroke-width="2" rx="3"/>
-  <text x="450" y="65" text-anchor='middle' fill='#e6edf3' font-size='12'>No ones place</text>
-  <text x="450" y="85" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>"Six hundred and forty" = 640</text>
+  <text x="450" y="65" text-anchor='middle' fill='currentColor' font-size='12'>No ones place</text>
+  <text x="450" y="85" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>"Six hundred and forty" = 640</text>
 
   <!-- Case 3: No tens AND no ones -->
   <rect x="170" y="125" width="260" height="60" fill='#22c55e30' stroke='#22c55e' stroke-width="2" rx="3"/>
-  <text x="300" y="145" text-anchor='middle' fill='#e6edf3' font-size='12'>No tens AND no ones</text>
-  <text x="300" y="165" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>"Eight hundred" = 800</text>
+  <text x="300" y="145" text-anchor='middle' fill='currentColor' font-size='12'>No tens AND no ones</text>
+  <text x="300" y="165" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>"Eight hundred" = 800</text>
 </svg>"""
     },
     {

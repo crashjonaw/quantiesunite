@@ -24,15 +24,15 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='13' font-weight='bold' fill='#e6edf3'>Original Amount</text>
+      <text x="50" y="30" font-size='13' font-weight='bold' fill='currentColor'>Original Amount</text>
       <rect x="50" y="45" width="150" height="40" fill='#4169E1' opacity='0.5' stroke='#30363d' stroke-width="2"/>
-      <text x="125" y="72" font-size='12' text-anchor='middle' fill='#e6edf3'>100%</text>
+      <text x="125" y="72" font-size='12' text-anchor='middle' fill='currentColor'>100%</text>
 
-      <text x="50" y="110" font-size='12' fill='#e6edf3'>Increase by 20%</text>
-      <text x="250" y="110" font-size='12' fill='#e6edf3'>New = 100% + 20% = 120%</text>
+      <text x="50" y="110" font-size='12' fill='currentColor'>Increase by 20%</text>
+      <text x="250" y="110" font-size='12' fill='currentColor'>New = 100% + 20% = 120%</text>
 
-      <text x="50" y="135" font-size='12' fill='#e6edf3'>Decrease by 20%</text>
-      <text x="250" y="135" font-size='12' fill='#e6edf3'>New = 100% - 20% = 80%</text>
+      <text x="50" y="135" font-size='12' fill='currentColor'>Decrease by 20%</text>
+      <text x="250" y="135" font-size='12' fill='currentColor'>New = 100% - 20% = 80%</text>
     </svg>
   </div>
 </div>"""
@@ -154,25 +154,25 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='13' font-weight='bold' fill='#e6edf3'>Start: £100</text>
+      <text x="50" y="30" font-size='13' font-weight='bold' fill='currentColor'>Start: £100</text>
       <rect x="50" y="45" width="100" height="35" fill='#4169E1' opacity='0.5' stroke='#30363d' stroke-width="2"/>
-      <text x="100" y="68" font-size='11' text-anchor='middle' fill='#e6edf3'>£100</text>
+      <text x="100" y="68" font-size='11' text-anchor='middle' fill='currentColor'>£100</text>
 
-      <text x="170" y="68" font-size='12' fill='#e6edf3'>+20%</text>
+      <text x="170" y="68" font-size='12' fill='currentColor'>+20%</text>
 
-      <text x="210" y="30" font-size='13' font-weight='bold' fill='#e6edf3'>Now: £120</text>
+      <text x="210" y="30" font-size='13' font-weight='bold' fill='currentColor'>Now: £120</text>
       <rect x="210" y="45" width="120" height="35" fill='#22c55e' opacity='0.5' stroke='#30363d' stroke-width="2"/>
-      <text x="270" y="68" font-size='11' text-anchor='middle' fill='#e6edf3'>£120</text>
+      <text x="270" y="68" font-size='11' text-anchor='middle' fill='currentColor'>£120</text>
 
-      <text x="340" y="68" font-size='12' fill='#e6edf3'>-20%</text>
+      <text x="340" y="68" font-size='12' fill='currentColor'>-20%</text>
 
-      <text x="380" y="30" font-size='13' font-weight='bold' fill='#e6edf3'>Final: £96</text>
+      <text x="380" y="30" font-size='13' font-weight='bold' fill='currentColor'>Final: £96</text>
       <rect x="380" y="45" width="96" height="35" fill='#f59e0b' opacity='0.5' stroke='#30363d' stroke-width="2"/>
-      <text x="428" y="68" font-size='11' text-anchor='middle' fill='#e6edf3'>£96</text>
+      <text x="428" y="68" font-size='11' text-anchor='middle' fill='currentColor'>£96</text>
 
-      <text x="250" y="130" font-size='12' fill='#e6edf3'>Why? The 20% decrease is applied to £120, not £100!</text>
-      <text x="250" y="150" font-size='12' fill='#e6edf3'>20% of £120 = £24, so £120 - £24 = £96</text>
-      <text x="250" y="170" font-size='12' fill='#e6edf3'>But 20% of £100 = £20, and £100 - £20 = £80</text>
+      <text x="250" y="130" font-size='12' fill='currentColor'>Why? The 20% decrease is applied to £120, not £100!</text>
+      <text x="250" y="150" font-size='12' fill='currentColor'>20% of £120 = £24, so £120 - £24 = £96</text>
+      <text x="250" y="170" font-size='12' fill='currentColor'>But 20% of £100 = £20, and £100 - £20 = £80</text>
     </svg>
   </div>
 

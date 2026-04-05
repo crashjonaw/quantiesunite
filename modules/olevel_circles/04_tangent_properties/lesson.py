@@ -20,14 +20,14 @@ SECTIONS = [
 
 <svg width="360" height="300" class="formula-box">
   <circle cx="180" cy="150" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="150" r="4" fill='#e6edf3'/>
+  <circle cx="180" cy="150" r="4" fill='currentColor'/>
   <circle cx="260" cy="150" r="4" fill='#f85149'/>
   <line x1="180" y1="150" x2="260" y2="150" stroke='#f85149' stroke-width="2"/>
   <line x1="260" y1="70" x2="260" y2="230" stroke='#30363d' stroke-width="2.5"/>
   <path d="M 270 155 L 275 155 L 275 150 L 270 150" fill='none' stroke='#a371f7' stroke-width="1.5"/>
   <text x="200" y="165" fill='#f85149' font-size='12' font-weight='bold'>Radius</text>
   <text x="265" y="100" fill='#30363d' font-size='12' font-weight='bold'>Tangent</text>
-  <text x="165" y="140" fill='#e6edf3' font-size='10'>O</text>
+  <text x="165" y="140" fill='currentColor' font-size='10'>O</text>
   <text x="265" y="135" fill='#f85149' font-size='10'>T</text>
   <text x="270" y="168" fill='#a371f7' font-size='11' font-weight='bold'>90°</text>
 </svg>
@@ -63,7 +63,7 @@ SECTIONS = [
 
 <svg width="380" height="320" class="formula-box">
   <circle cx="180" cy="160" r="70" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="160" r="4" fill='#e6edf3'/>
+  <circle cx="180" cy="160" r="4" fill='currentColor'/>
   <circle cx="120" cy="90" r="4" fill='#f85149'/>
   <circle cx="240" cy="90" r="4" fill='#f85149'/>
   <circle cx="280" cy="180" r="4" fill='#a371f7'/>
@@ -77,7 +77,7 @@ SECTIONS = [
   <text x="115" y="80" fill='#f85149' font-size='11'>A</text>
   <text x="245" y="80" fill='#f85149' font-size='11'>B</text>
   <text x="285" y="195" fill='#a371f7' font-size='11'>P</text>
-  <text x="165" y="150" fill='#e6edf3' font-size='10'>O</text>
+  <text x="165" y="150" fill='currentColor' font-size='10'>O</text>
   <text x="200" y="120" fill='#30363d' font-size='10'>PA = PB</text>
   <text x="235" y="165" fill='#30363d' font-size='10'>PA = PB</text>
 </svg>
@@ -143,7 +143,7 @@ SECTIONS = [
 
 <svg width="380" height="300" class="formula-box">
   <circle cx="180" cy="150" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="150" r="4" fill='#e6edf3'/>
+  <circle cx="180" cy="150" r="4" fill='currentColor'/>
   <circle cx="280" cy="150" r="4" fill='#a371f7'/>
   <circle cx="100" cy="150" r="4" fill='#f85149'/>
   <circle cx="200" cy="80" r="4" fill='#f85149'/>
@@ -153,9 +153,9 @@ SECTIONS = [
   <text x="280" y="165" fill='#a371f7' font-size='11'>P</text>
   <text x="100" y="165" fill='#f85149' font-size='11'>A</text>
   <text x="205" y="70" fill='#f85149' font-size='11'>B</text>
-  <text x="165" y="140" fill='#e6edf3' font-size='10'>O</text>
+  <text x="165" y="140" fill='currentColor' font-size='10'>O</text>
   <text x="235" y="155" fill='#a371f7' font-size='10' font-weight='bold'>Tangent</text>
-  <text x="190" y="280" fill='#e6edf3' font-size='12' text-anchor='middle'>PA × PB = PT² = Power(P)</text>
+  <text x="190" y="280" fill='currentColor' font-size='12' text-anchor='middle'>PA × PB = PT² = Power(P)</text>
 </svg>
 
 <div class="worked-example">
@@ -216,13 +216,13 @@ SECTIONS = [
 <svg width="420" height="240" class="formula-box">
   <circle cx="100" cy="120" r="50" fill='none' stroke='#79c0ff' stroke-width="2"/>
   <circle cx="300" cy="120" r="70" fill='none' stroke='#f85149' stroke-width="2"/>
-  <circle cx="100" cy="120" r="3" fill='#e6edf3'/>
-  <circle cx="300" cy="120" r="3" fill='#e6edf3'/>
+  <circle cx="100" cy="120" r="3" fill='currentColor'/>
+  <circle cx="300" cy="120" r="3" fill='currentColor'/>
   <line x1="50" y1="80" x2="370" y2="170" stroke='#30363d' stroke-width="2.5"/>
   <line x1="100" y1="120" x2="85" y2="95" stroke='#79c0ff' stroke-width="1.5"/>
   <line x1="300" y1="120" x2="265" y2="65" stroke='#f85149' stroke-width="1.5"/>
-  <text x="95" y="115" fill='#e6edf3' font-size='10'>O₁</text>
-  <text x="295" y="115" fill='#e6edf3' font-size='10'>O₂</text>
+  <text x="95" y="115" fill='currentColor' font-size='10'>O₁</text>
+  <text x="295" y="115" fill='currentColor' font-size='10'>O₂</text>
   <text x="180" y="180" fill='#30363d' font-size='11' font-weight='bold'>Common Tangent</text>
 </svg>
 """

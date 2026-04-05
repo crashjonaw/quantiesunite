@@ -45,16 +45,16 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Decimal to Fraction Examples</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Decimal to Fraction Examples</text>
 
   <rect x="20" y="40" width="440" height="150" fill='#0f172a' stroke='#4f8ef7' stroke-width="1" rx="2"/>
 
-  <text x="40" y="62" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>0.5</tspan> = \\(\\frac{5}{10}\\) = \\(\\frac{1}{2}\\) (simplified)</text>
-  <text x="40" y="82" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>0.25</tspan> = \\(\\frac{25}{100}\\) = \\(\\frac{1}{4}\\) (simplified)</text>
-  <text x="40" y="102" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>0.75</tspan> = \\(\\frac{75}{100}\\) = \\(\\frac{3}{4}\\) (simplified)</text>
-  <text x="40" y="122" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>0.1</tspan> = \\(\\frac{1}{10}\\)</text>
-  <text x="40" y="142" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>0.01</tspan> = \\(\\frac{1}{100}\\)</text>
-  <text x="40" y="162" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>0.001</tspan> = \\(\\frac{1}{1000}\\)</text>
+  <text x="40" y="62" fill='currentColor' font-size='12'><tspan font-weight='bold'>0.5</tspan> = \\(\\frac{5}{10}\\) = \\(\\frac{1}{2}\\) (simplified)</text>
+  <text x="40" y="82" fill='currentColor' font-size='12'><tspan font-weight='bold'>0.25</tspan> = \\(\\frac{25}{100}\\) = \\(\\frac{1}{4}\\) (simplified)</text>
+  <text x="40" y="102" fill='currentColor' font-size='12'><tspan font-weight='bold'>0.75</tspan> = \\(\\frac{75}{100}\\) = \\(\\frac{3}{4}\\) (simplified)</text>
+  <text x="40" y="122" fill='currentColor' font-size='12'><tspan font-weight='bold'>0.1</tspan> = \\(\\frac{1}{10}\\)</text>
+  <text x="40" y="142" fill='currentColor' font-size='12'><tspan font-weight='bold'>0.01</tspan> = \\(\\frac{1}{100}\\)</text>
+  <text x="40" y="162" fill='currentColor' font-size='12'><tspan font-weight='bold'>0.001</tspan> = \\(\\frac{1}{1000}\\)</text>
 </svg>
 
 <div class="mcq-group">
@@ -128,7 +128,7 @@ SECTIONS = [
 <p>Memorize these common conversions. You'll see them over and over:</p>
 
 <svg viewBox="0 0 500 420" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Common Decimal-Fraction Pairs</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Common Decimal-Fraction Pairs</text>
 
   <g fill='#0f172a' stroke='#4f8ef7' stroke-width="1">
     <rect x="20" y="40" width="460" height="370" rx="2"/>
@@ -136,36 +136,36 @@ SECTIONS = [
 
   <!-- Row 1 -->
   <text x="40" y="65" fill='#4f8ef7' font-size='12' font-weight='bold'>Halves:</text>
-  <text x="40" y="85" fill='#e6edf3' font-size='11'>\\(\\frac{1}{2}\\) = 0.5</text>
+  <text x="40" y="85" fill='currentColor' font-size='11'>\\(\\frac{1}{2}\\) = 0.5</text>
 
   <!-- Row 2 -->
   <text x="40" y="115" fill='#22c55e' font-size='12' font-weight='bold'>Quarters:</text>
-  <text x="40" y="135" fill='#e6edf3' font-size='11'>\\(\\frac{1}{4}\\) = 0.25</text>
-  <text x="220" y="135" fill='#e6edf3' font-size='11'>\\(\\frac{2}{4}\\) = 0.5</text>
-  <text x="40" y="155" fill='#e6edf3' font-size='11'>\\(\\frac{3}{4}\\) = 0.75</text>
+  <text x="40" y="135" fill='currentColor' font-size='11'>\\(\\frac{1}{4}\\) = 0.25</text>
+  <text x="220" y="135" fill='currentColor' font-size='11'>\\(\\frac{2}{4}\\) = 0.5</text>
+  <text x="40" y="155" fill='currentColor' font-size='11'>\\(\\frac{3}{4}\\) = 0.75</text>
 
   <!-- Row 3 -->
   <text x="40" y="185" fill='#f59e0b' font-size='12' font-weight='bold'>Fifths:</text>
-  <text x="40" y="205" fill='#e6edf3' font-size='11'>\\(\\frac{1}{5}\\) = 0.2</text>
-  <text x="220" y="205" fill='#e6edf3' font-size='11'>\\(\\frac{2}{5}\\) = 0.4</text>
-  <text x="40" y="225" fill='#e6edf3' font-size='11'>\\(\\frac{3}{5}\\) = 0.6</text>
-  <text x="220" y="225" fill='#e6edf3' font-size='11'>\\(\\frac{4}{5}\\) = 0.8</text>
+  <text x="40" y="205" fill='currentColor' font-size='11'>\\(\\frac{1}{5}\\) = 0.2</text>
+  <text x="220" y="205" fill='currentColor' font-size='11'>\\(\\frac{2}{5}\\) = 0.4</text>
+  <text x="40" y="225" fill='currentColor' font-size='11'>\\(\\frac{3}{5}\\) = 0.6</text>
+  <text x="220" y="225" fill='currentColor' font-size='11'>\\(\\frac{4}{5}\\) = 0.8</text>
 
   <!-- Row 4 -->
   <text x="40" y="255" fill='#ec4899' font-size='12' font-weight='bold'>Tenths:</text>
-  <text x="40" y="275" fill='#e6edf3' font-size='11'>\\(\\frac{1}{10}\\) = 0.1</text>
-  <text x="220" y="275" fill='#e6edf3' font-size='11'>\\(\\frac{2}{10}\\) = 0.2</text>
-  <text x="40" y="295" fill='#e6edf3' font-size='11'>\\(\\frac{5}{10}\\) = 0.5</text>
-  <text x="220" y="295" fill='#e6edf3' font-size='11'>\\(\\frac{9}{10}\\) = 0.9</text>
+  <text x="40" y="275" fill='currentColor' font-size='11'>\\(\\frac{1}{10}\\) = 0.1</text>
+  <text x="220" y="275" fill='currentColor' font-size='11'>\\(\\frac{2}{10}\\) = 0.2</text>
+  <text x="40" y="295" fill='currentColor' font-size='11'>\\(\\frac{5}{10}\\) = 0.5</text>
+  <text x="220" y="295" fill='currentColor' font-size='11'>\\(\\frac{9}{10}\\) = 0.9</text>
 
   <!-- Row 5 -->
   <text x="40" y="325" fill='#8b5cf6' font-size='12' font-weight='bold'>Eighths:</text>
-  <text x="40" y="345" fill='#e6edf3' font-size='11'>\\(\\frac{1}{8}\\) = 0.125</text>
-  <text x="220" y="345" fill='#e6edf3' font-size='11'>\\(\\frac{3}{8}\\) = 0.375</text>
-  <text x="40" y="365" fill='#e6edf3' font-size='11'>\\(\\frac{5}{8}\\) = 0.625</text>
-  <text x="220" y="365" fill='#e6edf3' font-size='11'>\\(\\frac{7}{8}\\) = 0.875</text>
+  <text x="40" y="345" fill='currentColor' font-size='11'>\\(\\frac{1}{8}\\) = 0.125</text>
+  <text x="220" y="345" fill='currentColor' font-size='11'>\\(\\frac{3}{8}\\) = 0.375</text>
+  <text x="40" y="365" fill='currentColor' font-size='11'>\\(\\frac{5}{8}\\) = 0.625</text>
+  <text x="220" y="365" fill='currentColor' font-size='11'>\\(\\frac{7}{8}\\) = 0.875</text>
 
-  <text x="250" y="400" text-anchor='middle' fill='#8b949e' font-size='10' font-style="italic">Learn these! They come up all the time.</text>
+  <text x="250" y="400" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='10' font-style="italic">Learn these! They come up all the time.</text>
 </svg>
 
 <div class="success-box">
@@ -202,16 +202,16 @@ SECTIONS = [
 <p>The important thing to remember: a fraction and decimal can be the same value, just written differently.</p>
 
 <svg viewBox="0 0 500 160" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Three Ways to Write the Same Amount</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Three Ways to Write the Same Amount</text>
 
   <rect x="20" y="40" width="460" height="110" fill='#0f172a' stroke='#4f8ef7' stroke-width="1" rx="2"/>
 
-  <text x="40" y="65" fill='#e6edf3' font-size='13'><tspan font-weight='bold'>Fraction:</tspan> \\(\\frac{1}{2}\\)</text>
-  <text x="40" y="85" fill='#e6edf3' font-size='13'><tspan font-weight='bold'>Decimal:</tspan> 0.5</text>
-  <text x="40" y="105" fill='#e6edf3' font-size='13'><tspan font-weight='bold'>Percent:</tspan> 50%</text>
+  <text x="40" y="65" fill='currentColor' font-size='13'><tspan font-weight='bold'>Fraction:</tspan> \\(\\frac{1}{2}\\)</text>
+  <text x="40" y="85" fill='currentColor' font-size='13'><tspan font-weight='bold'>Decimal:</tspan> 0.5</text>
+  <text x="40" y="105" fill='currentColor' font-size='13'><tspan font-weight='bold'>Percent:</tspan> 50%</text>
 
-  <text x="250" y="70" fill='#8b949e' font-size='11'>All represent the</text>
-  <text x="250" y="85" fill='#8b949e' font-size='11'>same amount!</text>
+  <text x="250" y="70" fill='currentColor' opacity='0.6' font-size='11'>All represent the</text>
+  <text x="250" y="85" fill='currentColor' opacity='0.6' font-size='11'>same amount!</text>
 </svg>
 
 <div class="mcq-group">

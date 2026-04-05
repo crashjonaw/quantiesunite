@@ -30,10 +30,10 @@ SECTIONS = [
 
 <svg width="500" height="300" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Triangle: 3-4-5 right triangle, a=3*40=120, b=4*40=160, c=5*40=200 -->
-  <polygon points="80,250 80,130 240,250" fill='rgba(88, 166, 255, 0.1)' stroke='#e6edf3' stroke-width="2"/>
+  <polygon points="80,250 80,130 240,250" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="2"/>
 
   <!-- Right angle -->
-  <rect x="80" y="210" width="40" height="40" fill='none' stroke='#e6edf3' stroke-width="1"/>
+  <rect x="80" y="210" width="40" height="40" fill='none' stroke='currentColor' stroke-width="1"/>
 
   <!-- Known sides -->
   <text x="40" y="170" font-size='20' font-weight='bold' fill='#79c0ff'>a = ?</text>
@@ -41,9 +41,9 @@ SECTIONS = [
   <text x="200" y="140" font-size='20' font-weight='bold' fill='#58a6ff'>c = 5</text>
 
   <!-- Formula steps -->
-  <text x="20" y="30" font-size='14' fill='#e6edf3' font-family='monospace'>a² + b² = c²</text>
-  <text x="20" y="50" font-size='14' fill='#e6edf3' font-family='monospace'>a² + 4² = 5²</text>
-  <text x="20" y="70" font-size='14' fill='#e6edf3' font-family='monospace'>a² = 5² - 4² = 25 - 16</text>
+  <text x="20" y="30" font-size='14' fill='currentColor' font-family='monospace'>a² + b² = c²</text>
+  <text x="20" y="50" font-size='14' fill='currentColor' font-family='monospace'>a² + 4² = 5²</text>
+  <text x="20" y="70" font-size='14' fill='currentColor' font-family='monospace'>a² = 5² - 4² = 25 - 16</text>
 </svg>
 """
     },
@@ -85,10 +85,10 @@ SECTIONS = [
 
 <svg width="400" height="250" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Triangle: 5-12-13 right triangle, a=5*10=50, b=12*10=120, c=13*10=130 -->
-  <polygon points="60,200 60,150 180,200" fill='rgba(88, 166, 255, 0.1)' stroke='#e6edf3' stroke-width="3"/>
+  <polygon points="60,200 60,150 180,200" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="3"/>
 
   <!-- Right angle -->
-  <rect x="60" y="160" width="40" height="40" fill='none' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="60" y="160" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
 
   <!-- Labels -->
   <text x="30" y="175" font-size='22' font-weight='bold' fill='#79c0ff'>12</text>
@@ -176,10 +176,10 @@ SECTIONS = [
 
 <svg width="400" height="250" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Triangle: 3-4-5 right triangle, a=4*30=120, b=3*30=90, c=5*30=150 -->
-  <polygon points="80,200 80,80 170,200" fill='rgba(88, 166, 255, 0.1)' stroke='#e6edf3' stroke-width="3"/>
+  <polygon points="80,200 80,80 170,200" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="3"/>
 
   <!-- Right angle -->
-  <rect x="80" y="160" width="40" height="40" fill='none' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="80" y="160" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
 
   <!-- Labels -->
   <text x="45" y="150" font-size='20' font-weight='bold' fill='#79c0ff'>4</text>

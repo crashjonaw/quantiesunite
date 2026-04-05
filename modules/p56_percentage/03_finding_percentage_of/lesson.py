@@ -53,20 +53,20 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='14' font-weight='bold' fill='#e6edf3'>Find 40% of 150</text>
+      <text x="50" y="30" font-size='14' font-weight='bold' fill='currentColor'>Find 40% of 150</text>
 
-      <text x="50" y="70" font-size='12' fill='#e6edf3'>Whole amount: 150</text>
+      <text x="50" y="70" font-size='12' fill='currentColor'>Whole amount: 150</text>
 
       <rect x="50" y="90" width="400" height="40" fill='none' stroke='#30363d' stroke-width="2"/>
       <rect x="50" y="90" width="160" height="40" fill='#4169E1' opacity='0.6'/>
-      <text x="130" y="120" font-size='11' text-anchor='middle' fill='#e6edf3'>40% = 60</text>
-      <text x="280" y="120" font-size='11' text-anchor='middle' fill='#e6edf3'>Remaining 60%</text>
+      <text x="130" y="120" font-size='11' text-anchor='middle' fill='currentColor'>40% = 60</text>
+      <text x="280" y="120" font-size='11' text-anchor='middle' fill='currentColor'>Remaining 60%</text>
 
-      <text x="50" y="160" font-size='12' fill='#e6edf3'>Breakdown:</text>
-      <text x="50" y="185" font-size='12' fill='#e6edf3'>The bar represents 150 total.</text>
-      <text x="50" y="205" font-size='12' fill='#e6edf3'>100% of 150 = 150 (whole bar)</text>
-      <text x="50" y="225" font-size='12' fill='#e6edf3'>40% of 150 = 0.40 × 150 = 60 (shaded part)</text>
-      <text x="50" y="245" font-size='12' fill='#e6edf3'>60% of 150 = 0.60 × 150 = 90 (unshaded part)</text>
+      <text x="50" y="160" font-size='12' fill='currentColor'>Breakdown:</text>
+      <text x="50" y="185" font-size='12' fill='currentColor'>The bar represents 150 total.</text>
+      <text x="50" y="205" font-size='12' fill='currentColor'>100% of 150 = 150 (whole bar)</text>
+      <text x="50" y="225" font-size='12' fill='currentColor'>40% of 150 = 0.40 × 150 = 60 (shaded part)</text>
+      <text x="50" y="245" font-size='12' fill='currentColor'>60% of 150 = 0.60 × 150 = 90 (unshaded part)</text>
 
       <text x="250" y="270" font-size='11' text-anchor='middle' fill='#999'>40% + 60% = 100% ✓</text>
     </svg>

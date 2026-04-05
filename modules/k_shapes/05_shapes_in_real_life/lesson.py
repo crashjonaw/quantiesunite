@@ -8,48 +8,48 @@ SECTIONS = [
         "body": """<p>Once you learn about shapes, you'll start seeing them in absolutely everything. Buildings, food, furniture, vehicles, signs — they're all made from basic shapes!</p>
 <svg viewBox="0 0 500 310" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <!-- House -->
-  <text x="30" y="30" font-size='12' font-weight='bold' fill='#e6edf3'>🏠 House</text>
+  <text x="30" y="30" font-size='12' font-weight='bold' fill='currentColor'>🏠 House</text>
   <rect x="20" y="60" width="70" height="60" fill='#d4a574' stroke='#8b6f47' stroke-width="2"/>
   <polygon points="55,60 20,40 90,40" fill='#c84a1a' stroke='#8b4513' stroke-width="2"/>
-  <text x="55" y="90" text-anchor='middle' font-size='9' fill='#e6edf3'>rectangle</text>
-  <text x="55" y="110" text-anchor='middle' font-size='9' fill='#e6edf3'>+ triangle</text>
+  <text x="55" y="90" text-anchor='middle' font-size='9' fill='currentColor'>rectangle</text>
+  <text x="55" y="110" text-anchor='middle' font-size='9' fill='currentColor'>+ triangle</text>
 
   <!-- Clock -->
-  <text x="150" y="30" font-size='12' font-weight='bold' fill='#e6edf3'>🕐 Clock</text>
+  <text x="150" y="30" font-size='12' font-weight='bold' fill='currentColor'>🕐 Clock</text>
   <circle cx="190" cy="85" r="30" fill='#f4a460' stroke='#8b949e' stroke-width="2"/>
-  <text x="190" y="100" text-anchor='middle' font-size='9' fill='#e6edf3'>circle</text>
+  <text x="190" y="100" text-anchor='middle' font-size='9' fill='currentColor'>circle</text>
 
   <!-- Pizza -->
-  <text x="270" y="30" font-size='12' font-weight='bold' fill='#e6edf3'>🍕 Pizza Slice</text>
+  <text x="270" y="30" font-size='12' font-weight='bold' fill='currentColor'>🍕 Pizza Slice</text>
   <polygon points="340,90 320,60 360,60" fill='#daa520' stroke='#c41e3a' stroke-width="2"/>
-  <text x="340" y="105" text-anchor='middle' font-size='9' fill='#e6edf3'>triangle</text>
+  <text x="340" y="105" text-anchor='middle' font-size='9' fill='currentColor'>triangle</text>
 
   <!-- Book -->
-  <text x="30" y="160" font-size='12' font-weight='bold' fill='#e6edf3'>📚 Book</text>
+  <text x="30" y="160" font-size='12' font-weight='bold' fill='currentColor'>📚 Book</text>
   <rect x="20" y="190" width="50" height="70" fill='#8b0000' stroke='#8b949e' stroke-width="2"/>
   <text x="45" y="235" text-anchor='middle' font-size='9' fill='#fff'>rectangle</text>
 
   <!-- Window -->
-  <text x="150" y="160" font-size='12' font-weight='bold' fill='#e6edf3'>🪟 Window</text>
+  <text x="150" y="160" font-size='12' font-weight='bold' fill='currentColor'>🪟 Window</text>
   <rect x="140" y="190" width="50" height="50" fill='#87ceeb' stroke='#8b949e' stroke-width="2"/>
   <line x1="165" y1="190" x2="165" y2="240" stroke='#8b949e' stroke-width="1"/>
   <line x1="140" y1="215" x2="190" y2="215" stroke='#8b949e' stroke-width="1"/>
-  <text x="165" y="250" text-anchor='middle' font-size='9' fill='#e6edf3'>square</text>
+  <text x="165" y="250" text-anchor='middle' font-size='9' fill='currentColor'>square</text>
 
   <!-- Door -->
-  <text x="270" y="160" font-size='12' font-weight='bold' fill='#e6edf3'>🚪 Door</text>
+  <text x="270" y="160" font-size='12' font-weight='bold' fill='currentColor'>🚪 Door</text>
   <rect x="260" y="190" width="40" height="70" fill='#8b4513' stroke='#8b949e' stroke-width="2"/>
   <circle cx="298" cy="225" r="3" fill='#ffd700'/>
-  <text x="280" y="275" text-anchor='middle' font-size='9' fill='#e6edf3'>rectangle</text>
+  <text x="280" y="275" text-anchor='middle' font-size='9' fill='currentColor'>rectangle</text>
 
   <!-- Coin -->
-  <text x="30" y="300" font-size='12' font-weight='bold' fill='#e6edf3'>🪙 Coin</text>
+  <text x="30" y="300" font-size='12' font-weight='bold' fill='currentColor'>🪙 Coin</text>
 
   <!-- Yield sign -->
-  <text x="150" y="300" font-size='12' font-weight='bold' fill='#e6edf3'>⛔ Yield Sign</text>
+  <text x="150" y="300" font-size='12' font-weight='bold' fill='currentColor'>⛔ Yield Sign</text>
 
   <!-- Soccer ball -->
-  <text x="270" y="300" font-size='12' font-weight='bold' fill='#e6edf3'>⚽ Ball</text>
+  <text x="270" y="300" font-size='12' font-weight='bold' fill='currentColor'>⚽ Ball</text>
 </svg>
 <p>Every object is made from basic shapes. When you understand shapes, you can:</p>
 <ul>

@@ -18,12 +18,12 @@ SECTIONS = [
   <circle cx="550" cy="60" r="6" fill='#3fb950'/>
   <circle cx="300" cy="60" r="6" fill='#d29922'/>
 
-  <text x="50" y="90" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>0 (Impossible)</text>
-  <text x="300" y="90" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>0.5 (Even Chance)</text>
-  <text x="550" y="90" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>1 (Certain)</text>
+  <text x="50" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>0 (Impossible)</text>
+  <text x="300" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>0.5 (Even Chance)</text>
+  <text x="550" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>1 (Certain)</text>
 
-  <text x="175" y="30" text-anchor='middle' fill='#8b949e' font-size='12'>Unlikely</text>
-  <text x="425" y="30" text-anchor='middle' fill='#8b949e' font-size='12'>Likely</text>
+  <text x="175" y="30" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>Unlikely</text>
+  <text x="425" y="30" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>Likely</text>
 </svg>
 
 <div class="worked-example">

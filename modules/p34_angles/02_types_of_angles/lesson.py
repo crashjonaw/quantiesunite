@@ -61,7 +61,7 @@ SECTIONS = [
   <circle cx="50" cy="150" r="2" fill='#ff6b6b'/>
   <!-- Label -->
   <text x="100" y="145" fill='#24292f' font-size='14' font-weight='bold'>90° — Right Angle</text>
-  <text x="100" y="165" fill='#8b949e' font-size='12'>Notice the small square symbol</text>
+  <text x="100" y="165" fill='currentColor' opacity='0.6' font-size='12'>Notice the small square symbol</text>
 </svg>
 
 <div class='success-box'>

@@ -19,7 +19,7 @@ SECTIONS = [
 
 <svg width="350" height="350" viewBox="-30 0 410 348" class="formula-box">
   <circle cx="175" cy="175" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="175" cy="175" r="4" fill='#e6edf3'/>
+  <circle cx="175" cy="175" r="4" fill='currentColor'/>
   <line x1="175" y1="175" x2="275" y2="175" stroke='#f85149' stroke-width="2"/>
   <line x1="175" y1="175" x2="218" y2="99" stroke='#f85149' stroke-width="2"/>
   <path d="M 275 175 A 100 100 0 0 0 218 99" fill='none' stroke='#a371f7' stroke-width="3"/>
@@ -29,7 +29,7 @@ SECTIONS = [
   <path d="M 200 180 A 30 30 0 0 0 195 150" fill='none' stroke='#a371f7' stroke-width="1"/>
   <text x="220" y="170" fill='#a371f7' font-size='11'>Central</text>
   <text x="225" y="185" fill='#a371f7' font-size='11'>Angle</text>
-  <text x="175" y="330" fill='#e6edf3' font-size='13' text-anchor='middle'>The central angle determines what fraction of the circle we have</text>
+  <text x="175" y="330" fill='currentColor' font-size='13' text-anchor='middle'>The central angle determines what fraction of the circle we have</text>
 </svg>
 
 <h4>Key Insight: Fractions of a Circle</h4>
@@ -143,17 +143,17 @@ SECTIONS = [
   <line x1="100" y1="140" x2="160" y2="140" stroke='#f85149' stroke-width="1.5"/>
   <line x1="100" y1="140" x2="130" y2="80" stroke='#f85149' stroke-width="1.5"/>
   <path d="M 160 140 A 60 60 0 0 0 130 80" fill='#79c0ff' opacity='0.3' stroke='#79c0ff' stroke-width="2"/>
-  <text x="100" y="185" fill='#e6edf3' font-size='12' text-anchor='middle'>60°</text>
+  <text x="100" y="185" fill='currentColor' font-size='12' text-anchor='middle'>60°</text>
   <text x="70" y="195" fill='#79c0ff' font-size='11'>A = πr²/6</text>
 
   <circle cx="280" cy="140" r="60" fill='none' stroke='#f85149' stroke-width="2"/>
   <line x1="280" y1="140" x2="340" y2="140" stroke='#f85149' stroke-width="1.5"/>
   <line x1="280" y1="140" x2="250" y2="72" stroke='#f85149' stroke-width="1.5"/>
   <path d="M 340 140 A 60 60 0 0 0 250 72" fill='#f85149' opacity='0.3' stroke='#f85149' stroke-width="2"/>
-  <text x="280" y="185" fill='#e6edf3' font-size='12' text-anchor='middle'>120°</text>
+  <text x="280" y="185" fill='currentColor' font-size='12' text-anchor='middle'>120°</text>
   <text x="250" y="195" fill='#f85149' font-size='11'>A = πr²/3</text>
 
-  <text x="200" y="250" fill='#e6edf3' font-size='12' text-anchor='middle'>Sector area is proportional to the central angle</text>
+  <text x="200" y="250" fill='currentColor' font-size='12' text-anchor='middle'>Sector area is proportional to the central angle</text>
 </svg>
 """
     },
@@ -168,7 +168,7 @@ SECTIONS = [
 
 <svg width="360" height="280" class="formula-box">
   <circle cx="180" cy="140" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="140" r="3" fill='#e6edf3'/>
+  <circle cx="180" cy="140" r="3" fill='currentColor'/>
   <line x1="180" y1="140" x2="260" y2="80" stroke='#f85149' stroke-width="2"/>
   <line x1="180" y1="140" x2="260" y2="200" stroke='#f85149' stroke-width="2"/>
   <line x1="260" y1="80" x2="260" y2="200" stroke='#a371f7' stroke-width="2"/>

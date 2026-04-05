@@ -19,19 +19,19 @@ SECTIONS = [
 <svg viewBox="0 0 520 200" style="width:100%;max-width:520px;height:auto;display:block;margin:16px auto;">
   <!-- Circle -->
   <circle cx="55" cy="100" r="45" fill='#4f8ef750' stroke='#4f8ef7' stroke-width="3"/>
-  <text x="55" y="170" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Circle</text>
+  <text x="55" y="170" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Circle</text>
 
   <!-- Square -->
   <rect x="120" y="55" width="85" height="85" fill='#22c55e50' stroke='#22c55e' stroke-width="3"/>
-  <text x="162" y="170" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Square</text>
+  <text x="162" y="170" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Square</text>
 
   <!-- Triangle -->
   <polygon points="295,55 345,145 245,145" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
-  <text x="295" y="170" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Triangle</text>
+  <text x="295" y="170" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Triangle</text>
 
   <!-- Rectangle -->
   <rect x="385" y="75" width="110" height="70" fill='#f59e0b50' stroke='#f59e0b' stroke-width="3"/>
-  <text x="440" y="170" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Rectangle</text>
+  <text x="440" y="170" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Rectangle</text>
 </svg>
 """
     },

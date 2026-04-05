@@ -36,28 +36,28 @@ SECTIONS = [
 <h4>Visual: Angle Types</h4>
 <svg width="100%" height="200" viewBox="0 0 800 200" class="formula-box">
   <!-- Acute Angle -->
-  <text x="40" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Acute (45°)</text>
+  <text x="40" y="25" fill='currentColor' font-size='14' font-weight='bold'>Acute (45°)</text>
   <line x1="50" y1="80" x2="120" y2="80" stroke='#58a6ff' stroke-width="2"/>
   <line x1="50" y1="80" x2="100" y2="130" stroke='#58a6ff' stroke-width="2"/>
   <circle cx="50" cy="80" r="25" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
 
   <!-- Right Angle -->
-  <text x="200" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Right (90°)</text>
+  <text x="200" y="25" fill='currentColor' font-size='14' font-weight='bold'>Right (90°)</text>
   <line x1="210" y1="80" x2="280" y2="80" stroke='#56d364' stroke-width="2"/>
   <line x1="210" y1="80" x2="210" y2="150" stroke='#56d364' stroke-width="2"/>
   <rect x="210" y="80" width="15" height="15" fill='none' stroke='#56d364' stroke-width="1.5"/>
 
   <!-- Obtuse Angle -->
-  <text x="380" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Obtuse (120°)</text>
+  <text x="380" y="25" fill='currentColor' font-size='14' font-weight='bold'>Obtuse (120°)</text>
   <line x1="390" y1="80" x2="480" y2="80" stroke='#f85149' stroke-width="2"/>
   <line x1="390" y1="80" x2="340" y2="130" stroke='#f85149' stroke-width="2"/>
   <circle cx="390" cy="80" r="35" fill='none' stroke='#ff7b72' stroke-width="1.5"/>
 
   <!-- Straight Angle -->
-  <text x="580" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Straight (180°)</text>
+  <text x="580" y="25" fill='currentColor' font-size='14' font-weight='bold'>Straight (180°)</text>
   <line x1="580" y1="80" x2="750" y2="80" stroke='#a371f7' stroke-width="2"/>
   <line x1="665" y1="80" x2="665" y2="100" stroke='#a371f7' stroke-width="1"/>
-  <text x="630" y="125" fill='#e6edf3' font-size='12'>A flat line</text>
+  <text x="630" y="125" fill='currentColor' font-size='12'>A flat line</text>
 </svg>
 """
     },
@@ -77,9 +77,9 @@ SECTIONS = [
   <line x1="250" y1="80" x2="250" y2="40" stroke='#79c0ff' stroke-width="2"/>
   <line x1="350" y1="80" x2="350" y2="50" stroke='#79c0ff' stroke-width="2"/>
 
-  <text x="140" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>60°</text>
-  <text x="240" y="35" fill='#e6edf3' font-size='14' font-weight='bold'>70°</text>
-  <text x="340" y="45" fill='#e6edf3' font-size='14' font-weight='bold'>50°</text>
+  <text x="140" y="25" fill='currentColor' font-size='14' font-weight='bold'>60°</text>
+  <text x="240" y="35" fill='currentColor' font-size='14' font-weight='bold'>70°</text>
+  <text x="340" y="45" fill='currentColor' font-size='14' font-weight='bold'>50°</text>
   <text x="280" y="130" fill='#56d364' font-size='16' font-weight='bold'>60° + 70° + 50° = 180°</text>
 </svg>
 
@@ -98,12 +98,12 @@ SECTIONS = [
   <line x1="200" y1="100" x2="220" y2="175" stroke='#f85149' stroke-width="2"/>
   <line x1="200" y1="100" x2="120" y2="160" stroke='#a371f7' stroke-width="2"/>
 
-  <text x="260" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>80°</text>
-  <text x="285" y="115" fill='#e6edf3' font-size='13' font-weight='bold'>110°</text>
-  <text x="215" y="175" fill='#e6edf3' font-size='13' font-weight='bold'>95°</text>
-  <text x="110" y="155" fill='#e6edf3' font-size='13' font-weight='bold'>75°</text>
+  <text x="260" y="50" fill='currentColor' font-size='13' font-weight='bold'>80°</text>
+  <text x="285" y="115" fill='currentColor' font-size='13' font-weight='bold'>110°</text>
+  <text x="215" y="175" fill='currentColor' font-size='13' font-weight='bold'>95°</text>
+  <text x="110" y="155" fill='currentColor' font-size='13' font-weight='bold'>75°</text>
 
-  <circle cx="200" cy="100" r="3" fill='#e6edf3'/>
+  <circle cx="200" cy="100" r="3" fill='currentColor'/>
   <text x="150" y="130" fill='#79c0ff' font-size='12' font-weight='bold'>Sum = 360°</text>
 </svg>
 
@@ -145,8 +145,8 @@ SECTIONS = [
   <text x="205" y="105" fill='#f8a5a5' font-size='14' font-weight='bold'>120°</text>
 
   <!-- Labels -->
-  <text x="100" y="240" fill='#e6edf3' font-size='13'>Blue angles (opposite) = 60° each</text>
-  <text x="100" y="225" fill='#e6edf3' font-size='13'>Red angles (opposite) = 120° each</text>
+  <text x="100" y="240" fill='currentColor' font-size='13'>Blue angles (opposite) = 60° each</text>
+  <text x="100" y="225" fill='currentColor' font-size='13'>Red angles (opposite) = 120° each</text>
 </svg>
 
 <h4>Worked Example</h4>
@@ -211,9 +211,9 @@ SECTIONS = [
   <text x="350" y="205" fill='#f8a5a5' font-size='13' font-weight='bold'>d</text>
 
   <!-- Annotations -->
-  <text x="50" y="250" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>Corresponding:</tspan> a = c</text>
-  <text x="250" y="250" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>Alternate:</tspan> b = c</text>
-  <text x="450" y="250" fill='#e6edf3' font-size='12'><tspan font-weight='bold'>Co-interior:</tspan> b + c = 180°</text>
+  <text x="50" y="250" fill='currentColor' font-size='12'><tspan font-weight='bold'>Corresponding:</tspan> a = c</text>
+  <text x="250" y="250" fill='currentColor' font-size='12'><tspan font-weight='bold'>Alternate:</tspan> b = c</text>
+  <text x="450" y="250" fill='currentColor' font-size='12'><tspan font-weight='bold'>Co-interior:</tspan> b + c = 180°</text>
 
   <text x="50" y="270" fill='#a371f7' font-size='11'>If transversal angle = 60°, then: a = 60°, c = 60°, b = 120°, d = 120°</text>
 </svg>

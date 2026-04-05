@@ -27,7 +27,7 @@ SECTIONS = [
     <path d="M 50 250 Q 150 100, 250 50 T 350 250" stroke='#58a6ff' stroke-width="2" fill='none' />
     <path d="M 50 50 Q 150 150, 250 200 T 350 50" stroke='#ffa657' stroke-width="2" fill='none' />
   </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
     <text x="360" y="255">x</text>
     <text x="40" y="40">y</text>
     <text x="270" y="35" fill='#58a6ff'>a > 0</text>
@@ -82,13 +82,13 @@ SECTIONS = [
     <circle cx="300" cy="250" r="3" fill='#79c0ff' />
     <circle cx="200" cy="50" r="4" fill='#ffa657' />
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
     <text x="360" y="255">x</text>
     <text x="40" y="40">y</text>
     <text x="95" y="270" fill='#79c0ff'>root 1</text>
     <text x="290" y="270" fill='#79c0ff'>root 2</text>
     <text x="210" y="35" fill='#ffa657'>vertex</text>
-    <text x="205" y="15" fill='#8b949e'>axis of symmetry</text>
+    <text x="205" y="15" fill='currentColor' opacity='0.6'>axis of symmetry</text>
   </g>
 </svg>
 
@@ -129,7 +129,7 @@ SECTIONS = [
     <circle cx="200" cy="40" r="4" fill='#ffa657' />
     <circle cx="300" cy="260" r="3" fill='#79c0ff' />
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='#e6edf3'>
+  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
     <text x="350" y="265">x</text>
     <text x="50" y="50">y</text>
     <text x="55" y="275">O</text>

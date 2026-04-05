@@ -15,7 +15,7 @@ SECTIONS = [
         "title": "Visualizing Equal Groups",
         "body": """<p>Here's what equal groups look like with circles. Let's show 4 groups of 3:</p>
 <svg viewBox="0 0 450 200" style="width:100%; max-width:500px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="225" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>4 Equal Groups of 3</text>
+  <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>4 Equal Groups of 3</text>
   <!-- Group 1 -->
   <circle cx="60" cy="80" r="25" fill='none' stroke='#4f8ef7' stroke-width="2"/>
   <circle cx="45" cy="70" r="6" fill='#4f8ef7'/>
@@ -37,10 +37,10 @@ SECTIONS = [
   <circle cx="360" cy="75" r="6" fill='#4f8ef7'/>
   <circle cx="375" cy="70" r="6" fill='#4f8ef7'/>
   <!-- Labels -->
-  <text x="60" y="130" text-anchor='middle' fill='#e6edf3' font-size='12'>3</text>
-  <text x="160" y="130" text-anchor='middle' fill='#e6edf3' font-size='12'>3</text>
-  <text x="260" y="130" text-anchor='middle' fill='#e6edf3' font-size='12'>3</text>
-  <text x="360" y="130" text-anchor='middle' fill='#e6edf3' font-size='12'>3</text>
+  <text x="60" y="130" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="160" y="130" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="260" y="130" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="360" y="130" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
   <!-- Equation -->
   <text x="225" y="170" text-anchor='middle' fill='#22c55e' font-size='18' font-weight='bold'>4 × 3 = 12</text>
 </svg>
@@ -66,11 +66,11 @@ SECTIONS = [
 </ul>
 <svg viewBox="0 0 400 140" style="width:100%; max-width:500px; height:auto; display:block; margin:20px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
   <text x="70" y="30" fill='#4f8ef7' font-size='24' font-weight='bold'>5</text>
-  <text x="70" y="60" fill='#e6edf3' font-size='13'>groups</text>
-  <text x="150" y="30" fill='#e6edf3' font-size='20'>×</text>
+  <text x="70" y="60" fill='currentColor' font-size='13'>groups</text>
+  <text x="150" y="30" fill='currentColor' font-size='20'>×</text>
   <text x="230" y="30" fill='#22c55e' font-size='24' font-weight='bold'>2</text>
-  <text x="230" y="60" fill='#e6edf3' font-size='13'>in each group</text>
-  <text x="310" y="30" fill='#e6edf3' font-size='20'>=</text>
+  <text x="230" y="60" fill='currentColor' font-size='13'>in each group</text>
+  <text x="310" y="30" fill='currentColor' font-size='20'>=</text>
   <text x="360" y="40" fill='#ef4444' font-size='28' font-weight='bold'>10</text>
 </svg>"""
     },

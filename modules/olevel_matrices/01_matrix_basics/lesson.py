@@ -88,22 +88,22 @@ SECTIONS = [
                 <text x="170" y="58" font-size='14' fill='#4f8ef7' text-anchor='middle' font-weight='bold'>a₁₂</text>
                 <text x="280" y="58" font-size='14' fill='#4f8ef7' text-anchor='middle' font-weight='bold'>a₁₃</text>
 
-                <text x="90" y="90" font-size='14' fill='#e6edf3' text-anchor='middle'>a₂₁</text>
-                <text x="170" y="90" font-size='14' fill='#e6edf3' text-anchor='middle'>a₂₂</text>
-                <text x="280" y="90" font-size='14' fill='#e6edf3' text-anchor='middle'>a₂₃</text>
+                <text x="90" y="90" font-size='14' fill='currentColor' text-anchor='middle'>a₂₁</text>
+                <text x="170" y="90" font-size='14' fill='currentColor' text-anchor='middle'>a₂₂</text>
+                <text x="280" y="90" font-size='14' fill='currentColor' text-anchor='middle'>a₂₃</text>
 
-                <text x="90" y="130" font-size='14' fill='#e6edf3' text-anchor='middle'>a₃₁</text>
-                <text x="170" y="130" font-size='14' fill='#e6edf3' text-anchor='middle'>a₃₂</text>
-                <text x="280" y="130" font-size='14' fill='#e6edf3' text-anchor='middle'>a₃₃</text>
+                <text x="90" y="130" font-size='14' fill='currentColor' text-anchor='middle'>a₃₁</text>
+                <text x="170" y="130" font-size='14' fill='currentColor' text-anchor='middle'>a₃₂</text>
+                <text x="280" y="130" font-size='14' fill='currentColor' text-anchor='middle'>a₃₃</text>
 
                 <!-- Row and column labels -->
-                <text x="20" y="58" font-size='12' fill='#8b949e' text-anchor='end'>Row 1</text>
-                <text x="20" y="90" font-size='12' fill='#8b949e' text-anchor='end'>Row 2</text>
-                <text x="20" y="130" font-size='12' fill='#8b949e' text-anchor='end'>Row 3</text>
+                <text x="20" y="58" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 1</text>
+                <text x="20" y="90" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 2</text>
+                <text x="20" y="130" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 3</text>
 
-                <text x="90" y="175" font-size='12' fill='#8b949e' text-anchor='middle'>Col 1</text>
-                <text x="170" y="175" font-size='12' fill='#8b949e' text-anchor='middle'>Col 2</text>
-                <text x="280" y="175" font-size='12' fill='#8b949e' text-anchor='middle'>Col 3</text>
+                <text x="90" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 1</text>
+                <text x="170" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 2</text>
+                <text x="280" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 3</text>
             </svg>
 
             <p><strong>Key point:</strong> When we write a<sub>ij</sub>, the first number is the row, the second is the column. So a<sub>23</sub> means "row 2, column 3".</p>

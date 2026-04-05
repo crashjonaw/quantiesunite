@@ -22,20 +22,20 @@ SECTIONS = [
   <!-- Number line -->
   <line x1="40" y1="80" x2="620" y2="80" stroke='#8b949e' stroke-width="2"/>
   <!-- Start -->
-  <circle cx="80" cy="80" r="6" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-  <text x="80" y="110" text-anchor='middle' fill='#e6edf3' font-size='12'>34</text>
+  <circle cx="80" cy="80" r="6" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <text x="80" y="110" text-anchor='middle' fill='currentColor' font-size='12'>34</text>
   <!-- Jump +20 -->
   <path d="M 80 70 Q 140 40 200 70" fill='none' stroke='#4f8ef7' stroke-width="2"/>
   <text x="140" y="35" text-anchor='middle' fill='#4f8ef7' font-size='12' font-weight='bold'>+20</text>
   <!-- After first jump -->
-  <circle cx="200" cy="80" r="6" fill='#e6edf3' stroke='#e6edf3' stroke-width="1"/>
-  <text x="200" y="110" text-anchor='middle' fill='#e6edf3' font-size='12'>54</text>
+  <circle cx="200" cy="80" r="6" fill='currentColor' stroke='currentColor' stroke-width="1"/>
+  <text x="200" y="110" text-anchor='middle' fill='currentColor' font-size='12'>54</text>
   <!-- Jump +3 -->
   <path d="M 200 70 Q 230 50 260 70" fill='none' stroke='#22c55e' stroke-width="2"/>
   <text x="230" y="45" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>+3</text>
   <!-- End -->
-  <circle cx="260" cy="80" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="2"/>
-  <text x="260" y="110" text-anchor='middle' fill='#e6edf3' font-size='12'>57</text>
+  <circle cx="260" cy="80" r="6" fill='#22c55e' stroke='currentColor' stroke-width="2"/>
+  <text x="260" y="110" text-anchor='middle' fill='currentColor' font-size='12'>57</text>
 </svg>
 <p><strong>Method:</strong></p>
 <ol>
@@ -52,14 +52,14 @@ SECTIONS = [
 <div class="worked-example">
 <p><strong>Step-by-step thinking:</strong></p>
 <svg viewBox="0 0 600 180" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="50" y="25" fill='#e6edf3' font-size='13'>47 + 36 = ?</text>
+  <text x="50" y="25" fill='currentColor' font-size='13'>47 + 36 = ?</text>
 
-  <text x="50" y="50" fill='#e6edf3' font-size='13'>Break into tens and ones:</text>
+  <text x="50" y="50" fill='currentColor' font-size='13'>Break into tens and ones:</text>
   <text x="50" y="70" fill='#4f8ef7' font-size='13'>47 = 40 + 7</text>
   <text x="50" y="90" fill='#4f8ef7' font-size='13'>36 = 30 + 6</text>
 
-  <text x="50" y="115" fill='#e6edf3' font-size='13'>Add tens: 40 + 30 = 70</text>
-  <text x="50" y="135" fill='#e6edf3' font-size='13'>Add ones: 7 + 6 = 13</text>
+  <text x="50" y="115" fill='currentColor' font-size='13'>Add tens: 40 + 30 = 70</text>
+  <text x="50" y="135" fill='currentColor' font-size='13'>Add ones: 7 + 6 = 13</text>
 
   <text x="50" y="160" fill='#f59e0b' font-size='14' font-weight='bold'>Answer: 70 + 13 = 83</text>
 </svg>
@@ -72,16 +72,16 @@ SECTIONS = [
 <p><strong>Example 1: 47 + 9 (Hard because of +9)</strong></p>
 <p>Instead: Add 10, then subtract 1.</p>
 <svg viewBox="0 0 600 120" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="50" y="30" fill='#e6edf3' font-size='13'>47 + 9 = ?</text>
-  <text x="50" y="55" fill='#e6edf3' font-size='13'>Think: 9 is almost 10</text>
+  <text x="50" y="30" fill='currentColor' font-size='13'>47 + 9 = ?</text>
+  <text x="50" y="55" fill='currentColor' font-size='13'>Think: 9 is almost 10</text>
   <text x="50" y="75" fill='#4f8ef7' font-size='13'>Add 10: 47 + 10 = 57</text>
   <text x="50" y="95" fill='#22c55e' font-size='13'>Subtract 1: 57 - 1 = 56</text>
 </svg>
 <p><strong>Example 2: 52 - 9 (Hard because of -9)</strong></p>
 <p>Instead: Subtract 10, then add 1.</p>
 <svg viewBox="0 0 600 120" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="50" y="30" fill='#e6edf3' font-size='13'>52 - 9 = ?</text>
-  <text x="50" y="55" fill='#e6edf3' font-size='13'>Think: 9 is almost 10</text>
+  <text x="50" y="30" fill='currentColor' font-size='13'>52 - 9 = ?</text>
+  <text x="50" y="55" fill='currentColor' font-size='13'>Think: 9 is almost 10</text>
   <text x="50" y="75" fill='#4f8ef7' font-size='13'>Subtract 10: 52 - 10 = 42</text>
   <text x="50" y="95" fill='#22c55e' font-size='13'>Add 1: 42 + 1 = 43</text>
 </svg>"""

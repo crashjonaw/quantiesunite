@@ -11,12 +11,12 @@ SECTIONS = [
 <p>Each data point is shown as a dot on a number line.</p>
 <h3>Example: Heights of 10 Students (cm)</h3>
 <svg viewBox="0 0 350 100" style="width:100%;max-width:400px;height:auto;display:block;margin:20px auto;">
-  <line x1="40" y1="50" x2="330" y2="50" stroke='#e6edf3' stroke-width="2"/>
-  <text x="40" y="70" font-size='11' fill='#8b949e'>160</text>
-  <text x="110" y="70" font-size='11' fill='#8b949e'>165</text>
-  <text x="185" y="70" font-size='11' fill='#8b949e'>170</text>
-  <text x="255" y="70" font-size='11' fill='#8b949e'>175</text>
-  <text x="320" y="70" font-size='11' fill='#8b949e'>180</text>
+  <line x1="40" y1="50" x2="330" y2="50" stroke='currentColor' stroke-width="2"/>
+  <text x="40" y="70" font-size='11' fill='currentColor' opacity='0.6'>160</text>
+  <text x="110" y="70" font-size='11' fill='currentColor' opacity='0.6'>165</text>
+  <text x="185" y="70" font-size='11' fill='currentColor' opacity='0.6'>170</text>
+  <text x="255" y="70" font-size='11' fill='currentColor' opacity='0.6'>175</text>
+  <text x="320" y="70" font-size='11' fill='currentColor' opacity='0.6'>180</text>
   <circle cx="50" cy="35" r="4" fill='#79c0ff'/>
   <circle cx="60" cy="35" r="4" fill='#79c0ff'/>
   <circle cx="65" cy="25" r="4" fill='#79c0ff'/>
@@ -68,24 +68,24 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 400 250" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
-  <text x="200" y="20" font-size='13' font-weight='bold' fill='#e6edf3' text-anchor='middle'>Test Score Distribution</text>
+  <text x="200" y="20" font-size='13' font-weight='bold' fill='currentColor' text-anchor='middle'>Test Score Distribution</text>
   <line x1="60" y1="200" x2="370" y2="200" stroke='#8b949e' stroke-width="2"/>
   <line x1="60" y1="200" x2="60" y2="30" stroke='#8b949e' stroke-width="2"/>
-  <text x="215" y="230" font-size='11' fill='#8b949e' text-anchor='middle'>Test Score</text>
+  <text x="215" y="230" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Test Score</text>
   <rect x="70" y="172" width="50" height="28" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
   <rect x="125" y="132" width="50" height="68" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
   <rect x="180" y="60" width="50" height="140" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
   <rect x="235" y="120" width="50" height="80" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
   <rect x="290" y="172" width="50" height="28" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
-  <text x="95" y="215" font-size='10' fill='#8b949e' text-anchor='middle'>50-60</text>
-  <text x="150" y="215" font-size='10' fill='#8b949e' text-anchor='middle'>60-70</text>
-  <text x="205" y="215" font-size='10' fill='#8b949e' text-anchor='middle'>70-80</text>
-  <text x="260" y="215" font-size='10' fill='#8b949e' text-anchor='middle'>80-90</text>
-  <text x="315" y="215" font-size='10' fill='#8b949e' text-anchor='middle'>90-100</text>
-  <text x="50" y="176" font-size='10' fill='#8b949e' text-anchor='end'>5</text>
-  <text x="50" y="136" font-size='10' fill='#8b949e' text-anchor='end'>12</text>
-  <text x="50" y="64" font-size='10' fill='#8b949e' text-anchor='end'>18</text>
-  <text x="50" y="124" font-size='10' fill='#8b949e' text-anchor='end'>10</text>
+  <text x="95" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>50-60</text>
+  <text x="150" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>60-70</text>
+  <text x="205" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>70-80</text>
+  <text x="260" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>80-90</text>
+  <text x="315" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>90-100</text>
+  <text x="50" y="176" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>5</text>
+  <text x="50" y="136" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>12</text>
+  <text x="50" y="64" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>18</text>
+  <text x="50" y="124" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>10</text>
 </svg>
 
 <h3>Histogram vs. Bar Chart</h3>

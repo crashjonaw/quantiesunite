@@ -31,19 +31,19 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Why Lining Up Matters</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Why Lining Up Matters</text>
 
   <!-- Wrong way -->
   <rect x="20" y="35" width="200" height="50" fill='#1e293b' stroke='#ef4444' stroke-width="2" rx="2"/>
   <text x="30" y="52" fill='#ef4444' font-size='11' font-weight='bold'>❌ WRONG</text>
-  <text x="30" y="72" fill='#e6edf3' font-size='13' font-family='monospace'>2.5 + 1.3 = 28</text>
+  <text x="30" y="72" fill='currentColor' font-size='13' font-family='monospace'>2.5 + 1.3 = 28</text>
   <text x="120" y="92" fill='#ef4444' font-size='10'>(5+3=8 is correct, but</text>
   <text x="120" y="105" fill='#ef4444' font-size='10'>mixing up places!)</text>
 
   <!-- Right way -->
   <rect x="280" y="35" width="200" height="50" fill='#1e293b' stroke='#22c55e' stroke-width="2" rx="2"/>
   <text x="290" y="52" fill='#22c55e' font-size='11' font-weight='bold'>✓ CORRECT</text>
-  <text x="290" y="72" fill='#e6edf3' font-size='13' font-family='monospace'>2.5 + 1.3 = 3.8</text>
+  <text x="290" y="72" fill='currentColor' font-size='13' font-family='monospace'>2.5 + 1.3 = 3.8</text>
   <text x="380" y="92" fill='#22c55e' font-size='10'>(decimal points</text>
   <text x="380" y="105" fill='#22c55e' font-size='10'>lined up!)</text>
 </svg>

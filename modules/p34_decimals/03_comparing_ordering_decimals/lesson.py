@@ -30,7 +30,7 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 500 220" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Comparing on a Number Line</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Comparing on a Number Line</text>
 
   <!-- Line 1: 0.7 vs 0.4 -->
   <line x1="30" y1="50" x2="470" y2="50" stroke='#4f8ef7' stroke-width="2"/>
@@ -40,7 +40,7 @@ SECTIONS = [
   <circle cx="350" cy="50" r="5" fill='#ef4444'/>
   <text x="350" y="75" text-anchor='middle' fill='#ef4444' font-size='11'>0.7</text>
   <line x1="470" y1="40" x2="470" y2="60" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="250" y="110" text-anchor='middle' fill='#e6edf3' font-size='11'>0.7 is to the RIGHT, so 0.7 > 0.4</text>
+  <text x="250" y="110" text-anchor='middle' fill='currentColor' font-size='11'>0.7 is to the RIGHT, so 0.7 > 0.4</text>
 
   <!-- Line 2: 0.34 vs 0.38 -->
   <line x1="30" y1="140" x2="470" y2="140" stroke='#4f8ef7' stroke-width="2"/>
@@ -50,7 +50,7 @@ SECTIONS = [
   <circle cx="300" cy="140" r="5" fill='#ef4444'/>
   <text x="300" y="165" text-anchor='middle' fill='#ef4444' font-size='11'>0.38</text>
   <line x1="470" y1="130" x2="470" y2="150" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="250" y="200" text-anchor='middle' fill='#e6edf3' font-size='11'>0.38 is to the RIGHT, so 0.38 > 0.34</text>
+  <text x="250" y="200" text-anchor='middle' fill='currentColor' font-size='11'>0.38 is to the RIGHT, so 0.38 > 0.34</text>
 </svg>
 
 <div class="mcq-group">
@@ -80,16 +80,16 @@ SECTIONS = [
 <p>With whole numbers, 09 < 1, so our brain wants to think that 0.09 < 0.1. But decimals are different!</p>
 
 <svg viewBox="0 0 500 280" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Visual Comparison: 0.1 vs 0.09</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Visual Comparison: 0.1 vs 0.09</text>
 
   <!-- Grid for 0.1 -->
-  <text x="120" y="50" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>0.1 (one tenth)</text>
+  <text x="120" y="50" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>0.1 (one tenth)</text>
   <rect x="40" y="70" width="160" height="160" fill='none' stroke='#4f8ef7' stroke-width="2"/>
   <rect x="40" y="70" width="160" height="160" fill='#4f8ef7' opacity='0.3'/>
   <text x="120" y="210" text-anchor='middle' fill='#4f8ef7' font-size='11'>10 out of 100 squares</text>
 
   <!-- Grid for 0.09 -->
-  <text x="380" y="50" text-anchor='middle' fill='#e6edf3' font-size='12' font-weight='bold'>0.09 (nine hundredths)</text>
+  <text x="380" y="50" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>0.09 (nine hundredths)</text>
   <rect x="300" y="70" width="160" height="160" fill='none' stroke='#f59e0b' stroke-width="2"/>
   <g fill='#f59e0b' opacity='0.3'>
     <rect x="300" y="70" width="32" height="32"/>
@@ -173,11 +173,11 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Number Line: Ordering Example</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Number Line: Ordering Example</text>
 
   <line x1="30" y1="60" x2="470" y2="60" stroke='#4f8ef7' stroke-width="2"/>
   <line x1="30" y1="50" x2="30" y2="70" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="90" text-anchor='middle' fill='#e6edf3' font-size='11'>0.4</text>
+  <text x="30" y="90" text-anchor='middle' fill='currentColor' font-size='11'>0.4</text>
 
   <circle cx="120" cy="60" r="4" fill='#22c55e'/>
   <text x="120" y="90" text-anchor='middle' fill='#22c55e' font-size='11'>0.45</text>
@@ -189,10 +189,10 @@ SECTIONS = [
   <text x="280" y="90" text-anchor='middle' fill='#f59e0b' font-size='11'>0.54</text>
 
   <line x1="470" y1="50" x2="470" y2="70" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="470" y="90" text-anchor='middle' fill='#e6edf3' font-size='11'>0.6</text>
+  <text x="470" y="90" text-anchor='middle' fill='currentColor' font-size='11'>0.6</text>
 
-  <text x="250" y="140" text-anchor='middle' fill='#e6edf3' font-size='11'>Left to right = smallest to largest</text>
-  <text x="250" y="160" text-anchor='middle' fill='#8b949e' font-size='10'>0.4 → 0.45 → 0.5 → 0.54</text>
+  <text x="250" y="140" text-anchor='middle' fill='currentColor' font-size='11'>Left to right = smallest to largest</text>
+  <text x="250" y="160" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='10'>0.4 → 0.45 → 0.5 → 0.54</text>
 </svg>
         """
     },
@@ -210,17 +210,17 @@ SECTIONS = [
 <h4>Remember: The Symbol Points to the Smaller Number</h4>
 
 <svg viewBox="0 0 500 120" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Using Comparison Symbols</text>
+  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Using Comparison Symbols</text>
 
-  <text x="100" y="50" text-anchor='end' fill='#e6edf3' font-size='14'>0.3</text>
+  <text x="100" y="50" text-anchor='end' fill='currentColor' font-size='14'>0.3</text>
   <text x="130" y="50" text-anchor='middle' fill='#22c55e' font-size='20' font-weight='bold'>&lt;</text>
-  <text x="160" y="50" text-anchor='start' fill='#e6edf3' font-size='14'>0.7</text>
-  <text x="250" y="55" fill='#8b949e' font-size='10'>(symbol points to 0.3, the smaller number)</text>
+  <text x="160" y="50" text-anchor='start' fill='currentColor' font-size='14'>0.7</text>
+  <text x="250" y="55" fill='currentColor' opacity='0.6' font-size='10'>(symbol points to 0.3, the smaller number)</text>
 
-  <text x="100" y="90" text-anchor='end' fill='#e6edf3' font-size='14'>0.9</text>
+  <text x="100" y="90" text-anchor='end' fill='currentColor' font-size='14'>0.9</text>
   <text x="130" y="90" text-anchor='middle' fill='#ef4444' font-size='20' font-weight='bold'>&gt;</text>
-  <text x="160" y="90" text-anchor='start' fill='#e6edf3' font-size='14'>0.5</text>
-  <text x="250" y="95" fill='#8b949e' font-size='10'>(symbol points to 0.5, the smaller number)</text>
+  <text x="160" y="90" text-anchor='start' fill='currentColor' font-size='14'>0.5</text>
+  <text x="250" y="95" fill='currentColor' opacity='0.6' font-size='10'>(symbol points to 0.5, the smaller number)</text>
 </svg>
 
 <div class="mcq-group">

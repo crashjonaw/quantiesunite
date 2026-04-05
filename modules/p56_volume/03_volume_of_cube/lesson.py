@@ -12,7 +12,7 @@ SECTIONS = [
 </div>
 
 <svg width="100%" viewBox="0 0 400 300" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>All sides are equal</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>All sides are equal</text>
 
   <!-- Cube with all sides labeled -->
   <!-- Front face -->
@@ -35,7 +35,7 @@ SECTIONS = [
   <text x="215" y="125" fill='#79c0ff' font-size='14' font-weight='bold'>s</text>
 
   <!-- Formula -->
-  <text x="20" y="260" fill='#e6edf3' font-size='12'>All sides = s (the side length)</text>
+  <text x="20" y="260" fill='currentColor' font-size='12'>All sides = s (the side length)</text>
 </svg>"""
     },
     {
@@ -149,39 +149,39 @@ new Chart(document.getElementById('vol_cube_progression'), {
 </div>
 
 <svg width="100%" viewBox="0 0 400 250" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='13' font-weight='bold'>Perfect Cubes (Common Values)</text>
+  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Perfect Cubes (Common Values)</text>
 
   <g>
     <rect x="20" y="45" width="85" height="180" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx="4"/>
     <text x="62" y="65" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Side</text>
-    <text x="62" y="90" fill='#e6edf3' font-size='10' text-anchor='middle'>1</text>
-    <text x="62" y="115" fill='#e6edf3' font-size='10' text-anchor='middle'>2</text>
-    <text x="62" y="140" fill='#e6edf3' font-size='10' text-anchor='middle'>3</text>
-    <text x="62" y="165" fill='#e6edf3' font-size='10' text-anchor='middle'>4</text>
-    <text x="62" y="190" fill='#e6edf3' font-size='10' text-anchor='middle'>5</text>
-    <text x="62" y="215" fill='#e6edf3' font-size='10' text-anchor='middle'>10</text>
+    <text x="62" y="90" fill='currentColor' font-size='10' text-anchor='middle'>1</text>
+    <text x="62" y="115" fill='currentColor' font-size='10' text-anchor='middle'>2</text>
+    <text x="62" y="140" fill='currentColor' font-size='10' text-anchor='middle'>3</text>
+    <text x="62" y="165" fill='currentColor' font-size='10' text-anchor='middle'>4</text>
+    <text x="62" y="190" fill='currentColor' font-size='10' text-anchor='middle'>5</text>
+    <text x="62" y="215" fill='currentColor' font-size='10' text-anchor='middle'>10</text>
   </g>
 
   <g>
     <rect x="135" y="45" width="85" height="180" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx="4"/>
     <text x="177" y="65" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Volume</text>
-    <text x="177" y="90" fill='#e6edf3' font-size='10' text-anchor='middle'>1</text>
-    <text x="177" y="115" fill='#e6edf3' font-size='10' text-anchor='middle'>8</text>
-    <text x="177" y="140" fill='#e6edf3' font-size='10' text-anchor='middle'>27</text>
-    <text x="177" y="165" fill='#e6edf3' font-size='10' text-anchor='middle'>64</text>
-    <text x="177" y="190" fill='#e6edf3' font-size='10' text-anchor='middle'>125</text>
-    <text x="177" y="215" fill='#e6edf3' font-size='10' text-anchor='middle'>1000</text>
+    <text x="177" y="90" fill='currentColor' font-size='10' text-anchor='middle'>1</text>
+    <text x="177" y="115" fill='currentColor' font-size='10' text-anchor='middle'>8</text>
+    <text x="177" y="140" fill='currentColor' font-size='10' text-anchor='middle'>27</text>
+    <text x="177" y="165" fill='currentColor' font-size='10' text-anchor='middle'>64</text>
+    <text x="177" y="190" fill='currentColor' font-size='10' text-anchor='middle'>125</text>
+    <text x="177" y="215" fill='currentColor' font-size='10' text-anchor='middle'>1000</text>
   </g>
 
   <g>
     <rect x="250" y="45" width="110" height="180" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx="4"/>
     <text x="305" y="65" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Capacity</text>
-    <text x="305" y="90" fill='#e6edf3' font-size='10' text-anchor='middle'>1 mL</text>
-    <text x="305" y="115" fill='#e6edf3' font-size='10' text-anchor='middle'>8 mL</text>
-    <text x="305" y="140" fill='#e6edf3' font-size='10' text-anchor='middle'>27 mL</text>
-    <text x="305" y="165" fill='#e6edf3' font-size='10' text-anchor='middle'>64 mL</text>
-    <text x="305" y="190" fill='#e6edf3' font-size='10' text-anchor='middle'>125 mL</text>
-    <text x="305" y="215" fill='#e6edf3' font-size='10' text-anchor='middle'>1 L</text>
+    <text x="305" y="90" fill='currentColor' font-size='10' text-anchor='middle'>1 mL</text>
+    <text x="305" y="115" fill='currentColor' font-size='10' text-anchor='middle'>8 mL</text>
+    <text x="305" y="140" fill='currentColor' font-size='10' text-anchor='middle'>27 mL</text>
+    <text x="305" y="165" fill='currentColor' font-size='10' text-anchor='middle'>64 mL</text>
+    <text x="305" y="190" fill='currentColor' font-size='10' text-anchor='middle'>125 mL</text>
+    <text x="305" y="215" fill='currentColor' font-size='10' text-anchor='middle'>1 L</text>
   </g>
 </svg>"""
     },

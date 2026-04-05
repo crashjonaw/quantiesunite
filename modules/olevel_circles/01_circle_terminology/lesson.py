@@ -20,13 +20,13 @@ SECTIONS = [
 <h4>Visualizing Radius and Diameter</h4>
 <svg width="300" height="300" class="formula-box">
   <circle cx="150" cy="150" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="150" cy="150" r="3" fill='#e6edf3'/>
+  <circle cx="150" cy="150" r="3" fill='currentColor'/>
   <line x1="150" y1="150" x2="250" y2="150" stroke='#79c0ff' stroke-width="2"/>
   <circle cx="250" cy="150" r="3" fill='#79c0ff'/>
-  <text x="200" y="140" fill='#e6edf3' font-size='14' font-weight='bold'>r</text>
-  <text x="155" y="165" fill='#e6edf3' font-size='14' font-weight='bold'>O</text>
+  <text x="200" y="140" fill='currentColor' font-size='14' font-weight='bold'>r</text>
+  <text x="155" y="165" fill='currentColor' font-size='14' font-weight='bold'>O</text>
   <line x1="50" y1="150" x2="250" y2="150" stroke='#f85149' stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="140" y="180" fill='#e6edf3' font-size='14'>Diameter = 2r</text>
+  <text x="140" y="180" fill='currentColor' font-size='14'>Diameter = 2r</text>
 </svg>
 
 <p><strong>Circumference Formula:</strong></p>
@@ -66,15 +66,15 @@ SECTIONS = [
 
 <svg width="350" height="280" class="formula-box">
   <circle cx="175" cy="140" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="175" cy="140" r="3" fill='#e6edf3'/>
+  <circle cx="175" cy="140" r="3" fill='currentColor'/>
   <circle cx="240" cy="95" r="4" fill='#f85149'/>
   <circle cx="110" cy="95" r="4" fill='#f85149'/>
   <path d="M 110 95 A 90 90 0 0 1 240 95" fill='none' stroke='#79c0ff' stroke-width="3"/>
   <path d="M 110 95 A 90 90 0 1 1 240 95" fill='none' stroke='#a371f7' stroke-width="2" stroke-dasharray="5,5"/>
   <line x1="110" y1="95" x2="240" y2="95" stroke='#f85149' stroke-width="2"/>
-  <text x="175" y="160" fill='#e6edf3' font-size='13' text-anchor='middle'>O</text>
-  <text x="85" y="80" fill='#e6edf3' font-size='12'>Point A</text>
-  <text x="245" y="80" fill='#e6edf3' font-size='12'>Point B</text>
+  <text x="175" y="160" fill='currentColor' font-size='13' text-anchor='middle'>O</text>
+  <text x="85" y="80" fill='currentColor' font-size='12'>Point A</text>
+  <text x="245" y="80" fill='currentColor' font-size='12'>Point B</text>
   <text x="150" y="110" fill='#79c0ff' font-size='13' font-weight='bold'>Minor Arc</text>
   <text x="160" y="200" fill='#a371f7' font-size='13' font-weight='bold'>Major Arc</text>
   <text x="175" y="130" fill='#f85149' font-size='13'>Chord</text>
@@ -88,11 +88,11 @@ SECTIONS = [
 
 <svg width="370" height="280" viewBox="0 0 370 280" class="formula-box">
   <circle cx="175" cy="140" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="175" cy="140" r="3" fill='#e6edf3'/>
+  <circle cx="175" cy="140" r="3" fill='currentColor'/>
   <path d="M 175 50 L 240 190 L 110 190 Z" fill='#79c0ff' opacity='0.2' stroke='#79c0ff' stroke-width="2"/>
   <line x1="175" y1="140" x2="175" y2="50" stroke='#f85149' stroke-width="2"/>
   <line x1="175" y1="140" x2="240" y2="190" stroke='#f85149' stroke-width="2"/>
-  <text x="200" y="150" fill='#e6edf3' font-size='12' font-weight='bold'>Sector</text>
+  <text x="200" y="150" fill='currentColor' font-size='12' font-weight='bold'>Sector</text>
   <text x="185" y="105" fill='#f85149' font-size='11'>Radius</text>
   <text x="210" y="175" fill='#f85149' font-size='11'>Radius</text>
   <line x1="110" y1="190" x2="240" y2="190" stroke='#a371f7' stroke-width="2"/>
@@ -145,7 +145,7 @@ SECTIONS = [
   <text x="320" y="200" fill='#a371f7' font-size='13' text-anchor='middle' font-weight='bold'>r=4</text>
   <text x="320" y="220" fill='#a371f7' font-size='12' text-anchor='middle'>C=8π</text>
   <text x="320" y="238" fill='#a371f7' font-size='12' text-anchor='middle'>A=16π</text>
-  <text x="200" y="280" fill='#e6edf3' font-size='13' text-anchor='middle'>As radius increases, circumference grows linearly, but area grows quadratically!</text>
+  <text x="200" y="280" fill='currentColor' font-size='13' text-anchor='middle'>As radius increases, circumference grows linearly, but area grows quadratically!</text>
 </svg>
 """
     },

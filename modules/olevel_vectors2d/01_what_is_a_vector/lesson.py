@@ -29,15 +29,15 @@ SECTIONS = [
                 </marker>
             </defs>
             <!-- Left side: scalar -->
-            <text x="50" y="30" fill='#e6edf3' font-size='16' font-weight='bold'>Scalar: 10 units</text>
+            <text x="50" y="30" fill='currentColor' font-size='16' font-weight='bold'>Scalar: 10 units</text>
             <circle cx="50" cy="80" r="5" fill='#4f8ef7'/>
-            <text x="30" y="130" fill='#8b949e' text-anchor='middle' font-size='12'>Just a number</text>
+            <text x="30" y="130" fill='currentColor' opacity='0.6' text-anchor='middle' font-size='12'>Just a number</text>
 
             <!-- Right side: vector -->
-            <text x="300" y="30" fill='#e6edf3' font-size='16' font-weight='bold'>Vector: 10 units →</text>
+            <text x="300" y="30" fill='currentColor' font-size='16' font-weight='bold'>Vector: 10 units →</text>
             <circle cx="200" cy="80" r="5" fill='#4f8ef7'/>
             <line x1="200" y1="80" x2="320" y2="80" stroke='#4f8ef7' stroke-width="2" marker-end="url(#arrowhead)"/>
-            <text x="260" y="130" fill='#8b949e' text-anchor='middle' font-size='12'>Magnitude + Direction</text>
+            <text x="260" y="130" fill='currentColor' opacity='0.6' text-anchor='middle' font-size='12'>Magnitude + Direction</text>
         </svg>
         """
     },
@@ -92,27 +92,27 @@ SECTIONS = [
 
                 <!-- Point A -->
                 <circle cx="40" cy="160" r="4" fill='#4f8ef7'/>
-                <text x="25" y="180" fill='#e6edf3' font-size='12'>A</text>
+                <text x="25" y="180" fill='currentColor' font-size='12'>A</text>
 
                 <!-- Vector arrow -->
                 <line x1="40" y1="160" x2="130" y2="40" stroke='#4f8ef7' stroke-width="3" marker-end="url(#arrow1)"/>
-                <text x="90" y="90" fill='#8b949e' font-size='11' font-weight='bold'>\\(\\vec{AB}\\)</text>
+                <text x="90" y="90" fill='currentColor' opacity='0.6' font-size='11' font-weight='bold'>\\(\\vec{AB}\\)</text>
 
                 <!-- Dashed construction lines -->
                 <line x1="40" y1="160" x2="130" y2="160" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2"/>
                 <line x1="130" y1="160" x2="130" y2="40" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2"/>
 
                 <!-- Labels for components -->
-                <text x="85" y="175" fill='#8b949e' font-size='10'>3 units →</text>
-                <text x="140" y="100" fill='#8b949e' font-size='10'>4 units ↑</text>
+                <text x="85" y="175" fill='currentColor' opacity='0.6' font-size='10'>3 units →</text>
+                <text x="140" y="100" fill='currentColor' opacity='0.6' font-size='10'>4 units ↑</text>
 
                 <!-- Point B -->
                 <circle cx="130" cy="40" r="4" fill='#4f8ef7'/>
-                <text x="135" y="75" fill='#e6edf3' font-size='12'>B</text>
+                <text x="135" y="75" fill='currentColor' font-size='12'>B</text>
 
                 <!-- Axes labels -->
-                <text x="175" y="215" fill='#8b949e' font-size='11'>x</text>
-                <text x="5" y="25" fill='#8b949e' font-size='11'>y</text>
+                <text x="175" y="215" fill='currentColor' opacity='0.6' font-size='11'>x</text>
+                <text x="5" y="25" fill='currentColor' opacity='0.6' font-size='11'>y</text>
             </svg>
         </div>
 
@@ -144,14 +144,14 @@ SECTIONS = [
             <!-- Vector 1 -->
             <circle cx="50" cy="80" r="4" fill='#4f8ef7'/>
             <line x1="50" y1="80" x2="130" y2="130" stroke='#4f8ef7' stroke-width="2" marker-end="url(#arrow2)"/>
-            <text x="80" y="95" fill='#e6edf3' font-size='12' font-weight='bold'>\\(\\vec{u}\\)</text>
+            <text x="80" y="95" fill='currentColor' font-size='12' font-weight='bold'>\\(\\vec{u}\\)</text>
 
             <!-- Vector 2 (same components, different location) -->
             <circle cx="200" cy="30" r="4" fill='#4f8ef7'/>
             <line x1="200" y1="30" x2="280" y2="80" stroke='#4f8ef7' stroke-width="2" marker-end="url(#arrow2)"/>
-            <text x="230" y="45" fill='#e6edf3' font-size='12' font-weight='bold'>\\(\\vec{v}\\)</text>
+            <text x="230" y="45" fill='currentColor' font-size='12' font-weight='bold'>\\(\\vec{v}\\)</text>
 
-            <text x="200" y="170" fill='#8b949e' text-anchor='middle' font-size='12'>Both vectors: same 3 right, 5 down → \\(\\vec{u} = \\vec{v}\\)</text>
+            <text x="200" y="170" fill='currentColor' opacity='0.6' text-anchor='middle' font-size='12'>Both vectors: same 3 right, 5 down → \\(\\vec{u} = \\vec{v}\\)</text>
         </svg>
 
         <div class="worked-example">

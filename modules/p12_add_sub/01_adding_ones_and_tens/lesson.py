@@ -21,21 +21,21 @@ SECTIONS = [
 <svg viewBox="0 0 500 150" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
   <!-- Tens rods -->
   <g>
-    <rect x="30" y="20" width="15" height="80" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-    <rect x="50" y="20" width="15" height="80" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-    <rect x="70" y="20" width="15" height="80" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-    <text x="60" y="120" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>3 tens = 30</text>
+    <rect x="30" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+    <rect x="50" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+    <rect x="70" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+    <text x="60" y="120" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>3 tens = 30</text>
   </g>
   <!-- Ones cubes -->
   <g>
-    <circle cx="150" cy="50" r="8" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-    <circle cx="170" cy="50" r="8" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-    <circle cx="190" cy="50" r="8" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-    <circle cx="210" cy="50" r="8" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-    <text x="180" y="120" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>4 ones = 4</text>
+    <circle cx="150" cy="50" r="8" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+    <circle cx="170" cy="50" r="8" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+    <circle cx="190" cy="50" r="8" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+    <circle cx="210" cy="50" r="8" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+    <text x="180" y="120" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>4 ones = 4</text>
   </g>
   <!-- Equals -->
-  <text x="280" y="80" fill='#e6edf3' font-size='20' font-weight='bold'>=</text>
+  <text x="280" y="80" fill='currentColor' font-size='20' font-weight='bold'>=</text>
   <!-- Result -->
   <text x="350" y="80" fill='#f59e0b' font-size='28' font-weight='bold'>34</text>
 </svg>
@@ -56,42 +56,42 @@ SECTIONS = [
 <p><strong>Method: Split each number into tens and ones, then add</strong></p>
 <svg viewBox="0 0 600 180" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
   <!-- First number -->
-  <text x="50" y="25" fill='#e6edf3' font-size='16' font-weight='bold'>23 = 20 + 3</text>
-  <rect x="30" y="40" width="15" height="60" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-  <rect x="50" y="40" width="15" height="60" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-  <circle cx="100" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="115" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="130" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
+  <text x="50" y="25" fill='currentColor' font-size='16' font-weight='bold'>23 = 20 + 3</text>
+  <rect x="30" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="50" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <circle cx="100" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="115" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="130" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
 
   <!-- Plus -->
-  <text x="170" y="90" fill='#e6edf3' font-size='20' font-weight='bold'>+</text>
+  <text x="170" y="90" fill='currentColor' font-size='20' font-weight='bold'>+</text>
 
   <!-- Second number -->
-  <text x="210" y="25" fill='#e6edf3' font-size='16' font-weight='bold'>14 = 10 + 4</text>
-  <rect x="190" y="40" width="15" height="60" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-  <circle cx="240" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="255" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="270" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="285" cy="70" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
+  <text x="210" y="25" fill='currentColor' font-size='16' font-weight='bold'>14 = 10 + 4</text>
+  <rect x="190" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <circle cx="240" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="255" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="270" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="285" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
 
   <!-- Equals -->
-  <text x="320" y="90" fill='#e6edf3' font-size='20' font-weight='bold'>=</text>
+  <text x="320" y="90" fill='currentColor' font-size='20' font-weight='bold'>=</text>
 
   <!-- Add tens -->
-  <text x="380" y="25" fill='#e6edf3' font-size='14'>Add tens: 20 + 10 = 30</text>
-  <rect x="360" y="40" width="15" height="60" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-  <rect x="380" y="40" width="15" height="60" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
-  <rect x="400" y="40" width="15" height="60" fill='#4f8ef7' stroke='#e6edf3' stroke-width="2"/>
+  <text x="380" y="25" fill='currentColor' font-size='14'>Add tens: 20 + 10 = 30</text>
+  <rect x="360" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="380" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="400" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
 
   <!-- Add ones -->
-  <text x="380" y="125" fill='#e6edf3' font-size='14'>Add ones: 3 + 4 = 7</text>
-  <circle cx="440" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="455" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="470" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="485" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="500" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="515" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
-  <circle cx="530" cy="145" r="6" fill='#22c55e' stroke='#e6edf3' stroke-width="1"/>
+  <text x="380" y="125" fill='currentColor' font-size='14'>Add ones: 3 + 4 = 7</text>
+  <circle cx="440" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="455" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="470" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="485" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="500" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="515" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
+  <circle cx="530" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
 </svg>
 <p><strong>30 + 7 = 37</strong></p>
 <p style="margin-top: 20px;"><strong>Why this works:</strong> Addition is the same whether we add all at once or break it into pieces. Mathematicians call this the <strong>associative property</strong>. For kids, think of it like: it doesn't matter if you eat 3 apples then 4 apples, or 7 apples all at once—you still ate 7!</p>
@@ -104,27 +104,27 @@ SECTIONS = [
 <div class="worked-example">
 <svg viewBox="0 0 500 200" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
   <!-- Column setup -->
-  <text x="80" y="40" fill='#e6edf3' font-size='14' font-weight='bold'>Tens  Ones</text>
+  <text x="80" y="40" fill='currentColor' font-size='14' font-weight='bold'>Tens  Ones</text>
 
   <!-- First number -->
-  <text x="100" y="70" fill='#e6edf3' font-size='18' font-weight='bold'>3</text>
-  <text x="150" y="70" fill='#e6edf3' font-size='18' font-weight='bold'>4</text>
+  <text x="100" y="70" fill='currentColor' font-size='18' font-weight='bold'>3</text>
+  <text x="150" y="70" fill='currentColor' font-size='18' font-weight='bold'>4</text>
 
   <!-- Second number -->
-  <text x="95" y="100" fill='#e6edf3' font-size='18'>+</text>
-  <text x="100" y="100" fill='#e6edf3' font-size='18' font-weight='bold'>2</text>
-  <text x="150" y="100" fill='#e6edf3' font-size='18' font-weight='bold'>3</text>
+  <text x="95" y="100" fill='currentColor' font-size='18'>+</text>
+  <text x="100" y="100" fill='currentColor' font-size='18' font-weight='bold'>2</text>
+  <text x="150" y="100" fill='currentColor' font-size='18' font-weight='bold'>3</text>
 
   <!-- Line -->
   <line x1="70" y1="110" x2="180" y2="110" stroke='#8b949e' stroke-width="2"/>
 
   <!-- Add ones -->
   <text x="140" y="140" fill='#22c55e' font-size='13'>Add ones: 4 + 3 = 7</text>
-  <text x="150" y="160" fill='#e6edf3' font-size='18' font-weight='bold'>7</text>
+  <text x="150" y="160" fill='currentColor' font-size='18' font-weight='bold'>7</text>
 
   <!-- Add tens -->
   <text x="70" y="140" fill='#4f8ef7' font-size='13'>Add tens: 3 + 2 = 5</text>
-  <text x="100" y="160" fill='#e6edf3' font-size='18' font-weight='bold'>5</text>
+  <text x="100" y="160" fill='currentColor' font-size='18' font-weight='bold'>5</text>
 
   <!-- Result label -->
   <text x="60" y="190" fill='#f59e0b' font-size='16' font-weight='bold'>Answer: 57</text>

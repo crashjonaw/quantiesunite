@@ -35,8 +35,8 @@ SECTIONS = [
   <text x="360" y="160" fill='#79c0ff' font-size='13' font-weight='bold'>C</text>
 
   <!-- Parallel line angles -->
-  <text x="110" y="95" fill='#e6edf3' font-size='12' font-weight='bold'>(= B)</text>
-  <text x="370" y="95" fill='#e6edf3' font-size='12' font-weight='bold'>(= C)</text>
+  <text x="110" y="95" fill='currentColor' font-size='12' font-weight='bold'>(= B)</text>
+  <text x="370" y="95" fill='currentColor' font-size='12' font-weight='bold'>(= C)</text>
 
   <text x="100" y="200" fill='#56d364' font-size='12' font-weight='bold'>A + B + C = angles on line = 180°</text>
 </svg>
@@ -109,33 +109,33 @@ SECTIONS = [
 <h4>Visual: Triangle Types</h4>
 <svg width="100%" height="240" viewBox="0 0 700 240" class="formula-box">
   <!-- Equilateral -->
-  <text x="30" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Equilateral</text>
+  <text x="30" y="25" fill='currentColor' font-size='14' font-weight='bold'>Equilateral</text>
   <polygon points="80,180 50,100 110,100" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
   <text x="70" y="125" fill='#79c0ff' font-size='12' font-weight='bold'>60°</text>
 
   <!-- Isosceles -->
-  <text x="160" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Isosceles</text>
+  <text x="160" y="25" fill='currentColor' font-size='14' font-weight='bold'>Isosceles</text>
   <polygon points="210,180 160,80 260,80" fill='none' stroke='#56d364' stroke-width="2.5"/>
   <text x="195" y="140" fill='#79c0ff' font-size='12' font-weight='bold'>70°</text>
   <text x="245" y="140" fill='#79c0ff' font-size='12' font-weight='bold'>70°</text>
 
   <!-- Scalene -->
-  <text x="310" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Scalene</text>
+  <text x="310" y="25" fill='currentColor' font-size='14' font-weight='bold'>Scalene</text>
   <polygon points="360,180 310,90 400,120" fill='none' stroke='#f85149' stroke-width="2.5"/>
   <text x="330" y="120" fill='#ff7b72' font-size='11' font-weight='bold'>40°</text>
   <text x="370" y="100" fill='#ff7b72' font-size='11' font-weight='bold'>75°</text>
 
   <!-- Right-angled -->
-  <text x="480" y="25" fill='#e6edf3' font-size='14' font-weight='bold'>Right-angled</text>
+  <text x="480" y="25" fill='currentColor' font-size='14' font-weight='bold'>Right-angled</text>
   <polygon points="530,180 480,100 530,100" fill='none' stroke='#a371f7' stroke-width="2.5"/>
   <rect x="530" y="100" width="12" height="12" fill='none' stroke='#a371f7' stroke-width="1.5"/>
   <text x="495" y="145" fill='#c8b6ff' font-size='11' font-weight='bold'>90°</text>
 
   <!-- Acute -->
-  <text x="30" y="230" fill='#e6edf3' font-size='12'>All angles < 90°</text>
+  <text x="30" y="230" fill='currentColor' font-size='12'>All angles < 90°</text>
 
   <!-- Obtuse -->
-  <text x="600" y="230" fill='#e6edf3' font-size='12'>One angle > 90°</text>
+  <text x="600" y="230" fill='currentColor' font-size='12'>One angle > 90°</text>
 </svg>
 """
     },
@@ -174,9 +174,9 @@ SECTIONS = [
   <path d="M 350 160 A 30 30 0 0 0 380 160" fill='none' stroke='#f8a5a5' stroke-width="2"/>
 
   <!-- Explanation -->
-  <text x="50" y="200" fill='#e6edf3' font-size='12' font-weight='bold'>Exterior angle = A + B</text>
-  <text x="50" y="220" fill='#e6edf3' font-size='11'>Also, Exterior angle + C = 180°</text>
-  <text x="50" y="235" fill='#e6edf3' font-size='11'>(because they form a straight line)</text>
+  <text x="50" y="200" fill='currentColor' font-size='12' font-weight='bold'>Exterior angle = A + B</text>
+  <text x="50" y="220" fill='currentColor' font-size='11'>Also, Exterior angle + C = 180°</text>
+  <text x="50" y="235" fill='currentColor' font-size='11'>(because they form a straight line)</text>
 </svg>
 
 <h4>Worked Example</h4>

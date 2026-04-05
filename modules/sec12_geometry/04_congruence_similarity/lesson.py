@@ -17,19 +17,19 @@ SECTIONS = [
 <h5>1. SSS (Side-Side-Side)</h5>
 <p>All three sides of one triangle equal all three sides of the other.</p>
 <svg width="100%" height="120" viewBox="0 0 400 120" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle 1:</text>
+  <text x="20" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle 1:</text>
   <polygon points="50,100 30,40 90,40" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
   <text x="40" y="75" fill='#79c0ff' font-size='11'>5cm</text>
   <text x="75" y="55" fill='#79c0ff' font-size='11'>4cm</text>
   <text x="60" y="110" fill='#79c0ff' font-size='11'>3cm</text>
 
-  <text x="200" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle 2:</text>
+  <text x="200" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle 2:</text>
   <polygon points="250,100 230,40 290,40" fill='none' stroke='#56d364' stroke-width="2.5"/>
   <text x="240" y="75" fill='#79c0ff' font-size='11'>5cm</text>
   <text x="275" y="55" fill='#79c0ff' font-size='11'>4cm</text>
   <text x="260" y="110" fill='#79c0ff' font-size='11'>3cm</text>
 
-  <text x="100" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>✓ SSS</text>
+  <text x="100" y="50" fill='currentColor' font-size='13' font-weight='bold'>✓ SSS</text>
 </svg>
 </div>
 
@@ -38,21 +38,21 @@ SECTIONS = [
 <p>Two sides and the included angle (the angle between them) are equal.</p>
 <p><strong>Important:</strong> The angle MUST be between the two sides!</p>
 <svg width="100%" height="120" viewBox="0 0 400 120" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle 1: 5cm, 60°, 4cm</text>
+  <text x="20" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle 1: 5cm, 60°, 4cm</text>
   <polygon points="50,100 30,40 90,40" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
   <text x="40" y="75" fill='#79c0ff' font-size='10'>4cm</text>
   <text x="75" y="55" fill='#79c0ff' font-size='10'>5cm</text>
   <circle cx="30" cy="40" r="12" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
   <text x="18" y="50" fill='#79c0ff' font-size='10'>60°</text>
 
-  <text x="200" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle 2: 5cm, 60°, 4cm</text>
+  <text x="200" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle 2: 5cm, 60°, 4cm</text>
   <polygon points="250,100 230,40 290,40" fill='none' stroke='#56d364' stroke-width="2.5"/>
   <text x="240" y="75" fill='#79c0ff' font-size='10'>4cm</text>
   <text x="275" y="55" fill='#79c0ff' font-size='10'>5cm</text>
   <circle cx="230" cy="40" r="12" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
   <text x="218" y="50" fill='#79c0ff' font-size='10'>60°</text>
 
-  <text x="100" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>✓ SAS</text>
+  <text x="100" y="50" fill='currentColor' font-size='13' font-weight='bold'>✓ SAS</text>
 </svg>
 </div>
 
@@ -67,19 +67,19 @@ SECTIONS = [
 <p>For right-angled triangles: the hypotenuse and one other side are equal.</p>
 <p><strong>Note:</strong> The right angle doesn't need to be stated (it's guaranteed), and only the hypotenuse and one side matter.</p>
 <svg width="100%" height="120" viewBox="0 0 400 120" class="formula-box">
-  <text x="20" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle 1: hyp=10, side=6</text>
+  <text x="20" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle 1: hyp=10, side=6</text>
   <polygon points="50,100 30,40 90,100" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
   <rect x="85" y="95" width="7" height="7" fill='none' stroke='#58a6ff' stroke-width="1.5"/>
   <text x="60" y="70" fill='#79c0ff' font-size='10'>10cm</text>
   <text x="75" y="110" fill='#79c0ff' font-size='10'>6cm</text>
 
-  <text x="200" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle 2: hyp=10, side=6</text>
+  <text x="200" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle 2: hyp=10, side=6</text>
   <polygon points="250,100 230,40 290,100" fill='none' stroke='#56d364' stroke-width="2.5"/>
   <rect x="285" y="95" width="7" height="7" fill='none' stroke='#56d364' stroke-width="1.5"/>
   <text x="260" y="70" fill='#79c0ff' font-size='10'>10cm</text>
   <text x="275" y="110" fill='#79c0ff' font-size='10'>6cm</text>
 
-  <text x="100" y="50" fill='#e6edf3' font-size='13' font-weight='bold'>✓ RHS</text>
+  <text x="100" y="50" fill='currentColor' font-size='13' font-weight='bold'>✓ RHS</text>
 </svg>
 </div>
 
@@ -108,13 +108,13 @@ SECTIONS = [
 <p><strong>They are similar (same angles, proportional sides).</strong></p>
 
 <svg width="100%" height="160" viewBox="0 0 500 160" class="formula-box">
-  <text x="40" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle A (3-4-5)</text>
+  <text x="40" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle A (3-4-5)</text>
   <polygon points="80,140 50,70 110,70" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
   <text x="60" y="105" fill='#79c0ff' font-size='10'>4cm</text>
   <text x="95" y="85" fill='#79c0ff' font-size='10'>3cm</text>
   <text x="80" y="155" fill='#79c0ff' font-size='10'>5cm</text>
 
-  <text x="260" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle B (6-8-10)</text>
+  <text x="260" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle B (6-8-10)</text>
   <polygon points="320,140 260,30 380,30" fill='none' stroke='#56d364' stroke-width="2.5"/>
   <text x="275" y="85" fill='#79c0ff' font-size='10'>8cm</text>
   <text x="325" y="55" fill='#79c0ff' font-size='10'>6cm</text>
@@ -177,12 +177,12 @@ SECTIONS = [
 
 <svg width="100%" height="180" viewBox="0 0 500 180" class="formula-box">
   <!-- Triangle A -->
-  <text x="40" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle A (scale × 1)</text>
+  <text x="40" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle A (scale × 1)</text>
   <polygon points="80,140 50,60 110,60" fill='#1f6feb' opacity='0.3' stroke='#58a6ff' stroke-width="2.5"/>
   <text x="70" y="100" fill='#79c0ff' font-size='11' font-weight='bold'>Area = 10 cm²</text>
 
   <!-- Triangle B -->
-  <text x="260" y="25" fill='#e6edf3' font-size='12' font-weight='bold'>Triangle B (scale × 3)</text>
+  <text x="260" y="25" fill='currentColor' font-size='12' font-weight='bold'>Triangle B (scale × 3)</text>
   <polygon points="360,150 260,10 460,10" fill='#1f6feb' opacity='0.3' stroke='#56d364' stroke-width="2.5"/>
   <text x="330" y="85" fill='#79c0ff' font-size='11' font-weight='bold'>Area = 90 cm²</text>
 

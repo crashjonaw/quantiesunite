@@ -47,11 +47,11 @@ SECTIONS = [
 
             <!-- Origin -->
             <circle cx="30" cy="200" r="5" fill='#4f8ef7'/>
-            <text x="15" y="220" fill='#e6edf3' font-size='12' font-weight='bold'>O</text>
+            <text x="15" y="220" fill='currentColor' font-size='12' font-weight='bold'>O</text>
 
             <!-- Point P(3, 2) -->
             <circle cx="270" cy="40" r="5" fill='#2da44e'/>
-            <text x="275" y="35" fill='#e6edf3' font-size='12'>P(3, 2)</text>
+            <text x="275" y="35" fill='currentColor' font-size='12'>P(3, 2)</text>
 
             <!-- Position vector OP -->
             <line x1="30" y1="200" x2="270" y2="40" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow4)"/>
@@ -62,12 +62,12 @@ SECTIONS = [
             <line x1="30" y1="200" x2="270" y2="200" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2" opacity='0.6'/>
 
             <!-- Component labels -->
-            <text x="150" y="210" fill='#8b949e' font-size='10' text-anchor='middle'>3</text>
-            <text x="280" y="120" fill='#8b949e' font-size='10'>2</text>
+            <text x="150" y="210" fill='currentColor' opacity='0.6' font-size='10' text-anchor='middle'>3</text>
+            <text x="280" y="120" fill='currentColor' opacity='0.6' font-size='10'>2</text>
 
             <!-- Axis labels -->
-            <text x="270" y="215" fill='#8b949e' font-size='11'>x</text>
-            <text x="15" y="25" fill='#8b949e' font-size='11'>y</text>
+            <text x="270" y="215" fill='currentColor' opacity='0.6' font-size='11'>x</text>
+            <text x="15" y="25" fill='currentColor' opacity='0.6' font-size='11'>y</text>
         </svg>
 
         <p style="text-align: center; margin-top: 15px">
@@ -122,11 +122,11 @@ SECTIONS = [
 
             <!-- Point A -->
             <circle cx="60" cy="140" r="5" fill='#4f8ef7'/>
-            <text x="45" y="135" fill='#e6edf3' font-size='12'>A(1,2)</text>
+            <text x="45" y="135" fill='currentColor' font-size='12'>A(1,2)</text>
 
             <!-- Point B -->
             <circle cx="180" cy="20" r="5" fill='#2da44e'/>
-            <text x="185" y="15" fill='#e6edf3' font-size='12'>B(5,6)</text>
+            <text x="185" y="15" fill='currentColor' font-size='12'>B(5,6)</text>
 
             <!-- Vector AB -->
             <line x1="60" y1="140" x2="180" y2="20" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow5)"/>
@@ -137,8 +137,8 @@ SECTIONS = [
             <line x1="180" y1="140" x2="180" y2="20" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2"/>
 
             <!-- Labels -->
-            <text x="120" y="155" fill='#8b949e' font-size='10'>4 units</text>
-            <text x="195" y="80" fill='#8b949e' font-size='10'>4 units</text>
+            <text x="120" y="155" fill='currentColor' opacity='0.6' font-size='10'>4 units</text>
+            <text x="195" y="80" fill='currentColor' opacity='0.6' font-size='10'>4 units</text>
         </svg>
         """
     },

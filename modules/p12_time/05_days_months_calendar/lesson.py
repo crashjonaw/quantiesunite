@@ -81,10 +81,10 @@ SECTIONS = [
 
   <!-- Month/year header -->
   <rect x="20" y="40" width="360" height="35" fill='#374151' stroke='none' rx="6"/>
-  <text x="200" y="65" text-anchor='middle' font-size='14' font-weight='bold' fill='#e6edf3'>March 2026</text>
+  <text x="200" y="65" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>March 2026</text>
 
   <!-- Day headers -->
-  <g fill='#8b949e' font-size='10' font-weight='bold'>
+  <g fill='currentColor' opacity='0.6' font-size='10' font-weight='bold'>
     <text x="35" y="90">Sun</text>
     <text x="75" y="90">Mon</text>
     <text x="115" y="90">Tue</text>
@@ -98,46 +98,46 @@ SECTIONS = [
 
   <!-- Dates grid -->
   <!-- Row 1: 1-7 -->
-  <text x="35" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>1</text>
-  <text x="75" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>2</text>
-  <text x="115" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>3</text>
-  <text x="160" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>4</text>
-  <text x="200" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>5</text>
-  <text x="245" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>6</text>
-  <text x="285" y="125" text-anchor='middle' fill='#e6edf3' font-size='13'>7</text>
+  <text x="35" y="125" text-anchor='middle' fill='currentColor' font-size='13'>1</text>
+  <text x="75" y="125" text-anchor='middle' fill='currentColor' font-size='13'>2</text>
+  <text x="115" y="125" text-anchor='middle' fill='currentColor' font-size='13'>3</text>
+  <text x="160" y="125" text-anchor='middle' fill='currentColor' font-size='13'>4</text>
+  <text x="200" y="125" text-anchor='middle' fill='currentColor' font-size='13'>5</text>
+  <text x="245" y="125" text-anchor='middle' fill='currentColor' font-size='13'>6</text>
+  <text x="285" y="125" text-anchor='middle' fill='currentColor' font-size='13'>7</text>
 
   <!-- Row 2: 8-14 -->
-  <text x="35" y="165" text-anchor='middle' fill='#e6edf3' font-size='13'>8</text>
-  <text x="75" y="165" text-anchor='middle' fill='#e6edf3' font-size='13'>9</text>
-  <text x="115" y="165" text-anchor='middle' fill='#e6edf3' font-size='13'>10</text>
-  <text x="160" y="165" text-anchor='middle' fill='#e6edf3' font-size='13'>11</text>
-  <text x="200" y="165" text-anchor='middle' fill='#e6edf3' font-size='13'>12</text>
+  <text x="35" y="165" text-anchor='middle' fill='currentColor' font-size='13'>8</text>
+  <text x="75" y="165" text-anchor='middle' fill='currentColor' font-size='13'>9</text>
+  <text x="115" y="165" text-anchor='middle' fill='currentColor' font-size='13'>10</text>
+  <text x="160" y="165" text-anchor='middle' fill='currentColor' font-size='13'>11</text>
+  <text x="200" y="165" text-anchor='middle' fill='currentColor' font-size='13'>12</text>
   <rect x="225" y="152" width="40" height="25" fill='#4f8ef7' rx="2"/>
   <text x="245" y="165" text-anchor='middle' fill='white' font-size='13' font-weight='bold'>13</text>
-  <text x="285" y="165" text-anchor='middle' fill='#e6edf3' font-size='13'>14</text>
+  <text x="285" y="165" text-anchor='middle' fill='currentColor' font-size='13'>14</text>
 
   <!-- Row 3: 15-21 -->
-  <text x="35" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>15</text>
-  <text x="75" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>16</text>
-  <text x="115" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>17</text>
-  <text x="160" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>18</text>
-  <text x="200" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>19</text>
-  <text x="245" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>20</text>
-  <text x="285" y="205" text-anchor='middle' fill='#e6edf3' font-size='13'>21</text>
+  <text x="35" y="205" text-anchor='middle' fill='currentColor' font-size='13'>15</text>
+  <text x="75" y="205" text-anchor='middle' fill='currentColor' font-size='13'>16</text>
+  <text x="115" y="205" text-anchor='middle' fill='currentColor' font-size='13'>17</text>
+  <text x="160" y="205" text-anchor='middle' fill='currentColor' font-size='13'>18</text>
+  <text x="200" y="205" text-anchor='middle' fill='currentColor' font-size='13'>19</text>
+  <text x="245" y="205" text-anchor='middle' fill='currentColor' font-size='13'>20</text>
+  <text x="285" y="205" text-anchor='middle' fill='currentColor' font-size='13'>21</text>
 
   <!-- Row 4: 22-28 -->
-  <text x="35" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>22</text>
-  <text x="75" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>23</text>
-  <text x="115" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>24</text>
-  <text x="160" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>25</text>
-  <text x="200" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>26</text>
-  <text x="245" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>27</text>
-  <text x="285" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>28</text>
+  <text x="35" y="245" text-anchor='middle' fill='currentColor' font-size='13'>22</text>
+  <text x="75" y="245" text-anchor='middle' fill='currentColor' font-size='13'>23</text>
+  <text x="115" y="245" text-anchor='middle' fill='currentColor' font-size='13'>24</text>
+  <text x="160" y="245" text-anchor='middle' fill='currentColor' font-size='13'>25</text>
+  <text x="200" y="245" text-anchor='middle' fill='currentColor' font-size='13'>26</text>
+  <text x="245" y="245" text-anchor='middle' fill='currentColor' font-size='13'>27</text>
+  <text x="285" y="245" text-anchor='middle' fill='currentColor' font-size='13'>28</text>
 
   <!-- Row 5: 29-31 -->
-  <text x="35" y="285" text-anchor='middle' fill='#e6edf3' font-size='13'>29</text>
-  <text x="75" y="285" text-anchor='middle' fill='#e6edf3' font-size='13'>30</text>
-  <text x="115" y="285" text-anchor='middle' fill='#e6edf3' font-size='13'>31</text>
+  <text x="35" y="285" text-anchor='middle' fill='currentColor' font-size='13'>29</text>
+  <text x="75" y="285" text-anchor='middle' fill='currentColor' font-size='13'>30</text>
+  <text x="115" y="285" text-anchor='middle' fill='currentColor' font-size='13'>31</text>
 </svg>
 <div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px">
 <p style="margin: 0; font-weight: bold;">How to use a calendar:</p>

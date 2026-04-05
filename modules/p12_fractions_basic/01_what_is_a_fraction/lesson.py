@@ -31,18 +31,18 @@ SECTIONS = [
   <line x1="50" y1="50" x2="120" y2="100" stroke='#e74c3c' stroke-width="2" stroke-dasharray="5,5"/>
   <text x="80" y="130" font-size='24' font-weight='bold' fill='#e74c3c'>1</text>
   <text x="20" y="130" font-size='48' fill='#161b22' font-weight='bold'>—</text>
-  <text x="80" y="155" font-size='14' fill='#8b949e'>How many parts we have</text>
+  <text x="80" y="155" font-size='14' fill='currentColor' opacity='0.6'>How many parts we have</text>
 
   <text x="250" y="40" font-size='18' font-weight='bold' fill='#161b22'>Denominator (bottom number)</text>
   <line x1="230" y1="50" x2="170" y2="100" stroke='#27ae60' stroke-width="2" stroke-dasharray="5,5"/>
   <text x="150" y="130" font-size='24' font-weight='bold' fill='#27ae60'>2</text>
-  <text x="180" y="155" font-size='14' fill='#8b949e'>How many equal parts the whole is cut into</text>
+  <text x="180" y="155" font-size='14' fill='currentColor' opacity='0.6'>How many equal parts the whole is cut into</text>
 
   <!-- Visual example -->
   <text x="50" y="220" font-size='16' font-weight='bold' fill='#161b22'>Example: ½ (one half)</text>
   <rect x="50" y="240" width="40" height="20" fill='#ffc96d' stroke='#d4a574' stroke-width="1"/>
   <rect x="95" y="240" width="40" height="20" fill='#f5f5f5' stroke='#d4a574' stroke-width="1"/>
-  <text x="140" y="255" font-size='13' fill='#8b949e'>1 shaded part out of 2 equal parts</text>
+  <text x="140" y="255" font-size='13' fill='currentColor' opacity='0.6'>1 shaded part out of 2 equal parts</text>
 </svg>
 <div class="worked-example formula-box">
   <strong>Example:</strong> If you cut a chocolate bar into 4 equal pieces and eat 1 piece, you ate <strong>¼ (one quarter)</strong>.
@@ -118,8 +118,8 @@ SECTIONS = [
   <line x1="110" y1="55" x2="110" y2="125" stroke='#d4a574' stroke-width="2"/>
   <text x="95" y="95" font-size='16' fill='#8b6914' font-weight='bold'>½</text>
   <text x="125" y="95" font-size='16' fill='#8b6914' font-weight='bold'>½</text>
-  <text x="50" y="150" font-size='14' fill='#8b949e'>Cut into 2 equal parts</text>
-  <text x="50" y="170" font-size='14' fill='#8b949e'>Each part = ½</text>
+  <text x="50" y="150" font-size='14' fill='currentColor' opacity='0.6'>Cut into 2 equal parts</text>
+  <text x="50" y="170" font-size='14' fill='currentColor' opacity='0.6'>Each part = ½</text>
 
   <!-- Quarters -->
   <text x="300" y="40" font-size='18' font-weight='bold' fill='#161b22'>Quarters: ¼</text>
@@ -130,8 +130,8 @@ SECTIONS = [
   <text x="315" y="77" font-size='12' fill='#4f8ef7' font-weight='bold'>¼</text>
   <text x="287" y="103" font-size='12' fill='#4f8ef7' font-weight='bold'>¼</text>
   <text x="315" y="103" font-size='12' fill='#4f8ef7' font-weight='bold'>¼</text>
-  <text x="280" y="150" font-size='14' fill='#8b949e'>Cut into 4 equal parts</text>
-  <text x="280" y="170" font-size='14' fill='#8b949e'>Each part = ¼</text>
+  <text x="280" y="150" font-size='14' fill='currentColor' opacity='0.6'>Cut into 4 equal parts</text>
+  <text x="280" y="170" font-size='14' fill='currentColor' opacity='0.6'>Each part = ¼</text>
 </svg>
 <div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px">
   <strong>Ready to learn?</strong> Next, we'll explore halves in detail, then quarters, and finally how to compare them!

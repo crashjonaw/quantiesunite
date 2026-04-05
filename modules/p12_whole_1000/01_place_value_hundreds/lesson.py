@@ -11,24 +11,24 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 200" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>Digit Position Changes Value</text>
+  <text x="300" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>Digit Position Changes Value</text>
 
   <!-- First row: 7 in ones place -->
   <circle cx="80" cy="80" r="35" fill='#f59e0b30' stroke='#f59e0b' stroke-width="2"/>
   <text x="80" y="85" text-anchor='middle' fill='#f59e0b' font-size='28' font-weight='bold'>7</text>
-  <text x="80" y="140" text-anchor='middle' fill='#e6edf3' font-size='12'>7 ones = 7</text>
+  <text x="80" y="140" text-anchor='middle' fill='currentColor' font-size='12'>7 ones = 7</text>
 
   <!-- Second row: 7 in tens place -->
   <circle cx="240" cy="80" r="35" fill='#22c55e30' stroke='#22c55e' stroke-width="2"/>
   <text x="240" y="85" text-anchor='middle' fill='#22c55e' font-size='28' font-weight='bold'>7</text>
-  <text x="240" y="140" text-anchor='middle' fill='#e6edf3' font-size='12'>7 tens = 70</text>
+  <text x="240" y="140" text-anchor='middle' fill='currentColor' font-size='12'>7 tens = 70</text>
 
   <!-- Third row: 7 in hundreds place -->
   <circle cx="400" cy="80" r="35" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="2"/>
   <text x="400" y="85" text-anchor='middle' fill='#4f8ef7' font-size='28' font-weight='bold'>7</text>
-  <text x="400" y="140" text-anchor='middle' fill='#e6edf3' font-size='12'>7 hundreds = 700</text>
+  <text x="400" y="140" text-anchor='middle' fill='currentColor' font-size='12'>7 hundreds = 700</text>
 
-  <text x="300" y="180" text-anchor='middle' fill='#e6edf3' font-size='14'>Same digit, different positions = different values!</text>
+  <text x="300" y="180" text-anchor='middle' fill='currentColor' font-size='14'>Same digit, different positions = different values!</text>
 </svg>"""
     },
     {
@@ -39,7 +39,7 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 520 220" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="260" y="22" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Building 100: 10 tens = 1 hundred</text>
+  <text x="260" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Building 100: 10 tens = 1 hundred</text>
 
   <!-- 10 ten-rods arranged in two rows of 5 -->
   <!-- Row 1: rods 1-5 -->
@@ -74,7 +74,7 @@ SECTIONS = [
   <rect x="116" y="110" width="18" height="60" fill='#22c55e40' stroke='#22c55e' stroke-width="1.5" rx="2"/>
   <text x="125" y="144" text-anchor='middle' fill='#22c55e' font-size='9' font-weight='bold'>10</text>
 
-  <text x="77" y="192" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>10 tens</text>
+  <text x="77" y="192" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>10 tens</text>
 
   <!-- Arrow -->
   <line x1="170" y1="106" x2="250" y2="106" stroke='#ec4899' stroke-width="2.5"/>
@@ -103,10 +103,10 @@ SECTIONS = [
   <line x1="290" y1="144" x2="420" y2="144" stroke='#4f8ef730' stroke-width="0.5"/>
   <line x1="290" y1="157" x2="420" y2="157" stroke='#4f8ef730' stroke-width="0.5"/>
   <text x="355" y="112" text-anchor='middle' fill='#4f8ef7' font-size='22' font-weight='bold'>100</text>
-  <text x="355" y="192" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>1 hundred block</text>
+  <text x="355" y="192" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>1 hundred block</text>
 
   <!-- Equals sign at bottom -->
-  <text x="260" y="210" text-anchor='middle' fill='#e6edf3' font-size='13'>10 × 10 = <tspan font-weight='bold' fill='#4f8ef7'>100</tspan></text>
+  <text x="260" y="210" text-anchor='middle' fill='currentColor' font-size='13'>10 × 10 = <tspan font-weight='bold' fill='#4f8ef7'>100</tspan></text>
 </svg>"""
     },
     {
@@ -121,17 +121,17 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 550 250" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="275" y="20" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>347 in Base-10 Blocks</text>
+  <text x="275" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>347 in Base-10 Blocks</text>
 
   <!-- Hundreds (3 large squares) -->
   <rect x="15" y="45" width="60" height="60" fill='#4f8ef740' stroke='#4f8ef7' stroke-width="2" rx="3"/>
-  <text x="45" y="78" text-anchor='middle' fill='#e6edf3' font-size='11'>100</text>
+  <text x="45" y="78" text-anchor='middle' fill='currentColor' font-size='11'>100</text>
 
   <rect x="85" y="45" width="60" height="60" fill='#4f8ef740' stroke='#4f8ef7' stroke-width="2" rx="3"/>
-  <text x="115" y="78" text-anchor='middle' fill='#e6edf3' font-size='11'>100</text>
+  <text x="115" y="78" text-anchor='middle' fill='currentColor' font-size='11'>100</text>
 
   <rect x="155" y="45" width="60" height="60" fill='#4f8ef740' stroke='#4f8ef7' stroke-width="2" rx="3"/>
-  <text x="185" y="78" text-anchor='middle' fill='#e6edf3' font-size='11'>100</text>
+  <text x="185" y="78" text-anchor='middle' fill='currentColor' font-size='11'>100</text>
 
   <!-- Tens (4 rods) -->
   <rect x="250" y="45" width="12" height="60" fill='#22c55e60' stroke='#22c55e' stroke-width="1.5" rx="2"/>
@@ -160,7 +160,7 @@ SECTIONS = [
 
   <!-- Final answer box -->
   <rect x="100" y="180" width="350" height="50" fill='none' stroke='#ec4899' stroke-width="2" stroke-dasharray="5,5" rx="4"/>
-  <text x="275" y="205" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>300 + 40 + 7 = 347</text>
+  <text x="275" y="205" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>300 + 40 + 7 = 347</text>
 </svg>"""
     },
     {
@@ -170,7 +170,7 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 500 180" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="20" text-anchor='middle' fill='#e6edf3' font-size='14' font-weight='bold'>Number 582 in Place Value Chart</text>
+  <text x="250" y="20" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Number 582 in Place Value Chart</text>
 
   <!-- Table grid -->
   <rect x="30" y="40" width="140" height="50" fill='none' stroke='#4f8ef7' stroke-width="2"/>
@@ -191,8 +191,8 @@ SECTIONS = [
   <text x="380" y="88" text-anchor='middle' fill='#f59e0b' font-size='24' font-weight='bold'>2</text>
 
   <!-- Expanded form below -->
-  <text x="30" y="135" text-anchor='start' fill='#e6edf3' font-size='12'>Expanded form:</text>
-  <text x="30" y="160" text-anchor='start' fill='#e6edf3' font-size='12' font-family='monospace'>582 = (5 × 100) + (8 × 10) + (2 × 1)</text>
+  <text x="30" y="135" text-anchor='start' fill='currentColor' font-size='12'>Expanded form:</text>
+  <text x="30" y="160" text-anchor='start' fill='currentColor' font-size='12' font-family='monospace'>582 = (5 × 100) + (8 × 10) + (2 × 1)</text>
 </svg>"""
     },
     {

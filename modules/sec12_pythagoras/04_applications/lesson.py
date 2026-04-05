@@ -13,13 +13,13 @@ SECTIONS = [
 
 <svg width="500" height="350" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Rectangle: 8m x 6m, drawn as 320 x 240 pixels (40px per unit) -->
-  <rect x="80" y="80" width="320" height="240" fill='rgba(88, 166, 255, 0.1)' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="80" y="80" width="320" height="240" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="2"/>
 
   <!-- Diagonal -->
   <line x1="80" y1="80" x2="400" y2="320" stroke='#58a6ff' stroke-width="3"/>
 
   <!-- Right angle marker -->
-  <rect x="80" y="280" width="40" height="40" fill='none' stroke='#e6edf3' stroke-width="1"/>
+  <rect x="80" y="280" width="40" height="40" fill='none' stroke='currentColor' stroke-width="1"/>
 
   <!-- Labels -->
   <text x="220" y="70" font-size='18' font-weight='bold' fill='#79c0ff'>8 m</text>
@@ -64,16 +64,16 @@ SECTIONS = [
 
 <svg width="450" height="400" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Ground -->
-  <line x1="50" y1="300" x2="200" y2="300" stroke='#e6edf3' stroke-width="3"/>
+  <line x1="50" y1="300" x2="200" y2="300" stroke='currentColor' stroke-width="3"/>
 
   <!-- Wall -->
-  <line x1="100" y1="300" x2="100" y2="100" stroke='#e6edf3' stroke-width="3"/>
+  <line x1="100" y1="300" x2="100" y2="100" stroke='currentColor' stroke-width="3"/>
 
   <!-- Ladder: 3-4-5 triangle, 3m horizontal=150px, 4m vertical=200px, 5m hypotenuse=250px -->
   <line x1="100" y1="100" x2="250" y2="300" stroke='#79c0ff' stroke-width="4"/>
 
   <!-- Right angle -->
-  <rect x="100" y="260" width="40" height="40" fill='none' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="100" y="260" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
 
   <!-- Distance labels -->
   <text x="150" y="350" font-size='18' font-weight='bold' fill='#79c0ff'>3 m</text>
@@ -81,8 +81,8 @@ SECTIONS = [
   <text x="145" y="200" font-size='18' font-weight='bold' fill='#58a6ff'>5 m</text>
 
   <!-- Ground and wall labels -->
-  <text x="105" y="80" font-size='14' fill='#e6edf3'>Wall</text>
-  <text x="350" y="320" font-size='14' fill='#e6edf3'>Ground</text>
+  <text x="105" y="80" font-size='14' fill='currentColor'>Wall</text>
+  <text x="350" y="320" font-size='14' fill='currentColor'>Ground</text>
 </svg>
 
 <div class='example-box'>
@@ -143,27 +143,27 @@ SECTIONS = [
 
 <svg width="500" height="400" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- Grid -->
-  <line x1="100" y1="100" x2="400" y2="100" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="150" x2="400" y2="150" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="200" x2="400" y2="200" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="250" x2="400" y2="250" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="300" x2="400" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
+  <line x1="100" y1="100" x2="400" y2="100" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="100" y1="150" x2="400" y2="150" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="100" y1="200" x2="400" y2="200" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="100" y1="250" x2="400" y2="250" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="100" y1="300" x2="400" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
 
-  <line x1="100" y1="100" x2="100" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="150" y1="100" x2="150" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="200" y1="100" x2="200" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="250" y1="100" x2="250" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="300" y1="100" x2="300" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="350" y1="100" x2="350" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
-  <line x1="400" y1="100" x2="400" y2="300" stroke='#e6edf3' stroke-width="1" opacity='0.3'/>
+  <line x1="100" y1="100" x2="100" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="150" y1="100" x2="150" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="200" y1="100" x2="200" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="250" y1="100" x2="250" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="300" y1="100" x2="300" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="350" y1="100" x2="350" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <line x1="400" y1="100" x2="400" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
 
   <!-- Town A -->
   <circle cx="100" cy="100" r="8" fill='#79c0ff'/>
-  <text x="105" y="95" font-size='14' fill='#e6edf3'>Town A</text>
+  <text x="105" y="95" font-size='14' fill='currentColor'>Town A</text>
 
   <!-- Town B: 7 km north-south (70 px), 24 km east-west (240 px) -->
   <circle cx="340" cy="170" r="8" fill='#79c0ff'/>
-  <text x="270" y="190" font-size='14' fill='#e6edf3'>Town B</text>
+  <text x="270" y="190" font-size='14' fill='currentColor'>Town B</text>
 
   <!-- North-South distance -->
   <line x1="80" y1="100" x2="80" y2="170" stroke='#79c0ff' stroke-width="2"/>
@@ -212,13 +212,13 @@ SECTIONS = [
 <svg width="500" height="380" class="formula-box" style="display: block; margin: 20px auto;">
   <!-- 3D box representation -->
   <!-- Front face -->
-  <rect x="100" y="150" width="200" height="150" fill='none' stroke='#e6edf3' stroke-width="2"/>
+  <rect x="100" y="150" width="200" height="150" fill='none' stroke='currentColor' stroke-width="2"/>
 
   <!-- Top face (perspective) -->
-  <polygon points="100,150 140,110 340,110 300,150" fill='rgba(88, 166, 255, 0.1)' stroke='#e6edf3' stroke-width="2"/>
+  <polygon points="100,150 140,110 340,110 300,150" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="2"/>
 
   <!-- Right face (perspective) -->
-  <polygon points="300,150 340,110 340,260 300,300" fill='rgba(88, 166, 255, 0.05)' stroke='#e6edf3' stroke-width="2"/>
+  <polygon points="300,150 340,110 340,260 300,300" fill='rgba(88, 166, 255, 0.05)' stroke='currentColor' stroke-width="2"/>
 
   <!-- Base diagonal -->
   <line x1="100" y1="300" x2="300" y2="150" stroke='#79c0ff' stroke-width="2" stroke-dasharray="5,5"/>

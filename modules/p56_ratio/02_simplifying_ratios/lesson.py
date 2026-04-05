@@ -23,27 +23,27 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="250" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='#e6edf3'>These ratios are equivalent but only 3:2 is simplified</text>
+      <text x="250" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='currentColor'>These ratios are equivalent but only 3:2 is simplified</text>
 
-      <text x="50" y="70" font-size='12' fill='#e6edf3'>12:8</text>
+      <text x="50" y="70" font-size='12' fill='currentColor'>12:8</text>
       <rect x="50" y="80" width="80" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
       <rect x="140" y="80" width="60" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
 
-      <path d="M 220 100 L 260 100" stroke='#e6edf3' stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="240" y="90" font-size='11' fill='#e6edf3' text-anchor='middle'>÷4</text>
+      <path d="M 220 100 L 260 100" stroke='currentColor' stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="240" y="90" font-size='11' fill='currentColor' text-anchor='middle'>÷4</text>
 
-      <text x="280" y="70" font-size='12' fill='#e6edf3'>3:2 (simplified)</text>
+      <text x="280" y="70" font-size='12' fill='currentColor'>3:2 (simplified)</text>
       <rect x="280" y="80" width="30" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
       <rect x="320" y="80" width="20" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
 
       <defs>
         <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-          <polygon points="0 0, 10 3, 0 6" fill='#e6edf3'/>
+          <polygon points="0 0, 10 3, 0 6" fill='currentColor'/>
         </marker>
       </defs>
 
-      <text x="50" y="160" font-size='11' fill='#e6edf3'>12:8 has a GCF of 4</text>
-      <text x="50" y="180" font-size='11' fill='#e6edf3'>12÷4 = 3, and 8÷4 = 2, so 12:8 = 3:2</text>
+      <text x="50" y="160" font-size='11' fill='currentColor'>12:8 has a GCF of 4</text>
+      <text x="50" y="180" font-size='11' fill='currentColor'>12÷4 = 3, and 8÷4 = 2, so 12:8 = 3:2</text>
     </svg>
   </div>
 </div>"""
@@ -129,22 +129,22 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 550 350" xmlns="http://www.w3.org/2000/svg">
-      <text x="275" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='#e6edf3'>Simplifying 20:30</text>
+      <text x="275" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='currentColor'>Simplifying 20:30</text>
 
-      <text x="50" y="70" font-size='12' fill='#e6edf3'>Start: 20:30</text>
+      <text x="50" y="70" font-size='12' fill='currentColor'>Start: 20:30</text>
 
-      <text x="50" y="100" font-size='11' fill='#e6edf3'>Find GCF</text>
-      <text x="50" y="120" font-size='11' fill='#e6edf3'>20 = 2 × 10 = 2 × 2 × 5</text>
-      <text x="50" y="140" font-size='11' fill='#e6edf3'>30 = 2 × 15 = 2 × 3 × 5</text>
-      <text x="50" y="160" font-size='11' fill='#e6edf3'>Common: 2 × 5 = 10, so GCF = 10</text>
+      <text x="50" y="100" font-size='11' fill='currentColor'>Find GCF</text>
+      <text x="50" y="120" font-size='11' fill='currentColor'>20 = 2 × 10 = 2 × 2 × 5</text>
+      <text x="50" y="140" font-size='11' fill='currentColor'>30 = 2 × 15 = 2 × 3 × 5</text>
+      <text x="50" y="160" font-size='11' fill='currentColor'>Common: 2 × 5 = 10, so GCF = 10</text>
 
-      <text x="50" y="190" font-size='11' fill='#e6edf3'>Divide both by 10</text>
-      <text x="50" y="210" font-size='11' fill='#e6edf3'>20 ÷ 10 = 2</text>
-      <text x="50" y="230" font-size='11' fill='#e6edf3'>30 ÷ 10 = 3</text>
+      <text x="50" y="190" font-size='11' fill='currentColor'>Divide both by 10</text>
+      <text x="50" y="210" font-size='11' fill='currentColor'>20 ÷ 10 = 2</text>
+      <text x="50" y="230" font-size='11' fill='currentColor'>30 ÷ 10 = 3</text>
 
       <text x="50" y="270" font-size='12' font-weight='bold' fill='#22c55e'>Result: 2:3 (simplified)</text>
 
-      <text x="50" y="310" font-size='11' fill='#e6edf3'>Check: 2 and 3 share no common factors → simplified ✓</text>
+      <text x="50" y="310" font-size='11' fill='currentColor'>Check: 2 and 3 share no common factors → simplified ✓</text>
     </svg>
   </div>
 

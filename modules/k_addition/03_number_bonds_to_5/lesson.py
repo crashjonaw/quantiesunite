@@ -36,7 +36,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
 
 <svg viewBox="0 0 600 500" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 20px auto;">
   <!-- Header -->
-  <text x="300" y="25" text-anchor='middle' font-size='18' font-weight='bold' fill='#e6edf3'>
+  <text x="300" y="25" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>
     All Number Bonds for 5
   </text>
 

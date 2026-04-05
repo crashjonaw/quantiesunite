@@ -14,7 +14,7 @@ SECTIONS = [
 </div>
 <p><strong>Key difference from sharing:</strong> In grouping, we know the group SIZE and count how many groups fit into the total!</p>
 <svg viewBox="0 0 520 250" style="width:100%;max-width:520px;height:auto;display:block;margin:16px auto;">
-  <text x="260" y="25" text-anchor='middle' fill='#e6edf3' font-size='16' font-weight='bold'>12 Cookies in Groups of 3</text>
+  <text x="260" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>12 Cookies in Groups of 3</text>
 
   <!-- Group 1 -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
@@ -23,7 +23,7 @@ SECTIONS = [
   <circle cx="40" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="65" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="90" cy="90" r="8" fill='#f59e0b'/>
-  <text x="70" y="190" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 1</text>
+  <text x="70" y="190" text-anchor='middle' fill='currentColor' font-size='12'>Group 1</text>
   <text x="70" y="210" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>3 cookies</text>
 
   <!-- Group 2 -->
@@ -33,7 +33,7 @@ SECTIONS = [
   <circle cx="170" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="195" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="220" cy="90" r="8" fill='#f59e0b'/>
-  <text x="200" y="190" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 2</text>
+  <text x="200" y="190" text-anchor='middle' fill='currentColor' font-size='12'>Group 2</text>
   <text x="200" y="210" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>3 cookies</text>
 
   <!-- Group 3 -->
@@ -43,7 +43,7 @@ SECTIONS = [
   <circle cx="300" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="325" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="350" cy="90" r="8" fill='#f59e0b'/>
-  <text x="330" y="190" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 3</text>
+  <text x="330" y="190" text-anchor='middle' fill='currentColor' font-size='12'>Group 3</text>
   <text x="330" y="210" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>3 cookies</text>
 
   <!-- Group 4 -->
@@ -53,10 +53,10 @@ SECTIONS = [
   <circle cx="430" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="455" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="480" cy="90" r="8" fill='#f59e0b'/>
-  <text x="460" y="190" text-anchor='middle' fill='#e6edf3' font-size='12'>Group 4</text>
+  <text x="460" y="190" text-anchor='middle' fill='currentColor' font-size='12'>Group 4</text>
   <text x="460" y="210" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>3 cookies</text>
 
-  <text x="250" y="245" text-anchor='middle' fill='#e6edf3' font-size='13'>12 ÷ 3 = 4 groups</text>
+  <text x="250" y="245" text-anchor='middle' fill='currentColor' font-size='13'>12 ÷ 3 = 4 groups</text>
 </svg>"""
     },
     {
@@ -73,34 +73,34 @@ SECTIONS = [
   <strong>Same division, same answer, different story!</strong>
 </div>
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Two Ways to Think About 12 ÷ 3</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Two Ways to Think About 12 ÷ 3</text>
 
   <!-- Left side: Sharing -->
-  <text x="120" y="60" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>Sharing</text>
-  <text x="120" y="85" text-anchor='middle' fill='#e6edf3' font-size='12'>"12 shared among</text>
-  <text x="120" y="100" text-anchor='middle' fill='#e6edf3' font-size='12'>3 people"</text>
+  <text x="120" y="60" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Sharing</text>
+  <text x="120" y="85" text-anchor='middle' fill='currentColor' font-size='12'>"12 shared among</text>
+  <text x="120" y="100" text-anchor='middle' fill='currentColor' font-size='12'>3 people"</text>
   <circle cx="80" cy="140" r="20" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="80" y="145" text-anchor='middle' fill='#e6edf3' font-size='11'>4 each</text>
+  <text x="80" y="145" text-anchor='middle' fill='currentColor' font-size='11'>4 each</text>
   <circle cx="120" cy="140" r="20" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="120" y="145" text-anchor='middle' fill='#e6edf3' font-size='11'>4 each</text>
+  <text x="120" y="145" text-anchor='middle' fill='currentColor' font-size='11'>4 each</text>
   <circle cx="160" cy="140" r="20" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="160" y="145" text-anchor='middle' fill='#e6edf3' font-size='11'>4 each</text>
+  <text x="160" y="145" text-anchor='middle' fill='currentColor' font-size='11'>4 each</text>
 
   <!-- Center: Both equal -->
   <text x="250" y="100" text-anchor='middle' fill='#22c55e' font-size='16' font-weight='bold'>=</text>
-  <text x="250" y="125" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>12 ÷ 3 = 4</text>
+  <text x="250" y="125" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>12 ÷ 3 = 4</text>
 
   <!-- Right side: Grouping -->
-  <text x="380" y="60" text-anchor='middle' fill='#e6edf3' font-size='13' font-weight='bold'>Grouping</text>
-  <text x="380" y="85" text-anchor='middle' fill='#e6edf3' font-size='12'>"12 in groups</text>
-  <text x="380" y="100" text-anchor='middle' fill='#e6edf3' font-size='12'>of 3"</text>
+  <text x="380" y="60" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Grouping</text>
+  <text x="380" y="85" text-anchor='middle' fill='currentColor' font-size='12'>"12 in groups</text>
+  <text x="380" y="100" text-anchor='middle' fill='currentColor' font-size='12'>of 3"</text>
   <g fill='none' stroke='#22c55e' stroke-width="2">
     <rect x="340" y="125" width="35" height="35" rx="2"/>
     <rect x="380" y="125" width="35" height="35" rx="2"/>
     <rect x="420" y="125" width="35" height="35" rx="2"/>
     <rect x="340" y="165" width="35" height="35" rx="2"/>
   </g>
-  <text x="380" y="190" text-anchor='middle' fill='#e6edf3' font-size='11'>4 groups</text>
+  <text x="380" y="190" text-anchor='middle' fill='currentColor' font-size='11'>4 groups</text>
 </svg>"""
     },
     {
@@ -117,7 +117,7 @@ SECTIONS = [
   <strong>Remember:</strong> In grouping, the group SIZE is given. We count how many groups fit.
 </div>
 <svg viewBox="0 0 450 180" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
-  <text x="225" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Packing Example: 12 Books into Boxes of 2</text>
+  <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Packing Example: 12 Books into Boxes of 2</text>
 
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
     <rect x="20" y="60" width="50" height="60" rx="3"/>
@@ -145,7 +145,7 @@ SECTIONS = [
   <circle cx="360" cy="85" r="6" fill='#ef4444'/>
   <circle cx="375" cy="85" r="6" fill='#ef4444'/>
 
-  <text x="225" y="155" text-anchor='middle' fill='#e6edf3' font-size='12'>12 ÷ 2 = 6 boxes</text>
+  <text x="225" y="155" text-anchor='middle' fill='currentColor' font-size='12'>12 ÷ 2 = 6 boxes</text>
 </svg>"""
     },
     {
@@ -158,14 +158,14 @@ SECTIONS = [
 </div>
 <p>This is like saying: "How many 3s are in 12?" The answer is 4.</p>
 <svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="25" text-anchor='middle' fill='#e6edf3' font-size='15' font-weight='bold'>Count by 3s to Find 12 ÷ 3</text>
+  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Count by 3s to Find 12 ÷ 3</text>
 
   <!-- Number line -->
   <line x1="20" y1="100" x2="480" y2="100" stroke='#4f8ef7' stroke-width="2"/>
 
   <!-- Marks and labels -->
   <circle cx="20" cy="100" r="4" fill='#4f8ef7'/>
-  <text x="20" y="135" text-anchor='middle' fill='#e6edf3' font-size='12'>0</text>
+  <text x="20" y="135" text-anchor='middle' fill='currentColor' font-size='12'>0</text>
 
   <circle cx="95" cy="100" r="5" fill='#22c55e'/>
   <text x="95" y="135" text-anchor='middle' fill='#22c55e' font-size='13' font-weight='bold'>3</text>
@@ -184,9 +184,9 @@ SECTIONS = [
   <text x="320" y="70" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>Group 4</text>
 
   <circle cx="480" cy="100" r="4" fill='#4f8ef7'/>
-  <text x="480" y="135" text-anchor='middle' fill='#e6edf3' font-size='12'>...</text>
+  <text x="480" y="135" text-anchor='middle' fill='currentColor' font-size='12'>...</text>
 
-  <text x="250" y="170" text-anchor='middle' fill='#e6edf3' font-size='13'>We counted 4 groups, so 12 ÷ 3 = 4</text>
+  <text x="250" y="170" text-anchor='middle' fill='currentColor' font-size='13'>We counted 4 groups, so 12 ÷ 3 = 4</text>
 </svg>"""
     }
 ]

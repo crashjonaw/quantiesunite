@@ -49,12 +49,12 @@ SECTIONS = [
   <rect x="120" y="30" width="100" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
   <rect x="40" y="90" width="80" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
   <rect x="120" y="90" width="100" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
-  <text x="80" y="65" text-anchor='middle' fill='#e6edf3' font-size='14'>ax</text>
-  <text x="170" y="65" text-anchor='middle' fill='#e6edf3' font-size='14'>bx</text>
-  <text x="80" y="125" text-anchor='middle' fill='#e6edf3' font-size='14'>a</text>
-  <text x="170" y="125" text-anchor='middle' fill='#e6edf3' font-size='14'>b</text>
-  <text x="20" y="60" text-anchor='end' fill='#e6edf3' font-size='12'>(x+1)</text>
-  <text x="220" y="170" text-anchor='start' fill='#e6edf3' font-size='12'>(a+b)</text>
+  <text x="80" y="65" text-anchor='middle' fill='currentColor' font-size='14'>ax</text>
+  <text x="170" y="65" text-anchor='middle' fill='currentColor' font-size='14'>bx</text>
+  <text x="80" y="125" text-anchor='middle' fill='currentColor' font-size='14'>a</text>
+  <text x="170" y="125" text-anchor='middle' fill='currentColor' font-size='14'>b</text>
+  <text x="20" y="60" text-anchor='end' fill='currentColor' font-size='12'>(x+1)</text>
+  <text x="220" y="170" text-anchor='start' fill='currentColor' font-size='12'>(a+b)</text>
 </svg>
 <div class="worked-example concept-box">
 <p><strong>Expand:</strong> \\((x + 2)(x + 3)\\)</p>

@@ -31,50 +31,50 @@ SECTIONS = [
 
             <!-- Row 0 -->
             <circle cx="300" cy="20" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="300" y="27" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="300" y="27" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 1 -->
             <circle cx="270" cy="60" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="270" y="67" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="270" y="67" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
             <circle cx="330" cy="60" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="330" y="67" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="330" y="67" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 2 -->
             <circle cx="240" cy="100" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="240" y="107" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="240" y="107" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
             <circle cx="300" cy="100" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="300" y="107" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>2</text>
+            <text x="300" y="107" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>2</text>
             <circle cx="360" cy="100" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="360" y="107" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="360" y="107" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 3 -->
             <circle cx="210" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="210" y="147" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="210" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
             <circle cx="270" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="270" y="147" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>3</text>
+            <text x="270" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>3</text>
             <circle cx="330" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="330" y="147" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>3</text>
+            <text x="330" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>3</text>
             <circle cx="390" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="390" y="147" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="390" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 4 -->
             <circle cx="180" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="180" y="187" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="180" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
             <circle cx="240" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="240" y="187" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>4</text>
+            <text x="240" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>4</text>
             <circle cx="300" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="300" y="187" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>6</text>
+            <text x="300" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>6</text>
             <circle cx="360" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="360" y="187" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>4</text>
+            <text x="360" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>4</text>
             <circle cx="420" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
-            <text x="420" y="187" text-anchor='middle' font-size='16' fill='#e6edf3' font-weight='bold'>1</text>
+            <text x="420" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Arrows showing addition -->
             <line x1="285" y1="80" x2="295" y2="92" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3"/>
             <line x1="315" y1="80" x2="305" y2="92" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3"/>
 
             <!-- Labels -->
-            <text x="300" y="260" text-anchor='middle' font-size='14' fill='#8b949e' style="font-style: italic;">Each entry = sum of two above</text>
+            <text x="300" y="260" text-anchor='middle' font-size='14' fill='currentColor' opacity='0.6' style="font-style: italic;">Each entry = sum of two above</text>
         </svg>
 
         <div class="worked-example" style="margin: 20px 0; padding: 15px; border-radius: 4px">
