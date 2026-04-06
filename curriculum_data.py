@@ -6,7 +6,7 @@ Singapore-aligned: Kindergarten → P5–P6 → Sec 1–2 → Sec 3–4 → J1�
 TOPICS = {
     # ─── KINDERGARTEN ───────────────────────────────────────────────────────────
     "k_numbers":    {"name":"Number Recognition (0–20)","level":"Kindergarten","sg":"KG","color":"#7FFFD4","prereqs":[],"hours":2,"emoji":"🔢","tagline":"What does '5' really mean?"},
-    "k_counting":   {"name":"Counting & Ordering","level":"Kindergarten","sg":"KG","color":"#7FFFD4","prereqs":["k_numbers"],"hours":2,"emoji":"👆","tagline":"One, two, three — in order!"},
+    "k_counting":   {"name":"Counting & Ordering","level":"Kindergarten","sg":"KG","color":"#7FFFD4","prereqs":["k_numbers"],"hours":2,"emoji":"🔟","tagline":"One, two, three — in order!"},
     "k_addition":   {"name":"Addition within 10","level":"Kindergarten","sg":"KG","color":"#7FFFD4","prereqs":["k_counting"],"hours":3,"emoji":"➕","tagline":"Putting things together"},
     "k_subtraction":{"name":"Subtraction within 10","level":"Kindergarten","sg":"KG","color":"#7FFFD4","prereqs":["k_counting"],"hours":3,"emoji":"➖","tagline":"Taking things away"},
     "k_shapes":     {"name":"Shapes & Patterns","level":"Kindergarten","sg":"KG","color":"#7FFFD4","prereqs":["k_numbers"],"hours":2,"emoji":"🔷","tagline":"Circles, squares, and beyond"},

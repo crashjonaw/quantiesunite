@@ -51,9 +51,23 @@
 
 
 /* ═══════════════════════════════════════════════════════════════════
-   SHARED: cards that become semi-transparent on any pastel
+   SHARED: elements that become semi-transparent on ANY pastel
    ═══════════════════════════════════════════════════════════════════ */
-/* Helper mixin — every pastel reuses the same card list */
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .page-progress-bar,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .page-step,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .check-question,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .btn-outline,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .user-dropdown,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .locked-banner,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .example-box,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .worked-example,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .concept-box,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .formula-box,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .success-box,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .warning-box,
+[data-theme="bright"][data-pastel]:not([data-pastel=""]) .diagram-container {
+  background-color: rgba(255,255,255,0.6);
+}
 
 /* ═══════════════════════════════════════════════════════════════════
    LIGHT BLUE TEMPLATE

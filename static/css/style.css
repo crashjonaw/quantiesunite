@@ -98,6 +98,7 @@ html, body {
 [data-theme="bright"] .lesson-section {
   background: #fff;
   border-color: #e2e8f0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
 }
 [data-theme="bright"] .section-body strong { color: #111; }
 [data-theme="bright"] .node-label { fill: #333 !important; }
@@ -185,7 +186,7 @@ html, body {
 [data-theme="bright"] .page-step.active { background: rgba(65,105,225,0.06); border-color: var(--accent); color: var(--accent); }
 [data-theme="bright"] .page-step-num { background: #f1f5f9; }
 [data-theme="bright"] .page-step.active .page-step-num { background: rgba(65,105,225,0.15); }
-[data-theme="bright"] .page-nav { background: #fff; }
+[data-theme="bright"] .page-nav { background: transparent; }
 [data-theme="bright"] .page-nav-counter { color: #64748b; }
 
 /* Lesson containers */
@@ -463,14 +464,8 @@ html, body {
   position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.07), transparent);
   pointer-events: none;
-  animation: path-shimmer 4s ease-in-out infinite;
+  animation: path-shimmer 3.5s ease-in-out infinite;
 }
-/* Stagger the shimmer per card */
-.path-card:nth-child(2)::before { animation-delay: 0.6s; }
-.path-card:nth-child(3)::before { animation-delay: 1.2s; }
-.path-card:nth-child(4)::before { animation-delay: 1.8s; }
-.path-card:nth-child(5)::before { animation-delay: 2.4s; }
-.path-card:nth-child(6)::before { animation-delay: 3.0s; }
 /* Speed up shimmer on hover */
 .path-card:hover::before {
   animation: path-shimmer 1.2s ease-in-out infinite;
@@ -644,13 +639,17 @@ html, body {
 
 /* ── Concept layout (sidebar + main) ───────────────────────────── */
 .concept-layout {
-  display: flex; gap: 0; min-height: calc(100vh - 200px);
+  display: flex; gap: 20px; min-height: calc(100vh - 200px);
+  align-items: flex-start;
 }
 .concept-sidebar {
   width: 240px; flex-shrink: 0;
-  background: var(--bg2); border-right: 1px solid var(--border);
-  padding: 16px 0; position: sticky; top: 56px;
-  height: calc(100vh - 56px); overflow-y: auto;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px 0;
+  position: sticky; top: 72px;
+  max-height: calc(100vh - 88px); overflow-y: auto;
 }
 .sidebar-header {
   padding: 8px 16px 12px; font-size: 0.85rem; font-weight: 700;
@@ -688,15 +687,16 @@ html, body {
 .sidebar-practice-link .sidebar-concept-num { background: rgba(65,105,225,0.15); }
 
 .concept-main {
-  flex: 1; min-width: 0; padding: 24px 32px;
+  flex: 1; min-width: 0; padding: 0 0 40px;
 }
 
 /* ── Topic header (concept pages) ──────────────────────────────── */
 .topic-header {
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 12px;
-  padding: 16px 24px; margin-bottom: 24px;
-  background: var(--bg2); border-radius: var(--radius);
+  padding: 18px 24px; margin-bottom: 20px;
+  background: var(--bg2); border-radius: 14px;
+  border: 1px solid var(--border);
 }
 .topic-header-left { display: flex; align-items: center; gap: 14px; }
 .topic-emoji { font-size: 2rem; }
@@ -734,25 +734,25 @@ html, body {
 .congrats-box .btn { margin: 0 6px; }
 
 /* Bright theme */
-[data-theme="bright"] .concept-sidebar { background: #f8fafc; border-color: #e2e8f0; }
+[data-theme="bright"] .concept-sidebar { background: #fff; border-color: #e2e8f0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
 [data-theme="bright"] .sidebar-concept-link:hover { background: rgba(0,0,0,0.03); }
 [data-theme="bright"] .sidebar-concept-link.active { background: rgba(65,105,225,0.06); }
-[data-theme="bright"] .topic-header { background: #fff; }
+[data-theme="bright"] .topic-header { background: #fff; border-color: #e2e8f0; box-shadow: 0 1px 4px rgba(0,0,0,0.03); }
 [data-theme="bright"] .section-body strong { color: #111; }
 
 /* Responsive: collapse sidebar on narrow screens */
 @media (max-width: 768px) {
-  .concept-layout { flex-direction: column; }
+  .concept-layout { flex-direction: column; gap: 12px; }
   .concept-sidebar {
     width: 100%; height: auto; position: static;
     display: flex; overflow-x: auto; padding: 8px;
-    border-right: none; border-bottom: 1px solid var(--border);
+    border-radius: 12px; max-height: none;
   }
   .sidebar-header { display: none; }
   .sidebar-concept-link { white-space: nowrap; border-left: none; border-bottom: 2px solid transparent; padding: 6px 12px; }
   .sidebar-concept-link.active { border-left: none; border-bottom-color: var(--accent); }
   .sidebar-divider { width: 1px; height: 24px; margin: 0 4px; }
-  .concept-main { padding: 16px; }
+  .concept-main { padding: 16px 12px 32px; }
 }
 
 /* ── Concept overview (topic overview page) ────────────────────── */
@@ -871,11 +871,11 @@ html, body {
 [data-theme="bright"] .decision-box { background: #f8fafc; }
 
 /* ── Lesson sections ────────────────────────────────────────────── */
-.lesson-container { max-width: 780px; }
+.lesson-container { width: 100%; }
 .lesson-section {
   background: var(--bg2); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 28px;
-  margin-bottom: 24px;
+  border-radius: 14px; padding: 28px 32px;
+  margin-bottom: 20px;
 }
 .section-heading {
   font-size: 1.2rem; font-weight: 700; margin-bottom: 16px;
@@ -1950,15 +1950,13 @@ html, body {
    ═══════════════════════════════════════════════════════════════════ */
 
 .page-progress-bar {
-  margin: 20px 0 28px;
-  max-width: 780px;
+  margin: 0 0 20px;
+  width: 100%;
 }
 .page-progress-steps {
   display: flex;
-  gap: 4px;
-  overflow-x: auto;
-  padding-bottom: 12px;
-  scrollbar-width: thin;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .page-step {
   display: flex; align-items: center; gap: 8px;
@@ -2025,9 +2023,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
+  margin-top: 20px;
+  padding: 16px 0 0;
 }
 .page-nav-btn {
   min-width: 130px;
@@ -4493,7 +4490,7 @@ html, body {
 .trophy-bronze:hover { box-shadow: 0 8px 24px rgba(205,127,50,0.25); }
 .trophy-bronze .trophy-score-num { color: #8B4513; }
 
-/* Constant shimmer sweep on all medal cards */
+/* Constant white shimmer sweep on all medal cards */
 .trophy-card-shine {
   position: absolute; inset: 0;
   overflow: hidden;
@@ -4503,20 +4500,8 @@ html, body {
   content: '';
   position: absolute;
   top: 0; left: -60%; width: 50%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
   animation: medal-shimmer 3s ease-in-out infinite;
-}
-/* Gold shimmer — warmer */
-.trophy-gold .trophy-card-shine::after {
-  background: linear-gradient(90deg, transparent, rgba(255,215,0,0.2), rgba(255,255,255,0.35), rgba(255,215,0,0.2), transparent);
-}
-/* Silver shimmer — cooler */
-.trophy-silver .trophy-card-shine::after {
-  background: linear-gradient(90deg, transparent, rgba(192,192,192,0.2), rgba(255,255,255,0.35), rgba(192,192,192,0.2), transparent);
-}
-/* Bronze shimmer — warm copper */
-.trophy-bronze .trophy-card-shine::after {
-  background: linear-gradient(90deg, transparent, rgba(205,127,50,0.15), rgba(255,255,255,0.3), rgba(205,127,50,0.15), transparent);
 }
 /* Medal card text — dark for readability on light bg */
 .trophy-gold .trophy-card-name,
@@ -4552,18 +4537,25 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 4px;
+  text-align: center;
+  width: 100%;
 }
-.trophy-card-emoji { font-size: 2.2rem; margin-bottom: 4px; }
+.trophy-card-emoji { font-size: 2.2rem; margin-bottom: 4px; line-height: 1; }
 .trophy-card-name {
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--text);
+  text-align: center;
+  width: 100%;
+  line-height: 1.3;
 }
 .trophy-card-score {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .trophy-score-num {
   font-size: 0.9rem;
