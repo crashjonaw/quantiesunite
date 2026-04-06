@@ -11,31 +11,28 @@ SECTIONS = [
 <p>Think of: a dice, a sugar cube, or a Rubik's cube.</p>
 </div>
 
-<svg width="100%" viewBox="0 0 400 300" class="formula-box">
-  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>All sides are equal</text>
+<svg width="100%" viewBox="0 0 320 200" class="formula-box">
+  <text x="160" y="20" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>All sides are equal</text>
 
-  <!-- Cube with all sides labeled -->
+  <!-- Cube - centred in viewBox -->
   <!-- Front face -->
-  <rect x="100" y="100" width="80" height="80" fill='#3d444d' stroke='#58a6ff' stroke-width="2"/>
-
+  <rect x="110" y="70" width="80" height="80" fill='#3d444d' stroke='#58a6ff' stroke-width="2" rx='4'/>
   <!-- Top face -->
-  <polygon points="100,100 130,70 210,70 180,100" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.5'/>
-
+  <polygon points="110,70 140,42 220,42 190,70" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.5'/>
   <!-- Right face -->
-  <polygon points="180,100 210,70 210,150 180,180" fill='#3d444d' stroke='#58a6ff' stroke-width="2" opacity='0.7'/>
-
+  <polygon points="190,70 220,42 220,122 190,150" fill='#3d444d' stroke='#58a6ff' stroke-width="2" opacity='0.7'/>
   <!-- Edges -->
-  <line x1="100" y1="100" x2="130" y2="70" stroke='#58a6ff' stroke-width="2"/>
-  <line x1="180" y1="100" x2="210" y2="70" stroke='#58a6ff' stroke-width="2"/>
-  <line x1="180" y1="180" x2="210" y2="150" stroke='#58a6ff' stroke-width="2"/>
+  <line x1="110" y1="70" x2="140" y2="42" stroke='#58a6ff' stroke-width="2"/>
+  <line x1="190" y1="70" x2="220" y2="42" stroke='#58a6ff' stroke-width="2"/>
+  <line x1="190" y1="150" x2="220" y2="122" stroke='#58a6ff' stroke-width="2"/>
 
-  <!-- All dimensions labeled as 's' -->
-  <text x="80" y="145" fill='#79c0ff' font-size='14' font-weight='bold'>s</text>
-  <text x="130" y="190" fill='#79c0ff' font-size='14' font-weight='bold'>s</text>
-  <text x="215" y="125" fill='#79c0ff' font-size='14' font-weight='bold'>s</text>
+  <!-- Dimension labels -->
+  <text x="90" y="115" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
+  <text x="150" y="165" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
+  <text x="228" y="95" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
 
   <!-- Formula -->
-  <text x="20" y="260" fill='currentColor' font-size='12'>All sides = s (the side length)</text>
+  <text x="160" y="190" fill='currentColor' font-size='12' text-anchor='middle'>All sides = s (the side length)</text>
 </svg>"""
     },
     {
@@ -148,42 +145,43 @@ new Chart(document.getElementById('vol_cube_progression'), {
 <p><strong>Remember:</strong> This cube holds exactly 1 litre of water!</p>
 </div>
 
-<svg width="100%" viewBox="0 0 400 250" class="formula-box">
-  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Perfect Cubes (Common Values)</text>
-
-  <g>
-    <rect x="20" y="45" width="85" height="180" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx="4"/>
-    <text x="62" y="65" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Side</text>
-    <text x="62" y="90" fill='currentColor' font-size='10' text-anchor='middle'>1</text>
-    <text x="62" y="115" fill='currentColor' font-size='10' text-anchor='middle'>2</text>
-    <text x="62" y="140" fill='currentColor' font-size='10' text-anchor='middle'>3</text>
-    <text x="62" y="165" fill='currentColor' font-size='10' text-anchor='middle'>4</text>
-    <text x="62" y="190" fill='currentColor' font-size='10' text-anchor='middle'>5</text>
-    <text x="62" y="215" fill='currentColor' font-size='10' text-anchor='middle'>10</text>
-  </g>
-
-  <g>
-    <rect x="135" y="45" width="85" height="180" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx="4"/>
-    <text x="177" y="65" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Volume</text>
-    <text x="177" y="90" fill='currentColor' font-size='10' text-anchor='middle'>1</text>
-    <text x="177" y="115" fill='currentColor' font-size='10' text-anchor='middle'>8</text>
-    <text x="177" y="140" fill='currentColor' font-size='10' text-anchor='middle'>27</text>
-    <text x="177" y="165" fill='currentColor' font-size='10' text-anchor='middle'>64</text>
-    <text x="177" y="190" fill='currentColor' font-size='10' text-anchor='middle'>125</text>
-    <text x="177" y="215" fill='currentColor' font-size='10' text-anchor='middle'>1000</text>
-  </g>
-
-  <g>
-    <rect x="250" y="45" width="110" height="180" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx="4"/>
-    <text x="305" y="65" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Capacity</text>
-    <text x="305" y="90" fill='currentColor' font-size='10' text-anchor='middle'>1 mL</text>
-    <text x="305" y="115" fill='currentColor' font-size='10' text-anchor='middle'>8 mL</text>
-    <text x="305" y="140" fill='currentColor' font-size='10' text-anchor='middle'>27 mL</text>
-    <text x="305" y="165" fill='currentColor' font-size='10' text-anchor='middle'>64 mL</text>
-    <text x="305" y="190" fill='currentColor' font-size='10' text-anchor='middle'>125 mL</text>
-    <text x="305" y="215" fill='currentColor' font-size='10' text-anchor='middle'>1 L</text>
-  </g>
-</svg>"""
+<table style="width:100%; border-collapse:collapse; margin-top:12px;">
+<tr style="background:#3d444d;">
+<th style="padding:10px; text-align:center; border:1px solid #58a6ff;">Side (cm)</th>
+<th style="padding:10px; text-align:center; border:1px solid #58a6ff;">Volume (cm&#179;)</th>
+<th style="padding:10px; text-align:center; border:1px solid #58a6ff;">Capacity</th>
+</tr>
+<tr>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">1</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">1</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">1 mL</td>
+</tr>
+<tr>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">2</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">8</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">8 mL</td>
+</tr>
+<tr>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">3</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">27</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">27 mL</td>
+</tr>
+<tr>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">4</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">64</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">64 mL</td>
+</tr>
+<tr>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">5</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">125</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">125 mL</td>
+</tr>
+<tr>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">10</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">1000</td>
+<td style="padding:10px; text-align:center; border:1px solid #30363d;">1 L</td>
+</tr>
+</table>"""
     },
     {
         "title": "Cubes vs. Cuboids: Quick Comparison",

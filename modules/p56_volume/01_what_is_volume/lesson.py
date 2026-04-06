@@ -17,28 +17,31 @@ SECTIONS = [
 
 <p>Imagine filling a box with water, sand, or air. The amount of space inside the box is its volume.</p>
 
-<svg width="100%" viewBox="0 0 400 300" class="formula-box">
+<svg width="100%" viewBox="0 0 400 180" class="formula-box">
   <!-- Flat square (2D) -->
   <g>
-    <text x="50" y="20" fill='currentColor' font-size='14' font-weight='bold'>2D: Area</text>
-    <rect x="20" y="40" width="80" height="80" fill='none' stroke='#58a6ff' stroke-width="2"/>
-    <text x="45" y="140" fill='currentColor' font-size='12'>4 × 4 = 16 sq units</text>
+    <rect x="30" y="20" width="80" height="80" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+    <text x="70" y="118" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>2D: Area</text>
+    <text x="70" y="136" fill='currentColor' font-size='11' text-anchor='middle'>4 × 4 = 16 sq units</text>
   </g>
+
+  <!-- Arrow -->
+  <text x="185" y="65" fill='#a0aec0' font-size='22' text-anchor='middle'>→</text>
 
   <!-- 3D cube -->
   <g>
-    <text x="250" y="20" fill='currentColor' font-size='14' font-weight='bold'>3D: Volume</text>
     <!-- Front face -->
-    <rect x="220" y="50" width="70" height="70" fill='#3d444d' stroke='#58a6ff' stroke-width="2"/>
+    <rect x="240" y="30" width="70" height="70" fill='#3d444d' stroke='#58a6ff' stroke-width="2" rx='4'/>
     <!-- Top face -->
-    <polygon points="220,50 245,25 315,25 290,50" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.5'/>
+    <polygon points="240,30 265,8 335,8 310,30" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.5'/>
     <!-- Right face -->
-    <polygon points="290,50 315,25 315,95 290,120" fill='#3d444d' stroke='#58a6ff' stroke-width="2" opacity='0.7'/>
+    <polygon points="310,30 335,8 335,78 310,100" fill='#3d444d' stroke='#58a6ff' stroke-width="2" opacity='0.7'/>
     <!-- Edges -->
-    <line x1="220" y1="50" x2="245" y2="25" stroke='#58a6ff' stroke-width="2"/>
-    <line x1="290" y1="50" x2="315" y2="25" stroke='#58a6ff' stroke-width="2"/>
-    <line x1="290" y1="120" x2="315" y2="95" stroke='#58a6ff' stroke-width="2"/>
-    <text x="230" y="140" fill='currentColor' font-size='12'>4 × 4 × 4 = 64 cubic units</text>
+    <line x1="240" y1="30" x2="265" y2="8" stroke='#58a6ff' stroke-width="2"/>
+    <line x1="310" y1="30" x2="335" y2="8" stroke='#58a6ff' stroke-width="2"/>
+    <line x1="310" y1="100" x2="335" y2="78" stroke='#58a6ff' stroke-width="2"/>
+    <text x="288" y="118" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>3D: Volume</text>
+    <text x="288" y="136" fill='currentColor' font-size='11' text-anchor='middle'>4 × 4 × 4 = 64 cubic units</text>
   </g>
 </svg>"""
     },
@@ -50,25 +53,42 @@ SECTIONS = [
 <p><strong>The volume IS the number of unit cubes that fit inside.</strong></p>
 </div>
 
-<svg width="100%" viewBox="0 0 400 300" class="formula-box">
-  <!-- 2×2×2 cube made of unit cubes -->
-  <g>
-    <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>A 2 × 2 × 2 cube has 8 unit cubes</text>
+<svg width="100%" viewBox="0 0 400 210" class="formula-box">
+  <text x="200" y="20" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Counting unit cubes in a 2 × 2 × 2 cube</text>
 
-    <!-- Layer 1 (back) -->
-    <rect x="60" y="80" width="40" height="40" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5"/>
-    <rect x="100" y="80" width="40" height="40" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5"/>
-    <rect x="60" y="120" width="40" height="40" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5"/>
-    <rect x="100" y="120" width="40" height="40" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5"/>
+  <!-- Layer 1 label -->
+  <text x="80" y="48" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Bottom layer</text>
+  <!-- Layer 1: 2×2 grid -->
+  <rect x="30" y="55" width="44" height="44" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx='4'/>
+  <rect x="78" y="55" width="44" height="44" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx='4'/>
+  <rect x="30" y="103" width="44" height="44" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx='4'/>
+  <rect x="78" y="103" width="44" height="44" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx='4'/>
+  <!-- Numbers in cubes -->
+  <text x="52" y="82" fill='currentColor' font-size='13' text-anchor='middle'>1</text>
+  <text x="100" y="82" fill='currentColor' font-size='13' text-anchor='middle'>2</text>
+  <text x="52" y="130" fill='currentColor' font-size='13' text-anchor='middle'>3</text>
+  <text x="100" y="130" fill='currentColor' font-size='13' text-anchor='middle'>4</text>
+  <text x="80" y="164" fill='#a0aec0' font-size='10' text-anchor='middle'>4 cubes</text>
 
-    <!-- Layer 2 (front) - slightly offset -->
-    <rect x="70" y="60" width="40" height="40" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" opacity='0.6'/>
-    <rect x="110" y="60" width="40" height="40" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" opacity='0.6'/>
-    <rect x="70" y="100" width="40" height="40" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" opacity='0.6'/>
-    <rect x="110" y="100" width="40" height="40" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" opacity='0.6'/>
+  <!-- Plus sign -->
+  <text x="168" y="105" fill='#a0aec0' font-size='22' text-anchor='middle'>+</text>
 
-    <text x="60" y="220" fill='currentColor' font-size='12'>Volume = 2 × 2 × 2 = 8 cubic units</text>
-  </g>
+  <!-- Layer 2 label -->
+  <text x="280" y="48" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>Top layer</text>
+  <!-- Layer 2: 2×2 grid -->
+  <rect x="230" y="55" width="44" height="44" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" rx='4' opacity='0.4'/>
+  <rect x="278" y="55" width="44" height="44" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" rx='4' opacity='0.4'/>
+  <rect x="230" y="103" width="44" height="44" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" rx='4' opacity='0.4'/>
+  <rect x="278" y="103" width="44" height="44" fill='#58a6ff' stroke='#58a6ff' stroke-width="1.5" rx='4' opacity='0.4'/>
+  <!-- Numbers in cubes -->
+  <text x="252" y="82" fill='currentColor' font-size='13' text-anchor='middle'>5</text>
+  <text x="300" y="82" fill='currentColor' font-size='13' text-anchor='middle'>6</text>
+  <text x="252" y="130" fill='currentColor' font-size='13' text-anchor='middle'>7</text>
+  <text x="300" y="130" fill='currentColor' font-size='13' text-anchor='middle'>8</text>
+  <text x="280" y="164" fill='#a0aec0' font-size='10' text-anchor='middle'>4 cubes</text>
+
+  <!-- Result -->
+  <text x="200" y="195" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Volume = 2 × 2 × 2 = 8 cubic units</text>
 </svg>
 
 <div class='worked-example'>
@@ -110,21 +130,21 @@ SECTIONS = [
 <p>One cubic metre contains <em>one million</em> cubic centimetres!</p>
 </div>
 
-<svg width="100%" viewBox="0 0 400 200" class="formula-box">
-  <text x="20" y="30" fill='currentColor' font-size='13' font-weight='bold'>Size Comparison</text>
+<svg width="100%" viewBox="0 0 400 210" class="formula-box">
+  <text x="200" y="22" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Size Comparison</text>
 
   <!-- Small cube (cm³) -->
   <g>
-    <rect x="40" y="50" width="40" height="40" fill='none' stroke='#58a6ff' stroke-width="2"/>
-    <text x="35" y="110" fill='currentColor' font-size='11' text-anchor='middle'>1 cm³</text>
-    <text x="60" y="140" fill='#a0aec0' font-size='10' text-anchor='middle'>(sugar cube)</text>
+    <rect x="40" y="55" width="40" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+    <text x="60" y="114" fill='currentColor' font-size='11' text-anchor='middle'>1 cm³</text>
+    <text x="60" y="130" fill='#a0aec0' font-size='10' text-anchor='middle'>(sugar cube)</text>
   </g>
 
   <!-- Large cube (m³) -->
   <g>
-    <rect x="180" y="50" width="120" height="120" fill='none' stroke='#79c0ff' stroke-width="2" stroke-dasharray="5,5"/>
-    <text x="240" y="175" fill='currentColor' font-size='11' text-anchor='middle'>1 m³</text>
-    <text x="240" y="195" fill='#a0aec0' font-size='10' text-anchor='middle'>(1,000,000 cm³)</text>
+    <rect x="180" y="40" width="130" height="130" fill='none' stroke='#79c0ff' stroke-width="2" stroke-dasharray="5,5" rx='4'/>
+    <text x="245" y="188" fill='currentColor' font-size='11' text-anchor='middle'>1 m³</text>
+    <text x="245" y="204" fill='#a0aec0' font-size='10' text-anchor='middle'>(1,000,000 cm³)</text>
   </g>
 </svg>"""
     },

@@ -4483,7 +4483,7 @@ html, body {
   background: linear-gradient(135deg, #FFF8DC, #FFEFD5, #FFF8DC);
 }
 .trophy-gold:hover { box-shadow: 0 8px 24px rgba(255,215,0,0.25); }
-.trophy-gold .trophy-score-num { color: #B8860B; }
+.trophy-gold .trophy-score-num { color: #92400e; }
 
 /* Silver */
 .trophy-silver {
@@ -4491,7 +4491,7 @@ html, body {
   background: linear-gradient(135deg, #F5F5F5, #E8E8E8, #F5F5F5);
 }
 .trophy-silver:hover { box-shadow: 0 8px 24px rgba(192,192,192,0.3); }
-.trophy-silver .trophy-score-num { color: #808080; }
+.trophy-silver .trophy-score-num { color: #4b5563; }
 
 /* Bronze */
 .trophy-bronze {
@@ -4499,7 +4499,7 @@ html, body {
   background: linear-gradient(135deg, #FFE4C4, #FFDEAD, #FFE4C4);
 }
 .trophy-bronze:hover { box-shadow: 0 8px 24px rgba(205,127,50,0.25); }
-.trophy-bronze .trophy-score-num { color: #8B4513; }
+.trophy-bronze .trophy-score-num { color: #78350f; }
 
 /* Constant white shimmer sweep on all medal cards */
 .trophy-card-shine {
@@ -4514,16 +4514,16 @@ html, body {
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
   animation: medal-shimmer 3s ease-in-out infinite;
 }
-/* Medal card text — dark for readability on light bg (only in bright theme) */
-[data-theme="bright"] .trophy-gold .trophy-card-name,
-[data-theme="bright"] .trophy-silver .trophy-card-name,
-[data-theme="bright"] .trophy-bronze .trophy-card-name { color: #1a1a2e; }
-[data-theme="bright"] .trophy-gold .trophy-score-detail,
-[data-theme="bright"] .trophy-silver .trophy-score-detail,
-[data-theme="bright"] .trophy-bronze .trophy-score-detail { color: #64748b; }
-[data-theme="bright"] .trophy-gold .trophy-card-level-tag,
-[data-theme="bright"] .trophy-silver .trophy-card-level-tag,
-[data-theme="bright"] .trophy-bronze .trophy-card-level-tag { color: #64748b; background: rgba(0,0,0,0.06); }
+/* Medal card text — always dark since card backgrounds are always light */
+.trophy-gold .trophy-card-name,
+.trophy-silver .trophy-card-name,
+.trophy-bronze .trophy-card-name { color: #1a1a2e; }
+.trophy-gold .trophy-score-detail,
+.trophy-silver .trophy-score-detail,
+.trophy-bronze .trophy-score-detail { color: #64748b; }
+.trophy-gold .trophy-card-level-tag,
+.trophy-silver .trophy-card-level-tag,
+.trophy-bronze .trophy-card-level-tag { color: #64748b; background: rgba(0,0,0,0.06); }
 /* Trophy medal — floating on top-right */
 @keyframes trophy-float {
   0%, 100% { transform: translateY(0); }

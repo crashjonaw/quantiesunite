@@ -20,23 +20,38 @@ SECTIONS = [
 <ol>
 <li>Break it into simpler shapes (cuboids)</li>
 <li>Find the volume of each part</li>
-<li>Add them together: \\(V_{\\text{total}} = V_1 + V_2 + V_3 + ...\\)</li>
+<li>Add them together: \\(V_{\\mathrm{total}} = V_1 + V_2 + V_3 + ...\\)</li>
 </ol>
 </div>
 
-<svg width="100%" viewBox="0 0 400 280" class="formula-box">
-  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>L-Shaped Composite Solid (Top View)</text>
+<svg width="100%" viewBox="0 0 400 240" class="formula-box">
+  <text x="200" y="22" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>L-Shaped Composite Solid (Top View)</text>
 
   <!-- Vertical part of L -->
-  <rect x="60" y="80" width="40" height="100" fill='#58a6ff' stroke='#79c0ff' stroke-width="2" opacity='0.6'/>
-  <text x="80" y="140" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>Part 1</text>
+  <rect x="100" y="45" width="50" height="110" fill='#58a6ff' stroke='#79c0ff' stroke-width="2" rx='4' opacity='0.6'/>
+  <text x="125" y="105" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>Part 1</text>
 
   <!-- Horizontal part of L -->
-  <rect x="100" y="160" width="100" height="40" fill='#1f6feb' stroke='#79c0ff' stroke-width="2" opacity='0.6'/>
-  <text x="150" y="185" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>Part 2</text>
+  <rect x="150" y="115" width="120" height="40" fill='#1f6feb' stroke='#79c0ff' stroke-width="2" rx='4' opacity='0.6'/>
+  <text x="210" y="140" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>Part 2</text>
 
-  <!-- Show them separately below -->
-  <text x="20" y="250" fill='currentColor' font-size='12'>V_total = V_Part1 + V_Part2</text>
+  <!-- Dimension labels -->
+  <text x="88" y="100" fill='#79c0ff' font-size='10' text-anchor='end'>h</text>
+  <text x="125" y="40" fill='#79c0ff' font-size='10' text-anchor='middle'>w</text>
+  <text x="210" y="164" fill='#79c0ff' font-size='10' text-anchor='middle'>l</text>
+
+  <!-- Plus sign between parts -->
+  <text x="290" y="100" fill='#79c0ff' font-size='16' font-weight='bold' text-anchor='middle'>+</text>
+
+  <!-- Separate parts on right -->
+  <rect x="310" y="55" width="30" height="60" fill='#58a6ff' stroke='#79c0ff' stroke-width="1.5" rx='4' opacity='0.5'/>
+  <text x="325" y="90" fill='currentColor' font-size='9' text-anchor='middle'>V1</text>
+  <rect x="310" y="125" width="60" height="25" fill='#1f6feb' stroke='#79c0ff' stroke-width="1.5" rx='4' opacity='0.5'/>
+  <text x="340" y="142" fill='currentColor' font-size='9' text-anchor='middle'>V2</text>
+
+  <!-- Formula -->
+  <text x="200" y="195" fill='currentColor' font-size='12' text-anchor='middle'>V_total = V_Part1 + V_Part2</text>
+  <text x="200" y="215" fill='#a0aec0' font-size='11' text-anchor='middle'>Break into simpler shapes, then add volumes</text>
 </svg>"""
     },
     {
@@ -44,29 +59,29 @@ SECTIONS = [
         "body": """<div class='worked-example'>
 <p><strong>Example 1:</strong> An L-shaped solid is made of two cuboids:</p>
 <ul>
-<li>Vertical part: \(2 \text{ cm} \times 2 \text{ cm} \times 5 \text{ cm}\)</li>
-<li>Horizontal part: \(4 \text{ cm} \times 2 \text{ cm} \times 2 \text{ cm}\)</li>
+<li>Vertical part: 2 cm \\(\\times\\) 2 cm \\(\\times\\) 5 cm</li>
+<li>Horizontal part: 4 cm \\(\\times\\) 2 cm \\(\\times\\) 2 cm</li>
 </ul>
 <p>Find the total volume.</p>
 <p>Step 1: Calculate Part 1</p>
-<p>\\(V_1 = 2 \\times 2 \\times 5 = 20 \\text{ cm}^3\\)</p>
+<p>\\(V_1 = 2 \\times 2 \\times 5 = 20\\) cm³</p>
 <p>Step 2: Calculate Part 2</p>
-<p>\\(V_2 = 4 \\times 2 \\times 2 = 16 \\text{ cm}^3\\)</p>
+<p>\\(V_2 = 4 \\times 2 \\times 2 = 16\\) cm³</p>
 <p>Step 3: Add together</p>
-<p>\\(V_{\\text{total}} = 20 + 16 = 36 \\text{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{total}} = 20 + 16 = 36\\) cm³</p>
 <p><strong>Answer: 36 cm³</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Example 2:</strong> A T-shaped solid consists of:</p>
 <ul>
-<li>Top horizontal bar: \(6 \text{ cm} \times 2 \text{ cm} \times 2 \text{ cm}\)</li>
-<li>Vertical stem: \(2 \text{ cm} \times 2 \text{ cm} \times 5 \text{ cm}\)</li>
+<li>Top horizontal bar: 6 cm \\(\\times\\) 2 cm \\(\\times\\) 2 cm</li>
+<li>Vertical stem: 2 cm \\(\\times\\) 2 cm \\(\\times\\) 5 cm</li>
 </ul>
 <p>Find the volume (assume no overlap).</p>
-<p>\\(V_1 = 6 \\times 2 \\times 2 = 24 \\text{ cm}^3\\)</p>
-<p>\\(V_2 = 2 \\times 2 \\times 5 = 20 \\text{ cm}^3\\)</p>
-<p>\\(V_{\\text{total}} = 24 + 20 = 44 \\text{ cm}^3\\)</p>
+<p>\\(V_1 = 6 \\times 2 \\times 2 = 24\\) cm³</p>
+<p>\\(V_2 = 2 \\times 2 \\times 5 = 20\\) cm³</p>
+<p>\\(V_{\\mathrm{total}} = 24 + 20 = 44\\) cm³</p>
 <p><strong>Answer: 44 cm³</strong></p>
 </div>
 
@@ -111,45 +126,68 @@ new Chart(document.getElementById('vol_composite_add'), {
         "body": """<div class='concept-box'>
 <h3>When a Shape Has a Hole</h3>
 <p>For shapes with holes or hollowed sections, we use <strong>subtraction</strong>:</p>
-<p>\\(V_{\\text{final}} = V_{\\text{outer}} - V_{\\text{hole}}\\)</p>
+<p>\\(V_{\\mathrm{final}} = V_{\\mathrm{outer}} - V_{\\mathrm{hole}}\\)</p>
 <p>Start with the whole shape, then subtract the part that's been removed or hollowed out.</p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Example 1:</strong> A cube with side 6 cm has a small cubic hole with side 2 cm drilled through it.</p>
 <p>Step 1: Volume of outer cube</p>
-<p>\\(V_{\\text{outer}} = 6^3 = 216 \\text{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{outer}} = 6^3 = 216 \\mathrm{ cm}^3\\)</p>
 <p>Step 2: Volume of hole</p>
-<p>\\(V_{\\text{hole}} = 2^3 = 8 \\text{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{hole}} = 2^3 = 8 \\mathrm{ cm}^3\\)</p>
 <p>Step 3: Subtract</p>
-<p>\\(V_{\\text{final}} = 216 - 8 = 208 \\text{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{final}} = 216 - 8 = 208 \\mathrm{ cm}^3\\)</p>
 <p><strong>Answer: 208 cm³</strong></p>
 </div>
 
 <div class='worked-example'>
-<p><strong>Example 2:</strong> A rectangular block is \(10 \text{ cm} \times 8 \text{ cm} \times 6 \text{ cm}\). A smaller block \(4 \text{ cm} \times 3 \text{ cm} \times 3 \text{ cm}\) is removed from one corner.</p>
-<p>\\(V_{\\text{outer}} = 10 \\times 8 \\times 6 = 480 \\text{ cm}^3\\)</p>
-<p>\\(V_{\\text{removed}} = 4 \\times 3 \\times 3 = 36 \\text{ cm}^3\\)</p>
-<p>\\(V_{\\text{final}} = 480 - 36 = 444 \\text{ cm}^3\\)</p>
+<p><strong>Example 2:</strong> A rectangular block is 10 cm \(\times\) 8 cm \(\times\) 6 cm. A smaller block 4 cm \(\times\) 3 cm \(\times\) 3 cm is removed from one corner.</p>
+<p>\\(V_{\\mathrm{outer}} = 10 \\times 8 \\times 6 = 480 \\mathrm{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{removed}} = 4 \\times 3 \\times 3 = 36 \\mathrm{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{final}} = 480 - 36 = 444 \\mathrm{ cm}^3\\)</p>
 <p><strong>Answer: 444 cm³</strong></p>
 </div>
 
-<svg width="100%" viewBox="0 0 400 280" class="formula-box">
-  <text x="20" y="25" fill='currentColor' font-size='13' font-weight='bold'>Cube with Hole Removed</text>
+<svg width="100%" viewBox="0 0 400 250" class="formula-box">
+  <text x="200" y="22" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Cube with Hole Removed</text>
 
-  <!-- Outer cube (hollow) -->
-  <g>
-    <!-- Front face -->
-    <rect x="70" y="80" width="100" height="100" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
-    <!-- Inner hole -->
-    <rect x="95" y="105" width="50" height="50" fill='#161b22' stroke='#ff6b6b' stroke-width="2"/>
-    <text x="145" y="135" fill='#ff6b6b' font-size='11' text-anchor='middle' font-weight='bold'>Hole</text>
-  </g>
+  <!-- Outer cube - 3D isometric view -->
+  <!-- Front face -->
+  <rect x="90" y="70" width="100" height="100" fill='#3d444d' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <!-- Top face -->
+  <polygon points="90,70 120,44 220,44 190,70" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.4'/>
+  <!-- Right face -->
+  <polygon points="190,70 220,44 220,144 190,170" fill='#3d444d' stroke='#58a6ff' stroke-width="2" opacity='0.6'/>
 
-  <!-- Formula below -->
-  <text x="20" y="230" fill='currentColor' font-size='12'>V = V_outer - V_hole = 216 - 8 = 208 cm³</text>
+  <!-- Hole through front face -->
+  <rect x="120" y="100" width="40" height="40" fill='#161b22' stroke='#ff6b6b' stroke-width="2" rx='2'/>
+  <!-- Hole depth lines -->
+  <line x1="160" y1="100" x2="175" y2="86" stroke='#ff6b6b' stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="160" y1="140" x2="175" y2="126" stroke='#ff6b6b' stroke-width="1.5" stroke-dasharray="4,3"/>
 
-  <text x="20" y="255" fill='#a0aec0' font-size='11'>Remove the unwanted part from the total</text>
+  <!-- Labels -->
+  <text x="140" y="125" fill='#ff6b6b' font-size='10' font-weight='bold' text-anchor='middle'>Hole</text>
+  <text x="78" y="125" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='end'>6 cm</text>
+  <text x="140" y="185" fill='#79c0ff' font-size='11' font-weight='bold' text-anchor='middle'>6 cm</text>
+  <text x="132" y="95" fill='#ff6b6b' font-size='9' text-anchor='middle'>2 cm</text>
+
+  <!-- Minus sign and separate shapes -->
+  <text x="250" y="115" fill='currentColor' font-size='18' font-weight='bold' text-anchor='middle'>=</text>
+
+  <!-- Small outer cube -->
+  <rect x="275" y="75" width="45" height="45" fill='#3d444d' stroke='#58a6ff' stroke-width="1.5" rx='4'/>
+  <text x="297" y="103" fill='currentColor' font-size='9' text-anchor='middle'>216</text>
+
+  <text x="335" y="100" fill='currentColor' font-size='16' font-weight='bold' text-anchor='middle'>-</text>
+
+  <!-- Small hole cube -->
+  <rect x="350" y="85" width="25" height="25" fill='#161b22' stroke='#ff6b6b' stroke-width="1.5" rx='2'/>
+  <text x="362" y="103" fill='#ff6b6b' font-size='9' text-anchor='middle'>8</text>
+
+  <!-- Formula -->
+  <text x="200" y="215" fill='currentColor' font-size='12' text-anchor='middle'>V = V_outer - V_hole = 216 - 8 = 208 cm³</text>
+  <text x="200" y="237" fill='#a0aec0' font-size='11' text-anchor='middle'>Remove the unwanted part from the total</text>
 </svg>"""
     },
     {
@@ -157,32 +195,32 @@ new Chart(document.getElementById('vol_composite_add'), {
         "body": """<div class='worked-example'>
 <p><strong>Example 1:</strong> A swimming pool has an unusual shape. It can be thought of as two cuboids joined:</p>
 <ul>
-<li>Shallow end: \(20 \text{ m} \times 10 \text{ m} \times 1 \text{ m}\)</li>
-<li>Deep end: \(10 \text{ m} \times 10 \text{ m} \times 2 \text{ m}\)</li>
+<li>Shallow end: 20 m \(\times\) 10 m \(\times\) 1 m</li>
+<li>Deep end: 10 m \(\times\) 10 m \(\times\) 2 m</li>
 </ul>
 <p>How much water is needed to fill it completely?</p>
-<p>\\(V_1 = 20 \\times 10 \\times 1 = 200 \\text{ m}^3\\)</p>
-<p>\\(V_2 = 10 \\times 10 \\times 2 = 200 \\text{ m}^3\\)</p>
-<p>\\(V_{\\text{total}} = 200 + 200 = 400 \\text{ m}^3 = 400,000 \\text{ L}\\)</p>
+<p>\\(V_1 = 20 \\times 10 \\times 1 = 200 \\mathrm{ m}^3\\)</p>
+<p>\\(V_2 = 10 \\times 10 \\times 2 = 200 \\mathrm{ m}^3\\)</p>
+<p>\\(V_{\\mathrm{total}} = 200 + 200 = 400 \\mathrm{ m}^3 = 400,000 \\mathrm{ L}\\)</p>
 <p><strong>Answer: 400,000 litres of water</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Example 2:</strong> A shipping container is L-shaped. Calculate its internal volume:</p>
 <ul>
-<li>Vertical section: \(3 \text{ m} \times 2 \text{ m} \times 4 \text{ m}\)</li>
-<li>Horizontal section: \(5 \text{ m} \times 2 \text{ m} \times 2 \text{ m}\)</li>
+<li>Vertical section: 3 m \(\times\) 2 m \(\times\) 4 m</li>
+<li>Horizontal section: 5 m \(\times\) 2 m \(\times\) 2 m</li>
 </ul>
-<p>\\(V_1 = 3 \\times 2 \\times 4 = 24 \\text{ m}^3\\)</p>
-<p>\\(V_2 = 5 \\times 2 \\times 2 = 20 \\text{ m}^3\\)</p>
-<p>\\(V_{\\text{total}} = 24 + 20 = 44 \\text{ m}^3\\)</p>
+<p>\\(V_1 = 3 \\times 2 \\times 4 = 24 \\mathrm{ m}^3\\)</p>
+<p>\\(V_2 = 5 \\times 2 \\times 2 = 20 \\mathrm{ m}^3\\)</p>
+<p>\\(V_{\\mathrm{total}} = 24 + 20 = 44 \\mathrm{ m}^3\\)</p>
 <p><strong>Answer: 44 m³</strong></p>
 </div>
 
 <div class='worked-example'>
-<p><strong>Example 3:</strong> A storage box has outer dimensions \(30 \text{ cm} \times 25 \text{ cm} \times 20 \text{ cm}\) with walls 2 cm thick. Find the internal volume (where items can be stored).</p>
+<p><strong>Example 3:</strong> A storage box has outer dimensions 30 cm \(\times\) 25 cm \(\times\) 20 cm with walls 2 cm thick. Find the internal volume (where items can be stored).</p>
 <p>Internal dimensions: \((30 - 2 \times 2) \times (25 - 2 \times 2) \times (20 - 2) = 26 \times 21 \times 18\) cm</p>
-<p>\\(V_{\\text{internal}} = 26 \\times 21 \\times 18 = 9828 \\text{ cm}^3\\)</p>
+<p>\\(V_{\\mathrm{internal}} = 26 \\times 21 \\times 18 = 9828 \\mathrm{ cm}^3\\)</p>
 <p><strong>Answer: 9828 cm³ ≈ 9.8 L</strong></p>
 </div>
 
