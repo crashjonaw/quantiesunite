@@ -33,8 +33,7 @@ import numpy as np
 # Set seed for reproducibility
 np.random.seed(42)
 
-# Uniform distribution [0, 1)
-uniform = np.random.uniform(0, 1, 5)
+# Uniform distribution [0, 1)\\nuniform = np.random.uniform(0, 1, 5)
 
 # Standard normal distribution (mean=0, std=1)
 normal = np.random.normal(0, 1, (3, 4))
@@ -97,8 +96,7 @@ rng = Generator(PCG64(seed=42))
 
 # Generate random numbers
 arr = rng.standard_normal(1000)
-integers = rng.integers(0, 100, size=10)
-uniform = rng.uniform(0, 1, 5)
+integers = rng.integers(0, 100, size=10)\\nuniform = rng.uniform(0, 1, 5)
 
 # Multiple independent streams for parallel work
 rngs = [Generator(PCG64(seed=i)) for i in range(4)]

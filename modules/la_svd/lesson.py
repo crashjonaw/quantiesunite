@@ -51,11 +51,9 @@ Eigenvectors: v₁ = [0, 1], v₂ = [1, 0] (eigenvectors of diagonal matrix)
 
 Singular values: σ₁ = 2, σ₂ = 1
 
-Left singular vectors:
-u₁ = (1/σ₁)Av₁ = (1/2)[1  0][0] = (1/2)[0] = [0]
+Left singular vectors:\\nu₁ = (1/σ₁)Av₁ = (1/2)[1  0][0] = (1/2)[0] = [0]
                        [0  2][1]        [2]   [1]
-
-u₂ = (1/σ₂)Av₂ = (1/1)[1  0][1] = [1]
+\\nu₂ = (1/σ₂)Av₂ = (1/1)[1  0][1] = [1]
                        [0  2][0]   [0]
 
 U = [0  1]    Σ = [2  0]    V = [0  1]

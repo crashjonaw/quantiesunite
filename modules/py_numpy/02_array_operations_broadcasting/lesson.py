@@ -90,8 +90,7 @@ col = np.array([[1], [2], [3]])
 result2 = col + np.array([10, 20])  # Broadcasting to (3, 2)
 
 # Check if shapes can broadcast
-shapes = (3, 4)
-other = (4,)  # Compatible: (3, 4) and (1, 4) -> (3, 4)
+shapes = (3, 4)\\nother = (4,)  # Compatible: (3, 4) and (1, 4) -> (3, 4)
 </pre>
 </div>
 

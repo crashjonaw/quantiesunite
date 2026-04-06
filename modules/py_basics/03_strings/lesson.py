@@ -43,8 +43,7 @@ poem = "Roses are red,\\nViolets are blue,\\nStrings are immutable,\\nThat much 
     <pre><code>newline = "Line 1\\nLine 2"
 tab = "Column1\\tColumn2"
 quote = "He said \\"Hello\\""
-backslash = "Path: C:\\\\Users"
-unicode = "Unicode: \\u03B1\\u03B2"</code></pre>
+backslash = "Path: C:\\\\Users"\\nunicode = "Unicode: \\u03B1\\u03B2"</code></pre>
 </div>
 
 <h3>String Length and Indexing</h3>

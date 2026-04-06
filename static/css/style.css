@@ -4514,16 +4514,16 @@ html, body {
   background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent);
   animation: medal-shimmer 3s ease-in-out infinite;
 }
-/* Medal card text — dark for readability on light bg */
-.trophy-gold .trophy-card-name,
-.trophy-silver .trophy-card-name,
-.trophy-bronze .trophy-card-name { color: #1a1a2e; }
-.trophy-gold .trophy-score-detail,
-.trophy-silver .trophy-score-detail,
-.trophy-bronze .trophy-score-detail { color: #64748b; }
-.trophy-gold .trophy-card-level-tag,
-.trophy-silver .trophy-card-level-tag,
-.trophy-bronze .trophy-card-level-tag { color: #64748b; background: rgba(0,0,0,0.06); }
+/* Medal card text — dark for readability on light bg (only in bright theme) */
+[data-theme="bright"] .trophy-gold .trophy-card-name,
+[data-theme="bright"] .trophy-silver .trophy-card-name,
+[data-theme="bright"] .trophy-bronze .trophy-card-name { color: #1a1a2e; }
+[data-theme="bright"] .trophy-gold .trophy-score-detail,
+[data-theme="bright"] .trophy-silver .trophy-score-detail,
+[data-theme="bright"] .trophy-bronze .trophy-score-detail { color: #64748b; }
+[data-theme="bright"] .trophy-gold .trophy-card-level-tag,
+[data-theme="bright"] .trophy-silver .trophy-card-level-tag,
+[data-theme="bright"] .trophy-bronze .trophy-card-level-tag { color: #64748b; background: rgba(0,0,0,0.06); }
 /* Trophy medal — floating on top-right */
 @keyframes trophy-float {
   0%, 100% { transform: translateY(0); }
@@ -4553,7 +4553,7 @@ html, body {
   text-align: center;
   width: 100%;
 }
-.trophy-card-emoji { font-size: 2.2rem; margin-bottom: 4px; line-height: 1; }
+.trophy-card-emoji { font-size: 2.2rem; margin-bottom: 4px; line-height: 1; overflow: hidden; }
 .trophy-card-name {
   font-size: 0.8rem;
   font-weight: 700;

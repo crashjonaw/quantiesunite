@@ -32,8 +32,7 @@ SECTIONS = [
 
         <div class='example-box'>
         <p><strong>Example: Orthogonality and norms</strong></p>
-        <pre class='code-block'>u = [1, 2], v = [2, -1]
-u · v = 1·2 + 2·(-1) = 0
+        <pre class='code-block'>u = [1, 2], v = [2, -1]\\nu · v = 1·2 + 2·(-1) = 0
 Since u · v = 0, u and v are orthogonal.
 
 ||u|| = √(1² + 2²) = √5
@@ -81,8 +80,7 @@ v̂ = [2/√5, -1/√5] is the unit vector in direction of v.</pre>
         <p><strong>Example: Orthonormal set in ℝ³</strong></p>
         <pre class='code-block'>u₁ = [1, 0, 0], u₂ = [0, 1, 0], u₃ = [0, 0, 1]
 
-Check orthonormality:
-u₁ · u₂ = 0, u₁ · u₃ = 0, u₂ · u₃ = 0 (orthogonal)
+Check orthonormality:\\nu₁ · u₂ = 0, u₁ · u₃ = 0, u₂ · u₃ = 0 (orthogonal)
 ||u₁|| = ||u₂|| = ||u₃|| = 1 (unit vectors)
 
 This is the standard basis—always orthonormal!
@@ -96,8 +94,7 @@ Coordinates with respect to the orthonormal basis are just the components!</pre>
         <pre class='code-block'>Q = [cos(θ)  -sin(θ)]
     [sin(θ)   cos(θ)]
 
-Columns: u₁ = [cos(θ), sin(θ)], u₂ = [-sin(θ), cos(θ)]
-u₁ · u₂ = -cos(θ)sin(θ) + sin(θ)cos(θ) = 0 ✓
+Columns: u₁ = [cos(θ), sin(θ)], u₂ = [-sin(θ), cos(θ)]\\nu₁ · u₂ = -cos(θ)sin(θ) + sin(θ)cos(θ) = 0 ✓
 ||u₁|| = √(cos²(θ) + sin²(θ)) = 1 ✓
 ||u₂|| = √(sin²(θ) + cos²(θ)) = 1 ✓
 
@@ -150,11 +147,9 @@ wₖ = vₖ - Σⱼ₌₁^{k-1} (vₖ·wⱼ/||wⱼ||²)wⱼ</pre>
         <p><strong>Example: Gram-Schmidt in ℝ³</strong></p>
         <pre class='code-block'>v₁ = [1, 0, 0], v₂ = [1, 1, 0]
 
-w₁ = [1, 0, 0]
-u₁ = w₁ / ||w₁|| = [1, 0, 0] (already unit)
+w₁ = [1, 0, 0]\\nu₁ = w₁ / ||w₁|| = [1, 0, 0] (already unit)
 
-w₂ = v₂ - (v₂ · u₁)u₁ = [1, 1, 0] - (1)[1, 0, 0] = [0, 1, 0]
-u₂ = w₂ / ||w₂|| = [0, 1, 0] (already unit)
+w₂ = v₂ - (v₂ · u₁)u₁ = [1, 1, 0] - (1)[1, 0, 0] = [0, 1, 0]\\nu₂ = w₂ / ||w₂|| = [0, 1, 0] (already unit)
 
 Orthonormal set: {u₁ = [1, 0, 0], u₂ = [0, 1, 0]}</pre>
 

@@ -44,14 +44,12 @@ temperature = 98.6</code></pre>
 
 <div class="worked-example">
     <p><strong>Valid and Invalid Examples:</strong></p>
-    <pre><code># Valid
-user_name = "Bob"
+    <pre><code># Valid\\nuser_name = "Bob"
 _private = 100
 price2 = 29.99
 
 # Invalid
-2nd_place = "Silver"  # Starts with number
-user-name = "Bob"     # Contains hyphen
+2nd_place = "Silver"  # Starts with number\\nuser-name = "Bob"     # Contains hyphen
 for = 5               # Python keyword</code></pre>
 </div>
 '''
@@ -118,8 +116,7 @@ is_valid = (age >= 18)</code></pre>
 </div>
 
 <div class="worked-example">
-    <pre><code>result = None
-user = None</code></pre>
+    <pre><code>result = None\\nuser = None</code></pre>
 </div>
 
 <h3>Checking Data Types</h3>

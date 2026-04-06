@@ -177,8 +177,7 @@ team_a -= team_b  # team_a becomes {"Alice", "Charlie"}
 <div class="worked-example">
 <p><strong>Example: Real-world set operations</strong></p>
 <pre><code># Remove duplicates
-data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]
-unique = list(set(data))  # [1, 2, 3, 4] (order not guaranteed)
+data = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4]\\nunique = list(set(data))  # [1, 2, 3, 4] (order not guaranteed)
 
 # Find common elements between lists
 list1 = [1, 2, 3, 4, 5]
@@ -205,8 +204,7 @@ def unique_preserving_order(seq):
             result.append(item)
     return result
 
-data = [1, 2, 2, 3, 1, 4]
-unique = unique_preserving_order(data)  # [1, 2, 3, 4]
+data = [1, 2, 2, 3, 1, 4]\\nunique = unique_preserving_order(data)  # [1, 2, 3, 4]
 </code></pre>
 </div>
 
@@ -241,8 +239,7 @@ set_of_sets = {frozenset([1, 2]), frozenset([3, 4])}
 
 # Set operations still work (return frozensets)
 fs1 = frozenset([1, 2, 3])
-fs2 = frozenset([3, 4, 5])
-union = fs1 | fs2  # frozenset({1, 2, 3, 4, 5})
+fs2 = frozenset([3, 4, 5])\\nunion = fs1 | fs2  # frozenset({1, 2, 3, 4, 5})
 </code></pre>
 </div>
 
@@ -350,8 +347,7 @@ items = ["a", "b", "c"]
 items[1]  # Get by position
 
 # Use SET when:
-# - Need fast membership testing
-users = set(user_data)
+# - Need fast membership testing\\nusers = set(user_data)
 if user_id in users:  # O(1)
     pass
 

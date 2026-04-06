@@ -79,9 +79,7 @@ Orthonormal basis: {[1, 0], [0, 1]}</pre>
         <p><strong>Example:</strong> QR decomposition of $A = \\begin{bmatrix} 1 & 1 \\\\ 0 & 1 \\\\ 0 & 0 \\end{bmatrix}$.</p>
         <pre>Columns: a₁ = [1, 0, 0], a₂ = [1, 1, 0]
 
-Gram-Schmidt:
-u₁ = [1, 0, 0]  (already unit)
-u₂ = [1, 1, 0] - (1)[1, 0, 0] = [0, 1, 0]
+Gram-Schmidt:\\nu₁ = [1, 0, 0]  (already unit)\\nu₂ = [1, 1, 0] - (1)[1, 0, 0] = [0, 1, 0]
 
 Q = [1  0]
     [0  1]

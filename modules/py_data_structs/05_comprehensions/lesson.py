@@ -27,8 +27,7 @@ squares = [x**2 for x in range(5)]
 # [0, 1, 4, 9, 16]
 
 # Other examples
-doubled = [x * 2 for x in [1, 2, 3, 4, 5]]  # [2, 4, 6, 8, 10]
-uppercase = [s.upper() for s in ["a", "b", "c"]]  # ["A", "B", "C"]
+doubled = [x * 2 for x in [1, 2, 3, 4, 5]]  # [2, 4, 6, 8, 10]\\nuppercase = [s.upper() for s in ["a", "b", "c"]]  # ["A", "B", "C"]
 </code></pre>
 </div>
 
@@ -168,8 +167,7 @@ squares = {x**2 for x in range(5)}
 # {0, 1, 4, 9, 16}
 
 # Remove duplicates while transforming
-numbers = [1, 2, 2, 3, 3, 3, 4]
-unique_doubled = {x * 2 for x in numbers}
+numbers = [1, 2, 2, 3, 3, 3, 4]\\nunique_doubled = {x * 2 for x in numbers}
 # {2, 4, 6, 8}
 
 # Filter values
@@ -193,13 +191,11 @@ all_unique = {x for row in data for x in row}
 <h4>Practical Applications</h4>
 <div class="worked-example">
 <p><strong>Example: Real-world use cases</strong></p>
-<pre><code># Create lookup table
-users = [
+<pre><code># Create lookup table\\nusers = [
     {"id": 1, "name": "Alice"},
     {"id": 2, "name": "Bob"},
     {"id": 3, "name": "Charlie"}
-]
-user_dict = {u["id"]: u["name"] for u in users}
+]\\nuser_dict = {u["id"]: u["name"] for u in users}
 # {1: "Alice", 2: "Bob", 3: "Charlie"}
 
 # Group by property
@@ -224,8 +220,7 @@ for name, grade in students:
 # {"A": ["Alice", "Charlie"], "B": ["Bob", "Diana"]}
 
 # Quick unique values
-emails = ["alice@example.com", "bob@example.com", "alice@example.com"]
-unique_emails = {e for e in emails}
+emails = ["alice@example.com", "bob@example.com", "alice@example.com"]\\nunique_emails = {e for e in emails}
 # {"alice@example.com", "bob@example.com"}
 </code></pre>
 </div>
