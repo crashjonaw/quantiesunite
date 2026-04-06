@@ -35,70 +35,24 @@
 
   svg.call(zoom);
 
-  // ── Glow effects for completed nodes ────────────────────────────────────────
+  // ── Glow effect for completed nodes ─────────────────────────────────────────
   const defs0 = svg.append("defs");
 
-  // Radial gradient: green center fading outward
+  // Radial gradient: bright green core → fades outward to transparent
+  // The node (r=18) covers the center, so the visible glow starts at ~30% of r=60 (=18px)
   const completedGlow = defs0.append("radialGradient")
     .attr("id", "completed-glow")
     .attr("cx", "50%").attr("cy", "50%").attr("r", "50%");
-  completedGlow.append("stop").attr("offset", "0%").attr("stop-color", "#22c55e").attr("stop-opacity", 0.5);
-  completedGlow.append("stop").attr("offset", "55%").attr("stop-color", "#16a34a").attr("stop-opacity", 0.25);
-  completedGlow.append("stop").attr("offset", "100%").attr("stop-color", "#15803d").attr("stop-opacity", 0);
+  completedGlow.append("stop").attr("offset", "0%").attr("stop-color", "#4ade80").attr("stop-opacity", 0.8);
+  completedGlow.append("stop").attr("offset", "25%").attr("stop-color", "#4ade80").attr("stop-opacity", 0.7);
+  completedGlow.append("stop").attr("offset", "40%").attr("stop-color", "#22c55e").attr("stop-opacity", 0.5);
+  completedGlow.append("stop").attr("offset", "60%").attr("stop-color", "#16a34a").attr("stop-opacity", 0.25);
+  completedGlow.append("stop").attr("offset", "80%").attr("stop-color", "#15803d").attr("stop-opacity", 0.08);
+  completedGlow.append("stop").attr("offset", "100%").attr("stop-color", "#0f5132").attr("stop-opacity", 0);
 
-  // Soft blur filter for the outer aura
-  const glowFilter = defs0.append("filter")
-    .attr("id", "glow")
-    .attr("x", "-80%").attr("y", "-80%")
-    .attr("width", "260%").attr("height", "260%");
-  glowFilter.append("feGaussianBlur").attr("stdDeviation", "6").attr("result", "blur");
-  glowFilter.append("feMerge").selectAll("feMergeNode")
-    .data(["blur", "SourceGraphic"]).join("feMergeNode")
-    .attr("in", d => d);
-
-  // Gradient stroke for the ring
-  const ringGrad = defs0.append("linearGradient")
-    .attr("id", "completed-ring-grad")
-    .attr("x1", "0%").attr("y1", "0%")
-    .attr("x2", "100%").attr("y2", "100%");
-  ringGrad.append("stop").attr("offset", "0%").attr("stop-color", "#4ade80");
-  ringGrad.append("stop").attr("offset", "50%").attr("stop-color", "#22c55e");
-  ringGrad.append("stop").attr("offset", "100%").attr("stop-color", "#15803d");
-
-  // ── Arrow marker ────────────────────────────────────────────────────────────
-  svg.append("defs").append("marker")
-    .attr("id", "arrowhead")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 22)
-    .attr("refY", 0)
-    .attr("markerWidth", 6)
-    .attr("markerHeight", 6)
-    .attr("orient", "auto")
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#555");
-
-  // Prereq arrows (green — leads TO the hovered node)
-  svg.append("defs").append("marker")
-    .attr("id", "arrowhead-prereq")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 22).attr("refY", 0)
-    .attr("markerWidth", 6).attr("markerHeight", 6)
-    .attr("orient", "auto")
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#22c55e");
-
-  // Downstream arrows (yellow — leads AWAY from the hovered node)
-  svg.append("defs").append("marker")
-    .attr("id", "arrowhead-downstream")
-    .attr("viewBox", "0 -5 10 10")
-    .attr("refX", 22).attr("refY", 0)
-    .attr("markerWidth", 6).attr("markerHeight", 6)
-    .attr("orient", "auto")
-    .append("path")
-    .attr("d", "M0,-5L10,0L0,5")
-    .attr("fill", "#FFD700");
+  // ── Arrowhead helper — computed per-tick as polygons ─────────────────────────
+  const ARROW_SIZE = 12;
+  const NODE_R = 18; // offset arrow tip from node center
 
   // ── Force simulation ────────────────────────────────────────────────────────
   let simulation = d3.forceSimulation(allNodes)
@@ -120,8 +74,17 @@
     .attr("class", "graph-link")
     .attr("stroke", "#444")
     .attr("stroke-width", 1.5)
-    .attr("stroke-opacity", 0.5)
-    .attr("marker-end", "url(#arrowhead)");
+    .attr("stroke-opacity", 0.5);
+
+  // ── Arrowhead triangles (separate elements, colored independently) ──
+  let arrowSel = g.append("g").attr("class", "arrows")
+    .selectAll("polygon")
+    .data(allLinks)
+    .join("polygon")
+    .attr("class", "graph-arrow")
+    .attr("fill", "#8b949e")
+    .attr("fill-opacity", 0.5)
+    .attr("stroke", "none");
 
   // ── Draw nodes ──────────────────────────────────────────────────────────────
   let nodeSel = g.append("g").attr("class", "nodes")
@@ -147,29 +110,19 @@
     .on("mouseenter", (event, d) => { if (!selectedNode) handleHover(d, true); })
     .on("mouseleave", (event, d) => { if (!selectedNode) handleHover(d, false); });
 
-  // ── Completed node: soft radial aura (outermost, behind everything) ──
+  // ── Completed node: radial gradient glow fading outward ──
   nodeSel.filter(d => d.complete)
     .append("circle")
-    .attr("r", 32)
+    .attr("r", 42)
     .attr("fill", "url(#completed-glow)")
-    .attr("class", "node-aura")
-    .style("filter", "url(#glow)");
-
-  // ── Completed node: gradient ring (sits flush around the node) ──
-  nodeSel.filter(d => d.complete)
-    .append("circle")
-    .attr("r", 22)
-    .attr("fill", "none")
-    .attr("stroke", "url(#completed-ring-grad)")
-    .attr("stroke-width", 3)
     .attr("class", "node-glow");
 
   // Node circles
   nodeSel.append("circle")
-    .attr("r", d => d.complete ? 19 : 16)
+    .attr("r", d => d.complete ? 18 : 16)
     .attr("fill", d => d.color)
-    .attr("stroke", d => d.complete ? "url(#completed-ring-grad)" : (d.unlocked ? d.color : "#666"))
-    .attr("stroke-width", d => d.complete ? 2.5 : 2)
+    .attr("stroke", d => d.complete ? "#22c55e" : (d.unlocked ? d.color : "#666"))
+    .attr("stroke-width", d => d.complete ? 2 : 2)
     .attr("fill-opacity", d => d.unlocked ? 1.0 : 0.35)
     .attr("class", "node-circle");
 
@@ -212,12 +165,29 @@
     .text("✓");
 
   // ── Tick ────────────────────────────────────────────────────────────────────
+  function arrowPoints(d) {
+    const dx = d.target.x - d.source.x;
+    const dy = d.target.y - d.source.y;
+    const len = Math.sqrt(dx * dx + dy * dy) || 1;
+    const ux = dx / len, uy = dy / len;
+    // Tip sits at NODE_R from the target center
+    const tipX = d.target.x - ux * NODE_R;
+    const tipY = d.target.y - uy * NODE_R;
+    // Two base points perpendicular to the line
+    const baseX = tipX - ux * ARROW_SIZE;
+    const baseY = tipY - uy * ARROW_SIZE;
+    const px = -uy * ARROW_SIZE * 0.5;
+    const py = ux * ARROW_SIZE * 0.5;
+    return `${tipX},${tipY} ${baseX + px},${baseY + py} ${baseX - px},${baseY - py}`;
+  }
+
   simulation.on("tick", () => {
     linkSel
       .attr("x1", d => d.source.x)
       .attr("y1", d => d.source.y)
       .attr("x2", d => d.target.x)
       .attr("y2", d => d.target.y);
+    arrowSel.attr("points", arrowPoints);
     nodeSel.attr("transform", d => `translate(${d.x},${d.y})`);
   });
 
@@ -265,21 +235,24 @@
     if (entering) {
       const { nodeSet, upstreamLinks, downstreamLinks } = getConnected(d);
       nodeSel.attr("opacity", 0.12);
-      linkSel.attr("stroke-opacity", 0.05).attr("stroke", "#444").attr("marker-end", "url(#arrowhead)");
+      linkSel.attr("stroke-opacity", 0.05).attr("stroke", "#444");
+      arrowSel.attr("fill", "#444").attr("fill-opacity", 0.05);
       nodeSel.filter(n => nodeSet.has(n.id)).attr("opacity", 1);
       // Prereq arrows = green
       linkSel.filter((l, i) => upstreamLinks.has(i))
-        .attr("stroke", "#22c55e").attr("stroke-opacity", 1)
-        .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-prereq)");
+        .attr("stroke", "#4ade80").attr("stroke-opacity", 1).attr("stroke-width", 2.5);
+      arrowSel.filter((l, i) => upstreamLinks.has(i))
+        .attr("fill", "#4ade80").attr("fill-opacity", 1);
       // Downstream arrows = yellow
       linkSel.filter((l, i) => downstreamLinks.has(i))
-        .attr("stroke", "#FFD700").attr("stroke-opacity", 1)
-        .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-downstream)");
+        .attr("stroke", "#FFD700").attr("stroke-opacity", 1).attr("stroke-width", 2.5);
+      arrowSel.filter((l, i) => downstreamLinks.has(i))
+        .attr("fill", "#FFD700").attr("fill-opacity", 1);
       showTooltipHover(d);
     } else {
       nodeSel.attr("opacity", 1);
-      linkSel.attr("stroke", "#444").attr("stroke-opacity", 0.5)
-        .attr("stroke-width", 1.5).attr("marker-end", "url(#arrowhead)");
+      linkSel.attr("stroke", "#444").attr("stroke-opacity", 0.5).attr("stroke-width", 1.5);
+      arrowSel.attr("fill", "#8b949e").attr("fill-opacity", 0.5);
       hideTooltip();
     }
   }
@@ -335,16 +308,19 @@
 
     const { nodeSet, upstreamLinks, downstreamLinks } = getConnected(d);
     nodeSel.attr("opacity", 0.12);
-    linkSel.attr("stroke-opacity", 0.05).attr("stroke", "#444").attr("marker-end", "url(#arrowhead)");
+    linkSel.attr("stroke-opacity", 0.05).attr("stroke", "#444");
+    arrowSel.attr("fill", "#444").attr("fill-opacity", 0.05);
     nodeSel.filter(n => nodeSet.has(n.id)).attr("opacity", 1);
     // Prereq arrows = green
     linkSel.filter((l, i) => upstreamLinks.has(i))
-      .attr("stroke", "#22c55e").attr("stroke-opacity", 1)
-      .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-prereq)");
+      .attr("stroke", "#4ade80").attr("stroke-opacity", 1).attr("stroke-width", 2.5);
+    arrowSel.filter((l, i) => upstreamLinks.has(i))
+      .attr("fill", "#4ade80").attr("fill-opacity", 1);
     // Downstream arrows = yellow
     linkSel.filter((l, i) => downstreamLinks.has(i))
-      .attr("stroke", "#FFD700").attr("stroke-opacity", 1)
-      .attr("stroke-width", 2.5).attr("marker-end", "url(#arrowhead-downstream)");
+      .attr("stroke", "#FFD700").attr("stroke-opacity", 1).attr("stroke-width", 2.5);
+    arrowSel.filter((l, i) => downstreamLinks.has(i))
+      .attr("fill", "#FFD700").attr("fill-opacity", 1);
 
     // Pin tooltip near the node
     fillTooltipContent(d);
@@ -393,8 +369,8 @@
   function deselectNode() {
     selectedNode = null;
     nodeSel.attr("opacity", 1);
-    linkSel.attr("stroke", "#444").attr("stroke-opacity", 0.5)
-      .attr("stroke-width", 1.5).attr("marker-end", "url(#arrowhead)");
+    linkSel.attr("stroke", "#444").attr("stroke-opacity", 0.5).attr("stroke-width", 1.5);
+    arrowSel.attr("fill", "#8b949e").attr("fill-opacity", 0.5);
     hideTooltip();
   }
 
@@ -588,15 +564,13 @@
 
     // ── Main circle: enlarge matching nodes ──
     nodeSel.select("circle.node-circle").transition().duration(300)
-      .attr("r",            d => matching.has(d.id) ? (d.complete ? 28 : 26) : (d.complete ? 19 : 16))
-      .attr("stroke-width", d => matching.has(d.id) ? 3 : (d.complete ? 2.5 : 2))
-      .attr("stroke",       d => matching.has(d.id) ? "#fff"  : (d.complete ? "url(#completed-ring-grad)" : d.color));
+      .attr("r",            d => matching.has(d.id) ? (d.complete ? 26 : 26) : (d.complete ? 18 : 16))
+      .attr("stroke-width", d => matching.has(d.id) ? 3 : 2)
+      .attr("stroke",       d => matching.has(d.id) ? "#fff"  : (d.complete ? "#22c55e" : d.color));
 
-    // ── Completed glow ring: enlarge on match ──
+    // ── Completed glow: enlarge on match ──
     nodeSel.select("circle.node-glow").transition().duration(300)
-      .attr("r", d => matching.has(d.id) ? 30 : 22);
-    nodeSel.select("circle.node-aura").transition().duration(300)
-      .attr("r", d => matching.has(d.id) ? 40 : 32);
+      .attr("r", d => matching.has(d.id) ? 52 : 42);
 
     // ── Halo ring: animate in on matching nodes ──
     nodeSel.select("circle.node-halo").transition().duration(300)
@@ -660,6 +634,17 @@
         const t = l.target.id || l.target;
         return (matching.has(s) && matching.has(t)) ? 2.5 : 1;
       });
+    arrowSel.transition().duration(300)
+      .attr("fill", l => {
+        const s = l.source.id || l.source;
+        const t = l.target.id || l.target;
+        return (matching.has(s) && matching.has(t)) ? "#FFD700" : "#444";
+      })
+      .attr("fill-opacity", l => {
+        const s = l.source.id || l.source;
+        const t = l.target.id || l.target;
+        return (matching.has(s) && matching.has(t)) ? 0.7 : 0.04;
+      });
   };
 
   window.legendReset = function() {
@@ -675,13 +660,12 @@
     nodeSel.transition().duration(300).attr("opacity", 1);
 
     nodeSel.select("circle.node-circle").transition().duration(300)
-      .attr("r",            d => d.complete ? 19 : 16)
-      .attr("stroke-width", d => d.complete ? 2.5 : 2)
-      .attr("stroke",       d => d.complete ? "url(#completed-ring-grad)" : d.color);
+      .attr("r",            d => d.complete ? 18 : 16)
+      .attr("stroke-width", 2)
+      .attr("stroke",       d => d.complete ? "#22c55e" : d.color);
 
-    // Reset completed glow elements
-    nodeSel.select("circle.node-glow").transition().duration(300).attr("r", 22);
-    nodeSel.select("circle.node-aura").transition().duration(300).attr("r", 32);
+    // Reset completed glow
+    nodeSel.select("circle.node-glow").transition().duration(300).attr("r", 42);
 
     // Hide all halos
     nodeSel.select("circle.node-halo").transition().duration(200)
@@ -699,8 +683,10 @@
     linkSel.transition().duration(300)
       .attr("stroke", "#444")
       .attr("stroke-opacity", 0.5)
-      .attr("stroke-width", 1.5)
-      .attr("marker-end", "url(#arrowhead)");
+      .attr("stroke-width", 1.5);
+    arrowSel.transition().duration(300)
+      .attr("fill", "#8b949e")
+      .attr("fill-opacity", 0.5);
 
     // Reset zoom to overview
     svg.transition().duration(500)

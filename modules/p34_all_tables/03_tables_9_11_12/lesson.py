@@ -9,48 +9,48 @@ SECTIONS = [
 
 <div class="worked-example">
 <h4>The 9-Pattern Magic</h4>
-<table style="margin: 20px auto; border-collapse: collapse; width: 100%; max-width: 500px;">
-  <tr class="formula-box">
-    <th style="border: 1px solid #333; padding: 10px;">Multiplication</th>
-    <th style="border: 1px solid #333; padding: 10px;">Product</th>
-    <th style="border: 1px solid #333; padding: 10px;">Digits</th>
-    <th style="border: 1px solid #333; padding: 10px;">Sum = 9</th>
+<table style="margin: 20px auto; border-collapse: collapse; width: 100%; max-width: 500px; color: currentColor;">
+  <tr>
+    <th style="border: 1px solid #8b949e; padding: 10px; background: transparent; color: currentColor;">Multiplication</th>
+    <th style="border: 1px solid #8b949e; padding: 10px; background: transparent; color: currentColor;">Product</th>
+    <th style="border: 1px solid #8b949e; padding: 10px; background: transparent; color: currentColor;">Digits</th>
+    <th style="border: 1px solid #8b949e; padding: 10px; background: transparent; color: currentColor;">Sum = 9</th>
   </tr>
   <tr>
-    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 1\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">9</td>
-    <td style="border: 1px solid #333; padding: 10px;">9</td>
-    <td style="border: 1px solid #333; padding: 10px; ">9</td>
-  </tr>
-  <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 2\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">18</td>
-    <td style="border: 1px solid #333; padding: 10px;">\\(1 + 8\\)</td>
-    <td style="border: 1px solid #333; padding: 10px; ">9</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(9 \\times 1\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 3\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">27</td>
-    <td style="border: 1px solid #333; padding: 10px;">\\(2 + 7\\)</td>
-    <td style="border: 1px solid #333; padding: 10px; ">9</td>
-  </tr>
-  <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 4\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">36</td>
-    <td style="border: 1px solid #333; padding: 10px;">\\(3 + 6\\)</td>
-    <td style="border: 1px solid #333; padding: 10px; ">9</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(9 \\times 2\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">18</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(1 + 8\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 5\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">45</td>
-    <td style="border: 1px solid #333; padding: 10px;">\\(4 + 5\\)</td>
-    <td style="border: 1px solid #333; padding: 10px; ">9</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(9 \\times 3\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">27</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(2 + 7\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
   </tr>
-  <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 6\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">54</td>
-    <td style="border: 1px solid #333; padding: 10px;">\\(5 + 4\\)</td>
-    <td style="border: 1px solid #333; padding: 10px; ">9</td>
+  <tr>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(9 \\times 4\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">36</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(3 + 6\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(9 \\times 5\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">45</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(4 + 5\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(9 \\times 6\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">54</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">\\(5 + 4\\)</td>
+    <td style="border: 1px solid #8b949e; padding: 10px;">9</td>
   </tr>
 </table>
 

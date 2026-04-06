@@ -8,20 +8,25 @@ echo ""
 cd "$(dirname "$0")"
 DIR="$(pwd)"
 
-# ── Close truly idle Terminal windows (no child processes) ────────
+# ── Close truly idle Terminal windows (not busy = no running command) ─
 echo "Closing idle terminal windows..."
 osascript -e '
 tell application "Terminal"
-    repeat with w in (every window)
+    -- Collect window IDs to close (iterate backwards to avoid index shift)
+    set winCount to count of windows
+    repeat with i from winCount to 1 by -1
         try
+            set w to window i
+            set allIdle to true
             repeat with t in (every tab of w)
-                set tabProcs to processes of t
-                -- A truly idle tab only has its login shell (1 process)
-                if (count of tabProcs) ≤ 1 then
-                    close w saving no
+                if busy of t is true then
+                    set allIdle to false
                     exit repeat
                 end if
             end repeat
+            if allIdle then
+                close w saving no
+            end if
         end try
     end repeat
 end tell

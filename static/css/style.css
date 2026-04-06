@@ -1328,13 +1328,13 @@ html, body {
 #graph-ui { position: relative; width: 100vw; height: calc(100vh - 56px); }
 #graph-svg { width: 100%; height: 100%; background: #0a0e17; }
 
-/* Completed node aura pulse */
-@keyframes aura-pulse {
-  0%,100% { opacity: 0.7; }
-  50%     { opacity: 0.35; }
+/* Completed node glow pulse */
+@keyframes glow-pulse {
+  0%,100% { opacity: 0.85; }
+  50%     { opacity: 0.5; }
 }
-.node-aura {
-  animation: aura-pulse 3s ease-in-out infinite;
+.node-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
 }
 #graph-toolbar {
   position: absolute; top: 0; left: 0; right: 0; z-index: 20;
@@ -2514,18 +2514,21 @@ html, body {
   position: relative;
   overflow: hidden;
   padding: 80px 24px 40px;
-  margin-bottom: 0;
+  margin: 0 auto 0;
+  max-width: 1200px;
 }
 .dash-hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 40%, #312e81 70%, #1e3a5f 100%);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 0 0 20px 20px;
   z-index: 0;
 }
 .dash-hero-bg::after {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 20%, rgba(65,105,225,0.15) 0%, transparent 60%),
-              radial-gradient(ellipse at 70% 80%, rgba(139,92,246,0.1) 0%, transparent 50%);
+  border-radius: 0 0 20px 20px;
+  background: radial-gradient(ellipse at 30% 20%, rgba(65,105,225,0.08) 0%, transparent 60%);
 }
 .dash-hero-content {
   position: relative; z-index: 1;
@@ -2546,15 +2549,15 @@ html, body {
   font-size: 1.5rem; font-weight: 800;
   color: #fff;
   flex-shrink: 0;
-  border: 2px solid rgba(255,255,255,0.2);
+  border: 2px solid var(--border);
 }
 .dash-hero-title {
   font-size: 1.6rem; font-weight: 800;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 2px;
 }
 .dash-hero-sub {
-  color: rgba(255,255,255,0.6);
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
@@ -2576,8 +2579,8 @@ html, body {
 .dash-hero-circle {
   width: 92px; height: 92px;
   border-radius: 50%;
-  border: 2.5px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.05);
+  border: 2px solid var(--border);
+  background: var(--bg3);
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: 2px;
@@ -2589,7 +2592,7 @@ html, body {
 .dash-hero-num {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text);
   line-height: 1;
 }
 .dash-hero-num small {
@@ -2599,14 +2602,14 @@ html, body {
 }
 .dash-hero-label {
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.3px;
 }
 .dash-hero-stat-streak .dash-hero-circle {
-  border-color: rgba(245,158,11,0.5);
-  box-shadow: 0 0 12px rgba(245,158,11,0.15);
+  border-color: rgba(245,158,11,0.4);
+  box-shadow: 0 0 10px rgba(245,158,11,0.1);
 }
 .dash-hero-stat-divider { display: none; }
 
@@ -3274,17 +3277,21 @@ html, body {
   position: relative;
   overflow: hidden;
   padding: 80px 24px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .adash-hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, #1a0a0a 0%, #3b0764 40%, #7f1d1d 70%, #1e1b4b 100%);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 0 0 20px 20px;
   z-index: 0;
 }
 .adash-hero-bg::after {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 40% 30%, rgba(239,68,68,0.12) 0%, transparent 60%),
-              radial-gradient(ellipse at 60% 70%, rgba(139,92,246,0.1) 0%, transparent 50%);
+  border-radius: 0 0 20px 20px;
+  background: radial-gradient(ellipse at 40% 30%, rgba(239,68,68,0.06) 0%, transparent 60%);
 }
 .adash-hero-content {
   position: relative; z-index: 1;
@@ -3300,11 +3307,11 @@ html, body {
 .adash-hero-title {
   font-size: 1.6rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 4px;
 }
 .adash-hero-sub {
-  color: rgba(255,255,255,0.55);
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 .adash-hero-actions {
@@ -3333,8 +3340,8 @@ html, body {
 .adash-hcircle {
   width: 76px; height: 76px;
   border-radius: 50%;
-  border: 2px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.05);
+  border: 2px solid var(--border);
+  background: var(--bg3);
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: 2px;
@@ -3346,12 +3353,12 @@ html, body {
 .adash-hnum {
   font-size: 1rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text);
   line-height: 1;
 }
 .adash-hlabel {
   font-size: 0.7rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.3px;
@@ -4296,17 +4303,21 @@ html, body {
   position: relative;
   overflow: hidden;
   padding: 80px 24px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .trophy-hero-bg {
   position: absolute; inset: 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 40%, #312e81 70%, #1e3a5f 100%);
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 0 0 20px 20px;
   z-index: 0;
 }
 .trophy-hero-bg::after {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 30% 20%, rgba(255,215,0,0.1) 0%, transparent 60%),
-              radial-gradient(ellipse at 70% 80%, rgba(139,92,246,0.1) 0%, transparent 50%);
+  border-radius: 0 0 20px 20px;
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,215,0,0.06) 0%, transparent 60%);
 }
 .trophy-hero-content {
   position: relative; z-index: 1;
@@ -4317,11 +4328,11 @@ html, body {
 .trophy-hero-title {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text);
   margin-bottom: 6px;
 }
 .trophy-hero-sub {
-  color: rgba(255,255,255,0.6);
+  color: var(--text-muted);
   font-size: 0.95rem;
   margin-bottom: 28px;
 }
@@ -4343,8 +4354,8 @@ html, body {
 .trophy-stat-circle {
   width: 92px; height: 92px;
   border-radius: 50%;
-  border: 2.5px solid rgba(255,255,255,0.15);
-  background: rgba(255,255,255,0.05);
+  border: 2px solid var(--border);
+  background: var(--bg3);
   display: flex; flex-direction: column;
   align-items: center; justify-content: center;
   gap: 2px;
@@ -4356,7 +4367,7 @@ html, body {
 .trophy-stat-num {
   font-size: 1.15rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text);
   line-height: 1;
 }
 .trophy-stat-num small {
@@ -4366,7 +4377,7 @@ html, body {
 }
 .trophy-stat-label {
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.5);
+  color: var(--text-muted);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.3px;

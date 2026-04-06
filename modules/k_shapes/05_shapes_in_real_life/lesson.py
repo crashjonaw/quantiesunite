@@ -6,50 +6,58 @@ SECTIONS = [
     {
         "title": "Shapes Are Everywhere!",
         "body": """<p>Once you learn about shapes, you'll start seeing them in absolutely everything. Buildings, food, furniture, vehicles, signs — they're all made from basic shapes!</p>
-<svg viewBox="0 0 500 310" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <!-- House -->
-  <text x="30" y="30" font-size='12' font-weight='bold' fill='currentColor'>🏠 House</text>
-  <rect x="20" y="60" width="70" height="60" fill='#d4a574' stroke='#8b6f47' stroke-width="2"/>
-  <polygon points="55,60 20,40 90,40" fill='#c84a1a' stroke='#8b4513' stroke-width="2"/>
-  <text x="55" y="90" text-anchor='middle' font-size='9' fill='currentColor'>rectangle</text>
-  <text x="55" y="110" text-anchor='middle' font-size='9' fill='currentColor'>+ triangle</text>
+<svg viewBox="0 0 540 380" style="width:100%;max-width:540px;height:auto;display:block;margin:16px auto;">
+  <!-- Row 1 -->
+  <!-- House — col 1, centered at x=90 -->
+  <rect x="50" y="65" width="80" height="60" fill='#d4a574' stroke='#8b6f47' stroke-width="2.5"/>
+  <polygon points="90,65 45,35 135,35" fill='#c84a1a' stroke='#8b4513' stroke-width="2.5"/>
+  <rect x="77" y="90" width="26" height="35" fill='#5a3a1a' stroke='#8b6f47' stroke-width="1.5"/>
+  <text x="90" y="145" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>House</text>
+  <text x="90" y="160" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>rectangle + triangle</text>
 
-  <!-- Clock -->
-  <text x="150" y="30" font-size='12' font-weight='bold' fill='currentColor'>🕐 Clock</text>
-  <circle cx="190" cy="85" r="30" fill='#f4a460' stroke='#8b949e' stroke-width="2"/>
-  <text x="190" y="100" text-anchor='middle' font-size='9' fill='currentColor'>circle</text>
+  <!-- Clock — col 2, centered at x=270 -->
+  <circle cx="270" cy="70" r="42" fill='#fef3c7' stroke='#d97706' stroke-width="2.5"/>
+  <circle cx="270" cy="70" r="3" fill='#d97706'/>
+  <line x1="270" y1="70" x2="270" y2="42" stroke='#d97706' stroke-width="2.5" stroke-linecap='round'/>
+  <line x1="270" y1="70" x2="290" y2="78" stroke='#d97706' stroke-width="2" stroke-linecap='round'/>
+  <text x="270" y="130" text-anchor='middle' font-size='11' fill='#d97706' font-weight='bold'>12</text>
+  <text x="270" y="145" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Clock</text>
+  <text x="270" y="160" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>circle</text>
 
-  <!-- Pizza -->
-  <text x="270" y="30" font-size='12' font-weight='bold' fill='currentColor'>🍕 Pizza Slice</text>
-  <polygon points="340,90 320,60 360,60" fill='#daa520' stroke='#c41e3a' stroke-width="2"/>
-  <text x="340" y="105" text-anchor='middle' font-size='9' fill='currentColor'>triangle</text>
+  <!-- Pizza Slice — col 3, centered at x=450 -->
+  <polygon points="450,30 420,120 480,120" fill='#fbbf24' stroke='#d97706' stroke-width="2.5"/>
+  <circle cx="445" cy="75" r="4" fill='#dc2626'/>
+  <circle cx="460" cy="90" r="4" fill='#dc2626'/>
+  <circle cx="440" cy="100" r="4" fill='#dc2626'/>
+  <text x="450" y="145" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Pizza Slice</text>
+  <text x="450" y="160" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>triangle</text>
 
-  <!-- Book -->
-  <text x="30" y="160" font-size='12' font-weight='bold' fill='currentColor'>📚 Book</text>
-  <rect x="20" y="190" width="50" height="70" fill='#8b0000' stroke='#8b949e' stroke-width="2"/>
-  <text x="45" y="235" text-anchor='middle' font-size='9' fill='#fff'>rectangle</text>
+  <!-- Row 2 -->
+  <!-- Book — col 1, centered at x=90 -->
+  <rect x="60" y="195" width="60" height="80" rx="3" fill='#991b1b' stroke='#7f1d1d' stroke-width="2.5"/>
+  <line x1="62" y1="195" x2="62" y2="275" stroke='#fca5a5' stroke-width="2"/>
+  <line x1="72" y1="215" x2="110" y2="215" stroke='#fca5a5' stroke-width="1" opacity='0.5'/>
+  <line x1="72" y1="225" x2="105" y2="225" stroke='#fca5a5' stroke-width="1" opacity='0.5'/>
+  <line x1="72" y1="235" x2="108" y2="235" stroke='#fca5a5' stroke-width="1" opacity='0.5'/>
+  <text x="90" y="295" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Book</text>
+  <text x="90" y="310" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>rectangle</text>
 
-  <!-- Window -->
-  <text x="150" y="160" font-size='12' font-weight='bold' fill='currentColor'>🪟 Window</text>
-  <rect x="140" y="190" width="50" height="50" fill='#87ceeb' stroke='#8b949e' stroke-width="2"/>
-  <line x1="165" y1="190" x2="165" y2="240" stroke='#8b949e' stroke-width="1"/>
-  <line x1="140" y1="215" x2="190" y2="215" stroke='#8b949e' stroke-width="1"/>
-  <text x="165" y="250" text-anchor='middle' font-size='9' fill='currentColor'>square</text>
+  <!-- Window — col 2, centered at x=270 -->
+  <rect x="235" y="200" width="70" height="70" fill='#bae6fd' stroke='#6b7280' stroke-width="2.5"/>
+  <line x1="270" y1="200" x2="270" y2="270" stroke='#6b7280' stroke-width="2"/>
+  <line x1="235" y1="235" x2="305" y2="235" stroke='#6b7280' stroke-width="2"/>
+  <text x="270" y="295" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Window</text>
+  <text x="270" y="310" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>square</text>
 
-  <!-- Door -->
-  <text x="270" y="160" font-size='12' font-weight='bold' fill='currentColor'>🚪 Door</text>
-  <rect x="260" y="190" width="40" height="70" fill='#8b4513' stroke='#8b949e' stroke-width="2"/>
-  <circle cx="298" cy="225" r="3" fill='#ffd700'/>
-  <text x="280" y="275" text-anchor='middle' font-size='9' fill='currentColor'>rectangle</text>
+  <!-- Coin — col 3, centered at x=450 -->
+  <circle cx="450" cy="235" r="35" fill='#fde68a' stroke='#d97706' stroke-width="2.5"/>
+  <circle cx="450" cy="235" r="28" fill='none' stroke='#d97706' stroke-width="1.5"/>
+  <text x="450" y="240" text-anchor='middle' font-size='16' fill='#92400e' font-weight='bold'>1</text>
+  <text x="450" y="295" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Coin</text>
+  <text x="450" y="310" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>circle</text>
 
-  <!-- Coin -->
-  <text x="30" y="300" font-size='12' font-weight='bold' fill='currentColor'>🪙 Coin</text>
-
-  <!-- Yield sign -->
-  <text x="150" y="300" font-size='12' font-weight='bold' fill='currentColor'>⛔ Yield Sign</text>
-
-  <!-- Soccer ball -->
-  <text x="270" y="300" font-size='12' font-weight='bold' fill='currentColor'>⚽ Ball</text>
+  <!-- Decorative divider lines between rows -->
+  <line x1="30" y1="175" x2="510" y2="175" stroke='currentColor' stroke-width="0.5" opacity='0.15'/>
 </svg>
 <p>Every object is made from basic shapes. When you understand shapes, you can:</p>
 <ul>

@@ -6,25 +6,26 @@ SECTIONS = [
     {
         "title": "What Are Sides?",
         "body": """<p>A <strong>side</strong> is one straight edge of a shape. You can trace your finger along one side.</p>
-<svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <!-- Circle -->
-  <circle cx="80" cy="100" r="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="3"/>
-  <text x="80" y="160" text-anchor='middle' font-size='12' fill='currentColor'>0 sides</text>
+<svg viewBox="0 0 600 260" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
+  <!-- Circle — centered at x=100 -->
+  <circle cx="100" cy="110" r="55" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="3"/>
+  <text x="100" y="110" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>no edges</text>
+  <text x="100" y="195" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>0 sides</text>
 
-  <!-- Triangle -->
-  <polygon points="200,150 200,50 270,150" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
-  <text x="200" y="40" font-size='11' fill='#ef4444' font-weight='bold'>side 1</text>
-  <text x="260" y="110" font-size='11' fill='#ef4444' font-weight='bold'>side 2</text>
-  <text x="230" y="165" font-size='11' fill='#ef4444' font-weight='bold'>side 3</text>
-  <text x="200" y="170" text-anchor='middle' font-size='12' fill='currentColor'>3 sides</text>
+  <!-- Triangle — centered at x=300 -->
+  <polygon points="300,50 355,160 245,160" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
+  <text x="265" y="65" font-size='12' fill='#ef4444' font-weight='bold'>side 1</text>
+  <text x="345" y="120" font-size='12' fill='#ef4444' font-weight='bold'>side 2</text>
+  <text x="300" y="180" text-anchor='middle' font-size='12' fill='#ef4444' font-weight='bold'>side 3</text>
+  <text x="300" y="195" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>3 sides</text>
 
-  <!-- Square -->
-  <rect x="340" y="50" width="100" height="100" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
-  <text x="340" y="35" font-size='11' fill='#22c55e' font-weight='bold'>top</text>
-  <text x="460" y="105" font-size='11' fill='#22c55e' font-weight='bold'>right</text>
-  <text x="390" y="165" font-size='11' fill='#22c55e' font-weight='bold'>bottom</text>
-  <text x="320" y="105" font-size='11' fill='#22c55e' font-weight='bold'>left</text>
-  <text x="390" y="170" text-anchor='middle' font-size='12' fill='currentColor'>4 sides</text>
+  <!-- Square — centered at x=500 -->
+  <rect x="445" y="55" width="110" height="110" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
+  <text x="500" y="48" text-anchor='middle' font-size='12' fill='#22c55e' font-weight='bold'>top</text>
+  <text x="570" y="115" font-size='12' fill='#22c55e' font-weight='bold'>right</text>
+  <text x="500" y="182" text-anchor='middle' font-size='12' fill='#22c55e' font-weight='bold'>bottom</text>
+  <text x="425" y="115" font-size='12' fill='#22c55e' font-weight='bold' text-anchor='end'>left</text>
+  <text x="500" y="195" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>4 sides</text>
 </svg>
 <p><strong>Why count sides?</strong> By counting sides, we can quickly identify what shape something is:</p>
 <ul>
