@@ -25,7 +25,7 @@ SECTIONS = [
   <div class="diagram-container">
     <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
       <text x="50" y="30" font-size='13' font-weight='bold' fill='currentColor'>Original Amount</text>
-      <rect x="50" y="45" width="150" height="40" fill='#4169E1' opacity='0.5' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="45" width="150" height="40" fill='#4169E1' opacity='0.5' stroke='#30363d' stroke-width="2" rx="4"/>
       <text x="125" y="72" font-size='12' text-anchor='middle' fill='currentColor'>100%</text>
 
       <text x="50" y="110" font-size='12' fill='currentColor'>Increase by 20%</text>
@@ -155,19 +155,19 @@ SECTIONS = [
   <div class="diagram-container">
     <svg viewBox="0 0 560 200" xmlns="http://www.w3.org/2000/svg">
       <text x="50" y="30" font-size='13' font-weight='bold' fill='currentColor'>Start: £100</text>
-      <rect x="50" y="45" width="100" height="35" fill='#4169E1' opacity='0.5' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="45" width="100" height="35" fill='#4169E1' opacity='0.5' stroke='#30363d' stroke-width="2" rx="4"/>
       <text x="100" y="68" font-size='11' text-anchor='middle' fill='currentColor'>£100</text>
 
       <text x="170" y="68" font-size='12' fill='currentColor'>+20%</text>
 
       <text x="210" y="30" font-size='13' font-weight='bold' fill='currentColor'>Now: £120</text>
-      <rect x="210" y="45" width="120" height="35" fill='#22c55e' opacity='0.5' stroke='#30363d' stroke-width="2"/>
+      <rect x="210" y="45" width="120" height="35" fill='#22c55e' opacity='0.5' stroke='#30363d' stroke-width="2" rx="4"/>
       <text x="270" y="68" font-size='11' text-anchor='middle' fill='currentColor'>£120</text>
 
       <text x="340" y="68" font-size='12' fill='currentColor'>-20%</text>
 
       <text x="380" y="30" font-size='13' font-weight='bold' fill='currentColor'>Final: £96</text>
-      <rect x="380" y="45" width="96" height="35" fill='#f59e0b' opacity='0.5' stroke='#30363d' stroke-width="2"/>
+      <rect x="380" y="45" width="96" height="35" fill='#f59e0b' opacity='0.5' stroke='#30363d' stroke-width="2" rx="4"/>
       <text x="428" y="68" font-size='11' text-anchor='middle' fill='currentColor'>£96</text>
 
       <text x="250" y="130" font-size='12' fill='currentColor'>Why? The 20% decrease is applied to £120, not £100!</text>

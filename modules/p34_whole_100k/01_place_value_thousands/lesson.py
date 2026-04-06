@@ -16,27 +16,27 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="150" viewBox="0 0 600 150">
-    <text x="300" y="25" text-anchor='middle' font-size='16' font-weight='bold'>Building up to 1,000</text>
+    <text x="300" y="25" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>Building up to 1,000</text>
     <g>
       <rect x="20" y="50" width="100" height="80" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
-      <text x="70" y="105" text-anchor='middle' font-size='14' font-weight='bold'>10 tens</text>
-      <text x="70" y="125" text-anchor='middle' font-size='12'>= 100</text>
+      <text x="70" y="105" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>10 tens</text>
+      <text x="70" y="125" text-anchor='middle' font-size='12' fill='currentColor'>= 100</text>
     </g>
     <g>
-      <text x="140" y="105" font-size='20' font-weight='bold'>→</text>
+      <text x="140" y="105" font-size='20' font-weight='bold' fill='currentColor'>→</text>
     </g>
     <g>
       <rect x="170" y="50" width="100" height="80" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-      <text x="220" y="105" text-anchor='middle' font-size='14' font-weight='bold'>10 hundreds</text>
-      <text x="220" y="125" text-anchor='middle' font-size='12'>= 1,000</text>
+      <text x="220" y="105" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>10 hundreds</text>
+      <text x="220" y="125" text-anchor='middle' font-size='12' fill='currentColor'>= 1,000</text>
     </g>
     <g>
-      <text x="290" y="105" font-size='20' font-weight='bold'>→</text>
+      <text x="290" y="105" font-size='20' font-weight='bold' fill='currentColor'>→</text>
     </g>
     <g>
       <rect x="320" y="50" width="100" height="80" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-      <text x="370" y="105" text-anchor='middle' font-size='14' font-weight='bold'>Thousands place</text>
-      <text x="370" y="125" text-anchor='middle' font-size='12'>New!</text>
+      <text x="370" y="105" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Thousands place</text>
+      <text x="370" y="125" text-anchor='middle' font-size='12' fill='currentColor'>New!</text>
     </g>
   </svg>
 </div>
@@ -98,28 +98,28 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="200" viewBox="0 0 600 200">
-    <text x="300" y="20" text-anchor='middle' font-size='14' font-weight='bold'>Representing 3,000 objects</text>
+    <text x="300" y="20" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Representing 3,000 objects</text>
 
     <g>
       <rect x="20" y="50" width="120" height="100" fill='#22c55e40' stroke='#22c55e' stroke-width="2"/>
-      <text x="80" y="110" text-anchor='middle' font-size='16' font-weight='bold'>□</text>
-      <text x="80" y="130" text-anchor='middle' font-size='12'>1,000</text>
+      <text x="80" y="110" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>□</text>
+      <text x="80" y="130" text-anchor='middle' font-size='12' fill='currentColor'>1,000</text>
     </g>
 
     <g>
       <rect x="170" y="50" width="120" height="100" fill='#22c55e40' stroke='#22c55e' stroke-width="2"/>
-      <text x="230" y="110" text-anchor='middle' font-size='16' font-weight='bold'>□</text>
-      <text x="230" y="130" text-anchor='middle' font-size='12'>1,000</text>
+      <text x="230" y="110" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>□</text>
+      <text x="230" y="130" text-anchor='middle' font-size='12' fill='currentColor'>1,000</text>
     </g>
 
     <g>
       <rect x="320" y="50" width="120" height="100" fill='#22c55e40' stroke='#22c55e' stroke-width="2"/>
-      <text x="380" y="110" text-anchor='middle' font-size='16' font-weight='bold'>□</text>
-      <text x="380" y="130" text-anchor='middle' font-size='12'>1,000</text>
+      <text x="380" y="110" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>□</text>
+      <text x="380" y="130" text-anchor='middle' font-size='12' fill='currentColor'>1,000</text>
     </g>
 
-    <text x="500" y="110" text-anchor='middle' font-size='18' font-weight='bold'>=</text>
-    <text x="550" y="110" text-anchor='middle' font-size='20' font-weight='bold'>3,000</text>
+    <text x="500" y="110" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>=</text>
+    <text x="550" y="110" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>3,000</text>
   </svg>
   <div class="diagram-caption">Three boxes, each representing 1,000, together make 3,000</div>
 </div>

@@ -49,30 +49,30 @@ a_{m1} & a_{m2} & \\\\cdots & a_{mn}
 <h3>Geometric Interpretation in 2D</h3>
 <p>In the plane \\(\\mathbb{R}^2\\), each linear equation \\(ax + by = c\\) represents a <strong>line</strong>. The solution to a system is the <strong>geometric intersection</strong> of all lines.</p>
 
-<svg viewBox="0 0 400 350" style="border: 1px solid #ccc; margin: 20px 0;">
+<svg viewBox="0 0 410 360" style="margin: 20px 0;">
   <!-- Grid -->
-  <g stroke="#e0e0e0" stroke-width="0.5">
-    <line x1="0" y1="175" x2="400" y2="175"/>
-    <line x1="200" y1="0" x2="200" y2="350"/>
+  <g stroke='#30363d' stroke-width="0.5">
+    <line x1="10" y1="180" x2="400" y2="180" stroke='#161b22'/>
+    <line x1="205" y1="10" x2="205" y2="350" stroke='#161b22'/>
   </g>
 
   <!-- Line 1: 2x + 3y = 8 (rearrange: y = (8 - 2x)/3) -->
-  <line x1="20" y1="56" x2="380" y2="292" stroke="#2563eb" stroke-width="2.5" label="2x + 3y = 8"/>
+  <line x1="20" y1="56" x2="380" y2="292" stroke='#4f8ef7' stroke-width="2.5"/>
 
   <!-- Line 2: x - y = 1 (rearrange: y = x - 1) -->
-  <line x1="20" y1="95" x2="380" y2="455" stroke="#dc2626" stroke-width="2.5"/>
+  <line x1="20" y1="95" x2="340" y2="340" stroke='#f47067' stroke-width="2.5"/>
 
   <!-- Intersection point -->
-  <circle cx="242" cy="286" r="5" fill="#16a34a" stroke="#000" stroke-width="1"/>
+  <circle cx="242" cy="286" r="5" fill='#3fb950' stroke='currentColor' stroke-width="1"/>
 
   <!-- Labels and legend -->
-  <text x="10" y="20" font-size="12" fill="#2563eb" font-weight="bold">2x + 3y = 8</text>
-  <text x="10" y="40" font-size="12" fill="#dc2626" font-weight="bold">x - y = 1</text>
-  <text x="250" y="270" font-size="11" fill="#16a34a" font-weight="bold">Solution</text>
+  <text x="15" y="25" font-size='13' fill='#4f8ef7' font-weight='bold'>2x + 3y = 8</text>
+  <text x="15" y="45" font-size='13' fill='#f47067' font-weight='bold'>x - y = 1</text>
+  <text x="250" y="274" font-size='11' fill='currentColor' font-weight='bold' text-anchor='middle'>Solution</text>
 
   <!-- Axis labels -->
-  <text x="370" y="190" font-size="12">x</text>
-  <text x="210" y="20" font-size="12">y</text>
+  <text x="380" y="195" font-size='12' fill='currentColor'>x</text>
+  <text x="215" y="25" font-size='12' fill='currentColor'>y</text>
 </svg>
 
 <div class="concept-box">

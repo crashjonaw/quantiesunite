@@ -47,7 +47,7 @@ SECTIONS = [
         "body": """<p>A <strong>rectangle</strong> is a shape with <strong>4 sides and 4 right corners</strong>. But unlike a square, its sides are <strong>not all equal</strong> — it has <strong>2 long sides and 2 short sides</strong>.</p>
 <svg viewBox="0 0 500 300" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <!-- Rectangle 1 (vertical orientation) -->
-  <rect x="50" y="80" width="80" height="140" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3"/>
+  <rect x="50" y="80" width="80" height="140" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3" rx='4'/>
   <circle cx="50" cy="80" r="4" fill='#f59e0b'/>
   <circle cx="130" cy="80" r="4" fill='#f59e0b'/>
   <circle cx="130" cy="220" r="4" fill='#f59e0b'/>
@@ -60,7 +60,7 @@ SECTIONS = [
   <text x="90" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Tall</text>
 
   <!-- Rectangle 2 (horizontal orientation) -->
-  <rect x="200" y="120" width="140" height="80" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3"/>
+  <rect x="200" y="120" width="140" height="80" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3" rx='4'/>
   <circle cx="200" cy="120" r="4" fill='#f59e0b'/>
   <circle cx="340" cy="120" r="4" fill='#f59e0b'/>
   <circle cx="340" cy="200" r="4" fill='#f59e0b'/>

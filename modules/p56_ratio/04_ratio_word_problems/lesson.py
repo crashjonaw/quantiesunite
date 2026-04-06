@@ -37,17 +37,17 @@ SECTIONS = [
       <text x="250" y="30" font-size='13' font-weight='bold' text-anchor='middle' fill='currentColor'>Share 35 sweets in ratio 2:5</text>
 
       <text x="50" y="70" font-size='11' fill='currentColor'>Total: 35 sweets</text>
-      <rect x="50" y="80" width="400" height="50" fill='none' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="80" width="400" height="50" fill='none' stroke='#30363d' stroke-width="2" rx="4"/>
 
       <text x="250" y="125" font-size='10' fill='currentColor'>Ratio 2:5 → Total parts = 2 + 5 = 7</text>
 
       <text x="50" y="160" font-size='11' fill='currentColor'>One part = 35 ÷ 7 = 5 sweets</text>
 
-      <rect x="50" y="170" width="200" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="260" y="170" width="190" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="170" width="200" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="260" y="170" width="190" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
 
-      <text x="150" y="200" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>2 parts = 10</text>
-      <text x="355" y="200" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>5 parts = 25</text>
+      <text x="150" y="200" font-size='11' text-anchor='middle' fill='currentColor' font-weight='bold'>2 parts = 10</text>
+      <text x="355" y="200" font-size='11' text-anchor='middle' fill='currentColor' font-weight='bold'>5 parts = 25</text>
 
       <text x="50" y="240" font-size='11' fill='currentColor'>Check: 10 + 25 = 35 ✓ and 10:25 = 2:5 ✓</text>
     </svg>
@@ -102,13 +102,13 @@ SECTIONS = [
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
       <text x="250" y="30" font-size='12' font-weight='bold' text-anchor='middle' fill='currentColor'>Dividing in ratio 2:3:1</text>
 
-      <rect x="50" y="50" width="130" height="60" fill='#f59e0b' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="190" y="50" width="190" height="60" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="390" y="50" width="60" height="60" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="50" width="130" height="60" fill='#f59e0b' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="190" y="50" width="190" height="60" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="390" y="50" width="60" height="60" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
 
-      <text x="115" y="90" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>2 parts</text>
-      <text x="285" y="90" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>3 parts</text>
-      <text x="420" y="90" font-size='11' text-anchor='middle' fill='#161b22' font-weight='bold'>1 part</text>
+      <text x="115" y="90" font-size='11' text-anchor='middle' fill='currentColor' font-weight='bold'>2 parts</text>
+      <text x="285" y="90" font-size='11' text-anchor='middle' fill='currentColor' font-weight='bold'>3 parts</text>
+      <text x="420" y="90" font-size='11' text-anchor='middle' fill='currentColor' font-weight='bold'>1 part</text>
 
       <text x="50" y="140" font-size='10' fill='currentColor'>20 items</text>
       <text x="190" y="140" font-size='10' fill='currentColor'>30 items</text>
@@ -174,10 +174,10 @@ SECTIONS = [
       <text x="50" y="70" font-size='11' fill='currentColor'>Given: Ratio 2:3 and 10 boys (the 2 part)</text>
 
       <text x="50" y="110" font-size='11' fill='currentColor'>Ratio:     2      :      3</text>
-      <rect x="50" y="120" width="60" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="150" y="120" width="60" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <text x="80" y="150" font-size='11' text-anchor='middle' fill='#161b22'>Boys</text>
-      <text x="180" y="150" font-size='11' text-anchor='middle' fill='#161b22'>Girls</text>
+      <rect x="50" y="120" width="60" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="150" y="120" width="60" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <text x="80" y="150" font-size='11' text-anchor='middle' fill='currentColor'>Boys</text>
+      <text x="180" y="150" font-size='11' text-anchor='middle' fill='currentColor'>Girls</text>
 
       <text x="50" y="190" font-size='11' fill='currentColor'>Actual:   10     :      ?</text>
       <text x="50" y="210" font-size='11' fill='currentColor'>Scale factor = 10 ÷ 2 = 5</text>
@@ -229,16 +229,16 @@ SECTIONS = [
       <text x="275" y="30" font-size='12' font-weight='bold' text-anchor='middle' fill='currentColor'>Comparing Class Ratios</text>
 
       <text x="50" y="70" font-size='11' fill='currentColor'>Class A: 2:3 (2 boys, 3 girls out of 5)</text>
-      <rect x="50" y="80" width="130" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="190" y="80" width="195" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <text x="80" y="110" font-size='10' text-anchor='middle' fill='#161b22'>2 boys</text>
-      <text x="287" y="110" font-size='10' text-anchor='middle' fill='#161b22'>3 girls (60%)</text>
+      <rect x="50" y="80" width="130" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="190" y="80" width="195" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <text x="80" y="110" font-size='10' text-anchor='middle' fill='currentColor'>2 boys</text>
+      <text x="287" y="110" font-size='10' text-anchor='middle' fill='currentColor'>3 girls (60%)</text>
 
       <text x="50" y="160" font-size='11' fill='currentColor'>Class B: 3:4 (3 boys, 4 girls out of 7)</text>
-      <rect x="50" y="170" width="120" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="180" y="170" width="160" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <text x="85" y="200" font-size='10' text-anchor='middle' fill='#161b22'>3 boys</text>
-      <text x="260" y="200" font-size='10' text-anchor='middle' fill='#161b22'>4 girls (~57%)</text>
+      <rect x="50" y="170" width="120" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="180" y="170" width="160" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <text x="85" y="200" font-size='10' text-anchor='middle' fill='currentColor'>3 boys</text>
+      <text x="260" y="200" font-size='10' text-anchor='middle' fill='currentColor'>4 girls (~57%)</text>
 
       <text x="50" y="250" font-size='11' fill='currentColor'>Class A has a higher proportion of girls</text>
     </svg>

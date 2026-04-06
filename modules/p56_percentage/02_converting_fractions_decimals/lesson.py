@@ -45,7 +45,7 @@ SECTIONS = [
       <text x="250" y="150" font-size='13' fill='currentColor'>→</text>
       <text x="320" y="150" font-size='13' fill='currentColor'>1.50</text>
 
-      <text x="250" y="175" font-size='11' text-anchor='middle' fill='#999'>Notice: % > 100 gives decimal > 1</text>
+      <text x="250" y="175" font-size='11' text-anchor='middle' fill='#a0aec0'>Notice: % > 100 gives decimal > 1</text>
     </svg>
   </div>
 
@@ -96,7 +96,7 @@ SECTIONS = [
       <text x="200" y="150" font-size='13' fill='currentColor'>→</text>
       <text x="290" y="150" font-size='13' fill='currentColor'>250%</text>
 
-      <text x="250" y="175" font-size='11' text-anchor='middle' fill='#999'>Notice: decimal > 1 gives % > 100</text>
+      <text x="250" y="175" font-size='11' text-anchor='middle' fill='#a0aec0'>Notice: decimal > 1 gives % > 100</text>
     </svg>
   </div>
 

@@ -11,16 +11,16 @@ SECTIONS = [
 
   <div class="diagram-container">
     <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="18" font-weight="bold">3 red balls : 2 blue balls</text>
-      
+      <text x="50" y="30" font-size="18" font-weight="bold" fill="currentColor">3 red balls : 2 blue balls</text>
+
       <circle cx="100" cy="80" r="25" fill="#ef4444"/>
       <circle cx="150" cy="80" r="25" fill="#ef4444"/>
       <circle cx="200" cy="80" r="25" fill="#ef4444"/>
       <circle cx="280" cy="80" r="25" fill="#4169E1"/>
       <circle cx="330" cy="80" r="25" fill="#4169E1"/>
 
-      <text x="150" y="150" font-size="20" font-weight="bold" text-anchor="middle">Ratio = 3 : 2</text>
-      <text x="150" y="180" font-size="14" text-anchor="middle">For every 3 red, there are 2 blue</text>
+      <text x="150" y="150" font-size="20" font-weight="bold" text-anchor="middle" fill="currentColor">Ratio = 3 : 2</text>
+      <text x="150" y="180" font-size="14" text-anchor="middle" fill="currentColor">For every 3 red, there are 2 blue</text>
     </svg>
   </div>
 
@@ -64,23 +64,23 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 550 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold">Recipe: 2:3 ratio (2 cups flour : 3 cups sugar)</text>
+    <svg viewBox="0 0 570 290" xmlns="http://www.w3.org/2000/svg">
+      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">Recipe: 2:3 ratio (2 cups flour : 3 cups sugar)</text>
 
-      <rect x="50" y="50" width="100" height="40" fill="#f59e0b" opacity="0.6" stroke="#333" stroke-width="2"/>
-      <rect x="160" y="50" width="150" height="40" fill="#22c55e" opacity="0.6" stroke="#333" stroke-width="2"/>
-      <text x="100" y="85" font-size="14" text-anchor="middle" font-weight="bold">2 flour</text>
-      <text x="235" y="85" font-size="14" text-anchor="middle" font-weight="bold">3 sugar</text>
+      <rect x="50" y="50" width="100" height="40" fill="#f59e0b" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="160" y="50" width="150" height="40" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="100" y="85" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">2 flour</text>
+      <text x="235" y="85" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">3 sugar</text>
 
-      <text x="50" y="130" font-size="16" font-weight="bold">Scale up by × 2 (double the recipe)</text>
+      <text x="50" y="130" font-size="16" font-weight="bold" fill="currentColor">Scale up by × 2 (double the recipe)</text>
 
-      <rect x="50" y="150" width="200" height="40" fill="#f59e0b" opacity="0.6" stroke="#333" stroke-width="2"/>
-      <rect x="260" y="150" width="300" height="40" fill="#22c55e" opacity="0.6" stroke="#333" stroke-width="2"/>
-      <text x="150" y="185" font-size="14" text-anchor="middle" font-weight="bold">4 flour</text>
-      <text x="410" y="185" font-size="14" text-anchor="middle" font-weight="bold">6 sugar</text>
+      <rect x="50" y="150" width="200" height="40" fill="#f59e0b" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="260" y="150" width="300" height="40" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="150" y="185" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">4 flour</text>
+      <text x="410" y="185" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">6 sugar</text>
 
-      <text x="50" y="240" font-size="16" font-weight="bold">2:3 = 4:6 = 6:9 = 8:12 ...</text>
-      <text x="50" y="270" font-size="14">All are equivalent ratios! We multiply or divide both parts by the same number.</text>
+      <text x="50" y="240" font-size="16" font-weight="bold" fill="currentColor">2:3 = 4:6 = 6:9 = 8:12 ...</text>
+      <text x="50" y="270" font-size="14" fill="currentColor">All are equivalent ratios! We multiply or divide both parts by the same number.</text>
     </svg>
   </div>
 
@@ -197,26 +197,26 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold">35 sweets shared in ratio 2:5</text>
-      
-      <rect x="50" y="50" width="400" height="60" fill="none" stroke="#333" stroke-width="2"/>
-      
+    <svg viewBox="0 0 510 250" xmlns="http://www.w3.org/2000/svg">
+      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">35 sweets shared in ratio 2:5</text>
+
+      <rect x="50" y="50" width="400" height="60" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+
       <rect x="50" y="50" width="114.3" height="60" fill="#f59e0b" opacity="0.6"/>
       <rect x="164.3" y="50" width="114.3" height="60" fill="#f59e0b" opacity="0.6"/>
       <rect x="278.6" y="50" width="171.4" height="60" fill="#4169E1" opacity="0.6"/>
-      
-      <text x="114.3" y="90" font-size="14" text-anchor="middle" font-weight="bold">5</text>
-      <text x="228.6" y="90" font-size="14" text-anchor="middle" font-weight="bold">5</text>
-      <text x="314.3" y="90" font-size="14" text-anchor="middle" font-weight="bold">5</text>
-      <text x="363.5" y="90" font-size="14" text-anchor="middle" font-weight="bold">5</text>
-      <text x="412.7" y="90" font-size="14" text-anchor="middle" font-weight="bold">5</text>
-      
-      <text x="107.15" y="140" font-size="14" text-anchor="middle" font-weight="bold">2 parts = 10</text>
-      <text x="364.3" y="140" font-size="14" text-anchor="middle" font-weight="bold">5 parts = 25</text>
-      
-      <text x="50" y="200" font-size="16" font-weight="bold">Ratio = 2:5, Total parts = 7</text>
-      <text x="50" y="225" font-size="14">Each part = 35 ÷ 7 = 5 sweets</text>
+
+      <text x="114.3" y="90" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">5</text>
+      <text x="228.6" y="90" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">5</text>
+      <text x="314.3" y="90" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">5</text>
+      <text x="363.5" y="90" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">5</text>
+      <text x="412.7" y="90" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">5</text>
+
+      <text x="107.15" y="140" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">2 parts = 10</text>
+      <text x="364.3" y="140" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">5 parts = 25</text>
+
+      <text x="50" y="200" font-size="16" font-weight="bold" fill="currentColor">Ratio = 2:5, Total parts = 7</text>
+      <text x="50" y="225" font-size="14" fill="currentColor">Each part = 35 ÷ 7 = 5 sweets</text>
     </svg>
   </div>
 
@@ -246,15 +246,10 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold">Direct Proportion: Cost of Apples</text>
-      
-      <div class="chart-container">
-        <canvas data-chart='{"type":"line","data":{"labels":["0","1","2","3","4","5","6"],"datasets":[{"label":"Cost (cents)","data":[0,null,50,null,100,null,150],"borderColor":"#4169E1","backgroundColor":"#4169E180","borderWidth":3,"fill":true}]},"options":{"responsive":true,"scales":{"y":{"beginAtZero":true,"title":{"display":true,"text":"Cost (cents)"}},"x":{"title":{"display":true,"text":"Number of Apples"}}}}}'>
-        </canvas>
-      </div>
+    <svg viewBox="0 0 510 310" xmlns="http://www.w3.org/2000/svg">
+      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">Direct Proportion: Cost of Apples</text>
 
-      <text x="50" y="260" font-size="14"><tspan x="50">If 3 apples cost 50 cents, how much do 6 apples cost?</tspan><tspan x="50" dy="20">Using proportion: \\\\( \\\\frac{3}{50} = \\\\frac{6}{x} \\\\)</tspan><tspan x="50" dy="20">Cross multiply: 3x = 50 × 6 = 300</tspan><tspan x="50" dy="20">Therefore: x = 100 cents</tspan></text>
+      <text x="50" y="260" font-size="14" fill="currentColor"><tspan x="50">If 3 apples cost 50 cents, how much do 6 apples cost?</tspan><tspan x="50" dy="20">Using proportion: \\\\( \\\\frac{3}{50} = \\\\frac{6}{x} \\\\)</tspan><tspan x="50" dy="20">Cross multiply: 3x = 50 × 6 = 300</tspan><tspan x="50" dy="20">Therefore: x = 100 cents</tspan></text>
     </svg>
   </div>
 
@@ -322,26 +317,26 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold">Map Example: Scale 1:100,000</text>
-      
-      <rect x="50" y="50" width="100" height="60" fill="none" stroke="#4169E1" stroke-width="2"/>
-      <text x="100" y="90" font-size="14" text-anchor="middle">2 cm on map</text>
-      
-      <path d="M 160 80 L 200 80" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="180" y="70" font-size="12" text-anchor="middle">× 100,000</text>
-      
-      <rect x="210" y="50" width="200" height="60" fill="none" stroke="#22c55e" stroke-width="2"/>
-      <text x="310" y="90" font-size="14" text-anchor="middle">2 km in reality</text>
-      
+    <svg viewBox="0 0 510 200" xmlns="http://www.w3.org/2000/svg">
+      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">Map Example: Scale 1:100,000</text>
+
+      <rect x="50" y="50" width="100" height="60" fill="none" stroke="#4169E1" stroke-width="2" rx="4"/>
+      <text x="100" y="90" font-size="14" text-anchor="middle" fill="currentColor">2 cm on map</text>
+
+      <path d="M 160 80 L 200 80" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead3)"/>
+      <text x="180" y="70" font-size="12" text-anchor="middle" fill="currentColor">× 100,000</text>
+
+      <rect x="210" y="50" width="200" height="60" fill="none" stroke="#22c55e" stroke-width="2" rx="4"/>
+      <text x="310" y="90" font-size="14" text-anchor="middle" fill="currentColor">2 km in reality</text>
+
       <defs>
-        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-          <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+        <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+          <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
         </marker>
       </defs>
 
-      <text x="50" y="160" font-size="12">Scale shows the ratio between map distance and real distance.</text>
-      <text x="50" y="180" font-size="12">Always check your units! 100,000 cm = 1 km</text>
+      <text x="50" y="160" font-size="12" fill="currentColor">Scale shows the ratio between map distance and real distance.</text>
+      <text x="50" y="180" font-size="12" fill="currentColor">Always check your units! 100,000 cm = 1 km</text>
     </svg>
   </div>
 
@@ -370,18 +365,18 @@ SECTIONS = [
     <p><strong>Question:</strong> Ali and Ben share £60 in the ratio 2:3. How much does each get?</p>
 
     <div class="diagram-container">
-      <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-        <text x="50" y="30" font-size="14" font-weight="bold">Total: £60 shared in ratio 2:3</text>
+      <svg viewBox="0 0 510 200" xmlns="http://www.w3.org/2000/svg">
+        <text x="50" y="30" font-size="14" font-weight="bold" fill="currentColor">Total: £60 shared in ratio 2:3</text>
 
-        <text x="50" y="60" font-size="12">Ali:</text>
-        <rect x="50" y="70" width="130" height="30" fill="#4169E1" opacity="0.6" stroke="#333" stroke-width="2"/>
-        <text x="115" y="92" font-size="12" text-anchor="middle" font-weight="bold">2 parts</text>
+        <text x="50" y="60" font-size="12" fill="currentColor">Ali:</text>
+        <rect x="50" y="70" width="130" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+        <text x="115" y="92" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">2 parts</text>
 
-        <text x="50" y="130" font-size="12">Ben:</text>
-        <rect x="50" y="140" width="195" height="30" fill="#22c55e" opacity="0.6" stroke="#333" stroke-width="2"/>
-        <text x="147.5" y="162" font-size="12" text-anchor="middle" font-weight="bold">3 parts</text>
+        <text x="50" y="130" font-size="12" fill="currentColor">Ben:</text>
+        <rect x="50" y="140" width="195" height="30" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+        <text x="147.5" y="162" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">3 parts</text>
 
-        <text x="300" y="70" font-size="12"><tspan x="300">Total parts = 2 + 3 = 5</tspan><tspan x="300" dy="20">Each part = £60 ÷ 5 = £12</tspan><tspan x="300" dy="20">Ali = 2 × £12 = £24</tspan><tspan x="300" dy="20">Ben = 3 × £12 = £36</tspan></text>
+        <text x="300" y="70" font-size="12" fill="currentColor"><tspan x="300">Total parts = 2 + 3 = 5</tspan><tspan x="300" dy="20">Each part = £60 ÷ 5 = £12</tspan><tspan x="300" dy="20">Ali = 2 × £12 = £24</tspan><tspan x="300" dy="20">Ben = 3 × £12 = £36</tspan></text>
       </svg>
     </div>
   </div>
@@ -456,28 +451,28 @@ SECTIONS = [
     <p><strong>Question:</strong> Share 100 marbles in ratio 3:4. If we cannot break up marbles, what is the closest division?</p>
 
     <div class="diagram-container">
-      <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-        <text x="50" y="30" font-size="14" font-weight="bold">100 marbles in ratio 3:4</text>
+      <svg viewBox="0 0 510 250" xmlns="http://www.w3.org/2000/svg">
+        <text x="50" y="30" font-size="14" font-weight="bold" fill="currentColor">100 marbles in ratio 3:4</text>
 
-        <text x="50" y="70" font-size="12">Expected:</text>
-        <text x="50" y="95" font-size="12">Total parts = 3 + 4 = 7</text>
-        <text x="50" y="115" font-size="12">100 ÷ 7 = 14 remainder 2</text>
-        <text x="50" y="135" font-size="12">Each part = 14 (not exact)</text>
+        <text x="50" y="70" font-size="12" fill="currentColor">Expected:</text>
+        <text x="50" y="95" font-size="12" fill="currentColor">Total parts = 3 + 4 = 7</text>
+        <text x="50" y="115" font-size="12" fill="currentColor">100 ÷ 7 = 14 remainder 2</text>
+        <text x="50" y="135" font-size="12" fill="currentColor">Each part = 14 (not exact)</text>
 
-        <text x="50" y="170" font-size="12">Distribution 1 (using whole parts):</text>
-        <text x="50" y="190" font-size="12">First: 3 × 14 = 42 marbles</text>
-        <text x="50" y="210" font-size="12">Second: 4 × 14 = 56 marbles</text>
-        <text x="50" y="230" font-size="12">Total: 42 + 56 = 98 (short by 2)</text>
+        <text x="50" y="170" font-size="12" fill="currentColor">Distribution 1 (using whole parts):</text>
+        <text x="50" y="190" font-size="12" fill="currentColor">First: 3 × 14 = 42 marbles</text>
+        <text x="50" y="210" font-size="12" fill="currentColor">Second: 4 × 14 = 56 marbles</text>
+        <text x="50" y="230" font-size="12" fill="currentColor">Total: 42 + 56 = 98 (short by 2)</text>
 
-        <text x="300" y="70" font-size="12">When we cannot divide evenly:</text>
-        <text x="300" y="100" font-size="12">Option A: Give extra to one person</text>
-        <text x="300" y="120" font-size="12">First: 42 + 2 = 44</text>
-        <text x="300" y="140" font-size="12">Second: 56</text>
-        <text x="300" y="160" font-size="12" font-weight="bold">Ratio becomes 44:56 ≈ 3:4</text>
+        <text x="300" y="70" font-size="12" fill="currentColor">When we cannot divide evenly:</text>
+        <text x="300" y="100" font-size="12" fill="currentColor">Option A: Give extra to one person</text>
+        <text x="300" y="120" font-size="12" fill="currentColor">First: 42 + 2 = 44</text>
+        <text x="300" y="140" font-size="12" fill="currentColor">Second: 56</text>
+        <text x="300" y="160" font-size="12" font-weight="bold" fill="currentColor">Ratio becomes 44:56 ≈ 3:4</text>
 
-        <text x="300" y="190" font-size="12">Option B: Round down both</text>
-        <text x="300" y="210" font-size="12">First: 42, Second: 56</text>
-        <text x="300" y="230" font-size="12">(2 marbles left over)</text>
+        <text x="300" y="190" font-size="12" fill="currentColor">Option B: Round down both</text>
+        <text x="300" y="210" font-size="12" fill="currentColor">First: 42, Second: 56</text>
+        <text x="300" y="230" font-size="12" fill="currentColor">(2 marbles left over)</text>
       </svg>
     </div>
   </div>

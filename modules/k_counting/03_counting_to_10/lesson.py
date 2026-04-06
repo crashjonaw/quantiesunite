@@ -29,16 +29,16 @@ SECTIONS = [
 
 <svg viewBox="0 0 400 100" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
   <!-- Numbers 1-10 -->
-  <text x="20" y="40" text-anchor='middle' font-size='24' font-weight='bold'>1</text>
-  <text x="60" y="40" text-anchor='middle' font-size='24' font-weight='bold'>2</text>
-  <text x="100" y="40" text-anchor='middle' font-size='24' font-weight='bold'>3</text>
-  <text x="140" y="40" text-anchor='middle' font-size='24' font-weight='bold'>4</text>
-  <text x="180" y="40" text-anchor='middle' font-size='24' font-weight='bold'>5</text>
-  <text x="220" y="40" text-anchor='middle' font-size='24' font-weight='bold'>6</text>
-  <text x="260" y="40" text-anchor='middle' font-size='24' font-weight='bold'>7</text>
-  <text x="300" y="40" text-anchor='middle' font-size='24' font-weight='bold'>8</text>
-  <text x="340" y="40" text-anchor='middle' font-size='24' font-weight='bold'>9</text>
-  <text x="380" y="40" text-anchor='middle' font-size='24' font-weight='bold'>10</text>
+  <text x="20" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>1</text>
+  <text x="60" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>2</text>
+  <text x="100" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>3</text>
+  <text x="140" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>4</text>
+  <text x="180" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>5</text>
+  <text x="220" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>6</text>
+  <text x="260" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>7</text>
+  <text x="300" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>8</text>
+  <text x="340" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>9</text>
+  <text x="380" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>10</text>
 
   <!-- Connecting line -->
   <line x1="10" y1="60" x2="390" y2="60" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead)"/>
@@ -51,7 +51,7 @@ SECTIONS = [
   </defs>
 
   <!-- Label -->
-  <text x="200" y="95" text-anchor='middle' font-size='12' fill='#666;'>The stable counting sequence</text>
+  <text x="200" y="95" text-anchor='middle' font-size='12' fill='currentColor'>The stable counting sequence</text>
 </svg>"""
     },
     {
@@ -81,27 +81,27 @@ SECTIONS = [
 <svg viewBox="0 0 300 100" style="width:100%;max-width:400px;height:auto;display:block;margin:20px auto;">
   <!-- Left hand (5 fingers) -->
   <g>
-    <text x="50" y="20" text-anchor='middle' font-size='12' font-weight='bold'>Left Hand</text>
+    <text x="50" y="20" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Left Hand</text>
     <rect x="20" y="35" width="8" height="30" rx="4" fill='#4169E1'/> <!-- thumb -->
     <rect x="32" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- index -->
     <rect x="44" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- middle -->
     <rect x="56" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- ring -->
     <rect x="68" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- pinky -->
-    <text x="50" y="85" text-anchor='middle' font-size='11'>1, 2, 3, 4, 5</text>
+    <text x="50" y="85" text-anchor='middle' font-size='11' fill='currentColor'>1, 2, 3, 4, 5</text>
   </g>
 
   <!-- Plus sign -->
-  <text x="150" y="60" text-anchor='middle' font-size='24'>+</text>
+  <text x="150" y="60" text-anchor='middle' font-size='24' fill='currentColor'>+</text>
 
   <!-- Right hand (5 fingers) -->
   <g>
-    <text x="240" y="20" text-anchor='middle' font-size='12' font-weight='bold'>Right Hand</text>
+    <text x="240" y="20" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Right Hand</text>
     <rect x="210" y="35" width="8" height="30" rx="4" fill='#ef4444'/> <!-- thumb -->
     <rect x="222" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- index -->
     <rect x="234" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- middle -->
     <rect x="246" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- ring -->
     <rect x="258" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- pinky -->
-    <text x="240" y="85" text-anchor='middle' font-size='11'>6, 7, 8, 9, 10</text>
+    <text x="240" y="85" text-anchor='middle' font-size='11' fill='currentColor'>6, 7, 8, 9, 10</text>
   </g>
 </svg>"""
     },

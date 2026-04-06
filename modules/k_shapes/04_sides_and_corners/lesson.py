@@ -20,7 +20,7 @@ SECTIONS = [
   <text x="300" y="195" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>3 sides</text>
 
   <!-- Square — centered at x=500 -->
-  <rect x="445" y="55" width="110" height="110" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
+  <rect x="445" y="55" width="110" height="110" fill='#22c55e30' stroke='#22c55e' stroke-width="3" rx='4'/>
   <text x="500" y="48" text-anchor='middle' font-size='12' fill='#22c55e' font-weight='bold'>top</text>
   <text x="570" y="115" font-size='12' fill='#22c55e' font-weight='bold'>right</text>
   <text x="500" y="182" text-anchor='middle' font-size='12' fill='#22c55e' font-weight='bold'>bottom</text>
@@ -54,7 +54,7 @@ SECTIONS = [
   <text x="200" y="170" text-anchor='middle' font-size='12' fill='currentColor'>3 corners</text>
 
   <!-- Square (4 corners with right angle markers) -->
-  <rect x="340" y="50" width="100" height="100" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
+  <rect x="340" y="50" width="100" height="100" fill='#22c55e30' stroke='#22c55e' stroke-width="3" rx='4'/>
   <circle cx="340" cy="50" r="6" fill='#22c55e'/>
   <circle cx="440" cy="50" r="6" fill='#22c55e'/>
   <circle cx="440" cy="150" r="6" fill='#22c55e'/>
@@ -84,14 +84,14 @@ A circle has 0 sides and 0 corners.
   <text x="50" y="30" font-size='14' font-weight='bold' fill='currentColor'>Right Angle (90°)</text>
   <line x1="80" y1="120" x2="150" y2="120" stroke='#22c55e' stroke-width="3"/>
   <line x1="80" y1="120" x2="80" y2="50" stroke='#22c55e' stroke-width="3"/>
-  <rect x="80" y="50" width="20" height="20" fill='none' stroke='#22c55e' stroke-width="2"/>
+  <rect x="80" y="50" width="20" height="20" fill='none' stroke='#22c55e' stroke-width="2" rx='4'/>
   <text x="95" y="45" font-size='12' fill='#22c55e'>90°</text>
 
   <!-- Shapes with right angles -->
   <text x="50" y="170" font-size='14' font-weight='bold' fill='currentColor'>Shapes with Right Angles:</text>
 
   <!-- Square -->
-  <rect x="40" y="190" width="60" height="60" fill='#22c55e30' stroke='#22c55e' stroke-width="2"/>
+  <rect x="40" y="190" width="60" height="60" fill='#22c55e30' stroke='#22c55e' stroke-width="2" rx='4'/>
   <rect x="40" y="190" width="8" height="8" fill='none' stroke='#22c55e' stroke-width="1.5"/>
   <rect x="92" y="190" width="8" height="8" fill='none' stroke='#22c55e' stroke-width="1.5"/>
   <rect x="92" y="242" width="8" height="8" fill='none' stroke='#22c55e' stroke-width="1.5"/>
@@ -100,7 +100,7 @@ A circle has 0 sides and 0 corners.
   <text x="70" y="285" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(4 right angles)</text>
 
   <!-- Rectangle -->
-  <rect x="150" y="190" width="90" height="60" fill='#f59e0b30' stroke='#f59e0b' stroke-width="2"/>
+  <rect x="150" y="190" width="90" height="60" fill='#f59e0b30' stroke='#f59e0b' stroke-width="2" rx='4'/>
   <rect x="150" y="190" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="232" y="190" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
   <rect x="232" y="242" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>

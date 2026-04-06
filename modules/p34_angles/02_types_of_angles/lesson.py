@@ -31,7 +31,7 @@ SECTIONS = [
     <circle cx="0" cy="0" r="2" fill='#ff6b6b'/>
   </g>
 
-  <text x="175" y="30" fill='#24292f' font-size='13' text-anchor='middle' font-weight='bold'>ACUTE ANGLES (less than 90°)</text>
+  <text x="175" y="30" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>ACUTE ANGLES (less than 90°)</text>
 </svg>
 
 <div class='worked-example'>
@@ -60,7 +60,7 @@ SECTIONS = [
   <!-- Vertex -->
   <circle cx="50" cy="150" r="2" fill='#ff6b6b'/>
   <!-- Label -->
-  <text x="100" y="145" fill='#24292f' font-size='14' font-weight='bold'>90° — Right Angle</text>
+  <text x="100" y="145" fill='currentColor' font-size='14' font-weight='bold'>90° — Right Angle</text>
   <text x="100" y="165" fill='currentColor' opacity='0.6' font-size='12'>Notice the small square symbol</text>
 </svg>
 
@@ -99,7 +99,7 @@ SECTIONS = [
     <circle cx="0" cy="0" r="2" fill='#ff6b6b'/>
   </g>
 
-  <text x="175" y="30" fill='#24292f' font-size='13' text-anchor='middle' font-weight='bold'>OBTUSE ANGLES (between 90° and 180°)</text>
+  <text x="175" y="30" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>OBTUSE ANGLES (between 90° and 180°)</text>
 </svg>
 
 <div class='worked-example'>
@@ -125,7 +125,7 @@ SECTIONS = [
   <!-- Vertex -->
   <circle cx="150" cy="50" r="2" fill='#ff6b6b'/>
   <!-- Label -->
-  <text x="150" y="75" fill='#24292f' font-size='13' text-anchor='middle' font-weight='bold'>180° — Straight Angle</text>
+  <text x="150" y="75" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>180° — Straight Angle</text>
 </svg>
 
 <hr style="margin: 20px 0; border: 1px solid #d0d7de;">
@@ -151,7 +151,7 @@ SECTIONS = [
     <circle cx="0" cy="0" r="2" fill='#24292f'/>
     <!-- Labels -->
     <text x="50" y="-25" fill='#ff6b6b' font-size='12' font-weight='bold'>240°</text>
-    <text x="0" y="70" fill='#24292f' font-size='11' text-anchor='middle'>Reflex angle = going the long way</text>
+    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle'>Reflex angle = going the long way</text>
   </g>
 </svg>
 

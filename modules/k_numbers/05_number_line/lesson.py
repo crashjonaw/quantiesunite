@@ -196,22 +196,22 @@ SECTIONS = [
   <!-- All numbers -->
   <g font-size='12' text-anchor='middle' fill='currentColor' opacity='0.6'>
     <line x1="10" y1="55" x2="10" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="10" y="85">0</text>
+    <text x="10" y="85" fill='currentColor'>0</text>
 
     <line x1="50" y1="55" x2="50" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="50" y="85">2</text>
+    <text x="50" y="85" fill='currentColor'>2</text>
 
     <line x1="110" y1="55" x2="110" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="110" y="85">5</text>
+    <text x="110" y="85" fill='currentColor'>5</text>
 
     <line x1="150" y1="55" x2="150" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="150" y="85">7</text>
+    <text x="150" y="85" fill='currentColor'>7</text>
 
     <line x1="210" y1="55" x2="210" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="210" y="85">10</text>
+    <text x="210" y="85" fill='currentColor'>10</text>
 
     <line x1="410" y1="55" x2="410" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="410" y="85">20</text>
+    <text x="410" y="85" fill='currentColor'>20</text>
   </g>
 
   <!-- Highlighting 5 to 10 -->

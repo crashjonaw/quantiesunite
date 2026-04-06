@@ -149,21 +149,21 @@ Total: \\(3 \\times 10 = 30\\) balls</p>
 
 <svg width="400" height="300" viewBox="0 0 400 300">
   <!-- Title -->
-  <text x="200" y="25" font-size='18' font-weight='bold' text-anchor='middle'>Parts of a Bar Chart</text>
+  <text x="200" y="25" font-size='18' font-weight='bold' text-anchor='middle' fill='currentColor'>Parts of a Bar Chart</text>
 
   <!-- Y-axis (vertical) -->
   <line x1="50" y1="50" x2="50" y2="250" stroke='#8b949e' stroke-width="2"/>
-  <text x="15" y="155" font-size='12' text-anchor='middle' transform='rotate(-90, 15, 155)'>Number of Students</text>
+  <text x="15" y="155" font-size='12' text-anchor='middle' transform='rotate(-90, 15, 155)' fill='currentColor'>Number of Students</text>
 
   <!-- X-axis (horizontal) -->
   <line x1="50" y1="250" x2="380" y2="250" stroke='#8b949e' stroke-width="2"/>
-  <text x="215" y="280" font-size='12' text-anchor='middle'>Favourite Sport</text>
+  <text x="215" y="280" font-size='12' text-anchor='middle' fill='currentColor'>Favourite Sport</text>
 
   <!-- Y-axis labels -->
-  <text x="40" y="255" font-size='10' text-anchor='end'>0</text>
-  <text x="40" y="205" font-size='10' text-anchor='end'>5</text>
-  <text x="40" y="155" font-size='10' text-anchor='end'>10</text>
-  <text x="40" y="105" font-size='10' text-anchor='end'>15</text>
+  <text x="40" y="255" font-size='10' text-anchor='end' fill='currentColor'>0</text>
+  <text x="40" y="205" font-size='10' text-anchor='end' fill='currentColor'>5</text>
+  <text x="40" y="155" font-size='10' text-anchor='end' fill='currentColor'>10</text>
+  <text x="40" y="105" font-size='10' text-anchor='end' fill='currentColor'>15</text>
 
   <!-- Grid lines -->
   <line x1="50" y1="200" x2="380" y2="200" stroke='#30363d' stroke-width="1" stroke-dasharray="5,5"/>
@@ -178,15 +178,15 @@ Total: \\(3 \\times 10 = 30\\) balls</p>
   <rect x="310" y="180" width="40" height="70" fill='#22c55e'/>
 
   <!-- X-axis labels -->
-  <text x="90" y="270" font-size='11' text-anchor='middle'>Football</text>
-  <text x="150" y="270" font-size='11' text-anchor='middle'>Tennis</text>
-  <text x="210" y="270" font-size='11' text-anchor='middle'>Swimming</text>
-  <text x="270" y="270" font-size='11' text-anchor='middle'>Running</text>
-  <text x="330" y="270" font-size='11' text-anchor='middle'>Badminton</text>
+  <text x="90" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Football</text>
+  <text x="150" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Tennis</text>
+  <text x="210" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Swimming</text>
+  <text x="270" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Running</text>
+  <text x="330" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Badminton</text>
 
   <!-- Legend for parts -->
   <circle cx="60" cy="30" r="4" fill='#ef4444'/>
-  <text x="70" y="35" font-size='11'>Bars show amounts</text>
+  <text x="70" y="35" font-size='11' fill='currentColor'>Bars show amounts</text>
 </svg>
 
 <h3>Reading a Bar Chart</h3>

@@ -166,36 +166,36 @@ SECTIONS = [
 <div class="warning-box">
 <svg width="100%" height="310" viewBox="0 0 500 310" class="formula-box">
   <!-- Quadrilateral (top) -->
-  <rect x="150" y="20" width="200" height="40" fill='#161b22' stroke='#58a6ff' stroke-width="2" rx="5"/>
+  <rect x="150" y="20" width="200" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx="5"/>
   <text x="200" y="50" fill='currentColor' font-size='13' font-weight='bold'>Quadrilateral</text>
 
   <!-- Trapezium -->
-  <rect x="30" y="100" width="120" height="40" fill='#161b22' stroke='#56d364' stroke-width="2" rx="5"/>
+  <rect x="30" y="100" width="120" height="40" fill='none' stroke='#56d364' stroke-width="2" rx="5"/>
   <text x="40" y="130" fill='currentColor' font-size='12' font-weight='bold'>Trapezium</text>
   <line x1="150" y1="60" x2="70" y2="100" stroke='#30363d' stroke-width="1"/>
 
   <!-- Parallelogram -->
-  <rect x="190" y="100" width="120" height="40" fill='#161b22' stroke='#56d364' stroke-width="2" rx="5"/>
+  <rect x="190" y="100" width="120" height="40" fill='none' stroke='#56d364' stroke-width="2" rx="5"/>
   <text x="200" y="130" fill='currentColor' font-size='12' font-weight='bold'>Parallelogram</text>
   <line x1="250" y1="60" x2="250" y2="100" stroke='#30363d' stroke-width="1"/>
 
   <!-- Kite -->
-  <rect x="350" y="100" width="120" height="40" fill='#161b22' stroke='#56d364' stroke-width="2" rx="5"/>
+  <rect x="350" y="100" width="120" height="40" fill='none' stroke='#56d364' stroke-width="2" rx="5"/>
   <text x="365" y="130" fill='currentColor' font-size='12' font-weight='bold'>Kite</text>
   <line x1="350" y1="60" x2="400" y2="100" stroke='#30363d' stroke-width="1"/>
 
   <!-- Rectangle -->
-  <rect x="115" y="180" width="120" height="40" fill='#161b22' stroke='#a371f7' stroke-width="2" rx="5"/>
+  <rect x="115" y="180" width="120" height="40" fill='none' stroke='#a371f7' stroke-width="2" rx="5"/>
   <text x="135" y="210" fill='currentColor' font-size='12' font-weight='bold'>Rectangle</text>
   <line x1="250" y1="100" x2="175" y2="180" stroke='#30363d' stroke-width="1"/>
 
   <!-- Rhombus -->
-  <rect x="265" y="180" width="120" height="40" fill='#161b22' stroke='#a371f7' stroke-width="2" rx="5"/>
+  <rect x="265" y="180" width="120" height="40" fill='none' stroke='#a371f7' stroke-width="2" rx="5"/>
   <text x="285" y="210" fill='currentColor' font-size='12' font-weight='bold'>Rhombus</text>
   <line x1="250" y1="100" x2="325" y2="180" stroke='#30363d' stroke-width="1"/>
 
   <!-- Square -->
-  <rect x="190" y="260" width="120" height="40" fill='#161b22' stroke='#f85149' stroke-width="2.5" rx="5"/>
+  <rect x="190" y="260" width="120" height="40" fill='none' stroke='#f85149' stroke-width="2.5" rx="5"/>
   <text x="220" y="290" fill='currentColor' font-size='12' font-weight='bold'>Square</text>
   <line x1="175" y1="220" x2="240" y2="260" stroke='#30363d' stroke-width="1"/>
   <line x1="325" y1="220" x2="260" y2="260" stroke='#30363d' stroke-width="1"/>

@@ -19,7 +19,7 @@ SECTIONS = [
     <text x="0" y="-20" fill='#0969da' font-size='13' text-anchor='middle' font-weight='bold'>60°</text>
     <text x="40" y="20" fill='#0969da' font-size='13' font-weight='bold'>60°</text>
     <text x="-40" y="20" fill='#0969da' font-size='13' font-weight='bold'>60°</text>
-    <text x="0" y="65" fill='#24292f' font-size='11' text-anchor='middle'>Equilateral</text>
+    <text x="0" y="65" fill='currentColor' font-size='11' text-anchor='middle'>Equilateral</text>
   </g>
 
   <!-- Right triangle (angles 90°, 45°, 45°) -->
@@ -29,10 +29,10 @@ SECTIONS = [
     <text x="15" y="-10" fill='#22c55e' font-size='12' font-weight='bold'>90°</text>
     <text x="25" y="5" fill='#0969da' font-size='13' font-weight='bold'>45°</text>
     <text x="0" y="-20" fill='#0969da' font-size='13' font-weight='bold'>45°</text>
-    <text x="20" y="65" fill='#24292f' font-size='11' text-anchor='middle'>Right Triangle</text>
+    <text x="20" y="65" fill='currentColor' font-size='11' text-anchor='middle'>Right Triangle</text>
   </g>
 
-  <text x="175" y="30" fill='#24292f' font-size='13' text-anchor='middle' font-weight='bold'>All angles = 180°</text>
+  <text x="175" y="30" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>All angles = 180°</text>
 </svg>
 
 <div class='worked-example'>
@@ -63,7 +63,7 @@ SECTIONS = [
     <text x="0" y="-15" fill='#22c55e' font-size='12' text-anchor='middle'>60°</text>
     <text x="30" y="15" fill='#22c55e' font-size='12'>65°</text>
     <text x="-30" y="15" fill='#22c55e' font-size='12'>55°</text>
-    <text x="0" y="70" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Acute</text>
+    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Acute</text>
   </g>
 
   <!-- Right triangle -->
@@ -73,7 +73,7 @@ SECTIONS = [
     <text x="15" y="-5" fill='#0969da' font-size='12'>90°</text>
     <text x="25" y="5" fill='#0969da' font-size='12'>45°</text>
     <text x="-10" y="-15" fill='#0969da' font-size='12'>45°</text>
-    <text x="20" y="70" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Right</text>
+    <text x="20" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Right</text>
   </g>
 
   <!-- Obtuse triangle -->
@@ -82,7 +82,7 @@ SECTIONS = [
     <text x="0" y="-5" fill='#ff6b6b' font-size='12' text-anchor='middle'>120°</text>
     <text x="25" y="15" fill='#ff6b6b' font-size='12'>35°</text>
     <text x="-35" y="15" fill='#ff6b6b' font-size='12'>25°</text>
-    <text x="10" y="70" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Obtuse</text>
+    <text x="10" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Obtuse</text>
   </g>
 </svg>
 
@@ -111,7 +111,7 @@ SECTIONS = [
     <text x="50" y="20" fill='#0969da' font-size='12'>90°</text>
     <text x="50" y="55" fill='#0969da' font-size='12'>90°</text>
     <text x="10" y="55" fill='#0969da' font-size='12'>90°</text>
-    <text x="30" y="90" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Square</text>
+    <text x="30" y="90" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Square</text>
   </g>
 
   <!-- Trapezoid -->
@@ -121,10 +121,10 @@ SECTIONS = [
     <text x="55" y="25" fill='#22c55e' font-size='12'>70°</text>
     <text x="55" y="55" fill='#22c55e' font-size='12'>100°</text>
     <text x="10" y="55" fill='#22c55e' font-size='12'>80°</text>
-    <text x="35" y="90" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Trapezoid</text>
+    <text x="35" y="90" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Trapezoid</text>
   </g>
 
-  <text x="200" y="20" fill='#24292f' font-size='13' text-anchor='middle' font-weight='bold'>All angles sum to 360°</text>
+  <text x="200" y="20" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>All angles sum to 360°</text>
 </svg>
 
 <div class='worked-example'>
@@ -172,19 +172,19 @@ SECTIONS = [
   <!-- Equilateral triangle -->
   <g transform='translate(50, 120)'>
     <polygon points="0,-50 45,30 -45,30" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-    <text x="0" y="70" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Triangle: 60°</text>
+    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Triangle: 60°</text>
   </g>
 
   <!-- Regular hexagon -->
   <g transform='translate(170, 110)'>
     <polygon points="30,-40 50,-20 50,20 30,40 -30,40 -50,20 -50,-20 -30,-40" fill='none' stroke='#22c55e' stroke-width="2"/>
-    <text x="0" y="75" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Hexagon: 120°</text>
+    <text x="0" y="75" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Hexagon: 120°</text>
   </g>
 
   <!-- Regular pentagon -->
   <g transform='translate(290, 120)'>
     <polygon points="0,-45 43,-14 26,37 -26,37 -43,-14" fill='none' stroke='#ff6b6b' stroke-width="2"/>
-    <text x="0" y="70" fill='#24292f' font-size='11' text-anchor='middle' font-weight='bold'>Pentagon: 108°</text>
+    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Pentagon: 108°</text>
   </g>
 </svg>
 

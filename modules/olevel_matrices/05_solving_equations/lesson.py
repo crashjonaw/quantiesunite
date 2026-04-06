@@ -59,7 +59,7 @@ SECTIONS = [
                 </g>
 
                 <!-- Arrow -->
-                <path d="M 180 45 L 220 45" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead3)"/>
+                <path d="M 180 45 L 220 45" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead3)"/>
                 <text x="200" y="30" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>rewrite as</text>
 
                 <!-- Matrix form -->
@@ -67,13 +67,13 @@ SECTIONS = [
                     <text x="250" y="20" font-size='12' fill='currentColor' font-weight='bold'>Matrix Form AX = B</text>
 
                     <!-- A -->
-                    <rect x="240" y="35" width="50" height="50" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+                    <rect x="240" y="35" width="50" height="50" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
                     <text x="252" y="55" font-size='12' fill='#4f8ef7'>2  3</text>
                     <text x="252" y="75" font-size='12' fill='#4f8ef7'>1  −1</text>
                     <text x="265" y="100" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>A</text>
 
                     <!-- X -->
-                    <rect x="300" y="35" width="35" height="50" fill='none' stroke='#2dd4bf' stroke-width="2"/>
+                    <rect x="300" y="35" width="35" height="50" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
                     <text x="310" y="55" font-size='12' fill='#2dd4bf'>x</text>
                     <text x="310" y="75" font-size='12' fill='#2dd4bf'>y</text>
                     <text x="317" y="100" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>X</text>
@@ -82,7 +82,7 @@ SECTIONS = [
                     <text x="345" y="60" font-size='14' fill='currentColor'>=</text>
 
                     <!-- B -->
-                    <rect x="360" y="35" width="35" height="50" fill='none' stroke='#f85149' stroke-width="2"/>
+                    <rect x="360" y="35" width="35" height="50" fill='none' stroke='#f85149' stroke-width="2" rx='4'/>
                     <text x="370" y="55" font-size='12' fill='#f85149'>7</text>
                     <text x="370" y="75" font-size='12' fill='#f85149'>1</text>
                     <text x="377" y="100" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>B</text>
@@ -177,15 +177,15 @@ SECTIONS = [
             <h4 class="accent-heading" style="margin-top: 20px;">Geometric Interpretation</h4>
             <p>In 2D, each equation represents a line. The solution is where the lines intersect:</p>
 
-            <svg viewBox="0 0 660 160" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="0 0 660 170" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- One solution -->
                 <g>
                     <text x="100" y="20" font-size='12' fill='currentColor' font-weight='bold'>One Solution (det ≠ 0)</text>
-                    <rect x="20" y="30" width="160" height="120" fill='none' stroke='#30363d' stroke-width="1"/>
+                    <rect x="20" y="30" width="160" height="120" fill='none' stroke='currentColor' opacity='0.3' stroke-width="1" rx='4'/>
 
                     <!-- Two intersecting lines -->
-                    <line x1="30" y1="140" x2="170" y2="40" stroke='#4f8ef7' stroke-width="2"/>
-                    <line x1="30" y1="50" x2="170" y2="130" stroke='#2dd4bf' stroke-width="2"/>
+                    <line x1="30" y1="140" x2="170" y2="40" stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                    <line x1="30" y1="50" x2="170" y2="130" stroke='#2dd4bf' stroke-width="2" rx='4'/>
                     <circle cx="100" cy="90" r="3" fill='#f85149'/>
                     <text x="100" y="150" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Lines intersect</text>
                 </g>
@@ -193,21 +193,21 @@ SECTIONS = [
                 <!-- No solution -->
                 <g>
                     <text x="300" y="20" font-size='12' fill='currentColor' font-weight='bold'>No Solution (det = 0)</text>
-                    <rect x="220" y="30" width="160" height="120" fill='none' stroke='#30363d' stroke-width="1"/>
+                    <rect x="220" y="30" width="160" height="120" fill='none' stroke='currentColor' opacity='0.3' stroke-width="1" rx='4'/>
 
                     <!-- Two parallel lines -->
-                    <line x1="230" y1="80" x2="370" y2="80" stroke='#4f8ef7' stroke-width="2"/>
-                    <line x1="230" y1="110" x2="370" y2="110" stroke='#2dd4bf' stroke-width="2"/>
+                    <line x1="230" y1="80" x2="370" y2="80" stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                    <line x1="230" y1="110" x2="370" y2="110" stroke='#2dd4bf' stroke-width="2" rx='4'/>
                     <text x="300" y="150" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Parallel lines</text>
                 </g>
 
                 <!-- Infinite solutions -->
                 <g>
                     <text x="500" y="20" font-size='12' fill='currentColor' font-weight='bold'>Infinite Solutions (det = 0)</text>
-                    <rect x="420" y="30" width="160" height="120" fill='none' stroke='#30363d' stroke-width="1"/>
+                    <rect x="420" y="30" width="160" height="120" fill='none' stroke='currentColor' opacity='0.3' stroke-width="1" rx='4'/>
 
                     <!-- Same line -->
-                    <line x1="430" y1="140" x2="570" y2="40" stroke='#4f8ef7' stroke-width="2"/>
+                    <line x1="430" y1="140" x2="570" y2="40" stroke='#4f8ef7' stroke-width="2" rx='4'/>
                     <line x1="430" y1="140" x2="570" y2="40" stroke='#2dd4bf' stroke-width="2" stroke-dasharray="5,5"/>
                     <text x="500" y="150" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Same line</text>
                 </g>

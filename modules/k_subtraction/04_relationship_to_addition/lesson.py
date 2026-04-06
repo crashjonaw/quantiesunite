@@ -20,7 +20,7 @@ SECTIONS = [
 (Start with 5, take away 3, get back to 2)</p>
 </div>
 <svg viewBox="0 0 450 140" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
-  <text x="20" y="25" font-size='14' font-weight='bold'>Addition & Subtraction Triangle:</text>
+  <text x="20" y="25" font-size='14' font-weight='bold' fill='currentColor'>Addition & Subtraction Triangle:</text>
 
   <polygon points="150,50 100,130 200,130" fill='none' stroke='#8b949e' stroke-width="2"/>
   <circle cx="150" cy="50" r="12" fill='#4f8ef7'/>
@@ -32,12 +32,12 @@ SECTIONS = [
   <circle cx="200" cy="130" r="12" fill='#22c55e'/>
   <text x="197" y="136" font-size='16' font-weight='bold' fill='white'>2</text>
 
-  <text x="90" y="85" font-size='12' font-weight='bold'>3 + 2 = 5</text>
-  <text x="155" y="105" font-size='12' font-weight='bold'>5 - 2 = 3</text>
-  <text x="120" y="125" font-size='12' font-weight='bold'>5 - 3 = 2</text>
+  <text x="90" y="85" font-size='12' font-weight='bold' fill='currentColor'>3 + 2 = 5</text>
+  <text x="155" y="105" font-size='12' font-weight='bold' fill='currentColor'>5 - 2 = 3</text>
+  <text x="120" y="125" font-size='12' font-weight='bold' fill='currentColor'>5 - 3 = 2</text>
 
-  <text x="250" y="80" font-size='13'>All three numbers</text>
-  <text x="250" y="100" font-size='13'>work together!</text>
+  <text x="250" y="80" font-size='13' fill='currentColor'>All three numbers</text>
+  <text x="250" y="100" font-size='13' fill='currentColor'>work together!</text>
 </svg>"""
     },
     {

@@ -67,54 +67,54 @@ SECTIONS = [
 
   <!-- Row 1: Winter/Spring — Jan, Feb, Mar, Apr -->
   <rect x="10" y="44" width="100" height="52" fill='#bfdbfe' stroke='#3b82f6' stroke-width="1.5" rx="8"/>
-  <text x="60" y="67" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>1</text>
-  <text x="60" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>January</text>
+  <text x="60" y="67" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>1</text>
+  <text x="60" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>January</text>
 
   <rect x="118" y="44" width="100" height="52" fill='#c7d2fe' stroke='#6366f1' stroke-width="1.5" rx="8"/>
-  <text x="168" y="67" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>2</text>
-  <text x="168" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>February</text>
+  <text x="168" y="67" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>2</text>
+  <text x="168" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>February</text>
 
   <rect x="226" y="44" width="100" height="52" fill='#bbf7d0' stroke='#22c55e' stroke-width="1.5" rx="8"/>
-  <text x="276" y="67" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>3</text>
-  <text x="276" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>March</text>
+  <text x="276" y="67" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>3</text>
+  <text x="276" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>March</text>
 
   <rect x="334" y="44" width="100" height="52" fill='#d9f99d' stroke='#84cc16' stroke-width="1.5" rx="8"/>
-  <text x="384" y="67" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>4</text>
-  <text x="384" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>April</text>
+  <text x="384" y="67" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>4</text>
+  <text x="384" y="84" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>April</text>
 
   <!-- Row 2: Spring/Summer — May, Jun, Jul, Aug -->
   <rect x="10" y="106" width="100" height="52" fill='#a7f3d0' stroke='#10b981' stroke-width="1.5" rx="8"/>
-  <text x="60" y="129" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>5</text>
-  <text x="60" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>May</text>
+  <text x="60" y="129" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>5</text>
+  <text x="60" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>May</text>
 
   <rect x="118" y="106" width="100" height="52" fill='#fef08a' stroke='#eab308' stroke-width="1.5" rx="8"/>
-  <text x="168" y="129" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>6</text>
-  <text x="168" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>June</text>
+  <text x="168" y="129" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>6</text>
+  <text x="168" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>June</text>
 
   <rect x="226" y="106" width="100" height="52" fill='#fed7aa' stroke='#f97316' stroke-width="1.5" rx="8"/>
-  <text x="276" y="129" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>7</text>
-  <text x="276" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>July</text>
+  <text x="276" y="129" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>7</text>
+  <text x="276" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>July</text>
 
   <rect x="334" y="106" width="100" height="52" fill='#fecaca' stroke='#ef4444' stroke-width="1.5" rx="8"/>
-  <text x="384" y="129" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>8</text>
-  <text x="384" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>August</text>
+  <text x="384" y="129" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>8</text>
+  <text x="384" y="146" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>August</text>
 
   <!-- Row 3: Autumn/Winter — Sep, Oct, Nov, Dec -->
   <rect x="10" y="168" width="100" height="52" fill='#fde68a' stroke='#d97706' stroke-width="1.5" rx="8"/>
-  <text x="60" y="191" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>9</text>
-  <text x="60" y="208" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>September</text>
+  <text x="60" y="191" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>9</text>
+  <text x="60" y="208" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>September</text>
 
   <rect x="118" y="168" width="100" height="52" fill='#fdba74' stroke='#ea580c' stroke-width="1.5" rx="8"/>
-  <text x="168" y="191" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>10</text>
-  <text x="168" y="208" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>October</text>
+  <text x="168" y="191" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>10</text>
+  <text x="168" y="208" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>October</text>
 
   <rect x="226" y="168" width="100" height="52" fill='#e9d5ff' stroke='#a855f7' stroke-width="1.5" rx="8"/>
-  <text x="276" y="191" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>11</text>
-  <text x="276" y="208" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>November</text>
+  <text x="276" y="191" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>11</text>
+  <text x="276" y="208" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>November</text>
 
   <rect x="334" y="168" width="100" height="52" fill='#dbeafe' stroke='#2563eb' stroke-width="1.5" rx="8"/>
-  <text x="384" y="191" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>12</text>
-  <text x="384" y="208" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>December</text>
+  <text x="384" y="191" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>12</text>
+  <text x="384" y="208" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>December</text>
 
   <!-- Season legend -->
   <line x1="10" y1="240" x2="434" y2="240" stroke='currentColor' stroke-width="0.5" opacity="0.2"/>
@@ -150,18 +150,18 @@ SECTIONS = [
 
   <!-- Month/year header -->
   <rect x="20" y="50" width="480" height="42" fill='#e0eaff' stroke='none' rx="8"/>
-  <rect x="20" y="80" width="480" height="12" fill='#e0eaff' stroke='none'/>
+  <rect x="20" y="80" width="480" height="12" fill='#e0eaff' stroke='none' rx='4'/>
   <text x="260" y="80" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>March 2026</text>
 
   <!-- Day headers -->
   <g fill='currentColor' opacity='0.7' font-size='14' font-weight='bold'>
-    <text x="55" y="115" text-anchor='middle'>Sun</text>
-    <text x="125" y="115" text-anchor='middle'>Mon</text>
-    <text x="195" y="115" text-anchor='middle'>Tue</text>
-    <text x="265" y="115" text-anchor='middle'>Wed</text>
-    <text x="335" y="115" text-anchor='middle'>Thu</text>
-    <text x="405" y="115" text-anchor='middle'>Fri</text>
-    <text x="465" y="115" text-anchor='middle'>Sat</text>
+    <text x="55" y="115" text-anchor='middle' fill='currentColor'>Sun</text>
+    <text x="125" y="115" text-anchor='middle' fill='currentColor'>Mon</text>
+    <text x="195" y="115" text-anchor='middle' fill='currentColor'>Tue</text>
+    <text x="265" y="115" text-anchor='middle' fill='currentColor'>Wed</text>
+    <text x="335" y="115" text-anchor='middle' fill='currentColor'>Thu</text>
+    <text x="405" y="115" text-anchor='middle' fill='currentColor'>Fri</text>
+    <text x="465" y="115" text-anchor='middle' fill='currentColor'>Sat</text>
   </g>
 
   <line x1="30" y1="125" x2="490" y2="125" stroke='currentColor' stroke-width="1" opacity="0.3"/>

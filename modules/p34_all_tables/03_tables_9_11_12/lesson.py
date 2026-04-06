@@ -142,14 +142,14 @@ if (ctx9) {
 <h3>Pattern Visualization</h3>
 <div class="diagram-container">
   <svg width="500" height="250" viewBox="0 0 500 250">
-    <text x="250" y="25" text-anchor='middle' font-size='14' font-weight='bold'>The 11 Times Table Pattern</text>
+    <text x="250" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>The 11 Times Table Pattern</text>
 
     <g id="pattern">
-      <text x="50" y="70" font-size='12' font-weight='bold'>11 × 1 = 11</text>
+      <text x="50" y="70" font-size='12' font-weight='bold' fill='currentColor'>11 × 1 = 11</text>
       <rect x="50" y="75" width="30" height="30" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
       <rect x="85" y="75" width="30" height="30" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
 
-      <text x="50" y="135" font-size='12' font-weight='bold'>11 × 5 = 55</text>
+      <text x="50" y="135" font-size='12' font-weight='bold' fill='currentColor'>11 × 5 = 55</text>
       <g id="five-boxes">
         <rect x="50" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
         <rect x="80" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
@@ -163,13 +163,13 @@ if (ctx9) {
         <rect x="170" y="170" width="25" height="25" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
       </g>
 
-      <text x="280" y="100" font-size='13' font-weight='bold'>All answers have</text>
-      <text x="280" y="120" font-size='13' font-weight='bold'>the same digit</text>
-      <text x="280" y="140" font-size='13' font-weight='bold'>repeated!</text>
+      <text x="280" y="100" font-size='13' font-weight='bold' fill='currentColor'>All answers have</text>
+      <text x="280" y="120" font-size='13' font-weight='bold' fill='currentColor'>the same digit</text>
+      <text x="280" y="140" font-size='13' font-weight='bold' fill='currentColor'>repeated!</text>
 
-      <text x="280" y="190" font-size='12'>11 × 2 = 22</text>
-      <text x="280" y="210" font-size='12'>11 × 8 = 88</text>
-      <text x="280" y="230" font-size='12'>11 × 3 = 33</text>
+      <text x="280" y="190" font-size='12' fill='currentColor'>11 × 2 = 22</text>
+      <text x="280" y="210" font-size='12' fill='currentColor'>11 × 8 = 88</text>
+      <text x="280" y="230" font-size='12' fill='currentColor'>11 × 3 = 33</text>
     </g>
   </svg>
   <div class="diagram-caption">Single digits repeat in the 11 times table</div>
@@ -199,30 +199,30 @@ if (ctx9) {
 <h3>Breaking Down the 12 Times Table</h3>
 <div class="diagram-container">
   <svg width="550" height="200" viewBox="0 0 550 200">
-    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold'>12 = 10 + 2: Build 12s from Facts You Know</text>
+    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>12 = 10 + 2: Build 12s from Facts You Know</text>
 
     <g id="breakdown">
       <!-- 10 times part -->
       <rect x="30" y="60" width="120" height="80" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="5"/>
-      <text x="90" y="90" text-anchor='middle' font-size='13' font-weight='bold'>10 Times</text>
-      <text x="90" y="110" text-anchor='middle' font-size='12'>10 × 7 = 70</text>
-      <text x="90" y="130" text-anchor='middle' font-size='12'>(add a zero!)</text>
+      <text x="90" y="90" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>10 Times</text>
+      <text x="90" y="110" text-anchor='middle' font-size='12' fill='currentColor'>10 × 7 = 70</text>
+      <text x="90" y="130" text-anchor='middle' font-size='12' fill='currentColor'>(add a zero!)</text>
 
-      <text x="160" y="105" font-size='20' font-weight='bold'>+</text>
+      <text x="160" y="105" font-size='20' font-weight='bold' fill='currentColor'>+</text>
 
       <!-- 2 times part -->
       <rect x="190" y="60" width="120" height="80" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="5"/>
-      <text x="250" y="90" text-anchor='middle' font-size='13' font-weight='bold'>2 Times</text>
-      <text x="250" y="110" text-anchor='middle' font-size='12'>2 × 7 = 14</text>
-      <text x="250" y="130" text-anchor='middle' font-size='12'>(easy!)</text>
+      <text x="250" y="90" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>2 Times</text>
+      <text x="250" y="110" text-anchor='middle' font-size='12' fill='currentColor'>2 × 7 = 14</text>
+      <text x="250" y="130" text-anchor='middle' font-size='12' fill='currentColor'>(easy!)</text>
 
-      <text x="330" y="105" font-size='20' font-weight='bold'>=</text>
+      <text x="330" y="105" font-size='20' font-weight='bold' fill='currentColor'>=</text>
 
       <!-- Answer -->
       <rect x="360" y="60" width="140" height="80" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="5"/>
-      <text x="430" y="90" text-anchor='middle' font-size='13' font-weight='bold'>12 Times</text>
-      <text x="430" y="110" text-anchor='middle' font-size='12'>12 × 7 = 84</text>
-      <text x="430" y="130" text-anchor='middle' font-size='14' font-weight='bold'>70 + 14</text>
+      <text x="430" y="90" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>12 Times</text>
+      <text x="430" y="110" text-anchor='middle' font-size='12' fill='currentColor'>12 × 7 = 84</text>
+      <text x="430" y="130" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>70 + 14</text>
     </g>
   </svg>
   <div class="diagram-caption">Use 10 + 2 to build the 12 times table</div>
@@ -245,54 +245,54 @@ if (ctx9) {
 
 <div class="diagram-container">
   <svg width="600" height="300" viewBox="0 0 600 300">
-    <text x="300" y="25" text-anchor='middle' font-size='14' font-weight='bold'>All Times Tables 1-12: Quick Reference</text>
+    <text x="300" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>All Times Tables 1-12: Quick Reference</text>
 
     <g id="tables-overview">
       <!-- Row 1 -->
-      <text x="30" y="60" font-size='11' font-weight='bold'>1: Identity</text>
-      <text x="30" y="75" font-size='10'>1, 2, 3, 4, 5...</text>
+      <text x="30" y="60" font-size='11' font-weight='bold' fill='currentColor'>1: Identity</text>
+      <text x="30" y="75" font-size='10' fill='currentColor'>1, 2, 3, 4, 5...</text>
 
-      <text x="120" y="60" font-size='11' font-weight='bold'>2: Doubling</text>
-      <text x="120" y="75" font-size='10'>2, 4, 6, 8, 10...</text>
+      <text x="120" y="60" font-size='11' font-weight='bold' fill='currentColor'>2: Doubling</text>
+      <text x="120" y="75" font-size='10' fill='currentColor'>2, 4, 6, 8, 10...</text>
 
-      <text x="210" y="60" font-size='11' font-weight='bold'>3: Digit Sum</text>
-      <text x="210" y="75" font-size='10'>3, 6, 9, 12, 15...</text>
+      <text x="210" y="60" font-size='11' font-weight='bold' fill='currentColor'>3: Digit Sum</text>
+      <text x="210" y="75" font-size='10' fill='currentColor'>3, 6, 9, 12, 15...</text>
 
-      <text x="300" y="60" font-size='11' font-weight='bold'>4: Double 2s</text>
-      <text x="300" y="75" font-size='10'>4, 8, 12, 16, 20...</text>
+      <text x="300" y="60" font-size='11' font-weight='bold' fill='currentColor'>4: Double 2s</text>
+      <text x="300" y="75" font-size='10' fill='currentColor'>4, 8, 12, 16, 20...</text>
 
-      <text x="390" y="60" font-size='11' font-weight='bold'>5: 0 or 5</text>
-      <text x="390" y="75" font-size='10'>5, 10, 15, 20, 25...</text>
+      <text x="390" y="60" font-size='11' font-weight='bold' fill='currentColor'>5: 0 or 5</text>
+      <text x="390" y="75" font-size='10' fill='currentColor'>5, 10, 15, 20, 25...</text>
 
-      <text x="480" y="60" font-size='11' font-weight='bold'>10: Add Zero</text>
-      <text x="480" y="75" font-size='10'>10, 20, 30, 40, 50...</text>
+      <text x="480" y="60" font-size='11' font-weight='bold' fill='currentColor'>10: Add Zero</text>
+      <text x="480" y="75" font-size='10' fill='currentColor'>10, 20, 30, 40, 50...</text>
 
       <!-- Row 2 -->
-      <text x="30" y="130" font-size='11' font-weight='bold'>6: Double 3s</text>
-      <text x="30" y="145" font-size='10'>6, 12, 18, 24, 30...</text>
+      <text x="30" y="130" font-size='11' font-weight='bold' fill='currentColor'>6: Double 3s</text>
+      <text x="30" y="145" font-size='10' fill='currentColor'>6, 12, 18, 24, 30...</text>
 
-      <text x="120" y="130" font-size='11' font-weight='bold'>7: Build Up</text>
-      <text x="120" y="145" font-size='10'>7, 14, 21, 28, 35...</text>
+      <text x="120" y="130" font-size='11' font-weight='bold' fill='currentColor'>7: Build Up</text>
+      <text x="120" y="145" font-size='10' fill='currentColor'>7, 14, 21, 28, 35...</text>
 
-      <text x="210" y="130" font-size='11' font-weight='bold'>8: Double 4s</text>
-      <text x="210" y="145" font-size='10'>8, 16, 24, 32, 40...</text>
+      <text x="210" y="130" font-size='11' font-weight='bold' fill='currentColor'>8: Double 4s</text>
+      <text x="210" y="145" font-size='10' fill='currentColor'>8, 16, 24, 32, 40...</text>
 
-      <text x="300" y="130" font-size='11' font-weight='bold'>9: Digits = 9</text>
-      <text x="300" y="145" font-size='10'>9, 18, 27, 36, 45...</text>
+      <text x="300" y="130" font-size='11' font-weight='bold' fill='currentColor'>9: Digits = 9</text>
+      <text x="300" y="145" font-size='10' fill='currentColor'>9, 18, 27, 36, 45...</text>
 
-      <text x="390" y="130" font-size='11' font-weight='bold'>11: Repeat</text>
-      <text x="390" y="145" font-size='10'>11, 22, 33, 44, 55...</text>
+      <text x="390" y="130" font-size='11' font-weight='bold' fill='currentColor'>11: Repeat</text>
+      <text x="390" y="145" font-size='10' fill='currentColor'>11, 22, 33, 44, 55...</text>
 
-      <text x="480" y="130" font-size='11' font-weight='bold'>12: 10 + 2</text>
-      <text x="480" y="145" font-size='10'>12, 24, 36, 48, 60...</text>
+      <text x="480" y="130" font-size='11' font-weight='bold' fill='currentColor'>12: 10 + 2</text>
+      <text x="480" y="145" font-size='10' fill='currentColor'>12, 24, 36, 48, 60...</text>
 
       <!-- Strategies box -->
       <rect x="30" y="190" width="540" height="100" fill='none' stroke='#8b949e' stroke-width="2" rx="5"/>
-      <text x="40" y="210" font-size='12' font-weight='bold'>Key Strategies to Remember:</text>
+      <text x="40" y="210" font-size='12' font-weight='bold' fill='currentColor'>Key Strategies to Remember:</text>
 
-      <text x="50" y="235" font-size='11'>• Use doubling: 2 → 4 → 8, and 3 → 6 (6 is 3 doubled)</text>
-      <text x="50" y="255" font-size='11'>• Use breaking apart: 12 = 10 + 2, 7 = 5 + 2</text>
-      <text x="50" y="275" font-size='11'>• Use digit patterns: 9s sum to 9, 11s repeat single digits</text>
+      <text x="50" y="235" font-size='11' fill='currentColor'>• Use doubling: 2 → 4 → 8, and 3 → 6 (6 is 3 doubled)</text>
+      <text x="50" y="255" font-size='11' fill='currentColor'>• Use breaking apart: 12 = 10 + 2, 7 = 5 + 2</text>
+      <text x="50" y="275" font-size='11' fill='currentColor'>• Use digit patterns: 9s sum to 9, 11s repeat single digits</text>
     </g>
   </svg>
   <div class="diagram-caption">All twelve times tables with their special shortcuts</div>

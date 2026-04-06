@@ -207,67 +207,67 @@ SECTIONS = [
        <!-- Tick marks and numbers -->
        <g font-size="14" text-anchor="middle">
          <line x1="10" y1="35" x2="10" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="10" y="65" fill="#333">0</text>
+         <text x="10" y="65" fill='currentColor'>0</text>
 
          <line x1="30" y1="35" x2="30" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="30" y="65" fill="#333">1</text>
+         <text x="30" y="65" fill='currentColor'>1</text>
 
          <line x1="50" y1="35" x2="50" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="50" y="65" fill="#333">2</text>
+         <text x="50" y="65" fill='currentColor'>2</text>
 
          <line x1="70" y1="35" x2="70" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="70" y="65" fill="#333">3</text>
+         <text x="70" y="65" fill='currentColor'>3</text>
 
          <line x1="90" y1="35" x2="90" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="90" y="65" fill="#333">4</text>
+         <text x="90" y="65" fill='currentColor'>4</text>
 
          <line x1="110" y1="35" x2="110" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="110" y="65" fill="#333">5</text>
+         <text x="110" y="65" fill='currentColor'>5</text>
 
          <line x1="130" y1="35" x2="130" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="130" y="65" fill="#333">6</text>
+         <text x="130" y="65" fill='currentColor'>6</text>
 
          <line x1="150" y1="35" x2="150" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="150" y="65" fill="#333">7</text>
+         <text x="150" y="65" fill='currentColor'>7</text>
 
          <line x1="170" y1="35" x2="170" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="170" y="65" fill="#333">8</text>
+         <text x="170" y="65" fill='currentColor'>8</text>
 
          <line x1="190" y1="35" x2="190" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="190" y="65" fill="#333">9</text>
+         <text x="190" y="65" fill='currentColor'>9</text>
 
          <line x1="210" y1="35" x2="210" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="210" y="65" fill="#333">10</text>
+         <text x="210" y="65" fill='currentColor'>10</text>
 
          <line x1="230" y1="35" x2="230" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="230" y="65" fill="#333">11</text>
+         <text x="230" y="65" fill='currentColor'>11</text>
 
          <line x1="250" y1="35" x2="250" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="250" y="65" fill="#333">12</text>
+         <text x="250" y="65" fill='currentColor'>12</text>
 
          <line x1="270" y1="35" x2="270" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="270" y="65" fill="#333">13</text>
+         <text x="270" y="65" fill='currentColor'>13</text>
 
          <line x1="290" y1="35" x2="290" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="290" y="65" fill="#333">14</text>
+         <text x="290" y="65" fill='currentColor'>14</text>
 
          <line x1="310" y1="35" x2="310" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="310" y="65" fill="#333">15</text>
+         <text x="310" y="65" fill='currentColor'>15</text>
 
          <line x1="330" y1="35" x2="330" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="330" y="65" fill="#333">16</text>
+         <text x="330" y="65" fill='currentColor'>16</text>
 
          <line x1="350" y1="35" x2="350" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="350" y="65" fill="#333">17</text>
+         <text x="350" y="65" fill='currentColor'>17</text>
 
          <line x1="370" y1="35" x2="370" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="370" y="65" fill="#333">18</text>
+         <text x="370" y="65" fill='currentColor'>18</text>
 
          <line x1="390" y1="35" x2="390" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="390" y="65" fill="#333">19</text>
+         <text x="390" y="65" fill='currentColor'>19</text>
 
          <line x1="410" y1="35" x2="410" y2="45" stroke="#4169E1" stroke-width="2"/>
-         <text x="410" y="65" fill="#333">20</text>
+         <text x="410" y="65" fill='currentColor'>20</text>
        </g>
      </svg>
 

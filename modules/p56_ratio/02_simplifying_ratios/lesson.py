@@ -26,14 +26,14 @@ SECTIONS = [
       <text x="250" y="30" font-size='14' font-weight='bold' text-anchor='middle' fill='currentColor'>These ratios are equivalent but only 3:2 is simplified</text>
 
       <text x="50" y="70" font-size='12' fill='currentColor'>12:8</text>
-      <rect x="50" y="80" width="80" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
-      <rect x="140" y="80" width="60" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="80" width="80" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
+      <rect x="140" y="80" width="60" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
 
       <path d="M 220 100 L 260 100" stroke='currentColor' stroke-width="2" marker-end="url(#arrowhead)"/>
       <text x="240" y="90" font-size='11' fill='currentColor' text-anchor='middle'>÷4</text>
 
       <text x="280" y="70" font-size='12' fill='currentColor'>3:2 (simplified)</text>
-      <rect x="280" y="80" width="30" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2"/>
+      <rect x="280" y="80" width="30" height="40" fill='#4169E1' opacity='0.6' stroke='#30363d' stroke-width="2" rx="4"/>
       <rect x="320" y="80" width="20" height="40" fill='#22c55e' opacity='0.6' stroke='#30363d' stroke-width="2"/>
 
       <defs>

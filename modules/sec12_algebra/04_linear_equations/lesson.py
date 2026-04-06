@@ -12,7 +12,7 @@ SECTIONS = [
   <line x1="30" y1="120" x2="270" y2="120" stroke='currentColor' stroke-width="2"/>
   <circle cx="80" cy="120" r="8" fill='none' stroke='currentColor' stroke-width="2"/>
   <circle cx="100" cy="120" r="8" fill='none' stroke='currentColor' stroke-width="2"/>
-  <rect x="150" y="110" width="100" height="20" fill='none' stroke='currentColor' stroke-width="2"/>
+  <rect x="150" y="110" width="100" height="20" rx='4' fill='none' stroke='currentColor' stroke-width="2"/>
   <text x="80" y="45" text-anchor='middle' fill='currentColor' font-size='14'>2x</text>
   <text x="100" y="45" text-anchor='middle' fill='currentColor' font-size='14'>+5</text>
   <text x="200" y="45" text-anchor='middle' fill='currentColor' font-size='14'>= 13</text>

@@ -27,51 +27,51 @@ SECTIONS = [
 
         <svg viewBox="0 0 600 280" xmlns="http://www.w3.org/2000/svg" style="margin: 20px auto; display: block; width: 100%; max-width: 500px;">
             <!-- Background -->
-            <rect width="600" height="280" fill='#0d1117' stroke='#30363d' stroke-width="2"/>
+            <rect width="600" height="280" fill='none' stroke='currentColor' stroke-width="2" rx='4' opacity='0.3'/>
 
             <!-- Row 0 -->
-            <circle cx="300" cy="20" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="300" cy="20" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="300" y="27" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 1 -->
-            <circle cx="270" cy="60" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="270" cy="60" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="270" y="67" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
-            <circle cx="330" cy="60" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="330" cy="60" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="330" y="67" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 2 -->
-            <circle cx="240" cy="100" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="240" cy="100" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="240" y="107" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
-            <circle cx="300" cy="100" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="300" cy="100" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="300" y="107" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>2</text>
-            <circle cx="360" cy="100" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="360" cy="100" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="360" y="107" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 3 -->
-            <circle cx="210" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="210" cy="140" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="210" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
-            <circle cx="270" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="270" cy="140" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="270" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>3</text>
-            <circle cx="330" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="330" cy="140" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="330" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>3</text>
-            <circle cx="390" cy="140" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="390" cy="140" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="390" y="147" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Row 4 -->
-            <circle cx="180" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="180" cy="180" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="180" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
-            <circle cx="240" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="240" cy="180" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="240" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>4</text>
-            <circle cx="300" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="300" cy="180" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="300" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>6</text>
-            <circle cx="360" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="360" cy="180" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="360" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>4</text>
-            <circle cx="420" cy="180" r="18" fill='#161b22' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="420" cy="180" r="18" fill='none' stroke='#4f8ef7' stroke-width="2"/>
             <text x="420" y="187" text-anchor='middle' font-size='16' fill='currentColor' font-weight='bold'>1</text>
 
             <!-- Arrows showing addition -->
-            <line x1="285" y1="80" x2="295" y2="92" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3"/>
-            <line x1="315" y1="80" x2="305" y2="92" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3"/>
+            <line x1="285" y1="80" x2="295" y2="92" stroke='currentColor' opacity='0.5' stroke-width="1.5" stroke-dasharray="3,3"/>
+            <line x1="315" y1="80" x2="305" y2="92" stroke='currentColor' opacity='0.5' stroke-width="1.5" stroke-dasharray="3,3"/>
 
             <!-- Labels -->
             <text x="300" y="260" text-anchor='middle' font-size='14' fill='currentColor' opacity='0.6' style="font-style: italic;">Each entry = sum of two above</text>

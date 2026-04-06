@@ -43,7 +43,7 @@ SECTIONS = [
 
   <!-- Explanation box -->
   <rect x="30" y="180" width="540" height="50" fill='#22c55e15' stroke='#22c55e' stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-  <text x="40" y="200" text-anchor='start' fill='currentColor' font-size='11'><strong>Key Idea:</strong> Is 47 closer to 40 or 50? Distance to 50 = 3, distance to 40 = 7.</text>
+  <text x="40" y="200" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Key Idea:</tspan> Is 47 closer to 40 or 50? Distance to 50 = 3, distance to 40 = 7.</text>
   <text x="40" y="217" text-anchor='start' fill='currentColor' font-size='11'>So 47 is closer to 50. Answer: 47 rounds UP to 50.</text>
 </svg>"""
     },
@@ -71,11 +71,11 @@ SECTIONS = [
 
   <!-- Examples -->
   <rect x="20" y="120" width="540" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><strong>Examples (Down):</strong> 21→20, 34→30, 48→50 (wait, 8 is 5+, so round UP!)</text>
-  <text x="30" y="155" text-anchor='start' fill='currentColor' font-size='11'><strong>Corrected:</strong> 21→20, 34→30, 44→40, 46→50</text>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Down):</tspan> 21→20, 34→30, 48→50 (wait, 8 is 5+, so round UP!)</text>
+  <text x="30" y="155" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Corrected:</tspan> 21→20, 34→30, 44→40, 46→50</text>
 
   <rect x="20" y="185" width="540" height="50" fill='#ec489920' stroke='#ec4899' stroke-width="1" rx="3"/>
-  <text x="30" y="205" text-anchor='start' fill='currentColor' font-size='11'><strong>Examples (Up):</strong> 25→30, 37→40, 59→60, 78→80</text>
+  <text x="30" y="205" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Up):</tspan> 25→30, 37→40, 59→60, 78→80</text>
 
   <!-- Visual number line example -->
   <line x1="50" y1="260" x2="550" y2="260" stroke='#808080' stroke-width="1"/>
@@ -110,16 +110,16 @@ SECTIONS = [
 
   <!-- Examples -->
   <rect x="20" y="120" width="540" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><strong>Examples (Down):</strong> 214→200, 340→300, 449→400</text>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Down):</tspan> 214→200, 340→300, 449→400</text>
   <text x="30" y="155" text-anchor='start' fill='currentColor' font-size='11'>The hundreds digit stays the same when tens digit is 0-4.</text>
 
   <rect x="20" y="185" width="540" height="50" fill='#ec489920' stroke='#ec4899' stroke-width="1" rx="3"/>
-  <text x="30" y="205" text-anchor='start' fill='currentColor' font-size='11'><strong>Examples (Up):</strong> 257→300, 375→400, 689→700, 956→1000</text>
+  <text x="30" y="205" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Up):</tspan> 257→300, 375→400, 689→700, 956→1000</text>
   <text x="30" y="220" text-anchor='start' fill='currentColor' font-size='11'>The hundreds digit increases by 1 when tens digit is 5-9.</text>
 
   <!-- Worked example -->
   <rect x="20" y="245" width="540" height="50" fill='#f59e0b15' stroke='#f59e0b' stroke-width="1" rx="3"/>
-  <text x="30" y="262" text-anchor='start' fill='currentColor' font-size='11'><strong>Example:</strong> Round 347 to nearest 100</text>
+  <text x="30" y="262" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Example:</tspan> Round 347 to nearest 100</text>
   <text x="30" y="277" text-anchor='start' fill='currentColor' font-size='11'>Tens digit = 4 (which is 0-4) → Round DOWN → Answer: 300</text>
 </svg>"""
     },
@@ -146,7 +146,7 @@ SECTIONS = [
 
   <!-- Why estimation matters -->
   <rect x="20" y="210" width="540" height="45" fill='#ec489915' stroke='#ec4899' stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-  <text x="30" y="230" text-anchor='start' fill='currentColor' font-size='11'><strong>Why estimate?</strong> Quick mental math check, real-world decisions (shopping, cooking, distance)</text>
+  <text x="30" y="230" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Why estimate?</tspan> Quick mental math check, real-world decisions (shopping, cooking, distance)</text>
 </svg>"""
     },
     {

@@ -23,16 +23,16 @@ Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
   <circle cx="440" cy="60" r="4" fill='currentColor'/>
   <circle cx="490" cy="60" r="4" fill='currentColor'/>
 
-  <text x="35" y="85" font-size='14' font-weight='bold'>0</text>
-  <text x="85" y="85" font-size='14'>1</text>
-  <text x="135" y="85" font-size='14'>2</text>
-  <text x="185" y="85" font-size='14'>3</text>
-  <text x="235" y="85" font-size='14'>4</text>
-  <text x="285" y="85" font-size='14'>5</text>
-  <text x="335" y="85" font-size='14'>6</text>
-  <text x="385" y="85" font-size='14'>7</text>
-  <text x="435" y="85" font-size='14'>8</text>
-  <text x="485" y="85" font-size='14'>9</text>
+  <text x="35" y="85" font-size='14' font-weight='bold' fill='currentColor'>0</text>
+  <text x="85" y="85" font-size='14' fill='currentColor'>1</text>
+  <text x="135" y="85" font-size='14' fill='currentColor'>2</text>
+  <text x="185" y="85" font-size='14' fill='currentColor'>3</text>
+  <text x="235" y="85" font-size='14' fill='currentColor'>4</text>
+  <text x="285" y="85" font-size='14' fill='currentColor'>5</text>
+  <text x="335" y="85" font-size='14' fill='currentColor'>6</text>
+  <text x="385" y="85" font-size='14' fill='currentColor'>7</text>
+  <text x="435" y="85" font-size='14' fill='currentColor'>8</text>
+  <text x="485" y="85" font-size='14' fill='currentColor'>9</text>
 
   <circle cx="390" cy="60" r="20" fill='none' stroke='#3b82f6' stroke-width="2"/>
   <text x="395" y="25" font-size='16' font-weight='bold' fill='#3b82f6'>Start: 7</text>

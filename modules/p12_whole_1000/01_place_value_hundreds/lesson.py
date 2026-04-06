@@ -173,9 +173,9 @@ SECTIONS = [
   <text x="250" y="20" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Number 582 in Place Value Chart</text>
 
   <!-- Table grid -->
-  <rect x="30" y="40" width="140" height="50" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-  <rect x="170" y="40" width="140" height="50" fill='none' stroke='#22c55e' stroke-width="2"/>
-  <rect x="310" y="40" width="140" height="50" fill='none' stroke='#f59e0b' stroke-width="2"/>
+  <rect x="30" y="40" width="140" height="50" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+  <rect x="170" y="40" width="140" height="50" fill='none' stroke='#22c55e' stroke-width="2" rx='4'/>
+  <rect x="310" y="40" width="140" height="50" fill='none' stroke='#f59e0b' stroke-width="2" rx='4'/>
 
   <!-- Dividers -->
   <line x1="30" y1="65" x2="450" y2="65" stroke='#808080' stroke-width="1"/>

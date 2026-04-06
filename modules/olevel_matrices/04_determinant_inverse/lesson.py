@@ -21,14 +21,14 @@ SECTIONS = [
                 <!-- Original square -->
                 <g>
                     <text x="50" y="20" font-size='12' fill='currentColor' font-weight='bold'>Original (det = 1)</text>
-                    <rect x="20" y="40" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+                    <rect x="20" y="40" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
                     <text x="50" y="105" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Unit square</text>
                 </g>
 
                 <!-- Scaled by 2 -->
                 <g>
                     <text x="150" y="20" font-size='12' fill='currentColor' font-weight='bold'>Scaled 2× (det = 4)</text>
-                    <rect x="110" y="30" width="80" height="80" fill='none' stroke='#2dd4bf' stroke-width="2"/>
+                    <rect x="110" y="30" width="80" height="80" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
                     <text x="150" y="125" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>4× larger area</text>
                 </g>
 
@@ -70,7 +70,7 @@ SECTIONS = [
 
             <svg viewBox="0 0 300 150" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Matrix -->
-                <rect x="40" y="30" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+                <rect x="40" y="30" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
                 <text x="60" y="60" font-size='16' fill='#4f8ef7' font-weight='bold'>a</text>
                 <text x="100" y="60" font-size='16' fill='#4f8ef7' font-weight='bold'>b</text>
                 <text x="60" y="100" font-size='16' fill='currentColor' font-weight='bold'>c</text>
@@ -85,7 +85,7 @@ SECTIONS = [
                 <text x="60" y="125" font-size='11' fill='#f85149'>−bc</text>
 
                 <!-- Formula -->
-                <text x="200" y="75" font-size='14' fill='currentColor' font-weight='bold' text-anchor='middle'>det = <tspan style="color: #2dd4bf;">ad</tspan> <tspan >−</tspan> <tspan style="color: #f85149;">bc</tspan></text>
+                <text x="200" y="75" font-size='14' fill='currentColor' font-weight='bold' text-anchor='middle'>det = <tspan fill='#2dd4bf'>ad</tspan> <tspan>−</tspan> <tspan fill='#f85149'>bc</tspan></text>
             </svg>
         </div>
 
@@ -157,11 +157,11 @@ SECTIONS = [
                 <li>Multiply the entire matrix by 1/det(A)</li>
             </ol>
 
-            <svg viewBox="0 0 400 180" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="0 0 420 180" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Original matrix -->
                 <g>
                     <text x="50" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
-                    <rect x="80" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+                    <rect x="80" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
                     <text x="95" y="35" font-size='14' fill='#4f8ef7'>a</text>
                     <text x="125" y="35" font-size='14' fill='#4f8ef7'>b</text>
                     <text x="95" y="55" font-size='14' fill='currentColor'>c</text>
@@ -169,13 +169,13 @@ SECTIONS = [
                 </g>
 
                 <!-- Arrow -->
-                <path d="M 160 40 L 200 40" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead2)"/>
+                <path d="M 160 40 L 200 40" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead2)"/>
                 <text x="180" y="30" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>swap a,d</text>
                 <text x="180" y="55" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>negate b,c</text>
 
                 <!-- Adjugate -->
                 <g>
-                    <rect x="220" y="10" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2"/>
+                    <rect x="220" y="10" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
                     <text x="235" y="35" font-size='14' fill='#2dd4bf'>d</text>
                     <text x="265" y="35" font-size='14' fill='#2dd4bf'>−b</text>
                     <text x="235" y="55" font-size='14' fill='#2dd4bf'>−c</text>

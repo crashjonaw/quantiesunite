@@ -15,7 +15,7 @@ SECTIONS = [
 <p>The <strong>unit circle</strong> is a circle with radius 1 centered at the origin (0, 0) of a coordinate system.</p>
 </div>
 
-<svg viewBox="-150 -190 300 340" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:350px; margin:20px 0;">
+<svg viewBox="-150 -190 370 340" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px 0;">
   <defs>
     </defs>
 

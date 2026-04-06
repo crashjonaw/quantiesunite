@@ -20,20 +20,20 @@ SECTIONS = [
   <svg width="620" height="120" viewBox="-10 0 620 120">
     <line x1="20" y1="50" x2="580" y2="50" stroke='#8b949e' stroke-width="2"/>
     <circle cx="20" cy="50" r="5" fill='#4169E1' stroke='#4169E1' stroke-width="2"/>
-    <text x="20" y="75" text-anchor='middle' font-size='14' font-weight='bold'>40,000</text>
+    <text x="20" y="75" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>40,000</text>
 
     <circle cx="140" cy="50" r="5" fill='#cccccc'/>
-    <text x="140" y="75" text-anchor='middle' font-size='12'>45,000</text>
+    <text x="140" y="75" text-anchor='middle' font-size='12' fill='currentColor'>45,000</text>
 
     <circle cx="300" cy="50" r="8" fill='#f59e0b' stroke='#f59e0b' stroke-width="2"/>
-    <text x="300" y="75" text-anchor='middle' font-size='14' font-weight='bold'>47,328</text>
+    <text x="300" y="75" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>47,328</text>
     <text x="300" y="35" text-anchor='middle' font-size='11' fill='#f59e0b'>Our number</text>
 
     <circle cx="460" cy="50" r="5" fill='#cccccc'/>
-    <text x="460" y="75" text-anchor='middle' font-size='12'>50,000</text>
+    <text x="460" y="75" text-anchor='middle' font-size='12' fill='currentColor'>50,000</text>
 
     <circle cx="580" cy="50" r="5" fill='#22c55e' stroke='#22c55e' stroke-width="2"/>
-    <text x="580" y="75" text-anchor='middle' font-size='14' font-weight='bold'>60,000</text>
+    <text x="580" y="75" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>60,000</text>
 
     <line x1="20" y1="45" x2="20" y2="55" stroke='#4169E1' stroke-width="2"/>
     <line x1="580" y1="45" x2="580" y2="55" stroke='#22c55e' stroke-width="2"/>

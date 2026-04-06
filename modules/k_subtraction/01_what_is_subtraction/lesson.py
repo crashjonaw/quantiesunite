@@ -11,16 +11,16 @@ SECTIONS = [
 <strong>\(5 - 2 = 3\) cookies left</strong></p>
 </div>
 <svg viewBox="0 0 400 120" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
-  <text x="10" y="30" font-size='16' font-weight='bold'>Start with 5 cookies:</text>
+  <text x="10" y="30" font-size='16' font-weight='bold' fill='currentColor'>Start with 5 cookies:</text>
   <circle cx="40" cy="70" r="15" fill='#d4a574'/>
   <circle cx="80" cy="70" r="15" fill='#d4a574'/>
   <circle cx="120" cy="70" r="15" fill='#d4a574'/>
   <circle cx="160" cy="70" r="15" fill='#d4a574'/>
   <circle cx="200" cy="70" r="15" fill='#d4a574'/>
 
-  <text x="230" y="75" font-size='20' font-weight='bold'>−</text>
+  <text x="230" y="75" font-size='20' font-weight='bold' fill='currentColor'>−</text>
 
-  <text x="270" y="30" font-size='16' font-weight='bold'>Take away 2:</text>
+  <text x="270" y="30" font-size='16' font-weight='bold' fill='currentColor'>Take away 2:</text>
   <circle cx="300" cy="70" r="15" fill='#ef4444' opacity='0.5'/>
   <line x1="285" y1="55" x2="315" y2="85" stroke='#ef4444' stroke-width="2"/>
   <circle cx="340" cy="70" r="15" fill='#ef4444' opacity='0.5'/>

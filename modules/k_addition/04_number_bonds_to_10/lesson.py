@@ -88,7 +88,7 @@ SECTIONS = [
 
 <svg viewBox="0 0 280 150" style="width: 100%; max-width: 350px; height: auto; display: block; margin: 20px auto;">
   <!-- Title -->
-  <text x="140" y="20" text-anchor='middle' font-size='14' font-weight='bold'>6 + 4 = 10</text>
+  <text x="140" y="20" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6 + 4 = 10</text>
 
   <!-- Grid boxes -->
   <g id="frame">

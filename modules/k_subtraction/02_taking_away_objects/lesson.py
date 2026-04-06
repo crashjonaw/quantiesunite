@@ -10,19 +10,19 @@ SECTIONS = [
 <p><strong>Example:</strong> Start with 8 stars ⭐, cross out 3. How many remain?</p>
 </div>
 <svg viewBox="0 0 400 100" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
-  <text x="20" y="25" font-size='14' font-weight='bold'>8 stars, remove 3:</text>
+  <text x="20" y="25" font-size='14' font-weight='bold' fill='currentColor'>8 stars, remove 3:</text>
 
-  <text x="20" y="60" font-size='24'>⭐</text>
-  <text x="55" y="60" font-size='24'>⭐</text>
-  <text x="90" y="60" font-size='24' opacity='0.4'>⭐</text>
+  <text x="20" y="60" font-size='24' fill='currentColor'>⭐</text>
+  <text x="55" y="60" font-size='24' fill='currentColor'>⭐</text>
+  <text x="90" y="60" font-size='24' opacity='0.4' fill='currentColor'>⭐</text>
   <line x1="80" y1="45" x2="100" y2="75" stroke='#ef4444' stroke-width="2"/>
-  <text x="125" y="60" font-size='24' opacity='0.4'>⭐</text>
+  <text x="125" y="60" font-size='24' opacity='0.4' fill='currentColor'>⭐</text>
   <line x1="115" y1="45" x2="135" y2="75" stroke='#ef4444' stroke-width="2"/>
-  <text x="160" y="60" font-size='24' opacity='0.4'>⭐</text>
+  <text x="160" y="60" font-size='24' opacity='0.4' fill='currentColor'>⭐</text>
   <line x1="150" y1="45" x2="170" y2="75" stroke='#ef4444' stroke-width="2"/>
-  <text x="195" y="60" font-size='24'>⭐</text>
-  <text x="230" y="60" font-size='24'>⭐</text>
-  <text x="265" y="60" font-size='24'>⭐</text>
+  <text x="195" y="60" font-size='24' fill='currentColor'>⭐</text>
+  <text x="230" y="60" font-size='24' fill='currentColor'>⭐</text>
+  <text x="265" y="60" font-size='24' fill='currentColor'>⭐</text>
 </svg>
 <p style="text-align:center;margin-top:12px;"><strong>\(8 - 3 = 5\) stars left</strong></p>"""
     },

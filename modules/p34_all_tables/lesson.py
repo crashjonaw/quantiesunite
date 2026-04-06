@@ -9,7 +9,7 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="150" viewBox="0 0 600 150">
-    <text x="300" y="25" text-anchor="middle" font-size="16" font-weight="bold">4 Baskets with 3 Apples Each</text>
+    <text x="300" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>4 Baskets with 3 Apples Each</text>
     
     <g id="basket1">
       <rect x="20" y="50" width="80" height="80" fill="none" stroke="#4169E1" stroke-width="2"/>
@@ -39,7 +39,7 @@ SECTIONS = [
       <circle cx="350" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
     </g>
 
-    <text x="480" y="90" font-size="24" font-weight="bold">3 × 4 = 12</text>
+    <text x="480" y="90" font-size="24" font-weight="bold" fill='currentColor'>3 × 4 = 12</text>
   </svg>
   <div class="diagram-caption">Four baskets with three apples each makes 12 apples total</div>
 </div>
@@ -76,7 +76,7 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="400" height="200" viewBox="0 0 400 200">
-    <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold">An Array of 5 Rows and 3 Columns</text>
+    <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>An Array of 5 Rows and 3 Columns</text>
 
     <g id="array">
       <rect x="80" y="50" width="30" height="30" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
@@ -100,7 +100,7 @@ SECTIONS = [
       <rect x="160" y="210" width="30" height="30" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
     </g>
 
-    <text x="200" y="140" font-size="16" font-weight="bold">5 rows × 3 columns = 15 squares</text>
+    <text x="200" y="140" font-size="16" font-weight="bold" fill='currentColor'>5 rows × 3 columns = 15 squares</text>
   </svg>
   <div class="diagram-caption">This array shows 5 × 3 = 15</div>
 </div>
@@ -179,29 +179,29 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="100" viewBox="0 0 600 100">
-    <text x="300" y="25" text-anchor="middle" font-size="14" font-weight="bold">5 Times Table Pattern: Notice the 0s and 5s</text>
-    <text x="50" y="60" text-anchor="middle" font-size="12">5 × 1</text>
+    <text x="300" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>5 Times Table Pattern: Notice the 0s and 5s</text>
+    <text x="50" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 1</text>
     <text x="50" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">5</text>
 
-    <text x="120" y="60" text-anchor="middle" font-size="12">5 × 2</text>
+    <text x="120" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 2</text>
     <text x="120" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">10</text>
 
-    <text x="190" y="60" text-anchor="middle" font-size="12">5 × 3</text>
+    <text x="190" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 3</text>
     <text x="190" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">15</text>
 
-    <text x="260" y="60" text-anchor="middle" font-size="12">5 × 4</text>
+    <text x="260" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 4</text>
     <text x="260" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">20</text>
 
-    <text x="330" y="60" text-anchor="middle" font-size="12">5 × 5</text>
+    <text x="330" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 5</text>
     <text x="330" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">25</text>
 
-    <text x="400" y="60" text-anchor="middle" font-size="12">5 × 6</text>
+    <text x="400" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 6</text>
     <text x="400" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">30</text>
 
-    <text x="470" y="60" text-anchor="middle" font-size="12">5 × 7</text>
+    <text x="470" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 7</text>
     <text x="470" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">35</text>
 
-    <text x="540" y="60" text-anchor="middle" font-size="12">5 × 8</text>
+    <text x="540" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 8</text>
     <text x="540" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">40</text>
   </svg>
   <div class="diagram-caption">All 5 times table answers end in 0 or 5</div>
@@ -446,191 +446,191 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="650" height="680" viewBox="0 0 650 680">
-    <text x="325" y="25" text-anchor="middle" font-size="16" font-weight="bold">Complete Multiplication Table (1-12)</text>
+    <text x="325" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>Complete Multiplication Table (1-12)</text>
     
-    <rect x="10" y="40" width="630" height="630" fill="none" stroke="#333" stroke-width="2"/>
+    <rect x="10" y="40" width="630" height="630" fill="none" stroke='#8b949e' stroke-width="2"/>
     
-    <text x="30" y="80" font-size="11" font-weight="bold">×</text>
-    <text x="60" y="80" text-anchor="middle" font-size="11" font-weight="bold">1</text>
-    <text x="90" y="80" text-anchor="middle" font-size="11" font-weight="bold">2</text>
-    <text x="120" y="80" text-anchor="middle" font-size="11" font-weight="bold">3</text>
-    <text x="150" y="80" text-anchor="middle" font-size="11" font-weight="bold">4</text>
-    <text x="180" y="80" text-anchor="middle" font-size="11" font-weight="bold">5</text>
-    <text x="210" y="80" text-anchor="middle" font-size="11" font-weight="bold">6</text>
-    <text x="240" y="80" text-anchor="middle" font-size="11" font-weight="bold">7</text>
-    <text x="270" y="80" text-anchor="middle" font-size="11" font-weight="bold">8</text>
-    <text x="300" y="80" text-anchor="middle" font-size="11" font-weight="bold">9</text>
-    <text x="330" y="80" text-anchor="middle" font-size="11" font-weight="bold">10</text>
-    <text x="360" y="80" text-anchor="middle" font-size="11" font-weight="bold">11</text>
-    <text x="390" y="80" text-anchor="middle" font-size="11" font-weight="bold">12</text>
+    <text x="30" y="80" font-size="11" font-weight="bold" fill='currentColor'>×</text>
+    <text x="60" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>1</text>
+    <text x="90" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>2</text>
+    <text x="120" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>3</text>
+    <text x="150" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>4</text>
+    <text x="180" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>5</text>
+    <text x="210" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>6</text>
+    <text x="240" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>7</text>
+    <text x="270" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>8</text>
+    <text x="300" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>9</text>
+    <text x="330" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>10</text>
+    <text x="360" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>11</text>
+    <text x="390" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>12</text>
 
-    <text x="30" y="110" text-anchor="end" font-size="11" font-weight="bold">1</text>
-    <text x="60" y="110" text-anchor="middle" font-size="10">1</text>
-    <text x="90" y="110" text-anchor="middle" font-size="10">2</text>
-    <text x="120" y="110" text-anchor="middle" font-size="10">3</text>
-    <text x="150" y="110" text-anchor="middle" font-size="10">4</text>
-    <text x="180" y="110" text-anchor="middle" font-size="10">5</text>
-    <text x="210" y="110" text-anchor="middle" font-size="10">6</text>
-    <text x="240" y="110" text-anchor="middle" font-size="10">7</text>
-    <text x="270" y="110" text-anchor="middle" font-size="10">8</text>
-    <text x="300" y="110" text-anchor="middle" font-size="10">9</text>
-    <text x="330" y="110" text-anchor="middle" font-size="10">10</text>
-    <text x="360" y="110" text-anchor="middle" font-size="10">11</text>
-    <text x="390" y="110" text-anchor="middle" font-size="10">12</text>
+    <text x="30" y="110" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>1</text>
+    <text x="60" y="110" text-anchor="middle" font-size="10" fill='currentColor'>1</text>
+    <text x="90" y="110" text-anchor="middle" font-size="10" fill='currentColor'>2</text>
+    <text x="120" y="110" text-anchor="middle" font-size="10" fill='currentColor'>3</text>
+    <text x="150" y="110" text-anchor="middle" font-size="10" fill='currentColor'>4</text>
+    <text x="180" y="110" text-anchor="middle" font-size="10" fill='currentColor'>5</text>
+    <text x="210" y="110" text-anchor="middle" font-size="10" fill='currentColor'>6</text>
+    <text x="240" y="110" text-anchor="middle" font-size="10" fill='currentColor'>7</text>
+    <text x="270" y="110" text-anchor="middle" font-size="10" fill='currentColor'>8</text>
+    <text x="300" y="110" text-anchor="middle" font-size="10" fill='currentColor'>9</text>
+    <text x="330" y="110" text-anchor="middle" font-size="10" fill='currentColor'>10</text>
+    <text x="360" y="110" text-anchor="middle" font-size="10" fill='currentColor'>11</text>
+    <text x="390" y="110" text-anchor="middle" font-size="10" fill='currentColor'>12</text>
 
-    <text x="30" y="140" text-anchor="end" font-size="11" font-weight="bold">2</text>
-    <text x="60" y="140" text-anchor="middle" font-size="10">2</text>
-    <text x="90" y="140" text-anchor="middle" font-size="10">4</text>
-    <text x="120" y="140" text-anchor="middle" font-size="10">6</text>
-    <text x="150" y="140" text-anchor="middle" font-size="10">8</text>
-    <text x="180" y="140" text-anchor="middle" font-size="10">10</text>
-    <text x="210" y="140" text-anchor="middle" font-size="10">12</text>
-    <text x="240" y="140" text-anchor="middle" font-size="10">14</text>
-    <text x="270" y="140" text-anchor="middle" font-size="10">16</text>
-    <text x="300" y="140" text-anchor="middle" font-size="10">18</text>
-    <text x="330" y="140" text-anchor="middle" font-size="10">20</text>
-    <text x="360" y="140" text-anchor="middle" font-size="10">22</text>
-    <text x="390" y="140" text-anchor="middle" font-size="10">24</text>
+    <text x="30" y="140" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>2</text>
+    <text x="60" y="140" text-anchor="middle" font-size="10" fill='currentColor'>2</text>
+    <text x="90" y="140" text-anchor="middle" font-size="10" fill='currentColor'>4</text>
+    <text x="120" y="140" text-anchor="middle" font-size="10" fill='currentColor'>6</text>
+    <text x="150" y="140" text-anchor="middle" font-size="10" fill='currentColor'>8</text>
+    <text x="180" y="140" text-anchor="middle" font-size="10" fill='currentColor'>10</text>
+    <text x="210" y="140" text-anchor="middle" font-size="10" fill='currentColor'>12</text>
+    <text x="240" y="140" text-anchor="middle" font-size="10" fill='currentColor'>14</text>
+    <text x="270" y="140" text-anchor="middle" font-size="10" fill='currentColor'>16</text>
+    <text x="300" y="140" text-anchor="middle" font-size="10" fill='currentColor'>18</text>
+    <text x="330" y="140" text-anchor="middle" font-size="10" fill='currentColor'>20</text>
+    <text x="360" y="140" text-anchor="middle" font-size="10" fill='currentColor'>22</text>
+    <text x="390" y="140" text-anchor="middle" font-size="10" fill='currentColor'>24</text>
 
-    <text x="30" y="170" text-anchor="end" font-size="11" font-weight="bold">3</text>
-    <text x="60" y="170" text-anchor="middle" font-size="10">3</text>
-    <text x="90" y="170" text-anchor="middle" font-size="10">6</text>
-    <text x="120" y="170" text-anchor="middle" font-size="10">9</text>
-    <text x="150" y="170" text-anchor="middle" font-size="10">12</text>
-    <text x="180" y="170" text-anchor="middle" font-size="10">15</text>
-    <text x="210" y="170" text-anchor="middle" font-size="10">18</text>
-    <text x="240" y="170" text-anchor="middle" font-size="10">21</text>
-    <text x="270" y="170" text-anchor="middle" font-size="10">24</text>
-    <text x="300" y="170" text-anchor="middle" font-size="10">27</text>
-    <text x="330" y="170" text-anchor="middle" font-size="10">30</text>
-    <text x="360" y="170" text-anchor="middle" font-size="10">33</text>
-    <text x="390" y="170" text-anchor="middle" font-size="10">36</text>
+    <text x="30" y="170" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>3</text>
+    <text x="60" y="170" text-anchor="middle" font-size="10" fill='currentColor'>3</text>
+    <text x="90" y="170" text-anchor="middle" font-size="10" fill='currentColor'>6</text>
+    <text x="120" y="170" text-anchor="middle" font-size="10" fill='currentColor'>9</text>
+    <text x="150" y="170" text-anchor="middle" font-size="10" fill='currentColor'>12</text>
+    <text x="180" y="170" text-anchor="middle" font-size="10" fill='currentColor'>15</text>
+    <text x="210" y="170" text-anchor="middle" font-size="10" fill='currentColor'>18</text>
+    <text x="240" y="170" text-anchor="middle" font-size="10" fill='currentColor'>21</text>
+    <text x="270" y="170" text-anchor="middle" font-size="10" fill='currentColor'>24</text>
+    <text x="300" y="170" text-anchor="middle" font-size="10" fill='currentColor'>27</text>
+    <text x="330" y="170" text-anchor="middle" font-size="10" fill='currentColor'>30</text>
+    <text x="360" y="170" text-anchor="middle" font-size="10" fill='currentColor'>33</text>
+    <text x="390" y="170" text-anchor="middle" font-size="10" fill='currentColor'>36</text>
 
-    <text x="30" y="200" text-anchor="end" font-size="11" font-weight="bold">4</text>
-    <text x="60" y="200" text-anchor="middle" font-size="10">4</text>
-    <text x="90" y="200" text-anchor="middle" font-size="10">8</text>
-    <text x="120" y="200" text-anchor="middle" font-size="10">12</text>
-    <text x="150" y="200" text-anchor="middle" font-size="10">16</text>
-    <text x="180" y="200" text-anchor="middle" font-size="10">20</text>
-    <text x="210" y="200" text-anchor="middle" font-size="10">24</text>
-    <text x="240" y="200" text-anchor="middle" font-size="10">28</text>
-    <text x="270" y="200" text-anchor="middle" font-size="10">32</text>
-    <text x="300" y="200" text-anchor="middle" font-size="10">36</text>
-    <text x="330" y="200" text-anchor="middle" font-size="10">40</text>
-    <text x="360" y="200" text-anchor="middle" font-size="10">44</text>
-    <text x="390" y="200" text-anchor="middle" font-size="10">48</text>
+    <text x="30" y="200" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>4</text>
+    <text x="60" y="200" text-anchor="middle" font-size="10" fill='currentColor'>4</text>
+    <text x="90" y="200" text-anchor="middle" font-size="10" fill='currentColor'>8</text>
+    <text x="120" y="200" text-anchor="middle" font-size="10" fill='currentColor'>12</text>
+    <text x="150" y="200" text-anchor="middle" font-size="10" fill='currentColor'>16</text>
+    <text x="180" y="200" text-anchor="middle" font-size="10" fill='currentColor'>20</text>
+    <text x="210" y="200" text-anchor="middle" font-size="10" fill='currentColor'>24</text>
+    <text x="240" y="200" text-anchor="middle" font-size="10" fill='currentColor'>28</text>
+    <text x="270" y="200" text-anchor="middle" font-size="10" fill='currentColor'>32</text>
+    <text x="300" y="200" text-anchor="middle" font-size="10" fill='currentColor'>36</text>
+    <text x="330" y="200" text-anchor="middle" font-size="10" fill='currentColor'>40</text>
+    <text x="360" y="200" text-anchor="middle" font-size="10" fill='currentColor'>44</text>
+    <text x="390" y="200" text-anchor="middle" font-size="10" fill='currentColor'>48</text>
 
-    <text x="30" y="230" text-anchor="end" font-size="11" font-weight="bold">5</text>
-    <text x="60" y="230" text-anchor="middle" font-size="10">5</text>
-    <text x="90" y="230" text-anchor="middle" font-size="10">10</text>
-    <text x="120" y="230" text-anchor="middle" font-size="10">15</text>
-    <text x="150" y="230" text-anchor="middle" font-size="10">20</text>
-    <text x="180" y="230" text-anchor="middle" font-size="10">25</text>
-    <text x="210" y="230" text-anchor="middle" font-size="10">30</text>
-    <text x="240" y="230" text-anchor="middle" font-size="10">35</text>
-    <text x="270" y="230" text-anchor="middle" font-size="10">40</text>
-    <text x="300" y="230" text-anchor="middle" font-size="10">45</text>
-    <text x="330" y="230" text-anchor="middle" font-size="10">50</text>
-    <text x="360" y="230" text-anchor="middle" font-size="10">55</text>
-    <text x="390" y="230" text-anchor="middle" font-size="10">60</text>
+    <text x="30" y="230" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>5</text>
+    <text x="60" y="230" text-anchor="middle" font-size="10" fill='currentColor'>5</text>
+    <text x="90" y="230" text-anchor="middle" font-size="10" fill='currentColor'>10</text>
+    <text x="120" y="230" text-anchor="middle" font-size="10" fill='currentColor'>15</text>
+    <text x="150" y="230" text-anchor="middle" font-size="10" fill='currentColor'>20</text>
+    <text x="180" y="230" text-anchor="middle" font-size="10" fill='currentColor'>25</text>
+    <text x="210" y="230" text-anchor="middle" font-size="10" fill='currentColor'>30</text>
+    <text x="240" y="230" text-anchor="middle" font-size="10" fill='currentColor'>35</text>
+    <text x="270" y="230" text-anchor="middle" font-size="10" fill='currentColor'>40</text>
+    <text x="300" y="230" text-anchor="middle" font-size="10" fill='currentColor'>45</text>
+    <text x="330" y="230" text-anchor="middle" font-size="10" fill='currentColor'>50</text>
+    <text x="360" y="230" text-anchor="middle" font-size="10" fill='currentColor'>55</text>
+    <text x="390" y="230" text-anchor="middle" font-size="10" fill='currentColor'>60</text>
 
-    <text x="30" y="260" text-anchor="end" font-size="11" font-weight="bold">6</text>
-    <text x="60" y="260" text-anchor="middle" font-size="10">6</text>
-    <text x="90" y="260" text-anchor="middle" font-size="10">12</text>
-    <text x="120" y="260" text-anchor="middle" font-size="10">18</text>
-    <text x="150" y="260" text-anchor="middle" font-size="10">24</text>
-    <text x="180" y="260" text-anchor="middle" font-size="10">30</text>
-    <text x="210" y="260" text-anchor="middle" font-size="10">36</text>
-    <text x="240" y="260" text-anchor="middle" font-size="10">42</text>
-    <text x="270" y="260" text-anchor="middle" font-size="10">48</text>
-    <text x="300" y="260" text-anchor="middle" font-size="10">54</text>
-    <text x="330" y="260" text-anchor="middle" font-size="10">60</text>
-    <text x="360" y="260" text-anchor="middle" font-size="10">66</text>
-    <text x="390" y="260" text-anchor="middle" font-size="10">72</text>
+    <text x="30" y="260" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>6</text>
+    <text x="60" y="260" text-anchor="middle" font-size="10" fill='currentColor'>6</text>
+    <text x="90" y="260" text-anchor="middle" font-size="10" fill='currentColor'>12</text>
+    <text x="120" y="260" text-anchor="middle" font-size="10" fill='currentColor'>18</text>
+    <text x="150" y="260" text-anchor="middle" font-size="10" fill='currentColor'>24</text>
+    <text x="180" y="260" text-anchor="middle" font-size="10" fill='currentColor'>30</text>
+    <text x="210" y="260" text-anchor="middle" font-size="10" fill='currentColor'>36</text>
+    <text x="240" y="260" text-anchor="middle" font-size="10" fill='currentColor'>42</text>
+    <text x="270" y="260" text-anchor="middle" font-size="10" fill='currentColor'>48</text>
+    <text x="300" y="260" text-anchor="middle" font-size="10" fill='currentColor'>54</text>
+    <text x="330" y="260" text-anchor="middle" font-size="10" fill='currentColor'>60</text>
+    <text x="360" y="260" text-anchor="middle" font-size="10" fill='currentColor'>66</text>
+    <text x="390" y="260" text-anchor="middle" font-size="10" fill='currentColor'>72</text>
 
-    <text x="30" y="290" text-anchor="end" font-size="11" font-weight="bold">7</text>
-    <text x="60" y="290" text-anchor="middle" font-size="10">7</text>
-    <text x="90" y="290" text-anchor="middle" font-size="10">14</text>
-    <text x="120" y="290" text-anchor="middle" font-size="10">21</text>
-    <text x="150" y="290" text-anchor="middle" font-size="10">28</text>
-    <text x="180" y="290" text-anchor="middle" font-size="10">35</text>
-    <text x="210" y="290" text-anchor="middle" font-size="10">42</text>
-    <text x="240" y="290" text-anchor="middle" font-size="10">49</text>
-    <text x="270" y="290" text-anchor="middle" font-size="10">56</text>
-    <text x="300" y="290" text-anchor="middle" font-size="10">63</text>
-    <text x="330" y="290" text-anchor="middle" font-size="10">70</text>
-    <text x="360" y="290" text-anchor="middle" font-size="10">77</text>
-    <text x="390" y="290" text-anchor="middle" font-size="10">84</text>
+    <text x="30" y="290" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>7</text>
+    <text x="60" y="290" text-anchor="middle" font-size="10" fill='currentColor'>7</text>
+    <text x="90" y="290" text-anchor="middle" font-size="10" fill='currentColor'>14</text>
+    <text x="120" y="290" text-anchor="middle" font-size="10" fill='currentColor'>21</text>
+    <text x="150" y="290" text-anchor="middle" font-size="10" fill='currentColor'>28</text>
+    <text x="180" y="290" text-anchor="middle" font-size="10" fill='currentColor'>35</text>
+    <text x="210" y="290" text-anchor="middle" font-size="10" fill='currentColor'>42</text>
+    <text x="240" y="290" text-anchor="middle" font-size="10" fill='currentColor'>49</text>
+    <text x="270" y="290" text-anchor="middle" font-size="10" fill='currentColor'>56</text>
+    <text x="300" y="290" text-anchor="middle" font-size="10" fill='currentColor'>63</text>
+    <text x="330" y="290" text-anchor="middle" font-size="10" fill='currentColor'>70</text>
+    <text x="360" y="290" text-anchor="middle" font-size="10" fill='currentColor'>77</text>
+    <text x="390" y="290" text-anchor="middle" font-size="10" fill='currentColor'>84</text>
 
-    <text x="30" y="320" text-anchor="end" font-size="11" font-weight="bold">8</text>
-    <text x="60" y="320" text-anchor="middle" font-size="10">8</text>
-    <text x="90" y="320" text-anchor="middle" font-size="10">16</text>
-    <text x="120" y="320" text-anchor="middle" font-size="10">24</text>
-    <text x="150" y="320" text-anchor="middle" font-size="10">32</text>
-    <text x="180" y="320" text-anchor="middle" font-size="10">40</text>
-    <text x="210" y="320" text-anchor="middle" font-size="10">48</text>
-    <text x="240" y="320" text-anchor="middle" font-size="10">56</text>
-    <text x="270" y="320" text-anchor="middle" font-size="10">64</text>
-    <text x="300" y="320" text-anchor="middle" font-size="10">72</text>
-    <text x="330" y="320" text-anchor="middle" font-size="10">80</text>
-    <text x="360" y="320" text-anchor="middle" font-size="10">88</text>
-    <text x="390" y="320" text-anchor="middle" font-size="10">96</text>
+    <text x="30" y="320" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>8</text>
+    <text x="60" y="320" text-anchor="middle" font-size="10" fill='currentColor'>8</text>
+    <text x="90" y="320" text-anchor="middle" font-size="10" fill='currentColor'>16</text>
+    <text x="120" y="320" text-anchor="middle" font-size="10" fill='currentColor'>24</text>
+    <text x="150" y="320" text-anchor="middle" font-size="10" fill='currentColor'>32</text>
+    <text x="180" y="320" text-anchor="middle" font-size="10" fill='currentColor'>40</text>
+    <text x="210" y="320" text-anchor="middle" font-size="10" fill='currentColor'>48</text>
+    <text x="240" y="320" text-anchor="middle" font-size="10" fill='currentColor'>56</text>
+    <text x="270" y="320" text-anchor="middle" font-size="10" fill='currentColor'>64</text>
+    <text x="300" y="320" text-anchor="middle" font-size="10" fill='currentColor'>72</text>
+    <text x="330" y="320" text-anchor="middle" font-size="10" fill='currentColor'>80</text>
+    <text x="360" y="320" text-anchor="middle" font-size="10" fill='currentColor'>88</text>
+    <text x="390" y="320" text-anchor="middle" font-size="10" fill='currentColor'>96</text>
 
-    <text x="30" y="350" text-anchor="end" font-size="11" font-weight="bold">9</text>
-    <text x="60" y="350" text-anchor="middle" font-size="10">9</text>
-    <text x="90" y="350" text-anchor="middle" font-size="10">18</text>
-    <text x="120" y="350" text-anchor="middle" font-size="10">27</text>
-    <text x="150" y="350" text-anchor="middle" font-size="10">36</text>
-    <text x="180" y="350" text-anchor="middle" font-size="10">45</text>
-    <text x="210" y="350" text-anchor="middle" font-size="10">54</text>
-    <text x="240" y="350" text-anchor="middle" font-size="10">63</text>
-    <text x="270" y="350" text-anchor="middle" font-size="10">72</text>
-    <text x="300" y="350" text-anchor="middle" font-size="10">81</text>
-    <text x="330" y="350" text-anchor="middle" font-size="10">90</text>
-    <text x="360" y="350" text-anchor="middle" font-size="10">99</text>
-    <text x="390" y="350" text-anchor="middle" font-size="10">108</text>
+    <text x="30" y="350" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>9</text>
+    <text x="60" y="350" text-anchor="middle" font-size="10" fill='currentColor'>9</text>
+    <text x="90" y="350" text-anchor="middle" font-size="10" fill='currentColor'>18</text>
+    <text x="120" y="350" text-anchor="middle" font-size="10" fill='currentColor'>27</text>
+    <text x="150" y="350" text-anchor="middle" font-size="10" fill='currentColor'>36</text>
+    <text x="180" y="350" text-anchor="middle" font-size="10" fill='currentColor'>45</text>
+    <text x="210" y="350" text-anchor="middle" font-size="10" fill='currentColor'>54</text>
+    <text x="240" y="350" text-anchor="middle" font-size="10" fill='currentColor'>63</text>
+    <text x="270" y="350" text-anchor="middle" font-size="10" fill='currentColor'>72</text>
+    <text x="300" y="350" text-anchor="middle" font-size="10" fill='currentColor'>81</text>
+    <text x="330" y="350" text-anchor="middle" font-size="10" fill='currentColor'>90</text>
+    <text x="360" y="350" text-anchor="middle" font-size="10" fill='currentColor'>99</text>
+    <text x="390" y="350" text-anchor="middle" font-size="10" fill='currentColor'>108</text>
 
-    <text x="30" y="380" text-anchor="end" font-size="11" font-weight="bold">10</text>
-    <text x="60" y="380" text-anchor="middle" font-size="10">10</text>
-    <text x="90" y="380" text-anchor="middle" font-size="10">20</text>
-    <text x="120" y="380" text-anchor="middle" font-size="10">30</text>
-    <text x="150" y="380" text-anchor="middle" font-size="10">40</text>
-    <text x="180" y="380" text-anchor="middle" font-size="10">50</text>
-    <text x="210" y="380" text-anchor="middle" font-size="10">60</text>
-    <text x="240" y="380" text-anchor="middle" font-size="10">70</text>
-    <text x="270" y="380" text-anchor="middle" font-size="10">80</text>
-    <text x="300" y="380" text-anchor="middle" font-size="10">90</text>
-    <text x="330" y="380" text-anchor="middle" font-size="10">100</text>
-    <text x="360" y="380" text-anchor="middle" font-size="10">110</text>
-    <text x="390" y="380" text-anchor="middle" font-size="10">120</text>
+    <text x="30" y="380" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>10</text>
+    <text x="60" y="380" text-anchor="middle" font-size="10" fill='currentColor'>10</text>
+    <text x="90" y="380" text-anchor="middle" font-size="10" fill='currentColor'>20</text>
+    <text x="120" y="380" text-anchor="middle" font-size="10" fill='currentColor'>30</text>
+    <text x="150" y="380" text-anchor="middle" font-size="10" fill='currentColor'>40</text>
+    <text x="180" y="380" text-anchor="middle" font-size="10" fill='currentColor'>50</text>
+    <text x="210" y="380" text-anchor="middle" font-size="10" fill='currentColor'>60</text>
+    <text x="240" y="380" text-anchor="middle" font-size="10" fill='currentColor'>70</text>
+    <text x="270" y="380" text-anchor="middle" font-size="10" fill='currentColor'>80</text>
+    <text x="300" y="380" text-anchor="middle" font-size="10" fill='currentColor'>90</text>
+    <text x="330" y="380" text-anchor="middle" font-size="10" fill='currentColor'>100</text>
+    <text x="360" y="380" text-anchor="middle" font-size="10" fill='currentColor'>110</text>
+    <text x="390" y="380" text-anchor="middle" font-size="10" fill='currentColor'>120</text>
 
-    <text x="30" y="410" text-anchor="end" font-size="11" font-weight="bold">11</text>
-    <text x="60" y="410" text-anchor="middle" font-size="10">11</text>
-    <text x="90" y="410" text-anchor="middle" font-size="10">22</text>
-    <text x="120" y="410" text-anchor="middle" font-size="10">33</text>
-    <text x="150" y="410" text-anchor="middle" font-size="10">44</text>
-    <text x="180" y="410" text-anchor="middle" font-size="10">55</text>
-    <text x="210" y="410" text-anchor="middle" font-size="10">66</text>
-    <text x="240" y="410" text-anchor="middle" font-size="10">77</text>
-    <text x="270" y="410" text-anchor="middle" font-size="10">88</text>
-    <text x="300" y="410" text-anchor="middle" font-size="10">99</text>
-    <text x="330" y="410" text-anchor="middle" font-size="10">110</text>
-    <text x="360" y="410" text-anchor="middle" font-size="10">121</text>
-    <text x="390" y="410" text-anchor="middle" font-size="10">132</text>
+    <text x="30" y="410" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>11</text>
+    <text x="60" y="410" text-anchor="middle" font-size="10" fill='currentColor'>11</text>
+    <text x="90" y="410" text-anchor="middle" font-size="10" fill='currentColor'>22</text>
+    <text x="120" y="410" text-anchor="middle" font-size="10" fill='currentColor'>33</text>
+    <text x="150" y="410" text-anchor="middle" font-size="10" fill='currentColor'>44</text>
+    <text x="180" y="410" text-anchor="middle" font-size="10" fill='currentColor'>55</text>
+    <text x="210" y="410" text-anchor="middle" font-size="10" fill='currentColor'>66</text>
+    <text x="240" y="410" text-anchor="middle" font-size="10" fill='currentColor'>77</text>
+    <text x="270" y="410" text-anchor="middle" font-size="10" fill='currentColor'>88</text>
+    <text x="300" y="410" text-anchor="middle" font-size="10" fill='currentColor'>99</text>
+    <text x="330" y="410" text-anchor="middle" font-size="10" fill='currentColor'>110</text>
+    <text x="360" y="410" text-anchor="middle" font-size="10" fill='currentColor'>121</text>
+    <text x="390" y="410" text-anchor="middle" font-size="10" fill='currentColor'>132</text>
 
-    <text x="30" y="440" text-anchor="end" font-size="11" font-weight="bold">12</text>
-    <text x="60" y="440" text-anchor="middle" font-size="10">12</text>
-    <text x="90" y="440" text-anchor="middle" font-size="10">24</text>
-    <text x="120" y="440" text-anchor="middle" font-size="10">36</text>
-    <text x="150" y="440" text-anchor="middle" font-size="10">48</text>
-    <text x="180" y="440" text-anchor="middle" font-size="10">60</text>
-    <text x="210" y="440" text-anchor="middle" font-size="10">72</text>
-    <text x="240" y="440" text-anchor="middle" font-size="10">84</text>
-    <text x="270" y="440" text-anchor="middle" font-size="10">96</text>
-    <text x="300" y="440" text-anchor="middle" font-size="10">108</text>
-    <text x="330" y="440" text-anchor="middle" font-size="10">120</text>
-    <text x="360" y="440" text-anchor="middle" font-size="10">132</text>
-    <text x="390" y="440" text-anchor="middle" font-size="10">144</text>
+    <text x="30" y="440" text-anchor="end" font-size="11" font-weight="bold" fill='currentColor'>12</text>
+    <text x="60" y="440" text-anchor="middle" font-size="10" fill='currentColor'>12</text>
+    <text x="90" y="440" text-anchor="middle" font-size="10" fill='currentColor'>24</text>
+    <text x="120" y="440" text-anchor="middle" font-size="10" fill='currentColor'>36</text>
+    <text x="150" y="440" text-anchor="middle" font-size="10" fill='currentColor'>48</text>
+    <text x="180" y="440" text-anchor="middle" font-size="10" fill='currentColor'>60</text>
+    <text x="210" y="440" text-anchor="middle" font-size="10" fill='currentColor'>72</text>
+    <text x="240" y="440" text-anchor="middle" font-size="10" fill='currentColor'>84</text>
+    <text x="270" y="440" text-anchor="middle" font-size="10" fill='currentColor'>96</text>
+    <text x="300" y="440" text-anchor="middle" font-size="10" fill='currentColor'>108</text>
+    <text x="330" y="440" text-anchor="middle" font-size="10" fill='currentColor'>120</text>
+    <text x="360" y="440" text-anchor="middle" font-size="10" fill='currentColor'>132</text>
+    <text x="390" y="440" text-anchor="middle" font-size="10" fill='currentColor'>144</text>
   </svg>
   <div class="diagram-caption">Use this table as a reference, but focus on learning one table at a time</div>
 </div>

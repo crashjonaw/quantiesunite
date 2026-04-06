@@ -27,7 +27,7 @@ SECTIONS = [
   <text x="260" y="50" fill='currentColor' font-size='18' font-weight='bold'>=</text>
 
   <text x="320" y="30" fill='currentColor' font-size='14'>1 ten</text>
-  <rect x="310" y="40" width="15" height="30" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="310" y="40" width="15" height="30" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
 </svg>"""
     },
     {

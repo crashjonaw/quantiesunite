@@ -17,7 +17,7 @@ SECTIONS = [
 <h3>Setting Up Our Triangle</h3>
 <p>Consider a right triangle with an angle \\(\\theta\\) (theta). Relative to this angle, the three sides have special names:</p>
 
-<svg viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:340px; margin:20px 0;">
+<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:360px; margin:20px 0;">
   <defs>
     </defs>
 

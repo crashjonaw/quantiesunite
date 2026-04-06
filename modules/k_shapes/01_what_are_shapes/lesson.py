@@ -22,7 +22,7 @@ SECTIONS = [
   <text x="65" y="175" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Circle</text>
 
   <!-- Square — centered at x=195 -->
-  <rect x="152" y="48" width="85" height="85" fill='#22c55e50' stroke='#22c55e' stroke-width="3"/>
+  <rect x="152" y="48" width="85" height="85" fill='#22c55e50' stroke='#22c55e' stroke-width="3" rx='4'/>
   <text x="195" y="175" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Square</text>
 
   <!-- Triangle — centered at x=325 -->
@@ -30,7 +30,7 @@ SECTIONS = [
   <text x="325" y="175" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Triangle</text>
 
   <!-- Rectangle — centered at x=455 -->
-  <rect x="400" y="68" width="110" height="68" fill='#f59e0b50' stroke='#f59e0b' stroke-width="3"/>
+  <rect x="400" y="68" width="110" height="68" fill='#f59e0b50' stroke='#f59e0b' stroke-width="3" rx='4'/>
   <text x="455" y="175" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Rectangle</text>
 </svg>
 """

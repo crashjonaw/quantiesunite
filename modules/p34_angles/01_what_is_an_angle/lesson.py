@@ -58,7 +58,7 @@ SECTIONS = [
   <text x="320" y="200" fill='#0969da' font-size='12'>0°</text>
   <text x="180" y="50" fill='#22c55e' font-size='12'>90°</text>
   <text x="60" y="200" fill='#ff6b6b' font-size='12'>180°</text>
-  <text x="200" y="320" fill='#24292f' font-size='14' font-weight='bold' text-anchor='middle'>360° = Full turn</text>
+  <text x="200" y="320" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>360° = Full turn</text>
 </svg>
 
 <div class='worked-example'>
@@ -99,7 +99,7 @@ SECTIONS = [
   <line x1="230" y1="100" x2="215" y2="75" stroke='#ff6b6b' stroke-width="3"/>
   <!-- Minute hand (pointing to 12) -->
   <line x1="230" y1="100" x2="230" y2="65" stroke='#0969da' stroke-width="2"/>
-  <text x="230" y="160" fill='#24292f' font-size='12' text-anchor='middle'>Angle between hands</text>
+  <text x="230" y="160" fill='currentColor' font-size='12' text-anchor='middle'>Angle between hands</text>
 </svg>
 
 <div class='success-box'>

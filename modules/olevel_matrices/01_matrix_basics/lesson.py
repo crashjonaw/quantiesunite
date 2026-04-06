@@ -73,15 +73,15 @@ SECTIONS = [
 
             <svg viewBox="-20 0 440 200" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Grid -->
-                <rect x="50" y="30" width="300" height="120" fill='none' stroke='#30363d' stroke-width="2"/>
+                <rect x="50" y="30" width="300" height="120" fill='none' stroke='currentColor' opacity='0.3' stroke-width="2"/>
 
                 <!-- Column lines -->
-                <line x1="130" y1="30" x2="130" y2="150" stroke='#30363d' stroke-width="1"/>
-                <line x1="210" y1="30" x2="210" y2="150" stroke='#30363d' stroke-width="1"/>
+                <line x1="130" y1="30" x2="130" y2="150" stroke='currentColor' opacity='0.3' stroke-width="1"/>
+                <line x1="210" y1="30" x2="210" y2="150" stroke='currentColor' opacity='0.3' stroke-width="1"/>
 
                 <!-- Row lines -->
-                <line x1="50" y1="70" x2="350" y2="70" stroke='#30363d' stroke-width="1"/>
-                <line x1="50" y1="110" x2="350" y2="110" stroke='#30363d' stroke-width="1"/>
+                <line x1="50" y1="70" x2="350" y2="70" stroke='currentColor' opacity='0.3' stroke-width="1"/>
+                <line x1="50" y1="110" x2="350" y2="110" stroke='currentColor' opacity='0.3' stroke-width="1"/>
 
                 <!-- Values -->
                 <text x="90" y="58" font-size='14' fill='#4f8ef7' text-anchor='middle' font-weight='bold'>a₁₁</text>

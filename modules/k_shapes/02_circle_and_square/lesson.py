@@ -37,7 +37,7 @@ SECTIONS = [
         "body": """<p>A <strong>square</strong> is one of the most common shapes. It has <strong>4 equal sides</strong> and <strong>4 right corners</strong> (90° angles).</p>
 <svg viewBox="0 0 400 300" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
   <!-- Square -->
-  <rect x="100" y="80" width="120" height="120" fill='#22c55e30' stroke='#22c55e' stroke-width="3"/>
+  <rect x="100" y="80" width="120" height="120" fill='#22c55e30' stroke='#22c55e' stroke-width="3" rx='4'/>
   <!-- Corner indicators -->
   <circle cx="100" cy="80" r="5" fill='#ef4444'/>
   <circle cx="220" cy="80" r="5" fill='#ef4444'/>

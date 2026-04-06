@@ -9,9 +9,9 @@ SECTIONS = [
 <svg viewBox="0 0 540 380" style="width:100%;max-width:540px;height:auto;display:block;margin:16px auto;">
   <!-- Row 1 -->
   <!-- House — col 1, centered at x=90 -->
-  <rect x="50" y="65" width="80" height="60" fill='#d4a574' stroke='#8b6f47' stroke-width="2.5"/>
+  <rect x="50" y="65" width="80" height="60" fill='#d4a574' stroke='#8b6f47' stroke-width="2.5" rx='4'/>
   <polygon points="90,65 45,35 135,35" fill='#c84a1a' stroke='#8b4513' stroke-width="2.5"/>
-  <rect x="77" y="90" width="26" height="35" fill='#5a3a1a' stroke='#8b6f47' stroke-width="1.5"/>
+  <rect x="77" y="90" width="26" height="35" fill='#5a3a1a' stroke='#8b6f47' stroke-width="1.5" rx='4'/>
   <text x="90" y="145" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>House</text>
   <text x="90" y="160" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>rectangle + triangle</text>
 
@@ -43,7 +43,7 @@ SECTIONS = [
   <text x="90" y="310" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.7'>rectangle</text>
 
   <!-- Window — col 2, centered at x=270 -->
-  <rect x="235" y="200" width="70" height="70" fill='#bae6fd' stroke='#6b7280' stroke-width="2.5"/>
+  <rect x="235" y="200" width="70" height="70" fill='#bae6fd' stroke='#6b7280' stroke-width="2.5" rx='4'/>
   <line x1="270" y1="200" x2="270" y2="270" stroke='#6b7280' stroke-width="2"/>
   <line x1="235" y1="235" x2="305" y2="235" stroke='#6b7280' stroke-width="2"/>
   <text x="270" y="295" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Window</text>

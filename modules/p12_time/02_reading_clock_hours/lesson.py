@@ -13,10 +13,10 @@ SECTIONS = [
   <circle cx="150" cy="150" r="100" fill='#fff' stroke='#8B0000' stroke-width="3"/>
 
   <!-- Numbers -->
-  <text x="150" y="65" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>12</text>
-  <text x="225" y="160" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>3</text>
-  <text x="150" y="245" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>6</text>
-  <text x="75" y="160" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>9</text>
+  <text x="150" y="65" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>12</text>
+  <text x="225" y="160" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>3</text>
+  <text x="150" y="245" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>6</text>
+  <text x="75" y="160" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>9</text>
 
   <!-- Hour markers (small dots) -->
   <circle cx="150" cy="52" r="3" fill='#1a1a2e'/>
@@ -53,10 +53,10 @@ SECTIONS = [
 
   <!-- Clock 1: 2:00 -->
   <circle cx="70" cy="130" r="50" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="70" y="92" text-anchor='middle' fill='#000' font-size='14'>12</text>
-  <text x="108" y="138" text-anchor='middle' fill='#000' font-size='14'>3</text>
-  <text x="70" y="175" text-anchor='middle' fill='#000' font-size='14'>6</text>
-  <text x="32" y="138" text-anchor='middle' fill='#000' font-size='14'>9</text>
+  <text x="70" y="92" text-anchor='middle' fill='currentColor' font-size='14'>12</text>
+  <text x="108" y="138" text-anchor='middle' fill='currentColor' font-size='14'>3</text>
+  <text x="70" y="175" text-anchor='middle' fill='currentColor' font-size='14'>6</text>
+  <text x="32" y="138" text-anchor='middle' fill='currentColor' font-size='14'>9</text>
   <!-- Hour hand to 2 -->
   <line x1="70" y1="130" x2="85" y2="105" stroke='#1a1a2e' stroke-width="4" stroke-linecap="round"/>
   <!-- Minute hand to 12 -->
@@ -66,10 +66,10 @@ SECTIONS = [
 
   <!-- Clock 2: 5:00 -->
   <circle cx="190" cy="130" r="50" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="190" y="92" text-anchor='middle' fill='#000' font-size='14'>12</text>
-  <text x="228" y="138" text-anchor='middle' fill='#000' font-size='14'>3</text>
-  <text x="190" y="175" text-anchor='middle' fill='#000' font-size='14'>6</text>
-  <text x="152" y="138" text-anchor='middle' fill='#000' font-size='14'>9</text>
+  <text x="190" y="92" text-anchor='middle' fill='currentColor' font-size='14'>12</text>
+  <text x="228" y="138" text-anchor='middle' fill='currentColor' font-size='14'>3</text>
+  <text x="190" y="175" text-anchor='middle' fill='currentColor' font-size='14'>6</text>
+  <text x="152" y="138" text-anchor='middle' fill='currentColor' font-size='14'>9</text>
   <!-- Hour hand to 5 -->
   <line x1="190" y1="130" x2="210" y2="160" stroke='#1a1a2e' stroke-width="4" stroke-linecap="round"/>
   <!-- Minute hand to 12 -->
@@ -79,10 +79,10 @@ SECTIONS = [
 
   <!-- Clock 3: 9:00 -->
   <circle cx="310" cy="130" r="50" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="310" y="92" text-anchor='middle' fill='#000' font-size='14'>12</text>
-  <text x="348" y="138" text-anchor='middle' fill='#000' font-size='14'>3</text>
-  <text x="310" y="175" text-anchor='middle' fill='#000' font-size='14'>6</text>
-  <text x="272" y="138" text-anchor='middle' fill='#000' font-size='14'>9</text>
+  <text x="310" y="92" text-anchor='middle' fill='currentColor' font-size='14'>12</text>
+  <text x="348" y="138" text-anchor='middle' fill='currentColor' font-size='14'>3</text>
+  <text x="310" y="175" text-anchor='middle' fill='currentColor' font-size='14'>6</text>
+  <text x="272" y="138" text-anchor='middle' fill='currentColor' font-size='14'>9</text>
   <!-- Hour hand to 9 -->
   <line x1="310" y1="130" x2="270" y2="130" stroke='#1a1a2e' stroke-width="4" stroke-linecap="round"/>
   <!-- Minute hand to 12 -->
@@ -108,20 +108,20 @@ SECTIONS = [
 
   <!-- Practice 1: 3:00 -->
   <circle cx="90" cy="100" r="45" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="90" y="65" text-anchor='middle' fill='#000' font-size='12'>12</text>
-  <text x="125" y="105" text-anchor='middle' fill='#000' font-size='12'>3</text>
-  <text x="90" y="140" text-anchor='middle' fill='#000' font-size='12'>6</text>
-  <text x="55" y="105" text-anchor='middle' fill='#000' font-size='12'>9</text>
+  <text x="90" y="65" text-anchor='middle' fill='currentColor' font-size='12'>12</text>
+  <text x="125" y="105" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="90" y="140" text-anchor='middle' fill='currentColor' font-size='12'>6</text>
+  <text x="55" y="105" text-anchor='middle' fill='currentColor' font-size='12'>9</text>
   <line x1="90" y1="100" x2="105" y2="90" stroke='#1a1a2e' stroke-width="3" stroke-linecap="round"/>
   <line x1="90" y1="100" x2="90" y2="60" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <circle cx="90" cy="100" r="2" fill='#1a1a2e'/>
 
   <!-- Practice 2: 7:00 -->
   <circle cx="270" cy="100" r="45" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="270" y="65" text-anchor='middle' fill='#000' font-size='12'>12</text>
-  <text x="305" y="105" text-anchor='middle' fill='#000' font-size='12'>3</text>
-  <text x="270" y="140" text-anchor='middle' fill='#000' font-size='12'>6</text>
-  <text x="235" y="105" text-anchor='middle' fill='#000' font-size='12'>9</text>
+  <text x="270" y="65" text-anchor='middle' fill='currentColor' font-size='12'>12</text>
+  <text x="305" y="105" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="270" y="140" text-anchor='middle' fill='currentColor' font-size='12'>6</text>
+  <text x="235" y="105" text-anchor='middle' fill='currentColor' font-size='12'>9</text>
   <line x1="270" y1="100" x2="245" y2="100" stroke='#1a1a2e' stroke-width="3" stroke-linecap="round"/>
   <line x1="270" y1="100" x2="270" y2="60" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <circle cx="270" cy="100" r="2" fill='#1a1a2e'/>
@@ -132,20 +132,20 @@ SECTIONS = [
 
   <!-- Practice 3: 1:00 -->
   <circle cx="90" cy="270" r="45" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="90" y="235" text-anchor='middle' fill='#000' font-size='12'>12</text>
-  <text x="125" y="275" text-anchor='middle' fill='#000' font-size='12'>3</text>
-  <text x="90" y="310" text-anchor='middle' fill='#000' font-size='12'>6</text>
-  <text x="55" y="275" text-anchor='middle' fill='#000' font-size='12'>9</text>
+  <text x="90" y="235" text-anchor='middle' fill='currentColor' font-size='12'>12</text>
+  <text x="125" y="275" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="90" y="310" text-anchor='middle' fill='currentColor' font-size='12'>6</text>
+  <text x="55" y="275" text-anchor='middle' fill='currentColor' font-size='12'>9</text>
   <line x1="90" y1="270" x2="95" y2="245" stroke='#1a1a2e' stroke-width="3" stroke-linecap="round"/>
   <line x1="90" y1="270" x2="90" y2="230" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <circle cx="90" cy="270" r="2" fill='#1a1a2e'/>
 
   <!-- Practice 4: 11:00 -->
   <circle cx="270" cy="270" r="45" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="270" y="235" text-anchor='middle' fill='#000' font-size='12'>12</text>
-  <text x="305" y="275" text-anchor='middle' fill='#000' font-size='12'>3</text>
-  <text x="270" y="310" text-anchor='middle' fill='#000' font-size='12'>6</text>
-  <text x="235" y="275" text-anchor='middle' fill='#000' font-size='12'>9</text>
+  <text x="270" y="235" text-anchor='middle' fill='currentColor' font-size='12'>12</text>
+  <text x="305" y="275" text-anchor='middle' fill='currentColor' font-size='12'>3</text>
+  <text x="270" y="310" text-anchor='middle' fill='currentColor' font-size='12'>6</text>
+  <text x="235" y="275" text-anchor='middle' fill='currentColor' font-size='12'>9</text>
   <line x1="270" y1="270" x2="260" y2="245" stroke='#1a1a2e' stroke-width="3" stroke-linecap="round"/>
   <line x1="270" y1="270" x2="270" y2="230" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <circle cx="270" cy="270" r="2" fill='#1a1a2e'/>
@@ -166,28 +166,28 @@ SECTIONS = [
   <!-- Wake up at 7:00 -->
   <rect x="20" y="50" width="360" height="60" fill='#fff7ed' stroke='#ea580c' stroke-width="1" rx="4"/>
   <circle cx="50" cy="80" r="20" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="50" y="87" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>7</text>
+  <text x="50" y="87" text-anchor='middle' font-size='10' fill='currentColor' font-weight='bold'>7</text>
   <text x="95" y="80" font-size='12' font-weight='bold' fill='currentColor'>Wake up: 7:00 AM</text>
   <text x="95" y="98" font-size='11' fill='currentColor' opacity='0.6'>In the morning</text>
 
   <!-- School starts at 8:00 -->
   <rect x="20" y="125" width="360" height="60" fill='#f0fdf4' stroke='#16a34a' stroke-width="1" rx="4"/>
   <circle cx="50" cy="155" r="20" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="50" y="162" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>8</text>
+  <text x="50" y="162" text-anchor='middle' font-size='10' fill='currentColor' font-weight='bold'>8</text>
   <text x="95" y="155" font-size='12' font-weight='bold' fill='currentColor'>School starts: 8:00 AM</text>
   <text x="95" y="173" font-size='11' fill='currentColor' opacity='0.6'>Time to learn!</text>
 
   <!-- Lunch at 12:00 -->
   <rect x="20" y="200" width="360" height="60" fill='#fef3c7' stroke='#d97706' stroke-width="1" rx="4"/>
   <circle cx="50" cy="230" r="20" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="50" y="237" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>12</text>
+  <text x="50" y="237" text-anchor='middle' font-size='10' fill='currentColor' font-weight='bold'>12</text>
   <text x="95" y="230" font-size='12' font-weight='bold' fill='currentColor'>Lunch: 12:00 PM</text>
   <text x="95" y="248" font-size='11' fill='currentColor' opacity='0.6'>Noon -- middle of day</text>
 
   <!-- School ends at 3:00 -->
   <rect x="20" y="275" width="360" height="60" fill='#e0f2fe' stroke='#0284c7' stroke-width="1" rx="4"/>
   <circle cx="50" cy="305" r="20" fill='#fff' stroke='#8B0000' stroke-width="2"/>
-  <text x="50" y="312" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>3</text>
+  <text x="50" y="312" text-anchor='middle' font-size='10' fill='currentColor' font-weight='bold'>3</text>
   <text x="95" y="305" font-size='12' font-weight='bold' fill='currentColor'>School ends: 3:00 PM</text>
   <text x="95" y="323" font-size='11' fill='currentColor' opacity='0.6'>Afternoon -- time to play!</text>
 </svg>

@@ -68,7 +68,7 @@ SECTIONS = [
       <text x="50" y="225" font-size='12' fill='currentColor'>40% of 150 = 0.40 × 150 = 60 (shaded part)</text>
       <text x="50" y="245" font-size='12' fill='currentColor'>60% of 150 = 0.60 × 150 = 90 (unshaded part)</text>
 
-      <text x="250" y="270" font-size='11' text-anchor='middle' fill='#999'>40% + 60% = 100% ✓</text>
+      <text x="250" y="270" font-size='11' text-anchor='middle' fill='#a0aec0'>40% + 60% = 100% ✓</text>
     </svg>
   </div>
 

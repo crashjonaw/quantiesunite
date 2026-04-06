@@ -92,17 +92,17 @@ SECTIONS = [
   <!-- Example 1 -->
   <rect x="20" y="40" width="560" height="45" fill='#22c55e15' stroke='#22c55e' stroke-width="1" rx="3"/>
   <text x="30" y="60" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 1: "Four hundred and sixty-three"</text>
-  <text x="30" y="80" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 4, Tens-ones = 63 → Answer: <strong class="accent-heading">463</strong></text>
+  <text x="30" y="80" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 4, Tens-ones = 63 → Answer: <tspan font-weight='bold'>463</tspan></text>
 
   <!-- Example 2 -->
   <rect x="20" y="100" width="560" height="45" fill='#4f8ef730' stroke='#4f8ef7' stroke-width="1" rx="3"/>
   <text x="30" y="120" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 2: "Seven hundred and five"</text>
-  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 7, Tens-ones = 05 (no tens!) → Answer: <strong class="accent-heading">705</strong></text>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 7, Tens-ones = 05 (no tens!) → Answer: <tspan font-weight='bold'>705</tspan></text>
 
   <!-- Example 3 -->
   <rect x="20" y="160" width="560" height="45" fill='#f59e0b15' stroke='#f59e0b' stroke-width="1" rx="3"/>
   <text x="30" y="180" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 3: "Nine hundred and twelve"</text>
-  <text x="30" y="200" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 9, Tens-ones = 12 → Answer: <strong class="accent-heading">912</strong></text>
+  <text x="30" y="200" text-anchor='start' fill='currentColor' font-size='12'>Hundreds = 9, Tens-ones = 12 → Answer: <tspan font-weight='bold'>912</tspan></text>
 </svg>"""
     },
     {

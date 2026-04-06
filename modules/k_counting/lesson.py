@@ -221,8 +221,8 @@ SECTIONS = [
          <circle cx="220" cy="35" r="20" fill="#d32f2f" opacity="0.8"/>
 
          <!-- Labels -->
-         <text x="40" y="55" text-anchor="middle" font-size="12">small</text>
-         <text x="220" y="55" text-anchor="middle" font-size="12">big</text>
+         <text x="40" y="55" text-anchor="middle" font-size="12" fill='currentColor'>small</text>
+         <text x="220" y="55" text-anchor="middle" font-size="12" fill='currentColor'>big</text>
        </svg>
      </div>
 

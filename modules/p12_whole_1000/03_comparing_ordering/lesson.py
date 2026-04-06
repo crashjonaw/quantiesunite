@@ -58,19 +58,19 @@ SECTIONS = [
   <rect x="30" y="40" width="540" height="60" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
   <text x="40" y="60" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Compare 643 and 628:</text>
   <text x="40" y="80" text-anchor='start' fill='currentColor' font-size='11'>Hundreds: 6 = 6 (same) → Check tens next</text>
-  <text x="40" y="95" text-anchor='start' fill='currentColor' font-size='11'>Tens: 4 &gt; 2 → So <strong class="accent-heading">643 &gt; 628</strong></text>
+  <text x="40" y="95" text-anchor='start' fill='currentColor' font-size='11'>Tens: 4 &gt; 2 → So <tspan font-weight='bold'>643 &gt; 628</tspan></text>
 
   <!-- Example 2 -->
   <rect x="30" y="115" width="540" height="60" fill='#22c55e20' stroke='#22c55e' stroke-width="1" rx="3"/>
   <text x="40" y="135" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Compare 517 and 592:</text>
   <text x="40" y="155" text-anchor='start' fill='currentColor' font-size='11'>Hundreds: 5 = 5 (same) → Check tens next</text>
-  <text x="40" y="170" text-anchor='start' fill='currentColor' font-size='11'>Tens: 1 &lt; 9 → So <strong style="color:#22c55e;">517 &lt; 592</strong></text>
+  <text x="40" y="170" text-anchor='start' fill='currentColor' font-size='11'>Tens: 1 &lt; 9 → So <tspan font-weight='bold' fill='#22c55e'>517 &lt; 592</tspan></text>
 
   <!-- Example 3 -->
   <rect x="30" y="190" width="540" height="60" fill='#f59e0b20' stroke='#f59e0b' stroke-width="1" rx="3"/>
   <text x="40" y="210" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Compare 834 and 831:</text>
   <text x="40" y="230" text-anchor='start' fill='currentColor' font-size='11'>Hundreds: 8 = 8, Tens: 3 = 3 (same) → Check ones</text>
-  <text x="40" y="245" text-anchor='start' fill='currentColor' font-size='11'>Ones: 4 &gt; 1 → So <strong style="color:#f59e0b;">834 &gt; 831</strong></text>
+  <text x="40" y="245" text-anchor='start' fill='currentColor' font-size='11'>Ones: 4 &gt; 1 → So <tspan font-weight='bold' fill='#f59e0b'>834 &gt; 831</tspan></text>
 </svg>"""
     },
     {

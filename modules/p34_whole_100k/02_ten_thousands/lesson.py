@@ -40,28 +40,28 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="100" viewBox="0 0 600 100">
-    <text x="100" y="25" text-anchor='middle' font-size='12' font-weight='bold'>1</text>
-    <text x="100" y="45" text-anchor='middle' font-size='10'>ones</text>
+    <text x="100" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>1</text>
+    <text x="100" y="45" text-anchor='middle' font-size='10' fill='currentColor'>ones</text>
 
-    <text x="150" y="25" text-anchor='middle' font-size='12'>×10</text>
+    <text x="150" y="25" text-anchor='middle' font-size='12' fill='currentColor'>×10</text>
 
-    <text x="200" y="25" text-anchor='middle' font-size='12' font-weight='bold'>10</text>
-    <text x="200" y="45" text-anchor='middle' font-size='10'>tens</text>
+    <text x="200" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>10</text>
+    <text x="200" y="45" text-anchor='middle' font-size='10' fill='currentColor'>tens</text>
 
-    <text x="250" y="25" text-anchor='middle' font-size='12'>×10</text>
+    <text x="250" y="25" text-anchor='middle' font-size='12' fill='currentColor'>×10</text>
 
-    <text x="300" y="25" text-anchor='middle' font-size='12' font-weight='bold'>100</text>
-    <text x="300" y="45" text-anchor='middle' font-size='10'>hundreds</text>
+    <text x="300" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>100</text>
+    <text x="300" y="45" text-anchor='middle' font-size='10' fill='currentColor'>hundreds</text>
 
-    <text x="350" y="25" text-anchor='middle' font-size='12'>×10</text>
+    <text x="350" y="25" text-anchor='middle' font-size='12' fill='currentColor'>×10</text>
 
-    <text x="400" y="25" text-anchor='middle' font-size='12' font-weight='bold'>1,000</text>
-    <text x="400" y="45" text-anchor='middle' font-size='10'>thousands</text>
+    <text x="400" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>1,000</text>
+    <text x="400" y="45" text-anchor='middle' font-size='10' fill='currentColor'>thousands</text>
 
-    <text x="450" y="25" text-anchor='middle' font-size='12'>×10</text>
+    <text x="450" y="25" text-anchor='middle' font-size='12' fill='currentColor'>×10</text>
 
-    <text x="500" y="25" text-anchor='middle' font-size='12' font-weight='bold'>10,000</text>
-    <text x="500" y="45" text-anchor='middle' font-size='10'>ten thousands</text>
+    <text x="500" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>10,000</text>
+    <text x="500" y="45" text-anchor='middle' font-size='10' fill='currentColor'>ten thousands</text>
   </svg>
 </div>
 """

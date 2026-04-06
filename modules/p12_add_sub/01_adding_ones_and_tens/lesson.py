@@ -21,9 +21,9 @@ SECTIONS = [
 <svg viewBox="0 0 500 150" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
   <!-- Tens rods -->
   <g>
-    <rect x="30" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
-    <rect x="50" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
-    <rect x="70" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+    <rect x="30" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
+    <rect x="50" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
+    <rect x="70" y="20" width="15" height="80" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
     <text x="60" y="120" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>3 tens = 30</text>
   </g>
   <!-- Ones cubes -->
@@ -57,8 +57,8 @@ SECTIONS = [
 <svg viewBox="0 0 600 180" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
   <!-- First number -->
   <text x="50" y="25" fill='currentColor' font-size='16' font-weight='bold'>23 = 20 + 3</text>
-  <rect x="30" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
-  <rect x="50" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="30" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
+  <rect x="50" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
   <circle cx="100" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
   <circle cx="115" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
   <circle cx="130" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
@@ -68,7 +68,7 @@ SECTIONS = [
 
   <!-- Second number -->
   <text x="210" y="25" fill='currentColor' font-size='16' font-weight='bold'>14 = 10 + 4</text>
-  <rect x="190" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="190" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
   <circle cx="240" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
   <circle cx="255" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
   <circle cx="270" cy="70" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
@@ -79,9 +79,9 @@ SECTIONS = [
 
   <!-- Add tens -->
   <text x="380" y="25" fill='currentColor' font-size='14'>Add tens: 20 + 10 = 30</text>
-  <rect x="360" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
-  <rect x="380" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
-  <rect x="400" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2"/>
+  <rect x="360" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
+  <rect x="380" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
+  <rect x="400" y="40" width="15" height="60" fill='#4f8ef7' stroke='currentColor' stroke-width="2" rx='4'/>
 
   <!-- Add ones -->
   <text x="380" y="125" fill='currentColor' font-size='14'>Add ones: 3 + 4 = 7</text>

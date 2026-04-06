@@ -105,11 +105,11 @@ SECTIONS = [
 <p><strong>Using tally marks to count:</strong></p>
 <svg width="300" height="150" viewBox="0 0 300 150">
   <!-- Title -->
-  <text x="75" y="20" font-size='16' font-weight='bold' text-anchor='middle'>Tally Marks</text>
+  <text x="75" y="20" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Tally Marks</text>
 
   <!-- Single tally -->
   <line x1="50" y1="50" x2="50" y2="90" stroke='#8b949e' stroke-width="2"/>
-  <text x="50" y="110" font-size='12' text-anchor='middle'>= 1</text>
+  <text x="50" y="110" font-size='12' text-anchor='middle' fill='currentColor'>= 1</text>
 
   <!-- Group of 5 -->
   <line x1="130" y1="50" x2="130" y2="90" stroke='#8b949e' stroke-width="2"/>
@@ -117,7 +117,7 @@ SECTIONS = [
   <line x1="150" y1="50" x2="150" y2="90" stroke='#8b949e' stroke-width="2"/>
   <line x1="160" y1="50" x2="160" y2="90" stroke='#8b949e' stroke-width="2"/>
   <line x1="135" y1="55" x2="160" y2="85" stroke='#8b949e' stroke-width="2"/>
-  <text x="145" y="110" font-size='12' text-anchor='middle'>= 5</text>
+  <text x="145" y="110" font-size='12' text-anchor='middle' fill='currentColor'>= 5</text>
 
   <!-- Group of 8 -->
   <line x1="220" y1="50" x2="220" y2="90" stroke='#8b949e' stroke-width="2"/>
@@ -128,7 +128,7 @@ SECTIONS = [
   <line x1="260" y1="50" x2="260" y2="90" stroke='#8b949e' stroke-width="2"/>
   <line x1="270" y1="50" x2="270" y2="90" stroke='#8b949e' stroke-width="2"/>
   <line x1="280" y1="50" x2="280" y2="90" stroke='#8b949e' stroke-width="2"/>
-  <text x="250" y="110" font-size='12' text-anchor='middle'>= 8</text>
+  <text x="250" y="110" font-size='12' text-anchor='middle' fill='currentColor'>= 8</text>
 </svg>
 
 <p><strong>How to use tally marks:</strong></p>

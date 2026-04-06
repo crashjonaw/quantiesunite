@@ -102,11 +102,11 @@ SECTIONS = [
 <h3>Visualizing Perfect Squares</h3>
 <div class="diagram-container">
   <svg width="550" height="280" viewBox="0 0 550 280">
-    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold'>Perfect Squares: Visual Representation</text>
+    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Perfect Squares: Visual Representation</text>
 
     <!-- 3 × 3 -->
     <g id="square-3">
-      <text x="60" y="50" text-anchor='middle' font-size='12' font-weight='bold'>3 × 3 = 9</text>
+      <text x="60" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>3 × 3 = 9</text>
       <rect x="20" y="70" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
       <rect x="45" y="70" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
       <rect x="70" y="70" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
@@ -120,7 +120,7 @@ SECTIONS = [
 
     <!-- 5 × 5 -->
     <g id="square-5">
-      <text x="200" y="50" text-anchor='middle' font-size='12' font-weight='bold'>5 × 5 = 25</text>
+      <text x="200" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>5 × 5 = 25</text>
       <g id="five-by-five">
         <rect x="160" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
         <rect x="180" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
@@ -156,7 +156,7 @@ SECTIONS = [
 
     <!-- 7 × 7 -->
     <g id="square-7">
-      <text x="380" y="50" text-anchor='middle' font-size='12' font-weight='bold'>7 × 7 = 49</text>
+      <text x="380" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>7 × 7 = 49</text>
       <g id="seven-by-seven">
         <rect x="340" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
         <rect x="355" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
@@ -170,8 +170,8 @@ SECTIONS = [
 
     <!-- Pattern explanation -->
     <rect x="40" y="210" width="480" height="50" fill='#e8f5e980' stroke='#22c55e' stroke-width="2" rx="5"/>
-    <text x="50" y="235" font-size='12' font-weight='bold'>The Pattern in Perfect Squares:</text>
-    <text x="50" y="255" font-size='11'>1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144</text>
+    <text x="50" y="235" font-size='12' font-weight='bold' fill='currentColor'>The Pattern in Perfect Squares:</text>
+    <text x="50" y="255" font-size='11' fill='currentColor'>1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144</text>
   </svg>
   <div class="diagram-caption">Perfect squares have equal rows and columns</div>
 </div>
@@ -291,44 +291,44 @@ if (ctxDoubling) {
 <h3>Common Decompositions</h3>
 <div class="diagram-container">
   <svg width="550" height="300" viewBox="0 0 550 300">
-    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold'>Breaking Apart Numbers: Common Strategies</text>
+    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Breaking Apart Numbers: Common Strategies</text>
 
     <g id="decompositions">
       <!-- 6 = 5 + 1 -->
       <rect x="30" y="60" width="150" height="70" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="5"/>
-      <text x="105" y="85" text-anchor='middle' font-size='12' font-weight='bold'>6 = 5 + 1</text>
-      <text x="105" y="105" text-anchor='middle' font-size='11'>7 × 6 = 7×5 + 7×1</text>
-      <text x="105" y="120" text-anchor='middle' font-size='11'>= 35 + 7 = 42</text>
+      <text x="105" y="85" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>6 = 5 + 1</text>
+      <text x="105" y="105" text-anchor='middle' font-size='11' fill='currentColor'>7 × 6 = 7×5 + 7×1</text>
+      <text x="105" y="120" text-anchor='middle' font-size='11' fill='currentColor'>= 35 + 7 = 42</text>
 
       <!-- 7 = 5 + 2 -->
       <rect x="200" y="60" width="150" height="70" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="5"/>
-      <text x="275" y="85" text-anchor='middle' font-size='12' font-weight='bold'>7 = 5 + 2</text>
-      <text x="275" y="105" text-anchor='middle' font-size='11'>8 × 7 = 8×5 + 8×2</text>
-      <text x="275" y="120" text-anchor='middle' font-size='11'>= 40 + 16 = 56</text>
+      <text x="275" y="85" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>7 = 5 + 2</text>
+      <text x="275" y="105" text-anchor='middle' font-size='11' fill='currentColor'>8 × 7 = 8×5 + 8×2</text>
+      <text x="275" y="120" text-anchor='middle' font-size='11' fill='currentColor'>= 40 + 16 = 56</text>
 
       <!-- 8 = 10 - 2 -->
       <rect x="370" y="60" width="150" height="70" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="5"/>
-      <text x="445" y="85" text-anchor='middle' font-size='12' font-weight='bold'>8 = 10 - 2</text>
-      <text x="445" y="105" text-anchor='middle' font-size='11'>9 × 8 = 9×10 - 9×2</text>
-      <text x="445" y="120" text-anchor='middle' font-size='11'>= 90 - 18 = 72</text>
+      <text x="445" y="85" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>8 = 10 - 2</text>
+      <text x="445" y="105" text-anchor='middle' font-size='11' fill='currentColor'>9 × 8 = 9×10 - 9×2</text>
+      <text x="445" y="120" text-anchor='middle' font-size='11' fill='currentColor'>= 90 - 18 = 72</text>
 
       <!-- 12 = 10 + 2 -->
       <rect x="30" y="170" width="150" height="70" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="5"/>
-      <text x="105" y="195" text-anchor='middle' font-size='12' font-weight='bold'>12 = 10 + 2</text>
-      <text x="105" y="215" text-anchor='middle' font-size='11'>7 × 12 = 7×10 + 7×2</text>
-      <text x="105" y="230" text-anchor='middle' font-size='11'>= 70 + 14 = 84</text>
+      <text x="105" y="195" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>12 = 10 + 2</text>
+      <text x="105" y="215" text-anchor='middle' font-size='11' fill='currentColor'>7 × 12 = 7×10 + 7×2</text>
+      <text x="105" y="230" text-anchor='middle' font-size='11' fill='currentColor'>= 70 + 14 = 84</text>
 
       <!-- 9 = 10 - 1 -->
       <rect x="200" y="170" width="150" height="70" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="5"/>
-      <text x="275" y="195" text-anchor='middle' font-size='12' font-weight='bold'>9 = 10 - 1</text>
-      <text x="275" y="215" text-anchor='middle' font-size='11'>6 × 9 = 6×10 - 6×1</text>
-      <text x="275" y="230" text-anchor='middle' font-size='11'>= 60 - 6 = 54</text>
+      <text x="275" y="195" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>9 = 10 - 1</text>
+      <text x="275" y="215" text-anchor='middle' font-size='11' fill='currentColor'>6 × 9 = 6×10 - 6×1</text>
+      <text x="275" y="230" text-anchor='middle' font-size='11' fill='currentColor'>= 60 - 6 = 54</text>
 
       <!-- 11 = 10 + 1 -->
       <rect x="370" y="170" width="150" height="70" fill='#06b6d480' stroke='#06b6d4' stroke-width="2" rx="5"/>
-      <text x="445" y="195" text-anchor='middle' font-size='12' font-weight='bold'>11 = 10 + 1</text>
-      <text x="445" y="215" text-anchor='middle' font-size='11'>4 × 11 = 4×10 + 4×1</text>
-      <text x="445" y="230" text-anchor='middle' font-size='11'>= 40 + 4 = 44</text>
+      <text x="445" y="195" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>11 = 10 + 1</text>
+      <text x="445" y="215" text-anchor='middle' font-size='11' fill='currentColor'>4 × 11 = 4×10 + 4×1</text>
+      <text x="445" y="230" text-anchor='middle' font-size='11' fill='currentColor'>= 40 + 4 = 44</text>
     </g>
   </svg>
   <div class="diagram-caption">Common ways to break apart numbers</div>

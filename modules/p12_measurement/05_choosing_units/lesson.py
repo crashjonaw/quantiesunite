@@ -6,35 +6,35 @@ SECTIONS = [
     {
         "title": "Why Choose the Right Unit?",
         "body": """<p>Choosing the right unit makes measurements easier to understand and work with.</p>
-<svg width="360" height="280" viewBox="0 0 360 280" style="margin: 10px;">
-  <text x="10" y="25" font-size='13' font-weight='bold'>Wrong choice vs. Right choice:</text>
+<svg viewBox="0 0 360 280" style="width:100%;max-width:360px;height:auto;display:block;margin:16px auto;" viewBox="0 0 360 280" style="margin: 10px;"
+  <text x="10" y="25" font-size='13' font-weight='bold' fill='currentColor'>Wrong choice vs. Right choice:</text>
   <rect x="10" y="40" width="330" height="110" fill='#ffe0e0' stroke='#c41e3a' stroke-width="1" rx="5"/>
-  <text x="20" y="65" font-size='12' font-weight='bold'>WRONG:</text>
-  <text x="20" y="85" font-size='11'>The pencil is 1900 centimeters long.</text>
-  <text x="20" y="105" font-size='11'>The person weighs 50000 grams.</text>
-  <text x="20" y="125" font-size='11'>(These are hard to read!)</text>
+  <text x="20" y="65" font-size='12' font-weight='bold' fill='currentColor'>WRONG:</text>
+  <text x="20" y="85" font-size='11' fill='currentColor'>The pencil is 1900 centimeters long.</text>
+  <text x="20" y="105" font-size='11' fill='currentColor'>The person weighs 50000 grams.</text>
+  <text x="20" y="125" font-size='11' fill='currentColor'>(These are hard to read!)</text>
 </rect>
   <rect x="10" y="160" width="330" height="110" fill='#e0f2e0' stroke='#4caf50' stroke-width="2" rx="5"/>
-  <text x="20" y="185" font-size='12' font-weight='bold'>RIGHT:</text>
-  <text x="20" y="205" font-size='11'>The pencil is 19 centimeters long.</text>
-  <text x="20" y="225" font-size='11'>The person weighs 50 kilograms.</text>
-  <text x="20" y="245" font-size='11'>(These are much easier!)</text>
+  <text x="20" y="185" font-size='12' font-weight='bold' fill='currentColor'>RIGHT:</text>
+  <text x="20" y="205" font-size='11' fill='currentColor'>The pencil is 19 centimeters long.</text>
+  <text x="20" y="225" font-size='11' fill='currentColor'>The person weighs 50 kilograms.</text>
+  <text x="20" y="245" font-size='11' fill='currentColor'>(These are much easier!)</text>
 </svg>"""
     },
     {
         "title": "Choosing Units for Length",
         "body": """<p><strong>Rule:</strong> Use centimeters for small things and meters for large things.</p>
-<svg width="360" height="220" style="margin: 10px;">
+<svg viewBox="0 0 360 220" style="width:100%;max-width:360px;height:auto;display:block;margin:16px auto;" style="margin: 10px;"
   <rect x="10" y="10" width="330" height="200" fill='lightblue' stroke='blue' stroke-width="1" rx="5"/>
-  <text x="20" y="35" font-size='12' font-weight='bold'>Use CENTIMETERS (cm) for:</text>
-  <text x="30" y="55" font-size='11'>✓ A pencil</text>
-  <text x="30" y="70" font-size='11'>✓ A book</text>
-  <text x="30" y="85" font-size='11'>✓ A finger width</text>
-  <text x="20" y="115" font-size='12' font-weight='bold'>Use METERS (m) for:</text>
-  <text x="30" y="135" font-size='11'>✓ A room</text>
-  <text x="30" y="150" font-size='11'>✓ A tall building</text>
-  <text x="30" y="165" font-size='11'>✓ A playground</text>
-  <text x="30" y="180" font-size='11'>✓ A person's height (over 1 meter)</text>
+  <text x="20" y="35" font-size='12' font-weight='bold' fill='currentColor'>Use CENTIMETERS (cm) for:</text>
+  <text x="30" y="55" font-size='11' fill='currentColor'>✓ A pencil</text>
+  <text x="30" y="70" font-size='11' fill='currentColor'>✓ A book</text>
+  <text x="30" y="85" font-size='11' fill='currentColor'>✓ A finger width</text>
+  <text x="20" y="115" font-size='12' font-weight='bold' fill='currentColor'>Use METERS (m) for:</text>
+  <text x="30" y="135" font-size='11' fill='currentColor'>✓ A room</text>
+  <text x="30" y="150" font-size='11' fill='currentColor'>✓ A tall building</text>
+  <text x="30" y="165" font-size='11' fill='currentColor'>✓ A playground</text>
+  <text x="30" y="180" font-size='11' fill='currentColor'>✓ A person's height (over 1 meter)</text>
 </svg>
 <div class='worked-example' style="background-color: #f0f9ff; padding: 15px; border-left: 4px solid #0066cc; margin: 15px 0;">
 <strong>Quick rule:</strong> If the number is small (like 5 to 100), centimeters is good. If you need a big number, use meters!
@@ -43,17 +43,17 @@ SECTIONS = [
     {
         "title": "Choosing Units for Mass",
         "body": """<p><strong>Rule:</strong> Use grams for light things and kilograms for heavy things.</p>
-<svg width="360" height="220" style="margin: 10px;">
+<svg viewBox="0 0 360 220" style="width:100%;max-width:360px;height:auto;display:block;margin:16px auto;" style="margin: 10px;"
   <rect x="10" y="10" width="330" height="200" fill='lightyellow' stroke='orange' stroke-width="1" rx="5"/>
-  <text x="20" y="35" font-size='12' font-weight='bold'>Use GRAMS (g) for:</text>
-  <text x="30" y="55" font-size='11'>✓ An apple</text>
-  <text x="30" y="70" font-size='11'>✓ A piece of paper</text>
-  <text x="30" y="85" font-size='11'>✓ A coin</text>
-  <text x="20" y="115" font-size='12' font-weight='bold'>Use KILOGRAMS (kg) for:</text>
-  <text x="30" y="135" font-size='11'>✓ A person</text>
-  <text x="30" y="150" font-size='11'>✓ A bag of flour</text>
-  <text x="30" y="165" font-size='11'>✓ A large textbook</text>
-  <text x="30" y="180" font-size='11'>✓ A child or animal</text>
+  <text x="20" y="35" font-size='12' font-weight='bold' fill='currentColor'>Use GRAMS (g) for:</text>
+  <text x="30" y="55" font-size='11' fill='currentColor'>✓ An apple</text>
+  <text x="30" y="70" font-size='11' fill='currentColor'>✓ A piece of paper</text>
+  <text x="30" y="85" font-size='11' fill='currentColor'>✓ A coin</text>
+  <text x="20" y="115" font-size='12' font-weight='bold' fill='currentColor'>Use KILOGRAMS (kg) for:</text>
+  <text x="30" y="135" font-size='11' fill='currentColor'>✓ A person</text>
+  <text x="30" y="150" font-size='11' fill='currentColor'>✓ A bag of flour</text>
+  <text x="30" y="165" font-size='11' fill='currentColor'>✓ A large textbook</text>
+  <text x="30" y="180" font-size='11' fill='currentColor'>✓ A child or animal</text>
 </svg>
 <div class='worked-example' style="padding: 15px; border-left: 4px solid #ff8c00; margin: 15px 0;">
 <strong>Quick rule:</strong> Can you hold it in one hand easily? Grams. Does it need two hands or more? Probably kilograms!
@@ -62,17 +62,17 @@ SECTIONS = [
     {
         "title": "Choosing Units for Volume",
         "body": """<p><strong>Rule:</strong> Use milliliters for small amounts and liters for large amounts.</p>
-<svg width="360" height="220" style="margin: 10px;">
+<svg viewBox="0 0 360 220" style="width:100%;max-width:360px;height:auto;display:block;margin:16px auto;" style="margin: 10px;"
   <rect x="10" y="10" width="330" height="200" fill='lightgreen' stroke='green' stroke-width="1" rx="5"/>
-  <text x="20" y="35" font-size='12' font-weight='bold'>Use MILLILITERS (mL) for:</text>
-  <text x="30" y="55" font-size='11'>✓ A glass of juice</text>
-  <text x="30" y="70" font-size='11'>✓ A spoonful of medicine</text>
-  <text x="30" y="85" font-size='11'>✓ A cup of tea</text>
-  <text x="20" y="115" font-size='12' font-weight='bold'>Use LITERS (L) for:</text>
-  <text x="30" y="135" font-size='11'>✓ A water bottle</text>
-  <text x="30" y="150" font-size='11'>✓ A milk jug</text>
-  <text x="30" y="165" font-size='11'>✓ A bucket</text>
-  <text x="30" y="180" font-size='11'>✓ A bathtub</text>
+  <text x="20" y="35" font-size='12' font-weight='bold' fill='currentColor'>Use MILLILITERS (mL) for:</text>
+  <text x="30" y="55" font-size='11' fill='currentColor'>✓ A glass of juice</text>
+  <text x="30" y="70" font-size='11' fill='currentColor'>✓ A spoonful of medicine</text>
+  <text x="30" y="85" font-size='11' fill='currentColor'>✓ A cup of tea</text>
+  <text x="20" y="115" font-size='12' font-weight='bold' fill='currentColor'>Use LITERS (L) for:</text>
+  <text x="30" y="135" font-size='11' fill='currentColor'>✓ A water bottle</text>
+  <text x="30" y="150" font-size='11' fill='currentColor'>✓ A milk jug</text>
+  <text x="30" y="165" font-size='11' fill='currentColor'>✓ A bucket</text>
+  <text x="30" y="180" font-size='11' fill='currentColor'>✓ A bathtub</text>
 </svg>
 <div class='worked-example' style="background-color: #e0f7fa; padding: 15px; border-left: 4px solid #00bcd4; margin: 15px 0;">
 <strong>Quick rule:</strong> Can you hold it in a cup? Milliliters. Does it need a jug or bucket? Liters!

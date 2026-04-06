@@ -49,7 +49,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <text x="140" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>5</text>
   <line x1="90" y1="100" x2="65" y2="120" stroke='#8b949e' stroke-width="2"/>
   <line x1="110" y1="100" x2="135" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="160" text-anchor='middle' font-size='12'>0 + 5 = 5</text>
+  <text x="100" y="160" text-anchor='middle' font-size='12' fill='currentColor'>0 + 5 = 5</text>
 
   <!-- Row 2: 5 = 1 + 4 -->
   <circle cx="280" cy="80" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
@@ -60,7 +60,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <text x="320" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>4</text>
   <line x1="270" y1="100" x2="245" y2="120" stroke='#8b949e' stroke-width="2"/>
   <line x1="290" y1="100" x2="315" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <text x="280" y="160" text-anchor='middle' font-size='12'>1 + 4 = 5</text>
+  <text x="280" y="160" text-anchor='middle' font-size='12' fill='currentColor'>1 + 4 = 5</text>
 
   <!-- Row 3: 5 = 2 + 3 -->
   <circle cx="460" cy="80" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
@@ -71,7 +71,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <text x="500" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>3</text>
   <line x1="450" y1="100" x2="425" y2="120" stroke='#8b949e' stroke-width="2"/>
   <line x1="470" y1="100" x2="495" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <text x="460" y="160" text-anchor='middle' font-size='12'>2 + 3 = 5</text>
+  <text x="460" y="160" text-anchor='middle' font-size='12' fill='currentColor'>2 + 3 = 5</text>
 
   <!-- Row 4: 5 = 3 + 2 -->
   <circle cx="100" cy="260" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
@@ -82,7 +82,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <text x="140" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>2</text>
   <line x1="90" y1="280" x2="65" y2="300" stroke='#8b949e' stroke-width="2"/>
   <line x1="110" y1="280" x2="135" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="340" text-anchor='middle' font-size='12'>3 + 2 = 5</text>
+  <text x="100" y="340" text-anchor='middle' font-size='12' fill='currentColor'>3 + 2 = 5</text>
 
   <!-- Row 5: 5 = 4 + 1 -->
   <circle cx="280" cy="260" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
@@ -93,7 +93,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <text x="320" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>1</text>
   <line x1="270" y1="280" x2="245" y2="300" stroke='#8b949e' stroke-width="2"/>
   <line x1="290" y1="280" x2="315" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <text x="280" y="340" text-anchor='middle' font-size='12'>4 + 1 = 5</text>
+  <text x="280" y="340" text-anchor='middle' font-size='12' fill='currentColor'>4 + 1 = 5</text>
 
   <!-- Row 6: 5 = 5 + 0 -->
   <circle cx="460" cy="260" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
@@ -104,7 +104,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <text x="500" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>0</text>
   <line x1="450" y1="280" x2="425" y2="300" stroke='#8b949e' stroke-width="2"/>
   <line x1="470" y1="280" x2="495" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <text x="460" y="340" text-anchor='middle' font-size='12'>5 + 0 = 5</text>
+  <text x="460" y="340" text-anchor='middle' font-size='12' fill='currentColor'>5 + 0 = 5</text>
 </svg>
 
 <h3>See the Pattern?</h3>

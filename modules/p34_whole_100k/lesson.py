@@ -30,29 +30,29 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="80" viewBox="0 0 600 80">
-    <line x1="20" y1="40" x2="580" y2="40" stroke="#333" stroke-width="2"/>
+    <line x1="20" y1="40" x2="580" y2="40" stroke='#8b949e' stroke-width="2"/>
     <circle cx="20" cy="40" r="4" fill="#4169E1"/>
-    <text x="20" y="65" text-anchor="middle" font-size="14">0</text>
-    <line x1="70" y1="35" x2="70" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="70" y="65" text-anchor="middle" font-size="14">1</text>
-    <line x1="120" y1="35" x2="120" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="120" y="65" text-anchor="middle" font-size="14">2</text>
-    <line x1="170" y1="35" x2="170" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="170" y="65" text-anchor="middle" font-size="14">3</text>
-    <line x1="220" y1="35" x2="220" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="220" y="65" text-anchor="middle" font-size="14">4</text>
-    <line x1="270" y1="35" x2="270" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="270" y="65" text-anchor="middle" font-size="14">5</text>
-    <line x1="320" y1="35" x2="320" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="320" y="65" text-anchor="middle" font-size="14">6</text>
-    <line x1="370" y1="35" x2="370" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="370" y="65" text-anchor="middle" font-size="14">7</text>
-    <line x1="420" y1="35" x2="420" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="420" y="65" text-anchor="middle" font-size="14">8</text>
-    <line x1="470" y1="35" x2="470" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="470" y="65" text-anchor="middle" font-size="14">9</text>
-    <line x1="520" y1="35" x2="520" y2="45" stroke="#333" stroke-width="2"/>
-    <text x="520" y="65" text-anchor="middle" font-size="14">10</text>
+    <text x="20" y="65" text-anchor="middle" font-size="14" fill='currentColor'>0</text>
+    <line x1="70" y1="35" x2="70" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="70" y="65" text-anchor="middle" font-size="14" fill='currentColor'>1</text>
+    <line x1="120" y1="35" x2="120" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="120" y="65" text-anchor="middle" font-size="14" fill='currentColor'>2</text>
+    <line x1="170" y1="35" x2="170" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="170" y="65" text-anchor="middle" font-size="14" fill='currentColor'>3</text>
+    <line x1="220" y1="35" x2="220" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="220" y="65" text-anchor="middle" font-size="14" fill='currentColor'>4</text>
+    <line x1="270" y1="35" x2="270" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="270" y="65" text-anchor="middle" font-size="14" fill='currentColor'>5</text>
+    <line x1="320" y1="35" x2="320" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="320" y="65" text-anchor="middle" font-size="14" fill='currentColor'>6</text>
+    <line x1="370" y1="35" x2="370" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="370" y="65" text-anchor="middle" font-size="14" fill='currentColor'>7</text>
+    <line x1="420" y1="35" x2="420" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="420" y="65" text-anchor="middle" font-size="14" fill='currentColor'>8</text>
+    <line x1="470" y1="35" x2="470" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="470" y="65" text-anchor="middle" font-size="14" fill='currentColor'>9</text>
+    <line x1="520" y1="35" x2="520" y2="45" stroke='#8b949e' stroke-width="2"/>
+    <text x="520" y="65" text-anchor="middle" font-size="14" fill='currentColor'>10</text>
   </svg>
   <div class="diagram-caption">The number line starts at 0 and continues forever</div>
 </div>
@@ -74,16 +74,16 @@ SECTIONS = [
 <div class="diagram-container">
   <svg width="500" height="200" viewBox="0 0 500 200">
     <rect x="20" y="40" width="120" height="80" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-    <text x="80" y="110" text-anchor="middle" font-size="36" font-weight="bold">3</text>
-    <text x="80" y="150" text-anchor="middle" font-size="14" font-weight="bold">Hundreds place</text>
+    <text x="80" y="110" text-anchor="middle" font-size="36" font-weight="bold" fill='currentColor'>3</text>
+    <text x="80" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Hundreds place</text>
 
     <rect x="190" y="40" width="120" height="80" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
-    <text x="250" y="110" text-anchor="middle" font-size="36" font-weight="bold">4</text>
-    <text x="250" y="150" text-anchor="middle" font-size="14" font-weight="bold">Tens place</text>
+    <text x="250" y="110" text-anchor="middle" font-size="36" font-weight="bold" fill='currentColor'>4</text>
+    <text x="250" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Tens place</text>
 
     <rect x="360" y="40" width="120" height="80" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <text x="420" y="110" text-anchor="middle" font-size="36" font-weight="bold">7</text>
-    <text x="420" y="150" text-anchor="middle" font-size="14" font-weight="bold">Ones place</text>
+    <text x="420" y="110" text-anchor="middle" font-size="36" font-weight="bold" fill='currentColor'>7</text>
+    <text x="420" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Ones place</text>
   </svg>
   <div class="diagram-caption">In 347, the 3 is in the hundreds place, the 4 is in the tens place, and the 7 is in the ones place</div>
 </div>
@@ -161,29 +161,29 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="550" height="150" viewBox="0 0 550 150">
-    <text x="275" y="40" text-anchor="middle" font-size="18" font-weight="bold">Number: 92,356</text>
+    <text x="275" y="40" text-anchor="middle" font-size="18" font-weight="bold" fill='currentColor'>Number: 92,356</text>
 
     <line x1="50" y1="80" x2="50" y2="130" stroke="#4169E1" stroke-width="3"/>
-    <text x="50" y="65" text-anchor="middle" font-size="14">9</text>
-    <text x="50" y="145" text-anchor="middle" font-size="12">ten thousands</text>
+    <text x="50" y="65" text-anchor="middle" font-size="14" fill='currentColor'>9</text>
+    <text x="50" y="145" text-anchor="middle" font-size="12" fill='currentColor'>ten thousands</text>
 
     <line x1="90" y1="80" x2="90" y2="130" stroke="#22c55e" stroke-width="3"/>
-    <text x="90" y="65" text-anchor="middle" font-size="14">2</text>
-    <text x="90" y="145" text-anchor="middle" font-size="12">thousands</text>
+    <text x="90" y="65" text-anchor="middle" font-size="14" fill='currentColor'>2</text>
+    <text x="90" y="145" text-anchor="middle" font-size="12" fill='currentColor'>thousands</text>
 
-    <text x="120" y="90" font-size="20" font-weight="bold">,</text>
+    <text x="120" y="90" font-size="20" font-weight="bold" fill='currentColor'>,</text>
 
     <line x1="150" y1="80" x2="150" y2="130" stroke="#f59e0b" stroke-width="3"/>
-    <text x="150" y="65" text-anchor="middle" font-size="14">3</text>
-    <text x="150" y="145" text-anchor="middle" font-size="12">hundreds</text>
+    <text x="150" y="65" text-anchor="middle" font-size="14" fill='currentColor'>3</text>
+    <text x="150" y="145" text-anchor="middle" font-size="12" fill='currentColor'>hundreds</text>
 
     <line x1="190" y1="80" x2="190" y2="130" stroke="#ef4444" stroke-width="3"/>
-    <text x="190" y="65" text-anchor="middle" font-size="14">5</text>
-    <text x="190" y="145" text-anchor="middle" font-size="12">tens</text>
+    <text x="190" y="65" text-anchor="middle" font-size="14" fill='currentColor'>5</text>
+    <text x="190" y="145" text-anchor="middle" font-size="12" fill='currentColor'>tens</text>
 
     <line x1="230" y1="80" x2="230" y2="130" stroke="#8b5cf6" stroke-width="3"/>
-    <text x="230" y="65" text-anchor="middle" font-size="14">6</text>
-    <text x="230" y="145" text-anchor="middle" font-size="12">ones</text>
+    <text x="230" y="65" text-anchor="middle" font-size="14" fill='currentColor'>6</text>
+    <text x="230" y="145" text-anchor="middle" font-size="12" fill='currentColor'>ones</text>
   </svg>
   <div class="diagram-caption">The comma separates thousands from hundreds</div>
 </div>
@@ -271,22 +271,22 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="120" viewBox="0 0 600 120">
-    <line x1="20" y1="50" x2="580" y2="50" stroke="#333" stroke-width="2"/>
+    <line x1="20" y1="50" x2="580" y2="50" stroke='#8b949e' stroke-width="2"/>
     <circle cx="20" cy="50" r="5" fill="#4169E1" stroke="#4169E1" stroke-width="2"/>
-    <text x="20" y="75" text-anchor="middle" font-size="14" font-weight="bold">40</text>
+    <text x="20" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>40</text>
 
     <circle cx="140" cy="50" r="5" fill="#cccccc"/>
-    <text x="140" y="75" text-anchor="middle" font-size="12">45</text>
+    <text x="140" y="75" text-anchor="middle" font-size="12" fill='currentColor'>45</text>
 
     <circle cx="300" cy="50" r="8" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
-    <text x="300" y="75" text-anchor="middle" font-size="14" font-weight="bold">47</text>
+    <text x="300" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>47</text>
     <text x="300" y="35" text-anchor="middle" font-size="12" fill="#f59e0b">This is our number</text>
 
     <circle cx="460" cy="50" r="5" fill="#cccccc"/>
-    <text x="460" y="75" text-anchor="middle" font-size="12">55</text>
+    <text x="460" y="75" text-anchor="middle" font-size="12" fill='currentColor'>55</text>
 
     <circle cx="580" cy="50" r="5" fill="#22c55e" stroke="#22c55e" stroke-width="2"/>
-    <text x="580" y="75" text-anchor="middle" font-size="14" font-weight="bold">60</text>
+    <text x="580" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>60</text>
 
     <line x1="20" y1="45" x2="20" y2="55" stroke="#4169E1" stroke-width="2"/>
     <line x1="580" y1="45" x2="580" y2="55" stroke="#22c55e" stroke-width="2"/>
@@ -371,25 +371,25 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="650" height="120" viewBox="0 0 650 120">
-    <text x="325" y="25" text-anchor="middle" font-size="16" font-weight="bold">Counting by Tens: Look at the Pattern</text>
+    <text x="325" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>Counting by Tens: Look at the Pattern</text>
     <g id="tens">
       <rect x="10" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="25" y="85" text-anchor="middle" font-size="14" font-weight="bold">0</text>
+      <text x="25" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>0</text>
 
       <rect x="50" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="65" y="85" text-anchor="middle" font-size="14" font-weight="bold">10</text>
+      <text x="65" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>10</text>
 
       <rect x="90" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="105" y="85" text-anchor="middle" font-size="14" font-weight="bold">20</text>
+      <text x="105" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>20</text>
 
       <rect x="130" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="145" y="85" text-anchor="middle" font-size="14" font-weight="bold">30</text>
+      <text x="145" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>30</text>
 
       <rect x="170" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="185" y="85" text-anchor="middle" font-size="14" font-weight="bold">40</text>
+      <text x="185" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>40</text>
 
       <rect x="210" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="225" y="85" text-anchor="middle" font-size="14" font-weight="bold">50</text>
+      <text x="225" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>50</text>
     </g>
   </svg>
   <div class="diagram-caption">Each number is 10 more than the previous one</div>
@@ -443,19 +443,19 @@ SECTIONS = [
 
 <div class="diagram-container">
   <svg width="600" height="200" viewBox="0 0 600 200">
-    <text x="300" y="25" text-anchor="middle" font-size="16" font-weight="bold">City Population Comparison</text>
+    <text x="300" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>City Population Comparison</text>
 
     <rect x="50" y="50" width="150" height="120" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-    <text x="125" y="120" text-anchor="middle" font-size="14" font-weight="bold">Small Town</text>
-    <text x="125" y="145" text-anchor="middle" font-size="12">12,000 people</text>
+    <text x="125" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Small Town</text>
+    <text x="125" y="145" text-anchor="middle" font-size="12" fill='currentColor'>12,000 people</text>
 
     <rect x="250" y="30" width="150" height="140" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
-    <text x="325" y="110" text-anchor="middle" font-size="14" font-weight="bold">Medium City</text>
-    <text x="325" y="135" text-anchor="middle" font-size="12">45,000 people</text>
+    <text x="325" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Medium City</text>
+    <text x="325" y="135" text-anchor="middle" font-size="12" fill='currentColor'>45,000 people</text>
 
     <rect x="450" y="10" width="150" height="160" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <text x="525" y="100" text-anchor="middle" font-size="14" font-weight="bold">Large City</text>
-    <text x="525" y="125" text-anchor="middle" font-size="12">87,000 people</text>
+    <text x="525" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Large City</text>
+    <text x="525" y="125" text-anchor="middle" font-size="12" fill='currentColor'>87,000 people</text>
   </svg>
   <div class="diagram-caption">Taller bars represent larger populations</div>
 </div>

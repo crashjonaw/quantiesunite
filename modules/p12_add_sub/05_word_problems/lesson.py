@@ -23,13 +23,13 @@ SECTIONS = [
 <div class="worked-example">
 <p><strong>Problem:</strong> Marcus has 28 toy cars. His sister has 34 toy cars. How many toy cars do they have in total?</p>
 <svg viewBox="0 0 600 160" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="50" y="30" fill='currentColor' font-size='13'><strong>Step 1: Understand</strong></text>
+  <text x="50" y="30" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 1: Understand</tspan></text>
   <text x="50" y="50" fill='currentColor' font-size='12'>Marcus: 28 cars, Sister: 34 cars, Total: ?</text>
 
-  <text x="50" y="80" fill='currentColor' font-size='13'><strong>Step 2: Choose operation</strong></text>
+  <text x="50" y="80" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 2: Choose operation</tspan></text>
   <text x="50" y="100" fill='#4f8ef7' font-size='12'>We're combining two groups, so we ADD</text>
 
-  <text x="50" y="130" fill='currentColor' font-size='13'><strong>Step 3: Calculate</strong></text>
+  <text x="50" y="130" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 3: Calculate</tspan></text>
   <text x="50" y="150" fill='#f59e0b' font-size='12'>28 + 34 = 62 toy cars</text>
 </svg>
 </div>
@@ -46,13 +46,13 @@ SECTIONS = [
 <div class="worked-example">
 <p><strong>Problem:</strong> There are 56 books on a shelf. 23 books are taken away. How many books are left?</p>
 <svg viewBox="0 0 600 160" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="50" y="30" fill='currentColor' font-size='13'><strong>Step 1: Understand</strong></text>
+  <text x="50" y="30" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 1: Understand</tspan></text>
   <text x="50" y="50" fill='currentColor' font-size='12'>Started with: 56, Taken away: 23, Left: ?</text>
 
-  <text x="50" y="80" fill='currentColor' font-size='13'><strong>Step 2: Choose operation</strong></text>
+  <text x="50" y="80" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 2: Choose operation</tspan></text>
   <text x="50" y="100" fill='#4f8ef7' font-size='12'>Something is taken away, so we SUBTRACT</text>
 
-  <text x="50" y="130" fill='currentColor' font-size='13'><strong>Step 3: Calculate</strong></text>
+  <text x="50" y="130" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 3: Calculate</tspan></text>
   <text x="50" y="150" fill='#f59e0b' font-size='12'>56 - 23 = 33 books left</text>
 </svg>
 </div>
@@ -69,13 +69,13 @@ SECTIONS = [
 <div class="worked-example">
 <p><strong>Problem:</strong> On Monday, Asha ran 24 laps. On Tuesday, she ran 15 more laps. On Wednesday, she got tired and only ran 10 laps. What is her total?</p>
 <svg viewBox="0 0 600 180" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="50" y="30" fill='currentColor' font-size='13'><strong>Step 1: Monday + Tuesday</strong></text>
+  <text x="50" y="30" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 1: Monday + Tuesday</tspan></text>
   <text x="50" y="50" fill='#4f8ef7' font-size='12'>24 + 15 = 39 laps (first two days)</text>
 
-  <text x="50" y="80" fill='currentColor' font-size='13'><strong>Step 2: Add Wednesday</strong></p>
+  <text x="50" y="80" fill='currentColor' font-size='13'><tspan font-weight='bold'>Step 2: Add Wednesday</tspan></p>
   <text x="50" y="100" fill='#4f8ef7' font-size='12'>39 + 10 = 49 laps (all three days)</text>
 
-  <text x="50" y="130" fill='currentColor' font-size='13'><strong>Or subtract instead:</strong></text>
+  <text x="50" y="130" fill='currentColor' font-size='13'><tspan font-weight='bold'>Or subtract instead:</tspan></text>
   <text x="50" y="150" fill='#22c55e' font-size='12'>If we said "she ran 50 laps total but lost 10, how many left?"</text>
   <text x="50" y="170" fill='#22c55e' font-size='12'>we'd do 50 - 10 = 40</text>
 </svg>

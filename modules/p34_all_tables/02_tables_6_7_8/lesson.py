@@ -108,7 +108,7 @@ SECTIONS = [
 <h3>The \\(7 \\times 7 = 49\\) Square</h3>
 <div class="diagram-container">
   <svg width="300" height="300" viewBox="0 0 300 300">
-    <text x="150" y="25" text-anchor='middle' font-size='14' font-weight='bold'>7 × 7: A Perfect Square</text>
+    <text x="150" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>7 × 7: A Perfect Square</text>
 
     <g id="square-7x7">
       <rect x="50" y="50" width="200" height="200" fill='none' stroke='#4169E1' stroke-width="3"/>
@@ -130,7 +130,7 @@ SECTIONS = [
       </g>
     </g>
 
-    <text x="150" y="280" text-anchor='middle' font-size='18' font-weight='bold'>49 small squares</text>
+    <text x="150" y="280" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>49 small squares</text>
   </svg>
   <div class="diagram-caption">\\(7 \\times 7 = 49\\) is 7 groups of 7</div>
 </div>
@@ -211,46 +211,46 @@ if (ctx8) {
 
 <div class="diagram-container">
   <svg width="550" height="300" viewBox="0 0 550 300">
-    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold'>The Even Times Tables Are Connected</text>
+    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>The Even Times Tables Are Connected</text>
 
     <!-- Boxes -->
     <rect x="20" y="60" width="100" height="60" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="5"/>
-    <text x="70" y="85" text-anchor='middle' font-size='14' font-weight='bold'>2 Times</text>
-    <text x="70" y="105" text-anchor='middle' font-size='12'>2, 4, 6, 8...</text>
+    <text x="70" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>2 Times</text>
+    <text x="70" y="105" text-anchor='middle' font-size='12' fill='currentColor'>2, 4, 6, 8...</text>
 
     <rect x="140" y="60" width="100" height="60" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="5"/>
-    <text x="190" y="85" text-anchor='middle' font-size='14' font-weight='bold'>4 Times</text>
-    <text x="190" y="105" text-anchor='middle' font-size='12'>4, 8, 12, 16...</text>
+    <text x="190" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>4 Times</text>
+    <text x="190" y="105" text-anchor='middle' font-size='12' fill='currentColor'>4, 8, 12, 16...</text>
 
     <rect x="260" y="60" width="100" height="60" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="5"/>
-    <text x="310" y="85" text-anchor='middle' font-size='14' font-weight='bold'>8 Times</text>
-    <text x="310" y="105" text-anchor='middle' font-size='12'>8, 16, 24, 32...</text>
+    <text x="310" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>8 Times</text>
+    <text x="310" y="105" text-anchor='middle' font-size='12' fill='currentColor'>8, 16, 24, 32...</text>
 
     <rect x="380" y="60" width="100" height="60" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="5"/>
-    <text x="430" y="85" text-anchor='middle' font-size='14' font-weight='bold'>16 Times</text>
-    <text x="430" y="105" text-anchor='middle' font-size='12'>16, 32, 48, 64...</text>
+    <text x="430" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>16 Times</text>
+    <text x="430" y="105" text-anchor='middle' font-size='12' fill='currentColor'>16, 32, 48, 64...</text>
 
     <!-- Arrows -->
     <path d="M 120 90 L 140 90" stroke='#8b949e' stroke-width="3" fill='none' marker-end="url(#arrowhead)"/>
-    <text x="130" y="80" text-anchor='middle' font-size='11'>×2</text>
+    <text x="130" y="80" text-anchor='middle' font-size='11' fill='currentColor'>×2</text>
 
     <path d="M 240 90 L 260 90" stroke='#8b949e' stroke-width="3" fill='none' marker-end="url(#arrowhead)"/>
-    <text x="250" y="80" text-anchor='middle' font-size='11'>×2</text>
+    <text x="250" y="80" text-anchor='middle' font-size='11' fill='currentColor'>×2</text>
 
     <path d="M 360 90 L 380 90" stroke='#8b949e' stroke-width="3" fill='none' marker-end="url(#arrowhead)"/>
-    <text x="370" y="80" text-anchor='middle' font-size='11'>×2</text>
+    <text x="370" y="80" text-anchor='middle' font-size='11' fill='currentColor'>×2</text>
 
     <!-- 3 and 6 -->
     <rect x="20" y="180" width="100" height="60" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="5"/>
-    <text x="70" y="205" text-anchor='middle' font-size='14' font-weight='bold'>3 Times</text>
-    <text x="70" y="225" text-anchor='middle' font-size='12'>3, 6, 9, 12...</text>
+    <text x="70" y="205" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>3 Times</text>
+    <text x="70" y="225" text-anchor='middle' font-size='12' fill='currentColor'>3, 6, 9, 12...</text>
 
     <rect x="140" y="180" width="100" height="60" fill='#06b6d480' stroke='#06b6d4' stroke-width="2" rx="5"/>
-    <text x="190" y="205" text-anchor='middle' font-size='14' font-weight='bold'>6 Times</text>
-    <text x="190" y="225" text-anchor='middle' font-size='12'>6, 12, 18, 24...</text>
+    <text x="190" y="205" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6 Times</text>
+    <text x="190" y="225" text-anchor='middle' font-size='12' fill='currentColor'>6, 12, 18, 24...</text>
 
     <path d="M 120 210 L 140 210" stroke='#8b949e' stroke-width="3" fill='none' marker-end="url(#arrowhead)"/>
-    <text x="130" y="200" text-anchor='middle' font-size='11'>×2</text>
+    <text x="130" y="200" text-anchor='middle' font-size='11' fill='currentColor'>×2</text>
 
     <!-- Arrow marker definition -->
     <defs>

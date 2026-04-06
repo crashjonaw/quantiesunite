@@ -26,7 +26,7 @@ SECTIONS = [
   <li>So side \\(a\\) is opposite angle \\(A\\), side \\(b\\) is opposite angle \\(B\\), etc.</li>
 </ul>
 
-<svg viewBox="0 0 300 250" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:300px; margin:20px 0;">
+<svg viewBox="-10 0 320 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:320px; margin:20px 0;">
   <defs>
     </defs>
 
@@ -221,7 +221,7 @@ SECTIONS = [
   </defs>
 
   <!-- Main question -->
-  <rect x="125" y="10" width="150" height="50" class="decision-box"/>
+  <rect x="125" y="10" width="150" height="50" class="decision-box" rx='4'/>
   <text x="200" y="35" class="decision-text" text-anchor='middle'>What do you know?</text>
 
   <!-- First level branches -->
@@ -231,11 +231,11 @@ SECTIONS = [
   <text x="260" y="85" class="label">Two sides</text>
 
   <!-- Left branch: Two angles -->
-  <rect x="50" y="110" width="100" height="50" class="decision-box"/>
+  <rect x="50" y="110" width="100" height="50" class="decision-box" rx='4'/>
   <text x="100" y="135" class="decision-text" text-anchor='middle'>Plus one side?</text>
 
   <!-- Right branch: Two sides -->
-  <rect x="250" y="110" width="100" height="50" class="decision-box"/>
+  <rect x="250" y="110" width="100" height="50" class="decision-box" rx='4'/>
   <text x="300" y="135" class="decision-text" text-anchor='middle'>Plus angle</text>
   <text x="300" y="150" class="decision-text" text-anchor='middle'>between them?</text>
 
@@ -250,13 +250,13 @@ SECTIONS = [
   <text x="330" y="190" class="label">No: SSA</text>
 
   <!-- Answers -->
-  <rect x="30" y="210" width="100" height="40" class="answer-box"/>
+  <rect x="30" y="210" width="100" height="40" class="answer-box" rx='4'/>
   <text x="80" y="235" class="decision-text" text-anchor='middle' font-weight='bold'>Law of Sines</text>
 
-  <rect x="210" y="210" width="100" height="40" class="answer-box"/>
+  <rect x="210" y="210" width="100" height="40" class="answer-box" rx='4'/>
   <text x="260" y="235" class="decision-text" text-anchor='middle' font-weight='bold'>Law of Cosines</text>
 
-  <rect x="310" y="210" width="80" height="40" class="answer-box"/>
+  <rect x="310" y="210" width="80" height="40" class="answer-box" rx='4'/>
   <text x="350" y="235" class="decision-text" text-anchor='middle' font-weight='bold'>Law of Sines</text>
 </svg>
 

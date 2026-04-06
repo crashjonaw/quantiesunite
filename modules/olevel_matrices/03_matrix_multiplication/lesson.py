@@ -77,7 +77,7 @@ SECTIONS = [
             <svg viewBox="0 0 500 250" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Matrix A -->
                 <text x="20" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
-                <rect x="50" y="10" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+                <rect x="50" y="10" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
                 <text x="65" y="35" font-size='13' fill='#4f8ef7'>1</text>
                 <text x="95" y="35" font-size='13' fill='#4f8ef7'>2</text>
                 <text x="125" y="35" font-size='13' fill='#4f8ef7'>3</text>
@@ -91,7 +91,7 @@ SECTIONS = [
 
                 <!-- Matrix B -->
                 <text x="160" y="20" font-size='12' fill='currentColor' font-weight='bold'>B =</text>
-                <rect x="195" y="10" width="60" height="80" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+                <rect x="195" y="10" width="60" height="80" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
                 <text x="210" y="35" font-size='13' fill='#4f8ef7'>2</text>
                 <text x="240" y="35" font-size='13' fill='#4f8ef7'>1</text>
                 <text x="210" y="55" font-size='13' fill='currentColor'>0</text>
@@ -101,11 +101,11 @@ SECTIONS = [
                 <text x="225" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
 
                 <!-- Arrow -->
-                <path d="M 280 50 L 320 50" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead)"/>
+                <path d="M 280 50 L 320 50" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead)"/>
 
                 <!-- Result -->
                 <text x="335" y="20" font-size='12' fill='currentColor' font-weight='bold'>AB =</text>
-                <rect x="375" y="10" width="60" height="80" fill='none' stroke='#2dd4bf' stroke-width="2"/>
+                <rect x="375" y="10" width="60" height="80" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
                 <text x="390" y="35" font-size='13' fill='#2dd4bf'>?</text>
                 <text x="420" y="35" font-size='13' fill='#2dd4bf'>?</text>
                 <text x="390" y="55" font-size='13' fill='currentColor'>?</text>
@@ -116,10 +116,10 @@ SECTIONS = [
 
                 <!-- Example calculation -->
                 <text x="20" y="150" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,1) = Row 1 of A · Column 1 of B</text>
-                <text x="20" y="170" font-size='12' fill='currentColor' font-family='monospace'>(1 × 2) + (2 × 0) + (3 × 4) = 2 + 0 + 12 = <strong style="color: #2dd4bf;">14</strong></text>
+                <text x="20" y="170" font-size='12' fill='currentColor' font-family='monospace'>(1 × 2) + (2 × 0) + (3 × 4) = 2 + 0 + 12 = <tspan font-weight='bold' fill='#2dd4bf'>14</tspan></text>
 
                 <text x="20" y="200" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,2) = Row 1 of A · Column 2 of B</text>
-                <text x="20" y="220" font-size='12' fill='currentColor' font-family='monospace'>(1 × 1) + (2 × 3) + (3 × 2) = 1 + 6 + 6 = <strong style="color: #2dd4bf;">13</strong></text>
+                <text x="20" y="220" font-size='12' fill='currentColor' font-family='monospace'>(1 × 1) + (2 × 3) + (3 × 2) = 1 + 6 + 6 = <tspan font-weight='bold' fill='#2dd4bf'>13</tspan></text>
 
                 <defs>
                     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">

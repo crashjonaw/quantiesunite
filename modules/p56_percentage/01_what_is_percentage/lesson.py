@@ -179,12 +179,12 @@ SECTIONS = [
       <text x="250" y="30" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>Comparing Different Amounts</text>
 
       <text x="50" y="60" font-size='12' fill='currentColor'>School A: 42 out of 56</text>
-      <rect x="50" y="70" width="150" height="30" fill='none' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="70" width="150" height="30" fill='none' stroke='#30363d' stroke-width="2" rx="4"/>
       <rect x="50" y="70" width="112.5" height="30" fill='#4169E1' opacity='0.6'/>
       <text x="125" y="92" font-size='11' text-anchor='middle' fill='currentColor'>75%</text>
 
       <text x="50" y="130" font-size='12' fill='currentColor'>School B: 105 out of 140</text>
-      <rect x="50" y="140" width="200" height="30" fill='none' stroke='#30363d' stroke-width="2"/>
+      <rect x="50" y="140" width="200" height="30" fill='none' stroke='#30363d' stroke-width="2" rx="4"/>
       <rect x="50" y="140" width="150" height="30" fill='#4169E1' opacity='0.6'/>
       <text x="150" y="162" font-size='11' text-anchor='middle' fill='currentColor'>75%</text>
 

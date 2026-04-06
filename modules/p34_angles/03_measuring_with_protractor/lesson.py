@@ -32,9 +32,9 @@ SECTIONS = [
   <!-- Arc showing measurement -->
   <path d="M 260 200 A 60 60 0 0 0 241 124" stroke='#22c55e' stroke-width="2" fill='none'/>
   <!-- Labels -->
-  <text x="75" y="225" fill='#24292f' font-size='12' font-weight='bold'>0°</text>
-  <text x="320" y="225" fill='#24292f' font-size='12' font-weight='bold'>0°</text>
-  <text x="200" y="100" fill='#24292f' font-size='12' font-weight='bold'>180°</text>
+  <text x="75" y="225" fill='currentColor' font-size='12' font-weight='bold'>0°</text>
+  <text x="320" y="225" fill='currentColor' font-size='12' font-weight='bold'>0°</text>
+  <text x="200" y="100" fill='currentColor' font-size='12' font-weight='bold'>180°</text>
   <text x="200" y="220" fill='#ff6b6b' font-size='12' text-anchor='middle' font-weight='bold'>Center point</text>
   <text x="270" y="90" fill='#22c55e' font-size='11' font-weight='bold'>~50°</text>
 </svg>
@@ -139,7 +139,7 @@ SECTIONS = [
     <line x1="0" y1="0" x2="50" y2="0" stroke='#8b949e' stroke-width="2"/>
     <line x1="0" y1="0" x2="0" y2="-50" stroke='#4f8ef7' stroke-width="2"/>
     <rect x="0" y="-25" width="20" height="20" fill='none' stroke='#22c55e' stroke-width="1"/>
-    <text x="30" y="-10" fill='#24292f' font-size='11'>Reference: 90°</text>
+    <text x="30" y="-10" fill='currentColor' font-size='11'>Reference: 90°</text>
   </g>
 
   <!-- Acute angle example -->
@@ -156,7 +156,7 @@ SECTIONS = [
     <text x="0" y="-20" fill='#ff6b6b' font-size='12'>~130°</text>
   </g>
 
-  <text x="150" y="230" fill='#24292f' font-size='12' text-anchor='middle'>Compare any angle to the 90° reference</text>
+  <text x="150" y="230" fill='currentColor' font-size='12' text-anchor='middle'>Compare any angle to the 90° reference</text>
 </svg>
 
 <div class='success-box'>

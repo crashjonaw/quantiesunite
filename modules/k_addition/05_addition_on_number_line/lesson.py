@@ -82,7 +82,7 @@ SECTIONS = [
       <text x="270" y="70" fill='currentColor'>5</text>
     </g>
     <circle cx="170" cy="50" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-    <text x="170" y="25" text-anchor='middle' font-size='12' font-weight='bold'>Start here: 3</text>
+    <text x="170" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Start here: 3</text>
   </svg>
 
   <p style="font-size: 16px; margin-top: 15px; margin-bottom: 15px;"><strong>Step 2: Jump forward 2 steps (because we're adding 2).</strong></p>

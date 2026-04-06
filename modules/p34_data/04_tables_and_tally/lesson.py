@@ -153,27 +153,27 @@ SECTIONS = [
 
 <svg width="400" height="200" viewBox="0 0 400 200">
   <!-- Title -->
-  <text x="200" y="25" font-size='16' font-weight='bold' text-anchor='middle'>How to Write Tally Marks</text>
+  <text x="200" y="25" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>How to Write Tally Marks</text>
 
   <!-- Single tally -->
-  <text x="50" y="55" font-size='12' font-weight='bold'>One:</text>
+  <text x="50" y="55" font-size='12' font-weight='bold' fill='currentColor'>One:</text>
   <line x1="40" y1="75" x2="40" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <text x="40" y="135" font-size='14' text-anchor='middle'>|</text>
+  <text x="40" y="135" font-size='14' text-anchor='middle' fill='currentColor'>|</text>
 
   <!-- Two tallies -->
-  <text x="150" y="55" font-size='12' font-weight='bold'>Two:</text>
+  <text x="150" y="55" font-size='12' font-weight='bold' fill='currentColor'>Two:</text>
   <line x1="130" y1="75" x2="130" y2="110" stroke='#8b949e' stroke-width="3"/>
   <line x1="145" y1="75" x2="145" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <text x="137" y="135" font-size='14' text-anchor='middle'>||</text>
+  <text x="137" y="135" font-size='14' text-anchor='middle' fill='currentColor'>||</text>
 
   <!-- Five tallies (with diagonal) -->
-  <text x="290" y="55" font-size='12' font-weight='bold'>Five:</text>
+  <text x="290" y="55" font-size='12' font-weight='bold' fill='currentColor'>Five:</text>
   <line x1="260" y1="75" x2="260" y2="110" stroke='#8b949e' stroke-width="3"/>
   <line x1="275" y1="75" x2="275" y2="110" stroke='#8b949e' stroke-width="3"/>
   <line x1="290" y1="75" x2="290" y2="110" stroke='#8b949e' stroke-width="3"/>
   <line x1="305" y1="75" x2="305" y2="110" stroke='#8b949e' stroke-width="3"/>
   <line x1="265" y1="80" x2="305" y2="105" stroke='#8b949e' stroke-width="3"/>
-  <text x="285" y="135" font-size='14' text-anchor='middle'>||||/</text>
+  <text x="285" y="135" font-size='14' text-anchor='middle' fill='currentColor'>||||/</text>
 </svg>
 
 <h3>Rules for Tally Marks</h3>
