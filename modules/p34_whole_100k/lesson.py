@@ -3,56 +3,68 @@ SECTIONS = [
         "title": "What is a Number? Building from One",
         "body": """
 <h3>The Concept of Counting</h3>
-<p>Before we can talk about big numbers, we need to understand what a <strong>number</strong> is. A number represents a <strong>quantity</strong> — how many objects we have.</p>
+<p>Before we can talk about big numbers, we need to understand what a <strong>number</strong> is. A number represents a <strong>quantity</strong> -- how many objects we have.</p>
 
 <p>Imagine you have apples. If you have one apple, we write <strong>1</strong>. If you add another apple, you have two apples, which we write <strong>2</strong>. Each time you add one more apple, the number increases by one.</p>
 
-<div class="visual-grid" style="margin: 20px 0; text-align: center;">
-  <strong>1 apple:</strong>
-  <svg width="80" height="80" style="display: inline-block; margin: 0 10px;">
-    <circle cx="40" cy="40" r="25" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+<div class="diagram-container">
+  <svg width="480" height="120" viewBox="-15 -15 510 150">
+    <rect x="0" y="0" width="480" height="120" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="240" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">Counting Apples</text>
+
+    <text x="55" y="55" text-anchor="middle" font-size="12" fill="currentColor">1 apple</text>
+    <circle cx="55" cy="78" r="18" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+
+    <text x="185" y="55" text-anchor="middle" font-size="12" fill="currentColor">2 apples</text>
+    <circle cx="165" cy="78" r="18" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="205" cy="78" r="18" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+
+    <text x="365" y="55" text-anchor="middle" font-size="12" fill="currentColor">3 apples</text>
+    <circle cx="325" cy="78" r="18" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="365" cy="78" r="18" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="405" cy="78" r="18" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
   </svg>
-  <strong>2 apples:</strong>
-  <svg width="120" height="80" style="display: inline-block; margin: 0 10px;">
-    <circle cx="30" cy="40" r="25" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <circle cx="90" cy="40" r="25" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-  </svg>
-  <strong>3 apples:</strong>
-  <svg width="160" height="80" style="display: inline-block; margin: 0 10px;">
-    <circle cx="25" cy="40" r="25" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <circle cx="80" cy="40" r="25" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <circle cx="135" cy="40" r="25" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-  </svg>
+  <div class="diagram-caption">Each time we add one more, the count increases by one</div>
 </div>
 
 <h3>The Number Line</h3>
 <p>All whole numbers can be arranged on a <strong>number line</strong> that goes from left to right. Each tick mark represents one more unit.</p>
 
 <div class="diagram-container">
-  <svg width="600" height="80" viewBox="0 0 600 80">
-    <line x1="20" y1="40" x2="580" y2="40" stroke='#8b949e' stroke-width="2"/>
+  <svg width="580" height="90" viewBox="-15 -15 610 120">
+    <rect x="0" y="0" width="580" height="90" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <line x1="20" y1="40" x2="560" y2="40" stroke="#8b949e" stroke-width="2"/>
+    <polygon points="555,35 565,40 555,45" fill="#8b949e"/>
+
     <circle cx="20" cy="40" r="4" fill="#4169E1"/>
-    <text x="20" y="65" text-anchor="middle" font-size="14" fill='currentColor'>0</text>
-    <line x1="70" y1="35" x2="70" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="70" y="65" text-anchor="middle" font-size="14" fill='currentColor'>1</text>
-    <line x1="120" y1="35" x2="120" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="120" y="65" text-anchor="middle" font-size="14" fill='currentColor'>2</text>
-    <line x1="170" y1="35" x2="170" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="170" y="65" text-anchor="middle" font-size="14" fill='currentColor'>3</text>
-    <line x1="220" y1="35" x2="220" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="220" y="65" text-anchor="middle" font-size="14" fill='currentColor'>4</text>
-    <line x1="270" y1="35" x2="270" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="270" y="65" text-anchor="middle" font-size="14" fill='currentColor'>5</text>
-    <line x1="320" y1="35" x2="320" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="320" y="65" text-anchor="middle" font-size="14" fill='currentColor'>6</text>
-    <line x1="370" y1="35" x2="370" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="370" y="65" text-anchor="middle" font-size="14" fill='currentColor'>7</text>
-    <line x1="420" y1="35" x2="420" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="420" y="65" text-anchor="middle" font-size="14" fill='currentColor'>8</text>
-    <line x1="470" y1="35" x2="470" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="470" y="65" text-anchor="middle" font-size="14" fill='currentColor'>9</text>
-    <line x1="520" y1="35" x2="520" y2="45" stroke='#8b949e' stroke-width="2"/>
-    <text x="520" y="65" text-anchor="middle" font-size="14" fill='currentColor'>10</text>
+    <text x="20" y="65" text-anchor="middle" font-size="13" fill="currentColor">0</text>
+
+    <line x1="74" y1="33" x2="74" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="74" y="65" text-anchor="middle" font-size="13" fill="currentColor">1</text>
+
+    <line x1="128" y1="33" x2="128" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="128" y="65" text-anchor="middle" font-size="13" fill="currentColor">2</text>
+
+    <line x1="182" y1="33" x2="182" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="182" y="65" text-anchor="middle" font-size="13" fill="currentColor">3</text>
+
+    <line x1="236" y1="33" x2="236" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="236" y="65" text-anchor="middle" font-size="13" fill="currentColor">4</text>
+
+    <line x1="290" y1="33" x2="290" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="290" y="65" text-anchor="middle" font-size="13" fill="currentColor">5</text>
+
+    <line x1="344" y1="33" x2="344" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="344" y="65" text-anchor="middle" font-size="13" fill="currentColor">6</text>
+
+    <line x1="398" y1="33" x2="398" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="398" y="65" text-anchor="middle" font-size="13" fill="currentColor">7</text>
+
+    <line x1="452" y1="33" x2="452" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="452" y="65" text-anchor="middle" font-size="13" fill="currentColor">8</text>
+
+    <line x1="506" y1="33" x2="506" y2="47" stroke="#8b949e" stroke-width="2"/>
+    <text x="506" y="65" text-anchor="middle" font-size="13" fill="currentColor">9</text>
   </svg>
   <div class="diagram-caption">The number line starts at 0 and continues forever</div>
 </div>
@@ -72,18 +84,24 @@ SECTIONS = [
 <p>Let's look at the number <strong>347</strong>:</p>
 
 <div class="diagram-container">
-  <svg width="500" height="200" viewBox="0 0 500 200">
-    <rect x="20" y="40" width="120" height="80" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-    <text x="80" y="110" text-anchor="middle" font-size="36" font-weight="bold" fill='currentColor'>3</text>
-    <text x="80" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Hundreds place</text>
+  <svg width="520" height="200" viewBox="-15 -15 550 230">
+    <rect x="0" y="0" width="520" height="200" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="260" y="30" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">Place Value of 347</text>
 
-    <rect x="190" y="40" width="120" height="80" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
-    <text x="250" y="110" text-anchor="middle" font-size="36" font-weight="bold" fill='currentColor'>4</text>
-    <text x="250" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Tens place</text>
+    <rect x="40" y="55" width="120" height="80" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="100" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="currentColor">3</text>
+    <text x="100" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Hundreds</text>
+    <text x="100" y="172" text-anchor="middle" font-size="11" fill="#8b949e">= 300</text>
 
-    <rect x="360" y="40" width="120" height="80" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <text x="420" y="110" text-anchor="middle" font-size="36" font-weight="bold" fill='currentColor'>7</text>
-    <text x="420" y="150" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Ones place</text>
+    <rect x="200" y="55" width="120" height="80" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+    <text x="260" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="currentColor">4</text>
+    <text x="260" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Tens</text>
+    <text x="260" y="172" text-anchor="middle" font-size="11" fill="#8b949e">= 40</text>
+
+    <rect x="360" y="55" width="120" height="80" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <text x="420" y="105" text-anchor="middle" font-size="36" font-weight="bold" fill="currentColor">7</text>
+    <text x="420" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Ones</text>
+    <text x="420" y="172" text-anchor="middle" font-size="11" fill="#8b949e">= 7</text>
   </svg>
   <div class="diagram-caption">In 347, the 3 is in the hundreds place, the 4 is in the tens place, and the 7 is in the ones place</div>
 </div>
@@ -94,38 +112,41 @@ SECTIONS = [
 <h3>The Place Value System</h3>
 <p>Each place to the left is worth 10 times more than the place to its right.</p>
 
-<table style="margin: 20px auto; border-collapse: collapse; width: 100%; max-width: 600px;">
-  <tr style="background: #f0f0f0;">
-    <th style="border: 1px solid #333; padding: 10px;">Place Name</th>
-    <th style="border: 1px solid #333; padding: 10px;">Value</th>
-    <th style="border: 1px solid #333; padding: 10px;">Example</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #333; padding: 10px;">Ones</td>
-    <td style="border: 1px solid #333; padding: 10px;">1</td>
-    <td style="border: 1px solid #333; padding: 10px;">5 ones = 5</td>
-  </tr>
-  <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">Tens</td>
-    <td style="border: 1px solid #333; padding: 10px;">10</td>
-    <td style="border: 1px solid #333; padding: 10px;">3 tens = 30</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #333; padding: 10px;">Hundreds</td>
-    <td style="border: 1px solid #333; padding: 10px;">100</td>
-    <td style="border: 1px solid #333; padding: 10px;">2 hundreds = 200</td>
-  </tr>
-  <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">Thousands</td>
-    <td style="border: 1px solid #333; padding: 10px;">1,000</td>
-    <td style="border: 1px solid #333; padding: 10px;">7 thousands = 7,000</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid #333; padding: 10px;">Ten Thousands</td>
-    <td style="border: 1px solid #333; padding: 10px;">10,000</td>
-    <td style="border: 1px solid #333; padding: 10px;">4 ten thousands = 40,000</td>
-  </tr>
-</table>
+<div class="diagram-container">
+  <svg width="580" height="160" viewBox="-15 -15 610 190">
+    <rect x="0" y="0" width="580" height="160" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="290" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">Each Place Is 10 Times More</text>
+
+    <rect x="20" y="50" width="100" height="50" rx="4" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="70" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Ten Thous.</text>
+    <text x="70" y="120" text-anchor="middle" font-size="12" fill="currentColor">10,000</text>
+
+    <text x="135" y="80" text-anchor="middle" font-size="14" fill="#8b949e">x10</text>
+
+    <rect x="150" y="50" width="100" height="50" rx="4" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
+    <text x="200" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Thousands</text>
+    <text x="200" y="120" text-anchor="middle" font-size="12" fill="currentColor">1,000</text>
+
+    <text x="265" y="80" text-anchor="middle" font-size="14" fill="#8b949e">x10</text>
+
+    <rect x="280" y="50" width="100" height="50" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="330" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Hundreds</text>
+    <text x="330" y="120" text-anchor="middle" font-size="12" fill="currentColor">100</text>
+
+    <text x="395" y="80" text-anchor="middle" font-size="14" fill="#8b949e">x10</text>
+
+    <rect x="410" y="50" width="70" height="50" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+    <text x="445" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Tens</text>
+    <text x="445" y="120" text-anchor="middle" font-size="12" fill="currentColor">10</text>
+
+    <text x="495" y="80" text-anchor="middle" font-size="14" fill="#8b949e">x10</text>
+
+    <rect x="510" y="50" width="55" height="50" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <text x="537" y="82" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Ones</text>
+    <text x="537" y="120" text-anchor="middle" font-size="12" fill="currentColor">1</text>
+  </svg>
+  <div class="diagram-caption">Moving left, each place value is 10 times greater</div>
+</div>
 
 <div class="concept-box">
 <h4>Key Concept: Place Value Position</h4>
@@ -160,30 +181,38 @@ SECTIONS = [
 <p>We use commas to separate every three digits, starting from the right. This makes numbers easier to read:</p>
 
 <div class="diagram-container">
-  <svg width="550" height="150" viewBox="0 0 550 150">
-    <text x="275" y="40" text-anchor="middle" font-size="18" font-weight="bold" fill='currentColor'>Number: 92,356</text>
+  <svg width="560" height="180" viewBox="-15 -15 590 210">
+    <rect x="0" y="0" width="560" height="180" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="280" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">Breaking Down 92,356</text>
 
-    <line x1="50" y1="80" x2="50" y2="130" stroke="#4169E1" stroke-width="3"/>
-    <text x="50" y="65" text-anchor="middle" font-size="14" fill='currentColor'>9</text>
-    <text x="50" y="145" text-anchor="middle" font-size="12" fill='currentColor'>ten thousands</text>
+    <rect x="30" y="50" width="90" height="70" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="75" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="currentColor">9</text>
+    <text x="75" y="100" text-anchor="middle" font-size="10" fill="currentColor">ten thousands</text>
+    <text x="75" y="140" text-anchor="middle" font-size="11" fill="#8b949e">= 90,000</text>
 
-    <line x1="90" y1="80" x2="90" y2="130" stroke="#22c55e" stroke-width="3"/>
-    <text x="90" y="65" text-anchor="middle" font-size="14" fill='currentColor'>2</text>
-    <text x="90" y="145" text-anchor="middle" font-size="12" fill='currentColor'>thousands</text>
+    <rect x="135" y="50" width="90" height="70" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+    <text x="180" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="currentColor">2</text>
+    <text x="180" y="100" text-anchor="middle" font-size="10" fill="currentColor">thousands</text>
+    <text x="180" y="140" text-anchor="middle" font-size="11" fill="#8b949e">= 2,000</text>
 
-    <text x="120" y="90" font-size="20" font-weight="bold" fill='currentColor'>,</text>
+    <text x="237" y="90" text-anchor="middle" font-size="22" font-weight="bold" fill="#f59e0b">,</text>
 
-    <line x1="150" y1="80" x2="150" y2="130" stroke="#f59e0b" stroke-width="3"/>
-    <text x="150" y="65" text-anchor="middle" font-size="14" fill='currentColor'>3</text>
-    <text x="150" y="145" text-anchor="middle" font-size="12" fill='currentColor'>hundreds</text>
+    <rect x="250" y="50" width="90" height="70" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <text x="295" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="currentColor">3</text>
+    <text x="295" y="100" text-anchor="middle" font-size="10" fill="currentColor">hundreds</text>
+    <text x="295" y="140" text-anchor="middle" font-size="11" fill="#8b949e">= 300</text>
 
-    <line x1="190" y1="80" x2="190" y2="130" stroke="#ef4444" stroke-width="3"/>
-    <text x="190" y="65" text-anchor="middle" font-size="14" fill='currentColor'>5</text>
-    <text x="190" y="145" text-anchor="middle" font-size="12" fill='currentColor'>tens</text>
+    <rect x="355" y="50" width="90" height="70" rx="4" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
+    <text x="400" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="currentColor">5</text>
+    <text x="400" y="100" text-anchor="middle" font-size="10" fill="currentColor">tens</text>
+    <text x="400" y="140" text-anchor="middle" font-size="11" fill="#8b949e">= 50</text>
 
-    <line x1="230" y1="80" x2="230" y2="130" stroke="#8b5cf6" stroke-width="3"/>
-    <text x="230" y="65" text-anchor="middle" font-size="14" fill='currentColor'>6</text>
-    <text x="230" y="145" text-anchor="middle" font-size="12" fill='currentColor'>ones</text>
+    <rect x="460" y="50" width="90" height="70" rx="4" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="505" y="80" text-anchor="middle" font-size="28" font-weight="bold" fill="currentColor">6</text>
+    <text x="505" y="100" text-anchor="middle" font-size="10" fill="currentColor">ones</text>
+    <text x="505" y="140" text-anchor="middle" font-size="11" fill="#8b949e">= 6</text>
+
+    <text x="280" y="172" text-anchor="middle" font-size="12" fill="currentColor">92,356 = 90,000 + 2,000 + 300 + 50 + 6</text>
   </svg>
   <div class="diagram-caption">The comma separates thousands from hundreds</div>
 </div>
@@ -247,11 +276,11 @@ SECTIONS = [
 </ul>
 <p><strong>Step 3:</strong> Order the 23,000s by comparing the next digit</p>
 <ul>
-  <li>23,456 and 23,465 → compare hundreds: both have 4</li>
-  <li>Compare tens: 23,456 has 5, and 23,465 has 6 → 23,456 < 23,465</li>
+  <li>23,456 and 23,465: compare hundreds: both have 4</li>
+  <li>Compare tens: 23,456 has 5, and 23,465 has 6, so 23,456 &lt; 23,465</li>
 </ul>
 <p><strong>Final Answer from Least to Greatest:</strong></p>
-<p>2,345 < 23,456 < 23,465 < 32,450 < 32,456</p>
+<p>2,345 &lt; 23,456 &lt; 23,465 &lt; 32,450 &lt; 32,456</p>
 </div>
 
 <div class="concept-box">
@@ -264,32 +293,30 @@ SECTIONS = [
         "title": "Rounding Numbers to the Nearest Ten, Hundred, and Thousand",
         "body": """
 <h3>Why Do We Round?</h3>
-<p>Sometimes we don't need an exact number—we just need to know "about how many?" For example, if a store has 47 apples, we might say "about 50" to make the number easier to work with. This is called <strong>rounding</strong>.</p>
+<p>Sometimes we don't need an exact number -- we just need to know "about how many?" For example, if a store has 47 apples, we might say "about 50" to make the number easier to work with. This is called <strong>rounding</strong>.</p>
 
 <h3>Rounding Using a Number Line</h3>
 <p>The easiest way to understand rounding is to use a number line. We find which "round number" our number is closest to.</p>
 
 <div class="diagram-container">
-  <svg width="600" height="120" viewBox="0 0 600 120">
-    <line x1="20" y1="50" x2="580" y2="50" stroke='#8b949e' stroke-width="2"/>
-    <circle cx="20" cy="50" r="5" fill="#4169E1" stroke="#4169E1" stroke-width="2"/>
-    <text x="20" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>40</text>
+  <svg width="560" height="120" viewBox="-15 -15 590 150">
+    <rect x="0" y="0" width="560" height="120" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="280" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">Where Does 47 Fall on the Number Line?</text>
 
-    <circle cx="140" cy="50" r="5" fill="#cccccc"/>
-    <text x="140" y="75" text-anchor="middle" font-size="12" fill='currentColor'>45</text>
+    <line x1="30" y1="55" x2="530" y2="55" stroke="#8b949e" stroke-width="2"/>
 
-    <circle cx="300" cy="50" r="8" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
-    <text x="300" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>47</text>
-    <text x="300" y="35" text-anchor="middle" font-size="12" fill="#f59e0b">This is our number</text>
+    <line x1="30" y1="48" x2="30" y2="62" stroke="#4169E1" stroke-width="3"/>
+    <text x="30" y="82" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">40</text>
 
-    <circle cx="460" cy="50" r="5" fill="#cccccc"/>
-    <text x="460" y="75" text-anchor="middle" font-size="12" fill='currentColor'>55</text>
+    <line x1="280" y1="48" x2="280" y2="62" stroke="#8b949e" stroke-width="2"/>
+    <text x="280" y="82" text-anchor="middle" font-size="12" fill="#8b949e">45</text>
 
-    <circle cx="580" cy="50" r="5" fill="#22c55e" stroke="#22c55e" stroke-width="2"/>
-    <text x="580" y="75" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>60</text>
+    <line x1="530" y1="48" x2="530" y2="62" stroke="#22c55e" stroke-width="3"/>
+    <text x="530" y="82" text-anchor="middle" font-size="14" font-weight="bold" fill="currentColor">50</text>
 
-    <line x1="20" y1="45" x2="20" y2="55" stroke="#4169E1" stroke-width="2"/>
-    <line x1="580" y1="45" x2="580" y2="55" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="380" cy="55" r="7" fill="#f59e0b" stroke="#f59e0b" stroke-width="2"/>
+    <text x="380" y="105" text-anchor="middle" font-size="13" font-weight="bold" fill="#f59e0b">47</text>
+    <text x="380" y="42" text-anchor="middle" font-size="11" fill="#f59e0b">closer to 50</text>
   </svg>
   <div class="diagram-caption">47 is closer to 50 than to 40, so 47 rounds to 50</div>
 </div>
@@ -330,7 +357,7 @@ SECTIONS = [
 <h4>Example 1: Round 47 to the Nearest Ten</h4>
 <p><strong>Step 1:</strong> The tens place has 4</p>
 <p><strong>Step 2:</strong> The helper digit (ones place) is 7</p>
-<p><strong>Step 3:</strong> Since 7 ≥ 5, we round UP</p>
+<p><strong>Step 3:</strong> Since 7 is 5 or more, we round UP</p>
 <p><strong>Answer:</strong> 47 rounds to <strong>50</strong></p>
 </div>
 
@@ -338,7 +365,7 @@ SECTIONS = [
 <h4>Example 2: Round 23,456 to the Nearest Hundred</h4>
 <p><strong>Step 1:</strong> The hundreds place has 4</p>
 <p><strong>Step 2:</strong> The helper digit (tens place) is 5</p>
-<p><strong>Step 3:</strong> Since 5 ≥ 5, we round UP</p>
+<p><strong>Step 3:</strong> Since 5 is 5 or more, we round UP</p>
 <p><strong>Answer:</strong> 23,456 rounds to <strong>23,500</strong></p>
 </div>
 
@@ -346,7 +373,7 @@ SECTIONS = [
 <h4>Example 3: Round 58,723 to the Nearest Thousand</h4>
 <p><strong>Step 1:</strong> The thousands place has 8</p>
 <p><strong>Step 2:</strong> The helper digit (hundreds place) is 7</p>
-<p><strong>Step 3:</strong> Since 7 ≥ 5, we round UP</p>
+<p><strong>Step 3:</strong> Since 7 is 5 or more, we round UP</p>
 <p><strong>Answer:</strong> 58,723 rounds to <strong>59,000</strong></p>
 </div>
 
@@ -370,29 +397,41 @@ SECTIONS = [
 <p>Notice how the tens digit goes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2... It's a repeating pattern!</p>
 
 <div class="diagram-container">
-  <svg width="650" height="120" viewBox="0 0 650 120">
-    <text x="325" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>Counting by Tens: Look at the Pattern</text>
-    <g id="tens">
-      <rect x="10" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="25" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>0</text>
+  <svg width="560" height="130" viewBox="-15 -15 590 160">
+    <rect x="0" y="0" width="560" height="130" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="280" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">Counting by Tens</text>
 
-      <rect x="50" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="65" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>10</text>
+    <rect x="15" y="50" width="70" height="45" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="50" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">0</text>
 
-      <rect x="90" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="105" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>20</text>
+    <text x="97" y="78" text-anchor="middle" font-size="14" fill="#8b949e">+10</text>
 
-      <rect x="130" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="145" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>30</text>
+    <rect x="110" y="50" width="70" height="45" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="145" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">10</text>
 
-      <rect x="170" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="185" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>40</text>
+    <text x="192" y="78" text-anchor="middle" font-size="14" fill="#8b949e">+10</text>
 
-      <rect x="210" y="50" width="30" height="50" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <text x="225" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>50</text>
-    </g>
+    <rect x="205" y="50" width="70" height="45" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="240" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">20</text>
+
+    <text x="287" y="78" text-anchor="middle" font-size="14" fill="#8b949e">+10</text>
+
+    <rect x="300" y="50" width="70" height="45" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="335" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">30</text>
+
+    <text x="382" y="78" text-anchor="middle" font-size="14" fill="#8b949e">+10</text>
+
+    <rect x="395" y="50" width="70" height="45" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="430" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">40</text>
+
+    <text x="477" y="78" text-anchor="middle" font-size="14" fill="#8b949e">+10</text>
+
+    <rect x="490" y="50" width="70" height="45" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+    <text x="525" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="currentColor">50</text>
+
+    <text x="280" y="120" text-anchor="middle" font-size="12" fill="currentColor">Each number is 10 more than the previous one</text>
   </svg>
-  <div class="diagram-caption">Each number is 10 more than the previous one</div>
+  <div class="diagram-caption">Skip counting by tens creates a simple repeating pattern</div>
 </div>
 
 <h3>Counting by Hundreds</h3>
@@ -423,7 +462,7 @@ SECTIONS = [
 
 <div class="success-box">
 <h4>Remember: The Power of Patterns</h4>
-<p>Skip counting isn't just a fun exercise—it shows us that numbers follow patterns. These patterns make it easier to add, subtract, multiply, and divide.</p>
+<p>Skip counting isn't just a fun exercise -- it shows us that numbers follow patterns. These patterns make it easier to add, subtract, multiply, and divide.</p>
 </div>
 """
     },
@@ -442,22 +481,25 @@ SECTIONS = [
 </ul>
 
 <div class="diagram-container">
-  <svg width="600" height="200" viewBox="0 0 600 200">
-    <text x="300" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>City Population Comparison</text>
+  <svg width="540" height="220" viewBox="-15 -15 570 250">
+    <rect x="0" y="0" width="540" height="220" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="270" y="28" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">City Population Comparison</text>
 
-    <rect x="50" y="50" width="150" height="120" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-    <text x="125" y="120" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Small Town</text>
-    <text x="125" y="145" text-anchor="middle" font-size="12" fill='currentColor'>12,000 people</text>
+    <rect x="40" y="100" width="130" height="80" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <text x="105" y="145" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Small Town</text>
+    <text x="105" y="165" text-anchor="middle" font-size="12" fill="currentColor">12,000</text>
 
-    <rect x="250" y="30" width="150" height="140" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
-    <text x="325" y="110" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Medium City</text>
-    <text x="325" y="135" text-anchor="middle" font-size="12" fill='currentColor'>45,000 people</text>
+    <rect x="205" y="65" width="130" height="115" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+    <text x="270" y="128" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Medium City</text>
+    <text x="270" y="148" text-anchor="middle" font-size="12" fill="currentColor">45,000</text>
 
-    <rect x="450" y="10" width="150" height="160" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-    <text x="525" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Large City</text>
-    <text x="525" y="125" text-anchor="middle" font-size="12" fill='currentColor'>87,000 people</text>
+    <rect x="370" y="42" width="130" height="138" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+    <text x="435" y="118" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor">Large City</text>
+    <text x="435" y="138" text-anchor="middle" font-size="12" fill="currentColor">87,000</text>
+
+    <text x="270" y="208" text-anchor="middle" font-size="12" fill="currentColor">Taller bars represent larger populations</text>
   </svg>
-  <div class="diagram-caption">Taller bars represent larger populations</div>
+  <div class="diagram-caption">Comparing populations helps us understand the scale of large numbers</div>
 </div>
 
 <h3>Example 2: Money and Savings</h3>
@@ -493,7 +535,7 @@ SECTIONS = [
 
 <div class="success-box">
 <h4>Remember: Practice Reading Large Numbers Everywhere</h4>
-<p>Start noticing large numbers in your world—on signs, in news stories, on billboards, in sports. This real-world practice makes learning numbers meaningful and fun!</p>
+<p>Start noticing large numbers in your world -- on signs, in news stories, on billboards, in sports. This real-world practice makes learning numbers meaningful and fun!</p>
 </div>
 """
     }

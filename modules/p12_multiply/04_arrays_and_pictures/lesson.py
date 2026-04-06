@@ -13,39 +13,36 @@ SECTIONS = [
     {
         "title": "Understanding Arrays: Rows × Columns",
         "body": """<p>Look at this array of dots:</p>
-<svg viewBox="0 0 500 280" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>3 Rows × 4 Columns = 12 Dots</text>
-  <!-- Grid of dots -->
+<svg viewBox="0 0 470 270" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto;">
+  <rect x="0" y="0" width="470" height="270" rx="4" fill="rgba(0,0,0,0.2)"/>
+  <text x="235" y="30" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>3 Rows × 4 Columns = 12 Dots</text>
   <!-- Row 1 -->
-  <circle cx="80" cy="70" r="10" fill='#4f8ef7'/>
-  <circle cx="140" cy="70" r="10" fill='#4f8ef7'/>
-  <circle cx="200" cy="70" r="10" fill='#4f8ef7'/>
-  <circle cx="260" cy="70" r="10" fill='#4f8ef7'/>
+  <circle cx="110" cy="75" r="10" fill='#4f8ef7'/>
+  <circle cx="170" cy="75" r="10" fill='#4f8ef7'/>
+  <circle cx="230" cy="75" r="10" fill='#4f8ef7'/>
+  <circle cx="290" cy="75" r="10" fill='#4f8ef7'/>
   <!-- Row 2 -->
-  <circle cx="80" cy="130" r="10" fill='#4f8ef7'/>
-  <circle cx="140" cy="130" r="10" fill='#4f8ef7'/>
-  <circle cx="200" cy="130" r="10" fill='#4f8ef7'/>
-  <circle cx="260" cy="130" r="10" fill='#4f8ef7'/>
+  <circle cx="110" cy="135" r="10" fill='#4f8ef7'/>
+  <circle cx="170" cy="135" r="10" fill='#4f8ef7'/>
+  <circle cx="230" cy="135" r="10" fill='#4f8ef7'/>
+  <circle cx="290" cy="135" r="10" fill='#4f8ef7'/>
   <!-- Row 3 -->
-  <circle cx="80" cy="190" r="10" fill='#4f8ef7'/>
-  <circle cx="140" cy="190" r="10" fill='#4f8ef7'/>
-  <circle cx="200" cy="190" r="10" fill='#4f8ef7'/>
-  <circle cx="260" cy="190" r="10" fill='#4f8ef7'/>
-
-  <!-- Labels for rows -->
-  <text x="35" y="75" fill='#ef4444' font-size='14' font-weight='bold'>Row 1</text>
-  <text x="35" y="135" fill='#ef4444' font-size='14' font-weight='bold'>Row 2</text>
-  <text x="35" y="195" fill='#ef4444' font-size='14' font-weight='bold'>Row 3</text>
-
-  <!-- Labels for columns -->
-  <text x="80" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 1</text>
-  <text x="140" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 2</text>
-  <text x="200" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 3</text>
-  <text x="260" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 4</text>
-
-  <!-- Multiplication -->
-  <text x="350" y="100" fill='#f59e0b' font-size='20' font-weight='bold'>3 × 4</text>
-  <text x="350" y="135" fill='currentColor' font-size='14'>= 12 dots</text>
+  <circle cx="110" cy="195" r="10" fill='#4f8ef7'/>
+  <circle cx="170" cy="195" r="10" fill='#4f8ef7'/>
+  <circle cx="230" cy="195" r="10" fill='#4f8ef7'/>
+  <circle cx="290" cy="195" r="10" fill='#4f8ef7'/>
+  <!-- Row labels -->
+  <text x="55" y="80" fill='#ef4444' font-size='13' font-weight='bold' text-anchor='middle'>Row 1</text>
+  <text x="55" y="140" fill='#ef4444' font-size='13' font-weight='bold' text-anchor='middle'>Row 2</text>
+  <text x="55" y="200" fill='#ef4444' font-size='13' font-weight='bold' text-anchor='middle'>Row 3</text>
+  <!-- Column labels -->
+  <text x="110" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 1</text>
+  <text x="170" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 2</text>
+  <text x="230" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 3</text>
+  <text x="290" y="240" text-anchor='middle' fill='#22c55e' font-size='12' font-weight='bold'>Col 4</text>
+  <!-- Result -->
+  <text x="390" y="125" fill='#f59e0b' font-size='20' font-weight='bold'>3 × 4</text>
+  <text x="390" y="155" fill='currentColor' font-size='14'>= 12 dots</text>
 </svg>
 <p style="text-align: center; margin-top: 20px;"><strong>3 rows of 4 = \(4 + 4 + 4 = 12\)</strong></p>
 <p style="text-align: center;"><strong>OR 4 columns of 3 = \(3 + 3 + 3 + 3 = 12\)</strong></p>"""
@@ -54,44 +51,42 @@ SECTIONS = [
         "title": "The Commutative Property: Rotation Magic",
         "body": """<p>Here's something amazing: <strong>\(3 \times 4 = 4 \times 3\)</strong></p>
 <p>When you rotate an array, the multiplication sentence changes, but the total stays the same!</p>
-<svg viewBox="0 0 500 300" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Same Array, Different Views</text>
-
-  <!-- Left array: 3×4 -->
-  <text x="100" y="60" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>3 rows × 4 cols</text>
-  <circle cx="60" cy="90" r="8" fill='#4f8ef7'/>
-  <circle cx="100" cy="90" r="8" fill='#4f8ef7'/>
-  <circle cx="140" cy="90" r="8" fill='#4f8ef7'/>
-  <circle cx="180" cy="90" r="8" fill='#4f8ef7'/>
-  <circle cx="60" cy="130" r="8" fill='#4f8ef7'/>
-  <circle cx="100" cy="130" r="8" fill='#4f8ef7'/>
-  <circle cx="140" cy="130" r="8" fill='#4f8ef7'/>
-  <circle cx="180" cy="130" r="8" fill='#4f8ef7'/>
-  <circle cx="60" cy="170" r="8" fill='#4f8ef7'/>
-  <circle cx="100" cy="170" r="8" fill='#4f8ef7'/>
-  <circle cx="140" cy="170" r="8" fill='#4f8ef7'/>
-  <circle cx="180" cy="170" r="8" fill='#4f8ef7'/>
-  <text x="100" y="210" text-anchor='middle' fill='#f59e0b' font-size='16' font-weight='bold'>3 × 4 = 12</text>
-
+<svg viewBox="0 0 520 285" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto;">
+  <rect x="0" y="0" width="520" height="285" rx="4" fill="rgba(0,0,0,0.2)"/>
+  <text x="260" y="28" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Same Array, Different Views</text>
+  <!-- Left array: 3x4 -->
+  <text x="110" y="58" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>3 rows × 4 cols</text>
+  <circle cx="45" cy="90" r="8" fill='#4f8ef7'/>
+  <circle cx="80" cy="90" r="8" fill='#4f8ef7'/>
+  <circle cx="115" cy="90" r="8" fill='#4f8ef7'/>
+  <circle cx="150" cy="90" r="8" fill='#4f8ef7'/>
+  <circle cx="45" cy="125" r="8" fill='#4f8ef7'/>
+  <circle cx="80" cy="125" r="8" fill='#4f8ef7'/>
+  <circle cx="115" cy="125" r="8" fill='#4f8ef7'/>
+  <circle cx="150" cy="125" r="8" fill='#4f8ef7'/>
+  <circle cx="45" cy="160" r="8" fill='#4f8ef7'/>
+  <circle cx="80" cy="160" r="8" fill='#4f8ef7'/>
+  <circle cx="115" cy="160" r="8" fill='#4f8ef7'/>
+  <circle cx="150" cy="160" r="8" fill='#4f8ef7'/>
+  <text x="110" y="200" text-anchor='middle' fill='#f59e0b' font-size='16' font-weight='bold'>3 × 4 = 12</text>
   <!-- Rotation arrow -->
-  <text x="250" y="130" fill='currentColor' font-size='24'>⟲</text>
-  <text x="250" y="165" fill='currentColor' font-size='12'>rotate</text>
-
-  <!-- Right array: 4×3 -->
-  <text x="400" y="60" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>4 rows × 3 cols</text>
-  <circle cx="360" cy="90" r="8" fill='#22c55e'/>
-  <circle cx="400" cy="90" r="8" fill='#22c55e'/>
-  <circle cx="440" cy="90" r="8" fill='#22c55e'/>
-  <circle cx="360" cy="130" r="8" fill='#22c55e'/>
-  <circle cx="400" cy="130" r="8" fill='#22c55e'/>
-  <circle cx="440" cy="130" r="8" fill='#22c55e'/>
-  <circle cx="360" cy="170" r="8" fill='#22c55e'/>
-  <circle cx="400" cy="170" r="8" fill='#22c55e'/>
-  <circle cx="440" cy="170" r="8" fill='#22c55e'/>
-  <circle cx="360" cy="210" r="8" fill='#22c55e'/>
-  <circle cx="400" cy="210" r="8" fill='#22c55e'/>
-  <circle cx="440" cy="210" r="8" fill='#22c55e'/>
-  <text x="400" y="250" text-anchor='middle' fill='#f59e0b' font-size='16' font-weight='bold'>4 × 3 = 12</text>
+  <text x="260" y="125" fill='currentColor' font-size='24' text-anchor='middle'>&#x27F2;</text>
+  <text x="260" y="150" fill='currentColor' font-size='12' text-anchor='middle'>rotate</text>
+  <!-- Right array: 4x3 -->
+  <text x="410" y="58" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>4 rows × 3 cols</text>
+  <circle cx="375" cy="90" r="8" fill='#22c55e'/>
+  <circle cx="410" cy="90" r="8" fill='#22c55e'/>
+  <circle cx="445" cy="90" r="8" fill='#22c55e'/>
+  <circle cx="375" cy="125" r="8" fill='#22c55e'/>
+  <circle cx="410" cy="125" r="8" fill='#22c55e'/>
+  <circle cx="445" cy="125" r="8" fill='#22c55e'/>
+  <circle cx="375" cy="160" r="8" fill='#22c55e'/>
+  <circle cx="410" cy="160" r="8" fill='#22c55e'/>
+  <circle cx="445" cy="160" r="8" fill='#22c55e'/>
+  <circle cx="375" cy="195" r="8" fill='#22c55e'/>
+  <circle cx="410" cy="195" r="8" fill='#22c55e'/>
+  <circle cx="445" cy="195" r="8" fill='#22c55e'/>
+  <text x="410" y="235" text-anchor='middle' fill='#f59e0b' font-size='16' font-weight='bold'>4 × 3 = 12</text>
 </svg>
 <p style="text-align: center; margin-top: 20px; font-size: 15px;">The dots are arranged differently, but there are still <strong>12 dots total!</strong></p>
 <div class="success-box" style="background: rgba(34, 197, 94, 0.1); border-left: 4px solid #22c55e; padding: 16px; border-radius: 6px; margin: 20px 0;">

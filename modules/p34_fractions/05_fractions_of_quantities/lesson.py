@@ -48,23 +48,48 @@ SECTIONS = [
 <p><strong>Answer: \\(\\frac{3}{4}\\) of 24 = 18</strong></p>
 </div>
 
-<svg width="300" height="120" style="display: block; margin: 20px auto;">
-  <text x="30" y="30" font-size='14' font-weight='bold'>24 items divided by 4:</text>
-  <circle cx="50" cy="60" r="6" fill='lightblue' stroke='#8b949e'/>
-  <circle cx="70" cy="60" r="6" fill='lightblue' stroke='#8b949e'/>
-  <circle cx="90" cy="60" r="6" fill='lightblue' stroke='#8b949e'/>
-  <circle cx="110" cy="60" r="6" fill='lightblue' stroke='#8b949e'/>
-  <circle cx="130" cy="60" r="6" fill='lightblue' stroke='#8b949e'/>
-  <circle cx="150" cy="60" r="6" fill='lightblue' stroke='#8b949e'/>
-  <text x="170" y="70" font-size='12'>= 6 per group</text>
+<svg width="320" height="200" viewBox="0 0 320 200" style="display: block; margin: 20px auto;">
+  <text x="15" y="25" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>3/4 of 24: divide into 4 groups of 6</text>
 
-  <circle cx="50" cy="100" r="6" fill='lightgreen' stroke='#8b949e'/>
-  <circle cx="70" cy="100" r="6" fill='lightgreen' stroke='#8b949e'/>
-  <circle cx="90" cy="100" r="6" fill='lightgreen' stroke='#8b949e'/>
-  <circle cx="110" cy="100" r="6" fill='lightgreen' stroke='#8b949e'/>
-  <circle cx="130" cy="100" r="6" fill='lightgreen' stroke='#8b949e'/>
-  <circle cx="150" cy="100" r="6" fill='lightgreen' stroke='#8b949e'/>
-  <text x="170" y="110" font-size='12'>× 3 groups = 18 total</text>
+  <!-- Group 1 (shaded) -->
+  <circle cx="35" cy="60" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="55" cy="60" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="75" cy="60" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="95" cy="60" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="115" cy="60" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="135" cy="60" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <text x="160" y="65" font-size='12' font-family='sans-serif' fill='currentColor'>Group 1</text>
+
+  <!-- Group 2 (shaded) -->
+  <circle cx="35" cy="95" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="55" cy="95" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="75" cy="95" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="95" cy="95" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="115" cy="95" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="135" cy="95" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <text x="160" y="100" font-size='12' font-family='sans-serif' fill='currentColor'>Group 2</text>
+
+  <!-- Group 3 (shaded) -->
+  <circle cx="35" cy="130" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="55" cy="130" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="75" cy="130" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="95" cy="130" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="115" cy="130" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="135" cy="130" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <text x="160" y="135" font-size='12' font-family='sans-serif' fill='currentColor'>Group 3</text>
+
+  <!-- Group 4 (not shaded) -->
+  <circle cx="35" cy="165" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="55" cy="165" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="75" cy="165" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="95" cy="165" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="115" cy="165" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="135" cy="165" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <text x="160" y="170" font-size='12' font-family='sans-serif' fill='currentColor'>Group 4</text>
+
+  <!-- Answer -->
+  <text x="230" y="100" font-size='13' font-family='sans-serif' fill='currentColor'>3 groups</text>
+  <text x="230" y="118" font-size='13' font-family='sans-serif' fill='currentColor'>= 18 items</text>
 </svg>"""
     },
     {
@@ -142,29 +167,46 @@ SECTIONS = [
 <p><strong>Answer: 7 students have a dog.</strong></p>
 </div>
 
-<svg width="300" height="140" style="display: block; margin: 20px auto;">
-  <text x="20" y="25" font-size='13' font-weight='bold'>28 students total</text>
-  <text x="20" y="45" font-size='13'>1/4 of them have a dog:</text>
+<svg width="320" height="190" viewBox="0 0 320 190" style="display: block; margin: 20px auto;">
+  <text x="15" y="22" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>28 students: 1/4 have a dog</text>
 
-  <!-- Group 1 (with dog) -->
-  <circle cx="40" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <circle cx="55" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <circle cx="70" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <circle cx="85" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <circle cx="100" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <circle cx="115" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <circle cx="130" cy="70" r="5" fill='blue' stroke='#8b949e'/>
-  <text x="145" y="75" font-size='12'>7 students (with dog)</text>
+  <!-- Group 1: with dog (7 students) -->
+  <circle cx="30" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="50" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="70" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="90" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="110" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="130" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <circle cx="150" cy="55" r="7" fill='#58a6ff' stroke='#8b949e'/>
+  <text x="170" y="60" font-size='12' font-family='sans-serif' fill='currentColor'>7 students (with dog)</text>
 
-  <!-- Groups 2-4 (without dog) -->
-  <circle cx="40" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <circle cx="55" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <circle cx="70" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <circle cx="85" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <circle cx="100" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <circle cx="115" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <circle cx="130" cy="105" r="5" fill='gray' stroke='#8b949e'/>
-  <text x="145" y="110" font-size='12'>21 students (no dog)</text>
+  <!-- Group 2: no dog -->
+  <circle cx="30" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="50" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="70" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="90" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="110" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="130" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="150" cy="90" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+
+  <!-- Group 3: no dog -->
+  <circle cx="30" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="50" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="70" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="90" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="110" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="130" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="150" cy="125" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+
+  <!-- Group 4: no dog -->
+  <circle cx="30" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="50" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="70" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="90" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="110" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="130" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <circle cx="150" cy="160" r="7" fill='#3d3d3d' stroke='#8b949e'/>
+  <text x="170" y="132" font-size='12' font-family='sans-serif' fill='currentColor'>21 students (no dog)</text>
 </svg>"""
     },
     {

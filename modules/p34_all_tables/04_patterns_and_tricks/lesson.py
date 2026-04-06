@@ -20,18 +20,18 @@ SECTIONS = [
     <!-- 3 rows, 4 columns -->
     <g>
       <text x="95" y="46" text-anchor='middle' font-size='11' font-weight='bold' fill='#4169E1'>3 rows × 4 cols = 12</text>
-      <rect x="30" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="60" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="90" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="120" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="30" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="60" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="90" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="120" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="30" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="60" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="90" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="120" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
+      <rect x="30" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="60" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="90" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="120" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="30" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="60" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="90" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="120" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="30" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="60" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="90" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="120" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
     </g>
 
     <!-- Arrow in the middle -->
@@ -42,18 +42,18 @@ SECTIONS = [
     <!-- 4 rows, 3 columns -->
     <g>
       <text x="375" y="46" text-anchor='middle' font-size='11' font-weight='bold' fill='#22c55e'>4 rows × 3 cols = 12</text>
-      <rect x="330" y="58" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="360" y="58" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="390" y="58" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="330" y="88" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="360" y="88" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="390" y="88" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="330" y="118" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="360" y="118" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="390" y="118" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="330" y="148" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="360" y="148" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="390" y="148" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
+      <rect x="330" y="58" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="360" y="58" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="390" y="58" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="330" y="88" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="360" y="88" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="390" y="88" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="330" y="118" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="360" y="118" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="390" y="118" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="330" y="148" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="360" y="148" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="390" y="148" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
     </g>
 
     <text x="260" y="210" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Same array, different orientation = same answer!</text>
@@ -101,75 +101,105 @@ SECTIONS = [
 
 <h3>Visualizing Perfect Squares</h3>
 <div class="diagram-container">
-  <svg width="550" height="280" viewBox="0 0 550 280">
-    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Perfect Squares: Visual Representation</text>
+  <svg width="100%" viewBox="0 0 560 290">
+    <text x="280" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Perfect Squares: Visual Representation</text>
 
-    <!-- 3 × 3 -->
-    <g id="square-3">
+    <g>
       <text x="60" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>3 × 3 = 9</text>
-      <rect x="20" y="70" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="45" y="70" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="70" y="70" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="20" y="95" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="45" y="95" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="70" y="95" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="20" y="120" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="45" y="120" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
-      <rect x="70" y="120" width="20" height="20" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="20" y="60" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="45" y="60" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="70" y="60" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="20" y="85" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="45" y="85" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="70" y="85" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="20" y="110" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="45" y="110" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
+      <rect x="70" y="110" width="20" height="20" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="1"/>
     </g>
 
-    <!-- 5 × 5 -->
-    <g id="square-5">
+    <g>
       <text x="200" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>5 × 5 = 25</text>
-      <g id="five-by-five">
-        <rect x="160" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="180" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="200" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="220" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="240" y="70" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-
-        <rect x="160" y="90" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="180" y="90" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="200" y="90" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="220" y="90" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="240" y="90" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-
-        <rect x="160" y="110" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="180" y="110" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="200" y="110" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="220" y="110" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="240" y="110" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-
-        <rect x="160" y="130" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="180" y="130" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="200" y="130" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="220" y="130" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="240" y="130" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-
-        <rect x="160" y="150" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="180" y="150" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="200" y="150" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="220" y="150" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-        <rect x="240" y="150" width="15" height="15" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
-      </g>
+      <rect x="160" y="60" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="180" y="60" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="200" y="60" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="220" y="60" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="240" y="60" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="160" y="80" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="180" y="80" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="200" y="80" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="220" y="80" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="240" y="80" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="160" y="100" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="180" y="100" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="200" y="100" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="220" y="100" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="240" y="100" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="160" y="120" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="180" y="120" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="200" y="120" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="220" y="120" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="240" y="120" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="160" y="140" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="180" y="140" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="200" y="140" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="220" y="140" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
+      <rect x="240" y="140" width="15" height="15" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="1"/>
     </g>
 
-    <!-- 7 × 7 -->
-    <g id="square-7">
-      <text x="380" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>7 × 7 = 49</text>
-      <g id="seven-by-seven">
-        <rect x="340" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-        <rect x="355" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-        <rect x="370" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-        <rect x="385" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-        <rect x="400" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-        <rect x="415" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-        <rect x="430" y="70" width="12" height="12" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      </g>
+    <g>
+      <text x="390" y="50" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>7 × 7 = 49</text>
+      <rect x="340" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="60" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="340" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="75" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="340" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="90" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="340" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="105" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="340" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="120" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="340" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="135" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="340" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="355" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="370" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="385" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="400" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="415" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <rect x="430" y="150" width="12" height="12" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
     </g>
 
-    <!-- Pattern explanation -->
-    <rect x="40" y="210" width="480" height="50" fill='#e8f5e980' stroke='#22c55e' stroke-width="2" rx="5"/>
+    <rect x="40" y="210" width="480" height="50" rx="4" fill='#e8f5e980' stroke='#22c55e' stroke-width="2"/>
     <text x="50" y="235" font-size='12' font-weight='bold' fill='currentColor'>The Pattern in Perfect Squares:</text>
     <text x="50" y="255" font-size='11' fill='currentColor'>1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144</text>
   </svg>
@@ -290,42 +320,42 @@ if (ctxDoubling) {
 
 <h3>Common Decompositions</h3>
 <div class="diagram-container">
-  <svg width="550" height="300" viewBox="0 0 550 300">
+  <svg width="100%" viewBox="0 0 560 300">
     <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Breaking Apart Numbers: Common Strategies</text>
 
     <g id="decompositions">
       <!-- 6 = 5 + 1 -->
-      <rect x="30" y="60" width="150" height="70" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="5"/>
+      <rect x="30" y="60" width="150" height="70" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
       <text x="105" y="85" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>6 = 5 + 1</text>
       <text x="105" y="105" text-anchor='middle' font-size='11' fill='currentColor'>7 × 6 = 7×5 + 7×1</text>
       <text x="105" y="120" text-anchor='middle' font-size='11' fill='currentColor'>= 35 + 7 = 42</text>
 
       <!-- 7 = 5 + 2 -->
-      <rect x="200" y="60" width="150" height="70" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="5"/>
+      <rect x="200" y="60" width="150" height="70" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
       <text x="275" y="85" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>7 = 5 + 2</text>
       <text x="275" y="105" text-anchor='middle' font-size='11' fill='currentColor'>8 × 7 = 8×5 + 8×2</text>
       <text x="275" y="120" text-anchor='middle' font-size='11' fill='currentColor'>= 40 + 16 = 56</text>
 
       <!-- 8 = 10 - 2 -->
-      <rect x="370" y="60" width="150" height="70" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="5"/>
+      <rect x="370" y="60" width="150" height="70" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
       <text x="445" y="85" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>8 = 10 - 2</text>
       <text x="445" y="105" text-anchor='middle' font-size='11' fill='currentColor'>9 × 8 = 9×10 - 9×2</text>
       <text x="445" y="120" text-anchor='middle' font-size='11' fill='currentColor'>= 90 - 18 = 72</text>
 
       <!-- 12 = 10 + 2 -->
-      <rect x="30" y="170" width="150" height="70" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="5"/>
+      <rect x="30" y="170" width="150" height="70" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="4"/>
       <text x="105" y="195" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>12 = 10 + 2</text>
       <text x="105" y="215" text-anchor='middle' font-size='11' fill='currentColor'>7 × 12 = 7×10 + 7×2</text>
       <text x="105" y="230" text-anchor='middle' font-size='11' fill='currentColor'>= 70 + 14 = 84</text>
 
       <!-- 9 = 10 - 1 -->
-      <rect x="200" y="170" width="150" height="70" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="5"/>
+      <rect x="200" y="170" width="150" height="70" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="4"/>
       <text x="275" y="195" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>9 = 10 - 1</text>
       <text x="275" y="215" text-anchor='middle' font-size='11' fill='currentColor'>6 × 9 = 6×10 - 6×1</text>
       <text x="275" y="230" text-anchor='middle' font-size='11' fill='currentColor'>= 60 - 6 = 54</text>
 
       <!-- 11 = 10 + 1 -->
-      <rect x="370" y="170" width="150" height="70" fill='#06b6d480' stroke='#06b6d4' stroke-width="2" rx="5"/>
+      <rect x="370" y="170" width="150" height="70" fill='#06b6d480' stroke='#06b6d4' stroke-width="2" rx="4"/>
       <text x="445" y="195" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>11 = 10 + 1</text>
       <text x="445" y="215" text-anchor='middle' font-size='11' fill='currentColor'>4 × 11 = 4×10 + 4×1</text>
       <text x="445" y="230" text-anchor='middle' font-size='11' fill='currentColor'>= 40 + 4 = 44</text>

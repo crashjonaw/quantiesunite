@@ -17,39 +17,34 @@ SECTIONS = [
         "title": "The 2 Times Table: Doubling",
         "body": """<p>The 2 times table is about <strong>doubling</strong> — adding a number to itself.</p>
 <p>Notice the pattern:</p>
-<svg viewBox="0 0 500 300" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>The 2 Times Table</text>
-  <!-- Numbers and circles -->
-  <g>
-    <!-- 1×2 -->
-    <text x="40" y="70" fill='currentColor' font-size='14' font-weight='bold'>1×2:</text>
-    <circle cx="100" cy="65" r="8" fill='#4f8ef7'/>
-    <circle cx="120" cy="65" r="8" fill='#4f8ef7'/>
-    <text x="150" y="70" fill='#22c55e' font-size='14' font-weight='bold'>=2</text>
-
-    <!-- 2×2 -->
-    <text x="40" y="110" fill='currentColor' font-size='14' font-weight='bold'>2×2:</text>
-    <circle cx="100" cy="105" r="8" fill='#4f8ef7'/>
-    <circle cx="120" cy="105" r="8" fill='#4f8ef7'/>
-    <circle cx="100" cy="125" r="8" fill='#4f8ef7'/>
-    <circle cx="120" cy="125" r="8" fill='#4f8ef7'/>
-    <text x="150" y="115" fill='#22c55e' font-size='14' font-weight='bold'>=4</text>
-
-    <!-- 3×2 -->
-    <text x="40" y="160" fill='currentColor' font-size='14' font-weight='bold'>3×2:</text>
-    <circle cx="100" cy="150" r="8" fill='#4f8ef7'/>
-    <circle cx="120" cy="150" r="8" fill='#4f8ef7'/>
-    <circle cx="100" cy="170" r="8" fill='#4f8ef7'/>
-    <circle cx="120" cy="170" r="8" fill='#4f8ef7'/>
-    <circle cx="100" cy="190" r="8" fill='#4f8ef7'/>
-    <circle cx="120" cy="190" r="8" fill='#4f8ef7'/>
-    <text x="150" y="170" fill='#22c55e' font-size='14' font-weight='bold'>=6</text>
-
-    <!-- Pattern text -->
-    <text x="40" y="240" fill='currentColor' font-size='13'>Pattern: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20</text>
-    <text x="40" y="260" fill='#f59e0b' font-size='13' font-weight='bold'>Notice: Each answer is 2 more than the one before!</text>
-    <text x="40" y="280" fill='#f59e0b' font-size='13' font-weight='bold'>All answers are EVEN numbers.</text>
-  </g>
+<svg viewBox="0 0 500 310" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto;">
+  <rect x="0" y="0" width="500" height="310" rx="4" fill="rgba(0,0,0,0.2)"/>
+  <text x="250" y="30" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>The 2 Times Table</text>
+  <!-- 1x2 -->
+  <text x="40" y="72" fill='currentColor' font-size='14' font-weight='bold'>1 × 2:</text>
+  <circle cx="120" cy="67" r="8" fill='#4f8ef7'/>
+  <circle cx="142" cy="67" r="8" fill='#4f8ef7'/>
+  <text x="170" y="72" fill='#22c55e' font-size='14' font-weight='bold'>= 2</text>
+  <!-- 2x2 -->
+  <text x="40" y="115" fill='currentColor' font-size='14' font-weight='bold'>2 × 2:</text>
+  <circle cx="120" cy="105" r="8" fill='#4f8ef7'/>
+  <circle cx="142" cy="105" r="8" fill='#4f8ef7'/>
+  <circle cx="120" cy="127" r="8" fill='#4f8ef7'/>
+  <circle cx="142" cy="127" r="8" fill='#4f8ef7'/>
+  <text x="170" y="120" fill='#22c55e' font-size='14' font-weight='bold'>= 4</text>
+  <!-- 3x2 -->
+  <text x="40" y="170" fill='currentColor' font-size='14' font-weight='bold'>3 × 2:</text>
+  <circle cx="120" cy="160" r="8" fill='#4f8ef7'/>
+  <circle cx="142" cy="160" r="8" fill='#4f8ef7'/>
+  <circle cx="120" cy="182" r="8" fill='#4f8ef7'/>
+  <circle cx="142" cy="182" r="8" fill='#4f8ef7'/>
+  <circle cx="120" cy="204" r="8" fill='#4f8ef7'/>
+  <circle cx="142" cy="204" r="8" fill='#4f8ef7'/>
+  <text x="170" y="185" fill='#22c55e' font-size='14' font-weight='bold'>= 6</text>
+  <!-- Pattern text -->
+  <text x="40" y="245" fill='currentColor' font-size='13'>Pattern: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20</text>
+  <text x="40" y="268" fill='#f59e0b' font-size='13' font-weight='bold'>Notice: Each answer is 2 more than the one before!</text>
+  <text x="40" y="291" fill='#f59e0b' font-size='13' font-weight='bold'>All answers are EVEN numbers.</text>
 </svg>"""
     },
     {
@@ -68,27 +63,25 @@ SECTIONS = [
 <div class="success-box" style="background: rgba(34, 197, 94, 0.1); border-left: 4px solid #22c55e; padding: 20px; border-radius: 6px; margin: 20px 0; text-align: center;">
   <p style="font-size: 18px; font-weight: bold; margin: 0;">To multiply by 10, just add a zero!</p>
 </div>
-<svg viewBox="0 0 500 250" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>The 10 Times Table: Just Add a Zero!</text>
-  <text x="50" y="80" fill='currentColor' font-size='14'>1 × 10 =</text>
-  <text x="150" y="80" fill='#f59e0b' font-size='14' font-weight='bold'>1</text>
-  <text x="175" y="80" fill='currentColor' font-size='14'>→</text>
-  <text x="200" y="80" fill='#22c55e' font-size='16' font-weight='bold'>10</text>
-
-  <text x="50" y="120" fill='currentColor' font-size='14'>3 × 10 =</text>
-  <text x="150" y="120" fill='#f59e0b' font-size='14' font-weight='bold'>3</text>
-  <text x="175" y="120" fill='currentColor' font-size='14'>→</text>
-  <text x="200" y="120" fill='#22c55e' font-size='16' font-weight='bold'>30</text>
-
-  <text x="50" y="160" fill='currentColor' font-size='14'>7 × 10 =</text>
-  <text x="150" y="160" fill='#f59e0b' font-size='14' font-weight='bold'>7</text>
-  <text x="175" y="160" fill='currentColor' font-size='14'>→</text>
-  <text x="200" y="160" fill='#22c55e' font-size='16' font-weight='bold'>70</text>
-
-  <text x="50" y="200" fill='currentColor' font-size='14'>9 × 10 =</text>
-  <text x="150" y="200" fill='#f59e0b' font-size='14' font-weight='bold'>9</text>
-  <text x="175" y="200" fill='currentColor' font-size='14'>→</text>
-  <text x="200" y="200" fill='#22c55e' font-size='16' font-weight='bold'>90</text>
+<svg viewBox="0 0 310 230" style="width:100%; max-width:400px; height:auto; display:block; margin:16px auto;">
+  <rect x="0" y="0" width="310" height="230" rx="4" fill="rgba(0,0,0,0.2)"/>
+  <text x="155" y="30" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>The 10 Times Table</text>
+  <text x="30" y="72" fill='currentColor' font-size='14'>1 × 10 =</text>
+  <text x="145" y="72" fill='#f59e0b' font-size='14' font-weight='bold'>1</text>
+  <text x="175" y="72" fill='currentColor' font-size='14'>→</text>
+  <text x="210" y="72" fill='#22c55e' font-size='16' font-weight='bold'>10</text>
+  <text x="30" y="112" fill='currentColor' font-size='14'>3 × 10 =</text>
+  <text x="145" y="112" fill='#f59e0b' font-size='14' font-weight='bold'>3</text>
+  <text x="175" y="112" fill='currentColor' font-size='14'>→</text>
+  <text x="210" y="112" fill='#22c55e' font-size='16' font-weight='bold'>30</text>
+  <text x="30" y="152" fill='currentColor' font-size='14'>7 × 10 =</text>
+  <text x="145" y="152" fill='#f59e0b' font-size='14' font-weight='bold'>7</text>
+  <text x="175" y="152" fill='currentColor' font-size='14'>→</text>
+  <text x="210" y="152" fill='#22c55e' font-size='16' font-weight='bold'>70</text>
+  <text x="30" y="192" fill='currentColor' font-size='14'>9 × 10 =</text>
+  <text x="145" y="192" fill='#f59e0b' font-size='14' font-weight='bold'>9</text>
+  <text x="175" y="192" fill='currentColor' font-size='14'>→</text>
+  <text x="210" y="192" fill='#22c55e' font-size='16' font-weight='bold'>90</text>
 </svg>
 <p style="text-align: center; font-size: 14px; margin-top: 16px;">The full 10 times table: 10, 20, 30, 40, 50, 60, 70, 80, 90, 100</p>"""
     },

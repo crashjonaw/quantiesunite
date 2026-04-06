@@ -11,37 +11,37 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 220" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 2s (Even Numbers)</text>
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 2s (Even Numbers)</text>
 
   <!-- Number line -->
   <line x1="30" y1="70" x2="570" y2="70" stroke='#4f8ef7' stroke-width="2"/>
 
   <!-- Even numbers marked -->
   <circle cx="50" cy="70" r="6" fill='#4f8ef7'/>
-  <text x="50" y="90" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>0</text>
+  <text x="50" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>0</text>
 
-  <circle cx="110" cy="70" r="6" fill='#4f8ef7'/>
-  <text x="110" y="90" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>2</text>
+  <circle cx="115" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="115" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>2</text>
 
-  <circle cx="170" cy="70" r="6" fill='#4f8ef7'/>
-  <text x="170" y="90" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>4</text>
+  <circle cx="180" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="180" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>4</text>
 
-  <circle cx="230" cy="70" r="6" fill='#4f8ef7'/>
-  <text x="230" y="90" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>6</text>
+  <circle cx="245" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="245" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>6</text>
 
-  <circle cx="290" cy="70" r="6" fill='#4f8ef7'/>
-  <text x="290" y="90" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>8</text>
+  <circle cx="310" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="310" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>8</text>
 
-  <circle cx="350" cy="70" r="6" fill='#4f8ef7'/>
-  <text x="350" y="90" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>10</text>
+  <circle cx="375" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="375" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>10</text>
 
-  <text x="380" y="90" text-anchor='start' fill='currentColor' font-size='11'>...</text>
+  <text x="410" y="92" text-anchor='start' fill='currentColor' font-size='11'>...</text>
 
   <!-- Pattern box -->
-  <rect x="30" y="120" width="540" height="80" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="40" y="140" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Sequence by 2s:</text>
-  <text x="40" y="160" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, ...</text>
-  <text x="40" y="180" text-anchor='start' fill='currentColor' font-size='11'>Look at the ones place: always ends in 0, 2, 4, 6, or 8</text>
+  <rect x="20" y="118" width="560" height="82" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="4"/>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Sequence by 2s:</text>
+  <text x="30" y="160" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, ...</text>
+  <text x="30" y="180" text-anchor='start' fill='currentColor' font-size='11'>Look at the ones place: always ends in 0, 2, 4, 6, or 8</text>
 </svg>"""
     },
     {
@@ -51,37 +51,37 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 220" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 5s (Skip Counting)</text>
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 5s (Skip Counting)</text>
 
   <!-- Number line -->
   <line x1="30" y1="70" x2="570" y2="70" stroke='#22c55e' stroke-width="2"/>
 
   <!-- Multiples of 5 marked -->
   <circle cx="50" cy="70" r="6" fill='#22c55e'/>
-  <text x="50" y="90" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>0</text>
+  <text x="50" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>0</text>
 
-  <circle cx="110" cy="70" r="6" fill='#22c55e'/>
-  <text x="110" y="90" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>5</text>
+  <circle cx="115" cy="70" r="6" fill='#22c55e'/>
+  <text x="115" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>5</text>
 
-  <circle cx="170" cy="70" r="6" fill='#22c55e'/>
-  <text x="170" y="90" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>10</text>
+  <circle cx="180" cy="70" r="6" fill='#22c55e'/>
+  <text x="180" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>10</text>
 
-  <circle cx="230" cy="70" r="6" fill='#22c55e'/>
-  <text x="230" y="90" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>15</text>
+  <circle cx="245" cy="70" r="6" fill='#22c55e'/>
+  <text x="245" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>15</text>
 
-  <circle cx="290" cy="70" r="6" fill='#22c55e'/>
-  <text x="290" y="90" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>20</text>
+  <circle cx="310" cy="70" r="6" fill='#22c55e'/>
+  <text x="310" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>20</text>
 
-  <circle cx="350" cy="70" r="6" fill='#22c55e'/>
-  <text x="350" y="90" text-anchor='middle' fill='#22c55e' font-size='11' font-weight='bold'>25</text>
+  <circle cx="375" cy="70" r="6" fill='#22c55e'/>
+  <text x="375" y="92" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>25</text>
 
-  <text x="380" y="90" text-anchor='start' fill='currentColor' font-size='11'>...</text>
+  <text x="410" y="92" text-anchor='start' fill='currentColor' font-size='11'>...</text>
 
   <!-- Pattern box -->
-  <rect x="30" y="120" width="540" height="80" fill='#22c55e20' stroke='#22c55e' stroke-width="1" rx="3"/>
-  <text x="40" y="140" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Sequence by 5s:</text>
-  <text x="40" y="160" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, ...</text>
-  <text x="40" y="180" text-anchor='start' fill='currentColor' font-size='11'>Look at the ones place: always ends in 0 or 5</text>
+  <rect x="20" y="118" width="560" height="82" fill='#22c55e20' stroke='#22c55e' stroke-width="1" rx="4"/>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Sequence by 5s:</text>
+  <text x="30" y="160" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, ...</text>
+  <text x="30" y="180" text-anchor='start' fill='currentColor' font-size='11'>Look at the ones place: always ends in 0 or 5</text>
 </svg>"""
     },
     {
@@ -90,24 +90,24 @@ SECTIONS = [
 <p>Counting by 10s is the easiest! Add 10 each time. The tens digit changes, but the ones digit stays 0.</p>
 </div>
 
-<svg viewBox="0 0 600 280" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 10s (Decade Pattern)</text>
+<svg viewBox="0 0 560 280" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
+  <text x="280" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 10s (Decade Pattern)</text>
 
-  <!-- Visual: 10 columns showing tens -->
-  <text x="30" y="45" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>0-10:</text>
-  <rect x="30" y="55" width="500" height="30" fill='#f59e0b20' stroke='#f59e0b' stroke-width="1" rx="2"/>
-  <text x="285" y="75" text-anchor='middle' fill='currentColor' font-size='11' font-family='monospace'>0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100</text>
+  <!-- Visual: columns showing tens -->
+  <text x="20" y="50" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>0 to 100:</text>
+  <rect x="20" y="58" width="520" height="30" fill='#f59e0b20' stroke='#f59e0b' stroke-width="1" rx="4"/>
+  <text x="280" y="78" text-anchor='middle' fill='currentColor' font-size='11' font-family='monospace'>0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100</text>
 
-  <text x="30" y="110" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>100-200:</text>
-  <rect x="30" y="120" width="500" height="30" fill='#f59e0b20' stroke='#f59e0b' stroke-width="1" rx="2"/>
-  <text x="285" y="140" text-anchor='middle' fill='currentColor' font-size='11' font-family='monospace'>100, 110, 120, ..., 190, 200</text>
+  <text x="20" y="112" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>100 to 200:</text>
+  <rect x="20" y="120" width="520" height="30" fill='#f59e0b20' stroke='#f59e0b' stroke-width="1" rx="4"/>
+  <text x="280" y="140" text-anchor='middle' fill='currentColor' font-size='11' font-family='monospace'>100, 110, 120, ..., 190, 200</text>
 
-  <text x="30" y="175" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Pattern Notice:</text>
-  <rect x="30" y="185" width="500" height="80" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="40" y="205" text-anchor='start' fill='currentColor' font-size='11'>When counting by 10s, only the TENS and HUNDREDS digits change!</text>
-  <text x="40" y="220" text-anchor='start' fill='currentColor' font-size='11'>The ones place is always 0:</text>
-  <text x="40" y="235" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, ...</text>
-  <text x="40" y="252" text-anchor='start' fill='currentColor' font-size='11'>These are all MULTIPLES OF 10.</text>
+  <text x="20" y="178" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Pattern Notice:</text>
+  <rect x="20" y="188" width="520" height="80" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="4"/>
+  <text x="30" y="208" text-anchor='start' fill='currentColor' font-size='11'>When counting by 10s, only the TENS and HUNDREDS digits change!</text>
+  <text x="30" y="224" text-anchor='start' fill='currentColor' font-size='11'>The ones place is always 0:</text>
+  <text x="30" y="240" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, ...</text>
+  <text x="30" y="256" text-anchor='start' fill='currentColor' font-size='11'>These are all MULTIPLES OF 10.</text>
 </svg>"""
     },
     {
@@ -117,45 +117,45 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 240" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 100s (Hundreds Pattern)</text>
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Counting by 100s (Hundreds Pattern)</text>
 
-  <!-- Blocks showing hundreds -->
-  <circle cx="80" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="80" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>0</text>
+  <!-- Number line for hundreds -->
+  <line x1="40" y1="70" x2="560" y2="70" stroke='#4f8ef7' stroke-width="2"/>
 
-  <circle cx="150" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="150" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>1</text>
+  <circle cx="40" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="40" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>0</text>
 
-  <circle cx="220" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="220" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>2</text>
+  <circle cx="110" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="110" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>100</text>
 
-  <circle cx="290" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="290" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>3</text>
+  <circle cx="180" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="180" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>200</text>
 
-  <circle cx="360" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="360" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>4</text>
+  <circle cx="250" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="250" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>300</text>
 
-  <circle cx="430" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="430" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>5</text>
+  <circle cx="320" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="320" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>400</text>
 
-  <circle cx="500" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="500" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>6</text>
+  <circle cx="390" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="390" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>500</text>
 
-  <circle cx="570" cy="70" r="12" fill='#4f8ef7'/>
-  <text x="570" y="75" text-anchor='middle' fill='#fff' font-size='12' font-weight='bold'>7</text>
+  <circle cx="460" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="460" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>600</text>
 
-  <!-- Labels -->
-  <text x="80" y="100" text-anchor='middle' fill='#4f8ef7' font-size='11'>100 blocks</text>
-  <text x="300" y="100" text-anchor='middle' fill='currentColor' font-size='10'>→</text>
+  <circle cx="530" cy="70" r="6" fill='#4f8ef7'/>
+  <text x="530" y="92" text-anchor='middle' fill='currentColor' font-size='10' font-weight='bold'>700</text>
+
+  <text x="555" y="92" text-anchor='start' fill='currentColor' font-size='10'>...</text>
 
   <!-- Sequence -->
-  <rect x="30" y="130" width="540" height="60" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="40" y="150" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Sequence by 100s:</text>
-  <text x="40" y="170" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000</text>
+  <rect x="20" y="118" width="560" height="60" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="4"/>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Sequence by 100s:</text>
+  <text x="30" y="160" text-anchor='start' fill='currentColor' font-size='11' font-family='monospace'>0, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000</text>
 
   <!-- Real-world use -->
-  <rect x="30" y="205" width="540" height="25" fill='#22c55e15' stroke='#22c55e' stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-  <text x="40" y="223" text-anchor='start' fill='currentColor' font-size='11'>Real-world use: Counting money by $100 bills!</text>
+  <rect x="20" y="194" width="560" height="30" fill='#22c55e15' stroke='#22c55e' stroke-width="1" stroke-dasharray="3,3" rx="4"/>
+  <text x="30" y="214" text-anchor='start' fill='currentColor' font-size='11'>Real-world use: Counting money by $100 bills!</text>
 </svg>"""
     },
     {

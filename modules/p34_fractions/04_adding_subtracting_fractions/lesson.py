@@ -14,25 +14,36 @@ SECTIONS = [
 <h3>Why This Works</h3>
 <p>You're combining pieces of the same size! It's like adding apples to apples.</p>
 
-<svg width="300" height="140" style="display: block; margin: 20px auto;">
+<svg width="320" height="190" viewBox="0 0 320 190" style="display: block; margin: 20px auto;">
   <!-- First fraction: 2/5 -->
-  <text x="20" y="30" font-size='14' font-weight='bold'>2/5 +</text>
-  <rect x="80" y="10" width="30" height="30" fill='orange' stroke='#8b949e' stroke-width="1"/>
-  <rect x="110" y="10" width="30" height="30" fill='orange' stroke='#8b949e' stroke-width="1"/>
-  <rect x="140" y="10" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="170" y="10" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="200" y="10" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="35" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>2/5</text>
+  <rect x="60" y="15" width="40" height="30" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="100" y="15" width="40" height="30" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="140" y="15" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="180" y="15" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="220" y="15" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+
+  <!-- Plus sign -->
+  <text x="140" y="75" font-size='20' font-family='sans-serif' font-weight='bold' fill='currentColor'>+</text>
 
   <!-- Second fraction: 1/5 -->
-  <text x="20" y="90" font-size='14' font-weight='bold'>1/5 =</text>
-  <rect x="80" y="70" width="30" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="110" y="70" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="140" y="70" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="170" y="70" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="200" y="70" width="30" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="110" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>1/5</text>
+  <rect x="60" y="90" width="40" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="100" y="90" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="140" y="90" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="180" y="90" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="220" y="90" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 
-  <!-- Answer -->
-  <text x="260" y="55" font-size='18' font-weight='bold'>3/5</text>
+  <!-- Equals line -->
+  <line x1="60" y1="135" x2="260" y2="135" stroke='#8b949e' stroke-width='1.5' stroke-dasharray='4,3'/>
+
+  <!-- Answer: 3/5 -->
+  <text x="15" y="168" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>3/5</text>
+  <rect x="60" y="148" width="40" height="30" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="100" y="148" width="40" height="30" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="140" y="148" width="40" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="180" y="148" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="220" y="148" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 </svg>
 
 <div class='worked-example'>

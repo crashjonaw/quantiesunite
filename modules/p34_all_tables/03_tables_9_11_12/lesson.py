@@ -141,26 +141,26 @@ if (ctx9) {
 
 <h3>Pattern Visualization</h3>
 <div class="diagram-container">
-  <svg width="500" height="250" viewBox="0 0 500 250">
-    <text x="250" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>The 11 Times Table Pattern</text>
+  <svg width="100%" viewBox="0 0 510 250">
+    <text x="255" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>The 11 Times Table Pattern</text>
 
-    <g id="pattern">
+    <g>
       <text x="50" y="70" font-size='12' font-weight='bold' fill='currentColor'>11 × 1 = 11</text>
-      <rect x="50" y="75" width="30" height="30" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
-      <rect x="85" y="75" width="30" height="30" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+      <rect x="50" y="75" width="30" height="30" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+      <rect x="85" y="75" width="30" height="30" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
 
       <text x="50" y="135" font-size='12' font-weight='bold' fill='currentColor'>11 × 5 = 55</text>
-      <g id="five-boxes">
-        <rect x="50" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-        <rect x="80" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-        <rect x="110" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-        <rect x="140" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-        <rect x="170" y="140" width="25" height="25" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-        <rect x="50" y="170" width="25" height="25" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-        <rect x="80" y="170" width="25" height="25" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-        <rect x="110" y="170" width="25" height="25" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-        <rect x="140" y="170" width="25" height="25" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-        <rect x="170" y="170" width="25" height="25" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+      <g>
+        <rect x="50" y="140" width="25" height="25" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+        <rect x="80" y="140" width="25" height="25" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+        <rect x="110" y="140" width="25" height="25" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+        <rect x="140" y="140" width="25" height="25" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+        <rect x="170" y="140" width="25" height="25" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+        <rect x="50" y="170" width="25" height="25" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+        <rect x="80" y="170" width="25" height="25" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+        <rect x="110" y="170" width="25" height="25" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+        <rect x="140" y="170" width="25" height="25" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+        <rect x="170" y="170" width="25" height="25" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
       </g>
 
       <text x="280" y="100" font-size='13' font-weight='bold' fill='currentColor'>All answers have</text>
@@ -198,31 +198,28 @@ if (ctx9) {
 
 <h3>Breaking Down the 12 Times Table</h3>
 <div class="diagram-container">
-  <svg width="550" height="200" viewBox="0 0 550 200">
-    <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>12 = 10 + 2: Build 12s from Facts You Know</text>
+  <svg width="100%" viewBox="0 0 560 170">
+    <text x="280" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>12 = 10 + 2: Build 12s from Facts You Know</text>
 
-    <g id="breakdown">
-      <!-- 10 times part -->
-      <rect x="30" y="60" width="120" height="80" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="5"/>
-      <text x="90" y="90" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>10 Times</text>
-      <text x="90" y="110" text-anchor='middle' font-size='12' fill='currentColor'>10 × 7 = 70</text>
-      <text x="90" y="130" text-anchor='middle' font-size='12' fill='currentColor'>(add a zero!)</text>
+    <g>
+      <rect x="30" y="50" width="120" height="80" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+      <text x="90" y="80" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>10 Times</text>
+      <text x="90" y="100" text-anchor='middle' font-size='12' fill='currentColor'>10 × 7 = 70</text>
+      <text x="90" y="120" text-anchor='middle' font-size='12' fill='currentColor'>(add a zero!)</text>
 
-      <text x="160" y="105" font-size='20' font-weight='bold' fill='currentColor'>+</text>
+      <text x="165" y="95" font-size='20' font-weight='bold' fill='currentColor'>+</text>
 
-      <!-- 2 times part -->
-      <rect x="190" y="60" width="120" height="80" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="5"/>
-      <text x="250" y="90" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>2 Times</text>
-      <text x="250" y="110" text-anchor='middle' font-size='12' fill='currentColor'>2 × 7 = 14</text>
-      <text x="250" y="130" text-anchor='middle' font-size='12' fill='currentColor'>(easy!)</text>
+      <rect x="195" y="50" width="120" height="80" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+      <text x="255" y="80" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>2 Times</text>
+      <text x="255" y="100" text-anchor='middle' font-size='12' fill='currentColor'>2 × 7 = 14</text>
+      <text x="255" y="120" text-anchor='middle' font-size='12' fill='currentColor'>(easy!)</text>
 
-      <text x="330" y="105" font-size='20' font-weight='bold' fill='currentColor'>=</text>
+      <text x="335" y="95" font-size='20' font-weight='bold' fill='currentColor'>=</text>
 
-      <!-- Answer -->
-      <rect x="360" y="60" width="140" height="80" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="5"/>
-      <text x="430" y="90" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>12 Times</text>
-      <text x="430" y="110" text-anchor='middle' font-size='12' fill='currentColor'>12 × 7 = 84</text>
-      <text x="430" y="130" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>70 + 14</text>
+      <rect x="365" y="50" width="140" height="80" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+      <text x="435" y="80" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>12 Times</text>
+      <text x="435" y="100" text-anchor='middle' font-size='12' fill='currentColor'>12 × 7 = 84</text>
+      <text x="435" y="120" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>70 + 14</text>
     </g>
   </svg>
   <div class="diagram-caption">Use 10 + 2 to build the 12 times table</div>
@@ -244,7 +241,7 @@ if (ctx9) {
 <p>Now you've learned about 9, 11, and 12. Together with 3 and 4, 6, 7, and 8, you've learned strategies for every times table from 1 to 12!</p>
 
 <div class="diagram-container">
-  <svg width="600" height="300" viewBox="0 0 600 300">
+  <svg width="100%" viewBox="0 0 610 310">
     <text x="300" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>All Times Tables 1-12: Quick Reference</text>
 
     <g id="tables-overview">
@@ -287,7 +284,7 @@ if (ctx9) {
       <text x="480" y="145" font-size='10' fill='currentColor'>12, 24, 36, 48, 60...</text>
 
       <!-- Strategies box -->
-      <rect x="30" y="190" width="540" height="100" fill='none' stroke='#8b949e' stroke-width="2" rx="5"/>
+      <rect x="30" y="190" width="540" height="100" fill='none' stroke='#8b949e' stroke-width="2" rx="4"/>
       <text x="40" y="210" font-size='12' font-weight='bold' fill='currentColor'>Key Strategies to Remember:</text>
 
       <text x="50" y="235" font-size='11' fill='currentColor'>• Use doubling: 2 → 4 → 8, and 3 → 6 (6 is 3 doubled)</text>

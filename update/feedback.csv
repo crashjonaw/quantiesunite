@@ -65,74 +65,7 @@ when there is a single click, an option of add target will spawn in the popup ho
 62,admin,/topic/p56_volume/learn/03_volume_of_cube#page-0,p56_volume,Volume (3D shapes),"please improve your display and there's too much space here,...","please improve your display and there's too much space here, more alignment is needed for text here you can centralize it together with your shape",,,dark,2026-04-06 17:31:23,Reduced viewBox from 400x300 to 320x200. Centered cube and text.,yes,2026-04-06,claude-opus
 63,admin,/topic/p56_volume/learn/03_volume_of_cube#page-2,p56_volume,Volume (3D shapes),I would suggest to use a table here,I would suggest to use a table here,,,dark,2026-04-06 17:31:46,Replaced SVG table with proper HTML table with styled header and columns.,yes,2026-04-06,claude-opus
 64,admin,/topic/p56_volume/learn/04_composite_solids#page-0,p56_volume,Volume (3D shapes),"your diagram is not good, please improve it and there's no m...","your diagram is not good, please improve it and there's no much padding used",,,dark,2026-04-06 17:32:19,Redesigned L-shape diagram with dimension labels and visual decomposition.,yes,2026-04-06,claude-opus
-65,admin,/topic/p56_volume/learn/04_composite_solids#page-1,p56_volume,Volume (3D shapes),"I don't understand this 
-Vertical part: 
-2
-e
-x
-t
-c
-m
-i
-m
-e
-s...","I don't understand this 
-Vertical part: 
-2
-e
-x
-t
-c
-m
-i
-m
-e
-s
-2
-e
-x
-t
-c
-m
-i
-m
-e
-s
-5
-e
-x
-t
-c
-m
-2extcmimes2extcmimes5extcm
-Horizontal part: 
-4
-e
-x
-t
-c
-m
-i
-m
-e
-s
-2
-e
-x
-t
-c
-m
-i
-m
-e
-s
-2
-e
-x
-t
-c
-m
-4extcmimes2extcmimes2extcm",,,dark,2026-04-06 17:32:38,,no,,
+65,admin,/topic/p56_volume/learn/04_composite_solids#page-1,p56_volume,Volume (3D shapes),Vertical text rendering bug,Text was rendering vertically letter-by-letter instead of horizontally,,,dark,2026-04-06 17:32:19,Fixed vertical text: moved units outside math mode and replaced text with mathrm.,yes,2026-04-06,claude-opus
 66,admin,/topic/p56_volume/learn/04_composite_solids#page-2,p56_volume,Volume (3D shapes),"your diagram sucks here, please improve","your diagram sucks here, please improve",,,dark,2026-04-06 17:32:51,Redesigned as 3D isometric cube with hole and visual subtraction equation.,yes,2026-04-06,claude-opus
 67,admin,/topic/p56_data_analysis/learn/02_bar_and_pictographs#page-1,p56_data_analysis,Data Analysis,"both bar charts are vertical here, even though the page says...","both bar charts are vertical here, even though the page says vertical vs horizontal bar charts",,,dark,2026-04-06 17:36:15,,no,,
 68,admin,/topic/p56_data_analysis/learn/02_bar_and_pictographs#page-2,p56_data_analysis,Data Analysis,"the bar chart here is too big, make it smaller","the bar chart here is too big, make it smaller",,,dark,2026-04-06 17:36:51,,no,,
@@ -140,3 +73,11 @@ m
 70,admin,/topic/p34_angles/learn/01_what_is_an_angle#page-1,p34_angles,Angles & Basic Geometry,360° = Full turn is not visible in dark theme mode,360° = Full turn is not visible in dark theme mode,,,dark,2026-04-06 17:38:34,,no,,
 71,admin,/topic/p34_angles/learn/01_what_is_an_angle#page-2,p34_angles,Angles & Basic Geometry,the words are not visible here in dark theme mode in the dia...,the words are not visible here in dark theme mode in the diagram,,,dark,2026-04-06 17:38:50,,no,,
 72,admin,/topic/p34_angles/learn/02_types_of_angles#page-0,p34_angles,Angles & Basic Geometry,same here words are not visible in dark theme mode,same here words are not visible in dark theme mode,,,dark,2026-04-06 17:39:04,,no,,
+73,admin,/topic/p34_angles/learn/03_measuring_with_protractor#page-0,p34_angles,Angles & Basic Geometry,the diagram here seems to be cut off,the diagram here seems to be cut off,,,bright,2026-04-06 17:39:24,,no,,
+74,admin,/topic/p34_angles/learn/03_measuring_with_protractor#page-1,p34_angles,Angles & Basic Geometry,same here it is cut off,same here it is cut off,,,bright,2026-04-06 17:39:33,,no,,
+75,admin,/topic/p34_angles/learn/03_measuring_with_protractor#page-3,p34_angles,Angles & Basic Geometry,diagrams here are too small and not properly aligned or plac...,"diagrams here are too small and not properly aligned or placed, please fix it and make it better",,,bright,2026-04-06 17:39:55,,no,,
+76,admin,/topic/p34_angles/learn/04_angles_in_shapes#page-0,p34_angles,Angles & Basic Geometry,"the diagram here are not properly sized or aligned, words ar...","the diagram here are not properly sized or aligned, words are overlapping the shapes and looks messy",,,bright,2026-04-06 17:40:21,,no,,
+77,admin,/topic/p34_angles/learn/04_angles_in_shapes#page-1,p34_angles,Angles & Basic Geometry,"same here, words overlapping shape diagram is messy and not ...","same here, words overlapping shape diagram is messy and not aligned, the 3 triangles should be properly spaced with same padding from left and right, top and bottom",,,bright,2026-04-06 17:41:03,,no,,
+78,admin,/topic/p34_angles/learn/04_angles_in_shapes#page-2,p34_angles,Angles & Basic Geometry,same here as previous,same here as previous,,,bright,2026-04-06 17:41:19,,no,,
+79,admin,/topic/p34_angles/learn/04_angles_in_shapes#page-3,p34_angles,Angles & Basic Geometry,words cannot be seen in dark theme mode and padding is diffe...,"words cannot be seen in dark theme mode and padding is different at most left and most right, please fix",,,dark,2026-04-06 17:41:47,,no,,
+80,admin,/topic/p34_angles/learn/04_angles_in_shapes#page-3,p34_angles,Angles & Basic Geometry,please also have a proper at least black outline for the dis...,"please also have a proper at least black outline for the display box to make it more aesthetically pleasing, I leave it to you",,,dark,2026-04-06 17:42:26,,no,,

@@ -4,27 +4,36 @@ SECTIONS = [
     {
         "title": "Decimals Are Fractions in Disguise",
         "body": """
-<p><strong>You know whole numbers</strong> (1, 2, 3...) <strong>and fractions</strong> (½, ¼). But what about numbers BETWEEN whole numbers? When you measure something and it's not exactly 3 cm or 4 cm, but somewhere in between? That's where decimals come in.</p>
+<p><strong>You know whole numbers</strong> (1, 2, 3...) <strong>and fractions</strong> (1/2, 1/4). But what about numbers BETWEEN whole numbers? When you measure something and it's not exactly 3 cm or 4 cm, but somewhere in between? That's where decimals come in.</p>
 
 <div class="concept-box">
   <p>A <strong>decimal</strong> is just another way to write a fraction — but using our place value system instead of a fraction bar.</p>
-  <p>Instead of writing \\(\\frac{7}{10}\\), we write <strong>0.7</strong></p>
+  <p>Instead of writing 7/10, we write <strong>0.7</strong></p>
 </div>
 
 <h4>The Decimal Point is a Marker</h4>
 <p>The decimal point (.) tells us where the whole number part ends and the fractional part begins.</p>
 
-<svg viewBox="0 0 600 140" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>The Decimal Point</text>
-  <text x="150" y="60" text-anchor='middle' fill='#4f8ef7' font-size='28' font-weight='bold'>3</text>
-  <text x="200" y="70" text-anchor='middle' fill='#ef4444' font-size='40' font-weight='bold'>.</text>
-  <text x="270" y="60" text-anchor='middle' fill='#22c55e' font-size='28' font-weight='bold'>7</text>
-  <text x="150" y="100" text-anchor='middle' fill='#4f8ef7' font-size='12'>Whole</text>
-  <text x="150" y="115" text-anchor='middle' fill='#4f8ef7' font-size='12'>numbers</text>
-  <text x="270" y="100" text-anchor='middle' fill='#22c55e' font-size='12'>Fraction</text>
-  <text x="270" y="115" text-anchor='middle' fill='#22c55e' font-size='12'>parts</text>
-  <path d="M 150 85 Q 150 95 200 95" stroke='#4f8ef7' stroke-width="2" fill='none' marker-end="url(#arrowblue)"/>
-  <path d="M 270 85 Q 270 95 200 95" stroke='#22c55e' stroke-width="2" fill='none' marker-end="url(#arrowgreen)"/>
+<svg viewBox="0 0 420 150" style="width:100%;max-width:420px;height:auto;display:block;margin:16px auto;">
+  <rect x="15" y="15" width="390" height="120" fill="#1e293b" stroke="#334155" stroke-width="1" rx="4"/>
+  <text x="210" y="40" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">The Decimal Point</text>
+
+  <!-- Whole number digit -->
+  <text x="140" y="80" text-anchor="middle" fill="#4f8ef7" font-size="36" font-weight="bold" font-family="system-ui, sans-serif">3</text>
+  <!-- Decimal point -->
+  <text x="175" y="80" text-anchor="middle" fill="#ef4444" font-size="40" font-weight="bold" font-family="system-ui, sans-serif">.</text>
+  <!-- Fraction digit -->
+  <text x="210" y="80" text-anchor="middle" fill="#22c55e" font-size="36" font-weight="bold" font-family="system-ui, sans-serif">7</text>
+
+  <!-- Labels -->
+  <text x="140" y="108" text-anchor="middle" fill="#4f8ef7" font-size="11" font-family="system-ui, sans-serif">Whole</text>
+  <text x="140" y="122" text-anchor="middle" fill="#4f8ef7" font-size="11" font-family="system-ui, sans-serif">number</text>
+
+  <text x="175" y="108" text-anchor="middle" fill="#ef4444" font-size="11" font-family="system-ui, sans-serif">Decimal</text>
+  <text x="175" y="122" text-anchor="middle" fill="#ef4444" font-size="11" font-family="system-ui, sans-serif">point</text>
+
+  <text x="210" y="108" text-anchor="middle" fill="#22c55e" font-size="11" font-family="system-ui, sans-serif">Fraction</text>
+  <text x="210" y="122" text-anchor="middle" fill="#22c55e" font-size="11" font-family="system-ui, sans-serif">part</text>
 </svg>
 
 <div class="worked-example">
@@ -44,25 +53,35 @@ SECTIONS = [
 <p>Once you start looking, you'll see decimals all around you:</p>
 
 <div class="concept-box">
-  <p><strong>💰 Money:</strong> When you buy something for $2.50, the .50 means 50 cents (50 hundredths of a dollar)</p>
-  <p><strong>📏 Measurement:</strong> A table might be 1.5 metres long (1 whole metre + half a metre)</p>
-  <p><strong>⏱️ Time in Sports:</strong> A runner finishes in 12.3 seconds (12 seconds + 3 tenths of a second)</p>
-  <p><strong>🌡️ Temperature:</strong> It's 36.5°C outside (36 degrees + half a degree)</p>
-  <p><strong>⚖️ Weight:</strong> A bag of flour weighs 2.25 kg (2 kg + 25 hundredths of a kg)</p>
+  <p><strong>Money:</strong> When you buy something for $2.50, the .50 means 50 cents (50 hundredths of a dollar)</p>
+  <p><strong>Measurement:</strong> A table might be 1.5 metres long (1 whole metre + half a metre)</p>
+  <p><strong>Time in Sports:</strong> A runner finishes in 12.3 seconds (12 seconds + 3 tenths of a second)</p>
+  <p><strong>Temperature:</strong> It's 36.5 degrees C outside (36 degrees + half a degree)</p>
+  <p><strong>Weight:</strong> A bag of flour weighs 2.25 kg (2 kg + 25 hundredths of a kg)</p>
 </div>
 
 <h4>Why Decimals Instead of Fractions?</h4>
 <p>We could write all these as fractions, but decimals are easier:</p>
 
-<svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <rect x="20" y="20" width="460" height="150" fill='#1e293b' stroke='#4f8ef7' stroke-width="2" rx="4"/>
-  <text x="250" y="45" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Compare These:</text>
-  <text x="60" y="80" fill='currentColor' font-size='12'><tspan x="60" dy="0">Fraction:</tspan> <tspan x="60" dy="18" font-weight='bold' fill='#4f8ef7' font-size='14'>2 50/100 dollars</tspan></text>
-  <text x="60" y="130" fill='currentColor' font-size='12'><tspan x="60" dy="0">Decimal:</tspan> <tspan x="60" dy="18" font-weight='bold' fill='#22c55e' font-size='14'>$2.50 — much easier!</tspan></text>
-  <text x="300" y="110" fill='currentColor' opacity='0.6' font-size='11' font-style="italic">Decimals are easier to:</text>
-  <text x="300" y="128" fill='currentColor' opacity='0.6' font-size='10'>• Write</text>
-  <text x="300" y="143" fill='currentColor' opacity='0.6' font-size='10'>• Compare</text>
-  <text x="300" y="158" fill='currentColor' opacity='0.6' font-size='10'>• Add/subtract</text>
+<svg viewBox="0 0 460 200" style="width:100%;max-width:460px;height:auto;display:block;margin:16px auto;">
+  <rect x="15" y="15" width="430" height="170" fill="#1e293b" stroke="#334155" stroke-width="1" rx="4"/>
+  <text x="230" y="42" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">Fraction vs Decimal</text>
+
+  <!-- Fraction row -->
+  <rect x="35" y="58" width="190" height="50" fill="#0f172a" stroke="#ef4444" stroke-width="1.5" rx="4"/>
+  <text x="130" y="78" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">Fraction Way</text>
+  <text x="130" y="98" text-anchor="middle" fill="currentColor" font-size="13" font-family="system-ui, sans-serif">2  50/100  dollars</text>
+
+  <!-- Decimal row -->
+  <rect x="245" y="58" width="180" height="50" fill="#0f172a" stroke="#22c55e" stroke-width="1.5" rx="4"/>
+  <text x="335" y="78" text-anchor="middle" fill="#22c55e" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">Decimal Way</text>
+  <text x="335" y="98" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold" font-family="system-ui, sans-serif">$2.50</text>
+
+  <!-- Benefits -->
+  <text x="230" y="135" text-anchor="middle" fill="currentColor" opacity="0.7" font-size="11" font-style="italic" font-family="system-ui, sans-serif">Decimals are easier to:</text>
+  <text x="145" y="155" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="11" font-family="system-ui, sans-serif">Write</text>
+  <text x="230" y="155" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="11" font-family="system-ui, sans-serif">Compare</text>
+  <text x="315" y="155" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="11" font-family="system-ui, sans-serif">Add / Subtract</text>
 </svg>
         """
     },
@@ -129,31 +148,34 @@ SECTIONS = [
 
 <p>Remember place value with whole numbers? Hundreds, tens, ones? With decimals, we extend that pattern to the RIGHT of the decimal point.</p>
 
-<svg viewBox="0 0 700 160" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
-  <text x="350" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Place Value Extended</text>
+<svg viewBox="0 0 520 175" style="width:100%;max-width:520px;height:auto;display:block;margin:16px auto;">
+  <rect x="15" y="15" width="490" height="145" fill="#1e293b" stroke="#334155" stroke-width="1" rx="4"/>
+  <text x="260" y="38" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">Place Value Extended</text>
 
-  <!-- Boxes for place values -->
-  <rect x="20" y="40" width="90" height="50" fill='#1e293b' stroke='#4f8ef7' stroke-width="2" rx="2"/>
-  <text x="65" y="55" text-anchor='middle' fill='currentColor' font-size='10'>ones</text>
-  <text x="65" y="70" text-anchor='middle' fill='#4f8ef7' font-size='14' font-weight='bold'>5</text>
-  <text x="65" y="85" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='9'>5 × 1</text>
+  <!-- Ones box -->
+  <rect x="40" y="52" width="100" height="60" fill="#0f172a" stroke="#4f8ef7" stroke-width="2" rx="4"/>
+  <text x="90" y="70" text-anchor="middle" fill="currentColor" font-size="10" font-family="system-ui, sans-serif">ones</text>
+  <text x="90" y="90" text-anchor="middle" fill="#4f8ef7" font-size="20" font-weight="bold" font-family="system-ui, sans-serif">5</text>
+  <text x="90" y="106" text-anchor="middle" fill="currentColor" opacity="0.5" font-size="9" font-family="system-ui, sans-serif">5 x 1</text>
 
   <!-- Decimal point -->
-  <text x="125" y="75" text-anchor='middle' fill='#ef4444' font-size='28' font-weight='bold'>.</text>
+  <text x="160" y="92" text-anchor="middle" fill="#ef4444" font-size="28" font-weight="bold" font-family="system-ui, sans-serif">.</text>
 
-  <rect x="140" y="40" width="90" height="50" fill='#1e293b' stroke='#22c55e' stroke-width="2" rx="2"/>
-  <text x="185" y="55" text-anchor='middle' fill='currentColor' font-size='10'>tenths</text>
-  <text x="185" y="70" text-anchor='middle' fill='#22c55e' font-size='14' font-weight='bold'>3</text>
-  <text x="185" y="85" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='9'>3 × 0.1</text>
+  <!-- Tenths box -->
+  <rect x="180" y="52" width="100" height="60" fill="#0f172a" stroke="#22c55e" stroke-width="2" rx="4"/>
+  <text x="230" y="70" text-anchor="middle" fill="currentColor" font-size="10" font-family="system-ui, sans-serif">tenths</text>
+  <text x="230" y="90" text-anchor="middle" fill="#22c55e" font-size="20" font-weight="bold" font-family="system-ui, sans-serif">3</text>
+  <text x="230" y="106" text-anchor="middle" fill="currentColor" opacity="0.5" font-size="9" font-family="system-ui, sans-serif">3 x 0.1</text>
 
-  <rect x="260" y="40" width="90" height="50" fill='#1e293b' stroke='#f59e0b' stroke-width="2" rx="2"/>
-  <text x="305" y="55" text-anchor='middle' fill='currentColor' font-size='10'>hundredths</text>
-  <text x="305" y="70" text-anchor='middle' fill='#f59e0b' font-size='14' font-weight='bold'>7</text>
-  <text x="305" y="85" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='9'>7 × 0.01</text>
+  <!-- Hundredths box -->
+  <rect x="310" y="52" width="100" height="60" fill="#0f172a" stroke="#f59e0b" stroke-width="2" rx="4"/>
+  <text x="360" y="70" text-anchor="middle" fill="currentColor" font-size="10" font-family="system-ui, sans-serif">hundredths</text>
+  <text x="360" y="90" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="bold" font-family="system-ui, sans-serif">7</text>
+  <text x="360" y="106" text-anchor="middle" fill="currentColor" opacity="0.5" font-size="9" font-family="system-ui, sans-serif">7 x 0.01</text>
 
   <!-- Number below -->
-  <text x="350" y="130" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>5.37</text>
-  <text x="350" y="155" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='11'>= 5 + 0.3 + 0.07</text>
+  <text x="260" y="140" text-anchor="middle" fill="currentColor" font-size="18" font-weight="bold" font-family="system-ui, sans-serif">5.37</text>
+  <text x="260" y="155" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="11" font-family="system-ui, sans-serif">= 5 + 0.3 + 0.07</text>
 </svg>
 
 <div class="success-box">

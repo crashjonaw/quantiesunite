@@ -147,46 +147,61 @@ Total: \\(3 \\times 10 = 30\\) balls</p>
 
 <h3>Parts of a Bar Chart</h3>
 
-<svg width="400" height="300" viewBox="0 0 400 300">
+<svg viewBox="-15 -15 440 330" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:440px;">
+  <!-- Background -->
+  <rect x="-15" y="-15" width="440" height="330" rx="4" fill="#1e1e2e"/>
+
   <!-- Title -->
-  <text x="200" y="25" font-size='18' font-weight='bold' text-anchor='middle' fill='currentColor'>Parts of a Bar Chart</text>
+  <text x="215" y="22" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="currentColor">Favourite Sport</text>
 
-  <!-- Y-axis (vertical) -->
-  <line x1="50" y1="50" x2="50" y2="250" stroke='#8b949e' stroke-width="2"/>
-  <text x="15" y="155" font-size='12' text-anchor='middle' transform='rotate(-90, 15, 155)' fill='currentColor'>Number of Students</text>
+  <!-- Y-axis -->
+  <line x1="70" y1="45" x2="70" y2="250" stroke="#8b949e" stroke-width="2"/>
+  <text x="20" y="152" font-family="sans-serif" font-size="12" text-anchor="middle" transform="rotate(-90,20,152)" fill="currentColor">Number of Students</text>
 
-  <!-- X-axis (horizontal) -->
-  <line x1="50" y1="250" x2="380" y2="250" stroke='#8b949e' stroke-width="2"/>
-  <text x="215" y="280" font-size='12' text-anchor='middle' fill='currentColor'>Favourite Sport</text>
+  <!-- X-axis -->
+  <line x1="70" y1="250" x2="395" y2="250" stroke="#8b949e" stroke-width="2"/>
+  <text x="232" y="295" font-family="sans-serif" font-size="12" text-anchor="middle" fill="currentColor">Sport</text>
 
-  <!-- Y-axis labels -->
-  <text x="40" y="255" font-size='10' text-anchor='end' fill='currentColor'>0</text>
-  <text x="40" y="205" font-size='10' text-anchor='end' fill='currentColor'>5</text>
-  <text x="40" y="155" font-size='10' text-anchor='end' fill='currentColor'>10</text>
-  <text x="40" y="105" font-size='10' text-anchor='end' fill='currentColor'>15</text>
+  <!-- Y-axis labels and grid lines -->
+  <text x="60" y="254" font-family="sans-serif" font-size="11" text-anchor="end" fill="currentColor">0</text>
 
-  <!-- Grid lines -->
-  <line x1="50" y1="200" x2="380" y2="200" stroke='#30363d' stroke-width="1" stroke-dasharray="5,5"/>
-  <line x1="50" y1="150" x2="380" y2="150" stroke='#30363d' stroke-width="1" stroke-dasharray="5,5"/>
-  <line x1="50" y1="100" x2="380" y2="100" stroke='#30363d' stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="70" y1="210" x2="395" y2="210" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="60" y="214" font-family="sans-serif" font-size="11" text-anchor="end" fill="currentColor">5</text>
 
-  <!-- Bars -->
-  <rect x="70" y="150" width="40" height="100" fill='#ef4444'/>
-  <rect x="130" y="100" width="40" height="150" fill='#f59e0b'/>
-  <rect x="190" y="170" width="40" height="80" fill='#f97316'/>
-  <rect x="250" y="130" width="40" height="120" fill='#a855f7'/>
-  <rect x="310" y="180" width="40" height="70" fill='#22c55e'/>
+  <line x1="70" y1="170" x2="395" y2="170" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="60" y="174" font-family="sans-serif" font-size="11" text-anchor="end" fill="currentColor">10</text>
 
-  <!-- X-axis labels -->
-  <text x="90" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Football</text>
-  <text x="150" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Tennis</text>
-  <text x="210" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Swimming</text>
-  <text x="270" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Running</text>
-  <text x="330" y="270" font-size='11' text-anchor='middle' fill='currentColor'>Badminton</text>
+  <line x1="70" y1="130" x2="395" y2="130" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="60" y="134" font-family="sans-serif" font-size="11" text-anchor="end" fill="currentColor">15</text>
 
-  <!-- Legend for parts -->
-  <circle cx="60" cy="30" r="4" fill='#ef4444'/>
-  <text x="70" y="35" font-size='11' fill='currentColor'>Bars show amounts</text>
+  <line x1="70" y1="90" x2="395" y2="90" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="60" y="94" font-family="sans-serif" font-size="11" text-anchor="end" fill="currentColor">20</text>
+
+  <!-- Bars: equal spacing. 5 bars, each 45px wide, 20px gap. Start at x=85 -->
+  <!-- Football: 10 students. height = 10*8 = 80. y = 250-80 = 170 -->
+  <rect x="85" y="170" width="45" height="80" rx="4" fill="#ef4444"/>
+  <!-- Tennis: 15 students. height = 120. y = 250-120 = 130 -->
+  <rect x="150" y="130" width="45" height="120" rx="4" fill="#f59e0b"/>
+  <!-- Swimming: 8 students. height = 64. y = 250-64 = 186 -->
+  <rect x="215" y="186" width="45" height="64" rx="4" fill="#f97316"/>
+  <!-- Running: 12 students. height = 96. y = 250-96 = 154 -->
+  <rect x="280" y="154" width="45" height="96" rx="4" fill="#a855f7"/>
+  <!-- Badminton: 7 students. height = 56. y = 250-56 = 194 -->
+  <rect x="345" y="194" width="45" height="56" rx="4" fill="#22c55e"/>
+
+  <!-- X-axis labels (centered under each bar) -->
+  <text x="107" y="270" font-family="sans-serif" font-size="11" text-anchor="middle" fill="currentColor">Football</text>
+  <text x="172" y="270" font-family="sans-serif" font-size="11" text-anchor="middle" fill="currentColor">Tennis</text>
+  <text x="237" y="270" font-family="sans-serif" font-size="11" text-anchor="middle" fill="currentColor">Swimming</text>
+  <text x="302" y="270" font-family="sans-serif" font-size="11" text-anchor="middle" fill="currentColor">Running</text>
+  <text x="367" y="270" font-family="sans-serif" font-size="11" text-anchor="middle" fill="currentColor">Badminton</text>
+
+  <!-- Value labels on bars -->
+  <text x="107" y="165" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="currentColor">10</text>
+  <text x="172" y="125" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="currentColor">15</text>
+  <text x="237" y="181" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="currentColor">8</text>
+  <text x="302" y="149" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="currentColor">12</text>
+  <text x="367" y="189" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="currentColor">7</text>
 </svg>
 
 <h3>Reading a Bar Chart</h3>
@@ -250,38 +265,50 @@ Total: \\(3 \\times 10 = 30\\) balls</p>
 <div class="worked-example">
 <p><strong>Horizontal Bar Chart Example: Same Data</strong></p>
 
-<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 420px;">
+<svg viewBox="-15 -15 440 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:440px;">
+  <!-- Background -->
+  <rect x="-15" y="-15" width="440" height="260" rx="4" fill="#1e1e2e"/>
+
   <!-- Title -->
-  <text x="210" y="20" font-size='14' font-weight='bold' text-anchor='middle' fill='currentColor'>Favourite Colour Survey (Horizontal)</text>
+  <text x="220" y="20" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">Favourite Colour Survey (Horizontal)</text>
 
   <!-- Y-axis -->
-  <line x1="80" y1="40" x2="80" y2="200" stroke='#8b949e' stroke-width="2"/>
+  <line x1="80" y1="40" x2="80" y2="200" stroke="#8b949e" stroke-width="2"/>
   <!-- X-axis -->
-  <line x1="80" y1="200" x2="380" y2="200" stroke='#8b949e' stroke-width="2"/>
+  <line x1="80" y1="200" x2="380" y2="200" stroke="#8b949e" stroke-width="2"/>
 
-  <!-- Labels on Y-axis -->
-  <text x="70" y="75" font-size='12' text-anchor='end' fill='currentColor'>Red</text>
-  <text x="70" y="110" font-size='12' text-anchor='end' fill='currentColor'>Blue</text>
-  <text x="70" y="145" font-size='12' text-anchor='end' fill='currentColor'>Green</text>
-  <text x="70" y="180" font-size='12' text-anchor='end' fill='currentColor'>Yellow</text>
+  <!-- Labels on Y-axis (equal spacing: 40px apart, at 70, 110, 150, 190) -->
+  <text x="70" y="74" font-family="sans-serif" font-size="12" text-anchor="end" fill="currentColor">Red</text>
+  <text x="70" y="114" font-family="sans-serif" font-size="12" text-anchor="end" fill="currentColor">Blue</text>
+  <text x="70" y="154" font-family="sans-serif" font-size="12" text-anchor="end" fill="currentColor">Green</text>
+  <text x="70" y="194" font-family="sans-serif" font-size="12" text-anchor="end" fill="currentColor">Yellow</text>
 
-  <!-- Numbers on X-axis -->
-  <text x="80" y="215" font-size='10' fill='currentColor'>0</text>
-  <text x="150" y="215" font-size='10' fill='currentColor'>5</text>
-  <text x="220" y="215" font-size='10' fill='currentColor'>10</text>
-  <text x="290" y="215" font-size='10' fill='currentColor'>15</text>
+  <!-- Numbers on X-axis: scale 0-15, each unit = 20px -->
+  <text x="80" y="218" font-family="sans-serif" font-size="10" text-anchor="middle" fill="currentColor">0</text>
+  <text x="180" y="218" font-family="sans-serif" font-size="10" text-anchor="middle" fill="currentColor">5</text>
+  <text x="280" y="218" font-family="sans-serif" font-size="10" text-anchor="middle" fill="currentColor">10</text>
+  <text x="380" y="218" font-family="sans-serif" font-size="10" text-anchor="middle" fill="currentColor">15</text>
 
-  <!-- Bars -->
-  <rect x="80" y="65" width="140" height="18" fill='#ef4444' rx="2"/>
-  <rect x="80" y="100" width="200" height="18" fill='#3b82f6' rx="2"/>
-  <rect x="80" y="135" width="160" height="18" fill='#22c55e' rx="2"/>
-  <rect x="80" y="170" width="100" height="18" fill='#eab308' rx="2"/>
+  <!-- Grid lines -->
+  <line x1="180" y1="40" x2="180" y2="200" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="280" y1="40" x2="280" y2="200" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="380" y1="40" x2="380" y2="200" stroke="#30363d" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Bars: equal spacing, 22px tall, centered in 40px rows -->
+  <!-- Red: 7. width = 7*20 = 140 -->
+  <rect x="80" y="59" width="140" height="22" rx="4" fill="#ef4444"/>
+  <!-- Blue: 10. width = 10*20 = 200 -->
+  <rect x="80" y="99" width="200" height="22" rx="4" fill="#3b82f6"/>
+  <!-- Green: 8. width = 8*20 = 160 -->
+  <rect x="80" y="139" width="160" height="22" rx="4" fill="#22c55e"/>
+  <!-- Yellow: 5. width = 5*20 = 100 -->
+  <rect x="80" y="179" width="100" height="22" rx="4" fill="#eab308"/>
 
   <!-- Values after bars -->
-  <text x="225" y="79" font-size='11' font-weight='bold' fill='currentColor'>7</text>
-  <text x="285" y="114" font-size='11' font-weight='bold' fill='currentColor'>10</text>
-  <text x="245" y="149" font-size='11' font-weight='bold' fill='currentColor'>8</text>
-  <text x="185" y="184" font-size='11' font-weight='bold' fill='currentColor'>5</text>
+  <text x="228" y="75" font-family="sans-serif" font-size="11" font-weight="bold" fill="currentColor">7</text>
+  <text x="288" y="115" font-family="sans-serif" font-size="11" font-weight="bold" fill="currentColor">10</text>
+  <text x="248" y="155" font-family="sans-serif" font-size="11" font-weight="bold" fill="currentColor">8</text>
+  <text x="188" y="195" font-family="sans-serif" font-size="11" font-weight="bold" fill="currentColor">5</text>
 </svg>
 
 <p><strong>Same data, different view!</strong> Blue is still the tallest (most popular).</p>

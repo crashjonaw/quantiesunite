@@ -7,7 +7,7 @@ SECTIONS = [
 <h4>Most Important Rule for Adding/Subtracting Decimals</h4>
 
 <div class="warning-box">
-  <p><strong>⭐ The decimal points MUST be directly above each other.</strong></p>
+  <p><strong>The decimal points MUST be directly above each other.</strong></p>
   <p>This ensures that tenths add to tenths, hundredths add to hundredths, and ones add to ones.</p>
 </div>
 
@@ -23,29 +23,26 @@ SECTIONS = [
 
   <p><strong>What we're adding:</strong></p>
   <ul>
-    <li>Ones: \\(2 + 1 = 3\\)</li>
-    <li>Tenths: \\(5 + 3 = 8\\)</li>
+    <li>Ones: 2 + 1 = 3</li>
+    <li>Tenths: 5 + 3 = 8</li>
   </ul>
 
   <p><strong>Answer: 3.8</strong></p>
 </div>
 
-<svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <text x="250" y="18" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>Why Lining Up Matters</text>
+<svg viewBox="0 0 500 130" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
+  <rect x="15" y="15" width="470" height="100" fill="#1e293b" stroke="#334155" stroke-width="1" rx="4"/>
+  <text x="250" y="38" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold" font-family="system-ui, sans-serif">Why Lining Up Matters</text>
 
   <!-- Wrong way -->
-  <rect x="20" y="35" width="200" height="50" fill='#1e293b' stroke='#ef4444' stroke-width="2" rx="2"/>
-  <text x="30" y="52" fill='#ef4444' font-size='11' font-weight='bold'>❌ WRONG</text>
-  <text x="30" y="72" fill='currentColor' font-size='13' font-family='monospace'>2.5 + 1.3 = 28</text>
-  <text x="120" y="92" fill='#ef4444' font-size='10'>(5+3=8 is correct, but</text>
-  <text x="120" y="105" fill='#ef4444' font-size='10'>mixing up places!)</text>
+  <rect x="35" y="52" width="195" height="50" fill="#0f172a" stroke="#ef4444" stroke-width="2" rx="4"/>
+  <text x="50" y="70" fill="#ef4444" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">WRONG</text>
+  <text x="50" y="90" fill="currentColor" font-size="13" font-family="monospace">2.5 + 1.3 = 28 ?</text>
 
   <!-- Right way -->
-  <rect x="280" y="35" width="200" height="50" fill='#1e293b' stroke='#22c55e' stroke-width="2" rx="2"/>
-  <text x="290" y="52" fill='#22c55e' font-size='11' font-weight='bold'>✓ CORRECT</text>
-  <text x="290" y="72" fill='currentColor' font-size='13' font-family='monospace'>2.5 + 1.3 = 3.8</text>
-  <text x="380" y="92" fill='#22c55e' font-size='10'>(decimal points</text>
-  <text x="380" y="105" fill='#22c55e' font-size='10'>lined up!)</text>
+  <rect x="270" y="52" width="195" height="50" fill="#0f172a" stroke="#22c55e" stroke-width="2" rx="4"/>
+  <text x="285" y="70" fill="#22c55e" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">CORRECT</text>
+  <text x="285" y="90" fill="currentColor" font-size="13" font-family="monospace">2.5 + 1.3 = 3.8</text>
 </svg>
         """
     },
@@ -74,9 +71,9 @@ SECTIONS = [
 
   <p><strong>What we added:</strong></p>
   <ul>
-    <li>Ones: \\(3 + 1 = 4\\)</li>
-    <li>Tenths: \\(2 + 4 = 6\\)</li>
-    <li>Hundredths: \\(0 + 5 = 5\\)</li>
+    <li>Ones: 3 + 1 = 4</li>
+    <li>Tenths: 2 + 4 = 6</li>
+    <li>Hundredths: 0 + 5 = 5</li>
   </ul>
 
   <p><strong>Answer: 4.65</strong></p>
@@ -116,9 +113,9 @@ SECTIONS = [
 
   <p><strong>What we subtracted:</strong></p>
   <ul>
-    <li>Ones: \\(5 - 2 = 3\\)</li>
-    <li>Tenths: \\(7 - 3 = 4\\)</li>
-    <li>Hundredths: \\(4 - 1 = 3\\)</li>
+    <li>Ones: 5 - 2 = 3</li>
+    <li>Tenths: 7 - 3 = 4</li>
+    <li>Hundredths: 4 - 1 = 3</li>
   </ul>
 
   <p><strong>Answer: 3.43</strong></p>
@@ -151,7 +148,7 @@ SECTIONS = [
         "body": """
 <h4>What Happens When You Can't Subtract?</h4>
 
-<p>Sometimes the digit you're subtracting from is too small. Then you need to <strong>borrow</strong> (or <strong>regroup</strong) from the next place to the left.</p>
+<p>Sometimes the digit you're subtracting from is too small. Then you need to <strong>borrow</strong> (or <strong>regroup</strong>) from the next place to the left.</p>
 
 <div class="worked-example">
   <p><strong>Example: 3.2 - 1.5</strong></p>
@@ -167,9 +164,9 @@ SECTIONS = [
 
   <p><strong>What we did:</strong></p>
   <ul>
-    <li>Can't do \\(2 - 5\\), so borrow 1 from the 3</li>
-    <li>Now it's \\(12\\) tenths \\(- 5\\) tenths \\(= 7\\) tenths ✓</li>
-    <li>Ones: \\(2 - 1 = 1\\)</li>
+    <li>Can't do 2 - 5, so borrow 1 from the 3</li>
+    <li>Now it's 12 tenths - 5 tenths = 7 tenths</li>
+    <li>Ones: 2 - 1 = 1</li>
   </ul>
 
   <p><strong>Answer: 1.7 (or 1.70)</strong></p>
@@ -189,11 +186,11 @@ SECTIONS = [
 
   <p><strong>Step by step:</strong></p>
   <ol>
-    <li>Can't do \\(3 - 8\\) in tenths, so borrow from ones</li>
+    <li>Can't do 3 - 8 in tenths, so borrow from ones</li>
     <li>5 ones becomes 4 ones</li>
-    <li>3 tenths becomes 13 tenths (\\(10 + 3\\))</li>
-    <li>Now: \\(13 - 8 = 5\\) tenths ✓</li>
-    <li>Ones: \\(4 - 2 = 2\\) ✓</li>
+    <li>3 tenths becomes 13 tenths (10 + 3)</li>
+    <li>Now: 13 - 8 = 5 tenths</li>
+    <li>Ones: 4 - 2 = 2</li>
   </ol>
 </div>
 

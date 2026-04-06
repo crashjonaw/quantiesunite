@@ -9,25 +9,24 @@ SECTIONS = [
 </div>
 
 <h3>A Chocolate Bar Example</h3>
-<svg width="300" height="175" viewBox="0 0 300 175" style="display: block; margin: 20px auto;">
-  <!-- First bar: divided into 2 pieces -->
-  <text x="30" y="20" font-size='14' font-weight='bold'>1/2</text>
-  <rect x="20" y="30" width="100" height="40" fill='orange' stroke='#8b949e' stroke-width="2"/>
-  <rect x="120" y="30" width="100" height="40" fill='lightgray' stroke='#8b949e' stroke-width="2"/>
-  <line x1="120" y1="30" x2="120" y2="70" stroke='#8b949e' stroke-width="2"/>
-
-  <!-- Second bar: divided into 4 pieces -->
-  <text x="30" y="115" font-size='14' font-weight='bold'>2/4</text>
-  <rect x="20" y="125" width="50" height="40" fill='orange' stroke='#8b949e' stroke-width="1"/>
-  <rect x="70" y="125" width="50" height="40" fill='orange' stroke='#8b949e' stroke-width="1"/>
-  <rect x="120" y="125" width="50" height="40" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="170" y="125" width="50" height="40" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <line x1="70" y1="125" x2="70" y2="165" stroke='#8b949e' stroke-width="1"/>
-  <line x1="120" y1="125" x2="120" y2="165" stroke='#8b949e' stroke-width="1"/>
-  <line x1="170" y1="125" x2="170" y2="165" stroke='#8b949e' stroke-width="1"/>
+<svg width="310" height="185" viewBox="0 0 310 185" style="display: block; margin: 20px auto;">
+  <!-- First bar: 1/2 -->
+  <text x="15" y="28" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>1/2</text>
+  <rect x="50" y="15" width="110" height="35" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="160" y="15" width="110" height="35" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 
   <!-- Equals sign -->
-  <text x="260" y="85" font-size='24' font-weight='bold'>=</text>
+  <text x="285" y="95" font-size='28' font-family='sans-serif' font-weight='bold' fill='currentColor'>=</text>
+
+  <!-- Second bar: 2/4 -->
+  <text x="15" y="98" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>2/4</text>
+  <rect x="50" y="80" width="55" height="35" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="105" y="80" width="55" height="35" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="160" y="80" width="55" height="35" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="215" y="80" width="55" height="35" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+
+  <!-- Caption -->
+  <text x="155" y="150" font-size='13' font-family='sans-serif' text-anchor='middle' fill='currentColor'>Same shaded area -- same amount!</text>
 </svg>
 
 <div class='success-box'>
@@ -54,27 +53,30 @@ SECTIONS = [
 </div>
 
 <h3>Visual Example: Building Equivalent Fractions</h3>
-<svg width="320" height="180" style="display: block; margin: 20px auto;">
+<svg width="320" height="210" viewBox="0 0 320 210" style="display: block; margin: 20px auto;">
   <!-- 1/2 -->
-  <text x="20" y="25" font-size='13'>1/2 =</text>
-  <rect x="60" y="10" width="100" height="30" fill='lightblue' stroke='#8b949e' stroke-width="2"/>
-  <rect x="160" y="10" width="100" height="30" fill='lightgray' stroke='#8b949e' stroke-width="2"/>
+  <text x="15" y="30" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>1/2 =</text>
+  <rect x="60" y="15" width="120" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="180" y="15" width="120" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 
   <!-- 2/4 -->
-  <text x="20" y="80" font-size='13'>2/4 =</text>
-  <rect x="60" y="65" width="50" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="110" y="65" width="50" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="160" y="65" width="50" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="210" y="65" width="50" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="100" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>2/4 =</text>
+  <rect x="60" y="80" width="60" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="120" y="80" width="60" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="180" y="80" width="60" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="240" y="80" width="60" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 
   <!-- 3/6 -->
-  <text x="20" y="155" font-size='13'>3/6 =</text>
-  <rect x="60" y="135" width="33" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="93" y="135" width="34" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="127" y="135" width="33" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="160" y="135" width="33" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="193" y="135" width="34" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="227" y="135" width="33" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="170" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>3/6 =</text>
+  <rect x="60" y="150" width="40" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="100" y="150" width="40" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="140" y="150" width="40" height="30" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="180" y="150" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="220" y="150" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="260" y="150" width="40" height="30" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+
+  <!-- Alignment guide lines -->
+  <line x1="180" y1="15" x2="180" y2="180" stroke='#8b949e' stroke-width='1' stroke-dasharray='4,3' opacity='0.5'/>
 </svg>"""
     },
     {

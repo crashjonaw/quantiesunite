@@ -20,17 +20,17 @@ SECTIONS = [
         "title": "Numerator and Denominator: The Two Parts",
         "body": """<p>Every fraction has two parts. Let's look at \\(\\frac{3}{4}\\) (read as "three-fourths"):</p>
 
-<svg width="300" height="120" style="display: block; margin: 20px auto;">
+<svg width="310" height="130" viewBox="0 0 310 130" style="display: block; margin: 20px auto;">
   <!-- Fraction display -->
-  <text x="100" y="40" font-size='32' text-anchor='middle' font-weight='bold'>3</text>
-  <line x1="60" y1="50" x2="140" y2="50" stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="80" font-size='32' text-anchor='middle' font-weight='bold'>4</text>
+  <text x="80" y="45" font-size='32' font-family='sans-serif' text-anchor='middle' font-weight='bold' fill='currentColor'>3</text>
+  <line x1="50" y1="55" x2="110" y2="55" stroke='#8b949e' stroke-width='2'/>
+  <text x="80" y="90" font-size='32' font-family='sans-serif' text-anchor='middle' font-weight='bold' fill='currentColor'>4</text>
 
   <!-- Labels -->
-  <text x="160" y="40" font-size='14' fill='blue'>numerator</text>
-  <text x="160" y="80" font-size='14' fill='red'>denominator</text>
-  <line x1="140" y1="35" x2="160" y2="40" stroke='blue' stroke-width="1"/>
-  <line x1="140" y1="80" x2="160" y2="80" stroke='red' stroke-width="1"/>
+  <line x1="112" y1="40" x2="140" y2="35" stroke='#58a6ff' stroke-width='1.5'/>
+  <text x="145" y="40" font-size='14' font-family='sans-serif' fill='#58a6ff'>numerator (top)</text>
+  <line x1="112" y1="85" x2="140" y2="90" stroke='#f97583' stroke-width='1.5'/>
+  <text x="145" y="95" font-size='14' font-family='sans-serif' fill='#f97583'>denominator (bottom)</text>
 </svg>
 
 <div class='success-box'>
@@ -39,19 +39,16 @@ SECTIONS = [
 </div>
 
 <h3>Example: A Chocolate Bar</h3>
-<svg width="250" height="95" style="display: block; margin: 20px auto;">
-  <!-- Whole bar -->
-  <rect x="20" y="20" width="200" height="30" fill='brown' stroke='#8b949e' stroke-width="2"/>
-  <!-- Divide into 4 pieces -->
-  <line x1="70" y1="20" x2="70" y2="50" stroke='#8b949e' stroke-width="1"/>
-  <line x1="120" y1="20" x2="120" y2="50" stroke='#8b949e' stroke-width="1"/>
-  <line x1="170" y1="20" x2="170" y2="50" stroke='#8b949e' stroke-width="1"/>
-  <!-- Highlight 3 pieces -->
-  <rect x="20" y="20" width="50" height="30" fill='orange' opacity='0.5' stroke='none'/>
-  <rect x="70" y="20" width="50" height="30" fill='orange' opacity='0.5' stroke='none'/>
-  <rect x="120" y="20" width="50" height="30" fill='orange' opacity='0.5' stroke='none'/>
-  <text x="125" y="70" font-size='16' font-weight='bold' text-anchor='middle'>3 pieces you eat (numerator)</text>
-  <text x="125" y="85" font-size='14' text-anchor='middle'>4 pieces total (denominator)</text>
+<svg width="280" height="110" viewBox="0 0 280 110" style="display: block; margin: 20px auto;">
+  <!-- 4-piece chocolate bar -->
+  <rect x="15" y="15" width="60" height="35" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="77" y="15" width="60" height="35" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="139" y="15" width="60" height="35" rx='4' fill='#e8a735' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="201" y="15" width="60" height="35" rx='4' fill='#6e4b2a' stroke='#8b949e' stroke-width='1.5'/>
+
+  <!-- Labels -->
+  <text x="140" y="72" font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='currentColor'>3 pieces you eat (numerator)</text>
+  <text x="140" y="92" font-size='13' font-family='sans-serif' text-anchor='middle' fill='currentColor'>4 pieces total (denominator)</text>
 </svg>"""
     },
     {
@@ -59,29 +56,31 @@ SECTIONS = [
         "body": """<p>A <strong>larger denominator</strong> means <strong>smaller pieces</strong>. A <strong>smaller denominator</strong> means <strong>bigger pieces</strong>.</p>
 
 <h3>Compare These Fractions</h3>
-<svg width="280" height="220" viewBox="0 0 280 220" style="display: block; margin: 20px auto;">
+<svg width="300" height="250" viewBox="0 0 300 250" style="display: block; margin: 20px auto;">
   <!-- 1/2 -->
-  <text x="20" y="25" font-size='16' font-weight='bold'>1/2 (one-half, big piece)</text>
-  <rect x="30" y="40" width="100" height="20" fill='lightblue' stroke='#8b949e' stroke-width="2"/>
-  <rect x="130" y="40" width="100" height="20" fill='lightgray' stroke='#8b949e' stroke-width="2"/>
+  <text x="15" y="28" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>1/2  (one-half)</text>
+  <rect x="15" y="38" width="130" height="28" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="145" y="38" width="130" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 
   <!-- 1/4 -->
-  <text x="20" y="100" font-size='16' font-weight='bold'>1/4 (one-quarter, smaller)</text>
-  <rect x="30" y="115" width="50" height="20" fill='lightblue' stroke='#8b949e' stroke-width="2"/>
-  <rect x="80" y="115" width="50" height="20" fill='lightgray' stroke='#8b949e' stroke-width="2"/>
-  <rect x="130" y="115" width="50" height="20" fill='lightgray' stroke='#8b949e' stroke-width="2"/>
-  <rect x="180" y="115" width="50" height="20" fill='lightgray' stroke='#8b949e' stroke-width="2"/>
+  <text x="15" y="103" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>1/4  (one-quarter)</text>
+  <rect x="15" y="113" width="65" height="28" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="80" y="113" width="65" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="145" y="113" width="65" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
+  <rect x="210" y="113" width="65" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1.5'/>
 
   <!-- 1/8 -->
-  <text x="20" y="175" font-size='16' font-weight='bold'>1/8 (one-eighth, smallest)</text>
-  <rect x="30" y="190" width="25" height="20" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="55" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="80" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="105" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="130" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="155" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="180" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="205" y="190" width="25" height="20" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="178" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>1/8  (one-eighth)</text>
+  <rect x="15" y="188" width="32.5" height="28" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="47.5" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="80" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="112.5" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="145" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="177.5" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="210" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="242.5" y="188" width="32.5" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+
+  <text x="150" y="242" font-size='12' font-family='sans-serif' text-anchor='middle' fill='currentColor'>Bigger denominator = smaller pieces</text>
 </svg>
 
 <div class='warning-box'>

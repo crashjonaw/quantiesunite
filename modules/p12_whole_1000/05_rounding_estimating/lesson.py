@@ -11,28 +11,29 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 600 240" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Understanding Rounding</text>
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Understanding Rounding</text>
 
   <!-- Number line showing rounding -->
   <line x1="40" y1="80" x2="560" y2="80" stroke='#4f8ef7' stroke-width="2"/>
 
   <!-- Tick marks -->
   <line x1="40" y1="75" x2="40" y2="85" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="40" y="100" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>40</text>
+  <text x="40" y="100" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>40</text>
 
   <line x1="300" y1="75" x2="300" y2="85" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="300" y="100" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>50</text>
+  <text x="300" y="100" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>50</text>
 
   <line x1="560" y1="75" x2="560" y2="85" stroke='#4f8ef7' stroke-width="2"/>
-  <text x="560" y="100" text-anchor='middle' fill='#4f8ef7' font-size='11' font-weight='bold'>60</text>
+  <text x="560" y="100" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>60</text>
 
-  <!-- Number 47 positioned -->
-  <circle cx="260" cy="60" r="8" fill='#ec4899'/>
-  <text x="260" y="65" text-anchor='middle' fill='#fff' font-size='10' font-weight='bold'>47</text>
+  <!-- Number 47 positioned with label above -->
+  <circle cx="222" cy="60" r="5" fill='#ec4899'/>
+  <text x="222" y="50" text-anchor='middle' fill='currentColor' font-size='11' font-weight='bold'>47</text>
+  <line x1="222" y1="65" x2="222" y2="80" stroke='#ec4899' stroke-width="1" stroke-dasharray="3,3"/>
 
-  <!-- Arrows showing which way it rounds -->
-  <line x1="260" y1="125" x2="300" y2="125" stroke='#22c55e' stroke-width="3" marker-end="url(#arrowgreen)"/>
-  <text x="280" y="155" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>47 rounds to 50</text>
+  <!-- Arrow showing rounding direction -->
+  <line x1="222" y1="125" x2="295" y2="125" stroke='#22c55e' stroke-width="3" marker-end="url(#arrowgreen)"/>
+  <text x="260" y="150" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>47 rounds to 50</text>
 
   <!-- SVG marker definition -->
   <defs>
@@ -42,9 +43,9 @@ SECTIONS = [
   </defs>
 
   <!-- Explanation box -->
-  <rect x="30" y="180" width="540" height="50" fill='#22c55e15' stroke='#22c55e' stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-  <text x="40" y="200" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Key Idea:</tspan> Is 47 closer to 40 or 50? Distance to 50 = 3, distance to 40 = 7.</text>
-  <text x="40" y="217" text-anchor='start' fill='currentColor' font-size='11'>So 47 is closer to 50. Answer: 47 rounds UP to 50.</text>
+  <rect x="20" y="175" width="560" height="50" fill='#22c55e15' stroke='#22c55e' stroke-width="1" stroke-dasharray="3,3" rx="4"/>
+  <text x="30" y="195" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Key Idea:</tspan> Is 47 closer to 40 or 50? Distance to 50 = 3, distance to 40 = 7.</text>
+  <text x="30" y="212" text-anchor='start' fill='currentColor' font-size='11'>So 47 is closer to 50. Answer: 47 rounds UP to 50.</text>
 </svg>"""
     },
     {
@@ -57,33 +58,33 @@ SECTIONS = [
 </ul>
 </div>
 
-<svg viewBox="0 0 600 280" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Rounding to Nearest 10</text>
+<svg viewBox="0 0 600 290" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Rounding to Nearest 10</text>
 
   <!-- Rule visualization -->
-  <rect x="20" y="40" width="270" height="60" fill='#22c55e20' stroke='#22c55e' stroke-width="2" rx="4"/>
-  <text x="155" y="60" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Ones: 0, 1, 2, 3, 4</text>
-  <text x="155" y="80" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND DOWN</text>
+  <rect x="20" y="42" width="270" height="60" fill='#22c55e20' stroke='#22c55e' stroke-width="2" rx="4"/>
+  <text x="155" y="65" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Ones: 0, 1, 2, 3, 4</text>
+  <text x="155" y="85" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND DOWN</text>
 
-  <rect x="310" y="40" width="270" height="60" fill='#ec489920' stroke='#ec4899' stroke-width="2" rx="4"/>
-  <text x="445" y="60" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Ones: 5, 6, 7, 8, 9</text>
-  <text x="445" y="80" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND UP</text>
+  <rect x="310" y="42" width="270" height="60" fill='#ec489920' stroke='#ec4899' stroke-width="2" rx="4"/>
+  <text x="445" y="65" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Ones: 5, 6, 7, 8, 9</text>
+  <text x="445" y="85" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND UP</text>
 
   <!-- Examples -->
-  <rect x="20" y="120" width="540" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Down):</tspan> 21→20, 34→30, 48→50 (wait, 8 is 5+, so round UP!)</text>
-  <text x="30" y="155" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Corrected:</tspan> 21→20, 34→30, 44→40, 46→50</text>
+  <rect x="20" y="118" width="560" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="4"/>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Down):</tspan> 21-->20, 34-->30, 42-->40, 44-->40</text>
+  <text x="30" y="157" text-anchor='start' fill='currentColor' font-size='11'>The ones digit is 0-4, so the tens digit stays the same.</text>
 
-  <rect x="20" y="185" width="540" height="50" fill='#ec489920' stroke='#ec4899' stroke-width="1" rx="3"/>
-  <text x="30" y="205" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Up):</tspan> 25→30, 37→40, 59→60, 78→80</text>
+  <rect x="20" y="182" width="560" height="40" fill='#ec489920' stroke='#ec4899' stroke-width="1" rx="4"/>
+  <text x="30" y="207" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Up):</tspan> 25-->30, 37-->40, 59-->60, 78-->80</text>
 
   <!-- Visual number line example -->
-  <line x1="50" y1="260" x2="550" y2="260" stroke='#808080' stroke-width="1"/>
-  <circle cx="150" cy="260" r="5" fill='#4f8ef7'/>
-  <text x="150" y="280" text-anchor='middle' fill='#4f8ef7' font-size='10'>24→20</text>
+  <line x1="50" y1="252" x2="550" y2="252" stroke='#808080' stroke-width="1"/>
+  <circle cx="150" cy="252" r="5" fill='#4f8ef7'/>
+  <text x="150" y="275" text-anchor='middle' fill='currentColor' font-size='10'>24-->20</text>
 
-  <circle cx="330" cy="260" r="5" fill='#ec4899'/>
-  <text x="330" y="280" text-anchor='middle' fill='#ec4899' font-size='10'>35→40</text>
+  <circle cx="400" cy="252" r="5" fill='#ec4899'/>
+  <text x="400" y="275" text-anchor='middle' fill='currentColor' font-size='10'>35-->40</text>
 </svg>"""
     },
     {
@@ -96,31 +97,31 @@ SECTIONS = [
 </ul>
 </div>
 
-<svg viewBox="0 0 600 300" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Rounding to Nearest 100</text>
+<svg viewBox="0 0 600 310" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Rounding to Nearest 100</text>
 
   <!-- Rule visualization -->
-  <rect x="20" y="40" width="270" height="60" fill='#22c55e20' stroke='#22c55e' stroke-width="2" rx="4"/>
-  <text x="155" y="60" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Tens: 0, 1, 2, 3, 4</text>
-  <text x="155" y="80" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND DOWN</text>
+  <rect x="20" y="42" width="270" height="60" fill='#22c55e20' stroke='#22c55e' stroke-width="2" rx="4"/>
+  <text x="155" y="65" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Tens: 0, 1, 2, 3, 4</text>
+  <text x="155" y="85" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND DOWN</text>
 
-  <rect x="310" y="40" width="270" height="60" fill='#ec489920' stroke='#ec4899' stroke-width="2" rx="4"/>
-  <text x="445" y="60" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Tens: 5, 6, 7, 8, 9</text>
-  <text x="445" y="80" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND UP</text>
+  <rect x="310" y="42" width="270" height="60" fill='#ec489920' stroke='#ec4899' stroke-width="2" rx="4"/>
+  <text x="445" y="65" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>Tens: 5, 6, 7, 8, 9</text>
+  <text x="445" y="85" text-anchor='middle' fill='currentColor' font-size='12' font-weight='bold'>ROUND UP</text>
 
   <!-- Examples -->
-  <rect x="20" y="120" width="540" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Down):</tspan> 214→200, 340→300, 449→400</text>
-  <text x="30" y="155" text-anchor='start' fill='currentColor' font-size='11'>The hundreds digit stays the same when tens digit is 0-4.</text>
+  <rect x="20" y="118" width="560" height="50" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="4"/>
+  <text x="30" y="140" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Down):</tspan> 214-->200, 340-->300, 449-->400</text>
+  <text x="30" y="157" text-anchor='start' fill='currentColor' font-size='11'>The hundreds digit stays the same when tens digit is 0-4.</text>
 
-  <rect x="20" y="185" width="540" height="50" fill='#ec489920' stroke='#ec4899' stroke-width="1" rx="3"/>
-  <text x="30" y="205" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Up):</tspan> 257→300, 375→400, 689→700, 956→1000</text>
-  <text x="30" y="220" text-anchor='start' fill='currentColor' font-size='11'>The hundreds digit increases by 1 when tens digit is 5-9.</text>
+  <rect x="20" y="182" width="560" height="50" fill='#ec489920' stroke='#ec4899' stroke-width="1" rx="4"/>
+  <text x="30" y="204" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Examples (Up):</tspan> 257-->300, 375-->400, 689-->700, 956-->1000</text>
+  <text x="30" y="221" text-anchor='start' fill='currentColor' font-size='11'>The hundreds digit increases by 1 when tens digit is 5-9.</text>
 
   <!-- Worked example -->
-  <rect x="20" y="245" width="540" height="50" fill='#f59e0b15' stroke='#f59e0b' stroke-width="1" rx="3"/>
-  <text x="30" y="262" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Example:</tspan> Round 347 to nearest 100</text>
-  <text x="30" y="277" text-anchor='start' fill='currentColor' font-size='11'>Tens digit = 4 (which is 0-4) → Round DOWN → Answer: 300</text>
+  <rect x="20" y="248" width="560" height="48" fill='#f59e0b15' stroke='#f59e0b' stroke-width="1" rx="4"/>
+  <text x="30" y="268" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Example:</tspan> Round 347 to nearest 100</text>
+  <text x="30" y="285" text-anchor='start' fill='currentColor' font-size='11'>Tens digit = 4 (which is 0-4) -- Round DOWN -- Answer: 300</text>
 </svg>"""
     },
     {
@@ -129,24 +130,24 @@ SECTIONS = [
 <p>Rounding helps us estimate answers to math problems. We round first, then do the math with friendly numbers.</p>
 </div>
 
-<svg viewBox="0 0 600 260" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
-  <text x="300" y="20" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Estimation Using Rounding</text>
+<svg viewBox="0 0 600 270" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
+  <text x="300" y="22" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Estimation Using Rounding</text>
 
   <!-- Example 1 -->
-  <rect x="20" y="40" width="540" height="70" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="3"/>
-  <text x="30" y="60" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 1: Estimate 247 + 152</text>
-  <text x="30" y="78" text-anchor='start' fill='currentColor' font-size='11'>Round 247→250, Round 152→150</text>
-  <text x="30" y="93" text-anchor='start' fill='currentColor' font-size='11'>Estimated sum: 250 + 150 = 400 (actual: 399, very close!)</text>
+  <rect x="20" y="42" width="560" height="72" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="1" rx="4"/>
+  <text x="30" y="62" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 1: Estimate 247 + 152</text>
+  <text x="30" y="80" text-anchor='start' fill='currentColor' font-size='11'>Round 247-->250, Round 152-->150</text>
+  <text x="30" y="97" text-anchor='start' fill='currentColor' font-size='11'>Estimated sum: 250 + 150 = 400 (actual: 399, very close!)</text>
 
   <!-- Example 2 -->
-  <rect x="20" y="125" width="540" height="70" fill='#22c55e20' stroke='#22c55e' stroke-width="1" rx="3"/>
-  <text x="30" y="145" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 2: Estimate 567 - 234</text>
-  <text x="30" y="163" text-anchor='start' fill='currentColor' font-size='11'>Round 567→600, Round 234→200</text>
-  <text x="30" y="178" text-anchor='start' fill='currentColor' font-size='11'>Estimated difference: 600 - 200 = 400 (actual: 333)</text>
+  <rect x="20" y="128" width="560" height="72" fill='#22c55e20' stroke='#22c55e' stroke-width="1" rx="4"/>
+  <text x="30" y="148" text-anchor='start' fill='currentColor' font-size='12' font-weight='bold'>Example 2: Estimate 567 - 234</text>
+  <text x="30" y="166" text-anchor='start' fill='currentColor' font-size='11'>Round 567-->600, Round 234-->200</text>
+  <text x="30" y="183" text-anchor='start' fill='currentColor' font-size='11'>Estimated difference: 600 - 200 = 400 (actual: 333)</text>
 
   <!-- Why estimation matters -->
-  <rect x="20" y="210" width="540" height="45" fill='#ec489915' stroke='#ec4899' stroke-width="1" stroke-dasharray="3,3" rx="3"/>
-  <text x="30" y="230" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Why estimate?</tspan> Quick mental math check, real-world decisions (shopping, cooking, distance)</text>
+  <rect x="20" y="216" width="560" height="38" fill='#ec489915' stroke='#ec4899' stroke-width="1" stroke-dasharray="3,3" rx="4"/>
+  <text x="30" y="240" text-anchor='start' fill='currentColor' font-size='11'><tspan font-weight='bold'>Why estimate?</tspan> Quick mental math check, real-world decisions (shopping, cooking, distance)</text>
 </svg>"""
     },
     {

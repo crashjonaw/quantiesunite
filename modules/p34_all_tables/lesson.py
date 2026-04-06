@@ -8,38 +8,38 @@ SECTIONS = [
 <p>Let's say you have 4 baskets with 3 apples in each basket. Instead of counting 3 + 3 + 3 + 3 = 12, we say \\(3 \\times 4 = 12\\) or "3 times 4 equals 12".</p>
 
 <div class="diagram-container">
-  <svg width="600" height="150" viewBox="0 0 600 150">
-    <text x="300" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>4 Baskets with 3 Apples Each</text>
-    
-    <g id="basket1">
-      <rect x="20" y="50" width="80" height="80" fill="none" stroke="#4169E1" stroke-width="2"/>
-      <circle cx="40" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="60" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="50" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+  <svg width="100%" viewBox="0 0 630 160">
+    <text x="315" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>4 Baskets with 3 Apples Each</text>
+
+    <g>
+      <rect x="25" y="50" width="80" height="80" rx="4" fill="none" stroke="#4169E1" stroke-width="2"/>
+      <circle cx="45" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="65" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="55" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
     </g>
 
-    <g id="basket2">
-      <rect x="120" y="50" width="80" height="80" fill="none" stroke="#22c55e" stroke-width="2"/>
-      <circle cx="140" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="160" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="150" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+    <g>
+      <rect x="125" y="50" width="80" height="80" rx="4" fill="none" stroke="#22c55e" stroke-width="2"/>
+      <circle cx="145" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="165" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="155" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
     </g>
 
-    <g id="basket3">
-      <rect x="220" y="50" width="80" height="80" fill="none" stroke="#f59e0b" stroke-width="2"/>
-      <circle cx="240" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="260" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="250" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+    <g>
+      <rect x="225" y="50" width="80" height="80" rx="4" fill="none" stroke="#f59e0b" stroke-width="2"/>
+      <circle cx="245" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="265" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="255" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
     </g>
 
-    <g id="basket4">
-      <rect x="320" y="50" width="80" height="80" fill="none" stroke="#ef4444" stroke-width="2"/>
-      <circle cx="340" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="360" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
-      <circle cx="350" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+    <g>
+      <rect x="325" y="50" width="80" height="80" rx="4" fill="none" stroke="#ef4444" stroke-width="2"/>
+      <circle cx="345" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="365" cy="75" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
+      <circle cx="355" cy="95" r="12" fill="#f59e0b80" stroke="#f59e0b" stroke-width="1"/>
     </g>
 
-    <text x="480" y="90" font-size="24" font-weight="bold" fill='currentColor'>3 × 4 = 12</text>
+    <text x="490" y="95" font-size="22" font-weight="bold" fill='currentColor'>3 × 4 = 12</text>
   </svg>
   <div class="diagram-caption">Four baskets with three apples each makes 12 apples total</div>
 </div>
@@ -75,32 +75,33 @@ SECTIONS = [
 <p>Let's look at \\(5 \\times 3\\) using an array:</p>
 
 <div class="diagram-container">
-  <svg width="400" height="200" viewBox="0 0 400 200">
-    <text x="200" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>An Array of 5 Rows and 3 Columns</text>
+  <svg width="100%" viewBox="0 0 430 280">
+    <text x="215" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>An Array of 5 Rows and 3 Columns</text>
 
-    <g id="array">
-      <rect x="80" y="50" width="30" height="30" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <rect x="120" y="50" width="30" height="30" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
-      <rect x="160" y="50" width="30" height="30" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+    <g>
+      <rect x="80" y="50" width="30" height="30" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+      <rect x="120" y="50" width="30" height="30" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
+      <rect x="160" y="50" width="30" height="30" rx="4" fill="#4169E180" stroke="#4169E1" stroke-width="2"/>
 
-      <rect x="80" y="90" width="30" height="30" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
-      <rect x="120" y="90" width="30" height="30" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
-      <rect x="160" y="90" width="30" height="30" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+      <rect x="80" y="90" width="30" height="30" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+      <rect x="120" y="90" width="30" height="30" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
+      <rect x="160" y="90" width="30" height="30" rx="4" fill="#22c55e80" stroke="#22c55e" stroke-width="2"/>
 
-      <rect x="80" y="130" width="30" height="30" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-      <rect x="120" y="130" width="30" height="30" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
-      <rect x="160" y="130" width="30" height="30" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="80" y="130" width="30" height="30" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="120" y="130" width="30" height="30" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
+      <rect x="160" y="130" width="30" height="30" rx="4" fill="#f59e0b80" stroke="#f59e0b" stroke-width="2"/>
 
-      <rect x="80" y="170" width="30" height="30" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
-      <rect x="120" y="170" width="30" height="30" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
-      <rect x="160" y="170" width="30" height="30" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
+      <rect x="80" y="170" width="30" height="30" rx="4" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
+      <rect x="120" y="170" width="30" height="30" rx="4" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
+      <rect x="160" y="170" width="30" height="30" rx="4" fill="#ef444480" stroke="#ef4444" stroke-width="2"/>
 
-      <rect x="80" y="210" width="30" height="30" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
-      <rect x="120" y="210" width="30" height="30" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
-      <rect x="160" y="210" width="30" height="30" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
+      <rect x="80" y="210" width="30" height="30" rx="4" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
+      <rect x="120" y="210" width="30" height="30" rx="4" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
+      <rect x="160" y="210" width="30" height="30" rx="4" fill="#8b5cf680" stroke="#8b5cf6" stroke-width="2"/>
     </g>
 
-    <text x="200" y="140" font-size="16" font-weight="bold" fill='currentColor'>5 rows × 3 columns = 15 squares</text>
+    <text x="280" y="140" font-size="16" font-weight="bold" fill='currentColor'>5 rows × 3 columns</text>
+    <text x="280" y="162" font-size="16" font-weight="bold" fill='currentColor'>= 15 squares</text>
   </svg>
   <div class="diagram-caption">This array shows 5 × 3 = 15</div>
 </div>
@@ -178,31 +179,31 @@ SECTIONS = [
 <p>\\(5, 10, 15, 20, 25, 30, 35, 40, 45, 50\\)</p>
 
 <div class="diagram-container">
-  <svg width="600" height="100" viewBox="0 0 600 100">
+  <svg width="100%" viewBox="0 0 600 110">
     <text x="300" y="25" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>5 Times Table Pattern: Notice the 0s and 5s</text>
     <text x="50" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 1</text>
-    <text x="50" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">5</text>
+    <text x="50" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">5</text>
 
     <text x="120" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 2</text>
-    <text x="120" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">10</text>
+    <text x="120" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">10</text>
 
     <text x="190" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 3</text>
-    <text x="190" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">15</text>
+    <text x="190" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">15</text>
 
     <text x="260" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 4</text>
-    <text x="260" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">20</text>
+    <text x="260" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">20</text>
 
     <text x="330" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 5</text>
-    <text x="330" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">25</text>
+    <text x="330" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">25</text>
 
     <text x="400" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 6</text>
-    <text x="400" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">30</text>
+    <text x="400" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">30</text>
 
     <text x="470" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 7</text>
-    <text x="470" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">35</text>
+    <text x="470" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">35</text>
 
     <text x="540" y="60" text-anchor="middle" font-size="12" fill='currentColor'>5 × 8</text>
-    <text x="540" y="80" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">40</text>
+    <text x="540" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#f59e0b">40</text>
   </svg>
   <div class="diagram-caption">All 5 times table answers end in 0 or 5</div>
 </div>
@@ -445,10 +446,10 @@ SECTIONS = [
 <p>Here is the complete multiplication table for reference. You don't need to memorize all of it at once—just focus on one or two tables at a time.</p>
 
 <div class="diagram-container">
-  <svg width="650" height="680" viewBox="0 0 650 680">
-    <text x="325" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>Complete Multiplication Table (1-12)</text>
-    
-    <rect x="10" y="40" width="630" height="630" fill="none" stroke='#8b949e' stroke-width="2"/>
+  <svg width="100%" viewBox="0 0 430 470">
+    <text x="215" y="25" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>Complete Multiplication Table (1-12)</text>
+
+    <rect x="10" y="40" width="410" height="420" rx="4" fill="none" stroke='#8b949e' stroke-width="2"/>
     
     <text x="30" y="80" font-size="11" font-weight="bold" fill='currentColor'>×</text>
     <text x="60" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill='currentColor'>1</text>

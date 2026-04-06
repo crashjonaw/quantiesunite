@@ -12,28 +12,32 @@ SECTIONS = [
 </div>
 
 <h3>Visual Comparison</h3>
-<svg width="300" height="150" viewBox="0 0 300 150" style="display: block; margin: 20px auto;">
+<svg width="300" height="170" viewBox="0 0 300 170" style="display: block; margin: 20px auto;">
   <!-- 3/8 -->
-  <text x="30" y="25" font-size='14' font-weight='bold'>3/8</text>
-  <rect x="20" y="40" width="25" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="45" y="40" width="25" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="70" y="40" width="25" height="30" fill='lightblue' stroke='#8b949e' stroke-width="1"/>
-  <rect x="95" y="40" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="120" y="40" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="145" y="40" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="170" y="40" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="195" y="40" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="28" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>3/8</text>
+  <rect x="50" y="15" width="28" height="28" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="78" y="15" width="28" height="28" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="106" y="15" width="28" height="28" rx='4' fill='#58a6ff' stroke='#8b949e' stroke-width='1'/>
+  <rect x="134" y="15" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="162" y="15" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="190" y="15" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="218" y="15" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="246" y="15" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
 
   <!-- 5/8 -->
-  <text x="30" y="95" font-size='14' font-weight='bold'>5/8</text>
-  <rect x="20" y="110" width="25" height="30" fill='lightgreen' stroke='#8b949e' stroke-width="1"/>
-  <rect x="45" y="110" width="25" height="30" fill='lightgreen' stroke='#8b949e' stroke-width="1"/>
-  <rect x="70" y="110" width="25" height="30" fill='lightgreen' stroke='#8b949e' stroke-width="1"/>
-  <rect x="95" y="110" width="25" height="30" fill='lightgreen' stroke='#8b949e' stroke-width="1"/>
-  <rect x="120" y="110" width="25" height="30" fill='lightgreen' stroke='#8b949e' stroke-width="1"/>
-  <rect x="145" y="110" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="170" y="110" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
-  <rect x="195" y="110" width="25" height="30" fill='lightgray' stroke='#8b949e' stroke-width="1"/>
+  <text x="15" y="98" font-size='14' font-family='sans-serif' font-weight='bold' fill='currentColor'>5/8</text>
+  <rect x="50" y="80" width="28" height="28" rx='4' fill='#3fb950' stroke='#8b949e' stroke-width='1'/>
+  <rect x="78" y="80" width="28" height="28" rx='4' fill='#3fb950' stroke='#8b949e' stroke-width='1'/>
+  <rect x="106" y="80" width="28" height="28" rx='4' fill='#3fb950' stroke='#8b949e' stroke-width='1'/>
+  <rect x="134" y="80" width="28" height="28" rx='4' fill='#3fb950' stroke='#8b949e' stroke-width='1'/>
+  <rect x="162" y="80" width="28" height="28" rx='4' fill='#3fb950' stroke='#8b949e' stroke-width='1'/>
+  <rect x="190" y="80" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="218" y="80" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+  <rect x="246" y="80" width="28" height="28" rx='4' fill='#3d3d3d' stroke='#8b949e' stroke-width='1'/>
+
+  <!-- Caption -->
+  <text x="155" y="140" font-size='13' font-family='sans-serif' text-anchor='middle' fill='currentColor'>5/8 covers more area than 3/8</text>
+  <text x="155" y="158" font-size='13' font-family='sans-serif' text-anchor='middle' fill='currentColor'>so 5/8 &gt; 3/8</text>
 </svg>
 
 <div class='success-box'>
@@ -61,42 +65,42 @@ SECTIONS = [
         "body": """<p>Visualizing fractions on a number line makes comparison intuitive: <strong>fractions further to the right are larger.</strong></p>
 
 <h3>Number Line: Halves, Thirds, and Quarters</h3>
-<svg width="320" height="170" style="display: block; margin: 20px auto;">
+<svg width="340" height="200" viewBox="0 0 340 200" style="display: block; margin: 20px auto;">
   <!-- Halves line -->
-  <text x="10" y="25" font-size='12' font-weight='bold'>Halves:</text>
-  <line x1="80" y1="20" x2="300" y2="20" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="80" cy="20" r="3" fill='currentColor'/>
-  <circle cx="190" cy="20" r="3" fill='currentColor'/>
-  <circle cx="300" cy="20" r="3" fill='currentColor'/>
-  <text x="75" y="40" font-size='11'>0</text>
-  <text x="183" y="40" font-size='11'>1/2</text>
-  <text x="295" y="40" font-size='11'>1</text>
+  <text x="15" y="30" font-size='12' font-family='sans-serif' font-weight='bold' fill='currentColor'>Halves:</text>
+  <line x1="85" y1="25" x2="315" y2="25" stroke='#8b949e' stroke-width='2'/>
+  <circle cx="85" cy="25" r="4" fill='currentColor'/>
+  <circle cx="200" cy="25" r="4" fill='currentColor'/>
+  <circle cx="315" cy="25" r="4" fill='currentColor'/>
+  <text x="82" y="48" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>0</text>
+  <text x="200" y="48" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>1/2</text>
+  <text x="315" y="48" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>1</text>
 
   <!-- Thirds line -->
-  <text x="10" y="85" font-size='12' font-weight='bold'>Thirds:</text>
-  <line x1="80" y1="80" x2="300" y2="80" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="80" cy="80" r="3" fill='currentColor'/>
-  <circle cx="153" cy="80" r="3" fill='blue'/>
-  <circle cx="227" cy="80" r="3" fill='blue'/>
-  <circle cx="300" cy="80" r="3" fill='currentColor'/>
-  <text x="75" y="100" font-size='11'>0</text>
-  <text x="148" y="100" font-size='11'>1/3</text>
-  <text x="222" y="100" font-size='11'>2/3</text>
-  <text x="295" y="100" font-size='11'>1</text>
+  <text x="15" y="95" font-size='12' font-family='sans-serif' font-weight='bold' fill='currentColor'>Thirds:</text>
+  <line x1="85" y1="90" x2="315" y2="90" stroke='#8b949e' stroke-width='2'/>
+  <circle cx="85" cy="90" r="4" fill='currentColor'/>
+  <circle cx="162" cy="90" r="4" fill='#58a6ff'/>
+  <circle cx="238" cy="90" r="4" fill='#58a6ff'/>
+  <circle cx="315" cy="90" r="4" fill='currentColor'/>
+  <text x="85" y="113" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>0</text>
+  <text x="162" y="113" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>1/3</text>
+  <text x="238" y="113" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>2/3</text>
+  <text x="315" y="113" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>1</text>
 
   <!-- Quarters line -->
-  <text x="10" y="145" font-size='12' font-weight='bold'>Quarters:</text>
-  <line x1="80" y1="140" x2="300" y2="140" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="80" cy="140" r="3" fill='currentColor'/>
-  <circle cx="135" cy="140" r="3" fill='green'/>
-  <circle cx="190" cy="140" r="3" fill='green'/>
-  <circle cx="245" cy="140" r="3" fill='green'/>
-  <circle cx="300" cy="140" r="3" fill='currentColor'/>
-  <text x="75" y="160" font-size='11'>0</text>
-  <text x="130" y="160" font-size='11'>1/4</text>
-  <text x="185" y="160" font-size='11'>2/4</text>
-  <text x="240" y="160" font-size='11'>3/4</text>
-  <text x="295" y="160" font-size='11'>1</text>
+  <text x="15" y="160" font-size='12' font-family='sans-serif' font-weight='bold' fill='currentColor'>Quarters:</text>
+  <line x1="85" y1="155" x2="315" y2="155" stroke='#8b949e' stroke-width='2'/>
+  <circle cx="85" cy="155" r="4" fill='currentColor'/>
+  <circle cx="142.5" cy="155" r="4" fill='#3fb950'/>
+  <circle cx="200" cy="155" r="4" fill='#3fb950'/>
+  <circle cx="257.5" cy="155" r="4" fill='#3fb950'/>
+  <circle cx="315" cy="155" r="4" fill='currentColor'/>
+  <text x="85" y="178" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>0</text>
+  <text x="142.5" y="178" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>1/4</text>
+  <text x="200" y="178" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>2/4</text>
+  <text x="257.5" y="178" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>3/4</text>
+  <text x="315" y="178" font-size='11' font-family='sans-serif' text-anchor='middle' fill='currentColor'>1</text>
 </svg>
 
 <h3>Comparing Using a Number Line</h3>
@@ -120,20 +124,22 @@ SECTIONS = [
 <p><strong>Therefore:</strong> \\(\\frac{3}{5}\\) > \\(\\frac{2}{4}\\)</p>
 </div>
 
-<svg width="250" height="120" style="display: block; margin: 20px auto;">
-  <text x="50" y="30" font-size='16' font-weight='bold'>3/5</text>
-  <text x="50" y="60" font-size='16' font-weight='bold'>2/4</text>
+<svg width="290" height="130" viewBox="0 0 290 130" style="display: block; margin: 20px auto;">
+  <!-- Fractions -->
+  <text x="30" y="40" font-size='18' font-family='sans-serif' font-weight='bold' fill='currentColor'>3/5</text>
+  <text x="30" y="95" font-size='18' font-family='sans-serif' font-weight='bold' fill='currentColor'>2/4</text>
 
   <!-- Cross arrows -->
-  <line x1="80" y1="25" x2="180" y2="55" stroke='red' stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="130" y="35" font-size='12' fill='red'>3×4=12</text>
+  <line x1="70" y1="35" x2="160" y2="85" stroke='#f97583' stroke-width='2' stroke-dasharray='5,4'/>
+  <text x="120" y="48" font-size='13' font-family='sans-serif' fill='#f97583'>3 x 4 = 12</text>
 
-  <line x1="80" y1="65" x2="180" y2="35" stroke='blue' stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="130" y="75" font-size='12' fill='blue'>2×5=10</text>
+  <line x1="70" y1="90" x2="160" y2="40" stroke='#58a6ff' stroke-width='2' stroke-dasharray='5,4'/>
+  <text x="120" y="108" font-size='13' font-family='sans-serif' fill='#58a6ff'>2 x 5 = 10</text>
 
-  <text x="190" y="30" font-size='16'>12</text>
-  <text x="190" y="60" font-size='16'>10</text>
-  <text x="220" y="45" font-size='18' font-weight='bold'>&gt;</text>
+  <!-- Results -->
+  <text x="195" y="40" font-size='18' font-family='sans-serif' font-weight='bold' fill='#f97583'>12</text>
+  <text x="195" y="95" font-size='18' font-family='sans-serif' font-weight='bold' fill='#58a6ff'>10</text>
+  <text x="240" y="70" font-size='22' font-family='sans-serif' font-weight='bold' fill='currentColor'>12 &gt; 10</text>
 </svg>"""
     },
     {

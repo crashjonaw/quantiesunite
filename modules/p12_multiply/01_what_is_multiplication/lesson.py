@@ -26,27 +26,28 @@ SECTIONS = [
     {
         "title": "Let's See It with Pictures",
         "body": """<p>Here's what \(3 \times 4\) looks like when we draw it:</p>
-<svg viewBox="0 0 400 180" style="width:100%; max-width:500px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
-  <text x="200" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>3 groups of 4 apples</text>
+<svg viewBox="0 0 420 195" style="width:100%; max-width:500px; height:auto; display:block; margin:16px auto;">
+  <rect x="0" y="0" width="420" height="195" rx="4" fill="rgba(0,0,0,0.2)"/>
+  <text x="210" y="30" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>3 groups of 4 apples</text>
   <!-- Group 1 -->
-  <circle cx="60" cy="70" r="12" fill='#f59e0b'/>
-  <circle cx="100" cy="70" r="12" fill='#f59e0b'/>
-  <circle cx="140" cy="70" r="12" fill='#f59e0b'/>
-  <circle cx="180" cy="70" r="12" fill='#f59e0b'/>
+  <circle cx="55" cy="70" r="12" fill='#f59e0b'/>
+  <circle cx="95" cy="70" r="12" fill='#f59e0b'/>
+  <circle cx="135" cy="70" r="12" fill='#f59e0b'/>
+  <circle cx="175" cy="70" r="12" fill='#f59e0b'/>
   <!-- Group 2 -->
-  <circle cx="60" cy="110" r="12" fill='#f59e0b'/>
-  <circle cx="100" cy="110" r="12" fill='#f59e0b'/>
-  <circle cx="140" cy="110" r="12" fill='#f59e0b'/>
-  <circle cx="180" cy="110" r="12" fill='#f59e0b'/>
+  <circle cx="55" cy="110" r="12" fill='#f59e0b'/>
+  <circle cx="95" cy="110" r="12" fill='#f59e0b'/>
+  <circle cx="135" cy="110" r="12" fill='#f59e0b'/>
+  <circle cx="175" cy="110" r="12" fill='#f59e0b'/>
   <!-- Group 3 -->
-  <circle cx="60" cy="150" r="12" fill='#f59e0b'/>
-  <circle cx="100" cy="150" r="12" fill='#f59e0b'/>
-  <circle cx="140" cy="150" r="12" fill='#f59e0b'/>
-  <circle cx="180" cy="150" r="12" fill='#f59e0b'/>
+  <circle cx="55" cy="150" r="12" fill='#f59e0b'/>
+  <circle cx="95" cy="150" r="12" fill='#f59e0b'/>
+  <circle cx="135" cy="150" r="12" fill='#f59e0b'/>
+  <circle cx="175" cy="150" r="12" fill='#f59e0b'/>
   <!-- Equals -->
-  <text x="250" y="110" fill='currentColor' font-size='20' font-weight='bold'>=</text>
+  <text x="260" y="115" fill='currentColor' font-size='20' font-weight='bold'>=</text>
   <!-- Total -->
-  <text x="320" y="110" fill='#22c55e' font-size='28' font-weight='bold'>12</text>
+  <text x="340" y="118" fill='#22c55e' font-size='28' font-weight='bold'>12</text>
 </svg>
 <p>Each group has 4 apples. There are 3 groups. So the total is 12 apples.</p>
 <p><strong>\(3 \times 4 = 4 + 4 + 4 = 12\)</strong></p>"""

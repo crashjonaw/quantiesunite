@@ -20,23 +20,26 @@ SECTIONS = [
   <p><strong>Why two scales?</strong> The two sets of numbers let you measure angles from either direction. This gives you flexibility in how you position your protractor.</p>
 </div>
 
-<svg viewBox="0 0 400 250" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
+<svg viewBox="-15 -15 430 280" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="430" height="280" rx="4" fill="#1e2433"/>
   <!-- Protractor semicircle -->
-  <path d="M 80 200 L 320 200 A 120 120 0 0 1 80 200" stroke='#8b949e' stroke-width="3" fill='none'/>
+  <path d="M 80 210 A 120 120 0 0 1 320 210" stroke='#8b949e' stroke-width="3" fill='none'/>
   <!-- Baseline -->
-  <line x1="80" y1="200" x2="320" y2="200" stroke='#0969da' stroke-width="2"/>
+  <line x1="70" y1="210" x2="330" y2="210" stroke='#0969da' stroke-width="2"/>
   <!-- Center dot -->
-  <circle cx="200" cy="200" r="3" fill='#ff6b6b'/>
+  <circle cx="200" cy="210" r="4" fill='#ff6b6b'/>
   <!-- Sample angle ray -->
-  <line x1="200" y1="200" x2="290" y2="100" stroke='#4f8ef7' stroke-width="2"/>
+  <line x1="200" y1="210" x2="290" y2="110" stroke='#4f8ef7' stroke-width="2.5"/>
   <!-- Arc showing measurement -->
-  <path d="M 260 200 A 60 60 0 0 0 241 124" stroke='#22c55e' stroke-width="2" fill='none'/>
+  <path d="M 260 210 A 60 60 0 0 0 246 140" stroke='#22c55e' stroke-width="2.5" fill='none'/>
+  <!-- Tick marks on protractor -->
+  <line x1="200" y1="90" x2="200" y2="97" stroke='#8b949e' stroke-width="1.5"/>
   <!-- Labels -->
-  <text x="75" y="225" fill='currentColor' font-size='12' font-weight='bold'>0°</text>
-  <text x="320" y="225" fill='currentColor' font-size='12' font-weight='bold'>0°</text>
-  <text x="200" y="100" fill='currentColor' font-size='12' font-weight='bold'>180°</text>
-  <text x="200" y="220" fill='#ff6b6b' font-size='12' text-anchor='middle' font-weight='bold'>Center point</text>
-  <text x="270" y="90" fill='#22c55e' font-size='11' font-weight='bold'>~50°</text>
+  <text x="62" y="232" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>0°</text>
+  <text x="324" y="232" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>0°</text>
+  <text x="200" y="82" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold' text-anchor='middle'>90°</text>
+  <text x="200" y="245" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle' font-weight='bold'>Centre point</text>
+  <text x="298" y="105" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>~50°</text>
 </svg>
 
 <div class='worked-example'>
@@ -67,21 +70,24 @@ SECTIONS = [
   <p>Look at the number on the protractor where the second ray crosses. <strong>Use the same scale</strong> as the \\(0°\\) mark you aligned with in Step 2. If you aligned with the inner \\(0°\\), use the inner numbers. If you aligned with the outer \\(0°\\), use the outer numbers.</p>
 </div>
 
-<svg viewBox="0 0 350 280" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
+<svg viewBox="-15 -15 380 310" style="width:100%;max-width:420px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="380" height="310" rx="4" fill="#1e2433"/>
   <!-- Protractor -->
-  <path d="M 50 200 L 300 200 A 125 125 0 0 1 50 200" stroke='#8b949e' stroke-width="2" fill='none'/>
+  <path d="M 50 220 A 125 125 0 0 1 300 220" stroke='#8b949e' stroke-width="2" fill='none'/>
+  <!-- Baseline -->
+  <line x1="50" y1="220" x2="300" y2="220" stroke='#8b949e' stroke-width="1.5"/>
   <!-- First ray (baseline) -->
-  <line x1="175" y1="200" x2="300" y2="200" stroke='#0969da' stroke-width="3"/>
+  <line x1="175" y1="220" x2="310" y2="220" stroke='#0969da' stroke-width="3"/>
   <!-- Second ray at 60 degrees -->
-  <line x1="175" y1="200" x2="239" y2="92" stroke='#4f8ef7' stroke-width="3"/>
+  <line x1="175" y1="220" x2="240" y2="107" stroke='#4f8ef7' stroke-width="3"/>
   <!-- Arc -->
-  <path d="M 240 200 A 65 65 0 0 0 200 115" stroke='#22c55e' stroke-width="2" fill='none'/>
+  <path d="M 240 220 A 65 65 0 0 0 208 135" stroke='#22c55e' stroke-width="2.5" fill='none'/>
   <!-- Center point -->
-  <circle cx="175" cy="200" r="3" fill='#ff6b6b'/>
+  <circle cx="175" cy="220" r="4" fill='#ff6b6b'/>
   <!-- Annotations -->
-  <text x="200" y="225" fill='#0969da' font-size='12' font-weight='bold'>0° mark</text>
-  <text x="220" y="110" fill='#4f8ef7' font-size='12' font-weight='bold'>Second ray</text>
-  <text x="215" y="85" fill='#22c55e' font-size='13' font-weight='bold'>60°</text>
+  <text x="250" y="245" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>0° mark</text>
+  <text x="250" y="105" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>Second ray</text>
+  <text x="250" y="142" fill='currentColor' font-family='system-ui, sans-serif' font-size='13' font-weight='bold'>60°</text>
 </svg>
 
 <div class='success-box'>
@@ -133,30 +139,38 @@ SECTIONS = [
   </ol>
 </div>
 
-<svg viewBox="-40 -60 400 310" style="width:100%;max-width:350px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
+<svg viewBox="-15 -15 430 280" style="width:100%;max-width:440px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="430" height="280" rx="4" fill="#1e2433"/>
   <!-- Right angle reference -->
-  <g transform='translate(50, 150)'>
-    <line x1="0" y1="0" x2="50" y2="0" stroke='#8b949e' stroke-width="2"/>
-    <line x1="0" y1="0" x2="0" y2="-50" stroke='#4f8ef7' stroke-width="2"/>
-    <rect x="0" y="-25" width="20" height="20" fill='none' stroke='#22c55e' stroke-width="1"/>
-    <text x="30" y="-10" fill='currentColor' font-size='11'>Reference: 90°</text>
+  <g transform='translate(70, 160)'>
+    <line x1="0" y1="0" x2="60" y2="0" stroke='#8b949e' stroke-width="2"/>
+    <line x1="0" y1="0" x2="0" y2="-60" stroke='#4f8ef7' stroke-width="2"/>
+    <rect x="0" y="-18" width="18" height="18" fill='none' stroke='#22c55e' stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill='#ff6b6b'/>
+    <text x="0" y="25" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>Reference: 90°</text>
   </g>
 
   <!-- Acute angle example -->
-  <g transform='translate(200, 150)'>
-    <line x1="0" y1="0" x2="50" y2="0" stroke='#8b949e' stroke-width="2"/>
-    <line x1="0" y1="0" x2="38" y2="-32" stroke='#0969da' stroke-width="2"/>
-    <text x="25" y="-15" fill='#0969da' font-size='12'>~40°</text>
+  <g transform='translate(210, 160)'>
+    <line x1="0" y1="0" x2="60" y2="0" stroke='#8b949e' stroke-width="2"/>
+    <line x1="0" y1="0" x2="46" y2="-39" stroke='#0969da' stroke-width="2.5"/>
+    <path d="M 30 0 A 30 30 0 0 0 23 -19" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <circle cx="0" cy="0" r="3" fill='#ff6b6b'/>
+    <text x="38" y="-18" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>~40°</text>
+    <text x="0" y="25" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>Acute</text>
   </g>
 
   <!-- Obtuse angle example -->
-  <g transform='translate(200, 50)'>
-    <line x1="0" y1="0" x2="50" y2="0" stroke='#8b949e' stroke-width="2"/>
-    <line x1="0" y1="0" x2="-32" y2="-38" stroke='#ff6b6b' stroke-width="2"/>
-    <text x="0" y="-20" fill='#ff6b6b' font-size='12'>~130°</text>
+  <g transform='translate(350, 160)'>
+    <line x1="0" y1="0" x2="60" y2="0" stroke='#8b949e' stroke-width="2"/>
+    <line x1="0" y1="0" x2="-39" y2="-46" stroke='#ff6b6b' stroke-width="2.5"/>
+    <path d="M 30 0 A 30 30 0 0 1 -19 -23" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <circle cx="0" cy="0" r="3" fill='#ff6b6b'/>
+    <text x="-10" y="-32" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>~130°</text>
+    <text x="0" y="25" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>Obtuse</text>
   </g>
 
-  <text x="150" y="230" fill='currentColor' font-size='12' text-anchor='middle'>Compare any angle to the 90° reference</text>
+  <text x="200" y="230" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle'>Compare any angle to the 90° reference</text>
 </svg>
 
 <div class='success-box'>

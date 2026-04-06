@@ -12,27 +12,37 @@ SECTIONS = [
   <p><strong>This is true for ALL triangles!</strong></p>
 </div>
 
-<svg viewBox="-60 -70 470 350" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
+<svg viewBox="-15 -15 430 260" style="width:100%;max-width:440px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="430" height="260" rx="4" fill="#1e2433"/>
+  <!-- Title -->
+  <text x="200" y="25" fill='currentColor' font-family='system-ui, sans-serif' font-size='13' text-anchor='middle' font-weight='bold'>All angles in a triangle = 180°</text>
+
   <!-- Equilateral triangle (all angles 60°) -->
-  <g transform='translate(80, 150)'>
-    <polygon points="0,-60 52,30 -52,30" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-    <text x="0" y="-20" fill='#0969da' font-size='13' text-anchor='middle' font-weight='bold'>60°</text>
-    <text x="40" y="20" fill='#0969da' font-size='13' font-weight='bold'>60°</text>
-    <text x="-40" y="20" fill='#0969da' font-size='13' font-weight='bold'>60°</text>
-    <text x="0" y="65" fill='currentColor' font-size='11' text-anchor='middle'>Equilateral</text>
+  <g transform='translate(100, 140)'>
+    <polygon points="0,-70 61,35 -61,35" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+    <!-- Angle arcs -->
+    <path d="M -8,-50 A 20 20 0 0 1 8,-50" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <path d="M -42,32 A 20 20 0 0 1 -38,18" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <path d="M 38,18 A 20 20 0 0 1 42,32" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <text x="0" y="-42" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle' font-weight='bold'>60°</text>
+    <text x="-52" y="18" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>60°</text>
+    <text x="52" y="18" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' font-weight='bold'>60°</text>
+    <text x="0" y="70" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>Equilateral</text>
   </g>
 
   <!-- Right triangle (angles 90°, 45°, 45°) -->
-  <g transform='translate(240, 150)'>
-    <polygon points="0,0 50,0 0,-50" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-    <rect x="0" y="-20" width="15" height="15" fill='none' stroke='#22c55e' stroke-width="1"/>
-    <text x="15" y="-10" fill='#22c55e' font-size='12' font-weight='bold'>90°</text>
-    <text x="25" y="5" fill='#0969da' font-size='13' font-weight='bold'>45°</text>
-    <text x="0" y="-20" fill='#0969da' font-size='13' font-weight='bold'>45°</text>
-    <text x="20" y="65" fill='currentColor' font-size='11' text-anchor='middle'>Right Triangle</text>
+  <g transform='translate(300, 140)'>
+    <polygon points="-40,35 40,35 -40,-35" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+    <!-- Right angle symbol -->
+    <rect x="-40" y="17" width="18" height="18" fill='none' stroke='#22c55e' stroke-width="2"/>
+    <!-- Angle arcs -->
+    <path d="M -28,-28 A 18 18 0 0 1 -40,-17" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <path d="M 22,35 A 18 18 0 0 0 -28,-28" stroke='#22c55e' stroke-width="0" fill='none'/>
+    <text x="-58" y="5" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>45°</text>
+    <text x="18" y="28" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>45°</text>
+    <text x="-20" y="22" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>90°</text>
+    <text x="0" y="70" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>Right Triangle</text>
   </g>
-
-  <text x="175" y="30" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>All angles = 180°</text>
 </svg>
 
 <div class='worked-example'>
@@ -56,33 +66,36 @@ SECTIONS = [
   <p><strong>Obtuse Triangle:</strong> One angle is obtuse (between 90° and 180°)</p>
 </div>
 
-<svg viewBox="0 0 400 200" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
-  <!-- Acute triangle -->
-  <g transform='translate(50, 100)'>
-    <polygon points="0,-50 45,35 -45,35" fill='none' stroke='#22c55e' stroke-width="2"/>
-    <text x="0" y="-15" fill='#22c55e' font-size='12' text-anchor='middle'>60°</text>
-    <text x="30" y="15" fill='#22c55e' font-size='12'>65°</text>
-    <text x="-30" y="15" fill='#22c55e' font-size='12'>55°</text>
-    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Acute</text>
+<svg viewBox="-15 -15 480 240" style="width:100%;max-width:480px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="480" height="240" rx="4" fill="#1e2433"/>
+
+  <!-- Acute triangle - center at x=75 -->
+  <g transform='translate(75, 110)'>
+    <polygon points="0,-55 50,40 -50,40" fill='none' stroke='#22c55e' stroke-width="2"/>
+    <path d="M -6,-38 A 18 18 0 0 1 6,-38" stroke='#22c55e' stroke-width="2" fill='none'/>
+    <text x="0" y="-42" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>60°</text>
+    <text x="42" y="25" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>65°</text>
+    <text x="-42" y="25" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>55°</text>
+    <text x="0" y="75" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle' font-weight='bold'>Acute</text>
   </g>
 
-  <!-- Right triangle -->
-  <g transform='translate(190, 100)'>
-    <polygon points="0,0 50,0 0,-50" fill='none' stroke='#0969da' stroke-width="2"/>
-    <rect x="0" y="-20" width="15" height="15" fill='none' stroke='#0969da' stroke-width="1"/>
-    <text x="15" y="-5" fill='#0969da' font-size='12'>90°</text>
-    <text x="25" y="5" fill='#0969da' font-size='12'>45°</text>
-    <text x="-10" y="-15" fill='#0969da' font-size='12'>45°</text>
-    <text x="20" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Right</text>
+  <!-- Right triangle - center at x=225 (evenly spaced) -->
+  <g transform='translate(225, 110)'>
+    <polygon points="-40,40 40,40 -40,-30" fill='none' stroke='#0969da' stroke-width="2"/>
+    <rect x="-40" y="22" width="18" height="18" fill='none' stroke='#22c55e' stroke-width="2"/>
+    <text x="-22" y="15" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>90°</text>
+    <text x="25" y="32" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>45°</text>
+    <text x="-52" y="-10" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>45°</text>
+    <text x="0" y="75" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle' font-weight='bold'>Right</text>
   </g>
 
-  <!-- Obtuse triangle -->
-  <g transform='translate(330, 100)'>
-    <polygon points="0,-30 40,35 -50,35" fill='none' stroke='#ff6b6b' stroke-width="2"/>
-    <text x="0" y="-5" fill='#ff6b6b' font-size='12' text-anchor='middle'>120°</text>
-    <text x="25" y="15" fill='#ff6b6b' font-size='12'>35°</text>
-    <text x="-35" y="15" fill='#ff6b6b' font-size='12'>25°</text>
-    <text x="10" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Obtuse</text>
+  <!-- Obtuse triangle - center at x=375 (evenly spaced) -->
+  <g transform='translate(375, 110)'>
+    <polygon points="0,-35 45,40 -55,40" fill='none' stroke='#ff6b6b' stroke-width="2"/>
+    <text x="0" y="-12" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>120°</text>
+    <text x="32" y="28" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>35°</text>
+    <text x="-45" y="28" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>25°</text>
+    <text x="0" y="75" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle' font-weight='bold'>Obtuse</text>
   </g>
 </svg>
 
@@ -103,28 +116,32 @@ SECTIONS = [
   <p><strong>This is true for all quadrilaterals — squares, rectangles, trapezoids, parallelograms, and any other 4-sided shape!</strong></p>
 </div>
 
-<svg viewBox="0 0 400 220" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
-  <!-- Square (all 90°) -->
-  <g transform='translate(60, 80)'>
-    <rect x="0" y="0" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-    <text x="10" y="20" fill='#0969da' font-size='12'>90°</text>
-    <text x="50" y="20" fill='#0969da' font-size='12'>90°</text>
-    <text x="50" y="55" fill='#0969da' font-size='12'>90°</text>
-    <text x="10" y="55" fill='#0969da' font-size='12'>90°</text>
-    <text x="30" y="90" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Square</text>
+<svg viewBox="-15 -15 430 240" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="430" height="240" rx="4" fill="#1e2433"/>
+  <!-- Title -->
+  <text x="200" y="22" fill='currentColor' font-family='system-ui, sans-serif' font-size='13' text-anchor='middle' font-weight='bold'>All angles in a quadrilateral = 360°</text>
+
+  <!-- Square (all 90°) - centered at x=100 -->
+  <g transform='translate(65, 75)'>
+    <rect x="0" y="0" width="70" height="70" fill='none' stroke='#4f8ef7' stroke-width="2"/>
+    <!-- Right angle symbols -->
+    <rect x="0" y="0" width="12" height="12" fill='none' stroke='#22c55e' stroke-width="1.5"/>
+    <rect x="58" y="0" width="12" height="12" fill='none' stroke='#22c55e' stroke-width="1.5"/>
+    <rect x="58" y="58" width="12" height="12" fill='none' stroke='#22c55e' stroke-width="1.5"/>
+    <rect x="0" y="58" width="12" height="12" fill='none' stroke='#22c55e' stroke-width="1.5"/>
+    <text x="35" y="42" fill='currentColor' font-family='system-ui, sans-serif' font-size='12' text-anchor='middle' font-weight='bold'>90°</text>
+    <text x="35" y="105" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>Square</text>
   </g>
 
-  <!-- Trapezoid -->
-  <g transform='translate(220, 80)'>
-    <polygon points="0,60 70,60 55,0 15,0" fill='none' stroke='#22c55e' stroke-width="2"/>
-    <text x="10" y="25" fill='#22c55e' font-size='12'>110°</text>
-    <text x="55" y="25" fill='#22c55e' font-size='12'>70°</text>
-    <text x="55" y="55" fill='#22c55e' font-size='12'>100°</text>
-    <text x="10" y="55" fill='#22c55e' font-size='12'>80°</text>
-    <text x="35" y="90" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Trapezoid</text>
+  <!-- Trapezoid - centered at x=300 -->
+  <g transform='translate(265, 75)'>
+    <polygon points="0,70 80,70 65,0 15,0" fill='none' stroke='#22c55e' stroke-width="2"/>
+    <text x="22" y="22" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>110°</text>
+    <text x="48" y="22" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>70°</text>
+    <text x="58" y="62" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>100°</text>
+    <text x="10" y="62" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' font-weight='bold'>80°</text>
+    <text x="40" y="105" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>Trapezoid</text>
   </g>
-
-  <text x="200" y="20" fill='currentColor' font-size='13' text-anchor='middle' font-weight='bold'>All angles sum to 360°</text>
 </svg>
 
 <div class='worked-example'>
@@ -168,23 +185,28 @@ SECTIONS = [
   <p><strong>Regular hexagon:</strong> Total angles = 720°, so each angle = \\(720° \\div 6 = \\)<strong>120°</strong></p>
 </div>
 
-<svg viewBox="0 0 350 220" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">
-  <!-- Equilateral triangle -->
-  <g transform='translate(50, 120)'>
+<svg viewBox="-15 -15 480 240" style="width:100%;max-width:480px;height:auto;display:block;margin:16px auto;background:#1e2433;border-radius:8px;" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-15" y="-15" width="480" height="240" rx="4" fill="#1e2433"/>
+
+  <!-- Equilateral triangle - center at x=75 -->
+  <g transform='translate(75, 105)'>
     <polygon points="0,-50 45,30 -45,30" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Triangle: 60°</text>
+    <text x="0" y="-32" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>60°</text>
+    <text x="0" y="68" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>Triangle: 60°</text>
   </g>
 
-  <!-- Regular hexagon -->
-  <g transform='translate(170, 110)'>
-    <polygon points="30,-40 50,-20 50,20 30,40 -30,40 -50,20 -50,-20 -30,-40" fill='none' stroke='#22c55e' stroke-width="2"/>
-    <text x="0" y="75" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Hexagon: 120°</text>
-  </g>
-
-  <!-- Regular pentagon -->
-  <g transform='translate(290, 120)'>
+  <!-- Regular pentagon - center at x=225 (evenly spaced) -->
+  <g transform='translate(225, 105)'>
     <polygon points="0,-45 43,-14 26,37 -26,37 -43,-14" fill='none' stroke='#ff6b6b' stroke-width="2"/>
-    <text x="0" y="70" fill='currentColor' font-size='11' text-anchor='middle' font-weight='bold'>Pentagon: 108°</text>
+    <text x="0" y="-28" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>108°</text>
+    <text x="0" y="68" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>Pentagon: 108°</text>
+  </g>
+
+  <!-- Regular hexagon - center at x=375 (evenly spaced) -->
+  <g transform='translate(375, 105)'>
+    <polygon points="0,-45 39,-22 39,22 0,45 -39,22 -39,-22" fill='none' stroke='#22c55e' stroke-width="2"/>
+    <text x="0" y="-28" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle'>120°</text>
+    <text x="0" y="68" fill='currentColor' font-family='system-ui, sans-serif' font-size='11' text-anchor='middle' font-weight='bold'>Hexagon: 120°</text>
   </g>
 </svg>
 

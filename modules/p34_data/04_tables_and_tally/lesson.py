@@ -151,29 +151,32 @@ SECTIONS = [
 
 <h3>How to Make Tally Marks</h3>
 
-<svg width="400" height="200" viewBox="0 0 400 200">
+<svg viewBox="-15 -15 430 190" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:430px;">
+  <!-- Background -->
+  <rect x="-15" y="-15" width="430" height="190" rx="4" fill="#1e1e2e"/>
+
   <!-- Title -->
-  <text x="200" y="25" font-size='16' font-weight='bold' text-anchor='middle' fill='currentColor'>How to Write Tally Marks</text>
+  <text x="200" y="22" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="currentColor">How to Write Tally Marks</text>
 
-  <!-- Single tally -->
-  <text x="50" y="55" font-size='12' font-weight='bold' fill='currentColor'>One:</text>
-  <line x1="40" y1="75" x2="40" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <text x="40" y="135" font-size='14' text-anchor='middle' fill='currentColor'>|</text>
+  <!-- One tally (centered at x=65) -->
+  <text x="65" y="55" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">One:</text>
+  <line x1="65" y1="72" x2="65" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <text x="65" y="140" font-family="sans-serif" font-size="13" text-anchor="middle" fill="currentColor">= 1</text>
 
-  <!-- Two tallies -->
-  <text x="150" y="55" font-size='12' font-weight='bold' fill='currentColor'>Two:</text>
-  <line x1="130" y1="75" x2="130" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <line x1="145" y1="75" x2="145" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <text x="137" y="135" font-size='14' text-anchor='middle' fill='currentColor'>||</text>
+  <!-- Two tallies (centered at x=200) -->
+  <text x="200" y="55" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Two:</text>
+  <line x1="192" y1="72" x2="192" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <line x1="208" y1="72" x2="208" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <text x="200" y="140" font-family="sans-serif" font-size="13" text-anchor="middle" fill="currentColor">= 2</text>
 
-  <!-- Five tallies (with diagonal) -->
-  <text x="290" y="55" font-size='12' font-weight='bold' fill='currentColor'>Five:</text>
-  <line x1="260" y1="75" x2="260" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <line x1="275" y1="75" x2="275" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <line x1="290" y1="75" x2="290" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <line x1="305" y1="75" x2="305" y2="110" stroke='#8b949e' stroke-width="3"/>
-  <line x1="265" y1="80" x2="305" y2="105" stroke='#8b949e' stroke-width="3"/>
-  <text x="285" y="135" font-size='14' text-anchor='middle' fill='currentColor'>||||/</text>
+  <!-- Five tallies with diagonal (centered at x=335) -->
+  <text x="335" y="55" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Five:</text>
+  <line x1="310" y1="72" x2="310" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <line x1="322" y1="72" x2="322" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <line x1="334" y1="72" x2="334" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <line x1="346" y1="72" x2="346" y2="115" stroke="#8b949e" stroke-width="3"/>
+  <line x1="307" y1="77" x2="349" y2="110" stroke="#8b949e" stroke-width="3"/>
+  <text x="335" y="140" font-family="sans-serif" font-size="13" text-anchor="middle" fill="currentColor">= 5</text>
 </svg>
 
 <h3>Rules for Tally Marks</h3>

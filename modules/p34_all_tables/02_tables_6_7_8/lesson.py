@@ -30,18 +30,18 @@ SECTIONS = [
     <!-- 3 x 4 grid -->
     <g>
       <text x="85" y="46" text-anchor='middle' font-size='11' font-weight='bold' fill='#4169E1'>3 × 4 = 12</text>
-      <rect x="30" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="60" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="90" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="120" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="30" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="60" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="90" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="120" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="30" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="60" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="90" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
-      <rect x="120" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="3"/>
+      <rect x="30" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="60" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="90" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="120" y="58" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="30" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="60" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="90" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="120" y="88" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="30" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="60" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="90" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
+      <rect x="120" y="118" width="25" height="25" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
     </g>
 
     <!-- Arrow -->
@@ -52,30 +52,30 @@ SECTIONS = [
     <!-- 6 x 4 grid -->
     <g>
       <text x="325" y="46" text-anchor='middle' font-size='11' font-weight='bold' fill='#22c55e'>6 × 4 = 24</text>
-      <rect x="270" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="295" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="320" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="345" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="270" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="295" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="320" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="345" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="3"/>
-      <rect x="270" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="295" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="320" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="345" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="270" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="295" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="320" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="345" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="3"/>
-      <rect x="270" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="3"/>
-      <rect x="295" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="3"/>
-      <rect x="320" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="3"/>
-      <rect x="345" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="3"/>
-      <rect x="270" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="3"/>
-      <rect x="295" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="3"/>
-      <rect x="320" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="3"/>
-      <rect x="345" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="3"/>
+      <rect x="270" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="295" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="320" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="345" y="58" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="270" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="295" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="320" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="345" y="83" width="20" height="20" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
+      <rect x="270" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="295" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="320" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="345" y="108" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="270" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="295" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="320" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="345" y="133" width="20" height="20" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
+      <rect x="270" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="4"/>
+      <rect x="295" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="4"/>
+      <rect x="320" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="4"/>
+      <rect x="345" y="158" width="20" height="20" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="4"/>
+      <rect x="270" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="4"/>
+      <rect x="295" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="4"/>
+      <rect x="320" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="4"/>
+      <rect x="345" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="4"/>
     </g>
   </svg>
   <div class="diagram-caption">\\(6 \\times 4\\) is double \\(3 \\times 4\\)</div>
@@ -107,11 +107,11 @@ SECTIONS = [
 
 <h3>The \\(7 \\times 7 = 49\\) Square</h3>
 <div class="diagram-container">
-  <svg width="300" height="300" viewBox="0 0 300 300">
+  <svg width="100%" viewBox="0 0 310 300">
     <text x="150" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>7 × 7: A Perfect Square</text>
 
     <g id="square-7x7">
-      <rect x="50" y="50" width="200" height="200" fill='none' stroke='#4169E1' stroke-width="3"/>
+      <rect x="50" y="50" width="200" height="200" rx="4" fill='none' stroke='#4169E1' stroke-width="3"/>
 
       <g id="grid">
         <line x1="79" y1="50" x2="79" y2="250" stroke='#e0e0e0' stroke-width="1"/>
@@ -210,23 +210,23 @@ if (ctx8) {
 <h3>How 2, 4, 6, and 8 Are All Related</h3>
 
 <div class="diagram-container">
-  <svg width="550" height="300" viewBox="0 0 550 300">
+  <svg width="100%" viewBox="0 0 560 300">
     <text x="275" y="25" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>The Even Times Tables Are Connected</text>
 
     <!-- Boxes -->
-    <rect x="20" y="60" width="100" height="60" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="5"/>
+    <rect x="20" y="60" width="100" height="60" fill='#4169E180' stroke='#4169E1' stroke-width="2" rx="4"/>
     <text x="70" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>2 Times</text>
     <text x="70" y="105" text-anchor='middle' font-size='12' fill='currentColor'>2, 4, 6, 8...</text>
 
-    <rect x="140" y="60" width="100" height="60" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="5"/>
+    <rect x="140" y="60" width="100" height="60" fill='#22c55e80' stroke='#22c55e' stroke-width="2" rx="4"/>
     <text x="190" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>4 Times</text>
     <text x="190" y="105" text-anchor='middle' font-size='12' fill='currentColor'>4, 8, 12, 16...</text>
 
-    <rect x="260" y="60" width="100" height="60" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="5"/>
+    <rect x="260" y="60" width="100" height="60" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2" rx="4"/>
     <text x="310" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>8 Times</text>
     <text x="310" y="105" text-anchor='middle' font-size='12' fill='currentColor'>8, 16, 24, 32...</text>
 
-    <rect x="380" y="60" width="100" height="60" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="5"/>
+    <rect x="380" y="60" width="100" height="60" fill='#ef444480' stroke='#ef4444' stroke-width="2" rx="4"/>
     <text x="430" y="85" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>16 Times</text>
     <text x="430" y="105" text-anchor='middle' font-size='12' fill='currentColor'>16, 32, 48, 64...</text>
 
@@ -241,11 +241,11 @@ if (ctx8) {
     <text x="370" y="80" text-anchor='middle' font-size='11' fill='currentColor'>×2</text>
 
     <!-- 3 and 6 -->
-    <rect x="20" y="180" width="100" height="60" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="5"/>
+    <rect x="20" y="180" width="100" height="60" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="4"/>
     <text x="70" y="205" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>3 Times</text>
     <text x="70" y="225" text-anchor='middle' font-size='12' fill='currentColor'>3, 6, 9, 12...</text>
 
-    <rect x="140" y="180" width="100" height="60" fill='#06b6d480' stroke='#06b6d4' stroke-width="2" rx="5"/>
+    <rect x="140" y="180" width="100" height="60" fill='#06b6d480' stroke='#06b6d4' stroke-width="2" rx="4"/>
     <text x="190" y="205" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6 Times</text>
     <text x="190" y="225" text-anchor='middle' font-size='12' fill='currentColor'>6, 12, 18, 24...</text>
 

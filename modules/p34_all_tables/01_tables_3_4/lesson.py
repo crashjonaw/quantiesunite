@@ -10,38 +10,38 @@ SECTIONS = [
 <p>Let's say you have 4 baskets with 3 apples in each. Instead of counting \\(3 + 3 + 3 + 3\\), we write \\(3 \\times 4 = 12\\), which means "3 repeated 4 times".</p>
 
 <div class="diagram-container">
-  <svg width="500" height="150" viewBox="0 0 500 150">
-    <text x="250" y="25" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>4 Baskets with 3 Apples Each</text>
+  <svg width="100%" viewBox="0 0 530 150">
+    <text x="265" y="25" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>4 Baskets with 3 Apples Each</text>
 
-    <g id="basket1">
+    <g>
       <rect x="20" y="50" width="60" height="70" rx="4" fill='none' stroke='#4169E1' stroke-width="2"/>
       <circle cx="35" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="50" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="42" cy="85" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="55" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="45" cy="90" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
     </g>
 
-    <g id="basket2">
+    <g>
       <rect x="100" y="50" width="60" height="70" rx="4" fill='none' stroke='#22c55e' stroke-width="2"/>
       <circle cx="115" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="130" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="122" cy="85" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="135" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="125" cy="90" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
     </g>
 
-    <g id="basket3">
+    <g>
       <rect x="180" y="50" width="60" height="70" rx="4" fill='none' stroke='#f59e0b' stroke-width="2"/>
       <circle cx="195" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="210" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="202" cy="85" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="215" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="205" cy="90" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
     </g>
 
-    <g id="basket4">
+    <g>
       <rect x="260" y="50" width="60" height="70" rx="4" fill='none' stroke='#ef4444' stroke-width="2"/>
       <circle cx="275" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="290" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
-      <circle cx="282" cy="85" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="295" cy="70" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
+      <circle cx="285" cy="90" r="10" fill='#f59e0b80' stroke='#f59e0b' stroke-width="1"/>
     </g>
 
-    <text x="400" y="85" font-size='20' font-weight='bold' fill='currentColor'>3 × 4 = 12</text>
+    <text x="400" y="90" font-size='20' font-weight='bold' fill='currentColor'>3 × 4 = 12</text>
   </svg>
   <div class="diagram-caption">Four groups of three equals twelve apples</div>
 </div>
@@ -203,31 +203,28 @@ if (ctx4) {
 
 <h3>Example: The \\(3 \\times 4\\) Array</h3>
 <div class="diagram-container">
-  <svg width="450" height="250" viewBox="0 0 450 250">
-    <text x="225" y="25" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>3 Rows and 4 Columns</text>
+  <svg width="100%" viewBox="0 0 460 225">
+    <text x="230" y="25" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>3 Rows and 4 Columns</text>
 
-    <g id="array3x4">
-      <!-- Row 1 -->
-      <rect x="50" y="60" width="35" height="35" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
-      <rect x="100" y="60" width="35" height="35" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
-      <rect x="150" y="60" width="35" height="35" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
-      <rect x="200" y="60" width="35" height="35" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+    <g>
+      <rect x="50" y="55" width="35" height="35" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+      <rect x="95" y="55" width="35" height="35" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+      <rect x="140" y="55" width="35" height="35" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
+      <rect x="185" y="55" width="35" height="35" rx="4" fill='#4169E180' stroke='#4169E1' stroke-width="2"/>
 
-      <!-- Row 2 -->
-      <rect x="50" y="110" width="35" height="35" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-      <rect x="100" y="110" width="35" height="35" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-      <rect x="150" y="110" width="35" height="35" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
-      <rect x="200" y="110" width="35" height="35" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+      <rect x="50" y="100" width="35" height="35" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+      <rect x="95" y="100" width="35" height="35" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+      <rect x="140" y="100" width="35" height="35" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
+      <rect x="185" y="100" width="35" height="35" rx="4" fill='#22c55e80' stroke='#22c55e' stroke-width="2"/>
 
-      <!-- Row 3 -->
-      <rect x="50" y="160" width="35" height="35" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-      <rect x="100" y="160" width="35" height="35" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-      <rect x="150" y="160" width="35" height="35" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
-      <rect x="200" y="160" width="35" height="35" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+      <rect x="50" y="145" width="35" height="35" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+      <rect x="95" y="145" width="35" height="35" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+      <rect x="140" y="145" width="35" height="35" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
+      <rect x="185" y="145" width="35" height="35" rx="4" fill='#f59e0b80' stroke='#f59e0b' stroke-width="2"/>
     </g>
 
-    <text x="280" y="120" font-size='18' font-weight='bold' fill='currentColor'>3 × 4 = 12</text>
-    <text x="280" y="145" font-size='14' fill='currentColor'>(3 rows of 4)</text>
+    <text x="280" y="115" font-size='18' font-weight='bold' fill='currentColor'>3 × 4 = 12</text>
+    <text x="280" y="140" font-size='14' fill='currentColor'>(3 rows of 4)</text>
   </svg>
   <div class="diagram-caption">An array shows multiplication clearly</div>
 </div>
