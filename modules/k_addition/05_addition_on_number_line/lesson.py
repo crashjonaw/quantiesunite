@@ -10,36 +10,36 @@ SECTIONS = [
 
 <svg viewBox="0 0 450 80" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 20px auto;">
   <!-- Main line -->
-  <line x1="20" y1="40" x2="430" y2="40" stroke='#4169E1' stroke-width="3"/>
+  <line x1="15" y1="35" x2="435" y2="35" stroke='#4169E1' stroke-width="3"/>
 
-  <!-- Tick marks and numbers -->
+  <!-- Tick marks and numbers, evenly spaced at 52.5px intervals -->
   <g font-size='14' text-anchor='middle'>
-    <line x1="20" y1="35" x2="20" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="20" y="60" fill='currentColor'>0</text>
+    <line x1="15" y1="30" x2="15" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="15" y="58" fill='currentColor'>0</text>
 
-    <line x1="70" y1="35" x2="70" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="70" y="60" fill='currentColor'>1</text>
+    <line x1="67" y1="30" x2="67" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="67" y="58" fill='currentColor'>1</text>
 
-    <line x1="120" y1="35" x2="120" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="120" y="60" fill='currentColor'>2</text>
+    <line x1="120" y1="30" x2="120" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="120" y="58" fill='currentColor'>2</text>
 
-    <line x1="170" y1="35" x2="170" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="170" y="60" fill='currentColor'>3</text>
+    <line x1="172" y1="30" x2="172" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="172" y="58" fill='currentColor'>3</text>
 
-    <line x1="220" y1="35" x2="220" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="220" y="60" fill='currentColor'>4</text>
+    <line x1="225" y1="30" x2="225" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="225" y="58" fill='currentColor'>4</text>
 
-    <line x1="270" y1="35" x2="270" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="270" y="60" fill='currentColor'>5</text>
+    <line x1="277" y1="30" x2="277" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="277" y="58" fill='currentColor'>5</text>
 
-    <line x1="320" y1="35" x2="320" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="320" y="60" fill='currentColor'>6</text>
+    <line x1="330" y1="30" x2="330" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="330" y="58" fill='currentColor'>6</text>
 
-    <line x1="370" y1="35" x2="370" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="370" y="60" fill='currentColor'>7</text>
+    <line x1="382" y1="30" x2="382" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="382" y="58" fill='currentColor'>7</text>
 
-    <line x1="420" y1="35" x2="420" y2="45" stroke='#4169E1' stroke-width="2"/>
-    <text x="420" y="60" fill='currentColor'>8</text>
+    <line x1="435" y1="30" x2="435" y2="40" stroke='#4169E1' stroke-width="2"/>
+    <text x="435" y="58" fill='currentColor'>8</text>
   </g>
 </svg>
 
@@ -65,50 +65,55 @@ SECTIONS = [
 <div class="formula-box">
   <p style="font-size: 16px; margin-bottom: 15px;"><strong>Step 1: Find your starting number (3) on the line.</strong></p>
 
-  <svg viewBox="0 0 450 100" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 10px 0;">
-    <line x1="20" y1="50" x2="430" y2="50" stroke='#4169E1' stroke-width="3"/>
+  <svg viewBox="0 0 340 90" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 10px auto;">
+    <line x1="15" y1="52" x2="325" y2="52" stroke='#4169E1' stroke-width="3"/>
     <g font-size='14' text-anchor='middle'>
-      <line x1="20" y1="45" x2="20" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="20" y="70" fill='currentColor'>0</text>
-      <line x1="70" y1="45" x2="70" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="70" y="70" fill='currentColor'>1</text>
-      <line x1="120" y1="45" x2="120" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="120" y="70" fill='currentColor'>2</text>
-      <line x1="170" y1="45" x2="170" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="170" y="70" fill='currentColor'>3</text>
-      <line x1="220" y1="45" x2="220" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="220" y="70" fill='currentColor'>4</text>
-      <line x1="270" y1="45" x2="270" y2="55" stroke='#4169E1' stroke-width="2"/>
-      <text x="270" y="70" fill='currentColor'>5</text>
+      <line x1="15" y1="47" x2="15" y2="57" stroke='#4169E1' stroke-width="2"/>
+      <text x="15" y="75" fill='currentColor'>0</text>
+      <line x1="77" y1="47" x2="77" y2="57" stroke='#4169E1' stroke-width="2"/>
+      <text x="77" y="75" fill='currentColor'>1</text>
+      <line x1="139" y1="47" x2="139" y2="57" stroke='#4169E1' stroke-width="2"/>
+      <text x="139" y="75" fill='currentColor'>2</text>
+      <line x1="201" y1="47" x2="201" y2="57" stroke='#4169E1' stroke-width="2"/>
+      <text x="201" y="75" fill='currentColor'>3</text>
+      <line x1="263" y1="47" x2="263" y2="57" stroke='#4169E1' stroke-width="2"/>
+      <text x="263" y="75" fill='currentColor'>4</text>
+      <line x1="325" y1="47" x2="325" y2="57" stroke='#4169E1' stroke-width="2"/>
+      <text x="325" y="75" fill='currentColor'>5</text>
     </g>
-    <circle cx="170" cy="50" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-    <text x="170" y="25" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Start here: 3</text>
+    <circle cx="201" cy="52" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+    <text x="201" y="28" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Start here: 3</text>
   </svg>
 
   <p style="font-size: 16px; margin-top: 15px; margin-bottom: 15px;"><strong>Step 2: Jump forward 2 steps (because we're adding 2).</strong></p>
 
-  <svg viewBox="0 0 450 120" style="width: 100%; max-width: 500px; height: auto; display: block; margin: 10px 0;">
-    <line x1="20" y1="60" x2="430" y2="60" stroke='#4169E1' stroke-width="3"/>
+  <svg viewBox="0 0 340 110" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 10px auto;">
+    <defs><marker id="arrowJ" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#ef4444"/></marker></defs>
+    <line x1="15" y1="65" x2="325" y2="65" stroke='#4169E1' stroke-width="3"/>
     <g font-size='14' text-anchor='middle'>
-      <line x1="20" y1="55" x2="20" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="20" y="80" fill='currentColor'>0</text>
-      <line x1="70" y1="55" x2="70" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="70" y="80" fill='currentColor'>1</text>
-      <line x1="120" y1="55" x2="120" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="120" y="80" fill='currentColor'>2</text>
-      <line x1="170" y1="55" x2="170" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="170" y="80" fill='currentColor'>3</text>
-      <line x1="220" y1="55" x2="220" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="220" y="80" fill='currentColor'>4</text>
-      <line x1="270" y1="55" x2="270" y2="65" stroke='#4169E1' stroke-width="2"/>
-      <text x="270" y="80" fill='currentColor'>5</text>
+      <line x1="15" y1="60" x2="15" y2="70" stroke='#4169E1' stroke-width="2"/>
+      <text x="15" y="88" fill='currentColor'>0</text>
+      <line x1="77" y1="60" x2="77" y2="70" stroke='#4169E1' stroke-width="2"/>
+      <text x="77" y="88" fill='currentColor'>1</text>
+      <line x1="139" y1="60" x2="139" y2="70" stroke='#4169E1' stroke-width="2"/>
+      <text x="139" y="88" fill='currentColor'>2</text>
+      <line x1="201" y1="60" x2="201" y2="70" stroke='#4169E1' stroke-width="2"/>
+      <text x="201" y="88" fill='currentColor'>3</text>
+      <line x1="263" y1="60" x2="263" y2="70" stroke='#4169E1' stroke-width="2"/>
+      <text x="263" y="88" fill='currentColor'>4</text>
+      <line x1="325" y1="60" x2="325" y2="70" stroke='#4169E1' stroke-width="2"/>
+      <text x="325" y="88" fill='currentColor'>5</text>
     </g>
-    <circle cx="170" cy="60" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-    <circle cx="270" cy="60" r="8" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-    <path d="M 180 30 L 210 30 L 210 20" stroke='#ef4444' stroke-width="2" fill='none'/>
-    <path d="M 220 30 L 250 30 L 250 20" stroke='#ef4444' stroke-width="2" fill='none'/>
-    <text x="200" y="18" text-anchor='middle' font-size='12' fill='#ef4444'>+1</text>
-    <text x="240" y="18" text-anchor='middle' font-size='12' fill='#ef4444'>+1</text>
+    <!-- Start at 3 -->
+    <circle cx="201" cy="65" r="8" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+    <!-- End at 5 -->
+    <circle cx="325" cy="65" r="8" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+    <!-- Jump arcs -->
+    <path d="M 207 53 Q 232 25 257 53" stroke='#ef4444' stroke-width="2" fill='none' marker-end="url(#arrowJ)"/>
+    <path d="M 269 53 Q 294 25 319 53" stroke='#ef4444' stroke-width="2" fill='none' marker-end="url(#arrowJ)"/>
+    <!-- Jump labels -->
+    <text x="232" y="22" text-anchor='middle' font-size='11' fill='#ef4444'>+1</text>
+    <text x="294" y="22" text-anchor='middle' font-size='11' fill='#ef4444'>+1</text>
   </svg>
 
   <p style="font-size: 16px; margin-top: 15px; margin-bottom: 15px;"><strong>Step 3: See where you land (5). That's your answer!</strong></p>

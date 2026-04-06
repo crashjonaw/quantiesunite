@@ -18,12 +18,12 @@ SECTIONS = [
         "title": "Understanding Circles ⭕",
         "body": """<p>A <strong>circle</strong> is a special shape with <strong>no sides and no corners</strong>. It's completely round!</p>
 <p>Every point on a circle is the same distance from the center. This is why circles look so perfectly round and smooth.</p>
-<svg viewBox="0 0 200 150" style="width:100%;max-width:200px;height:auto;display:block;margin:16px auto;"
-  <circle cx="100" cy="75" r="50" fill="lightblue" stroke="darkblue" stroke-width="2"/>
-  <line x1="100" y1="75" x2="150" y2="75" stroke="red" stroke-width="2"/>
-  <text x="115" y="70" font-size="14" fill='currentColor'>radius</text>
-  <circle cx="100" cy="75" r="3" fill="red"/>
-  <text x="90" y="95" font-size="14" fill='currentColor'>center</text>
+<svg viewBox="0 0 230 170" style="width:100%;max-width:230px;height:auto;display:block;margin:16px auto;">
+  <circle cx="115" cy="85" r="50" fill="#4f8ef730" stroke="#4f8ef7" stroke-width="3"/>
+  <line x1="115" y1="85" x2="165" y2="85" stroke="#ef4444" stroke-width="2"/>
+  <text x="130" y="78" font-size="13" fill='currentColor' font-weight='bold'>radius</text>
+  <circle cx="115" cy="85" r="4" fill="#ef4444"/>
+  <text x="115" y="155" text-anchor="middle" font-size="13" fill='currentColor' font-weight='bold'>center</text>
 </svg>
 <p><strong>Why does a circle matter?</strong> Circles are everywhere — wheels, coins, the sun, clocks, pizza! Understanding circles helps us recognize these things in the real world.</p>
 <div class='example-box'>
@@ -34,22 +34,24 @@ SECTIONS = [
         "title": "Squares & Rectangles 📦",
         "body": """<p>A <strong>square</strong> is a shape with <strong>4 equal sides</strong> and <strong>4 corners</strong>. All the corners are the same — they're all right angles (90°).</p>
 <p>A <strong>rectangle</strong> is similar, but its sides don't all have to be the same length. It has <strong>2 long sides and 2 short sides</strong>, and all 4 corners are still right angles.</p>
-<svg viewBox="0 0 300 150" style="width:100%;max-width:300px;height:auto;display:block;margin:16px auto;"
-  <text x="50" y="20" font-size="16" font-weight="bold" fill='currentColor'>Square</text>
-  <rect x="20" y="40" width="80" height="80" fill="lightyellow" stroke="orange" stroke-width="2" rx='4'/>
-  <circle cx="20" cy="40" r="4" fill="red"/>
-  <circle cx="100" cy="40" r="4" fill="red"/>
-  <circle cx="100" cy="120" r="4" fill="red"/>
-  <circle cx="20" cy="120" r="4" fill="red"/>
-  <text x="35" y="135" font-size="12" fill='currentColor'>4 equal sides</text>
+<svg viewBox="0 0 360 165" style="width:100%;max-width:360px;height:auto;display:block;margin:16px auto;">
+  <!-- Square — centered at x=90 -->
+  <text x="90" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Square</text>
+  <rect x="45" y="35" width="90" height="90" fill="#22c55e30" stroke="#22c55e" stroke-width="3" rx='4'/>
+  <circle cx="45" cy="35" r="4" fill="#ef4444"/>
+  <circle cx="135" cy="35" r="4" fill="#ef4444"/>
+  <circle cx="135" cy="125" r="4" fill="#ef4444"/>
+  <circle cx="45" cy="125" r="4" fill="#ef4444"/>
+  <text x="90" y="150" text-anchor="middle" font-size="12" fill='currentColor' font-weight='bold'>4 equal sides</text>
 
-  <text x="180" y="20" font-size="16" font-weight="bold" fill='currentColor'>Rectangle</text>
-  <rect x="150" y="40" width="120" height="60" fill="lightgreen" stroke="darkgreen" stroke-width="2" rx='4'/>
-  <circle cx="150" cy="40" r="4" fill="red"/>
-  <circle cx="270" cy="40" r="4" fill="red"/>
-  <circle cx="270" cy="100" r="4" fill="red"/>
-  <circle cx="150" cy="100" r="4" fill="red"/>
-  <text x="170" y="135" font-size="12" fill='currentColor'>2 long, 2 short sides</text>
+  <!-- Rectangle — centered at x=270 -->
+  <text x="270" y="20" text-anchor="middle" font-size="14" font-weight="bold" fill='currentColor'>Rectangle</text>
+  <rect x="210" y="50" width="120" height="65" fill="#f59e0b30" stroke="#f59e0b" stroke-width="3" rx='4'/>
+  <circle cx="210" cy="50" r="4" fill="#ef4444"/>
+  <circle cx="330" cy="50" r="4" fill="#ef4444"/>
+  <circle cx="330" cy="115" r="4" fill="#ef4444"/>
+  <circle cx="210" cy="115" r="4" fill="#ef4444"/>
+  <text x="270" y="150" text-anchor="middle" font-size="12" fill='currentColor' font-weight='bold'>2 long, 2 short sides</text>
 </svg>
 <p><strong>Real-world examples:</strong> Books, doors, windows, tiles, and screens are rectangles. A postage stamp or ice cube might be a square!</p>
 <div class='example-box'>
@@ -60,24 +62,29 @@ SECTIONS = [
         "title": "Triangles 🔺",
         "body": """<p>A <strong>triangle</strong> is a shape with <strong>3 sides and 3 corners</strong>. It's one of the simplest shapes to draw!</p>
 <p>All triangles have 3 sides and 3 corners, but they can look very different. Some triangles are tall and thin, others are wide and flat.</p>
-<svg viewBox="0 0 350 150" style="width:100%;max-width:350px;height:auto;display:block;margin:16px auto;"
-  <text x="30" y="20" font-size="14" font-weight="bold" fill='currentColor'>Tall Triangle</text>
-  <polygon points="70,120 70,30 110,120" fill="lightcoral" stroke="darkred" stroke-width="2"/>
-  <circle cx="70" cy="120" r="3" fill="red"/>
-  <circle cx="70" cy="30" r="3" fill="red"/>
-  <circle cx="110" cy="120" r="3" fill="red"/>
+<svg viewBox="0 0 420 155" style="width:100%;max-width:420px;height:auto;display:block;margin:16px auto;">
+  <!-- Tall — centered at x=70 -->
+  <text x="70" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill='currentColor'>Tall</text>
+  <polygon points="55,125 55,35 100,125" fill="#ef444450" stroke="#ef4444" stroke-width="3"/>
+  <circle cx="55" cy="125" r="4" fill="#ef4444"/>
+  <circle cx="55" cy="35" r="4" fill="#ef4444"/>
+  <circle cx="100" cy="125" r="4" fill="#ef4444"/>
 
-  <text x="180" y="20" font-size="14" font-weight="bold" fill='currentColor'>Flat Triangle</text>
-  <polygon points="160,120 220,120 190,50" fill="lightsalmon" stroke="darkorange" stroke-width="2"/>
-  <circle cx="160" cy="120" r="3" fill="red"/>
-  <circle cx="220" cy="120" r="3" fill="red"/>
-  <circle cx="190" cy="50" r="3" fill="red"/>
+  <!-- Flat — centered at x=210 -->
+  <text x="210" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill='currentColor'>Flat</text>
+  <polygon points="170,125 250,125 210,55" fill="#f59e0b50" stroke="#f59e0b" stroke-width="3"/>
+  <circle cx="170" cy="125" r="4" fill="#f59e0b"/>
+  <circle cx="250" cy="125" r="4" fill="#f59e0b"/>
+  <circle cx="210" cy="55" r="4" fill="#f59e0b"/>
 
-  <text x="300" y="20" font-size="14" font-weight="bold" fill='currentColor'>Wide Triangle</text>
-  <polygon points="280,120 340,120 310,60" fill="lightpink" stroke="deeppink" stroke-width="2"/>
-  <circle cx="280" cy="120" r="3" fill="red"/>
-  <circle cx="340" cy="120" r="3" fill="red"/>
-  <circle cx="310" cy="60" r="3" fill="red"/>
+  <!-- Wide — centered at x=350 -->
+  <text x="350" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill='currentColor'>Wide</text>
+  <polygon points="310,125 390,125 350,55" fill="#a855f750" stroke="#a855f7" stroke-width="3"/>
+  <circle cx="310" cy="125" r="4" fill="#a855f7"/>
+  <circle cx="390" cy="125" r="4" fill="#a855f7"/>
+  <circle cx="350" cy="55" r="4" fill="#a855f7"/>
+
+  <text x="210" y="148" text-anchor="middle" font-size="12" fill='currentColor' font-weight='bold'>All triangles have 3 sides and 3 corners</text>
 </svg>
 <p><strong>Why learn triangles?</strong> Triangles are super strong shapes. They're used in bridges, roofs of houses, and lots of structures!</p>
 <div class='example-box'>
@@ -95,18 +102,19 @@ SECTIONS = [
 The pattern is: <strong>circle, square, circle, square...</strong><br>
 The next shape should be <strong>🟩 (a square)</strong>!
 </div>
-<svg viewBox="0 0 350 120" style="width:100%;max-width:350px;height:auto;display:block;margin:16px auto;"
-  <text x="10" y="20" font-size="14" font-weight="bold" fill='currentColor'>Pattern Example with Colors:</text>
-  <circle cx="40" cy="60" r="15" fill="red"/>
-  <circle cx="80" cy="60" r="15" fill="yellow"/>
-  <circle cx="120" cy="60" r="15" fill="red"/>
-  <circle cx="160" cy="60" r="15" fill="yellow"/>
-  <circle cx="200" cy="60" r="15" fill="red"/>
-  <circle cx="240" cy="60" r="15" fill="yellow"/>
-  <circle cx="280" cy="60" r="15" fill="lightgray" stroke="red" stroke-width="2" stroke-dasharray="5"/>
-  <text x="265" y="70" font-size="16" fill='currentColor'>?</text>
-  <text x="20" y="105" font-size="12" fill='currentColor'>Pattern: RED, YELLOW, RED, YELLOW...</text>
-  <text x="250" y="105" font-size="12" fill='currentColor'>Next: RED</text>
+<svg viewBox="0 0 370 130" style="width:100%;max-width:370px;height:auto;display:block;margin:16px auto;">
+  <text x="185" y="20" text-anchor="middle" font-size="13" font-weight="bold" fill='currentColor'>Pattern Example with Colors:</text>
+  <!-- 7 circles evenly spaced: centers at 40, 85, 130, 175, 220, 265, 310 -->
+  <circle cx="40" cy="62" r="18" fill="#ef4444"/>
+  <circle cx="85" cy="62" r="18" fill="#facc15"/>
+  <circle cx="130" cy="62" r="18" fill="#ef4444"/>
+  <circle cx="175" cy="62" r="18" fill="#facc15"/>
+  <circle cx="220" cy="62" r="18" fill="#ef4444"/>
+  <circle cx="265" cy="62" r="18" fill="#facc15"/>
+  <circle cx="310" cy="62" r="18" fill="#e5e7eb" stroke="#ef4444" stroke-width="2" stroke-dasharray="5"/>
+  <text x="310" y="68" text-anchor="middle" font-size="16" font-weight="bold" fill='currentColor'>?</text>
+  <text x="130" y="108" text-anchor="middle" font-size="12" fill='currentColor'>RED, YELLOW, RED, YELLOW...</text>
+  <text x="310" y="108" text-anchor="middle" font-size="12" fill='currentColor' font-weight="bold">Next: RED</text>
 </svg>
 <p><strong>Patterns are powerful!</strong> When you see a pattern, you can predict what comes next without being told. This is the beginning of mathematical thinking!</p>
 <div class='example-box'>

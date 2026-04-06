@@ -52,39 +52,39 @@ SECTIONS = [
   <p>Numbers like \(15\) mean "1 ten and 5 ones." When you count \(15\) objects, you have one group of \(10\) and \(5\) more.</p>
 </div>
 
-<svg viewBox="0 0 520 170" style="width:100%;max-width:560px;height:auto;display:block;margin:20px auto;">
+<svg viewBox="0 0 500 165" style="width:100%;max-width:540px;height:auto;display:block;margin:20px auto;">
   <!-- Title -->
-  <text x="260" y="22" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>15 Objects = 1 Ten + 5 Ones</text>
+  <text x="250" y="20" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>15 Objects = 1 Ten + 5 Ones</text>
 
   <!-- 10 circles in a box (the "ten") -->
-  <rect x="20" y="44" width="190" height="80" rx="6" fill='none' stroke='#4169E1' stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="115" y="39" text-anchor='middle' font-size='13' fill='#4169E1'>1 Ten</text>
+  <rect x="15" y="40" width="195" height="80" rx="4" fill='none' stroke='#4169E1' stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="112" y="36" text-anchor='middle' font-size='13' fill='#4169E1'>1 Ten</text>
 
-  <circle cx="40" cy="70" r="10" fill='#4169E1'/>
-  <circle cx="65" cy="70" r="10" fill='#4169E1'/>
-  <circle cx="90" cy="70" r="10" fill='#4169E1'/>
-  <circle cx="115" cy="70" r="10" fill='#4169E1'/>
-  <circle cx="140" cy="70" r="10" fill='#4169E1'/>
-  <circle cx="40" cy="100" r="10" fill='#4169E1'/>
-  <circle cx="65" cy="100" r="10" fill='#4169E1'/>
-  <circle cx="90" cy="100" r="10" fill='#4169E1'/>
-  <circle cx="115" cy="100" r="10" fill='#4169E1'/>
-  <circle cx="140" cy="100" r="10" fill='#4169E1'/>
+  <circle cx="35" cy="65" r="10" fill='#4169E1'/>
+  <circle cx="62" cy="65" r="10" fill='#4169E1'/>
+  <circle cx="89" cy="65" r="10" fill='#4169E1'/>
+  <circle cx="116" cy="65" r="10" fill='#4169E1'/>
+  <circle cx="143" cy="65" r="10" fill='#4169E1'/>
+  <circle cx="35" cy="97" r="10" fill='#4169E1'/>
+  <circle cx="62" cy="97" r="10" fill='#4169E1'/>
+  <circle cx="89" cy="97" r="10" fill='#4169E1'/>
+  <circle cx="116" cy="97" r="10" fill='#4169E1'/>
+  <circle cx="143" cy="97" r="10" fill='#4169E1'/>
 
   <!-- Plus sign -->
-  <text x="255" y="95" text-anchor='middle' font-size='30' font-weight='bold' fill='currentColor'>+</text>
+  <text x="250" y="90" text-anchor='middle' font-size='28' font-weight='bold' fill='currentColor'>+</text>
 
   <!-- 5 circles (the "ones") -->
-  <rect x="310" y="44" width="190" height="80" rx="6" fill='none' stroke='#ef4444' stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="405" y="39" text-anchor='middle' font-size='13' fill='#ef4444'>5 Ones</text>
-  <circle cx="340" cy="85" r="10" fill='#ef4444'/>
-  <circle cx="370" cy="85" r="10" fill='#ef4444'/>
-  <circle cx="400" cy="85" r="10" fill='#ef4444'/>
-  <circle cx="430" cy="85" r="10" fill='#ef4444'/>
-  <circle cx="460" cy="85" r="10" fill='#ef4444'/>
+  <rect x="290" y="40" width="195" height="80" rx="4" fill='none' stroke='#ef4444' stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="387" y="36" text-anchor='middle' font-size='13' fill='#ef4444'>5 Ones</text>
+  <circle cx="320" cy="80" r="10" fill='#ef4444'/>
+  <circle cx="350" cy="80" r="10" fill='#ef4444'/>
+  <circle cx="380" cy="80" r="10" fill='#ef4444'/>
+  <circle cx="410" cy="80" r="10" fill='#ef4444'/>
+  <circle cx="440" cy="80" r="10" fill='#ef4444'/>
 
   <!-- Answer -->
-  <text x="260" y="155" text-anchor='middle' font-size='16' font-weight='bold' fill='#22c55e'>Total = 15</text>
+  <text x="250" y="150" text-anchor='middle' font-size='16' font-weight='bold' fill='#22c55e'>Total = 15</text>
 </svg>"""
     },
     {

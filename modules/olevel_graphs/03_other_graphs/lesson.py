@@ -23,16 +23,20 @@ SECTIONS = [
 <p>\\(\\frac{dy}{dx} = 3x^2 - 3 = 0\\) → \\(x = \\pm 1\\)</p>
 </div>
 
-<svg width="400" height="300" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="150" x2="350" y2="150" stroke='#30363d' stroke-width="1" />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 50 250 Q 150 100, 200 150 Q 250 200, 350 50" stroke='#58a6ff' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
-    <text x="360" y="155">x</text>
-    <text x="190" y="40">y</text>
-    <text x="200" y="270" fill='#ffa657'>S-shape</text>
+<svg viewBox="0 0 390 290" class="worked-example">
+  <!-- Axes -->
+  <line x1="30" y1="145" x2="360" y2="145" stroke='#30363d' stroke-width="1" />
+  <line x1="195" y1="15" x2="195" y2="275" stroke='#30363d' stroke-width="1" />
+  <!-- Cubic S-curve y = x^3 - 3x -->
+  <path d="M 50 260 Q 120 200, 145 145 Q 170 100, 195 145 Q 220 190, 245 145 Q 270 90, 340 30" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Origin point -->
+  <circle cx="195" cy="145" r="3" fill='#79c0ff' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
+    <text x="365" y="149">x</text>
+    <text x="187" y="12">y</text>
+    <text x="200" y="162">O</text>
+    <text x="280" y="30" fill='#ffa657' font-size='11'>y = x&#xB3; &#x2212; 3x</text>
   </g>
 </svg>
 
@@ -66,23 +70,24 @@ SECTIONS = [
   <li>As \\(x \\to \\infty\\), \\(y \\to 0\\); as \\(x \\to 0^+\\), \\(y \\to \\infty\\)</li>
 </ul>
 
-<svg width="400" height="300" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="150" x2="350" y2="150" stroke='#30363d' stroke-width="1" />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" />
-    <line x1="50" y1="150" x2="350" y2="150" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" />
-    <path d="M 230 50 Q 280 90, 340 140" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 170 150 Q 120 110, 60 60" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 170 150 Q 120 190, 60 240" stroke='#ffa657' stroke-width="2" fill='none' />
-    <path d="M 230 150 Q 280 210, 340 260" stroke='#ffa657' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
-    <text x="360" y="155">x</text>
-    <text x="190" y="40">y</text>
-    <text x="200" y="270">O</text>
-    <text x="210" y="35" fill='currentColor' opacity='0.6'>x = 0</text>
-    <text x="280" y="150" fill='currentColor' opacity='0.6'>y = 0</text>
+<svg viewBox="0 0 390 290" class="worked-example">
+  <!-- Axes (solid) -->
+  <line x1="30" y1="145" x2="360" y2="145" stroke='#30363d' stroke-width="1" />
+  <line x1="195" y1="15" x2="195" y2="275" stroke='#30363d' stroke-width="1" />
+  <!-- Hyperbola y = 1/x: Quadrant I branch -->
+  <path d="M 210 55 Q 230 95, 260 120 Q 300 138, 355 142" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Hyperbola y = 1/x: Quadrant III branch -->
+  <path d="M 180 235 Q 160 195, 130 170 Q 90 152, 35 148" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Origin label -->
+  <circle cx="195" cy="145" r="2" fill='currentColor' />
+  <!-- Asymptote labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="365" y="149">x</text>
+    <text x="187" y="12">y</text>
+    <text x="200" y="162">O</text>
+    <text x="200" y="27" fill='currentColor' opacity='0.6' font-size='10'>x = 0 (asymptote)</text>
+    <text x="280" y="138" fill='currentColor' opacity='0.6' font-size='10'>y = 0</text>
+    <text x="270" y="75" fill='#58a6ff'>y = 1/x</text>
   </g>
 </svg>
 
@@ -119,19 +124,26 @@ SECTIONS = [
   <li>If \\(0 < a < 1\\): Curve decreases (exponential decay)</li>
 </ul>
 
-<svg width="400" height="300" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="250" x2="350" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 50 240 Q 100 220, 150 180 Q 200 100, 250 50 Q 300 40, 350 35" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 50 50 Q 100 70, 150 110 Q 200 170, 250 220 Q 300 240, 350 245" stroke='#ffa657' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
-    <text x="360" y="255">x</text>
-    <text x="40" y="40">y</text>
-    <text x="300" y="30" fill='#58a6ff'>a > 1 (growth)</text>
-    <text x="280" y="255" fill='#ffa657'>0 < a < 1 (decay)</text>
-    <text x="45" y="265">O</text>
+<svg viewBox="0 0 400 290" class="worked-example">
+  <!-- Axes -->
+  <line x1="50" y1="245" x2="370" y2="245" stroke='#30363d' stroke-width="1" />
+  <line x1="170" y1="15" x2="170" y2="270" stroke='#30363d' stroke-width="1" />
+  <!-- Horizontal asymptote y = 0 (dashed) -->
+  <line x1="50" y1="245" x2="370" y2="245" stroke='#8b949e' stroke-width="1" stroke-dasharray="4,4" />
+  <!-- Growth curve a > 1 -->
+  <path d="M 50 235 Q 100 230, 140 210 Q 170 180, 200 120 Q 230 60, 260 35 Q 300 20, 360 15" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Decay curve 0 < a < 1 -->
+  <path d="M 50 15 Q 80 20, 110 35 Q 140 60, 170 120 Q 200 180, 230 210 Q 270 230, 360 235" stroke='#ffa657' stroke-width="2" fill='none' />
+  <!-- Intersection point (0, 1) -->
+  <circle cx="170" cy="180" r="4" fill='#79c0ff' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="375" y="249">x</text>
+    <text x="162" y="12">y</text>
+    <text x="175" y="260">O</text>
+    <text x="145" y="178" fill='#79c0ff'>(0, 1)</text>
+    <text x="270" y="30" fill='#58a6ff'>a &gt; 1 (growth)</text>
+    <text x="230" y="270" fill='#ffa657'>0 &lt; a &lt; 1 (decay)</text>
   </g>
 </svg>
 
@@ -165,20 +177,32 @@ SECTIONS = [
   <li>Minimum value −1 at \\(x = \\frac{3\\pi}{2}, \\frac{7\\pi}{2}, ...\\)</li>
 </ul>
 
-<svg width="400" height="280" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="140" x2="350" y2="140" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="230" stroke='#30363d' stroke-width="1" />
-    <path d="M 50 140 Q 80 80, 110 140 Q 140 200, 170 140 Q 200 80, 230 140 Q 260 200, 290 140 Q 320 80, 350 140" stroke='#58a6ff' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='10' fill='currentColor'>
-    <text x="360" y="145">x</text>
-    <text x="40" y="50">y</text>
-    <text x="45" y="155">O</text>
-    <text x="110" y="35" fill='#79c0ff'>π/2</text>
-    <text x="170" y="250" fill='#79c0ff'>π</text>
-    <text x="230" y="35" fill='#79c0ff'>3π/2</text>
-    <text x="290" y="250" fill='#79c0ff'>2π</text>
+<svg viewBox="0 0 400 270" class="worked-example">
+  <!-- Axes -->
+  <line x1="40" y1="135" x2="370" y2="135" stroke='#30363d' stroke-width="1" />
+  <line x1="40" y1="30" x2="40" y2="240" stroke='#30363d' stroke-width="1" />
+  <!-- Amplitude guides (dashed) -->
+  <line x1="40" y1="55" x2="370" y2="55" stroke='#8b949e' stroke-width="0.5" stroke-dasharray="3,3" />
+  <line x1="40" y1="215" x2="370" y2="215" stroke='#8b949e' stroke-width="0.5" stroke-dasharray="3,3" />
+  <!-- Sine wave: 2.5 full periods -->
+  <path d="M 40 135 Q 60 75, 80 55 Q 100 35, 120 55 Q 140 75, 160 135 Q 180 195, 200 215 Q 220 235, 240 215 Q 260 195, 280 135 Q 300 75, 320 55 Q 340 35, 360 55" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Tick marks on x-axis -->
+  <line x1="120" y1="131" x2="120" y2="139" stroke='#30363d' stroke-width="1" />
+  <line x1="200" y1="131" x2="200" y2="139" stroke='#30363d' stroke-width="1" />
+  <line x1="280" y1="131" x2="280" y2="139" stroke='#30363d' stroke-width="1" />
+  <line x1="360" y1="131" x2="360" y2="139" stroke='#30363d' stroke-width="1" />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='10' fill='currentColor'>
+    <text x="375" y="139">x</text>
+    <text x="33" y="25">y</text>
+    <text x="28" y="148">O</text>
+    <text x="20" y="59">1</text>
+    <text x="14" y="219">&#x2212;1</text>
+    <text x="108" y="152" fill='#79c0ff'>&#x3C0;/2</text>
+    <text x="195" y="152" fill='#79c0ff'>&#x3C0;</text>
+    <text x="264" y="152" fill='#79c0ff'>3&#x3C0;/2</text>
+    <text x="350" y="152" fill='#79c0ff'>2&#x3C0;</text>
+    <text x="280" y="45" fill='#58a6ff'>y = sin x</text>
   </g>
 </svg>
 

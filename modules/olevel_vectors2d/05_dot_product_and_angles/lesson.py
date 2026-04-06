@@ -41,31 +41,39 @@ SECTIONS = [
 
         <p><strong>This formula tells us something profound:</strong> The dot product measures how much the two vectors point in the same direction!</p>
 
-        <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; margin: 20px 0;">
+        <svg viewBox="0 0 380 220" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; margin: 20px 0;">
             <defs>
-                <marker id="arrow8" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <marker id="arrow8b" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                     <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7' />
                 </marker>
+                <marker id="arrow8g" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill='#2da44e' />
+                </marker>
             </defs>
+            <!-- Background -->
+            <rect x="15" y="15" width="350" height="190" rx="4" fill='#161b22' stroke='#30363d' stroke-width="1"/>
 
-            <text x="150" y="25" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Angle Between Vectors</text>
+            <text x="190" y="42" fill='currentColor' font-size='13' font-weight='bold' font-family='sans-serif' text-anchor='middle'>Angle Between Vectors</text>
 
-            <!-- Vector 1 -->
-            <circle cx="100" cy="120" r="4" fill='#4f8ef7'/>
-            <line x1="100" y1="120" x2="170" y2="80" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow8)"/>
-            <text x="125" y="90" fill='#4f8ef7' font-size='11' font-weight='bold'>\\(\\vec{u}\\)</text>
+            <!-- Origin point -->
+            <circle cx="100" cy="120" r="5" fill='currentColor'/>
 
-            <!-- Vector 2 -->
-            <line x1="100" y1="120" x2="180" y2="160" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow8)"/>
-            <text x="135" y="150" fill='#2da44e' font-size='11' font-weight='bold'>\\(\\vec{v}\\)</text>
+            <!-- Vector u -->
+            <line x1="100" y1="120" x2="210" y2="70" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow8b)"/>
+            <text x="165" y="78" fill='#4f8ef7' font-size='13' font-weight='bold' font-family='sans-serif'>u</text>
 
-            <!-- Angle indicator -->
-            <path d="M 130 120 A 30 30 0 0 1 145 135" fill='none' stroke='#f85149' stroke-width="1.5"/>
-            <text x="145" y="115" fill='#f85149' font-size='11'>θ</text>
+            <!-- Vector v -->
+            <line x1="100" y1="120" x2="210" y2="165" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow8g)"/>
+            <text x="165" y="160" fill='#2da44e' font-size='13' font-weight='bold' font-family='sans-serif'>v</text>
 
-            <!-- Information -->
-            <text x="50" y="220" fill='currentColor' opacity='0.6' font-size='11'>θ = 0°: vectors point same direction</text>
-            <text x="50" y="240" fill='currentColor' opacity='0.6' font-size='11'>θ = 90°: vectors perpendicular</text>
+            <!-- Angle arc -->
+            <path d="M 135 102 A 40 40 0 0 1 142 140" fill='none' stroke='#f85149' stroke-width="2"/>
+            <text x="150" y="125" fill='#f85149' font-size='13' font-family='sans-serif' font-weight='bold'>&#952;</text>
+
+            <!-- Legend -->
+            <text x="260" y="100" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif'>&#952; = 0&#176; : same direction</text>
+            <text x="260" y="120" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif'>&#952; = 90&#176; : perpendicular</text>
+            <text x="260" y="140" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif'>&#952; = 180&#176; : opposite</text>
         </svg>
         """
     },
@@ -231,31 +239,46 @@ SECTIONS = [
             </p>
         </div>
 
-        <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; margin: 20px 0;">
+        <svg viewBox="0 0 380 210" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto; margin: 20px 0;">
             <defs>
-                <marker id="arrow9" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                <marker id="arrow9b" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                     <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7' />
                 </marker>
+                <marker id="arrow9g" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill='#2da44e' />
+                </marker>
+                <marker id="arrow9r" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill='#f85149' />
+                </marker>
             </defs>
+            <!-- Background -->
+            <rect x="15" y="15" width="350" height="180" rx="4" fill='#161b22' stroke='#30363d' stroke-width="1"/>
 
-            <text x="200" y="25" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Projection of \\(\\vec{u}\\) onto \\(\\vec{v}\\)</text>
+            <text x="190" y="42" fill='currentColor' font-size='13' font-weight='bold' font-family='sans-serif' text-anchor='middle'>Projection of u onto v</text>
+
+            <!-- Origin -->
+            <circle cx="60" cy="150" r="5" fill='currentColor'/>
 
             <!-- Vector v (base) -->
-            <circle cx="80" cy="150" r="4" fill='#4f8ef7'/>
-            <line x1="80" y1="150" x2="280" y2="150" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow9)"/>
-            <text x="180" y="135" fill='#4f8ef7' font-size='12' font-weight='bold'>\\(\\vec{v}\\)</text>
+            <line x1="60" y1="150" x2="320" y2="150" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow9b)"/>
+            <text x="310" y="140" fill='#4f8ef7' font-size='13' font-weight='bold' font-family='sans-serif'>v</text>
 
-            <!-- Vector u -->
-            <line x1="80" y1="150" x2="180" y2="80" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow9)"/>
-            <text x="150" y="110" fill='#2da44e' font-size='12' font-weight='bold'>\\(\\vec{u}\\)</text>
+            <!-- Vector u (angled) -->
+            <line x1="60" y1="150" x2="197" y2="75" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow9g)"/>
+            <text x="145" y="95" fill='#2da44e' font-size='13' font-weight='bold' font-family='sans-serif'>u</text>
 
-            <!-- Projection (perpendicular drop) -->
-            <line x1="180" y1="80" x2="180" y2="150" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2"/>
-            <circle cx="180" cy="150" r="3" fill='#f85149'/>
+            <!-- Perpendicular drop (dashed) -->
+            <line x1="200" y1="75" x2="200" y2="150" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+
+            <!-- Right angle indicator -->
+            <rect x="190" y="140" width="10" height="10" fill='none' stroke='#8b949e' stroke-width="1" opacity="0.5"/>
+
+            <!-- Projection point -->
+            <circle cx="200" cy="150" r="4" fill='#f85149'/>
 
             <!-- Projection vector -->
-            <line x1="80" y1="150" x2="180" y2="150" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow9)"/>
-            <text x="130" y="170" fill='#f85149' font-size='11' font-weight='bold'>projection</text>
+            <line x1="60" y1="150" x2="197" y2="150" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow9r)"/>
+            <text x="130" y="172" fill='#f85149' font-size='12' font-weight='bold' font-family='sans-serif' text-anchor='middle'>projection</text>
         </svg>
 
         <div class="worked-example">

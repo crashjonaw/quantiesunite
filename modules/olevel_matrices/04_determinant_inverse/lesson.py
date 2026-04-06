@@ -17,33 +17,33 @@ SECTIONS = [
 
             <p><strong>The critical insight:</strong> A det(A) = 0 means the matrix is "broken"—information is lost. We can't reverse such a transformation, so no inverse exists.</p>
 
-            <svg viewBox="0 0 540 180" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="-5 -5 570 160" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Original square -->
                 <g>
-                    <text x="50" y="20" font-size='12' fill='currentColor' font-weight='bold'>Original (det = 1)</text>
-                    <rect x="20" y="40" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                    <text x="50" y="105" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Unit square</text>
+                    <text x="50" y="15" font-size='11' fill='currentColor' font-weight='bold' text-anchor='middle'>Original (det = 1)</text>
+                    <rect x="20" y="30" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                    <text x="50" y="110" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Unit square</text>
                 </g>
 
                 <!-- Scaled by 2 -->
                 <g>
-                    <text x="150" y="20" font-size='12' fill='currentColor' font-weight='bold'>Scaled 2× (det = 4)</text>
-                    <rect x="110" y="30" width="80" height="80" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
-                    <text x="150" y="125" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>4× larger area</text>
+                    <text x="185" y="15" font-size='11' fill='currentColor' font-weight='bold' text-anchor='middle'>Scaled 2× (det = 4)</text>
+                    <rect x="145" y="25" width="80" height="80" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
+                    <text x="185" y="125" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>4× larger area</text>
                 </g>
 
                 <!-- Flipped and scaled -->
                 <g>
-                    <text x="270" y="20" font-size='12' fill='currentColor' font-weight='bold'>Flipped (det = -2)</text>
-                    <polygon points="280,50 280,110 340,110 340,50" fill='none' stroke='#f85149' stroke-width="2" transform='skewX(-20)'/>
-                    <text x="310" y="130" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Flipped & scaled</text>
+                    <text x="340" y="15" font-size='11' fill='currentColor' font-weight='bold' text-anchor='middle'>Flipped (det = −2)</text>
+                    <polygon points="310,35 300,95 370,95 380,35" fill='none' stroke='#f85149' stroke-width="2"/>
+                    <text x="340" y="125" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Flipped and scaled</text>
                 </g>
 
                 <!-- Collapsed -->
                 <g>
-                    <text x="420" y="20" font-size='12' fill='currentColor' font-weight='bold'>Collapsed (det = 0)</text>
-                    <line x1="400" y1="40" x2="440" y2="110" stroke='#f85149' stroke-width="3"/>
-                    <text x="420" y="130" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Info lost</text>
+                    <text x="490" y="15" font-size='11' fill='currentColor' font-weight='bold' text-anchor='middle'>Collapsed (det = 0)</text>
+                    <line x1="475" y1="35" x2="505" y2="100" stroke='#f85149' stroke-width="3"/>
+                    <text x="490" y="125" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Info lost</text>
                 </g>
             </svg>
         </div>
@@ -68,24 +68,24 @@ SECTIONS = [
                 <li>Subtract: <strong>ad − bc</strong></li>
             </ol>
 
-            <svg viewBox="0 0 300 150" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="-5 -5 320 155" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Matrix -->
                 <rect x="40" y="30" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                <text x="60" y="60" font-size='16' fill='#4f8ef7' font-weight='bold'>a</text>
-                <text x="100" y="60" font-size='16' fill='#4f8ef7' font-weight='bold'>b</text>
+                <text x="60" y="62" font-size='16' fill='currentColor' font-weight='bold'>a</text>
+                <text x="100" y="62" font-size='16' fill='currentColor' font-weight='bold'>b</text>
                 <text x="60" y="100" font-size='16' fill='currentColor' font-weight='bold'>c</text>
                 <text x="100" y="100" font-size='16' fill='currentColor' font-weight='bold'>d</text>
 
                 <!-- Main diagonal -->
-                <line x1="55" y1="45" x2="105" y2="95" stroke='#2dd4bf' stroke-width="3" opacity='0.7'/>
-                <text x="90" y="35" font-size='11' fill='#2dd4bf'>ad</text>
+                <line x1="55" y1="47" x2="105" y2="95" stroke='#2dd4bf' stroke-width="3" opacity='0.7'/>
+                <text x="90" y="35" font-size='11' fill='currentColor'>ad</text>
 
                 <!-- Anti-diagonal -->
-                <line x1="105" y1="45" x2="55" y2="95" stroke='#f85149' stroke-width="3" opacity='0.7'/>
-                <text x="60" y="125" font-size='11' fill='#f85149'>−bc</text>
+                <line x1="105" y1="47" x2="55" y2="95" stroke='#f85149' stroke-width="3" opacity='0.7'/>
+                <text x="60" y="130" font-size='11' fill='currentColor'>−bc</text>
 
                 <!-- Formula -->
-                <text x="200" y="75" font-size='14' fill='currentColor' font-weight='bold' text-anchor='middle'>det = <tspan fill='#2dd4bf'>ad</tspan> <tspan>−</tspan> <tspan fill='#f85149'>bc</tspan></text>
+                <text x="210" y="75" font-size='14' fill='currentColor' font-weight='bold' text-anchor='middle'>det = <tspan fill='#2dd4bf'>ad</tspan> − <tspan fill='#f85149'>bc</tspan></text>
             </svg>
         </div>
 
@@ -157,46 +157,41 @@ SECTIONS = [
                 <li>Multiply the entire matrix by 1/det(A)</li>
             </ol>
 
-            <svg viewBox="0 0 420 180" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
-                <!-- Original matrix -->
-                <g>
-                    <text x="50" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
-                    <rect x="80" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                    <text x="95" y="35" font-size='14' fill='#4f8ef7'>a</text>
-                    <text x="125" y="35" font-size='14' fill='#4f8ef7'>b</text>
-                    <text x="95" y="55" font-size='14' fill='currentColor'>c</text>
-                    <text x="125" y="55" font-size='14' fill='currentColor'>d</text>
-                </g>
-
-                <!-- Arrow -->
-                <path d="M 160 40 L 200 40" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead2)"/>
-                <text x="180" y="30" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>swap a,d</text>
-                <text x="180" y="55" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>negate b,c</text>
-
-                <!-- Adjugate -->
-                <g>
-                    <rect x="220" y="10" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
-                    <text x="235" y="35" font-size='14' fill='#2dd4bf'>d</text>
-                    <text x="265" y="35" font-size='14' fill='#2dd4bf'>−b</text>
-                    <text x="235" y="55" font-size='14' fill='#2dd4bf'>−c</text>
-                    <text x="265" y="55" font-size='14' fill='#2dd4bf'>a</text>
-                </g>
-
-                <!-- Final -->
-                <text x="310" y="35" font-size='14' fill='currentColor' text-anchor='start'>× (1/det)</text>
-
-                <!-- Example -->
-                <text x="50" y="100" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Find inverse of A = (2  1; 3  2)</text>
-
-                <text x="50" y="120" font-size='12' fill='currentColor'>Step 1: det(A) = (2)(2) − (1)(3) = 4 − 3 = 1</text>
-                <text x="50" y="140" font-size='12' fill='currentColor'>Step 2: Swap and negate: (2  −1; −3  2)</text>
-                <text x="50" y="160" font-size='12' fill='#2dd4bf' font-weight='bold'>Step 3: A⁻¹ = (1/1) × (2  −1; −3  2) = (2  −1; −3  2)</text>
-
+            <svg viewBox="-5 -5 440 185" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <defs>
                     <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                         <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6'/>
                     </marker>
                 </defs>
+
+                <!-- Original matrix -->
+                <text x="50" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
+                <rect x="80" y="8" width="65" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                <text x="97" y="33" font-size='14' fill='currentColor'>a</text>
+                <text x="127" y="33" font-size='14' fill='currentColor'>b</text>
+                <text x="97" y="57" font-size='14' fill='currentColor'>c</text>
+                <text x="127" y="57" font-size='14' fill='currentColor'>d</text>
+
+                <!-- Arrow with labels -->
+                <path d="M 160 38 L 205 38" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead2)"/>
+                <text x="183" y="28" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>swap a,d</text>
+                <text x="183" y="55" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>negate b,c</text>
+
+                <!-- Adjugate matrix -->
+                <rect x="220" y="8" width="75" height="60" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
+                <text x="240" y="33" font-size='14' fill='currentColor'>d</text>
+                <text x="275" y="33" font-size='14' fill='currentColor'>−b</text>
+                <text x="237" y="57" font-size='14' fill='currentColor'>−c</text>
+                <text x="275" y="57" font-size='14' fill='currentColor'>a</text>
+
+                <!-- Final step -->
+                <text x="315" y="43" font-size='14' fill='currentColor' text-anchor='start'>× (1/det)</text>
+
+                <!-- Worked example -->
+                <text x="15" y="95" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Find inverse of A = (2  1; 3  2)</text>
+                <text x="15" y="117" font-size='12' fill='currentColor'>Step 1: det(A) = (2)(2) − (1)(3) = 4 − 3 = 1</text>
+                <text x="15" y="139" font-size='12' fill='currentColor'>Step 2: Swap and negate: (2  −1; −3  2)</text>
+                <text x="15" y="161" font-size='12' fill='currentColor' font-weight='bold'>Step 3: A⁻¹ = (1/1) × (2  −1; −3  2) = (2  −1; −3  2)</text>
             </svg>
         </div>
 

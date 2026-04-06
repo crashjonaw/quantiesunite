@@ -7,23 +7,25 @@ SECTIONS = [
         "title": "Measurement in Everyday Life",
         "body": """<p>Measurement is about finding out <strong>how big, how heavy, or how much space</strong> something takes up. We measure so we can compare, understand, and communicate information about the world around us!</p>
 <p><strong>How tall is that tree?</strong> How heavy is this bag? Measurement lets us describe the physical world with numbers.</p>
-<svg width="100%" viewBox="0 0 380 200" style="margin: 10px;">
-  <text x="10" y="25" font-size='14' font-weight='bold' fill='currentColor'>Three types of measurement:</text>
-  <rect x="10" y="40" width="110" height="80" fill='rgba(65,105,225,0.15)' stroke='#4169E1' stroke-width="2" rx="5"/>
-  <text x="20" y="65" font-size='12' font-weight='bold' fill='#4169E1'>LENGTH</text>
-  <text x="20" y="85" font-size='11' fill='currentColor'>How long?</text>
-  <text x="20" y="100" font-size='11' fill='currentColor'>How tall?</text>
-  <text x="20" y="115" font-size='11' fill='currentColor'>How far?</text>
-  <rect x="135" y="40" width="110" height="80" fill='rgba(255,165,0,0.15)' stroke='#f59e0b' stroke-width="2" rx="5"/>
-  <text x="145" y="65" font-size='12' font-weight='bold' fill='#f59e0b'>MASS</text>
-  <text x="145" y="85" font-size='11' fill='currentColor'>How heavy?</text>
-  <text x="145" y="100" font-size='11' fill='currentColor'>How much</text>
-  <text x="145" y="115" font-size='11' fill='currentColor'>does it weigh?</text>
-  <rect x="260" y="40" width="110" height="80" fill='rgba(34,197,94,0.15)' stroke='#22c55e' stroke-width="2" rx="5"/>
-  <text x="270" y="65" font-size='12' font-weight='bold' fill='#22c55e'>VOLUME</text>
-  <text x="270" y="85" font-size='11' fill='currentColor'>How much</text>
-  <text x="270" y="100" font-size='11' fill='currentColor'>liquid?</text>
-  <text x="270" y="115" font-size='11' fill='currentColor'>How full?</text>
+<svg viewBox="0 0 410 150" style="width:100%;max-width:410px;height:auto;display:block;margin:16px auto;">
+  <text x="15" y="30" font-size='14' font-weight='bold' fill='currentColor'>Three types of measurement:</text>
+  <rect x="15" y="45" width="115" height="90" fill='rgba(65,105,225,0.15)' stroke='#4169E1' stroke-width='2' rx='4'/>
+  <text x="72" y="72" font-size='12' font-weight='bold' fill='#4169E1' text-anchor='middle'>LENGTH</text>
+  <text x="72" y="92" font-size='11' fill='currentColor' text-anchor='middle'>How long?</text>
+  <text x="72" y="108" font-size='11' fill='currentColor' text-anchor='middle'>How tall?</text>
+  <text x="72" y="124" font-size='11' fill='currentColor' text-anchor='middle'>How far?</text>
+
+  <rect x="147" y="45" width="115" height="90" fill='rgba(245,158,11,0.15)' stroke='#f59e0b' stroke-width='2' rx='4'/>
+  <text x="204" y="72" font-size='12' font-weight='bold' fill='#f59e0b' text-anchor='middle'>MASS</text>
+  <text x="204" y="92" font-size='11' fill='currentColor' text-anchor='middle'>How heavy?</text>
+  <text x="204" y="108" font-size='11' fill='currentColor' text-anchor='middle'>How much</text>
+  <text x="204" y="124" font-size='11' fill='currentColor' text-anchor='middle'>does it weigh?</text>
+
+  <rect x="279" y="45" width="115" height="90" fill='rgba(34,197,94,0.15)' stroke='#22c55e' stroke-width='2' rx='4'/>
+  <text x="336" y="72" font-size='12' font-weight='bold' fill='#22c55e' text-anchor='middle'>VOLUME</text>
+  <text x="336" y="92" font-size='11' fill='currentColor' text-anchor='middle'>How much</text>
+  <text x="336" y="108" font-size='11' fill='currentColor' text-anchor='middle'>liquid?</text>
+  <text x="336" y="124" font-size='11' fill='currentColor' text-anchor='middle'>How full?</text>
 </svg>"""
     },
     {
@@ -56,15 +58,15 @@ SECTIONS = [
     {
         "title": "Units and Standards",
         "body": """<p>For measurement to work, we need <strong>standard units</strong> that everyone uses. Imagine if everyone invented their own length — it would be chaos!</p>
-<svg width="100%" viewBox="0 0 360 180" style="margin: 10px;">
-  <text x="10" y="25" font-size='13' font-weight='bold' fill='currentColor'>Standard Units we use:</text>
-  <rect x="10" y="40" width="330" height="120" fill='rgba(218,165,32,0.1)' stroke='#daa520' stroke-width="1" rx="5"/>
-  <text x="20" y="65" font-size='12' font-weight='bold' fill='#daa520'>Length:</text>
-  <text x="30" y="85" font-size='11' fill='currentColor'>Centimeters (cm) and meters (m)</text>
-  <text x="20" y="110" font-size='12' font-weight='bold' fill='#daa520'>Mass (Weight):</text>
-  <text x="30" y="130" font-size='11' fill='currentColor'>Grams (g) and kilograms (kg)</text>
-  <text x="20" y="155" font-size='12' font-weight='bold' fill='#daa520'>Volume (Capacity):</text>
-  <text x="30" y="175" font-size='11' fill='currentColor'>Milliliters (mL) and liters (L)</text>
+<svg viewBox="0 0 390 185" style="width:100%;max-width:390px;height:auto;display:block;margin:16px auto;">
+  <text x="15" y="30" font-size='13' font-weight='bold' fill='currentColor'>Standard Units we use:</text>
+  <rect x="15" y="42" width="360" height="130" fill='rgba(218,165,32,0.12)' stroke='#daa520' stroke-width='1' rx='4'/>
+  <text x="30" y="68" font-size='12' font-weight='bold' fill='#daa520'>Length:</text>
+  <text x="40" y="88" font-size='11' fill='currentColor'>Centimeters (cm) and meters (m)</text>
+  <text x="30" y="113" font-size='12' font-weight='bold' fill='#daa520'>Mass (Weight):</text>
+  <text x="40" y="133" font-size='11' fill='currentColor'>Grams (g) and kilograms (kg)</text>
+  <text x="30" y="158" font-size='12' font-weight='bold' fill='#daa520'>Volume (Capacity):</text>
+  <text x="40" y="178" font-size='11' fill='currentColor'>Milliliters (mL) and liters (L)</text>
 </svg>
 <div class='success-box' style="padding: 15px; border-radius: 5px; margin: 15px 0; border: 2px solid #4caf50;">
 <strong>Success!</strong> When we use standard units, we can compare and share measurements accurately across the whole world.
@@ -73,13 +75,14 @@ SECTIONS = [
     {
         "title": "Non-Standard to Standard Units",
         "body": """<p>Before standard units existed, people measured using things they had nearby. We can learn from this!</p>
-<svg width="100%" viewBox="0 0 360 180" style="margin: 10px;">
-  <text x="10" y="25" font-size='13' font-weight='bold' fill='currentColor'>Old way (non-standard):</text>
-  <text x="20" y="50" font-size='12' fill='currentColor'>The rope is 5 hand spans long.</text>
-  <text x="20" y="75" font-size='12' fill='currentColor'>The bag is 3 apple-weights heavy.</text>
-  <text x="10" y="110" font-size='13' font-weight='bold' fill='currentColor'>Modern way (standard):</text>
-  <text x="20" y="135" font-size='12' fill='currentColor'>The rope is 200 cm long (or 2 meters).</text>
-  <text x="20" y="160" font-size='12' fill='currentColor'>The bag is 1.5 kilograms heavy.</text>
+<svg viewBox="0 0 390 185" style="width:100%;max-width:390px;height:auto;display:block;margin:16px auto;">
+  <text x="15" y="30" font-size='13' font-weight='bold' fill='currentColor'>Old way (non-standard):</text>
+  <text x="30" y="55" font-size='12' fill='currentColor'>The rope is 5 hand spans long.</text>
+  <text x="30" y="78" font-size='12' fill='currentColor'>The bag is 3 apple-weights heavy.</text>
+  <line x1="15" y1="95" x2="375" y2="95" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5'/>
+  <text x="15" y="118" font-size='13' font-weight='bold' fill='currentColor'>Modern way (standard):</text>
+  <text x="30" y="143" font-size='12' fill='currentColor'>The rope is 200 cm long (or 2 meters).</text>
+  <text x="30" y="168" font-size='12' fill='currentColor'>The bag is 1.5 kilograms heavy.</text>
 </svg>
 <div class='warning-box' style="padding: 15px; border-radius: 5px; margin: 15px 0; border: 2px solid #ff9800;">
 <strong>Why standard units matter:</strong> If you used hand spans, someone with tiny hands and someone with huge hands would get different answers. Standard units fix this problem!

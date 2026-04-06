@@ -71,34 +71,34 @@ SECTIONS = [
 <h3>Another Way to Draw It</h3>
 <p>You can also draw the groups inside boxes:</p>
 
-<svg viewBox="0 0 400 150" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto;">
+<svg viewBox="0 0 430 145" style="width: 100%; max-width: 450px; height: auto; display: block; margin: 15px auto;">
   <!-- First box with 3 objects -->
-  <rect x="20" y="20" width="80" height="100" fill='none' stroke='#4169E1' stroke-width="2" rx="5"/>
-  <circle cx="40" cy="50" r="10" fill='#4169E1' opacity='0.7'/>
-  <circle cx="60" cy="50" r="10" fill='#4169E1' opacity='0.7'/>
-  <circle cx="40" cy="80" r="10" fill='#4169E1' opacity='0.7'/>
-  <text x="60" y="110" font-size='14' font-weight='bold' fill='currentColor'>3</text>
+  <rect x="15" y="15" width="85" height="90" fill='none' stroke='#4169E1' stroke-width="2" rx="4"/>
+  <circle cx="37" cy="42" r="10" fill='#4169E1' opacity='0.8'/>
+  <circle cx="63" cy="42" r="10" fill='#4169E1' opacity='0.8'/>
+  <circle cx="50" cy="72" r="10" fill='#4169E1' opacity='0.8'/>
+  <text x="57" y="125" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>3</text>
 
   <!-- Plus sign -->
-  <text x="135" y="75" font-size='28' font-weight='bold' fill='currentColor' opacity='0.6'>+</text>
+  <text x="132" y="65" text-anchor='middle' font-size='28' font-weight='bold' fill='currentColor' opacity='0.6'>+</text>
 
   <!-- Second box with 2 objects -->
-  <rect x="160" y="20" width="80" height="100" fill='none' stroke='#22c55e' stroke-width="2" rx="5"/>
-  <circle cx="180" cy="50" r="10" fill='#22c55e' opacity='0.7'/>
-  <circle cx="200" cy="50" r="10" fill='#22c55e' opacity='0.7'/>
-  <text x="200" y="110" font-size='14' font-weight='bold' fill='currentColor'>2</text>
+  <rect x="162" y="15" width="85" height="90" fill='none' stroke='#22c55e' stroke-width="2" rx="4"/>
+  <circle cx="187" cy="55" r="10" fill='#22c55e' opacity='0.8'/>
+  <circle cx="217" cy="55" r="10" fill='#22c55e' opacity='0.8'/>
+  <text x="204" y="125" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>2</text>
 
   <!-- Equals sign -->
-  <text x="275" y="75" font-size='28' font-weight='bold' fill='currentColor' opacity='0.6'>=</text>
+  <text x="280" y="65" text-anchor='middle' font-size='28' font-weight='bold' fill='currentColor' opacity='0.6'>=</text>
 
   <!-- Result box with 5 objects -->
-  <rect x="300" y="20" width="80" height="100" fill='none' stroke='#f59e0b' stroke-width="2" rx="5"/>
-  <circle cx="320" cy="40" r="8" fill='#f59e0b' opacity='0.7'/>
-  <circle cx="340" cy="40" r="8" fill='#f59e0b' opacity='0.7'/>
-  <circle cx="360" cy="40" r="8" fill='#f59e0b' opacity='0.7'/>
-  <circle cx="330" cy="65" r="8" fill='#f59e0b' opacity='0.7'/>
-  <circle cx="350" cy="65" r="8" fill='#f59e0b' opacity='0.7'/>
-  <text x="350" y="110" font-size='14' font-weight='bold' fill='currentColor'>5</text>
+  <rect x="310" y="15" width="105" height="90" fill='none' stroke='#f59e0b' stroke-width="2" rx="4"/>
+  <circle cx="335" cy="42" r="10" fill='#f59e0b' opacity='0.8'/>
+  <circle cx="362" cy="42" r="10" fill='#f59e0b' opacity='0.8'/>
+  <circle cx="389" cy="42" r="10" fill='#f59e0b' opacity='0.8'/>
+  <circle cx="348" cy="72" r="10" fill='#f59e0b' opacity='0.8'/>
+  <circle cx="375" cy="72" r="10" fill='#f59e0b' opacity='0.8'/>
+  <text x="362" y="125" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>5</text>
 </svg>"""
     },
 

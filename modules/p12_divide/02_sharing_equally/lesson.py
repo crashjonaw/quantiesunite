@@ -136,9 +136,9 @@ SECTIONS = [
 
   <!-- Three baskets -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="30" y="60" width="100" height="100" rx="5"/>
-    <rect x="175" y="60" width="100" height="100" rx="5"/>
-    <rect x="320" y="60" width="100" height="100" rx="5"/>
+    <rect x="30" y="60" width="100" height="100" rx="4"/>
+    <rect x="175" y="60" width="100" height="100" rx="4"/>
+    <rect x="320" y="60" width="100" height="100" rx="4"/>
   </g>
 
   <!-- Items in basket 1 -->

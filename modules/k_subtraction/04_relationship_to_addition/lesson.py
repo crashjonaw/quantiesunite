@@ -19,25 +19,31 @@ SECTIONS = [
 <p style="margin-top:12px;"><strong>Subtraction:</strong> \(5 - 3 = 2\)<br/>
 (Start with 5, take away 3, get back to 2)</p>
 </div>
-<svg viewBox="0 0 450 140" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
-  <text x="20" y="25" font-size='14' font-weight='bold' fill='currentColor'>Addition & Subtraction Triangle:</text>
+<svg viewBox="0 0 380 155" style="width:100%;max-width:380px;height:auto;display:block;margin:16px auto;">
+  <text x="15" y="20" font-size='14' font-family='Arial, sans-serif' font-weight='bold' fill='currentColor'>Addition and Subtraction Triangle:</text>
 
-  <polygon points="150,50 100,130 200,130" fill='none' stroke='#8b949e' stroke-width="2"/>
-  <circle cx="150" cy="50" r="12" fill='#4f8ef7'/>
-  <text x="148" y="56" font-size='16' font-weight='bold' fill='white'>5</text>
+  <!-- Triangle connecting the three numbers -->
+  <polygon points="130,48 70,130 190,130" fill='none' stroke='#8b949e' stroke-width='2'/>
 
-  <circle cx="100" cy="130" r="12" fill='#ef4444'/>
-  <text x="97" y="136" font-size='16' font-weight='bold' fill='white'>3</text>
+  <!-- Top: 5 (the whole) -->
+  <circle cx="130" cy="48" r="16" fill='#4f8ef7'/>
+  <text x="130" y="54" font-size='16' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'>5</text>
 
-  <circle cx="200" cy="130" r="12" fill='#22c55e'/>
-  <text x="197" y="136" font-size='16' font-weight='bold' fill='white'>2</text>
+  <!-- Bottom-left: 3 -->
+  <circle cx="70" cy="130" r="16" fill='#ef4444'/>
+  <text x="70" y="136" font-size='16' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'>3</text>
 
-  <text x="90" y="85" font-size='12' font-weight='bold' fill='currentColor'>3 + 2 = 5</text>
-  <text x="155" y="105" font-size='12' font-weight='bold' fill='currentColor'>5 - 2 = 3</text>
-  <text x="120" y="125" font-size='12' font-weight='bold' fill='currentColor'>5 - 3 = 2</text>
+  <!-- Bottom-right: 2 -->
+  <circle cx="190" cy="130" r="16" fill='#22c55e'/>
+  <text x="190" y="136" font-size='16' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'>2</text>
 
-  <text x="250" y="80" font-size='13' fill='currentColor'>All three numbers</text>
-  <text x="250" y="100" font-size='13' fill='currentColor'>work together!</text>
+  <!-- Fact family equations on the right side -->
+  <text x="240" y="65" font-size='13' font-family='Arial, sans-serif' font-weight='bold' fill='currentColor'>3 + 2 = 5</text>
+  <text x="240" y="85" font-size='13' font-family='Arial, sans-serif' font-weight='bold' fill='currentColor'>5 - 2 = 3</text>
+  <text x="240" y="105" font-size='13' font-family='Arial, sans-serif' font-weight='bold' fill='currentColor'>5 - 3 = 2</text>
+
+  <text x="240" y="135" font-size='13' font-family='Arial, sans-serif' fill='currentColor'>All three numbers</text>
+  <text x="240" y="150" font-size='13' font-family='Arial, sans-serif' fill='currentColor'>work together!</text>
 </svg>"""
     },
     {

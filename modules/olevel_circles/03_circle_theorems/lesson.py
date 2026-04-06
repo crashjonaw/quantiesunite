@@ -16,26 +16,26 @@ SECTIONS = [
 
 <p style="text-align: center; font-weight: bold;">\\(\\angle AOB = 2 \\times \\angle APB\\)</p>
 
-<svg width="360" height="320" class="formula-box">
-  <circle cx="180" cy="160" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="160" r="4" fill='currentColor'/>
-  <circle cx="100" cy="100" r="4" fill='#f85149'/>
-  <circle cx="260" cy="100" r="4" fill='#f85149'/>
-  <circle cx="220" cy="230" r="4" fill='#a371f7'/>
-  <line x1="180" y1="160" x2="100" y2="100" stroke='#f85149' stroke-width="2"/>
-  <line x1="180" y1="160" x2="260" y2="100" stroke='#f85149' stroke-width="2"/>
-  <path d="M 100 100 A 100 100 0 0 1 260 100" fill='none' stroke='#79c0ff' stroke-width="3"/>
-  <line x1="220" y1="230" x2="100" y2="100" stroke='#a371f7' stroke-width="2"/>
-  <line x1="220" y1="230" x2="260" y2="100" stroke='#a371f7' stroke-width="2"/>
-  <path d="M 205 165 A 20 20 0 0 0 193 153" fill='none' stroke='#f85149' stroke-width="1.5"/>
-  <text x="195" y="178" fill='#f85149' font-size='12' font-weight='bold'>∠AOB</text>
-  <path d="M 215 215 A 15 15 0 0 0 225 205" fill='none' stroke='#a371f7' stroke-width="1.5"/>
-  <text x="225" y="220" fill='#a371f7' font-size='11' font-weight='bold'>∠APB</text>
-  <text x="85" y="85" fill='#f85149' font-size='11'>A</text>
-  <text x="265" y="85" fill='#f85149' font-size='11'>B</text>
-  <text x="225" y="245" fill='#a371f7' font-size='11'>P</text>
-  <text x="165" y="150" fill='currentColor' font-size='11'>O</text>
-  <text x="180" y="295" fill='currentColor' font-size='12' text-anchor='middle'>∠AOB = 2 × ∠APB (always!)</text>
+<svg width="380" height="310" viewBox="0 0 380 310" class="formula-box">
+  <circle cx="180" cy="145" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="180" cy="145" r="4" fill='currentColor'/>
+  <circle cx="100" cy="85" r="4" fill='#f85149'/>
+  <circle cx="260" cy="85" r="4" fill='#f85149'/>
+  <circle cx="220" cy="215" r="4" fill='#a371f7'/>
+  <line x1="180" y1="145" x2="100" y2="85" stroke='#f85149' stroke-width="2"/>
+  <line x1="180" y1="145" x2="260" y2="85" stroke='#f85149' stroke-width="2"/>
+  <path d="M 100 85 A 100 100 0 0 1 260 85" fill='none' stroke='#79c0ff' stroke-width="3"/>
+  <line x1="220" y1="215" x2="100" y2="85" stroke='#a371f7' stroke-width="2"/>
+  <line x1="220" y1="215" x2="260" y2="85" stroke='#a371f7' stroke-width="2"/>
+  <path d="M 205 150 A 20 20 0 0 0 193 138" fill='none' stroke='#f85149' stroke-width="1.5"/>
+  <text x="195" y="172" fill='#f85149' font-size='11' font-family='sans-serif' font-weight='bold'>\u2220AOB</text>
+  <path d="M 215 200 A 15 15 0 0 0 225 190" fill='none' stroke='#a371f7' stroke-width="1.5"/>
+  <text x="233" y="205" fill='#a371f7' font-size='11' font-family='sans-serif' font-weight='bold'>\u2220APB</text>
+  <text x="82" y="78" fill='#f85149' font-size='12' font-family='sans-serif'>A</text>
+  <text x="268" y="78" fill='#f85149' font-size='12' font-family='sans-serif'>B</text>
+  <text x="228" y="233" fill='#a371f7' font-size='12' font-family='sans-serif'>P</text>
+  <text x="165" y="140" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <text x="190" y="295" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>\u2220AOB = 2 \u00d7 \u2220APB (always!)</text>
 </svg>
 
 <h4>Key Observation</h4>
@@ -69,23 +69,26 @@ SECTIONS = [
 
 <p style="text-align: center; font-weight: bold;">\\(\\angle = \\frac{1}{2} \\times 180° = 90°\\)</p>
 
-<svg width="380" height="300" class="formula-box">
-  <circle cx="190" cy="150" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="190" cy="150" r="4" fill='currentColor'/>
-  <line x1="90" y1="150" x2="290" y2="150" stroke='#f85149' stroke-width="2"/>
-  <circle cx="90" cy="150" r="4" fill='#f85149'/>
-  <circle cx="290" cy="150" r="4" fill='#f85149'/>
-  <circle cx="190" cy="50" r="4" fill='#a371f7'/>
-  <line x1="190" y1="50" x2="90" y2="150" stroke='#a371f7' stroke-width="2"/>
-  <line x1="190" y1="50" x2="290" y2="150" stroke='#a371f7' stroke-width="2"/>
-  <path d="M 190 150 A 100 100 0 0 1 90 150" fill='none' stroke='#79c0ff' stroke-width="3"/>
-  <text x="80" y="170" fill='#f85149' font-size='11'>A</text>
-  <text x="295" y="170" fill='#f85149' font-size='11'>B</text>
-  <text x="185" y="35" fill='#a371f7' font-size='11'>P</text>
-  <text x="180" y="160" fill='currentColor' font-size='10'>O</text>
-  <path d="M 200 80 A 20 20 0 0 0 225 95" fill='none' stroke='#a371f7' stroke-width="1.5"/>
-  <text x="230" y="85" fill='#a371f7' font-size='12' font-weight='bold'>90°</text>
-  <text x="190" y="290" fill='currentColor' font-size='12' text-anchor='middle'>P is on the circle, AB is a diameter → ∠APB = 90°</text>
+<svg width="380" height="295" viewBox="0 0 380 295" class="formula-box">
+  <circle cx="190" cy="140" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="190" cy="140" r="4" fill='currentColor'/>
+  <!-- Diameter AB -->
+  <line x1="90" y1="140" x2="290" y2="140" stroke='#f85149' stroke-width="2"/>
+  <circle cx="90" cy="140" r="4" fill='#f85149'/>
+  <circle cx="290" cy="140" r="4" fill='#f85149'/>
+  <!-- Point P on circumference -->
+  <circle cx="190" cy="40" r="4" fill='#a371f7'/>
+  <line x1="190" y1="40" x2="90" y2="140" stroke='#a371f7' stroke-width="2"/>
+  <line x1="190" y1="40" x2="290" y2="140" stroke='#a371f7' stroke-width="2"/>
+  <!-- Right angle mark at P -->
+  <rect x="190" y="40" width="12" height="12" fill='none' stroke='#a371f7' stroke-width="1.5" transform="rotate(45,190,40)"/>
+  <text x="220" y="45" fill='#a371f7' font-size='13' font-family='sans-serif' font-weight='bold'>90\u00b0</text>
+  <!-- Labels -->
+  <text x="75" y="160" fill='#f85149' font-size='12' font-family='sans-serif'>A</text>
+  <text x="295" y="160" fill='#f85149' font-size='12' font-family='sans-serif'>B</text>
+  <text x="180" y="30" fill='#a371f7' font-size='12' font-family='sans-serif'>P</text>
+  <text x="195" y="155" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <text x="190" y="280" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>P is on the circle, AB is a diameter \u2192 \u2220APB = 90\u00b0</text>
 </svg>
 
 <h4>Practical Application</h4>
@@ -124,27 +127,30 @@ SECTIONS = [
 <p style="text-align: center; font-weight: bold;">\\(\\angle A + \\angle C = 180°\\)</p>
 <p style="text-align: center; font-weight: bold;">\\(\\angle B + \\angle D = 180°\\)</p>
 
-<svg width="380" height="340" class="formula-box">
-  <circle cx="190" cy="170" r="110" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="190" cy="170" r="4" fill='currentColor'/>
-  <circle cx="100" cy="100" r="5" fill='#f85149'/>
-  <circle cx="280" cy="100" r="5" fill='#f85149'/>
-  <circle cx="300" cy="200" r="5" fill='#a371f7'/>
-  <circle cx="80" cy="240" r="5" fill='#a371f7'/>
-  <line x1="100" y1="100" x2="280" y2="100" stroke='#30363d' stroke-width="1.5"/>
-  <line x1="280" y1="100" x2="300" y2="200" stroke='#30363d' stroke-width="1.5"/>
-  <line x1="300" y1="200" x2="80" y2="240" stroke='#30363d' stroke-width="1.5"/>
-  <line x1="80" y1="240" x2="100" y2="100" stroke='#30363d' stroke-width="1.5"/>
-  <text x="85" y="90" fill='#f85149' font-size='12' font-weight='bold'>A</text>
-  <text x="285" y="90" fill='#f85149' font-size='12' font-weight='bold'>B</text>
-  <text x="310" y="205" fill='#a371f7' font-size='12' font-weight='bold'>C</text>
-  <text x="65" y="250" fill='#a371f7' font-size='12' font-weight='bold'>D</text>
-  <text x="185" y="160" fill='currentColor' font-size='10'>O</text>
-  <path d="M 115 110 A 20 20 0 0 0 125 125" fill='none' stroke='#f85149' stroke-width="1.5"/>
-  <text x="115" y="130" fill='#f85149' font-size='10'>∠A</text>
-  <path d="M 290 120 A 20 20 0 0 0 280 130" fill='none' stroke='#a371f7' stroke-width="1.5"/>
-  <text x="300" y="145" fill='#a371f7' font-size='10'>∠C</text>
-  <text x="190" y="320" fill='currentColor' font-size='12' text-anchor='middle'>∠A + ∠C = 180° (opposite angles in cyclic quadrilateral)</text>
+<svg width="400" height="330" viewBox="0 0 400 330" class="formula-box">
+  <circle cx="195" cy="155" r="110" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="195" cy="155" r="4" fill='currentColor'/>
+  <circle cx="105" cy="85" r="5" fill='#f85149'/>
+  <circle cx="285" cy="85" r="5" fill='#f85149'/>
+  <circle cx="305" cy="185" r="5" fill='#a371f7'/>
+  <circle cx="85" cy="225" r="5" fill='#a371f7'/>
+  <!-- Quadrilateral sides -->
+  <line x1="105" y1="85" x2="285" y2="85" stroke='#79c0ff' stroke-width="1.5"/>
+  <line x1="285" y1="85" x2="305" y2="185" stroke='#79c0ff' stroke-width="1.5"/>
+  <line x1="305" y1="185" x2="85" y2="225" stroke='#79c0ff' stroke-width="1.5"/>
+  <line x1="85" y1="225" x2="105" y2="85" stroke='#79c0ff' stroke-width="1.5"/>
+  <!-- Labels -->
+  <text x="88" y="75" fill='#f85149' font-size='13' font-family='sans-serif' font-weight='bold'>A</text>
+  <text x="292" y="75" fill='#f85149' font-size='13' font-family='sans-serif' font-weight='bold'>B</text>
+  <text x="315" y="192" fill='#a371f7' font-size='13' font-family='sans-serif' font-weight='bold'>C</text>
+  <text x="65" y="240" fill='#a371f7' font-size='13' font-family='sans-serif' font-weight='bold'>D</text>
+  <text x="200" y="150" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <!-- Angle arcs -->
+  <path d="M 120 95 A 20 20 0 0 0 115 110" fill='none' stroke='#f85149' stroke-width="1.5"/>
+  <text x="125" y="118" fill='#f85149' font-size='11' font-family='sans-serif'>\u2220A</text>
+  <path d="M 295 200 A 20 20 0 0 0 288 185" fill='none' stroke='#a371f7' stroke-width="1.5"/>
+  <text x="275" y="210" fill='#a371f7' font-size='11' font-family='sans-serif'>\u2220C</text>
+  <text x="200" y="315" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>\u2220A + \u2220C = 180\u00b0 (opposite angles in cyclic quadrilateral)</text>
 </svg>
 
 <h4>Why Is This True?</h4>
@@ -181,25 +187,32 @@ SECTIONS = [
 
 <p>A tangent touches the circle at exactly one point. When a chord emanates from that point, the angle between the tangent and the chord equals any inscribed angle in the "alternate segment" (the region on the opposite side of the chord).</p>
 
-<svg width="400" height="340" viewBox="0 0 400 340" class="formula-box">
-  <circle cx="200" cy="170" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="200" cy="170" r="4" fill='currentColor'/>
-  <circle cx="200" cy="70" r="4" fill='#f85149'/>
-  <circle cx="280" cy="220" r="4" fill='#f85149'/>
-  <circle cx="140" cy="240" r="4" fill='#a371f7'/>
-  <line x1="200" y1="70" x2="120" y2="10" stroke='#30363d' stroke-width="2"/>
-  <line x1="200" y1="70" x2="280" y2="220" stroke='#f85149' stroke-width="2"/>
-  <line x1="200" y1="70" x2="140" y2="240" stroke='#a371f7' stroke-width="2"/>
-  <path d="M 180 80 A 25 25 0 0 0 210 90" fill='none' stroke='#30363d' stroke-width="1.5"/>
-  <text x="175" y="110" fill='#30363d' font-size='10'>Tangent-</text>
-  <text x="175" y="125" fill='#30363d' font-size='10'>Chord</text>
-  <path d="M 200 180 A 30 30 0 0 0 225 200" fill='none' stroke='#a371f7' stroke-width="1.5"/>
-  <text x="235" y="200" fill='#a371f7' font-size='10' font-weight='bold'>∠ACB</text>
-  <text x="195" y="55" fill='#f85149' font-size='11'>A (tangent point)</text>
-  <text x="285" y="225" fill='#f85149' font-size='11'>B</text>
-  <text x="130" y="250" fill='#a371f7' font-size='11'>C</text>
-  <text x="185" y="160" fill='currentColor' font-size='10'>O</text>
-  <text x="200" y="320" fill='currentColor' font-size='12' text-anchor='middle'>Angle between tangent and chord AB equals inscribed angle ∠ACB</text>
+<svg width="400" height="335" viewBox="0 0 400 335" class="formula-box">
+  <circle cx="200" cy="160" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="200" cy="160" r="4" fill='currentColor'/>
+  <circle cx="200" cy="60" r="4" fill='#f85149'/>
+  <circle cx="280" cy="210" r="4" fill='#f85149'/>
+  <circle cx="140" cy="230" r="4" fill='#a371f7'/>
+  <!-- Tangent line (visible color) -->
+  <line x1="120" y1="20" x2="280" y2="60" stroke='#58a6ff' stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Chord AB -->
+  <line x1="200" y1="60" x2="280" y2="210" stroke='#f85149' stroke-width="2"/>
+  <!-- Line AC -->
+  <line x1="200" y1="60" x2="140" y2="230" stroke='#a371f7' stroke-width="2"/>
+  <!-- Tangent-chord angle arc -->
+  <path d="M 175 55 A 25 25 0 0 0 205 80" fill='none' stroke='#58a6ff' stroke-width="1.5"/>
+  <text x="155" y="90" fill='#58a6ff' font-size='10' font-family='sans-serif'>Tangent-</text>
+  <text x="155" y="103" fill='#58a6ff' font-size='10' font-family='sans-serif'>Chord \u2220</text>
+  <!-- Alternate segment angle arc -->
+  <path d="M 150 215 A 18 18 0 0 0 155 235" fill='none' stroke='#a371f7' stroke-width="1.5"/>
+  <text x="105" y="260" fill='#a371f7' font-size='11' font-family='sans-serif' font-weight='bold'>\u2220ACB</text>
+  <!-- Point labels -->
+  <text x="190" y="48" fill='#f85149' font-size='12' font-family='sans-serif'>A</text>
+  <text x="288" y="218" fill='#f85149' font-size='12' font-family='sans-serif'>B</text>
+  <text x="120" y="240" fill='#a371f7' font-size='12' font-family='sans-serif'>C</text>
+  <text x="205" y="155" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <text x="290" y="48" fill='#58a6ff' font-size='11' font-family='sans-serif'>Tangent</text>
+  <text x="200" y="320" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>Tangent-chord angle at A = inscribed \u2220ACB in alternate segment</text>
 </svg>
 
 <h4>Why Is This Useful?</h4>

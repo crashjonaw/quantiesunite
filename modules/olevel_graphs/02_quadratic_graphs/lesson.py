@@ -20,18 +20,20 @@ SECTIONS = [
 <p>\\(y = -\\frac{1}{2}x^2 + 4\\): \\(a = -\\frac{1}{2} < 0\\), so opens downward with maximum</p>
 </div>
 
-<svg width="400" height="320" viewBox="0 0 398 320" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="250" x2="350" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 50 250 Q 150 100, 250 50 T 350 250" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 50 50 Q 150 150, 250 200 T 350 50" stroke='#ffa657' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
-    <text x="360" y="255">x</text>
-    <text x="40" y="40">y</text>
-    <text x="270" y="35" fill='#58a6ff'>a > 0</text>
-    <text x="270" y="310" fill='#ffa657'>a < 0</text>
+<svg viewBox="0 0 400 310" class="worked-example">
+  <!-- Axes -->
+  <line x1="50" y1="155" x2="360" y2="155" stroke='#30363d' stroke-width="1" />
+  <line x1="200" y1="15" x2="200" y2="295" stroke='#30363d' stroke-width="1" />
+  <!-- Parabola a > 0 (opens up) -->
+  <path d="M 80 280 Q 140 100, 200 60 Q 260 100, 320 280" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Parabola a < 0 (opens down) -->
+  <path d="M 80 30 Q 140 210, 200 250 Q 260 210, 320 30" stroke='#ffa657' stroke-width="2" fill='none' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
+    <text x="365" y="159">x</text>
+    <text x="192" y="12">y</text>
+    <text x="330" y="265" fill='#58a6ff'>a &gt; 0</text>
+    <text x="330" y="50" fill='#ffa657'>a &lt; 0</text>
   </g>
 </svg>
 
@@ -72,23 +74,27 @@ SECTIONS = [
 <p>Factor: \\((x-1)(x-3) = 0\\)</p>
 <p>Roots: \\(x = 1\\) and \\(x = 3\\)</p>
 
-<svg width="400" height="320" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="250" x2="350" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 80 200 Q 150 80, 200 50 T 320 200" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#8b949e' stroke-width="1" stroke-dasharray="5,5" />
-    <circle cx="100" cy="250" r="3" fill='#79c0ff' />
-    <circle cx="300" cy="250" r="3" fill='#79c0ff' />
-    <circle cx="200" cy="50" r="4" fill='#ffa657' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
-    <text x="360" y="255">x</text>
-    <text x="40" y="40">y</text>
-    <text x="95" y="270" fill='#79c0ff'>root 1</text>
-    <text x="290" y="270" fill='#79c0ff'>root 2</text>
-    <text x="210" y="35" fill='#ffa657'>vertex</text>
-    <text x="205" y="15" fill='currentColor' opacity='0.6'>axis of symmetry</text>
+<svg viewBox="0 0 400 310" class="worked-example">
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="360" y2="250" stroke='#30363d' stroke-width="1" />
+  <line x1="50" y1="30" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
+  <!-- Axis of symmetry -->
+  <line x1="200" y1="40" x2="200" y2="250" stroke='#8b949e' stroke-width="1" stroke-dasharray="5,5" />
+  <!-- Parabola -->
+  <path d="M 80 240 Q 140 80, 200 50 Q 260 80, 320 240" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Root points -->
+  <circle cx="100" cy="250" r="4" fill='#79c0ff' />
+  <circle cx="300" cy="250" r="4" fill='#79c0ff' />
+  <!-- Vertex -->
+  <circle cx="200" cy="50" r="5" fill='#ffa657' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="365" y="254">x</text>
+    <text x="42" y="25">y</text>
+    <text x="75" y="272" fill='#79c0ff'>root 1</text>
+    <text x="278" y="272" fill='#79c0ff'>root 2</text>
+    <text x="212" y="48" fill='#ffa657'>vertex</text>
+    <text x="212" y="30" fill='currentColor' opacity='0.6' font-size='10'>axis of symmetry</text>
   </g>
 </svg>
 
@@ -119,24 +125,32 @@ SECTIONS = [
 <p><strong>Step 4:</strong> By symmetry about \\(x = 1\\): points \\((-1, 0)\\) and \\((3, 0)\\)</p>
 </div>
 
-<svg width="420" height="340" class="worked-example">
-  <g id="grid">
-    <line x1="60" y1="260" x2="340" y2="260" stroke='#30363d' stroke-width="1" />
-    <line x1="60" y1="60" x2="60" y2="260" stroke='#30363d' stroke-width="1" />
-    <path d="M 60 220 Q 150 80, 200 40 Q 250 80, 340 220" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <circle cx="60" cy="220" r="3" fill='#79c0ff' />
-    <circle cx="100" cy="260" r="3" fill='#79c0ff' />
-    <circle cx="200" cy="40" r="4" fill='#ffa657' />
-    <circle cx="300" cy="260" r="3" fill='#79c0ff' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
-    <text x="350" y="265">x</text>
-    <text x="50" y="50">y</text>
-    <text x="55" y="275">O</text>
-    <text x="45" y="225">(0, -3)</text>
-    <text x="90" y="280" fill='#79c0ff'>-1</text>
-    <text x="290" y="280" fill='#79c0ff'>3</text>
-    <text x="210" y="25" fill='#ffa657'>(1, -4)</text>
+<svg viewBox="0 0 400 330" class="worked-example">
+  <!-- Axes -->
+  <line x1="60" y1="200" x2="360" y2="200" stroke='#30363d' stroke-width="1" />
+  <line x1="120" y1="30" x2="120" y2="310" stroke='#30363d' stroke-width="1" />
+  <!-- Parabola y = x^2 - 2x - 3 -->
+  <path d="M 50 230 Q 120 310, 190 310 Q 260 310, 330 230" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- y-intercept (0, -3) -->
+  <circle cx="120" cy="260" r="4" fill='#79c0ff' />
+  <!-- Root at x = -1 -->
+  <circle cx="90" cy="200" r="4" fill='#79c0ff' />
+  <!-- Root at x = 3 -->
+  <circle cx="210" cy="200" r="4" fill='#79c0ff' />
+  <!-- Vertex (1, -4) -->
+  <circle cx="150" cy="310" r="5" fill='#ffa657' />
+  <!-- Tick marks -->
+  <line x1="90" y1="196" x2="90" y2="204" stroke='#30363d' stroke-width="1" />
+  <line x1="210" y1="196" x2="210" y2="204" stroke='#30363d' stroke-width="1" />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="365" y="204">x</text>
+    <text x="112" y="25">y</text>
+    <text x="124" y="215">O</text>
+    <text x="75" y="265" fill='#79c0ff'>(0, &#x2212;3)</text>
+    <text x="70" y="194" fill='#79c0ff'>&#x2212;1</text>
+    <text x="215" y="194" fill='#79c0ff'>3</text>
+    <text x="162" y="325" fill='#ffa657'>(1, &#x2212;4)</text>
   </g>
 </svg>
 

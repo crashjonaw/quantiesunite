@@ -18,15 +18,15 @@ SECTIONS = [
 </ul>
 
 <h4>Visualizing Radius and Diameter</h4>
-<svg width="300" height="300" class="formula-box">
-  <circle cx="150" cy="150" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="150" cy="150" r="3" fill='currentColor'/>
-  <line x1="150" y1="150" x2="250" y2="150" stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="250" cy="150" r="3" fill='#79c0ff'/>
-  <text x="200" y="140" fill='currentColor' font-size='14' font-weight='bold'>r</text>
-  <text x="155" y="165" fill='currentColor' font-size='14' font-weight='bold'>O</text>
-  <line x1="50" y1="150" x2="250" y2="150" stroke='#f85149' stroke-width="2" stroke-dasharray="5,5"/>
-  <text x="140" y="180" fill='currentColor' font-size='14'>Diameter = 2r</text>
+<svg width="300" height="260" viewBox="0 0 300 260" class="formula-box">
+  <circle cx="150" cy="115" r="100" fill='none' stroke='#79c0ff' stroke-width="2" rx='4'/>
+  <circle cx="150" cy="115" r="3" fill='currentColor'/>
+  <line x1="150" y1="115" x2="250" y2="115" stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="250" cy="115" r="3" fill='#79c0ff'/>
+  <text x="200" y="105" fill='currentColor' font-size='14' font-family='sans-serif' font-weight='bold'>r</text>
+  <text x="155" y="130" fill='currentColor' font-size='14' font-family='sans-serif' font-weight='bold'>O</text>
+  <line x1="50" y1="115" x2="250" y2="115" stroke='#f85149' stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="150" y="245" fill='currentColor' font-size='13' font-family='sans-serif' text-anchor='middle'>Diameter = 2r</text>
 </svg>
 
 <p><strong>Circumference Formula:</strong></p>
@@ -64,20 +64,20 @@ SECTIONS = [
 <li><strong>Semicircle:</strong> An arc that is exactly half the circumference (180°)</li>
 </ul>
 
-<svg width="350" height="280" class="formula-box">
-  <circle cx="175" cy="140" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="175" cy="140" r="3" fill='currentColor'/>
-  <circle cx="240" cy="95" r="4" fill='#f85149'/>
-  <circle cx="110" cy="95" r="4" fill='#f85149'/>
-  <path d="M 110 95 A 90 90 0 0 1 240 95" fill='none' stroke='#79c0ff' stroke-width="3"/>
-  <path d="M 110 95 A 90 90 0 1 1 240 95" fill='none' stroke='#a371f7' stroke-width="2" stroke-dasharray="5,5"/>
-  <line x1="110" y1="95" x2="240" y2="95" stroke='#f85149' stroke-width="2"/>
-  <text x="175" y="160" fill='currentColor' font-size='13' text-anchor='middle'>O</text>
-  <text x="85" y="80" fill='currentColor' font-size='12'>Point A</text>
-  <text x="245" y="80" fill='currentColor' font-size='12'>Point B</text>
-  <text x="150" y="110" fill='#79c0ff' font-size='13' font-weight='bold'>Minor Arc</text>
-  <text x="160" y="200" fill='#a371f7' font-size='13' font-weight='bold'>Major Arc</text>
-  <text x="175" y="130" fill='#f85149' font-size='13'>Chord</text>
+<svg width="350" height="280" viewBox="0 0 350 280" class="formula-box">
+  <circle cx="175" cy="130" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="175" cy="130" r="3" fill='currentColor'/>
+  <circle cx="240" cy="85" r="4" fill='#f85149'/>
+  <circle cx="110" cy="85" r="4" fill='#f85149'/>
+  <path d="M 110 85 A 90 90 0 0 1 240 85" fill='none' stroke='#79c0ff' stroke-width="3"/>
+  <path d="M 110 85 A 90 90 0 1 1 240 85" fill='none' stroke='#a371f7' stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="110" y1="85" x2="240" y2="85" stroke='#f85149' stroke-width="2"/>
+  <text x="175" y="148" fill='currentColor' font-size='13' font-family='sans-serif' text-anchor='middle'>O</text>
+  <text x="80" y="72" fill='currentColor' font-size='12' font-family='sans-serif'>A</text>
+  <text x="248" y="72" fill='currentColor' font-size='12' font-family='sans-serif'>B</text>
+  <text x="175" y="58" fill='#79c0ff' font-size='12' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Minor Arc</text>
+  <text x="175" y="200" fill='#a371f7' font-size='12' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Major Arc</text>
+  <text x="175" y="108" fill='#f85149' font-size='12' font-family='sans-serif' text-anchor='middle'>Chord</text>
 </svg>
 
 <h4>Sector: A "Pie Slice" of the Circle</h4>
@@ -86,19 +86,21 @@ SECTIONS = [
 <h4>Segment: Between a Chord and Arc</h4>
 <p><strong>Segment:</strong> A region bounded by a chord and the arc it cuts off. This is the region "between" a chord and the arc above it.</p>
 
-<svg width="370" height="280" viewBox="0 0 370 280" class="formula-box">
-  <circle cx="175" cy="140" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="175" cy="140" r="3" fill='currentColor'/>
-  <path d="M 175 50 L 240 190 L 110 190 Z" fill='#79c0ff' opacity='0.2' stroke='#79c0ff' stroke-width="2"/>
-  <line x1="175" y1="140" x2="175" y2="50" stroke='#f85149' stroke-width="2"/>
-  <line x1="175" y1="140" x2="240" y2="190" stroke='#f85149' stroke-width="2"/>
-  <text x="200" y="150" fill='currentColor' font-size='12' font-weight='bold'>Sector</text>
-  <text x="185" y="105" fill='#f85149' font-size='11'>Radius</text>
-  <text x="210" y="175" fill='#f85149' font-size='11'>Radius</text>
-  <line x1="110" y1="190" x2="240" y2="190" stroke='#a371f7' stroke-width="2"/>
-  <text x="175" y="220" fill='#a371f7' font-size='12' font-weight='bold'>Chord</text>
-  <path d="M 110 190 A 90 90 0 0 1 240 190" fill='#a371f7' opacity='0.1' stroke='#a371f7' stroke-width="2"/>
-  <text x="175" y="270" fill='#a371f7' font-size='11' font-weight='bold'>Segment = Between chord and arc</text>
+<svg width="370" height="295" viewBox="0 0 370 295" class="formula-box">
+  <circle cx="175" cy="135" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="175" cy="135" r="3" fill='currentColor'/>
+  <!-- Sector: two radii + arc fill -->
+  <path d="M 175 135 L 175 45 A 90 90 0 0 1 240 185 Z" fill='#79c0ff' opacity='0.15' stroke='#79c0ff' stroke-width="2"/>
+  <line x1="175" y1="135" x2="175" y2="45" stroke='#f85149' stroke-width="2"/>
+  <line x1="175" y1="135" x2="240" y2="185" stroke='#f85149' stroke-width="2"/>
+  <text x="210" y="130" fill='currentColor' font-size='12' font-family='sans-serif' font-weight='bold'>Sector</text>
+  <text x="155" y="90" fill='#f85149' font-size='11' font-family='sans-serif'>Radius</text>
+  <text x="215" y="168" fill='#f85149' font-size='11' font-family='sans-serif'>Radius</text>
+  <!-- Segment: chord + arc fill -->
+  <line x1="110" y1="185" x2="240" y2="185" stroke='#a371f7' stroke-width="2"/>
+  <path d="M 110 185 A 90 90 0 0 1 240 185" fill='#a371f7' opacity='0.15' stroke='#a371f7' stroke-width="2"/>
+  <text x="175" y="210" fill='#a371f7' font-size='12' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Chord</text>
+  <text x="175" y="280" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>Segment = region between chord and arc</text>
 </svg>
 """
     },
@@ -132,20 +134,20 @@ SECTIONS = [
 
 <h4>Comparing Circles: Area and Circumference Relationship</h4>
 
-<svg width="400" height="300" viewBox="-50 0 500 298" class="formula-box">
-  <circle cx="80" cy="120" r="40" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="200" cy="120" r="60" fill='none' stroke='#f85149' stroke-width="2"/>
-  <circle cx="320" cy="120" r="80" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="80" y="200" fill='#79c0ff' font-size='13' text-anchor='middle' font-weight='bold'>r=2</text>
-  <text x="80" y="220" fill='#79c0ff' font-size='12' text-anchor='middle'>C=4π</text>
-  <text x="80" y="238" fill='#79c0ff' font-size='12' text-anchor='middle'>A=4π</text>
-  <text x="200" y="200" fill='#f85149' font-size='13' text-anchor='middle' font-weight='bold'>r=3</text>
-  <text x="200" y="220" fill='#f85149' font-size='12' text-anchor='middle'>C=6π</text>
-  <text x="200" y="238" fill='#f85149' font-size='12' text-anchor='middle'>A=9π</text>
-  <text x="320" y="200" fill='#a371f7' font-size='13' text-anchor='middle' font-weight='bold'>r=4</text>
-  <text x="320" y="220" fill='#a371f7' font-size='12' text-anchor='middle'>C=8π</text>
-  <text x="320" y="238" fill='#a371f7' font-size='12' text-anchor='middle'>A=16π</text>
-  <text x="200" y="280" fill='currentColor' font-size='13' text-anchor='middle'>As radius increases, circumference grows linearly, but area grows quadratically!</text>
+<svg width="460" height="300" viewBox="0 0 460 300" class="formula-box">
+  <circle cx="70" cy="105" r="40" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="200" cy="105" r="60" fill='none' stroke='#f85149' stroke-width="2"/>
+  <circle cx="360" cy="105" r="80" fill='none' stroke='#a371f7' stroke-width="2"/>
+  <text x="70" y="175" fill='#79c0ff' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>r = 2</text>
+  <text x="70" y="193" fill='#79c0ff' font-size='12' font-family='sans-serif' text-anchor='middle'>C = 4\u03c0</text>
+  <text x="70" y="211" fill='#79c0ff' font-size='12' font-family='sans-serif' text-anchor='middle'>A = 4\u03c0</text>
+  <text x="200" y="195" fill='#f85149' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>r = 3</text>
+  <text x="200" y="213" fill='#f85149' font-size='12' font-family='sans-serif' text-anchor='middle'>C = 6\u03c0</text>
+  <text x="200" y="231" fill='#f85149' font-size='12' font-family='sans-serif' text-anchor='middle'>A = 9\u03c0</text>
+  <text x="360" y="215" fill='#a371f7' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>r = 4</text>
+  <text x="360" y="233" fill='#a371f7' font-size='12' font-family='sans-serif' text-anchor='middle'>C = 8\u03c0</text>
+  <text x="360" y="251" fill='#a371f7' font-size='12' font-family='sans-serif' text-anchor='middle'>A = 16\u03c0</text>
+  <text x="230" y="285" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>Circumference grows linearly; area grows quadratically</text>
 </svg>
 """
     },

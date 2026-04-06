@@ -10,44 +10,50 @@ SECTIONS = [
 <p><strong>Example:</strong> \(7 - 3 = ?\)<br/>
 Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
 </div>
-<svg viewBox="0 0 500 120" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <line x1="40" y1="60" x2="490" y2="60" stroke='#8b949e' stroke-width="2"/>
-  <circle cx="40" cy="60" r="4" fill='currentColor'/>
-  <circle cx="90" cy="60" r="4" fill='currentColor'/>
-  <circle cx="140" cy="60" r="4" fill='currentColor'/>
-  <circle cx="190" cy="60" r="4" fill='currentColor'/>
-  <circle cx="240" cy="60" r="4" fill='currentColor'/>
-  <circle cx="290" cy="60" r="4" fill='currentColor'/>
-  <circle cx="340" cy="60" r="4" fill='currentColor'/>
-  <circle cx="390" cy="60" r="4" fill='currentColor'/>
-  <circle cx="440" cy="60" r="4" fill='currentColor'/>
-  <circle cx="490" cy="60" r="4" fill='currentColor'/>
-
-  <text x="35" y="85" font-size='14' font-weight='bold' fill='currentColor'>0</text>
-  <text x="85" y="85" font-size='14' fill='currentColor'>1</text>
-  <text x="135" y="85" font-size='14' fill='currentColor'>2</text>
-  <text x="185" y="85" font-size='14' fill='currentColor'>3</text>
-  <text x="235" y="85" font-size='14' fill='currentColor'>4</text>
-  <text x="285" y="85" font-size='14' fill='currentColor'>5</text>
-  <text x="335" y="85" font-size='14' fill='currentColor'>6</text>
-  <text x="385" y="85" font-size='14' fill='currentColor'>7</text>
-  <text x="435" y="85" font-size='14' fill='currentColor'>8</text>
-  <text x="485" y="85" font-size='14' fill='currentColor'>9</text>
-
-  <circle cx="390" cy="60" r="20" fill='none' stroke='#3b82f6' stroke-width="2"/>
-  <text x="395" y="25" font-size='16' font-weight='bold' fill='#3b82f6'>Start: 7</text>
-
-  <path d="M 340 40 Q 310 20 240 40" stroke='#ef4444' stroke-width="3" fill='none' marker-end="url(#arrowred)"/>
-  <text x="265" y="15" font-size='14' fill='#ef4444' font-weight='bold'>Jump back 3</text>
-
-  <circle cx="240" cy="60" r="20" fill='none' stroke='#22c55e' stroke-width="2"/>
-  <text x="235" y="110" font-size='16' font-weight='bold' fill='#22c55e'>Land: 4</text>
-
+<svg viewBox="0 0 480 125" style="width:100%;max-width:480px;height:auto;display:block;margin:16px auto;">
   <defs>
     <marker id="arrowred" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill='#ef4444'/>
     </marker>
   </defs>
+
+  <!-- Number line: 10 points from 0-9, evenly spaced at x = 25, 75, 125, ..., 475  => gap 50 -->
+  <line x1="25" y1="70" x2="475" y2="70" stroke='#8b949e' stroke-width='2'/>
+
+  <circle cx="25" cy="70" r="4" fill='currentColor'/>
+  <circle cx="75" cy="70" r="4" fill='currentColor'/>
+  <circle cx="125" cy="70" r="4" fill='currentColor'/>
+  <circle cx="175" cy="70" r="4" fill='currentColor'/>
+  <circle cx="225" cy="70" r="4" fill='currentColor'/>
+  <circle cx="275" cy="70" r="4" fill='currentColor'/>
+  <circle cx="325" cy="70" r="4" fill='currentColor'/>
+  <circle cx="375" cy="70" r="4" fill='currentColor'/>
+  <circle cx="425" cy="70" r="4" fill='currentColor'/>
+  <circle cx="475" cy="70" r="4" fill='currentColor'/>
+
+  <!-- Number labels centered under each dot -->
+  <text x="25" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>0</text>
+  <text x="75" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>1</text>
+  <text x="125" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>2</text>
+  <text x="175" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>3</text>
+  <text x="225" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>4</text>
+  <text x="275" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>5</text>
+  <text x="325" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>6</text>
+  <text x="375" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>7</text>
+  <text x="425" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>8</text>
+  <text x="475" y="95" font-size='14' font-family='Arial, sans-serif' fill='currentColor' text-anchor='middle'>9</text>
+
+  <!-- Start at 7 highlight -->
+  <circle cx="375" cy="70" r="16" fill='none' stroke='#3b82f6' stroke-width='2.5'/>
+  <text x="410" y="30" font-size='13' font-family='Arial, sans-serif' font-weight='bold' fill='#3b82f6'>Start: 7</text>
+
+  <!-- Jump arc from 7 back to 4 -->
+  <path d="M 365 55 Q 300 15 235 55" stroke='#ef4444' stroke-width='2.5' fill='none' marker-end='url(#arrowred)'/>
+  <text x="300" y="18" font-size='13' font-family='Arial, sans-serif' font-weight='bold' fill='#ef4444'>Jump back 3</text>
+
+  <!-- Land at 4 highlight -->
+  <circle cx="225" cy="70" r="16" fill='none' stroke='#22c55e' stroke-width='2.5'/>
+  <text x="225" y="115" font-size='13' font-family='Arial, sans-serif' font-weight='bold' fill='#22c55e' text-anchor='middle'>Land: 4</text>
 </svg>
 <p style="text-align:center;margin-top:12px;"><strong>\(7 - 3 = 4\)</strong></p>"""
     },

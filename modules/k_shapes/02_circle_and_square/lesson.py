@@ -6,20 +6,20 @@ SECTIONS = [
     {
         "title": "The Perfect Circle",
         "body": """<p>A <strong>circle</strong> is the most perfectly balanced shape. Every point on the edge is <strong>exactly the same distance</strong> from the center.</p>
-<svg viewBox="0 0 400 300" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
+<svg viewBox="0 0 340 280" style="width:100%;max-width:340px;height:auto;display:block;margin:16px auto;">
   <!-- Circle -->
-  <circle cx="200" cy="150" r="80" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="3"/>
+  <circle cx="170" cy="130" r="80" fill='#4f8ef720' stroke='#4f8ef7' stroke-width="3"/>
   <!-- Center point -->
-  <circle cx="200" cy="150" r="5" fill='#ef4444'/>
+  <circle cx="170" cy="130" r="5" fill='#ef4444'/>
   <!-- Radius lines -->
-  <line x1="200" y1="150" x2="280" y2="150" stroke='#ef4444' stroke-width="2"/>
-  <line x1="200" y1="150" x2="165" y2="210" stroke='#ef4444' stroke-width="2"/>
-  <line x1="200" y1="150" x2="140" y2="100" stroke='#ef4444' stroke-width="2"/>
+  <line x1="170" y1="130" x2="250" y2="130" stroke='#ef4444' stroke-width="2"/>
+  <line x1="170" y1="130" x2="135" y2="190" stroke='#ef4444' stroke-width="2"/>
+  <line x1="170" y1="130" x2="110" y2="80" stroke='#ef4444' stroke-width="2"/>
   <!-- Labels -->
-  <text x="240" y="145" font-size='14' font-weight='bold' fill='currentColor'>radius</text>
-  <text x="190" y="140" font-size='14' font-weight='bold' fill='currentColor'>center</text>
+  <text x="210" y="123" font-size='13' font-weight='bold' fill='currentColor'>radius</text>
+  <text x="170" y="115" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>center</text>
   <!-- Key facts -->
-  <text x="200" y="280" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>0 sides  •  0 corners  •  1 curved edge</text>
+  <text x="170" y="260" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>0 sides  •  0 corners  •  1 curved edge</text>
 </svg>
 <p><strong>Special properties of circles:</strong></p>
 <ul>
@@ -35,26 +35,26 @@ SECTIONS = [
     {
         "title": "The Square",
         "body": """<p>A <strong>square</strong> is one of the most common shapes. It has <strong>4 equal sides</strong> and <strong>4 right corners</strong> (90° angles).</p>
-<svg viewBox="0 0 400 300" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
+<svg viewBox="0 0 320 270" style="width:100%;max-width:320px;height:auto;display:block;margin:16px auto;">
   <!-- Square -->
-  <rect x="100" y="80" width="120" height="120" fill='#22c55e30' stroke='#22c55e' stroke-width="3" rx='4'/>
+  <rect x="85" y="55" width="120" height="120" fill='#22c55e30' stroke='#22c55e' stroke-width="3" rx='4'/>
   <!-- Corner indicators -->
-  <circle cx="100" cy="80" r="5" fill='#ef4444'/>
-  <circle cx="220" cy="80" r="5" fill='#ef4444'/>
-  <circle cx="220" cy="200" r="5" fill='#ef4444'/>
-  <circle cx="100" cy="200" r="5" fill='#ef4444'/>
+  <circle cx="85" cy="55" r="5" fill='#ef4444'/>
+  <circle cx="205" cy="55" r="5" fill='#ef4444'/>
+  <circle cx="205" cy="175" r="5" fill='#ef4444'/>
+  <circle cx="85" cy="175" r="5" fill='#ef4444'/>
   <!-- Right angle indicators -->
-  <rect x="100" y="80" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
-  <rect x="210" y="80" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
-  <rect x="210" y="190" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
-  <rect x="100" y="190" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
+  <rect x="85" y="55" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
+  <rect x="195" y="55" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
+  <rect x="195" y="165" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
+  <rect x="85" y="165" width="10" height="10" fill='none' stroke='#ef4444' stroke-width="1.5"/>
   <!-- Side labels -->
-  <text x="160" y="60" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
-  <text x="240" y="140" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
-  <text x="160" y="230" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
-  <text x="60" y="140" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
+  <text x="145" y="42" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
+  <text x="225" y="120" font-size='12' fill='currentColor'>side</text>
+  <text x="145" y="202" text-anchor='middle' font-size='12' fill='currentColor'>side</text>
+  <text x="65" y="120" text-anchor='end' font-size='12' fill='currentColor'>side</text>
   <!-- Key facts -->
-  <text x="200" y="260" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>4 EQUAL sides  •  4 right corners</text>
+  <text x="160" y="245" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>4 EQUAL sides  •  4 right corners</text>
 </svg>
 <p><strong>What makes a square special:</strong></p>
 <ul>

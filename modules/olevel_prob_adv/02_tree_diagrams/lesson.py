@@ -19,56 +19,60 @@ SECTIONS = [
         </ul>
 
         <h4>Basic Structure</h4>
-        <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; margin: 20px 0; border-radius: 8px">
-            <!-- Define arrow markers -->
-            <defs>
-                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                    <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7' />
-                </marker>
-            </defs>
+        <svg viewBox="-15 -15 590 430" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; margin: 20px 0; border-radius: 8px">
+            <!-- Stage labels -->
+            <text x="60" y="20" fill='currentColor' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Start</text>
+            <text x="230" y="20" fill='currentColor' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Stage 1</text>
+            <text x="420" y="20" fill='currentColor' font-size='13' font-family='sans-serif' text-anchor='middle' font-weight='bold'>Stage 2</text>
 
-            <!-- Root -->
-            <circle cx="100" cy="200" r="15" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
+            <!-- Root node -->
+            <circle cx="60" cy="200" r="14" fill='#4f8ef7' stroke='#4f8ef7' stroke-width="2"/>
 
             <!-- First stage branches -->
-            <line x1="115" y1="185" x2="220" y2="100" stroke='currentColor' opacity='0.4' stroke-width="2" marker-end="url(#arrowhead)"/>
-            <line x1="115" y1="215" x2="220" y2="300" stroke='currentColor' opacity='0.4' stroke-width="2" marker-end="url(#arrowhead)"/>
+            <line x1="74" y1="190" x2="202" y2="105" stroke='currentColor' stroke-opacity='0.5' stroke-width="2"/>
+            <line x1="74" y1="210" x2="202" y2="295" stroke='currentColor' stroke-opacity='0.5' stroke-width="2"/>
 
-            <!-- First stage outcomes -->
-            <circle cx="250" cy="100" r="15" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
-            <circle cx="250" cy="300" r="15" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
+            <!-- First stage nodes -->
+            <circle cx="216" cy="100" r="14" fill='#4f8ef7' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="216" cy="300" r="14" fill='#4f8ef7' stroke='#4f8ef7' stroke-width="2"/>
 
-            <!-- Labels for first stage -->
-            <text x="160" y="135" fill='currentColor' font-size='14' font-family='monospace'>p₁</text>
-            <text x="160" y="275" fill='currentColor' font-size='14' font-family='monospace'>p₂</text>
-            <text x="270" y="85" fill='currentColor' font-size='14' font-family='monospace'>Event A</text>
-            <text x="270" y="315" fill='currentColor' font-size='14' font-family='monospace'>Event B</text>
+            <!-- First stage branch labels -->
+            <text x="120" y="135" fill='currentColor' font-size='14' font-family='sans-serif'>p&#x2081;</text>
+            <text x="120" y="275" fill='currentColor' font-size='14' font-family='sans-serif'>p&#x2082;</text>
+
+            <!-- First stage node labels -->
+            <text x="240" y="96" fill='currentColor' font-size='14' font-family='sans-serif'>Event A</text>
+            <text x="240" y="296" fill='currentColor' font-size='14' font-family='sans-serif'>Event B</text>
 
             <!-- Second stage branches from A -->
-            <line x1="265" y1="115" x2="370" y2="50" stroke='currentColor' opacity='0.4' stroke-width="2" marker-end="url(#arrowhead)"/>
-            <line x1="265" y1="115" x2="370" y2="150" stroke='currentColor' opacity='0.4' stroke-width="2" marker-end="url(#arrowhead)"/>
+            <line x1="230" y1="90" x2="392" y2="60" stroke='currentColor' stroke-opacity='0.5' stroke-width="2"/>
+            <line x1="230" y1="110" x2="392" y2="160" stroke='currentColor' stroke-opacity='0.5' stroke-width="2"/>
 
             <!-- Second stage branches from B -->
-            <line x1="265" y1="285" x2="370" y2="250" stroke='currentColor' opacity='0.4' stroke-width="2" marker-end="url(#arrowhead)"/>
-            <line x1="265" y1="285" x2="370" y2="350" stroke='currentColor' opacity='0.4' stroke-width="2" marker-end="url(#arrowhead)"/>
+            <line x1="230" y1="290" x2="392" y2="260" stroke='currentColor' stroke-opacity='0.5' stroke-width="2"/>
+            <line x1="230" y1="310" x2="392" y2="340" stroke='currentColor' stroke-opacity='0.5' stroke-width="2"/>
 
-            <!-- Final outcomes -->
-            <circle cx="400" cy="50" r="12" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
-            <circle cx="400" cy="150" r="12" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
-            <circle cx="400" cy="250" r="12" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
-            <circle cx="400" cy="350" r="12" fill='#4f8ef7' stroke='currentColor' opacity='0.4' stroke-width="2"/>
+            <!-- Leaf nodes -->
+            <circle cx="406" cy="60" r="12" fill='#7ee787' stroke='#7ee787' stroke-width="2"/>
+            <circle cx="406" cy="160" r="12" fill='#7ee787' stroke='#7ee787' stroke-width="2"/>
+            <circle cx="406" cy="260" r="12" fill='#7ee787' stroke='#7ee787' stroke-width="2"/>
+            <circle cx="406" cy="340" r="12" fill='#7ee787' stroke='#7ee787' stroke-width="2"/>
 
-            <!-- Second stage labels -->
-            <text x="310" y="75" fill='currentColor' font-size='12' font-family='monospace'>q₁</text>
-            <text x="310" y="130" fill='currentColor' font-size='12' font-family='monospace'>q₂</text>
-            <text x="310" y="230" fill='currentColor' font-size='12' font-family='monospace'>q₃</text>
-            <text x="310" y="330" fill='currentColor' font-size='12' font-family='monospace'>q₄</text>
+            <!-- Second stage branch labels -->
+            <text x="300" y="60" fill='currentColor' font-size='13' font-family='sans-serif'>q&#x2081;</text>
+            <text x="300" y="148" fill='currentColor' font-size='13' font-family='sans-serif'>q&#x2082;</text>
+            <text x="300" y="268" fill='currentColor' font-size='13' font-family='sans-serif'>q&#x2083;</text>
+            <text x="300" y="338" fill='currentColor' font-size='13' font-family='sans-serif'>q&#x2084;</text>
 
             <!-- Outcome labels -->
-            <text x="420" y="55" fill='currentColor' font-size='12' font-family='monospace'>A∩C</text>
-            <text x="420" y="155" fill='currentColor' font-size='12' font-family='monospace'>A∩D</text>
-            <text x="420" y="255" fill='currentColor' font-size='12' font-family='monospace'>B∩C</text>
-            <text x="420" y="355" fill='currentColor' font-size='12' font-family='monospace'>B∩D</text>
+            <text x="426" y="64" fill='currentColor' font-size='13' font-family='sans-serif'>A &#x2229; C</text>
+            <text x="426" y="164" fill='currentColor' font-size='13' font-family='sans-serif'>A &#x2229; D</text>
+            <text x="426" y="264" fill='currentColor' font-size='13' font-family='sans-serif'>B &#x2229; C</text>
+            <text x="426" y="344" fill='currentColor' font-size='13' font-family='sans-serif'>B &#x2229; D</text>
+
+            <!-- Probability calculation annotations -->
+            <rect x="420" y="370" width="130" height="24" rx="4" fill='#4f8ef7' fill-opacity='0.15' stroke='none'/>
+            <text x="485" y="386" fill='currentColor' font-size='11' font-family='sans-serif' text-anchor='middle'>Multiply along paths</text>
         </svg>
 
         <p><strong>Reading the diagram:</strong> Start at the root (left). Each path to a leaf represents one complete sequence of outcomes. Labels on branches are probabilities. The product of probabilities along a path equals the probability of that complete outcome.</p>

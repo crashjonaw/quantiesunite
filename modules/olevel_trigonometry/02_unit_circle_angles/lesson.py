@@ -15,38 +15,53 @@ SECTIONS = [
 <p>The <strong>unit circle</strong> is a circle with radius 1 centered at the origin (0, 0) of a coordinate system.</p>
 </div>
 
-<svg viewBox="-150 -190 370 340" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px 0;">
-  <defs>
-    </defs>
+<svg viewBox="-160 -175 345 360" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
 
   <!-- Circle -->
-  <circle cx="0" cy="0" r="100" class="circle"/>
+  <circle cx="0" cy="0" r="100" fill='none' stroke='#4f8ef7' stroke-width="1.5"/>
 
   <!-- Axes -->
-  <line x1="-130" y1="0" x2="130" y2="0" class="axis"/>
-  <line x1="0" y1="-130" x2="0" y2="130" class="axis"/>
+  <line x1="-140" y1="0" x2="140" y2="0" stroke='#30363d' stroke-width="1"/>
+  <line x1="0" y1="-140" x2="0" y2="140" stroke='#30363d' stroke-width="1"/>
 
-  <!-- Angle arc and radius -->
-  <line x1="0" y1="0" x2="86.6" y2="-50" class="radius" stroke='#4f8ef7'/>
-  <path d="M 25 0 A 25 25 0 0 0 21.65 -12.5" fill='none' class="radius" stroke-width="1.5"/>
-  <text x="28" y="-5" class="point-label">θ</text>
+  <!-- Axis labels -->
+  <text x="148" y="5" fill='currentColor' font-size='12'>x</text>
+  <text x="5" y="-145" fill='currentColor' font-size='12'>y</text>
+
+  <!-- Radius to 30 degree point -->
+  <line x1="0" y1="0" x2="86.6" y2="-50" stroke='#4f8ef7' stroke-width="2"/>
+
+  <!-- Dashed projections -->
+  <line x1="86.6" y1="-50" x2="86.6" y2="0" stroke='#e8b04f' stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="86.6" y1="-50" x2="0" y2="-50" stroke='#e8b04f' stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- Angle arc -->
+  <path d="M 30 0 A 30 30 0 0 0 26 -15" fill='none' stroke='#e8b04f' stroke-width="2"/>
+  <text x="36" y="-6" fill='#e8b04f' font-size='14' font-weight='bold'>θ</text>
 
   <!-- Point on circle -->
-  <circle cx="86.6" cy="-50" r="3" fill='#4f8ef7'/>
-  <text x="95" y="-50" class="point-label">(cos θ, sin θ)</text>
+  <circle cx="86.6" cy="-50" r="4" fill='#4f8ef7'/>
+  <text x="92" y="-58" fill='currentColor' font-size='12'>(cos θ, sin θ)</text>
 
-  <!-- Key points marked -->
-  <circle cx="100" cy="0" r="2" fill='#4f8ef7'/>
-  <text x="100" y="15" class="coord-label" text-anchor='middle'>(1, 0)</text>
+  <!-- Projection labels -->
+  <text x="86.6" y="18" fill='currentColor' font-size='11' text-anchor='middle'>cos θ</text>
+  <text x="-30" y="-47" fill='currentColor' font-size='11' text-anchor='middle'>sin θ</text>
 
-  <circle cx="0" cy="-100" r="2" fill='#4f8ef7'/>
-  <text x="-25" y="-100" class="coord-label">(0, 1)</text>
+  <!-- Key points -->
+  <circle cx="100" cy="0" r="3" fill='#4f8ef7'/>
+  <text x="100" y="28" fill='currentColor' font-size='11' text-anchor='middle'>(1, 0)</text>
 
-  <circle cx="-100" cy="0" r="2" fill='#4f8ef7'/>
-  <text x="-100" y="15" class="coord-label" text-anchor='middle'>(-1, 0)</text>
+  <circle cx="0" cy="-100" r="3" fill='#4f8ef7'/>
+  <text x="20" y="-103" fill='currentColor' font-size='11'>(0, 1)</text>
 
-  <circle cx="0" cy="100" r="2" fill='#4f8ef7'/>
-  <text x="15" y="100" class="coord-label">(0, -1)</text>
+  <circle cx="-100" cy="0" r="3" fill='#4f8ef7'/>
+  <text x="-100" y="28" fill='currentColor' font-size='11' text-anchor='middle'>(-1, 0)</text>
+
+  <circle cx="0" cy="100" r="3" fill='#4f8ef7'/>
+  <text x="20" y="115" fill='currentColor' font-size='11'>(0, -1)</text>
+
+  <!-- Radius label -->
+  <text x="35" y="-30" fill='#4f8ef7' font-size='12' font-weight='bold'>r = 1</text>
 </svg>
 
 <h3>The Key Insight</h3>
@@ -128,28 +143,45 @@ SECTIONS = [
 <h3>Extending to All Quadrants</h3>
 <p>The unit circle extends beyond the first quadrant. In the other quadrants, angles can be greater than 90°, and the trigonometric values can be negative.</p>
 
-<svg viewBox="-150 -150 300 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:350px; margin:20px 0;">
-  <defs>
-    </defs>
+<svg viewBox="-155 -155 310 310" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:350px; margin:20px auto; display:block;">
 
   <!-- Circle -->
-  <circle cx="0" cy="0" r="100" class="circle"/>
+  <circle cx="0" cy="0" r="100" fill='none' stroke='#4f8ef7' stroke-width="1.5"/>
 
   <!-- Axes -->
-  <line x1="-130" y1="0" x2="130" y2="0" class="axis"/>
-  <line x1="0" y1="-130" x2="0" y2="130" class="axis"/>
+  <line x1="-135" y1="0" x2="135" y2="0" stroke='#30363d' stroke-width="1"/>
+  <line x1="0" y1="-135" x2="0" y2="135" stroke='#30363d' stroke-width="1"/>
+
+  <!-- Quadrant shading (subtle) -->
+  <path d="M 0 0 L 100 0 A 100 100 0 0 0 0 -100 Z" fill='#4f8ef7' opacity='0.06'/>
+  <path d="M 0 0 L 0 -100 A 100 100 0 0 0 -100 0 Z" fill='#e8b04f' opacity='0.06'/>
+  <path d="M 0 0 L -100 0 A 100 100 0 0 0 0 100 Z" fill='#4f8ef7' opacity='0.06'/>
+  <path d="M 0 0 L 0 100 A 100 100 0 0 0 100 0 Z" fill='#e8b04f' opacity='0.06'/>
 
   <!-- Quadrant labels -->
-  <text x="40" y="-30" class="quad-label">I: All</text>
-  <text x="-70" y="-30" class="quad-label">II: Sin</text>
-  <text x="-70" y="45" class="quad-label">III: Tan</text>
-  <text x="40" y="45" class="quad-label">IV: Cos</text>
+  <text x="50" y="-55" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>I</text>
+  <text x="50" y="-38" fill='currentColor' font-size='11' text-anchor='middle'>All +</text>
 
-  <!-- Sample points -->
-  <circle cx="70.7" cy="-70.7" r="3" class="point"/>
-  <circle cx="-70.7" cy="-70.7" r="3" class="point"/>
-  <circle cx="-70.7" cy="70.7" r="3" class="point"/>
-  <circle cx="70.7" cy="70.7" r="3" class="point"/>
+  <text x="-50" y="-55" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>II</text>
+  <text x="-50" y="-38" fill='currentColor' font-size='11' text-anchor='middle'>Sin +</text>
+
+  <text x="-50" y="45" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>III</text>
+  <text x="-50" y="62" fill='currentColor' font-size='11' text-anchor='middle'>Tan +</text>
+
+  <text x="50" y="45" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>IV</text>
+  <text x="50" y="62" fill='currentColor' font-size='11' text-anchor='middle'>Cos +</text>
+
+  <!-- Sample points on circle at 45 degrees in each quadrant -->
+  <circle cx="70.7" cy="-70.7" r="4" fill='#4f8ef7'/>
+  <circle cx="-70.7" cy="-70.7" r="4" fill='#e8b04f'/>
+  <circle cx="-70.7" cy="70.7" r="4" fill='#4f8ef7'/>
+  <circle cx="70.7" cy="70.7" r="4" fill='#e8b04f'/>
+
+  <!-- Radii to sample points -->
+  <line x1="0" y1="0" x2="70.7" y2="-70.7" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="0" y1="0" x2="-70.7" y2="-70.7" stroke='#e8b04f' stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="0" y1="0" x2="-70.7" y2="70.7" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="0" y1="0" x2="70.7" y2="70.7" stroke='#e8b04f' stroke-width="1" stroke-dasharray="4,3"/>
 </svg>
 
 <h3>The ASTC Rule (or "All Students Take Calculus")</h3>

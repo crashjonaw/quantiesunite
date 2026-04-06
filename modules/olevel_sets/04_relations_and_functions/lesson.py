@@ -43,31 +43,43 @@ SECTIONS = [
 <p>The xy-coordinate plane is ℝ × ℝ—the Cartesian product of real numbers with itself.</p>
 <p>Each point (x, y) is an ordered pair from ℝ × ℝ.</p>
 
-<svg viewBox="0 0 350 320" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 20px auto; display: block;">
-  <rect width="350" height="320" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
-
-  <!-- Grid -->
-  <line x1="175" y1="20" x2="175" y2="300" stroke='#30363d' stroke-width="1"/>
-  <line x1="50" y1="160" x2="320" y2="160" stroke='#30363d' stroke-width="1"/>
+<svg viewBox="-15 -15 380 350" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 20px auto; display: block;" font-family="sans-serif">
+  <rect x="0" y="0" width="350" height="320" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 
   <!-- Axes -->
-  <line x1="175" y1="20" x2="175" y2="300" stroke='#4f8ef7' stroke-width="2"/>
-  <line x1="50" y1="160" x2="320" y2="160" stroke='#4f8ef7' stroke-width="2"/>
+  <line x1="175" y1="25" x2="175" y2="295" stroke="#4f8ef7" stroke-width="2"/>
+  <line x1="45" y1="160" x2="325" y2="160" stroke="#4f8ef7" stroke-width="2"/>
 
-  <!-- Arrow -->
-  <polygon points="175,15 170,25 180,25" fill='#4f8ef7'/>
-  <polygon points="325,160 315,155 315,165" fill='#4f8ef7'/>
+  <!-- Arrowheads -->
+  <polygon points="175,20 170,30 180,30" fill="#4f8ef7"/>
+  <polygon points="330,160 320,155 320,165" fill="#4f8ef7"/>
+
+  <!-- Tick marks on x-axis -->
+  <line x1="205" y1="156" x2="205" y2="164" stroke="#4f8ef7" stroke-width="1"/>
+  <line x1="235" y1="156" x2="235" y2="164" stroke="#4f8ef7" stroke-width="1"/>
+  <line x1="265" y1="156" x2="265" y2="164" stroke="#4f8ef7" stroke-width="1"/>
+  <text x="205" y="178" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle">1</text>
+  <text x="235" y="178" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle">2</text>
+  <text x="265" y="178" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle">3</text>
+
+  <!-- Tick marks on y-axis -->
+  <line x1="171" y1="130" x2="179" y2="130" stroke="#4f8ef7" stroke-width="1"/>
+  <line x1="171" y1="100" x2="179" y2="100" stroke="#4f8ef7" stroke-width="1"/>
+  <text x="163" y="134" font-size="10" fill="currentColor" opacity="0.6" text-anchor="end">1</text>
+  <text x="163" y="104" font-size="10" fill="currentColor" opacity="0.6" text-anchor="end">2</text>
+
+  <!-- Dashed projection lines for (3, 2) -->
+  <line x1="265" y1="160" x2="265" y2="100" stroke="#4f8ef7" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="175" y1="100" x2="265" y2="100" stroke="#4f8ef7" stroke-width="1" stroke-dasharray="4,3"/>
 
   <!-- Point (3, 2) -->
-  <circle cx="265" cy="100" r="4" fill='#4f8ef7'/>
-  <line x1="265" y1="160" x2="265" y2="100" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="3,3"/>
-  <line x1="175" y1="100" x2="265" y2="100" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="3,3"/>
+  <circle cx="265" cy="100" r="5" fill="#4f8ef7"/>
 
   <!-- Labels -->
-  <text x="175" y="315" font-size='14' fill='currentColor' text-anchor='middle'>x</text>
-  <text x="25" y="160" font-size='14' fill='currentColor' text-anchor='middle'>y</text>
-  <text x="270" y="85" font-size='12' fill='currentColor'>(3, 2)</text>
-  <text x="175" y="150" font-size='11' fill='currentColor' opacity='0.6'>O</text>
+  <text x="175" y="310" font-size="14" fill="currentColor" text-anchor="middle">x</text>
+  <text x="30" y="164" font-size="14" fill="currentColor" text-anchor="middle">y</text>
+  <text x="275" y="92" font-size="12" fill="currentColor">(3, 2)</text>
+  <text x="165" y="172" font-size="11" fill="currentColor" opacity="0.6" text-anchor="end">O</text>
 </svg>
 """
     },
@@ -110,35 +122,41 @@ SECTIONS = [
 
 <h3>Visualizing Relations: Mapping Diagrams</h3>
 
-<svg viewBox="0 0 350 240" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 20px auto; display: block;">
-  <rect width="350" height="240" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
+<svg viewBox="-15 -15 380 270" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 20px auto; display: block;" font-family="sans-serif">
+  <rect x="0" y="0" width="350" height="240" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Left set -->
-  <rect x="30" y="60" width="60" height="120" fill='transparent' stroke='#4f8ef7' stroke-width="1" stroke-dasharray="2,2"/>
-  <circle cx="60" cy="80" r="5" fill='#4f8ef7'/>
-  <circle cx="60" cy="120" r="5" fill='#4f8ef7'/>
-  <circle cx="60" cy="160" r="5" fill='#4f8ef7'/>
-  <text x="10" y="210" font-size='12' fill='currentColor'>A = {1,2,3}</text>
-  <text x="35" y="75" font-size='11' fill='currentColor' opacity='0.6'>1</text>
-  <text x="35" y="125" font-size='11' fill='currentColor' opacity='0.6'>2</text>
-  <text x="35" y="165" font-size='11' fill='currentColor' opacity='0.6'>3</text>
+  <!-- Title -->
+  <text x="175" y="30" font-size="11" fill="currentColor" opacity="0.6" text-anchor="middle">R: 1 maps to {b, c}, 2 maps to {c}</text>
 
-  <!-- Right set -->
-  <rect x="260" y="60" width="60" height="120" fill='transparent' stroke='#4f8ef7' stroke-width="1" stroke-dasharray="2,2"/>
-  <circle cx="290" cy="90" r="5" fill='#4f8ef7'/>
-  <circle cx="290" cy="130" r="5" fill='#4f8ef7'/>
-  <circle cx="290" cy="170" r="5" fill='#4f8ef7'/>
-  <text x="260" y="210" font-size='12' fill='currentColor'>B = {a,b,c}</text>
-  <text x="300" y="100" font-size='11' fill='currentColor' opacity='0.6'>a</text>
-  <text x="300" y="140" font-size='11' fill='currentColor' opacity='0.6'>b</text>
-  <text x="300" y="180" font-size='11' fill='currentColor' opacity='0.6'>c</text>
+  <!-- Left set oval -->
+  <ellipse cx="75" cy="120" rx="40" ry="70" fill="transparent" stroke="#4f8ef7" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="75" cy="80" r="5" fill="#4f8ef7"/>
+  <circle cx="75" cy="120" r="5" fill="#4f8ef7"/>
+  <circle cx="75" cy="160" r="5" fill="#4f8ef7"/>
+  <text x="50" y="84" font-size="11" fill="currentColor" opacity="0.7" text-anchor="end">1</text>
+  <text x="50" y="124" font-size="11" fill="currentColor" opacity="0.7" text-anchor="end">2</text>
+  <text x="50" y="164" font-size="11" fill="currentColor" opacity="0.7" text-anchor="end">3</text>
+  <text x="75" y="218" font-size="12" fill="currentColor" text-anchor="middle">A = {1, 2, 3}</text>
 
-  <!-- Arrows for relation -->
-  <line x1="65" y1="80" x2="260" y2="130" stroke='#4f8ef7' stroke-width="1.5"/>
-  <line x1="65" y1="80" x2="260" y2="170" stroke='#4f8ef7' stroke-width="1.5"/>
-  <line x1="65" y1="120" x2="260" y2="170" stroke='#4f8ef7' stroke-width="1.5"/>
+  <!-- Right set oval -->
+  <ellipse cx="275" cy="120" rx="40" ry="70" fill="transparent" stroke="#4f8ef7" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <circle cx="275" cy="80" r="5" fill="#4f8ef7"/>
+  <circle cx="275" cy="120" r="5" fill="#4f8ef7"/>
+  <circle cx="275" cy="160" r="5" fill="#4f8ef7"/>
+  <text x="300" y="84" font-size="11" fill="currentColor" opacity="0.7">a</text>
+  <text x="300" y="124" font-size="11" fill="currentColor" opacity="0.7">b</text>
+  <text x="300" y="164" font-size="11" fill="currentColor" opacity="0.7">c</text>
+  <text x="275" y="218" font-size="12" fill="currentColor" text-anchor="middle">B = {a, b, c}</text>
 
-  <text x="160" y="25" font-size='11' fill='currentColor' opacity='0.6'>R: 1→{b,c}, 2→{c}</text>
+  <!-- Arrows for relation: 1→b, 1→c, 2→c -->
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#4f8ef7"/>
+    </marker>
+  </defs>
+  <line x1="80" y1="80" x2="268" y2="118" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="80" y1="80" x2="268" y2="158" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="80" y1="120" x2="268" y2="158" stroke="#4f8ef7" stroke-width="1.5" marker-end="url(#arrowhead)"/>
 </svg>
 
 <p style="margin-top: 12px">The arrows show which pairs are in the relation. Notice 3 has no outgoing arrows.</p>

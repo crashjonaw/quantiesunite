@@ -21,39 +21,39 @@ SECTIONS = [
 <h3>Visual Example: Perfect Matching</h3>
 <p>Look at this perfect one-to-one match. Each number from \\(1\\) to \\(3\\) pairs with exactly one object:</p>
 
-<svg viewBox="0 0 400 200" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
-  <!-- Title -->
-  <text x="200" y="20" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Perfect One-to-One Match</text>
-
-  <!-- Numbers -->
-  <text x="60" y="70" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>1</text>
-  <text x="60" y="110" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>2</text>
-  <text x="60" y="150" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>3</text>
-
-  <!-- Arrows -->
-  <line x1="75" y1="66" x2="210" y2="66" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="75" y1="106" x2="210" y2="106" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead)"/>
-  <line x1="75" y1="146" x2="210" y2="146" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <!-- Objects -->
-  <circle cx="280" cy="66" r="15" fill='#d32f2f'/>
-  <circle cx="280" cy="106" r="15" fill='#d32f2f'/>
-  <circle cx="280" cy="146" r="15" fill='#d32f2f'/>
-
-  <!-- Object labels -->
-  <text x="310" y="70" font-size='12' fill='currentColor'>apple</text>
-  <text x="310" y="110" font-size='12' fill='currentColor'>apple</text>
-  <text x="310" y="150" font-size='12' fill='currentColor'>apple</text>
-
+<svg viewBox="0 0 370 185" style="width:100%;max-width:470px;height:auto;display:block;margin:20px auto;">
   <!-- Arrow marker definition -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <marker id="arrowhead-oto" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <polygon points="0 0, 10 3, 0 6" fill='#4169E1'/>
     </marker>
   </defs>
 
+  <!-- Title -->
+  <text x="185" y="22" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Perfect One-to-One Match</text>
+
+  <!-- Numbers -->
+  <text x="50" y="65" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>1</text>
+  <text x="50" y="105" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>2</text>
+  <text x="50" y="145" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>3</text>
+
+  <!-- Arrows -->
+  <line x1="65" y1="61" x2="195" y2="61" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead-oto)"/>
+  <line x1="65" y1="101" x2="195" y2="101" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead-oto)"/>
+  <line x1="65" y1="141" x2="195" y2="141" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead-oto)"/>
+
+  <!-- Objects -->
+  <circle cx="230" cy="61" r="15" fill='#d32f2f'/>
+  <circle cx="230" cy="101" r="15" fill='#d32f2f'/>
+  <circle cx="230" cy="141" r="15" fill='#d32f2f'/>
+
+  <!-- Object labels -->
+  <text x="260" y="65" font-size='12' fill='currentColor'>apple</text>
+  <text x="260" y="105" font-size='12' fill='currentColor'>apple</text>
+  <text x="260" y="145" font-size='12' fill='currentColor'>apple</text>
+
   <!-- Label -->
-  <text x="200" y="190" text-anchor='middle' font-size='12' fill='currentColor'>Each number → one object ✓</text>
+  <text x="185" y="175" text-anchor='middle' font-size='12' fill='currentColor'>Each number → one object</text>
 </svg>
 
 <div class="mcq-group">
@@ -136,27 +136,32 @@ SECTIONS = [
 <h3>Strategy #2: Make a Line and Push Objects Aside</h3>
 <p>Arrange objects in a line. As you count each one, push it to the side. This shows clearly which objects you've counted.</p>
 
-<svg viewBox="0 0 400 180" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+<svg viewBox="0 0 430 145" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
   <!-- Before -->
-  <text x="95" y="30" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Before:</text>
-  <circle cx="50" cy="70" r="12" fill='#d32f2f'/>
-  <circle cx="80" cy="70" r="12" fill='#d32f2f'/>
-  <circle cx="110" cy="70" r="12" fill='#d32f2f'/>
-  <circle cx="140" cy="70" r="12" fill='#d32f2f'/>
+  <text x="85" y="22" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Before:</text>
+  <circle cx="35" cy="60" r="12" fill='#d32f2f'/>
+  <circle cx="65" cy="60" r="12" fill='#d32f2f'/>
+  <circle cx="95" cy="60" r="12" fill='#d32f2f'/>
+  <circle cx="125" cy="60" r="12" fill='#d32f2f'/>
 
   <!-- Arrow -->
-  <text x="200" y="80" font-size='20' fill='currentColor'>→</text>
+  <text x="195" y="65" text-anchor='middle' font-size='22' fill='currentColor'>→</text>
 
   <!-- After -->
-  <text x="295" y="30" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>After Counting:</text>
-  <circle cx="250" cy="70" r="12" fill='#d32f2f' opacity='0.3'/>
-  <circle cx="280" cy="70" r="12" fill='#d32f2f' opacity='0.3'/>
-  <circle cx="310" cy="70" r="12" fill='#d32f2f' opacity='0.3'/>
-  <circle cx="340" cy="70" r="12" fill='#22c55e'/>
-  <text x="340" y="120" text-anchor='middle' font-size='12' fill='#22c55e'>counted ✓</text>
+  <text x="330" y="22" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>After Counting:</text>
+  <circle cx="260" cy="60" r="12" fill='#d32f2f' opacity='0.3'/>
+  <circle cx="300" cy="60" r="12" fill='#d32f2f' opacity='0.3'/>
+  <circle cx="340" cy="60" r="12" fill='#d32f2f' opacity='0.3'/>
+  <circle cx="380" cy="60" r="12" fill='#22c55e'/>
 
-  <!-- Labels -->
-  <text x="200" y="160" text-anchor='middle' font-size='12' fill='currentColor'>Counted (moved aside) → Next to count</text>
+  <!-- Labels under each "after" circle -->
+  <text x="260" y="95" text-anchor='middle' font-size='11' fill='currentColor'>done</text>
+  <text x="300" y="95" text-anchor='middle' font-size='11' fill='currentColor'>done</text>
+  <text x="340" y="95" text-anchor='middle' font-size='11' fill='currentColor'>done</text>
+  <text x="380" y="95" text-anchor='middle' font-size='11' fill='#22c55e'>next</text>
+
+  <!-- Bottom label -->
+  <text x="215" y="130" text-anchor='middle' font-size='12' fill='currentColor'>Counted (moved aside) → Next to count</text>
 </svg>
 
 <h3>Strategy #3: Count Slowly and Deliberately</h3>

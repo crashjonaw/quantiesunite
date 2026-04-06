@@ -72,25 +72,37 @@ SECTIONS = [
 
         <p><strong>Visualizing with a Venn diagram:</strong></p>
 
-        <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; margin: 20px 0; border-radius: 8px">
+        <svg viewBox="-15 -15 530 410" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; margin: 20px 0; border-radius: 8px">
+            <!-- Universal set rectangle -->
+            <rect x="0" y="0" width="500" height="380" rx="4" fill='none' stroke='currentColor' stroke-opacity='0.3' stroke-width="1.5"/>
+            <text x="16" y="24" fill='currentColor' font-size='14' font-family='sans-serif' font-style='italic'>U</text>
+
             <!-- Circle A -->
-            <circle cx="150" cy="175" r="100" fill='#4f8ef7' opacity='0.3' stroke='#4f8ef7' stroke-width="2"/>
+            <circle cx="180" cy="180" r="110" fill='#4f8ef7' fill-opacity='0.25' stroke='#4f8ef7' stroke-width="2"/>
             <!-- Circle B -->
-            <circle cx="350" cy="175" r="100" fill='#7ee787' opacity='0.3' stroke='#7ee787' stroke-width="2"/>
+            <circle cx="320" cy="180" r="110" fill='#7ee787' fill-opacity='0.25' stroke='#7ee787' stroke-width="2"/>
 
-            <!-- Labels -->
-            <text x="110" y="140" fill='currentColor' font-size='16' font-weight='bold'>A</text>
-            <text x="390" y="140" fill='currentColor' font-size='16' font-weight='bold'>B</text>
-            <text x="250" y="185" fill='currentColor' font-size='14' font-weight='bold'>A ∩ B</text>
+            <!-- Set labels inside circles -->
+            <text x="120" y="175" fill='currentColor' font-size='18' font-family='sans-serif' font-weight='bold' text-anchor='middle'>A</text>
+            <text x="380" y="175" fill='currentColor' font-size='18' font-family='sans-serif' font-weight='bold' text-anchor='middle'>B</text>
 
-            <!-- Descriptive text -->
-            <text x="20" y="30" fill='currentColor' font-size='14'>Blue region: Only A</text>
-            <text x="20" y="55" fill='currentColor' font-size='14'>Green region: Only B</text>
-            <text x="20" y="80" fill='currentColor' font-size='14'>Purple overlap: Both A and B</text>
+            <!-- Overlap label -->
+            <text x="250" y="185" fill='currentColor' font-size='14' font-family='sans-serif' font-weight='bold' text-anchor='middle'>A &#x2229; B</text>
+
+            <!-- Legend -->
+            <rect x="20" y="310" width="14" height="14" rx="4" fill='#4f8ef7' fill-opacity='0.4'/>
+            <text x="42" y="322" fill='currentColor' font-size='13' font-family='sans-serif'>Only A</text>
+
+            <rect x="130" y="310" width="14" height="14" rx="4" fill='#7ee787' fill-opacity='0.4'/>
+            <text x="152" y="322" fill='currentColor' font-size='13' font-family='sans-serif'>Only B</text>
+
+            <rect x="240" y="310" width="14" height="14" rx="4" fill='#4f8ef7' fill-opacity='0.25'/>
+            <rect x="240" y="310" width="14" height="14" rx="4" fill='#7ee787' fill-opacity='0.25'/>
+            <text x="262" y="322" fill='currentColor' font-size='13' font-family='sans-serif'>Both A and B</text>
 
             <!-- Formula annotation -->
-            <text x="20" y="310" fill='currentColor' font-size='13' font-family='monospace'>P(A or B) = P(A) + P(B) − P(A ∩ B)</text>
-            <text x="20" y="330" fill='currentColor' opacity='0.6' font-size='12' font-family='monospace'>= (blue area) + (green area) − (purple area counted twice)</text>
+            <rect x="20" y="345" width="460" height="26" rx="4" fill='currentColor' fill-opacity='0.06' stroke='none'/>
+            <text x="250" y="363" fill='currentColor' font-size='13' font-family='sans-serif' text-anchor='middle'>P(A or B) = P(A) + P(B) &#x2212; P(A &#x2229; B)</text>
         </svg>
 
         <div class="worked-example">

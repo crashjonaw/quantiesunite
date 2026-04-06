@@ -77,36 +77,27 @@ $$x = \\frac{3y+1}{y-2}$$
 </div>
 
 <div style="margin: 20px auto; text-align: center;">
-<svg width="400" height="400" viewBox="0 0 400 400" >
-<defs>
-</defs>
-<g class="gridline">
-<line x1="50" y1="200" x2="350" y2="200" />
-<line x1="200" y1="50" x2="200" y2="350" />
-</g>
-<g class="axis">
-<line x1="30" y1="200" x2="370" y2="200" stroke-width="2" />
-<line x1="200" y1="30" x2="200" y2="370" stroke-width="2" />
-<text x="360" y="195" class="label">x</text>
-<text x="205" y="30" class="label">y</text>
-</g>
-<g class="diag">
-<line x1="50" y1="350" x2="350" y2="50" />
-<text x="320" y="80" class="label" fill='currentColor' opacity='0.6'>y = x</text>
-</g>
-<g class="curve">
-<path d="M 100 320 Q 150 250, 200 200 Q 250 150, 300 100" />
-<text x="310" y="100" class="label" fill='#2563eb'>f</text>
-</g>
-<g class="inverse">
-<path d="M 320 100 Q 250 150, 200 200 Q 150 250, 100 320" />
-<text x="110" y="320" class="label" fill='#dc2626'>f⁻¹</text>
-</g>
-<circle cx="250" cy="150" r="3" fill='#2563eb' />
-<circle cx="150" cy="250" r="3" fill='#dc2626' />
-<line x1="250" y1="150" x2="150" y2="250" stroke='#30363d' stroke-width="1" stroke-dasharray="3,3" />
+<svg width="400" height="400" viewBox="15 15 370 370">
+<!-- Axes -->
+<line x1="30" y1="200" x2="370" y2="200" stroke="currentColor" stroke-width="1.5" />
+<line x1="200" y1="30" x2="200" y2="370" stroke="currentColor" stroke-width="1.5" />
+<text x="358" y="192" font-family="serif" font-size="13" fill="currentColor">x</text>
+<text x="208" y="42" font-family="serif" font-size="13" fill="currentColor">y</text>
+<!-- Diagonal y = x -->
+<line x1="50" y1="350" x2="350" y2="50" stroke="currentColor" stroke-width="1" stroke-dasharray="5,5" opacity="0.5" />
+<text x="310" y="72" font-family="serif" font-size="12" fill="currentColor" opacity="0.6">y = x</text>
+<!-- f curve (blue) -->
+<path d="M 100 320 Q 150 250, 200 200 Q 250 150, 300 100" stroke="#2563eb" stroke-width="2" fill="none" />
+<text x="310" y="96" font-family="serif" font-size="13" fill="#2563eb">f</text>
+<!-- f inverse curve (red) -->
+<path d="M 320 100 Q 250 150, 200 200 Q 150 250, 100 320" stroke="#dc2626" stroke-width="2" fill="none" />
+<text x="78" y="332" font-family="serif" font-size="13" fill="#dc2626">f⁻¹</text>
+<!-- Corresponding points -->
+<circle cx="250" cy="150" r="4" fill="#2563eb" />
+<circle cx="150" cy="250" r="4" fill="#dc2626" />
+<line x1="250" y1="150" x2="150" y2="250" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3" opacity="0.4" />
 </svg>
-<p style="font-size: 12px"><em>Red curve (f⁻¹) is reflection of blue curve (f) across y = x</em></p>
+<p style="font-size: 12px;"><em>Red curve (f⁻¹) is reflection of blue curve (f) across y = x</em></p>
 </div>
 
 <h3>Horizontal Line Test</h3>

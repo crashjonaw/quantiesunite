@@ -26,48 +26,56 @@ SECTIONS = [
 
         <h4>Visual Representation</h4>
 
-        <svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
+        <svg viewBox="0 0 340 270" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
             <defs>
                 <marker id="arrow4" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                    <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7' />
+                    <polygon points="0 0, 10 3, 0 6" fill='#2da44e' />
                 </marker>
             </defs>
+            <!-- Background -->
+            <rect x="15" y="15" width="310" height="240" rx="4" fill='#161b22' stroke='#30363d' stroke-width="1"/>
 
             <!-- Axes -->
-            <line x1="30" y1="200" x2="280" y2="200" stroke='#30363d' stroke-width="1.5"/>
-            <line x1="30" y1="30" x2="30" y2="200" stroke='#30363d' stroke-width="1.5"/>
+            <line x1="50" y1="210" x2="290" y2="210" stroke='#30363d' stroke-width="1.5"/>
+            <line x1="50" y1="40" x2="50" y2="210" stroke='#30363d' stroke-width="1.5"/>
 
             <!-- Grid -->
-            <line x1="30" y1="120" x2="280" y2="120" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
-            <line x1="30" y1="40" x2="280" y2="40" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
-            <line x1="30" y1="160" x2="280" y2="160" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
-            <line x1="110" y1="30" x2="110" y2="200" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
-            <line x1="190" y1="30" x2="190" y2="200" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
-            <line x1="270" y1="30" x2="270" y2="200" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
+            <line x1="50" y1="153" x2="290" y2="153" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
+            <line x1="50" y1="96" x2="290" y2="96" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
+            <line x1="130" y1="40" x2="130" y2="210" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
+            <line x1="210" y1="40" x2="210" y2="210" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
+            <line x1="290" y1="40" x2="290" y2="210" stroke='#30363d' stroke-width="0.5" opacity='0.3'/>
+
+            <!-- Tick labels -->
+            <text x="130" y="225" fill='currentColor' opacity='0.5' font-size='10' font-family='sans-serif' text-anchor='middle'>1</text>
+            <text x="210" y="225" fill='currentColor' opacity='0.5' font-size='10' font-family='sans-serif' text-anchor='middle'>2</text>
+            <text x="290" y="225" fill='currentColor' opacity='0.5' font-size='10' font-family='sans-serif' text-anchor='middle'>3</text>
+            <text x="38" y="156" fill='currentColor' opacity='0.5' font-size='10' font-family='sans-serif' text-anchor='end'>1</text>
+            <text x="38" y="99" fill='currentColor' opacity='0.5' font-size='10' font-family='sans-serif' text-anchor='end'>2</text>
 
             <!-- Origin -->
-            <circle cx="30" cy="200" r="5" fill='#4f8ef7'/>
-            <text x="15" y="220" fill='currentColor' font-size='12' font-weight='bold'>O</text>
+            <circle cx="50" cy="210" r="5" fill='#4f8ef7'/>
+            <text x="35" y="228" fill='currentColor' font-size='12' font-weight='bold' font-family='sans-serif'>O</text>
 
             <!-- Point P(3, 2) -->
-            <circle cx="270" cy="40" r="5" fill='#2da44e'/>
-            <text x="275" y="35" fill='currentColor' font-size='12'>P(3, 2)</text>
+            <circle cx="290" cy="96" r="5" fill='#2da44e'/>
+            <text x="275" y="82" fill='currentColor' font-size='12' font-family='sans-serif'>P(3, 2)</text>
 
             <!-- Position vector OP -->
-            <line x1="30" y1="200" x2="270" y2="40" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow4)"/>
-            <text x="70" y="175" fill='#2da44e' font-size='11' font-weight='bold'>\\(\\vec{OP}\\)</text>
+            <line x1="50" y1="210" x2="287" y2="99" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow4)"/>
+            <text x="120" y="180" fill='#2da44e' font-size='12' font-weight='bold' font-family='sans-serif'>OP</text>
 
             <!-- Dashed construction -->
-            <line x1="270" y1="200" x2="270" y2="40" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2" opacity='0.6'/>
-            <line x1="30" y1="200" x2="270" y2="200" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2" opacity='0.6'/>
+            <line x1="290" y1="210" x2="290" y2="96" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" opacity='0.5'/>
+            <line x1="50" y1="210" x2="290" y2="210" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" opacity='0.5'/>
 
             <!-- Component labels -->
-            <text x="150" y="210" fill='currentColor' opacity='0.6' font-size='10' text-anchor='middle'>3</text>
-            <text x="280" y="120" fill='currentColor' opacity='0.6' font-size='10'>2</text>
+            <text x="170" y="235" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif' text-anchor='middle'>3 units</text>
+            <text x="305" y="156" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif'>2 units</text>
 
             <!-- Axis labels -->
-            <text x="270" y="215" fill='currentColor' opacity='0.6' font-size='11'>x</text>
-            <text x="15" y="25" fill='currentColor' opacity='0.6' font-size='11'>y</text>
+            <text x="295" y="207" fill='currentColor' opacity='0.5' font-size='11' font-family='sans-serif'>x</text>
+            <text x="53" y="46" fill='currentColor' opacity='0.5' font-size='11' font-family='sans-serif'>y</text>
         </svg>
 
         <p style="text-align: center; margin-top: 15px">
@@ -109,36 +117,45 @@ SECTIONS = [
             <p>\\(|AB| = \\sqrt{(5-1)^2 + (6-2)^2} = \\sqrt{16 + 16} = \\sqrt{32} = 4\\sqrt{2} \\approx 5.66\\)</p>
         </div>
 
-        <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
+        <svg viewBox="0 0 310 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
             <defs>
                 <marker id="arrow5" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                     <polygon points="0 0, 10 3, 0 6" fill='#f85149' />
                 </marker>
             </defs>
+            <!-- Background -->
+            <rect x="15" y="15" width="280" height="230" rx="4" fill='#161b22' stroke='#30363d' stroke-width="1"/>
 
             <!-- Axes -->
-            <line x1="30" y1="200" x2="280" y2="200" stroke='#30363d' stroke-width="1.5"/>
-            <line x1="30" y1="30" x2="30" y2="200" stroke='#30363d' stroke-width="1.5"/>
+            <line x1="45" y1="205" x2="275" y2="205" stroke='#30363d' stroke-width="1.5"/>
+            <line x1="45" y1="35" x2="45" y2="205" stroke='#30363d' stroke-width="1.5"/>
 
             <!-- Point A -->
-            <circle cx="60" cy="140" r="5" fill='#4f8ef7'/>
-            <text x="45" y="135" fill='currentColor' font-size='12'>A(1,2)</text>
+            <circle cx="90" cy="160" r="5" fill='#4f8ef7'/>
+            <text x="60" y="155" fill='currentColor' font-size='12' font-family='sans-serif'>A(1, 2)</text>
 
             <!-- Point B -->
-            <circle cx="180" cy="20" r="5" fill='#2da44e'/>
-            <text x="185" y="15" fill='currentColor' font-size='12'>B(5,6)</text>
+            <circle cx="230" cy="60" r="5" fill='#2da44e'/>
+            <text x="237" y="55" fill='currentColor' font-size='12' font-family='sans-serif'>B(5, 6)</text>
 
             <!-- Vector AB -->
-            <line x1="60" y1="140" x2="180" y2="20" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow5)"/>
-            <text x="115" y="70" fill='#f85149' font-size='11' font-weight='bold'>\\(\\vec{AB}\\)</text>
+            <line x1="90" y1="160" x2="227" y2="63" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow5)"/>
+            <text x="140" y="95" fill='#f85149' font-size='12' font-weight='bold' font-family='sans-serif'>AB</text>
 
             <!-- Right triangle for distance -->
-            <line x1="60" y1="140" x2="180" y2="140" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2"/>
-            <line x1="180" y1="140" x2="180" y2="20" stroke='#8b949e' stroke-width="1" stroke-dasharray="2,2"/>
+            <line x1="90" y1="160" x2="230" y2="160" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+            <line x1="230" y1="160" x2="230" y2="60" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/>
+
+            <!-- Right angle indicator -->
+            <rect x="220" y="150" width="10" height="10" fill='none' stroke='#8b949e' stroke-width="1" opacity="0.5"/>
 
             <!-- Labels -->
-            <text x="120" y="155" fill='currentColor' opacity='0.6' font-size='10'>4 units</text>
-            <text x="195" y="80" fill='currentColor' opacity='0.6' font-size='10'>4 units</text>
+            <text x="160" y="178" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif' text-anchor='middle'>4 units</text>
+            <text x="248" y="115" fill='currentColor' opacity='0.6' font-size='11' font-family='sans-serif'>4 units</text>
+
+            <!-- Axis labels -->
+            <text x="270" y="220" fill='currentColor' opacity='0.5' font-size='11' font-family='sans-serif'>x</text>
+            <text x="48" y="42" fill='currentColor' opacity='0.5' font-size='11' font-family='sans-serif'>y</text>
         </svg>
         """
     },

@@ -34,77 +34,77 @@ It also shows us that two smaller parts can combine to make one bigger number.</
         "body": """<h3>Every Way to Make 5</h3>
 <p>There are exactly 6 different ways to add two numbers and get 5:</p>
 
-<svg viewBox="0 0 600 500" style="width: 100%; max-width: 600px; height: auto; display: block; margin: 20px auto;">
+<svg viewBox="0 0 540 360" style="width: 100%; max-width: 560px; height: auto; display: block; margin: 20px auto;">
   <!-- Header -->
-  <text x="300" y="25" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>
-    All Number Bonds for 5
-  </text>
+  <text x="270" y="22" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>All Number Bonds for 5</text>
 
-  <!-- Row 1: 5 = 0 + 5 -->
-  <circle cx="100" cy="80" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="87" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
-  <circle cx="60" cy="130" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-  <text x="60" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>0</text>
-  <circle cx="140" cy="130" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-  <text x="140" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>5</text>
-  <line x1="90" y1="100" x2="65" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <line x1="110" y1="100" x2="135" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="160" text-anchor='middle' font-size='12' fill='currentColor'>0 + 5 = 5</text>
+  <!-- Row 1: 0+5, 1+4, 2+3 — evenly at x=90, 270, 450 -->
+  <!-- 0 + 5 -->
+  <circle cx="90" cy="75" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
+  <text x="90" y="82" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
+  <line x1="78" y1="93" x2="58" y2="110" stroke='#8b949e' stroke-width="2"/>
+  <line x1="102" y1="93" x2="122" y2="110" stroke='#8b949e' stroke-width="2"/>
+  <circle cx="50" cy="125" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+  <text x="50" y="131" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>0</text>
+  <circle cx="130" cy="125" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+  <text x="130" y="131" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>5</text>
+  <text x="90" y="158" text-anchor='middle' font-size='12' fill='currentColor'>0 + 5 = 5</text>
 
-  <!-- Row 2: 5 = 1 + 4 -->
-  <circle cx="280" cy="80" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
-  <text x="280" y="87" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
-  <circle cx="240" cy="130" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-  <text x="240" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>1</text>
-  <circle cx="320" cy="130" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-  <text x="320" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>4</text>
-  <line x1="270" y1="100" x2="245" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <line x1="290" y1="100" x2="315" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <text x="280" y="160" text-anchor='middle' font-size='12' fill='currentColor'>1 + 4 = 5</text>
+  <!-- 1 + 4 -->
+  <circle cx="270" cy="75" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
+  <text x="270" y="82" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
+  <line x1="258" y1="93" x2="238" y2="110" stroke='#8b949e' stroke-width="2"/>
+  <line x1="282" y1="93" x2="302" y2="110" stroke='#8b949e' stroke-width="2"/>
+  <circle cx="230" cy="125" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+  <text x="230" y="131" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>1</text>
+  <circle cx="310" cy="125" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+  <text x="310" y="131" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>4</text>
+  <text x="270" y="158" text-anchor='middle' font-size='12' fill='currentColor'>1 + 4 = 5</text>
 
-  <!-- Row 3: 5 = 2 + 3 -->
-  <circle cx="460" cy="80" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
-  <text x="460" y="87" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
-  <circle cx="420" cy="130" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-  <text x="420" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>2</text>
-  <circle cx="500" cy="130" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-  <text x="500" y="135" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>3</text>
-  <line x1="450" y1="100" x2="425" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <line x1="470" y1="100" x2="495" y2="120" stroke='#8b949e' stroke-width="2"/>
-  <text x="460" y="160" text-anchor='middle' font-size='12' fill='currentColor'>2 + 3 = 5</text>
+  <!-- 2 + 3 -->
+  <circle cx="450" cy="75" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
+  <text x="450" y="82" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
+  <line x1="438" y1="93" x2="418" y2="110" stroke='#8b949e' stroke-width="2"/>
+  <line x1="462" y1="93" x2="482" y2="110" stroke='#8b949e' stroke-width="2"/>
+  <circle cx="410" cy="125" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+  <text x="410" y="131" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>2</text>
+  <circle cx="490" cy="125" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+  <text x="490" y="131" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>3</text>
+  <text x="450" y="158" text-anchor='middle' font-size='12' fill='currentColor'>2 + 3 = 5</text>
 
-  <!-- Row 4: 5 = 3 + 2 -->
-  <circle cx="100" cy="260" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="267" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
-  <circle cx="60" cy="310" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-  <text x="60" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>3</text>
-  <circle cx="140" cy="310" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-  <text x="140" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>2</text>
-  <line x1="90" y1="280" x2="65" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <line x1="110" y1="280" x2="135" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <text x="100" y="340" text-anchor='middle' font-size='12' fill='currentColor'>3 + 2 = 5</text>
+  <!-- Row 2: 3+2, 4+1, 5+0 — evenly at x=90, 270, 450 -->
+  <!-- 3 + 2 -->
+  <circle cx="90" cy="220" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
+  <text x="90" y="227" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
+  <line x1="78" y1="238" x2="58" y2="255" stroke='#8b949e' stroke-width="2"/>
+  <line x1="102" y1="238" x2="122" y2="255" stroke='#8b949e' stroke-width="2"/>
+  <circle cx="50" cy="270" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+  <text x="50" y="276" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>3</text>
+  <circle cx="130" cy="270" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+  <text x="130" y="276" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>2</text>
+  <text x="90" y="303" text-anchor='middle' font-size='12' fill='currentColor'>3 + 2 = 5</text>
 
-  <!-- Row 5: 5 = 4 + 1 -->
-  <circle cx="280" cy="260" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
-  <text x="280" y="267" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
-  <circle cx="240" cy="310" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-  <text x="240" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>4</text>
-  <circle cx="320" cy="310" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-  <text x="320" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>1</text>
-  <line x1="270" y1="280" x2="245" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <line x1="290" y1="280" x2="315" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <text x="280" y="340" text-anchor='middle' font-size='12' fill='currentColor'>4 + 1 = 5</text>
+  <!-- 4 + 1 -->
+  <circle cx="270" cy="220" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
+  <text x="270" y="227" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
+  <line x1="258" y1="238" x2="238" y2="255" stroke='#8b949e' stroke-width="2"/>
+  <line x1="282" y1="238" x2="302" y2="255" stroke='#8b949e' stroke-width="2"/>
+  <circle cx="230" cy="270" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+  <text x="230" y="276" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>4</text>
+  <circle cx="310" cy="270" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+  <text x="310" y="276" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>1</text>
+  <text x="270" y="303" text-anchor='middle' font-size='12' fill='currentColor'>4 + 1 = 5</text>
 
-  <!-- Row 6: 5 = 5 + 0 -->
-  <circle cx="460" cy="260" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
-  <text x="460" y="267" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
-  <circle cx="420" cy="310" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
-  <text x="420" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>5</text>
-  <circle cx="500" cy="310" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
-  <text x="500" y="315" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>0</text>
-  <line x1="450" y1="280" x2="425" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <line x1="470" y1="280" x2="495" y2="300" stroke='#8b949e' stroke-width="2"/>
-  <text x="460" y="340" text-anchor='middle' font-size='12' fill='currentColor'>5 + 0 = 5</text>
+  <!-- 5 + 0 -->
+  <circle cx="450" cy="220" r="20" fill='#4169E1' stroke='#8b949e' stroke-width="2"/>
+  <text x="450" y="227" text-anchor='middle' fill='white' font-size='16' font-weight='bold'>5</text>
+  <line x1="438" y1="238" x2="418" y2="255" stroke='#8b949e' stroke-width="2"/>
+  <line x1="462" y1="238" x2="482" y2="255" stroke='#8b949e' stroke-width="2"/>
+  <circle cx="410" cy="270" r="16" fill='#22c55e' stroke='#8b949e' stroke-width="2"/>
+  <text x="410" y="276" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>5</text>
+  <circle cx="490" cy="270" r="16" fill='#f59e0b' stroke='#8b949e' stroke-width="2"/>
+  <text x="490" y="276" text-anchor='middle' fill='white' font-size='14' font-weight='bold'>0</text>
+  <text x="450" y="303" text-anchor='middle' font-size='12' fill='currentColor'>5 + 0 = 5</text>
 </svg>
 
 <h3>See the Pattern?</h3>

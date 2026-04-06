@@ -210,19 +210,21 @@ SECTIONS = [
        <p style="text-align: center; letter-spacing: 10px;">🍎 &nbsp; 🍎 &nbsp; 🍎 &nbsp; 🍎</p>
 
        <p style="text-align: center; margin-top: 20px; font-size: 16px; margin-bottom: 10px;"><strong>After (ordered from smallest to biggest):</strong></p>
-       <svg viewBox="0 0 300 60" style="width: 100%; height: auto;">
+       <svg viewBox="0 0 340 90" style="width: 100%; max-width: 400px; height: auto; display: block; margin: 0 auto;">
          <!-- Apple 1 (smallest) -->
-         <circle cx="40" cy="35" r="8" fill="#d32f2f" opacity="0.8"/>
+         <circle cx="50" cy="35" r="8" fill="#d32f2f" opacity="0.8"/>
          <!-- Apple 2 -->
-         <circle cx="100" cy="35" r="12" fill="#d32f2f" opacity="0.8"/>
+         <circle cx="130" cy="35" r="12" fill="#d32f2f" opacity="0.8"/>
          <!-- Apple 3 -->
-         <circle cx="160" cy="35" r="16" fill="#d32f2f" opacity="0.8"/>
+         <circle cx="210" cy="35" r="16" fill="#d32f2f" opacity="0.8"/>
          <!-- Apple 4 (biggest) -->
-         <circle cx="220" cy="35" r="20" fill="#d32f2f" opacity="0.8"/>
+         <circle cx="290" cy="35" r="20" fill="#d32f2f" opacity="0.8"/>
 
          <!-- Labels -->
-         <text x="40" y="55" text-anchor="middle" font-size="12" fill='currentColor'>small</text>
-         <text x="220" y="55" text-anchor="middle" font-size="12" fill='currentColor'>big</text>
+         <text x="50" y="75" text-anchor="middle" font-size="12" fill='currentColor'>small</text>
+         <text x="130" y="75" text-anchor="middle" font-size="12" fill='currentColor'>2</text>
+         <text x="210" y="75" text-anchor="middle" font-size="12" fill='currentColor'>3</text>
+         <text x="290" y="75" text-anchor="middle" font-size="12" fill='currentColor'>big</text>
        </svg>
      </div>
 

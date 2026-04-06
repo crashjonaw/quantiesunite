@@ -38,34 +38,34 @@ SECTIONS = [
 
 <p>Notice: each number is 2 more than the one before. This pattern never breaks.</p>
 
-<svg viewBox="0 0 400 120" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+<svg viewBox="0 0 390 110" style="width:100%;max-width:480px;height:auto;display:block;margin:20px auto;">
   <!-- Title -->
-  <text x="200" y="20" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Counting by 2s: Pairs of Objects</text>
+  <text x="195" y="18" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Counting by 2s: Pairs of Objects</text>
 
   <!-- Pair 1 -->
-  <circle cx="30" cy="60" r="10" fill='#4169E1'/>
-  <circle cx="50" cy="60" r="10" fill='#4169E1'/>
-  <text x="40" y="100" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>2</text>
+  <circle cx="30" cy="55" r="10" fill='#4169E1'/>
+  <circle cx="54" cy="55" r="10" fill='#4169E1'/>
+  <text x="42" y="90" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>2</text>
 
   <!-- Pair 2 -->
-  <circle cx="100" cy="60" r="10" fill='#4169E1'/>
-  <circle cx="120" cy="60" r="10" fill='#4169E1'/>
-  <text x="110" y="100" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>4</text>
+  <circle cx="102" cy="55" r="10" fill='#4169E1'/>
+  <circle cx="126" cy="55" r="10" fill='#4169E1'/>
+  <text x="114" y="90" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>4</text>
 
   <!-- Pair 3 -->
-  <circle cx="170" cy="60" r="10" fill='#4169E1'/>
-  <circle cx="190" cy="60" r="10" fill='#4169E1'/>
-  <text x="180" y="100" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6</text>
+  <circle cx="174" cy="55" r="10" fill='#4169E1'/>
+  <circle cx="198" cy="55" r="10" fill='#4169E1'/>
+  <text x="186" y="90" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6</text>
 
   <!-- Pair 4 -->
-  <circle cx="240" cy="60" r="10" fill='#4169E1'/>
-  <circle cx="260" cy="60" r="10" fill='#4169E1'/>
-  <text x="250" y="100" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>8</text>
+  <circle cx="246" cy="55" r="10" fill='#4169E1'/>
+  <circle cx="270" cy="55" r="10" fill='#4169E1'/>
+  <text x="258" y="90" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>8</text>
 
   <!-- Pair 5 -->
-  <circle cx="310" cy="60" r="10" fill='#4169E1'/>
-  <circle cx="330" cy="60" r="10" fill='#4169E1'/>
-  <text x="320" y="100" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>10</text>
+  <circle cx="318" cy="55" r="10" fill='#4169E1'/>
+  <circle cx="342" cy="55" r="10" fill='#4169E1'/>
+  <text x="330" y="90" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>10</text>
 </svg>
 
 <h3>Counting by 5s: Making Groups of Five</h3>

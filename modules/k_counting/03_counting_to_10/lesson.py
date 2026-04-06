@@ -27,31 +27,31 @@ SECTIONS = [
   <li><strong>Point as you say:</strong> Point to objects and say numbers in order</li>
 </ul>
 
-<svg viewBox="0 0 400 100" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
-  <!-- Numbers 1-10 -->
-  <text x="20" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>1</text>
-  <text x="60" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>2</text>
-  <text x="100" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>3</text>
-  <text x="140" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>4</text>
-  <text x="180" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>5</text>
-  <text x="220" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>6</text>
-  <text x="260" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>7</text>
-  <text x="300" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>8</text>
-  <text x="340" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>9</text>
-  <text x="380" y="40" text-anchor='middle' font-size='24' font-weight='bold' fill='currentColor'>10</text>
-
-  <!-- Connecting line -->
-  <line x1="10" y1="60" x2="390" y2="60" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead)"/>
-
+<svg viewBox="0 0 420 95" style="width:100%;max-width:520px;height:auto;display:block;margin:20px auto;">
   <!-- Arrow marker -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <marker id="arrowhead-seq" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <polygon points="0 0, 10 3, 0 6" fill='#4169E1'/>
     </marker>
   </defs>
 
+  <!-- Numbers 1-10, evenly spaced -->
+  <text x="25" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>1</text>
+  <text x="67" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>2</text>
+  <text x="109" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>3</text>
+  <text x="151" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>4</text>
+  <text x="193" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>5</text>
+  <text x="235" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>6</text>
+  <text x="277" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>7</text>
+  <text x="319" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>8</text>
+  <text x="361" y="30" text-anchor='middle' font-size='22' font-weight='bold' fill='currentColor'>9</text>
+  <text x="400" y="30" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>10</text>
+
+  <!-- Connecting line -->
+  <line x1="15" y1="50" x2="405" y2="50" stroke='#4169E1' stroke-width="2" marker-end="url(#arrowhead-seq)"/>
+
   <!-- Label -->
-  <text x="200" y="95" text-anchor='middle' font-size='12' fill='currentColor'>The stable counting sequence</text>
+  <text x="210" y="82" text-anchor='middle' font-size='12' fill='currentColor'>The stable counting sequence</text>
 </svg>"""
     },
     {
@@ -78,30 +78,30 @@ SECTIONS = [
 <h3>Counting on Your Fingers</h3>
 <p>Your fingers are always with you! You can count on them to practice. When counting to 10, use both hands:</p>
 
-<svg viewBox="0 0 300 100" style="width:100%;max-width:400px;height:auto;display:block;margin:20px auto;">
+<svg viewBox="0 0 320 105" style="width:100%;max-width:400px;height:auto;display:block;margin:20px auto;">
   <!-- Left hand (5 fingers) -->
   <g>
-    <text x="50" y="20" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Left Hand</text>
-    <rect x="20" y="35" width="8" height="30" rx="4" fill='#4169E1'/> <!-- thumb -->
-    <rect x="32" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- index -->
-    <rect x="44" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- middle -->
-    <rect x="56" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- ring -->
-    <rect x="68" y="30" width="8" height="35" rx="4" fill='#4169E1'/> <!-- pinky -->
-    <text x="50" y="85" text-anchor='middle' font-size='11' fill='currentColor'>1, 2, 3, 4, 5</text>
+    <text x="60" y="18" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Left Hand</text>
+    <rect x="24" y="34" width="10" height="28" rx="4" fill='#4169E1'/>
+    <rect x="38" y="30" width="10" height="32" rx="4" fill='#4169E1'/>
+    <rect x="52" y="28" width="10" height="34" rx="4" fill='#4169E1'/>
+    <rect x="66" y="30" width="10" height="32" rx="4" fill='#4169E1'/>
+    <rect x="80" y="34" width="10" height="28" rx="4" fill='#4169E1'/>
+    <text x="60" y="88" text-anchor='middle' font-size='11' fill='currentColor'>1, 2, 3, 4, 5</text>
   </g>
 
   <!-- Plus sign -->
-  <text x="150" y="60" text-anchor='middle' font-size='24' fill='currentColor'>+</text>
+  <text x="160" y="55" text-anchor='middle' font-size='24' fill='currentColor'>+</text>
 
   <!-- Right hand (5 fingers) -->
   <g>
-    <text x="240" y="20" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Right Hand</text>
-    <rect x="210" y="35" width="8" height="30" rx="4" fill='#ef4444'/> <!-- thumb -->
-    <rect x="222" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- index -->
-    <rect x="234" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- middle -->
-    <rect x="246" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- ring -->
-    <rect x="258" y="30" width="8" height="35" rx="4" fill='#ef4444'/> <!-- pinky -->
-    <text x="240" y="85" text-anchor='middle' font-size='11' fill='currentColor'>6, 7, 8, 9, 10</text>
+    <text x="255" y="18" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>Right Hand</text>
+    <rect x="219" y="34" width="10" height="28" rx="4" fill='#ef4444'/>
+    <rect x="233" y="30" width="10" height="32" rx="4" fill='#ef4444'/>
+    <rect x="247" y="28" width="10" height="34" rx="4" fill='#ef4444'/>
+    <rect x="261" y="30" width="10" height="32" rx="4" fill='#ef4444'/>
+    <rect x="275" y="34" width="10" height="28" rx="4" fill='#ef4444'/>
+    <text x="255" y="88" text-anchor='middle' font-size='11' fill='currentColor'>6, 7, 8, 9, 10</text>
   </g>
 </svg>"""
     },

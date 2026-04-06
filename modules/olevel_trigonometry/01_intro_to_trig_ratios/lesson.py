@@ -17,26 +17,29 @@ SECTIONS = [
 <h3>Setting Up Our Triangle</h3>
 <p>Consider a right triangle with an angle \\(\\theta\\) (theta). Relative to this angle, the three sides have special names:</p>
 
-<svg viewBox="0 0 360 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:360px; margin:20px 0;">
+<svg viewBox="0 0 380 280" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:380px; margin:20px auto; display:block;">
   <defs>
-    </defs>
+    <marker id="arr-tri" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7'/>
+    </marker>
+  </defs>
 
   <!-- Right triangle -->
-  <line x1="50" y1="200" x2="250" y2="200" class="trig-line"/>
-  <line x1="250" y1="200" x2="250" y2="50" class="trig-line"/>
-  <line x1="50" y1="200" x2="250" y2="50" class="trig-line"/>
+  <line x1="50" y1="220" x2="270" y2="220" stroke='#4f8ef7' stroke-width="2"/>
+  <line x1="270" y1="220" x2="270" y2="60" stroke='#4f8ef7' stroke-width="2"/>
+  <line x1="50" y1="220" x2="270" y2="60" stroke='#4f8ef7' stroke-width="2"/>
 
   <!-- Right angle indicator -->
-  <rect x="240" y="190" width="10" height="10" fill='none' stroke='#4f8ef7' stroke-width="1"/>
+  <polyline points="258,220 258,208 270,208" fill='none' stroke='#4f8ef7' stroke-width="1.5"/>
 
-  <!-- Angle theta -->
-  <path d="M 80 200 A 30 30 0 0 0 90 175" fill='none' class="trig-line" stroke-width="1.5"/>
-  <text x="75" y="190" class="trig-label">θ</text>
+  <!-- Angle theta arc -->
+  <path d="M 85 220 A 35 35 0 0 0 74 195" fill='none' stroke='#e8b04f' stroke-width="2"/>
+  <text x="92" y="205" fill='#e8b04f' font-size='15' font-weight='bold'>θ</text>
 
-  <!-- Side labels with color coding -->
-  <text x="150" y="240" class="trig-label" text-anchor='middle' fill='currentColor' opacity='0.6'>Adjacent</text>
-  <text x="265" y="125" class="trig-label" fill='currentColor' opacity='0.6'>Opposite</text>
-  <text x="120" y="110" class="trig-label" text-anchor='middle' fill='#4f8ef7'>Hypotenuse</text>
+  <!-- Side labels -->
+  <text x="160" y="250" fill='currentColor' font-size='14' text-anchor='middle'>Adjacent</text>
+  <text x="290" y="145" fill='currentColor' font-size='14'>Opposite</text>
+  <text x="130" y="125" fill='#4f8ef7' font-size='14' font-weight='bold' text-anchor='middle' transform="rotate(-36, 130, 125)">Hypotenuse</text>
 </svg>
 
 <ul>

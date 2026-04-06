@@ -59,7 +59,7 @@ SECTIONS = [
   <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Parts of a Division Problem</text>
 
   <g fill='none' stroke='#22c55e' stroke-width="2">
-    <rect x="50" y="60" width="80" height="60" rx="5"/>
+    <rect x="50" y="60" width="80" height="60" rx="4"/>
   </g>
   <text x="90" y="95" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>12</text>
   <text x="90" y="130" text-anchor='middle' fill='currentColor' font-size='11'>Total amount</text>
@@ -67,7 +67,7 @@ SECTIONS = [
   <text x="150" y="100" text-anchor='middle' fill='currentColor' font-size='20' font-weight='bold'>÷</text>
 
   <g fill='none' stroke='#22c55e' stroke-width="2">
-    <rect x="180" y="60" width="80" height="60" rx="5"/>
+    <rect x="180" y="60" width="80" height="60" rx="4"/>
   </g>
   <text x="220" y="95" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>3</text>
   <text x="220" y="130" text-anchor='middle' fill='currentColor' font-size='11'>Number of groups</text>
@@ -75,7 +75,7 @@ SECTIONS = [
   <text x="280" y="100" text-anchor='middle' fill='currentColor' font-size='20' font-weight='bold'>=</text>
 
   <g fill='none' stroke='#22c55e' stroke-width="2">
-    <rect x="310" y="60" width="80" height="60" rx="5"/>
+    <rect x="310" y="60" width="80" height="60" rx="4"/>
   </g>
   <text x="350" y="95" text-anchor='middle' fill='currentColor' font-size='18' font-weight='bold'>4</text>
   <text x="350" y="130" text-anchor='middle' fill='currentColor' font-size='11'>Amount per group</text>
@@ -126,17 +126,20 @@ SECTIONS = [
   <text x="200" y="25" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>The Division Process</text>
 
   <circle cx="80" cy="100" r="35" fill='none' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="80" y="105" text-anchor='middle' fill='currentColor' font-size='13'>Start:<br/>12 cookies</text>
+  <text x="80" y="95" text-anchor='middle' fill='currentColor' font-size='13'>Start:</text>
+  <text x="80" y="115" text-anchor='middle' fill='currentColor' font-size='13'>12 cookies</text>
 
   <text x="140" y="105" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>→</text>
 
   <circle cx="200" cy="100" r="35" fill='none' stroke='#22c55e' stroke-width="2"/>
-  <text x="200" y="105" text-anchor='middle' fill='currentColor' font-size='13'>Divide into:<br/>3 groups</text>
+  <text x="200" y="95" text-anchor='middle' fill='currentColor' font-size='13'>Divide into</text>
+  <text x="200" y="115" text-anchor='middle' fill='currentColor' font-size='13'>3 groups</text>
 
   <text x="260" y="105" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>→</text>
 
   <circle cx="320" cy="100" r="35" fill='none' stroke='#f59e0b' stroke-width="2"/>
-  <text x="320" y="105" text-anchor='middle' fill='currentColor' font-size='13'>Each gets:<br/>4 cookies</text>
+  <text x="320" y="95" text-anchor='middle' fill='currentColor' font-size='13'>Each gets</text>
+  <text x="320" y="115" text-anchor='middle' fill='currentColor' font-size='13'>4 cookies</text>
 
   <text x="200" y="170" text-anchor='middle' fill='currentColor' font-size='13'>12 ÷ 3 = 4</text>
 </svg>"""

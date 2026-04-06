@@ -86,47 +86,49 @@ SECTIONS = [
 <h3>The 10-Frame Tool</h3>
 <p>A 10-frame is a \(2 \times 5\) grid that holds exactly 10 objects. It helps us see number bonds clearly:</p>
 
-<svg viewBox="0 0 280 150" style="width: 100%; max-width: 350px; height: auto; display: block; margin: 20px auto;">
+<svg viewBox="0 0 300 140" style="width: 100%; max-width: 350px; height: auto; display: block; margin: 20px auto;">
   <!-- Title -->
-  <text x="140" y="20" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6 + 4 = 10</text>
+  <text x="105" y="18" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>6 + 4 = 10</text>
 
-  <!-- Grid boxes -->
-  <g id="frame">
-    <!-- Row 1 -->
-    <rect x="20" y="40" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="35" y="60" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <!-- 10-frame: 2 rows x 5 columns, 6 blue + 4 green -->
+  <!-- Row 1: 5 blue -->
+  <rect x="15" y="32" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="30" y="52" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="55" y="40" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="70" y="60" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="50" y="32" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="65" y="52" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="90" y="40" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="105" y="60" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="85" y="32" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="100" y="52" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="125" y="40" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="140" y="60" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="120" y="32" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="135" y="52" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="160" y="40" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="175" y="60" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="155" y="32" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="170" y="52" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <!-- Row 2 -->
-    <rect x="20" y="75" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="35" y="95" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <!-- Row 2: 1 blue + 4 green -->
+  <rect x="15" y="67" width="30" height="30" fill='#4f8ef7' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="30" y="87" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="55" y="75" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="70" y="95" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="50" y="67" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="65" y="87" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="90" y="75" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="105" y="95" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="85" y="67" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="100" y="87" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="125" y="75" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
-    <text x="140" y="95" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>●</text>
+  <rect x="120" y="67" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="135" y="87" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
-    <rect x="160" y="75" width="30" height="30" fill='white' stroke='#30363d' stroke-width="2" rx="4"/>
-  </g>
+  <rect x="155" y="67" width="30" height="30" fill='#22c55e' stroke='#8b949e' stroke-width="2" rx="4"/>
+  <text x="170" y="87" text-anchor='middle' fill='white' font-size='18' font-weight='bold'>&#9679;</text>
 
   <!-- Labels -->
-  <text x="220" y="55" font-size='12' fill='currentColor'><tspan font-weight='bold'>6</tspan> (blue)</text>
-  <text x="220" y="90" font-size='12' fill='currentColor'><tspan font-weight='bold'>4</tspan> (green)</text>
+  <text x="220" y="52" font-size='12' fill='currentColor'><tspan font-weight='bold'>6</tspan> blue</text>
+  <text x="220" y="87" font-size='12' fill='currentColor'><tspan font-weight='bold'>4</tspan> green</text>
+
+  <!-- Summary -->
+  <text x="105" y="120" text-anchor='middle' font-size='13' fill='currentColor'>All 10 cells filled!</text>
 </svg>"""
     },
 

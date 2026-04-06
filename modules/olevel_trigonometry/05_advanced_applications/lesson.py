@@ -26,34 +26,32 @@ SECTIONS = [
   <li>So side \\(a\\) is opposite angle \\(A\\), side \\(b\\) is opposite angle \\(B\\), etc.</li>
 </ul>
 
-<svg viewBox="-10 0 320 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:320px; margin:20px 0;">
-  <defs>
-    </defs>
+<svg viewBox="0 0 340 280" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:360px; margin:20px auto; display:block;">
 
-  <!-- Triangle -->
-  <line x1="30" y1="220" x2="230" y2="220" class="triangle-line"/>
-  <line x1="230" y1="220" x2="150" y2="30" class="triangle-line"/>
-  <line x1="150" y1="30" x2="30" y2="220" class="triangle-line"/>
+  <!-- Triangle sides -->
+  <line x1="40" y1="240" x2="250" y2="240" stroke='#4f8ef7' stroke-width="2"/>
+  <line x1="250" y1="240" x2="170" y2="45" stroke='#4f8ef7' stroke-width="2"/>
+  <line x1="170" y1="45" x2="40" y2="240" stroke='#4f8ef7' stroke-width="2"/>
+
+  <!-- Angle arcs -->
+  <path d="M 70 240 A 30 30 0 0 0 60 218" fill='none' stroke='#e8b04f' stroke-width="1.5"/>
+  <path d="M 225 240 A 25 25 0 0 1 237 224" fill='none' stroke='#e8b04f' stroke-width="1.5"/>
+  <path d="M 157 67 A 25 25 0 0 0 183 67" fill='none' stroke='#e8b04f' stroke-width="1.5"/>
 
   <!-- Vertices -->
-  <circle cx="30" cy="220" r="3" fill='#4f8ef7'/>
-  <circle cx="230" cy="220" r="3" fill='#4f8ef7'/>
-  <circle cx="150" cy="30" r="3" fill='#4f8ef7'/>
+  <circle cx="40" cy="240" r="4" fill='#4f8ef7'/>
+  <circle cx="250" cy="240" r="4" fill='#4f8ef7'/>
+  <circle cx="170" cy="45" r="4" fill='#4f8ef7'/>
 
   <!-- Vertex labels -->
-  <text x="20" y="240" class="label">A</text>
-  <text x="240" y="240" class="label">B</text>
-  <text x="150" y="15" class="label">C</text>
+  <text x="22" y="260" fill='currentColor' font-size='15' font-weight='bold'>A</text>
+  <text x="258" y="260" fill='currentColor' font-size='15' font-weight='bold'>B</text>
+  <text x="165" y="30" fill='currentColor' font-size='15' font-weight='bold'>C</text>
 
-  <!-- Side labels -->
-  <text x="130" y="210" class="label" fill='currentColor' opacity='0.6'>a</text>
-  <text x="255" y="125" class="label" fill='currentColor' opacity='0.6'>b</text>
-  <text x="70" y="120" class="label" fill='currentColor' opacity='0.6'>c</text>
-
-  <!-- Angle labels -->
-  <text x="45" y="205" class="angle-label">∠A</text>
-  <text x="210" y="205" class="angle-label">∠B</text>
-  <text x="150" y="50" class="angle-label">∠C</text>
+  <!-- Side labels (opposite each vertex) -->
+  <text x="145" y="258" fill='currentColor' font-size='14' text-anchor='middle' font-style='italic'>c</text>
+  <text x="85" y="135" fill='currentColor' font-size='14' text-anchor='middle' font-style='italic'>b</text>
+  <text x="225" y="135" fill='currentColor' font-size='14' text-anchor='middle' font-style='italic'>a</text>
 </svg>
 """
     },
@@ -213,51 +211,54 @@ SECTIONS = [
         "body": """
 <h3>Decision Tree: Which Rule to Use</h3>
 
-<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px 0;">
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
-      <polygon points="0 0, 10 5, 0 10" fill='currentColor' opacity='0.6'/>
-    </marker>
-  </defs>
+<svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:420px; margin:20px auto; display:block;">
 
-  <!-- Main question -->
-  <rect x="125" y="10" width="150" height="50" class="decision-box" rx='4'/>
-  <text x="200" y="35" class="decision-text" text-anchor='middle'>What do you know?</text>
+  <!-- Main question box -->
+  <rect x="135" y="15" width="150" height="40" rx='4' fill='#4f8ef7' fill-opacity='0.15' stroke='#4f8ef7' stroke-width="1.5"/>
+  <text x="210" y="40" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>What do you know?</text>
 
-  <!-- First level branches -->
-  <line x1="160" y1="60" x2="100" y2="110" class="arrow"/>
-  <line x1="240" y1="60" x2="300" y2="110" class="arrow"/>
-  <text x="120" y="85" class="label">Two angles</text>
-  <text x="260" y="85" class="label">Two sides</text>
+  <!-- Branches down from main -->
+  <line x1="170" y1="55" x2="105" y2="90" stroke='#30363d' stroke-width="1.5"/>
+  <line x1="250" y1="55" x2="315" y2="90" stroke='#30363d' stroke-width="1.5"/>
 
-  <!-- Left branch: Two angles -->
-  <rect x="50" y="110" width="100" height="50" class="decision-box" rx='4'/>
-  <text x="100" y="135" class="decision-text" text-anchor='middle'>Plus one side?</text>
+  <!-- Branch labels -->
+  <text x="120" y="75" fill='currentColor' font-size='11'>Two angles</text>
+  <text x="260" y="75" fill='currentColor' font-size='11'>Two sides</text>
 
-  <!-- Right branch: Two sides -->
-  <rect x="250" y="110" width="100" height="50" class="decision-box" rx='4'/>
-  <text x="300" y="135" class="decision-text" text-anchor='middle'>Plus angle</text>
-  <text x="300" y="150" class="decision-text" text-anchor='middle'>between them?</text>
+  <!-- Left decision box -->
+  <rect x="40" y="95" width="130" height="40" rx='4' fill='#e8b04f' fill-opacity='0.12' stroke='#e8b04f' stroke-width="1.5"/>
+  <text x="105" y="120" fill='currentColor' font-size='12' text-anchor='middle'>Plus one side?</text>
 
-  <!-- Sub-branches -->
-  <line x1="100" y1="160" x2="80" y2="210" class="arrow"/>
-  <text x="85" y="190" class="label">Yes: AAS/ASA</text>
+  <!-- Right decision box -->
+  <rect x="250" y="95" width="130" height="40" rx='4' fill='#e8b04f' fill-opacity='0.12' stroke='#e8b04f' stroke-width="1.5"/>
+  <text x="315" y="113" fill='currentColor' font-size='12' text-anchor='middle'>Angle between?</text>
 
-  <line x1="300" y1="160" x2="260" y2="210" class="arrow"/>
-  <text x="245" y="190" class="label">Yes: SAS</text>
+  <!-- Left sub-branch -->
+  <line x1="105" y1="135" x2="85" y2="175" stroke='#30363d' stroke-width="1.5"/>
+  <text x="60" y="165" fill='currentColor' font-size='11'>AAS / ASA</text>
 
-  <line x1="300" y1="160" x2="340" y2="210" class="arrow"/>
-  <text x="330" y="190" class="label">No: SSA</text>
+  <!-- Right sub-branches -->
+  <line x1="290" y1="135" x2="260" y2="175" stroke='#30363d' stroke-width="1.5"/>
+  <text x="230" y="165" fill='currentColor' font-size='11'>Yes: SAS</text>
 
-  <!-- Answers -->
-  <rect x="30" y="210" width="100" height="40" class="answer-box" rx='4'/>
-  <text x="80" y="235" class="decision-text" text-anchor='middle' font-weight='bold'>Law of Sines</text>
+  <line x1="340" y1="135" x2="360" y2="175" stroke='#30363d' stroke-width="1.5"/>
+  <text x="355" y="165" fill='currentColor' font-size='11'>No: SSA</text>
 
-  <rect x="210" y="210" width="100" height="40" class="answer-box" rx='4'/>
-  <text x="260" y="235" class="decision-text" text-anchor='middle' font-weight='bold'>Law of Cosines</text>
+  <!-- Answer boxes -->
+  <rect x="30" y="180" width="120" height="36" rx='4' fill='#4f8ef7' fill-opacity='0.2' stroke='#4f8ef7' stroke-width="1.5"/>
+  <text x="90" y="203" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Law of Sines</text>
 
-  <rect x="310" y="210" width="80" height="40" class="answer-box" rx='4'/>
-  <text x="350" y="235" class="decision-text" text-anchor='middle' font-weight='bold'>Law of Sines</text>
+  <rect x="200" y="180" width="120" height="36" rx='4' fill='#e8b04f' fill-opacity='0.2' stroke='#e8b04f' stroke-width="1.5"/>
+  <text x="260" y="203" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Law of Cosines</text>
+
+  <rect x="325" y="180" width="80" height="36" rx='4' fill='#4f8ef7' fill-opacity='0.2' stroke='#4f8ef7' stroke-width="1.5"/>
+  <text x="365" y="203" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Law of Sines</text>
+
+  <!-- SSS note -->
+  <rect x="200" y="235" width="120" height="36" rx='4' fill='#e8b04f' fill-opacity='0.2' stroke='#e8b04f' stroke-width="1.5"/>
+  <text x="260" y="258" fill='currentColor' font-size='12' font-weight='bold' text-anchor='middle'>Law of Cosines</text>
+  <line x1="260" y1="216" x2="260" y2="235" stroke='#30363d' stroke-width="1.5"/>
+  <text x="280" y="230" fill='currentColor' font-size='10'>SSS</text>
 </svg>
 
 <h3>Quick Reference</h3>

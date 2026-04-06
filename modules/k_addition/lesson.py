@@ -220,25 +220,25 @@ SECTIONS = [
      </div>
 
      <h3>Number Bond Diagram</h3>
-     <svg viewBox="0 0 300 150" style="width: 100%; height: auto; margin: 20px 0;">
+     <svg viewBox="0 0 300 160" style="width: 100%; max-width: 350px; height: auto; display: block; margin: 20px auto;">
        <!-- Total number at top -->
-       <circle cx="150" cy="30" r="20" fill="#4169E1" stroke="#333" stroke-width="2"/>
-       <text x="150" y="35" text-anchor="middle" fill="white" font-size="20" font-weight="bold">5</text>
-
-       <!-- Part 1 -->
-       <circle cx="80" cy="100" r="20" fill="#22c55e" stroke="#333" stroke-width="2"/>
-       <text x="80" y="105" text-anchor="middle" fill="white" font-size="20" font-weight="bold">2</text>
-
-       <!-- Part 2 -->
-       <circle cx="220" cy="100" r="20" fill="#f59e0b" stroke="#333" stroke-width="2"/>
-       <text x="220" y="105" text-anchor="middle" fill="white" font-size="20" font-weight="bold">3</text>
+       <circle cx="150" cy="35" r="22" fill="#4169E1" stroke="#333" stroke-width="2"/>
+       <text x="150" y="42" text-anchor="middle" fill="white" font-size="20" font-weight="bold">5</text>
 
        <!-- Connecting lines -->
-       <line x1="140" y1="48" x2="90" y2="82" stroke="#333" stroke-width="2"/>
-       <line x1="160" y1="48" x2="210" y2="82" stroke="#333" stroke-width="2"/>
+       <line x1="138" y1="55" x2="88" y2="88" stroke="#333" stroke-width="2"/>
+       <line x1="162" y1="55" x2="212" y2="88" stroke="#333" stroke-width="2"/>
 
-       <!-- Labels -->
-       <text x="150" y="130" text-anchor="middle" font-size="14" fill='currentColor'>5 = 2 + 3</text>
+       <!-- Part 1 -->
+       <circle cx="80" cy="105" r="22" fill="#22c55e" stroke="#333" stroke-width="2"/>
+       <text x="80" y="112" text-anchor="middle" fill="white" font-size="20" font-weight="bold">2</text>
+
+       <!-- Part 2 -->
+       <circle cx="220" cy="105" r="22" fill="#f59e0b" stroke="#333" stroke-width="2"/>
+       <text x="220" y="112" text-anchor="middle" fill="white" font-size="20" font-weight="bold">3</text>
+
+       <!-- Label -->
+       <text x="150" y="148" text-anchor="middle" font-size="15" font-weight="bold" fill='currentColor'>5 = 2 + 3</text>
      </svg>
 
      <p>This diagram shows that 5 can be broken into 2 and 3. And it also shows that 2 + 3 = 5.</p>
@@ -282,65 +282,67 @@ SECTIONS = [
      <h3>How to Add on a Number Line</h3>
      <p>To add 4 + 3, we start at 4 and jump forward 3 steps:</p>
 
-     <svg viewBox="0 0 420 100" style="width: 100%; height: auto; margin: 20px 0;">
+     <svg viewBox="0 0 460 110" style="width: 100%; max-width: 520px; height: auto; display: block; margin: 20px auto;">
        <!-- Main line -->
-       <line x1="10" y1="50" x2="410" y2="50" stroke="#4169E1" stroke-width="3"/>
+       <line x1="15" y1="70" x2="445" y2="70" stroke="#4169E1" stroke-width="3"/>
 
-       <!-- Tick marks and numbers -->
+       <!-- Tick marks and numbers 0-10, evenly spaced -->
        <g font-size="14" text-anchor="middle">
-         <line x1="10" y1="45" x2="10" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="10" y="70" fill='currentColor'>0</text>
+         <line x1="15" y1="65" x2="15" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="15" y="92" fill='currentColor'>0</text>
 
-         <line x1="50" y1="45" x2="50" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="50" y="70" fill='currentColor'>1</text>
+         <line x1="58" y1="65" x2="58" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="58" y="92" fill='currentColor'>1</text>
 
-         <line x1="90" y1="45" x2="90" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="90" y="70" fill='currentColor'>2</text>
+         <line x1="101" y1="65" x2="101" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="101" y="92" fill='currentColor'>2</text>
 
-         <line x1="130" y1="45" x2="130" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="130" y="70" fill='currentColor'>3</text>
+         <line x1="144" y1="65" x2="144" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="144" y="92" fill='currentColor'>3</text>
 
-         <line x1="170" y1="45" x2="170" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="170" y="70" fill='currentColor'>4</text>
+         <line x1="187" y1="65" x2="187" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="187" y="92" fill='currentColor'>4</text>
 
-         <line x1="210" y1="45" x2="210" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="210" y="70" fill='currentColor'>5</text>
+         <line x1="230" y1="65" x2="230" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="230" y="92" fill='currentColor'>5</text>
 
-         <line x1="250" y1="45" x2="250" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="250" y="70" fill='currentColor'>6</text>
+         <line x1="273" y1="65" x2="273" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="273" y="92" fill='currentColor'>6</text>
 
-         <line x1="290" y1="45" x2="290" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="290" y="70" fill='currentColor'>7</text>
+         <line x1="316" y1="65" x2="316" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="316" y="92" fill='currentColor'>7</text>
 
-         <line x1="330" y1="45" x2="330" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="330" y="70" fill='currentColor'>8</text>
+         <line x1="359" y1="65" x2="359" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="359" y="92" fill='currentColor'>8</text>
 
-         <line x1="370" y1="45" x2="370" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="370" y="70" fill='currentColor'>9</text>
+         <line x1="402" y1="65" x2="402" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="402" y="92" fill='currentColor'>9</text>
 
-         <line x1="410" y1="45" x2="410" y2="55" stroke="#4169E1" stroke-width="2"/>
-         <text x="410" y="70" fill='currentColor'>10</text>
+         <line x1="445" y1="65" x2="445" y2="75" stroke="#4169E1" stroke-width="2"/>
+         <text x="445" y="92" fill='currentColor'>10</text>
        </g>
 
-       <!-- Start point circle -->
-       <circle cx="170" cy="50" r="8" fill="#22c55e" stroke="#333" stroke-width="2"/>
-       <text x="170" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill='currentColor'>Start at 4</text>
+       <defs><marker id="arrowR" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="#ef4444"/></marker></defs>
 
-       <!-- Jump arrows -->
-       <g stroke="#ef4444" stroke-width="2" fill="none">
-         <path d="M 180 30 L 210 30 L 210 20"/>
-         <path d="M 220 30 L 250 30 L 250 20"/>
-         <path d="M 260 30 L 290 30 L 290 20"/>
-       </g>
+       <!-- Start point circle at 4 -->
+       <circle cx="187" cy="70" r="8" fill="#22c55e" stroke="#333" stroke-width="2"/>
+
+       <!-- Jump arcs from 4 to 5, 5 to 6, 6 to 7 -->
+       <path d="M 193 58 Q 208 32 223 58" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrowR)"/>
+       <path d="M 236 58 Q 251 32 266 58" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrowR)"/>
+       <path d="M 279 58 Q 294 32 309 58" stroke="#ef4444" stroke-width="2" fill="none" marker-end="url(#arrowR)"/>
 
        <!-- Jump labels -->
-       <text x="200" y="18" text-anchor="middle" font-size="12" fill="#ef4444">+1</text>
-       <text x="240" y="18" text-anchor="middle" font-size="12" fill="#ef4444">+1</text>
-       <text x="280" y="18" text-anchor="middle" font-size="12" fill="#ef4444">+1</text>
+       <text x="208" y="26" text-anchor="middle" font-size="11" fill="#ef4444">+1</text>
+       <text x="251" y="26" text-anchor="middle" font-size="11" fill="#ef4444">+1</text>
+       <text x="294" y="26" text-anchor="middle" font-size="11" fill="#ef4444">+1</text>
 
-       <!-- End point circle -->
-       <circle cx="330" cy="50" r="8" fill="#f59e0b" stroke="#333" stroke-width="2"/>
-       <text x="330" y="28" text-anchor="middle" font-size="12" font-weight="bold" fill='currentColor'>End at 7</text>
+       <!-- End point circle at 7 -->
+       <circle cx="316" cy="70" r="8" fill="#f59e0b" stroke="#333" stroke-width="2"/>
+
+       <!-- Labels below the circles -->
+       <text x="187" y="10" text-anchor="middle" font-size="11" font-weight="bold" fill="#22c55e">Start: 4</text>
+       <text x="316" y="10" text-anchor="middle" font-size="11" font-weight="bold" fill="#f59e0b">End: 7</text>
      </svg>
 
      <p style="text-align: center; margin-top: 20px; font-size: 18px;"><strong>4 + 3 = 7</strong></p>

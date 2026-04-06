@@ -19,23 +19,31 @@ SECTIONS = [
 <p>The vertex moves from (0, 0) to (0, 3) or (0, −2), but the shape stays identical.</p>
 </div>
 
-<svg width="400" height="320" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="160" x2="350" y2="160" stroke='#30363d' stroke-width="1" />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 100 160 Q 200 80, 300 160" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 100 130 Q 200 50, 300 130" stroke='#ffa657' stroke-width="2" fill='none' />
-    <path d="M 100 190 Q 200 110, 300 190" stroke='#79c0ff' stroke-width="2" fill='none' />
+<svg viewBox="0 0 400 300" class="worked-example">
+  <!-- Axes -->
+  <line x1="30" y1="160" x2="370" y2="160" stroke='#30363d' stroke-width="1" />
+  <line x1="200" y1="15" x2="200" y2="280" stroke='#30363d' stroke-width="1" />
+  <!-- y = x^2 (original) -->
+  <path d="M 100 260 Q 150 190, 200 160 Q 250 190, 300 260" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- y = x^2 + 3 (shifted up) -->
+  <path d="M 100 230 Q 150 160, 200 130 Q 250 160, 300 230" stroke='#ffa657' stroke-width="2" fill='none' />
+  <!-- y = x^2 - 2 (shifted down) -->
+  <path d="M 100 280 Q 150 210, 200 185 Q 250 210, 300 280" stroke='#79c0ff' stroke-width="2" fill='none' />
+  <!-- Shift arrows -->
+  <line x1="200" y1="160" x2="200" y2="132" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" />
+  <line x1="200" y1="160" x2="200" y2="183" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" />
+  <!-- Vertex dots -->
+  <circle cx="200" cy="160" r="3" fill='#58a6ff' />
+  <circle cx="200" cy="130" r="3" fill='#ffa657' />
+  <circle cx="200" cy="185" r="3" fill='#79c0ff' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="375" y="164">x</text>
+    <text x="192" y="12">y</text>
+    <text x="310" y="250" fill='#58a6ff'>y = x&#xB2;</text>
+    <text x="310" y="220" fill='#ffa657'>y = x&#xB2; + 3</text>
+    <text x="310" y="275" fill='#79c0ff'>y = x&#xB2; &#x2212; 2</text>
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
-    <text x="360" y="165">x</text>
-    <text x="190" y="40">y</text>
-    <text x="250" y="90" fill='#58a6ff'>y = x²</text>
-    <text x="250" y="60" fill='#ffa657'>y = x² + 3</text>
-    <text x="250" y="125" fill='#79c0ff'>y = x² - 2</text>
-  </g>
-  <line x1="200" y1="160" x2="200" y2="130" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" />
-  <line x1="200" y1="160" x2="200" y2="190" stroke='#8b949e' stroke-width="1" stroke-dasharray="3,3" />
 </svg>
 
 <h3>Effect on Key Features</h3>
@@ -69,24 +77,31 @@ SECTIONS = [
 <p>\\(y = (x - 2)^2\\) shifts RIGHT by 2 units. Vertex is at \\((2, 0)\\).</p>
 </div>
 
-<svg width="400" height="320" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="160" x2="350" y2="160" stroke='#30363d' stroke-width="1" />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 100 160 Q 200 80, 300 160" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 50 160 Q 150 80, 250 160" stroke='#ffa657' stroke-width="2" fill='none' />
-    <path d="M 150 160 Q 250 80, 350 160" stroke='#79c0ff' stroke-width="2" fill='none' />
+<svg viewBox="0 0 400 300" class="worked-example">
+  <!-- Axes -->
+  <line x1="15" y1="160" x2="385" y2="160" stroke='#30363d' stroke-width="1" />
+  <line x1="200" y1="15" x2="200" y2="280" stroke='#30363d' stroke-width="1" />
+  <!-- y = x^2 (original, center) -->
+  <path d="M 100 260 Q 150 190, 200 160 Q 250 190, 300 260" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- y = (x+2)^2 (shifted left) -->
+  <path d="M 50 260 Q 100 190, 150 160 Q 200 190, 250 260" stroke='#ffa657' stroke-width="2" fill='none' />
+  <!-- y = (x-2)^2 (shifted right) -->
+  <path d="M 150 260 Q 200 190, 250 160 Q 300 190, 350 260" stroke='#79c0ff' stroke-width="2" fill='none' />
+  <!-- Vertex dots -->
+  <circle cx="200" cy="160" r="3" fill='#58a6ff' />
+  <circle cx="150" cy="160" r="3" fill='#ffa657' />
+  <circle cx="250" cy="160" r="3" fill='#79c0ff' />
+  <!-- Shift arrows -->
+  <line x1="198" y1="163" x2="153" y2="163" stroke='#ffa657' stroke-width="1" stroke-dasharray="3,3" />
+  <line x1="202" y1="163" x2="247" y2="163" stroke='#79c0ff' stroke-width="1" stroke-dasharray="3,3" />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="375" y="155">x</text>
+    <text x="192" y="12">y</text>
+    <text x="302" y="250" fill='#58a6ff'>y = x&#xB2;</text>
+    <text x="60" y="250" fill='#ffa657'>left 2</text>
+    <text x="310" y="272" fill='#79c0ff'>right 2</text>
   </g>
-  <g id="labels" font-family='Arial' font-size='11' fill='currentColor'>
-    <text x="360" y="165">x</text>
-    <text x="190" y="40">y</text>
-    <text x="250" y="90" fill='#58a6ff'>y = x²</text>
-    <text x="100" y="175" fill='#ffa657'>left 2</text>
-    <text x="280" y="175" fill='#79c0ff'>right 2</text>
-  </g>
-  <circle cx="200" cy="160" r="2" fill='#79c0ff' />
-  <circle cx="100" cy="160" r="2" fill='#ffa657' />
-  <circle cx="300" cy="160" r="2" fill='#79c0ff' />
 </svg>
 
 <h3>Effect on Key Features</h3>
@@ -143,20 +158,23 @@ SECTIONS = [
 
 <p>This is the opposite of what you might expect! \\(b = 2\\) makes it <strong>narrower</strong>.</p>
 
-<svg width="420" height="300" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="150" x2="350" y2="150" stroke='#30363d' stroke-width="1" />
-    <line x1="200" y1="50" x2="200" y2="250" stroke='#30363d' stroke-width="1" />
-    <path d="M 50 150 Q 150 80, 250 150 Q 350 220, 350 250" stroke='#58a6ff' stroke-width="2" fill='none' />
-    <path d="M 50 150 Q 125 90, 200 150 Q 275 210, 350 250" stroke='#ffa657' stroke-width="2" fill='none' />
-    <path d="M 50 150 Q 200 70, 350 150" stroke='#79c0ff' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='10' fill='currentColor'>
-    <text x="360" y="155">x</text>
-    <text x="190" y="40">y</text>
-    <text x="280" y="80" fill='#58a6ff'>original</text>
-    <text x="280" y="110" fill='#ffa657'>compress</text>
-    <text x="280" y="140" fill='#79c0ff'>stretch</text>
+<svg viewBox="0 0 400 290" class="worked-example">
+  <!-- Axes -->
+  <line x1="30" y1="145" x2="370" y2="145" stroke='#30363d' stroke-width="1" />
+  <line x1="200" y1="15" x2="200" y2="275" stroke='#30363d' stroke-width="1" />
+  <!-- Original sine wave -->
+  <path d="M 50 145 Q 100 55, 200 145 Q 300 235, 350 145" stroke='#58a6ff' stroke-width="2" fill='none' />
+  <!-- Compressed f(2x) - narrower -->
+  <path d="M 50 145 Q 75 55, 125 145 Q 175 235, 200 145" stroke='#ffa657' stroke-width="2" fill='none' />
+  <!-- Stretched f(0.5x) - wider -->
+  <path d="M 50 145 Q 150 55, 350 145" stroke='#79c0ff' stroke-width="2" fill='none' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="375" y="149">x</text>
+    <text x="192" y="12">y</text>
+    <text x="300" y="80" fill='#58a6ff'>f(x)</text>
+    <text x="130" y="80" fill='#ffa657'>f(2x)</text>
+    <text x="300" y="110" fill='#79c0ff'>f(&#xBD;x)</text>
   </g>
 </svg>
 
@@ -198,23 +216,29 @@ SECTIONS = [
   <li>Apply \\(k\\) (vertical shift)</li>
 </ol>
 
-<svg width="420" height="340" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="260" x2="350" y2="260" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="60" x2="50" y2="260" stroke='#30363d' stroke-width="1" />
-  </g>
-  <g id="curves">
-    <path d="M 50 260 Q 150 160, 250 60 Q 350 260, 350 260" stroke='#58a6ff' stroke-width="2" fill='none' opacity='0.5' />
-    <path d="M 100 260 Q 150 180, 200 140 Q 250 180, 300 260" stroke='#ffa657' stroke-width="2" fill='none' opacity='0.8' />
-    <path d="M 100 100 Q 150 80, 200 100 Q 250 140, 300 200" stroke='#79c0ff' stroke-width="2" fill='none' />
-  </g>
-  <g id="labels" font-family='Arial' font-size='10' fill='currentColor'>
-    <text x="360" y="265">x</text>
-    <text x="40" y="60">y</text>
-    <text x="45" y="275">O</text>
-    <text x="280" y="150" fill='#58a6ff'>Original</text>
-    <text x="260" y="190" fill='#ffa657'>Shift + Stretch</text>
-    <text x="240" y="85" fill='#79c0ff'>+ Reflect</text>
+<svg viewBox="0 0 400 310" class="worked-example">
+  <!-- Axes -->
+  <line x1="30" y1="200" x2="370" y2="200" stroke='#30363d' stroke-width="1" />
+  <line x1="70" y1="15" x2="70" y2="295" stroke='#30363d' stroke-width="1" />
+  <!-- Original y = x^2 (faded) -->
+  <path d="M 30 280 Q 50 230, 70 200 Q 90 230, 110 280" stroke='#58a6ff' stroke-width="2" fill='none' opacity='0.4' />
+  <!-- Shifted + stretched y = 2(x-1)^2 -->
+  <path d="M 70 280 Q 100 230, 130 200 Q 160 230, 190 280" stroke='#ffa657' stroke-width="2" fill='none' opacity='0.7' />
+  <!-- Reflected y = -2(x-1)^2 + 3 -->
+  <path d="M 70 80 Q 100 130, 130 155 Q 160 130, 190 80" stroke='#79c0ff' stroke-width="2" fill='none' />
+  <!-- Key points -->
+  <circle cx="70" cy="200" r="3" fill='#58a6ff' />
+  <circle cx="130" cy="200" r="3" fill='#ffa657' />
+  <circle cx="130" cy="155" r="4" fill='#79c0ff' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='11' fill='currentColor'>
+    <text x="375" y="204">x</text>
+    <text x="62" y="12">y</text>
+    <text x="75" y="215">O</text>
+    <text x="115" y="280" fill='#58a6ff'>y = x&#xB2;</text>
+    <text x="195" y="270" fill='#ffa657'>Shift + Stretch</text>
+    <text x="195" y="100" fill='#79c0ff'>+ Reflect + Shift up</text>
+    <text x="138" y="150" fill='#79c0ff'>(1, 3)</text>
   </g>
 </svg>
 

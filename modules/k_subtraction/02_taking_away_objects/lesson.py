@@ -9,20 +9,39 @@ SECTIONS = [
 <div class="concept-box">
 <p><strong>Example:</strong> Start with 8 stars ⭐, cross out 3. How many remain?</p>
 </div>
-<svg viewBox="0 0 400 100" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;">
-  <text x="20" y="25" font-size='14' font-weight='bold' fill='currentColor'>8 stars, remove 3:</text>
+<svg viewBox="0 0 420 105" style="width:100%;max-width:420px;height:auto;display:block;margin:16px auto;">
+  <text x="15" y="20" font-size='14' font-family='Arial, sans-serif' font-weight='bold' fill='currentColor'>8 stars, remove 3:</text>
 
-  <text x="20" y="60" font-size='24' fill='currentColor'>⭐</text>
-  <text x="55" y="60" font-size='24' fill='currentColor'>⭐</text>
-  <text x="90" y="60" font-size='24' opacity='0.4' fill='currentColor'>⭐</text>
-  <line x1="80" y1="45" x2="100" y2="75" stroke='#ef4444' stroke-width="2"/>
-  <text x="125" y="60" font-size='24' opacity='0.4' fill='currentColor'>⭐</text>
-  <line x1="115" y1="45" x2="135" y2="75" stroke='#ef4444' stroke-width="2"/>
-  <text x="160" y="60" font-size='24' opacity='0.4' fill='currentColor'>⭐</text>
-  <line x1="150" y1="45" x2="170" y2="75" stroke='#ef4444' stroke-width="2"/>
-  <text x="195" y="60" font-size='24' fill='currentColor'>⭐</text>
-  <text x="230" y="60" font-size='24' fill='currentColor'>⭐</text>
-  <text x="265" y="60" font-size='24' fill='currentColor'>⭐</text>
+  <!-- 8 circles evenly spaced: x = 35, 80, 125, 170, 215, 260, 305, 350 (gap 45) -->
+  <circle cx="35" cy="55" r="14" fill='#f59e0b'/>
+  <text x="35" y="60" font-size='16' font-family='Arial, sans-serif' text-anchor='middle' fill='currentColor'>1</text>
+
+  <circle cx="80" cy="55" r="14" fill='#f59e0b'/>
+  <text x="80" y="60" font-size='16' font-family='Arial, sans-serif' text-anchor='middle' fill='currentColor'>2</text>
+
+  <circle cx="125" cy="55" r="14" fill='#f59e0b'/>
+  <text x="125" y="60" font-size='16' font-family='Arial, sans-serif' text-anchor='middle' fill='currentColor'>3</text>
+
+  <circle cx="170" cy="55" r="14" fill='#f59e0b'/>
+  <text x="170" y="60" font-size='16' font-family='Arial, sans-serif' text-anchor='middle' fill='currentColor'>4</text>
+
+  <circle cx="215" cy="55" r="14" fill='#f59e0b'/>
+  <text x="215" y="60" font-size='16' font-family='Arial, sans-serif' text-anchor='middle' fill='currentColor'>5</text>
+
+  <!-- Crossed-out stars (removed) -->
+  <circle cx="260" cy="55" r="14" fill='#ef4444' opacity='0.35'/>
+  <line x1="248" y1="43" x2="272" y2="67" stroke='#ef4444' stroke-width='2.5'/>
+  <line x1="272" y1="43" x2="248" y2="67" stroke='#ef4444' stroke-width='2.5'/>
+
+  <circle cx="305" cy="55" r="14" fill='#ef4444' opacity='0.35'/>
+  <line x1="293" y1="43" x2="317" y2="67" stroke='#ef4444' stroke-width='2.5'/>
+  <line x1="317" y1="43" x2="293" y2="67" stroke='#ef4444' stroke-width='2.5'/>
+
+  <circle cx="350" cy="55" r="14" fill='#ef4444' opacity='0.35'/>
+  <line x1="338" y1="43" x2="362" y2="67" stroke='#ef4444' stroke-width='2.5'/>
+  <line x1="362" y1="43" x2="338" y2="67" stroke='#ef4444' stroke-width='2.5'/>
+
+  <text x="210" y="92" font-size='14' font-family='Arial, sans-serif' font-weight='bold' fill='currentColor' text-anchor='middle'>8 - 3 = 5 stars left!</text>
 </svg>
 <p style="text-align:center;margin-top:12px;"><strong>\(8 - 3 = 5\) stars left</strong></p>"""
     },

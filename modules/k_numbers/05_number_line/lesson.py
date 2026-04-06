@@ -17,83 +17,83 @@ SECTIONS = [
 <h3>The Number Line from 0 to 20</h3>
 <p>Here's a number line showing all the numbers from 0 to 20:</p>
 
-<svg viewBox="-35 0 480 100" style="width: 100%; height: auto; margin: 20px 0; background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 0;">
+<svg viewBox="-5 5 430 85" style="width: 100%; height: auto; margin: 20px 0;">
   <!-- Main line -->
   <line x1="10" y1="50" x2="410" y2="50" stroke='#4169E1' stroke-width="3"/>
 
   <!-- Arrows -->
-  <polygon points="5,50 0,45 0,55" fill='#4169E1'/>
-  <polygon points="415,50 420,45 420,55" fill='#4169E1'/>
-
-  <!-- Tick marks and numbers -->
-  <g font-size='12' text-anchor='middle' fill='currentColor'>
-    <line x1="10" y1="45" x2="10" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="10" y="75" fill='currentColor' font-weight='bold'>0</text>
-
-    <line x1="30" y1="45" x2="30" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="30" y="75" fill='currentColor'>1</text>
-
-    <line x1="50" y1="45" x2="50" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="50" y="75" fill='currentColor'>2</text>
-
-    <line x1="70" y1="45" x2="70" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="70" y="75" fill='currentColor'>3</text>
-
-    <line x1="90" y1="45" x2="90" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="90" y="75" fill='currentColor'>4</text>
-
-    <line x1="110" y1="45" x2="110" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="110" y="75" fill='currentColor'>5</text>
-
-    <line x1="130" y1="45" x2="130" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="130" y="75" fill='currentColor'>6</text>
-
-    <line x1="150" y1="45" x2="150" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="150" y="75" fill='currentColor'>7</text>
-
-    <line x1="170" y1="45" x2="170" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="170" y="75" fill='currentColor'>8</text>
-
-    <line x1="190" y1="45" x2="190" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="190" y="75" fill='currentColor'>9</text>
-
-    <line x1="210" y1="45" x2="210" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="210" y="75" fill='currentColor'>10</text>
-
-    <line x1="230" y1="45" x2="230" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="230" y="75" fill='currentColor'>11</text>
-
-    <line x1="250" y1="45" x2="250" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="250" y="75" fill='currentColor'>12</text>
-
-    <line x1="270" y1="45" x2="270" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="270" y="75" fill='currentColor'>13</text>
-
-    <line x1="290" y1="45" x2="290" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="290" y="75" fill='currentColor'>14</text>
-
-    <line x1="310" y1="45" x2="310" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="310" y="75" fill='currentColor'>15</text>
-
-    <line x1="330" y1="45" x2="330" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="330" y="75" fill='currentColor'>16</text>
-
-    <line x1="350" y1="45" x2="350" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="350" y="75" fill='currentColor'>17</text>
-
-    <line x1="370" y1="45" x2="370" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="370" y="75" fill='currentColor'>18</text>
-
-    <line x1="390" y1="45" x2="390" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="390" y="75" fill='currentColor'>19</text>
-
-    <line x1="410" y1="45" x2="410" y2="55" stroke='#4169E1' stroke-width="2"/>
-    <text x="410" y="75" fill='currentColor'>20</text>
-  </g>
+  <polygon points="5,50 10,46 10,54" fill='#4169E1'/>
+  <polygon points="415,50 410,46 410,54" fill='#4169E1'/>
 
   <!-- Direction labels -->
-  <text x="5" y="20" font-size='11' fill='currentColor' opacity='0.6' text-anchor='end'>Smaller</text>
-  <text x="415" y="20" font-size='11' fill='currentColor' opacity='0.6'>Bigger →</text>
+  <text x="10" y="22" font-family="sans-serif" font-size="10" fill='currentColor' opacity="0.6" text-anchor="middle">Smaller</text>
+  <text x="410" y="22" font-family="sans-serif" font-size="10" fill='currentColor' opacity="0.6" text-anchor="middle">Bigger</text>
+
+  <!-- Tick marks and numbers 0-20, evenly spaced 20px apart -->
+  <g font-family="sans-serif" font-size="12" text-anchor="middle">
+    <line x1="10" y1="44" x2="10" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="10" y="73" fill='currentColor' font-weight='bold'>0</text>
+
+    <line x1="30" y1="44" x2="30" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="30" y="73" fill='currentColor'>1</text>
+
+    <line x1="50" y1="44" x2="50" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="50" y="73" fill='currentColor'>2</text>
+
+    <line x1="70" y1="44" x2="70" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="70" y="73" fill='currentColor'>3</text>
+
+    <line x1="90" y1="44" x2="90" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="90" y="73" fill='currentColor'>4</text>
+
+    <line x1="110" y1="44" x2="110" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="110" y="73" fill='currentColor'>5</text>
+
+    <line x1="130" y1="44" x2="130" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="130" y="73" fill='currentColor'>6</text>
+
+    <line x1="150" y1="44" x2="150" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="150" y="73" fill='currentColor'>7</text>
+
+    <line x1="170" y1="44" x2="170" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="170" y="73" fill='currentColor'>8</text>
+
+    <line x1="190" y1="44" x2="190" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="190" y="73" fill='currentColor'>9</text>
+
+    <line x1="210" y1="44" x2="210" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="210" y="73" fill='currentColor'>10</text>
+
+    <line x1="230" y1="44" x2="230" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="230" y="73" fill='currentColor'>11</text>
+
+    <line x1="250" y1="44" x2="250" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="250" y="73" fill='currentColor'>12</text>
+
+    <line x1="270" y1="44" x2="270" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="270" y="73" fill='currentColor'>13</text>
+
+    <line x1="290" y1="44" x2="290" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="290" y="73" fill='currentColor'>14</text>
+
+    <line x1="310" y1="44" x2="310" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="310" y="73" fill='currentColor'>15</text>
+
+    <line x1="330" y1="44" x2="330" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="330" y="73" fill='currentColor'>16</text>
+
+    <line x1="350" y1="44" x2="350" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="350" y="73" fill='currentColor'>17</text>
+
+    <line x1="370" y1="44" x2="370" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="370" y="73" fill='currentColor'>18</text>
+
+    <line x1="390" y1="44" x2="390" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="390" y="73" fill='currentColor'>19</text>
+
+    <line x1="410" y1="44" x2="410" y2="56" stroke='#4169E1' stroke-width="2"/>
+    <text x="410" y="73" fill='currentColor' font-weight='bold'>20</text>
+  </g>
 </svg>
 
 <h3>What Does the Number Line Show?</h3>
@@ -117,42 +117,43 @@ SECTIONS = [
 
 <h4>Example: Is 7 bigger than 3?</h4>
 
-<svg viewBox="0 0 420 120" style="width: 100%; height: auto; margin: 20px 0; background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 0;">
+<svg viewBox="-5 5 430 115" style="width: 100%; height: auto; margin: 20px 0;">
   <!-- Main line -->
-  <line x1="10" y1="50" x2="410" y2="50" stroke='#30363d' stroke-width="2"/>
+  <line x1="10" y1="50" x2="410" y2="50" stroke='#4169E1' stroke-width="2"/>
 
-  <!-- Tick marks and numbers -->
-  <g font-size='12' text-anchor='middle' fill='currentColor'>
-    <line x1="10" y1="45" x2="10" y2="55" stroke='#30363d' stroke-width="1"/>
-    <text x="10" y="75" fill='currentColor'>0</text>
+  <!-- Tick marks and numbers (evenly spaced, 20px per unit) -->
+  <g font-family="sans-serif" font-size="12" text-anchor="middle">
+    <line x1="10" y1="44" x2="10" y2="56" stroke='#4169E1' stroke-width="1"/>
+    <text x="10" y="73" fill='currentColor'>0</text>
 
-    <line x1="50" y1="45" x2="50" y2="55" stroke='#30363d' stroke-width="1"/>
-    <text x="50" y="75" fill='currentColor'>2</text>
+    <line x1="50" y1="44" x2="50" y2="56" stroke='#4169E1' stroke-width="1"/>
+    <text x="50" y="73" fill='currentColor'>2</text>
 
-    <line x1="70" y1="45" x2="70" y2="55" stroke='#30363d' stroke-width="1"/>
-    <text x="70" y="75" fill='currentColor' font-weight='bold' font-size='16'>3</text>
+    <line x1="70" y1="44" x2="70" y2="56" stroke='#4169E1' stroke-width="1"/>
+    <text x="70" y="73" fill='currentColor'>3</text>
 
-    <line x1="150" y1="45" x2="150" y2="55" stroke='#30363d' stroke-width="1"/>
-    <text x="150" y="75" fill='currentColor'>7</text>
+    <line x1="150" y1="44" x2="150" y2="56" stroke='#4169E1' stroke-width="1"/>
+    <text x="150" y="73" fill='currentColor'>7</text>
 
-    <line x1="210" y1="45" x2="210" y2="55" stroke='#30363d' stroke-width="1"/>
-    <text x="210" y="75" fill='currentColor'>10</text>
+    <line x1="210" y1="44" x2="210" y2="56" stroke='#4169E1' stroke-width="1"/>
+    <text x="210" y="73" fill='currentColor'>10</text>
 
-    <line x1="410" y1="45" x2="410" y2="55" stroke='#30363d' stroke-width="1"/>
-    <text x="410" y="75" fill='currentColor'>20</text>
+    <line x1="410" y1="44" x2="410" y2="56" stroke='#4169E1' stroke-width="1"/>
+    <text x="410" y="73" fill='currentColor'>20</text>
   </g>
 
   <!-- Highlight 3 -->
-  <circle cx="70" cy="50" r="8" fill='none' stroke='#ff9800' stroke-width="3"/>
-  <text x="70" y="25" text-anchor='middle' font-size='12' fill='#ff9800' font-weight='bold'>3</text>
+  <circle cx="70" cy="50" r="9" fill='none' stroke='#ff9800' stroke-width="2.5"/>
+  <text x="70" y="25" text-anchor='middle' font-family="sans-serif" font-size="13" fill='#ff9800' font-weight='bold'>3</text>
 
   <!-- Highlight 7 -->
-  <circle cx="150" cy="50" r="8" fill='none' stroke='#4caf50' stroke-width="3"/>
-  <text x="150" y="25" text-anchor='middle' font-size='12' fill='#4caf50' font-weight='bold'>7</text>
+  <circle cx="150" cy="50" r="9" fill='none' stroke='#4caf50' stroke-width="2.5"/>
+  <text x="150" y="25" text-anchor='middle' font-family="sans-serif" font-size="13" fill='#4caf50' font-weight='bold'>7</text>
 
   <!-- Arrow showing 7 is to the right -->
-  <path d="M 70 90 L 150 90 M 145 85 L 150 90 L 145 95" stroke='#4caf50' stroke-width="2" fill='none'/>
-  <text x="110" y="110" text-anchor='middle' font-size='12' fill='#4caf50' font-weight='bold'>7 is to the right!</text>
+  <line x1="70" y1="90" x2="145" y2="90" stroke='#4caf50' stroke-width="2"/>
+  <polygon points="150,90 144,85 144,95" fill='#4caf50'/>
+  <text x="110" y="110" text-anchor='middle' font-family="sans-serif" font-size="12" fill='#4caf50' font-weight='bold'>7 is to the right!</text>
 </svg>
 
 <p><strong>Answer:</strong> Yes! \\(7\\) is to the right of \\(3\\), so \\(7 > 3\\).</p>
@@ -189,50 +190,54 @@ SECTIONS = [
 
 <h4>Example: Count from 5 to 10</h4>
 
-<svg viewBox="0 0 420 140" style="width: 100%; height: auto; margin: 20px 0; background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 0;">
+<svg viewBox="-5 15 430 120" style="width: 100%; height: auto; margin: 20px 0;">
   <!-- Main line -->
   <line x1="10" y1="60" x2="410" y2="60" stroke='#4169E1' stroke-width="2"/>
 
-  <!-- All numbers -->
-  <g font-size='12' text-anchor='middle' fill='currentColor' opacity='0.6'>
-    <line x1="10" y1="55" x2="10" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="10" y="85" fill='currentColor'>0</text>
+  <!-- Tick marks and numbers (evenly spaced, 20px per unit) -->
+  <g font-family="sans-serif" font-size="12" text-anchor="middle" opacity="0.6">
+    <line x1="10" y1="54" x2="10" y2="66" stroke='#4169E1' stroke-width="1"/>
+    <text x="10" y="83" fill='currentColor'>0</text>
 
-    <line x1="50" y1="55" x2="50" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="50" y="85" fill='currentColor'>2</text>
+    <line x1="50" y1="54" x2="50" y2="66" stroke='#4169E1' stroke-width="1"/>
+    <text x="50" y="83" fill='currentColor'>2</text>
 
-    <line x1="110" y1="55" x2="110" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="110" y="85" fill='currentColor'>5</text>
+    <line x1="110" y1="54" x2="110" y2="66" stroke='#4169E1' stroke-width="1"/>
+    <text x="110" y="83" fill='currentColor'>5</text>
 
-    <line x1="150" y1="55" x2="150" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="150" y="85" fill='currentColor'>7</text>
+    <line x1="150" y1="54" x2="150" y2="66" stroke='#4169E1' stroke-width="1"/>
+    <text x="150" y="83" fill='currentColor'>7</text>
 
-    <line x1="210" y1="55" x2="210" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="210" y="85" fill='currentColor'>10</text>
+    <line x1="210" y1="54" x2="210" y2="66" stroke='#4169E1' stroke-width="1"/>
+    <text x="210" y="83" fill='currentColor'>10</text>
 
-    <line x1="410" y1="55" x2="410" y2="65" stroke='#30363d' stroke-width="1"/>
-    <text x="410" y="85" fill='currentColor'>20</text>
+    <line x1="410" y1="54" x2="410" y2="66" stroke='#4169E1' stroke-width="1"/>
+    <text x="410" y="83" fill='currentColor'>20</text>
   </g>
 
-  <!-- Highlighting 5 to 10 -->
-  <g>
-    <circle cx="110" cy="60" r="7" fill='none' stroke='#ff9800' stroke-width="2"/>
-    <text x="110" y="40" text-anchor='middle' font-size='11' fill='#ff9800' font-weight='bold'>Start: 5</text>
+  <!-- Highlighting start (5) and end (10) -->
+  <circle cx="110" cy="60" r="8" fill='none' stroke='#ff9800' stroke-width="2"/>
+  <text x="110" y="38" text-anchor='middle' font-family="sans-serif" font-size="11" fill='#ff9800' font-weight='bold'>Start: 5</text>
 
-    <circle cx="210" cy="60" r="7" fill='none' stroke='#4caf50' stroke-width="2"/>
-    <text x="210" y="40" text-anchor='middle' font-size='11' fill='#4caf50' font-weight='bold'>End: 10</text>
+  <circle cx="210" cy="60" r="8" fill='none' stroke='#4caf50' stroke-width="2"/>
+  <text x="210" y="38" text-anchor='middle' font-family="sans-serif" font-size="11" fill='#4caf50' font-weight='bold'>End: 10</text>
+
+  <!-- Jump arcs from 5 to 10 (5 hops of 20px each) -->
+  <g stroke='#4caf50' stroke-width="1.5" fill='none'>
+    <path d="M 112 100 Q 120 92 128 100"/>
+    <path d="M 132 100 Q 140 92 148 100"/>
+    <path d="M 152 100 Q 160 92 168 100"/>
+    <path d="M 172 100 Q 180 92 188 100"/>
+    <path d="M 192 100 Q 200 92 208 100"/>
   </g>
-
-  <!-- Jumps -->
-  <g stroke='#4caf50' stroke-width="2" fill='none'>
-    <path d="M 110 100 L 130 100 M 125 95 L 130 100 L 125 105"/>
-    <path d="M 130 100 L 150 100 M 145 95 L 150 100 L 145 105"/>
-    <path d="M 150 100 L 170 100 M 165 95 L 170 100 L 165 105"/>
-    <path d="M 170 100 L 190 100 M 185 95 L 190 100 L 185 105"/>
-    <path d="M 190 100 L 210 100 M 205 95 L 210 100 L 205 105"/>
+  <g font-family="sans-serif" font-size="9" fill='#4caf50' text-anchor="middle">
+    <text x="120" y="115">+1</text>
+    <text x="140" y="115">+1</text>
+    <text x="160" y="115">+1</text>
+    <text x="180" y="115">+1</text>
+    <text x="200" y="115">+1</text>
   </g>
-
-  <text x="160" y="125" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>5 steps up!</text>
+  <text x="160" y="130" text-anchor='middle' font-family="sans-serif" font-size="11" fill='currentColor' opacity="0.6">5 jumps to count from 5 to 10!</text>
 </svg>
 
 <p><strong>Count:</strong> 5, 6, 7, 8, 9, 10 — that's 5 steps!</p>

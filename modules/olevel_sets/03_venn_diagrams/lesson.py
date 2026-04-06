@@ -14,25 +14,25 @@ SECTIONS = [
 <h3>Two Sets: A and B</h3>
 <p>With two sets, there are 4 distinct regions:</p>
 
-<svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 400px; margin: 20px auto; display: block;">
+<svg viewBox="-15 -15 530 330" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 400px; margin: 20px auto; display: block;" font-family="sans-serif">
   <!-- Background -->
-  <rect width="500" height="300" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
+  <rect x="0" y="0" width="500" height="300" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 
   <!-- Circle A -->
-  <circle cx="180" cy="150" r="100" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
+  <circle cx="185" cy="150" r="100" fill="rgba(79, 142, 247, 0.2)" stroke="#4f8ef7" stroke-width="2"/>
 
   <!-- Circle B -->
-  <circle cx="320" cy="150" r="100" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
+  <circle cx="315" cy="150" r="100" fill="rgba(79, 142, 247, 0.2)" stroke="#4f8ef7" stroke-width="2"/>
 
-  <!-- Labels -->
-  <text x="140" y="155" font-size='18' fill='currentColor' font-weight='bold'>A</text>
-  <text x="360" y="155" font-size='18' fill='currentColor' font-weight='bold'>B</text>
+  <!-- Set labels -->
+  <text x="120" y="80" font-size="18" fill="currentColor" font-weight="bold">A</text>
+  <text x="370" y="80" font-size="18" fill="currentColor" font-weight="bold">B</text>
 
   <!-- Region labels -->
-  <text x="100" y="150" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Only A</text>
-  <text x="250" y="150" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>A ∩ B</text>
-  <text x="400" y="150" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Only B</text>
-  <text x="250" y="260" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Outside (neither)</text>
+  <text x="130" y="155" font-size="12" fill="currentColor" opacity="0.6" text-anchor="middle">Only A</text>
+  <text x="250" y="155" font-size="12" fill="currentColor" opacity="0.6" text-anchor="middle">A ∩ B</text>
+  <text x="370" y="155" font-size="12" fill="currentColor" opacity="0.6" text-anchor="middle">Only B</text>
+  <text x="250" y="280" font-size="11" fill="currentColor" opacity="0.6" text-anchor="middle">Outside (neither)</text>
 </svg>
 
 <div class="formula-box">
@@ -67,32 +67,32 @@ SECTIONS = [
 <h3>Three Sets: A, B, and C</h3>
 <p>Three overlapping circles create 8 distinct regions. This is where Venn diagrams show their power.</p>
 
-<svg viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 450px; margin: 20px auto; display: block;">
+<svg viewBox="-15 -15 530 430" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 450px; margin: 20px auto; display: block;" font-family="sans-serif">
   <!-- Background -->
-  <rect width="500" height="400" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
+  <rect x="0" y="0" width="500" height="400" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
 
-  <!-- Circle A (left) -->
-  <circle cx="150" cy="180" r="120" fill='rgba(79, 142, 247, 0.15)' stroke='#4f8ef7' stroke-width="2"/>
+  <!-- Circle A (top-left) -->
+  <circle cx="190" cy="170" r="110" fill="rgba(79, 142, 247, 0.15)" stroke="#4f8ef7" stroke-width="2"/>
 
-  <!-- Circle B (right) -->
-  <circle cx="350" cy="180" r="120" fill='rgba(79, 142, 247, 0.15)' stroke='#4f8ef7' stroke-width="2"/>
+  <!-- Circle B (top-right) -->
+  <circle cx="310" cy="170" r="110" fill="rgba(79, 142, 247, 0.15)" stroke="#4f8ef7" stroke-width="2"/>
 
-  <!-- Circle C (bottom) -->
-  <circle cx="250" cy="270" r="120" fill='rgba(79, 142, 247, 0.15)' stroke='#4f8ef7' stroke-width="2"/>
+  <!-- Circle C (bottom-centre) -->
+  <circle cx="250" cy="270" r="110" fill="rgba(79, 142, 247, 0.15)" stroke="#4f8ef7" stroke-width="2"/>
 
-  <!-- Labels -->
-  <text x="100" y="80" font-size='18' fill='currentColor' font-weight='bold'>A</text>
-  <text x="400" y="80" font-size='18' fill='currentColor' font-weight='bold'>B</text>
-  <text x="250" y="360" font-size='18' fill='currentColor' font-weight='bold'>C</text>
+  <!-- Set labels -->
+  <text x="110" y="90" font-size="18" fill="currentColor" font-weight="bold">A</text>
+  <text x="380" y="90" font-size="18" fill="currentColor" font-weight="bold">B</text>
+  <text x="250" y="390" font-size="18" fill="currentColor" font-weight="bold" text-anchor="middle">C</text>
 
   <!-- Region labels -->
-  <text x="105" y="180" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Only A</text>
-  <text x="395" y="180" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Only B</text>
-  <text x="250" y="300" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>Only C</text>
-  <text x="180" y="220" font-size='9' fill='currentColor' opacity='0.6' text-anchor='middle'>A∩C</text>
-  <text x="320" y="220" font-size='9' fill='currentColor' opacity='0.6' text-anchor='middle'>B∩C</text>
-  <text x="250" y="130" font-size='9' fill='currentColor' opacity='0.6' text-anchor='middle'>A∩B</text>
-  <text x="250" y="200" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle' font-weight='bold'>A∩B∩C</text>
+  <text x="130" y="155" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle">Only A</text>
+  <text x="370" y="155" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle">Only B</text>
+  <text x="250" y="340" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle">Only C</text>
+  <text x="190" y="265" font-size="9" fill="currentColor" opacity="0.6" text-anchor="middle">A ∩ C</text>
+  <text x="310" y="265" font-size="9" fill="currentColor" opacity="0.6" text-anchor="middle">B ∩ C</text>
+  <text x="250" y="140" font-size="9" fill="currentColor" opacity="0.6" text-anchor="middle">A ∩ B</text>
+  <text x="250" y="220" font-size="10" fill="currentColor" opacity="0.6" text-anchor="middle" font-weight="bold">A ∩ B ∩ C</text>
 </svg>
 
 <div class="concept-box">
@@ -155,26 +155,30 @@ SECTIONS = [
 
 <p style="font-size: 0.9em; margin: 12px 0"><strong>Left side: (A ∪ B)'</strong> — Everything NOT in the union</p>
 
-<svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;">
-  <rect width="250" height="180" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
-  <rect x="10" y="10" width="230" height="160" fill='#161b22' stroke='#30363d' stroke-width="1"/>
-  <circle cx="80" cy="90" r="50" fill='#0d1117' stroke='#4f8ef7' stroke-width="2"/>
-  <circle cx="170" cy="90" r="50" fill='#0d1117' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>(A ∪ B)' shaded</text>
-  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
-  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
+<svg viewBox="-15 -15 310 210" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;" font-family="sans-serif">
+  <rect x="0" y="0" width="280" height="180" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Universal set shaded -->
+  <rect x="10" y="10" width="260" height="160" rx="4" fill="rgba(79, 142, 247, 0.2)" stroke="#30363d" stroke-width="1"/>
+  <!-- Circles cut out (unshaded) -->
+  <circle cx="100" cy="90" r="50" fill="#0d1117" stroke="#4f8ef7" stroke-width="2"/>
+  <circle cx="180" cy="90" r="50" fill="#0d1117" stroke="#4f8ef7" stroke-width="2"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" opacity="0.6" text-anchor="middle">(A ∪ B)' shaded</text>
+  <text x="75" y="95" font-size="12" fill="currentColor" text-anchor="middle">A</text>
+  <text x="205" y="95" font-size="12" fill="currentColor" text-anchor="middle">B</text>
 </svg>
 
 <p style="font-size: 0.9em; margin: 12px 0"><strong>Right side: A' ∩ B'</strong> — Elements in both complements</p>
 
-<svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;">
-  <rect width="250" height="180" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
-  <rect x="10" y="10" width="230" height="160" fill='#161b22' stroke='#30363d' stroke-width="1"/>
-  <circle cx="80" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
-  <circle cx="170" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>A' ∩ B' shaded</text>
-  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
-  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
+<svg viewBox="-15 -15 310 210" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;" font-family="sans-serif">
+  <rect x="0" y="0" width="280" height="180" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Universal set shaded -->
+  <rect x="10" y="10" width="260" height="160" rx="4" fill="rgba(79, 142, 247, 0.2)" stroke="#30363d" stroke-width="1"/>
+  <!-- Circles cut out (unshaded) -->
+  <circle cx="100" cy="90" r="50" fill="#0d1117" stroke="#4f8ef7" stroke-width="2"/>
+  <circle cx="180" cy="90" r="50" fill="#0d1117" stroke="#4f8ef7" stroke-width="2"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" opacity="0.6" text-anchor="middle">A' ∩ B' shaded</text>
+  <text x="75" y="95" font-size="12" fill="currentColor" text-anchor="middle">A</text>
+  <text x="205" y="95" font-size="12" fill="currentColor" text-anchor="middle">B</text>
 </svg>
 
 <p style="padding: 10px; border-radius: 4px; margin-top: 12px"><strong>Key insight:</strong> Both diagrams shade the same region—outside both circles. This proves (A ∪ B)' = A' ∩ B'</p>
@@ -183,29 +187,51 @@ SECTIONS = [
 
 <p style="font-size: 0.9em; margin: 12px 0"><strong>Left side: (A ∩ B)'</strong> — Everything NOT in the overlap</p>
 
-<svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;">
-  <rect width="250" height="180" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
-  <circle cx="80" cy="90" r="50" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
-  <circle cx="170" cy="90" r="50" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
-  <path d="M 120 50 L 130 60 M 120 130 L 130 120" stroke='#4f8ef7' stroke-width="1" stroke-dasharray="5,5"/>
-  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>(A ∩ B)' = everything but</text>
-  <text x="65" y="55" font-size='11' fill='currentColor' opacity='0.6'>overlap</text>
-  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
-  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
+<svg viewBox="-15 -15 310 210" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;" font-family="sans-serif">
+  <defs>
+    <!-- Clip to show only the overlap region -->
+    <clipPath id="dm2-overlap">
+      <circle cx="100" cy="90" r="50"/>
+    </clipPath>
+  </defs>
+  <rect x="0" y="0" width="280" height="180" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Universal set shaded = (A ∩ B)' -->
+  <rect x="10" y="10" width="260" height="160" rx="4" fill="rgba(79, 142, 247, 0.2)" stroke="#30363d" stroke-width="1"/>
+  <!-- Circles shaded (part of complement) -->
+  <circle cx="100" cy="90" r="50" fill="rgba(79, 142, 247, 0.2)" stroke="#4f8ef7" stroke-width="2"/>
+  <circle cx="180" cy="90" r="50" fill="rgba(79, 142, 247, 0.2)" stroke="#4f8ef7" stroke-width="2"/>
+  <!-- Unshade the overlap (the only region NOT in the complement) -->
+  <circle cx="180" cy="90" r="50" clip-path="url(#dm2-overlap)" fill="#0d1117" stroke="none"/>
+  <!-- Redraw circle strokes on top -->
+  <circle cx="100" cy="90" r="50" fill="none" stroke="#4f8ef7" stroke-width="2"/>
+  <circle cx="180" cy="90" r="50" fill="none" stroke="#4f8ef7" stroke-width="2"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" opacity="0.6" text-anchor="middle">(A ∩ B)' shaded</text>
+  <text x="75" y="95" font-size="12" fill="currentColor" text-anchor="middle">A</text>
+  <text x="205" y="95" font-size="12" fill="currentColor" text-anchor="middle">B</text>
 </svg>
 
 <p style="font-size: 0.9em; margin: 12px 0"><strong>Right side: A' ∪ B'</strong> — Everything outside A OR outside B</p>
 
-<svg viewBox="0 0 250 180" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;">
-  <rect width="250" height="180" fill='#0d1117' stroke='#30363d' stroke-width="1"/>
-  <circle cx="80" cy="90" r="50" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
-  <circle cx="170" cy="90" r="50" fill='rgba(79, 142, 247, 0.2)' stroke='#4f8ef7' stroke-width="2"/>
-  <rect x="10" y="10" width="230" height="160" fill='rgba(79, 142, 247, 0.1)'/>
-  <circle cx="80" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
-  <circle cx="170" cy="90" r="50" fill='transparent' stroke='#4f8ef7' stroke-width="2"/>
-  <text x="30" y="35" font-size='11' fill='currentColor' opacity='0.6'>A' ∪ B' = left OR right</text>
-  <text x="80" y="95" font-size='12' fill='currentColor'>A</text>
-  <text x="170" y="95" font-size='12' fill='currentColor'>B</text>
+<svg viewBox="-15 -15 310 210" xmlns="http://www.w3.org/2000/svg" style="width: 100%; max-width: 300px; margin: 10px auto; display: block;" font-family="sans-serif">
+  <defs>
+    <clipPath id="dm2b-overlap">
+      <circle cx="100" cy="90" r="50"/>
+    </clipPath>
+  </defs>
+  <rect x="0" y="0" width="280" height="180" rx="4" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
+  <!-- Universal set shaded -->
+  <rect x="10" y="10" width="260" height="160" rx="4" fill="rgba(79, 142, 247, 0.2)" stroke="#30363d" stroke-width="1"/>
+  <!-- Circles shaded -->
+  <circle cx="100" cy="90" r="50" fill="rgba(79, 142, 247, 0.2)" stroke="#4f8ef7" stroke-width="2"/>
+  <circle cx="180" cy="90" r="50" fill="rgba(79, 142, 247, 0.2)" stroke="#4f8ef7" stroke-width="2"/>
+  <!-- Unshade the overlap -->
+  <circle cx="180" cy="90" r="50" clip-path="url(#dm2b-overlap)" fill="#0d1117" stroke="none"/>
+  <!-- Redraw strokes -->
+  <circle cx="100" cy="90" r="50" fill="none" stroke="#4f8ef7" stroke-width="2"/>
+  <circle cx="180" cy="90" r="50" fill="none" stroke="#4f8ef7" stroke-width="2"/>
+  <text x="140" y="30" font-size="11" fill="currentColor" opacity="0.6" text-anchor="middle">A' ∪ B' shaded</text>
+  <text x="75" y="95" font-size="12" fill="currentColor" text-anchor="middle">A</text>
+  <text x="205" y="95" font-size="12" fill="currentColor" text-anchor="middle">B</text>
 </svg>
 
 <p style="padding: 10px; border-radius: 4px; margin-top: 12px"><strong>Again:</strong> Both diagrams shade the same regions—the complement of the overlap. This proves (A ∩ B)' = A' ∪ B'</p>

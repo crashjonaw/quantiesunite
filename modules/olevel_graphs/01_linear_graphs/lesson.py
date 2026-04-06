@@ -21,27 +21,29 @@ SECTIONS = [
 <p>For every 1 unit right, the line goes up 2 units.</p>
 </div>
 
-<svg width="400" height="300" class="worked-example">
+<svg viewBox="0 0 390 290" class="worked-example">
   <defs>
     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6' />
     </marker>
   </defs>
-  <g id="grid">
-    <line x1="50" y1="250" x2="350" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="250" x2="350" y2="50" stroke='#58a6ff' stroke-width="2" />
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="360" y2="250" stroke='#30363d' stroke-width="1" />
+  <line x1="50" y1="40" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
+  <!-- Line y = 2x -->
+  <line x1="50" y1="250" x2="350" y2="50" stroke='#58a6ff' stroke-width="2" />
+  <!-- Points -->
+  <circle cx="50" cy="250" r="4" fill='#79c0ff' />
+  <circle cx="150" cy="150" r="4" fill='#79c0ff' />
+  <circle cx="250" cy="50" r="4" fill='#79c0ff' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
+    <text x="365" y="254">x</text>
+    <text x="42" y="35">y</text>
+    <text x="36" y="265">O</text>
+    <text x="210" y="165" fill='#ffa657'>m = 2</text>
+    <text x="260" y="42" fill='#ffa657'>c = 0</text>
   </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
-    <text x="360" y="255">x</text>
-    <text x="40" y="40">y</text>
-    <text x="45" y="265">O</text>
-    <text x="200" y="175" fill='#ffa657'>m = 2</text>
-    <text x="200" y="30" fill='#ffa657'>c = 0</text>
-  </g>
-  <circle cx="50" cy="250" r="3" fill='#79c0ff' />
-  <circle cx="150" cy="150" r="3" fill='#79c0ff' />
-  <circle cx="250" cy="50" r="3" fill='#79c0ff' />
 </svg>
 
 <h3>Reading from a Graph</h3>
@@ -110,19 +112,23 @@ SECTIONS = [
 <p>Two lines are perpendicular if their gradients multiply to give <strong>−1</strong>:</p>
 <p>If \\(m_1 \\times m_2 = -1\\), then \\(m_2 = -\\frac{1}{m_1}\\)</p>
 
-<svg width="400" height="320" class="worked-example">
-  <g id="grid">
-    <line x1="50" y1="250" x2="350" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="100" y1="250" x2="300" y2="100" stroke='#58a6ff' stroke-width="2" />
-    <line x1="150" y1="250" x2="300" y2="50" stroke='#ffa657' stroke-width="2" />
-  </g>
-  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
-    <text x="360" y="255">x</text>
-    <text x="40" y="40">y</text>
-    <text x="200" y="30" fill='#58a6ff'>m₁ = 2</text>
-    <text x="200" y="65" fill='#ffa657'>m₂ = -½</text>
-    <text x="220" y="160" fill='#79c0ff' font-size='14'>90°</text>
+<svg viewBox="0 0 390 310" class="worked-example">
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="360" y2="250" stroke='#30363d' stroke-width="1" />
+  <line x1="50" y1="40" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
+  <!-- Line 1: m = 2 -->
+  <line x1="100" y1="250" x2="300" y2="100" stroke='#58a6ff' stroke-width="2" />
+  <!-- Line 2: m = -1/2 -->
+  <line x1="150" y1="250" x2="300" y2="50" stroke='#ffa657' stroke-width="2" />
+  <!-- Right angle marker -->
+  <rect x="228" y="142" width="10" height="10" fill='none' stroke='#79c0ff' stroke-width="1" rx='0' />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
+    <text x="365" y="254">x</text>
+    <text x="42" y="35">y</text>
+    <text x="310" y="95" fill='#58a6ff'>m&#x2081; = 2</text>
+    <text x="310" y="50" fill='#ffa657'>m&#x2082; = &#x2212;&#xBD;</text>
+    <text x="248" y="152" fill='#79c0ff' font-size='13'>90&#xB0;</text>
   </g>
 </svg>
 
@@ -159,27 +165,27 @@ SECTIONS = [
 <p>Step 4: Find x-intercept: set \\(y = 0\\): \\(0 = -2x + 4 → x = 2\\)</p>
 </div>
 
-<svg width="400" height="300" class="worked-example">
-  <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6' />
-    </marker>
-  </defs>
-  <g id="grid">
-    <line x1="50" y1="50" x2="350" y2="250" stroke='#58a6ff' stroke-width="2" marker-end="url(#arrow)" />
-    <line x1="50" y1="250" x2="350" y2="250" stroke='#30363d' stroke-width="1" />
-    <line x1="50" y1="50" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-  </g>
-  <circle cx="50" cy="50" r="4" fill='#79c0ff' />
-  <circle cx="200" cy="150" r="4" fill='#79c0ff' />
-  <g id="labels" font-family='Arial' font-size='12' fill='currentColor'>
-    <text x="360" y="255">x</text>
-    <text x="40" y="40">y</text>
-    <text x="45" y="265">O</text>
-    <text x="30" y="50">4</text>
-    <text x="200" y="265">2</text>
-    <text x="60" y="45" fill='#ffa657'>(0, 4)</text>
-    <text x="210" y="140" fill='#ffa657'>(1, 2)</text>
+<svg viewBox="0 0 390 290" class="worked-example">
+  <!-- Axes -->
+  <line x1="50" y1="250" x2="360" y2="250" stroke='#30363d' stroke-width="1" />
+  <line x1="50" y1="40" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
+  <!-- Line y = -2x + 4 -->
+  <line x1="50" y1="60" x2="310" y2="250" stroke='#58a6ff' stroke-width="2" />
+  <!-- Points -->
+  <circle cx="50" cy="60" r="4" fill='#79c0ff' />
+  <circle cx="115" cy="125" r="4" fill='#79c0ff' />
+  <circle cx="310" cy="250" r="4" fill='#79c0ff' />
+  <!-- Tick marks -->
+  <line x1="310" y1="246" x2="310" y2="254" stroke='#30363d' stroke-width="1" />
+  <!-- Labels -->
+  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
+    <text x="365" y="254">x</text>
+    <text x="42" y="35">y</text>
+    <text x="36" y="265">O</text>
+    <text x="30" y="60">4</text>
+    <text x="303" y="272">2</text>
+    <text x="62" y="55" fill='#ffa657'>(0, 4)</text>
+    <text x="127" y="120" fill='#ffa657'>(1, 2)</text>
   </g>
 </svg>
 

@@ -18,7 +18,7 @@ SECTIONS = [
 
   <!-- Multiplication box -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="20" y="60" width="150" height="80" rx="5"/>
+    <rect x="20" y="60" width="150" height="80" rx="4"/>
   </g>
   <text x="95" y="80" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Multiplication</text>
   <text x="95" y="105" text-anchor='middle' fill='currentColor' font-size='14'>3 × 4</text>
@@ -30,7 +30,7 @@ SECTIONS = [
 
   <!-- Division box -->
   <g fill='none' stroke='#22c55e' stroke-width="2">
-    <rect x="220" y="60" width="150" height="80" rx="5"/>
+    <rect x="220" y="60" width="150" height="80" rx="4"/>
   </g>
   <text x="295" y="80" text-anchor='middle' fill='currentColor' font-size='13' font-weight='bold'>Division</text>
   <text x="295" y="105" text-anchor='middle' fill='currentColor' font-size='14'>12 ÷ 3</text>
@@ -155,10 +155,10 @@ SECTIONS = [
   <text x="200" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Fact Family for 4, 5, and 20</text>
 
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="30" y="60" width="160" height="35" rx="3"/>
-    <rect x="210" y="60" width="160" height="35" rx="3"/>
-    <rect x="30" y="110" width="160" height="35" rx="3"/>
-    <rect x="210" y="110" width="160" height="35" rx="3"/>
+    <rect x="30" y="60" width="160" height="35" rx="4"/>
+    <rect x="210" y="60" width="160" height="35" rx="4"/>
+    <rect x="30" y="110" width="160" height="35" rx="4"/>
+    <rect x="210" y="110" width="160" height="35" rx="4"/>
   </g>
 
   <text x="110" y="85" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>4 × 5 = 20</text>

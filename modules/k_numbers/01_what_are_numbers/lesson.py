@@ -127,21 +127,22 @@ SECTIONS = [
   <p><strong>The number \\(304\\):</strong> It is a number made of \\(3\\) digits: \\(3\\), \\(0\\), and \\(4\\).</p>
 </div>
 
-<svg viewBox="0 0 400 150" style="width: 100%; height: auto; margin: 20px 0;">
+<svg viewBox="5 5 390 130" style="width: 100%; height: auto; margin: 20px 0;">
   <!-- Digits box -->
-  <rect x="20" y="20" width="150" height="100" fill='none' stroke='#4169E1' stroke-width="2" rx="5"/>
-  <text x="100" y="45" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>Digits (10 symbols)</text>
-  <text x="100" y="70" text-anchor='middle' font-size='16' fill='#4169E1'>0 1 2 3 4 5 6 7 8 9</text>
-  <text x="100" y="100" text-anchor='middle' font-size='12' fill='currentColor' opacity='0.6'>(building blocks)</text>
+  <rect x="20" y="20" width="155" height="105" fill='none' stroke='#4169E1' stroke-width="2" rx='4'/>
+  <text x="97" y="46" text-anchor='middle' font-family="sans-serif" font-size='14' fill='currentColor' font-weight='bold'>Digits (10 symbols)</text>
+  <text x="97" y="72" text-anchor='middle' font-family="sans-serif" font-size='15' fill='#4169E1'>0 1 2 3 4 5 6 7 8 9</text>
+  <text x="97" y="105" text-anchor='middle' font-family="sans-serif" font-size='12' fill='currentColor' opacity='0.6'>(building blocks)</text>
 
   <!-- Arrow -->
-  <text x="200" y="75" text-anchor='middle' font-size='18' fill='#4169E1'>→</text>
+  <line x1="188" y1="72" x2="218" y2="72" stroke='#4169E1' stroke-width="2"/>
+  <polygon points="222,72 216,67 216,77" fill='#4169E1'/>
 
   <!-- Numbers box -->
-  <rect x="230" y="20" width="150" height="100" fill='none' stroke='#4169E1' stroke-width="2" rx="5"/>
-  <text x="310" y="45" text-anchor='middle' font-size='14' fill='currentColor' font-weight='bold'>Numbers</text>
-  <text x="310" y="70" text-anchor='middle' font-size='16' fill='#4169E1'>10, 25, 100, 7493</text>
-  <text x="310" y="100" text-anchor='middle' font-size='12' fill='currentColor' opacity='0.6'>(made from digits)</text>
+  <rect x="230" y="20" width="155" height="105" fill='none' stroke='#4169E1' stroke-width="2" rx='4'/>
+  <text x="307" y="46" text-anchor='middle' font-family="sans-serif" font-size='14' fill='currentColor' font-weight='bold'>Numbers</text>
+  <text x="307" y="72" text-anchor='middle' font-family="sans-serif" font-size='15' fill='#4169E1'>10, 25, 100, 7493</text>
+  <text x="307" y="105" text-anchor='middle' font-family="sans-serif" font-size='12' fill='currentColor' opacity='0.6'>(made from digits)</text>
 </svg>
 
 <div class="mcq-group">

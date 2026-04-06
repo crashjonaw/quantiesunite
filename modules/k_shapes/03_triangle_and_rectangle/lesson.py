@@ -6,30 +6,30 @@ SECTIONS = [
     {
         "title": "The Triangle — Three Sides, Three Corners",
         "body": """<p>A <strong>triangle</strong> is a shape with <strong>3 sides and 3 corners</strong>. The word 'triangle' comes from 'tri' which means <strong>three</strong>!</p>
-<svg viewBox="0 0 500 300" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <!-- Tall triangle -->
-  <polygon points="80,220 80,60 150,220" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
-  <circle cx="80" cy="220" r="4" fill='#ef4444'/>
-  <circle cx="80" cy="60" r="4" fill='#ef4444'/>
-  <circle cx="150" cy="220" r="4" fill='#ef4444'/>
-  <text x="80" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Tall</text>
+<svg viewBox="0 0 450 230" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
+  <!-- Tall — centered at x=75 -->
+  <polygon points="60,160 60,40 115,160" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
+  <circle cx="60" cy="160" r="4" fill='#ef4444'/>
+  <circle cx="60" cy="40" r="4" fill='#ef4444'/>
+  <circle cx="115" cy="160" r="4" fill='#ef4444'/>
+  <text x="75" y="190" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Tall</text>
 
-  <!-- Flat triangle -->
-  <polygon points="220,220 340,220 280,80" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
-  <circle cx="220" cy="220" r="4" fill='#ef4444'/>
-  <circle cx="340" cy="220" r="4" fill='#ef4444'/>
-  <circle cx="280" cy="80" r="4" fill='#ef4444'/>
-  <text x="280" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Flat</text>
+  <!-- Flat — centered at x=225 -->
+  <polygon points="170,160 280,160 225,50" fill='#f59e0b50' stroke='#f59e0b' stroke-width="3"/>
+  <circle cx="170" cy="160" r="4" fill='#f59e0b'/>
+  <circle cx="280" cy="160" r="4" fill='#f59e0b'/>
+  <circle cx="225" cy="50" r="4" fill='#f59e0b'/>
+  <text x="225" y="190" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Flat</text>
 
-  <!-- Wide triangle -->
-  <polygon points="370,220 470,220 420,90" fill='#ef444450' stroke='#ef4444' stroke-width="3"/>
-  <circle cx="370" cy="220" r="4" fill='#ef4444'/>
-  <circle cx="470" cy="220" r="4" fill='#ef4444'/>
-  <circle cx="420" cy="90" r="4" fill='#ef4444'/>
-  <text x="420" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Wide</text>
+  <!-- Wide — centered at x=375 -->
+  <polygon points="325,160 425,160 375,60" fill='#a855f750' stroke='#a855f7' stroke-width="3"/>
+  <circle cx="325" cy="160" r="4" fill='#a855f7'/>
+  <circle cx="425" cy="160" r="4" fill='#a855f7'/>
+  <circle cx="375" cy="60" r="4" fill='#a855f7'/>
+  <text x="375" y="190" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Wide</text>
 
   <!-- Key fact -->
-  <text x="250" y="290" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Always 3 sides  •  Always 3 corners</text>
+  <text x="225" y="220" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Always 3 sides  •  Always 3 corners</text>
 </svg>
 <p><strong>Properties of triangles:</strong></p>
 <ul>
@@ -45,35 +45,35 @@ SECTIONS = [
     {
         "title": "The Rectangle — Four Sides, Two Pairs Equal",
         "body": """<p>A <strong>rectangle</strong> is a shape with <strong>4 sides and 4 right corners</strong>. But unlike a square, its sides are <strong>not all equal</strong> — it has <strong>2 long sides and 2 short sides</strong>.</p>
-<svg viewBox="0 0 500 300" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
-  <!-- Rectangle 1 (vertical orientation) -->
-  <rect x="50" y="80" width="80" height="140" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3" rx='4'/>
-  <circle cx="50" cy="80" r="4" fill='#f59e0b'/>
-  <circle cx="130" cy="80" r="4" fill='#f59e0b'/>
-  <circle cx="130" cy="220" r="4" fill='#f59e0b'/>
-  <circle cx="50" cy="220" r="4" fill='#f59e0b'/>
+<svg viewBox="0 0 420 250" style="width:100%;max-width:420px;height:auto;display:block;margin:16px auto;">
+  <!-- Tall Rectangle — centered at x=105 -->
+  <rect x="60" y="30" width="90" height="150" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3" rx='4'/>
+  <circle cx="60" cy="30" r="4" fill='#f59e0b'/>
+  <circle cx="150" cy="30" r="4" fill='#f59e0b'/>
+  <circle cx="150" cy="180" r="4" fill='#f59e0b'/>
+  <circle cx="60" cy="180" r="4" fill='#f59e0b'/>
   <!-- Right angle indicators -->
-  <rect x="50" y="80" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <rect x="122" y="80" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <rect x="122" y="212" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <rect x="50" y="212" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <text x="90" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Tall</text>
+  <rect x="60" y="30" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <rect x="142" y="30" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <rect x="142" y="172" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <rect x="60" y="172" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <text x="105" y="205" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Tall</text>
 
-  <!-- Rectangle 2 (horizontal orientation) -->
-  <rect x="200" y="120" width="140" height="80" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3" rx='4'/>
-  <circle cx="200" cy="120" r="4" fill='#f59e0b'/>
-  <circle cx="340" cy="120" r="4" fill='#f59e0b'/>
-  <circle cx="340" cy="200" r="4" fill='#f59e0b'/>
-  <circle cx="200" cy="200" r="4" fill='#f59e0b'/>
+  <!-- Wide Rectangle — centered at x=310 -->
+  <rect x="230" y="60" width="160" height="90" fill='#f59e0b30' stroke='#f59e0b' stroke-width="3" rx='4'/>
+  <circle cx="230" cy="60" r="4" fill='#f59e0b'/>
+  <circle cx="390" cy="60" r="4" fill='#f59e0b'/>
+  <circle cx="390" cy="150" r="4" fill='#f59e0b'/>
+  <circle cx="230" cy="150" r="4" fill='#f59e0b'/>
   <!-- Right angle indicators -->
-  <rect x="200" y="120" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <rect x="332" y="120" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <rect x="332" y="192" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <rect x="200" y="192" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
-  <text x="270" y="250" text-anchor='middle' font-size='12' fill='currentColor'>Wide</text>
+  <rect x="230" y="60" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <rect x="382" y="60" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <rect x="382" y="142" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <rect x="230" y="142" width="8" height="8" fill='none' stroke='#f59e0b' stroke-width="1.5"/>
+  <text x="310" y="205" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>Wide</text>
 
   <!-- Key fact -->
-  <text x="250" y="290" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>4 sides (2 long, 2 short)  •  4 right corners</text>
+  <text x="210" y="238" text-anchor='middle' font-size='13' fill='currentColor' font-weight='bold'>4 sides (2 long, 2 short)  •  4 right corners</text>
 </svg>
 <p><strong>Properties of rectangles:</strong></p>
 <ul>

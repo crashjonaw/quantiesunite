@@ -18,38 +18,40 @@ SECTIONS = [
 
         <p><strong>Where does this come from?</strong> The Pythagorean theorem! The vector components form a right triangle, and the hypotenuse is the vector itself.</p>
 
-        <svg viewBox="0 0 300 280" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:350px; margin:20px auto; display:block;">
+        <svg viewBox="0 0 310 260" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:350px; margin:20px auto; display:block;">
             <defs>
                 <marker id="arrow6" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                     <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7' />
                 </marker>
             </defs>
+            <!-- Background -->
+            <rect x="15" y="15" width="280" height="230" rx="4" fill='#161b22' stroke='#30363d' stroke-width="1"/>
 
             <!-- Origin -->
-            <circle cx="50" cy="200" r="4" fill='#4f8ef7'/>
-            <text x="35" y="215" fill='currentColor' opacity='0.6' font-size='11'>O</text>
+            <circle cx="55" cy="200" r="5" fill='#4f8ef7'/>
+            <text x="38" y="218" fill='currentColor' font-size='12' font-family='sans-serif'>O</text>
 
             <!-- Vector endpoint -->
-            <circle cx="150" cy="120" r="4" fill='#2da44e'/>
-            <text x="155" y="120" fill='currentColor' font-size='11'>P(x,y)</text>
+            <circle cx="210" cy="80" r="5" fill='#2da44e'/>
+            <text x="218" y="75" fill='currentColor' font-size='12' font-family='sans-serif'>P(x, y)</text>
 
             <!-- Vector arrow -->
-            <line x1="50" y1="200" x2="150" y2="120" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow6)"/>
-            <text x="85" y="155" fill='#4f8ef7' font-size='12' font-weight='bold'>\\(\\vec{v}\\)</text>
+            <line x1="55" y1="200" x2="207" y2="83" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow6)"/>
+            <text x="100" y="130" fill='#4f8ef7' font-size='13' font-weight='bold' font-family='sans-serif'>v</text>
 
             <!-- Right triangle -->
-            <line x1="50" y1="200" x2="150" y2="200" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3"/>
-            <line x1="150" y1="200" x2="150" y2="120" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3"/>
+            <line x1="55" y1="200" x2="210" y2="200" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
+            <line x1="210" y1="200" x2="210" y2="80" stroke='#8b949e' stroke-width="1.5" stroke-dasharray="3,3" opacity="0.5"/>
 
             <!-- Right angle indicator -->
-            <rect x="140" y="190" width="10" height="10" fill='none' stroke='#8b949e' stroke-width="1"/>
+            <rect x="200" y="190" width="10" height="10" fill='none' stroke='#8b949e' stroke-width="1" opacity="0.5"/>
 
             <!-- Labels -->
-            <text x="100" y="220" fill='currentColor' opacity='0.6' font-size='11' text-anchor='middle'>x</text>
-            <text x="165" y="160" fill='currentColor' opacity='0.6' font-size='11'>y</text>
+            <text x="132" y="218" fill='currentColor' opacity='0.6' font-size='12' font-family='sans-serif' text-anchor='middle'>x</text>
+            <text x="225" y="145" fill='currentColor' opacity='0.6' font-size='12' font-family='sans-serif'>y</text>
 
-            <!-- Magnitude labels -->
-            <text x="95" y="140" fill='#f85149' font-size='11' font-weight='bold'>\\(|\\vec{v}| = \\sqrt{x^2 + y^2}\\)</text>
+            <!-- Magnitude label -->
+            <text x="155" y="50" fill='#f85149' font-size='12' font-weight='bold' font-family='sans-serif' text-anchor='middle'>|v| = &#8730;(x&#178; + y&#178;)</text>
         </svg>
 
         <div class="worked-example">
@@ -138,7 +140,7 @@ SECTIONS = [
             <p>\\(\\vec{v} = -2\\vec{i} + 5\\vec{j}\\)</p>
         </div>
 
-        <svg viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
+        <svg viewBox="0 0 370 230" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; margin:20px auto; display:block;">
             <defs>
                 <marker id="arrow7i" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                     <polygon points="0 0, 10 3, 0 6" fill='#4f8ef7' />
@@ -146,42 +148,48 @@ SECTIONS = [
                 <marker id="arrow7j" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                     <polygon points="0 0, 10 3, 0 6" fill='#2da44e' />
                 </marker>
+                <marker id="arrow7r" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                    <polygon points="0 0, 10 3, 0 6" fill='#f85149' />
+                </marker>
             </defs>
-
-            <!-- Origin -->
-            <circle cx="80" cy="160" r="4" fill='currentColor'/>
-            <text x="60" y="180" fill='currentColor' opacity='0.6' font-size='12'>O</text>
-
-            <!-- i vector (x-direction) -->
-            <line x1="80" y1="160" x2="140" y2="160" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow7i)"/>
-            <text x="110" y="150" fill='#4f8ef7' font-size='12' font-weight='bold'>\\(\\vec{i}\\)</text>
-
-            <!-- j vector (y-direction) -->
-            <line x1="80" y1="160" x2="80" y2="100" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow7j)"/>
-            <text x="55" y="125" fill='#2da44e' font-size='12' font-weight='bold'>\\(\\vec{j}\\)</text>
-
-            <!-- Example: 2i + 3j -->
-            <text x="175" y="30" fill='currentColor' font-size='12' font-weight='bold'>Example: \\(2\\vec{i} + 3\\vec{j}\\)</text>
-
-            <circle cx="175" cy="80" r="4" fill='#f85149'/>
-
-            <!-- 2i part -->
-            <line x1="175" y1="160" x2="235" y2="160" stroke='#4f8ef7' stroke-width="2" stroke-dasharray="2,2"/>
-            <text x="205" y="175" fill='#4f8ef7' font-size='11'>2\\(\\vec{i}\\)</text>
-
-            <!-- 3j part -->
-            <line x1="235" y1="160" x2="235" y2="80" stroke='#2da44e' stroke-width="2" stroke-dasharray="2,2"/>
-            <text x="250" y="120" fill='#2da44e' font-size='11'>3\\(\\vec{j}\\)</text>
-
-            <!-- Result vector -->
-            <line x1="175" y1="160" x2="235" y2="80" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow7j)"/>
-            <text x="195" y="115" fill='#f85149' font-size='11' font-weight='bold'>Result</text>
+            <!-- Background -->
+            <rect x="15" y="15" width="340" height="200" rx="4" fill='#161b22' stroke='#30363d' stroke-width="1"/>
 
             <!-- Axes -->
-            <line x1="20" y1="160" x2="300" y2="160" stroke='#30363d' stroke-width="1"/>
-            <line x1="80" y1="40" x2="80" y2="200" stroke='#30363d' stroke-width="1"/>
-            <text x="295" y="175" fill='currentColor' opacity='0.6' font-size='11'>x</text>
-            <text x="60" y="35" fill='currentColor' opacity='0.6' font-size='11'>y</text>
+            <line x1="35" y1="170" x2="340" y2="170" stroke='#30363d' stroke-width="1"/>
+            <line x1="85" y1="30" x2="85" y2="200" stroke='#30363d' stroke-width="1"/>
+            <text x="335" y="185" fill='currentColor' opacity='0.5' font-size='11' font-family='sans-serif'>x</text>
+            <text x="70" y="38" fill='currentColor' opacity='0.5' font-size='11' font-family='sans-serif'>y</text>
+
+            <!-- Origin -->
+            <circle cx="85" cy="170" r="4" fill='currentColor'/>
+            <text x="68" y="190" fill='currentColor' font-size='12' font-family='sans-serif'>O</text>
+
+            <!-- i vector (x-direction) -->
+            <line x1="85" y1="170" x2="145" y2="170" stroke='#4f8ef7' stroke-width="2.5" marker-end="url(#arrow7i)"/>
+            <text x="115" y="162" fill='#4f8ef7' font-size='13' font-weight='bold' font-family='sans-serif'>i</text>
+
+            <!-- j vector (y-direction) -->
+            <line x1="85" y1="170" x2="85" y2="110" stroke='#2da44e' stroke-width="2.5" marker-end="url(#arrow7j)"/>
+            <text x="65" y="140" fill='#2da44e' font-size='13' font-weight='bold' font-family='sans-serif'>j</text>
+
+            <!-- Example title -->
+            <text x="250" y="42" fill='currentColor' font-size='12' font-weight='bold' font-family='sans-serif' text-anchor='middle'>Example: 2i + 3j</text>
+
+            <!-- 2i part (horizontal dashed) -->
+            <line x1="190" y1="170" x2="250" y2="170" stroke='#4f8ef7' stroke-width="2" stroke-dasharray="3,3"/>
+            <text x="220" y="188" fill='#4f8ef7' font-size='11' font-family='sans-serif' text-anchor='middle'>2i</text>
+
+            <!-- 3j part (vertical dashed) -->
+            <line x1="250" y1="170" x2="250" y2="80" stroke='#2da44e' stroke-width="2" stroke-dasharray="3,3"/>
+            <text x="264" y="130" fill='#2da44e' font-size='11' font-family='sans-serif'>3j</text>
+
+            <!-- Result vector -->
+            <line x1="190" y1="170" x2="247" y2="83" stroke='#f85149' stroke-width="2.5" marker-end="url(#arrow7r)"/>
+            <text x="200" y="120" fill='#f85149' font-size='12' font-weight='bold' font-family='sans-serif'>Result</text>
+
+            <!-- Result point -->
+            <circle cx="250" cy="80" r="4" fill='#f85149'/>
         </svg>
         """
     },

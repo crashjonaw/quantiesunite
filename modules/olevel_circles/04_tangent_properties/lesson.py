@@ -18,18 +18,22 @@ SECTIONS = [
 
 <p>This is THE most important fact about tangents. Everything else follows from this.</p>
 
-<svg width="360" height="300" class="formula-box">
-  <circle cx="180" cy="150" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="150" r="4" fill='currentColor'/>
-  <circle cx="260" cy="150" r="4" fill='#f85149'/>
-  <line x1="180" y1="150" x2="260" y2="150" stroke='#f85149' stroke-width="2"/>
-  <line x1="260" y1="70" x2="260" y2="230" stroke='#30363d' stroke-width="2.5"/>
-  <path d="M 270 155 L 275 155 L 275 150 L 270 150" fill='none' stroke='#a371f7' stroke-width="1.5"/>
-  <text x="200" y="165" fill='#f85149' font-size='12' font-weight='bold'>Radius</text>
-  <text x="265" y="100" fill='#30363d' font-size='12' font-weight='bold'>Tangent</text>
-  <text x="165" y="140" fill='currentColor' font-size='10'>O</text>
-  <text x="265" y="135" fill='#f85149' font-size='10'>T</text>
-  <text x="270" y="168" fill='#a371f7' font-size='11' font-weight='bold'>90°</text>
+<svg width="360" height="280" viewBox="0 0 360 280" class="formula-box">
+  <circle cx="160" cy="130" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="160" cy="130" r="4" fill='currentColor'/>
+  <circle cx="240" cy="130" r="4" fill='#f85149'/>
+  <!-- Radius -->
+  <line x1="160" y1="130" x2="240" y2="130" stroke='#f85149' stroke-width="2"/>
+  <!-- Tangent line (visible on dark bg) -->
+  <line x1="240" y1="50" x2="240" y2="220" stroke='#58a6ff' stroke-width="2.5"/>
+  <!-- Right angle mark -->
+  <polyline points="250,130 250,140 240,140" fill='none' stroke='#a371f7' stroke-width="1.5"/>
+  <!-- Labels -->
+  <text x="195" y="122" fill='#f85149' font-size='12' font-family='sans-serif' font-weight='bold'>Radius</text>
+  <text x="250" y="85" fill='#58a6ff' font-size='12' font-family='sans-serif' font-weight='bold'>Tangent</text>
+  <text x="145" y="125" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <text x="248" y="155" fill='#f85149' font-size='11' font-family='sans-serif'>T</text>
+  <text x="258" y="145" fill='#a371f7' font-size='12' font-family='sans-serif' font-weight='bold'>90\u00b0</text>
 </svg>
 
 <h4>Why Is This True?</h4>
@@ -61,25 +65,32 @@ SECTIONS = [
 <li>∠OAP = ∠OBP = 90° (tangents perpendicular to radii)</li>
 </ul>
 
-<svg width="380" height="320" class="formula-box">
-  <circle cx="180" cy="160" r="70" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="160" r="4" fill='currentColor'/>
-  <circle cx="120" cy="90" r="4" fill='#f85149'/>
-  <circle cx="240" cy="90" r="4" fill='#f85149'/>
-  <circle cx="280" cy="180" r="4" fill='#a371f7'/>
-  <line x1="180" y1="160" x2="120" y2="90" stroke='#f85149' stroke-width="2"/>
-  <line x1="180" y1="160" x2="240" y2="90" stroke='#f85149' stroke-width="2"/>
-  <line x1="280" y1="180" x2="120" y2="90" stroke='#30363d' stroke-width="2.5"/>
-  <line x1="280" y1="180" x2="240" y2="90" stroke='#30363d' stroke-width="2.5"/>
-  <line x1="180" y1="160" x2="280" y2="180" stroke='#a371f7' stroke-width="1.5" stroke-dasharray="3,3"/>
-  <path d="M 135 110 L 140 105 L 145 115 L 140 110" fill='none' stroke='#f85149' stroke-width="1"/>
-  <path d="M 255 110 L 250 105 L 260 105 L 255 110" fill='none' stroke='#f85149' stroke-width="1"/>
-  <text x="115" y="80" fill='#f85149' font-size='11'>A</text>
-  <text x="245" y="80" fill='#f85149' font-size='11'>B</text>
-  <text x="285" y="195" fill='#a371f7' font-size='11'>P</text>
-  <text x="165" y="150" fill='currentColor' font-size='10'>O</text>
-  <text x="200" y="120" fill='#30363d' font-size='10'>PA = PB</text>
-  <text x="235" y="165" fill='#30363d' font-size='10'>PA = PB</text>
+<svg width="380" height="305" viewBox="0 0 380 305" class="formula-box">
+  <circle cx="160" cy="150" r="70" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="160" cy="150" r="4" fill='currentColor'/>
+  <circle cx="105" cy="95" r="4" fill='#f85149'/>
+  <circle cx="225" cy="100" r="4" fill='#f85149'/>
+  <circle cx="290" cy="150" r="4" fill='#a371f7'/>
+  <!-- Radii to tangent points -->
+  <line x1="160" y1="150" x2="105" y2="95" stroke='#f85149' stroke-width="2"/>
+  <line x1="160" y1="150" x2="225" y2="100" stroke='#f85149' stroke-width="2"/>
+  <!-- Tangent lines (visible) -->
+  <line x1="290" y1="150" x2="105" y2="95" stroke='#58a6ff' stroke-width="2"/>
+  <line x1="290" y1="150" x2="225" y2="100" stroke='#58a6ff' stroke-width="2"/>
+  <!-- OP dashed line -->
+  <line x1="160" y1="150" x2="290" y2="150" stroke='#a371f7' stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Right angle marks -->
+  <polyline points="112,105 102,108 105,95" fill='none' stroke='#a371f7' stroke-width="1"/>
+  <polyline points="218,110 228,112 225,100" fill='none' stroke='#a371f7' stroke-width="1"/>
+  <!-- Equal length tick marks on tangents -->
+  <line x1="193" y1="118" x2="203" y2="128" stroke='#58a6ff' stroke-width="1.5"/>
+  <line x1="253" y1="122" x2="263" y2="130" stroke='#58a6ff' stroke-width="1.5"/>
+  <!-- Labels -->
+  <text x="88" y="85" fill='#f85149' font-size='12' font-family='sans-serif'>A</text>
+  <text x="230" y="90" fill='#f85149' font-size='12' font-family='sans-serif'>B</text>
+  <text x="298" y="155" fill='#a371f7' font-size='12' font-family='sans-serif'>P</text>
+  <text x="145" y="145" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <text x="160" y="280" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>PA = PB (equal tangent lengths from external point)</text>
 </svg>
 
 <h4>Why Are the Tangents Equal?</h4>
@@ -141,21 +152,29 @@ SECTIONS = [
 
 <p>If P is on the circle, then OP² = r², so Power = 0. Any line through P either passes through P (giving PA = 0) or intersects at another point.</p>
 
-<svg width="380" height="300" class="formula-box">
-  <circle cx="180" cy="150" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="150" r="4" fill='currentColor'/>
-  <circle cx="280" cy="150" r="4" fill='#a371f7'/>
-  <circle cx="100" cy="150" r="4" fill='#f85149'/>
-  <circle cx="200" cy="80" r="4" fill='#f85149'/>
-  <line x1="280" y1="150" x2="100" y2="150" stroke='#30363d' stroke-width="1.5"/>
-  <line x1="280" y1="150" x2="200" y2="80" stroke='#30363d' stroke-width="1.5"/>
-  <line x1="180" y1="150" x2="280" y2="150" stroke='#a371f7' stroke-width="2"/>
-  <text x="280" y="165" fill='#a371f7' font-size='11'>P</text>
-  <text x="100" y="165" fill='#f85149' font-size='11'>A</text>
-  <text x="205" y="70" fill='#f85149' font-size='11'>B</text>
-  <text x="165" y="140" fill='currentColor' font-size='10'>O</text>
-  <text x="235" y="155" fill='#a371f7' font-size='10' font-weight='bold'>Tangent</text>
-  <text x="190" y="280" fill='currentColor' font-size='12' text-anchor='middle'>PA × PB = PT² = Power(P)</text>
+<svg width="400" height="290" viewBox="0 0 400 290" class="formula-box">
+  <circle cx="180" cy="135" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="180" cy="135" r="4" fill='currentColor'/>
+  <circle cx="300" cy="135" r="4" fill='#a371f7'/>
+  <!-- Secant intersection points -->
+  <circle cx="100" cy="135" r="4" fill='#f85149'/>
+  <circle cx="260" cy="135" r="4" fill='#f85149'/>
+  <!-- Tangent point T on circle -->
+  <circle cx="230" cy="72" r="4" fill='#58a6ff'/>
+  <!-- Secant line through P -->
+  <line x1="300" y1="135" x2="100" y2="135" stroke='#f85149' stroke-width="1.5"/>
+  <!-- Tangent line from P to T -->
+  <line x1="300" y1="135" x2="230" y2="72" stroke='#58a6ff' stroke-width="2"/>
+  <!-- OP line -->
+  <line x1="180" y1="135" x2="300" y2="135" stroke='#a371f7' stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Labels -->
+  <text x="305" y="140" fill='#a371f7' font-size='12' font-family='sans-serif'>P</text>
+  <text x="88" y="155" fill='#f85149' font-size='12' font-family='sans-serif'>A</text>
+  <text x="258" y="155" fill='#f85149' font-size='12' font-family='sans-serif'>B</text>
+  <text x="235" y="62" fill='#58a6ff' font-size='12' font-family='sans-serif'>T</text>
+  <text x="165" y="128" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <text x="275" y="95" fill='#58a6ff' font-size='11' font-family='sans-serif'>Tangent</text>
+  <text x="200" y="275" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>PA \u00d7 PB = PT\u00b2 = Power(P)</text>
 </svg>
 
 <div class="worked-example">
@@ -213,17 +232,20 @@ SECTIONS = [
 
 <p>Two circles with centers O₁ and O₂, radii r₁ and r₂. A line is tangent to both circles. This is called a <strong>common tangent</strong>. The distances from each center to the tangent line are exactly equal to their respective radii.</p>
 
-<svg width="420" height="240" class="formula-box">
-  <circle cx="100" cy="120" r="50" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="300" cy="120" r="70" fill='none' stroke='#f85149' stroke-width="2"/>
-  <circle cx="100" cy="120" r="3" fill='currentColor'/>
-  <circle cx="300" cy="120" r="3" fill='currentColor'/>
-  <line x1="50" y1="80" x2="370" y2="170" stroke='#30363d' stroke-width="2.5"/>
-  <line x1="100" y1="120" x2="85" y2="95" stroke='#79c0ff' stroke-width="1.5"/>
-  <line x1="300" y1="120" x2="265" y2="65" stroke='#f85149' stroke-width="1.5"/>
-  <text x="95" y="115" fill='currentColor' font-size='10'>O₁</text>
-  <text x="295" y="115" fill='currentColor' font-size='10'>O₂</text>
-  <text x="180" y="180" fill='#30363d' font-size='11' font-weight='bold'>Common Tangent</text>
+<svg width="420" height="235" viewBox="0 0 420 235" class="formula-box">
+  <circle cx="100" cy="110" r="50" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="310" cy="110" r="70" fill='none' stroke='#f85149' stroke-width="2"/>
+  <circle cx="100" cy="110" r="3" fill='currentColor'/>
+  <circle cx="310" cy="110" r="3" fill='currentColor'/>
+  <!-- Common tangent line (visible) -->
+  <line x1="40" y1="65" x2="380" y2="160" stroke='#58a6ff' stroke-width="2.5"/>
+  <!-- Radii to tangent points -->
+  <line x1="100" y1="110" x2="82" y2="82" stroke='#79c0ff' stroke-width="1.5"/>
+  <line x1="310" y1="110" x2="278" y2="60" stroke='#f85149' stroke-width="1.5"/>
+  <!-- Labels -->
+  <text x="85" y="130" fill='currentColor' font-size='11' font-family='sans-serif'>O\u2081</text>
+  <text x="295" y="130" fill='currentColor' font-size='11' font-family='sans-serif'>O\u2082</text>
+  <text x="180" y="215" fill='#58a6ff' font-size='12' font-family='sans-serif' font-weight='bold' text-anchor='middle'>Common Tangent</text>
 </svg>
 """
     }

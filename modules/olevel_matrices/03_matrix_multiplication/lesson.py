@@ -74,58 +74,64 @@ SECTIONS = [
                 <li><strong>Multiply corresponding elements and sum them</strong> (this is called the <em>dot product</em> or <em>inner product</em>)</li>
             </ol>
 
-            <svg viewBox="0 0 500 250" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
-                <!-- Matrix A -->
-                <text x="20" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
-                <rect x="50" y="10" width="80" height="80" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                <text x="65" y="35" font-size='13' fill='#4f8ef7'>1</text>
-                <text x="95" y="35" font-size='13' fill='#4f8ef7'>2</text>
-                <text x="125" y="35" font-size='13' fill='#4f8ef7'>3</text>
-                <text x="65" y="55" font-size='13' fill='currentColor'>4</text>
-                <text x="95" y="55" font-size='13' fill='currentColor'>5</text>
-                <text x="125" y="55" font-size='13' fill='currentColor'>6</text>
-                <text x="65" y="75" font-size='13' fill='currentColor'>7</text>
-                <text x="95" y="75" font-size='13' fill='currentColor'>8</text>
-                <text x="125" y="75" font-size='13' fill='currentColor'>9</text>
-                <text x="90" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 3)</text>
-
-                <!-- Matrix B -->
-                <text x="160" y="20" font-size='12' fill='currentColor' font-weight='bold'>B =</text>
-                <rect x="195" y="10" width="60" height="80" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                <text x="210" y="35" font-size='13' fill='#4f8ef7'>2</text>
-                <text x="240" y="35" font-size='13' fill='#4f8ef7'>1</text>
-                <text x="210" y="55" font-size='13' fill='currentColor'>0</text>
-                <text x="240" y="55" font-size='13' fill='currentColor'>3</text>
-                <text x="210" y="75" font-size='13' fill='currentColor'>4</text>
-                <text x="240" y="75" font-size='13' fill='currentColor'>2</text>
-                <text x="225" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
-
-                <!-- Arrow -->
-                <path d="M 280 50 L 320 50" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead)"/>
-
-                <!-- Result -->
-                <text x="335" y="20" font-size='12' fill='currentColor' font-weight='bold'>AB =</text>
-                <rect x="375" y="10" width="60" height="80" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
-                <text x="390" y="35" font-size='13' fill='#2dd4bf'>?</text>
-                <text x="420" y="35" font-size='13' fill='#2dd4bf'>?</text>
-                <text x="390" y="55" font-size='13' fill='currentColor'>?</text>
-                <text x="420" y="55" font-size='13' fill='currentColor'>?</text>
-                <text x="390" y="75" font-size='13' fill='currentColor'>?</text>
-                <text x="420" y="75" font-size='13' fill='currentColor'>?</text>
-                <text x="405" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
-
-                <!-- Example calculation -->
-                <text x="20" y="150" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,1) = Row 1 of A · Column 1 of B</text>
-                <text x="20" y="170" font-size='12' fill='currentColor' font-family='monospace'>(1 × 2) + (2 × 0) + (3 × 4) = 2 + 0 + 12 = <tspan font-weight='bold' fill='#2dd4bf'>14</tspan></text>
-
-                <text x="20" y="200" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,2) = Row 1 of A · Column 2 of B</text>
-                <text x="20" y="220" font-size='12' fill='currentColor' font-family='monospace'>(1 × 1) + (2 × 3) + (3 × 2) = 1 + 6 + 6 = <tspan font-weight='bold' fill='#2dd4bf'>13</tspan></text>
-
+            <svg viewBox="-5 -5 470 250" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <defs>
                     <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
                         <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6'/>
                     </marker>
                 </defs>
+
+                <!-- Matrix A label -->
+                <text x="15" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
+
+                <!-- Matrix A (3x3) -->
+                <rect x="45" y="5" width="95" height="85" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                <text x="62" y="32" font-size='13' fill='currentColor'>1</text>
+                <text x="92" y="32" font-size='13' fill='currentColor'>2</text>
+                <text x="122" y="32" font-size='13' fill='currentColor'>3</text>
+                <text x="62" y="55" font-size='13' fill='currentColor'>4</text>
+                <text x="92" y="55" font-size='13' fill='currentColor'>5</text>
+                <text x="122" y="55" font-size='13' fill='currentColor'>6</text>
+                <text x="62" y="78" font-size='13' fill='currentColor'>7</text>
+                <text x="92" y="78" font-size='13' fill='currentColor'>8</text>
+                <text x="122" y="78" font-size='13' fill='currentColor'>9</text>
+                <text x="92" y="108" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 3)</text>
+
+                <!-- Matrix B label -->
+                <text x="165" y="20" font-size='12' fill='currentColor' font-weight='bold'>B =</text>
+
+                <!-- Matrix B (3x2) -->
+                <rect x="195" y="5" width="65" height="85" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                <text x="212" y="32" font-size='13' fill='currentColor'>2</text>
+                <text x="242" y="32" font-size='13' fill='currentColor'>1</text>
+                <text x="212" y="55" font-size='13' fill='currentColor'>0</text>
+                <text x="242" y="55" font-size='13' fill='currentColor'>3</text>
+                <text x="212" y="78" font-size='13' fill='currentColor'>4</text>
+                <text x="242" y="78" font-size='13' fill='currentColor'>2</text>
+                <text x="228" y="108" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
+
+                <!-- Arrow -->
+                <path d="M 280 48 L 320 48" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead)"/>
+
+                <!-- Result label -->
+                <text x="335" y="20" font-size='12' fill='currentColor' font-weight='bold'>AB =</text>
+
+                <!-- Result Matrix (3x2) -->
+                <rect x="375" y="5" width="65" height="85" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
+                <text x="392" y="32" font-size='13' fill='currentColor'>?</text>
+                <text x="422" y="32" font-size='13' fill='currentColor'>?</text>
+                <text x="392" y="55" font-size='13' fill='currentColor'>?</text>
+                <text x="422" y="55" font-size='13' fill='currentColor'>?</text>
+                <text x="392" y="78" font-size='13' fill='currentColor'>?</text>
+                <text x="422" y="78" font-size='13' fill='currentColor'>?</text>
+                <text x="408" y="108" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>(3 × 2)</text>
+
+                <!-- Example calculations -->
+                <text x="15" y="145" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,1) = Row 1 of A · Column 1 of B</text>
+                <text x="15" y="165" font-size='12' fill='currentColor' font-family='monospace'>(1 × 2) + (2 × 0) + (3 × 4) = 2 + 0 + 12 = <tspan font-weight='bold' fill='#2dd4bf'>14</tspan></text>
+
+                <text x="15" y="200" font-size='11' fill='currentColor' opacity='0.6' font-style="italic">Example: Element (1,2) = Row 1 of A · Column 2 of B</text>
+                <text x="15" y="220" font-size='12' fill='currentColor' font-family='monospace'>(1 × 1) + (2 × 3) + (3 × 2) = 1 + 6 + 6 = <tspan font-weight='bold' fill='#2dd4bf'>13</tspan></text>
             </svg>
         </div>
         """

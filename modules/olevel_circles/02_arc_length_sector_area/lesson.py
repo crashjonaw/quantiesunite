@@ -17,19 +17,19 @@ SECTIONS = [
 <li><strong>Quarter circle:</strong> 90° = π/2 radians</li>
 </ul>
 
-<svg width="350" height="350" viewBox="-30 0 410 348" class="formula-box">
-  <circle cx="175" cy="175" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="175" cy="175" r="4" fill='currentColor'/>
-  <line x1="175" y1="175" x2="275" y2="175" stroke='#f85149' stroke-width="2"/>
-  <line x1="175" y1="175" x2="218" y2="99" stroke='#f85149' stroke-width="2"/>
-  <path d="M 275 175 A 100 100 0 0 0 218 99" fill='none' stroke='#a371f7' stroke-width="3"/>
-  <text x="240" y="155" fill='#a371f7' font-size='16' font-weight='bold'>θ</text>
-  <text x="260" y="130" fill='#f85149' font-size='12' font-weight='bold'>Radius</text>
-  <text x="180" y="100" fill='#f85149' font-size='12' font-weight='bold'>Radius</text>
-  <path d="M 200 180 A 30 30 0 0 0 195 150" fill='none' stroke='#a371f7' stroke-width="1"/>
-  <text x="220" y="170" fill='#a371f7' font-size='11'>Central</text>
-  <text x="225" y="185" fill='#a371f7' font-size='11'>Angle</text>
-  <text x="175" y="330" fill='currentColor' font-size='13' text-anchor='middle'>The central angle determines what fraction of the circle we have</text>
+<svg width="380" height="340" viewBox="0 0 380 340" class="formula-box">
+  <circle cx="175" cy="155" r="100" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="175" cy="155" r="4" fill='currentColor'/>
+  <line x1="175" y1="155" x2="275" y2="155" stroke='#f85149' stroke-width="2"/>
+  <line x1="175" y1="155" x2="218" y2="79" stroke='#f85149' stroke-width="2"/>
+  <path d="M 275 155 A 100 100 0 0 0 218 79" fill='none' stroke='#a371f7' stroke-width="3"/>
+  <text x="253" y="135" fill='#a371f7' font-size='16' font-family='sans-serif' font-weight='bold'>\u03b8</text>
+  <text x="240" y="108" fill='#f85149' font-size='11' font-family='sans-serif'>Radius</text>
+  <text x="178" y="95" fill='#f85149' font-size='11' font-family='sans-serif'>Radius</text>
+  <path d="M 200 160 A 30 30 0 0 0 195 130" fill='none' stroke='#a371f7' stroke-width="1.5"/>
+  <text x="210" y="148" fill='#a371f7' font-size='11' font-family='sans-serif'>Central</text>
+  <text x="215" y="163" fill='#a371f7' font-size='11' font-family='sans-serif'>Angle</text>
+  <text x="190" y="325" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>The central angle determines what fraction of the circle we have</text>
 </svg>
 
 <h4>Key Insight: Fractions of a Circle</h4>
@@ -84,15 +84,18 @@ SECTIONS = [
 <p>Arc length \\(= r \\times \\theta = 8 \\times \\frac{\\pi}{4} =\\) <strong>\\(2\\pi\\) cm \\(\\approx 6.28\\) cm</strong></p>
 </div>
 
-<svg width="360" height="300" class="formula-box">
-  <circle cx="180" cy="150" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <line x1="180" y1="150" x2="270" y2="150" stroke='#f85149' stroke-width="2"/>
-  <line x1="180" y1="150" x2="225" y2="64" stroke='#f85149' stroke-width="2"/>
-  <path d="M 270 150 A 90 90 0 0 0 225 64" fill='none' stroke='#a371f7' stroke-width="3"/>
-  <text x="255" y="115" fill='#a371f7' font-size='14' font-weight='bold'>arc length</text>
-  <text x="200" y="165" fill='#f85149' font-size='12'>r</text>
-  <path d="M 210 155 A 25 25 0 0 0 203 125" fill='none' stroke='#a371f7' stroke-width="1"/>
-  <text x="220" y="145" fill='#a371f7' font-size='11'>θ</text>
+<svg width="380" height="280" viewBox="0 0 380 280" class="formula-box">
+  <circle cx="170" cy="140" r="90" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="170" cy="140" r="3" fill='currentColor'/>
+  <line x1="170" y1="140" x2="260" y2="140" stroke='#f85149' stroke-width="2"/>
+  <line x1="170" y1="140" x2="215" y2="54" stroke='#f85149' stroke-width="2"/>
+  <path d="M 260 140 A 90 90 0 0 0 215 54" fill='none' stroke='#a371f7' stroke-width="3"/>
+  <text x="290" y="95" fill='#a371f7' font-size='13' font-family='sans-serif' font-weight='bold'>Arc</text>
+  <text x="290" y="112" fill='#a371f7' font-size='13' font-family='sans-serif' font-weight='bold'>length</text>
+  <text x="220" y="155" fill='#f85149' font-size='12' font-family='sans-serif'>r</text>
+  <path d="M 200 145 A 25 25 0 0 0 193 115" fill='none' stroke='#a371f7' stroke-width="1.5"/>
+  <text x="205" y="138" fill='#a371f7' font-size='12' font-family='sans-serif'>\u03b8</text>
+  <text x="155" y="158" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
 </svg>
 """
     },
@@ -138,22 +141,25 @@ SECTIONS = [
 
 <h4>Comparing Sector Areas</h4>
 
-<svg width="400" height="280" class="formula-box">
-  <circle cx="100" cy="140" r="60" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <line x1="100" y1="140" x2="160" y2="140" stroke='#f85149' stroke-width="1.5"/>
-  <line x1="100" y1="140" x2="130" y2="80" stroke='#f85149' stroke-width="1.5"/>
-  <path d="M 160 140 A 60 60 0 0 0 130 80" fill='#79c0ff' opacity='0.3' stroke='#79c0ff' stroke-width="2"/>
-  <text x="100" y="185" fill='currentColor' font-size='12' text-anchor='middle'>60°</text>
-  <text x="70" y="195" fill='#79c0ff' font-size='11'>A = πr²/6</text>
+<svg width="400" height="270" viewBox="0 0 400 270" class="formula-box">
+  <!-- 60 degree sector -->
+  <circle cx="105" cy="115" r="60" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="105" cy="115" r="3" fill='currentColor'/>
+  <line x1="105" y1="115" x2="165" y2="115" stroke='#f85149' stroke-width="1.5"/>
+  <line x1="105" y1="115" x2="135" y2="55" stroke='#f85149' stroke-width="1.5"/>
+  <path d="M 165 115 A 60 60 0 0 0 135 55" fill='#79c0ff' opacity='0.25' stroke='#79c0ff' stroke-width="2"/>
+  <text x="105" y="200" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>60\u00b0</text>
+  <text x="105" y="218" fill='#79c0ff' font-size='11' font-family='sans-serif' text-anchor='middle'>A = \u03c0r\u00b2/6</text>
+  <!-- 120 degree sector -->
+  <circle cx="295" cy="115" r="60" fill='none' stroke='#f85149' stroke-width="2"/>
+  <circle cx="295" cy="115" r="3" fill='currentColor'/>
+  <line x1="295" y1="115" x2="355" y2="115" stroke='#f85149' stroke-width="1.5"/>
+  <line x1="295" y1="115" x2="265" y2="47" stroke='#f85149' stroke-width="1.5"/>
+  <path d="M 355 115 A 60 60 0 0 0 265 47" fill='#f85149' opacity='0.25' stroke='#f85149' stroke-width="2"/>
+  <text x="295" y="200" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>120\u00b0</text>
+  <text x="295" y="218" fill='#f85149' font-size='11' font-family='sans-serif' text-anchor='middle'>A = \u03c0r\u00b2/3</text>
 
-  <circle cx="280" cy="140" r="60" fill='none' stroke='#f85149' stroke-width="2"/>
-  <line x1="280" y1="140" x2="340" y2="140" stroke='#f85149' stroke-width="1.5"/>
-  <line x1="280" y1="140" x2="250" y2="72" stroke='#f85149' stroke-width="1.5"/>
-  <path d="M 340 140 A 60 60 0 0 0 250 72" fill='#f85149' opacity='0.3' stroke='#f85149' stroke-width="2"/>
-  <text x="280" y="185" fill='currentColor' font-size='12' text-anchor='middle'>120°</text>
-  <text x="250" y="195" fill='#f85149' font-size='11'>A = πr²/3</text>
-
-  <text x="200" y="250" fill='currentColor' font-size='12' text-anchor='middle'>Sector area is proportional to the central angle</text>
+  <text x="200" y="255" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>Sector area is proportional to the central angle</text>
 </svg>
 """
     },
@@ -166,17 +172,22 @@ SECTIONS = [
 
 <p style="text-align: center; font-weight: bold; font-size: 16px;">\\(\\text{Segment Area} = \\text{Sector Area} - \\text{Triangle Area}\\)</p>
 
-<svg width="360" height="280" class="formula-box">
-  <circle cx="180" cy="140" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <circle cx="180" cy="140" r="3" fill='currentColor'/>
-  <line x1="180" y1="140" x2="260" y2="80" stroke='#f85149' stroke-width="2"/>
-  <line x1="180" y1="140" x2="260" y2="200" stroke='#f85149' stroke-width="2"/>
-  <line x1="260" y1="80" x2="260" y2="200" stroke='#a371f7' stroke-width="2"/>
-  <path d="M 260 80 A 80 80 0 0 0 260 200" fill='#79c0ff' opacity='0.2' stroke='#79c0ff' stroke-width="2"/>
-  <path d="M 180 140 L 260 80 L 260 200 Z" fill='#f85149' opacity='0.1' stroke='none'/>
-  <text x="235" y="140" fill='#79c0ff' font-size='12' font-weight='bold'>Segment</text>
-  <text x="200" y="145" fill='#f85149' font-size='11'>Sector</text>
-  <text x="265" y="145" fill='#a371f7' font-size='11'>−Triangle</text>
+<svg width="400" height="290" viewBox="0 0 400 290" class="formula-box">
+  <circle cx="170" cy="130" r="80" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <circle cx="170" cy="130" r="3" fill='currentColor'/>
+  <!-- Sector fill (triangle + arc region) -->
+  <path d="M 170 130 L 250 70 A 80 80 0 0 1 250 190 Z" fill='#f85149' opacity='0.1' stroke='none'/>
+  <!-- Segment fill (between chord and arc) -->
+  <path d="M 250 70 A 80 80 0 0 1 250 190 L 250 70 Z" fill='#79c0ff' opacity='0.2' stroke='#79c0ff' stroke-width="2"/>
+  <line x1="170" y1="130" x2="250" y2="70" stroke='#f85149' stroke-width="2"/>
+  <line x1="170" y1="130" x2="250" y2="190" stroke='#f85149' stroke-width="2"/>
+  <line x1="250" y1="70" x2="250" y2="190" stroke='#a371f7' stroke-width="2"/>
+  <text x="155" y="125" fill='currentColor' font-size='11' font-family='sans-serif'>O</text>
+  <!-- Labels positioned clearly -->
+  <text x="300" y="130" fill='#79c0ff' font-size='12' font-family='sans-serif' font-weight='bold'>Segment</text>
+  <text x="200" y="155" fill='#f85149' font-size='11' font-family='sans-serif'>Sector</text>
+  <text x="300" y="150" fill='#a371f7' font-size='11' font-family='sans-serif'>\u2212 Triangle</text>
+  <text x="200" y="275" fill='currentColor' font-size='12' font-family='sans-serif' text-anchor='middle'>Segment = Sector \u2212 Triangle</text>
 </svg>
 
 <h4>Segment Area Formula (Radians)</h4>

@@ -71,39 +71,42 @@ SECTIONS = [
 
             <p><strong>Element notation:</strong> The element in row <em>i</em> and column <em>j</em> is written as a<sub>ij</sub>.</p>
 
-            <svg viewBox="-20 0 440 200" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="-35 -5 430 200" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Grid -->
-                <rect x="50" y="30" width="300" height="120" fill='none' stroke='currentColor' opacity='0.3' stroke-width="2"/>
+                <rect x="50" y="30" width="270" height="120" fill='none' stroke='currentColor' opacity='0.3' stroke-width="2" rx='4'/>
 
                 <!-- Column lines -->
-                <line x1="130" y1="30" x2="130" y2="150" stroke='currentColor' opacity='0.3' stroke-width="1"/>
-                <line x1="210" y1="30" x2="210" y2="150" stroke='currentColor' opacity='0.3' stroke-width="1"/>
+                <line x1="140" y1="30" x2="140" y2="150" stroke='currentColor' opacity='0.3' stroke-width="1"/>
+                <line x1="230" y1="30" x2="230" y2="150" stroke='currentColor' opacity='0.3' stroke-width="1"/>
 
                 <!-- Row lines -->
-                <line x1="50" y1="70" x2="350" y2="70" stroke='currentColor' opacity='0.3' stroke-width="1"/>
-                <line x1="50" y1="110" x2="350" y2="110" stroke='currentColor' opacity='0.3' stroke-width="1"/>
+                <line x1="50" y1="70" x2="320" y2="70" stroke='currentColor' opacity='0.3' stroke-width="1"/>
+                <line x1="50" y1="110" x2="320" y2="110" stroke='currentColor' opacity='0.3' stroke-width="1"/>
 
-                <!-- Values -->
-                <text x="90" y="58" font-size='14' fill='#4f8ef7' text-anchor='middle' font-weight='bold'>a₁₁</text>
-                <text x="170" y="58" font-size='14' fill='#4f8ef7' text-anchor='middle' font-weight='bold'>a₁₂</text>
-                <text x="280" y="58" font-size='14' fill='#4f8ef7' text-anchor='middle' font-weight='bold'>a₁₃</text>
+                <!-- Row 1 values -->
+                <text x="95" y="56" font-size='14' fill='currentColor' text-anchor='middle' font-weight='bold'>a₁₁</text>
+                <text x="185" y="56" font-size='14' fill='currentColor' text-anchor='middle' font-weight='bold'>a₁₂</text>
+                <text x="275" y="56" font-size='14' fill='currentColor' text-anchor='middle' font-weight='bold'>a₁₃</text>
 
-                <text x="90" y="90" font-size='14' fill='currentColor' text-anchor='middle'>a₂₁</text>
-                <text x="170" y="90" font-size='14' fill='currentColor' text-anchor='middle'>a₂₂</text>
-                <text x="280" y="90" font-size='14' fill='currentColor' text-anchor='middle'>a₂₃</text>
+                <!-- Row 2 values -->
+                <text x="95" y="96" font-size='14' fill='currentColor' text-anchor='middle'>a₂₁</text>
+                <text x="185" y="96" font-size='14' fill='currentColor' text-anchor='middle'>a₂₂</text>
+                <text x="275" y="96" font-size='14' fill='currentColor' text-anchor='middle'>a₂₃</text>
 
-                <text x="90" y="130" font-size='14' fill='currentColor' text-anchor='middle'>a₃₁</text>
-                <text x="170" y="130" font-size='14' fill='currentColor' text-anchor='middle'>a₃₂</text>
-                <text x="280" y="130" font-size='14' fill='currentColor' text-anchor='middle'>a₃₃</text>
+                <!-- Row 3 values -->
+                <text x="95" y="136" font-size='14' fill='currentColor' text-anchor='middle'>a₃₁</text>
+                <text x="185" y="136" font-size='14' fill='currentColor' text-anchor='middle'>a₃₂</text>
+                <text x="275" y="136" font-size='14' fill='currentColor' text-anchor='middle'>a₃₃</text>
 
-                <!-- Row and column labels -->
-                <text x="20" y="58" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 1</text>
-                <text x="20" y="90" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 2</text>
-                <text x="20" y="130" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 3</text>
+                <!-- Row labels -->
+                <text x="20" y="56" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 1</text>
+                <text x="20" y="96" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 2</text>
+                <text x="20" y="136" font-size='12' fill='currentColor' opacity='0.6' text-anchor='end'>Row 3</text>
 
-                <text x="90" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 1</text>
-                <text x="170" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 2</text>
-                <text x="280" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 3</text>
+                <!-- Column labels -->
+                <text x="95" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 1</text>
+                <text x="185" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 2</text>
+                <text x="275" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 3</text>
             </svg>
 
             <p><strong>Key point:</strong> When we write a<sub>ij</sub>, the first number is the row, the second is the column. So a<sub>23</sub> means "row 2, column 3".</p>

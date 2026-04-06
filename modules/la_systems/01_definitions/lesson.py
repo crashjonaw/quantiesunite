@@ -103,30 +103,33 @@ $$y = \\frac{6}{5}$$
 <h3>Lines in the Plane</h3>
 <p>In \\(\\mathbb{R}^2\\), each linear equation \\(ax + by = c\\) represents a <strong>line</strong>. The solution to a system is the <strong>geometric intersection</strong> of all lines.</p>
 
-<svg viewBox="0 0 400 350" style="margin: 20px 0">
-  <!-- Grid -->
-  <g stroke='#30363d' stroke-width="0.5">
-    <line x1="0" y1="175" x2="400" y2="175" stroke='#161b22'/>
-    <line x1="200" y1="0" x2="200" y2="350" stroke='#161b22'/>
-  </g>
+<svg viewBox="0 0 380 330" style="margin: 20px 0;">
+  <!-- Axes -->
+  <line x1="15" y1="165" x2="365" y2="165" stroke='#484f58' stroke-width="1.5"/>
+  <line x1="190" y1="15" x2="190" y2="315" stroke='#484f58' stroke-width="1.5"/>
 
-  <!-- Line 1: 2x + 3y = 8 (correctly calculated) -->
-  <line x1="150" y1="8" x2="400" y2="175" stroke='#4f8ef7' stroke-width="2.5"/>
+  <!-- Line 1: 2x + 3y = 8 -->
+  <!-- y = (8 - 2x)/3. At x=-3: y=14/3~4.67. At x=7: y=-2. Origin=(190,165), scale=25px/unit -->
+  <line x1="115" y1="48" x2="365" y2="215" stroke='#4f8ef7' stroke-width="2.5"/>
 
-  <!-- Line 2: x - y = 1 (correctly calculated) -->
-  <line x1="100" y1="325" x2="400" y2="25" stroke='#4f8ef7' stroke-width="2.5"/>
+  <!-- Line 2: x - y = 1 -->
+  <!-- y = x - 1. At x=-3: y=-4. At x=5: y=4. -->
+  <line x1="115" y1="265" x2="315" y2="65" stroke='#f47067' stroke-width="2.5"/>
 
-  <!-- Intersection point: x=2.2, y=1.2 -->
-  <circle cx="310" cy="115" r="5" fill='#4f8ef7' stroke='currentColor' stroke-width="1"/>
+  <!-- Intersection point: x=11/5=2.2, y=6/5=1.2 -->
+  <!-- px: (190+2.2*25, 165-1.2*25) = (245, 135) -->
+  <circle cx="245" cy="135" r="5" fill='#3fb950' stroke='currentColor' stroke-width="1"/>
 
-  <!-- Labels -->
-  <text x="10" y="25" font-size='13' fill='#4f8ef7' font-weight='bold'>2x + 3y = 8</text>
-  <text x="10" y="45" font-size='13' fill='#4f8ef7' font-weight='bold'>x - y = 1</text>
-  <text x="315" y="105" font-size='11' fill='currentColor' font-weight='bold'>Solution</text>
+  <!-- Legend -->
+  <text x="20" y="30" font-size='13' font-family='system-ui, sans-serif' fill='#4f8ef7' font-weight='bold'>2x + 3y = 8</text>
+  <text x="20" y="50" font-size='13' font-family='system-ui, sans-serif' fill='#f47067' font-weight='bold'>x − y = 1</text>
+
+  <!-- Solution label (offset from circle) -->
+  <text x="258" y="128" font-size='11' font-family='system-ui, sans-serif' fill='currentColor' font-weight='bold'>Solution</text>
 
   <!-- Axis labels -->
-  <text x="370" y="190" font-size='12' fill='currentColor'>x</text>
-  <text x="210" y="20" font-size='12' fill='currentColor'>y</text>
+  <text x="355" y="158" font-size='13' font-family='system-ui, sans-serif' fill='currentColor'>x</text>
+  <text x="196" y="28" font-size='13' font-family='system-ui, sans-serif' fill='currentColor'>y</text>
 </svg>
 
 <div class="concept-box">

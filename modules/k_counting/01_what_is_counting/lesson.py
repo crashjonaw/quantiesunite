@@ -59,27 +59,27 @@ SECTIONS = [
   </div>
 </div>
 
-<svg viewBox="0 0 400 200" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+<svg viewBox="0 0 360 175" style="width:100%;max-width:460px;height:auto;display:block;margin:20px auto;">
   <!-- Title -->
-  <text x="200" y="20" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>Counting 3 Apples</text>
+  <text x="180" y="20" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>Counting 3 Apples</text>
 
   <!-- Apple 1 -->
-  <circle cx="80" cy="80" r="20" fill='#d32f2f'/>
-  <text x="80" y="130" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>1st</text>
+  <circle cx="60" cy="70" r="20" fill='#d32f2f'/>
+  <text x="60" y="120" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>1st</text>
 
   <!-- Apple 2 -->
-  <circle cx="200" cy="80" r="20" fill='#d32f2f'/>
-  <text x="200" y="130" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>2nd</text>
+  <circle cx="180" cy="70" r="20" fill='#d32f2f'/>
+  <text x="180" y="120" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>2nd</text>
 
   <!-- Apple 3 (with highlight) -->
-  <circle cx="320" cy="80" r="20" fill='#d32f2f'/>
-  <circle cx="320" cy="80" r="24" fill='none' stroke='#22c55e' stroke-width="3"/>
-  <text x="320" y="130" text-anchor='middle' font-size='18' font-weight='bold' fill='#22c55e'>3rd ← Total!</text>
+  <circle cx="300" cy="70" r="20" fill='#d32f2f'/>
+  <circle cx="300" cy="70" r="24" fill='none' stroke='#22c55e' stroke-width="3"/>
+  <text x="300" y="120" text-anchor='middle' font-size='16' font-weight='bold' fill='#22c55e'>3rd = Total!</text>
 
   <!-- Count labels -->
-  <text x="80" y="170" text-anchor='middle' font-size='14' fill='currentColor'>Say "1"</text>
-  <text x="200" y="170" text-anchor='middle' font-size='14' fill='currentColor'>Say "2"</text>
-  <text x="320" y="170" text-anchor='middle' font-size='14' fill='currentColor'>Say "3"</text>
+  <text x="60" y="155" text-anchor='middle' font-size='13' fill='currentColor'>Say "1"</text>
+  <text x="180" y="155" text-anchor='middle' font-size='13' fill='currentColor'>Say "2"</text>
+  <text x="300" y="155" text-anchor='middle' font-size='13' fill='currentColor'>Say "3"</text>
 </svg>"""
     },
     {

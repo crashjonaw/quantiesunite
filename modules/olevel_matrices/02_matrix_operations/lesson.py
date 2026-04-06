@@ -59,40 +59,44 @@ SECTIONS = [
 
             <p><strong>Why must dimensions match?</strong> You can't add a 2×3 matrix to a 3×2 matrix because there are elements in one that have no "partner" in the other.</p>
 
-            <svg viewBox="0 0 500 150" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="-5 -5 500 130" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+                <!-- Matrix A label -->
+                <text x="15" y="45" font-size='13' fill='currentColor' font-weight='bold'>A =</text>
+
                 <!-- Matrix A -->
-                <text x="30" y="20" font-size='12' fill='currentColor' font-weight='bold'>A =</text>
-                <rect x="80" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                <text x="95" y="35" font-size='14' fill='#4f8ef7'>1</text>
-                <text x="125" y="35" font-size='14' fill='#4f8ef7'>2</text>
-                <text x="95" y="55" font-size='14' fill='#4f8ef7'>3</text>
-                <text x="125" y="55" font-size='14' fill='#4f8ef7'>4</text>
+                <rect x="50" y="10" width="70" height="65" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                <text x="70" y="37" font-size='14' fill='currentColor'>1</text>
+                <text x="100" y="37" font-size='14' fill='currentColor'>2</text>
+                <text x="70" y="62" font-size='14' fill='currentColor'>3</text>
+                <text x="100" y="62" font-size='14' fill='currentColor'>4</text>
 
                 <!-- Plus sign -->
-                <text x="160" y="45" font-size='20' fill='currentColor' font-weight='bold' text-anchor='middle'>+</text>
+                <text x="145" y="48" font-size='20' fill='currentColor' font-weight='bold' text-anchor='middle'>+</text>
+
+                <!-- Matrix B label -->
+                <text x="170" y="45" font-size='13' fill='currentColor' font-weight='bold'>B =</text>
 
                 <!-- Matrix B -->
-                <text x="190" y="20" font-size='12' fill='currentColor' font-weight='bold'>B =</text>
-                <rect x="240" y="10" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                <text x="255" y="35" font-size='14' fill='#4f8ef7'>5</text>
-                <text x="285" y="35" font-size='14' fill='#4f8ef7'>6</text>
-                <text x="255" y="55" font-size='14' fill='#4f8ef7'>7</text>
-                <text x="285" y="55" font-size='14' fill='#4f8ef7'>8</text>
+                <rect x="205" y="10" width="70" height="65" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                <text x="225" y="37" font-size='14' fill='currentColor'>5</text>
+                <text x="255" y="37" font-size='14' fill='currentColor'>6</text>
+                <text x="225" y="62" font-size='14' fill='currentColor'>7</text>
+                <text x="255" y="62" font-size='14' fill='currentColor'>8</text>
 
                 <!-- Equals sign -->
-                <text x="320" y="45" font-size='20' fill='currentColor' font-weight='bold' text-anchor='middle'>=</text>
+                <text x="300" y="48" font-size='20' fill='currentColor' font-weight='bold' text-anchor='middle'>=</text>
 
-                <!-- Matrix Result -->
-                <rect x="350" y="10" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
-                <text x="365" y="35" font-size='14' fill='#2dd4bf'>6</text>
-                <text x="395" y="35" font-size='14' fill='#2dd4bf'>8</text>
-                <text x="365" y="55" font-size='14' fill='#2dd4bf'>10</text>
-                <text x="395" y="55" font-size='14' fill='#2dd4bf'>12</text>
+                <!-- Result Matrix -->
+                <rect x="325" y="10" width="80" height="65" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
+                <text x="345" y="37" font-size='14' fill='currentColor'>6</text>
+                <text x="385" y="37" font-size='14' fill='currentColor'>8</text>
+                <text x="342" y="62" font-size='14' fill='currentColor'>10</text>
+                <text x="382" y="62" font-size='14' fill='currentColor'>12</text>
 
-                <!-- Annotations -->
-                <path d="M 95 65 L 95 85" stroke='currentColor' opacity='0.5' stroke-width="1" stroke-dasharray="5,5"/>
-                <path d="M 365 65 L 365 85" stroke='currentColor' opacity='0.5' stroke-width="1" stroke-dasharray="5,5"/>
-                <text x="95" y="105" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>1+5=6</text>
+                <!-- Annotation -->
+                <path d="M 70 80 L 70 95" stroke='currentColor' opacity='0.5' stroke-width="1" stroke-dasharray="5,5"/>
+                <path d="M 345 80 L 345 95" stroke='currentColor' opacity='0.5' stroke-width="1" stroke-dasharray="5,5"/>
+                <text x="210" y="110" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Each entry: 1+5=6, 2+6=8, ...</text>
             </svg>
         </div>
 
@@ -142,32 +146,32 @@ SECTIONS = [
 
             <p><strong>Key insight:</strong> A single number multiplied by every element means you're scaling the entire matrix. This is why it's called "scalar" multiplication.</p>
 
-            <svg viewBox="0 0 430 120" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
+            <svg viewBox="-5 -5 430 100" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Scalar -->
-                <text x="30" y="35" font-size='16' fill='#4f8ef7' font-weight='bold'>3</text>
+                <text x="15" y="48" font-size='16' fill='currentColor' font-weight='bold'>3</text>
 
                 <!-- Multiplication sign -->
-                <text x="55" y="35" font-size='16' fill='currentColor' text-anchor='middle'>×</text>
+                <text x="40" y="48" font-size='16' fill='currentColor' text-anchor='middle'>×</text>
 
                 <!-- Matrix -->
-                <rect x="75" y="15" width="60" height="60" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
-                <text x="90" y="40" font-size='14' fill='#4f8ef7'>1</text>
-                <text x="120" y="40" font-size='14' fill='#4f8ef7'>2</text>
-                <text x="90" y="60" font-size='14' fill='#4f8ef7'>3</text>
-                <text x="120" y="60" font-size='14' fill='#4f8ef7'>4</text>
+                <rect x="60" y="15" width="70" height="65" fill='none' stroke='#4f8ef7' stroke-width="2" rx='4'/>
+                <text x="80" y="42" font-size='14' fill='currentColor'>1</text>
+                <text x="110" y="42" font-size='14' fill='currentColor'>2</text>
+                <text x="80" y="67" font-size='14' fill='currentColor'>3</text>
+                <text x="110" y="67" font-size='14' fill='currentColor'>4</text>
 
                 <!-- Equals -->
-                <text x="155" y="35" font-size='16' fill='currentColor' text-anchor='middle'>=</text>
+                <text x="155" y="48" font-size='16' fill='currentColor' text-anchor='middle'>=</text>
 
                 <!-- Result -->
-                <rect x="175" y="15" width="60" height="60" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
-                <text x="190" y="40" font-size='14' fill='#2dd4bf'>3</text>
-                <text x="220" y="40" font-size='14' fill='#2dd4bf'>6</text>
-                <text x="190" y="60" font-size='14' fill='#2dd4bf'>9</text>
-                <text x="220" y="60" font-size='14' fill='#2dd4bf'>12</text>
+                <rect x="180" y="15" width="80" height="65" fill='none' stroke='#2dd4bf' stroke-width="2" rx='4'/>
+                <text x="200" y="42" font-size='14' fill='currentColor'>3</text>
+                <text x="240" y="42" font-size='14' fill='currentColor'>6</text>
+                <text x="200" y="67" font-size='14' fill='currentColor'>9</text>
+                <text x="237" y="67" font-size='14' fill='currentColor'>12</text>
 
                 <!-- Annotation -->
-                <text x="320" y="45" font-size='11' fill='currentColor' opacity='0.6'>(each element × 3)</text>
+                <text x="330" y="50" font-size='11' fill='currentColor' opacity='0.6'>(each element × 3)</text>
             </svg>
         </div>
 

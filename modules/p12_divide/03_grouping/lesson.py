@@ -18,7 +18,7 @@ SECTIONS = [
 
   <!-- Group 1 -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="20" y="60" width="100" height="100" rx="5"/>
+    <rect x="20" y="60" width="100" height="100" rx="4"/>
   </g>
   <circle cx="40" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="65" cy="90" r="8" fill='#f59e0b'/>
@@ -28,7 +28,7 @@ SECTIONS = [
 
   <!-- Group 2 -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="150" y="60" width="100" height="100" rx="5"/>
+    <rect x="150" y="60" width="100" height="100" rx="4"/>
   </g>
   <circle cx="170" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="195" cy="90" r="8" fill='#f59e0b'/>
@@ -38,7 +38,7 @@ SECTIONS = [
 
   <!-- Group 3 -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="280" y="60" width="100" height="100" rx="5"/>
+    <rect x="280" y="60" width="100" height="100" rx="4"/>
   </g>
   <circle cx="300" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="325" cy="90" r="8" fill='#f59e0b'/>
@@ -48,7 +48,7 @@ SECTIONS = [
 
   <!-- Group 4 -->
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="410" y="60" width="100" height="100" rx="5"/>
+    <rect x="410" y="60" width="100" height="100" rx="4"/>
   </g>
   <circle cx="430" cy="90" r="8" fill='#f59e0b'/>
   <circle cx="455" cy="90" r="8" fill='#f59e0b'/>
@@ -95,10 +95,10 @@ SECTIONS = [
   <text x="380" y="85" text-anchor='middle' fill='currentColor' font-size='12'>"12 in groups</text>
   <text x="380" y="100" text-anchor='middle' fill='currentColor' font-size='12'>of 3"</text>
   <g fill='none' stroke='#22c55e' stroke-width="2">
-    <rect x="340" y="125" width="35" height="35" rx="2"/>
-    <rect x="380" y="125" width="35" height="35" rx="2"/>
-    <rect x="420" y="125" width="35" height="35" rx="2"/>
-    <rect x="340" y="165" width="35" height="35" rx="2"/>
+    <rect x="340" y="125" width="35" height="35" rx="4"/>
+    <rect x="380" y="125" width="35" height="35" rx="4"/>
+    <rect x="420" y="125" width="35" height="35" rx="4"/>
+    <rect x="340" y="165" width="35" height="35" rx="4"/>
   </g>
   <text x="380" y="190" text-anchor='middle' fill='currentColor' font-size='11'>4 groups</text>
 </svg>"""
@@ -120,12 +120,12 @@ SECTIONS = [
   <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Packing Example: 12 Books into Boxes of 2</text>
 
   <g fill='none' stroke='#4f8ef7' stroke-width="2">
-    <rect x="20" y="60" width="50" height="60" rx="3"/>
-    <rect x="85" y="60" width="50" height="60" rx="3"/>
-    <rect x="150" y="60" width="50" height="60" rx="3"/>
-    <rect x="215" y="60" width="50" height="60" rx="3"/>
-    <rect x="280" y="60" width="50" height="60" rx="3"/>
-    <rect x="345" y="60" width="50" height="60" rx="3"/>
+    <rect x="20" y="60" width="50" height="60" rx="4"/>
+    <rect x="85" y="60" width="50" height="60" rx="4"/>
+    <rect x="150" y="60" width="50" height="60" rx="4"/>
+    <rect x="215" y="60" width="50" height="60" rx="4"/>
+    <rect x="280" y="60" width="50" height="60" rx="4"/>
+    <rect x="345" y="60" width="50" height="60" rx="4"/>
   </g>
   <circle cx="35" cy="85" r="6" fill='#ef4444'/>
   <circle cx="50" cy="85" r="6" fill='#ef4444'/>
