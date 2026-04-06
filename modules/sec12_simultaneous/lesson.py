@@ -366,7 +366,7 @@ the faster hiker walks 5.5 km/h.
 <ul>
 <li><strong>Age problems:</strong> Use relationships between ages</li>
 <li><strong>Cost/money problems:</strong> Set up equations from total costs</li>
-<li><strong>Speed/distance problems:</strong> Use distance = speed × time</li>
+<li><strong>Speed/distance problems:</strong> Use \(\text{distance} = \text{speed} \times \text{time}\)</li>
 <li><strong>Mixture problems:</strong> Combine items with different properties</li>
 <li><strong>Geometry problems:</strong> Use length, area, perimeter relationships</li>
 </ul>

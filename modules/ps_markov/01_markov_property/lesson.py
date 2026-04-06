@@ -32,7 +32,7 @@ SECTIONS = [
         <ul>
         <li><strong>Finite state space:</strong> e.g., {Sunny, Rainy, Cloudy} (3 states)</li>
         <li><strong>Countably infinite:</strong> e.g., {0, 1, 2, ...} (queue length)</li>
-        <li><strong>Continuous:</strong> e.g., temperature ∈ [−∞, ∞]</li>
+        <li><strong>Continuous:</strong> e.g., temperature \(\in [-\infty, \infty]\)</li>
         </ul>
 
         <p><strong>Discrete-Time Markov Chains (DTMCs):</strong> Transitions occur at discrete time steps <code>n = 0, 1, 2, ...</code></p>
@@ -72,8 +72,8 @@ Similarly for other states...</pre>
         <p><strong>Example 2: Queue Length (Countably Infinite)</strong></p>
         <pre class='code-block'>States: {0, 1, 2, 3, ...} (number of customers in queue)
 Transition: Depends on arrivals (Poisson) and service times (Exponential)
-- With prob λ·Δt, a customer arrives
-- With prob μ·Δt, a customer is served</pre>
+- With prob \(\lambda \cdot \Delta t\), a customer arrives
+- With prob \(\mu \cdot \Delta t\), a customer is served</pre>
         <p>The queue length is Markov: future length depends only on current length.</p>
         </div>
 

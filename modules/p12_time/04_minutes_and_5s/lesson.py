@@ -40,8 +40,8 @@ SECTIONS = [
 </svg>
 <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
 <p style="margin: 0; font-weight: bold;">The core rule:</p>
-<p style="margin: 8px 0;">Number on clock × 5 = minutes past the hour</p>
-<p style="margin: 0">Example: The 7 = 7 × 5 = 35 minutes</p>
+<p style="margin: 8px 0;">Number on clock \(\times\) 5 = minutes past the hour</p>
+<p style="margin: 0">Example: The 7 = \(7 \times 5 = 35\) minutes</p>
 </div>"""
     },
     {

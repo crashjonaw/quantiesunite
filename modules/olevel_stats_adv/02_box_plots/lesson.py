@@ -32,9 +32,9 @@ SECTIONS = [
         <h4>Finding Quartiles: The Method</h4>
         <p>For an ordered dataset with n values:</p>
         <ul>
-            <li><strong>Q₁ position</strong> = (n+1)/4</li>
-            <li><strong>Q₂ position</strong> = (n+1)/2</li>
-            <li><strong>Q₃ position</strong> = 3(n+1)/4</li>
+            <li><strong>Q₁ position</strong> \\(= \\frac{n+1}{4}\\)</li>
+            <li><strong>Q₂ position</strong> \\(= \\frac{n+1}{2}\\)</li>
+            <li><strong>Q₃ position</strong> \\(= \\frac{3(n+1)}{4}\\)</li>
         </ul>
 
         <p>If the position is a decimal (e.g., 2.5), interpolate between the values at positions 2 and 3.</p>
@@ -43,9 +43,9 @@ SECTIONS = [
             <p><strong>Worked Example:</strong> Data: 2, 5, 7, 9, 11, 13, 15, 17, 19 (n=9)</p>
             <p>First, identify the positions:</p>
             <ul>
-                <li>Q₁ position: (9+1)/4 = 2.5</li>
-                <li>Q₂ position: (9+1)/2 = 5</li>
-                <li>Q₃ position: 3(9+1)/4 = 7.5</li>
+                <li>Q₁ position: \\(\\frac{9+1}{4} = 2.5\\)</li>
+                <li>Q₂ position: \\(\\frac{9+1}{2} = 5\\)</li>
+                <li>Q₃ position: \\(\\frac{3(9+1)}{4} = 7.5\\)</li>
             </ul>
             <p>Now find the values:</p>
             <ul>
@@ -122,8 +122,8 @@ SECTIONS = [
 
         <div class="concept-box">
             <p><strong>Outlier Rule:</strong> A value is an outlier if:</p>
-            <p style="text-align: center;">value &lt; Q₁ − 1.5(IQR) <strong>OR</strong> value &gt; Q₃ + 1.5(IQR)</p>
-            <p>where IQR = Q₃ − Q₁</p>
+            <p style="text-align: center;">\\(\\text{value} < Q_1 - 1.5(IQR)\\) <strong>OR</strong> \\(\\text{value} > Q_3 + 1.5(IQR)\\)</p>
+            <p>where \\(IQR = Q_3 - Q_1\\)</p>
         </div>
 
         <p>On a box plot, outliers are plotted as individual points beyond the whiskers, rather than extending the whiskers to extreme values. This makes the box plot more readable.</p>
@@ -131,10 +131,10 @@ SECTIONS = [
         <div class="worked-example">
             <p><strong>Worked Example:</strong> Checking for outliers</p>
             <p>Using our five-number summary: (2, 6, 11, 16, 19)</p>
-            <p>IQR = 16 − 6 = 10</p>
-            <p>Lower outlier boundary: 6 − 1.5(10) = 6 − 15 = −9</p>
-            <p>Upper outlier boundary: 16 + 1.5(10) = 16 + 15 = 31</p>
-            <p>Outlier range: [−9, 31]</p>
+            <p>\\(IQR = 16 - 6 = 10\\)</p>
+            <p>Lower outlier boundary: \\(6 - 1.5(10) = 6 - 15 = -9\\)</p>
+            <p>Upper outlier boundary: \\(16 + 1.5(10) = 16 + 15 = 31\\)</p>
+            <p>Outlier range: \\([-9, 31]\\)</p>
             <p>Since all values (2, 5, 7, 9, 11, 13, 15, 17, 19) fall within [−9, 31], there are <strong>no outliers</strong>.</p>
         </div>
 

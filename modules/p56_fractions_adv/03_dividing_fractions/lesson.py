@@ -126,7 +126,7 @@ SECTIONS = [
     <p>$$\\frac{3}{8} \\div \\frac{2}{1} = \\frac{3}{8} \\times \\frac{1}{2} = \\frac{3}{16}$$</p>
 
     <p><strong>Example 2:</strong> \\(5 \\div \\frac{1}{3}\\)</p>
-    <p>$$\\frac{5}{1} \\div \\frac{1}{3} = \\frac{5}{1} \\times \\frac{3}{1} = \\frac{15}{1} = 15\\)</p>
+    <p>$$\\frac{5}{1} \\div \\frac{1}{3} = \\frac{5}{1} \\times \\frac{3}{1} = \\frac{15}{1} = 15$$</p>
     <p>This makes sense: How many thirds fit in 5? Fifteen thirds!</p>
   </div>
 
@@ -161,10 +161,10 @@ SECTIONS = [
   <div class="worked-example">
     <h4>More Real-World Examples:</h4>
     <p><strong>Example 1:</strong> A bottle holds \\(\\frac{2}{3}\\) litre. How many bottles can I fill from 4 litres of juice?</p>
-    <p>$$4 \\div \\frac{2}{3} = \\frac{4}{1} \\times \\frac{3}{2} = \\frac{12}{2} = 6\\) bottles</p>
+    <p>$$4 \\div \\frac{2}{3} = \\frac{4}{1} \\times \\frac{3}{2} = \\frac{12}{2} = 6$$ bottles</p>
 
     <p><strong>Example 2:</strong> I have \\(\\frac{5}{6}\\) metre of fabric. Each dress needs \\(\\frac{1}{4}\\) metre. How many dresses can I make?</p>
-    <p>$$\\frac{5}{6} \\div \\frac{1}{4} = \\frac{5}{6} \\times \\frac{4}{1} = \\frac{20}{6} = \\frac{10}{3} = 3\\frac{1}{3}\\) dresses (or 3 complete dresses)</p>
+    <p>$$\\frac{5}{6} \\div \\frac{1}{4} = \\frac{5}{6} \\times \\frac{4}{1} = \\frac{20}{6} = \\frac{10}{3} = 3\\frac{1}{3}$$ dresses (or 3 complete dresses)</p>
   </div>
 
   <div class="success-box">

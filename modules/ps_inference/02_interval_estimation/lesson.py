@@ -27,9 +27,9 @@ NOT: "There's a 95% chance the true value is in THIS interval"
 
         <p>The width of a CI depends on:</p>
         <ul>
-            <li><strong>Sample size n:</strong> Larger n → narrower CI (more data = less uncertainty)</li>
+            <li><strong>Sample size \(n\):</strong> Larger \(n\) → narrower CI (more data = less uncertainty)</li>
             <li><strong>Confidence level:</strong> Higher confidence (e.g., 99% vs 95%) → wider interval (more certainty requires broader range)</li>
-            <li><strong>Population variability σ:</strong> Higher σ → wider CI (more variable data = more uncertainty)</li>
+            <li><strong>Population variability \(\sigma\):</strong> Higher \(\sigma\) → wider CI (more variable data = more uncertainty)</li>
         </ul>
         """
     },
@@ -39,42 +39,42 @@ NOT: "There's a 95% chance the true value is in THIS interval"
         <p>The key to building a CI is finding a <strong>pivotal quantity</strong>: a function of the data and parameter whose distribution is known and doesn't depend on unknown parameters.</p>
 
         <div class='concept-box'>
-            <p><strong>Pivotal Quantity:</strong> A statistic g(X₁,...,Xₙ, θ) whose distribution is known completely. Use it to create bounds for θ.</p>
+            <p><strong>Pivotal Quantity:</strong> A statistic \(g(X_1,\ldots,X_n, \theta)\) whose distribution is known completely. Use it to create bounds for \(\theta\).</p>
         </div>
 
         <p><strong>General Recipe:</strong></p>
         <ol>
-            <li>Find a pivotal quantity Q(data, θ)</li>
+            <li>Find a pivotal quantity \(Q(\text{data}, \theta)\)</li>
             <li>Find the distribution of Q (e.g., normal, t, chi-squared)</li>
-            <li>Find the α/2 quantiles: q_lower and q_upper such that P(q_lower ≤ Q ≤ q_upper) = 1 - α</li>
-            <li>Solve for θ to get CI endpoints</li>
+            <li>Find the \(\alpha/2\) quantiles: \(q_\text{lower}\) and \(q_\text{upper}\) such that \(P(q_\text{lower} \leq Q \leq q_\text{upper}) = 1 - \alpha\)</li>
+            <li>Solve for \(\theta\) to get CI endpoints</li>
         </ol>
 
         <div class='worked-example'>
-            <p><strong>Example: CI for population mean (known σ)</strong></p>
-            <p>Data: X₁,...,Xₙ ~ N(μ, σ²), σ is known, want 95% CI for μ.</p>
-            <pre class='code-block'>Pivotal quantity: Z = (X̄ - μ)/(σ/√n) ~ N(0,1)
+            <p><strong>Example: CI for population mean (known \(\sigma\))</strong></p>
+            <p>Data: \(X_1,\ldots,X_n \sim N(\mu, \sigma^2)\), \(\sigma\) is known, want 95% CI for \(\mu\).</p>
+            <pre class='code-block'>Pivotal quantity: \(Z = (\bar{X} - \mu)/(\sigma/\sqrt{n}) \sim N(0,1)\)
 
-P(-1.96 ≤ Z ≤ 1.96) = 0.95
+\(P(-1.96 \leq Z \leq 1.96) = 0.95\)
 
-P(-1.96 ≤ (X̄ - μ)/(σ/√n) ≤ 1.96) = 0.95
+\(P(-1.96 \leq (\bar{X} - \mu)/(\sigma/\sqrt{n}) \leq 1.96) = 0.95\)
 
-Rearrange for μ:
-P(X̄ - 1.96·σ/√n ≤ μ ≤ X̄ + 1.96·σ/√n) = 0.95
+Rearrange for \(\mu\):
+\(P(\bar{X} - 1.96 \cdot \sigma/\sqrt{n} \leq \mu \leq \bar{X} + 1.96 \cdot \sigma/\sqrt{n}) = 0.95\)
 
-95% CI: [X̄ - 1.96·σ/√n, X̄ + 1.96·σ/√n]</pre>
+95% CI: \([\bar{X} - 1.96 \cdot \sigma/\sqrt{n},\ \bar{X} + 1.96 \cdot \sigma/\sqrt{n}]\)</pre>
             <p><strong>Interpretation:</strong> The interval extends 1.96 standard errors on either side of the point estimate.</p>
         </div>
 
         <div class='concept-box'>
-            <p><strong>t-intervals (unknown σ):</strong> When σ is unknown, use the sample standard deviation s and the t-distribution with n-1 degrees of freedom.</p>
+            <p><strong>t-intervals (unknown \(\sigma\)):</strong> When \(\sigma\) is unknown, use the sample standard deviation \(s\) and the t-distribution with \(n-1\) degrees of freedom.</p>
         </div>
 
-        <pre class='code-block'>CI for μ: X̄ ± t_{α/2,n-1} · (s/√n)
+        <pre class='code-block'>CI for \(\mu\): \(\bar{X} \pm t_{\alpha/2,n-1} \cdot (s/\sqrt{n})\)
 
-where t_{α/2,n-1} is the critical value from t(n-1)</pre>
+where \(t_{\alpha/2,n-1}\) is the critical value from \(t(n-1)\)</pre>
 
-        <p>The t-interval is slightly wider than the z-interval (accounting for the extra uncertainty from estimating σ), and the difference shrinks as n grows large.</p>
+        <p>The t-interval is slightly wider than the z-interval (accounting for the extra uncertainty from estimating \(\sigma\)), and the difference shrinks as \(n\) grows large.</p>
         """
     },
     {
@@ -88,20 +88,20 @@ where t_{α/2,n-1} is the critical value from t(n-1)</pre>
                 <th style='padding: 0.5em;'>Interval Formula</th>
             </tr>
             <tr>
-                <td style='padding: 0.5em;'>Mean, σ known</td>
-                <td style='padding: 0.5em;'>X̄ ± z_{α/2} · σ/√n</td>
+                <td style='padding: 0.5em;'>Mean, \(\sigma\) known</td>
+                <td style='padding: 0.5em;'>\(\bar{X} \pm z_{\alpha/2} \cdot \sigma/\sqrt{n}\)</td>
             </tr>
             <tr>
-                <td style='padding: 0.5em;'>Mean, σ unknown</td>
-                <td style='padding: 0.5em;'>X̄ ± t_{α/2,n-1} · s/√n</td>
+                <td style='padding: 0.5em;'>Mean, \(\sigma\) unknown</td>
+                <td style='padding: 0.5em;'>\(\bar{X} \pm t_{\alpha/2,n-1} \cdot s/\sqrt{n}\)</td>
             </tr>
             <tr>
-                <td style='padding: 0.5em;'>Proportion p (large n)</td>
-                <td style='padding: 0.5em;'>p̂ ± z_{α/2} · √(p̂(1-p̂)/n)</td>
+                <td style='padding: 0.5em;'>Proportion \(p\) (large \(n\))</td>
+                <td style='padding: 0.5em;'>\(\hat{p} \pm z_{\alpha/2} \cdot \sqrt{\hat{p}(1-\hat{p})/n}\)</td>
             </tr>
             <tr>
                 <td style='padding: 0.5em;'>Difference of means</td>
-                <td style='padding: 0.5em;'>(X̄₁ - X̄₂) ± t · SE_pooled</td>
+                <td style='padding: 0.5em;'>\((\bar{X}_1 - \bar{X}_2) \pm t \cdot SE_\text{pooled}\)</td>
             </tr>
         </table>
 
@@ -121,7 +121,7 @@ Interpretation: We're 95% confident the true proportion lies between 25.8% and 4
             <p><strong>Margin of Error:</strong> The width of a CI (e.g., ±0.092) depends on sample size and desired confidence. Doubling precision requires 4× larger sample sizes!</p>
         </div>
 
-        <p><strong>Bayesian credible intervals:</strong> An alternative perspective treats the parameter as random and uses prior beliefs. A credible interval directly gives P(θ ∈ [L,U] | data)—but requires specifying a prior.</p>
+        <p><strong>Bayesian credible intervals:</strong> An alternative perspective treats the parameter as random and uses prior beliefs. A credible interval directly gives \(P(\theta \in [L,U] \mid \text{data})\)—but requires specifying a prior.</p>
         """
     }
 ]

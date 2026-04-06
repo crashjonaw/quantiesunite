@@ -24,18 +24,18 @@ SECTIONS = [
   <text x="230" y="60" font-size='24'>⭐</text>
   <text x="265" y="60" font-size='24'>⭐</text>
 </svg>
-<p style="text-align:center;margin-top:12px;"><strong>8 − 3 = 5 stars left</strong></p>"""
+<p style="text-align:center;margin-top:12px;"><strong>\(8 - 3 = 5\) stars left</strong></p>"""
     },
     {
         "title": "Hands-On Subtraction with Manipulatives",
         "body": """<p>Use your fingers, blocks, counters, or drawings to practice subtraction:</p>
 <div class="worked-example">
 <p><strong>Strategy 1: Physical Removal</strong><br/>
-Put 10 counters on a table. Remove 4. Count what's left. <strong>10 − 4 = 6</strong></p>
+Put 10 counters on a table. Remove 4. Count what's left. <strong>\(10 - 4 = 6\)</strong></p>
 <p style="margin-top:12px;"><strong>Strategy 2: Crossing Out</strong><br/>
-Draw 7 circles. Cross out 2. Count the circles that are NOT crossed out. <strong>7 − 2 = 5</strong></p>
+Draw 7 circles. Cross out 2. Count the circles that are NOT crossed out. <strong>\(7 - 2 = 5\)</strong></p>
 <p style="margin-top:12px;"><strong>Strategy 3: Hiding</strong><br/>
-Show 9 objects. Cover up 3 with your hand. Count what you can still see. <strong>9 − 3 = 6</strong></p>
+Show 9 objects. Cover up 3 with your hand. Count what you can still see. <strong>\(9 - 3 = 6\)</strong></p>
 </div>
 <canvas id="objChart1" data-chart='{
   "type": "bar",
@@ -67,9 +67,9 @@ Show 9 objects. Cover up 3 with your hand. Count what you can still see. <strong
 <div class="mcq-group">
   <p><strong>🍪 You have 9 cookies. You eat 4. How many are left?</strong></p>
   <div class="mcq-options">
-    <button class="mcq-option" data-correct="false" data-explanation="That would be 9 + 4 = 13. But we're taking away, not adding.">13</button>
-    <button class="mcq-option" data-correct="true" data-explanation="Correct! 9 − 4 = 5. Five cookies left for later!">5</button>
-    <button class="mcq-option" data-correct="false" data-explanation="That's only 3 eaten. We ate 4, so 9 − 4 = 5.">6</button>
+    <button class="mcq-option" data-correct="false" data-explanation="That would be \(9 + 4 = 13\). But we're taking away, not adding.">13</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Correct! \(9 - 4 = 5\). Five cookies left for later!">5</button>
+    <button class="mcq-option" data-correct="false" data-explanation="That's only 3 eaten. We ate 4, so \(9 - 4 = 5\).">6</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>
@@ -77,8 +77,8 @@ Show 9 objects. Cover up 3 with your hand. Count what you can still see. <strong
   <p><strong>🎈 You blow up 12 balloons. 5 pop. How many are safe?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Count on from 5: 6, 7, 8, 9, 10, 11, 12. That's 7 more.">7</button>
-    <button class="mcq-option" data-correct="true" data-explanation="Correct! 12 − 5 = 7. Seven balloons are still good.">7</button>
-    <button class="mcq-option" data-correct="false" data-explanation="You have 12 total. If 5 popped, 12 − 5 = 7, not 8.">8</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Correct! \(12 - 5 = 7\). Seven balloons are still good.">7</button>
+    <button class="mcq-option" data-correct="false" data-explanation="You have 12 total. If 5 popped, \(12 - 5 = 7\), not 8.">8</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>"""

@@ -93,8 +93,8 @@ SECTIONS = [
 
         <h3>Formula for Order</h3>
         <div class="concept-box">
-            <p>Order = 360° ÷ (angle of rotation for identical shape)</p>
-            <p><strong>Example:</strong> Square rotates 90° and looks the same → 360° ÷ 90° = 4</p>
+            <p>\\(Order = 360° \\div\\) (angle of rotation for identical shape)</p>
+            <p><strong>Example:</strong> Square rotates 90° and looks the same → \\(360° \\div 90° = 4\\)</p>
         </div>
         """
     },

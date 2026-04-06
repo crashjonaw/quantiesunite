@@ -20,7 +20,7 @@ SECTIONS = [
         <p>When an experiment naturally splits into mutually exclusive cases that cover all possibilities, the total probability is the sum of probabilities from each path.</p>
 
         <div class="formula-box" style="text-align: center;">
-            <p style="margin: 0;"><strong>P(Event) = P(Event | Case 1) × P(Case 1) + P(Event | Case 2) × P(Case 2) + ...</strong></p>
+            <p style="margin: 0;"><strong>\\(P(\\text{Event}) = P(\\text{Event} | \\text{Case 1}) \\times P(\\text{Case 1}) + P(\\text{Event} | \\text{Case 2}) \\times P(\\text{Case 2}) + \\ldots\\)</strong></p>
             <p style="font-size: 0.9em; margin: 10px 0 0 0">Sum over all mutually exclusive, exhaustive cases</p>
         </div>
 
@@ -35,17 +35,17 @@ SECTIONS = [
 
             <p><strong>Solution using Law of Total Probability:</strong></p>
             <ul>
-                <li>P(Defective) = P(Defective | From A) × P(From A) + P(Defective | From B) × P(From B)</li>
-                <li>= 0.02 × 0.60 + 0.05 × 0.40</li>
-                <li>= 0.012 + 0.020</li>
-                <li>= 0.032 or 3.2%</li>
+                <li>\\(P(\\text{Defective}) = P(\\text{Defective} | \\text{From A}) \\times P(\\text{From A}) + P(\\text{Defective} | \\text{From B}) \\times P(\\text{From B})\\)</li>
+                <li>\\(= 0.02 \\times 0.60 + 0.05 \\times 0.40\\)</li>
+                <li>\\(= 0.012 + 0.020\\)</li>
+                <li>\\(= 0.032\\) or 3.2%</li>
             </ul>
 
             <p><strong>Tree diagram view:</strong></p>
             <ul>
-                <li>Path 1: From A (prob 0.60) → Defective (prob 0.02) = 0.012</li>
-                <li>Path 2: From B (prob 0.40) → Defective (prob 0.05) = 0.020</li>
-                <li>Total: 0.012 + 0.020 = 0.032</li>
+                <li>Path 1: From A (prob 0.60) → Defective (prob 0.02) \\(= 0.012\\)</li>
+                <li>Path 2: From B (prob 0.40) → Defective (prob 0.05) \\(= 0.020\\)</li>
+                <li>Total: \\(0.012 + 0.020 = 0.032\\)</li>
             </ul>
 
             <p><strong>Interpretation:</strong> Even though A has a low defect rate, the overall defect rate is 3.2% because we're mixing both machines.</p>
@@ -57,10 +57,10 @@ SECTIONS = [
             <p><strong>Question:</strong> If a random person tests positive, what's the probability they actually have the disease?</p>
 
             <p><strong>This is Bayes' theorem (next section), but we can solve it with total probability first:</strong></p>
-            <p>P(Test Positive) = P(Test Pos | Has Disease) × P(Has Disease) + P(Test Pos | No Disease) × P(No Disease)</p>
-            <p>= 0.95 × 0.01 + 0.10 × 0.99</p>
-            <p>= 0.0095 + 0.099</p>
-            <p>= 0.1085 or 10.85%</p>
+            <p>\\(P(\\text{Test Positive}) = P(\\text{Test Pos} | \\text{Has Disease}) \\times P(\\text{Has Disease}) + P(\\text{Test Pos} | \\text{No Disease}) \\times P(\\text{No Disease})\\)</p>
+            <p>\\(= 0.95 \\times 0.01 + 0.10 \\times 0.99\\)</p>
+            <p>\\(= 0.0095 + 0.099\\)</p>
+            <p>\\(= 0.1085\\) or 10.85%</p>
 
             <p><strong>Insight:</strong> Even though the test is "95% accurate," only 10.85% of positive tests indicate actual disease! This is because the disease is rare.</p>
         </div>
@@ -100,10 +100,10 @@ SECTIONS = [
 
             <p><strong>From this table, we can quickly find:</strong></p>
             <ul>
-                <li>P(Coffee) = 120/200 = 0.60</li>
-                <li>P(Afternoon | Coffee) = 30/120 = 0.25</li>
-                <li>P(Coffee | Morning) = 90/130 ≈ 0.692</li>
-                <li>P(Coffee and Morning) = 90/200 = 0.45</li>
+                <li>\\(P(\\text{Coffee}) = \\frac{120}{200} = 0.60\\)</li>
+                <li>\\(P(\\text{Afternoon} | \\text{Coffee}) = \\frac{30}{120} = 0.25\\)</li>
+                <li>\\(P(\\text{Coffee} | \\text{Morning}) = \\frac{90}{130} \\approx 0.692\\)</li>
+                <li>\\(P(\\text{Coffee and Morning}) = \\frac{90}{200} = 0.45\\)</li>
             </ul>
 
             <p><strong>Why tables help:</strong> All information in one place. Easy to count overlaps. Simple to verify using totals.</p>
@@ -118,7 +118,7 @@ SECTIONS = [
 
         <h4>The Formula</h4>
         <div style="text-align: center; border-radius: 8px; padding: 20px; margin: 20px 0">
-            <p style="font-size: 1.1em; margin: 0"><strong>P(A | B) = [P(B | A) × P(A)] / P(B)</strong></p>
+            <p style="font-size: 1.1em; margin: 0"><strong>\\(P(A | B) = \\frac{P(B | A) \\times P(A)}{P(B)}\\)</strong></p>
             <p style="font-size: 0.9em; margin: 10px 0 0 0">Probability of cause A given observed effect B</p>
         </div>
 
@@ -152,16 +152,16 @@ SECTIONS = [
             </ul>
 
             <p><strong>Step 1: Calculate P(B) using Law of Total Probability</strong></p>
-            <p>P(B) = P(B|A) × P(A) + P(B|A') × P(A')</p>
-            <p>= 0.99 × 0.01 + 0.05 × 0.99</p>
-            <p>= 0.0099 + 0.0495</p>
-            <p>= 0.0594</p>
+            <p>\\(P(B) = P(B|A) \\times P(A) + P(B|A') \\times P(A')\\)</p>
+            <p>\\(= 0.99 \\times 0.01 + 0.05 \\times 0.99\\)</p>
+            <p>\\(= 0.0099 + 0.0495\\)</p>
+            <p>\\(= 0.0594\\)</p>
 
             <p><strong>Step 2: Apply Bayes' Theorem</strong></p>
-            <p>P(A|B) = [P(B|A) × P(A)] / P(B)</p>
-            <p>= [0.99 × 0.01] / 0.0594</p>
-            <p>= 0.0099 / 0.0594</p>
-            <p>≈ 0.167 or 16.7%</p>
+            <p>\\(P(A|B) = \\frac{P(B|A) \\times P(A)}{P(B)}\\)</p>
+            <p>\\(= \\frac{0.99 \\times 0.01}{0.0594}\\)</p>
+            <p>\\(= \\frac{0.0099}{0.0594}\\)</p>
+            <p>\\(\\approx 0.167\\) or 16.7%</p>
 
             <p><strong>Shocking result:</strong> Even with a positive test, there's only a 16.7% chance you actually have the disease! The disease is so rare that false positives outnumber true positives.</p>
         </div>
@@ -178,10 +178,10 @@ SECTIONS = [
             <p><strong>New question:</strong> If a defective item is found, what's the probability it came from machine A?</p>
 
             <p><strong>Solution:</strong></p>
-            <p>P(From A | Defective) = [P(Defective | A) × P(A)] / P(Defective)</p>
-            <p>= [0.02 × 0.60] / 0.032</p>
-            <p>= 0.012 / 0.032</p>
-            <p>= 0.375 or 37.5%</p>
+            <p>\\(P(\\text{From A} | \\text{Defective}) = \\frac{P(\\text{Defective} | A) \\times P(A)}{P(\\text{Defective})}\\)</p>
+            <p>\\(= \\frac{0.02 \\times 0.60}{0.032}\\)</p>
+            <p>\\(= \\frac{0.012}{0.032}\\)</p>
+            <p>\\(= 0.375\\) or 37.5%</p>
 
             <p><strong>Interpretation:</strong> If you find a defective item, it's more likely (62.5%) to be from machine B, even though B produces fewer items. Why? Because B has a higher defect rate.</p>
         </div>
@@ -205,29 +205,29 @@ SECTIONS = [
             <p><strong>Question:</strong> What's the probability that both balls are the same color?</p>
 
             <p><strong>Solution:</strong></p>
-            <p>P(same color) = P(both red) + P(both blue) + P(both yellow)</p>
+            <p>\\(P(\\text{same color}) = P(\\text{both red}) + P(\\text{both blue}) + P(\\text{both yellow})\\)</p>
 
             <p><strong>P(both red):</strong></p>
             <ul>
-                <li>1st draw: P(Red) = 4/12</li>
-                <li>2nd draw (given 1st was red): P(Red) = 3/11</li>
-                <li>P(both red) = 4/12 × 3/11 = 12/132</li>
+                <li>1st draw: \\(P(\\text{Red}) = \\frac{4}{12}\\)</li>
+                <li>2nd draw (given 1st was red): \\(P(\\text{Red}) = \\frac{3}{11}\\)</li>
+                <li>\\(P(\\text{both red}) = \\frac{4}{12} \\times \\frac{3}{11} = \\frac{12}{132}\\)</li>
             </ul>
 
             <p><strong>P(both blue):</strong></p>
             <ul>
-                <li>P(both blue) = 5/12 × 4/11 = 20/132</li>
+                <li>\\(P(\\text{both blue}) = \\frac{5}{12} \\times \\frac{4}{11} = \\frac{20}{132}\\)</li>
             </ul>
 
             <p><strong>P(both yellow):</strong></p>
             <ul>
-                <li>P(both yellow) = 3/12 × 2/11 = 6/132</li>
+                <li>\\(P(\\text{both yellow}) = \\frac{3}{12} \\times \\frac{2}{11} = \\frac{6}{132}\\)</li>
             </ul>
 
             <p><strong>Total:</strong></p>
-            <p>P(same color) = 12/132 + 20/132 + 6/132 = 38/132 = 19/66 ≈ 0.288</p>
+            <p>\\(P(\\text{same color}) = \\frac{12}{132} + \\frac{20}{132} + \\frac{6}{132} = \\frac{38}{132} = \\frac{19}{66} \\approx 0.288\\)</p>
 
-            <p><strong>Check:</strong> Verify with the complement: P(different colors) = 1 − 19/66 = 47/66 ✓</p>
+            <p><strong>Check:</strong> Verify with the complement: \\(P(\\text{different colors}) = 1 - \\frac{19}{66} = \\frac{47}{66}\\) ✓</p>
         </div>
 
         <div class="concept-box">
@@ -236,16 +236,16 @@ SECTIONS = [
 
             <p><strong>Question a:</strong> What's the probability they pass?</p>
             <ul>
-                <li>Path 1 (Study and Pass): 0.8 × 0.7 = 0.56</li>
-                <li>Path 2 (Don't Study and Pass): 0.2 × 0.3 = 0.06</li>
-                <li>P(Pass) = 0.56 + 0.06 = 0.62</li>
+                <li>Path 1 (Study and Pass): \\(0.8 \\times 0.7 = 0.56\\)</li>
+                <li>Path 2 (Don't Study and Pass): \\(0.2 \\times 0.3 = 0.06\\)</li>
+                <li>\\(P(\\text{Pass}) = 0.56 + 0.06 = 0.62\\)</li>
             </ul>
 
             <p><strong>Question b:</strong> Given that the student passed, what's the probability they studied?</p>
-            <p>P(Studied | Passed) = P(Passed | Studied) × P(Studied) / P(Passed)</p>
-            <p>= [0.7 × 0.8] / 0.62</p>
-            <p>= 0.56 / 0.62</p>
-            <p>≈ 0.903 or 90.3%</p>
+            <p>\\(P(\\text{Studied} | \\text{Passed}) = \\frac{P(\\text{Passed} | \\text{Studied}) \\times P(\\text{Studied})}{P(\\text{Passed})}\\)</p>
+            <p>\\(= \\frac{0.7 \\times 0.8}{0.62}\\)</p>
+            <p>\\(= \\frac{0.56}{0.62}\\)</p>
+            <p>\\(\\approx 0.903\\) or 90.3%</p>
 
             <p><strong>Interpretation:</strong> Passing is strong evidence that the student studied (90.3% likely). Even though they had a 70% pass rate with studying and 30% without, the combination of a good pass rate and frequent studying makes a passing exam a strong indicator of studying.</p>
         </div>

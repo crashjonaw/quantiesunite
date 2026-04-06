@@ -84,7 +84,7 @@ SECTIONS = [
         <div class='warning-box'>
         <p>Let W = {(x, y) ∈ ℝ² : xy = 0} (points on the axes).</p>
         <p><strong>Why is W NOT a subspace?</strong></p>
-        <p>Closed under addition? (1, 0) ∈ W and (0, 1) ∈ W, but (1, 0) + (0, 1) = (1, 1) ∉ W (product is 1 ≠ 0). ✗</p>
+        <p>Closed under addition? \((1, 0) \in W\) and \((0, 1) \in W\), but \((1, 0) + (0, 1) = (1, 1) \notin W\) (product is \(1 \neq 0\)). ✗</p>
         </div>
         """
     },
@@ -115,7 +115,7 @@ General solution: x = s[-2, 1, 0]ᵀ + t[1, 0, 1]ᵀ</pre>
         <li>Closed under scalar multiplication: If Ax = 0 and c ∈ ℝ, then A(cx) = c(Ax) = c·0 = 0. ✓</li>
         </ol>
 
-        <p><strong>Contrast:</strong> The solution set of Ax = b (b ≠ 0) is NOT a subspace—it doesn't contain 0.</p>
+        <p><strong>Contrast:</strong> The solution set of \(Ax = b\) (\(b \neq 0\)) is NOT a subspace—it doesn't contain 0.</p>
         """
     },
     {

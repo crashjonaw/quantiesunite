@@ -9,9 +9,9 @@ SECTIONS = [
 <p>If you multiply two numbers together, you can divide the result by one of them to get back to the other number.</p>
 <div class="concept-box">
   <strong>Multiplication and Division are Opposites:</strong><br>
-  If 3 × 4 = 12, then<br>
-  12 ÷ 3 = 4 (dividing by 3 gives us back the 4)<br>
-  12 ÷ 4 = 3 (dividing by 4 gives us back the 3)
+  If \(3 \times 4 = 12\), then<br>
+  \(12 \div 3 = 4\) (dividing by 3 gives us back the 4)<br>
+  \(12 \div 4 = 3\) (dividing by 4 gives us back the 3)
 </div>
 <svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>Multiplication and Division: A Two-Way Street</text>
@@ -47,12 +47,12 @@ SECTIONS = [
         "body": """<p><strong>This is super helpful!</strong> You can always check your division answer using multiplication.</p>
 <p>If you're not sure about a division answer, multiply the answer by the divisor. You should get back the original number!</p>
 <div class="worked-example">
-  <strong>Check: Is 20 ÷ 4 = 5?</strong><br>
-  Multiply: 5 × 4 = 20 ✓<br>
+  <strong>Check: Is \(20 \div 4 = 5\)?</strong><br>
+  Multiply: \(5 \times 4 = 20\) ✓<br>
   Yes! The answer is correct!<br><br>
-  <strong>Check: Is 15 ÷ 3 = 6?</strong><br>
-  Multiply: 6 × 3 = 18 ✗<br>
-  No! The answer is wrong. (Actually 15 ÷ 3 = 5)
+  <strong>Check: Is \(15 \div 3 = 6\)?</strong><br>
+  Multiply: \(6 \times 3 = 18\) ✗<br>
+  No! The answer is wrong. (Actually \(15 \div 3 = 5\))
 </div>
 <svg viewBox="0 0 480 220" style="width:100%;max-width:480px;height:auto;display:block;margin:16px auto;">
   <text x="240" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Checking Division with Multiplication</text>
@@ -75,12 +75,12 @@ SECTIONS = [
         "body": """<p><strong>If you know your multiplication tables, you already know division!</strong></p>
 <p>Every multiplication fact gives you two division facts:</p>
 <div class="worked-example">
-  <strong>From 3 × 5 = 15, we get two division facts:</strong><br>
-  • 15 ÷ 3 = 5<br>
-  • 15 ÷ 5 = 3<br><br>
-  <strong>From 4 × 6 = 24, we get:</strong><br>
-  • 24 ÷ 4 = 6<br>
-  • 24 ÷ 6 = 4
+  <strong>From \(3 \times 5 = 15\), we get two division facts:</strong><br>
+  • \(15 \div 3 = 5\)<br>
+  • \(15 \div 5 = 3\)<br><br>
+  <strong>From \(4 \times 6 = 24\), we get:</strong><br>
+  • \(24 \div 4 = 6\)<br>
+  • \(24 \div 6 = 4\)
 </div>
 <canvas id="div_multiply1" data-chart='{
   "type":"bar",
@@ -102,10 +102,10 @@ SECTIONS = [
 <p style="margin-top:20px;"><strong>Family facts:</strong> Multiplication and division facts that come from each other are called a "fact family".</p>
 <div class="success-box">
   <strong>Fact Family Example: 3, 4, and 12</strong><br>
-  3 × 4 = 12<br>
-  4 × 3 = 12<br>
-  12 ÷ 3 = 4<br>
-  12 ÷ 4 = 3
+  \(3 \times 4 = 12\)<br>
+  \(4 \times 3 = 12\)<br>
+  \(12 \div 3 = 4\)<br>
+  \(12 \div 4 = 3\)
 </div>"""
     },
     {
@@ -140,12 +140,12 @@ SECTIONS = [
         "title": "Practice: Making Fact Families",
         "body": """<p><strong>Can you make a fact family?</strong> If you know one fact, you can write all four!</p>
 <div class="worked-example">
-  <strong>Start with: 3 × 6 = 18</strong><br><br>
+  <strong>Start with: \(3 \times 6 = 18\)</strong><br><br>
   The fact family is:<br>
-  3 × 6 = 18<br>
-  6 × 3 = 18<br>
-  18 ÷ 3 = 6<br>
-  18 ÷ 6 = 3<br><br>
+  \(3 \times 6 = 18\)<br>
+  \(6 \times 3 = 18\)<br>
+  \(18 \div 3 = 6\)<br>
+  \(18 \div 6 = 3\)<br><br>
   <strong>All four facts use the same three numbers: 3, 6, and 18</strong>
 </div>
 <div class="success-box">

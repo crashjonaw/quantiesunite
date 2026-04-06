@@ -6,10 +6,10 @@
     {% if current_user %}
       <a href="/" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">Home</a>
       <a href="/graph" class="nav-link {% if request.endpoint == 'graph_page' %}active{% endif %}">Graph</a>
-      <a href="/curriculum" class="nav-link {% if request.endpoint == 'curriculum' %}active{% endif %}">Curriculum</a>
+      <a href="/curriculum" class="nav-link {% if request.endpoint in ('curriculum', 'learning.topic_overview', 'learning.concept_page', 'learning.quiz_page', 'learning.practice_page', 'learning.mindmap_page') %}active{% endif %}">Curriculum</a>
       <a href="/dashboard" class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">Dashboard</a>
       <a href="/progress" class="nav-link {% if request.endpoint == 'progress_page' %}active{% endif %}">Progress</a>
-      <a href="/exams" class="nav-link {% if request.endpoint == 'exam.exam_list' %}active{% endif %}">Exams</a>
+      <a href="/exams" class="nav-link {% if request.endpoint in ('exam.exam_list', 'exam.take_exam', 'exam.exam_result') %}active{% endif %}">Exams</a>
       <a href="/trophies" class="nav-link {% if request.endpoint == 'trophies_page' %}active{% endif %}">Trophies</a>
       <a href="/search" class="nav-link {% if request.endpoint == 'search' %}active{% endif %}">Search</a>
       {% if current_user.is_admin %}

@@ -84,12 +84,12 @@ Verify: ||v̂|| = √((3/5)² + (4/5)²) = √(9/25 + 16/25) = √(25/25) = 1 �
 
         <div class='worked-example'>
         <p><strong>Example:</strong> Find the angle between $\\mathbf{u} = [1, 0]$ and $\\mathbf{v} = [1, 1]$.</p>
-        <pre>u · v = 1(1) + 0(1) = 1
-||u|| = √(1² + 0²) = 1
-||v|| = √(1² + 1²) = √2
+        <pre>\(\mathbf{u} \cdot \mathbf{v} = 1(1) + 0(1) = 1\)
+\(\|\mathbf{u}\| = \sqrt{1^2 + 0^2} = 1\)
+\(\|\mathbf{v}\| = \sqrt{1^2 + 1^2} = \sqrt{2}\)
 
-cos(θ) = 1 / (1 · √2) = 1/√2 = √2/2
-θ = arccos(√2/2) = 45° = π/4 radians</pre>
+\(\cos(\theta) = 1 / (1 \cdot \sqrt{2}) = 1/\sqrt{2} = \sqrt{2}/2\)
+\(\theta = \arccos(\sqrt{2}/2) = 45° = \pi/4\) radians</pre>
         </div>
 
         <div class='warning-box'>

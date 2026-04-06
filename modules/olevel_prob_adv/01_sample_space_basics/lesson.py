@@ -19,15 +19,15 @@ SECTIONS = [
             <p><strong>Sample space:</strong> {1, 2, 3, 4, 5, 6}</p>
             <p><strong>Total outcomes:</strong> 6</p>
             <ul>
-                <li>P(rolling a 4) = 1/6 (one favorable outcome)</li>
-                <li>P(rolling an even number) = 3/6 = 1/2 (three favorable outcomes: 2, 4, 6)</li>
-                <li>P(rolling > 3) = 3/6 = 1/2 (outcomes: 4, 5, 6)</li>
+                <li>\\(P(\\text{rolling a 4}) = \\frac{1}{6}\\) (one favorable outcome)</li>
+                <li>\\(P(\\text{rolling an even number}) = \\frac{3}{6} = \\frac{1}{2}\\) (three favorable outcomes: 2, 4, 6)</li>
+                <li>\\(P(\\text{rolling} > 3) = \\frac{3}{6} = \\frac{1}{2}\\) (outcomes: 4, 5, 6)</li>
             </ul>
         </div>
 
         <h4>The Basic Formula</h4>
         <div style="text-align: center; border-radius: 8px; padding: 20px; margin: 20px 0">
-            <p style="font-size: 1.2em; margin: 0"><strong>P(A) = (Number of favorable outcomes) / (Total number of possible outcomes)</strong></p>
+            <p style="font-size: 1.2em; margin: 0"><strong>\\(P(A) = \\frac{\\text{Number of favorable outcomes}}{\\text{Total number of possible outcomes}}\\)</strong></p>
         </div>
 
         <p><strong>Key principle:</strong> All outcomes in the sample space must be equally likely for this formula to work directly.</p>
@@ -35,7 +35,7 @@ SECTIONS = [
         <div class="concept-box">
             <h4>Example 2: Flipping a Fair Coin</h4>
             <p><strong>Sample space:</strong> {Heads, Tails}</p>
-            <p><strong>P(Heads) = 1/2</strong> (assuming a fair coin)</p>
+            <p><strong>\\(P(\\text{Heads}) = \\frac{1}{2}\\)</strong> (assuming a fair coin)</p>
             <p><strong>Why?</strong> 1 favorable outcome (Heads) divided by 2 total possible outcomes.</p>
         </div>
 
@@ -56,13 +56,13 @@ SECTIONS = [
 
         <h4>Property 1: Probability is Always Between 0 and 1</h4>
         <div class="formula-box" style="text-align: center;">
-            <p style="margin: 0;"><strong>0 ≤ P(A) ≤ 1</strong></p>
+            <p style="margin: 0;"><strong>\\(0 \\leq P(A) \\leq 1\\)</strong></p>
         </div>
 
         <ul>
-            <li><strong>P(A) = 0</strong> means event A is <em>impossible</em> (will never happen)</li>
-            <li><strong>P(A) = 1</strong> means event A is <em>certain</em> (will definitely happen)</li>
-            <li><strong>0 < P(A) < 1</strong> means event A is <em>possible but not certain</em></li>
+            <li><strong>\\(P(A) = 0\\)</strong> means event A is <em>impossible</em> (will never happen)</li>
+            <li><strong>\\(P(A) = 1\\)</strong> means event A is <em>certain</em> (will definitely happen)</li>
+            <li><strong>\\(0 &lt; P(A) &lt; 1\\)</strong> means event A is <em>possible but not certain</em></li>
         </ul>
 
         <div class="worked-example">
@@ -73,26 +73,26 @@ SECTIONS = [
         <p>If A is an event, then A' (pronounced "A complement") is the event that A does <em>not</em> occur.</p>
 
         <div class="formula-box" style="text-align: center;">
-            <p style="margin: 0;"><strong>P(A) + P(A') = 1</strong></p>
+            <p style="margin: 0;"><strong>\\(P(A) + P(A') = 1\\)</strong></p>
         </div>
 
         <p><strong>Why?</strong> Either event A happens or it doesn't. These are the only two possibilities, and together they cover the entire sample space.</p>
 
-        <p><strong>Rearranged:</strong> P(A') = 1 − P(A)</p>
+        <p><strong>Rearranged:</strong> \\(P(A') = 1 - P(A)\\)</p>
 
         <p><strong>Why is this useful?</strong> Sometimes it's easier to calculate the probability that something <em>doesn't</em> happen, then subtract from 1.</p>
 
         <div class="concept-box">
             <h4>Example 3: Drawing from a Standard Deck</h4>
-            <p>P(drawing a red card) = 26/52 = 1/2</p>
-            <p>P(not drawing a red card) = 1 − 1/2 = 1/2</p>
+            <p>\\(P(\\text{drawing a red card}) = \\frac{26}{52} = \\frac{1}{2}\\)</p>
+            <p>\\(P(\\text{not drawing a red card}) = 1 - \\frac{1}{2} = \\frac{1}{2}\\)</p>
             <p>(These are the black cards: 26 spades and clubs)</p>
         </div>
 
         <div class="concept-box">
             <h4>Example 4: Rolling a Die</h4>
-            <p>P(rolling a 6) = 1/6</p>
-            <p>P(not rolling a 6) = 1 − 1/6 = 5/6</p>
+            <p>\\(P(\\text{rolling a 6}) = \\frac{1}{6}\\)</p>
+            <p>\\(P(\\text{not rolling a 6}) = 1 - \\frac{1}{6} = \\frac{5}{6}\\)</p>
             <p>(Outcomes: 1, 2, 3, 4, 5)</p>
         </div>
 
@@ -125,7 +125,7 @@ SECTIONS = [
             <p><strong>Die outcomes:</strong> 6 (1, 2, 3, 4, 5, 6)</p>
             <p><strong>Combined sample space:</strong> 2 × 6 = 12 outcomes</p>
             <p><strong>Complete sample space:</strong> {H1, H2, H3, H4, H5, H6, T1, T2, T3, T4, T5, T6}</p>
-            <p><strong>P(Heads and rolling a 4) = 1/12</strong> (one favorable outcome out of 12)</p>
+            <p><strong>\\(P(\\text{Heads and rolling a 4}) = \\frac{1}{12}\\)</strong> (one favorable outcome out of 12)</p>
         </div>
 
         <h4>Focusing on Specific Outcomes</h4>
@@ -137,9 +137,9 @@ SECTIONS = [
             <p><strong>First draw:</strong> 5 possible outcomes</p>
             <p><strong>Second draw:</strong> 5 possible outcomes (ball returned)</p>
             <p><strong>Total outcomes:</strong> 5 × 5 = 25</p>
-            <p><strong>P(first red AND second red) = (3 × 3) / 25 = 9/25</strong></p>
-            <p><strong>P(first red AND second blue) = (3 × 2) / 25 = 6/25</strong></p>
-            <p><strong>P(first blue AND second red) = (2 × 3) / 25 = 6/25</strong></p>
+            <p><strong>\\(P(\\text{first red AND second red}) = \\frac{3 \\times 3}{25} = \\frac{9}{25}\\)</strong></p>
+            <p><strong>\\(P(\\text{first red AND second blue}) = \\frac{3 \\times 2}{25} = \\frac{6}{25}\\)</strong></p>
+            <p><strong>\\(P(\\text{first blue AND second red}) = \\frac{2 \\times 3}{25} = \\frac{6}{25}\\)</strong></p>
         </div>
 
         <h4>Understanding "And" vs "Or"</h4>
@@ -149,7 +149,7 @@ SECTIONS = [
         <div class="worked-example">
             <h4>Example 7: Simple "Or" Question</h4>
             <p>P(rolling a 1 OR rolling a 2) with one die:</p>
-            <p>P(1 or 2) = P(1) + P(2) = 1/6 + 1/6 = 2/6 = 1/3</p>
+            <p>\\(P(1 \\text{ or } 2) = P(1) + P(2) = \\frac{1}{6} + \\frac{1}{6} = \\frac{2}{6} = \\frac{1}{3}\\)</p>
             <p><strong>Why add?</strong> These outcomes don't overlap. In one roll, we can't get both 1 and 2.</p>
         </div>
 

@@ -98,7 +98,7 @@ Not REF (pivots not staggered):
         <div class='concept-box'>
         <p><strong>Interpretation from REF:</strong></p>
         <ul>
-        <li><strong>Inconsistent system:</strong> If we reach a row [0 0 ... 0 | b] with b ≠ 0, the system is inconsistent (no solution). This row says "0 = b," which is a contradiction.</li>
+        <li><strong>Inconsistent system:</strong> If we reach a row \([0\ 0\ \ldots\ 0\ |\ b]\) with \(b \neq 0\), the system is inconsistent (no solution). This row says "0 = b," which is a contradiction.</li>
         <li><strong>Unique solution:</strong> If the number of nonzero rows (pivots) equals the number of variables, the system has a unique solution (assuming consistent).</li>
         <li><strong>Infinitely many solutions:</strong> If the number of pivots is less than the number of variables, the system has infinitely many solutions parametrized by the free variables.</li>
         </ul>
@@ -137,7 +137,7 @@ The system has a <strong>unique solution</strong> (can find by back substitution
         </div>
 
         <div class='success-box'>
-        <p><strong>Rank and dimensions:</strong> The rank of the coefficient matrix is the number of nonzero rows (pivots) in REF. If the system is consistent, the dimension of the solution set is n − rank(A), where n is the number of variables.</p>
+        <p><strong>Rank and dimensions:</strong> The rank of the coefficient matrix is the number of nonzero rows (pivots) in REF. If the system is consistent, the dimension of the solution set is \(n - \text{rank}(A)\), where \(n\) is the number of variables.</p>
         </div>
         """
     },
@@ -149,9 +149,9 @@ The system has a <strong>unique solution</strong> (can find by back substitution
         <div class='concept-box'>
         <p><strong>Operation count for Gaussian elimination on an n × n matrix:</strong></p>
         <ul>
-        <li>Forward pass (to REF): approximately (2n³)/3 floating-point operations.</li>
-        <li>Time complexity: O(n³).</li>
-        <li>This is efficient for moderate n (e.g., n < 10,000) but expensive for very large matrices.</li>
+        <li>Forward pass (to REF): approximately \((2n^3)/3\) floating-point operations.</li>
+        <li>Time complexity: \(O(n^3)\).</li>
+        <li>This is efficient for moderate \(n\) (e.g., \(n < 10{,}000\)) but expensive for very large matrices.</li>
         </ul>
         </div>
 
@@ -165,7 +165,7 @@ The system has a <strong>unique solution</strong> (can find by back substitution
         <li>n = 1,000: ~667,000,000 operations (slower)</li>
         <li>n = 10,000: ~667,000,000,000 operations (very slow)</li>
         </ul>
-        <p>For n = 10,000, a modern computer (10⁹ operations/second) would take ~667 seconds ≈ 11 minutes.</p>
+        <p>For \(n = 10{,}000\), a modern computer (\(10^9\) operations/second) would take ~667 seconds ≈ 11 minutes.</p>
         </div>
 
         <div class='success-box'>

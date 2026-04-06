@@ -15,7 +15,7 @@ SECTIONS = [
         <p>The letter H has a <strong>vertical line of symmetry</strong> down the middle.</p>
 
         <div style="text-align:center;margin:20px 0;">
-            <svg viewBox="0 0 200 150" style="width:100%;max-width:300px;height:auto;display:block;margin:16px auto;">
+            <svg viewBox="-5 0 210 150" style="width:100%;max-width:300px;height:auto;display:block;margin:16px auto;">
                 <!-- Left vertical line of H -->
                 <rect x="40" y="30" width="15" height="90" fill='#60a5fa' stroke='#1e40af' stroke-width="2"/>
 

@@ -137,20 +137,20 @@ SECTIONS = [
 
 <div class='info-box'>
 <p><strong>Method 1:</strong> Direct calculation</p>
-<p>Area of large square = (a + b)² = a² + 2ab + b²</p>
+<p>Area of large square = \((a + b)^2 = a^2 + 2ab + b^2\)</p>
 
 <p><strong>Method 2:</strong> Count the pieces inside</p>
 <p>The large square contains:</p>
 <ul>
-<li>4 right triangles (each with area ab/2)</li>
-<li>1 square in the middle (area = c²)</li>
+<li>4 right triangles (each with area \(ab/2\))</li>
+<li>1 square in the middle (area = \(c^2\))</li>
 </ul>
-<p>Total = 4(ab/2) + c² = 2ab + c²</p>
+<p>Total = \(4(ab/2) + c^2 = 2ab + c^2\)</p>
 
 <p><strong>Both methods must give the same answer:</strong></p>
-<p>a² + 2ab + b² = 2ab + c²</p>
-<p>Remove 2ab from both sides:</p>
-<p>a² + b² = c²  ✓</p>
+<p>\(a^2 + 2ab + b^2 = 2ab + c^2\)</p>
+<p>Remove \(2ab\) from both sides:</p>
+<p>\(a^2 + b^2 = c^2\) ✓</p>
 </div>
 
 <p>This proves that Pythagoras' Theorem is always true!</p>
@@ -170,9 +170,9 @@ SECTIONS = [
 <p><strong>Triangle with sides: 5 cm, 12 cm, 13 cm</strong></p>
 
 <div class='example-box'>
-<p>Check: Does 5² + 12² = 13²?</p>
-<p>5² + 12² = 25 + 144 = 169</p>
-<p>13² = 169</p>
+<p>Check: Does \(5^2 + 12^2 = 13^2\)?</p>
+<p>\(5^2 + 12^2 = 25 + 144 = 169\)</p>
+<p>\(13^2 = 169\)</p>
 <p><strong>YES! They match, so this IS a right-angled triangle!</strong></p>
 </div>
 
@@ -181,18 +181,18 @@ SECTIONS = [
 <p><strong>Triangle with sides: 3 cm, 4 cm, 6 cm</strong></p>
 
 <div class='example-box'>
-<p>Check: Does 3² + 4² = 6²?</p>
-<p>3² + 4² = 9 + 16 = 25</p>
-<p>6² = 36</p>
-<p><strong>NO! 25 ≠ 36, so this is NOT a right-angled triangle.</strong></p>
+<p>Check: Does \(3^2 + 4^2 = 6^2\)?</p>
+<p>\(3^2 + 4^2 = 9 + 16 = 25\)</p>
+<p>\(6^2 = 36\)</p>
+<p><strong>NO! \(25 \neq 36\), so this is NOT a right-angled triangle.</strong></p>
 </div>
 
 <div class='info-box'>
 <p><strong>Three Possibilities:</strong></p>
 <ul>
-<li>If a² + b² = c²: The triangle is <strong>RIGHT-ANGLED</strong></li>
-<li>If a² + b² < c²: The triangle is <strong>OBTUSE-ANGLED</strong> (one angle > 90°)</li>
-<li>If a² + b² > c²: The triangle is <strong>ACUTE-ANGLED</strong> (all angles < 90°)</li>
+<li>If \(a^2 + b^2 = c^2\): The triangle is <strong>RIGHT-ANGLED</strong></li>
+<li>If \(a^2 + b^2 < c^2\): The triangle is <strong>OBTUSE-ANGLED</strong> (one angle > 90°)</li>
+<li>If \(a^2 + b^2 > c^2\): The triangle is <strong>ACUTE-ANGLED</strong> (all angles < 90°)</li>
 </ul>
 </div>
 """

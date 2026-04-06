@@ -36,7 +36,7 @@ SECTIONS = [
 <p><strong>Example 2: Adding On</strong></p>
 <div class="worked-example">
 <p><strong>Problem:</strong> Sofia had 45 marbles. Her friend gave her 18 more. How many marbles does Sofia have now?</p>
-<p><strong>Solution:</strong> Starting amount + amount given = new amount. 45 + 18 = 63 marbles</p>
+<p><strong>Solution:</strong> Starting amount + amount given = new amount. \(45 + 18 = 63\) marbles</p>
 </div>"""
     },
     {
@@ -59,7 +59,7 @@ SECTIONS = [
 <p><strong>Example 2: Comparing (How Much More?)</strong></p>
 <div class="worked-example">
 <p><strong>Problem:</strong> Liam has 72 points in a game. Aisha has 45 points. How many more points does Liam have?</p>
-<p><strong>Solution:</strong> Liam's points - Aisha's points = difference. 72 - 45 = 27 more points</p>
+<p><strong>Solution:</strong> Liam's points - Aisha's points = difference. \(72 - 45 = 27\) more points</p>
 </div>"""
     },
     {

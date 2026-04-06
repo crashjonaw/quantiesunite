@@ -40,7 +40,7 @@ SECTIONS = [
 
 <div class="worked-example">
 <h4>Rolling a Die: Comparing Theory and Practice</h4>
-<p><strong>Theoretical Probability:</strong> Each number 1-6 should appear 1/6 ≈ 16.7% of the time</p>
+<p><strong>Theoretical Probability:</strong> Each number 1-6 should appear \(\frac{1}{6} \approx 16.7\%\) of the time</p>
 
 <p><strong>Experiment: Roll a die 60 times</strong></p>
 
@@ -54,42 +54,42 @@ SECTIONS = [
 <tr >
 <td style="padding: 8px;">1</td>
 <td style="padding: 8px;">12</td>
-<td style="padding: 8px;">12/60 = 0.20</td>
-<td style="padding: 8px;">1/6 ≈ 0.167</td>
+<td style="padding: 8px;">\(12/60 = 0.20\)</td>
+<td style="padding: 8px;">\(1/6 \approx 0.167\)</td>
 </tr>
 <tr >
 <td style="padding: 8px;">2</td>
 <td style="padding: 8px;">10</td>
-<td style="padding: 8px;">10/60 ≈ 0.167</td>
-<td style="padding: 8px;">1/6 ≈ 0.167</td>
+<td style="padding: 8px;">\(10/60 \approx 0.167\)</td>
+<td style="padding: 8px;">\(1/6 \approx 0.167\)</td>
 </tr>
 <tr >
 <td style="padding: 8px;">3</td>
 <td style="padding: 8px;">11</td>
-<td style="padding: 8px;">11/60 ≈ 0.183</td>
-<td style="padding: 8px;">1/6 ≈ 0.167</td>
+<td style="padding: 8px;">\(11/60 \approx 0.183\)</td>
+<td style="padding: 8px;">\(1/6 \approx 0.167\)</td>
 </tr>
 <tr >
 <td style="padding: 8px;">4</td>
 <td style="padding: 8px;">9</td>
-<td style="padding: 8px;">9/60 = 0.15</td>
-<td style="padding: 8px;">1/6 ≈ 0.167</td>
+<td style="padding: 8px;">\(9/60 = 0.15\)</td>
+<td style="padding: 8px;">\(1/6 \approx 0.167\)</td>
 </tr>
 <tr >
 <td style="padding: 8px;">5</td>
 <td style="padding: 8px;">10</td>
-<td style="padding: 8px;">10/60 ≈ 0.167</td>
-<td style="padding: 8px;">1/6 ≈ 0.167</td>
+<td style="padding: 8px;">\(10/60 \approx 0.167\)</td>
+<td style="padding: 8px;">\(1/6 \approx 0.167\)</td>
 </tr>
 <tr >
 <td style="padding: 8px;">6</td>
 <td style="padding: 8px;">8</td>
-<td style="padding: 8px;">8/60 ≈ 0.133</td>
-<td style="padding: 8px;">1/6 ≈ 0.167</td>
+<td style="padding: 8px;">\(8/60 \approx 0.133\)</td>
+<td style="padding: 8px;">\(1/6 \approx 0.167\)</td>
 </tr>
 </table>
 
-<p><strong>Observation:</strong> The experimental probabilities vary slightly from 1/6, but they're all in the same ballpark. The die appears to be fair!</p>
+<p><strong>Observation:</strong> The experimental probabilities vary slightly from \(1/6\), but they're all in the same ballpark. The die appears to be fair!</p>
 </div>"""
     },
     {
@@ -108,25 +108,25 @@ SECTIONS = [
 <p><strong>After 10 flips:</strong></p>
 <ul>
 <li>Got 7 heads</li>
-<li>Experimental P(heads) = 7/10 = 0.7 (far from theoretical 0.5)</li>
+<li>Experimental \(P(\text{heads}) = 7/10 = 0.7\) (far from theoretical 0.5)</li>
 </ul>
 
 <p><strong>After 100 flips:</strong></p>
 <ul>
 <li>Got 52 heads</li>
-<li>Experimental P(heads) = 52/100 = 0.52 (closer to theoretical 0.5)</li>
+<li>Experimental \(P(\text{heads}) = 52/100 = 0.52\) (closer to theoretical 0.5)</li>
 </ul>
 
 <p><strong>After 1000 flips:</strong></p>
 <ul>
 <li>Got 503 heads</li>
-<li>Experimental P(heads) = 503/1000 = 0.503 (very close to theoretical 0.5)</li>
+<li>Experimental \(P(\text{heads}) = 503/1000 = 0.503\) (very close to theoretical 0.5)</li>
 </ul>
 
 <p><strong>After 10,000 flips:</strong></p>
 <ul>
 <li>Got 5018 heads</li>
-<li>Experimental P(heads) = 5018/10000 = 0.5018 (extremely close to theoretical 0.5)</li>
+<li>Experimental \(P(\text{heads}) = 5018/10000 = 0.5018\) (extremely close to theoretical 0.5)</li>
 </ul>
 
 <p><strong>The pattern is clear:</strong> More trials → Experimental probability approaches theoretical probability!</p>
@@ -184,7 +184,7 @@ SECTIONS = [
 
 <p><strong>What to do:</strong></p>
 <ol>
-<li>Calculate theoretical P(each number) = 1/6 ≈ 0.167</li>
+<li>Calculate theoretical \(P(\text{each number}) = 1/6 \approx 0.167\)</li>
 <li>Roll the die many times (at least 100 times, ideally 1000+)</li>
 <li>Calculate experimental P for each number</li>
 <li>Compare: Are they close? If yes, the die is probably fair. If no, it's probably biased.</li>
@@ -192,12 +192,12 @@ SECTIONS = [
 
 <p><strong>Example results from rolling 600 times:</strong></p>
 <ul>
-<li>Number 1: 95 times → Experimental P = 95/600 ≈ 0.158 (close to 0.167) ✓</li>
-<li>Number 2: 102 times → Experimental P = 102/600 = 0.17 (close to 0.167) ✓</li>
-<li>Number 3: 98 times → Experimental P ≈ 0.163 (close to 0.167) ✓</li>
-<li>Number 4: 101 times → Experimental P ≈ 0.168 (close to 0.167) ✓</li>
-<li>Number 5: 99 times → Experimental P ≈ 0.165 (close to 0.167) ✓</li>
-<li>Number 6: 105 times → Experimental P = 105/600 = 0.175 (close to 0.167) ✓</li>
+<li>Number 1: 95 times → Experimental \(P = 95/600 \approx 0.158\) (close to 0.167) ✓</li>
+<li>Number 2: 102 times → Experimental \(P = 102/600 = 0.17\) (close to 0.167) ✓</li>
+<li>Number 3: 98 times → Experimental \(P \approx 0.163\) (close to 0.167) ✓</li>
+<li>Number 4: 101 times → Experimental \(P \approx 0.168\) (close to 0.167) ✓</li>
+<li>Number 5: 99 times → Experimental \(P \approx 0.165\) (close to 0.167) ✓</li>
+<li>Number 6: 105 times → Experimental \(P = 105/600 = 0.175\) (close to 0.167) ✓</li>
 </ul>
 
 <p><strong>Conclusion:</strong> All experimental probabilities are very close to the theoretical 1/6. The die appears to be fair!</p>
@@ -207,14 +207,14 @@ SECTIONS = [
 <h4>A Suspicious Spinner</h4>
 <p><strong>Scenario:</strong> A spinner has 4 sections that look equal, but you suspect it might be weighted.</p>
 
-<p><strong>Theoretical prediction:</strong> Each section should appear 1/4 = 0.25 of the time</p>
+<p><strong>Theoretical prediction:</strong> Each section should appear \(1/4 = 0.25\) of the time</p>
 
 <p><strong>Experiment: Spin 400 times</strong></p>
 <ul>
-<li>Red: 95 times → Experimental P = 95/400 ≈ 0.238 (close to 0.25) ✓</li>
-<li>Blue: 98 times → Experimental P ≈ 0.245 (close to 0.25) ✓</li>
-<li>Green: 102 times → Experimental P ≈ 0.255 (close to 0.25) ✓</li>
-<li>Yellow: 105 times → Experimental P ≈ 0.263 (close to 0.25, slightly high)</li>
+<li>Red: 95 times → Experimental \(P = 95/400 \approx 0.238\) (close to 0.25) ✓</li>
+<li>Blue: 98 times → Experimental \(P \approx 0.245\) (close to 0.25) ✓</li>
+<li>Green: 102 times → Experimental \(P \approx 0.255\) (close to 0.25) ✓</li>
+<li>Yellow: 105 times → Experimental \(P \approx 0.263\) (close to 0.25, slightly high)</li>
 </ul>
 
 <p><strong>Conclusion:</strong> The spinner looks fair. Small variations are just random chance with 400 trials.</p>
@@ -244,20 +244,20 @@ SECTIONS = [
 <div class="worked-example">
 <h4>Problem 2: Understanding the Law of Large Numbers</h4>
 <p><strong>Question:</strong> After 50 die rolls, you get 15 sixes. After 500 die rolls, you get 82 sixes. Which is closer to the theoretical prediction?</p>
-<p><strong>Answer:</strong> The 500-roll experiment (82/500 = 0.164 vs theoretical 1/6 ≈ 0.167)</p>
-<p><strong>Explanation:</strong> 15/50 = 0.3, which is far from 1/6. The 500-roll experiment has more trials, so it's more likely to be closer to the theoretical probability due to the Law of Large Numbers.</p>
+<p><strong>Answer:</strong> The 500-roll experiment (\(82/500 = 0.164\) vs theoretical \(1/6 \approx 0.167\))</p>
+<p><strong>Explanation:</strong> \(15/50 = 0.3\), which is far from \(1/6\). The 500-roll experiment has more trials, so it's more likely to be closer to the theoretical probability due to the Law of Large Numbers.</p>
 </div>
 
 <div class="worked-example">
 <h4>Problem 3: Testing for Fairness</h4>
 <p><strong>Question:</strong> A spinner has 3 equal-looking sections (A, B, C). Theoretical P for each = 1/3 ≈ 0.333. After 300 spins: A = 95, B = 102, C = 103. Is the spinner likely fair?</p>
 <p><strong>Answer:</strong> Yes, the spinner is likely fair.</p>
-<p><strong>Explanation:</strong> Experimental probabilities: A = 95/300 ≈ 0.317, B = 102/300 = 0.34, C = 103/300 ≈ 0.343. These are all very close to 1/3 ≈ 0.333. The small variations are normal random chance.</p>
+<p><strong>Explanation:</strong> Experimental probabilities: \(A = 95/300 \approx 0.317\), \(B = 102/300 = 0.34\), \(C = 103/300 \approx 0.343\). These are all very close to \(1/3 \approx 0.333\). The small variations are normal random chance.</p>
 </div>
 
 <div class="worked-example">
 <h4>Problem 4: Comparing Theoretical and Experimental</h4>
-<p><strong>Question:</strong> A bag has 6 red and 4 blue balls. Theoretical P(red) = 6/10 = 0.6. After 1000 draws (with replacement): red = 598 times. What is the experimental probability?</p>
+<p><strong>Question:</strong> A bag has 6 red and 4 blue balls. Theoretical \(P(\text{red}) = 6/10 = 0.6\). After 1000 draws (with replacement): red = 598 times. What is the experimental probability?</p>
 <p><strong>Answer:</strong> \\(P(\\text{red}) = \\frac{598}{1000} = 0.598\\) or 59.8%</p>
 <p><strong>Explanation:</strong> This is extremely close to the theoretical 0.6. With 1000 trials, the experimental probability matches the theory very well!</p>
 </div>"""

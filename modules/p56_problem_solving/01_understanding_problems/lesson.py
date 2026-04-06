@@ -51,7 +51,7 @@ SECTIONS = [
 <li>Given: 8 red, 6 blue, she picks 3 red</li>
 <li>EXTRA (not needed): The box cost 15 dollars</li>
 <li>We need: Total balls remaining in the box</li>
-<li>Calculation: (8 + 6) - 3 = 14 - 3 = 11 balls</li>
+<li>Calculation: \((8 + 6) - 3 = 14 - 3 = 11\) balls</li>
 </ul>
 
 <p><strong>Key insight:</strong> Not all numbers in a problem are useful!</p>
@@ -151,9 +151,9 @@ SECTIONS = [
 <li>Jerry: 1 unit</li>
 <li>Tom: 3 units</li>
 <li>Total: 4 units = 48</li>
-<li>1 unit = 48 ÷ 4 = 12</li>
+<li>1 unit = \(48 \div 4 = 12\)</li>
 <li>Jerry has 12 marbles</li>
-<li>Tom has 3 × 12 = 36 marbles</li>
+<li>Tom has \(3 \times 12 = 36\) marbles</li>
 </ul>
 </div>
 

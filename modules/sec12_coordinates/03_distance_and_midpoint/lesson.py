@@ -95,7 +95,7 @@ SECTIONS = [
 </div>
 
 <div class="success-box">
-<p><strong>The 3-4-5 Pythagorean Triple:</strong> Notice that 3, 4, and 5 form a Pythagorean triple (3² + 4² = 5²). This is the most common example in coordinate geometry!</p>
+<p><strong>The 3-4-5 Pythagorean Triple:</strong> Notice that 3, 4, and 5 form a Pythagorean triple (\(3^2 + 4^2 = 5^2\)). This is the most common example in coordinate geometry!</p>
 </div></body></html>"""
     },
     {

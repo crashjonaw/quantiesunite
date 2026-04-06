@@ -90,7 +90,7 @@ SECTIONS = [
   <text x="260" y="90" font-size='12' fill='#79c0ff'>3 units = 3 × 6 = 18</text>
 </svg>
 
-<p><strong>Calculation:</strong> Ali has 3 × 6 = 18 stickers</p>
+<p><strong>Calculation:</strong> Ali has \(3 \times 6 = 18\) stickers</p>
 </div>
 
 <div class="worked-example">
@@ -123,9 +123,9 @@ SECTIONS = [
 <p><strong>Calculation:</strong></p>
 <ul>
 <li>5 units total = 100 dollars</li>
-<li>1 unit = 100 ÷ 5 = 20 dollars</li>
+<li>1 unit = \(100 \div 5 = 20\) dollars</li>
 <li>Ben has 20 dollars</li>
-<li>Amy has 4 × 20 = 80 dollars</li>
+<li>Amy has \(4 \times 20 = 80\) dollars</li>
 </ul>
 </div>
 
@@ -182,9 +182,9 @@ SECTIONS = [
 
 <p><strong>Solution:</strong></p>
 <ul>
-<li>A loses 15: 60 - 15 = 45 mL</li>
-<li>B gains 15: 40 + 15 = 55 mL</li>
-<li>Total unchanged: 45 + 55 = 100 ✓</li>
+<li>A loses 15: \(60 - 15 = 45\) mL</li>
+<li>B gains 15: \(40 + 15 = 55\) mL</li>
+<li>Total unchanged: \(45 + 55 = 100\) ✓</li>
 </ul>
 </div>
 
@@ -207,9 +207,9 @@ SECTIONS = [
 
 <p><strong>Calculation:</strong></p>
 <ul>
-<li>After giving 12, Tom has: 40 - 12 = 28 dollars</li>
+<li>After giving 12, Tom has: \(40 - 12 = 28\) dollars</li>
 <li>Jerry also has 28 dollars after receiving 12</li>
-<li>Jerry initially had: 28 - 12 = 16 dollars</li>
+<li>Jerry initially had: \(28 - 12 = 16\) dollars</li>
 <li>Check: Tom 40 → gives 12 → 28. Jerry 16 → gets 12 → 28 ✓</li>
 </ul>
 </div>
@@ -242,20 +242,20 @@ SECTIONS = [
 <ul>
 <li>Actual cost: 38 dollars</li>
 <li>Assumed cost: 30 dollars</li>
-<li>Extra money spent: 38 - 30 = 8 dollars</li>
+<li>Extra money spent: \(38 - 30 = 8\) dollars</li>
 </ul>
 
 <p><strong>Step 3: Calculate how many blue ribbons</strong></p>
 <ul>
-<li>Each blue ribbon costs 2 more than red (5 - 3 = 2)</li>
-<li>Number of blue: 8 ÷ 2 = 4 ribbons</li>
-<li>Number of red: 10 - 4 = 6 ribbons</li>
+<li>Each blue ribbon costs 2 more than red (\(5 - 3 = 2\))</li>
+<li>Number of blue: \(8 \div 2 = 4\) ribbons</li>
+<li>Number of red: \(10 - 4 = 6\) ribbons</li>
 </ul>
 
 <p><strong>Check:</strong></p>
 <ul>
 <li>6 red + 4 blue = 10 items ✓</li>
-<li>(6 × 3) + (4 × 5) = 18 + 20 = 38 dollars ✓</li>
+<li>\((6 \times 3) + (4 \times 5) = 18 + 20 = 38\) dollars ✓</li>
 </ul>
 </div>
 

@@ -110,7 +110,7 @@ SECTIONS = [
      = (2 × 2 × 2) × (2 × 2 × 2)
      = 2 × 2 × 2 × 2 × 2 × 2
      = 2⁶</pre>
-<p>We have 3 factors, repeated 2 times: 3 × 2 = 6 ✓</p>
+<p>We have 3 factors, repeated 2 times: \(3 \times 2 = 6\) ✓</p>
 </div>
 
 <div class='success-box'>

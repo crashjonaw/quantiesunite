@@ -242,7 +242,7 @@ SECTIONS = [
 <ul>
   <li>Who was the fastest? (Bella: 38 seconds)</li>
   <li>Who was the slowest? (Chen: 45 seconds)</li>
-  <li>What was the difference? (45 - 38 = 7 seconds)</li>
+  <li>What was the difference? (\\(45 - 38 = 7\\) seconds)</li>
 </ul>
 
 <h4>Example 3: Classroom Attendance</h4>

@@ -51,7 +51,7 @@ SECTIONS = [
 
 <h4>Real-World Examples:</h4>
 <ul>
-<li><strong>Video games:</strong> Your score changes based on actions → score = 10 × kills - 5 × deaths</li>
+<li><strong>Video games:</strong> Your score changes based on actions → \(\text{score} = 10 \times \text{kills} - 5 \times \text{deaths}\)</li>
 <li><strong>Money:</strong> Pocket money after spending → money_left = starting_amount - amount_spent</li>
 <li><strong>Cooking:</strong> A recipe scales up → If 1 batch needs 2 cups flour, then \\(b\\) batches need \\(2b\\) cups</li>
 <li><strong>Distance:</strong> How far you travel → distance = speed × time, or \\(d = st\\)</li>
@@ -155,7 +155,7 @@ SECTIONS = [
 <p>Think about it:</p>
 <ul>
 <li>If \\(2x + 3 = 15\\), then \\(2x = 15 - 3 = 12\\)</li>
-<li>If \\(2x = 12\\), then \\(x = 12 ÷ 2 = 6\\)</li>
+<li>If \\(2x = 12\\), then \\(x = 12 \div 2 = 6\\)</li>
 </ul>
 
 <div class='success-box'>

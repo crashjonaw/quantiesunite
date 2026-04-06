@@ -10,7 +10,7 @@ SECTIONS = [
 <div class="concept-box">
   <strong>The Sharing Question:</strong><br>
   "I have 12 cookies and 3 friends. How many cookies does each friend get if I share fairly?"<br>
-  Answer: 12 ÷ 3 = 4 cookies each
+  Answer: \(12 \div 3 = 4\) cookies each
 </div>
 <p>Notice: We know there are 3 friends (the divisor) and 12 cookies (the dividend). We're looking for the amount each friend gets (the quotient).</p>
 <svg viewBox="0 0 500 240" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
@@ -55,7 +55,7 @@ SECTIONS = [
   Round 1: Give 1 candy to each child (5 candies used, 10 left)<br>
   Round 2: Give 1 more to each child (10 candies used, 5 left)<br>
   Round 3: Give 1 more to each child (15 candies used, 0 left)<br><br>
-  <strong>Result:</strong> Each child gets 3 candies (15 ÷ 5 = 3)
+  <strong>Result:</strong> Each child gets 3 candies (\(15 \div 5 = 3\))
 </div>
 <svg viewBox="0 0 450 200" style="width:100%;max-width:450px;height:auto;display:block;margin:16px auto;">
   <text x="225" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Sharing in Rounds</text>

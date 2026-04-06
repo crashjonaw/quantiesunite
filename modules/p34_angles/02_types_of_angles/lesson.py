@@ -65,7 +65,7 @@ SECTIONS = [
 </svg>
 
 <div class='success-box'>
-  <p><strong>Key fact:</strong> Four right angles fit perfectly into a full circle (4 × 90° = 360°). This is why right angles are so important in construction and design!</p>
+  <p><strong>Key fact:</strong> Four right angles fit perfectly into a full circle (\\(4 \\times 90° = 360°\\)). This is why right angles are so important in construction and design!</p>
 </div>
         """
     },

@@ -23,8 +23,8 @@ SECTIONS = [
 
   <p><strong>What we're adding:</strong></p>
   <ul>
-    <li>Ones: 2 + 1 = 3</li>
-    <li>Tenths: 5 + 3 = 8</li>
+    <li>Ones: \\(2 + 1 = 3\\)</li>
+    <li>Tenths: \\(5 + 3 = 8\\)</li>
   </ul>
 
   <p><strong>Answer: 3.8</strong></p>
@@ -74,9 +74,9 @@ SECTIONS = [
 
   <p><strong>What we added:</strong></p>
   <ul>
-    <li>Ones: 3 + 1 = 4</li>
-    <li>Tenths: 2 + 4 = 6</li>
-    <li>Hundredths: 0 + 5 = 5</li>
+    <li>Ones: \\(3 + 1 = 4\\)</li>
+    <li>Tenths: \\(2 + 4 = 6\\)</li>
+    <li>Hundredths: \\(0 + 5 = 5\\)</li>
   </ul>
 
   <p><strong>Answer: 4.65</strong></p>
@@ -116,9 +116,9 @@ SECTIONS = [
 
   <p><strong>What we subtracted:</strong></p>
   <ul>
-    <li>Ones: 5 - 2 = 3</li>
-    <li>Tenths: 7 - 3 = 4</li>
-    <li>Hundredths: 4 - 1 = 3</li>
+    <li>Ones: \\(5 - 2 = 3\\)</li>
+    <li>Tenths: \\(7 - 3 = 4\\)</li>
+    <li>Hundredths: \\(4 - 1 = 3\\)</li>
   </ul>
 
   <p><strong>Answer: 3.43</strong></p>
@@ -167,9 +167,9 @@ SECTIONS = [
 
   <p><strong>What we did:</strong></p>
   <ul>
-    <li>Can't do 2 - 5, so borrow 1 from the 3</li>
-    <li>Now it's 12 tenths - 5 tenths = 7 tenths ✓</li>
-    <li>Ones: 2 - 1 = 1</li>
+    <li>Can't do \\(2 - 5\\), so borrow 1 from the 3</li>
+    <li>Now it's \\(12\\) tenths \\(- 5\\) tenths \\(= 7\\) tenths ✓</li>
+    <li>Ones: \\(2 - 1 = 1\\)</li>
   </ul>
 
   <p><strong>Answer: 1.7 (or 1.70)</strong></p>
@@ -189,11 +189,11 @@ SECTIONS = [
 
   <p><strong>Step by step:</strong></p>
   <ol>
-    <li>Can't do 3 - 8 in tenths, so borrow from ones</li>
+    <li>Can't do \\(3 - 8\\) in tenths, so borrow from ones</li>
     <li>5 ones becomes 4 ones</li>
-    <li>3 tenths becomes 13 tenths (10 + 3)</li>
-    <li>Now: 13 - 8 = 5 tenths ✓</li>
-    <li>Ones: 4 - 2 = 2 ✓</li>
+    <li>3 tenths becomes 13 tenths (\\(10 + 3\\))</li>
+    <li>Now: \\(13 - 8 = 5\\) tenths ✓</li>
+    <li>Ones: \\(4 - 2 = 2\\) ✓</li>
   </ol>
 </div>
 

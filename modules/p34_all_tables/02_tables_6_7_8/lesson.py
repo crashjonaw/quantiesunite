@@ -10,7 +10,7 @@ SECTIONS = [
 <p><strong>Here's a clever shortcut:</strong> 6 is just 3 doubled! So you can use what you know about 3s.</p>
 
 <div class="worked-example">
-<h4>The 6 = 3 × 2 Shortcut</h4>
+<h4>The \\(6 = 3 \\times 2\\) Shortcut</h4>
 <p>If you know \\(3 \\times 4 = 12\\), then \\(6 \\times 4 = 24\\) (just double it).</p>
 
 <ul>
@@ -20,7 +20,7 @@ SECTIONS = [
 </ul>
 </div>
 
-<h3>Another Pattern: 3 × 2 = 6 × 1</h3>
+<h3>Another Pattern: \\(3 \\times 2 = 6 \\times 1\\)</h3>
 <p>Notice that 6 times any number is the same as 3 times that number, then times 2:</p>
 
 <div class="diagram-container">
@@ -78,7 +78,7 @@ SECTIONS = [
       <rect x="345" y="183" width="20" height="20" fill='#8b5cf680' stroke='#8b5cf6' stroke-width="2" rx="3"/>
     </g>
   </svg>
-  <div class="diagram-caption">6 × 4 is double 3 × 4</div>
+  <div class="diagram-caption">\\(6 \\times 4\\) is double \\(3 \\times 4\\)</div>
 </div>
 
 <div class="concept-box">
@@ -99,13 +99,13 @@ SECTIONS = [
 <p>Here's a strategy: break 7 into numbers you know well.</p>
 
 <div class="worked-example">
-<h4>Finding 7 × 8 Using 5 + 2</h4>
+<h4>Finding \\(7 \\times 8\\) Using \\(5 + 2\\)</h4>
 <p>\\(7 \\times 8 = (5 + 2) \\times 8 = (5 \\times 8) + (2 \\times 8) = 40 + 16 = 56\\)</p>
 
 <p>Since you know the 5s and 2s very well, you can use them to find 7s!</p>
 </div>
 
-<h3>The 7 × 7 = 49 Square</h3>
+<h3>The \\(7 \\times 7 = 49\\) Square</h3>
 <div class="diagram-container">
   <svg width="300" height="300" viewBox="0 0 300 300">
     <text x="150" y="25" text-anchor='middle' font-size='14' font-weight='bold'>7 × 7: A Perfect Square</text>
@@ -132,7 +132,7 @@ SECTIONS = [
 
     <text x="150" y="280" text-anchor='middle' font-size='18' font-weight='bold'>49 small squares</text>
   </svg>
-  <div class="diagram-caption">7 × 7 = 49 is 7 groups of 7</div>
+  <div class="diagram-caption">\\(7 \\times 7 = 49\\) is 7 groups of 7</div>
 </div>
 
 <div class="success-box">
@@ -151,8 +151,8 @@ SECTIONS = [
 <h4>The Doubling Chain</h4>
 <ul>
   <li>\\(2 \\times n\\): 2, 4, 6, 8, 10, 12, 14, 16, 18, 20</li>
-  <li>\\(4 \\times n\\) (2 × 2): 4, 8, 12, 16, 20, 24, 28, 32, 36, 40</li>
-  <li>\\(8 \\times n\\) (4 × 2): 8, 16, 24, 32, 40, 48, 56, 64, 72, 80</li>
+  <li>\\(4 \\times n\\) (\\(2 \\times 2\\)): 4, 8, 12, 16, 20, 24, 28, 32, 36, 40</li>
+  <li>\\(8 \\times n\\) (\\(4 \\times 2\\)): 8, 16, 24, 32, 40, 48, 56, 64, 72, 80</li>
 </ul>
 
 <p>Each table is exactly double the previous one!</p>
@@ -160,7 +160,7 @@ SECTIONS = [
 
 <h3>Using the 4 Times Table to Find 8s</h3>
 <div class="worked-example">
-<h4>Finding 8 × 7</h4>
+<h4>Finding \\(8 \\times 7\\)</h4>
 <p>You know \\(4 \\times 7 = 28\\). So \\(8 \\times 7 = 28 \\times 2 = 56\\)</p>
 
 <p>This is much easier than memorizing it separately!</p>
@@ -266,8 +266,8 @@ if (ctx8) {
 <p>Instead of learning 8 separate times tables, think of them as two chains:</p>
 
 <ul>
-  <li><strong>The Even Chain:</strong> 2 → 4 → 8 (each is double)</li>
-  <li><strong>The 3 and 6 Chain:</strong> 3 → 6 (6 is double 3)</li>
+  <li><strong>The Even Chain:</strong> \\(2 \\to 4 \\to 8\\) (each is double)</li>
+  <li><strong>The 3 and 6 Chain:</strong> \\(3 \\to 6\\) (6 is double 3)</li>
 </ul>
 
 <p>If you really understand one table, the next one in the chain becomes much easier!</p>

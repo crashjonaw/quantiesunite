@@ -60,7 +60,7 @@ SECTIONS = [
 
     {
         "title": "How to Add on a Number Line",
-        "body": """<h3>Step-by-Step: Adding 3 + 2</h3>
+        "body": """<h3>Step-by-Step: Adding \(3 + 2\)</h3>
 
 <div class="formula-box">
   <p style="font-size: 16px; margin-bottom: 15px;"><strong>Step 1: Find your starting number (3) on the line.</strong></p>
@@ -113,21 +113,21 @@ SECTIONS = [
 
   <p style="font-size: 16px; margin-top: 15px; margin-bottom: 15px;"><strong>Step 3: See where you land (5). That's your answer!</strong></p>
 
-  <p style="text-align: center; font-size: 18px; margin-top: 10px; font-weight: bold;">3 + 2 = 5 ✓</p>
+  <p style="text-align: center; font-size: 18px; margin-top: 10px; font-weight: bold;">\(3 + 2 = 5\) ✓</p>
 </div>
 
 <h3>More Examples on the Number Line</h3>
 
 <div class="worked-example">
-  <h4>Example 1: 2 + 4</h4>
+  <h4>Example 1: \(2 + 4\)</h4>
   <p>Start at 2. Jump forward 4 steps: 3, 4, 5, 6.</p>
-  <p style="font-size: 16px; text-align: center; font-weight: bold;">2 + 4 = 6</p>
+  <p style="font-size: 16px; text-align: center; font-weight: bold;">\(2 + 4 = 6\)</p>
 </div>
 
 <div class="worked-example">
-  <h4>Example 2: 5 + 3</h4>
+  <h4>Example 2: \(5 + 3\)</h4>
   <p>Start at 5. Jump forward 3 steps: 6, 7, 8.</p>
-  <p style="font-size: 16px; text-align: center; font-weight: bold;">5 + 3 = 8</p>
+  <p style="font-size: 16px; text-align: center; font-weight: bold;">\(5 + 3 = 8\)</p>
 </div>"""
     },
 
@@ -142,7 +142,7 @@ SECTIONS = [
 
 <div style="padding: 15px; border-radius: 8px; margin: 15px 0;">
   <h4>🎯 It Works for Big Numbers</h4>
-  <p>The number line works the same way whether you're adding 2 + 3 or 27 + 15.
+  <p>The number line works the same way whether you're adding \(2 + 3\) or \(27 + 15\).
   Same process, just more jumps!</p>
 </div>
 
@@ -167,27 +167,27 @@ SECTIONS = [
   <p><strong>If you start at 4 and jump forward 3 steps, where do you land?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Try jumping carefully: 4 → 5, 6, 7. You land at 7.">6</button>
-    <button class="mcq-option" data-correct="true" data-explanation="Start at 4, jump 1 (to 5), jump 2 (to 6), jump 3 (to 7). 4 + 3 = 7.">7</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Start at 4, jump 1 (to 5), jump 2 (to 6), jump 3 (to 7). \(4 + 3 = 7\).">7</button>
     <button class="mcq-option" data-correct="false" data-explanation="That would be jumping 4 steps, not 3.">8</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>
 
 <div class="mcq-group" style="margin-top: 20px;">
-  <p><strong>Using the number line, what is 6 + 2?</strong></p>
+  <p><strong>Using the number line, what is \(6 + 2\)?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Start at 6 and jump forward 2: 7, 8.">7</button>
-    <button class="mcq-option" data-correct="true" data-explanation="6 → 7 (jump 1) → 8 (jump 2). 6 + 2 = 8.">8</button>
+    <button class="mcq-option" data-correct="true" data-explanation="6 → 7 (jump 1) → 8 (jump 2). \(6 + 2 = 8\).">8</button>
     <button class="mcq-option" data-correct="false" data-explanation="That's jumping 3 times, not 2.">9</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>
 
 <div class="mcq-group" style="margin-top: 20px;">
-  <p><strong>What is 1 + 5 on the number line?</strong></p>
+  <p><strong>What is \(1 + 5\) on the number line?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Start at 1 and count on 5 steps: 2, 3, 4, 5, 6.">5</button>
-    <button class="mcq-option" data-correct="true" data-explanation="1 + 5 = 6. Start at 1, jump 5 times to land at 6.">6</button>
+    <button class="mcq-option" data-correct="true" data-explanation="\(1 + 5 = 6\). Start at 1, jump 5 times to land at 6.">6</button>
     <button class="mcq-option" data-correct="false" data-explanation="Count again. You only add 5, so you should land at 6.">7</button>
   </div>
   <div class="mcq-feedback"></div>
@@ -195,9 +195,9 @@ SECTIONS = [
 
 <h3>Try Drawing Your Own</h3>
 <div style="padding: 15px; border-radius: 8px; margin: 15px 0;">
-  <p style="font-size: 16px;"><strong>Challenge: Draw a number line and solve 3 + 4.</strong></p>
-  <p style="margin-top: 10px; font-size: 14px">Hint: Draw a line with numbers 0-8. Put a circle at 3. Draw 4 jumps to the right.</p>
-  <p style="margin-top: 10px;"><strong>Answer: 3 + 4 = 7</strong></p>
+  <p style="font-size: 16px;"><strong>Challenge: Draw a number line and solve \(3 + 4\).</strong></p>
+  <p style="margin-top: 10px; font-size: 14px">Hint: Draw a line with numbers 0–8. Put a circle at 3. Draw 4 jumps to the right.</p>
+  <p style="margin-top: 10px;"><strong>Answer: \(3 + 4 = 7\)</strong></p>
 </div>"""
     }
 ]

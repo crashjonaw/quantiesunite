@@ -47,7 +47,7 @@ SECTIONS = [
 <p><strong>Mathematical Insight:</strong> Dot product of normalized vectors equals cosine similarity. If q and k are unit vectors:</p>
 <p class="formula">$$q \\cdot k = \\cos(\\theta)$$</p>
 
-<p>where θ is the angle between them.</p>
+<p>where \(\theta\) is the angle between them.</p>
 
 <p><strong>Why Scaling?</strong> When d is large, dot products can become very large, causing softmax to produce near-zero or near-one weights (saturation). The scaling factor <code>1/√d</code> prevents this:</p>
 <p class="formula">$$\\text{score}(q, k) = \\frac{q \\cdot k}{\\sqrt{d}}$$</p>

@@ -10,7 +10,7 @@ SECTIONS = [
             <p><strong>Momentum solution:</strong> Accumulate velocity—past gradients influence future steps.</p>
             <p>$$m \\leftarrow \\beta m + \\nabla L(\\theta)$$</p>
             <p>$$\\theta \\leftarrow \\theta - \\alpha m$$</p>
-            <p>where β ≈ 0.9 (typical momentum coefficient), m starts at 0.</p>
+            <p>where \(\beta \approx 0.9\) (typical momentum coefficient), \(m\) starts at 0.</p>
             <p><strong>Intuition:</strong> Like a ball rolling downhill—it builds speed in consistent directions.</p>
         </div>
         """
@@ -20,7 +20,7 @@ SECTIONS = [
         "title": "Nesterov Accelerated Gradient",
         "body": """
         <div class="worked-example" style="padding: 16px; margin: 12px 0; border-radius: 6px">
-            <p><strong>NAG:</strong> Look-ahead variant of momentum—evaluate gradient at θ - αm instead of θ.</p>
+            <p><strong>NAG:</strong> Look-ahead variant of momentum—evaluate gradient at \(\theta - \alpha m\) instead of \(\theta\).</p>
             <p>$$m \\leftarrow \\beta m + \\nabla L(\\theta - \\alpha m)$$</p>
             <p>$$\\theta \\leftarrow \\theta - \\alpha m$$</p>
             <p><strong>Benefit:</strong> Slightly better convergence in practice. Less oscillation, faster descent.</p>
@@ -50,7 +50,7 @@ SECTIONS = [
             <p>$$m \\leftarrow \\beta_1 m + (1 - \\beta_1) \\nabla L(\\theta)$$ (momentum)</p>
             <p>$$s \\leftarrow \\beta_2 s + (1 - \\beta_2) (\\nabla L(\\theta))^2$$ (adaptive rate)</p>
             <p>$$\\theta \\leftarrow \\theta - \\alpha \\frac{m}{\\sqrt{s + \\epsilon}}$$</p>
-            <p>Typical defaults: β₁ = 0.9, β₂ = 0.999, ε = 10⁻⁸.</p>
+            <p>Typical defaults: \(\beta_1 = 0.9\), \(\beta_2 = 0.999\), \(\varepsilon = 10^{-8}\).</p>
             <p><strong>Why Adam is popular:</strong> Works well across diverse problems with minimal tuning. Default optimizer in most frameworks.</p>
         </div>
         """

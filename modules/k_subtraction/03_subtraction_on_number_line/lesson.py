@@ -7,7 +7,7 @@ SECTIONS = [
         "title": "Jumping Backwards on the Number Line",
         "body": """<p>A number line is like a <strong>road with numbers</strong>. To subtract, you <em>jump backwards</em>!</p>
 <div class="concept-box">
-<p><strong>Example:</strong> \\(7 - 3 = ?\\)<br/>
+<p><strong>Example:</strong> \(7 - 3 = ?\)<br/>
 Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
 </div>
 <svg viewBox="0 0 500 120" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
@@ -49,7 +49,7 @@ Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
     </marker>
   </defs>
 </svg>
-<p style="text-align:center;margin-top:12px;"><strong>7 − 3 = 4</strong></p>"""
+<p style="text-align:center;margin-top:12px;"><strong>\(7 - 3 = 4\)</strong></p>"""
     },
     {
         "title": "Steps for Number Line Subtraction",
@@ -58,7 +58,7 @@ Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
 <p><strong>Step 1:</strong> Find the <em>bigger number</em> on the number line. Put your finger there. (Start at 7)</p>
 <p style="margin-top:8px;"><strong>Step 2:</strong> Look at the <em>number you're taking away</em>. (We're taking away 3)</p>
 <p style="margin-top:8px;"><strong>Step 3:</strong> Jump backwards that many spaces. Count each jump: 6, 5, 4. (Three jumps)</p>
-<p style="margin-top:8px;"><strong>Step 4:</strong> Where did you land? That's your answer! (We landed on 4, so 7 − 3 = 4)</p>
+<p style="margin-top:8px;"><strong>Step 4:</strong> Where did you land? That's your answer! (We landed on 4, so \(7 - 3 = 4\))</p>
 </div>
 <canvas id="numlineChart" data-chart='{
   "type": "scatter",
@@ -95,16 +95,16 @@ Start at 7, jump back 3 spaces, land on 4. Answer: <strong>4</strong></p>
         "title": "Practice: Jumping Back",
         "body": """<p>Use the number line in your head (or draw one!) to solve these:</p>
 <div class="mcq-group">
-  <p><strong>9 − 2 = ?</strong></p>
+  <p><strong>\(9 - 2 = ?\)</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Start at 9, jump back 2: 8, 7. Land on 7.">6</button>
     <button class="mcq-option" data-correct="true" data-explanation="Correct! Start at 9, jump back 2 to land on 7.">7</button>
-    <button class="mcq-option" data-correct="false" data-explanation="That would be 9 − 1. We need to jump back 2.">8</button>
+    <button class="mcq-option" data-correct="false" data-explanation="That would be \(9 - 1\). We need to jump back 2.">8</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>10 − 4 = ?</strong></p>
+  <p><strong>\(10 - 4 = ?\)</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Count back from 10: 9, 8, 7, 6. That's 4 jumps, landing on 6.">5</button>
     <button class="mcq-option" data-correct="true" data-explanation="Correct! Start at 10, jump back 4 spaces: 9, 8, 7, 6.">6</button>

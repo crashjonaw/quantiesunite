@@ -111,32 +111,32 @@ SECTIONS = [
         "title": "The Big Picture: Days, Weeks, Months, Years 📅",
         "body": """<p>Time doesn't just go in hours—it builds up into bigger and bigger units!</p>
 <svg viewBox="0 0 400 350" style="width:100%;max-width:400px;display:block;margin:20px auto;">
-  <text x="200" y="30" text-anchor='middle' font-size='16' font-weight='bold' fill='#161b22'>How Time Builds Up</text>
+  <text x="200" y="30" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>How Time Builds Up</text>
 
   <!-- 60 seconds = 1 minute -->
   <rect x="20" y="50" width="360" height="50" fill='#dbeafe' stroke='#3b82f6' stroke-width="1" rx="4"/>
-  <text x="40" y="75" font-size='12' fill='#161b22'>60 seconds = <strong>1 minute</strong></text>
-  <text x="290" y="75" font-size='11' fill='currentColor' opacity='0.6'>⏱️ Tick tock</text>
+  <text x="40" y="80" font-size='13' fill='#1e3a5f'>60 seconds = <tspan font-weight='bold'>1 minute</tspan></text>
+  <text x="340" y="80" text-anchor='middle' font-size='12' fill='#1e3a5f' opacity='0.7'>⏱️ Tick tock</text>
 
   <!-- 60 minutes = 1 hour -->
   <rect x="20" y="110" width="360" height="50" fill='#fef3c7' stroke='#f59e0b' stroke-width="1" rx="4"/>
-  <text x="40" y="135" font-size='12' fill='#161b22'>60 minutes = <strong>1 hour</strong></text>
-  <text x="290" y="135" font-size='11' fill='currentColor' opacity='0.6'>🕐 Clock hands</text>
+  <text x="40" y="140" font-size='13' fill='#5c3d00'>60 minutes = <tspan font-weight='bold'>1 hour</tspan></text>
+  <text x="340" y="140" text-anchor='middle' font-size='12' fill='#5c3d00' opacity='0.7'>🕐 Clock hands</text>
 
   <!-- 24 hours = 1 day -->
   <rect x="20" y="170" width="360" height="50" fill='#dbeafe' stroke='#3b82f6' stroke-width="1" rx="4"/>
-  <text x="40" y="195" font-size='12' fill='#161b22'>24 hours = <strong>1 day</strong></text>
-  <text x="290" y="195" font-size='11' fill='currentColor' opacity='0.6'>🌅→🌆→🌙</text>
+  <text x="40" y="200" font-size='13' fill='#1e3a5f'>24 hours = <tspan font-weight='bold'>1 day</tspan></text>
+  <text x="340" y="200" text-anchor='middle' font-size='12' fill='#1e3a5f' opacity='0.7'>🌅→🌆→🌙</text>
 
   <!-- 7 days = 1 week -->
   <rect x="20" y="230" width="360" height="50" fill='#d1fae5' stroke='#10b981' stroke-width="1" rx="4"/>
-  <text x="40" y="255" font-size='12' fill='#161b22'>7 days = <strong>1 week</strong></text>
-  <text x="290" y="255" font-size='11' fill='currentColor' opacity='0.6'>📅 School week</text>
+  <text x="40" y="260" font-size='13' fill='#064e3b'>7 days = <tspan font-weight='bold'>1 week</tspan></text>
+  <text x="340" y="260" text-anchor='middle' font-size='12' fill='#064e3b' opacity='0.7'>📅 School week</text>
 
   <!-- 12 months = 1 year -->
   <rect x="20" y="290" width="360" height="50" fill='#f5d3e4' stroke='#ec4899' stroke-width="1" rx="4"/>
-  <text x="40" y="315" font-size='12' fill='#161b22'>12 months = <strong>1 year</strong></text>
-  <text x="290" y="315" font-size='11' fill='currentColor' opacity='0.6'>🎂 Birthday!</text>
+  <text x="40" y="320" font-size='13' fill='#831843'>12 months = <tspan font-weight='bold'>1 year</tspan></text>
+  <text x="340" y="320" text-anchor='middle' font-size='12' fill='#831843' opacity='0.7'>🎂 Birthday!</text>
 </svg>
 <p style="text-align: center; margin-top: 20px; font-size: 12">All of these build up—seconds become minutes, minutes become hours, hours become days, and so on!</p>"""
     }

@@ -7,8 +7,8 @@ SECTIONS = [
 <h3>Fundamental Definition</h3>
 <p>A <strong>complex number</strong> is defined as:</p>
 <div class="concept-box">
-<p style="text-align: center; font-weight: bold;">z = a + bi</p>
-<p style="text-align: center;">where a, b ∈ ℝ and <strong>i</strong> is the imaginary unit satisfying \\(i^2 = -1\\)</p>
+<p style="text-align: center; font-weight: bold;">\(z = a + bi\)</p>
+<p style="text-align: center;">where \(a, b \in \mathbb{R}\) and <strong>i</strong> is the imaginary unit satisfying \\(i^2 = -1\\)</p>
 </div>
 
 <p>We call:</p>
@@ -37,7 +37,7 @@ SECTIONS = [
 <h3>Examples of Complex Numbers</h3>
 <div class="worked-example">
 <p><strong>Example 1:</strong> Identify real and imaginary parts</p>
-<p>For z = 3 + 2i:</p>
+<p>For \(z = 3 + 2i\):</p>
 <ul>
 <li>Re(z) = 3</li>
 <li>Im(z) = 2</li>
@@ -55,12 +55,12 @@ SECTIONS = [
         "title": "Complex Conjugate and Key Properties",
         "body": """
 <h3>The Complex Conjugate</h3>
-<p>For z = a + bi, the <strong>complex conjugate</strong> is:</p>
+<p>For \(z = a + bi\), the <strong>complex conjugate</strong> is:</p>
 <div class="concept-box">
-<p style="text-align: center; font-weight: bold;">z* = a - bi</p>
+<p style="text-align: center; font-weight: bold;">\(z^* = a - bi\)</p>
 </div>
 
-<p>Geometrically, z* is the reflection of z across the real axis.</p>
+<p>Geometrically, \(z^*\) is the reflection of z across the real axis.</p>
 
 <h3>Key Properties of the Conjugate</h3>
 <ul>
@@ -75,11 +75,11 @@ SECTIONS = [
 <h3>Examples</h3>
 <div class="worked-example">
 <p><strong>Example 3:</strong> Find the conjugate and verify properties</p>
-<p>For z = 3 - 4i:</p>
+<p>For \(z = 3 - 4i\):</p>
 <ul>
-<li>z* = 3 + 4i</li>
-<li>z + z* = (3 - 4i) + (3 + 4i) = 6 = 2 · Re(z)</li>
-<li>z · z* = (3 - 4i)(3 + 4i) = 9 + 16 = 25 = |z|²</li>
+<li>\(z^* = 3 + 4i\)</li>
+<li>\(z + z^* = (3 - 4i) + (3 + 4i) = 6 = 2 \cdot \text{Re}(z)\)</li>
+<li>\(z \cdot z^* = (3 - 4i)(3 + 4i) = 9 + 16 = 25 = |z|^2\)</li>
 </ul>
 </div>
 """
@@ -88,7 +88,7 @@ SECTIONS = [
         "title": "Modulus (Absolute Value)",
         "body": """
 <h3>Definition of Modulus</h3>
-<p>The <strong>modulus</strong> (or absolute value) of a complex number z = a + bi is the distance from the origin to the point (a, b):</p>
+<p>The <strong>modulus</strong> (or absolute value) of a complex number \(z = a + bi\) is the distance from the origin to the point (a, b):</p>
 <div class="concept-box">
 <p style="text-align: center; font-weight: bold;">|z| = \\(\\sqrt{a^2 + b^2}\\)</p>
 </div>

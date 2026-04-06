@@ -10,7 +10,7 @@ SECTIONS = [
 <div class="concept-box">
   <strong>The Grouping Question:</strong><br>
   "I have 12 cookies. If I want to give 3 cookies to each friend, how many friends can I give cookies to?"<br>
-  Answer: 12 ÷ 3 = 4 friends
+  Answer: \(12 \div 3 = 4\) friends
 </div>
 <p><strong>Key difference from sharing:</strong> In grouping, we know the group SIZE and count how many groups fit into the total!</p>
 <svg viewBox="0 0 520 250" style="width:100%;max-width:520px;height:auto;display:block;margin:16px auto;">
@@ -151,10 +151,10 @@ SECTIONS = [
     {
         "title": "The Counting Method for Grouping",
         "body": """<p><strong>A helpful way to solve grouping problems is to count up by the group size!</strong></p>
-<p>To solve 12 ÷ 3 (by grouping), count in 3s and see how many times you count before reaching 12:</p>
+<p>To solve \(12 \div 3\) (by grouping), count in 3s and see how many times you count before reaching 12:</p>
 <div class="worked-example">
   Count: 3, 6, 9, 12<br>
-  That's 4 counts, so 12 ÷ 3 = 4
+  That's 4 counts, so \(12 \div 3 = 4\)
 </div>
 <p>This is like saying: "How many 3s are in 12?" The answer is 4.</p>
 <svg viewBox="0 0 500 180" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">

@@ -7,7 +7,7 @@ SECTIONS = [
 <div class="concept-box">
 <p><strong>ReLU(z) = max(0, z)</strong></p>
 <p>If z > 0: output z</p>
-<p>If z ≤ 0: output 0</p>
+<p>If \(z \leq 0\): output 0</p>
 </div>
 <h3>Why ReLU Changed Everything</h3>
 <ul>
@@ -39,14 +39,14 @@ SECTIONS = [
         "body": """<p>Several improvements address the dead ReLU problem while maintaining ReLU's benefits:</p>
 <h3>Leaky ReLU</h3>
 <div class="concept-box">
-<p><strong>Leaky ReLU(z) = z if z > 0, else αz (where α = 0.01)</strong></p>
-<p>The small negative slope (α) allows gradients to flow even when z < 0. Weights can still update, preventing dead neurons.</p>
+<p><strong>Leaky ReLU(\(z\)) = \(z\) if \(z > 0\), else \(\alpha z\) (where \(\alpha = 0.01\))</strong></p>
+<p>The small negative slope (\(\alpha\)) allows gradients to flow even when \(z < 0\). Weights can still update, preventing dead neurons.</p>
 </div>
 <h3>Parametric ReLU (PReLU)</h3>
-<p>Like Leaky ReLU, but let the network <strong>learn</strong> the slope α during training instead of fixing it.</p>
+<p>Like Leaky ReLU, but let the network <strong>learn</strong> the slope \(\alpha\) during training instead of fixing it.</p>
 <h3>ELU (Exponential Linear Unit)</h3>
 <div class="concept-box">
-<p><strong>ELU(z) = z if z > 0, else α(e^z - 1)</strong></p>
+<p><strong>ELU(\(z\)) = \(z\) if \(z > 0\), else \(\alpha(e^z - 1)\)</strong></p>
 <p>Smoother transition and mean activation closer to zero, aiding optimization.</p>
 </div>"""
     },
@@ -54,8 +54,8 @@ SECTIONS = [
         "title": "GELU: Modern Alternative",
         "body": """<p>GELU (Gaussian Error Linear Unit) is the state-of-the-art activation for modern models:</p>
 <div class="concept-box">
-<p><strong>GELU(z) = z · Φ(z)</strong></p>
-<p>where Φ(z) is the cumulative distribution function of a standard normal.</p>
+<p><strong>\(\text{GELU}(z) = z \cdot \Phi(z)\)</strong></p>
+<p>where \(\Phi(z)\) is the cumulative distribution function of a standard normal.</p>
 </div>
 <h3>Advantages</h3>
 <ul>

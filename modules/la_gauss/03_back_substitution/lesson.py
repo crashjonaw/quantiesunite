@@ -47,7 +47,7 @@ SECTIONS = [
         <ul>
         <li><strong>Pivot variable:</strong> A variable that corresponds to a pivot column in REF. Its value is determined by the system.</li>
         <li><strong>Free variable:</strong> A variable that corresponds to a non-pivot column. It can take any value.</li>
-        <li><strong>Number of free variables:</strong> n − rank(A), where n is the number of variables.</li>
+        <li><strong>Number of free variables:</strong> \(n - \text{rank}(A)\), where \(n\) is the number of variables.</li>
         </ul>
         </div>
 
@@ -91,7 +91,7 @@ SECTIONS = [
         </div>
 
         <div class='success-box'>
-        <p><strong>Dimension of solution set:</strong> For a consistent system Ax = b, the solution set has dimension n − rank(A). Each additional free variable adds one dimension.</p>
+        <p><strong>Dimension of solution set:</strong> For a consistent system \(Ax = b\), the solution set has dimension \(n - \text{rank}(A)\). Each additional free variable adds one dimension.</p>
         </div>
         """
     },
@@ -103,8 +103,8 @@ SECTIONS = [
         <div class='concept-box'>
         <p><strong>Homogeneous systems:</strong> A system Ax = 0 (zero right-hand side) is always consistent because x = 0 is always a solution.</p>
         <ul>
-        <li>If rank(A) = n (full column rank), the only solution is x = 0 (trivial).</li>
-        <li>If rank(A) < n, there are infinitely many nontrivial solutions.</li>
+        <li>If \(\text{rank}(A) = n\) (full column rank), the only solution is \(x = 0\) (trivial).</li>
+        <li>If \(\text{rank}(A) < n\), there are infinitely many nontrivial solutions.</li>
         </ul>
         </div>
 
@@ -119,7 +119,7 @@ SECTIONS = [
         <pre class='code-block'>[1  2  -1 | 0]
 [0  0   0 | 0]</pre>
 
-        <p>Rank = 1, variables = 3, so we have 3 − 1 = 2 free variables (y and z).</p>
+        <p>Rank = 1, variables = 3, so we have \(3 - 1 = 2\) free variables (\(y\) and \(z\)).</p>
         <p>Let y = s, z = t.</p>
         <p>Row 1: x + 2s − t = 0 → x = −2s + t</p>
 
@@ -130,7 +130,7 @@ SECTIONS = [
         </div>
 
         <div class='success-box'>
-        <p><strong>The nullspace:</strong> For a matrix A, the nullspace is the solution set to Ax = 0. It is a linear subspace of dimension n − rank(A).</p>
+        <p><strong>The nullspace:</strong> For a matrix \(A\), the nullspace is the solution set to \(Ax = 0\). It is a linear subspace of dimension \(n - \text{rank}(A)\).</p>
         </div>
         """
     },
@@ -142,7 +142,7 @@ SECTIONS = [
         <ol>
         <li><strong>Form the augmented matrix:</strong> [A | b]</li>
         <li><strong>Gaussian elimination (forward pass):</strong> Reduce to REF using EROs.</li>
-        <li><strong>Check consistency:</strong> If there is a row [0 0 ... 0 | c] with c ≠ 0, the system is inconsistent (stop).</li>
+        <li><strong>Check consistency:</strong> If there is a row \([0\ 0\ \ldots\ 0\ |\ c]\) with \(c \neq 0\), the system is inconsistent (stop).</li>
         <li><strong>Identify free variables:</strong> Variables corresponding to non-pivot columns are free.</li>
         <li><strong>Back substitution:</strong> Starting from the last nonzero row, solve for each pivot variable in terms of free variables.</li>
         <li><strong>Express the solution:</strong> Either as a unique solution, a parametric family, or "no solution."</li>
@@ -169,7 +169,7 @@ SECTIONS = [
 [0 -1  1 | 2]
 [0  0 -1 | -3]</pre>
 
-        <p><strong>Step 3: Check consistency</strong> No row [0 0 0 | c] with c ≠ 0, so the system is consistent.</p>
+        <p><strong>Step 3: Check consistency</strong> No row \([0\ 0\ 0\ |\ c]\) with \(c \neq 0\), so the system is consistent.</p>
 
         <p><strong>Step 4: Identify free variables</strong> Pivots in columns 1, 2, 3. All variables are pivot variables (no free variables).</p>
 

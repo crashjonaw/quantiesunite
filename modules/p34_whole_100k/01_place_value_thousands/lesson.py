@@ -7,7 +7,7 @@ SECTIONS = [
 <p>You already know how hundreds work. <strong>999</strong> is the biggest three-digit number. But what happens when we add one more?</p>
 
 <div class="concept-box">
-<p><strong>999 + 1 = 1,000</strong></p>
+<p><strong>\\(999 + 1 = 1{,}000\\)</strong></p>
 <p>We get a new place! We need a new column to the left. This is the <strong>thousands place</strong>.</p>
 </div>
 
@@ -152,7 +152,7 @@ SECTIONS = [
 <p>If your family is saving money, they might save thousands of dollars:</p>
 
 <div class="example-box">
-<p><strong>5,000 dollars</strong> = 5 × 1,000 dollars</p>
+<p><strong>5,000 dollars</strong> = \\(5 \\times 1{,}000\\) dollars</p>
 <p><strong>7,250 dollars</strong> = 7 thousand, 2 hundred, fifty dollars</p>
 </div>
 

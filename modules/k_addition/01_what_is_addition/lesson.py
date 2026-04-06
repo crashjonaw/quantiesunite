@@ -44,25 +44,25 @@ SECTIONS = [
 <div class="worked-example">
   <h4>📚 Books on a Shelf</h4>
   <p>You have 3 books on one shelf and 2 books on another shelf.
-  How many books do you have to read? <strong>3 + 2 = 5 books</strong></p>
+  How many books do you have to read? <strong>\(3 + 2 = 5\) books</strong></p>
 </div>
 
 <div class="worked-example">
   <h4>🧩 Building Blocks</h4>
   <p>You built a tower with 4 blocks. Your friend added 3 more blocks.
-  Now your tower is how tall? <strong>4 + 3 = 7 blocks</strong></p>
+  Now your tower is how tall? <strong>\(4 + 3 = 7\) blocks</strong></p>
 </div>
 
 <div class="worked-example">
   <h4>🎂 Birthday Cake Candles</h4>
   <p>There are 5 candles on the cake. You add 2 more candles.
-  How many candles now? <strong>5 + 2 = 7 candles</strong></p>
+  How many candles now? <strong>\(5 + 2 = 7\) candles</strong></p>
 </div>
 
 <div class="worked-example">
   <h4>🐕 Dogs at the Park</h4>
   <p>There are 2 dogs running. Then 4 more dogs come to play.
-  How many dogs are now at the park? <strong>2 + 4 = 6 dogs</strong></p>
+  How many dogs are now at the park? <strong>\(2 + 4 = 6\) dogs</strong></p>
 </div>
 
 <p style="margin-top: 20px; font-size: 16px;">
@@ -98,7 +98,7 @@ SECTIONS = [
 <p>We write addition like this:</p>
 
 <div class="formula-box">
-  <p style="font-size: 28px; margin-bottom: 10px; font-weight: bold;">2 + 3 = 5</p>
+  <p style="font-size: 28px; margin-bottom: 10px; font-weight: bold;">\(2 + 3 = 5\)</p>
   <p style="font-size: 16px;">We read it as: <strong>"Two plus three equals five"</strong></p>
   <p style="font-size: 14px; margin-top: 10px">
     This means: Group of 2 + Group of 3 = Total of 5

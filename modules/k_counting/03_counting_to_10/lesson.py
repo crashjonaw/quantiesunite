@@ -16,7 +16,7 @@ SECTIONS = [
 
 <div class="concept-box">
   <h4>Stable Order Principle</h4>
-  <p>Numbers always come in the same order. The sequence \\(1, 2, 3...\\) stays stable and reliable, just like the alphabet stays in order.</p>
+  <p>Numbers always come in the same order. The sequence \(1, 2, 3\ldots\) stays stable and reliable, just like the alphabet stays in order.</p>
 </div>
 
 <h3>How to Practice the Sequence</h3>

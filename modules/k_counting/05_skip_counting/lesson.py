@@ -6,7 +6,7 @@ SECTIONS = [
     {
         "title": "What is Skip Counting?",
         "body": """<h3>A Faster Way to Count</h3>
-<p>When you count \\(1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\), you say every number. But sometimes, you don't need every number. You can count by <strong>groups</strong> instead. This is called <strong>skip counting</strong> — you skip over numbers to count faster.</p>
+<p>When you count \(1, 2, 3, 4, 5, 6, 7, 8, 9, 10\), you say every number. But sometimes, you don't need every number. You can count by <strong>groups</strong> instead. This is called <strong>skip counting</strong> — you skip over numbers to count faster.</p>
 
 <div class="concept-box">
   <h4>Skip Counting Definition</h4>
@@ -17,7 +17,7 @@ SECTIONS = [
 <p>Skip counting is useful because:</p>
 <ul>
   <li><strong>It's faster:</strong> To count to 20, you can say "2, 4, 6, 8, 10, 12, 14, 16, 18, 20" (10 numbers) instead of all 20 numbers</li>
-  <li><strong>It helps with multiplication:</strong> Counting by \\(2\\)s is like \\(2 + 2 + 2...\\)</li>
+  <li><strong>It helps with multiplication:</strong> Counting by \(2\)s is like \(2 + 2 + 2\ldots\)</li>
   <li><strong>It's practical:</strong> Coins often come in groups, so we skip count by their value</li>
   <li><strong>It shows patterns:</strong> Numbers that repeat a pattern help us understand math</li>
 </ul>
@@ -30,7 +30,7 @@ SECTIONS = [
     {
         "title": "Counting by 2s and 5s",
         "body": """<h3>Counting by 2s: Every Other Number</h3>
-<p>When you count by \\(2\\)s, you say every other number. Start at 2 and keep adding 2:</p>
+<p>When you count by \(2\)s, you say every other number. Start at 2 and keep adding 2:</p>
 
 <div style="background: #4169E180; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
   <p style="font-size: 18px;"><strong>2, 4, 6, 8, 10, 12, 14, 16, 18, 20</strong></p>
@@ -69,7 +69,7 @@ SECTIONS = [
 </svg>
 
 <h3>Counting by 5s: Making Groups of Five</h3>
-<p>When you count by \\(5\\)s, you say numbers that are 5 apart. This is great for counting fingers or coins!</p>
+<p>When you count by \(5\)s, you say numbers that are 5 apart. This is great for counting fingers or coins!</p>
 
 <div style="background: #ef444480; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
   <p style="font-size: 18px;"><strong>5, 10, 15, 20</strong></p>
@@ -90,7 +90,7 @@ SECTIONS = [
   <p><strong>Counting by 2s: 2, 4, 6, ?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="When counting by 2s, add 2 each time, not 1.">7</button>
-    <button class="mcq-option" data-correct="true" data-explanation="Correct! 6 + 2 = 8.">8</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Correct! \(6 + 2 = 8\).">8</button>
     <button class="mcq-option" data-correct="false" data-explanation="That's 2 numbers away.">10</button>
   </div>
   <div class="mcq-feedback"></div>
@@ -102,7 +102,7 @@ SECTIONS = [
   <p><strong>Counting by 5s: 5, 10, 15, ?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="When counting by 5s, add 5 each time.">18</button>
-    <button class="mcq-option" data-correct="true" data-explanation="Correct! 15 + 5 = 20.">20</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Correct! \(15 + 5 = 20\).">20</button>
     <button class="mcq-option" data-correct="false" data-explanation="That's too far. Add 5 to 15.">25</button>
   </div>
   <div class="mcq-feedback"></div>

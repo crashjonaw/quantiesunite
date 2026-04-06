@@ -18,12 +18,12 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 2: Divide the total by the number of parts</h4>
-      <p>Value of one part = £60 ÷ 5 = £12 per part</p>
+      <p>Value of one part = \(£60 \div 5 = £12\) per part</p>
     </div>
     <div class="step">
       <h4>Step 3: Multiply each ratio number by the value of one part</h4>
-      <p>First share: 2 × £12 = £24</p>
-      <p>Second share: 3 × £12 = £36</p>
+      <p>First share: \(2 \times £12 = £24\)</p>
+      <p>Second share: \(3 \times £12 = £36\)</p>
     </div>
     <div class="step">
       <h4>Step 4: Check your answer</h4>
@@ -57,8 +57,8 @@ SECTIONS = [
     <h4>Example: Sharing Money</h4>
     <p><strong>Problem:</strong> Ali and Ben share £60 in the ratio 2:3. How much does each get?</p>
     <p><strong>Step 1:</strong> Total parts = 2 + 3 = 5</p>
-    <p><strong>Step 2:</strong> One part = £60 ÷ 5 = £12</p>
-    <p><strong>Step 3:</strong> Ali gets 2 × £12 = £24. Ben gets 3 × £12 = £36</p>
+    <p><strong>Step 2:</strong> One part = \(£60 \div 5 = £12\)</p>
+    <p><strong>Step 3:</strong> Ali gets \(2 \times £12 = £24\). Ben gets \(3 \times £12 = £36\)</p>
     <p><strong>Step 4:</strong> Check: £24 + £36 = £60 ✓ and 24:36 = 2:3 ✓</p>
   </div>
 </div>"""
@@ -83,13 +83,13 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 2: Value per part</h4>
-      <p>60 ÷ 6 = 10 pencils per part</p>
+      <p>\(60 \div 6 = 10\) pencils per part</p>
     </div>
     <div class="step">
       <h4>Step 3: Calculate each share</h4>
-      <p>First group: 2 × 10 = 20 pencils</p>
-      <p>Second group: 3 × 10 = 30 pencils</p>
-      <p>Third group: 1 × 10 = 10 pencils</p>
+      <p>First group: \(2 \times 10 = 20\) pencils</p>
+      <p>Second group: \(3 \times 10 = 30\) pencils</p>
+      <p>Third group: \(1 \times 10 = 10\) pencils</p>
     </div>
     <div class="step">
       <h4>Step 4: Verify</h4>
@@ -122,12 +122,12 @@ SECTIONS = [
     <h4>Practice Example: Dividing Sweets</h4>
     <p><strong>Problem:</strong> Divide 120 sweets among 3 children in ratio 3:2:5</p>
     <p><strong>Step 1:</strong> Total parts = 3 + 2 + 5 = 10</p>
-    <p><strong>Step 2:</strong> One part = 120 ÷ 10 = 12 sweets</p>
+    <p><strong>Step 2:</strong> One part = \(120 \div 10 = 12\) sweets</p>
     <p><strong>Step 3:</strong></p>
     <ul>
-      <li>Child 1: 3 × 12 = 36 sweets</li>
-      <li>Child 2: 2 × 12 = 24 sweets</li>
-      <li>Child 3: 5 × 12 = 60 sweets</li>
+      <li>Child 1: \(3 \times 12 = 36\) sweets</li>
+      <li>Child 2: \(2 \times 12 = 24\) sweets</li>
+      <li>Child 3: \(5 \times 12 = 60\) sweets</li>
     </ul>
     <p><strong>Step 4:</strong> Check: 36 + 24 + 60 = 120 ✓</p>
   </div>
@@ -154,12 +154,12 @@ SECTIONS = [
     <div class="step">
       <h4>Step 2: Find the scale factor</h4>
       <p>The ratio says "2 boys for every 3 girls"</p>
-      <p>We have 10 boys: 10 ÷ 2 = 5</p>
+      <p>We have 10 boys: \(10 \div 2 = 5\)</p>
       <p>So the scale factor is 5 (we multiplied the ratio by 5)</p>
     </div>
     <div class="step">
       <h4>Step 3: Apply to the rest of the ratio</h4>
-      <p>Girls = 3 × 5 = 15</p>
+      <p>Girls = \(3 \times 5 = 15\)</p>
     </div>
     <div class="step">
       <h4>Step 4: Verify</h4>
@@ -189,8 +189,8 @@ SECTIONS = [
     <h4>Recipe Example</h4>
     <p><strong>Problem:</strong> A recipe needs flour:sugar = 3:2. If you use 300g of flour, how much sugar?</p>
     <p><strong>Step 1:</strong> Ratio 3:2 with flour = 3 and we have 300g flour</p>
-    <p><strong>Step 2:</strong> Scale factor = 300 ÷ 3 = 100</p>
-    <p><strong>Step 3:</strong> Sugar = 2 × 100 = 200g</p>
+    <p><strong>Step 2:</strong> Scale factor = \(300 \div 3 = 100\)</p>
+    <p><strong>Step 3:</strong> Sugar = \(2 \times 100 = 200\)g</p>
     <p><strong>Step 4:</strong> Check: 300:200 = 3:2 ✓</p>
   </div>
 </div>"""
@@ -215,8 +215,8 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 2: Compare the fractions</h4>
-      <p>$$\\frac{3}{5} = 0.6 = 60%$$</p>
-      <p>$$\\frac{4}{7} \\approx 0.571 = 57.1%$$</p>
+      <p>$$\\frac{3}{5} = 0.6 = 60\\%$$</p>
+      <p>$$\\frac{4}{7} \\approx 0.571 = 57.1\\%$$</p>
     </div>
     <div class="step">
       <h4>Step 3: Conclude</h4>

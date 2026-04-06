@@ -75,10 +75,10 @@ SECTIONS = [
 
         <div class="concept-box">
             <h4>Example 1: Rolling Two Dice Sequentially</h4>
-            <p><strong>First die:</strong> P(any outcome) = 1/6</p>
-            <p><strong>Second die:</strong> P(any outcome) = 1/6</p>
-            <p><strong>Sample space:</strong> 6 × 6 = 36 outcomes</p>
-            <p><strong>P(first die = 3 AND second die = 5) = 1/6 × 1/6 = 1/36</strong></p>
+            <p><strong>First die:</strong> \\(P(\\text{any outcome}) = \\frac{1}{6}\\)</p>
+            <p><strong>Second die:</strong> \\(P(\\text{any outcome}) = \\frac{1}{6}\\)</p>
+            <p><strong>Sample space:</strong> \\(6 \\times 6 = 36\\) outcomes</p>
+            <p><strong>\\(P(\\text{first die} = 3 \\text{ AND second die} = 5) = \\frac{1}{6} \\times \\frac{1}{6} = \\frac{1}{36}\\)</strong></p>
             <p>The tree has 6 branches from the root (first die), then 6 branches from each endpoint (second die), creating 36 total paths.</p>
         </div>
         """
@@ -97,18 +97,18 @@ SECTIONS = [
             <p><strong>Bag contents:</strong> 3 red, 2 blue (5 total)</p>
             <p><strong>First draw:</strong></p>
             <ul>
-                <li>P(Red) = 3/5</li>
-                <li>P(Blue) = 2/5</li>
+                <li>\\(P(\\text{Red}) = \\frac{3}{5}\\)</li>
+                <li>\\(P(\\text{Blue}) = \\frac{2}{5}\\)</li>
             </ul>
             <p><strong>Second draw (depends on first):</strong></p>
             <ul>
-                <li>If first was red: 2 red and 2 blue remain. P(Red) = 2/4 = 1/2, P(Blue) = 2/4 = 1/2</li>
-                <li>If first was blue: 3 red and 1 blue remain. P(Red) = 3/4, P(Blue) = 1/4</li>
+                <li>If first was red: 2 red and 2 blue remain. \\(P(\\text{Red}) = \\frac{2}{4} = \\frac{1}{2}\\), \\(P(\\text{Blue}) = \\frac{2}{4} = \\frac{1}{2}\\)</li>
+                <li>If first was blue: 3 red and 1 blue remain. \\(P(\\text{Red}) = \\frac{3}{4}\\), \\(P(\\text{Blue}) = \\frac{1}{4}\\)</li>
             </ul>
-            <p><strong>P(both red) = 3/5 × 2/4 = 6/20 = 3/10</strong></p>
-            <p><strong>P(red then blue) = 3/5 × 2/4 = 6/20 = 3/10</strong></p>
-            <p><strong>P(blue then red) = 2/5 × 3/4 = 6/20 = 3/10</strong></p>
-            <p><strong>P(both blue) = 2/5 × 1/4 = 2/20 = 1/10</strong></p>
+            <p><strong>\\(P(\\text{both red}) = \\frac{3}{5} \\times \\frac{2}{4} = \\frac{6}{20} = \\frac{3}{10}\\)</strong></p>
+            <p><strong>\\(P(\\text{red then blue}) = \\frac{3}{5} \\times \\frac{2}{4} = \\frac{6}{20} = \\frac{3}{10}\\)</strong></p>
+            <p><strong>\\(P(\\text{blue then red}) = \\frac{2}{5} \\times \\frac{3}{4} = \\frac{6}{20} = \\frac{3}{10}\\)</strong></p>
+            <p><strong>\\(P(\\text{both blue}) = \\frac{2}{5} \\times \\frac{1}{4} = \\frac{2}{20} = \\frac{1}{10}\\)</strong></p>
         </div>
 
         <p><strong>Key insight:</strong> The probability of the second event depends on what happened first. These are <em>dependent</em> events.</p>
@@ -121,18 +121,18 @@ SECTIONS = [
             <p><strong>Bag contents:</strong> 3 red, 2 blue (5 total)</p>
             <p><strong>First draw:</strong></p>
             <ul>
-                <li>P(Red) = 3/5</li>
-                <li>P(Blue) = 2/5</li>
+                <li>\\(P(\\text{Red}) = \\frac{3}{5}\\)</li>
+                <li>\\(P(\\text{Blue}) = \\frac{2}{5}\\)</li>
             </ul>
             <p><strong>Second draw:</strong> Ball returned. Same bag, same probabilities!</p>
             <ul>
-                <li>P(Red) = 3/5</li>
-                <li>P(Blue) = 2/5</li>
+                <li>\\(P(\\text{Red}) = \\frac{3}{5}\\)</li>
+                <li>\\(P(\\text{Blue}) = \\frac{2}{5}\\)</li>
             </ul>
-            <p><strong>P(both red) = 3/5 × 3/5 = 9/25</strong></p>
-            <p><strong>P(red then blue) = 3/5 × 2/5 = 6/25</strong></p>
-            <p><strong>P(blue then red) = 2/5 × 3/5 = 6/25</strong></p>
-            <p><strong>P(both blue) = 2/5 × 2/5 = 4/25</strong></p>
+            <p><strong>\\(P(\\text{both red}) = \\frac{3}{5} \\times \\frac{3}{5} = \\frac{9}{25}\\)</strong></p>
+            <p><strong>\\(P(\\text{red then blue}) = \\frac{3}{5} \\times \\frac{2}{5} = \\frac{6}{25}\\)</strong></p>
+            <p><strong>\\(P(\\text{blue then red}) = \\frac{2}{5} \\times \\frac{3}{5} = \\frac{6}{25}\\)</strong></p>
+            <p><strong>\\(P(\\text{both blue}) = \\frac{2}{5} \\times \\frac{2}{5} = \\frac{4}{25}\\)</strong></p>
         </div>
 
         <p><strong>Key insight:</strong> Probabilities don't change between draws. These are <em>independent</em> events (despite being sequential).</p>
@@ -180,7 +180,7 @@ SECTIONS = [
 
         <h4>The Multiplication Rule (for sequences)</h4>
         <div class="formula-box" style="text-align: center;">
-            <p style="margin: 0;"><strong>P(A and B) = P(A) × P(B|A)</strong></p>
+            <p style="margin: 0;"><strong>\\(P(A \\text{ and } B) = P(A) \\times P(B|A)\\)</strong></p>
             <p style="font-size: 0.9em; margin: 10px 0 0 0">Read: "Probability of A AND B equals probability of A times probability of B given A"</p>
         </div>
 
@@ -188,17 +188,17 @@ SECTIONS = [
 
         <div class="worked-example">
             <h4>Example 4: Coin Flip Then Die Roll</h4>
-            <p><strong>Step 1:</strong> Flip a coin. P(Heads) = 1/2</p>
-            <p><strong>Step 2:</strong> Roll a die. P(Rolling a 4) = 1/6</p>
-            <p><strong>P(Heads AND 4) = 1/2 × 1/6 = 1/12</strong></p>
+            <p><strong>Step 1:</strong> Flip a coin. \\(P(\\text{Heads}) = \\frac{1}{2}\\)</p>
+            <p><strong>Step 2:</strong> Roll a die. \\(P(\\text{Rolling a 4}) = \\frac{1}{6}\\)</p>
+            <p><strong>\\(P(\\text{Heads AND 4}) = \\frac{1}{2} \\times \\frac{1}{6} = \\frac{1}{12}\\)</strong></p>
             <p><strong>Why:</strong> Out of all coin flips, 1/2 are heads. Out of those heads, 1/6 will be followed by a 4. So 1/2 × 1/6 = 1/12 of all trials have both.</p>
         </div>
 
         <div class="worked-example">
             <h4>Example 5: Drawing Cards Without Replacement</h4>
-            <p><strong>Draw 1:</strong> P(Heart) = 13/52 = 1/4</p>
-            <p><strong>Draw 2:</strong> P(Heart | first was Heart) = 12/51</p>
-            <p><strong>P(both Hearts) = 13/52 × 12/51 = 156/2652 = 1/17 ≈ 0.0588</strong></p>
+            <p><strong>Draw 1:</strong> \\(P(\\text{Heart}) = \\frac{13}{52} = \\frac{1}{4}\\)</p>
+            <p><strong>Draw 2:</strong> \\(P(\\text{Heart} | \\text{first was Heart}) = \\frac{12}{51}\\)</p>
+            <p><strong>\\(P(\\text{both Hearts}) = \\frac{13}{52} \\times \\frac{12}{51} = \\frac{156}{2652} = \\frac{1}{17} \\approx 0.0588\\)</strong></p>
             <p><strong>Why?:</strong> First we narrow from 52 cards to those that are hearts (13/52). Then, from 51 remaining cards, we need a heart (12/51). Multiplying gives the probability both conditions hold.</p>
         </div>
 
@@ -209,12 +209,12 @@ SECTIONS = [
             <h4>Example 6: Getting At Least One Heads in Two Flips</h4>
             <p><strong>Paths that work:</strong></p>
             <ul>
-                <li>Path 1: Heads then Heads: 1/2 × 1/2 = 1/4</li>
-                <li>Path 2: Heads then Tails: 1/2 × 1/2 = 1/4</li>
-                <li>Path 3: Tails then Heads: 1/2 × 1/2 = 1/4</li>
+                <li>Path 1: Heads then Heads: \\(\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}\\)</li>
+                <li>Path 2: Heads then Tails: \\(\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}\\)</li>
+                <li>Path 3: Tails then Heads: \\(\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}\\)</li>
             </ul>
-            <p><strong>P(at least one Heads) = 1/4 + 1/4 + 1/4 = 3/4</strong></p>
-            <p><strong>Note:</strong> The path "Tails then Tails" doesn't work, so we don't include it. P(Tails, Tails) = 1/4, and indeed 3/4 + 1/4 = 1. ✓</p>
+            <p><strong>\\(P(\\text{at least one Heads}) = \\frac{1}{4} + \\frac{1}{4} + \\frac{1}{4} = \\frac{3}{4}\\)</strong></p>
+            <p><strong>Note:</strong> The path "Tails then Tails" doesn't work, so we don't include it. \\(P(\\text{Tails, Tails}) = \\frac{1}{4}\\), and indeed \\(\\frac{3}{4} + \\frac{1}{4} = 1\\). ✓</p>
         </div>
 
         <p><strong>Workflow:</strong> Identify all paths that satisfy your condition. Calculate probability of each path (multiply). Sum all satisfying probabilities.</p>

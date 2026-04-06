@@ -25,7 +25,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
 <ul>
   <li>Add faster because you memorize the facts</li>
   <li>Understand that numbers can break apart and come back together</li>
-  <li>Get ready for subtraction (if you know 3 + 2 = 5, then 5 - 3 = 2)</li>
+  <li>Get ready for subtraction (if you know \(3 + 2 = 5\), then \(5 - 3 = 2\))</li>
 </ul>"""
     },
 
@@ -110,14 +110,14 @@ It also shows us that two smaller parts can combine to make one bigger number.</
 <h3>See the Pattern?</h3>
 <p>Look at the pairs carefully:</p>
 <ul>
-  <li><strong>0 + 5</strong> and <strong>5 + 0</strong> — both equal 5</li>
-  <li><strong>1 + 4</strong> and <strong>4 + 1</strong> — both equal 5</li>
-  <li><strong>2 + 3</strong> and <strong>3 + 2</strong> — both equal 5</li>
+  <li><strong>\(0 + 5\)</strong> and <strong>\(5 + 0\)</strong> — both equal 5</li>
+  <li><strong>\(1 + 4\)</strong> and <strong>\(4 + 1\)</strong> — both equal 5</li>
+  <li><strong>\(2 + 3\)</strong> and <strong>\(3 + 2\)</strong> — both equal 5</li>
 </ul>
 
 <div class="success-box">
   <h4>✨ Interesting Discovery</h4>
-  <p>It doesn't matter which order you add! <strong>2 + 3</strong> equals <strong>3 + 2</strong>.
+  <p>It doesn't matter which order you add! <strong>\(2 + 3\)</strong> equals <strong>\(3 + 2\)</strong>.
   This is called <strong>commutativity</strong> (don't worry about the big word — it just means order doesn't matter).</p>
 </div>"""
     },
@@ -125,7 +125,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
     {
         "title": "Seeing Number Bonds Visually",
         "body": """<h3>Drawing Number Bonds with Objects</h3>
-<p>Let's see the number bond 5 = 2 + 3 with actual objects:</p>
+<p>Let's see the number bond \(5 = 2 + 3\) with actual objects:</p>
 
 <div class="formula-box">
   <p style="font-size: 18px; margin-bottom: 15px;"><strong>The Total: 5 Apples</strong></p>
@@ -140,7 +140,7 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <p style="font-size: 24px; margin: 10px 0;">🍎🍎🍎</p>
 
   <p style="font-size: 16px; margin-top: 15px">The number bond shows:</p>
-  <p style="font-size: 18px; margin-top: 10px; font-weight: bold;">5 = 2 + 3</p>
+  <p style="font-size: 18px; margin-top: 10px; font-weight: bold;">\(5 = 2 + 3\)</p>
 </div>
 
 <h3>Number Bond Chart</h3>
@@ -156,17 +156,17 @@ It also shows us that two smaller parts can combine to make one bigger number.</
   <p><strong>If the total is 5 and one part is 2, what is the other part?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Try drawing 5 circles and removing 2. How many are left?">4</button>
-    <button class="mcq-option" data-correct="true" data-explanation="5 = 2 + 3. The two parts are 2 and 3.">3</button>
+    <button class="mcq-option" data-correct="true" data-explanation="\(5 = 2 + 3\). The two parts are 2 and 3.">3</button>
     <button class="mcq-option" data-correct="false" data-explanation="That's too many. 2 and 4 would make 6, not 5.">4</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>
 
 <div class="mcq-group" style="margin-top: 20px;">
-  <p><strong>Complete this number bond: 5 = 1 + ?</strong></p>
+  <p><strong>Complete this number bond: \(5 = 1 + ?\)</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="1 and 3 makes 4, not 5. Count on your fingers!">3</button>
-    <button class="mcq-option" data-correct="true" data-explanation="1 + 4 = 5. The parts are 1 and 4.">4</button>
+    <button class="mcq-option" data-correct="true" data-explanation="\(1 + 4 = 5\). The parts are 1 and 4.">4</button>
     <button class="mcq-option" data-correct="false" data-explanation="1 and 5 makes 6. That's too many.">5</button>
   </div>
   <div class="mcq-feedback"></div>
@@ -175,9 +175,9 @@ It also shows us that two smaller parts can combine to make one bigger number.</
 <h3>Write Your Own Number Bonds</h3>
 <p>Try to write the missing part:</p>
 <div style="padding: 15px; border-radius: 8px; margin: 15px 0;">
-  <p>5 = 4 + ?</p>
+  <p>\(5 = 4 + ?\)</p>
   <p style="margin-top: 10px; font-size: 14px">Hint: Start at 4 and count: 5. How many did you count on?</p>
-  <p style="margin-top: 10px;"><strong>Answer: 5 = 4 + 1</strong></p>
+  <p style="margin-top: 10px;"><strong>Answer: \(5 = 4 + 1\)</strong></p>
 </div>"""
     }
 ]

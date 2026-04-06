@@ -115,8 +115,8 @@ SECTIONS = [
 
         <div class="concept-box">
             <p><strong>Z-Score Formula:</strong></p>
-            <p style="text-align: center;">z = (x − μ) / σ</p>
-            <p>where x is the individual value, μ is the mean, and σ is the standard deviation</p>
+            <p style="text-align: center;">\\(z = \\frac{x - \\mu}{\\sigma}\\)</p>
+            <p>where \\(x\\) is the individual value, \\(\\mu\\) is the mean, and \\(\\sigma\\) is the standard deviation</p>
         </div>
 
         <p>A z-score tells you <strong>how many standard deviations a value is from the mean.</strong> It's unitless, making it perfect for comparisons.</p>
@@ -134,16 +134,16 @@ SECTIONS = [
 
         <div class="worked-example">
             <p><strong>Worked Example:</strong> Resolving our comparison problem</p>
-            <p><strong>Alice:</strong> z = (82 − 75) / 8 = 7/8 = 0.875</p>
-            <p><strong>Bob:</strong> z = (88 − 80) / 10 = 8/10 = 0.8</p>
+            <p><strong>Alice:</strong> \\(z = \\frac{82 - 75}{8} = \\frac{7}{8} = 0.875\\)</p>
+            <p><strong>Bob:</strong> \\(z = \\frac{88 - 80}{10} = \\frac{8}{10} = 0.8\\)</p>
             <p><strong>Interpretation:</strong> Alice's score is 0.875 standard deviations above her class mean. Bob's score is 0.8 standard deviations above his class mean. Alice performed slightly better relative to her class average.</p>
         </div>
 
         <div class="worked-example">
             <p><strong>Another Example:</strong> Identifying unusual performances</p>
             <p>Heights are normally distributed with mean 170 cm and SD 5 cm.</p>
-            <p>Person A: 185 cm → z = (185 − 170) / 5 = 3 (3 SDs above mean, very tall!)</p>
-            <p>Person B: 150 cm → z = (150 − 170) / 5 = −4 (4 SDs below mean, exceptionally short!)</p>
+            <p>Person A: 185 cm → \\(z = \\frac{185 - 170}{5} = 3\\) (3 SDs above mean, very tall!)</p>
+            <p>Person B: 150 cm → \\(z = \\frac{150 - 170}{5} = -4\\) (4 SDs below mean, exceptionally short!)</p>
             <p>Person B is more unusual than Person A because |−4| > |3|.</p>
         </div>
 
@@ -161,11 +161,11 @@ SECTIONS = [
 
         <h4>From Z-Score Back to Raw Score</h4>
         <p>If you know the z-score and want to find the original value:</p>
-        <p style="text-align: center;">x = μ + z × σ</p>
+        <p style="text-align: center;">\\(x = \\mu + z \\times \\sigma\\)</p>
 
         <div class="worked-example">
             <p><strong>Example:</strong> If a student's z-score is 1.5 on a test with mean 70 and SD 10, what was their raw score?</p>
-            <p>x = 70 + 1.5 × 10 = 70 + 15 = 85</p>
+            <p>\\(x = 70 + 1.5 \\times 10 = 70 + 15 = 85\\)</p>
         </div>
         """
     },

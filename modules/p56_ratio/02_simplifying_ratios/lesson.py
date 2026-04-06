@@ -50,54 +50,58 @@ SECTIONS = [
     },
     {
         "title": "Finding the GCF (Greatest Common Factor)",
-        "body": """<div class="lesson-container">
-  <div class="concept-box">
-    <h3>Step 1: Find the GCF</h3>
+        "body": """<div class="lesson-container" style="max-width: 700px; margin: 0 auto; padding: 0 1.5rem;">
+  <div class="concept-box" style="text-align: center; margin-bottom: 2rem; padding: 1.5rem;">
+    <h3 style="margin-bottom: 0.75rem;">Step 1: Find the GCF</h3>
     <p>The <strong>Greatest Common Factor (GCF)</strong> is the largest number that divides evenly into both numbers in the ratio.</p>
   </div>
 
-  <div class="steps-container">
-    <h3>Method to Find GCF</h3>
-    <div class="step">
-      <h4>Example: Find GCF of 18 and 24</h4>
+  <div class="steps-container" style="margin-bottom: 2rem; padding: 1.5rem;">
+    <h3 style="text-align: center; margin-bottom: 1.25rem;">Method to Find GCF</h3>
+    <div class="step" style="margin-bottom: 1.25rem; padding: 1rem; text-align: center;">
+      <h4 style="margin-bottom: 0.5rem;">Example: Find GCF of 18 and 24</h4>
       <p><strong>Step A: List all factors</strong></p>
-      <p>Factors of 18: 1, 2, 3, 6, 9, 18</p>
-      <p>Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24</p>
+      <p style="margin-top: 0.5rem;">Factors of 18: 1, 2, 3, 6, 9, 18</p>
+      <p style="margin-top: 0.25rem;">Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24</p>
     </div>
-    <div class="step">
-      <h4>Step B: Find common factors</h4>
+    <div class="step" style="margin-bottom: 1.25rem; padding: 1rem; text-align: center;">
+      <h4 style="margin-bottom: 0.5rem;">Step B: Find common factors</h4>
       <p>Numbers that appear in BOTH lists:</p>
-      <p>Common factors: 1, 2, 3, 6</p>
+      <p style="margin-top: 0.5rem;">Common factors: 1, 2, 3, 6</p>
     </div>
-    <div class="step">
-      <h4>Step C: Pick the greatest</h4>
+    <div class="step" style="margin-bottom: 1.25rem; padding: 1rem; text-align: center;">
+      <h4 style="margin-bottom: 0.5rem;">Step C: Pick the greatest</h4>
       <p>The greatest (largest) common factor = <strong>6</strong></p>
     </div>
   </div>
 
-  <div class="worked-example">
-    <h4>Finding GCF: More Examples</h4>
-    <p><strong>Example 1: GCF of 15 and 25</strong></p>
-    <ul>
-      <li>Factors of 15: 1, 3, 5, 15</li>
-      <li>Factors of 25: 1, 5, 25</li>
-      <li>Common factors: 1, 5</li>
-      <li><strong>GCF = 5</strong></li>
-    </ul>
+  <div class="worked-example" style="margin-bottom: 2rem; padding: 1.5rem;">
+    <h4 style="text-align: center; margin-bottom: 1rem;">Finding GCF: More Examples</h4>
+    <div style="text-align: center; margin-bottom: 1.25rem;">
+      <p><strong>Example 1: GCF of 15 and 25</strong></p>
+      <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+        <li style="margin-bottom: 0.25rem;">Factors of 15: 1, 3, 5, 15</li>
+        <li style="margin-bottom: 0.25rem;">Factors of 25: 1, 5, 25</li>
+        <li style="margin-bottom: 0.25rem;">Common factors: 1, 5</li>
+        <li><strong>GCF = 5</strong></li>
+      </ul>
+    </div>
 
-    <p><strong>Example 2: GCF of 20 and 30</strong></p>
-    <ul>
-      <li>Factors of 20: 1, 2, 4, 5, 10, 20</li>
-      <li>Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30</li>
-      <li>Common factors: 1, 2, 5, 10</li>
-      <li><strong>GCF = 10</strong></li>
-    </ul>
+    <div style="text-align: center;">
+      <p><strong>Example 2: GCF of 20 and 30</strong></p>
+      <ul style="list-style: none; padding-left: 0; margin-top: 0.5rem;">
+        <li style="margin-bottom: 0.25rem;">Factors of 20: 1, 2, 4, 5, 10, 20</li>
+        <li style="margin-bottom: 0.25rem;">Factors of 30: 1, 2, 3, 5, 6, 10, 15, 30</li>
+        <li style="margin-bottom: 0.25rem;">Common factors: 1, 2, 5, 10</li>
+        <li><strong>GCF = 10</strong></li>
+      </ul>
+    </div>
   </div>
 
-  <div class="success-box">
-    <h4>Quick Tip: Division Method</h4>
+  <div class="success-box" style="text-align: center; margin-bottom: 1.5rem; padding: 1.5rem;">
+    <h4 style="margin-bottom: 0.75rem;">Quick Tip: Division Method</h4>
     <p>You can also find GCF by testing prime numbers (2, 3, 5, 7, 11...):</p>
-    <p>For 24:36: both divisible by 2? Yes (12:18) → both divisible by 2? Yes (6:9) → both divisible by 3? Yes (2:3) → GCF = 2×2×3 = 12</p>
+    <p style="margin-top: 0.75rem;">For 24:36: both divisible by 2? Yes (12:18) → both divisible by 2? Yes (6:9) → both divisible by 3? Yes (2:3) → GCF = 2×2×3 = 12</p>
   </div>
 </div>"""
     },
@@ -115,9 +119,9 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 2: Divide both parts by the GCF</h4>
-      <p>18 ÷ 6 = 3</p>
-      <p>24 ÷ 6 = 4</p>
-      <p>So 18:24 = 3:4</p>
+      <p>\(18 \div 6 = 3\)</p>
+      <p>\(24 \div 6 = 4\)</p>
+      <p>So \(18:24 = 3:4\)</p>
     </div>
     <div class="step">
       <h4>Step 3: Verify it's simplified</h4>
@@ -153,8 +157,8 @@ SECTIONS = [
     <p><strong>Step 1: Find GCF</strong></p>
     <p>GCF of 15 and 25 is 5</p>
     <p><strong>Step 2: Divide by GCF</strong></p>
-    <p>15 ÷ 5 = 3</p>
-    <p>25 ÷ 5 = 5</p>
+    <p>\(15 \div 5 = 3\)</p>
+    <p>\(25 \div 5 = 5\)</p>
     <p><strong>Step 3: Answer</strong></p>
     <p>15:25 simplifies to <strong>3:5</strong></p>
   </div>

@@ -13,13 +13,13 @@ SECTIONS = [
 <li>Combine the results</li>
 </ul>
 </div>
-<p><strong>Key idea:</strong> Subtraction and addition are opposites. If 23 + 14 = 37, then 37 - 14 = 23. They undo each other!</p>"""
+<p><strong>Key idea:</strong> Subtraction and addition are opposites. If \(23 + 14 = 37\), then \(37 - 14 = 23\). They undo each other!</p>"""
     },
     {
         "title": "Understanding 'Smaller Than' and 'Bigger Than'",
         "body": """<p>When we subtract, we need the <strong>top number to be bigger than the bottom number</strong>. If not, we get into trouble (that's called "borrowing," which we'll learn later).</p>
 <p>For now, let's practice when the top number is always bigger in each column.</p>
-<svg viewBox="0 0 600 140" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
+<svg viewBox="0 0 620 140" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
   <!-- Examples of safe subtraction -->
   <text x="50" y="30" fill='currentColor' font-size='14' font-weight='bold'>45 - 12</text>
   <text x="50" y="55" fill='currentColor' font-size='13'>Ones: 5 - 2 = 3 ✓ (5 is bigger than 2)</text>
@@ -67,8 +67,8 @@ SECTIONS = [
 <p><strong>Steps:</strong></p>
 <ol>
 <li>Line up the numbers by place value</li>
-<li>Subtract the <strong>ones column</strong>: 6 - 3 = 3</li>
-<li>Subtract the <strong>tens column</strong>: 5 - 2 = 3</li>
+<li>Subtract the <strong>ones column</strong>: \(6 - 3 = 3\)</li>
+<li>Subtract the <strong>tens column</strong>: \(5 - 2 = 3\)</li>
 <li>Write the answer: 33</li>
 </ol>
 </div>"""
@@ -97,8 +97,8 @@ SECTIONS = [
         "title": "Practice: Subtracting Without Borrowing",
         "body": """<p>Try these subtraction problems. Remember: ones first, then tens. The top number is always bigger in each column!</p>
 <div class="mcq-group">
-  <p><strong>What is 45 - 23?</strong></p>
-  <p><em>Think: Ones: 5 - 3 = 2. Tens: 4 - 2 = 2</em></p>
+  <p><strong>What is \(45 - 23\)?</strong></p>
+  <p><em>Think: Ones: \(5 - 3 = 2\). Tens: \(4 - 2 = 2\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 5 - 3 = 2. Tens: 4 - 2 = 2. Answer: 22">22</button>
     <button class="mcq-option" data-correct="false">32</button>
@@ -107,8 +107,8 @@ SECTIONS = [
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>What is 67 - 34?</strong></p>
-  <p><em>Think: Ones: 7 - 4 = 3. Tens: 6 - 3 = 3</em></p>
+  <p><strong>What is \(67 - 34\)?</strong></p>
+  <p><em>Think: Ones: \(7 - 4 = 3\). Tens: \(6 - 3 = 3\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false">23</button>
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 7 - 4 = 3. Tens: 6 - 3 = 3. Answer: 33">33</button>
@@ -117,8 +117,8 @@ SECTIONS = [
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>What is 89 - 46?</strong></p>
-  <p><em>Think: Ones: 9 - 6 = 3. Tens: 8 - 4 = 4</em></p>
+  <p><strong>What is \(89 - 46\)?</strong></p>
+  <p><em>Think: Ones: \(9 - 6 = 3\). Tens: \(8 - 4 = 4\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false">33</button>
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 9 - 6 = 3. Tens: 8 - 4 = 4. Answer: 43">43</button>

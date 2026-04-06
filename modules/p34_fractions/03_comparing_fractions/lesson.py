@@ -47,10 +47,10 @@ SECTIONS = [
 <h3>Strategy: Use a Common Denominator</h3>
 <div class='worked-example'>
 <p><strong>Compare:</strong> \\(\\frac{2}{3}\\) and \\(\\frac{3}{4}\\)</p>
-<p><strong>Step 1: Find a common denominator.</strong> The denominators are 3 and 4. We can use 12 (3 × 4).</p>
+<p><strong>Step 1: Find a common denominator.</strong> The denominators are 3 and 4. We can use 12 (\\(3 \\times 4\\)).</p>
 <p><strong>Step 2: Convert both fractions:</strong></p>
-<p>\\(\\frac{2}{3}\\) = \\(\\frac{2 × 4}{3 × 4}\\) = \\(\\frac{8}{12}\\)</p>
-<p>\\(\\frac{3}{4}\\) = \\(\\frac{3 × 3}{4 × 3}\\) = \\(\\frac{9}{12}\\)</p>
+<p>\\(\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}\\)</p>
+<p>\\(\\frac{3}{4} = \\frac{3 \\times 3}{4 \\times 3} = \\frac{9}{12}\\)</p>
 <p><strong>Step 3: Compare:</strong> \\(\\frac{8}{12}\\) vs \\(\\frac{9}{12}\\)</p>
 <p>Since 9 > 8, then \\(\\frac{9}{12}\\) > \\(\\frac{8}{12}\\)</p>
 <p><strong>Therefore:</strong> \\(\\frac{3}{4}\\) > \\(\\frac{2}{3}\\)</p>
@@ -114,9 +114,9 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>Compare:</strong> \\(\\frac{3}{5}\\) and \\(\\frac{2}{4}\\)</p>
 <p><strong>Cross-multiply:</strong></p>
-<p>3 × 4 = 12</p>
-<p>2 × 5 = 10</p>
-<p><strong>Compare the results:</strong> 12 > 10</p>
+<p>\\(3 \\times 4 = 12\\)</p>
+<p>\\(2 \\times 5 = 10\\)</p>
+<p><strong>Compare the results:</strong> \\(12 > 10\\)</p>
 <p><strong>Therefore:</strong> \\(\\frac{3}{5}\\) > \\(\\frac{2}{4}\\)</p>
 </div>
 
@@ -150,7 +150,7 @@ SECTIONS = [
 
 <div class='concept-box'>
 <p><strong>3. Quick Check?</strong> Use cross-multiplication.</p>
-<p>\\(\\frac{3}{5}\\) vs \\(\\frac{2}{4}\\) → 3×4=12 and 2×5=10 → 12 > 10, so \\(\\frac{3}{5}\\) > \\(\\frac{2}{4}\\)</p>
+<p>\\(\\frac{3}{5}\\) vs \\(\\frac{2}{4}\\) → \\(3 \\times 4 = 12\\) and \\(2 \\times 5 = 10\\) → \\(12 > 10\\), so \\(\\frac{3}{5}\\) > \\(\\frac{2}{4}\\)</p>
 </div>"""
     }
 ]

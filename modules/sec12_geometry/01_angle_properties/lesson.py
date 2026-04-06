@@ -110,7 +110,7 @@ SECTIONS = [
 <h4>Complementary Angles</h4>
 <div class="success-box">
 <p>Two angles that add to 90° are <strong>complementary</strong>.</p>
-<p><strong>Example:</strong> 35° and 55° are complementary because 35° + 55° = 90°</p>
+<p><strong>Example:</strong> 35° and 55° are complementary because \(35° + 55° = 90°\)</p>
 </div>
 """
     },
@@ -157,7 +157,7 @@ SECTIONS = [
 <ul>
 <li>One angle = 50°</li>
 <li>Opposite angle = 50° (vertically opposite)</li>
-<li>Adjacent angle = 180° - 50° = 130° (supplementary)</li>
+<li>Adjacent angle = \(180° - 50° = 130°\) (supplementary)</li>
 <li>Opposite to adjacent = 130° (vertically opposite)</li>
 <li><strong>Answer: 50°, 130°, 50°, 130°</strong></li>
 </ul>

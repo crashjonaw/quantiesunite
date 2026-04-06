@@ -74,14 +74,14 @@ SECTIONS = [
 <h5>Example 1: Arc Length in Degrees</h5>
 <p>A circle has radius 6 cm. Find the arc length of a sector with central angle 60°.</p>
 <p><strong>Solution:</strong></p>
-<p>Arc length = (60/360) × 2π(6) = (1/6) × 12π = <strong>2π cm ≈ 6.28 cm</strong></p>
+<p>Arc length \\(= \\frac{60}{360} \\times 2\\pi(6) = \\frac{1}{6} \\times 12\\pi =\\) <strong>\\(2\\pi\\) cm \\(\\approx 6.28\\) cm</strong></p>
 </div>
 
 <div class="worked-example">
 <h5>Example 2: Arc Length in Radians</h5>
 <p>A circle has radius 8 cm. Find the arc length when the central angle is π/4 radians.</p>
 <p><strong>Solution:</strong></p>
-<p>Arc length = r × θ = 8 × (π/4) = <strong>2π cm ≈ 6.28 cm</strong></p>
+<p>Arc length \\(= r \\times \\theta = 8 \\times \\frac{\\pi}{4} =\\) <strong>\\(2\\pi\\) cm \\(\\approx 6.28\\) cm</strong></p>
 </div>
 
 <svg width="360" height="300" class="formula-box">
@@ -126,14 +126,14 @@ SECTIONS = [
 <h5>Example 3: Sector Area in Degrees</h5>
 <p>A circle has radius 10 cm and central angle 45°. Find the sector area.</p>
 <p><strong>Solution:</strong></p>
-<p>Sector Area = (45/360) × π(10)² = (1/8) × 100π = <strong>12.5π cm² ≈ 39.3 cm²</strong></p>
+<p>Sector Area \\(= \\frac{45}{360} \\times \\pi(10)^2 = \\frac{1}{8} \\times 100\\pi =\\) <strong>\\(12.5\\pi\\) cm² \\(\\approx 39.3\\) cm²</strong></p>
 </div>
 
 <div class="worked-example">
 <h5>Example 4: Sector Area in Radians</h5>
 <p>A circle has radius 6 cm and central angle π/3 radians. Find the sector area.</p>
 <p><strong>Solution:</strong></p>
-<p>Sector Area = (1/2) × 6² × (π/3) = (1/2) × 36 × (π/3) = <strong>6π cm² ≈ 18.85 cm²</strong></p>
+<p>Sector Area \\(= \\frac{1}{2} \\times 6^2 \\times \\frac{\\pi}{3} = \\frac{1}{2} \\times 36 \\times \\frac{\\pi}{3} =\\) <strong>\\(6\\pi\\) cm² \\(\\approx 18.85\\) cm²</strong></p>
 </div>
 
 <h4>Comparing Sector Areas</h4>
@@ -195,10 +195,10 @@ SECTIONS = [
 <h5>Example 5: Segment Area</h5>
 <p>A circle has radius 8 cm with central angle 2π/3 radians. Find the segment area.</p>
 <p><strong>Solution:</strong></p>
-<p>Segment Area = (1/2) × 8² × (2π/3 − sin(2π/3))</p>
-<p>= (1/2) × 64 × (2π/3 − √3/2)</p>
-<p>= 32(2π/3 − √3/2)</p>
-<p>≈ 32(2.094 − 0.866) ≈ <strong>39.3 cm²</strong></p>
+<p>Segment Area \\(= \\frac{1}{2} \\times 8^2 \\times \\left(\\frac{2\\pi}{3} - \\sin\\left(\\frac{2\\pi}{3}\\right)\\right)\\)</p>
+<p>\\(= \\frac{1}{2} \\times 64 \\times \\left(\\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right)\\)</p>
+<p>\\(= 32\\left(\\frac{2\\pi}{3} - \\frac{\\sqrt{3}}{2}\\right)\\)</p>
+<p>\\(\\approx 32(2.094 - 0.866) \\approx\\) <strong>39.3 cm²</strong></p>
 </div>
 
 <h4>When to Use Each Formula</h4>
@@ -211,18 +211,18 @@ SECTIONS = [
 </tr>
 <tr>
 <td style="padding: 8px;">Arc Length</td>
-<td style="padding: 8px;">θπr/180</td>
-<td style="padding: 8px;">rθ</td>
+<td style="padding: 8px;">\\(\\frac{\\theta \\pi r}{180}\\)</td>
+<td style="padding: 8px;">\\(r\\theta\\)</td>
 </tr>
 <tr class="worked-example">
 <td style="padding: 8px;">Sector Area</td>
-<td style="padding: 8px;">θπr²/360</td>
-<td style="padding: 8px;">(1/2)r²θ</td>
+<td style="padding: 8px;">\\(\\frac{\\theta \\pi r^2}{360}\\)</td>
+<td style="padding: 8px;">\\(\\frac{1}{2}r^2\\theta\\)</td>
 </tr>
 <tr>
 <td style="padding: 8px;">Segment Area</td>
-<td style="padding: 8px;">r²(θπ/360 − sin(θ)/2)</td>
-<td style="padding: 8px;">(1/2)r²(θ − sinθ)</td>
+<td style="padding: 8px;">\\(r^2\\left(\\frac{\\theta\\pi}{360} - \\frac{\\sin\\theta}{2}\\right)\\)</td>
+<td style="padding: 8px;">\\(\\frac{1}{2}r^2(\\theta - \\sin\\theta)\\)</td>
 </tr>
 </table>
 """

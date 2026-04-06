@@ -86,7 +86,7 @@ Bayesian NN: Price = $350,000 ± $45,000 (95% credible interval)</pre>
 
         <div class='worked-example'>
         <p><strong>Example: Stock Return Estimation</strong></p>
-        <p>Stock ABC: Long-term mean return 8% (prior μ ~ N(0.08, 0.05²)).</p>
+        <p>Stock ABC: Long-term mean return 8% (prior \(\mu \sim N(0.08, 0.05^2)\)).</p>
 
         <p>Observe 50 daily returns, sample mean = 6%, sample SD = 12% (annualized).</p>
 
@@ -108,10 +108,10 @@ Posterior SD: narrower (more confidence after observing data)</pre>
         <p><strong>Bayesian hierarchical model:</strong> Share information across groups via a population-level distribution.</p>
 
         <pre class='code-block'>Student i in school j:
-  y_ij ~ N(μ_j, σ²)           (individual variation)
-  μ_j ~ N(μ_pop, τ²)          (group means vary around population mean)
-  μ_pop ~ N(m, s²)            (population prior)
-  τ² ~ Inverse-Gamma(...)      (between-group variation)</pre>
+  \(y_{ij} \sim N(\mu_j, \sigma^2)\)           (individual variation)
+  \(\mu_j \sim N(\mu_\text{pop}, \tau^2)\)          (group means vary around population mean)
+  \(\mu_\text{pop} \sim N(m, s^2)\)            (population prior)
+  \(\tau^2 \sim \text{Inverse-Gamma}(\ldots)\)      (between-group variation)</pre>
 
         <p><strong>Benefits:</strong></p>
         <ul>
@@ -146,7 +146,7 @@ School 3 (n=5): Mean → 70 + large shrinkage toward population</pre>
         <ul>
         <li>You have prior information (historical data, expert knowledge) worth incorporating</li>
         <li>You need to make sequential decisions (adaptive trials, online learning)</li>
-        <li>You want direct probability statements ("What is P(θ > 0)?")</li>
+        <li>You want direct probability statements ("What is \(P(\theta > 0)\)?")</li>
         <li>You have hierarchical structure and need to share information across groups</li>
         <li>You need predictions with uncertainty quantification</li>
         <li>Small sample sizes (prior provides regularization)</li>

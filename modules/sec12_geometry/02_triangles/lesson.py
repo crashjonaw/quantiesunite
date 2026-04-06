@@ -47,19 +47,19 @@ SECTIONS = [
 <div class="warning-box">
 <p><strong>Example 1: Find the missing angle if two angles are 50° and 70°</strong></p>
 <div class="worked-example">
-<p>50° + 70° + x = 180°</p>
-<p>120° + x = 180°</p>
-<p><strong>x = 60°</strong></p>
+<p>\(50° + 70° + x = 180°\)</p>
+<p>\(120° + x = 180°\)</p>
+<p><strong>\(x = 60°\)</strong></p>
 </div>
 </div>
 
 <div class="warning-box">
 <p><strong>Example 2: Find all angles if they are in the ratio 2:3:4</strong></p>
 <div class="worked-example">
-<p>Let angles be 2k, 3k, and 4k</p>
-<p>2k + 3k + 4k = 180°</p>
-<p>9k = 180°</p>
-<p>k = 20°</p>
+<p>Let angles be \(2k, 3k,\) and \(4k\)</p>
+<p>\(2k + 3k + 4k = 180°\)</p>
+<p>\(9k = 180°\)</p>
+<p>\(k = 20°\)</p>
 <p><strong>Angles are: 40°, 60°, 80°</strong></p>
 </div>
 </div>
@@ -184,11 +184,11 @@ SECTIONS = [
 <p><strong>A triangle has angles 50°, 70°, and 60°. Find the exterior angle at the 60° vertex.</strong></p>
 <div class="worked-example">
 <p><strong>Method 1: Using the theorem</strong></p>
-<p>Exterior angle = 50° + 70° = 120°</p>
+<p>Exterior angle = \(50° + 70° = 120°\)</p>
 <p></p>
 <p><strong>Method 2: Using supplementary angles</strong></p>
-<p>Exterior angle + 60° = 180° (straight line)</p>
-<p>Exterior angle = 180° - 60° = 120°</p>
+<p>Exterior angle \(+ 60° = 180°\) (straight line)</p>
+<p>Exterior angle = \(180° - 60° = 120°\)</p>
 <p><strong>Both methods give 120°</strong></p>
 </div>
 </div>
@@ -199,7 +199,7 @@ SECTIONS = [
         "body": """
 <h4>The General Formula for Any Polygon</h4>
 <div class="concept-box">
-<p><strong>Sum of interior angles = (n - 2) × 180°</strong></p>
+<p><strong>Sum of interior angles = \((n - 2) \times 180°\)</strong></p>
 <p>where <strong>n</strong> = number of sides</p>
 <p>This works because any polygon can be divided into triangles from one vertex.</p>
 </div>
@@ -211,19 +211,19 @@ SECTIONS = [
 <th>Polygon</th><th>Sides (n)</th><th>Angle Sum Formula</th><th>Total</th>
 </tr>
 <tr class="formula-box">
-<td>Triangle</td><td>3</td><td>(3 - 2) × 180°</td><td>180°</td>
+<td>Triangle</td><td>3</td><td>\((3 - 2) \times 180°\)</td><td>180°</td>
 </tr>
 <tr class="formula-box">
-<td>Quadrilateral</td><td>4</td><td>(4 - 2) × 180°</td><td>360°</td>
+<td>Quadrilateral</td><td>4</td><td>\((4 - 2) \times 180°\)</td><td>360°</td>
 </tr>
 <tr class="formula-box">
-<td>Pentagon</td><td>5</td><td>(5 - 2) × 180°</td><td>540°</td>
+<td>Pentagon</td><td>5</td><td>\((5 - 2) \times 180°\)</td><td>540°</td>
 </tr>
 <tr class="formula-box">
-<td>Hexagon</td><td>6</td><td>(6 - 2) × 180°</td><td>720°</td>
+<td>Hexagon</td><td>6</td><td>\((6 - 2) \times 180°\)</td><td>720°</td>
 </tr>
 <tr class="formula-box">
-<td>Heptagon</td><td>7</td><td>(7 - 2) × 180°</td><td>900°</td>
+<td>Heptagon</td><td>7</td><td>\((7 - 2) \times 180°\)</td><td>900°</td>
 </tr>
 </table>
 </div>
@@ -238,8 +238,8 @@ SECTIONS = [
 <p><strong>Example: Find each interior angle in a regular hexagon</strong></p>
 <div class="worked-example">
 <p>n = 6</p>
-<p>Each angle = (6 - 2) × 180° ÷ 6</p>
-<p>Each angle = 4 × 180° ÷ 6 = 720° ÷ 6 = 120°</p>
+<p>Each angle = \((6 - 2) \times 180° \div 6\)</p>
+<p>Each angle = \(4 \times 180° \div 6 = 720° \div 6 = 120°\)</p>
 <p><strong>Answer: 120°</strong></p>
 </div>
 </div>
@@ -248,7 +248,7 @@ SECTIONS = [
 <div class="concept-box">
 <p><strong>The sum of exterior angles of ANY polygon is ALWAYS 360°.</strong></p>
 <p>This is because you turn through one complete rotation around the polygon.</p>
-<p><strong>For regular polygons:</strong> Each exterior angle = 360° ÷ n</p>
+<p><strong>For regular polygons:</strong> Each exterior angle = \(360° \div n\)</p>
 </div>
 """
     }

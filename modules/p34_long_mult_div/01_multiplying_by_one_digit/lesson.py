@@ -13,10 +13,10 @@ SECTIONS = [
         <h3>The Key Idea: Breaking Numbers Apart</h3>
         <p>When we multiply 23 × 4, we're really doing this:</p>
         <div class='worked-example'>
-            <p>23 = 20 + 3</p>
-            <p>So 23 × 4 = (20 + 3) × 4</p>
-            <p style='font-weight: bold;'>= (20 × 4) + (3 × 4)</p>
-            <p>= 80 + 12</p>
+            <p>\\(23 = 20 + 3\\)</p>
+            <p>So \\(23 \\times 4 = (20 + 3) \\times 4\\)</p>
+            <p style='font-weight: bold;'>\\(= (20 \\times 4) + (3 \\times 4)\\)</p>
+            <p>\\(= 80 + 12\\)</p>
             <p>= <strong>92</strong></p>
         </div>
 
@@ -37,9 +37,9 @@ SECTIONS = [
             </p>
         </div>
 
-        <p><strong>Step 2: Multiply the ones digit (3 × 4)</strong></p>
+        <p><strong>Step 2: Multiply the ones digit (\\(3 \\times 4\\))</strong></p>
         <div class='worked-example'>
-            <p>3 × 4 = 12</p>
+            <p>\\(3 \\times 4 = 12\\)</p>
             <p>Write down the 2, and carry the 1 (ten).</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.2em;'>
               <sup>1</sup>23<br>
@@ -49,9 +49,9 @@ SECTIONS = [
             </p>
         </div>
 
-        <p><strong>Step 3: Multiply the tens digit (2 × 4) and add the carried 1</strong></p>
+        <p><strong>Step 3: Multiply the tens digit (\\(2 \\times 4\\)) and add the carried 1</strong></p>
         <div class='worked-example'>
-            <p>2 × 4 = 8, plus the carried 1 = 9</p>
+            <p>\\(2 \\times 4 = 8\\), plus the carried 1 = 9</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.2em;'>
               <sup>1</sup>23<br>
               ×&nbsp;&nbsp;&nbsp;4<br>
@@ -60,7 +60,7 @@ SECTIONS = [
             </p>
         </div>
 
-        <p style='font-weight: bold;'>So 23 × 4 = 92</p>
+        <p style='font-weight: bold;'>So \\(23 \\times 4 = 92\\)</p>
         """
     },
     {
@@ -74,8 +74,8 @@ SECTIONS = [
               ----<br>
               &nbsp;238
             </p>
-            <p>Step 1: 7 × 4 = 28. Write 8, carry 2.</p>
-            <p>Step 2: 7 × 3 = 21, plus carried 2 = 23. Write 23.</p>
+            <p>Step 1: \\(7 \\times 4 = 28\\). Write 8, carry 2.</p>
+            <p>Step 2: \\(7 \\times 3 = 21\\), plus carried 2 = 23. Write 23.</p>
             <p><strong>Answer: 238</strong></p>
         </div>
 
@@ -87,8 +87,8 @@ SECTIONS = [
               ----<br>
               &nbsp;270
             </p>
-            <p>Step 1: 6 × 5 = 30. Write 0, carry 3.</p>
-            <p>Step 2: 6 × 4 = 24, plus carried 3 = 27. Write 27.</p>
+            <p>Step 1: \\(6 \\times 5 = 30\\). Write 0, carry 3.</p>
+            <p>Step 2: \\(6 \\times 4 = 24\\), plus carried 3 = 27. Write 27.</p>
             <p><strong>Answer: 270</strong></p>
         </div>
 
@@ -100,9 +100,9 @@ SECTIONS = [
               ----<br>
               &nbsp;&nbsp;620
             </p>
-            <p>Step 1: 5 × 4 = 20. Write 0, carry 2.</p>
-            <p>Step 2: 5 × 2 = 10, plus carried 2 = 12. Write 2, carry 1.</p>
-            <p>Step 3: 5 × 1 = 5, plus carried 1 = 6. Write 6.</p>
+            <p>Step 1: \\(5 \\times 4 = 20\\). Write 0, carry 2.</p>
+            <p>Step 2: \\(5 \\times 2 = 10\\), plus carried 2 = 12. Write 2, carry 1.</p>
+            <p>Step 3: \\(5 \\times 1 = 5\\), plus carried 1 = 6. Write 6.</p>
             <p><strong>Answer: 620</strong></p>
         </div>
         """
@@ -112,9 +112,9 @@ SECTIONS = [
         "body": """
         <h3>Mistake 1: Forgetting to Carry</h3>
         <div class='warning-box'>
-            <p><strong>Wrong:</strong> 24 × 7 = 148 ✗</p>
-            <p><strong>Right:</strong> 24 × 7 = 168 ✓</p>
-            <p>When 7 × 4 = 28, you MUST carry the 2 to the next column.</p>
+            <p><strong>Wrong:</strong> \\(24 \\times 7 = 148\\) ✗</p>
+            <p><strong>Right:</strong> \\(24 \\times 7 = 168\\) ✓</p>
+            <p>When \\(7 \\times 4 = 28\\), you MUST carry the 2 to the next column.</p>
         </div>
 
         <h3>Mistake 2: Writing Too Many Digits</h3>
@@ -125,14 +125,14 @@ SECTIONS = [
 
         <h3>Mistake 3: Forgetting to Include the Carried Digit</h3>
         <div class='warning-box'>
-            <p><strong>Wrong:</strong> 23 × 4 → 3 × 4 = 12, 2 × 4 = 8, answer is 812 ✗</p>
-            <p><strong>Right:</strong> 23 × 4 → 3 × 4 = 12 (write 2, carry 1), 2 × 4 = 8 plus 1 = 9, answer is 92 ✓</p>
+            <p><strong>Wrong:</strong> \\(23 \\times 4\\) → \\(3 \\times 4 = 12\\), \\(2 \\times 4 = 8\\), answer is 812 ✗</p>
+            <p><strong>Right:</strong> \\(23 \\times 4\\) → \\(3 \\times 4 = 12\\) (write 2, carry 1), \\(2 \\times 4 = 8\\) plus 1 = 9, answer is 92 ✓</p>
         </div>
 
         <h3>Checking Your Answer</h3>
         <div class='success-box'>
-            <p>Use <strong>estimation:</strong> 23 × 4 is roughly 20 × 4 = 80, so 92 seems reasonable.</p>
-            <p>Or use <strong>inverse:</strong> 92 ÷ 4 should equal 23.</p>
+            <p>Use <strong>estimation:</strong> \\(23 \\times 4\\) is roughly \\(20 \\times 4 = 80\\), so 92 seems reasonable.</p>
+            <p>Or use <strong>inverse:</strong> \\(92 \\div 4\\) should equal 23.</p>
         </div>
         """
     }

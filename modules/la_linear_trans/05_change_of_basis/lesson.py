@@ -29,7 +29,7 @@ SECTIONS = [
 
         <ul>
         <li><strong>Scaling:</strong> T(x) = cx shrinks or stretches by factor c</li>
-        <li><strong>Rotation:</strong> T(x) = Rθx rotates by angle θ (preserves length and angles)</li>
+        <li><strong>Rotation:</strong> \(T(x) = R_\theta x\) rotates by angle \(\theta\) (preserves length and angles)</li>
         <li><strong>Projection:</strong> T(x) = proj_W(x) drops the perpendicular component</li>
         <li><strong>Reflection:</strong> T(x) flips across a line or plane</li>
         <li><strong>Shear:</strong> T(x) shifts one direction relative to another</li>
@@ -60,12 +60,11 @@ SECTIONS = [
 
         <div class='worked-example'>
         <p><strong>Example 1: Rotation matrix in 2D</strong></p>
-        <pre class='code-block'>R = [cos(θ)  -sin(θ)]
-    [sin(θ)   cos(θ)]
+        <pre class='code-block'>\(R = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}\)
 
-This matrix rotates vectors counterclockwise by angle θ.
-det(R) = cos²(θ) + sin²(θ) = 1 (orientation preserved, no scaling)
-Eigenvalues: λ = cos(θ) ± i·sin(θ) = e^{±iθ} (complex, on unit circle)</pre>
+This matrix rotates vectors counterclockwise by angle \(\theta\).
+\(\det(R) = \cos^2(\theta) + \sin^2(\theta) = 1\) (orientation preserved, no scaling)
+Eigenvalues: \(\lambda = \cos(\theta) \pm i \cdot \sin(\theta) = e^{\pm i\theta}\) (complex, on unit circle)</pre>
 
         <p><strong>Example 2: Projection onto a line</strong></p>
         <pre class='code-block'>P = uuᵀ, where u is a unit vector

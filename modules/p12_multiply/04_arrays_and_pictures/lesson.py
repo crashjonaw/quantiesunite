@@ -47,12 +47,12 @@ SECTIONS = [
   <text x="350" y="100" fill='#f59e0b' font-size='20' font-weight='bold'>3 × 4</text>
   <text x="350" y="135" fill='currentColor' font-size='14'>= 12 dots</text>
 </svg>
-<p style="text-align: center; margin-top: 20px;"><strong>3 rows of 4 = 4 + 4 + 4 = 12</strong></p>
-<p style="text-align: center;"><strong>OR 4 columns of 3 = 3 + 3 + 3 + 3 = 12</strong></p>"""
+<p style="text-align: center; margin-top: 20px;"><strong>3 rows of 4 = \(4 + 4 + 4 = 12\)</strong></p>
+<p style="text-align: center;"><strong>OR 4 columns of 3 = \(3 + 3 + 3 + 3 = 12\)</strong></p>"""
     },
     {
         "title": "The Commutative Property: Rotation Magic",
-        "body": """<p>Here's something amazing: <strong>3 × 4 = 4 × 3</strong></p>
+        "body": """<p>Here's something amazing: <strong>\(3 \times 4 = 4 \times 3\)</strong></p>
 <p>When you rotate an array, the multiplication sentence changes, but the total stays the same!</p>
 <svg viewBox="0 0 500 300" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 16px;">
   <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='15' font-weight='bold'>Same Array, Different Views</text>
@@ -104,10 +104,10 @@ SECTIONS = [
         "title": "Real-World Arrays",
         "body": """<p>You see arrays in real life all the time!</p>
 <div class="concept-box" style="padding: 16px; border-radius: 6px; margin: 16px 0">
-  <p style="margin: 8px 0;"><strong>📦 Chocolate bars:</strong> A box of chocolate is arranged 3 rows × 4 columns = 12 pieces</p>
-  <p style="margin: 8px 0;"><strong>🪟 Window panes:</strong> A window with 2 rows × 3 panes = 6 panes</p>
-  <p style="margin: 8px 0;"><strong>🎒 Desk arrangement:</strong> A classroom with 5 rows of 4 desks each = 20 desks</p>
-  <p style="margin: 8px 0;"><strong>🍕 Pizza slices:</strong> Some pizzas are cut 4 rows × 4 columns = 16 slices</p>
+  <p style="margin: 8px 0;"><strong>📦 Chocolate bars:</strong> A box of chocolate is arranged \(3 \times 4 = 12\) pieces</p>
+  <p style="margin: 8px 0;"><strong>🪟 Window panes:</strong> A window with \(2 \times 3 = 6\) panes</p>
+  <p style="margin: 8px 0;"><strong>🎒 Desk arrangement:</strong> A classroom with 5 rows of 4 desks each = \(5 \times 4 = 20\) desks</p>
+  <p style="margin: 8px 0;"><strong>🍕 Pizza slices:</strong> Some pizzas are cut \(4 \times 4 = 16\) slices</p>
 </div>"""
     },
     {

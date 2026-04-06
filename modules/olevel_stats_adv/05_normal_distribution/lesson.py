@@ -58,9 +58,9 @@ SECTIONS = [
         <div class="concept-box">
             <p><strong>The Empirical Rule (68-95-99.7 Rule):</strong></p>
             <ul>
-                <li>Approximately <strong>68%</strong> of data falls within <strong>1 standard deviation</strong> of the mean: [μ − σ, μ + σ]</li>
-                <li>Approximately <strong>95%</strong> of data falls within <strong>2 standard deviations</strong> of the mean: [μ − 2σ, μ + 2σ]</li>
-                <li>Approximately <strong>99.7%</strong> of data falls within <strong>3 standard deviations</strong> of the mean: [μ − 3σ, μ + 3σ]</li>
+                <li>Approximately <strong>68%</strong> of data falls within <strong>1 standard deviation</strong> of the mean: \\([\\mu - \\sigma, \\mu + \\sigma]\\)</li>
+                <li>Approximately <strong>95%</strong> of data falls within <strong>2 standard deviations</strong> of the mean: \\([\\mu - 2\\sigma, \\mu + 2\\sigma]\\)</li>
+                <li>Approximately <strong>99.7%</strong> of data falls within <strong>3 standard deviations</strong> of the mean: \\([\\mu - 3\\sigma, \\mu + 3\\sigma]\\)</li>
             </ul>
         </div>
 
@@ -90,8 +90,8 @@ SECTIONS = [
             <p><strong>Question:</strong> What proportion of students score between 65 and 85?</p>
             <p><strong>Solution:</strong></p>
             <ul>
-                <li>65 = 75 − 10 = μ − σ (one SD below mean)</li>
-                <li>85 = 75 + 10 = μ + σ (one SD above mean)</li>
+                <li>\\(65 = 75 - 10 = \\mu - \\sigma\\) (one SD below mean)</li>
+                <li>\\(85 = 75 + 10 = \\mu + \\sigma\\) (one SD above mean)</li>
                 <li>By the empirical rule, 68% score in this range</li>
             </ul>
         </div>
@@ -101,8 +101,8 @@ SECTIONS = [
             <p>Test scores: mean 75, SD 10. What percentage score above 95?</p>
             <p><strong>Solution:</strong></p>
             <ul>
-                <li>95 = 75 + 20 = 75 + 2(10) = μ + 2σ (two SDs above mean)</li>
-                <li>By the empirical rule, 95% of scores fall in [μ − 2σ, μ + 2σ] = [55, 95]</li>
+                <li>\\(95 = 75 + 20 = 75 + 2(10) = \\mu + 2\\sigma\\) (two SDs above mean)</li>
+                <li>By the empirical rule, 95% of scores fall in \\([\\mu - 2\\sigma, \\mu + 2\\sigma] = [55, 95]\\)</li>
                 <li>So 5% fall outside this range</li>
                 <li>By symmetry, 2.5% fall above 95</li>
             </ul>
@@ -154,9 +154,9 @@ SECTIONS = [
             <p><strong>Problem:</strong> Weights are normally distributed with mean 70 kg and SD 5 kg. What percentage of people weigh between 60 and 80 kg?</p>
             <p><strong>Solution:</strong></p>
             <ul>
-                <li>60 kg = 70 − 10 = 70 − 2(5) = μ − 2σ</li>
-                <li>80 kg = 70 + 10 = 70 + 2(5) = μ + 2σ</li>
-                <li>This is the range [μ − 2σ, μ + 2σ]</li>
+                <li>\\(60\\text{ kg} = 70 - 10 = 70 - 2(5) = \\mu - 2\\sigma\\)</li>
+                <li>\\(80\\text{ kg} = 70 + 10 = 70 + 2(5) = \\mu + 2\\sigma\\)</li>
+                <li>This is the range \\([\\mu - 2\\sigma, \\mu + 2\\sigma]\\)</li>
                 <li>By the empirical rule, 95% fall in this range</li>
                 <li><strong>Answer: 95%</strong></li>
             </ul>
@@ -168,8 +168,8 @@ SECTIONS = [
             <p><strong>Problem:</strong> IQ scores are normally distributed with mean 100 and SD 15. What percentage have IQ above 130?</p>
             <p><strong>Solution:</strong></p>
             <ul>
-                <li>130 = 100 + 30 = 100 + 2(15) = μ + 2σ</li>
-                <li>The empirical rule tells us 95% fall in [μ − 2σ, μ + 2σ] = [70, 130]</li>
+                <li>\\(130 = 100 + 30 = 100 + 2(15) = \\mu + 2\\sigma\\)</li>
+                <li>The empirical rule tells us 95% fall in \\([\\mu - 2\\sigma, \\mu + 2\\sigma] = [70, 130]\\)</li>
                 <li>So 5% fall outside this range</li>
                 <li>By symmetry, half of that 5% is above 130</li>
                 <li>5% ÷ 2 = 2.5%</li>
@@ -183,15 +183,15 @@ SECTIONS = [
             <p><strong>Problem:</strong> Test scores are normally distributed with mean 80 and SD 8. What percentage score between 72 and 96?</p>
             <p><strong>Solution:</strong></p>
             <ul>
-                <li>72 = 80 − 8 = μ − σ (one SD below mean)</li>
-                <li>96 = 80 + 16 = 80 + 2(8) = μ + 2σ (two SDs above mean)</li>
+                <li>\\(72 = 80 - 8 = \\mu - \\sigma\\) (one SD below mean)</li>
+                <li>\\(96 = 80 + 16 = 80 + 2(8) = \\mu + 2\\sigma\\) (two SDs above mean)</li>
                 <li>This is NOT a symmetric range, so we can't use 68% or 95% directly</li>
                 <li>We need to add portions:
                     <ul>
                         <li>From μ − σ to μ: This is half of the 68% (the lower half of the 1σ interval) = 34%</li>
                         <li>From μ to μ + 2σ: This includes the upper half of the 1σ interval (34%) plus the area from 1σ to 2σ</li>
-                        <li>The area between 1σ and 2σ is (95% − 68%) ÷ 2 = 27% ÷ 2 = 13.5%</li>
-                        <li>So from μ to μ + 2σ is 34% + 13.5% = 47.5%</li>
+                        <li>The area between \\(1\\sigma\\) and \\(2\\sigma\\) is \\((95\\% - 68\\%) \\div 2 = 27\\% \\div 2 = 13.5\\%\\)</li>
+                        <li>So from \\(\\mu\\) to \\(\\mu + 2\\sigma\\) is \\(34\\% + 13.5\\% = 47.5\\%\\)</li>
                     </ul>
                 </li>
                 <li>Total: 34% + 47.5% = 81.5%</li>
@@ -203,7 +203,7 @@ SECTIONS = [
             <p><strong>Problem:</strong> Battery lifetimes are normally distributed with mean 500 hours and SD 25 hours. What percentage fail within the first 450 hours?</p>
             <p><strong>Solution:</strong></p>
             <ul>
-                <li>450 = 500 − 50 = 500 − 2(25) = μ − 2σ</li>
+                <li>\\(450 = 500 - 50 = 500 - 2(25) = \\mu - 2\\sigma\\)</li>
                 <li>By the empirical rule, 95% of batteries last between 450 and 550 hours</li>
                 <li>So 5% fail before 450 hours or after 550 hours</li>
                 <li>By symmetry, 2.5% fail before 450 hours</li>

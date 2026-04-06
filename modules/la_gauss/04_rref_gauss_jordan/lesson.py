@@ -104,8 +104,8 @@ Immediately: x₁ = 4 − 2s, x₂ = 7 + s, x₄ = 2</pre>
 
         <div class='concept-box'>
         <p><strong>Finding A⁻¹ using Gauss-Jordan:</strong></p>
-        <p>If A is an n × n invertible matrix, apply Gauss-Jordan elimination to the augmented matrix [A | I], where I is the n × n identity. When A is reduced to I, the right side becomes A⁻¹.</p>
-        <p>Result: [A | I] → [I | A⁻¹]</p>
+        <p>If \(A\) is an \(n \times n\) invertible matrix, apply Gauss-Jordan elimination to the augmented matrix \([A | I]\), where \(I\) is the \(n \times n\) identity. When \(A\) is reduced to \(I\), the right side becomes \(A^{-1}\).</p>
+        <p>Result: \([A | I] \to [I | A^{-1}]\)</p>
         </div>
 
         <div class='worked-example'>

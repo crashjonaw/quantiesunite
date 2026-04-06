@@ -43,8 +43,8 @@ SECTIONS = [
         <p><strong>Step 2: Does 12 fit into 4? No. Into 45? Yes!</strong></p>
         <div class='worked-example'>
             <p>We look at the first two digits: 45. Now, how many times does 12 go into 45?</p>
-            <p>12 × 3 = 36 ✓ (fits)</p>
-            <p>12 × 4 = 48 ✗ (too big)</p>
+            <p>\\(12 \\times 3 = 36\\) ✓ (fits)</p>
+            <p>\\(12 \\times 4 = 48\\) ✗ (too big)</p>
             <p>So 12 goes into 45 three times. Write 3 above the 5.</p>
             <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
       3
@@ -54,7 +54,7 @@ SECTIONS = [
 
         <p><strong>Step 3: Multiply 3 × 12 and subtract</strong></p>
         <div class='worked-example'>
-            <p>3 × 12 = 36. Subtract: 45 - 36 = 9.</p>
+            <p>\\(3 \\times 12 = 36\\). Subtract: \\(45 - 36 = 9\\).</p>
             <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
       3
        ___
@@ -78,7 +78,7 @@ SECTIONS = [
 
         <p><strong>Step 5: Divide again: How many times does 12 go into 96?</strong></p>
         <div class='worked-example'>
-            <p>12 × 8 = 96 ✓ (exactly!)</p>
+            <p>\\(12 \\times 8 = 96\\) ✓ (exactly!)</p>
             <p>Write 8 above the 6.</p>
             <pre class='code-block' style='text-align: center; font-size: 1.1em;'>
       38
@@ -129,9 +129,9 @@ SECTIONS = [
     -45
      ──
        0</pre>
-            <p>Step 1: Does 15 fit into 3? No. Into 34? Yes! 15 × 2 = 30. Write 2.</p>
-            <p>Step 2: 34 - 30 = 4. Bring down 5 to make 45.</p>
-            <p>Step 3: 15 × 3 = 45. Write 3. No remainder.</p>
+            <p>Step 1: Does 15 fit into 3? No. Into 34? Yes! \\(15 \\times 2 = 30\\). Write 2.</p>
+            <p>Step 2: \\(34 - 30 = 4\\). Bring down 5 to make 45.</p>
+            <p>Step 3: \\(15 \\times 3 = 45\\). Write 3. No remainder.</p>
             <p><strong>345 ÷ 15 = 23</strong></p>
         </div>
         """
@@ -142,16 +142,16 @@ SECTIONS = [
         <h3>Making Good Guesses</h3>
         <div class='worked-example'>
             <p><strong>Estimation Tip:</strong> To guess how many times 12 goes into 96:</p>
-            <p>Round 12 to 10, then 96 ÷ 10 ≈ 10. So try 8, 9, or 10.</p>
-            <p>Test: 12 × 8 = 96. That works!</p>
+            <p>Round 12 to 10, then \\(96 \\div 10 \\approx 10\\). So try 8, 9, or 10.</p>
+            <p>Test: \\(12 \\times 8 = 96\\). That works!</p>
         </div>
 
         <h3>What If Your Guess is Wrong?</h3>
         <div class='worked-example'>
             <p><strong>Example:</strong> How many times does 12 go into 45?</p>
-            <p>Guess 5: 12 × 5 = 60 (too big)</p>
-            <p>Try 4: 12 × 4 = 48 (too big)</p>
-            <p>Try 3: 12 × 3 = 36 (just right!)</p>
+            <p>Guess 5: \\(12 \\times 5 = 60\\) (too big)</p>
+            <p>Try 4: \\(12 \\times 4 = 48\\) (too big)</p>
+            <p>Try 3: \\(12 \\times 3 = 36\\) (just right!)</p>
         </div>
 
         <h3>Common Mistakes</h3>

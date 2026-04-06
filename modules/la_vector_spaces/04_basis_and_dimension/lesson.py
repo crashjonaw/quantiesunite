@@ -49,7 +49,7 @@ eₙ = [0, 0, 0, ..., 1]</pre>
 
         <p><strong>Example 2: Basis for Polynomials Pₙ(ℝ)</strong></p>
         <div class='worked-example'>
-        <p>The standard basis for polynomials of degree ≤ n is:</p>
+        <p>The standard basis for polynomials of degree \(\leq n\) is:</p>
         <pre class='code-block'>B = {1, x, x², ..., xⁿ}</pre>
         <p>This set has n + 1 elements.</p>
         <p><strong>Why is it a basis?</strong></p>
@@ -105,7 +105,7 @@ eₙ = [0, 0, 0, ..., 1]</pre>
         </div>
 
         <p><strong>Dimension of Subspaces:</strong></p>
-        <p>If W is a subspace of V, then dim(W) ≤ dim(V), with equality only if W = V.</p>
+        <p>If \(W\) is a subspace of \(V\), then \(\dim(W) \leq \dim(V)\), with equality only if \(W = V\).</p>
 
         <div class='worked-example'>
         <p><strong>Example: Dimension of Constraint Space</strong></p>

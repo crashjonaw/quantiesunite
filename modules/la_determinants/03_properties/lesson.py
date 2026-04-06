@@ -6,21 +6,21 @@ SECTIONS = [
         "body": """
         <p><strong>Fundamental properties of determinants:</strong></p>
 
-        <p><strong>1. Multiplicativity:</strong> det(AB) = det(A)·det(B). For square matrices, the determinant of a product is the product of determinants.</p>
+        <p><strong>1. Multiplicativity:</strong> \(det(AB) = det(A) \cdot det(B)\). For square matrices, the determinant of a product is the product of determinants.</p>
 
-        <p><strong>2. Transpose:</strong> det(A<sup>T</sup>) = det(A). The determinant of the transpose equals the original.</p>
+        <p><strong>2. Transpose:</strong> \(det(A^T) = det(A)\). The determinant of the transpose equals the original.</p>
 
-        <p><strong>3. Invertibility:</strong> A is invertible iff det(A) ≠ 0. And det(A<sup>-1</sup>) = 1/det(A).</p>
+        <p><strong>3. Invertibility:</strong> A is invertible iff \(det(A) \neq 0\). And \(det(A^{-1}) = 1/det(A)\).</p>
 
-        <p><strong>4. Determinant of scalar multiple:</strong> det(cA) = c<sup>n</sup>·det(A) for an n × n matrix (each of n rows is scaled).</p>
+        <p><strong>4. Determinant of scalar multiple:</strong> \(det(cA) = c^n \cdot det(A)\) for an \(n \times n\) matrix (each of n rows is scaled).</p>
 
         <div class='concept-box'>
         <p><strong>Special Determinants:</strong></p>
         <ul>
-        <li><strong>Identity matrix I:</strong> det(I) = 1</li>
-        <li><strong>Diagonal matrix:</strong> det(diag(d₁, ..., dₙ)) = d₁·d₂·...·dₙ (product of diagonal entries)</li>
-        <li><strong>Triangular matrix:</strong> det = product of diagonal entries</li>
-        <li><strong>Singular matrix:</strong> det(A) = 0 (not invertible)</li>
+        <li><strong>Identity matrix I:</strong> \(det(I) = 1\)</li>
+        <li><strong>Diagonal matrix:</strong> \(det(diag(d_1, \ldots, d_n)) = d_1 \cdot d_2 \cdot \ldots \cdot d_n\) (product of diagonal entries)</li>
+        <li><strong>Triangular matrix:</strong> \(det\) = product of diagonal entries</li>
+        <li><strong>Singular matrix:</strong> \(det(A) = 0\) (not invertible)</li>
         </ul>
         </div>
         """
@@ -37,7 +37,7 @@ SECTIONS = [
         </ul>
 
         <p><strong>Why this matters for Gaussian elimination:</strong> When converting A to REF via row operations, we can track the determinant. If A is row-reduced to an upper triangular U, then:</p>
-        <pre class='code-block'>det(A) = (sign factor) × (product of diagonal entries of U)</pre>
+        <pre class='code-block'>\(det(A)\) = (sign factor) × (product of diagonal entries of U)</pre>
 
         <p>The sign factor accounts for row swaps (each swap multiplies by -1).</p>
 

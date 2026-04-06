@@ -18,14 +18,14 @@ SECTIONS = [
 <div class='worked-example'>
 <p>What is \\(\\frac{1}{4}\\) of 20?</p>
 <p>Method: Divide 20 by 4 (the denominator)</p>
-<p>20 ÷ 4 = 5</p>
+<p>\\(20 \\div 4 = 5\\)</p>
 <p>So \\(\\frac{1}{4}\\) of 20 = 5</p>
 </div>
 
 <div class='worked-example'>
 <p>What is \\(\\frac{3}{4}\\) of 20?</p>
 <p>\\(\\frac{1}{4}\\) of 20 = 5 (from above)</p>
-<p>\\(\\frac{3}{4}\\) of 20 = 3 × 5 = 15</p>
+<p>\\(\\frac{3}{4}\\) of 20 = \\(3 \\times 5 = 15\\)</p>
 </div>"""
     },
     {
@@ -36,15 +36,15 @@ SECTIONS = [
 
 <div class='worked-example'>
 <p><strong>Find \\(\\frac{2}{5}\\) of 30</strong></p>
-<p><strong>Step 1: Divide by 5:</strong> 30 ÷ 5 = 6</p>
-<p><strong>Step 2: Multiply by 2:</strong> 6 × 2 = 12</p>
+<p><strong>Step 1: Divide by 5:</strong> \\(30 \\div 5 = 6\\)</p>
+<p><strong>Step 2: Multiply by 2:</strong> \\(6 \\times 2 = 12\\)</p>
 <p><strong>Answer: \\(\\frac{2}{5}\\) of 30 = 12</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Find \\(\\frac{3}{4}\\) of 24</strong></p>
-<p><strong>Step 1: Divide by 4:</strong> 24 ÷ 4 = 6</p>
-<p><strong>Step 2: Multiply by 3:</strong> 6 × 3 = 18</p>
+<p><strong>Step 1: Divide by 4:</strong> \\(24 \\div 4 = 6\\)</p>
+<p><strong>Step 2: Multiply by 3:</strong> \\(6 \\times 3 = 18\\)</p>
 <p><strong>Answer: \\(\\frac{3}{4}\\) of 24 = 18</strong></p>
 </div>
 
@@ -73,16 +73,16 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>Problem:</strong> You have 40 dollars. You spend 3/4 of it on a game. How much did you spend?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{3}{4}\\) of 40</p>
-<p>Step 1: 40 ÷ 4 = 10</p>
-<p>Step 2: 10 × 3 = 30</p>
+<p>Step 1: \\(40 \\div 4 = 10\\)</p>
+<p>Step 2: \\(10 \\times 3 = 30\\)</p>
 <p><strong>Answer: You spent 30 dollars.</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Problem:</strong> A chocolate bar costs 8 dollars. A friend gives you 1/2 the money. How much does the friend give you?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{1}{2}\\) of 8</p>
-<p>Step 1: 8 ÷ 2 = 4</p>
-<p>Step 2: 4 × 1 = 4</p>
+<p>Step 1: \\(8 \\div 2 = 4\\)</p>
+<p>Step 2: \\(4 \\times 1 = 4\\)</p>
 <p><strong>Answer: Your friend gives you 4 dollars.</strong></p>
 </div>"""
     },
@@ -94,24 +94,24 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>Problem:</strong> What is 1/4 of an hour in minutes?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{1}{4}\\) of 60</p>
-<p>Step 1: 60 ÷ 4 = 15</p>
-<p>Step 2: 15 × 1 = 15</p>
+<p>Step 1: \\(60 \\div 4 = 15\\)</p>
+<p>Step 2: \\(15 \\times 1 = 15\\)</p>
 <p><strong>Answer: 1/4 hour = 15 minutes</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Problem:</strong> What is 3/4 of an hour in minutes?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{3}{4}\\) of 60</p>
-<p>Step 1: 60 ÷ 4 = 15</p>
-<p>Step 2: 15 × 3 = 45</p>
+<p>Step 1: \\(60 \\div 4 = 15\\)</p>
+<p>Step 2: \\(15 \\times 3 = 45\\)</p>
 <p><strong>Answer: 3/4 hour = 45 minutes</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Problem:</strong> You sleep 1/3 of the day. How many hours is that?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{1}{3}\\) of 24</p>
-<p>Step 1: 24 ÷ 3 = 8</p>
-<p>Step 2: 8 × 1 = 8</p>
+<p>Step 1: \\(24 \\div 3 = 8\\)</p>
+<p>Step 2: \\(8 \\times 1 = 8\\)</p>
 <p><strong>Answer: 1/3 day = 8 hours</strong></p>
 </div>
 
@@ -129,16 +129,16 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>Problem:</strong> A basket has 18 apples. 2/3 of them are red. How many red apples are there?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{2}{3}\\) of 18</p>
-<p>Step 1: 18 ÷ 3 = 6</p>
-<p>Step 2: 6 × 2 = 12</p>
+<p>Step 1: \\(18 \\div 3 = 6\\)</p>
+<p>Step 2: \\(6 \\times 2 = 12\\)</p>
 <p><strong>Answer: There are 12 red apples.</strong></p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Problem:</strong> A class has 28 students. 1/4 of them have a dog. How many students have a dog?</p>
 <p><strong>Solution:</strong> Find \\(\\frac{1}{4}\\) of 28</p>
-<p>Step 1: 28 ÷ 4 = 7</p>
-<p>Step 2: 7 × 1 = 7</p>
+<p>Step 1: \\(28 \\div 4 = 7\\)</p>
+<p>Step 2: \\(7 \\times 1 = 7\\)</p>
 <p><strong>Answer: 7 students have a dog.</strong></p>
 </div>
 
@@ -173,7 +173,7 @@ SECTIONS = [
 <p><strong>The Recipe:</strong> Find a fraction OF an amount by:</p>
 <p>1. Divide the amount by the denominator</p>
 <p>2. Multiply by the numerator</p>
-<p>Formula: \\(\\frac{a}{b}\\) of X = (X ÷ b) × a</p>
+<p>Formula: \\(\\frac{a}{b}\\) of \\(X = (X \\div b) \\times a\\)</p>
 </div>
 
 <h3>Quick Reference: Common Applications</h3>

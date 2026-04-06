@@ -13,11 +13,11 @@ SECTIONS = [
 
 <div class='concept-box' style='border-left: 4px solid #4f8ef7; padding: 16px; margin: 12px 0; border-radius: 6px;'>
   <p><strong>Matrix diagonalization:</strong></p>
-  <p style='font-family: monospace;'>A = PDP⁻¹</p>
+  <p style='font-family: monospace;'>\(A = PDP^{-1}\)</p>
   <ul style='margin-top: 8px;'>
     <li><strong>P</strong> = matrix with eigenvectors as columns</li>
     <li><strong>D</strong> = diagonal matrix with eigenvalues on the diagonal</li>
-    <li><strong>P⁻¹</strong> = inverse of P</li>
+    <li><strong>\(P^{-1}\)</strong> = inverse of P</li>
   </ul>
 </div>
 
@@ -34,11 +34,11 @@ SECTIONS = [
   <p style='font-family: monospace;'>P = [[1, 1], [-1, 1]]  (eigenvectors as columns)</p>
   <p style='font-family: monospace;'>D = [[1, 0], [0, 3]]  (eigenvalues on diagonal)</p>
 
-  <p style='margin-top: 12px;'><strong>Step 2: Compute P⁻¹</strong></p>
-  <p style='font-family: monospace;'>P⁻¹ = (1/2)[[ 1, -1], [ 1,  1]]</p>
+  <p style='margin-top: 12px;'><strong>Step 2: Compute \(P^{-1}\)</strong></p>
+  <p style='font-family: monospace;'>\(P^{-1} = (1/2)[[ 1, -1], [ 1,  1]]\)</p>
 
-  <p style='margin-top: 12px;'><strong>Step 3: Verify A = PDP⁻¹</strong></p>
-  <p style='font-family: monospace;'>PDP⁻¹ = [[1, 1], [-1, 1]] [[1, 0], [0, 3]] (1/2)[[ 1, -1], [ 1,  1]]</p>
+  <p style='margin-top: 12px;'><strong>Step 3: Verify \(A = PDP^{-1}\)</strong></p>
+  <p style='font-family: monospace;'>\(PDP^{-1} = [[1, 1], [-1, 1]] [[1, 0], [0, 3]] (1/2)[[ 1, -1], [ 1,  1]]\)</p>
   <p style='font-family: monospace;'>      = [[2, 1], [1, 2]] = A ✓</p>
 </div>
 """
@@ -50,12 +50,12 @@ SECTIONS = [
 
 <div class='concept-box' style='border-left: 4px solid #4f8ef7; padding: 16px; margin: 12px 0; border-radius: 6px;'>
   <p><strong>Computing powers of A:</strong></p>
-  <p style='font-family: monospace;'>A² = (PDP⁻¹)² = PD²P⁻¹</p>
-  <p style='font-family: monospace;'>Aⁿ = PDⁿP⁻¹</p>
-  <p>And D^n is easy — just raise the diagonal entries to the nth power!</p>
+  <p style='font-family: monospace;'>\(A^2 = (PDP^{-1})^2 = PD^2P^{-1}\)</p>
+  <p style='font-family: monospace;'>\(A^n = PD^nP^{-1}\)</p>
+  <p>And \(D^n\) is easy — just raise the diagonal entries to the nth power!</p>
 
   <p style='margin-top: 12px;'><strong>Example:</strong> If D = [[1, 0], [0, 3]], then</p>
-  <p style='font-family: monospace;'>D¹⁰ = [[1, 0], [0, 3¹⁰]] = [[1, 0], [0, 59049]]</p>
+  <p style='font-family: monospace;'>\(D^{10} = [[1, 0], [0, 3^{10}]] = [[1, 0], [0, 59049]]\)</p>
 </div>
 
 <div class='success-box' style='border-left: 4px solid #4f8ef7; padding: 16px; margin: 12px 0; border-radius: 6px;'>
@@ -76,7 +76,7 @@ SECTIONS = [
 
   <p style='margin-top: 12px;'><strong>Guarantees diagonalizability:</strong></p>
   <ul>
-    <li>Symmetric matrices (Aᵀ = A)</li>
+    <li>Symmetric matrices (\(A^T = A\))</li>
     <li>Matrices with n distinct eigenvalues</li>
   </ul>
 </div>

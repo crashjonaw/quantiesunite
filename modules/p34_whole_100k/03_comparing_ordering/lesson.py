@@ -62,7 +62,7 @@ SECTIONS = [
 <p>42,890 has <strong>2</strong> in the thousands place</p>
 <p>Since 5 > 2, we found our answer!</p>
 
-<p style="font-size: 16px; margin-top: 15px; text-align: center;"><strong>45,230 > 42,890</strong></p>
+<p style="font-size: 16px; margin-top: 15px; text-align: center;"><strong>\\(45{,}230 > 42{,}890\\)</strong></p>
 </div>
 
 <div class="example-box">
@@ -73,14 +73,14 @@ SECTIONS = [
 <p>87,450 has <strong>8</strong> in the ten thousands place</p>
 <p>Since 7 < 8, we're done!</p>
 
-<p style="font-size: 16px; margin-top: 15px; text-align: center;"><strong>78,450 < 87,450</strong></p>
+<p style="font-size: 16px; margin-top: 15px; text-align: center;"><strong>\\(78{,}450 < 87{,}450\\)</strong></p>
 </div>
 
 <h3>A Shortcut: Count the Digits First</h3>
 <p>If two numbers have different numbers of digits, the one with more digits is always larger:</p>
 
 <div class="success-box">
-<p><strong>4,999 < 50,000</strong> (because 4,999 has 4 digits and 50,000 has 5 digits)</p>
+<p><strong>\\(4{,}999 < 50{,}000\\)</strong> (because 4,999 has 4 digits and 50,000 has 5 digits)</p>
 <p>We don't even need to look closely—5 digits beats 4 digits every time!</p>
 </div>
 """
@@ -126,13 +126,13 @@ SECTIONS = [
 </ul>
 
 <p style="font-size: 16px; margin-top: 15px; text-align: center;"><strong>Final Answer:</strong></p>
-<p style="text-align: center; font-size: 15px;"><strong>2,345 < 23,456 < 23,465 < 32,450 < 32,456</strong></p>
+<p style="text-align: center; font-size: 15px;"><strong>\\(2{,}345 < 23{,}456 < 23{,}465 < 32{,}450 < 32{,}456\\)</strong></p>
 </div>
 
 <h3>From Greatest to Least</h3>
 <p>To order from greatest to least, just reverse the order above!</p>
 
-<p style="text-align: center; font-size: 15px;"><strong>32,456 > 32,450 > 23,465 > 23,456 > 2,345</strong></p>
+<p style="text-align: center; font-size: 15px;"><strong>\\(32{,}456 > 32{,}450 > 23{,}465 > 23{,}456 > 2{,}345\\)</strong></p>
 """
     },
     {
@@ -150,7 +150,7 @@ SECTIONS = [
 </ul>
 
 <p>Order from smallest to largest:</p>
-<p style="text-align: center; font-size: 14px;"><strong>8,500 < 24,300 < 47,200</strong></p>
+<p style="text-align: center; font-size: 14px;"><strong>\\(8{,}500 < 24{,}300 < 47{,}200\\)</strong></p>
 
 <h3>Example 2: Attendance at Events</h3>
 <p>A week of games had these attendance numbers:</p>

@@ -35,7 +35,7 @@ SECTIONS = [
         "title": "The Hundreds Place",
         "body": """<div class="concept-box">
 <p>Remember: <strong>10 tens make 1 hundred</strong>. When you count past 99, you need a new place — the hundreds!</p>
-<p>99 + 1 = <strong>100</strong> (one hundred)</p>
+<p>\(99 + 1 = \)<strong>100</strong> (one hundred)</p>
 </div>
 
 <svg viewBox="0 0 520 220" style="width:100%;max-width:600px;height:auto;display:block;margin:16px auto;">
@@ -207,9 +207,9 @@ SECTIONS = [
 </ul>
 <p><strong>Step 2:</strong> Find the value of each digit.</p>
 <ul>
-<li>6 hundreds = 6 × 100 = <strong>600</strong></li>
-<li>3 tens = 3 × 10 = <strong>30</strong></li>
-<li>4 ones = 4 × 1 = <strong>4</strong></li>
+<li>6 hundreds = \(6 \times 100 = \)<strong>600</strong></li>
+<li>3 tens = \(3 \times 10 = \)<strong>30</strong></li>
+<li>4 ones = \(4 \times 1 = \)<strong>4</strong></li>
 </ul>
 <p><strong>Step 3:</strong> Write in expanded form.</p>
 <p>$$634 = 600 + 30 + 4$$</p>

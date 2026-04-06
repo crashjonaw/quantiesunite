@@ -28,7 +28,7 @@ SECTIONS = [
         <ul>
         <li>T is invertible ⟺ T is bijective (injective and surjective)</li>
         <li>If V and W have equal finite dimension, then T is invertible ⟺ T is injective ⟺ T is surjective</li>
-        <li>For matrices: A is invertible ⟺ det(A) ≠ 0 ⟺ A has full rank</li>
+        <li>For matrices: \(A\) is invertible \(\iff \det(A) \neq 0 \iff A\) has full rank</li>
         </ul>
 
         <p><strong>Key result:</strong> If T is invertible, then T⁻¹ is also linear.</p>
@@ -39,17 +39,17 @@ SECTIONS = [
         "title": "Eigenvalues and Eigenvectors",
         "body": """
         <div class='concept-box'>
-        <p><strong>Definition:</strong> For a linear operator T: V → V, a nonzero vector v ∈ V is an eigenvector with eigenvalue λ ∈ F if:</p>
-        <pre class='code-block'>T(v) = λv</pre>
+        <p><strong>Definition:</strong> For a linear operator T: V → V, a nonzero vector \(v \in V\) is an eigenvector with eigenvalue \(\lambda \in F\) if:</p>
+        <pre class='code-block'>\(T(v) = \lambda v\)</pre>
 
-        <p>For a matrix A, this means: Av = λv, or equivalently, (A - λI)v = 0.</p>
+        <p>For a matrix \(A\), this means: \(Av = \lambda v\), or equivalently, \((A - \lambda I)v = 0\).</p>
 
         <p><strong>Finding eigenvalues:</strong> Eigenvalues satisfy the characteristic equation:</p>
-        <pre class='code-block'>det(A - λI) = 0</pre>
+        <pre class='code-block'>\(\det(A - \lambda I) = 0\)</pre>
 
-        <p>This is a polynomial of degree n (for n × n matrices), called the characteristic polynomial.</p>
+        <p>This is a polynomial of degree \(n\) (for \(n \times n\) matrices), called the characteristic polynomial.</p>
 
-        <p><strong>Finding eigenvectors:</strong> For each eigenvalue λ, solve (A - λI)v = 0. The nonzero solutions are eigenvectors (forming the eigenspace).</p>
+        <p><strong>Finding eigenvectors:</strong> For each eigenvalue \(\lambda\), solve \((A - \lambda I)v = 0\). The nonzero solutions are eigenvectors (forming the eigenspace).</p>
         </div>
         """
     },
@@ -64,24 +64,24 @@ SECTIONS = [
 
         <p><strong>When is A diagonalizable?</strong></p>
         <ul>
-        <li>If A has n distinct eigenvalues (n × n matrix), then A is diagonalizable</li>
-        <li>More generally, A is diagonalizable iff geometric multiplicity equals algebraic multiplicity for each eigenvalue</li>
+        <li>If \(A\) has \(n\) distinct eigenvalues (\(n \times n\) matrix), then \(A\) is diagonalizable</li>
+        <li>More generally, \(A\) is diagonalizable iff geometric multiplicity equals algebraic multiplicity for each eigenvalue</li>
         <li>Symmetric matrices are always diagonalizable (with orthogonal eigenvectors)</li>
         </ul>
         </div>
 
         <div class='worked-example'>
         <p><strong>Example: Diagonalize A = [1, 2; 2, 1]</strong></p>
-        <pre class='code-block'>Characteristic polynomial: det([1-λ, 2; 2, 1-λ]) = (1-λ)² - 4 = λ² - 2λ - 3 = (λ-3)(λ+1)
-Eigenvalues: λ₁ = 3, λ₂ = -1
+        <pre class='code-block'>Characteristic polynomial: \(\det([1-\lambda, 2; 2, 1-\lambda]) = (1-\lambda)^2 - 4 = \lambda^2 - 2\lambda - 3 = (\lambda-3)(\lambda+1)\)
+Eigenvalues: \(\lambda_1 = 3\), \(\lambda_2 = -1\)
 
-For λ₁ = 3: (A - 3I)v = 0
+For \(\lambda_1 = 3\): \((A - 3I)v = 0\)
 [-2  2][v₁] = [0]  → -2v₁ + 2v₂ = 0 → v₁ = v₂
 [2  -2][v₂]   [0]
 
 Eigenvector: v₁ = [1, 1]ᵀ
 
-For λ₂ = -1: (A + I)v = 0
+For \(\lambda_2 = -1\): \((A + I)v = 0\)
 [2  2][v₁] = [0]  → 2v₁ + 2v₂ = 0 → v₁ = -v₂
 [2  2][v₂]   [0]
 
@@ -94,7 +94,7 @@ Verify: A = PDP⁻¹ ✓</pre>
 
         <p><strong>Applications of diagonalization:</strong></p>
         <ul>
-        <li><strong>Computing powers:</strong> Aⁿ = PDⁿP⁻¹, and Dⁿ is easy (diagonal entries raised to power n)</li>
+        <li><strong>Computing powers:</strong> \(A^n = PD^nP^{-1}\), and \(D^n\) is easy (diagonal entries raised to power \(n\))</li>
         <li><strong>Understanding long-term behavior:</strong> For Markov chains and dynamical systems</li>
         <li><strong>Simplifying analysis:</strong> A system is easier to analyze in the eigenvector basis</li>
         </ul>

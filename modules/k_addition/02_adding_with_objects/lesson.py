@@ -28,7 +28,7 @@ SECTIONS = [
 
 <h3>Step-by-Step: Adding with Objects</h3>
 <div class="formula-box">
-  <h4>Example: 3 + 2</h4>
+  <h4>Example: \(3 + 2\)</h4>
   <p><strong>Step 1:</strong> Make a group of 3 objects.</p>
   <p style="text-align: center; font-size: 24px; margin: 10px 0;">🔵🔵🔵</p>
 
@@ -41,7 +41,7 @@ SECTIONS = [
   <p style="margin-top: 15px;"><strong>Step 4:</strong> Count all the objects.</p>
   <p style="text-align: center; font-size: 18px; margin: 10px 0;">Count: 1, 2, 3, 4, 5</p>
 
-  <p style="margin-top: 15px; font-size: 18px; text-align: center; font-weight: bold;">3 + 2 = 5 ✓</p>
+  <p style="margin-top: 15px; font-size: 18px; text-align: center; font-weight: bold;">\(3 + 2 = 5\) ✓</p>
 </div>"""
     },
 
@@ -54,7 +54,7 @@ SECTIONS = [
 <p>Draw circles, squares, dots, or any simple shape. The shape doesn't matter — the <strong>number</strong> matters.</p>
 
 <div class="formula-box">
-  <h4>Example: 4 + 3</h4>
+  <h4>Example: \(4 + 3\)</h4>
 
   <p style="font-size: 16px;"><strong>First group (4):</strong></p>
   <p style="text-align: center; font-size: 20px;">⭕ ⭕ ⭕ ⭕</p>
@@ -65,7 +65,7 @@ SECTIONS = [
   <p style="margin-top: 15px; font-size: 16px;"><strong>Put them together and count:</strong></p>
   <p style="text-align: center; font-size: 20px;">⭕ ⭕ ⭕ ⭕ ⭕ ⭕ ⭕</p>
 
-  <p style="margin-top: 15px; text-align: center; font-size: 18px; font-weight: bold;">4 + 3 = 7 ✓</p>
+  <p style="margin-top: 15px; text-align: center; font-size: 18px; font-weight: bold;">\(4 + 3 = 7\) ✓</p>
 </div>
 
 <h3>Another Way to Draw It</h3>
@@ -113,25 +113,25 @@ SECTIONS = [
   Your fingers help you <em>understand</em> addition better.</p>
 </div>
 
-<h3>How to Use Fingers for 3 + 2</h3>
+<h3>How to Use Fingers for \(3 + 2\)</h3>
 <div class="formula-box">
   <p><strong>Step 1:</strong> Hold up 3 fingers on one hand. 🖐️</p>
   <p style="margin-top: 10px;"><strong>Step 2:</strong> Hold up 2 fingers on your other hand. ✋</p>
   <p style="margin-top: 10px;"><strong>Step 3:</strong> Count all the fingers you're holding up:</p>
   <p style="text-align: center; font-size: 18px; margin: 10px 0;"><strong>"1, 2, 3, 4, 5"</strong></p>
-  <p style="margin-top: 10px; font-size: 16px;"><strong>Answer: 3 + 2 = 5</strong> ✓</p>
+  <p style="margin-top: 10px; font-size: 16px;"><strong>Answer: \(3 + 2 = 5\)</strong> ✓</p>
 </div>
 
 <h3>Counting On Strategy</h3>
 <p>Once you know the first number, you can skip ahead:</p>
 
 <div style="padding: 15px; border-radius: 8px; margin: 15px 0;">
-  <h4>For 5 + 2:</h4>
+  <h4>For \(5 + 2\):</h4>
   <p><strong>Don't start at 1.</strong> Start at 5 and count on 2 more:</p>
   <p style="text-align: center; font-size: 16px; margin: 10px 0;">
     5 ... <strong>6, 7</strong>
   </p>
-  <p style="text-align: center; font-size: 18px; font-weight: bold;">5 + 2 = 7 ✓</p>
+  <p style="text-align: center; font-size: 18px; font-weight: bold;">\(5 + 2 = 7\) ✓</p>
 </div>"""
     },
 
@@ -141,40 +141,40 @@ SECTIONS = [
 <p>Let's practice with small numbers. Use objects or draw pictures for each one:</p>
 
 <div class="worked-example">
-  <h4>2 + 1 = ?</h4>
+  <h4>\(2 + 1 = ?\)</h4>
   <p style="text-align: center; font-size: 20px;">🟢🟢 + 🟢 = 🟢🟢🟢</p>
   <p style="text-align: center; font-weight: bold;">Answer: <strong>3</strong></p>
 </div>
 
 <div class="worked-example">
-  <h4>3 + 2 = ?</h4>
+  <h4>\(3 + 2 = ?\)</h4>
   <p style="text-align: center; font-size: 20px;">⭕⭕⭕ + ⭕⭕ = ⭕⭕⭕⭕⭕</p>
   <p style="text-align: center; font-weight: bold;">Answer: <strong>5</strong></p>
 </div>
 
 <div class="worked-example">
-  <h4>1 + 4 = ?</h4>
+  <h4>\(1 + 4 = ?\)</h4>
   <p style="text-align: center; font-size: 20px;">🟡 + 🟡🟡🟡🟡 = 🟡🟡🟡🟡🟡</p>
   <p style="text-align: center; font-weight: bold;">Answer: <strong>5</strong></p>
 </div>
 
 <h3>Try These Yourself</h3>
 <div class="mcq-group">
-  <p><strong>What is 2 + 3?</strong></p>
+  <p><strong>What is \(2 + 3\)?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Try counting with objects or your fingers: 2, then 3 more.">4</button>
-    <button class="mcq-option" data-correct="true" data-explanation="2 + 3 = 5. Count: 1, 2 (first group), then 3, 4, 5 (add 3 more).">5</button>
+    <button class="mcq-option" data-correct="true" data-explanation="\(2 + 3 = 5\). Count: 1, 2 (first group), then 3, 4, 5 (add 3 more).">5</button>
     <button class="mcq-option" data-correct="false" data-explanation="That's too many. Count carefully: 2 and 3 more.">6</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>
 
 <div class="mcq-group" style="margin-top: 20px;">
-  <p><strong>What is 4 + 1?</strong></p>
+  <p><strong>What is \(4 + 1\)?</strong></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Count again: 4, then 1 more is 5, not 3.">3</button>
-    <button class="mcq-option" data-correct="true" data-explanation="4 + 1 = 5. Start at 4 and count on: 5.">5</button>
-    <button class="mcq-option" data-correct="false" data-explanation="That would be 4 + 2. Try with 4 and just 1 more.">6</button>
+    <button class="mcq-option" data-correct="true" data-explanation="\(4 + 1 = 5\). Start at 4 and count on: 5.">5</button>
+    <button class="mcq-option" data-correct="false" data-explanation="That would be \(4 + 2\). Try with 4 and just 1 more.">6</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>"""

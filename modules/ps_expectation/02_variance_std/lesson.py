@@ -17,7 +17,7 @@ SECTIONS = [
         <div class='concept-box'>
         <p><strong>Computational formula (often easier):</strong></p>
         <pre class='code-block'>Var(X) = E[X²] − (E[X])²</pre>
-        <p>This formula requires computing E[X] and E[X²] but avoids expanding (X − μ)².</p>
+        <p>This formula requires computing \(E[X]\) and \(E[X^2]\) but avoids expanding \((X - \mu)^2\).</p>
         </div>
 
         <div class='worked-example'>
@@ -49,14 +49,14 @@ SECTIONS = [
     {
         "title": "Standard Deviation",
         "body": """
-        <p><strong>Standard Deviation:</strong> The square root of variance, often denoted σ or SD(X).</p>
+        <p><strong>Standard Deviation:</strong> The square root of variance, often denoted \(\sigma\) or \(\text{SD}(X)\).</p>
 
         <div class='concept-box'>
         <p><strong>Definition:</strong></p>
-        <pre class='code-block'>σ_X = SD(X) = √Var(X)</pre>
+        <pre class='code-block'>\(\sigma_X = \text{SD}(X) = \sqrt{\text{Var}(X)}\)</pre>
         </div>
 
-        <p><strong>Why is standard deviation useful?</strong> While variance uses squared units (e.g., if X is in dollars, Var(X) is in dollars²), standard deviation has the <strong>same units as X</strong>, making it more interpretable.</p>
+        <p><strong>Why is standard deviation useful?</strong> While variance uses squared units (e.g., if X is in dollars, \(\text{Var}(X)\) is in dollars\(^2\)), standard deviation has the <strong>same units as X</strong>, making it more interpretable.</p>
 
         <div class='worked-example'>
         <p><strong>Example: Fair Die (continued)</strong></p>
@@ -70,9 +70,9 @@ SECTIONS = [
         <div class='success-box'>
         <p><strong>Empirical Rule (for normal distributions):</strong></p>
         <ul>
-        <li>About 68% of observations fall within μ ± 1σ</li>
-        <li>About 95% fall within μ ± 2σ</li>
-        <li>About 99.7% fall within μ ± 3σ</li>
+        <li>About 68% of observations fall within \(\mu \pm 1\sigma\)</li>
+        <li>About 95% fall within \(\mu \pm 2\sigma\)</li>
+        <li>About 99.7% fall within \(\mu \pm 3\sigma\)</li>
         </ul>
         </div>
         """
@@ -135,7 +135,7 @@ SECTIONS = [
 
         <div class='concept-box'>
         <p><strong>Chebyshev's Inequality:</strong> For any random variable X and any ε > 0:</p>
-        <pre class='code-block'>P(|X − E[X]| ≥ ε) ≤ Var(X) / ε²</pre>
+        <pre class='code-block'>\(P(|X - E[X]| \geq \varepsilon) \leq \text{Var}(X) / \varepsilon^2\)</pre>
         <p>The probability of being at least ε away from the mean is bounded by variance divided by ε².</p>
         </div>
 
@@ -143,9 +143,9 @@ SECTIONS = [
 
         <div class='worked-example'>
         <p><strong>Example: Fair Die</strong></p>
-        <p>For a fair die, E[X] = 3.5 and Var(X) = 35/12 ≈ 2.92. Find P(|X − 3.5| ≥ 2).</p>
-        <p>By Chebyshev with ε = 2:</p>
-        <pre class='code-block'>P(|X − 3.5| ≥ 2) ≤ (35/12) / 4
+        <p>For a fair die, \(E[X] = 3.5\) and \(\text{Var}(X) = 35/12 \approx 2.92\). Find \(P(|X - 3.5| \geq 2)\).</p>
+        <p>By Chebyshev with \(\varepsilon = 2\):</p>
+        <pre class='code-block'>\(P(|X - 3.5| \geq 2) \leq (35/12) / 4\)
                   = 35/48
                   ≈ 0.729</pre>
         <p>So the probability is at most 72.9%. (The actual probability is lower; Chebyshev gives a <strong>worst-case bound</strong>.)</p>

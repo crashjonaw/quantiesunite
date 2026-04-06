@@ -44,11 +44,11 @@ det(A) = 1·det([4, 5], [0, 6]) - 2·det([0, 5], [1, 6]) + 3·det([0, 4], [1, 0]
         "body": """
         <p><strong>Geometric interpretation:</strong> The absolute value of the determinant is the volume of the parallelepiped (3D) or parallelogram (2D) spanned by the column vectors. The sign indicates orientation (whether the transformation preserves or reverses orientation).</p>
 
-        <p><strong>Key fact:</strong> det(A) = 0 if and only if the columns are linearly dependent (the matrix is singular/non-invertible). If det(A) ≠ 0, the matrix is invertible.</p>
+        <p><strong>Key fact:</strong> \(det(A) = 0\) if and only if the columns are linearly dependent (the matrix is singular/non-invertible). If \(det(A) \neq 0\), the matrix is invertible.</p>
 
         <div class='concept-box'>
         <p><strong>Invertibility Criterion:</strong></p>
-        <p>A square matrix A is invertible if and only if det(A) ≠ 0.</p>
+        <p>A square matrix A is invertible if and only if \(det(A) \neq 0\).</p>
         </div>
         """
     }

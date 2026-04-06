@@ -93,9 +93,9 @@ SECTIONS = [
         <h4>Variance: Average Squared Deviation</h4>
 
         <div class="concept-box">
-            <p><strong>Population Variance:</strong> σ² = Σ(x − μ)² / n</p>
-            <p><strong>Sample Variance:</strong> s² = Σ(x − x̄)² / (n − 1)</p>
-            <p>where μ is the population mean, x̄ is the sample mean, and n is the sample size</p>
+            <p><strong>Population Variance:</strong> \\(\\sigma^2 = \\frac{\\sum(x - \\mu)^2}{n}\\)</p>
+            <p><strong>Sample Variance:</strong> \\(s^2 = \\frac{\\sum(x - \\bar{x})^2}{n - 1}\\)</p>
+            <p>where \\(\\mu\\) is the population mean, \\(\\bar{x}\\) is the sample mean, and \\(n\\) is the sample size</p>
         </div>
 
         <p>Units of variance are squared (e.g., cm² for height). This is hard to interpret intuitively, so we take the square root to get standard deviation.</p>
@@ -144,14 +144,14 @@ SECTIONS = [
         <h4>Standard Deviation: Taking the Square Root</h4>
 
         <div class="concept-box">
-            <p><strong>Standard Deviation:</strong> σ = √(σ²)</p>
+            <p><strong>Standard Deviation:</strong> \\(\\sigma = \\sqrt{\\sigma^2}\\)</p>
         </div>
 
         <p>Standard deviation brings units back to the original scale. If variance is in cm², standard deviation is in cm.</p>
 
         <div class="worked-example">
             <p><strong>Continuing our example:</strong></p>
-            <p>σ = √8 ≈ 2.83</p>
+            <p>\\(\\sigma = \\sqrt{8} \\approx 2.83\\)</p>
             <p>This means, on average, values deviate from the mean (6) by about 2.83 units.</p>
         </div>
 
@@ -192,22 +192,22 @@ SECTIONS = [
 
         <div class="concept-box">
             <p><strong>Coefficient of Variation (CV):</strong></p>
-            <p style="text-align: center;">CV = (Standard Deviation / Mean) × 100%</p>
+            <p style="text-align: center;">\\(CV = \\frac{\\text{Standard Deviation}}{\\text{Mean}} \\times 100\\%\\)</p>
         </div>
 
         <p>CV expresses standard deviation as a percentage of the mean, making it unitless and comparable across different scales.</p>
 
         <div class="worked-example">
             <p><strong>Worked Example:</strong> From our 2, 4, 6, 8, 10 dataset</p>
-            <p>Mean = 6, SD ≈ 2.83</p>
-            <p>CV = (2.83 / 6) × 100% ≈ 47.2%</p>
+            <p>Mean \\(= 6\\), SD \\(\\approx 2.83\\)</p>
+            <p>\\(CV = \\frac{2.83}{6} \\times 100\\% \\approx 47.2\\%\\)</p>
             <p>This means the standard deviation is about 47% of the mean.</p>
         </div>
 
         <div class="worked-example">
             <p><strong>Worked Example Continued:</strong> Height vs Weight</p>
-            <p>Heights: CV = (10 / 170) × 100% ≈ 5.9%</p>
-            <p>Weights: CV = (5 / 70) × 100% ≈ 7.1%</p>
+            <p>Heights: \\(CV = \\frac{10}{170} \\times 100\\% \\approx 5.9\\%\\)</p>
+            <p>Weights: \\(CV = \\frac{5}{70} \\times 100\\% \\approx 7.1\\%\\)</p>
             <p>Now we can fairly compare: weight is slightly more variable (7.1%) than height (5.9%).</p>
         </div>
 
@@ -237,17 +237,17 @@ SECTIONS = [
             </tr>
             <tr >
                 <td style="padding: 10px;">Variance</td>
-                <td style="padding: 10px;">σ² = Σ(x−μ)²/n</td>
+                <td style="padding: 10px;">\\(\\sigma^2 = \\frac{\\sum(x-\\mu)^2}{n}\\)</td>
                 <td style="padding: 10px;">Mathematical/theoretical work</td>
             </tr>
             <tr >
                 <td style="padding: 10px;">Std Dev</td>
-                <td style="padding: 10px;">σ = √(σ²)</td>
+                <td style="padding: 10px;">\\(\\sigma = \\sqrt{\\sigma^2}\\)</td>
                 <td style="padding: 10px;">Same units as data; most interpretable</td>
             </tr>
             <tr >
                 <td style="padding: 10px;">CV</td>
-                <td style="padding: 10px;">(σ/μ)×100%</td>
+                <td style="padding: 10px;">\\((\\sigma/\\mu) \\times 100\\%\\)</td>
                 <td style="padding: 10px;">Comparing spreads across different scales</td>
             </tr>
         </table>

@@ -20,8 +20,8 @@ SECTIONS = [
         <div class="worked-example" style="padding: 16px; margin: 12px 0; border-radius: 6px">
             <p><strong>SGD:</strong> Update parameters using gradient from a single random sample.</p>
             <p>$$\\theta \\leftarrow \\theta - \\alpha \\nabla l_i(\\theta)$$</p>
-            <p>where i is chosen uniformly at random from {1, …, N}.</p>
-            <p><strong>Key insight:</strong> ∇lᵢ(θ) is a noisy estimate of the true gradient ∇L(θ), but unbiased in expectation.</p>
+            <p>where \(i\) is chosen uniformly at random from \(\{1, \ldots, N\}\).</p>
+            <p><strong>Key insight:</strong> \(\nabla l_i(\theta)\) is a noisy estimate of the true gradient \(\nabla L(\theta)\), but unbiased in expectation.</p>
             <p><strong>Advantages:</strong> Fast iterations, memory-efficient, natural regularization from noise.</p>
             <p><strong>Disadvantages:</strong> High variance, noisier path to convergence.</p>
         </div>

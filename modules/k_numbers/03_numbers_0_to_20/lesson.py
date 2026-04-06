@@ -73,14 +73,14 @@ SECTIONS = [
 
 <div class="success-box">
   <h4>✓ Remember</h4>
-  <p>From \\(0\\) to \\(10\\), each number is special and has its own name. After \\(9\\), we use two digits: \\(1\\) and \\(0\\) to write \\(10\\).</p>
+  <p>From \(0\) to \(10\), each number is special and has its own name. After \(9\), we use two digits: \(1\) and \(0\) to write \(10\).</p>
 </div>"""
     },
 
     {
         "title": "Numbers 11 to 20: The Teen Pattern",
         "body": """<h3>A Special Pattern Appears</h3>
-<p>Notice something cool: from \\(11\\) to \\(19\\), all the number names end with <strong>-teen</strong>!</p>
+<p>Notice something cool: from \(11\) to \(19\), all the number names end with <strong>-teen</strong>!</p>
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
   <tr style="background: #4169E180;">
@@ -101,64 +101,64 @@ SECTIONS = [
   <tr>
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>13</strong></td>
     <td style="padding: 10px;"><strong>Thirteen</strong></td>
-    <td style="padding: 10px;">Three + teen = 10 + 3</td>
+    <td style="padding: 10px;">Three + teen = \(10 + 3\)</td>
   </tr>
   <tr style="background: rgba(255,255,255,0.03);">
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>14</strong></td>
     <td style="padding: 10px;"><strong>Fourteen</strong></td>
-    <td style="padding: 10px;">Four + teen = 10 + 4</td>
+    <td style="padding: 10px;">Four + teen = \(10 + 4\)</td>
   </tr>
   <tr>
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>15</strong></td>
     <td style="padding: 10px;"><strong>Fifteen</strong></td>
-    <td style="padding: 10px;">Five + teen = 10 + 5</td>
+    <td style="padding: 10px;">Five + teen = \(10 + 5\)</td>
   </tr>
   <tr style="background: rgba(255,255,255,0.03);">
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>16</strong></td>
     <td style="padding: 10px;"><strong>Sixteen</strong></td>
-    <td style="padding: 10px;">Six + teen = 10 + 6</td>
+    <td style="padding: 10px;">Six + teen = \(10 + 6\)</td>
   </tr>
   <tr>
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>17</strong></td>
     <td style="padding: 10px;"><strong>Seventeen</strong></td>
-    <td style="padding: 10px;">Seven + teen = 10 + 7</td>
+    <td style="padding: 10px;">Seven + teen = \(10 + 7\)</td>
   </tr>
   <tr style="background: rgba(255,255,255,0.03);">
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>18</strong></td>
     <td style="padding: 10px;"><strong>Eighteen</strong></td>
-    <td style="padding: 10px;">Eight + teen = 10 + 8</td>
+    <td style="padding: 10px;">Eight + teen = \(10 + 8\)</td>
   </tr>
   <tr>
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>19</strong></td>
     <td style="padding: 10px;"><strong>Nineteen</strong></td>
-    <td style="padding: 10px;">Nine + teen = 10 + 9</td>
+    <td style="padding: 10px;">Nine + teen = \(10 + 9\)</td>
   </tr>
   <tr style="background: #4169E180;">
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>20</strong></td>
     <td style="padding: 10px;"><strong>Twenty</strong></td>
-    <td style="padding: 10px;">Two + ty = 2 × 10 (two groups of ten)</td>
+    <td style="padding: 10px;">Two + ty = \(2 \times 10\) (two groups of ten)</td>
   </tr>
 </table>
 
 <h3>What Does "-Teen" Mean?</h3>
 <p>The word <strong>-teen</strong> means "ten plus something." So:</p>
 <ul>
-  <li>Thirteen = 10 + 3 ✓</li>
-  <li>Fifteen = 10 + 5 ✓</li>
-  <li>Nineteen = 10 + 9 ✓</li>
+  <li>Thirteen = \(10 + 3\) ✓</li>
+  <li>Fifteen = \(10 + 5\) ✓</li>
+  <li>Nineteen = \(10 + 9\) ✓</li>
 </ul>
 
 <div class="concept-box">
   <h4>The Teen Rule</h4>
-  <p>Any number from \\(13\\) to \\(19\\) can be thought of as:<br>
-  <strong>Teen Number = 10 + (single digit from 3 to 9)</strong></p>
+  <p>Any number from \(13\) to \(19\) can be thought of as:<br>
+  <strong>Teen Number = \(10 +\) (single digit from 3 to 9)</strong></p>
 </div>
 
 <div class="mcq-group">
   <p><strong>Question:</strong> What does Fourteen mean?</p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false" data-explanation="Fourteen is 14. That's not right.">Four</button>
-    <button class="mcq-option" data-correct="true" data-explanation="Yes! Fourteen = 10 + 4. The -teen means 'plus ten.'">10 + 4</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Yes! Fourteen = \(10 + 4\). The -teen means 'plus ten.'">\(10 + 4\)</button>
     <button class="mcq-option" data-correct="false" data-explanation="No, Twenty is 20, which is 2 groups of 10.">2 groups of 10</button>
   </div>
   <div class="mcq-feedback"></div>
@@ -266,7 +266,7 @@ SECTIONS = [
 
 <div class="success-box">
   <h4>✓ Key Takeaway</h4>
-  <p>From \\(0\\) to \\(20\\), you learn all the basic number names. After that, the patterns repeat: \\(21, 22, 23, ...\\) follow the same logic as \\(1, 2, 3, ...\\) but with \\(20\\) in front.</p>
+  <p>From \(0\) to \(20\), you learn all the basic number names. After that, the patterns repeat: \(21, 22, 23, \ldots\) follow the same logic as \(1, 2, 3, \ldots\) but with \(20\) in front.</p>
 </div>"""
     },
 ]

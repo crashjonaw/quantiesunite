@@ -38,7 +38,7 @@ SECTIONS = [
 <ul>
 <li>Radius: r = 5 cm</li>
 <li>Diameter: d = 2 × 5 = 10 cm</li>
-<li>Circumference: C = 2π(5) = 10π ≈ 31.4 cm</li>
+<li>Circumference: \\(C = 2\\pi(5) = 10\\pi \\approx 31.4\\) cm</li>
 </ul>
 </div>
 """
@@ -114,7 +114,7 @@ SECTIONS = [
 <div class="worked-example">
 <h5>Example: Finding Circumference</h5>
 <p>A circle has radius 7 cm.</p>
-<p><strong>Circumference:</strong> C = 2π(7) = 14π ≈ 43.98 cm</p>
+<p><strong>Circumference:</strong> \\(C = 2\\pi(7) = 14\\pi \\approx 43.98\\) cm</p>
 </div>
 
 <h4>Area: The Space Inside a Circle</h4>
@@ -127,7 +127,7 @@ SECTIONS = [
 <div class="worked-example">
 <h5>Example: Finding Area</h5>
 <p>A circle has radius 7 cm.</p>
-<p><strong>Area:</strong> A = π(7)² = 49π ≈ 153.94 cm²</p>
+<p><strong>Area:</strong> \\(A = \\pi(7)^2 = 49\\pi \\approx 153.94\\) cm²</p>
 </div>
 
 <h4>Comparing Circles: Area and Circumference Relationship</h4>
@@ -163,9 +163,9 @@ SECTIONS = [
 <div class="success-box" style="display:none;" id="sol1">
 <strong>Solutions:</strong>
 <ul>
-<li>Diameter: d = 2r = 2(6) = <strong>12 cm</strong></li>
-<li>Circumference: C = 2πr = 2π(6) = <strong>12π ≈ 37.7 cm</strong></li>
-<li>Area: A = πr² = π(6)² = <strong>36π ≈ 113.1 cm²</strong></li>
+<li>Diameter: \\(d = 2r = 2(6) =\\) <strong>12 cm</strong></li>
+<li>Circumference: \\(C = 2\\pi r = 2\\pi(6) =\\) <strong>\\(12\\pi \\approx 37.7\\) cm</strong></li>
+<li>Area: \\(A = \\pi r^2 = \\pi(6)^2 =\\) <strong>\\(36\\pi \\approx 113.1\\) cm²</strong></li>
 </ul>
 </div>
 
@@ -187,9 +187,9 @@ SECTIONS = [
 
 <div class="success-box" style="display:none;" id="sol3">
 <strong>Solution:</strong>
-<p>C = 2πr, so: 31.4 = 2(3.14)r</p>
-<p>31.4 = 6.28r</p>
-<p>r = 31.4 ÷ 6.28 = <strong>5 cm</strong></p>
+<p>\\(C = 2\\pi r\\), so: \\(31.4 = 2(3.14)r\\)</p>
+<p>\\(31.4 = 6.28r\\)</p>
+<p>\\(r = 31.4 \\div 6.28 =\\) <strong>5 cm</strong></p>
 </div>
 
 <button onclick="document.getElementById('sol3').style.display='block'" style="padding: 8px 16px;  border: none; border-radius: 4px; cursor: pointer">Show Solution</button>

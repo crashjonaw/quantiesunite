@@ -19,13 +19,13 @@ SECTIONS = [
 <p><strong>Sample Space (all combinations):</strong></p>
 <p>{(H,1), (H,2), (H,3), (H,4), (H,5), (H,6), (T,1), (T,2), (T,3), (T,4), (T,5), (T,6)}</p>
 
-<p><strong>Total possible outcomes:</strong> 2 × 6 = 12</p>
+<p><strong>Total possible outcomes:</strong> \(2 \times 6 = 12\)</p>
 
 <p><strong>Some combined events:</strong></p>
 <ul>
-<li>P(H and 4) = 1/12</li>
-<li>P(T and even number) = P(T and {2,4,6}) = 3/12 = 1/4</li>
-<li>P(H and odd number) = P(H and {1,3,5}) = 3/12 = 1/4</li>
+<li>\(P(\text{H and 4}) = \frac{1}{12}\)</li>
+<li>\(P(\text{T and even number}) = P(\text{T and }\{2,4,6\}) = \frac{3}{12} = \frac{1}{4}\)</li>
+<li>\(P(\text{H and odd number}) = P(\text{H and }\{1,3,5\}) = \frac{3}{12} = \frac{1}{4}\)</li>
 </ul>
 </div>
 
@@ -37,20 +37,20 @@ SECTIONS = [
 <p><strong>Sample Space:</strong></p>
 <p>{(R,R), (R,B), (R,G), (B,R), (B,B), (B,G), (G,R), (G,B), (G,G)}</p>
 
-<p><strong>Total outcomes:</strong> 3 × 3 = 9</p>
+<p><strong>Total outcomes:</strong> \(3 \times 3 = 9\)</p>
 
 <p><strong>Some probabilities:</strong></p>
 <ul>
-<li>P(both Red) = 1/9</li>
-<li>P(first Red, second Blue) = 1/9</li>
-<li>P(at least one Red) = {(R,R), (R,B), (R,G), (B,R), (G,R)} = 5/9</li>
+<li>\(P(\text{both Red}) = \frac{1}{9}\)</li>
+<li>\(P(\text{first Red, second Blue}) = \frac{1}{9}\)</li>
+<li>\(P(\text{at least one Red}) = \{(R,R), (R,B), (R,G), (B,R), (G,R)\} = \frac{5}{9}\)</li>
 </ul>
 </div>
 
 <div class="success-box">
 <h4>Counting Rule for Combined Events</h4>
 <p>If the first experiment has <strong>m</strong> outcomes and the second has <strong>n</strong> outcomes:</p>
-<p><strong>Total combined outcomes = m × n</strong></p>
+<p><strong>Total combined outcomes = \(m \times n\)</strong></p>
 </div>"""
     },
     {
@@ -151,7 +151,7 @@ SECTIONS = [
   <text x="240" y="195" fill='currentColor' opacity='0.6' font-size='9'>(G,G): 1/9</text>
 </svg>
 
-<p><strong>Total outcomes:</strong> 3 × 3 = 9 (shown by 9 paths from start to end)</p>
+<p><strong>Total outcomes:</strong> \(3 \times 3 = 9\) (shown by 9 paths from start to end)</p>
 </div>"""
     },
     {
@@ -159,7 +159,7 @@ SECTIONS = [
         "body": """<h3>When Outcomes Happen Together: Using AND</h3>
 
 <div class="concept-box">
-<p><strong>P(A and B) = P(A) × P(B)</strong></p>
+<p><strong>\(P(A \text{ and } B) = P(A) \times P(B)\)</strong></p>
 <p>(when A and B are <strong>independent</strong> — one doesn't affect the other)</p>
 </div>
 
@@ -178,9 +178,9 @@ SECTIONS = [
 
 <p><strong>Method 2: Counting</strong></p>
 <ul>
-<li>Sample space has 6 × 6 = 36 outcomes</li>
+<li>Sample space has \(6 \times 6 = 36\) outcomes</li>
 <li>Only one outcome is (3,3)</li>
-<li>P = 1/36</li>
+<li>\(P = \frac{1}{36}\)</li>
 </ul>
 </div>
 
@@ -221,7 +221,7 @@ SECTIONS = [
         "body": """<h3>When Either Outcome Works: Using OR</h3>
 
 <div class="concept-box">
-<p><strong>P(A or B) = P(A) + P(B)</strong></p>
+<p><strong>\(P(A \text{ or } B) = P(A) + P(B)\)</strong></p>
 <p>(when A and B are <strong>mutually exclusive</strong> — they cannot both happen at once)</p>
 </div>
 
@@ -303,7 +303,7 @@ SECTIONS = [
 <h4>Problem 4: Complex Combined Events</h4>
 <p><strong>Question:</strong> A spinner has 3 equal sections: A, B, C. Spin twice. What is P(first is A or B, then second is C)?</p>
 <p><strong>Answer:</strong> \\(P(\\text{A or B, then C}) = (\\frac{1}{3} + \\frac{1}{3}) \\times \\frac{1}{3} = \\frac{2}{3} \\times \\frac{1}{3} = \\frac{2}{9}\\)</p>
-<p><strong>Explanation:</strong> P(A or B) = 2/3 (using addition). Then multiply by P(C) because both parts must happen (multiplication).</p>
+<p><strong>Explanation:</strong> \(P(A \text{ or } B) = \frac{2}{3}\) (using addition). Then multiply by \(P(C)\) because both parts must happen (multiplication).</p>
 </div>"""
     }
 ]

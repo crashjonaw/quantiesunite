@@ -51,16 +51,16 @@ SECTIONS = [
     <h3>Method: Scale Up a Ratio</h3>
     <div class="step">
       <h4>Example 1: Multiply 3:5 by 2</h4>
-      <p>3:5 × 2 = (3 × 2) : (5 × 2) = 6:10</p>
+      <p>\(3:5 \times 2 = (3 \times 2) : (5 \times 2) = 6:10\)</p>
       <p><strong>Check:</strong> Both ratios mean the same thing!</p>
     </div>
     <div class="step">
       <h4>Example 2: Multiply 2:7 by 3</h4>
-      <p>2:7 × 3 = (2 × 3) : (7 × 3) = 6:21</p>
+      <p>\(2:7 \times 3 = (2 \times 3) : (7 \times 3) = 6:21\)</p>
     </div>
     <div class="step">
       <h4>Example 3: Multiply 1:4 by 5</h4>
-      <p>1:4 × 5 = (1 × 5) : (4 × 5) = 5:20</p>
+      <p>\(1:4 \times 5 = (1 \times 5) : (4 \times 5) = 5:20\)</p>
     </div>
   </div>
 
@@ -120,16 +120,16 @@ SECTIONS = [
     <h3>Method: Scale Down a Ratio</h3>
     <div class="step">
       <h4>Example 1: Divide 12:8 by 4</h4>
-      <p>12:8 ÷ 4 = (12 ÷ 4) : (8 ÷ 4) = 3:2</p>
+      <p>\(12:8 \div 4 = (12 \div 4) : (8 \div 4) = 3:2\)</p>
       <p><strong>This is simplifying!</strong></p>
     </div>
     <div class="step">
       <h4>Example 2: Divide 20:15 by 5</h4>
-      <p>20:15 ÷ 5 = (20 ÷ 5) : (15 ÷ 5) = 4:3</p>
+      <p>\(20:15 \div 5 = (20 \div 5) : (15 \div 5) = 4:3\)</p>
     </div>
     <div class="step">
       <h4>Example 3: Divide 6:10 by 2</h4>
-      <p>6:10 ÷ 2 = (6 ÷ 2) : (10 ÷ 2) = 3:5</p>
+      <p>\(6:10 \div 2 = (6 \div 2) : (10 \div 2) = 3:5\)</p>
     </div>
   </div>
 
@@ -137,9 +137,9 @@ SECTIONS = [
     <h4>Important: You Can Only Divide If Both Are Divisible</h4>
     <p>You can only divide by a number if it divides evenly into BOTH parts of the ratio.</p>
     <ul>
-      <li><strong>✓ Can do:</strong> 12:8 ÷ 4 (both divisible by 4)</li>
-      <li><strong>❌ Cannot do:</strong> 12:8 ÷ 3 (8 is not divisible by 3)</li>
-      <li><strong>✓ Can do:</strong> 12:8 ÷ 2 (both divisible by 2)</li>
+      <li><strong>✓ Can do:</strong> \(12:8 \div 4\) (both divisible by 4)</li>
+      <li><strong>❌ Cannot do:</strong> \(12:8 \div 3\) (8 is not divisible by 3)</li>
+      <li><strong>✓ Can do:</strong> \(12:8 \div 2\) (both divisible by 2)</li>
     </ul>
   </div>
 

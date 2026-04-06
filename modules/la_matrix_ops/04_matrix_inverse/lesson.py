@@ -11,8 +11,8 @@ SECTIONS = [
 
         <p><strong>When does an inverse exist?</strong> A square matrix A is <strong>invertible (nonsingular)</strong> if and only if:</p>
         <ul>
-        <li>det(A) ≠ 0, OR</li>
-        <li>rank(A) = n (full rank), OR</li>
+        <li>\(\det(A) \neq 0\), OR</li>
+        <li>\(\text{rank}(A) = n\) (full rank), OR</li>
         <li>The only solution to Ax = 0 is x = 0 (A has trivial nullspace)</li>
         </ul>
 
@@ -21,7 +21,7 @@ SECTIONS = [
         </div>
 
         <div class="warning-box">
-        <p><strong>Not all square matrices are invertible:</strong> A singular (non-invertible) matrix has det(A) = 0 and maps some non-zero vector to zero. Its inverse doesn't exist.</p>
+        <p><strong>Not all square matrices are invertible:</strong> A singular (non-invertible) matrix has \(\det(A) = 0\) and maps some non-zero vector to zero. Its inverse doesn't exist.</p>
         </div>
         """
     },
@@ -72,7 +72,7 @@ Verify: AA⁻¹ = [1  2][-2    1  ] = [1  0] ✓
         <li><strong>(A⁻¹)⁻¹ = A</strong></li>
         <li><strong>(AB)⁻¹ = B⁻¹A⁻¹</strong> (order reverses!)</li>
         <li><strong>(Aᵀ)⁻¹ = (A⁻¹)ᵀ</strong></li>
-        <li><strong>(cA)⁻¹ = (1/c)A⁻¹</strong> for scalar c ≠ 0</li>
+        <li><strong>\((cA)^{-1} = (1/c)A^{-1}\)</strong> for scalar \(c \neq 0\)</li>
         <li><strong>det(A⁻¹) = 1/det(A)</strong></li>
         </ul>
 
@@ -84,7 +84,7 @@ Verify: AA⁻¹ = [1  2][-2    1  ] = [1  0] ✓
         <p><strong>Practical insight:</strong> To solve Ax = b:</p>
         <ol>
         <li><strong>Avoid:</strong> x = A⁻¹b (unstable, expensive)</li>
-        <li><strong>Prefer:</strong> Gaussian elimination (stable, O(n³))</li>
+        <li><strong>Prefer:</strong> Gaussian elimination (stable, \(O(n^3)\))</li>
         <li><strong>For multiple b:</strong> Use LU decomposition once, then solve efficiently</li>
         </ol>
         </div>

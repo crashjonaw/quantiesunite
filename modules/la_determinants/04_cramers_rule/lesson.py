@@ -4,21 +4,21 @@ SECTIONS = [
     {
         "title": "Statement and Usage of Cramer's Rule",
         "body": """
-        <p><strong>Cramer's Rule:</strong> For a system Ax = b where A is n × n and det(A) ≠ 0 (unique solution), the solution is:</p>
-        <pre class='code-block'>xⱼ = det(Aⱼ) / det(A)</pre>
+        <p><strong>Cramer's Rule:</strong> For a system Ax = b where A is n × n and \(det(A) \neq 0\) (unique solution), the solution is:</p>
+        <pre class='code-block'>\(x_j = det(A_j) / det(A)\)</pre>
 
-        <p>where A<sub>j</sub> is the matrix obtained by replacing the j-th column of A with the vector b.</p>
+        <p>where \(A_j\) is the matrix obtained by replacing the j-th column of A with the vector b.</p>
 
         <p><strong>When to use Cramer's Rule:</strong></p>
         <ul>
-        <li><strong>Advantage:</strong> Elegant formula; useful for theoretical work and small systems (n ≤ 3).</li>
-        <li><strong>Disadvantage:</strong> Computationally expensive for large n (requires n+1 determinant computations). Gaussian elimination is O(n³) vs. Cramer's O(n!) with cofactor expansion.</li>
+        <li><strong>Advantage:</strong> Elegant formula; useful for theoretical work and small systems (\(n \leq 3\)).</li>
+        <li><strong>Disadvantage:</strong> Computationally expensive for large \(n\) (requires \(n+1\) determinant computations). Gaussian elimination is \(O(n^3)\) vs. Cramer's \(O(n!)\) with cofactor expansion.</li>
         </ul>
 
         <div class='concept-box'>
         <p><strong>Cramer's Rule Summary:</strong></p>
-        <p>For Ax = b with det(A) ≠ 0:</p>
-        <p>x<sub>j</sub> = det(A<sub>j</sub>) / det(A), where A<sub>j</sub> is A with column j replaced by b.</p>
+        <p>For Ax = b with \(det(A) \neq 0\):</p>
+        <p>\(x_j = det(A_j) / det(A)\), where \(A_j\) is A with column j replaced by b.</p>
         </div>
         """
     },

@@ -99,8 +99,8 @@ SECTIONS = [
 <p><strong>1. Which category has the highest value?</strong> Apple (tallest bar = 11)</p>
 <p><strong>2. Which category has the lowest value?</strong> Orange (shortest bar = 3)</p>
 <p><strong>3. What is the value for each category?</strong> Read from the y-axis where each bar reaches</p>
-<p><strong>4. How much more than...?</strong> Apple (11) vs Mango (6): difference = 11 - 6 = 5 more</p>
-<p><strong>5. Total of all values?</strong> 11 + 10 + 6 + 3 = 30 votes</p>
+<p><strong>4. How much more than...?</strong> Apple (11) vs Mango (6): difference \(= 11 - 6 = 5\) more</p>
+<p><strong>5. Total of all values?</strong> \(11 + 10 + 6 + 3 = 30\) votes</p>
 </div>
 
 <h3>Worked Example: Ice Cream Sales</h3>
@@ -126,11 +126,11 @@ SECTIONS = [
 <p><strong>Q1: On which day were the most cones sold?</strong></p>
 <p>A: Thursday (35 cones—tallest bar)</p>
 <p><strong>Q2: How many more cones on Thursday than Monday?</strong></p>
-<p>A: 35 - 24 = 11 more cones</p>
+<p>A: \(35 - 24 = 11\) more cones</p>
 <p><strong>Q3: Total cones sold Mon-Fri?</strong></p>
-<p>A: 24 + 32 + 28 + 35 + 30 = 149 cones</p>
+<p>A: \(24 + 32 + 28 + 35 + 30 = 149\) cones</p>
 <p><strong>Q4: Average (mean) cones per day?</strong></p>
-<p>A: 149 ÷ 5 = 29.8 ≈ 30 cones per day</p>
+<p>A: \(149 \div 5 = 29.8 \approx 30\) cones per day</p>
 </div>"""
     },
     {
@@ -162,7 +162,7 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>If 🍎 = 10 apples, but someone harvested 25 apples:</strong></p>
 <p>We show: 🍎 🍎 🍎 ½🍎 (2.5 symbols)</p>
-<p>Check: (2 × 10) + (0.5 × 10) = 20 + 5 = 25 ✓</p>
+<p>Check: \((2 \times 10) + (0.5 \times 10) = 20 + 5 = 25\) ✓</p>
 </div>
 
 <h3>Advantage and Limitation</h3>

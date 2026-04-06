@@ -41,7 +41,7 @@ SECTIONS = [
         "body": """<p>Imagine you're counting apples:</p>
 <ul>
   <li><strong>Addition way:</strong> "I have 10 bags with 10 apples each. Let me count: 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10 + 10... That takes forever!"</li>
-  <li><strong>Multiplication way:</strong> "I have 10 bags with 10 apples each. That's 10 × 10 = 100 apples. Done!"</li>
+  <li><strong>Multiplication way:</strong> "I have 10 bags with 10 apples each. That's \(10 \times 10 = 100\) apples. Done!"</li>
 </ul>
 <p>Multiplication lets you answer faster and with fewer chances to make mistakes.</p>
 <canvas id="efficiencyChart" data-chart='{"type":"bar","data":{"labels":["2×5","5×5","10×5"],"datasets":[{"label":"Number to Add","data":[5,5,5],"backgroundColor":"#4f8ef7"},{"label":"Total Items","data":[10,25,50],"backgroundColor":"#22c55e"}]},"options":{"plugins":{"title":{"display":true,"text":"Same Multiplication Problems, Growing Results"}}}}' height="250"></canvas>"""
@@ -88,7 +88,7 @@ SECTIONS = [
         "title": "Practice: Switching Between Forms",
         "body": """<p>Try to convert between these forms:</p>
 <div class="mcq-group" style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 6px; margin: 16px 0;">
-  <p style="font-size: 16px; font-weight: bold;">Which addition is the same as 5 × 4?</p>
+  <p style="font-size: 16px; font-weight: bold;">Which addition is the same as \(5 \times 4\)?</p>
   <div class="mcq-options" style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
     <button class="mcq-option" data-correct="true" data-explanation="Yes! 5 × 4 means 5 groups of 4, which is 4 + 4 + 4 + 4 + 4 = 20" class="concept-box" style="cursor: pointer;">4 + 4 + 4 + 4 + 4</button>
     <button class="mcq-option" data-correct="false" class="concept-box" style="cursor: pointer;">5 + 5 + 5 + 5</button>
@@ -98,7 +98,7 @@ SECTIONS = [
 </div>
 <div class="success-box" style="background: rgba(34, 197, 94, 0.1); border-left: 4px solid #22c55e; padding: 16px; border-radius: 6px; margin: 20px 0;">
   <p style="margin: 0; font-weight: bold;">Remember:</p>
-  <p style="margin: 8px 0 0 0;"><strong>5 × 4</strong> = "5 groups of 4" = \\(4 + 4 + 4 + 4 + 4 = 20\\)</p>
+  <p style="margin: 8px 0 0 0;"><strong>\(5 \times 4\)</strong> = "5 groups of 4" = \(4 + 4 + 4 + 4 + 4 = 20\)</p>
 </div>"""
     }
 ]

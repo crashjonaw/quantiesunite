@@ -41,9 +41,9 @@ SECTIONS = [
 
 <div class='worked-example'>
 <p><strong>Start with:</strong> \\(\\frac{1}{2}\\)</p>
-<p><strong>Multiply top and bottom by 2:</strong> \\(\\frac{1 \\times 2}{2 \\times 2}\\) = \\(\\frac{2}{4}\\)</p>
-<p><strong>Multiply top and bottom by 3:</strong> \\(\\frac{1 \\times 3}{2 \\times 3}\\) = \\(\\frac{3}{6}\\)</p>
-<p><strong>Multiply top and bottom by 5:</strong> \\(\\frac{1 \\times 5}{2 \\times 5}\\) = \\(\\frac{5}{10}\\)</p>
+<p><strong>Multiply top and bottom by 2:</strong> \\(\\frac{1 \\times 2}{2 \\times 2} = \\frac{2}{4}\\)</p>
+<p><strong>Multiply top and bottom by 3:</strong> \\(\\frac{1 \\times 3}{2 \\times 3} = \\frac{3}{6}\\)</p>
+<p><strong>Multiply top and bottom by 5:</strong> \\(\\frac{1 \\times 5}{2 \\times 5} = \\frac{5}{10}\\)</p>
 <p><strong>All of these are equivalent:</strong> $$\\frac{1}{2} = \\frac{2}{4} = \\frac{3}{6} = \\frac{5}{10}$$</p>
 </div>
 
@@ -83,7 +83,7 @@ SECTIONS = [
 
 <div class='worked-example'>
 <p><strong>Simplify:</strong> \\(\\frac{6}{8}\\)</p>
-<p><strong>Both are divisible by 2:</strong> \\(\\frac{6 ÷ 2}{8 ÷ 2}\\) = \\(\\frac{3}{4}\\)</p>
+<p><strong>Both are divisible by 2:</strong> \\(\\frac{6 \\div 2}{8 \\div 2} = \\frac{3}{4}\\)</p>
 <p><strong>3/4 is the simplified form</strong>—we can't simplify further because 3 and 4 share no common factors.</p>
 </div>
 
@@ -96,7 +96,7 @@ SECTIONS = [
 <p><strong>Factors of 18:</strong> 1, 2, 3, 6, 9, 18</p>
 <p><strong>Common factors:</strong> 1, 2, 3, 6</p>
 <p><strong>GCF = 6</strong></p>
-<p>\\(\\frac{12 ÷ 6}{18 ÷ 6}\\) = \\(\\frac{2}{3}\\)</p>
+<p>\\(\\frac{12 \\div 6}{18 \\div 6} = \\frac{2}{3}\\)</p>
 </div>
 
 <div class='success-box'>
@@ -108,9 +108,9 @@ SECTIONS = [
         "body": """<h3>Generate Equivalent Fractions</h3>
 <div class='worked-example'>
 <p><strong>Write 3 equivalent fractions for \\(\\frac{2}{5}\\)</strong></p>
-<p>Multiply by 2: \\(\\frac{2 × 2}{5 × 2}\\) = \\(\\frac{4}{10}\\)</p>
-<p>Multiply by 3: \\(\\frac{2 × 3}{5 × 3}\\) = \\(\\frac{6}{15}\\)</p>
-<p>Multiply by 4: \\(\\frac{2 × 4}{5 × 4}\\) = \\(\\frac{8}{20}\\)</p>
+<p>Multiply by 2: \\(\\frac{2 \\times 2}{5 \\times 2} = \\frac{4}{10}\\)</p>
+<p>Multiply by 3: \\(\\frac{2 \\times 3}{5 \\times 3} = \\frac{6}{15}\\)</p>
+<p>Multiply by 4: \\(\\frac{2 \\times 4}{5 \\times 4} = \\frac{8}{20}\\)</p>
 <p><strong>Answer:</strong> \\(\\frac{4}{10}\\), \\(\\frac{6}{15}\\), \\(\\frac{8}{20}\\)</p>
 </div>
 
@@ -118,7 +118,7 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>Simplify \\(\\frac{8}{12}\\)</strong></p>
 <p>GCF of 8 and 12 = 4</p>
-<p>\\(\\frac{8 ÷ 4}{12 ÷ 4}\\) = \\(\\frac{2}{3}\\)</p>
+<p>\\(\\frac{8 \\div 4}{12 \\div 4} = \\frac{2}{3}\\)</p>
 </div>"""
     }
 ]

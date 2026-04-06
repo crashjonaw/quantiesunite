@@ -50,7 +50,7 @@ SECTIONS = [
   <li>Forces your brain to think instead of getting lazy</li>
 </ul>
 
-<p><strong>Example practice set:</strong> 5×3, 7×6, 10×8, 8×7, 2×9, 6×7, 4×5, 9×9, 3×4</p>
+<p><strong>Example practice set:</strong> \\(5 \\times 3\\), \\(7 \\times 6\\), \\(10 \\times 8\\), \\(8 \\times 7\\), \\(2 \\times 9\\), \\(6 \\times 7\\), \\(4 \\times 5\\), \\(9 \\times 9\\), \\(3 \\times 4\\)</p>
 </div>
 
 <h3>Strategy 2: Short, Regular Sessions</h3>
@@ -67,9 +67,9 @@ SECTIONS = [
 <p>Your brain gets stronger when you practice in different ways:</p>
 
 <ul>
-  <li><strong>Traditional flashcards:</strong> "What is 7 × 8?" → "56"</li>
-  <li><strong>Fill-in-the-blank:</strong> "7 × ___ = 56" → "8"</li>
-  <li><strong>True or false:</strong> "Is 6 × 7 = 42?" → "Yes"</li>
+  <li><strong>Traditional flashcards:</strong> "What is \\(7 \\times 8\\)?" → "56"</li>
+  <li><strong>Fill-in-the-blank:</strong> "\\(7 \\times \\_ = 56\\)" → "8"</li>
+  <li><strong>True or false:</strong> "Is \\(6 \\times 7 = 42\\)?" → "Yes"</li>
   <li><strong>Real-world:</strong> "You buy 7 pencils at 8 cents each. How much?" → "56 cents"</li>
 </ul>
 
@@ -160,10 +160,10 @@ SECTIONS = [
 <h4>Step 1: Identify the Hard Ones</h4>
 <p>Write down the 5-10 facts you struggle with most. For many students, these include:</p>
 <ul>
-  <li>7 × 8 = 56</li>
-  <li>6 × 8 = 48</li>
-  <li>7 × 7 = 49</li>
-  <li>6 × 7 = 42</li>
+  <li>\\(7 \\times 8 = 56\\)</li>
+  <li>\\(6 \\times 8 = 48\\)</li>
+  <li>\\(7 \\times 7 = 49\\)</li>
+  <li>\\(6 \\times 7 = 42\\)</li>
 </ul>
 </div>
 
@@ -172,10 +172,10 @@ SECTIONS = [
 <p>For each tricky fact, use a strategy you've learned:</p>
 
 <ul>
-  <li><strong>7 × 8:</strong> Think "5 × 8 = 40, plus 2 × 8 = 16, so 40 + 16 = 56"</li>
-  <li><strong>6 × 8:</strong> Think "3 × 8 = 24, doubled = 48"</li>
-  <li><strong>7 × 7:</strong> Remember it's a perfect square with 7 rows and 7 columns = 49</li>
-  <li><strong>6 × 7:</strong> Think "6 × 5 = 30, plus 6 × 2 = 12, so 30 + 12 = 42"</li>
+  <li><strong>\\(7 \\times 8\\):</strong> Think "\\(5 \\times 8 = 40\\), plus \\(2 \\times 8 = 16\\), so \\(40 + 16 = 56\\)"</li>
+  <li><strong>\\(6 \\times 8\\):</strong> Think "\\(3 \\times 8 = 24\\), doubled = 48"</li>
+  <li><strong>\\(7 \\times 7\\):</strong> Remember it's a perfect square with 7 rows and 7 columns = 49</li>
+  <li><strong>\\(6 \\times 7\\):</strong> Think "\\(6 \\times 5 = 30\\), plus \\(6 \\times 2 = 12\\), so \\(30 + 12 = 42\\)"</li>
 </ul>
 </div>
 
@@ -206,7 +206,7 @@ SECTIONS = [
 <p>If you've practiced a lot but a fact still won't stick:</p>
 
 <ul>
-  <li><strong>Create a memory hook:</strong> "7 × 8 = 56" sounds like "five six seven eight" (say the rhyme to remember!)</li>
+  <li><strong>Create a memory hook:</strong> "\\(7 \\times 8 = 56\\)" sounds like "five six seven eight" (say the rhyme to remember!)</li>
   <li><strong>Use your fingers:</strong> The 9-finger trick still works for 9s</li>
   <li><strong>Draw it:</strong> Sketch a quick array instead of only using your brain</li>
   <li><strong>Connect it to real life:</strong> "If I have 7 groups of 8 cookies..." makes it concrete</li>

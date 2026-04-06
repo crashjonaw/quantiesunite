@@ -67,7 +67,7 @@ SECTIONS = [
 <tr><td>Mango</td><td>|||| |||</td><td>6</td></tr>
 <tr><td>Orange</td><td>|||</td><td>3</td></tr>
 </table>
-<p><strong>Total: 11 + 10 + 6 + 3 = 30 ✓</strong></p>
+<p><strong>Total: \(11 + 10 + 6 + 3 = 30\) ✓</strong></p>
 </div>
 
 <p><strong>Why tally marks?</strong> They help us count quickly without mistakes. When we see 5 tally marks bundled together, we instantly know it's 5.</p>"""

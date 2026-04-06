@@ -70,22 +70,22 @@ SECTIONS = [
   </tr>
   <tr>
     <td style="border: 1px solid #333; padding: 10px;">\\(3 \\times 4 = 12\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">1 + 2</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(1 + 2\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>3</strong></td>
   </tr>
   <tr style="background: #f9f9f9;">
     <td style="border: 1px solid #333; padding: 10px;">\\(3 \\times 8 = 24\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">2 + 4</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(2 + 4\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>6</strong></td>
   </tr>
   <tr>
     <td style="border: 1px solid #333; padding: 10px;">\\(3 \\times 9 = 27\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">2 + 7</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(2 + 7\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>9</strong></td>
   </tr>
   <tr style="background: #f9f9f9;">
     <td style="border: 1px solid #333; padding: 10px;">\\(3 \\times 6 = 18\\)</td>
-    <td style="border: 1px solid #333; padding: 10px;">1 + 8</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(1 + 8\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>9</strong></td>
   </tr>
 </table>
@@ -188,8 +188,8 @@ if (ctx4) {
 <p>Now you can see why the strategy works:</p>
 <ul>
   <li><strong>2 Times:</strong> 2, 4, 6, 8, 10, 12, 14, 16, 18, 20</li>
-  <li><strong>4 Times (2 × 2):</strong> 4, 8, 12, 16, 20, 24, 28, 32, 36, 40</li>
-  <li><strong>8 Times (4 × 2):</strong> 8, 16, 24, 32, 40, 48, 56, 64, 72, 80</li>
+  <li><strong>4 Times (\\(2 \\times 2\\)):</strong> 4, 8, 12, 16, 20, 24, 28, 32, 36, 40</li>
+  <li><strong>8 Times (\\(4 \\times 2\\)):</strong> 8, 16, 24, 32, 40, 48, 56, 64, 72, 80</li>
 </ul>
 
 <p>Each table is exactly double the one before it! This is why learning one table helps you with the others.</p>
@@ -201,7 +201,7 @@ if (ctx4) {
 <h3>What is an Array?</h3>
 <p>An <strong>array</strong> is objects arranged in rows and columns. Arrays help us see multiplication as a picture, which makes it much easier to understand.</p>
 
-<h3>Example: The 3 × 4 Array</h3>
+<h3>Example: The \\(3 \\times 4\\) Array</h3>
 <div class="diagram-container">
   <svg width="450" height="250" viewBox="0 0 450 250">
     <text x="225" y="25" text-anchor='middle' font-size='16' font-weight='bold'>3 Rows and 4 Columns</text>

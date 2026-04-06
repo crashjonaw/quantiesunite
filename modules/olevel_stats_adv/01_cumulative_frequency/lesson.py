@@ -159,7 +159,7 @@ SECTIONS = [
 
         <h4>Finding Percentiles</h4>
         <p>Any percentile can be found using the same method:</p>
-        <p style="text-align: center;"><strong>Position = (k/100) × n</strong> where k is the percentile (e.g., k = 90 for 90th percentile)</p>
+        <p style="text-align: center;"><strong>\\(\\text{Position} = \\frac{k}{100} \\times n\\)</strong> where \\(k\\) is the percentile (e.g., \\(k = 90\\) for 90th percentile)</p>
 
         <div class="success-box">
             <p><strong>Reading Accuracy Tip:</strong> Use a ruler or straight edge when drawing lines on the graph. Be precise with your horizontal and vertical lines to get accurate readings.</p>

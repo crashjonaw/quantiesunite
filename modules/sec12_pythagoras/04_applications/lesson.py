@@ -53,7 +53,7 @@ SECTIONS = [
 <p>$$d^2 = s^2 + s^2 = 2s^2$$</p>
 <p>$$d = s\\sqrt{2}$$</p>
 
-<p>For example, a square with side 4 cm has diagonal: d = 4√2 ≈ 5.66 cm</p>
+<p>For example, a square with side 4 cm has diagonal: \(d = 4\sqrt{2} \approx 5.66\) cm</p>
 """
     },
     {
@@ -110,7 +110,7 @@ SECTIONS = [
 
 <div class='info-box'>
 <p><strong>Real-World Safety Note:</strong></p>
-<p>In real life, ladders should be placed so the base is about 1/4 of the ladder's length away from the wall. For a 5 m ladder, that would be about 1.25 m away.</p>
+<p>In real life, ladders should be placed so the base is about \(\frac{1}{4}\) of the ladder's length away from the wall. For a 5 m ladder, that would be about 1.25 m away.</p>
 </div>
 """
     },

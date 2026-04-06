@@ -25,8 +25,8 @@ SECTIONS = [
         "body": """<div class="concept-box">
 <h3>The Forget Gate: Controlling Memory Retention</h3>
 <p>The forget gate determines how much of the previous cell state to retain:</p>
-<p><strong>f<sub>t</sub> = σ(W<sub>f</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)</strong></p>
-<p>where σ is the sigmoid function (output in [0, 1]).</p>
+<p><strong>f<sub>t</sub> = \(\sigma\)(W<sub>f</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)</strong></p>
+<p>where \(\sigma\) is the sigmoid function (output in [0, 1]).</p>
 <p><strong>Interpretation:</strong></p>
 <ul>
 <li>f<sub>t</sub> ≈ 0 means "forget" — the cell state is reset</li>
@@ -37,7 +37,7 @@ SECTIONS = [
 <div class="concept-box">
 <h3>The Input Gate: Adding New Information</h3>
 <p>The input gate controls what new information enters the cell state:</p>
-<p><strong>i<sub>t</sub> = σ(W<sub>i</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)</strong></p>
+<p><strong>i<sub>t</sub> = \(\sigma\)(W<sub>i</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)</strong></p>
 <p>Separately, we compute a <strong>candidate value</strong> (proposed new memory):</p>
 <p><strong>c̃<sub>t</sub> = tanh(W<sub>c</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>c</sub>)</strong></p>
 <p>The input gate scales this candidate before adding to cell state:</p>
@@ -53,7 +53,7 @@ SECTIONS = [
 <p>This additive path is why LSTM solves the vanishing gradient problem. Gradients flow backward through addition without exponential decay.</p>
 <h3>The Output Gate: Exposing Memory</h3>
 <p>The output gate determines what portion of the cell state to expose:</p>
-<p><strong>o<sub>t</sub> = σ(W<sub>o</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>o</sub>)</strong></p>
+<p><strong>o<sub>t</sub> = \(\sigma\)(W<sub>o</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>o</sub>)</strong></p>
 <p>The hidden state is computed by scaling a tanh-normalized cell state:</p>
 <p><strong>h<sub>t</sub> = o<sub>t</sub> ⊙ tanh(c<sub>t</sub>)</strong></p>
 <p>The hidden state h<sub>t</sub> is passed to the next time step and to output layers for predictions.</p>
@@ -65,10 +65,10 @@ SECTIONS = [
 <h3>All LSTM Equations</h3>
 <p>An LSTM cell at time t computes:</p>
 <ul style="font-family: monospace;">
-<li>f<sub>t</sub> = σ(W<sub>f</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)</li>
-<li>i<sub>t</sub> = σ(W<sub>i</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)</li>
+<li>f<sub>t</sub> = \(\sigma\)(W<sub>f</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>f</sub>)</li>
+<li>i<sub>t</sub> = \(\sigma\)(W<sub>i</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>i</sub>)</li>
 <li>c̃<sub>t</sub> = tanh(W<sub>c</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>c</sub>)</li>
-<li>o<sub>t</sub> = σ(W<sub>o</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>o</sub>)</li>
+<li>o<sub>t</sub> = \(\sigma\)(W<sub>o</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>o</sub>)</li>
 <li>c<sub>t</sub> = f<sub>t</sub> ⊙ c<sub>t-1</sub> + i<sub>t</sub> ⊙ c̃<sub>t</sub></li>
 <li>h<sub>t</sub> = o<sub>t</sub> ⊙ tanh(c<sub>t</sub>)</li>
 </ul>

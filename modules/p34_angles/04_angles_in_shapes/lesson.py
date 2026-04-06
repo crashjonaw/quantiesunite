@@ -37,7 +37,7 @@ SECTIONS = [
 
 <div class='worked-example'>
   <p><strong>Example:</strong> A triangle has angles of 60° and 70°. What is the third angle?</p>
-  <p>Third angle = 180° - 60° - 70° = <strong>50°</strong></p>
+  <p>Third angle = \\(180° - 60° - 70° = \\)<strong>50°</strong></p>
 </div>
 
 <div class='success-box'>
@@ -88,6 +88,7 @@ SECTIONS = [
 
 <div class='worked-example'>
   <p><strong>Quick check:</strong> Can a triangle have two right angles? No! If it had two 90° angles, the third would need to be \\(180° - 90° - 90° = 0°\\), which is impossible. Every triangle has at most one right angle!</p>
+
 </div>
         """
     },
@@ -128,7 +129,7 @@ SECTIONS = [
 
 <div class='worked-example'>
   <p><strong>Example:</strong> A quadrilateral has angles of 75°, 85°, and 100°. What is the fourth angle?</p>
-  <p>Fourth angle = 360° - 75° - 85° - 100° = <strong>100°</strong></p>
+  <p>Fourth angle = \\(360° - 75° - 85° - 100° = \\)<strong>100°</strong></p>
 </div>
 
 <div class='success-box'>
@@ -143,12 +144,12 @@ SECTIONS = [
 
 <div class='worked-example'>
   <p><strong>Square:</strong> All 4 angles are 90°</p>
-  <p>Each angle = 360° ÷ 4 = 90°</p>
+  <p>Each angle = \\(360° \\div 4 = 90°\\)</p>
 </div>
 
 <div class='worked-example'>
   <p><strong>Rectangle:</strong> All 4 angles are 90°</p>
-  <p>Each angle = 360° ÷ 4 = 90°</p>
+  <p>Each angle = \\(360° \\div 4 = 90°\\)</p>
 </div>
 
 <div class='worked-example'>
@@ -161,10 +162,10 @@ SECTIONS = [
 <p><strong>Regular Polygons</strong> are shapes where all sides are equal and all angles are equal. Here are some common ones:</p>
 
 <div class='concept-box'>
-  <p><strong>Regular triangle (Equilateral):</strong> Each angle = 180° ÷ 3 = <strong>60°</strong></p>
-  <p><strong>Regular quadrilateral (Square):</strong> Each angle = 360° ÷ 4 = <strong>90°</strong></p>
-  <p><strong>Regular pentagon:</strong> Total angles = 540°, so each angle = 540° ÷ 5 = <strong>108°</strong></p>
-  <p><strong>Regular hexagon:</strong> Total angles = 720°, so each angle = 720° ÷ 6 = <strong>120°</strong></p>
+  <p><strong>Regular triangle (Equilateral):</strong> Each angle = \\(180° \\div 3 = \\)<strong>60°</strong></p>
+  <p><strong>Regular quadrilateral (Square):</strong> Each angle = \\(360° \\div 4 = \\)<strong>90°</strong></p>
+  <p><strong>Regular pentagon:</strong> Total angles = 540°, so each angle = \\(540° \\div 5 = \\)<strong>108°</strong></p>
+  <p><strong>Regular hexagon:</strong> Total angles = 720°, so each angle = \\(720° \\div 6 = \\)<strong>120°</strong></p>
 </div>
 
 <svg viewBox="0 0 350 220" style="width:100%;max-width:400px;height:auto;display:block;margin:16px auto;background:#f6f8fa;border-radius:8px;">

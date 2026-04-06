@@ -37,7 +37,7 @@ SECTIONS = [
     {
         "title": "The Three Key Ideas About Counting",
         "body": """<h3>Counting Uses Three Important Rules</h3>
-<p>Mathematicians have discovered that all good counting follows three key principles. These principles help us count correctly every time, from \\(1\\) toy to \\(100\\) stars!</p>
+<p>Mathematicians have discovered that all good counting follows three key principles. These principles help us count correctly every time, from \(1\) toy to \(100\) stars!</p>
 
 <div class="formula-box">
   <div style="margin-bottom: 20px;">
@@ -61,15 +61,15 @@ SECTIONS = [
 
 <svg viewBox="0 0 400 200" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
   <!-- Title -->
-  <text x="200" y="20" text-anchor='middle' font-size='16' font-weight='bold'>Counting 3 Apples</text>
+  <text x="200" y="20" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>Counting 3 Apples</text>
 
   <!-- Apple 1 -->
   <circle cx="80" cy="80" r="20" fill='#d32f2f'/>
-  <text x="80" y="130" text-anchor='middle' font-size='18' font-weight='bold'>1st</text>
+  <text x="80" y="130" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>1st</text>
 
   <!-- Apple 2 -->
   <circle cx="200" cy="80" r="20" fill='#d32f2f'/>
-  <text x="200" y="130" text-anchor='middle' font-size='18' font-weight='bold'>2nd</text>
+  <text x="200" y="130" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>2nd</text>
 
   <!-- Apple 3 (with highlight) -->
   <circle cx="320" cy="80" r="20" fill='#d32f2f'/>
@@ -77,16 +77,16 @@ SECTIONS = [
   <text x="320" y="130" text-anchor='middle' font-size='18' font-weight='bold' fill='#22c55e'>3rd ← Total!</text>
 
   <!-- Count labels -->
-  <text x="80" y="170" text-anchor='middle' font-size='14'>Say "1"</text>
-  <text x="200" y="170" text-anchor='middle' font-size='14'>Say "2"</text>
-  <text x="320" y="170" text-anchor='middle' font-size='14'>Say "3"</text>
+  <text x="80" y="170" text-anchor='middle' font-size='14' fill='currentColor'>Say "1"</text>
+  <text x="200" y="170" text-anchor='middle' font-size='14' fill='currentColor'>Say "2"</text>
+  <text x="320" y="170" text-anchor='middle' font-size='14' fill='currentColor'>Say "3"</text>
 </svg>"""
     },
     {
         "title": "How to Count Step by Step",
         "body": """<h3>The Five Steps of Real Counting</h3>
 
-<p>To count \\(n\\) objects correctly, follow these steps every time:</p>
+<p>To count \(n\) objects correctly, follow these steps every time:</p>
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
   <tr style="background: #4169E180;">
@@ -153,7 +153,7 @@ SECTIONS = [
   <p><strong>Step 3:</strong> Say "ONE" 🧸</p>
   <p><strong>Step 4:</strong> Point to the car, say "TWO" 🚗</p>
   <p><strong>Step 5:</strong> Point to the video game, say "THREE" 🎮</p>
-  <p style="margin-top: 15px; font-weight: bold; color: var(--success);">Answer: There are \\(3\\) toys! ✓</p>
+  <p style="margin-top: 15px; font-weight: bold; color: var(--success);">Answer: There are \(3\) toys! ✓</p>
 </div>
 
 <h3>Quick Check: Is This Real Counting?</h3>

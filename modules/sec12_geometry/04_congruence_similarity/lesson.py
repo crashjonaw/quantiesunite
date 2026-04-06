@@ -103,7 +103,7 @@ SECTIONS = [
 <div class="success-box">
 <p><strong>Triangle A: sides 3 cm, 4 cm, 5 cm</strong></p>
 <p><strong>Triangle B: sides 6 cm, 8 cm, 10 cm</strong></p>
-<p><strong>Scale factor:</strong> 6÷3 = 8÷4 = 10÷5 = 2</p>
+<p><strong>Scale factor:</strong> \(6 \div 3 = 8 \div 4 = 10 \div 5 = 2\)</p>
 <p>Triangle B is an enlargement of Triangle A with scale factor 2.</p>
 <p><strong>They are similar (same angles, proportional sides).</strong></p>
 
@@ -148,8 +148,8 @@ SECTIONS = [
 <p><strong>Triangle A has sides 2cm, 3cm, 4cm. Triangle B is similar with sides 4cm, 6cm, and x. Find x.</strong></p>
 <div class="worked-example">
 <p>Check the scale factor:</p>
-<p>4÷2 = 2 and 6÷3 = 2, so scale factor = 2</p>
-<p>x = 4 × 2 = 8 cm</p>
+<p>\(4 \div 2 = 2\) and \(6 \div 3 = 2\), so scale factor = 2</p>
+<p>\(x = 4 \times 2 = 8\) cm</p>
 <p><strong>Answer: x = 8 cm</strong></p>
 </div>
 </div>
@@ -173,7 +173,7 @@ SECTIONS = [
 <p><strong>Triangle A has area 10 cm². Triangle B is similar with linear scale factor 3.</strong></p>
 <p>What is the area of Triangle B?</p>
 
-<p>Area of B = 10 × 3² = 10 × 9 = 90 cm²</p>
+<p>Area of B = \(10 \times 3^2 = 10 \times 9 = 90\) cm²</p>
 
 <svg width="100%" height="180" viewBox="0 0 500 180" class="formula-box">
   <!-- Triangle A -->

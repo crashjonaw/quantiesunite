@@ -17,7 +17,7 @@ SECTIONS = [
         <ul>
             <li><strong>pdf(x):</strong> Probability density function at x (for continuous distributions)</li>
             <li><strong>pmf(k):</strong> Probability mass function at k (for discrete distributions)</li>
-            <li><strong>cdf(x):</strong> Cumulative distribution function P(X ≤ x)</li>
+            <li><strong>cdf(x):</strong> Cumulative distribution function \(P(X \leq x)\)</li>
             <li><strong>sf(x):</strong> Survival function P(X > x) = 1 - cdf(x)</li>
             <li><strong>ppf(q):</strong> Percent point function (inverse CDF, quantiles)</li>
             <li><strong>rvs():</strong> Random variable samples</li>

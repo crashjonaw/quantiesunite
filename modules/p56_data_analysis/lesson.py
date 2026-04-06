@@ -52,7 +52,7 @@ SECTIONS = [
 
 <h3>Reading Pie Charts</h3>
 
-<p>In a pie chart, the whole circle = 100% = 360°</p>
+<p>In a pie chart, the whole circle \(= 100\% = 360°\)</p>
 
 <div class='example-box'>
 <p><strong>Example: Student Preferences for Subjects</strong></p>
@@ -62,28 +62,28 @@ SECTIONS = [
 <li>Science: 20% (72°)</li>
 <li>Art: 10% (36°)</li>
 </ul>
-<p>Total = 100% and 144° + 108° + 72° + 36° = 360°</p>
+<p>Total \(= 100\%\) and \(144° + 108° + 72° + 36° = 360°\)</p>
 </div>
 
 <h3>Converting Percentages to Angles</h3>
 
-<p><strong>Angle = Percentage × 360° / 100</strong></p>
+<p><strong>\(\text{Angle} = \text{Percentage} \times 360° \div 100\)</strong></p>
 
 <div class='example-box'>
 <p><strong>If a category is 25%, what angle does it represent?</strong></p>
 <ul>
-<li>Angle = 25 × 360 ÷ 100 = 9000 ÷ 100 = 90°</li>
+<li>Angle \(= 25 \times 360 \div 100 = 9000 \div 100 = 90°\)</li>
 </ul>
 </div>
 
 <h3>Converting Angles to Percentages</h3>
 
-<p><strong>Percentage = Angle × 100 / 360</strong></p>
+<p><strong>\(\text{Percentage} = \text{Angle} \times 100 \div 360\)</strong></p>
 
 <div class='example-box'>
 <p><strong>If a slice has an angle of 72°, what percentage does it represent?</strong></p>
 <ul>
-<li>Percentage = 72 × 100 ÷ 360 = 7200 ÷ 360 = 20%</li>
+<li>Percentage \(= 72 \times 100 \div 360 = 7200 \div 360 = 20\%\)</li>
 </ul>
 </div>
 
@@ -92,7 +92,7 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>A survey of 120 students: 30% like sports. How many students like sports?</strong></p>
 <ul>
-<li>Number = 30% of 120 = 0.30 × 120 = 36 students</li>
+<li>Number \(= 30\%\) of \(120 = 0.30 \times 120 = 36\) students</li>
 </ul>
 </div>
 """
@@ -201,8 +201,8 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>Using the table above, find:</strong></p>
 <ul>
-<li>Ali's total score = 85 + 78 + 90 = 253</li>
-<li>Average Science score = (90 + 85 + 80) ÷ 3 = 85</li>
+<li>Ali's total score \(= 85 + 78 + 90 = 253\)</li>
+<li>Average Science score \(= (90 + 85 + 80) \div 3 = 85\)</li>
 <li>Highest individual score = Bella's English = 95</li>
 </ul>
 </div>
@@ -245,7 +245,7 @@ SECTIONS = [
 <p><strong>4. Incorrect visual representation</strong></p>
 <ul>
 <li>Using images with different sizes that don't match the data</li>
-<li>For example, doubling the width AND height of a circle to show a 2× increase makes it 4× bigger!</li>
+<li>For example, doubling the width AND height of a circle to show a \(2\times\) increase makes it \(4\times\) bigger!</li>
 </ul>
 </div>
 
@@ -264,8 +264,8 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>From a bar graph showing daily sales: $200, $300, $250, $400, $350</strong></p>
 <ul>
-<li>Total = 200 + 300 + 250 + 400 + 350 = 1500</li>
-<li>Average = 1500 ÷ 5 = 300 per day</li>
+<li>Total \(= 200 + 300 + 250 + 400 + 350 = 1500\)</li>
+<li>Average \(= 1500 \div 5 = 300\) per day</li>
 </ul>
 </div>
 
@@ -273,10 +273,10 @@ SECTIONS = [
 <p><strong>From a pie chart showing preferences: 40% like A, 35% like B, 25% like C</strong></p>
 <p><strong>If 200 people were surveyed:</strong></p>
 <ul>
-<li>Like A = 40% × 200 = 80 people</li>
-<li>Like B = 35% × 200 = 70 people</li>
-<li>Like C = 25% × 200 = 50 people</li>
-<li>Total = 80 + 70 + 50 = 200 ✓</li>
+<li>Like A \(= 40\% \times 200 = 80\) people</li>
+<li>Like B \(= 35\% \times 200 = 70\) people</li>
+<li>Like C \(= 25\% \times 200 = 50\) people</li>
+<li>Total \(= 80 + 70 + 50 = 200\) ✓</li>
 </ul>
 </div>
 """

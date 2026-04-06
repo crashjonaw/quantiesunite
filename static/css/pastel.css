@@ -51,21 +51,18 @@
 
 
 /* ═══════════════════════════════════════════════════════════════════
+   SHARED: cards that become semi-transparent on any pastel
+   ═══════════════════════════════════════════════════════════════════ */
+/* Helper mixin — every pastel reuses the same card list */
+
+/* ═══════════════════════════════════════════════════════════════════
    LIGHT BLUE TEMPLATE
    ═══════════════════════════════════════════════════════════════════ */
 
-[data-theme="bright"][data-pastel="blue"] body {
-  background-color: #dbeafe;
-}
-[data-theme="bright"][data-pastel="blue"] .main-content {
-  background-color: #dbeafe;
-}
-/* Navbar stays dark — no override here */
-[data-theme="bright"][data-pastel="blue"] .footer {
-  background-color: #bfdbfe;
-}
+[data-theme="bright"][data-pastel="blue"] body { background-color: #dbeafe; }
+[data-theme="bright"][data-pastel="blue"] .main-content { background-color: #dbeafe; }
+[data-theme="bright"][data-pastel="blue"] .footer { background-color: #bfdbfe; }
 
-/* Cards — semi-transparent white for layered look */
 [data-theme="bright"][data-pastel="blue"] .dash-card,
 [data-theme="bright"][data-pastel="blue"] .adash-card,
 [data-theme="bright"][data-pastel="blue"] .trophy-card,
@@ -79,7 +76,20 @@
 [data-theme="bright"][data-pastel="blue"] .dash-ach,
 [data-theme="bright"][data-pastel="blue"] .account-section,
 [data-theme="bright"][data-pastel="blue"] .admin-stat-card,
-[data-theme="bright"][data-pastel="blue"] .lp-card {
+[data-theme="bright"][data-pastel="blue"] .lp-card,
+[data-theme="bright"][data-pastel="blue"] .quiz-header,
+[data-theme="bright"][data-pastel="blue"] .quiz-question,
+[data-theme="bright"][data-pastel="blue"] .lesson-section,
+[data-theme="bright"][data-pastel="blue"] .topic-header,
+[data-theme="bright"][data-pastel="blue"] .concept-card,
+[data-theme="bright"][data-pastel="blue"] .sidebar-section,
+[data-theme="bright"][data-pastel="blue"] .concept-sidebar,
+[data-theme="bright"][data-pastel="blue"] .congrats-box,
+[data-theme="bright"][data-pastel="blue"] .flash,
+[data-theme="bright"][data-pastel="blue"] .topic-card,
+[data-theme="bright"][data-pastel="blue"] .exam-card,
+[data-theme="bright"][data-pastel="blue"] .mindmap-page,
+[data-theme="bright"][data-pastel="blue"] .feedback-modal {
   background-color: rgba(255,255,255,0.6);
 }
 
@@ -88,16 +98,9 @@
    LIGHT PINK TEMPLATE
    ═══════════════════════════════════════════════════════════════════ */
 
-[data-theme="bright"][data-pastel="pink"] body {
-  background-color: #fce7f3;
-}
-[data-theme="bright"][data-pastel="pink"] .main-content {
-  background-color: #fce7f3;
-}
-/* Navbar stays dark — no override here */
-[data-theme="bright"][data-pastel="pink"] .footer {
-  background-color: #fbcfe8;
-}
+[data-theme="bright"][data-pastel="pink"] body { background-color: #fce7f3; }
+[data-theme="bright"][data-pastel="pink"] .main-content { background-color: #fce7f3; }
+[data-theme="bright"][data-pastel="pink"] .footer { background-color: #fbcfe8; }
 
 [data-theme="bright"][data-pastel="pink"] .dash-card,
 [data-theme="bright"][data-pastel="pink"] .adash-card,
@@ -112,7 +115,20 @@
 [data-theme="bright"][data-pastel="pink"] .dash-ach,
 [data-theme="bright"][data-pastel="pink"] .account-section,
 [data-theme="bright"][data-pastel="pink"] .admin-stat-card,
-[data-theme="bright"][data-pastel="pink"] .lp-card {
+[data-theme="bright"][data-pastel="pink"] .lp-card,
+[data-theme="bright"][data-pastel="pink"] .quiz-header,
+[data-theme="bright"][data-pastel="pink"] .quiz-question,
+[data-theme="bright"][data-pastel="pink"] .lesson-section,
+[data-theme="bright"][data-pastel="pink"] .topic-header,
+[data-theme="bright"][data-pastel="pink"] .concept-card,
+[data-theme="bright"][data-pastel="pink"] .sidebar-section,
+[data-theme="bright"][data-pastel="pink"] .concept-sidebar,
+[data-theme="bright"][data-pastel="pink"] .congrats-box,
+[data-theme="bright"][data-pastel="pink"] .flash,
+[data-theme="bright"][data-pastel="pink"] .topic-card,
+[data-theme="bright"][data-pastel="pink"] .exam-card,
+[data-theme="bright"][data-pastel="pink"] .mindmap-page,
+[data-theme="bright"][data-pastel="pink"] .feedback-modal {
   background-color: rgba(255,255,255,0.6);
 }
 
@@ -121,16 +137,9 @@
    LIGHT YELLOW TEMPLATE
    ═══════════════════════════════════════════════════════════════════ */
 
-[data-theme="bright"][data-pastel="yellow"] body {
-  background-color: #fef9c3;
-}
-[data-theme="bright"][data-pastel="yellow"] .main-content {
-  background-color: #fef9c3;
-}
-/* Navbar stays dark — no override here */
-[data-theme="bright"][data-pastel="yellow"] .footer {
-  background-color: #fef08a;
-}
+[data-theme="bright"][data-pastel="yellow"] body { background-color: #fef9c3; }
+[data-theme="bright"][data-pastel="yellow"] .main-content { background-color: #fef9c3; }
+[data-theme="bright"][data-pastel="yellow"] .footer { background-color: #fef08a; }
 
 [data-theme="bright"][data-pastel="yellow"] .dash-card,
 [data-theme="bright"][data-pastel="yellow"] .adash-card,
@@ -145,7 +154,20 @@
 [data-theme="bright"][data-pastel="yellow"] .dash-ach,
 [data-theme="bright"][data-pastel="yellow"] .account-section,
 [data-theme="bright"][data-pastel="yellow"] .admin-stat-card,
-[data-theme="bright"][data-pastel="yellow"] .lp-card {
+[data-theme="bright"][data-pastel="yellow"] .lp-card,
+[data-theme="bright"][data-pastel="yellow"] .quiz-header,
+[data-theme="bright"][data-pastel="yellow"] .quiz-question,
+[data-theme="bright"][data-pastel="yellow"] .lesson-section,
+[data-theme="bright"][data-pastel="yellow"] .topic-header,
+[data-theme="bright"][data-pastel="yellow"] .concept-card,
+[data-theme="bright"][data-pastel="yellow"] .sidebar-section,
+[data-theme="bright"][data-pastel="yellow"] .concept-sidebar,
+[data-theme="bright"][data-pastel="yellow"] .congrats-box,
+[data-theme="bright"][data-pastel="yellow"] .flash,
+[data-theme="bright"][data-pastel="yellow"] .topic-card,
+[data-theme="bright"][data-pastel="yellow"] .exam-card,
+[data-theme="bright"][data-pastel="yellow"] .mindmap-page,
+[data-theme="bright"][data-pastel="yellow"] .feedback-modal {
   background-color: rgba(255,255,255,0.6);
 }
 
@@ -154,16 +176,9 @@
    LIGHT GREEN TEMPLATE
    ═══════════════════════════════════════════════════════════════════ */
 
-[data-theme="bright"][data-pastel="green"] body {
-  background-color: #dcfce7;
-}
-[data-theme="bright"][data-pastel="green"] .main-content {
-  background-color: #dcfce7;
-}
-/* Navbar stays dark — no override here */
-[data-theme="bright"][data-pastel="green"] .footer {
-  background-color: #bbf7d0;
-}
+[data-theme="bright"][data-pastel="green"] body { background-color: #dcfce7; }
+[data-theme="bright"][data-pastel="green"] .main-content { background-color: #dcfce7; }
+[data-theme="bright"][data-pastel="green"] .footer { background-color: #bbf7d0; }
 
 [data-theme="bright"][data-pastel="green"] .dash-card,
 [data-theme="bright"][data-pastel="green"] .adash-card,
@@ -178,7 +193,20 @@
 [data-theme="bright"][data-pastel="green"] .dash-ach,
 [data-theme="bright"][data-pastel="green"] .account-section,
 [data-theme="bright"][data-pastel="green"] .admin-stat-card,
-[data-theme="bright"][data-pastel="green"] .lp-card {
+[data-theme="bright"][data-pastel="green"] .lp-card,
+[data-theme="bright"][data-pastel="green"] .quiz-header,
+[data-theme="bright"][data-pastel="green"] .quiz-question,
+[data-theme="bright"][data-pastel="green"] .lesson-section,
+[data-theme="bright"][data-pastel="green"] .topic-header,
+[data-theme="bright"][data-pastel="green"] .concept-card,
+[data-theme="bright"][data-pastel="green"] .sidebar-section,
+[data-theme="bright"][data-pastel="green"] .concept-sidebar,
+[data-theme="bright"][data-pastel="green"] .congrats-box,
+[data-theme="bright"][data-pastel="green"] .flash,
+[data-theme="bright"][data-pastel="green"] .topic-card,
+[data-theme="bright"][data-pastel="green"] .exam-card,
+[data-theme="bright"][data-pastel="green"] .mindmap-page,
+[data-theme="bright"][data-pastel="green"] .feedback-modal {
   background-color: rgba(255,255,255,0.6);
 }
 

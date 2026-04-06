@@ -122,7 +122,7 @@ SECTIONS = [
 
 <div class='worked-example'>
 <p><strong>Mixed to Improper:</strong> \\(1\\frac{3}{4}\\)</p>
-<p>Multiply: 1 × 4 = 4, then add the numerator: 4 + 3 = 7</p>
+<p>Multiply: \\(1 \\times 4 = 4\\), then add the numerator: \\(4 + 3 = 7\\)</p>
 <p>So: \\(1\\frac{3}{4}\\) = \\(\\frac{7}{4}\\)</p>
 </div>"""
     },

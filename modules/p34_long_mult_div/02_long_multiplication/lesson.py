@@ -9,19 +9,19 @@ SECTIONS = [
         <p><strong>The trick:</strong> Treat the second number (47) as 40 + 7, and multiply by each part separately.</p>
 
         <div class='worked-example'>
-            <p>23 × 47 = 23 × (40 + 7)</p>
-            <p style='font-weight: bold;'>=  (23 × 40) + (23 × 7)</p>
-            <p>= 920 + 161</p>
+            <p>\\(23 \\times 47 = 23 \\times (40 + 7)\\)</p>
+            <p style='font-weight: bold;'>\\(= (23 \\times 40) + (23 \\times 7)\\)</p>
+            <p>\\(= 920 + 161\\)</p>
             <p>= <strong>1,081</strong></p>
         </div>
 
         <h3>Why This Works: The Area Model</h3>
         <p>Imagine a rectangle that is 23 units wide and 47 units tall. We can split it into two smaller rectangles:</p>
         <ul>
-            <li>One rectangle: 23 × 40 = 920</li>
-            <li>Another rectangle: 23 × 7 = 161</li>
+            <li>One rectangle: \\(23 \\times 40 = 920\\)</li>
+            <li>Another rectangle: \\(23 \\times 7 = 161\\)</li>
         </ul>
-        <p>Total area = 920 + 161 = 1,081</p>
+        <p>Total area = \\(920 + 161 = 1{,}081\\)</p>
 
         <div class='concept-box'>
             <p><strong>Long multiplication with two digits</strong> means we multiply by each digit separately, then add the partial products.</p>
@@ -56,7 +56,7 @@ SECTIONS = [
         <p><strong>Step 3: Multiply by the tens digit (2), but SHIFT LEFT one place</strong><br>
         We're really multiplying 34 × 20 (not just 34 × 2).</p>
         <div class='worked-example'>
-            <p>34 × 2 = 68, but we write it in the tens place, so it becomes 680.</p>
+            <p>\\(34 \\times 2 = 68\\), but we write it in the tens place, so it becomes 680.</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
               <sup>2</sup>34<br>
               ×&nbsp;&nbsp;27<br>
@@ -133,15 +133,15 @@ SECTIONS = [
         "body": """
         <h3>Mistake 1: Forgetting to Shift</h3>
         <div class='warning-box'>
-            <p><strong>Wrong:</strong> 34 × 27 → first partial: 238, second partial: 68, answer: 238 + 68 = 306 ✗</p>
-            <p><strong>Right:</strong> 34 × 27 → first partial: 238, second partial: 680 (shifted), answer: 238 + 680 = 918 ✓</p>
+            <p><strong>Wrong:</strong> \\(34 \\times 27\\) → first partial: 238, second partial: 68, answer: \\(238 + 68 = 306\\) ✗</p>
+            <p><strong>Right:</strong> \\(34 \\times 27\\) → first partial: 238, second partial: 680 (shifted), answer: \\(238 + 680 = 918\\) ✓</p>
             <p><strong>Why?</strong> When you multiply by the tens digit, you're multiplying by 20, 30, etc., not 2, 3, etc. The shift accounts for this.</p>
         </div>
 
         <h3>Mistake 2: Forgetting to Carry in Partial Products</h3>
         <div class='warning-box'>
-            <p><strong>Wrong:</strong> 34 × 7 = 21 and 28, written as 2128 ✗</p>
-            <p><strong>Right:</strong> 34 × 7 → 7 × 4 = 28 (write 8, carry 2), 7 × 3 = 21, plus 2 = 23, answer: 238 ✓</p>
+            <p><strong>Wrong:</strong> \\(34 \\times 7 = 21\\) and 28, written as 2128 ✗</p>
+            <p><strong>Right:</strong> \\(34 \\times 7\\) → \\(7 \\times 4 = 28\\) (write 8, carry 2), \\(7 \\times 3 = 21\\), plus 2 = 23, answer: 238 ✓</p>
         </div>
 
         <h3>Mistake 3: Misaligning Partial Products</h3>
@@ -151,9 +151,9 @@ SECTIONS = [
 
         <h3>Checking Your Work</h3>
         <div class='success-box'>
-            <p><strong>Method 1 - Estimation:</strong> 34 × 27 is roughly 30 × 30 = 900, so 918 seems reasonable.</p>
-            <p><strong>Method 2 - Commutative Property:</strong> Try 27 × 34 and see if you get the same answer.</p>
-            <p><strong>Method 3 - Reverse:</strong> Divide your answer by one of the numbers: 918 ÷ 34 should equal 27.</p>
+            <p><strong>Method 1 - Estimation:</strong> \\(34 \\times 27\\) is roughly \\(30 \\times 30 = 900\\), so 918 seems reasonable.</p>
+            <p><strong>Method 2 - Commutative Property:</strong> Try \\(27 \\times 34\\) and see if you get the same answer.</p>
+            <p><strong>Method 3 - Reverse:</strong> Divide your answer by one of the numbers: \\(918 \\div 34\\) should equal 27.</p>
         </div>
         """
     }

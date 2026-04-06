@@ -76,7 +76,7 @@ SECTIONS = [
 <p>To convert a fraction to a decimal, divide the numerator by the denominator.</p>
 
 <div class="concept-box">
-  <p>\\(\\frac{numerator}{denominator}\\) → numerator ÷ denominator = decimal</p>
+  <p>\\(\\frac{numerator}{denominator}\\) → \\(\\text{numerator} \\div \\text{denominator} = \\text{decimal}\\)</p>
 </div>
 
 <h4>Examples</h4>
@@ -84,7 +84,7 @@ SECTIONS = [
 <div class="worked-example">
   <p><strong>Convert 1/4 to a decimal:</strong></p>
   <ul>
-    <li>Divide: 1 ÷ 4 = 0.25</li>
+    <li>Divide: \\(1 \\div 4 = 0.25\\)</li>
     <li>Answer: \\(\\frac{1}{4} = 0.25\\)</li>
   </ul>
 </div>
@@ -92,7 +92,7 @@ SECTIONS = [
 <div class="worked-example">
   <p><strong>Convert 3/5 to a decimal:</strong></p>
   <ul>
-    <li>Divide: 3 ÷ 5 = 0.6</li>
+    <li>Divide: \\(3 \\div 5 = 0.6\\)</li>
     <li>Answer: \\(\\frac{3}{5} = 0.6\\)</li>
   </ul>
 </div>
@@ -100,7 +100,7 @@ SECTIONS = [
 <div class="worked-example">
   <p><strong>Convert 7/8 to a decimal:</strong></p>
   <ul>
-    <li>Divide: 7 ÷ 8 = 0.875</li>
+    <li>Divide: \\(7 \\div 8 = 0.875\\)</li>
     <li>Answer: \\(\\frac{7}{8} = 0.875\\)</li>
   </ul>
 </div>

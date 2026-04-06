@@ -3,9 +3,9 @@ TITLE = "Regrouping: Carrying and Borrowing"
 SECTIONS = [
     {
         "title": "What Happens When Ones Add Up to 10 or More?",
-        "body": """<p>You know how to add: 23 + 14 = 37. But what if the ones add up to more than 9?</p>
-<p><strong>Example: 27 + 15</strong></p>
-<p>If we try to add ones: 7 + 5 = 12. But wait! We can't write 12 in the ones place. The ones column only holds digits 0-9.</p>
+        "body": """<p>You know how to add: \(23 + 14 = 37\). But what if the ones add up to more than 9?</p>
+<p><strong>Example: \(27 + 15\)</strong></p>
+<p>If we try to add ones: \(7 + 5 = 12\). But wait! We can't write 12 in the ones place. The ones column only holds digits 0-9.</p>
 <div class="concept-box">
 <p><strong>Here's the magic:</strong> When we get 10 ones, we can trade them for 1 ten!</p>
 <p>Remember: <strong>10 ones = 1 ten</strong></p>
@@ -58,14 +58,14 @@ SECTIONS = [
   <!-- Result -->
   <text x="50" y="235" fill='#f59e0b' font-size='16' font-weight='bold'>Answer: 42</text>
 </svg>
-<p><strong>Why this works:</strong> 27 + 15 = (20 + 7) + (10 + 5) = (20 + 10) + (7 + 5) = 30 + 12 = 42</p>
+<p><strong>Why this works:</strong> \(27 + 15 = (20 + 7) + (10 + 5) = (20 + 10) + (7 + 5) = 30 + 12 = 42\)</p>
 </div>"""
     },
     {
         "title": "Borrowing in Subtraction (Regrouping Tens to Ones)",
         "body": """<p>Sometimes in subtraction, the ones digit on top is smaller than the ones digit below. We can't do that! So we <strong>borrow</strong> 1 ten from the tens place and break it into 10 ones.</p>
-<p><strong>Example: 32 - 15</strong></p>
-<p>Problem: We need to do 2 - 5 in the ones place, but 2 &lt; 5.</p>
+<p><strong>Example: \(32 - 15\)</strong></p>
+<p>Problem: We need to do \(2 - 5\) in the ones place, but \(2 < 5\).</p>
 <div class="worked-example">
 <svg viewBox="0 0 600 260" style="width:100%;max-width:700px;height:auto;display:block;margin:16px auto;">
   <!-- Step 1 -->
@@ -90,7 +90,7 @@ SECTIONS = [
   <!-- Result -->
   <text x="50" y="250" fill='#f59e0b' font-size='16' font-weight='bold'>Answer: 17</text>
 </svg>
-<p><strong>Check:</strong> If 32 - 15 = 17, then 17 + 15 should equal 32. Let's check: 17 + 15 = 32 ✓</p>
+<p><strong>Check:</strong> If \(32 - 15 = 17\), then \(17 + 15\) should equal 32. Let's check: \(17 + 15 = 32\) ✓</p>
 </div>"""
     },
     {
@@ -112,8 +112,8 @@ SECTIONS = [
         "title": "Practice: Carrying and Borrowing",
         "body": """<p>Try these problems that need carrying or borrowing!</p>
 <div class="mcq-group">
-  <p><strong>What is 27 + 15?</strong></p>
-  <p><em>Hint: Ones: 7 + 5 = 12 (write 2, carry 1), Tens: 2 + 1 + 1 = 4</em></p>
+  <p><strong>What is \(27 + 15\)?</strong></p>
+  <p><em>Hint: Ones: \(7 + 5 = 12\) (write 2, carry 1), Tens: \(2 + 1 + 1 = 4\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 7 + 5 = 12, write 2 and carry 1. Tens: 2 + 1 + 1 = 4. Answer: 42">42</button>
     <button class="mcq-option" data-correct="false">52</button>
@@ -122,8 +122,8 @@ SECTIONS = [
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>What is 32 - 15?</strong></p>
-  <p><em>Hint: Ones: 2 &lt; 5, so borrow. 2 becomes 12. Then 12 - 5 = 7, and 2 - 1 = 1</em></p>
+  <p><strong>What is \(32 - 15\)?</strong></p>
+  <p><em>Hint: Ones: \(2 < 5\), so borrow. 2 becomes 12. Then \(12 - 5 = 7\), and \(2 - 1 = 1\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false">27</button>
     <button class="mcq-option" data-correct="true" data-explanation="Borrow 1 ten: 32 becomes 2 tens 12 ones. Then: 12 - 5 = 7, 2 - 1 = 1. Answer: 17">17</button>
@@ -132,8 +132,8 @@ SECTIONS = [
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>What is 48 + 34?</strong></p>
-  <p><em>Hint: Ones: 8 + 4 = 12, carry. Tens: 4 + 3 + 1 = 8</em></p>
+  <p><strong>What is \(48 + 34\)?</strong></p>
+  <p><em>Hint: Ones: \(8 + 4 = 12\), carry. Tens: \(4 + 3 + 1 = 8\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false">72</button>
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 8 + 4 = 12, write 2 and carry 1. Tens: 4 + 3 + 1 = 8. Answer: 82">82</button>

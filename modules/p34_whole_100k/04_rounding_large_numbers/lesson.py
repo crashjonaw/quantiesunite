@@ -89,7 +89,7 @@ SECTIONS = [
 
 <p><strong>Step 1:</strong> Find the hundreds place → 4 (in the position before 56)</p>
 <p><strong>Step 2:</strong> Look at the helper digit (tens place) → 5</p>
-<p><strong>Step 3:</strong> Since 5 ≥ 5, round UP</p>
+<p><strong>Step 3:</strong> Since \\(5 \\geq 5\\), round UP</p>
 <p><strong>Step 4:</strong> Change everything to the right to zero</p>
 
 <p style="text-align: center; font-size: 15px; margin-top: 10px;"><strong>23,456 rounds to 23,500</strong></p>
@@ -102,7 +102,7 @@ SECTIONS = [
 
 <p><strong>Step 1:</strong> Find the thousands place → 8</p>
 <p><strong>Step 2:</strong> Look at the helper digit (hundreds place) → 7</p>
-<p><strong>Step 3:</strong> Since 7 ≥ 5, round UP</p>
+<p><strong>Step 3:</strong> Since \\(7 \\geq 5\\), round UP</p>
 <p><strong>Step 4:</strong> The 8 becomes 9, everything to the right becomes 0</p>
 
 <p style="text-align: center; font-size: 15px; margin-top: 10px;"><strong>58,723 rounds to 59,000</strong></p>
@@ -115,7 +115,7 @@ SECTIONS = [
 
 <p><strong>Step 1:</strong> Find the ten thousands place → 3</p>
 <p><strong>Step 2:</strong> Look at the helper digit (thousands place) → 4</p>
-<p><strong>Step 3:</strong> Since 4 < 5, round DOWN</p>
+<p><strong>Step 3:</strong> Since \\(4 < 5\\), round DOWN</p>
 <p><strong>Step 4:</strong> The 3 stays 3, everything to the right becomes 0</p>
 
 <p style="text-align: center; font-size: 15px; margin-top: 10px;"><strong>34,678 rounds to 30,000</strong></p>
@@ -128,7 +128,7 @@ SECTIONS = [
 
 <p><strong>Step 1:</strong> Find the ten thousands place → 4</p>
 <p><strong>Step 2:</strong> Look at the helper digit (thousands place) → 9</p>
-<p><strong>Step 3:</strong> Since 9 ≥ 5, round UP</p>
+<p><strong>Step 3:</strong> Since \\(9 \\geq 5\\), round UP</p>
 <p><strong>Step 4:</strong> The 4 becomes 5, everything to the right becomes 0</p>
 
 <p style="text-align: center; font-size: 15px; margin-top: 10px;"><strong>49,821 rounds to 50,000</strong></p>

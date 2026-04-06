@@ -17,39 +17,39 @@ SECTIONS = [
     <th style="border: 1px solid #333; padding: 10px;">Sum = 9</th>
   </tr>
   <tr>
-    <td style="border: 1px solid #333; padding: 10px;">9 × 1</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 1\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">9</td>
     <td style="border: 1px solid #333; padding: 10px;">9</td>
     <td style="border: 1px solid #333; padding: 10px; ">9</td>
   </tr>
   <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">9 × 2</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 2\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">18</td>
-    <td style="border: 1px solid #333; padding: 10px;">1 + 8</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(1 + 8\\)</td>
     <td style="border: 1px solid #333; padding: 10px; ">9</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #333; padding: 10px;">9 × 3</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 3\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">27</td>
-    <td style="border: 1px solid #333; padding: 10px;">2 + 7</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(2 + 7\\)</td>
     <td style="border: 1px solid #333; padding: 10px; ">9</td>
   </tr>
   <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">9 × 4</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 4\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">36</td>
-    <td style="border: 1px solid #333; padding: 10px;">3 + 6</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(3 + 6\\)</td>
     <td style="border: 1px solid #333; padding: 10px; ">9</td>
   </tr>
   <tr>
-    <td style="border: 1px solid #333; padding: 10px;">9 × 5</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 5\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">45</td>
-    <td style="border: 1px solid #333; padding: 10px;">4 + 5</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(4 + 5\\)</td>
     <td style="border: 1px solid #333; padding: 10px; ">9</td>
   </tr>
   <tr style="background: #f9f9f9;">
-    <td style="border: 1px solid #333; padding: 10px;">9 × 6</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(9 \\times 6\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">54</td>
-    <td style="border: 1px solid #333; padding: 10px;">5 + 4</td>
+    <td style="border: 1px solid #333; padding: 10px;">\\(5 + 4\\)</td>
     <td style="border: 1px solid #333; padding: 10px; ">9</td>
   </tr>
 </table>
@@ -62,16 +62,16 @@ SECTIONS = [
 
 <div class="success-box">
 <h4>The 9-Finger Trick</h4>
-<p>To find 9 × 3 using your fingers:</p>
+<p>To find \\(9 \\times 3\\) using your fingers:</p>
 <ol>
   <li>Hold up all 10 fingers</li>
   <li>Put down the 3rd finger from the left</li>
   <li>Count the fingers to the left (2) — that's the first digit</li>
   <li>Count the fingers to the right (7) — that's the second digit</li>
-  <li>Answer: 27! (And 2 + 7 = 9 ✓)</li>
+  <li>Answer: 27! (And \\(2 + 7 = 9\\) ✓)</li>
 </ol>
 
-<p>Try it for 9 × 7: Put down the 7th finger, you get 6 fingers left and 3 fingers right = 63 (and 6 + 3 = 9 ✓)</p>
+<p>Try it for \\(9 \\times 7\\): Put down the 7th finger, you get 6 fingers left and 3 fingers right = 63 (and \\(6 + 3 = 9\\) ✓)</p>
 </div>
 
 <h3>Visualizing the 9 Times Table</h3>

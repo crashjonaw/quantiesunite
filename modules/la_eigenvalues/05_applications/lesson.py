@@ -39,12 +39,12 @@ SECTIONS = [
 
 <div class='concept-box' style='border-left: 4px solid #4f8ef7; padding: 16px; margin: 12px 0; border-radius: 6px;'>
   <p><strong>The condition number:</strong></p>
-  <p style='font-family: monospace;'>κ = λ_max / λ_min</p>
-  <p>Where λ_max and λ_min are the largest and smallest eigenvalues of the Hessian.</p>
+  <p style='font-family: monospace;'>\(\kappa = \lambda_{\max} / \lambda_{\min}\)</p>
+  <p>Where \(\lambda_{\max}\) and \(\lambda_{\min}\) are the largest and smallest eigenvalues of the Hessian.</p>
 
   <ul style='margin-top: 12px;'>
-    <li><strong>High κ:</strong> Optimization landscape is very "elongated" → slow convergence</li>
-    <li><strong>Low κ:</strong> Optimization landscape is well-rounded → fast convergence</li>
+    <li><strong>High \(\kappa\):</strong> Optimization landscape is very "elongated" → slow convergence</li>
+    <li><strong>Low \(\kappa\):</strong> Optimization landscape is well-rounded → fast convergence</li>
   </ul>
 </div>
 
@@ -59,11 +59,11 @@ SECTIONS = [
 <p style=';'>The eigenvalues of the graph Laplacian matrix unlock powerful spectral graph theory:</p>
 
 <div class='concept-box' style='border-left: 4px solid #4f8ef7; padding: 16px; margin: 12px 0; border-radius: 6px;'>
-  <p><strong>Graph Laplacian:</strong> L = D - A, where D is the degree matrix and A is the adjacency matrix</p>
+  <p><strong>Graph Laplacian:</strong> \(L = D - A\), where D is the degree matrix and A is the adjacency matrix</p>
 
   <ul style='margin-top: 12px;'>
-    <li><strong>Smallest eigenvalue λ₀ = 0</strong> → corresponds to the graph being connected</li>
-    <li><strong>Second smallest λ₁</strong> → the algebraic connectivity (how well-connected is the graph?)</li>
+    <li><strong>Smallest eigenvalue \(\lambda_0 = 0\)</strong> → corresponds to the graph being connected</li>
+    <li><strong>Second smallest \(\lambda_1\)</strong> → the algebraic connectivity (how well-connected is the graph?)</li>
     <li><strong>Eigenvectors:</strong> Can partition the graph into communities (spectral clustering)</li>
   </ul>
 </div>
@@ -81,11 +81,11 @@ SECTIONS = [
 <p style=';'>Eigenvalues determine whether systems grow, decay, or oscillate:</p>
 
 <div class='concept-box' style='border-left: 4px solid #4f8ef7; padding: 16px; margin: 12px 0; border-radius: 6px;'>
-  <p><strong>Linear dynamical system:</strong> x(t+1) = Ax(t)</p>
+  <p><strong>Linear dynamical system:</strong> \(x(t+1) = Ax(t)\)</p>
 
   <ul style='margin-top: 12px;'>
-    <li><strong>All |λᵢ| < 1</strong> → system converges to equilibrium (stable)</li>
-    <li><strong>Any |λᵢ| > 1</strong> → system diverges (unstable)</li>
+    <li><strong>All \(|\lambda_i| < 1\)</strong> → system converges to equilibrium (stable)</li>
+    <li><strong>Any \(|\lambda_i| > 1\)</strong> → system diverges (unstable)</li>
     <li><strong>Complex eigenvalues:</strong> Cause oscillatory behavior</li>
   </ul>
 </div>

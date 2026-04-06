@@ -3,7 +3,7 @@ TITLE = "Adding Ones and Tens (Without Carrying)"
 SECTIONS = [
     {
         "title": "Why Do We Need Place Value?",
-        "body": """<p>You already know how to add small numbers: <strong>3 + 4 = 7</strong>. Easy! But what if someone gives you 23 apples, and then you get 14 more? Can you count them all on your fingers?</p>
+        "body": """<p>You already know how to add small numbers: <strong>\(3 + 4 = 7\)</strong>. Easy! But what if someone gives you 23 apples, and then you get 14 more? Can you count them all on your fingers?</p>
 <p>That's where <strong>place value</strong> saves us. Instead of counting one by one, we can organize numbers into <strong>tens</strong> and <strong>ones</strong>, and add them separately.</p>
 <div class="concept-box">
 <p><strong>Place Value is like organizing money in your wallet:</strong></p>
@@ -39,13 +39,13 @@ SECTIONS = [
   <!-- Result -->
   <text x="350" y="80" fill='#f59e0b' font-size='28' font-weight='bold'>34</text>
 </svg>
-<p><strong>So 34 = 30 + 4</strong> (or 3 tens and 4 ones)</p>
+<p><strong>So \(34 = 30 + 4\)</strong> (or 3 tens and 4 ones)</p>
 <p>Every two-digit number works the same way:</p>
 <ul>
-<li><strong>23</strong> = 2 tens and 3 ones = 20 + 3</li>
-<li><strong>45</strong> = 4 tens and 5 ones = 40 + 5</li>
-<li><strong>67</strong> = 6 tens and 7 ones = 60 + 7</li>
-<li><strong>89</strong> = 8 tens and 9 ones = 80 + 9</li>
+<li><strong>23</strong> = 2 tens and 3 ones = \(20 + 3\)</li>
+<li><strong>45</strong> = 4 tens and 5 ones = \(40 + 5\)</li>
+<li><strong>67</strong> = 6 tens and 7 ones = \(60 + 7\)</li>
+<li><strong>89</strong> = 8 tens and 9 ones = \(80 + 9\)</li>
 </ul>"""
     },
     {
@@ -93,7 +93,7 @@ SECTIONS = [
   <circle cx="515" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
   <circle cx="530" cy="145" r="6" fill='#22c55e' stroke='currentColor' stroke-width="1"/>
 </svg>
-<p><strong>30 + 7 = 37</strong></p>
+<p><strong>\(30 + 7 = 37\)</strong></p>
 <p style="margin-top: 20px;"><strong>Why this works:</strong> Addition is the same whether we add all at once or break it into pieces. Mathematicians call this the <strong>associative property</strong>. For kids, think of it like: it doesn't matter if you eat 3 apples then 4 apples, or 7 apples all at once—you still ate 7!</p>
 </div>"""
     },
@@ -132,8 +132,8 @@ SECTIONS = [
 <p><strong>Steps:</strong></p>
 <ol>
 <li>Line up the numbers by place value (tens under tens, ones under ones)</li>
-<li>Add the <strong>ones column first</strong>: 4 + 3 = 7</li>
-<li>Add the <strong>tens column</strong>: 3 + 2 = 5</li>
+<li>Add the <strong>ones column first</strong>: \(4 + 3 = 7\)</li>
+<li>Add the <strong>tens column</strong>: \(3 + 2 = 5\)</li>
 <li>Write the answer: 57</li>
 </ol>
 </div>"""
@@ -142,8 +142,8 @@ SECTIONS = [
         "title": "Practice: Adding Without Carrying",
         "body": """<p>Let's try some examples together. Remember: add the ones first, then the tens. No carrying needed yet!</p>
 <div class="mcq-group">
-  <p><strong>What is 34 + 22?</strong></p>
-  <p><em>Think: Ones: 4 + 2 = 6. Tens: 3 + 2 = 5</em></p>
+  <p><strong>What is \(34 + 22\)?</strong></p>
+  <p><em>Think: Ones: \(4 + 2 = 6\). Tens: \(3 + 2 = 5\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false">46</button>
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 4 + 2 = 6. Tens: 3 + 2 = 5. Answer: 56">56</button>
@@ -152,8 +152,8 @@ SECTIONS = [
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>What is 42 + 35?</strong></p>
-  <p><em>Think: Ones: 2 + 5 = 7. Tens: 4 + 3 = 7</em></p>
+  <p><strong>What is \(42 + 35\)?</strong></p>
+  <p><em>Think: Ones: \(2 + 5 = 7\). Tens: \(4 + 3 = 7\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="false">67</button>
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 2 + 5 = 7. Tens: 4 + 3 = 7. Answer: 77">77</button>
@@ -162,8 +162,8 @@ SECTIONS = [
   <div class="mcq-feedback"></div>
 </div>
 <div class="mcq-group">
-  <p><strong>What is 23 + 14?</strong></p>
-  <p><em>Think: Ones: 3 + 4 = 7. Tens: 2 + 1 = 3</em></p>
+  <p><strong>What is \(23 + 14\)?</strong></p>
+  <p><em>Think: Ones: \(3 + 4 = 7\). Tens: \(2 + 1 = 3\)</em></p>
   <div class="mcq-options">
     <button class="mcq-option" data-correct="true" data-explanation="Ones: 3 + 4 = 7. Tens: 2 + 1 = 3. Answer: 37">37</button>
     <button class="mcq-option" data-correct="false">47</button>

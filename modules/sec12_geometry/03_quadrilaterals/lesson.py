@@ -15,7 +15,7 @@ SECTIONS = [
 <div class="success-box">
 <p>Draw a diagonal across the quadrilateral. This divides it into 2 triangles.</p>
 <p>Each triangle has angles that sum to 180°.</p>
-<p>Total: 180° + 180° = 360°</p>
+<p>Total: \(180° + 180° = 360°\)</p>
 
 <svg width="100%" height="200" viewBox="0 0 500 200" class="formula-box">
   <!-- Quadrilateral -->
@@ -45,9 +45,9 @@ SECTIONS = [
 <div class="warning-box">
 <p><strong>A quadrilateral has angles 70°, 85°, 95°, and x. Find x.</strong></p>
 <div class="worked-example">
-<p>70° + 85° + 95° + x = 360°</p>
-<p>250° + x = 360°</p>
-<p><strong>x = 110°</strong></p>
+<p>\(70° + 85° + 95° + x = 360°\)</p>
+<p>\(250° + x = 360°\)</p>
+<p><strong>\(x = 110°\)</strong></p>
 </div>
 </div>
 """

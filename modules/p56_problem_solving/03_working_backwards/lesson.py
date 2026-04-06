@@ -142,12 +142,12 @@ SECTIONS = [
 
 <ol>
 <li>Final amount: 85 dollars</li>
-<li>Undo "earned 25" (subtract 25): 85 - 25 = 60</li>
-<li>Undo "spent 10" (add 10): 60 + 10 = 70</li>
+<li>Undo "earned 25" (subtract 25): \(85 - 25 = 60\)</li>
+<li>Undo "spent 10" (add 10): \(60 + 10 = 70\)</li>
 <li>Starting amount: 70 dollars</li>
 </ol>
 
-<p><strong>Check forward:</strong> 70 - 10 = 60, then 60 + 25 = 85 ✓</p>
+<p><strong>Check forward:</strong> \(70 - 10 = 60\), then \(60 + 25 = 85\) ✓</p>
 </div>
 
 <div class="worked-example">
@@ -165,12 +165,12 @@ SECTIONS = [
 <p><strong>Working backward (reverse order, opposite operations):</strong></p>
 <ul>
 <li>Start with final: 28</li>
-<li>Undo "add 7" (subtract 7): 28 - 7 = 21</li>
-<li>Undo "multiply by 3" (divide by 3): 21 ÷ 3 = 7</li>
+<li>Undo "add 7" (subtract 7): \(28 - 7 = 21\)</li>
+<li>Undo "multiply by 3" (divide by 3): \(21 \div 3 = 7\)</li>
 <li>Original number: 7</li>
 </ul>
 
-<p><strong>Check:</strong> 7 × 3 = 21, then 21 + 7 = 28 ✓</p>
+<p><strong>Check:</strong> \(7 \times 3 = 21\), then \(21 + 7 = 28\) ✓</p>
 </div>
 """
     },
@@ -284,16 +284,16 @@ SECTIONS = [
 <p><strong>Execute:</strong>
 <ul>
 <li>Start with result: 50</li>
-<li>Undo add 10 (subtract): 50 - 10 = 40</li>
-<li>Undo double (divide by 2): 40 ÷ 2 = 20</li>
+<li>Undo add 10 (subtract): \(50 - 10 = 40\)</li>
+<li>Undo double (divide by 2): \(40 \div 2 = 20\)</li>
 <li>Original number: 20</li>
 </ul>
 
 <p><strong>Check:</strong>
 <ul>
 <li>Start with 20</li>
-<li>Double: 20 × 2 = 40</li>
-<li>Add 10: 40 + 10 = 50 ✓ CORRECT!</li>
+<li>Double: \(20 \times 2 = 40\)</li>
+<li>Add 10: \(40 + 10 = 50\) ✓ CORRECT!</li>
 </ul>
 </div>
 """

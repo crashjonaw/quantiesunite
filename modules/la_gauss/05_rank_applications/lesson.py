@@ -45,11 +45,11 @@ All rows are multiples of the first row (linearly dependent).</pre>
         <div class='concept-box'>
         <p><strong>Key properties of rank:</strong></p>
         <ul>
-        <li>rank(A) ≤ min(m, n) for an m × n matrix (bounded by both dimensions).</li>
-        <li>rank(A) = rank(Aᵀ) (rank of transpose equals rank of original).</li>
-        <li>rank(A) = n (full column rank) ⟺ columns of A are linearly independent.</li>
-        <li>rank(A) = m (full row rank) ⟺ rows of A are linearly independent.</li>
-        <li>For a square n × n matrix: rank(A) = n ⟺ A is invertible (det(A) ≠ 0).</li>
+        <li>\(\text{rank}(A) \leq \min(m, n)\) for an \(m \times n\) matrix (bounded by both dimensions).</li>
+        <li>\(\text{rank}(A) = \text{rank}(A^T)\) (rank of transpose equals rank of original).</li>
+        <li>\(\text{rank}(A) = n\) (full column rank) \(\iff\) columns of \(A\) are linearly independent.</li>
+        <li>\(\text{rank}(A) = m\) (full row rank) \(\iff\) rows of \(A\) are linearly independent.</li>
+        <li>For a square \(n \times n\) matrix: \(\text{rank}(A) = n \iff A\) is invertible (\(\det(A) \neq 0\)).</li>
         </ul>
         </div>
 
@@ -67,9 +67,9 @@ All rows are multiples of the first row (linearly dependent).</pre>
         <p><strong>Fundamental Theorem for Systems Ax = b:</strong></p>
         <p>Consider a system of m equations in n unknowns Ax = b. Let A be the coefficient matrix and [A|b] be the augmented matrix.</p>
         <ul>
-        <li><strong>Inconsistent (no solution):</strong> rank(A) < rank([A|b]). The augmented matrix has an additional rank due to the right-hand side, indicating a contradiction.</li>
-        <li><strong>Consistent with unique solution:</strong> rank(A) = rank([A|b]) = n. All variables are pivots.</li>
-        <li><strong>Consistent with infinitely many solutions:</strong> rank(A) = rank([A|b]) < n. Some variables are free (n − rank(A) free variables).</li>
+        <li><strong>Inconsistent (no solution):</strong> \(\text{rank}(A) < \text{rank}([A|b])\). The augmented matrix has an additional rank due to the right-hand side, indicating a contradiction.</li>
+        <li><strong>Consistent with unique solution:</strong> \(\text{rank}(A) = \text{rank}([A|b]) = n\). All variables are pivots.</li>
+        <li><strong>Consistent with infinitely many solutions:</strong> \(\text{rank}(A) = \text{rank}([A|b]) < n\). Some variables are free (\(n - \text{rank}(A)\) free variables).</li>
         </ul>
         </div>
 
@@ -151,8 +151,8 @@ Solution: (x, y, z) = (4 − 2s − t, s, t) for s, t ∈ ℝ.</pre>
         <div class='concept-box'>
         <p><strong>Rank-nullity theorem (for consistent systems):</strong></p>
         <ul>
-        <li>If Ax = b is consistent, the solution set is an <strong>affine subspace</strong> of dimension n − rank(A).</li>
-        <li>For homogeneous systems Ax = 0, the solution set (nullspace of A) is a <strong>linear subspace</strong> of dimension n − rank(A), denoted nullity(A) = n − rank(A).</li>
+        <li>If \(Ax = b\) is consistent, the solution set is an <strong>affine subspace</strong> of dimension \(n - \text{rank}(A)\).</li>
+        <li>For homogeneous systems \(Ax = 0\), the solution set (nullspace of \(A\)) is a <strong>linear subspace</strong> of dimension \(n - \text{rank}(A)\), denoted \(\text{nullity}(A) = n - \text{rank}(A)\).</li>
         </ul>
         </div>
 
@@ -176,7 +176,7 @@ Nullspace: span{(−2, 1, 0, 0), (−3, 0, 1, 0), (−4, 0, 0, 1)}</pre>
         </div>
 
         <div class='success-box'>
-        <p><strong>Dimension formula:</strong> rank(A) + nullity(A) = n. This fundamental identity relates the rank and the dimension of the nullspace.</p>
+        <p><strong>Dimension formula:</strong> \(\text{rank}(A) + \text{nullity}(A) = n\). This fundamental identity relates the rank and the dimension of the nullspace.</p>
         </div>
         """
     },
@@ -209,7 +209,7 @@ x + y = 2
         </div>
 
         <div class='worked-example'>
-        <p><strong>Ill-conditioned systems:</strong> Some matrices are inherently sensitive to perturbations (small changes in input cause large changes in output). The condition number κ(A) measures this sensitivity. For ill-conditioned systems, iterative refinement is used:</p>
+        <p><strong>Ill-conditioned systems:</strong> Some matrices are inherently sensitive to perturbations (small changes in input cause large changes in output). The condition number \(\kappa(A)\) measures this sensitivity. For ill-conditioned systems, iterative refinement is used:</p>
         <pre class='code-block'>1. Compute approximate solution x₀ via Gaussian elimination
 2. Compute residual r = b − Ax₀
 3. Solve Ad = r for correction d
@@ -218,7 +218,7 @@ x + y = 2
         </div>
 
         <div class='success-box'>
-        <p><strong>Complexity summary:</strong> Gaussian elimination is O(n³) in time and O(n²) in space. For very large systems (n > 10,000) or special structure (sparsity), specialized iterative methods (conjugate gradient, GMRES) or preconditioned solvers are preferred.</p>
+        <p><strong>Complexity summary:</strong> Gaussian elimination is \(O(n^3)\) in time and \(O(n^2)\) in space. For very large systems (\(n > 10{,}000\)) or special structure (sparsity), specialized iterative methods (conjugate gradient, GMRES) or preconditioned solvers are preferred.</p>
         </div>
         """
     },
@@ -228,7 +228,7 @@ x + y = 2
         <p>When a system Ax = b has more equations than unknowns (m > n) and is inconsistent, we seek the best approximate solution. Gaussian elimination can be extended to solve this.</p>
 
         <div class='concept-box'>
-        <p><strong>Least squares problem:</strong> Given an overdetermined system Ax = b (m > n), find x that minimizes the residual ||b − Ax||². The solution x* is given by the <strong>normal equations</strong>:</p>
+        <p><strong>Least squares problem:</strong> Given an overdetermined system \(Ax = b\) (\(m > n\)), find \(x\) that minimizes the residual \(\|b - Ax\|^2\). The solution \(x^*\) is given by the <strong>normal equations</strong>:</p>
         <pre class='code-block'>Aᵀ Ax* = Aᵀb</pre>
         </div>
 

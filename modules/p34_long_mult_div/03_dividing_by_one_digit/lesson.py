@@ -9,12 +9,12 @@ SECTIONS = [
         <h3>Two Ways to Think About Division</h3>
         <div class='concept-box'>
             <p><strong>Equal Sharing:</strong> 24 cookies shared equally among 4 children. How many does each get?</p>
-            <p>Answer: 24 ÷ 4 = 6 cookies each.</p>
+            <p>Answer: \\(24 \\div 4 = 6\\) cookies each.</p>
         </div>
 
         <div class='concept-box'>
             <p><strong>Grouping:</strong> How many groups of 4 can we make from 24 cookies?</p>
-            <p>Answer: 24 ÷ 4 = 6 groups.</p>
+            <p>Answer: \\(24 \\div 4 = 6\\) groups.</p>
         </div>
 
         <h3>Division Vocabulary</h3>
@@ -45,7 +45,7 @@ SECTIONS = [
 
         <p><strong>Step 2: Divide the first digit (8 ÷ 4)</strong></p>
         <div class='worked-example'>
-            <p>8 ÷ 4 = 2 with no remainder. Write 2 above the 8.</p>
+            <p>\\(8 \\div 4 = 2\\) with no remainder. Write 2 above the 8.</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
               &nbsp;&nbsp;2<br>
               4 ) 84
@@ -54,14 +54,14 @@ SECTIONS = [
 
         <p><strong>Step 3: Divide the next digit (4 ÷ 4)</strong></p>
         <div class='worked-example'>
-            <p>4 ÷ 4 = 1 with no remainder. Write 1 above the 4.</p>
+            <p>\\(4 \\div 4 = 1\\) with no remainder. Write 1 above the 4.</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
               &nbsp;&nbsp;21<br>
               4 ) 84
             </p>
         </div>
 
-        <p style='font-weight: bold;'>84 ÷ 4 = 21</p>
+        <p style='font-weight: bold;'>\\(84 \\div 4 = 21\\)</p>
 
         <h3>When There's a Remainder</h3>
 
@@ -71,10 +71,10 @@ SECTIONS = [
               &nbsp;&nbsp;21 R3<br>
               4 ) 87
             </p>
-            <p>Step 1: 8 ÷ 4 = 2. Write 2.</p>
-            <p>Step 2: We have 7 left. 7 ÷ 4 = 1 remainder 3. Write 1, and R3.</p>
-            <p><strong>87 ÷ 4 = 21 R3</strong></p>
-            <p><em>Check: (21 × 4) + 3 = 84 + 3 = 87 ✓</em></p>
+            <p>Step 1: \\(8 \\div 4 = 2\\). Write 2.</p>
+            <p>Step 2: We have 7 left. \\(7 \\div 4 = 1\\) remainder 3. Write 1, and R3.</p>
+            <p><strong>\\(87 \\div 4 = 21\\) R3</strong></p>
+            <p><em>Check: \\((21 \\times 4) + 3 = 84 + 3 = 87\\) ✓</em></p>
         </div>
         """
     },
@@ -92,7 +92,7 @@ SECTIONS = [
 
         <p><strong>Step 2: Divide the first two digits (45 ÷ 6)</strong></p>
         <div class='worked-example'>
-            <p>45 ÷ 6 = 7 remainder 3. Write 7 above the 5.</p>
+            <p>\\(45 \\div 6 = 7\\) remainder 3. Write 7 above the 5.</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
               &nbsp;&nbsp;&nbsp;&nbsp;7<br>
               6 ) 456
@@ -103,16 +103,16 @@ SECTIONS = [
         <p><strong>Step 3: Bring down the next digit (3) and continue</strong></p>
         <div class='worked-example'>
             <p>We now have 36 (the 3 remainder, plus the brought-down 6).</p>
-            <p>36 ÷ 6 = 6 exactly. Write 6.</p>
+            <p>\\(36 \\div 6 = 6\\) exactly. Write 6.</p>
             <p style='text-align: center; font-family: monospace; font-size: 1.1em;'>
               &nbsp;&nbsp;&nbsp;&nbsp;76<br>
               6 ) 456
             </p>
         </div>
 
-        <p style='font-weight: bold;'>456 ÷ 6 = 76</p>
+        <p style='font-weight: bold;'>\\(456 \\div 6 = 76\\)</p>
 
-        <p><em>Check: 76 × 6 = 456 ✓</em></p>
+        <p><em>Check: \\(76 \\times 6 = 456\\) ✓</em></p>
         """
     },
     {
@@ -138,8 +138,8 @@ SECTIONS = [
         <h3>Always Check Your Answer</h3>
         <div class='success-box'>
             <p>Use this formula: <strong>(quotient × divisor) + remainder = dividend</strong></p>
-            <p>For 456 ÷ 6 = 76: Check → (76 × 6) + 0 = 456 ✓</p>
-            <p>For 87 ÷ 4 = 21 R3: Check → (21 × 4) + 3 = 84 + 3 = 87 ✓</p>
+            <p>For \\(456 \\div 6 = 76\\): Check → \\((76 \\times 6) + 0 = 456\\) ✓</p>
+            <p>For \\(87 \\div 4 = 21\\) R3: Check → \\((21 \\times 4) + 3 = 84 + 3 = 87\\) ✓</p>
         </div>
         """
     }

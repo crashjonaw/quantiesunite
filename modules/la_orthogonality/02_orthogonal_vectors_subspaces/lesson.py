@@ -72,20 +72,18 @@ Yes, this is orthonormal!</pre>
 
         <div class='worked-example'>
         <p><strong>Example:</strong> 2D rotation matrix by angle $\\theta$:</p>
-        <pre>Q = [cos(θ)  -sin(θ)]
-    [sin(θ)   cos(θ)]
+        <pre>\(Q = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}\)
 
-Columns: u₁ = [cos(θ), sin(θ)], u₂ = [-sin(θ), cos(θ)]
+Columns: \(\mathbf{u}_1 = [\cos\theta, \sin\theta]\), \(\mathbf{u}_2 = [-\sin\theta, \cos\theta]\)
 
 Check orthonormality:
-u₁ · u₂ = -cos(θ)sin(θ) + sin(θ)cos(θ) = 0 ✓
-||u₁|| = √(cos²(θ) + sin²(θ)) = 1 ✓
-||u₂|| = √(sin²(θ) + cos²(θ)) = 1 ✓
+\(\mathbf{u}_1 \cdot \mathbf{u}_2 = -\cos\theta\sin\theta + \sin\theta\cos\theta = 0\) ✓
+\(\|\mathbf{u}_1\| = \sqrt{\cos^2\theta + \sin^2\theta} = 1\) ✓
+\(\|\mathbf{u}_2\| = \sqrt{\sin^2\theta + \cos^2\theta} = 1\) ✓
 
-Inverse: Q⁻¹ = Q^T = [cos(θ)   sin(θ)]
-                    [-sin(θ)  cos(θ)]
+Inverse: \(Q^{-1} = Q^T = \begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix}\)
 
-(rotation by -θ)</pre>
+(rotation by \(-\theta\))</pre>
         </div>
         """
     },

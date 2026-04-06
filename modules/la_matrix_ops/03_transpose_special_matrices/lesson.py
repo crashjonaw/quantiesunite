@@ -69,7 +69,7 @@ K = [0   2  -3]  is skew-symmetric because Kᵀ = [0  -2   3]  = -K
         </ul>
 
         <div class="success-box">
-        <p><strong>Why these forms matter:</strong> These special structures enable efficient algorithms. Triangular systems are easy to solve (O(n²) instead of O(n³)), and orthogonal matrices preserve geometry (distances, angles).</p>
+        <p><strong>Why these forms matter:</strong> These special structures enable efficient algorithms. Triangular systems are easy to solve (\(O(n^2)\) instead of \(O(n^3)\)), and orthogonal matrices preserve geometry (distances, angles).</p>
         </div>
 
         <p><strong>Useful identities:</strong></p>

@@ -7,7 +7,7 @@ SECTIONS = [
     },
     {
         "title": "What Does Average Mean?",
-        "body": '<h3>The Sharing Idea</h3><p>Think of average as <strong>"sharing equally"</strong>.</p><div class="worked-example"><p><strong>Example:</strong> Three friends have 5, 7, and 9 sweets.</p><p>If they pool their sweets and share equally:</p><ul><li>Total sweets = 5 + 7 + 9 = 21</li><li>Number of friends = 3</li><li>Each friend gets = 21 ÷ 3 = <strong>7 sweets</strong></li><li><strong>Average = 7</strong></li></ul></div><div class="success-box">After sharing equally, each person would have the same amount (7). This equal amount is the <strong>average</strong>.</div>'
+        "body": '<h3>The Sharing Idea</h3><p>Think of average as <strong>"sharing equally"</strong>.</p><div class="worked-example"><p><strong>Example:</strong> Three friends have 5, 7, and 9 sweets.</p><p>If they pool their sweets and share equally:</p><ul><li>Total sweets = \(5 + 7 + 9 = 21\)</li><li>Number of friends = 3</li><li>Each friend gets = \(21 \div 3 =\) <strong>7 sweets</strong></li><li><strong>Average = 7</strong></li></ul></div><div class="success-box">After sharing equally, each person would have the same amount (7). This equal amount is the <strong>average</strong>.</div>'
     },
     {
         "title": "Visual Understanding",
@@ -15,7 +15,7 @@ SECTIONS = [
     },
     {
         "title": "The Average Formula",
-        "body": '<h3>How to Calculate Average</h3><p>The formula is simple:</p><div class="concept-box" style="text-align: center; font-size: 18px; padding: 15px;"><strong>Average = Sum of all values ÷ Number of values</strong></div><p>In short: <strong>Average = Total ÷ Count</strong></p><h3>Example with Test Scores</h3><p>Back to our first example: test scores 70, 85, 90, 75, 80</p><div class="worked-example"><ul><li><strong>Step 1:</strong> Add all scores = 70 + 85 + 90 + 75 + 80 = 425</li><li><strong>Step 2:</strong> Count how many scores = 5</li><li><strong>Step 3:</strong> Divide = 425 ÷ 5 = <strong>85</strong></li></ul><p>The average (or mean) test score is <strong>85</strong>.</p></div>'
+        "body": '<h3>How to Calculate Average</h3><p>The formula is simple:</p><div class="concept-box" style="text-align: center; font-size: 18px; padding: 15px;"><strong>Average = Sum of all values \(\div\) Number of values</strong></div><p>In short: <strong>Average = Total \(\div\) Count</strong></p><h3>Example with Test Scores</h3><p>Back to our first example: test scores 70, 85, 90, 75, 80</p><div class="worked-example"><ul><li><strong>Step 1:</strong> Add all scores = \(70 + 85 + 90 + 75 + 80 = 425\)</li><li><strong>Step 2:</strong> Count how many scores = 5</li><li><strong>Step 3:</strong> Divide = \(425 \div 5 =\) <strong>85</strong></li></ul><p>The average (or mean) test score is <strong>85</strong>.</p></div>'
     },
     {
         "title": "Types of Averages",

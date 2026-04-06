@@ -133,10 +133,10 @@ SECTIONS = [
   <div class="worked-example">
     <h4>Examples:</h4>
     <p><strong>Example 1:</strong> \\(2 \\times \\frac{3}{4}\\)</p>
-    <p>$$\\frac{2}{1} \\times \\frac{3}{4} = \\frac{6}{4} = \\frac{3}{2} = 1\\frac{1}{2}\\)</p>
+    <p>$$\\frac{2}{1} \\times \\frac{3}{4} = \\frac{6}{4} = \\frac{3}{2} = 1\\frac{1}{2}$$</p>
 
     <p><strong>Example 2:</strong> \\(5 \\times \\frac{1}{3}\\)</p>
-    <p>$$\\frac{5}{1} \\times \\frac{1}{3} = \\frac{5}{3} = 1\\frac{2}{3}\\)</p>
+    <p>$$\\frac{5}{1} \\times \\frac{1}{3} = \\frac{5}{3} = 1\\frac{2}{3}$$</p>
   </div>
 </div>"""
     },
@@ -171,7 +171,7 @@ SECTIONS = [
     <p>Look for common factors:</p>
     <p>• 6 and 9 share a factor of 3: \\(\\frac{6}{9}\\) simplifies to \\(\\frac{2}{3}\\)</p>
     <p>• 7 and 14 share a factor of 7: \\(\\frac{7}{14}\\) simplifies to \\(\\frac{1}{2}\\)</p>
-    <p>$$\\frac{6}{7} \\times \\frac{14}{9} = \\frac{\\cancel{6}2}{\\cancel{7}1} \\times \\frac{\\cancel{14}2}{\\cancel{9}3} = \\frac{2 \\times 2}{1 \\times 3} = \\frac{4}{3} = 1\\frac{1}{3}\\)</p>
+    <p>$$\\frac{6}{7} \\times \\frac{14}{9} = \\frac{\\cancel{6}2}{\\cancel{7}1} \\times \\frac{\\cancel{14}2}{\\cancel{9}3} = \\frac{2 \\times 2}{1 \\times 3} = \\frac{4}{3} = 1\\frac{1}{3}$$</p>
   </div>
 
   <div class="success-box">

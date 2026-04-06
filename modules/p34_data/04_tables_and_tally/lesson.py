@@ -196,9 +196,9 @@ SECTIONS = [
 
 <p><strong>To count:</strong></p>
 <ol>
-  <li>Count complete groups of 5: Three groups = 3 × 5 = 15</li>
+  <li>Count complete groups of 5: Three groups = \\(3 \\times 5 = 15\\)</li>
   <li>Count remaining marks: 2 marks</li>
-  <li>Total: 15 + 2 = 17</li>
+  <li>Total: \\(15 + 2 = 17\\)</li>
 </ol>
 
 <p><strong>Answer: 17 items</strong></p>

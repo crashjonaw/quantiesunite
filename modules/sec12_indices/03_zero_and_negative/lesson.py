@@ -40,12 +40,12 @@ SECTIONS = [
   <td style="padding: 10px; color: var(--success);">1</td>
 </tr>
 <tr class="worked-example">
-  <td style="padding: 10px;">\\(5^2 ÷ 5^2\\)</td>
+  <td style="padding: 10px;">\\(5^2 \\div 5^2\\)</td>
   <td style="padding: 10px;">\\(5^{2-2} = 5^0\\)</td>
   <td style="padding: 10px; color: var(--success);">1</td>
 </tr>
 <tr class="worked-example">
-  <td style="padding: 10px;">\\(a^n ÷ a^n\\)</td>
+  <td style="padding: 10px;">\\(a^n \\div a^n\\)</td>
   <td style="padding: 10px;">\\(a^{n-n} = a^0\\)</td>
   <td style="padding: 10px; color: var(--success);">1</td>
 </tr>
@@ -157,7 +157,7 @@ SECTIONS = [
 <h4>All Laws Work with Negative and Zero Indices</h4>
 <ul>
 <li>\\(a^m \\times a^n = a^{m+n}\\) ✓ (even if m or n is negative or zero)</li>
-<li>\\(a^m ÷ a^n = a^{m-n}\\) ✓ (even if m or n is negative or zero)</li>
+<li>\\(a^m \\div a^n = a^{m-n}\\) ✓ (even if m or n is negative or zero)</li>
 <li>\\((a^m)^n = a^{mn}\\) ✓ (even if m or n is negative or zero)</li>
 </ul>
 </div>

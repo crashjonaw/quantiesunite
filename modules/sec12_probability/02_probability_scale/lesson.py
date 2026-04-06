@@ -30,8 +30,8 @@ SECTIONS = [
 <h4>Probability Examples on the Scale</h4>
 <ul>
 <li><strong>P(rolling a 7 on a standard die):</strong> 0 (impossible — a die only goes 1-6)</li>
-<li><strong>P(rolling a 1 on a fair die):</strong> 1/6 ≈ 0.167 (unlikely, but possible)</li>
-<li><strong>P(rolling an even number):</strong> 1/2 = 0.5 (even chance)</li>
+<li><strong>P(rolling a 1 on a fair die):</strong> \(\frac{1}{6} \approx 0.167\) (unlikely, but possible)</li>
+<li><strong>P(rolling an even number):</strong> \(\frac{1}{2} = 0.5\) (even chance)</li>
 <li><strong>P(rolling 1, 2, 3, 4, 5, or 6):</strong> 1 (certain — must happen)</li>
 <li><strong>P(coin landing on heads or tails):</strong> 1 (certain)</li>
 </ul>
@@ -62,7 +62,7 @@ SECTIONS = [
 <p><strong>A bag contains:</strong> 3 red, 7 other-colored balls (total 10)</p>
 <p><strong>P(red):</strong> \\(\\frac{3}{10} = 0.3\\)</p>
 <p><strong>P(NOT red):</strong> \\(1 - 0.3 = 0.7 = \\frac{7}{10}\\)</p>
-<p><strong>This makes sense:</strong> If 3 are red, then 7 are not red. 7/10 = 0.7</p>
+<p><strong>This makes sense:</strong> If 3 are red, then 7 are not red. \(\frac{7}{10} = 0.7\)</p>
 </div>
 
 <div class="worked-example">
@@ -90,8 +90,8 @@ SECTIONS = [
 <p><strong>News report:</strong> "30% chance of rain tomorrow"</p>
 <p><strong>What this means:</strong></p>
 <ul>
-<li>P(rain) = 0.3 or 30%</li>
-<li>P(no rain) = 1 − 0.3 = 0.7 or 70%</li>
+<li>\(P(\text{rain}) = 0.3\) or \(30\%\)</li>
+<li>\(P(\text{no rain}) = 1 - 0.3 = 0.7\) or \(70\%\)</li>
 </ul>
 <p><strong>Conclusion:</strong> It's more likely NOT to rain. You probably don't need an umbrella, but keep one just in case!</p>
 </div>
@@ -119,8 +119,8 @@ SECTIONS = [
 <h4>Important: Probability ≠ Guarantee</h4>
 <p>Just because something has a high probability doesn't mean it will happen. And just because it has a low probability doesn't mean it can't happen!</p>
 <ul>
-<li>Even if P = 0.99 (99% likely), the 1% can still occur</li>
-<li>Even if P = 0.01 (1% likely), it might still happen</li>
+<li>Even if \(P = 0.99\) (99% likely), the 1% can still occur</li>
+<li>Even if \(P = 0.01\) (1% likely), it might still happen</li>
 <li>Probability describes the long-run frequency over many trials</li>
 </ul>
 </div>"""
@@ -139,14 +139,14 @@ SECTIONS = [
 <div class="worked-example">
 <h4>Problem 2: Using the Complement Rule</h4>
 <p><strong>Question:</strong> A student passes a test with probability 0.8. What is the probability they fail?</p>
-<p><strong>Answer:</strong> P(fail) = 1 − 0.8 = 0.2 or 20%</p>
+<p><strong>Answer:</strong> \(P(\text{fail}) = 1 - 0.8 = 0.2\) or \(20\%\)</p>
 <p><strong>Explanation:</strong> The complement of passing is failing. Use P(not A) = 1 − P(A).</p>
 </div>
 
 <div class="worked-example">
 <h4>Problem 3: Real-World Application</h4>
 <p><strong>Question:</strong> The probability your flight is on time is 0.92. What is the probability it's delayed?</p>
-<p><strong>Answer:</strong> P(delayed) = 1 − 0.92 = 0.08 or 8%</p>
+<p><strong>Answer:</strong> \(P(\text{delayed}) = 1 - 0.92 = 0.08\) or \(8\%\)</p>
 <p><strong>Explanation:</strong> Delayed is the complement of on-time. Calculate using 1 − P(on time).</p>
 </div>
 

@@ -17,7 +17,7 @@ SECTIONS = [
 <h3>The Number Line from 0 to 20</h3>
 <p>Here's a number line showing all the numbers from 0 to 20:</p>
 
-<svg viewBox="-35 0 470 100" style="width: 100%; height: auto; margin: 20px 0; background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 0;">
+<svg viewBox="-35 0 480 100" style="width: 100%; height: auto; margin: 20px 0; background: rgba(255,255,255,0.03); border-radius: 8px; padding: 10px 0;">
   <!-- Main line -->
   <line x1="10" y1="50" x2="410" y2="50" stroke='#4169E1' stroke-width="3"/>
 

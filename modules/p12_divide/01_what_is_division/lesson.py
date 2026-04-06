@@ -8,9 +8,9 @@ SECTIONS = [
         "body": """<p>Division is the way we <strong>share something equally</strong> among people or groups. When we divide, everyone gets the same amount!</p>
 <p>Imagine you have 12 cookies and 3 friends. You want each friend to get the same number of cookies. How many should each friend get?</p>
 <div class="concept-box">
-  <strong>Division Symbol:</strong> The ÷ symbol means "divide" or "share equally"
+  <strong>Division Symbol:</strong> The \(\div\) symbol means "divide" or "share equally"
 </div>
-<p>When we write <strong>12 ÷ 3 = 4</strong>, we're saying: "12 things divided equally among 3 people gives each person 4 things."</p>
+<p>When we write <strong>\(12 \div 3 = 4\)</strong>, we're saying: "12 things divided equally among 3 people gives each person 4 things."</p>
 <svg viewBox="0 0 500 200" style="width:100%;max-width:500px;height:auto;display:block;margin:16px auto;">
   <text x="250" y="25" text-anchor='middle' fill='currentColor' font-size='16' font-weight='bold'>12 cookies shared equally among 3 friends</text>
 
@@ -45,7 +45,7 @@ SECTIONS = [
 <div class="worked-example">
   <strong>\\(12 \\div 3 = 4\\)</strong><br><br>
   <strong>12</strong> = the total amount we're dividing (the dividend)<br>
-  <strong>÷</strong> = the division symbol<br>
+  <strong>\(\div\)</strong> = the division symbol<br>
   <strong>3</strong> = the number of groups or people (the divisor)<br>
   <strong>4</strong> = the amount each group gets (the quotient)
 </div>
@@ -148,13 +148,13 @@ SECTIONS = [
 <ol>
   <li>Total amount: 15 apples</li>
   <li>Number of friends: 5</li>
-  <li>We write: 15 ÷ 5 = ?</li>
+  <li>We write: \(15 \div 5 = ?\)</li>
   <li>Each friend gets: 3 apples</li>
 </ol>
 <div class="success-box">
-  <strong>Answer:</strong> 15 ÷ 5 = 3<br>
+  <strong>Answer:</strong> \(15 \div 5 = 3\)<br>
   Each friend gets 3 apples.
 </div>
-<p><strong>Try this yourself:</strong> If you have 20 pencils and share them equally among 4 students, how many pencils does each student get? (Hint: Write it as a division problem: 20 ÷ 4 = ?)</p>"""
+<p><strong>Try this yourself:</strong> If you have 20 pencils and share them equally among 4 students, how many pencils does each student get? (Hint: Write it as a division problem: \(20 \div 4 = ?\))</p>"""
     }
 ]

@@ -35,12 +35,35 @@
 
   svg.call(zoom);
 
-  // ── Glow filter for completed nodes ─────────────────────────────────────────
-  const glowFilter = svg.append("defs").append("filter").attr("id", "glow");
-  glowFilter.append("feGaussianBlur").attr("stdDeviation", "4").attr("result", "blur");
+  // ── Glow effects for completed nodes ────────────────────────────────────────
+  const defs0 = svg.append("defs");
+
+  // Radial gradient: green center fading outward
+  const completedGlow = defs0.append("radialGradient")
+    .attr("id", "completed-glow")
+    .attr("cx", "50%").attr("cy", "50%").attr("r", "50%");
+  completedGlow.append("stop").attr("offset", "0%").attr("stop-color", "#22c55e").attr("stop-opacity", 0.5);
+  completedGlow.append("stop").attr("offset", "55%").attr("stop-color", "#16a34a").attr("stop-opacity", 0.25);
+  completedGlow.append("stop").attr("offset", "100%").attr("stop-color", "#15803d").attr("stop-opacity", 0);
+
+  // Soft blur filter for the outer aura
+  const glowFilter = defs0.append("filter")
+    .attr("id", "glow")
+    .attr("x", "-80%").attr("y", "-80%")
+    .attr("width", "260%").attr("height", "260%");
+  glowFilter.append("feGaussianBlur").attr("stdDeviation", "6").attr("result", "blur");
   glowFilter.append("feMerge").selectAll("feMergeNode")
     .data(["blur", "SourceGraphic"]).join("feMergeNode")
     .attr("in", d => d);
+
+  // Gradient stroke for the ring
+  const ringGrad = defs0.append("linearGradient")
+    .attr("id", "completed-ring-grad")
+    .attr("x1", "0%").attr("y1", "0%")
+    .attr("x2", "100%").attr("y2", "100%");
+  ringGrad.append("stop").attr("offset", "0%").attr("stop-color", "#4ade80");
+  ringGrad.append("stop").attr("offset", "50%").attr("stop-color", "#22c55e");
+  ringGrad.append("stop").attr("offset", "100%").attr("stop-color", "#15803d");
 
   // ── Arrow marker ────────────────────────────────────────────────────────────
   svg.append("defs").append("marker")
@@ -124,23 +147,29 @@
     .on("mouseenter", (event, d) => { if (!selectedNode) handleHover(d, true); })
     .on("mouseleave", (event, d) => { if (!selectedNode) handleHover(d, false); });
 
-  // Glowing green ring for completed nodes (rendered behind the main circle)
+  // ── Completed node: soft radial aura (outermost, behind everything) ──
   nodeSel.filter(d => d.complete)
     .append("circle")
-    .attr("r", 26)
-    .attr("fill", "none")
-    .attr("stroke", "#22c55e")
-    .attr("stroke-width", 3)
-    .attr("stroke-opacity", 0.5)
-    .attr("class", "node-glow")
+    .attr("r", 32)
+    .attr("fill", "url(#completed-glow)")
+    .attr("class", "node-aura")
     .style("filter", "url(#glow)");
+
+  // ── Completed node: gradient ring (sits flush around the node) ──
+  nodeSel.filter(d => d.complete)
+    .append("circle")
+    .attr("r", 22)
+    .attr("fill", "none")
+    .attr("stroke", "url(#completed-ring-grad)")
+    .attr("stroke-width", 3)
+    .attr("class", "node-glow");
 
   // Node circles
   nodeSel.append("circle")
-    .attr("r", d => d.complete ? 20 : 16)
+    .attr("r", d => d.complete ? 19 : 16)
     .attr("fill", d => d.color)
-    .attr("stroke", d => d.complete ? "#22c55e" : (d.unlocked ? d.color : "#666"))
-    .attr("stroke-width", d => d.complete ? 3 : 2)
+    .attr("stroke", d => d.complete ? "url(#completed-ring-grad)" : (d.unlocked ? d.color : "#666"))
+    .attr("stroke-width", d => d.complete ? 2.5 : 2)
     .attr("fill-opacity", d => d.unlocked ? 1.0 : 0.35)
     .attr("class", "node-circle");
 
@@ -162,21 +191,24 @@
     .attr("class", "node-label")
     .text(d => truncate(d.name, 18));
 
-  // Completion ring
+  // Completion checkmark badge
   nodeSel.filter(d => d.complete)
     .append("circle")
-    .attr("r", 8)
-    .attr("cx", 12)
-    .attr("cy", -12)
-    .attr("fill", "#22c55e")
-    .attr("stroke", "#111")
-    .attr("stroke-width", 1);
+    .attr("r", 7)
+    .attr("cx", 13)
+    .attr("cy", -13)
+    .attr("fill", "#16a34a")
+    .attr("stroke", "#0d1117")
+    .attr("stroke-width", 1.5)
+    .attr("class", "node-check-bg");
 
   nodeSel.filter(d => d.complete)
     .append("text")
-    .attr("x", 12).attr("y", -8)
+    .attr("x", 13).attr("y", -9.5)
     .attr("text-anchor", "middle")
     .attr("font-size", "8px")
+    .attr("fill", "#fff")
+    .attr("pointer-events", "none")
     .text("✓");
 
   // ── Tick ────────────────────────────────────────────────────────────────────
@@ -556,23 +588,29 @@
 
     // ── Main circle: enlarge matching nodes ──
     nodeSel.select("circle.node-circle").transition().duration(300)
-      .attr("r",            d => matching.has(d.id) ? (d.complete ? 30 : 26) : (d.complete ? 20 : 16))
-      .attr("stroke-width", d => matching.has(d.id) ? 3 : (d.complete ? 3 : 2))
-      .attr("stroke",       d => matching.has(d.id) ? "#fff"  : (d.complete ? "#fff" : d.color));
+      .attr("r",            d => matching.has(d.id) ? (d.complete ? 28 : 26) : (d.complete ? 19 : 16))
+      .attr("stroke-width", d => matching.has(d.id) ? 3 : (d.complete ? 2.5 : 2))
+      .attr("stroke",       d => matching.has(d.id) ? "#fff"  : (d.complete ? "url(#completed-ring-grad)" : d.color));
+
+    // ── Completed glow ring: enlarge on match ──
+    nodeSel.select("circle.node-glow").transition().duration(300)
+      .attr("r", d => matching.has(d.id) ? 30 : 22);
+    nodeSel.select("circle.node-aura").transition().duration(300)
+      .attr("r", d => matching.has(d.id) ? 40 : 32);
 
     // ── Halo ring: animate in on matching nodes ──
     nodeSel.select("circle.node-halo").transition().duration(300)
-      .attr("r",             d => matching.has(d.id) ? (d.complete ? 38 : 34) : 0)
+      .attr("r",             d => matching.has(d.id) ? (d.complete ? 36 : 34) : 0)
       .attr("stroke-opacity",d => matching.has(d.id) ? 0.85 : 0)
       // Pulse: second transition on top
       .on("end", function(d) {
         if (!matching.has(d.id)) return;
         d3.select(this)
           .transition().duration(700).ease(d3.easeSinInOut)
-          .attr("r", d.complete ? 42 : 38)
+          .attr("r", d.complete ? 40 : 38)
           .attr("stroke-opacity", 0.4)
           .transition().duration(700).ease(d3.easeSinInOut)
-          .attr("r", d.complete ? 38 : 34)
+          .attr("r", d.complete ? 36 : 34)
           .attr("stroke-opacity", 0.85)
           .on("end", function(d2) {
             if (activeLegendLevel === level) {
@@ -637,9 +675,13 @@
     nodeSel.transition().duration(300).attr("opacity", 1);
 
     nodeSel.select("circle.node-circle").transition().duration(300)
-      .attr("r",            d => d.complete ? 20 : 16)
-      .attr("stroke-width", d => d.complete ? 3 : 2)
-      .attr("stroke",       d => d.complete ? "#fff" : d.color);
+      .attr("r",            d => d.complete ? 19 : 16)
+      .attr("stroke-width", d => d.complete ? 2.5 : 2)
+      .attr("stroke",       d => d.complete ? "url(#completed-ring-grad)" : d.color);
+
+    // Reset completed glow elements
+    nodeSel.select("circle.node-glow").transition().duration(300).attr("r", 22);
+    nodeSel.select("circle.node-aura").transition().duration(300).attr("r", 32);
 
     // Hide all halos
     nodeSel.select("circle.node-halo").transition().duration(200)

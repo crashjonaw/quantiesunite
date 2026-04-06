@@ -6,10 +6,10 @@ SECTIONS = [
         "title": "Learning Rate: The Critical Hyperparameter",
         "body": """
         <div class="concept-box" style="padding: 16px; margin: 12px 0; border-radius: 6px">
-            <p><strong>Learning rate α:</strong> Controls the step size in the gradient descent update.</p>
+            <p><strong>Learning rate \(\alpha\):</strong> Controls the step size in the gradient descent update.</p>
             <p>$$\\theta \\leftarrow \\theta - \\alpha \\nabla L(\\theta)$$</p>
-            <p>From first principles: α multiplies the gradient. Small α = small steps. Large α = large steps.</p>
-            <p><strong>The goldilocks zone:</strong> We need α "just right"—not too small, not too large.</p>
+            <p>From first principles: \(\alpha\) multiplies the gradient. Small \(\alpha\) = small steps. Large \(\alpha\) = large steps.</p>
+            <p><strong>The goldilocks zone:</strong> We need \(\alpha\) "just right"—not too small, not too large.</p>
         </div>
         """
     },
@@ -24,7 +24,7 @@ SECTIONS = [
                 <li>Training becomes impractical (computational cost)</li>
                 <li>May get stuck in plateaus due to numerical precision limits</li>
             </ul>
-            <p><strong>Example:</strong> α = 10⁻⁸ on a problem that needs α = 10⁻³.</p>
+            <p><strong>Example:</strong> \(\alpha = 10^{-8}\) on a problem that needs \(\alpha = 10^{-3}\).</p>
         </div>
         """
     },
@@ -39,7 +39,7 @@ SECTIONS = [
                 <li>Loss can explode (NaN, infinity)</li>
                 <li>Training crashes or produces useless parameters</li>
             </ul>
-            <p><strong>Example:</strong> α = 1.0 on a problem that needs α = 10⁻³.</p>
+            <p><strong>Example:</strong> \(\alpha = 1.0\) on a problem that needs \(\alpha = 10^{-3}\).</p>
         </div>
         """
     },
@@ -50,8 +50,8 @@ SECTIONS = [
         <div class="worked-example" style="padding: 16px; margin: 12px 0; border-radius: 6px">
             <p><strong>For quadratic loss:</strong> Convergence rate depends on eigenvalues of the Hessian (second derivative matrix).</p>
             <p>Optimal learning rate: $$\\alpha_{opt} = \\frac{2}{\\lambda_{max} + \\lambda_{min}}$$</p>
-            <p>In practice: Learning rates in [0.001, 0.1] work for many problems. Start with α = 0.01 and adjust.</p>
-            <p><strong>Key takeaway:</strong> The loss should decrease monotonically (or nearly so). If it spikes up, reduce α.</p>
+            <p>In practice: Learning rates in [0.001, 0.1] work for many problems. Start with \(\alpha = 0.01\) and adjust.</p>
+            <p><strong>Key takeaway:</strong> The loss should decrease monotonically (or nearly so). If it spikes up, reduce \(\alpha\).</p>
         </div>
         """
     }
