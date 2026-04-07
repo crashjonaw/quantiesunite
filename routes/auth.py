@@ -126,6 +126,16 @@ def google_login():
 @auth_bp.route("/auth/google/callback")
 def google_callback():
     """Handle Google OAuth callback — login or register the user."""
+    try:
+        return _handle_google_callback()
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        flash(f"Google sign-in error: {str(e)}", "danger")
+        return redirect(url_for("auth.login"))
+
+
+def _handle_google_callback():
     error = request.args.get("error")
     if error:
         flash(f"Google sign-in was cancelled or failed: {error}", "warning")
@@ -156,19 +166,23 @@ def google_callback():
         "client_secret": GOOGLE_CLIENT_SECRET,
         "redirect_uri": redirect_uri,
         "grant_type": "authorization_code",
-    })
+    }, timeout=10)
 
     if token_resp.status_code != 200:
-        flash("Failed to authenticate with Google.", "danger")
+        flash(f"Failed to authenticate with Google (status {token_resp.status_code}).", "danger")
         return redirect(url_for("auth.login"))
 
     token_data = token_resp.json()
     access_token = token_data.get("access_token")
 
+    if not access_token:
+        flash("No access token received from Google.", "danger")
+        return redirect(url_for("auth.login"))
+
     # Get user info from Google
     userinfo_resp = http_requests.get(GOOGLE_USERINFO_URI, headers={
         "Authorization": f"Bearer {access_token}",
-    })
+    }, timeout=10)
 
     if userinfo_resp.status_code != 200:
         flash("Failed to get user info from Google.", "danger")
