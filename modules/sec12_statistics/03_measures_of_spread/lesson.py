@@ -15,6 +15,40 @@ SECTIONS = [
     },
     {
         "title": "Five-Number Summary and Box-and-Whisker Plots",
-        "body": "<h3>The Five-Number Summary</h3><p>A complete picture of spread uses five numbers:</p><ol><li><strong>Minimum:</strong> Smallest value</li><li><strong>Q1:</strong> First quartile (25th percentile)</li><li><strong>Q2 (Median):</strong> Middle value</li><li><strong>Q3:</strong> Third quartile (75th percentile)</li><li><strong>Maximum:</strong> Largest value</li></ol><h3>Example</h3><div class='example-box'><p><strong>Data: 2, 4, 6, 8, 10, 12, 14, 16</strong></p><ul><li>Minimum: 2</li><li>Q1: 5</li><li>Q2 (Median): 9</li><li>Q3: 13</li><li>Maximum: 16</li></ul></div><h3>Box-and-Whisker Plot</h3><p>A <strong>box-and-whisker plot</strong> visually displays the five-number summary.</p><svg width='400' height='150' style='display: block; margin: 20px auto; ;'><text x='20' y='30' font-size='12' fill='currentColor'>Min=2 Q1=5 Q2=9 Q3=13 Max=16</text><line x1='40' y1='80' x2='360' y2='80' stroke='currentColor' stroke-width='2'/><circle cx='40' cy='80' r='5' fill='none' stroke='currentColor' stroke-width='2'/><rect x='80' y='60' width='120' height='40' fill='none' stroke='currentColor' stroke-width='2'/><line x1='130' y1='60' x2='130' y2='100' stroke='currentColor' stroke-width='2'/><circle cx='360' cy='80' r='5' fill='none' stroke='currentColor' stroke-width='2'/><text x='35' y='120' font-size='11' fill='currentColor'>Min</text><text x='75' y='120' font-size='11' fill='currentColor'>Q1</text><text x='120' y='120' font-size='11' fill='currentColor'>Median</text><text x='210' y='120' font-size='11' fill='currentColor'>Q3</text><text x='350' y='120' font-size='11' fill='currentColor'>Max</text></svg><h3>Reading a Box-and-Whisker Plot</h3><ul><li><strong>The box:</strong> Shows the middle 50% (Q1 to Q3)</li><li><strong>The line inside:</strong> Shows the median (Q2)</li><li><strong>The whiskers:</strong> Lines to min and max (show full range)</li><li><strong>Box width:</strong> If wide, middle 50% is spread out. If narrow, data is clustered.</li></ul><div class='success-box'><p><strong>Advantage:</strong> Box-and-whisker plots let you quickly compare multiple datasets and see outliers, clusters, and skewness at a glance.</p></div>"
+        "body": """<h3>The Five-Number Summary</h3><p>A complete picture of spread uses five numbers:</p><ol><li><strong>Minimum:</strong> Smallest value</li><li><strong>Q1:</strong> First quartile (25th percentile)</li><li><strong>Q2 (Median):</strong> Middle value</li><li><strong>Q3:</strong> Third quartile (75th percentile)</li><li><strong>Maximum:</strong> Largest value</li></ol><h3>Example</h3><div class='example-box'><p><strong>Data: 2, 4, 6, 8, 10, 12, 14, 16</strong></p><ul><li>Minimum: 2</li><li>Q1: 5</li><li>Q2 (Median): 9</li><li>Q3: 13</li><li>Maximum: 16</li></ul></div><h3>Box-and-Whisker Plot</h3><p>A <strong>box-and-whisker plot</strong> visually displays the five-number summary.</p><svg viewBox="0 0 430 160" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+  <!-- Title -->
+  <text x="215" y="22" font-size="13" font-weight="bold" fill="currentColor" text-anchor="middle" font-family="sans-serif">Box-and-Whisker Plot</text>
+  <!-- Scale: Min=2 maps to x=55, Max=16 maps to x=375. Scale: x = 55 + (val-2)*22.86 -->
+  <!-- Axis line -->
+  <line x1="55" y1="80" x2="375" y2="80" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+  <!-- Left whisker: Min(2) to Q1(5) -->
+  <line x1="55" y1="80" x2="124" y2="80" stroke="currentColor" stroke-width="2"/>
+  <!-- Right whisker: Q3(13) to Max(16) -->
+  <line x1="306" y1="80" x2="375" y2="80" stroke="currentColor" stroke-width="2"/>
+  <!-- Whisker caps -->
+  <line x1="55" y1="68" x2="55" y2="92" stroke="currentColor" stroke-width="2"/>
+  <line x1="375" y1="68" x2="375" y2="92" stroke="currentColor" stroke-width="2"/>
+  <!-- Box: Q1(5) to Q3(13) -->
+  <rect x="124" y="58" width="182" height="44" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  <!-- Median line: Q2(9) at x=215 -->
+  <line x1="215" y1="58" x2="215" y2="102" stroke="currentColor" stroke-width="2.5"/>
+  <!-- Value labels above -->
+  <text x="55" y="48" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif">2</text>
+  <text x="124" y="48" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif">5</text>
+  <text x="215" y="48" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif">9</text>
+  <text x="306" y="48" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif">13</text>
+  <text x="375" y="48" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif">16</text>
+  <!-- Name labels below -->
+  <text x="55" y="120" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">Min</text>
+  <text x="124" y="120" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">Q1</text>
+  <text x="215" y="120" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">Median</text>
+  <text x="306" y="120" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">Q3</text>
+  <text x="375" y="120" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">Max</text>
+  <!-- Brace annotation for IQR -->
+  <line x1="124" y1="138" x2="306" y2="138" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+  <line x1="124" y1="133" x2="124" y2="143" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+  <line x1="306" y1="133" x2="306" y2="143" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+  <text x="215" y="152" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">IQR = 13 - 5 = 8</text>
+</svg><h3>Reading a Box-and-Whisker Plot</h3><ul><li><strong>The box:</strong> Shows the middle 50% (Q1 to Q3)</li><li><strong>The line inside:</strong> Shows the median (Q2)</li><li><strong>The whiskers:</strong> Lines to min and max (show full range)</li><li><strong>Box width:</strong> If wide, middle 50% is spread out. If narrow, data is clustered.</li></ul><div class='success-box'><p><strong>Advantage:</strong> Box-and-whisker plots let you quickly compare multiple datasets and see outliers, clusters, and skewness at a glance.</p></div>"""
     }
 ]

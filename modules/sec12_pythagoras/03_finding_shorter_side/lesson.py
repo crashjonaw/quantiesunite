@@ -28,22 +28,27 @@ SECTIONS = [
 </ul>
 </div>
 
-<svg width="500" height="300" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Triangle: 3-4-5 right triangle, a=3*40=120, b=4*40=160, c=5*40=200 -->
-  <polygon points="80,250 80,130 240,250" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="2"/>
+<svg viewBox="0 0 460 310" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="460" height="310" fill="none" rx="4"/>
 
-  <!-- Right angle -->
-  <rect x="80" y="210" width="40" height="40" fill='none' stroke='currentColor' stroke-width="1"/>
+  <!-- Triangle: 3-4-5 right triangle -->
+  <!-- C=(80,260) A=(80,110) B=(280,260), a=150 (vert), b=200 (horiz) -->
+  <polygon points="80,260 80,110 280,260" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="2"/>
+
+  <!-- Right angle marker at C -->
+  <polyline points="80,235 105,235 105,260" fill="none" stroke="currentColor" stroke-width="1.5"/>
 
   <!-- Known sides -->
-  <text x="40" y="170" font-size='20' font-weight='bold' fill='#79c0ff'>a = ?</text>
-  <text x="200" y="280" font-size='20' font-weight='bold' fill='#79c0ff'>b = 4</text>
-  <text x="200" y="140" font-size='20' font-weight='bold' fill='#58a6ff'>c = 5</text>
+  <text x="25" y="195" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">a = ?</text>
+  <text x="145" y="290" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">b = 4</text>
+  <text x="195" y="165" font-size="18" font-weight="bold" fill="#58a6ff" font-family="sans-serif">c = 5</text>
 
   <!-- Formula steps -->
-  <text x="20" y="30" font-size='14' fill='currentColor' font-family='monospace'>a² + b² = c²</text>
-  <text x="20" y="50" font-size='14' fill='currentColor' font-family='monospace'>a² + 4² = 5²</text>
-  <text x="20" y="70" font-size='14' fill='currentColor' font-family='monospace'>a² = 5² - 4² = 25 - 16</text>
+  <text x="310" y="80" font-size="14" fill="currentColor" font-family="monospace">a² + b² = c²</text>
+  <text x="310" y="110" font-size="14" fill="currentColor" font-family="monospace">a² + 4² = 5²</text>
+  <text x="310" y="140" font-size="14" fill="currentColor" font-family="monospace">a² = 25 - 16</text>
+  <text x="310" y="170" font-size="14" fill="currentColor" font-family="monospace">a² = 9</text>
+  <text x="310" y="200" font-size="14" fill="#56d364" font-family="monospace">a = 3 &#x2713;</text>
 </svg>
 """
     },
@@ -83,17 +88,20 @@ SECTIONS = [
 <p><em>Notice: This is the famous 5-12-13 Pythagorean triple!</em></p>
 </div>
 
-<svg width="400" height="250" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Triangle: 5-12-13 right triangle, a=5*10=50, b=12*10=120, c=13*10=130 -->
-  <polygon points="60,200 60,150 180,200" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="3"/>
+<svg viewBox="0 0 380 280" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="380" height="280" fill="none" rx="4"/>
 
-  <!-- Right angle -->
-  <rect x="60" y="160" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
+  <!-- Triangle: 5-12-13 right triangle, proportional: a=144 (vert), b=60 (horiz) -->
+  <!-- C=(60,235) A=(60,91) B=(204,235) -->
+  <polygon points="60,235 60,91 204,235" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="3"/>
+
+  <!-- Right angle marker at C -->
+  <polyline points="60,210 85,210 85,235" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="30" y="175" font-size='22' font-weight='bold' fill='#79c0ff'>12</text>
-  <text x="115" y="225" font-size='22' font-weight='bold' fill='#79c0ff'>5</text>
-  <text x="105" y="135" font-size='22' font-weight='bold' fill='#58a6ff'>13</text>
+  <text x="22" y="172" font-size="22" font-weight="bold" fill="#79c0ff" font-family="sans-serif">12</text>
+  <text x="110" y="262" font-size="22" font-weight="bold" fill="#79c0ff" font-family="sans-serif">5</text>
+  <text x="145" y="145" font-size="22" font-weight="bold" fill="#58a6ff" font-family="sans-serif">13</text>
 </svg>
 """
     },
@@ -129,8 +137,8 @@ SECTIONS = [
 
 <div class='info-box'>
 <p><strong>Sanity Check:</strong></p>
-<p>The hypotenuse (10 cm) must be longer than any of the shorter sides (7 cm and 7.1 cm). ✓</p>
-<p>\(7^2 + 7.1^2 \approx 49 + 50.41 \approx 99.41 \approx 100 = 10^2\). ✓</p>
+<p>The hypotenuse (10 cm) must be longer than any of the shorter sides (7 cm and 7.1 cm). &#x2713;</p>
+<p>\(7^2 + 7.1^2 \approx 49 + 50.41 \approx 99.41 \approx 100 = 10^2\). &#x2713;</p>
 </div>
 """
     },
@@ -174,17 +182,20 @@ SECTIONS = [
 <li>7-24-25 and all its multiples (14-48-50, etc.)</li>
 </ul>
 
-<svg width="400" height="250" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Triangle: 3-4-5 right triangle, a=4*30=120, b=3*30=90, c=5*30=150 -->
-  <polygon points="80,200 80,80 170,200" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="3"/>
+<svg viewBox="0 0 380 270" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="380" height="270" fill="none" rx="4"/>
 
-  <!-- Right angle -->
-  <rect x="80" y="160" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
+  <!-- Triangle: 3-4-5 right triangle, a=120 (vert), b=90 (horiz) -->
+  <!-- C=(70,225) A=(70,105) B=(160,225) -->
+  <polygon points="70,225 70,105 160,225" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="3"/>
+
+  <!-- Right angle marker at C -->
+  <polyline points="70,200 95,200 95,225" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="45" y="150" font-size='20' font-weight='bold' fill='#79c0ff'>4</text>
-  <text x="120" y="225" font-size='20' font-weight='bold' fill='#79c0ff'>3</text>
-  <text x="115" y="120" font-size='20' font-weight='bold' fill='#58a6ff'>5</text>
+  <text x="32" y="175" font-size="20" font-weight="bold" fill="#79c0ff" font-family="sans-serif">4</text>
+  <text x="100" y="252" font-size="20" font-weight="bold" fill="#79c0ff" font-family="sans-serif">3</text>
+  <text x="130" y="148" font-size="20" font-weight="bold" fill="#58a6ff" font-family="sans-serif">5</text>
 </svg>
 """
     }

@@ -11,24 +11,26 @@ SECTIONS = [
 
 <h3>Understanding the Process</h3>
 
-<svg width="500" height="300" viewBox="0 0 500 300" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- 3-4-5 triangle: C=(150,250) A=(150,100) B=(350,250) -->
-  <!-- a (vert)=150px, b (horiz)=200px, c (hyp)=250px — proportional to 3:4:5 -->
-  <polygon points="150,250 150,100 350,250" fill='rgba(88,166,255,0.1)' stroke='currentColor' stroke-width="2"/>
+<svg viewBox="0 0 480 310" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="480" height="310" fill="none" rx="4"/>
 
-  <!-- Right angle marker at C=(150,250), small 20px square -->
-  <polyline points="150,230 170,230 170,250" fill='none' stroke='currentColor' stroke-width="1.5"/>
+  <!-- 3-4-5 triangle: C=(80,260) A=(80,80) B=(320,260) -->
+  <!-- a (vert)=180px, b (horiz)=240px - proportional to 3:4 -->
+  <polygon points="80,260 80,80 320,260" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="2"/>
+
+  <!-- Right angle marker at C=(80,260) -->
+  <polyline points="80,235 105,235 105,260" fill="none" stroke="currentColor" stroke-width="1.5"/>
 
   <!-- Side labels -->
-  <text x="118" y="185" font-size='18' font-weight='bold' fill='#79c0ff'>a = 3</text>
-  <text x="225" y="275" font-size='18' font-weight='bold' fill='#79c0ff'>b = 4</text>
-  <text x="260" y="160" font-size='18' font-weight='bold' fill='#58a6ff'>c = ?</text>
+  <text x="45" y="180" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">a = 3</text>
+  <text x="170" y="290" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">b = 4</text>
+  <text x="215" y="150" font-size="18" font-weight="bold" fill="#58a6ff" font-family="sans-serif">c = ?</text>
 
   <!-- Calculation steps on the right -->
-  <text x="370" y="110" font-size='14' fill='currentColor' font-family='monospace'>c² = a² + b²</text>
-  <text x="370" y="135" font-size='14' fill='currentColor' font-family='monospace'>c² = 9 + 16</text>
-  <text x="370" y="160" font-size='14' fill='currentColor' font-family='monospace'>c² = 25</text>
-  <text x="370" y="185" font-size='14' fill='#56d364' font-family='monospace'>c = 5 ✓</text>
+  <text x="345" y="100" font-size="14" fill="currentColor" font-family="monospace">c² = a² + b²</text>
+  <text x="345" y="130" font-size="14" fill="currentColor" font-family="monospace">c² = 9 + 16</text>
+  <text x="345" y="160" font-size="14" fill="currentColor" font-family="monospace">c² = 25</text>
+  <text x="345" y="190" font-size="14" fill="#56d364" font-family="monospace">c = 5 &#x2713;</text>
 </svg>
 
 <div class='success-box'>
@@ -72,17 +74,20 @@ SECTIONS = [
 <p><em>Notice: 3-4-5 is a famous Pythagorean triple - all whole numbers!</em></p>
 </div>
 
-<svg width="400" height="250" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Triangle: 3-4-5, a=3*40=120, b=4*40=160, c=5*40=200 -->
-  <polygon points="60,200 60,80 220,200" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="3"/>
+<svg viewBox="0 0 380 270" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="380" height="270" fill="none" rx="4"/>
 
-  <!-- Right angle marker -->
-  <rect x="60" y="160" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
+  <!-- Triangle: 3-4-5, legs proportional: a=120 (vert), b=160 (horiz) -->
+  <!-- C=(60,220) A=(60,100) B=(220,220) -->
+  <polygon points="60,220 60,100 220,220" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="3"/>
+
+  <!-- Right angle marker at C -->
+  <polyline points="60,195 85,195 85,220" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Labels -->
-  <text x="35" y="145" font-size='22' font-weight='bold' fill='#79c0ff'>3</text>
-  <text x="135" y="225" font-size='22' font-weight='bold' fill='#79c0ff'>4</text>
-  <text x="125" y="115" font-size='22' font-weight='bold' fill='#58a6ff'>5</text>
+  <text x="30" y="168" font-size="22" font-weight="bold" fill="#79c0ff" font-family="sans-serif">3</text>
+  <text x="125" y="250" font-size="22" font-weight="bold" fill="#79c0ff" font-family="sans-serif">4</text>
+  <text x="155" y="140" font-size="22" font-weight="bold" fill="#58a6ff" font-family="sans-serif">5</text>
 </svg>
 """
     },
@@ -159,22 +164,25 @@ SECTIONS = [
 <p><strong>Other famous triples:</strong></p>
 <ul>
 <li>3-4-5</li>
-<li>6-8-10 (2 × the 3-4-5 triple)</li>
+<li>6-8-10 (2 x the 3-4-5 triple)</li>
 <li>8-15-17</li>
 <li>7-24-25</li>
 </ul>
 
-<svg width="450" height="250" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Triangle: 5-12-13, a=5*10=50, b=12*10=120, c=13*10=130 -->
-  <polygon points="80,220 80,170 200,220" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="3"/>
+<svg viewBox="0 0 400 280" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="400" height="280" fill="none" rx="4"/>
 
-  <!-- Right angle -->
-  <rect x="80" y="180" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
+  <!-- Triangle: 5-12-13, proportional: a=80 (vert), b=192 (horiz) -->
+  <!-- C=(60,230) A=(60,150) B=(252,230) -->
+  <polygon points="60,230 60,150 252,230" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="3"/>
+
+  <!-- Right angle marker at C -->
+  <polyline points="60,205 85,205 85,230" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Labels with values -->
-  <text x="50" y="190" font-size='20' font-weight='bold' fill='#79c0ff'>5</text>
-  <text x="130" y="245" font-size='20' font-weight='bold' fill='#79c0ff'>12</text>
-  <text x="125" y="165" font-size='20' font-weight='bold' fill='#58a6ff'>13</text>
+  <text x="25" y="198" font-size="20" font-weight="bold" fill="#79c0ff" font-family="sans-serif">5</text>
+  <text x="140" y="260" font-size="20" font-weight="bold" fill="#79c0ff" font-family="sans-serif">12</text>
+  <text x="170" y="175" font-size="20" font-weight="bold" fill="#58a6ff" font-family="sans-serif">13</text>
 </svg>
 """
     }

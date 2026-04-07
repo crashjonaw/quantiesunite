@@ -10,23 +10,41 @@ SECTIONS = [
         "body": """<h3>Dot Plot</h3>
 <p>Each data point is shown as a dot on a number line.</p>
 <h3>Example: Heights of 10 Students (cm)</h3>
-<svg viewBox="0 0 350 100" style="width:100%;max-width:400px;height:auto;display:block;margin:20px auto;">
-  <line x1="40" y1="50" x2="330" y2="50" stroke='currentColor' stroke-width="2"/>
-  <text x="40" y="70" font-size='11' fill='currentColor' opacity='0.6'>160</text>
-  <text x="110" y="70" font-size='11' fill='currentColor' opacity='0.6'>165</text>
-  <text x="185" y="70" font-size='11' fill='currentColor' opacity='0.6'>170</text>
-  <text x="255" y="70" font-size='11' fill='currentColor' opacity='0.6'>175</text>
-  <text x="320" y="70" font-size='11' fill='currentColor' opacity='0.6'>180</text>
-  <circle cx="50" cy="35" r="4" fill='#79c0ff'/>
-  <circle cx="60" cy="35" r="4" fill='#79c0ff'/>
-  <circle cx="65" cy="25" r="4" fill='#79c0ff'/>
-  <circle cx="130" cy="35" r="4" fill='#79c0ff'/>
-  <circle cx="135" cy="25" r="4" fill='#79c0ff'/>
-  <circle cx="195" cy="35" r="4" fill='#79c0ff'/>
-  <circle cx="200" cy="25" r="4" fill='#79c0ff'/>
-  <circle cx="265" cy="35" r="4" fill='#79c0ff'/>
-  <circle cx="310" cy="35" r="4" fill='#79c0ff'/>
-  <circle cx="320" cy="25" r="4" fill='#79c0ff'/>
+<svg viewBox="0 0 420 120" style="width:100%;max-width:480px;height:auto;display:block;margin:20px auto;">
+  <!-- Title -->
+  <text x="210" y="18" font-size="12" font-weight="bold" fill="currentColor" text-anchor="middle" font-family="sans-serif">Dot Plot: Heights of 10 Students (cm)</text>
+  <!-- Axis line -->
+  <line x1="40" y1="72" x2="400" y2="72" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+  <!-- Tick marks and labels at equal spacing: 40, 130, 220, 310, 400 -->
+  <line x1="40" y1="72" x2="40" y2="78" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <text x="40" y="95" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">160</text>
+  <line x1="130" y1="72" x2="130" y2="78" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <text x="130" y="95" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">165</text>
+  <line x1="220" y1="72" x2="220" y2="78" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <text x="220" y="95" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">170</text>
+  <line x1="310" y1="72" x2="310" y2="78" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <text x="310" y="95" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">175</text>
+  <line x1="400" y1="72" x2="400" y2="78" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+  <text x="400" y="95" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">180</text>
+  <!-- Dots: each cm = 18px. Stack upward with 12px gap between dots -->
+  <!-- 161 cm = 40 + 1*18 = 58 -->
+  <circle cx="58" cy="62" r="5" fill="#79c0ff"/>
+  <!-- 162 cm = 40 + 2*18 = 76 -->
+  <circle cx="76" cy="62" r="5" fill="#79c0ff"/>
+  <!-- 163 cm = 40 + 3*18 = 94 (two dots stacked) -->
+  <circle cx="94" cy="62" r="5" fill="#79c0ff"/>
+  <circle cx="94" cy="48" r="5" fill="#79c0ff"/>
+  <!-- 166 cm = 40 + 6*18 = 148 -->
+  <circle cx="148" cy="62" r="5" fill="#79c0ff"/>
+  <!-- 170 cm = 40 + 10*18 = 220 (two dots stacked) -->
+  <circle cx="220" cy="62" r="5" fill="#79c0ff"/>
+  <circle cx="220" cy="48" r="5" fill="#79c0ff"/>
+  <!-- 175 cm = 40 + 15*18 = 310 -->
+  <circle cx="310" cy="62" r="5" fill="#79c0ff"/>
+  <!-- 179 cm = 40 + 19*18 = 382 -->
+  <circle cx="382" cy="62" r="5" fill="#79c0ff"/>
+  <!-- 180 cm = 40 + 20*18 = 400 -->
+  <circle cx="400" cy="62" r="5" fill="#79c0ff"/>
 </svg>
 <p><strong>What you see instantly:</strong> Most students cluster around 165-175 cm.</p>
 
@@ -67,25 +85,49 @@ SECTIONS = [
 </table>
 </div>
 
-<svg viewBox="0 0 400 250" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
-  <text x="200" y="20" font-size='13' font-weight='bold' fill='currentColor' text-anchor='middle'>Test Score Distribution</text>
-  <line x1="60" y1="200" x2="370" y2="200" stroke='#8b949e' stroke-width="2"/>
-  <line x1="60" y1="200" x2="60" y2="30" stroke='#8b949e' stroke-width="2"/>
-  <text x="215" y="230" font-size='11' fill='currentColor' opacity='0.6' text-anchor='middle'>Test Score</text>
-  <rect x="70" y="172" width="50" height="28" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
-  <rect x="125" y="132" width="50" height="68" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
-  <rect x="180" y="60" width="50" height="140" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
-  <rect x="235" y="120" width="50" height="80" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
-  <rect x="290" y="172" width="50" height="28" fill='#4f8ef780' stroke='#4f8ef7' stroke-width="1.5"/>
-  <text x="95" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>50-60</text>
-  <text x="150" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>60-70</text>
-  <text x="205" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>70-80</text>
-  <text x="260" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>80-90</text>
-  <text x="315" y="215" font-size='10' fill='currentColor' opacity='0.6' text-anchor='middle'>90-100</text>
-  <text x="50" y="176" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>5</text>
-  <text x="50" y="136" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>12</text>
-  <text x="50" y="64" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>18</text>
-  <text x="50" y="124" font-size='10' fill='currentColor' opacity='0.6' text-anchor='end'>10</text>
+<svg viewBox="0 0 430 270" style="width:100%;max-width:500px;height:auto;display:block;margin:20px auto;">
+  <!-- Title -->
+  <text x="235" y="22" font-size="13" font-weight="bold" fill="currentColor" text-anchor="middle" font-family="sans-serif">Test Score Distribution</text>
+  <!-- Y-axis -->
+  <line x1="80" y1="40" x2="80" y2="210" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+  <!-- X-axis -->
+  <line x1="80" y1="210" x2="400" y2="210" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+  <!-- Y-axis label -->
+  <text x="25" y="125" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7" transform="rotate(-90,25,125)">Frequency</text>
+  <!-- X-axis label -->
+  <text x="240" y="255" font-size="11" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">Test Score</text>
+  <!-- Y-axis gridlines and labels: max freq=18, scale: 1 unit = 170/18 = 9.44px -->
+  <!-- 0 at y=210, 5 at y=210-5*9.44=163, 10 at y=116, 15 at y=68, 18 at y=40 -->
+  <line x1="75" y1="163" x2="400" y2="163" stroke="currentColor" stroke-width="0.5" opacity="0.15"/>
+  <text x="70" y="167" font-size="10" fill="currentColor" text-anchor="end" font-family="sans-serif" opacity="0.7">5</text>
+  <line x1="75" y1="116" x2="400" y2="116" stroke="currentColor" stroke-width="0.5" opacity="0.15"/>
+  <text x="70" y="120" font-size="10" fill="currentColor" text-anchor="end" font-family="sans-serif" opacity="0.7">10</text>
+  <line x1="75" y1="68" x2="400" y2="68" stroke="currentColor" stroke-width="0.5" opacity="0.15"/>
+  <text x="70" y="72" font-size="10" fill="currentColor" text-anchor="end" font-family="sans-serif" opacity="0.7">15</text>
+  <text x="70" y="214" font-size="10" fill="currentColor" text-anchor="end" font-family="sans-serif" opacity="0.7">0</text>
+  <!-- Bars: 5 bars, each 60px wide, touching. Start at x=90 -->
+  <!-- 50-60: freq=5, height=5*9.44=47, top=210-47=163 -->
+  <rect x="90" y="163" width="60" height="47" rx="4" fill="#4f8ef780" stroke="#4f8ef7" stroke-width="1.5"/>
+  <text x="120" y="156" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" font-weight="bold">5</text>
+  <!-- 60-70: freq=12, height=12*9.44=113, top=210-113=97 -->
+  <rect x="150" y="97" width="60" height="113" rx="4" fill="#4f8ef780" stroke="#4f8ef7" stroke-width="1.5"/>
+  <text x="180" y="90" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" font-weight="bold">12</text>
+  <!-- 70-80: freq=18, height=18*9.44=170, top=210-170=40 -->
+  <rect x="210" y="40" width="60" height="170" rx="4" fill="#4f8ef780" stroke="#4f8ef7" stroke-width="1.5"/>
+  <text x="240" y="35" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" font-weight="bold">18</text>
+  <!-- 80-90: freq=10, height=10*9.44=94, top=210-94=116 -->
+  <rect x="270" y="116" width="60" height="94" rx="4" fill="#4f8ef780" stroke="#4f8ef7" stroke-width="1.5"/>
+  <text x="300" y="109" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" font-weight="bold">10</text>
+  <!-- 90-100: freq=5, height=47, top=163 -->
+  <rect x="330" y="163" width="60" height="47" rx="4" fill="#4f8ef780" stroke="#4f8ef7" stroke-width="1.5"/>
+  <text x="360" y="156" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" font-weight="bold">5</text>
+  <!-- X-axis tick labels -->
+  <text x="90" y="228" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">50</text>
+  <text x="150" y="228" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">60</text>
+  <text x="210" y="228" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">70</text>
+  <text x="270" y="228" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">80</text>
+  <text x="330" y="228" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">90</text>
+  <text x="390" y="228" font-size="10" fill="currentColor" text-anchor="middle" font-family="sans-serif" opacity="0.7">100</text>
 </svg>
 
 <h3>Histogram vs. Bar Chart</h3>

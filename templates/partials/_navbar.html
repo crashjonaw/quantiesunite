@@ -4,17 +4,17 @@
   </a>
   <div class="nav-links">
     {% if current_user %}
-      <a href="/" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">Home</a>
-      <a href="/graph" class="nav-link {% if request.endpoint == 'graph_page' %}active{% endif %}">Graph</a>
-      <a href="/curriculum" class="nav-link {% if request.endpoint in ('curriculum', 'learning.topic_overview', 'learning.concept_page', 'learning.quiz_page', 'learning.practice_page', 'learning.mindmap_page') %}active{% endif %}">Curriculum</a>
-      <a href="/dashboard" class="nav-link {% if request.endpoint == 'dashboard' %}active{% endif %}">Dashboard</a>
-      <a href="/progress" class="nav-link {% if request.endpoint == 'progress_page' %}active{% endif %}">Progress</a>
+      <a href="/" class="nav-link {% if request.endpoint in ('learning.index', 'index') %}active{% endif %}">Home</a>
+      <a href="/graph" class="nav-link {% if request.endpoint in ('learning.graph_page', 'graph_page') %}active{% endif %}">Graph</a>
+      <a href="/curriculum" class="nav-link {% if request.endpoint in ('learning.curriculum', 'curriculum', 'learning.topic_overview', 'learning.concept_page', 'learning.quiz_page', 'learning.practice_page', 'learning.mindmap_page') %}active{% endif %}">Curriculum</a>
+      <a href="/dashboard" class="nav-link {% if request.endpoint in ('dashboard.dashboard', 'dashboard') %}active{% endif %}">Dashboard</a>
+      <a href="/progress" class="nav-link {% if request.endpoint in ('learning.progress_page', 'progress_page') %}active{% endif %}">Progress</a>
       <a href="/exams" class="nav-link {% if request.endpoint in ('exam.exam_list', 'exam.take_exam', 'exam.exam_result') %}active{% endif %}">Exams</a>
-      <a href="/trophies" class="nav-link {% if request.endpoint == 'trophies_page' %}active{% endif %}">Trophies</a>
-      <a href="/search" class="nav-link {% if request.endpoint == 'search' %}active{% endif %}">Search</a>
+      <a href="/trophies" class="nav-link {% if request.endpoint in ('learning.trophies_page', 'trophies_page') %}active{% endif %}">Trophies</a>
+      <a href="/search" class="nav-link {% if request.endpoint in ('learning.search', 'search') %}active{% endif %}">Search</a>
       {% if current_user.is_admin %}
-      <a href="/admin" class="nav-link admin-link {% if request.endpoint == 'admin_panel' %}active{% endif %}">Admin</a>
-      <a href="/admin/dashboard" class="nav-link admin-link {% if request.endpoint == 'admin_dashboard' %}active{% endif %}">Analytics</a>
+      <a href="/admin" class="nav-link admin-link {% if request.endpoint in ('admin.admin_panel', 'admin_panel') %}active{% endif %}">Admin</a>
+      <a href="/admin/dashboard" class="nav-link admin-link {% if request.endpoint in ('admin.admin_dashboard', 'admin_dashboard') %}active{% endif %}">Analytics</a>
       {% endif %}
 
       <!-- User menu -->

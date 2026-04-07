@@ -11,20 +11,26 @@ SECTIONS = [
 
 <p>A rectangle's diagonal creates two right-angled triangles. We can use Pythagoras to find the diagonal length.</p>
 
-<svg width="500" height="350" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Rectangle: 8m x 6m, drawn as 320 x 240 pixels (40px per unit) -->
-  <rect x="80" y="80" width="320" height="240" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="2"/>
+<svg viewBox="0 0 470 370" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="470" height="370" fill="none" rx="4"/>
+
+  <!-- Rectangle: 8m x 6m, drawn as 280 x 210 pixels -->
+  <rect x="70" y="70" width="280" height="210" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="2" rx="4"/>
 
   <!-- Diagonal -->
-  <line x1="80" y1="80" x2="400" y2="320" stroke='#58a6ff' stroke-width="3"/>
+  <line x1="70" y1="70" x2="350" y2="280" stroke="#58a6ff" stroke-width="3"/>
 
-  <!-- Right angle marker -->
-  <rect x="80" y="280" width="40" height="40" fill='none' stroke='currentColor' stroke-width="1"/>
+  <!-- Right angle marker at bottom-left corner -->
+  <polyline points="70,255 95,255 95,280" fill="none" stroke="currentColor" stroke-width="1.5"/>
 
   <!-- Labels -->
-  <text x="220" y="70" font-size='18' font-weight='bold' fill='#79c0ff'>8 m</text>
-  <text x="20" y="220" font-size='18' font-weight='bold' fill='#79c0ff'>6 m</text>
-  <text x="240" y="210" font-size='18' font-weight='bold' fill='#58a6ff'>?</text>
+  <text x="190" y="55" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">8 m</text>
+  <text x="20" y="185" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">6 m</text>
+  <text x="225" y="195" font-size="18" font-weight="bold" fill="#58a6ff" font-family="sans-serif">d = ?</text>
+
+  <!-- Dashed lines to show the triangle -->
+  <line x1="70" y1="280" x2="350" y2="280" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,5"/>
+  <line x1="70" y1="70" x2="70" y2="280" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,5"/>
 </svg>
 
 <div class='example-box'>
@@ -43,7 +49,7 @@ SECTIONS = [
 
 <p><strong>Answer: The diagonal is 10 m</strong></p>
 
-<p><em>Notice: 6-8-10 is 2 × the 3-4-5 triple!</em></p>
+<p><em>Notice: 6-8-10 is 2 x the 3-4-5 triple!</em></p>
 </div>
 
 <h3>The Diagonal of a Square</h3>
@@ -62,27 +68,34 @@ SECTIONS = [
 
 <p>A ladder leaning against a wall forms a right-angled triangle with the wall and ground.</p>
 
-<svg width="450" height="400" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Ground -->
-  <line x1="50" y1="300" x2="200" y2="300" stroke='currentColor' stroke-width="3"/>
+<svg viewBox="0 0 370 380" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="370" height="380" fill="none" rx="4"/>
 
-  <!-- Wall -->
-  <line x1="100" y1="300" x2="100" y2="100" stroke='currentColor' stroke-width="3"/>
+  <!-- Wall (vertical line) -->
+  <line x1="80" y1="60" x2="80" y2="310" stroke="currentColor" stroke-width="3"/>
 
-  <!-- Ladder: 3-4-5 triangle, 3m horizontal=150px, 4m vertical=200px, 5m hypotenuse=250px -->
-  <line x1="100" y1="100" x2="250" y2="300" stroke='#79c0ff' stroke-width="4"/>
+  <!-- Ground (horizontal line) -->
+  <line x1="50" y1="310" x2="310" y2="310" stroke="currentColor" stroke-width="3"/>
 
-  <!-- Right angle -->
-  <rect x="100" y="260" width="40" height="40" fill='none' stroke='currentColor' stroke-width="2"/>
+  <!-- Ladder: from top of wall to ground -->
+  <!-- 3-4-5 triangle: base=150px (3m), height=200px (4m) -->
+  <line x1="80" y1="110" x2="230" y2="310" stroke="#79c0ff" stroke-width="4"/>
+
+  <!-- Right angle marker at wall-ground junction -->
+  <polyline points="80,285 105,285 105,310" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Distance labels -->
-  <text x="150" y="350" font-size='18' font-weight='bold' fill='#79c0ff'>3 m</text>
-  <text x="60" y="220" font-size='18' font-weight='bold' fill='#79c0ff'>4 m</text>
-  <text x="145" y="200" font-size='18' font-weight='bold' fill='#58a6ff'>5 m</text>
+  <text x="140" y="345" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">3 m</text>
+  <text x="25" y="220" font-size="18" font-weight="bold" fill="#79c0ff" font-family="sans-serif">4 m</text>
+  <text x="175" y="195" font-size="18" font-weight="bold" fill="#58a6ff" font-family="sans-serif">5 m</text>
 
   <!-- Ground and wall labels -->
-  <text x="105" y="80" font-size='14' fill='currentColor'>Wall</text>
-  <text x="350" y="320" font-size='14' fill='currentColor'>Ground</text>
+  <text x="85" y="75" font-size="14" fill="currentColor" font-family="sans-serif">Wall</text>
+  <text x="255" y="305" font-size="14" fill="currentColor" font-family="sans-serif">Ground</text>
+
+  <!-- Small circles at ladder endpoints -->
+  <circle cx="80" cy="110" r="4" fill="#79c0ff"/>
+  <circle cx="230" cy="310" r="4" fill="#79c0ff"/>
 </svg>
 
 <div class='example-box'>
@@ -141,41 +154,50 @@ SECTIONS = [
 <p><em>Notice: 7-24-25 is a famous Pythagorean triple!</em></p>
 </div>
 
-<svg width="500" height="400" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- Grid -->
-  <line x1="100" y1="100" x2="400" y2="100" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="150" x2="400" y2="150" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="200" x2="400" y2="200" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="250" x2="400" y2="250" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="100" y1="300" x2="400" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+<svg viewBox="0 0 430 370" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="430" height="370" fill="none" rx="4"/>
 
-  <line x1="100" y1="100" x2="100" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="150" y1="100" x2="150" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="200" y1="100" x2="200" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="250" y1="100" x2="250" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="300" y1="100" x2="300" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="350" y1="100" x2="350" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
-  <line x1="400" y1="100" x2="400" y2="300" stroke='currentColor' stroke-width="1" opacity='0.3'/>
+  <!-- Grid lines -->
+  <line x1="60" y1="60" x2="380" y2="60" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="60" y1="110" x2="380" y2="110" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="60" y1="160" x2="380" y2="160" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="60" y1="210" x2="380" y2="210" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="60" y1="260" x2="380" y2="260" stroke="currentColor" stroke-width="1" opacity="0.2"/>
 
-  <!-- Town A -->
-  <circle cx="100" cy="100" r="8" fill='#79c0ff'/>
-  <text x="105" y="95" font-size='14' fill='currentColor'>Town A</text>
+  <line x1="60" y1="60" x2="60" y2="260" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="140" y1="60" x2="140" y2="260" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="220" y1="60" x2="220" y2="260" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="300" y1="60" x2="300" y2="260" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+  <line x1="380" y1="60" x2="380" y2="260" stroke="currentColor" stroke-width="1" opacity="0.2"/>
 
-  <!-- Town B: 7 km north-south (70 px), 24 km east-west (240 px) -->
-  <circle cx="340" cy="170" r="8" fill='#79c0ff'/>
-  <text x="270" y="190" font-size='14' fill='currentColor'>Town B</text>
+  <!-- Town A at top-left -->
+  <circle cx="80" cy="80" r="8" fill="#79c0ff"/>
+  <text x="95" y="75" font-size="14" fill="currentColor" font-family="sans-serif">Town A</text>
 
-  <!-- North-South distance -->
-  <line x1="80" y1="100" x2="80" y2="170" stroke='#79c0ff' stroke-width="2"/>
-  <text x="40" y="140" font-size='14' fill='#79c0ff'>7 km</text>
+  <!-- Town B: 7 km south (70px), 24 km east (240px) -->
+  <circle cx="320" cy="150" r="8" fill="#79c0ff"/>
+  <text x="330" y="145" font-size="14" fill="currentColor" font-family="sans-serif">Town B</text>
 
-  <!-- East-West distance -->
-  <line x1="100" y1="180" x2="340" y2="180" stroke='#79c0ff' stroke-width="2"/>
-  <text x="200" y="205" font-size='14' fill='#79c0ff'>24 km</text>
+  <!-- North-South distance (vertical) -->
+  <line x1="55" y1="80" x2="55" y2="150" stroke="#79c0ff" stroke-width="2"/>
+  <text x="15" y="122" font-size="14" fill="#79c0ff" font-family="sans-serif">7 km</text>
 
-  <!-- Straight-line distance -->
-  <line x1="100" y1="100" x2="340" y2="170" stroke='#58a6ff' stroke-width="3"/>
-  <text x="210" y="125" font-size='16' font-weight='bold' fill='#58a6ff'>25 km</text>
+  <!-- East-West distance (horizontal) -->
+  <line x1="80" y1="165" x2="320" y2="165" stroke="#79c0ff" stroke-width="2"/>
+  <text x="175" y="190" font-size="14" fill="#79c0ff" font-family="sans-serif">24 km</text>
+
+  <!-- Straight-line distance (hypotenuse) -->
+  <line x1="80" y1="80" x2="320" y2="150" stroke="#58a6ff" stroke-width="3"/>
+  <text x="175" y="95" font-size="16" font-weight="bold" fill="#58a6ff" font-family="sans-serif">25 km</text>
+
+  <!-- Right angle marker at the corner -->
+  <polyline points="80,140 95,140 95,155" fill="none" stroke="currentColor" stroke-width="1.5"/>
+
+  <!-- Compass indicator -->
+  <text x="390" y="80" font-size="12" fill="currentColor" font-family="sans-serif">N</text>
+  <text x="390" y="250" font-size="12" fill="currentColor" font-family="sans-serif">S</text>
+  <line x1="396" y1="85" x2="396" y2="240" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+  <polygon points="396,85 391,95 401,95" fill="currentColor" opacity="0.4"/>
 </svg>
 """
     },
@@ -195,7 +217,7 @@ SECTIONS = [
 <p>Find the space diagonal (the distance from one corner to the diagonally opposite corner through the interior).</p>
 
 <p><strong>Solution - Step 1: Find the diagonal of the base</strong></p>
-<p>The base is a 3 m × 4 m rectangle. Its diagonal is:</p>
+<p>The base is a 3 m x 4 m rectangle. Its diagonal is:</p>
 <p>$$d_{\\text{base}}^2 = 3^2 + 4^2 = 9 + 16 = 25$$</p>
 <p>$$d_{\\text{base}} = 5 \\text{ m}$$</p>
 
@@ -209,31 +231,38 @@ SECTIONS = [
 <p><em>Notice: We used both the 3-4-5 triple and the 5-12-13 triple!</em></p>
 </div>
 
-<svg width="500" height="380" class="formula-box" style="display: block; margin: 20px auto;">
-  <!-- 3D box representation -->
-  <!-- Front face -->
-  <rect x="100" y="150" width="200" height="150" fill='none' stroke='currentColor' stroke-width="2"/>
+<svg viewBox="0 0 460 380" class="formula-box" style="display: block; margin: 20px auto;">
+  <rect x="0" y="0" width="460" height="380" fill="none" rx="4"/>
+
+  <!-- 3D box representation using isometric-like projection -->
+  <!-- Front face: bottom-left at (80,280), 200px wide, 160px tall -->
+  <rect x="80" y="120" width="200" height="160" fill="none" stroke="currentColor" stroke-width="2"/>
 
   <!-- Top face (perspective) -->
-  <polygon points="100,150 140,110 340,110 300,150" fill='rgba(88, 166, 255, 0.1)' stroke='currentColor' stroke-width="2"/>
+  <polygon points="80,120 130,75 330,75 280,120" fill="rgba(88,166,255,0.1)" stroke="currentColor" stroke-width="2"/>
 
   <!-- Right face (perspective) -->
-  <polygon points="300,150 340,110 340,260 300,300" fill='rgba(88, 166, 255, 0.05)' stroke='currentColor' stroke-width="2"/>
+  <polygon points="280,120 330,75 330,235 280,280" fill="rgba(88,166,255,0.05)" stroke="currentColor" stroke-width="2"/>
 
-  <!-- Base diagonal -->
-  <line x1="100" y1="300" x2="300" y2="150" stroke='#79c0ff' stroke-width="2" stroke-dasharray="5,5"/>
+  <!-- Base diagonal (dashed) -->
+  <line x1="80" y1="280" x2="280" y2="120" stroke="#79c0ff" stroke-width="2" stroke-dasharray="6,4"/>
 
-  <!-- Space diagonal -->
-  <line x1="100" y1="300" x2="340" y2="110" stroke='#58a6ff' stroke-width="3"/>
+  <!-- Space diagonal (bold, from front-bottom-left to back-top-right) -->
+  <line x1="80" y1="280" x2="330" y2="75" stroke="#58a6ff" stroke-width="3"/>
 
-  <!-- Height -->
-  <line x1="300" y1="150" x2="340" y2="110" stroke='#79c0ff' stroke-width="2"/>
+  <!-- Height line -->
+  <line x1="280" y1="280" x2="330" y2="235" stroke="#79c0ff" stroke-width="2"/>
 
-  <!-- Labels -->
-  <text x="150" y="330" font-size='14' fill='#79c0ff'>3 m (length)</text>
-  <text x="320" y="280" font-size='14' fill='#79c0ff'>4 m (width)</text>
-  <text x="350" y="200" font-size='14' fill='#79c0ff'>12 m</text>
-  <text x="200" y="190" font-size='14' font-weight='bold' fill='#58a6ff'>13 m (space diagonal)</text>
+  <!-- Dimension labels -->
+  <text x="140" y="310" font-size="14" fill="#79c0ff" font-family="sans-serif">3 m (length)</text>
+  <text x="295" y="270" font-size="14" fill="#79c0ff" font-family="sans-serif">4 m</text>
+  <text x="345" y="165" font-size="14" fill="#79c0ff" font-family="sans-serif">12 m</text>
+  <text x="180" y="165" font-size="15" font-weight="bold" fill="#58a6ff" font-family="sans-serif">13 m</text>
+  <text x="170" y="185" font-size="12" fill="#58a6ff" font-family="sans-serif">(space diagonal)</text>
+
+  <!-- Small dot at endpoints of space diagonal -->
+  <circle cx="80" cy="280" r="4" fill="#58a6ff"/>
+  <circle cx="330" cy="75" r="4" fill="#58a6ff"/>
 </svg>
 
 <div class='info-box'>
