@@ -15,30 +15,42 @@ SECTIONS = [
 <div class="success-box">
 <p>Draw a line parallel to the base of a triangle through the top vertex. Using alternate angles and angles on a line, we can prove the sum is 180°.</p>
 
-<svg width="100%" height="220" viewBox="0 0 500 220" class="formula-box">
-  <!-- Parallel line -->
-  <line x1="100" y1="80" x2="400" y2="80" stroke='#58a6ff' stroke-width="2" stroke-dasharray="5,5"/>
+<svg width="100%" height="230" viewBox="-15 -15 530 260" class="formula-box">
+  <!-- Parallel line through top vertex -->
+  <line x1="80" y1="50" x2="420" y2="50" stroke='#58a6ff' stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="85" y="42" fill='#58a6ff' font-size='10'>E</text>
+  <text x="405" y="42" fill='#58a6ff' font-size='10'>F</text>
 
   <!-- Triangle -->
-  <line x1="250" y1="30" x2="150" y2="150" stroke='#56d364' stroke-width="2.5"/>
-  <line x1="250" y1="30" x2="350" y2="150" stroke='#56d364' stroke-width="2.5"/>
-  <line x1="150" y1="150" x2="350" y2="150" stroke='#56d364' stroke-width="2.5"/>
+  <polygon points="250,50 130,170 370,170" fill='none' stroke='#56d364' stroke-width="2.5"/>
 
-  <!-- Angle markers -->
-  <circle cx="250" cy="30" r="3" fill='#f85149'/>
-  <circle cx="150" cy="150" r="3" fill='#f85149'/>
-  <circle cx="350" cy="150" r="3" fill='#f85149'/>
+  <!-- Vertex dots -->
+  <circle cx="250" cy="50" r="3" fill='currentColor'/>
+  <circle cx="130" cy="170" r="3" fill='currentColor'/>
+  <circle cx="370" cy="170" r="3" fill='currentColor'/>
 
-  <!-- Angle labels -->
-  <text x="245" y="55" fill='#79c0ff' font-size='13' font-weight='bold'>A</text>
-  <text x="130" y="160" fill='#79c0ff' font-size='13' font-weight='bold'>B</text>
-  <text x="360" y="160" fill='#79c0ff' font-size='13' font-weight='bold'>C</text>
+  <!-- Angle arcs at A -->
+  <path d="M 220,50 A 30,30 0 0,0 232,72" fill='none' stroke='#f85149' stroke-width="2"/>
+  <path d="M 268,72 A 30,30 0 0,0 280,50" fill='none' stroke='#a371f7' stroke-width="2"/>
+  <path d="M 232,72 A 30,30 0 0,0 268,72" fill='none' stroke='#79c0ff' stroke-width="2"/>
 
-  <!-- Parallel line angles -->
-  <text x="110" y="95" fill='currentColor' font-size='12' font-weight='bold'>(= B)</text>
-  <text x="370" y="95" fill='currentColor' font-size='12' font-weight='bold'>(= C)</text>
+  <!-- Angle arcs at B -->
+  <path d="M 160,170 A 30,30 0 0,0 145,148" fill='none' stroke='#f85149' stroke-width="2"/>
 
-  <text x="100" y="200" fill='#56d364' font-size='12' font-weight='bold'>A + B + C = angles on line = 180°</text>
+  <!-- Angle arcs at C -->
+  <path d="M 355,148 A 30,30 0 0,0 340,170" fill='none' stroke='#a371f7' stroke-width="2"/>
+
+  <!-- Labels -->
+  <text x="250" y="90" fill='#79c0ff' font-size='13' font-weight='bold' text-anchor='middle'>A</text>
+  <text x="110" y="180" fill='#f85149' font-size='13' font-weight='bold'>B</text>
+  <text x="380" y="180" fill='#a371f7' font-size='13' font-weight='bold'>C</text>
+
+  <!-- Alternate angle labels on parallel line -->
+  <text x="185" y="48" fill='#f85149' font-size='11' font-weight='bold'>(= B)</text>
+  <text x="290" y="48" fill='#a371f7' font-size='11' font-weight='bold'>(= C)</text>
+
+  <!-- Conclusion -->
+  <text x="250" y="215" fill='#56d364' font-size='13' font-weight='bold' text-anchor='middle'>B + A + C = angles on a line = 180°</text>
 </svg>
 </div>
 
@@ -107,35 +119,43 @@ SECTIONS = [
 </div>
 
 <h4>Visual: Triangle Types</h4>
-<svg width="100%" height="240" viewBox="0 0 700 240" class="formula-box">
+<svg width="100%" height="240" viewBox="-15 -15 730 270" class="formula-box">
   <!-- Equilateral -->
-  <text x="30" y="25" fill='currentColor' font-size='14' font-weight='bold'>Equilateral</text>
-  <polygon points="80,180 50,100 110,100" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
-  <text x="70" y="125" fill='#79c0ff' font-size='12' font-weight='bold'>60°</text>
+  <text x="80" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Equilateral</text>
+  <polygon points="80,50 30,135 130,135" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
+  <path d="M 60,135 A 20,20 0 0,1 47,118" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
+  <path d="M 113,118 A 20,20 0 0,1 100,135" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
+  <path d="M 92,63 A 20,20 0 0,1 68,63" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
+  <text x="80" y="120" fill='currentColor' font-size='11' font-weight='bold' text-anchor='middle'>60°</text>
+  <text x="80" y="155" fill='currentColor' font-size='11' text-anchor='middle'>All sides equal</text>
 
   <!-- Isosceles -->
-  <text x="160" y="25" fill='currentColor' font-size='14' font-weight='bold'>Isosceles</text>
-  <polygon points="210,180 160,80 260,80" fill='none' stroke='#56d364' stroke-width="2.5"/>
-  <text x="195" y="140" fill='#79c0ff' font-size='12' font-weight='bold'>70°</text>
-  <text x="245" y="140" fill='#79c0ff' font-size='12' font-weight='bold'>70°</text>
+  <text x="260" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Isosceles</text>
+  <polygon points="260,50 195,135 325,135" fill='none' stroke='#56d364' stroke-width="2.5"/>
+  <path d="M 225,135 A 20,20 0 0,1 212,118" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
+  <path d="M 308,118 A 20,20 0 0,1 295,135" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
+  <!-- Tick marks for equal sides -->
+  <line x1="223" y1="88" x2="233" y2="96" stroke='#56d364' stroke-width="1.5"/>
+  <line x1="287" y1="96" x2="297" y2="88" stroke='#56d364' stroke-width="1.5"/>
+  <text x="210" y="118" fill='currentColor' font-size='11' font-weight='bold'>70°</text>
+  <text x="292" y="118" fill='currentColor' font-size='11' font-weight='bold'>70°</text>
+  <text x="260" y="155" fill='currentColor' font-size='11' text-anchor='middle'>Two sides equal</text>
 
   <!-- Scalene -->
-  <text x="310" y="25" fill='currentColor' font-size='14' font-weight='bold'>Scalene</text>
-  <polygon points="360,180 310,90 400,120" fill='none' stroke='#f85149' stroke-width="2.5"/>
-  <text x="330" y="120" fill='#ff7b72' font-size='11' font-weight='bold'>40°</text>
-  <text x="370" y="100" fill='#ff7b72' font-size='11' font-weight='bold'>75°</text>
+  <text x="440" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Scalene</text>
+  <polygon points="420,50 390,135 500,135" fill='none' stroke='#f85149' stroke-width="2.5"/>
+  <path d="M 420,135 A 20,20 0 0,1 407,118" fill='none' stroke='#ff7b72' stroke-width="1.5"/>
+  <path d="M 483,118 A 20,20 0 0,1 470,135" fill='none' stroke='#ff7b72' stroke-width="1.5"/>
+  <text x="400" y="120" fill='currentColor' font-size='10' font-weight='bold'>50°</text>
+  <text x="468" y="120" fill='currentColor' font-size='10' font-weight='bold'>65°</text>
+  <text x="440" y="155" fill='currentColor' font-size='11' text-anchor='middle'>All sides different</text>
 
   <!-- Right-angled -->
-  <text x="480" y="25" fill='currentColor' font-size='14' font-weight='bold'>Right-angled</text>
-  <polygon points="530,180 480,100 530,100" fill='none' stroke='#a371f7' stroke-width="2.5"/>
-  <rect x="530" y="100" width="12" height="12" fill='none' stroke='#a371f7' stroke-width="1.5"/>
-  <text x="495" y="145" fill='#c8b6ff' font-size='11' font-weight='bold'>90°</text>
-
-  <!-- Acute -->
-  <text x="30" y="230" fill='currentColor' font-size='12'>All angles < 90°</text>
-
-  <!-- Obtuse -->
-  <text x="600" y="230" fill='currentColor' font-size='12'>One angle > 90°</text>
+  <text x="620" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Right-angled</text>
+  <polygon points="590,50 590,135 680,135" fill='none' stroke='#a371f7' stroke-width="2.5"/>
+  <polyline points="590,120 605,120 605,135" fill='none' stroke='#c8b6ff' stroke-width="1.5"/>
+  <text x="600" y="115" fill='currentColor' font-size='10' font-weight='bold'>90°</text>
+  <text x="620" y="155" fill='currentColor' font-size='11' text-anchor='middle'>One angle = 90°</text>
 </svg>
 """
     },
@@ -150,33 +170,36 @@ SECTIONS = [
 </div>
 
 <h4>Visual: Exterior Angle</h4>
-<svg width="100%" height="240" viewBox="0 0 500 240" class="formula-box">
+<svg width="100%" height="250" viewBox="-15 -15 510 280" class="formula-box">
   <!-- Triangle -->
-  <line x1="150" y1="160" x2="250" y2="50" stroke='#58a6ff' stroke-width="2.5"/>
-  <line x1="250" y1="50" x2="350" y2="160" stroke='#58a6ff' stroke-width="2.5"/>
-  <line x1="150" y1="160" x2="350" y2="160" stroke='#58a6ff' stroke-width="2.5"/>
+  <polygon points="120,170 250,40 360,170" fill='none' stroke='#58a6ff' stroke-width="2.5"/>
 
-  <!-- Extended line -->
-  <line x1="350" y1="160" x2="430" y2="160" stroke='#56d364' stroke-width="2.5" stroke-dasharray="5,5"/>
+  <!-- Extended line (BC extended to D) -->
+  <line x1="360" y1="170" x2="460" y2="170" stroke='#56d364' stroke-width="2.5" stroke-dasharray="5,5"/>
 
-  <!-- Vertices -->
-  <circle cx="150" cy="160" r="3" fill='#f85149'/>
-  <circle cx="250" cy="50" r="3" fill='#f85149'/>
-  <circle cx="350" cy="160" r="3" fill='#f85149'/>
+  <!-- Vertex dots -->
+  <circle cx="120" cy="170" r="3" fill='currentColor'/>
+  <circle cx="250" cy="40" r="3" fill='currentColor'/>
+  <circle cx="360" cy="170" r="3" fill='currentColor'/>
 
-  <!-- Angle labels -->
-  <text x="160" y="145" fill='#79c0ff' font-size='13' font-weight='bold'>B</text>
-  <text x="240" y="70" fill='#79c0ff' font-size='13' font-weight='bold'>A</text>
-  <text x="325" y="145" fill='#79c0ff' font-size='13' font-weight='bold'>C</text>
-  <text x="380" y="145" fill='#f8a5a5' font-size='13' font-weight='bold'>Ext</text>
+  <!-- Interior angle arcs -->
+  <path d="M 150,170 A 30,30 0 0,1 137,148" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <path d="M 267,58 A 30,30 0 0,1 233,58" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <path d="M 343,148 A 30,30 0 0,1 330,170" fill='none' stroke='#79c0ff' stroke-width="2"/>
 
-  <!-- Angle arcs -->
-  <path d="M 350 160 A 30 30 0 0 0 380 160" fill='none' stroke='#f8a5a5' stroke-width="2"/>
+  <!-- Exterior angle arc -->
+  <path d="M 390,170 A 30,30 0 0,0 377,148" fill='none' stroke='#f8a5a5' stroke-width="2.5"/>
+
+  <!-- Labels -->
+  <text x="155" y="158" fill='currentColor' font-size='13' font-weight='bold'>B</text>
+  <text x="250" y="78" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>A</text>
+  <text x="315" y="158" fill='currentColor' font-size='13' font-weight='bold'>C</text>
+  <text x="395" y="158" fill='#f8a5a5' font-size='13' font-weight='bold'>Ext</text>
+  <text x="465" y="174" fill='currentColor' font-size='11'>D</text>
 
   <!-- Explanation -->
-  <text x="50" y="200" fill='currentColor' font-size='12' font-weight='bold'>Exterior angle = A + B</text>
-  <text x="50" y="220" fill='currentColor' font-size='11'>Also, Exterior angle + C = 180°</text>
-  <text x="50" y="235" fill='currentColor' font-size='11'>(because they form a straight line)</text>
+  <text x="50" y="210" fill='currentColor' font-size='13' font-weight='bold'>Exterior angle = A + B</text>
+  <text x="50" y="230" fill='currentColor' font-size='12'>Also: Exterior angle + C = 180° (straight line)</text>
 </svg>
 
 <h4>Worked Example</h4>

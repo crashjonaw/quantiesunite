@@ -26,39 +26,39 @@ SECTIONS = [
 </div>
 
 <p><strong>Visual Representation:</strong></p>
-<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg" class="formula-box">
-  <text x="20" y="30" class="idx-text" style="font-size:16px;">2³ × 2²</text>
-
-  <!-- First group of 2s -->
-  <circle cx="30" cy="70" r="6" fill='#79c0ff'/>
-  <circle cx="50" cy="70" r="6" fill='#79c0ff'/>
-  <circle cx="70" cy="70" r="6" fill='#79c0ff'/>
-  <text x="20" y="100" class="idx-label">3 factors</text>
-
-  <!-- Second group of 2s -->
-  <circle cx="110" cy="70" r="6" fill='#79c0ff'/>
-  <circle cx="130" cy="70" r="6" fill='#79c0ff'/>
-  <text x="100" y="100" class="idx-label">2 factors</text>
-
-  <!-- Arrow -->
-  <path d="M 200 70 L 260 70" stroke='#30363d' stroke-width="2" fill='none' marker-end="url(#arrowhead)"/>
-  <text x="210" y="55" class="idx-text" style="font-size:12px;">add</text>
-
-  <!-- Result -->
-  <circle cx="300" cy="70" r="6" fill='#7ee787'/>
-  <circle cx="320" cy="70" r="6" fill='#7ee787'/>
-  <circle cx="340" cy="70" r="6" fill='#7ee787'/>
-  <circle cx="360" cy="70" r="6" fill='#7ee787'/>
-  <circle cx="380" cy="70" r="6" fill='#7ee787'/>
-  <text x="290" y="100" class="idx-text" style="font-size: 14px">= 2⁵</text>
-
-  <text x="280" y="145" class="idx-text" style="font-size:12px;">Total: 3 + 2 = 5 factors of 2</text>
-
+<svg viewBox="0 0 430 165" style="max-width:460px;width:100%;">
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill='#30363d'/>
+    <marker id="arrowhead-law1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#4169E1"/>
     </marker>
   </defs>
+
+  <text x="15" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">2³ × 2²</text>
+
+  <!-- First group of 2s -->
+  <circle cx="25" cy="60" r="6" fill="#79c0ff"/>
+  <circle cx="45" cy="60" r="6" fill="#79c0ff"/>
+  <circle cx="65" cy="60" r="6" fill="#79c0ff"/>
+  <text x="15" y="88" font-size="11" fill="currentColor" font-family="sans-serif">3 factors</text>
+
+  <!-- Second group of 2s -->
+  <circle cx="110" cy="60" r="6" fill="#79c0ff"/>
+  <circle cx="130" cy="60" r="6" fill="#79c0ff"/>
+  <text x="100" y="88" font-size="11" fill="currentColor" font-family="sans-serif">2 factors</text>
+
+  <!-- Arrow -->
+  <line x1="175" y1="60" x2="235" y2="60" stroke="#4169E1" stroke-width="2" marker-end="url(#arrowhead-law1)"/>
+  <text x="195" y="48" font-size="12" fill="currentColor" font-family="sans-serif">add</text>
+
+  <!-- Result -->
+  <circle cx="270" cy="60" r="6" fill="#7ee787"/>
+  <circle cx="290" cy="60" r="6" fill="#7ee787"/>
+  <circle cx="310" cy="60" r="6" fill="#7ee787"/>
+  <circle cx="330" cy="60" r="6" fill="#7ee787"/>
+  <circle cx="350" cy="60" r="6" fill="#7ee787"/>
+  <text x="260" y="88" font-size="14" font-weight="bold" fill="currentColor" font-family="sans-serif">= 2⁵</text>
+
+  <text x="215" y="130" text-anchor="middle" font-size="12" fill="currentColor" font-family="sans-serif">Total: 3 + 2 = 5 factors of 2</text>
 </svg>
 """
     },

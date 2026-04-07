@@ -11,46 +11,68 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 510 160" xmlns="http://www.w3.org/2000/svg">
-      <text x="150" y="25" font-size="16" font-weight="bold" fill="currentColor" text-anchor="middle">100 squares: 25 are shaded</text>
+    <svg viewBox="0 0 310 175" xmlns="http://www.w3.org/2000/svg">
+      <text x="155" y="25" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">100 Squares: 25 Are Shaded (25%)</text>
 
       <g id="grid">
-        <!-- 10x10 grid -->
-        <rect x="50" y="40" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="70" y="40" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="90" y="40" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="110" y="40" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="130" y="40" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="150" y="40" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="170" y="40" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="190" y="40" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="210" y="40" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="230" y="40" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-
-        <rect x="50" y="60" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="70" y="60" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="90" y="60" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="110" y="60" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="130" y="60" width="20" height="20" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="150" y="60" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="170" y="60" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="190" y="60" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="210" y="60" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="230" y="60" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-
-        <rect x="50" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="70" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="90" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="110" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="130" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="150" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="170" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="190" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="210" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
-        <rect x="230" y="80" width="20" height="20" fill="#999" stroke="#30363d" stroke-width="0.5"/>
+        <!-- Row 1 -->
+        <rect x="55" y="40" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="75" y="40" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="95" y="40" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="115" y="40" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="135" y="40" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="155" y="40" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="175" y="40" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="195" y="40" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="215" y="40" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="235" y="40" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <!-- Row 2 -->
+        <rect x="55" y="60" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="75" y="60" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="95" y="60" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="115" y="60" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="135" y="60" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="155" y="60" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="175" y="60" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="195" y="60" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="215" y="60" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="235" y="60" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <!-- Row 3 -->
+        <rect x="55" y="80" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="75" y="80" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="95" y="80" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="115" y="80" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="135" y="80" width="18" height="18" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="155" y="80" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="175" y="80" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="195" y="80" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="215" y="80" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="235" y="80" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <!-- Row 4 -->
+        <rect x="55" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="75" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="95" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="115" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="135" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="155" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="175" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="195" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="215" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="235" y="100" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <!-- Row 5 -->
+        <rect x="55" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="75" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="95" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="115" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="135" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="155" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="175" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="195" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="215" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
+        <rect x="235" y="120" width="18" height="18" fill="#999" stroke="#30363d" stroke-width="0.5" rx="1"/>
       </g>
 
-      <text x="150" y="130" font-size="20" font-weight="bold" text-anchor="middle" fill="currentColor">25 out of 100 = 25% = \\\\( \\\\frac{25}{100} \\\\) = 0.25</text>
+      <text x="155" y="160" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">25 out of 100 = 25% = 0.25</text>
     </svg>
   </div>
 
@@ -111,32 +133,32 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 600 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="300" y="30" font-size="18" font-weight="bold" text-anchor="middle" fill="currentColor">Conversion Triangle</text>
-
-      <circle cx="300" cy="80" r="30" fill="#4169E1" opacity="0.3" stroke="#4169E1" stroke-width="2"/>
-      <text x="300" y="90" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">Percent</text>
-
-      <circle cx="150" cy="180" r="30" fill="#22c55e" opacity="0.3" stroke="#22c55e" stroke-width="2"/>
-      <text x="150" y="190" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">Decimal</text>
-
-      <circle cx="450" cy="180" r="30" fill="#f59e0b" opacity="0.3" stroke="#f59e0b" stroke-width="2"/>
-      <text x="450" y="190" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">Fraction</text>
-
-      <path d="M 280 105 Q 200 130 170 155" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="220" y="120" font-size="11" fill="currentColor">÷ 100</text>
-
-      <path d="M 320 105 Q 400 130 430 155" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="350" y="120" font-size="11" fill="currentColor">÷ 100, simplify</text>
-
-      <path d="M 150 210 Q 300 240 450 210" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="300" y="235" font-size="11" fill="currentColor">× 100</text>
-
+    <svg viewBox="0 0 430 215" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
           <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
         </marker>
       </defs>
+
+      <text x="215" y="25" font-size="15" font-weight="bold" text-anchor="middle" fill="currentColor">Conversion Triangle</text>
+
+      <circle cx="215" cy="70" r="28" fill="#4169E1" opacity="0.3" stroke="#4169E1" stroke-width="2"/>
+      <text x="215" y="75" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Percent</text>
+
+      <circle cx="90" cy="165" r="28" fill="#22c55e" opacity="0.3" stroke="#22c55e" stroke-width="2"/>
+      <text x="90" y="170" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Decimal</text>
+
+      <circle cx="340" cy="165" r="28" fill="#f59e0b" opacity="0.3" stroke="#f59e0b" stroke-width="2"/>
+      <text x="340" y="170" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Fraction</text>
+
+      <path d="M 195 93 Q 140 115 112 142" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <text x="140" y="108" font-size="11" fill="currentColor">divide 100</text>
+
+      <path d="M 235 93 Q 290 115 318 142" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <text x="268" y="108" font-size="11" fill="currentColor">divide 100</text>
+
+      <path d="M 118 180 Q 215 205 312 180" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+      <text x="215" y="202" font-size="11" text-anchor="middle" fill="currentColor">multiply 100</text>
     </svg>
   </div>
 
@@ -172,20 +194,31 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 510 280" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">Find 40% of 150</text>
+    <svg viewBox="0 0 470 265" xmlns="http://www.w3.org/2000/svg">
+      <text x="235" y="25" font-size="15" font-weight="bold" fill="currentColor" text-anchor="middle">Find 40% of 150</text>
 
-      <text x="50" y="70" font-size="14" fill="currentColor"><tspan x="50">Method 1: Decimal</tspan><tspan x="50" dy="25">40% = 0.40</tspan><tspan x="50" dy="25">0.40 × 150 = 60</tspan></text>
+      <!-- Method 1 -->
+      <rect x="15" y="45" width="200" height="80" fill="#4169E1" opacity="0.15" stroke="#30363d" stroke-width="1" rx="4"/>
+      <text x="115" y="65" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Method 1: Decimal</text>
+      <text x="115" y="85" font-size="12" text-anchor="middle" fill="currentColor">40% = 0.40</text>
+      <text x="115" y="105" font-size="12" text-anchor="middle" fill="currentColor">0.40 x 150 = 60</text>
 
-      <text x="300" y="70" font-size="14" fill="currentColor"><tspan x="300">Method 2: Fraction</tspan><tspan x="300" dy="25">40% = \\\\( \\\\frac{40}{100} = \\\\frac{2}{5} \\\\)</tspan><tspan x="300" dy="25">\\\\( \\\\frac{2}{5} \\\\times 150 = 60 \\\\)</tspan></text>
+      <!-- Method 2 -->
+      <rect x="255" y="45" width="200" height="80" fill="#22c55e" opacity="0.15" stroke="#30363d" stroke-width="1" rx="4"/>
+      <text x="355" y="65" font-size="13" font-weight="bold" text-anchor="middle" fill="currentColor">Method 2: Fraction</text>
+      <text x="355" y="85" font-size="12" text-anchor="middle" fill="currentColor">40% = 2/5</text>
+      <text x="355" y="105" font-size="12" text-anchor="middle" fill="currentColor">2/5 x 150 = 60</text>
 
-      <text x="50" y="170" font-size="16" font-weight="bold" fill="currentColor">Bar Model Visualization:</text>
+      <!-- Bar Model -->
+      <text x="235" y="155" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">Bar Model:</text>
 
-      <rect x="50" y="190" width="400" height="40" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
-      <rect x="50" y="190" width="160" height="40" fill="#4169E1" opacity="0.6" rx="4"/>
-      <text x="250" y="220" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">40% = 60 out of 150</text>
+      <rect x="35" y="170" width="400" height="40" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="35" y="170" width="160" height="40" fill="#4169E1" opacity="0.6" rx="4"/>
+      <text x="115" y="195" font-size="12" text-anchor="middle" fill="currentColor">40% = 60</text>
+      <text x="295" y="195" font-size="12" text-anchor="middle" fill="currentColor">60% = 90</text>
 
-      <text x="50" y="260" font-size="14" fill="currentColor">Bar shows 150 total (marked in 5 parts of 30 each). First 2 parts shaded = 60.</text>
+      <text x="235" y="240" font-size="11" text-anchor="middle" fill="currentColor">150 total: 5 parts of 30 each. First 2 parts shaded = 60.</text>
+      <text x="235" y="255" font-size="11" text-anchor="middle" fill="#a0aec0">40% + 60% = 100%</text>
     </svg>
   </div>
 
@@ -238,18 +271,23 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 510 260" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">12 out of 30 students passed. What percent is this?</text>
+    <svg viewBox="0 0 430 250" xmlns="http://www.w3.org/2000/svg">
+      <text x="215" y="25" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">12 out of 30 students passed. What percent?</text>
 
-      <rect x="50" y="60" width="350" height="50" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
-      <rect x="50" y="60" width="140" height="50" fill="#22c55e" opacity="0.6" rx="4"/>
+      <!-- Bar model -->
+      <rect x="40" y="45" width="350" height="45" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="40" y="45" width="140" height="45" fill="#22c55e" opacity="0.6" rx="4"/>
+      <text x="110" y="73" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">Passed: 12</text>
+      <text x="270" y="73" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">Failed: 18</text>
 
-      <text x="170" y="95" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">Passed: 12</text>
-      <text x="280" y="95" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor">Failed: 18</text>
+      <!-- Steps -->
+      <text x="40" y="120" font-size="13" fill="currentColor">Fraction: 12/30 = 2/5</text>
+      <text x="40" y="145" font-size="13" fill="currentColor">Decimal: 12 / 30 = 0.4</text>
+      <text x="40" y="170" font-size="13" fill="currentColor">Percent: 0.4 x 100 = 40%</text>
 
-      <text x="50" y="150" font-size="14" fill="currentColor"><tspan x="50">Fraction: \\\\( \\\\frac{12}{30} = \\\\frac{2}{5} \\\\)</tspan><tspan x="50" dy="25">Decimal: 12 ÷ 30 = 0.4</tspan><tspan x="50" dy="25">Percent: 0.4 × 100 = 40%</tspan></text>
-
-      <text x="50" y="250" font-size="14" font-weight="bold" fill="currentColor">Answer: 40% of students passed</text>
+      <!-- Answer -->
+      <rect x="40" y="195" width="350" height="35" fill="#22c55e" opacity="0.15" stroke="#30363d" stroke-width="1" rx="4"/>
+      <text x="215" y="218" font-size="14" font-weight="bold" text-anchor="middle" fill="currentColor">Answer: 40% of students passed</text>
     </svg>
   </div>
 
@@ -312,28 +350,31 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 560 290" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">Increase: £50 increased by 20%</text>
+    <svg viewBox="0 0 470 285" xmlns="http://www.w3.org/2000/svg">
+      <!-- Increase section -->
+      <text x="235" y="25" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">Increase: £50 increased by 20%</text>
 
-      <rect x="50" y="50" width="200" height="40" fill="#4169E1" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="150" y="80" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">Original: £50</text>
+      <rect x="35" y="45" width="180" height="35" fill="#4169E1" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="125" y="68" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">Original: £50</text>
 
-      <rect x="270" y="50" width="200" height="40" fill="#4169E1" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
-      <rect x="270" y="50" width="40" height="40" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="330" y="80" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">New: £60 (£50 + £10)</text>
+      <rect x="255" y="45" width="180" height="35" fill="#4169E1" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="255" y="45" width="36" height="35" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="345" y="68" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">New: £60</text>
 
-      <text x="50" y="130" font-size="14" fill="currentColor">20% of £50 = 0.20 × £50 = £10 increase</text>
-      <text x="50" y="155" font-size="14" fill="currentColor">New amount = £50 + £10 = £60</text>
+      <text x="35" y="110" font-size="12" fill="currentColor">20% of £50 = 0.20 x £50 = £10 increase</text>
+      <text x="35" y="130" font-size="12" fill="currentColor">New amount = £50 + £10 = £60</text>
 
-      <text x="50" y="200" font-size="16" font-weight="bold" fill="currentColor">Decrease: £80 decreased by 25%</text>
+      <!-- Decrease section -->
+      <text x="235" y="165" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">Decrease: £80 decreased by 25%</text>
 
-      <rect x="50" y="220" width="200" height="40" fill="#ef4444" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="150" y="250" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">Original: £80</text>
+      <rect x="35" y="180" width="180" height="35" fill="#ef4444" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="125" y="203" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">Original: £80</text>
 
-      <rect x="270" y="220" width="150" height="40" fill="#ef4444" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="345" y="250" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">New: £60</text>
+      <rect x="255" y="180" width="135" height="35" fill="#ef4444" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="322" y="203" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">New: £60</text>
 
-      <text x="50" y="280" font-size="14" fill="currentColor">25% of £80 = 0.25 × £80 = £20 decrease → £80 - £20 = £60</text>
+      <text x="35" y="245" font-size="12" fill="currentColor">25% of £80 = 0.25 x £80 = £20 decrease</text>
+      <text x="35" y="265" font-size="12" fill="currentColor">New amount = £80 - £20 = £60</text>
     </svg>
   </div>
 
@@ -381,23 +422,30 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 510 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold" fill="currentColor">Simple Interest Over Time</text>
+    <svg viewBox="0 0 470 265" xmlns="http://www.w3.org/2000/svg">
+      <text x="235" y="25" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">Simple Interest Over Time</text>
+      <text x="235" y="45" font-size="12" fill="currentColor" text-anchor="middle">Principal: £500 at 4% per year</text>
 
-      <text x="50" y="60" font-size="12" fill="currentColor">Principal: £500 at 4% per year</text>
+      <!-- Year bars -->
+      <rect x="15" y="65" width="130" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="80" y="85" font-size="11" text-anchor="middle" font-weight="bold" fill="currentColor">Year 0: £500</text>
 
-      <rect x="50" y="80" width="100" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="100" y="100" font-size="11" text-anchor="middle" font-weight="bold" fill="currentColor">Year 0: £500</text>
+      <rect x="170" y="65" width="130" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="170" y="65" width="20" height="30" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="235" y="85" font-size="11" text-anchor="middle" font-weight="bold" fill="currentColor">Year 1: £520</text>
 
-      <rect x="170" y="80" width="120" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
-      <rect x="170" y="80" width="20" height="30" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="230" y="100" font-size="11" text-anchor="middle" font-weight="bold" fill="currentColor">Year 1: £520</text>
+      <rect x="325" y="65" width="130" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <rect x="325" y="65" width="40" height="30" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <text x="390" y="85" font-size="11" text-anchor="middle" font-weight="bold" fill="currentColor">Year 2: £540</text>
 
-      <rect x="310" y="80" width="120" height="30" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
-      <rect x="310" y="80" width="40" height="30" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
-      <text x="370" y="100" font-size="11" text-anchor="middle" font-weight="bold" fill="currentColor">Year 2: £540</text>
+      <!-- Explanation -->
+      <text x="35" y="130" font-size="12" fill="currentColor">Each year: 4% of £500 = 0.04 x £500 = £20</text>
+      <text x="35" y="155" font-size="12" fill="currentColor">Year 1: £500 + £20 = £520</text>
+      <text x="35" y="175" font-size="12" fill="currentColor">Year 2: £520 + £20 = £540</text>
+      <text x="35" y="195" font-size="12" fill="currentColor">Year 3: £540 + £20 = £560</text>
 
-      <text x="50" y="150" font-size="12" fill="currentColor"><tspan x="50">Each year: 4% of £500 = 0.04 × £500 = £20</tspan><tspan x="50" dy="20">Year 1: £500 + £20 = £520</tspan><tspan x="50" dy="20">Year 2: £520 + £20 = £540</tspan><tspan x="50" dy="20">Year 3: £540 + £20 = £560</tspan><tspan x="50" dy="20">...</tspan><tspan x="50" dy="20">Notice: Interest stays the same (£20/year) in simple interest</tspan></text>
+      <rect x="35" y="215" width="400" height="30" fill="#f59e0b" opacity="0.15" stroke="#30363d" stroke-width="1" rx="4"/>
+      <text x="235" y="235" font-size="12" text-anchor="middle" fill="currentColor">Interest stays the same (£20/year) in simple interest</text>
     </svg>
   </div>
 
@@ -499,32 +547,42 @@ SECTIONS = [
     <p><strong>Question:</strong> A jumper costs £50. First it is discounted by 20%, then there is an extra 10% off the new price. What is the final price?</p>
 
     <div class="diagram-container">
-      <svg viewBox="0 0 510 260" xmlns="http://www.w3.org/2000/svg">
-        <text x="50" y="30" font-size="14" font-weight="bold" fill="currentColor">Original: £50</text>
-
-        <rect x="50" y="50" width="150" height="40" fill="#ef4444" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
-        <text x="125" y="75" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">£50</text>
-
-        <path d="M 210 70 L 250 70" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead2)"/>
-        <text x="230" y="60" font-size="11" text-anchor="middle" fill="currentColor">-20%</text>
-
-        <text x="270" y="30" font-size="14" font-weight="bold" fill="currentColor">After 1st discount: £40</text>
-
-        <rect x="270" y="50" width="120" height="40" fill="#f59e0b" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
-        <text x="330" y="75" font-size="12" text-anchor="middle" font-weight="bold" fill="currentColor">£40</text>
-
-        <path d="M 400 70 L 440 70" stroke="currentColor" stroke-width="2" marker-end="url(#arrowhead2)"/>
-        <text x="420" y="60" font-size="11" text-anchor="middle" fill="currentColor">-10%</text>
-
-        <text x="50" y="140" font-size="14" fill="currentColor"><tspan x="50">Step 1: 20% of £50 = £10</tspan><tspan x="50" dy="20">After 1st discount: £50 - £10 = £40</tspan><tspan x="50" dy="20">Step 2: 10% of £40 = £4</tspan><tspan x="50" dy="20">After 2nd discount: £40 - £4 = £36</tspan><tspan x="50" dy="20"><tspan font-weight="bold">Final price: £36 (not £50 - 30%!)</tspan></tspan></text>
-
-        <text x="50" y="240" font-size="12" fill="currentColor">Notice: 30% of £50 would be £15, giving £35. But applying discounts separately gives £36.</text>
-
+      <svg viewBox="0 0 470 265" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
             <polygon points="0 0, 10 3, 0 6" fill="currentColor"/>
           </marker>
         </defs>
+
+        <!-- Flow diagram -->
+        <rect x="15" y="15" width="120" height="50" fill="#ef4444" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+        <text x="75" y="35" font-size="11" text-anchor="middle" fill="currentColor">Original</text>
+        <text x="75" y="52" font-size="13" text-anchor="middle" font-weight="bold" fill="currentColor">£50</text>
+
+        <path d="M 145 40 L 175 40" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+        <text x="160" y="32" font-size="10" text-anchor="middle" fill="currentColor">-20%</text>
+
+        <rect x="185" y="15" width="120" height="50" fill="#f59e0b" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+        <text x="245" y="35" font-size="11" text-anchor="middle" fill="currentColor">After 1st</text>
+        <text x="245" y="52" font-size="13" text-anchor="middle" font-weight="bold" fill="currentColor">£40</text>
+
+        <path d="M 315 40 L 345 40" stroke="currentColor" stroke-width="2" fill="none" marker-end="url(#arrowhead2)"/>
+        <text x="330" y="32" font-size="10" text-anchor="middle" fill="currentColor">-10%</text>
+
+        <rect x="355" y="15" width="100" height="50" fill="#22c55e" opacity="0.5" stroke="#30363d" stroke-width="2" rx="4"/>
+        <text x="405" y="35" font-size="11" text-anchor="middle" fill="currentColor">Final</text>
+        <text x="405" y="52" font-size="13" text-anchor="middle" font-weight="bold" fill="currentColor">£36</text>
+
+        <!-- Steps -->
+        <text x="35" y="100" font-size="12" fill="currentColor">Step 1: 20% of £50 = £10</text>
+        <text x="35" y="125" font-size="12" fill="currentColor">After 1st discount: £50 - £10 = £40</text>
+        <text x="35" y="155" font-size="12" fill="currentColor">Step 2: 10% of £40 = £4</text>
+        <text x="35" y="180" font-size="12" fill="currentColor">After 2nd discount: £40 - £4 = £36</text>
+
+        <rect x="35" y="200" width="400" height="30" fill="#22c55e" opacity="0.15" stroke="#30363d" stroke-width="1" rx="4"/>
+        <text x="235" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="currentColor">Final price: £36 (not £50 - 30% = £35!)</text>
+
+        <text x="235" y="255" font-size="11" text-anchor="middle" fill="#a0aec0">Applying discounts separately gives a different result than adding them.</text>
       </svg>
     </div>
   </div>

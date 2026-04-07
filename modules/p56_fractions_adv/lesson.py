@@ -13,19 +13,19 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg">
-      <rect x="50" y="20" width="300" height="80" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="125" y1="20" x2="125" y2="100" stroke="#333" stroke-width="1"/>
-      <line x1="200" y1="20" x2="200" y2="100" stroke="#333" stroke-width="1"/>
-      <line x1="275" y1="20" x2="275" y2="100" stroke="#333" stroke-width="1"/>
-      <rect x="50" y="20" width="75" height="80" fill="#4169E1" opacity="0.6"/>
-      <rect x="125" y="20" width="75" height="80" fill="#4169E1" opacity="0.6"/>
-      <rect x="200" y="20" width="75" height="80" fill="#4169E1" opacity="0.6"/>
-      <text x="200" y="130" font-size="24" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{3}{4} \\\\)</text>
-      <text x="87" y="65" font-size="16" text-anchor="middle" fill="white" font-weight="bold">1</text>
-      <text x="162" y="65" font-size="16" text-anchor="middle" fill="white" font-weight="bold">2</text>
-      <text x="237" y="65" font-size="16" text-anchor="middle" fill="white" font-weight="bold">3</text>
-      <text x="312" y="65" font-size="16" text-anchor="middle" fill="#333" font-weight="bold">4</text>
+    <svg viewBox="0 0 430 160" xmlns="http://www.w3.org/2000/svg">
+      <rect x="65" y="25" width="300" height="80" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="140" y1="25" x2="140" y2="105" stroke="#30363d" stroke-width="1"/>
+      <line x1="215" y1="25" x2="215" y2="105" stroke="#30363d" stroke-width="1"/>
+      <line x1="290" y1="25" x2="290" y2="105" stroke="#30363d" stroke-width="1"/>
+      <rect x="65" y="25" width="75" height="80" fill="#4169E1" opacity="0.6" rx="4"/>
+      <rect x="140" y="25" width="75" height="80" fill="#4169E1" opacity="0.6"/>
+      <rect x="215" y="25" width="75" height="80" fill="#4169E1" opacity="0.6"/>
+      <text x="215" y="145" font-size="22" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">3/4</text>
+      <text x="102" y="70" font-size="16" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">1</text>
+      <text x="177" y="70" font-size="16" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">2</text>
+      <text x="252" y="70" font-size="16" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">3</text>
+      <text x="327" y="70" font-size="16" text-anchor="middle" fill="currentColor" font-weight="bold" font-family="sans-serif">4</text>
     </svg>
   </div>
 
@@ -44,32 +44,29 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <rect x="20" y="20" width="200" height="60" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="120" y1="20" x2="120" y2="80" stroke="#333" stroke-width="1"/>
-      <rect x="20" y="20" width="100" height="60" fill="#4169E1" opacity="0.6"/>
-      <text x="120" y="110" font-size="16" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{1}{2} \\\\)</text>
-
-      <path d="M 240 55 Q 250 50 270 60" fill="none" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="195" y="50" font-size="14" text-anchor="middle">× 2</text>
-
-      <rect x="280" y="20" width="200" height="60" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="330" y1="20" x2="330" y2="80" stroke="#333" stroke-width="1"/>
-      <line x1="380" y1="20" x2="380" y2="80" stroke="#333" stroke-width="1"/>
-      <line x1="430" y1="20" x2="430" y2="80" stroke="#333" stroke-width="1"/>
-      <rect x="280" y="20" width="100" height="60" fill="#4169E1" opacity="0.6"/>
-      <rect x="330" y="20" width="50" height="60" fill="#4169E1" opacity="0.6"/>
-      <text x="380" y="110" font-size="16" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{2}{4} \\\\)</text>
-
+    <svg viewBox="0 0 530 180" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-          <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+          <polygon points="0 0, 10 3, 0 6" fill="#30363d"/>
         </marker>
       </defs>
 
-      <text x="100" y="170" font-size="18" font-weight="bold">Finding equivalent fractions:</text>
-      <text x="50" y="200" font-size="16">\\\\( \\\\frac{2}{3} = \\\\frac{2 \\\\times 5}{3 \\\\times 5} = \\\\frac{10}{15} \\\\)</text>
-      <text x="50" y="230" font-size="16">\\\\( \\\\frac{4}{6} = \\\\frac{4 \\\\div 2}{6 \\\\div 2} = \\\\frac{2}{3} \\\\)</text>
+      <rect x="25" y="25" width="200" height="60" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="125" y1="25" x2="125" y2="85" stroke="#30363d" stroke-width="1"/>
+      <rect x="25" y="25" width="100" height="60" fill="#4169E1" opacity="0.6" rx="4"/>
+      <text x="125" y="115" font-size="18" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">1/2</text>
+
+      <path d="M 240 55 L 280 55" fill="none" stroke="#30363d" stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="260" y="45" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">x 2</text>
+
+      <rect x="300" y="25" width="200" height="60" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="350" y1="25" x2="350" y2="85" stroke="#30363d" stroke-width="1"/>
+      <line x1="400" y1="25" x2="400" y2="85" stroke="#30363d" stroke-width="1"/>
+      <line x1="450" y1="25" x2="450" y2="85" stroke="#30363d" stroke-width="1"/>
+      <rect x="300" y="25" width="100" height="60" fill="#4169E1" opacity="0.6" rx="4"/>
+      <text x="400" y="115" font-size="18" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">2/4</text>
+
+      <text x="265" y="155" font-size="16" font-weight="bold" text-anchor="middle" fill="currentColor" font-family="sans-serif">Same amount, different names</text>
     </svg>
   </div>
 
@@ -109,34 +106,35 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-      <rect x="20" y="20" width="150" height="80" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="35" y1="20" x2="35" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="50" y1="20" x2="50" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="65" y1="20" x2="65" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="80" y1="20" x2="80" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="95" y1="20" x2="95" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="110" y1="20" x2="110" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="125" y1="20" x2="125" y2="100" stroke="#999" stroke-width="1"/>
-      <line x1="140" y1="20" x2="140" y2="100" stroke="#999" stroke-width="1"/>
-
-      <rect x="20" y="20" width="135" height="80" fill="#ef4444" opacity="0.5"/>
-      <text x="95" y="120" font-size="18" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{12}{18} \\\\)</text>
-
-      <path d="M 180 60 L 210 60" stroke="#333" stroke-width="2" marker-end="url(#arrowhead2)"/>
-      <text x="195" y="50" font-size="14" text-anchor="middle">÷ 6</text>
-
-      <rect x="230" y="20" width="150" height="80" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="310" y1="20" x2="310" y2="100" stroke="#333" stroke-width="1"/>
-
-      <rect x="230" y="20" width="80" height="80" fill="#22c55e" opacity="0.5"/>
-      <text x="305" y="120" font-size="18" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{2}{3} \\\\)</text>
-
+    <svg viewBox="0 0 430 150" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowhead2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-          <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+          <polygon points="0 0, 10 3, 0 6" fill="#30363d"/>
         </marker>
       </defs>
+
+      <rect x="15" y="20" width="162" height="80" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="33" y1="20" x2="33" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="51" y1="20" x2="51" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="69" y1="20" x2="69" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="87" y1="20" x2="87" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="105" y1="20" x2="105" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="123" y1="20" x2="123" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="141" y1="20" x2="141" y2="100" stroke="#999" stroke-width="1"/>
+      <line x1="159" y1="20" x2="159" y2="100" stroke="#999" stroke-width="1"/>
+
+      <rect x="15" y="20" width="120" height="80" fill="#ef4444" opacity="0.5" rx="4"/>
+      <text x="96" y="130" font-size="18" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">12/18</text>
+
+      <path d="M 195 60 L 230 60" stroke="#30363d" stroke-width="2" marker-end="url(#arrowhead2)"/>
+      <text x="212" y="48" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">÷ 6</text>
+
+      <rect x="250" y="20" width="162" height="80" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="304" y1="20" x2="304" y2="100" stroke="#30363d" stroke-width="1"/>
+      <line x1="358" y1="20" x2="358" y2="100" stroke="#30363d" stroke-width="1"/>
+
+      <rect x="250" y="20" width="108" height="80" fill="#22c55e" opacity="0.5" rx="4"/>
+      <text x="331" y="130" font-size="18" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">2/3</text>
     </svg>
   </div>
 
@@ -161,48 +159,43 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="18" font-weight="bold">Different pieces - cannot add directly:</text>
-
-      <circle cx="80" cy="90" r="40" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="80" y1="50" x2="80" y2="130" stroke="#333" stroke-width="2"/>
-      <circle cx="80" cy="90" r="40" fill="#4169E1" opacity="0.6" clip-path="polygon(50%, 0%, 100%, 0%, 100%, 100%, 50%, 100%)"/>
-      <text x="80" y="160" font-size="16" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{1}{2} \\\\)</text>
-
-      <text x="140" y="100" font-size="28" font-weight="bold">+</text>
-
-      <circle cx="200" cy="90" r="40" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="160" y1="90" x2="240" y2="90" stroke="#333" stroke-width="2"/>
-      <line x1="200" y1="50" x2="200" y2="130" stroke="#333" stroke-width="2"/>
-      <path d="M 160 90 Q 160 70 200 50" fill="#22c55e" opacity="0.6"/>
-      <text x="200" y="160" font-size="16" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{1}{4} \\\\)</text>
-
-      <path d="M 250 100 L 300 100" stroke="#333" stroke-width="2" marker-end="url(#arrowhead3)"/>
-      <text x="275" y="85" font-size="14" text-anchor="middle">Convert to</text>
-      <text x="275" y="100" font-size="14" text-anchor="middle">same size</text>
-
-      <text x="350" y="30" font-size="18" font-weight="bold">Same pieces - can add:</text>
-
-      <circle cx="380" cy="90" r="40" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="380" y1="50" x2="380" y2="130" stroke="#333" stroke-width="2"/>
-      <line x1="340" y1="90" x2="420" y2="90" stroke="#333" stroke-width="2"/>
-      <path d="M 340 90 Q 340 70 380 50" fill="#4169E1" opacity="0.6"/>
-      <path d="M 380 50 Q 420 70 420 90" fill="#4169E1" opacity="0.6"/>
-      <text x="380" y="160" font-size="16" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{2}{4} \\\\)</text>
-
-      <text x="440" y="100" font-size="28" font-weight="bold">+</text>
-
-      <circle cx="500" cy="90" r="40" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="460" y1="90" x2="540" y2="90" stroke="#333" stroke-width="2"/>
-      <line x1="500" y1="50" x2="500" y2="130" stroke="#333" stroke-width="2"/>
-      <path d="M 420 90 Q 420 70 460 50" fill="#22c55e" opacity="0.6"/>
-      <text x="500" y="160" font-size="16" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{1}{4} \\\\)</text>
-
+    <svg viewBox="0 0 530 200" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <marker id="arrowhead3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-          <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+          <polygon points="0 0, 10 3, 0 6" fill="#30363d"/>
         </marker>
       </defs>
+
+      <text x="15" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">Different denominators:</text>
+
+      <rect x="15" y="40" width="120" height="50" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="75" y1="40" x2="75" y2="90" stroke="#30363d" stroke-width="1"/>
+      <rect x="15" y="40" width="60" height="50" fill="#4169E1" opacity="0.6" rx="4"/>
+      <text x="75" y="115" font-size="16" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">1/2</text>
+
+      <text x="155" y="72" font-size="24" font-weight="bold" fill="currentColor" font-family="sans-serif">+</text>
+
+      <rect x="180" y="40" width="120" height="50" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="210" y1="40" x2="210" y2="90" stroke="#30363d" stroke-width="1"/>
+      <line x1="240" y1="40" x2="240" y2="90" stroke="#30363d" stroke-width="1"/>
+      <line x1="270" y1="40" x2="270" y2="90" stroke="#30363d" stroke-width="1"/>
+      <rect x="180" y="40" width="30" height="50" fill="#22c55e" opacity="0.6" rx="4"/>
+      <text x="240" y="115" font-size="16" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">1/4</text>
+
+      <path d="M 320 70 L 355 70" fill="none" stroke="#30363d" stroke-width="2" marker-end="url(#arrowhead3)"/>
+      <text x="337" y="58" font-size="12" text-anchor="middle" fill="currentColor" font-family="sans-serif">Convert</text>
+
+      <text x="375" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">Same denominator:</text>
+
+      <rect x="375" y="40" width="140" height="50" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="410" y1="40" x2="410" y2="90" stroke="#30363d" stroke-width="1"/>
+      <line x1="445" y1="40" x2="445" y2="90" stroke="#30363d" stroke-width="1"/>
+      <line x1="480" y1="40" x2="480" y2="90" stroke="#30363d" stroke-width="1"/>
+      <rect x="375" y="40" width="70" height="50" fill="#4169E1" opacity="0.6" rx="4"/>
+      <rect x="445" y="40" width="35" height="50" fill="#22c55e" opacity="0.6"/>
+      <text x="445" y="115" font-size="16" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="serif">2/4 + 1/4 = 3/4</text>
+
+      <text x="265" y="170" font-size="16" font-weight="bold" text-anchor="middle" fill="currentColor" font-family="sans-serif">Convert to the same denominator, then add numerators</text>
     </svg>
   </div>
 
@@ -244,24 +237,27 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 450 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold">Start with \\\\( \\\\frac{3}{4} \\\\):</text>
-      <rect x="50" y="50" width="200" height="60" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="100" y1="50" x2="100" y2="110" stroke="#333" stroke-width="1"/>
-      <line x1="150" y1="50" x2="150" y2="110" stroke="#333" stroke-width="1"/>
-      <line x1="200" y1="50" x2="200" y2="110" stroke="#333" stroke-width="1"/>
-      <rect x="50" y="50" width="150" height="60" fill="#4169E1" opacity="0.6"/>
+    <svg viewBox="0 0 460 280" xmlns="http://www.w3.org/2000/svg">
+      <text x="25" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">Start with 3/4:</text>
+      <rect x="25" y="45" width="240" height="60" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="85" y1="45" x2="85" y2="105" stroke="#30363d" stroke-width="1"/>
+      <line x1="145" y1="45" x2="145" y2="105" stroke="#30363d" stroke-width="1"/>
+      <line x1="205" y1="45" x2="205" y2="105" stroke="#30363d" stroke-width="1"/>
+      <rect x="25" y="45" width="180" height="60" fill="#4169E1" opacity="0.6" rx="4"/>
 
-      <text x="50" y="150" font-size="16" font-weight="bold">Take \\\\( \\\\frac{1}{2} \\\\) of that:</text>
-      <rect x="50" y="170" width="200" height="60" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="100" y1="170" x2="100" y2="230" stroke="#333" stroke-width="1"/>
-      <line x1="150" y1="170" x2="150" y2="230" stroke="#333" stroke-width="1"/>
-      <line x1="200" y1="170" x2="200" y2="230" stroke="#333" stroke-width="1"/>
-      <line x1="125" y1="170" x2="125" y2="230" stroke="#22c55e" stroke-width="2"/>
-      <rect x="50" y="170" width="75" height="60" fill="#f59e0b" opacity="0.8"/>
-      <text x="150" y="270" font-size="16" text-anchor="middle" font-weight="bold">Result: \\\\( \\\\frac{3}{8} \\\\)</text>
+      <text x="25" y="145" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">Take 1/2 of that:</text>
+      <rect x="25" y="160" width="240" height="60" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="85" y1="160" x2="85" y2="220" stroke="#30363d" stroke-width="1"/>
+      <line x1="145" y1="160" x2="145" y2="220" stroke="#30363d" stroke-width="1"/>
+      <line x1="205" y1="160" x2="205" y2="220" stroke="#30363d" stroke-width="1"/>
+      <line x1="115" y1="160" x2="115" y2="220" stroke="#22c55e" stroke-width="2" stroke-dasharray="4,2"/>
+      <rect x="25" y="160" width="90" height="60" fill="#f59e0b" opacity="0.8" rx="4"/>
 
-      <text x="50" y="300" font-size="16" font-weight="bold">$$ \\\\frac{1}{2} \\\\times \\\\frac{3}{4} = \\\\frac{1 \\\\times 3}{2 \\\\times 4} = \\\\frac{3}{8} $$</text>
+      <text x="300" y="140" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">1/2 x 3/4</text>
+      <text x="300" y="168" font-size="16" fill="currentColor" font-family="sans-serif">= (1x3) / (2x4)</text>
+      <text x="300" y="196" font-size="20" font-weight="bold" fill="currentColor" font-family="serif">= 3/8</text>
+
+      <text x="230" y="260" font-size="16" font-weight="bold" text-anchor="middle" fill="currentColor" font-family="sans-serif">Multiply numerators, multiply denominators</text>
     </svg>
   </div>
 
@@ -309,21 +305,30 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="14" font-weight="bold">We have \\\\( \\\\frac{3}{4} \\\\):</text>
-      <rect x="50" y="50" width="150" height="60" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="87.5" y1="50" x2="87.5" y2="110" stroke="#333" stroke-width="1"/>
-      <line x1="125" y1="50" x2="125" y2="110" stroke="#333" stroke-width="1"/>
-      <line x1="162.5" y1="50" x2="162.5" y2="110" stroke="#333" stroke-width="1"/>
-      <rect x="50" y="50" width="112.5" height="60" fill="#4169E1" opacity="0.6"/>
+    <svg viewBox="0 0 500 210" xmlns="http://www.w3.org/2000/svg">
+      <text x="15" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">We have 3/4:</text>
+      <rect x="15" y="40" width="200" height="50" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="65" y1="40" x2="65" y2="90" stroke="#30363d" stroke-width="1"/>
+      <line x1="115" y1="40" x2="115" y2="90" stroke="#30363d" stroke-width="1"/>
+      <line x1="165" y1="40" x2="165" y2="90" stroke="#30363d" stroke-width="1"/>
+      <rect x="15" y="40" width="150" height="50" fill="#4169E1" opacity="0.6" rx="4"/>
+      <text x="90" y="72" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">3/4</text>
 
-      <text x="250" y="30" font-size="14" font-weight="bold">We are dividing by \\\\( \\\\frac{1}{2} \\\\):</text>
-      <circle cx="320" cy="80" r="30" fill="none" stroke="#333" stroke-width="2"/>
-      <line x1="320" y1="50" x2="320" y2="110" stroke="#333" stroke-width="2"/>
-      <circle cx="320" cy="80" r="30" fill="#22c55e" opacity="0.6" clip-path="polygon(50%, 0%, 100%, 0%, 100%, 100%, 50%, 100%)"/>
+      <text x="260" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">Each half looks like:</text>
+      <rect x="260" y="40" width="200" height="50" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="360" y1="40" x2="360" y2="90" stroke="#30363d" stroke-width="1"/>
+      <rect x="260" y="40" width="100" height="50" fill="#22c55e" opacity="0.6" rx="4"/>
+      <text x="310" y="72" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">1/2</text>
 
-      <text x="50" y="180" font-size="16" font-weight="bold">\\\\( \\\\frac{3}{4} \\\\div \\\\frac{1}{2} \\\\) = how many halves in \\\\( \\\\frac{3}{4} \\\\)?</text>
-      <text x="50" y="210" font-size="16">Answer: \\\\( 1\\\\frac{1}{2} \\\\) (or \\\\( \\\\frac{3}{2} \\\\))</text>
+      <text x="250" y="130" font-size="16" font-weight="bold" text-anchor="middle" fill="currentColor" font-family="sans-serif">How many halves fit into 3/4?</text>
+
+      <rect x="75" y="150" width="200" height="40" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="175" y1="150" x2="175" y2="190" stroke="#30363d" stroke-width="1"/>
+      <rect x="75" y="150" width="100" height="40" fill="#22c55e" opacity="0.5" rx="4"/>
+      <rect x="175" y="150" width="50" height="40" fill="#22c55e" opacity="0.3"/>
+      <text x="175" y="140" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">1 full half + half a half</text>
+
+      <text x="350" y="175" font-size="20" font-weight="bold" fill="currentColor" font-family="serif">= 3/2 = 1 1/2</text>
     </svg>
   </div>
 
@@ -382,24 +387,33 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size="16" font-weight="bold">\\\\( \\\\frac{7}{3} \\\\) shown as wholes and parts:</text>
+    <svg viewBox="0 0 460 200" xmlns="http://www.w3.org/2000/svg">
+      <text x="15" y="25" font-size="16" font-weight="bold" fill="currentColor" font-family="sans-serif">7/3 shown as wholes and parts:</text>
 
-      <circle cx="80" cy="100" r="30" fill="#4169E1" opacity="0.6"/>
-      <text x="80" y="110" font-size="14" text-anchor="middle" font-weight="bold">1</text>
+      <rect x="15" y="50" width="90" height="60" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="45" y1="50" x2="45" y2="110" stroke="#30363d" stroke-width="1"/>
+      <line x1="75" y1="50" x2="75" y2="110" stroke="#30363d" stroke-width="1"/>
+      <text x="60" y="85" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">3/3</text>
+      <text x="60" y="135" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">1 whole</text>
 
-      <circle cx="150" cy="100" r="30" fill="#4169E1" opacity="0.6"/>
-      <text x="150" y="110" font-size="14" text-anchor="middle" font-weight="bold">2</text>
+      <text x="120" y="85" font-size="20" font-weight="bold" fill="currentColor" font-family="sans-serif">+</text>
 
-      <circle cx="220" cy="100" r="30" fill="none" stroke="#333" stroke-width="2"/>
-      <path d="M 220 70 A 30 30 0 0 1 250 100" fill="#22c55e" opacity="0.6"/>
-      <line x1="220" y1="70" x2="220" y2="100" stroke="#333" stroke-width="1"/>
-      <line x1="220" y1="100" x2="250" y2="100" stroke="#333" stroke-width="1"/>
+      <rect x="145" y="50" width="90" height="60" fill="#4169E1" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="175" y1="50" x2="175" y2="110" stroke="#30363d" stroke-width="1"/>
+      <line x1="205" y1="50" x2="205" y2="110" stroke="#30363d" stroke-width="1"/>
+      <text x="190" y="85" font-size="14" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">3/3</text>
+      <text x="190" y="135" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">1 whole</text>
 
-      <text x="150" y="170" font-size="16" font-weight="bold">= \\\\( 2\\\\frac{1}{3} \\\\)</text>
+      <text x="250" y="85" font-size="20" font-weight="bold" fill="currentColor" font-family="sans-serif">+</text>
 
-      <text x="50" y="220" font-size="16" font-weight="bold">Convert \\\\( \\\\frac{7}{3} \\\\) to mixed number:</text>
-      <text x="50" y="245" font-size="14">\\\\( 7 \\\\div 3 = 2 \\\\) remainder \\\\( 1 \\\\) → \\\\( 2\\\\frac{1}{3} \\\\)</text>
+      <rect x="275" y="50" width="90" height="60" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+      <line x1="305" y1="50" x2="305" y2="110" stroke="#30363d" stroke-width="1"/>
+      <line x1="335" y1="50" x2="335" y2="110" stroke="#30363d" stroke-width="1"/>
+      <rect x="275" y="50" width="30" height="60" fill="#22c55e" opacity="0.6" rx="4"/>
+      <text x="320" y="85" font-size="14" text-anchor="middle" fill="currentColor" font-weight="bold" font-family="sans-serif">1/3</text>
+      <text x="320" y="135" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">part</text>
+
+      <text x="230" y="175" font-size="20" font-weight="bold" text-anchor="middle" fill="currentColor" font-family="serif">7/3 = 2 1/3</text>
     </svg>
   </div>
 
@@ -459,18 +473,25 @@ SECTIONS = [
     <p><strong>Question:</strong> Sarah has 20 apples. She gives away \\\\( \\\\frac{3}{5} \\\\) of them. How many apples does she give away?</p>
 
     <div class="diagram-container">
-      <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
-        <text x="30" y="30" font-size="14" font-weight="bold">Total apples (20):</text>
-        <rect x="30" y="40" width="400" height="40" fill="none" stroke="#333" stroke-width="2"/>
-        <line x="110" y="40" x2="110" y2="80" stroke="#999" stroke-width="1"/>
-        <line x="190" y="40" x2="190" y2="80" stroke="#999" stroke-width="1"/>
-        <line x="270" y="40" x2="270" y2="80" stroke="#999" stroke-width="1"/>
-        <line x="350" y="40" x2="350" y2="80" stroke="#999" stroke-width="1"/>
+      <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg">
+        <text x="30" y="25" font-size="14" font-weight="bold" fill="currentColor" font-family="sans-serif">Total apples (20):</text>
+        <rect x="30" y="35" width="400" height="40" fill="none" stroke="#30363d" stroke-width="2" rx="4"/>
+        <line x1="110" y1="35" x2="110" y2="75" stroke="#30363d" stroke-width="1"/>
+        <line x1="190" y1="35" x2="190" y2="75" stroke="#30363d" stroke-width="1"/>
+        <line x1="270" y1="35" x2="270" y2="75" stroke="#30363d" stroke-width="1"/>
+        <line x1="350" y1="35" x2="350" y2="75" stroke="#30363d" stroke-width="1"/>
 
-        <rect x="30" y="40" width="320" height="40" fill="#4169E1" opacity="0.5"/>
-        <text x="240" y="100" font-size="14" text-anchor="middle" font-weight="bold">\\\\( \\\\frac{3}{5} \\\\) of 20 = ?</text>
+        <rect x="30" y="35" width="240" height="40" fill="#4169E1" opacity="0.5" rx="4"/>
 
-        <text x="30" y="135" font-size="14">Solution: \\\\( \\\\frac{3}{5} \\\\times 20 = \\\\frac{3 \\\\times 20}{5} = \\\\frac{60}{5} = 12 \\\\) apples</text>
+        <text x="70" y="60" font-size="11" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">4</text>
+        <text x="150" y="60" font-size="11" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">4</text>
+        <text x="230" y="60" font-size="11" text-anchor="middle" fill="white" font-weight="bold" font-family="sans-serif">4</text>
+        <text x="310" y="60" font-size="11" text-anchor="middle" fill="currentColor" font-weight="bold" font-family="sans-serif">4</text>
+        <text x="390" y="60" font-size="11" text-anchor="middle" fill="currentColor" font-weight="bold" font-family="sans-serif">4</text>
+
+        <text x="150" y="100" font-size="14" text-anchor="middle" font-weight="bold" fill="currentColor" font-family="sans-serif">3/5 of 20 = ?</text>
+
+        <text x="250" y="140" font-size="14" text-anchor="middle" fill="currentColor" font-family="sans-serif">Solution: 3/5 x 20 = (3 x 20) / 5 = 60 / 5 = 12 apples</text>
       </svg>
     </div>
   </div>
@@ -480,14 +501,16 @@ SECTIONS = [
     <p><strong>Question:</strong> A recipe uses \\\\( \\\\frac{2}{3} \\\\) cup of sugar and \\\\( \\\\frac{1}{4} \\\\) cup of honey. How much sweetener total?</p>
 
     <div class="diagram-container">
-      <svg viewBox="0 0 500 150" xmlns="http://www.w3.org/2000/svg">
-        <text x="30" y="30" font-size="14" font-weight="bold">Sugar \\\\( \\\\frac{2}{3} \\\\) cup:</text>
-        <rect x="30" y="40" width="150" height="30" fill="#f59e0b" opacity="0.6" stroke="#333" stroke-width="2"/>
+      <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg">
+        <text x="30" y="25" font-size="14" font-weight="bold" fill="currentColor" font-family="sans-serif">Sugar: 2/3 cup</text>
+        <rect x="30" y="35" width="180" height="30" fill="#f59e0b" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
 
-        <text x="30" y="90" font-size="14" font-weight="bold">Honey \\\\( \\\\frac{1}{4} \\\\) cup:</text>
-        <rect x="30" y="100" width="112.5" height="30" fill="#22c55e" opacity="0.6" stroke="#333" stroke-width="2"/>
+        <text x="30" y="90" font-size="14" font-weight="bold" fill="currentColor" font-family="sans-serif">Honey: 1/4 cup</text>
+        <rect x="30" y="100" width="135" height="30" fill="#22c55e" opacity="0.6" stroke="#30363d" stroke-width="2" rx="4"/>
 
-        <text x="30" y="145" font-size="12">Solution: \\\\( \\\\frac{2}{3} + \\\\frac{1}{4} = \\\\frac{8}{12} + \\\\frac{3}{12} = \\\\frac{11}{12} \\\\) cup total</text>
+        <text x="350" y="60" font-size="14" fill="currentColor" font-family="sans-serif">2/3 + 1/4</text>
+        <text x="350" y="85" font-size="14" fill="currentColor" font-family="sans-serif">= 8/12 + 3/12</text>
+        <text x="350" y="110" font-size="16" font-weight="bold" fill="currentColor" font-family="serif">= 11/12 cup total</text>
       </svg>
     </div>
   </div>

@@ -44,17 +44,23 @@ SECTIONS = [
 <p>\\((a + b)(c + d) = ac + ad + bc + bd\\)</p>
 </div>
 <p><strong>An area model helps visualize this:</strong></p>
-<svg width="280" height="220" viewBox="-15 0 300 218" style="border-radius: 4px; margin: 12px 0; display: block">
-  <rect x="40" y="30" width="80" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
-  <rect x="120" y="30" width="100" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
-  <rect x="40" y="90" width="80" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
-  <rect x="120" y="90" width="100" height="60" fill='none' stroke='#1f6feb' stroke-width="2"/>
-  <text x="80" y="65" text-anchor='middle' fill='currentColor' font-size='14'>ax</text>
-  <text x="170" y="65" text-anchor='middle' fill='currentColor' font-size='14'>bx</text>
-  <text x="80" y="125" text-anchor='middle' fill='currentColor' font-size='14'>a</text>
-  <text x="170" y="125" text-anchor='middle' fill='currentColor' font-size='14'>b</text>
-  <text x="20" y="60" text-anchor='end' fill='currentColor' font-size='12'>(x+1)</text>
-  <text x="220" y="170" text-anchor='start' fill='currentColor' font-size='12'>(a+b)</text>
+<svg width="310" height="210" viewBox="-15 -15 340 210" style="border-radius: 4px; margin: 12px 0; display: block">
+  <!-- Column headers -->
+  <text x="130" y="18" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>a</text>
+  <text x="230" y="18" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>b</text>
+  <!-- Row headers -->
+  <text x="45" y="75" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>c</text>
+  <text x="45" y="145" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>d</text>
+  <!-- Grid cells (equal 100x70 each) -->
+  <rect x="80" y="35" width="100" height="70" rx='4' fill='none' stroke='#1f6feb' stroke-width="2"/>
+  <rect x="180" y="35" width="100" height="70" rx='4' fill='none' stroke='#1f6feb' stroke-width="2"/>
+  <rect x="80" y="105" width="100" height="70" rx='4' fill='none' stroke='#1f6feb' stroke-width="2"/>
+  <rect x="180" y="105" width="100" height="70" rx='4' fill='none' stroke='#1f6feb' stroke-width="2"/>
+  <!-- Cell contents -->
+  <text x="130" y="75" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>ac</text>
+  <text x="230" y="75" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>bc</text>
+  <text x="130" y="145" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>ad</text>
+  <text x="230" y="145" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>bd</text>
 </svg>
 <div class="worked-example concept-box">
 <p><strong>Expand:</strong> \\((x + 2)(x + 3)\\)</p>

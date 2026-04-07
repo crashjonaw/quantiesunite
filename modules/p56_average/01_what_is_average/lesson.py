@@ -11,7 +11,49 @@ SECTIONS = [
     },
     {
         "title": "Visual Understanding",
-        "body": """<h3>The Leveling-Out Idea</h3><p>Imagine water in containers at different heights:</p><svg width="400" height="200" viewBox="0 0 410 200" ><!-- Before averaging --><text x="40" y="20" font-size='14' font-weight='bold' fill='currentColor'>BEFORE</text><rect x="20" y="100" width="30" height="70" fill='#3498db' stroke='#8b949e' stroke-width="2" rx='4'/><text x="22" y="185" font-size='12' fill='currentColor'>5</text><rect x="60" y="60" width="30" height="110" fill='#3498db' stroke='#8b949e' stroke-width="2" rx='4'/><text x="62" y="185" font-size='12' fill='currentColor'>7</text><rect x="100" y="40" width="30" height="130" fill='#3498db' stroke='#8b949e' stroke-width="2" rx='4'/><text x="102" y="185" font-size='12' fill='currentColor'>9</text><!-- After averaging --><text x="200" y="20" font-size='14' font-weight='bold' fill='currentColor'>AFTER (Average = 7)</text><rect x="180" y="60" width="30" height="110" fill='#2ecc71' stroke='#8b949e' stroke-width="2" rx='4'/><text x="182" y="185" font-size='12' fill='currentColor'>7</text><rect x="220" y="60" width="30" height="110" fill='#2ecc71' stroke='#8b949e' stroke-width="2" rx='4'/><text x="222" y="185" font-size='12' fill='currentColor'>7</text><rect x="260" y="60" width="30" height="110" fill='#2ecc71' stroke='#8b949e' stroke-width="2" rx='4'/><text x="262" y="185" font-size='12' fill='currentColor'>7</text></svg><p style="margin-top: 10px;">The bars of different heights "level out" to the same height when we find the average.</p>"""
+        "body": """<h3>The Leveling-Out Idea</h3><p>Imagine water in containers at different heights:</p><svg width="460" height="230" viewBox="0 0 460 230" xmlns="http://www.w3.org/2000/svg">
+<!-- Background -->
+<rect x="0" y="0" width="460" height="230" fill="#1e1e2e" rx="4"/>
+
+<!-- BEFORE section -->
+<text x="80" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">BEFORE</text>
+
+<!-- Baseline for bars at y=190, top padding at y=40 -->
+<!-- Bar heights: 5 units=50px, 7 units=70px, 9 units=90px -->
+<!-- 3 bars, each 36px wide, 16px gap between them -->
+<!-- Group starts at x=28, bars at 28, 80, 132 -->
+<rect x="28" y="140" width="36" height="50" fill="#3498db" stroke="#8b949e" stroke-width="2" rx="4"/>
+<text x="46" y="206" font-family="sans-serif" font-size="13" fill="currentColor" text-anchor="middle">5</text>
+
+<rect x="80" y="120" width="36" height="70" fill="#3498db" stroke="#8b949e" stroke-width="2" rx="4"/>
+<text x="98" y="206" font-family="sans-serif" font-size="13" fill="currentColor" text-anchor="middle">7</text>
+
+<rect x="132" y="100" width="36" height="90" fill="#3498db" stroke="#8b949e" stroke-width="2" rx="4"/>
+<text x="150" y="206" font-family="sans-serif" font-size="13" fill="currentColor" text-anchor="middle">9</text>
+
+<!-- Divider line -->
+<line x1="210" y1="20" x2="210" y2="215" stroke="#8b949e" stroke-width="1" stroke-dasharray="4,4"/>
+
+<!-- Arrow -->
+<text x="230" y="120" font-family="sans-serif" font-size="20" fill="currentColor">&#x2192;</text>
+
+<!-- AFTER section -->
+<text x="345" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="currentColor" text-anchor="middle">AFTER (Average = 7)</text>
+
+<!-- 3 equal bars, each 36px wide, 16px gap, all height=70px -->
+<!-- Group starts at x=259, bars at 259, 311, 363 -->
+<rect x="259" y="120" width="36" height="70" fill="#2ecc71" stroke="#8b949e" stroke-width="2" rx="4"/>
+<text x="277" y="206" font-family="sans-serif" font-size="13" fill="currentColor" text-anchor="middle">7</text>
+
+<rect x="311" y="120" width="36" height="70" fill="#2ecc71" stroke="#8b949e" stroke-width="2" rx="4"/>
+<text x="329" y="206" font-family="sans-serif" font-size="13" fill="currentColor" text-anchor="middle">7</text>
+
+<rect x="363" y="120" width="36" height="70" fill="#2ecc71" stroke="#8b949e" stroke-width="2" rx="4"/>
+<text x="381" y="206" font-family="sans-serif" font-size="13" fill="currentColor" text-anchor="middle">7</text>
+
+<!-- Average line across AFTER bars -->
+<line x1="253" y1="120" x2="405" y2="120" stroke="#f1c40f" stroke-width="2" stroke-dasharray="6,3"/>
+</svg><p style="margin-top: 10px;">The bars of different heights "level out" to the same height when we find the average.</p>"""
     },
     {
         "title": "The Average Formula",

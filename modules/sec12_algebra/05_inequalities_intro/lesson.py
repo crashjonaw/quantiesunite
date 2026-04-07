@@ -71,21 +71,33 @@ SECTIONS = [
         "title": "Number lines and solution sets",
         "body": """<div class="concept-box">
 <p>We show the solution to an inequality on a <strong>number line</strong>.</p>
-<svg width="350" height="100" viewBox="0 0 350 100" style="border-radius: 4px; margin: 12px 0; display: block">
-  <line x1="30" y1="50" x2="300" y2="50" stroke='currentColor' stroke-width="2"/>
-  <text x="30" y="70" text-anchor='middle' fill='currentColor' font-size='12'>0</text>
-  <text x="80" y="70" text-anchor='middle' fill='currentColor' font-size='12'>2</text>
-  <text x="130" y="70" text-anchor='middle' fill='currentColor' font-size='12'>4</text>
-  <text x="180" y="70" text-anchor='middle' fill='currentColor' font-size='12'>6</text>
-  <text x="230" y="70" text-anchor='middle' fill='currentColor' font-size='12'>8</text>
-  <text x="280" y="70" text-anchor='middle' fill='currentColor' font-size='12'>10</text>
-  <line x1="30" y1="45" x2="30" y2="55" stroke='currentColor' stroke-width="2"/>
-  <line x1="80" y1="45" x2="80" y2="55" stroke='currentColor' stroke-width="2"/>
-  <line x1="130" y1="45" x2="130" y2="55" stroke='currentColor' stroke-width="2"/>
-  <line x1="180" y1="45" x2="180" y2="55" stroke='currentColor' stroke-width="2"/>
-  <line x1="230" y1="45" x2="230" y2="55" stroke='currentColor' stroke-width="2"/>
-  <line x1="280" y1="45" x2="280" y2="55" stroke='currentColor' stroke-width="2"/>
-  <text x="150" y="25" fill='currentColor' font-size='12'>x &lt; 5: Open circle at 5, shade left</text>
+<svg width="360" height="110" viewBox="-15 -15 390 140" style="border-radius: 4px; margin: 12px 0; display: block">
+  <!-- Title -->
+  <text x="180" y="15" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='13'>x &lt; 5 : open circle at 5, shade left</text>
+  <!-- Main line -->
+  <line x1="30" y1="55" x2="330" y2="55" stroke='currentColor' stroke-width="2"/>
+  <!-- Tick marks at equal spacing (50px apart) -->
+  <line x1="30" y1="48" x2="30" y2="62" stroke='currentColor' stroke-width="2"/>
+  <line x1="80" y1="48" x2="80" y2="62" stroke='currentColor' stroke-width="2"/>
+  <line x1="130" y1="48" x2="130" y2="62" stroke='currentColor' stroke-width="2"/>
+  <line x1="180" y1="48" x2="180" y2="62" stroke='currentColor' stroke-width="2"/>
+  <line x1="230" y1="48" x2="230" y2="62" stroke='currentColor' stroke-width="2"/>
+  <line x1="280" y1="48" x2="280" y2="62" stroke='currentColor' stroke-width="2"/>
+  <line x1="330" y1="48" x2="330" y2="62" stroke='currentColor' stroke-width="2"/>
+  <!-- Number labels -->
+  <text x="30" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>0</text>
+  <text x="80" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>1</text>
+  <text x="130" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>2</text>
+  <text x="180" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>3</text>
+  <text x="230" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>4</text>
+  <text x="280" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>5</text>
+  <text x="330" y="80" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='12'>6</text>
+  <!-- Shaded region: arrow from left to open circle at 5 -->
+  <line x1="30" y1="55" x2="275" y2="55" stroke='#1f6feb' stroke-width="4"/>
+  <!-- Arrow at left end -->
+  <polygon points="30,50 30,60 20,55" fill='#1f6feb'/>
+  <!-- Open circle at 5 (not included) -->
+  <circle cx="280" cy="55" r="6" fill='#0d1117' stroke='#1f6feb' stroke-width="2"/>
 </svg>
 <p><strong>Symbols on the number line:</strong></p>
 <ul >

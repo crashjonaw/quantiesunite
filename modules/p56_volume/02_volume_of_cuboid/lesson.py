@@ -20,40 +20,39 @@ SECTIONS = [
 <p><strong>Volume \(= \text{Length} \times \text{Width} \times \text{Height}\)</strong></p>
 </div>
 
-<svg width="100%" viewBox="0 0 360 200" class="formula-box">
-  <text x="16" y="20" fill='currentColor' font-size='13' font-weight='bold'>Cuboid with Dimensions</text>
-
-  <!-- Front face -->
-  <rect x="60" y="80" width="140" height="80" rx='4' fill='#3d444d' stroke='#58a6ff' stroke-width='2'/>
-
-  <!-- Top face (isometric) -->
-  <polygon points="60,80 110,50 250,50 200,80" fill='#1f6feb' stroke='#58a6ff' stroke-width='2' opacity='0.45'/>
-
-  <!-- Right face (isometric) -->
-  <polygon points="200,80 250,50 250,130 200,160" fill='#2d333b' stroke='#58a6ff' stroke-width='2' opacity='0.7'/>
-
-  <!-- Back edges (dashed, hidden) -->
-  <line x1="60" y1="160" x2="110" y2="130" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5,4' opacity='0.35'/>
-  <line x1="110" y1="50" x2="110" y2="130" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5,4' opacity='0.35'/>
-  <line x1="250" y1="130" x2="110" y2="130" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5,4' opacity='0.35'/>
-
-  <!-- Length label (bottom front edge) -->
-  <line x1="65" y1="168" x2="195" y2="168" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrL)' marker-end='url(#arrR)'/>
-  <text x="130" y="184" fill='#79c0ff' font-size='12' font-weight='bold' text-anchor='middle'>l (length)</text>
-
-  <!-- Height label (left front edge) -->
-  <line x1="50" y1="85" x2="50" y2="155" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrL)' marker-end='url(#arrR)'/>
-  <text x="36" y="124" fill='#79c0ff' font-size='12' font-weight='bold' text-anchor='middle' transform='rotate(-90,36,124)'>h</text>
-
-  <!-- Width label (top right edge) -->
-  <line x1="205" y1="76" x2="245" y2="54" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrL)' marker-end='url(#arrR)'/>
-  <text x="238" y="76" fill='#79c0ff' font-size='12' font-weight='bold'>w</text>
-
-  <!-- Arrowhead markers -->
+<svg width="100%" viewBox="0 0 380 210" class="formula-box">
   <defs>
     <marker id='arrL' markerWidth='6' markerHeight='6' refX='0' refY='3' orient='auto'><path d='M6,0 L0,3 L6,6' fill='#79c0ff'/></marker>
     <marker id='arrR' markerWidth='6' markerHeight='6' refX='6' refY='3' orient='auto'><path d='M0,0 L6,3 L0,6' fill='#79c0ff'/></marker>
   </defs>
+
+  <text x="190" y="20" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Cuboid with Dimensions</text>
+
+  <!-- Front face -->
+  <rect x="70" y="75" width="140" height="80" rx='4' fill='#3d444d' stroke='#58a6ff' stroke-width='2'/>
+
+  <!-- Top face (isometric) -->
+  <polygon points="70,75 120,45 260,45 210,75" fill='#1f6feb' stroke='#58a6ff' stroke-width='2' opacity='0.45'/>
+
+  <!-- Right face (isometric) -->
+  <polygon points="210,75 260,45 260,125 210,155" fill='#2d333b' stroke='#58a6ff' stroke-width='2' opacity='0.65'/>
+
+  <!-- Back edges (dashed, hidden) -->
+  <line x1="70" y1="155" x2="120" y2="125" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5,4' opacity='0.3'/>
+  <line x1="120" y1="45" x2="120" y2="125" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5,4' opacity='0.3'/>
+  <line x1="260" y1="125" x2="120" y2="125" stroke='#58a6ff' stroke-width='1' stroke-dasharray='5,4' opacity='0.3'/>
+
+  <!-- Length label (bottom front edge) -->
+  <line x1="75" y1="165" x2="205" y2="165" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrL)' marker-end='url(#arrR)'/>
+  <text x="140" y="182" fill='#79c0ff' font-size='12' font-weight='bold' text-anchor='middle'>l (length)</text>
+
+  <!-- Height label (left front edge) -->
+  <line x1="55" y1="80" x2="55" y2="150" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrL)' marker-end='url(#arrR)'/>
+  <text x="40" y="120" fill='#79c0ff' font-size='12' font-weight='bold' text-anchor='middle' transform='rotate(-90,40,120)'>h</text>
+
+  <!-- Width label (top right edge) -->
+  <line x1="218" y1="72" x2="255" y2="50" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrL)' marker-end='url(#arrR)'/>
+  <text x="248" y="72" fill='#79c0ff' font-size='12' font-weight='bold'>w</text>
 </svg>"""
     },
     {
@@ -83,18 +82,18 @@ SECTIONS = [
 <p><strong>Answer: 3000 cm³ = 3 L</strong></p>
 </div>
 
-<svg width="100%" viewBox="0 0 360 60" class="formula-box" style="margin-top:6px;">
-  <rect x="8" y="8" width="100" height="40" rx='4' fill='#58a6ff' opacity='0.25' stroke='#58a6ff' stroke-width='1.5'/>
-  <text x="58" y="24" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Ex 1</text>
-  <text x="58" y="40" fill='#79c0ff' font-size='11' text-anchor='middle'>120 cm³</text>
+<svg width="100%" viewBox="0 0 380 65" class="formula-box" style="margin-top:6px;">
+  <rect x="15" y="10" width="105" height="42" rx='4' fill='#58a6ff' opacity='0.25' stroke='#58a6ff' stroke-width='1.5'/>
+  <text x="67" y="27" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Ex 1</text>
+  <text x="67" y="43" fill='#79c0ff' font-size='11' text-anchor='middle'>120 cm³</text>
 
-  <rect x="128" y="8" width="100" height="40" rx='4' fill='#58a6ff' opacity='0.25' stroke='#58a6ff' stroke-width='1.5'/>
-  <text x="178" y="24" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Ex 2</text>
-  <text x="178" y="40" fill='#79c0ff' font-size='11' text-anchor='middle'>100 m³</text>
+  <rect x="138" y="10" width="105" height="42" rx='4' fill='#58a6ff' opacity='0.25' stroke='#58a6ff' stroke-width='1.5'/>
+  <text x="190" y="27" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Ex 2</text>
+  <text x="190" y="43" fill='#79c0ff' font-size='11' text-anchor='middle'>100 m³</text>
 
-  <rect x="248" y="8" width="100" height="40" rx='4' fill='#58a6ff' opacity='0.25' stroke='#58a6ff' stroke-width='1.5'/>
-  <text x="298" y="24" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Ex 3</text>
-  <text x="298" y="40" fill='#79c0ff' font-size='11' text-anchor='middle'>3000 cm³</text>
+  <rect x="261" y="10" width="105" height="42" rx='4' fill='#58a6ff' opacity='0.25' stroke='#58a6ff' stroke-width='1.5'/>
+  <text x="313" y="27" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Ex 3</text>
+  <text x="313" y="43" fill='#79c0ff' font-size='11' text-anchor='middle'>3000 cm³</text>
 </svg>"""
     },
     {
@@ -148,45 +147,45 @@ SECTIONS = [
 <p><strong>Answer: 4000 m³</strong></p>
 </div>
 
-<svg width="100%" viewBox="0 0 360 220" class="formula-box">
-  <text x="16" y="20" fill='currentColor' font-size='13' font-weight='bold'>Stacking Layers Concept</text>
-
+<svg width="100%" viewBox="0 0 380 235" class="formula-box">
   <defs>
     <marker id='arrU' markerWidth='6' markerHeight='6' refX='3' refY='0' orient='auto'><path d='M0,6 L3,0 L6,6' fill='#79c0ff'/></marker>
     <marker id='arrD' markerWidth='6' markerHeight='6' refX='3' refY='6' orient='auto'><path d='M0,0 L3,6 L6,0' fill='#79c0ff'/></marker>
   </defs>
 
+  <text x="190" y="20" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>Stacking Layers Concept</text>
+
   <!-- Layer 1 (bottom) - base layer highlighted -->
-  <polygon points="50,160 100,140 220,140 170,160" fill='#1f6feb' stroke='#58a6ff' stroke-width='1.5' opacity='0.55'/>
-  <rect x="50" y="160" width="120" height="24" rx='2' fill='#1f6feb' stroke='#58a6ff' stroke-width='1.5' opacity='0.55'/>
-  <polygon points="170,160 220,140 220,164 170,184" fill='#1f6feb' stroke='#58a6ff' stroke-width='1.5' opacity='0.4'/>
+  <polygon points="60,170 110,148 230,148 180,170" fill='#1f6feb' stroke='#58a6ff' stroke-width='1.5' opacity='0.55'/>
+  <rect x="60" y="170" width="120" height="24" rx='2' fill='#1f6feb' stroke='#58a6ff' stroke-width='1.5' opacity='0.55'/>
+  <polygon points="180,170 230,148 230,172 180,194" fill='#1f6feb' stroke='#58a6ff' stroke-width='1.5' opacity='0.4'/>
 
   <!-- Layer 2 -->
-  <polygon points="50,134 100,114 220,114 170,134" fill='#3d444d' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
-  <rect x="50" y="134" width="120" height="24" rx='2' fill='#3d444d' stroke='#58a6ff' stroke-width='1.5'/>
-  <polygon points="170,134 220,114 220,138 170,158" fill='#2d333b' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
+  <polygon points="60,144 110,122 230,122 180,144" fill='#3d444d' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
+  <rect x="60" y="144" width="120" height="24" rx='2' fill='#3d444d' stroke='#58a6ff' stroke-width='1.5'/>
+  <polygon points="180,144 230,122 230,146 180,168" fill='#2d333b' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
 
   <!-- Layer 3 -->
-  <polygon points="50,108 100,88 220,88 170,108" fill='#3d444d' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
-  <rect x="50" y="108" width="120" height="24" rx='2' fill='#3d444d' stroke='#58a6ff' stroke-width='1.5'/>
-  <polygon points="170,108 220,88 220,112 170,132" fill='#2d333b' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
+  <polygon points="60,118 110,96 230,96 180,118" fill='#3d444d' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
+  <rect x="60" y="118" width="120" height="24" rx='2' fill='#3d444d' stroke='#58a6ff' stroke-width='1.5'/>
+  <polygon points="180,118 230,96 230,120 180,142" fill='#2d333b' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
 
   <!-- Layer 4 (top) -->
-  <polygon points="50,82 100,62 220,62 170,82" fill='#3d444d' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
-  <rect x="50" y="82" width="120" height="24" rx='2' fill='#3d444d' stroke='#58a6ff' stroke-width='1.5'/>
-  <polygon points="170,82 220,62 220,86 170,106" fill='#2d333b' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
+  <polygon points="60,92 110,70 230,70 180,92" fill='#3d444d' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
+  <rect x="60" y="92" width="120" height="24" rx='2' fill='#3d444d' stroke='#58a6ff' stroke-width='1.5'/>
+  <polygon points="180,92 230,70 230,94 180,116" fill='#2d333b' stroke='#58a6ff' stroke-width='1.5' opacity='0.7'/>
 
   <!-- Base Area label -->
-  <text x="110" y="176" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Base Area</text>
-  <text x="110" y="188" fill='#79c0ff' font-size='9' text-anchor='middle'>(l x w)</text>
+  <text x="120" y="186" fill='currentColor' font-size='10' text-anchor='middle' font-weight='bold'>Base Area</text>
+  <text x="120" y="198" fill='#79c0ff' font-size='9' text-anchor='middle'>(l × w)</text>
 
   <!-- Height arrow -->
-  <line x1="234" y1="66" x2="234" y2="178" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrU)' marker-end='url(#arrD)'/>
-  <text x="248" y="126" fill='#79c0ff' font-size='11' font-weight='bold'>h</text>
+  <line x1="248" y1="74" x2="248" y2="190" stroke='#79c0ff' stroke-width='1.5' marker-start='url(#arrU)' marker-end='url(#arrD)'/>
+  <text x="262" y="136" fill='#79c0ff' font-size='11' font-weight='bold'>h</text>
 
   <!-- Formula -->
-  <rect x="16" y="198" width="328" height="18" rx='4' fill='#1f6feb' opacity='0.15'/>
-  <text x="180" y="211" fill='currentColor' font-size='11' text-anchor='middle'>V = Base Area x Height = (l x w) x h</text>
+  <rect x="20" y="210" width="340" height="18" rx='4' fill='#1f6feb' opacity='0.15'/>
+  <text x="190" y="223" fill='currentColor' font-size='11' text-anchor='middle'>V = Base Area × Height = (l × w) × h</text>
 </svg>"""
     }
 ]

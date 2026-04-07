@@ -80,62 +80,62 @@ SECTIONS = [
 
 <p><strong>Forward (what happened):</strong></p>
 
-<svg width="100%" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="80" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx="4"/>
-  <text x="60" y="50" font-size='12' fill='currentColor' text-anchor='middle'>Start: ?</text>
-
-  <line x1="110" y1="40" x2="130" y2="40" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="120" y="30" font-size='11' fill='#79c0ff'>-10</text>
-
-  <rect x="140" y="20" width="80" height="40" fill='none' stroke='#a371f7' stroke-width="2" rx="4"/>
-  <text x="180" y="50" font-size='12' fill='currentColor' text-anchor='middle'>After lunch</text>
-
-  <line x1="230" y1="40" x2="250" y2="40" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="240" y="30" font-size='11' fill='#79c0ff'>+25</text>
-
-  <rect x="260" y="20" width="80" height="40" fill='none' stroke='#a371f7' stroke-width="2" rx="4"/>
-  <text x="300" y="50" font-size='12' fill='currentColor' text-anchor='middle'>After babysit</text>
-
-  <line x1="350" y1="40" x2="370" y2="40" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <rect x="380" y="20" width="80" height="40" fill='none' stroke='#3fb950' stroke-width="2" rx="4"/>
-  <text x="420" y="50" font-size='12' fill='currentColor' text-anchor='middle'>Final: 85</text>
-
+<svg width="100%" height="90" viewBox="0 0 530 90" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill='#30363d'/>
+    <marker id="fwd-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill='currentColor'/>
     </marker>
   </defs>
+
+  <rect x="15" y="20" width="90" height="44" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="60" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>Start: ?</text>
+
+  <text x="130" y="35" font-size='11' fill='#79c0ff' text-anchor='middle' font-family='sans-serif'>-10</text>
+  <line x1="105" y1="42" x2="135" y2="42" stroke='currentColor' stroke-width="2" marker-end="url(#fwd-arrow)"/>
+
+  <rect x="140" y="20" width="90" height="44" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="185" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>After lunch</text>
+
+  <text x="255" y="35" font-size='11' fill='#79c0ff' text-anchor='middle' font-family='sans-serif'>+25</text>
+  <line x1="230" y1="42" x2="260" y2="42" stroke='currentColor' stroke-width="2" marker-end="url(#fwd-arrow)"/>
+
+  <rect x="265" y="20" width="100" height="44" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="315" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>After babysit</text>
+
+  <line x1="365" y1="42" x2="395" y2="42" stroke='currentColor' stroke-width="2" marker-end="url(#fwd-arrow)"/>
+
+  <rect x="400" y="20" width="90" height="44" fill='none' stroke='#3fb950' stroke-width="2" rx='4'/>
+  <text x="445" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>Final: 85</text>
 </svg>
 
 <p><strong>Backward (working backwards from 85):</strong></p>
 
-<svg width="100%" height="150" viewBox="0 0 600 150" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="380" y="20" width="80" height="40" fill='none' stroke='#3fb950' stroke-width="2" rx="4"/>
-  <text x="420" y="50" font-size='12' fill='currentColor' text-anchor='middle'>Final: 85</text>
-
-  <line x1="370" y1="40" x2="350" y2="40" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="360" y="30" font-size='11' fill='#79c0ff'>-25</text>
-
-  <rect x="260" y="20" width="80" height="40" fill='none' stroke='#a371f7' stroke-width="2" rx="4"/>
-  <text x="300" y="50" font-size='12' fill='currentColor' text-anchor='middle'>Before: 60</text>
-
-  <line x1="250" y1="40" x2="230" y2="40" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
-  <text x="240" y="30" font-size='11' fill='#79c0ff'>+10</text>
-
-  <rect x="140" y="20" width="80" height="40" fill='none' stroke='#a371f7' stroke-width="2" rx="4"/>
-  <text x="180" y="50" font-size='12' fill='currentColor' text-anchor='middle'>Before: 70</text>
-
-  <line x1="130" y1="40" x2="110" y2="40" stroke='#30363d' stroke-width="2" marker-end="url(#arrowhead)"/>
-
-  <rect x="20" y="20" width="80" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx="4"/>
-  <text x="60" y="50" font-size='12' fill='currentColor' text-anchor='middle'>Start: 70</text>
-
+<svg width="100%" height="90" viewBox="0 0 530 90" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
-      <polygon points="10 0, 0 3, 10 6" fill='#30363d'/>
+    <marker id="bk-arrow" markerWidth="10" markerHeight="10" refX="2" refY="3" orient="auto">
+      <polygon points="10 0, 0 3, 10 6" fill='currentColor'/>
     </marker>
   </defs>
+
+  <rect x="400" y="20" width="90" height="44" fill='none' stroke='#3fb950' stroke-width="2" rx='4'/>
+  <text x="445" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>Final: 85</text>
+
+  <text x="380" y="35" font-size='11' fill='#79c0ff' text-anchor='middle' font-family='sans-serif'>-25</text>
+  <line x1="395" y1="42" x2="365" y2="42" stroke='currentColor' stroke-width="2" marker-end="url(#bk-arrow)"/>
+
+  <rect x="265" y="20" width="95" height="44" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="312" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>Before: 60</text>
+
+  <text x="250" y="35" font-size='11' fill='#79c0ff' text-anchor='middle' font-family='sans-serif'>+10</text>
+  <line x1="260" y1="42" x2="230" y2="42" stroke='currentColor' stroke-width="2" marker-end="url(#bk-arrow)"/>
+
+  <rect x="140" y="20" width="85" height="44" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="182" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>Before: 70</text>
+
+  <line x1="135" y1="42" x2="105" y2="42" stroke='currentColor' stroke-width="2" marker-end="url(#bk-arrow)"/>
+
+  <rect x="15" y="20" width="85" height="44" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="57" y="47" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>Start: 70</text>
 </svg>
 
 <p><strong>Step-by-step backward calculation:</strong></p>

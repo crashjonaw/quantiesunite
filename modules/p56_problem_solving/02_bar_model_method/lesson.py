@@ -30,15 +30,17 @@ SECTIONS = [
 
 <p><strong>Bar Model:</strong></p>
 
-<svg width="100%" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="100" height="40" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="70" y="50" font-size='14' fill='currentColor' text-anchor='middle'>Ben: 5</text>
+<svg width="100%" height="140" viewBox="0 0 420 140" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <text x="15" y="47" font-size='13' fill='currentColor' font-family='sans-serif'>Ben:</text>
+  <rect x="60" y="25" width="110" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="115" y="50" font-size='14' fill='currentColor' text-anchor='middle' font-family='sans-serif'>5</text>
 
-  <rect x="20" y="70" width="160" height="40" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="100" y="100" font-size='14' fill='currentColor' text-anchor='middle'>Amy: 8</text>
+  <text x="15" y="97" font-size='13' fill='currentColor' font-family='sans-serif'>Amy:</text>
+  <rect x="60" y="75" width="176" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="148" y="100" font-size='14' fill='currentColor' text-anchor='middle' font-family='sans-serif'>8</text>
 
-  <line x1="180" y1="20" x2="180" y2="110" stroke='#30363d' stroke-width="1" stroke-dasharray="3,3"/>
-  <text x="210" y="70" font-size='12' fill='#79c0ff'>Total: 5 + 8 = 13</text>
+  <line x1="236" y1="25" x2="236" y2="115" stroke='#30363d' stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="250" y="72" font-size='12' fill='#79c0ff' font-family='sans-serif'>Total: 5 + 8 = 13</text>
 </svg>
 
 <p>The bars show: Ben has 5, Amy has 8, and together they have 5 + 8 = 13.</p>
@@ -71,23 +73,21 @@ SECTIONS = [
 
 <p><strong>Bar Model:</strong></p>
 
-<svg width="100%" height="160" viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="60" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="50" y="40" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
+<svg width="100%" height="150" viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <text x="15" y="47" font-size='13' fill='currentColor' font-family='sans-serif'>Ben:</text>
+  <rect x="60" y="25" width="70" height="35" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="95" y="48" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>6</text>
 
-  <text x="15" y="50" font-size='11' fill='currentColor'>Ben:</text>
+  <text x="15" y="97" font-size='13' fill='currentColor' font-family='sans-serif'>Ali:</text>
+  <rect x="60" y="75" width="70" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <rect x="140" y="75" width="70" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <rect x="220" y="75" width="70" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="95" y="98" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>6</text>
+  <text x="175" y="98" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>6</text>
+  <text x="255" y="98" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>6</text>
 
-  <rect x="20" y="70" width="60" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <rect x="90" y="70" width="60" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <rect x="160" y="70" width="60" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="50" y="90" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
-  <text x="120" y="90" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
-  <text x="190" y="90" font-size='12' fill='currentColor' text-anchor='middle'>6</text>
-
-  <text x="15" y="100" font-size='11' fill='currentColor'>Ali:</text>
-
-  <line x1="230" y1="70" x2="250" y2="85" stroke='#30363d' stroke-width="1"/>
-  <text x="260" y="90" font-size='12' fill='#79c0ff'>3 units = 3 × 6 = 18</text>
+  <line x1="300" y1="85" x2="315" y2="92" stroke='#30363d' stroke-width="1"/>
+  <text x="320" y="97" font-size='12' fill='#79c0ff' font-family='sans-serif'>3 units = 3 x 6 = 18</text>
 </svg>
 
 <p><strong>Calculation:</strong> Ali has \(3 \times 6 = 18\) stickers</p>
@@ -100,24 +100,24 @@ SECTIONS = [
 
 <p><strong>Bar Model:</strong></p>
 
-<svg width="100%" height="160" viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="50" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="45" y="40" font-size='11' fill='currentColor' text-anchor='middle'>?</text>
-  <text x="15" y="50" font-size='11' fill='currentColor'>Ben:</text>
+<svg width="100%" height="155" viewBox="0 0 460 155" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <text x="15" y="47" font-size='13' fill='currentColor' font-family='sans-serif'>Ben:</text>
+  <rect x="60" y="25" width="55" height="35" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="87" y="48" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>?</text>
 
-  <rect x="20" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <rect x="80" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <rect x="140" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <rect x="200" y="70" width="50" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="45" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
-  <text x="105" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
-  <text x="165" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
-  <text x="225" y="90" font-size='10' fill='currentColor' text-anchor='middle'>?</text>
-  <text x="15" y="110" font-size='11' fill='currentColor'>Amy:</text>
+  <text x="15" y="102" font-size='13' fill='currentColor' font-family='sans-serif'>Amy:</text>
+  <rect x="60" y="80" width="55" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <rect x="125" y="80" width="55" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <rect x="190" y="80" width="55" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <rect x="255" y="80" width="55" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="87" y="103" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>?</text>
+  <text x="152" y="103" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>?</text>
+  <text x="217" y="103" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>?</text>
+  <text x="282" y="103" font-size='12' fill='currentColor' text-anchor='middle' font-family='sans-serif'>?</text>
 
-  <line x1="260" y1="70" x2="280" y2="85" stroke='#30363d' stroke-width="1"/>
-  <text x="290" y="90" font-size='12' fill='#79c0ff'>5 units = 100</text>
-  <text x="290" y="110" font-size='12' fill='#79c0ff'>1 unit = 20</text>
+  <line x1="320" y1="90" x2="335" y2="95" stroke='#30363d' stroke-width="1"/>
+  <text x="340" y="95" font-size='12' fill='#79c0ff' font-family='sans-serif'>5 units = 100</text>
+  <text x="340" y="115" font-size='12' fill='#79c0ff' font-family='sans-serif'>1 unit = 20</text>
 </svg>
 
 <p><strong>Calculation:</strong></p>
@@ -158,26 +158,26 @@ SECTIONS = [
 
 <p><strong>Bar Model - BEFORE:</strong></p>
 
-<svg width="100%" height="110" viewBox="0 0 500 110" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="120" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="80" y="40" font-size='12' fill='currentColor' text-anchor='middle'>60 mL</text>
-  <text x="15" y="50" font-size='10' fill='currentColor'>A:</text>
+<svg width="100%" height="130" viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <text x="15" y="42" font-size='13' fill='currentColor' font-family='sans-serif'>A:</text>
+  <rect x="40" y="20" width="180" height="35" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="130" y="43" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>60 mL</text>
 
-  <rect x="20" y="60" width="80" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="60" y="80" font-size='12' fill='currentColor' text-anchor='middle'>40 mL</text>
-  <text x="15" y="100" font-size='10' fill='currentColor'>B:</text>
+  <text x="15" y="92" font-size='13' fill='currentColor' font-family='sans-serif'>B:</text>
+  <rect x="40" y="70" width="120" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="100" y="93" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>40 mL</text>
 </svg>
 
 <p><strong>Bar Model - AFTER:</strong></p>
 
-<svg width="100%" height="110" viewBox="0 0 500 110" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="105" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="70" y="40" font-size='12' fill='currentColor' text-anchor='middle'>45 mL</text>
-  <text x="15" y="50" font-size='10' fill='currentColor'>A:</text>
+<svg width="100%" height="130" viewBox="0 0 320 130" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <text x="15" y="42" font-size='13' fill='currentColor' font-family='sans-serif'>A:</text>
+  <rect x="40" y="20" width="135" height="35" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="107" y="43" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>45 mL</text>
 
-  <rect x="20" y="60" width="95" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="70" y="80" font-size='12' fill='currentColor' text-anchor='middle'>55 mL</text>
-  <text x="15" y="100" font-size='10' fill='currentColor'>B:</text>
+  <text x="15" y="92" font-size='13' fill='currentColor' font-family='sans-serif'>B:</text>
+  <rect x="40" y="70" width="165" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="122" y="93" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>55 mL</text>
 </svg>
 
 <p><strong>Solution:</strong></p>
@@ -195,14 +195,14 @@ SECTIONS = [
 
 <p><strong>Bar Model - AFTER (Equal):</strong></p>
 
-<svg width="100%" height="120" viewBox="0 0 500 120" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="100" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="70" y="40" font-size='12' fill='currentColor' text-anchor='middle'>28</text>
-  <text x="15" y="50" font-size='10' fill='currentColor'>Tom after:</text>
+<svg width="100%" height="135" viewBox="0 0 320 135" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <text x="15" y="42" font-size='12' fill='currentColor' font-family='sans-serif'>Tom after:</text>
+  <rect x="100" y="20" width="120" height="35" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="160" y="43" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>28</text>
 
-  <rect x="20" y="70" width="100" height="30" fill='none' stroke='#a371f7' stroke-width="2"/>
-  <text x="70" y="90" font-size='12' fill='currentColor' text-anchor='middle'>28</text>
-  <text x="15" y="110" font-size='10' fill='currentColor'>Jerry after:</text>
+  <text x="15" y="92" font-size='12' fill='currentColor' font-family='sans-serif'>Jerry after:</text>
+  <rect x="100" y="70" width="120" height="35" fill='none' stroke='#a371f7' stroke-width="2" rx='4'/>
+  <text x="160" y="93" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>28</text>
 </svg>
 
 <p><strong>Calculation:</strong></p>
@@ -233,9 +233,9 @@ SECTIONS = [
 
 <p><strong>Step 1: Assume all are the cheaper item (red)</strong></p>
 
-<svg width="100%" height="80" viewBox="0 0 500 80" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
-  <rect x="20" y="20" width="200" height="30" fill='none' stroke='#58a6ff' stroke-width="2"/>
-  <text x="120" y="40" font-size='12' fill='currentColor' text-anchor='middle'>10 × $3 = $30</text>
+<svg width="100%" height="75" viewBox="0 0 320 75" xmlns="http://www.w3.org/2000/svg" style="border-radius: 4px">
+  <rect x="15" y="15" width="240" height="40" fill='none' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <text x="135" y="41" font-size='13' fill='currentColor' text-anchor='middle' font-family='sans-serif'>10 x $3 = $30</text>
 </svg>
 
 <p><strong>Step 2: Find the difference</strong></p>

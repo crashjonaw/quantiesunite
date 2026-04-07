@@ -34,30 +34,34 @@ SECTIONS = [
 </div>
 
 <h4>Visual: Angle Types</h4>
-<svg width="100%" height="200" viewBox="0 0 800 200" class="formula-box">
+<svg width="100%" height="200" viewBox="-15 -15 830 230" class="formula-box">
   <!-- Acute Angle -->
-  <text x="40" y="25" fill='currentColor' font-size='14' font-weight='bold'>Acute (45°)</text>
-  <line x1="50" y1="80" x2="120" y2="80" stroke='#58a6ff' stroke-width="2"/>
-  <line x1="50" y1="80" x2="100" y2="130" stroke='#58a6ff' stroke-width="2"/>
-  <circle cx="50" cy="80" r="25" fill='none' stroke='#79c0ff' stroke-width="1.5"/>
+  <text x="80" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Acute (45°)</text>
+  <line x1="50" y1="90" x2="150" y2="90" stroke='#58a6ff' stroke-width="2.5"/>
+  <line x1="50" y1="90" x2="120" y2="40" stroke='#58a6ff' stroke-width="2.5"/>
+  <path d="M 80,90 A 30,30 0 0,1 70,68" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <text x="88" y="78" fill='currentColor' font-size='11'>45°</text>
 
   <!-- Right Angle -->
-  <text x="200" y="25" fill='currentColor' font-size='14' font-weight='bold'>Right (90°)</text>
-  <line x1="210" y1="80" x2="280" y2="80" stroke='#56d364' stroke-width="2"/>
-  <line x1="210" y1="80" x2="210" y2="150" stroke='#56d364' stroke-width="2"/>
-  <rect x="210" y="80" width="15" height="15" fill='none' stroke='#56d364' stroke-width="1.5"/>
+  <text x="280" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Right (90°)</text>
+  <line x1="250" y1="90" x2="350" y2="90" stroke='#56d364' stroke-width="2.5"/>
+  <line x1="250" y1="90" x2="250" y2="40" stroke='#56d364' stroke-width="2.5"/>
+  <polyline points="250,75 265,75 265,90" fill='none' stroke='#56d364' stroke-width="1.5"/>
+  <text x="275" y="78" fill='currentColor' font-size='11'>90°</text>
 
   <!-- Obtuse Angle -->
-  <text x="380" y="25" fill='currentColor' font-size='14' font-weight='bold'>Obtuse (120°)</text>
-  <line x1="390" y1="80" x2="480" y2="80" stroke='#f85149' stroke-width="2"/>
-  <line x1="390" y1="80" x2="340" y2="130" stroke='#f85149' stroke-width="2"/>
-  <circle cx="390" cy="80" r="35" fill='none' stroke='#ff7b72' stroke-width="1.5"/>
+  <text x="480" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Obtuse (120°)</text>
+  <line x1="450" y1="90" x2="550" y2="90" stroke='#f85149' stroke-width="2.5"/>
+  <line x1="450" y1="90" x2="400" y2="40" stroke='#f85149' stroke-width="2.5"/>
+  <path d="M 485,90 A 35,35 0 0,1 435,60" fill='none' stroke='#ff7b72' stroke-width="2"/>
+  <text x="455" y="70" fill='currentColor' font-size='11'>120°</text>
 
   <!-- Straight Angle -->
-  <text x="580" y="25" fill='currentColor' font-size='14' font-weight='bold'>Straight (180°)</text>
-  <line x1="580" y1="80" x2="750" y2="80" stroke='#a371f7' stroke-width="2"/>
-  <line x1="665" y1="80" x2="665" y2="100" stroke='#a371f7' stroke-width="1"/>
-  <text x="630" y="125" fill='currentColor' font-size='12'>A flat line</text>
+  <text x="680" y="25" fill='currentColor' font-size='14' font-weight='bold' text-anchor='middle'>Straight (180°)</text>
+  <line x1="610" y1="90" x2="750" y2="90" stroke='#a371f7' stroke-width="2.5"/>
+  <circle cx="680" cy="90" r="3" fill='#a371f7'/>
+  <path d="M 710,90 A 30,30 0 0,1 650,90" fill='none' stroke='#c8b6ff' stroke-width="2"/>
+  <text x="680" y="78" fill='currentColor' font-size='11' text-anchor='middle'>180°</text>
 </svg>
 """
     },
@@ -71,16 +75,29 @@ SECTIONS = [
 </div>
 
 <h4>Visual: Angles on a Line</h4>
-<svg width="100%" height="160" viewBox="0 0 600 160" class="formula-box">
-  <line x1="50" y1="80" x2="550" y2="80" stroke='#58a6ff' stroke-width="3"/>
-  <line x1="150" y1="80" x2="150" y2="30" stroke='#79c0ff' stroke-width="2"/>
-  <line x1="250" y1="80" x2="250" y2="40" stroke='#79c0ff' stroke-width="2"/>
-  <line x1="350" y1="80" x2="350" y2="50" stroke='#79c0ff' stroke-width="2"/>
+<svg width="100%" height="170" viewBox="-15 -15 630 200" class="formula-box">
+  <!-- Base line -->
+  <line x1="50" y1="90" x2="550" y2="90" stroke='#58a6ff' stroke-width="3"/>
 
-  <text x="140" y="25" fill='currentColor' font-size='14' font-weight='bold'>60°</text>
-  <text x="240" y="35" fill='currentColor' font-size='14' font-weight='bold'>70°</text>
-  <text x="340" y="45" fill='currentColor' font-size='14' font-weight='bold'>50°</text>
-  <text x="280" y="130" fill='#56d364' font-size='16' font-weight='bold'>60° + 70° + 50° = 180°</text>
+  <!-- Rays from a common point at 300 -->
+  <line x1="300" y1="90" x2="180" y2="20" stroke='#79c0ff' stroke-width="2"/>
+  <line x1="300" y1="90" x2="300" y2="15" stroke='#79c0ff' stroke-width="2"/>
+
+  <!-- Angle arcs from point 300,90 -->
+  <path d="M 265,90 A 35,35 0 0,1 250,60" fill='none' stroke='#f85149' stroke-width="2"/>
+  <path d="M 335,90 A 35,35 0 0,0 300,55" fill='none' stroke='#56d364' stroke-width="2"/>
+  <path d="M 250,60 A 35,35 0 0,1 300,55" fill='none' stroke='#a371f7' stroke-width="2"/>
+
+  <!-- Angle labels -->
+  <text x="245" y="80" fill='currentColor' font-size='13' font-weight='bold'>60°</text>
+  <text x="305" y="70" fill='currentColor' font-size='13' font-weight='bold'>50°</text>
+  <text x="280" y="50" fill='currentColor' font-size='13' font-weight='bold'>70°</text>
+
+  <!-- Point marker -->
+  <circle cx="300" cy="90" r="3" fill='currentColor'/>
+
+  <!-- Sum label -->
+  <text x="300" y="145" fill='#56d364' font-size='15' font-weight='bold' text-anchor='middle'>60° + 70° + 50° = 180°</text>
 </svg>
 
 <h4>Rule 2: Angles Around a Point = 360°</h4>
@@ -90,21 +107,33 @@ SECTIONS = [
 </div>
 
 <h4>Visual: Angles Around a Point</h4>
-<svg width="100%" height="200" viewBox="0 0 400 200" class="formula-box">
-  <circle cx="200" cy="100" r="80" fill='none' stroke='#8b949e' stroke-width="1.5" stroke-dasharray="5,5"/>
+<svg width="100%" height="230" viewBox="-15 -15 430 260" class="formula-box">
+  <!-- Dashed guide circle -->
+  <circle cx="200" cy="110" r="80" fill='none' stroke='#8b949e' stroke-width="1" stroke-dasharray="5,5"/>
 
-  <line x1="200" y1="100" x2="270" y2="40" stroke='#58a6ff' stroke-width="2"/>
-  <line x1="200" y1="100" x2="280" y2="120" stroke='#56d364' stroke-width="2"/>
-  <line x1="200" y1="100" x2="220" y2="175" stroke='#f85149' stroke-width="2"/>
-  <line x1="200" y1="100" x2="120" y2="160" stroke='#a371f7' stroke-width="2"/>
+  <!-- Rays from center -->
+  <line x1="200" y1="110" x2="280" y2="50" stroke='#58a6ff' stroke-width="2.5"/>
+  <line x1="200" y1="110" x2="280" y2="150" stroke='#56d364' stroke-width="2.5"/>
+  <line x1="200" y1="110" x2="180" y2="190" stroke='#f85149' stroke-width="2.5"/>
+  <line x1="200" y1="110" x2="120" y2="140" stroke='#a371f7' stroke-width="2.5"/>
 
-  <text x="260" y="50" fill='currentColor' font-size='13' font-weight='bold'>80°</text>
-  <text x="285" y="115" fill='currentColor' font-size='13' font-weight='bold'>110°</text>
-  <text x="215" y="175" fill='currentColor' font-size='13' font-weight='bold'>95°</text>
-  <text x="110" y="155" fill='currentColor' font-size='13' font-weight='bold'>75°</text>
+  <!-- Angle arcs -->
+  <path d="M 230,93 A 35,35 0 0,1 234,130" fill='none' stroke='#58a6ff' stroke-width="2"/>
+  <path d="M 234,130 A 35,35 0 0,1 195,144" fill='none' stroke='#56d364' stroke-width="2"/>
+  <path d="M 195,144 A 35,35 0 0,1 172,127" fill='none' stroke='#f85149' stroke-width="2"/>
+  <path d="M 172,127 A 35,35 0 0,1 230,93" fill='none' stroke='#a371f7' stroke-width="2"/>
 
-  <circle cx="200" cy="100" r="3" fill='currentColor'/>
-  <text x="150" y="130" fill='#79c0ff' font-size='12' font-weight='bold'>Sum = 360°</text>
+  <!-- Angle labels -->
+  <text x="245" y="100" fill='currentColor' font-size='13' font-weight='bold'>80°</text>
+  <text x="235" y="155" fill='currentColor' font-size='13' font-weight='bold'>110°</text>
+  <text x="155" y="165" fill='currentColor' font-size='13' font-weight='bold'>95°</text>
+  <text x="145" y="105" fill='currentColor' font-size='13' font-weight='bold'>75°</text>
+
+  <!-- Center point -->
+  <circle cx="200" cy="110" r="3.5" fill='currentColor'/>
+
+  <!-- Sum label -->
+  <text x="200" y="220" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>Sum = 360°</text>
 </svg>
 
 <h4>Complementary Angles</h4>
@@ -124,29 +153,31 @@ SECTIONS = [
 </div>
 
 <h4>Visual: Vertically Opposite Angles</h4>
-<svg width="100%" height="250" viewBox="0 0 500 250" class="formula-box">
-  <!-- Lines crossing -->
-  <line x1="100" y1="50" x2="380" y2="200" stroke='#58a6ff' stroke-width="2.5"/>
-  <line x1="380" y1="50" x2="100" y2="200" stroke='#56d364' stroke-width="2.5"/>
+<svg width="100%" height="260" viewBox="-15 -15 530 290" class="formula-box">
+  <!-- Two crossing lines -->
+  <line x1="80" y1="40" x2="420" y2="210" stroke='#58a6ff' stroke-width="2.5"/>
+  <line x1="420" y1="40" x2="80" y2="210" stroke='#56d364' stroke-width="2.5"/>
 
   <!-- Intersection point -->
-  <circle cx="240" cy="125" r="4" fill='#f85149'/>
+  <circle cx="250" cy="125" r="4" fill='currentColor'/>
 
-  <!-- Angle arcs -->
-  <path d="M 280 125 A 25 25 0 0 0 260 100" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <path d="M 200 125 A 25 25 0 0 0 220 150" fill='none' stroke='#79c0ff' stroke-width="2"/>
-  <path d="M 260 125 A 25 25 0 0 1 280 150" fill='none' stroke='#f8a5a5' stroke-width="2"/>
-  <path d="M 220 125 A 25 25 0 0 1 200 100" fill='none' stroke='#f8a5a5' stroke-width="2"/>
+  <!-- Angle arcs - blue pair (vertically opposite) -->
+  <path d="M 285,108 A 40,40 0 0,1 268,90" fill='none' stroke='#79c0ff' stroke-width="2.5"/>
+  <path d="M 215,142 A 40,40 0 0,1 232,160" fill='none' stroke='#79c0ff' stroke-width="2.5"/>
+
+  <!-- Angle arcs - red pair (vertically opposite) -->
+  <path d="M 268,90 A 40,40 0 0,1 215,108" fill='none' stroke='#f8a5a5' stroke-width="2.5"/>
+  <path d="M 232,160 A 40,40 0 0,1 285,142" fill='none' stroke='#f8a5a5' stroke-width="2.5"/>
 
   <!-- Angle labels -->
-  <text x="295" y="125" fill='#79c0ff' font-size='14' font-weight='bold'>60°</text>
-  <text x="195" y="160" fill='#79c0ff' font-size='14' font-weight='bold'>60°</text>
-  <text x="250" y="160" fill='#f8a5a5' font-size='14' font-weight='bold'>120°</text>
-  <text x="205" y="105" fill='#f8a5a5' font-size='14' font-weight='bold'>120°</text>
+  <text x="295" y="98" fill='#79c0ff' font-size='14' font-weight='bold'>60°</text>
+  <text x="175" y="168" fill='#79c0ff' font-size='14' font-weight='bold'>60°</text>
+  <text x="175" y="98" fill='#f8a5a5' font-size='14' font-weight='bold'>120°</text>
+  <text x="290" y="168" fill='#f8a5a5' font-size='14' font-weight='bold'>120°</text>
 
-  <!-- Labels -->
+  <!-- Legend -->
   <text x="100" y="240" fill='currentColor' font-size='13'>Blue angles (opposite) = 60° each</text>
-  <text x="100" y="225" fill='currentColor' font-size='13'>Red angles (opposite) = 120° each</text>
+  <text x="100" y="258" fill='currentColor' font-size='13'>Red angles (opposite) = 120° each</text>
 </svg>
 
 <h4>Worked Example</h4>
@@ -194,28 +225,42 @@ SECTIONS = [
 </div>
 
 <h4>Visual: All Three Relationships</h4>
-<svg width="100%" height="280" viewBox="0 0 700 280" class="formula-box">
+<svg width="100%" height="300" viewBox="-15 -15 730 330" class="formula-box">
   <!-- Parallel lines -->
-  <line x1="50" y1="60" x2="650" y2="60" stroke='#58a6ff' stroke-width="2.5"/>
-  <line x1="50" y1="180" x2="650" y2="180" stroke='#58a6ff' stroke-width="2.5"/>
+  <line x1="50" y1="70" x2="650" y2="70" stroke='#58a6ff' stroke-width="2.5"/>
+  <line x1="50" y1="190" x2="650" y2="190" stroke='#58a6ff' stroke-width="2.5"/>
+
+  <!-- Parallel arrows -->
+  <text x="20" y="74" fill='#58a6ff' font-size='14' font-weight='bold'>//</text>
+  <text x="20" y="194" fill='#58a6ff' font-size='14' font-weight='bold'>//</text>
 
   <!-- Transversal -->
-  <line x1="200" y1="10" x2="500" y2="230" stroke='#56d364' stroke-width="2.5"/>
+  <line x1="230" y1="15" x2="470" y2="245" stroke='#56d364' stroke-width="2.5"/>
 
-  <!-- Angles at top intersection -->
-  <text x="220" y="50" fill='#79c0ff' font-size='13' font-weight='bold'>a</text>
-  <text x="220" y="85" fill='#f8a5a5' font-size='13' font-weight='bold'>b</text>
+  <!-- Intersection points -->
+  <circle cx="295" cy="70" r="3" fill='currentColor'/>
+  <circle cx="405" cy="190" r="3" fill='currentColor'/>
 
-  <!-- Angles at bottom intersection -->
-  <text x="350" y="170" fill='#79c0ff' font-size='13' font-weight='bold'>c</text>
-  <text x="350" y="205" fill='#f8a5a5' font-size='13' font-weight='bold'>d</text>
+  <!-- Angle arcs at top intersection -->
+  <path d="M 325,70 A 30,30 0 0,0 310,46" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <path d="M 265,70 A 30,30 0 0,0 280,94" fill='none' stroke='#f8a5a5' stroke-width="2"/>
+
+  <!-- Angle arcs at bottom intersection -->
+  <path d="M 435,190 A 30,30 0 0,0 420,166" fill='none' stroke='#79c0ff' stroke-width="2"/>
+  <path d="M 375,190 A 30,30 0 0,0 390,214" fill='none' stroke='#f8a5a5' stroke-width="2"/>
+
+  <!-- Angle labels -->
+  <text x="330" y="55" fill='#79c0ff' font-size='14' font-weight='bold'>a</text>
+  <text x="255" y="100" fill='#f8a5a5' font-size='14' font-weight='bold'>b</text>
+  <text x="440" y="175" fill='#79c0ff' font-size='14' font-weight='bold'>c</text>
+  <text x="365" y="220" fill='#f8a5a5' font-size='14' font-weight='bold'>d</text>
 
   <!-- Annotations -->
-  <text x="50" y="250" fill='currentColor' font-size='12'><tspan font-weight='bold'>Corresponding:</tspan> a = c</text>
-  <text x="250" y="250" fill='currentColor' font-size='12'><tspan font-weight='bold'>Alternate:</tspan> b = c</text>
-  <text x="450" y="250" fill='currentColor' font-size='12'><tspan font-weight='bold'>Co-interior:</tspan> b + c = 180°</text>
+  <text x="50" y="268" fill='currentColor' font-size='13' font-weight='bold'>Corresponding: a = c</text>
+  <text x="270" y="268" fill='currentColor' font-size='13' font-weight='bold'>Alternate: b = c</text>
+  <text x="490" y="268" fill='currentColor' font-size='13' font-weight='bold'>Co-interior: b + c = 180°</text>
 
-  <text x="50" y="270" fill='#a371f7' font-size='11'>If transversal angle = 60°, then: a = 60°, c = 60°, b = 120°, d = 120°</text>
+  <text x="350" y="295" fill='#a371f7' font-size='12' text-anchor='middle'>If a = 60°, then c = 60°, b = 120°, d = 120°</text>
 </svg>
 
 <h4>Worked Example</h4>

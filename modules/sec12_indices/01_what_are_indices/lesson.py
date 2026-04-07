@@ -17,40 +17,41 @@ SECTIONS = [
 </div>
 
 <p><strong>Visual Representation:</strong></p>
-<svg width="100%" viewBox="0 0 480 180" style="max-width:500px;">
+<svg width="100%" viewBox="0 0 510 160" style="max-width:520px;">
   <defs>
     <marker id="arrowhead-idx" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill='#4169E1'/>
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4169E1"/>
     </marker>
   </defs>
 
   <!-- Left: expanded form -->
-  <text x="20" y="28" font-size="13" font-weight="bold" fill="currentColor">Expanded Form</text>
-  <rect x="15" y="40" width="160" height="50" rx="8" fill="rgba(65,105,225,0.1)" stroke="#4169E1" stroke-width="1.5"/>
-  <text x="95" y="70" text-anchor="middle" font-size="18" font-weight="bold" fill="currentColor">2 × 2 × 2 = 8</text>
-  <text x="95" y="115" text-anchor="middle" font-size="12" fill="currentColor">3 groups of 2</text>
-  <circle cx="55" cy="115" r="6" fill="#4169E180" stroke="#4169E1" stroke-width="1.5"/>
-  <circle cx="95" cy="115" r="6" fill="#4169E180" stroke="#4169E1" stroke-width="1.5"/>
-  <circle cx="135" cy="115" r="6" fill="#4169E180" stroke="#4169E1" stroke-width="1.5"/>
-  <text x="95" y="145" text-anchor="middle" font-size="11" fill="currentColor">3 groups of 2</text>
+  <text x="95" y="25" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor" font-family="sans-serif">Expanded Form</text>
+  <rect x="15" y="37" width="160" height="46" rx="4" fill="rgba(65,105,225,0.1)" stroke="#4169E1" stroke-width="1.5"/>
+  <text x="95" y="67" text-anchor="middle" font-size="17" font-weight="bold" fill="currentColor" font-family="sans-serif">2 × 2 × 2 = 8</text>
+
+  <!-- 3 circles showing groups -->
+  <circle cx="55" cy="110" r="6" fill="#4169E180" stroke="#4169E1" stroke-width="1.5"/>
+  <circle cx="95" cy="110" r="6" fill="#4169E180" stroke="#4169E1" stroke-width="1.5"/>
+  <circle cx="135" cy="110" r="6" fill="#4169E180" stroke="#4169E1" stroke-width="1.5"/>
+  <text x="95" y="140" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">3 groups of 2</text>
 
   <!-- Arrow -->
-  <line x1="195" y1="65" x2="245" y2="65" stroke="#4169E1" stroke-width="2" marker-end="url(#arrowhead-idx)"/>
-  <text x="220" y="55" text-anchor="middle" font-size="11" fill="currentColor">convert</text>
+  <line x1="195" y1="60" x2="250" y2="60" stroke="#4169E1" stroke-width="2" marker-end="url(#arrowhead-idx)"/>
+  <text x="222" y="50" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">convert</text>
 
   <!-- Right: index form -->
-  <text x="270" y="28" font-size="13" font-weight="bold" fill="currentColor">Index Form</text>
-  <rect x="265" y="40" width="190" height="50" rx="8" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1.5"/>
-  <text x="290" y="72" font-size="26" font-weight="bold" fill="currentColor">2³</text>
-  <text x="330" y="72" font-size="22" fill="currentColor">=</text>
-  <text x="360" y="72" font-size="26" font-weight="bold" fill="#22c55e">8</text>
-
-  <text x="285" y="115" font-size="12" fill="#4169E1" font-weight="600">base = 2</text>
-  <text x="285" y="135" font-size="12" fill="#f59e0b" font-weight="600">index = 3 (how many times)</text>
+  <text x="365" y="25" text-anchor="middle" font-size="13" font-weight="bold" fill="currentColor" font-family="sans-serif">Index Form</text>
+  <rect x="270" y="37" width="190" height="46" rx="4" fill="rgba(34,197,94,0.1)" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="300" y="67" font-size="24" font-weight="bold" fill="currentColor" font-family="sans-serif">2³</text>
+  <text x="340" y="67" font-size="20" fill="currentColor" font-family="sans-serif">=</text>
+  <text x="370" y="67" font-size="24" font-weight="bold" fill="#22c55e" font-family="sans-serif">8</text>
 
   <!-- Annotation lines -->
-  <line x1="295" y1="78" x2="295" y2="105" stroke="#4169E1" stroke-width="1" stroke-dasharray="3"/>
-  <line x1="308" y1="48" x2="308" y2="105" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3"/>
+  <line x1="305" y1="75" x2="305" y2="98" stroke="#4169E1" stroke-width="1" stroke-dasharray="3"/>
+  <line x1="318" y1="42" x2="318" y2="98" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3"/>
+
+  <text x="295" y="112" font-size="12" fill="#4169E1" font-weight="600" font-family="sans-serif">base = 2</text>
+  <text x="295" y="130" font-size="12" fill="#f59e0b" font-weight="600" font-family="sans-serif">index = 3 (how many times)</text>
 </svg>
 """
     },
@@ -70,26 +71,26 @@ SECTIONS = [
 
 <p><strong>More Examples:</strong></p>
 
-<svg width="100%" viewBox="0 0 460 190" style="max-width:500px;">
+<svg width="100%" viewBox="0 0 475 200" style="max-width:500px;">
   <!-- Example 1 -->
-  <rect x="10" y="8" width="440" height="75" rx="8" fill="rgba(65,105,225,0.06)" stroke="rgba(65,105,225,0.2)" stroke-width="1"/>
-  <text x="20" y="30" font-size="11" font-weight="600" fill="#4169E1">Example 1</text>
-  <text x="20" y="60" font-size="22" font-weight="bold" fill="currentColor">3⁴</text>
-  <text x="65" y="60" font-size="16" fill="currentColor">=</text>
-  <text x="90" y="60" font-size="15" fill="currentColor">3 × 3 × 3 × 3</text>
-  <text x="270" y="60" font-size="16" fill="currentColor">=</text>
-  <text x="295" y="60" font-size="22" font-weight="bold" fill="#22c55e">81</text>
-  <text x="350" y="60" font-size="11" fill="currentColor">base=3, index=4</text>
+  <rect x="15" y="15" width="445" height="75" rx="4" fill="rgba(65,105,225,0.06)" stroke="rgba(65,105,225,0.2)" stroke-width="1"/>
+  <text x="25" y="37" font-size="11" font-weight="600" fill="#4169E1" font-family="sans-serif">Example 1</text>
+  <text x="25" y="67" font-size="22" font-weight="bold" fill="currentColor" font-family="sans-serif">3⁴</text>
+  <text x="70" y="67" font-size="16" fill="currentColor" font-family="sans-serif">=</text>
+  <text x="95" y="67" font-size="15" fill="currentColor" font-family="sans-serif">3 × 3 × 3 × 3</text>
+  <text x="275" y="67" font-size="16" fill="currentColor" font-family="sans-serif">=</text>
+  <text x="300" y="67" font-size="22" font-weight="bold" fill="#22c55e" font-family="sans-serif">81</text>
+  <text x="350" y="67" font-size="11" fill="currentColor" font-family="sans-serif">base=3, index=4</text>
 
   <!-- Example 2 -->
-  <rect x="10" y="98" width="440" height="75" rx="8" fill="rgba(245,158,11,0.06)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
-  <text x="20" y="120" font-size="11" font-weight="600" fill="#f59e0b">Example 2</text>
-  <text x="20" y="150" font-size="22" font-weight="bold" fill="currentColor">5²</text>
-  <text x="65" y="150" font-size="16" fill="currentColor">=</text>
-  <text x="90" y="150" font-size="15" fill="currentColor">5 × 5</text>
-  <text x="170" y="150" font-size="16" fill="currentColor">=</text>
-  <text x="195" y="150" font-size="22" font-weight="bold" fill="#22c55e">25</text>
-  <text x="250" y="150" font-size="11" fill="currentColor">(read as "5 squared")</text>
+  <rect x="15" y="105" width="445" height="75" rx="4" fill="rgba(245,158,11,0.06)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+  <text x="25" y="127" font-size="11" font-weight="600" fill="#f59e0b" font-family="sans-serif">Example 2</text>
+  <text x="25" y="157" font-size="22" font-weight="bold" fill="currentColor" font-family="sans-serif">5²</text>
+  <text x="70" y="157" font-size="16" fill="currentColor" font-family="sans-serif">=</text>
+  <text x="95" y="157" font-size="15" fill="currentColor" font-family="sans-serif">5 × 5</text>
+  <text x="175" y="157" font-size="16" fill="currentColor" font-family="sans-serif">=</text>
+  <text x="200" y="157" font-size="22" font-weight="bold" fill="#22c55e" font-family="sans-serif">25</text>
+  <text x="255" y="157" font-size="11" fill="currentColor" font-family="sans-serif">(read as "5 squared")</text>
 </svg>
 """
     },

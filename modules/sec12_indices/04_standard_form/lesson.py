@@ -197,33 +197,34 @@ Result: 0.04</pre>
 </div>
 
 <p><strong>Visual: Exponential Growth</strong></p>
-<svg viewBox="-15 0 630 200" xmlns="http://www.w3.org/2000/svg" class="formula-box">
+<svg viewBox="0 0 400 210" style="max-width:420px;width:100%;">
   <!-- Axes -->
-  <line x1="40" y1="160" x2="580" y2="160" class="idx-axis"/>
-  <line x1="40" y1="20" x2="40" y2="160" class="idx-axis"/>
+  <line x1="55" y1="170" x2="385" y2="170" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+  <line x1="55" y1="25" x2="55" y2="170" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
 
   <!-- Powers of 10 bars -->
-  <rect x="50" y="150" width="30" height="10" class="idx-bar"/>
-  <text x="65" y="175" class="idx-label">10¹</text>
+  <rect x="70" y="158" width="35" height="12" rx="4" fill="#4169E1" opacity="0.7"/>
+  <text x="87" y="188" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">10¹</text>
 
-  <rect x="100" y="130" width="30" height="30" class="idx-bar"/>
-  <text x="115" y="175" class="idx-label">10²</text>
+  <rect x="120" y="140" width="35" height="30" rx="4" fill="#4169E1" opacity="0.7"/>
+  <text x="137" y="188" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">10²</text>
 
-  <rect x="150" y="110" width="30" height="50" class="idx-bar"/>
-  <text x="165" y="175" class="idx-label">10³</text>
+  <rect x="170" y="115" width="35" height="55" rx="4" fill="#4169E1" opacity="0.7"/>
+  <text x="187" y="188" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">10³</text>
 
-  <rect x="200" y="60" width="30" height="100" class="idx-bar"/>
-  <text x="215" y="175" class="idx-label">10⁴</text>
+  <rect x="220" y="75" width="35" height="95" rx="4" fill="#4169E1" opacity="0.7"/>
+  <text x="237" y="188" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">10⁴</text>
 
-  <rect x="250" y="30" width="30" height="130" class="idx-bar"/>
-  <text x="265" y="175" class="idx-label">10⁵</text>
+  <rect x="270" y="45" width="35" height="125" rx="4" fill="#4169E1" opacity="0.7"/>
+  <text x="287" y="188" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">10⁵</text>
 
-  <rect x="300" y="25" width="30" height="135" class="idx-bar"/>
-  <text x="315" y="175" class="idx-label">10⁶</text>
+  <rect x="320" y="30" width="35" height="140" rx="4" fill="#4169E1" opacity="0.7"/>
+  <text x="337" y="188" text-anchor="middle" font-size="11" fill="currentColor" font-family="sans-serif">10⁶</text>
 
   <!-- Y-axis label -->
-  <text x="20" y="90" class="idx-text" style="text-anchor:end;">Size</text>
-  <text x="320" y="190" class="idx-text" style="text-anchor:middle;">Power of 10</text>
+  <text x="35" y="100" text-anchor="end" font-size="12" fill="currentColor" font-family="sans-serif">Size</text>
+  <!-- X-axis label -->
+  <text x="220" y="205" text-anchor="middle" font-size="12" fill="currentColor" font-family="sans-serif">Power of 10</text>
 </svg>
 """
     }

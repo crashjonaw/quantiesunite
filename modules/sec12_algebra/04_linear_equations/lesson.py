@@ -8,15 +8,21 @@ SECTIONS = [
         "body": """<div class="concept-box">
 <p>An equation is like a <strong>balance scale</strong>. Both sides must stay equal.</p>
 <p>The golden rule: <strong>Whatever you do to one side, do to the other.</strong></p>
-<svg width="300" height="160" style="border-radius: 4px; margin: 12px 0; display: block">
-  <line x1="30" y1="120" x2="270" y2="120" stroke='currentColor' stroke-width="2"/>
-  <circle cx="80" cy="120" r="8" fill='none' stroke='currentColor' stroke-width="2"/>
-  <circle cx="100" cy="120" r="8" fill='none' stroke='currentColor' stroke-width="2"/>
-  <rect x="150" y="110" width="100" height="20" rx='4' fill='none' stroke='currentColor' stroke-width="2"/>
-  <text x="80" y="45" text-anchor='middle' fill='currentColor' font-size='14'>2x</text>
-  <text x="100" y="45" text-anchor='middle' fill='currentColor' font-size='14'>+5</text>
-  <text x="200" y="45" text-anchor='middle' fill='currentColor' font-size='14'>= 13</text>
-  <text x="150" y="140" text-anchor='middle' fill='currentColor' font-size='12'>Balance</text>
+<svg width="320" height="170" viewBox="-15 -15 350 200" style="border-radius: 4px; margin: 12px 0; display: block">
+  <!-- Fulcrum triangle -->
+  <polygon points="160,155 145,175 175,175" fill='none' stroke='currentColor' stroke-width="2"/>
+  <!-- Balance beam -->
+  <line x1="30" y1="155" x2="290" y2="155" stroke='currentColor' stroke-width="2"/>
+  <!-- Left pan -->
+  <rect x="40" y="110" width="80" height="40" rx='4' fill='none' stroke='#1f6feb' stroke-width="2"/>
+  <text x="80" y="136" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>2x + 5</text>
+  <!-- Right pan -->
+  <rect x="200" y="110" width="80" height="40" rx='4' fill='none' stroke='#1f6feb' stroke-width="2"/>
+  <text x="240" y="136" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='14'>13</text>
+  <!-- Equals sign -->
+  <text x="160" y="100" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='16'>=</text>
+  <!-- Label -->
+  <text x="160" y="30" text-anchor='middle' fill='currentColor' font-family='sans-serif' font-size='13'>Both sides must stay equal</text>
 </svg>
 <div class="worked-example concept-box">
 <p><strong>Solve: 2x + 5 = 13</strong></p>

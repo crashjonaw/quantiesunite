@@ -12,18 +12,18 @@ SECTIONS = [
 <p><strong>Probability 1 (100%):</strong> Certain — MUST happen</p>
 </div>
 
-<svg width="100%" height="120" viewBox="0 0 600 120" style="border-radius: 4px">
-  <line x1="50" y1="60" x2="550" y2="60" stroke='#30363d' stroke-width="3"/>
-  <circle cx="50" cy="60" r="6" fill='#da3633'/>
-  <circle cx="550" cy="60" r="6" fill='#3fb950'/>
-  <circle cx="300" cy="60" r="6" fill='#d29922'/>
+<svg width="100%" viewBox="0 0 620 120" style="max-width:640px;">
+  <line x1="50" y1="55" x2="570" y2="55" stroke="currentColor" stroke-width="2.5" opacity="0.3"/>
+  <circle cx="50" cy="55" r="7" fill="#da3633"/>
+  <circle cx="570" cy="55" r="7" fill="#3fb950"/>
+  <circle cx="310" cy="55" r="7" fill="#d29922"/>
 
-  <text x="50" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>0 (Impossible)</text>
-  <text x="300" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>0.5 (Even Chance)</text>
-  <text x="550" y="90" text-anchor='middle' fill='currentColor' font-size='14' font-weight='bold'>1 (Certain)</text>
+  <text x="50" y="85" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold" font-family="sans-serif">0 (Impossible)</text>
+  <text x="310" y="85" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold" font-family="sans-serif">0.5 (Even Chance)</text>
+  <text x="570" y="85" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold" font-family="sans-serif">1 (Certain)</text>
 
-  <text x="175" y="30" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>Unlikely</text>
-  <text x="425" y="30" text-anchor='middle' fill='currentColor' opacity='0.6' font-size='12'>Likely</text>
+  <text x="180" y="35" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="12" font-family="sans-serif">Unlikely</text>
+  <text x="440" y="35" text-anchor="middle" fill="currentColor" opacity="0.6" font-size="12" font-family="sans-serif">Likely</text>
 </svg>
 
 <div class="worked-example">

@@ -11,28 +11,28 @@ SECTIONS = [
 <p>Think of: a dice, a sugar cube, or a Rubik's cube.</p>
 </div>
 
-<svg width="100%" viewBox="0 0 320 200" class="formula-box">
-  <text x="160" y="20" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>All sides are equal</text>
+<svg width="100%" viewBox="0 0 340 210" class="formula-box">
+  <text x="170" y="20" fill='currentColor' font-size='13' font-weight='bold' text-anchor='middle'>All sides are equal</text>
 
   <!-- Cube - centred in viewBox -->
   <!-- Front face -->
-  <rect x="110" y="70" width="80" height="80" fill='#3d444d' stroke='#58a6ff' stroke-width="2" rx='4'/>
+  <rect x="110" y="60" width="90" height="90" fill='#3d444d' stroke='#58a6ff' stroke-width="2" rx='4'/>
   <!-- Top face -->
-  <polygon points="110,70 140,42 220,42 190,70" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.5'/>
+  <polygon points="110,60 145,30 235,30 200,60" fill='#58a6ff' stroke='#58a6ff' stroke-width="2" opacity='0.45'/>
   <!-- Right face -->
-  <polygon points="190,70 220,42 220,122 190,150" fill='#3d444d' stroke='#58a6ff' stroke-width="2" opacity='0.7'/>
-  <!-- Edges -->
-  <line x1="110" y1="70" x2="140" y2="42" stroke='#58a6ff' stroke-width="2"/>
-  <line x1="190" y1="70" x2="220" y2="42" stroke='#58a6ff' stroke-width="2"/>
-  <line x1="190" y1="150" x2="220" y2="122" stroke='#58a6ff' stroke-width="2"/>
+  <polygon points="200,60 235,30 235,120 200,150" fill='#2d333b' stroke='#58a6ff' stroke-width="2" opacity='0.65'/>
+  <!-- Hidden back edges (dashed) -->
+  <line x1="110" y1="150" x2="145" y2="120" stroke='#58a6ff' stroke-width="1" stroke-dasharray="4,3" opacity='0.3'/>
+  <line x1="145" y1="30" x2="145" y2="120" stroke='#58a6ff' stroke-width="1" stroke-dasharray="4,3" opacity='0.3'/>
+  <line x1="235" y1="120" x2="145" y2="120" stroke='#58a6ff' stroke-width="1" stroke-dasharray="4,3" opacity='0.3'/>
 
   <!-- Dimension labels -->
-  <text x="90" y="115" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
-  <text x="150" y="165" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
-  <text x="228" y="95" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
+  <text x="92" y="110" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
+  <text x="155" y="168" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
+  <text x="242" y="90" fill='#79c0ff' font-size='14' font-weight='bold' text-anchor='middle'>s</text>
 
   <!-- Formula -->
-  <text x="160" y="190" fill='currentColor' font-size='12' text-anchor='middle'>All sides = s (the side length)</text>
+  <text x="170" y="198" fill='currentColor' font-size='12' text-anchor='middle'>All sides = s (the side length)</text>
 </svg>"""
     },
     {
