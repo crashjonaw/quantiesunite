@@ -63,10 +63,8 @@ SECTIONS = [
 </svg>
 <div class="worked-example formula-box">
   <strong>Example:</strong> If you cut a chocolate bar into 4 equal pieces and eat 1 piece, you ate <strong>1/4 (one quarter)</strong>.
-  <ul style="margin:8px 0;padding-left:20px;">
-    <li><strong>Numerator (1):</strong> You ate 1 piece</li>
-    <li><strong>Denominator (4):</strong> The bar had 4 equal pieces</li>
-  </ul>
+  <p style="margin:8px 0;"><strong>Numerator (1):</strong> You ate 1 piece</p>
+  <p style="margin:4px 0;"><strong>Denominator (4):</strong> The bar had 4 equal pieces</p>
 </div>"""
     },
     {
