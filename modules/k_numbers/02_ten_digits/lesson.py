@@ -8,7 +8,7 @@ SECTIONS = [
         "body": """<h3>The Foundation of All Numbers</h3>
 <p>Every number you will ever write or see is made from just <strong>ten symbols</strong>. These symbols are called <strong>digits</strong>:</p>
 
-<div style="background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%); padding: 30px; border-radius: 8px; text-align: center; margin: 20px 0; border-left: 5px solid #4169E1;">
+<div style="background: linear-gradient(135deg, #e0e7ff 0%, #f0f4ff 100%); color: #1a1a2e; padding: 30px; border-radius: 8px; text-align: center; margin: 20px 0; border-left: 5px solid #4169E1;">
   <p style="font-size: 14px; margin: 0 0 10px 0">THE TEN DIGITS</p>
   <p style="font-size: 48px; letter-spacing: 12px; color: #4169E1; margin: 0; font-weight: bold;">0  1  2  3  4  5  6  7  8  9</p>
 </div>

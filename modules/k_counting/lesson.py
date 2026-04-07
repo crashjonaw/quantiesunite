@@ -113,7 +113,7 @@ SECTIONS = [
      <h3>Wrong: Not One-to-One</h3>
      <div class="warning-box">
        <h4>Breaking One-to-One Correspondence</h4>
-       <div style="background: #fff; padding: 15px; border: 2px solid #ef4444; border-radius: 4px; margin: 10px 0;">
+       <div style="background: #fff; color: #1a1a2e; padding: 15px; border: 2px solid #ef4444; border-radius: 4px; margin: 10px 0;">
          <p><strong>Problem:</strong> Counting too fast and pointing to one object twice:</p>
          <p style="text-align: center; font-size: 20px;">
            Point to 🍎 and say "1"<br>
@@ -123,7 +123,7 @@ SECTIONS = [
          <p><strong>Result:</strong> You said there are 3 apples, but there are really only 2.</p>
        </div>
 
-       <div style="background: #fff; padding: 15px; border: 2px solid #ef4444; border-radius: 4px; margin: 10px 0;">
+       <div style="background: #fff; color: #1a1a2e; padding: 15px; border: 2px solid #ef4444; border-radius: 4px; margin: 10px 0;">
          <p><strong>Problem:</strong> Forgetting to count an object:</p>
          <p style="text-align: center; font-size: 20px;">
            Point to 🍎 and say "1"<br>

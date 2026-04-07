@@ -303,7 +303,7 @@ x &= -3 \\pm \\sqrt{5}
 
 <h3>Summary Table</h3>
 <table style="width:100%; border-collapse: collapse; margin:15px 0;">
-  <tr style="background-color:#f0f0f0;">
+  <tr style="background-color:#f0f0f0; color:#1a1a2e;">
     <th style="border:1px solid #ddd; padding:10px;"><strong>Discriminant</strong></th>
     <th style="border:1px solid #ddd; padding:10px;"><strong>Nature of Roots</strong></th>
     <th style="border:1px solid #ddd; padding:10px;"><strong>Graph Behavior</strong></th>
@@ -313,7 +313,7 @@ x &= -3 \\pm \\sqrt{5}
     <td style="border:1px solid #ddd; padding:10px;">Two distinct real roots</td>
     <td style="border:1px solid #ddd; padding:10px;">Crosses x-axis twice</td>
   </tr>
-  <tr style="background-color:#f9f9f9;">
+  <tr style="background-color:#f9f9f9; color:#1a1a2e;">
     <td style="border:1px solid #ddd; padding:10px;">Δ = 0</td>
     <td style="border:1px solid #ddd; padding:10px;">One repeated real root</td>
     <td style="border:1px solid #ddd; padding:10px;">Tangent to x-axis</td>

@@ -104,7 +104,7 @@ depends critically on the domain restriction.</p>
 
 <h3>Summary: Domain and Range Checklist</h3>
 <table style="margin: 15px auto; border-collapse: collapse; width: 90%;">
-<tr style="background-color: #f0f0f0; border-bottom: 2px solid #333;">
+<tr style="background-color: #f0f0f0; color: #1a1a2e; border-bottom: 2px solid #333;">
 <td style="padding: 10px; border: 1px solid #ccc;"><strong>Function Type</strong></td>
 <td style="padding: 10px; border: 1px solid #ccc;"><strong>Domain Restriction</strong></td>
 <td style="padding: 10px; border: 1px solid #ccc;"><strong>Range Finding Method</strong></td>
@@ -426,7 +426,7 @@ $$y = a \\cdot f\\left(b(x - h)\\right) + k$$
 <h3>Effect of Transformations on Key Features</h3>
 
 <table style="margin: 15px auto; border-collapse: collapse; width: 95%;">
-<tr style="background-color: #f0f0f0; border-bottom: 2px solid #333;">
+<tr style="background-color: #f0f0f0; color: #1a1a2e; border-bottom: 2px solid #333;">
 <td style="padding: 10px; border: 1px solid #ccc;"><strong>Transformation</strong></td>
 <td style="padding: 10px; border: 1px solid #ccc;"><strong>Domain</strong></td>
 <td style="padding: 10px; border: 1px solid #ccc;"><strong>Range</strong></td>
