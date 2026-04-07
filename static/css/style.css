@@ -886,7 +886,7 @@ html, body {
   margin: 12px 0 12px 20px; color: var(--text);
 }
 .section-body li { margin-bottom: 6px; }
-.section-body strong { color: #fff; font-weight: 700; }
+.section-body strong { color: inherit; font-weight: 700; }
 .section-body em { color: var(--text-muted); }
 
 .example-box {
