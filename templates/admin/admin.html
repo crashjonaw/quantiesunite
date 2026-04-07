@@ -88,9 +88,11 @@
           <tr class="user-row" data-name="{{ u.username | lower }}" data-email="{{ u.email | lower }}">
             <td class="td-id">{{ u.id }}</td>
             <td class="td-user">
-              <div class="user-avatar-sm">{{ u.username[0] | upper }}</div>
-              <span>{{ u.username }}</span>
-              {% if u.id == current_user.id %}<span class="badge-you">you</span>{% endif %}
+              <span class="td-user-inner">
+                <span class="user-avatar-sm">{{ u.username[0] | upper }}</span>
+                <span>{{ u.username }}</span>
+                {% if u.id == current_user.id %}<span class="badge-you">you</span>{% endif %}
+              </span>
             </td>
             <td class="td-email">{{ u.email }}</td>
             <td class="td-date">{{ u.created_at[:10] if u.created_at else '—' }}</td>

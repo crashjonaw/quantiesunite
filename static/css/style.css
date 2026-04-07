@@ -1832,15 +1832,17 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
 .admin-table tr:last-child td { border-bottom: none; }
 .admin-table tr:hover td { background: var(--bg3); }
 
-.td-id     { color: var(--text-muted); font-size: 0.78rem; }
-.td-user   { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.td-id     { color: var(--text-muted); font-size: 0.78rem; width: 40px; }
+.td-user   { font-weight: 600; white-space: nowrap; }
+.td-user-inner { display: inline-flex; align-items: center; gap: 8px; }
 .td-email  { color: var(--text-muted); }
 .td-date   { color: var(--text-muted); font-size: 0.78rem; white-space: nowrap; }
 .user-avatar-sm {
   width: 28px; height: 28px; border-radius: 50%;
   background: var(--accent); color: #fff;
-  display: flex; align-items: center; justify-content: center;
+  display: inline-flex; align-items: center; justify-content: center;
   font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
+  vertical-align: middle;
 }
 .badge-you {
   background: var(--bg3); color: var(--text-muted);
