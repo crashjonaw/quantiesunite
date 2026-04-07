@@ -635,7 +635,8 @@ html, body {
 .prereq-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .prereq-chip { font-size: 0.78rem; padding: 4px 12px; border-radius: 99px;
   background: var(--bg3); color: var(--text-muted); text-decoration: none; border: 1px solid var(--border); }
-.prereq-chip.done { border-color: #22c55e40; color: var(--success); }
+.prereq-chip.done { border-color: #22c55e; color: var(--success); background: rgba(34,197,94,0.1); }
+.prereq-chip.pending { border-color: #f59e0b; color: var(--warning); background: rgba(245,158,11,0.1); }
 
 /* ── Concept layout (sidebar + main) ───────────────────────────── */
 .concept-layout {

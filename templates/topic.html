@@ -38,8 +38,8 @@
   🔒 Complete the prerequisite topics first to unlock this lesson.
   <div class="prereq-list">
     {% for pid, pt in prereq_topics.items() %}
-    <a href="/topic/{{ pid }}" class="prereq-chip">
-      {{ pt.emoji }} {{ pt.name }}
+    <a href="/topic/{{ pid }}" class="prereq-chip {% if progress.get(pid, {}).get('complete') %}done{% else %}pending{% endif %}">
+      {% if progress.get(pid, {}).get('complete') %}✅{% else %}⬜{% endif %} {{ pt.emoji }} {{ pt.name }}
     </a>
     {% endfor %}
   </div>
@@ -52,7 +52,9 @@
   <h4>Prerequisites</h4>
   <div class="chip-row">
     {% for pid, pt in prereq_topics.items() %}
-    <a href="/topic/{{ pid }}" class="chip prereq-chip">{{ pt.emoji }} {{ pt.name }}</a>
+    <a href="/topic/{{ pid }}" class="chip prereq-chip {% if progress.get(pid, {}).get('complete') %}done{% else %}pending{% endif %}">
+      {% if progress.get(pid, {}).get('complete') %}✅{% else %}⬜{% endif %} {{ pt.emoji }} {{ pt.name }}
+    </a>
     {% endfor %}
   </div>
 </div>
