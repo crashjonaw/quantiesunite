@@ -12,17 +12,19 @@ SECTIONS = [
   <!-- Main clock -->
   <circle cx="157" cy="155" r="100" fill='#fff' stroke='#8B0000' stroke-width="3"/>
 
-  <!-- Numbers -->
-  <text x="157" y="72" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>12</text>
-  <text x="237" y="163" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>3</text>
-  <text x="157" y="248" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>6</text>
-  <text x="77" y="163" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>9</text>
-
-  <!-- Hour markers (small dots) -->
-  <circle cx="157" cy="58" r="3" fill='#1a1a2e'/>
-  <circle cx="240" cy="155" r="3" fill='#1a1a2e'/>
-  <circle cx="157" cy="252" r="3" fill='#1a1a2e'/>
-  <circle cx="74" cy="155" r="3" fill='#1a1a2e'/>
+  <!-- Numbers 1-12 -->
+  <text x="157" y="75" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>12</text>
+  <text x="200" y="83" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>1</text>
+  <text x="231" y="109" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>2</text>
+  <text x="243" y="161" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>3</text>
+  <text x="231" y="209" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>4</text>
+  <text x="200" y="235" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>5</text>
+  <text x="157" y="247" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>6</text>
+  <text x="114" y="235" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>7</text>
+  <text x="83" y="209" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>8</text>
+  <text x="71" y="161" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>9</text>
+  <text x="83" y="109" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>10</text>
+  <text x="114" y="83" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>11</text>
 
   <!-- Hour hand (short, thick) pointing at 10 -->
   <line x1="157" y1="155" x2="127" y2="90" stroke='#1a1a2e' stroke-width="5" stroke-linecap="round"/>
