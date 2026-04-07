@@ -7,36 +7,58 @@ SECTIONS = [
         "title": "The Magic Pattern: Every Number = 5 Minutes",
         "body": """<p>Here's a super useful pattern to remember: <strong>Each number on the clock represents 5 minutes.</strong></p>
 <p>This makes it easy to read any time!</p>
-<svg viewBox="0 0 415 310" style="width:100%;max-width:415px;display:block;margin:20px auto;">
-  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>The 5-Minute Pattern</text>
+<svg viewBox="0 0 420 420" style="width:100%;max-width:420px;display:block;margin:20px auto;">
+  <text x="210" y="24" text-anchor='middle' font-size='15' font-weight='bold' fill='currentColor'>The 5-Minute Pattern</text>
 
-  <!-- Clock -->
-  <circle cx="207" cy="150" r="95" fill='#fff' stroke='#8B0000' stroke-width="3"/>
+  <!-- Clock face -->
+  <circle cx="210" cy="210" r="160" fill='#fff' stroke='#8B0000' stroke-width="3"/>
+  <!-- Inner ring for minute labels -->
+  <circle cx="210" cy="210" r="130" fill='none' stroke='#e5e7eb' stroke-width="1" stroke-dasharray="4,4"/>
 
-  <!-- Numbers with their minute equivalents -->
-  <text x="207" y="75" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>12</text>
-  <text x="207" y="62" text-anchor='middle' fill='#22c55e' font-size='11'>0 min</text>
-
-  <text x="280" y="158" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>3</text>
-  <text x="296" y="158" text-anchor='middle' fill='#22c55e' font-size='11'>15</text>
-
-  <text x="207" y="238" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>6</text>
-  <text x="207" y="252" text-anchor='middle' fill='#22c55e' font-size='11'>30 min</text>
-
-  <text x="134" y="158" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>9</text>
-  <text x="118" y="158" text-anchor='middle' fill='#22c55e' font-size='11'>45</text>
+  <!-- All 12 numbers (outer) with minute equivalents (inner, green) -->
+  <!-- 12 = 0 min -->
+  <text x="210" y="72" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>12</text>
+  <text x="210" y="100" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:00</text>
+  <!-- 1 = 5 min -->
+  <text x="289" y="88" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>1</text>
+  <text x="272" y="112" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:05</text>
+  <!-- 2 = 10 min -->
+  <text x="340" y="140" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>2</text>
+  <text x="316" y="148" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:10</text>
+  <!-- 3 = 15 min -->
+  <text x="355" y="216" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>3</text>
+  <text x="326" y="216" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:15</text>
+  <!-- 4 = 20 min -->
+  <text x="340" y="290" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>4</text>
+  <text x="316" y="280" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:20</text>
+  <!-- 5 = 25 min -->
+  <text x="289" y="342" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>5</text>
+  <text x="272" y="322" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:25</text>
+  <!-- 6 = 30 min -->
+  <text x="210" y="358" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>6</text>
+  <text x="210" y="334" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:30</text>
+  <!-- 7 = 35 min -->
+  <text x="131" y="342" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>7</text>
+  <text x="148" y="322" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:35</text>
+  <!-- 8 = 40 min -->
+  <text x="80" y="290" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>8</text>
+  <text x="104" y="280" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:40</text>
+  <!-- 9 = 45 min -->
+  <text x="65" y="216" text-anchor='middle' fill='#000' font-size='18' font-weight='bold'>9</text>
+  <text x="94" y="216" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:45</text>
+  <!-- 10 = 50 min -->
+  <text x="80" y="140" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>10</text>
+  <text x="104" y="148" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:50</text>
+  <!-- 11 = 55 min -->
+  <text x="131" y="88" text-anchor='middle' fill='#000' font-size='16' font-weight='bold'>11</text>
+  <text x="148" y="112" text-anchor='middle' fill='#16a34a' font-size='12' font-weight='bold'>:55</text>
 
   <!-- Center dot -->
-  <circle cx="207" cy="150" r="5" fill='#1a1a2e'/>
+  <circle cx="210" cy="210" r="4" fill='#1a1a2e'/>
 
-  <!-- Center labels -->
-  <text x="207" y="135" text-anchor='middle' font-size='11' font-weight='bold' fill='#000'>1 = 5 min</text>
-  <text x="207" y="150" text-anchor='middle' font-size='11' font-weight='bold' fill='#000'>2 = 10 min</text>
-  <text x="207" y="165" text-anchor='middle' font-size='11' font-weight='bold' fill='#000'>3 = 15 min</text>
-
-  <!-- Bottom explanation -->
-  <rect x="15" y="275" width="385" height="25" fill='#f0f8ff' stroke='#4f8ef7' stroke-width="1" rx="4"/>
-  <text x="207" y="293" text-anchor='middle' font-size='11' fill='currentColor'>Count: 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60</text>
+  <!-- Bottom rule box -->
+  <rect x="55" y="385" width="310" height="28" fill='#f0fdf4' stroke='#16a34a' stroke-width="1" rx="4"/>
+  <text x="210" y="404" text-anchor='middle' font-size='11' fill='#000' font-weight='bold'>Number on clock × 5 = minutes past the hour</text>
 </svg>
 <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
 <p style="margin: 0; font-weight: bold;">The core rule:</p>

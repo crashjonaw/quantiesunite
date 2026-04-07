@@ -187,7 +187,6 @@
     <div class="trophy-milestone-list">
       {% for m in milestones %}
       <div class="trophy-milestone {% if m.earned %}trophy-milestone-done{% endif %}">
-        {% if m.earned %}<div class="trophy-card-shine"></div>{% endif %}
         <div class="trophy-milestone-left">
           <span class="trophy-milestone-emoji">{{ m.emoji }}</span>
         </div>

@@ -29,31 +29,37 @@ SECTIONS = [
     {
         "title": "The Two Numbers in a Fraction",
         "body": """<p>Every fraction has <strong>two numbers</strong> that tell us important information:</p>
-<svg viewBox="0 0 470 200" style="width:100%;max-width:470px;height:auto;display:block;margin:16px auto;">
-  <!-- Large fraction display -->
-  <text x="15" y="30" font-size="16" font-weight="bold" fill="currentColor">The parts of a fraction:</text>
+<svg viewBox="0 0 440 210" style="width:100%;max-width:440px;height:auto;display:block;margin:16px auto;">
+  <text x="220" y="24" text-anchor="middle" font-size="15" font-weight="bold" fill="currentColor">The Parts of a Fraction</text>
 
-  <!-- Numerator label -->
-  <text x="60" y="65" font-size="14" font-weight="bold" fill="#e74c3c">Numerator (top number)</text>
-  <line x1="100" y1="72" x2="100" y2="88" stroke="#e74c3c" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Numerator label with arrow -->
+  <text x="30" y="68" font-size="13" font-weight="bold" fill="#e74c3c">Numerator</text>
+  <text x="30" y="84" font-size="11" fill="#e74c3c">(top number)</text>
+  <line x1="115" y1="75" x2="140" y2="75" stroke="#e74c3c" stroke-width="1.5" marker-end="none"/>
+  <polygon points="138,71 148,75 138,79" fill="#e74c3c"/>
 
-  <!-- The fraction -->
-  <text x="90" y="105" font-size="32" font-weight="bold" fill="#e74c3c">1</text>
-  <line x1="80" y1="112" x2="120" y2="112" stroke="currentColor" stroke-width="3"/>
-  <text x="90" y="140" font-size="32" font-weight="bold" fill="#27ae60">2</text>
+  <!-- Large fraction in center -->
+  <text x="170" y="80" font-size="42" font-weight="bold" fill="#e74c3c" text-anchor="middle">1</text>
+  <line x1="148" y1="90" x2="192" y2="90" stroke="currentColor" stroke-width="3"/>
+  <text x="170" y="128" font-size="42" font-weight="bold" fill="#27ae60" text-anchor="middle">2</text>
 
-  <!-- Denominator label -->
-  <line x1="100" y1="145" x2="100" y2="162" stroke="#27ae60" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="40" y="178" font-size="14" font-weight="bold" fill="#27ae60">Denominator (bottom number)</text>
+  <!-- Denominator label with arrow -->
+  <text x="30" y="118" font-size="13" font-weight="bold" fill="#27ae60">Denominator</text>
+  <text x="30" y="134" font-size="11" fill="#27ae60">(bottom number)</text>
+  <line x1="115" y1="125" x2="140" y2="125" stroke="#27ae60" stroke-width="1.5"/>
+  <polygon points="138,121 148,125 138,129" fill="#27ae60"/>
 
-  <!-- Explanations -->
-  <text x="200" y="105" font-size="13" fill="currentColor">How many parts we have</text>
-  <text x="200" y="140" font-size="13" fill="currentColor">How many equal parts the whole is cut into</text>
+  <!-- Explanations on right side -->
+  <text x="220" y="75" font-size="13" fill="currentColor">= How many parts we HAVE</text>
+  <text x="220" y="125" font-size="13" fill="currentColor">= Total equal parts in the whole</text>
 
-  <!-- Visual example -->
-  <text x="200" y="178" font-size="13" font-weight="bold" fill="currentColor">Example: 1/2 (one half)</text>
-  <rect x="370" y="160" width="40" height="20" fill="#ffc96d" stroke="#d4a574" stroke-width="1.5" rx="4"/>
-  <rect x="415" y="160" width="40" height="20" fill="#f5f0e6" stroke="#d4a574" stroke-width="1.5" rx="4"/>
+  <!-- Visual example bar -->
+  <text x="220" y="170" font-size="13" font-weight="bold" fill="currentColor">Example: 1/2 means</text>
+  <rect x="220" y="180" width="45" height="18" fill="#ffc96d" stroke="#b45309" stroke-width="1.5" rx="4"/>
+  <rect x="270" y="180" width="45" height="18" fill="#f5f0e6" stroke="#b45309" stroke-width="1.5" rx="4"/>
+  <text x="242" y="194" text-anchor="middle" font-size="10" fill="#000">1</text>
+  <text x="292" y="194" text-anchor="middle" font-size="10" fill="#888">2</text>
+  <text x="340" y="194" font-size="11" fill="currentColor">1 of 2 parts</text>
 </svg>
 <div class="worked-example formula-box">
   <strong>Example:</strong> If you cut a chocolate bar into 4 equal pieces and eat 1 piece, you ate <strong>1/4 (one quarter)</strong>.
