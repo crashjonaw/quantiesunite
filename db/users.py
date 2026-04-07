@@ -76,6 +76,13 @@ def update_target_level(uid, level):
     db.close()
 
 
+def set_current_level(uid, level):
+    db = get_db()
+    db.execute("UPDATE users SET current_level=? WHERE id=?", (level, uid))
+    db.commit()
+    db.close()
+
+
 def update_username(uid, new_username):
     db = get_db()
     try:

@@ -37,12 +37,13 @@ def account():
 def update_level():
     user = current_user()
     # Only allow setting grade once (if not already set)
-    if user.get("target_level"):
+    if user.get("current_level"):
         flash("Your grade has already been set and cannot be changed.", "warning")
         return redirect(url_for("account.account"))
     level = request.form.get("target_level")
     if level in LEVELS_ORDER:
-        db.update_target_level(session["user_id"], level)
+        db.set_current_level(session["user_id"], level)
+        db.update_target_level(session["user_id"], "Deep Learning Advanced")
         # Mark lower levels as complete
         grade_idx = LEVELS_ORDER.index(level)
         for tid, t in TOPICS.items():

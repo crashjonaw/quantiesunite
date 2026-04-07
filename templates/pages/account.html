@@ -54,21 +54,19 @@
      LEVEL SELECTOR (the main feature)
      ════════════════════════════════════ -->
 <div class="account-section">
-  <h2 class="account-section-title">🎯 Learning Level</h2>
+  <h2 class="account-section-title">🎓 Learning Level</h2>
 
-  {% if user.target_level %}
-  <!-- Grade already set — show read-only -->
-  <p class="text-muted" style="margin-bottom:16px">
-    Your grade is set to <strong>{{ user.target_level }}</strong>. All levels up to and including this are enabled.
-  </p>
+  {% if user.current_level %}
+  <!-- Grade already set — show read-only level list with markers -->
   <div class="level-selector">
     {% for level in levels_order %}
-    {% set is_enabled = level in enabled_levels %}
-    {% set is_current = level == user.target_level %}
-    <div class="level-selector-item {% if is_current %}current{% elif is_enabled %}enabled{% else %}locked{% endif %}">
+    {% set is_current = level == user.current_level %}
+    {% set is_target = level == user.target_level %}
+    {% set below_current = levels_order.index(level) < levels_order.index(user.current_level) if user.current_level in levels_order else false %}
+    <div class="level-selector-item {% if is_current %}current{% elif is_target %}current{% elif below_current %}enabled{% endif %}">
       <div class="level-sel-left">
-        <div class="level-sel-indicator {% if is_current %}active{% elif is_enabled %}on{% endif %}">
-          {% if is_current %}🎯{% elif is_enabled %}✅{% else %}🔒{% endif %}
+        <div class="level-sel-indicator {% if is_current %}active{% elif below_current %}on{% endif %}">
+          {% if is_current %}🎓{% elif below_current %}✅{% else %}📖{% endif %}
         </div>
         <div>
           <div class="level-sel-name">{{ level }}</div>
@@ -76,12 +74,14 @@
         </div>
       </div>
       <div class="level-sel-right">
-        {% if is_current %}
-          <span class="level-sel-badge target">← your grade</span>
-        {% elif is_enabled %}
-          <span class="level-sel-badge included">included</span>
-        {% else %}
-          <span class="level-sel-badge above">above grade</span>
+        {% if is_current and is_target %}
+          <span class="level-sel-badge target">← your grade & target</span>
+        {% elif is_current %}
+          <span class="level-sel-badge" style="background:#4169E1; color:#fff;">← your current grade</span>
+        {% elif is_target %}
+          <span class="level-sel-badge target">← your target</span>
+        {% elif below_current %}
+          <span class="level-sel-badge included">completed</span>
         {% endif %}
       </div>
     </div>
@@ -91,7 +91,7 @@
   {% else %}
   <!-- Grade not yet set — show selector (one-time only) -->
   <p class="text-muted" style="margin-bottom:20px">
-    Choose your <strong>current grade level</strong>. All levels below it will be marked as complete.
+    Select your <strong>current grade level</strong>. All levels below it will be marked as already learned.
     <strong>This can only be set once.</strong>
   </p>
 
@@ -102,7 +102,7 @@
         <div class="level-sel-left">
           <input type="radio" name="target_level" id="lvl-{{ loop.index }}"
                  value="{{ level }}"
-                 onchange="document.getElementById('level-form').submit()"/>
+                 onchange="if(confirm('Set your grade to {{ level }}? This cannot be changed later.')) document.getElementById('level-form').submit(); else this.checked=false;"/>
           <div class="level-sel-indicator">🔘</div>
           <div>
             <div class="level-sel-name">{{ level }}</div>
