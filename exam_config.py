@@ -139,8 +139,8 @@ def get_exam_params(exam_id, timed=True):
     else:
         mult = exam.get("untimed_multiplier", 1.5)
         total = round(exam["total_questions"] * mult)
-        grade = round(exam["grade_questions"] * mult)
-        review = total - grade
+        review = round(exam["review_questions"] * mult)
+        grade = total - review
         return (total, grade, review, None)
 
 # Ordered list for display
