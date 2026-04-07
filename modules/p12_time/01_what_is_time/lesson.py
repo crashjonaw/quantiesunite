@@ -9,27 +9,27 @@ SECTIONS = [
 <p>Time is like an invisible clock that keeps going and going. Every second, every minute, every hour moves us forward through our day.</p>
 <svg viewBox="0 0 415 265" style="width:100%;max-width:415px;display:block;margin:20px auto;">
   <rect x="15" y="15" width="385" height="235" fill='#f0f8ff' stroke='#4f8ef7' stroke-width="2" rx="4"/>
-  <text x="207" y="45" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>Timeline of a Day</text>
+  <text x="207" y="45" text-anchor='middle' font-size='18' font-weight='bold' fill='#1a1a2e'>Timeline of a Day</text>
 
   <line x1="50" y1="90" x2="365" y2="90" stroke='#4f8ef7' stroke-width="2"/>
 
   <circle cx="50" cy="90" r="5" fill='#22c55e'/>
-  <text x="50" y="120" text-anchor='middle' font-size='12' fill='currentColor'>Wake up</text>
-  <text x="50" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>7 AM</text>
+  <text x="50" y="120" text-anchor='middle' font-size='12' fill='#1a1a2e'>Wake up</text>
+  <text x="50" y="135" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>7 AM</text>
 
   <circle cx="155" cy="90" r="5" fill='#fbbf24'/>
-  <text x="155" y="120" text-anchor='middle' font-size='12' fill='currentColor'>Lunch</text>
-  <text x="155" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>12 PM</text>
+  <text x="155" y="120" text-anchor='middle' font-size='12' fill='#1a1a2e'>Lunch</text>
+  <text x="155" y="135" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>12 PM</text>
 
   <circle cx="260" cy="90" r="5" fill='#f97316'/>
-  <text x="260" y="120" text-anchor='middle' font-size='12' fill='currentColor'>School ends</text>
-  <text x="260" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>3 PM</text>
+  <text x="260" y="120" text-anchor='middle' font-size='12' fill='#1a1a2e'>School ends</text>
+  <text x="260" y="135" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>3 PM</text>
 
   <circle cx="365" cy="90" r="5" fill='#8b5cf6'/>
-  <text x="365" y="120" text-anchor='middle' font-size='12' fill='currentColor'>Bedtime</text>
-  <text x="365" y="135" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>9 PM</text>
+  <text x="365" y="120" text-anchor='middle' font-size='12' fill='#1a1a2e'>Bedtime</text>
+  <text x="365" y="135" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>9 PM</text>
 
-  <text x="207" y="190" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Time moves forward all day long</text>
+  <text x="207" y="190" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Time moves forward all day long</text>
 </svg>
 <p><strong>Why learn time?</strong> Time helps us plan our day, meet with friends, and know when to do important things!</p>"""
     },
@@ -47,27 +47,27 @@ SECTIONS = [
 
   <!-- Seconds box -->
   <rect x="15" y="50" width="120" height="105" fill='#e0f2fe' stroke='#0284c7' stroke-width="2" rx="4"/>
-  <text x="75" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Seconds</text>
-  <text x="75" y="95" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Very short</text>
-  <text x="75" y="110" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>time</text>
-  <text x="75" y="130" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Snap your</text>
-  <text x="75" y="145" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>fingers</text>
+  <text x="75" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Seconds</text>
+  <text x="75" y="95" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Very short</text>
+  <text x="75" y="110" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>time</text>
+  <text x="75" y="130" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>Snap your</text>
+  <text x="75" y="145" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>fingers</text>
 
   <!-- Minutes box -->
   <rect x="148" y="50" width="120" height="105" fill='#fef3c7' stroke='#d97706' stroke-width="2" rx="4"/>
-  <text x="208" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Minutes</text>
-  <text x="208" y="95" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Medium</text>
-  <text x="208" y="110" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>time</text>
-  <text x="208" y="130" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Sing a</text>
-  <text x="208" y="145" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>song</text>
+  <text x="208" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Minutes</text>
+  <text x="208" y="95" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Medium</text>
+  <text x="208" y="110" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>time</text>
+  <text x="208" y="130" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>Sing a</text>
+  <text x="208" y="145" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>song</text>
 
   <!-- Hours box -->
   <rect x="281" y="50" width="120" height="105" fill='#dcfce7' stroke='#16a34a' stroke-width="2" rx="4"/>
-  <text x="341" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Hours</text>
-  <text x="341" y="95" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Long</text>
-  <text x="341" y="110" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>time</text>
-  <text x="341" y="130" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Watch a</text>
-  <text x="341" y="145" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>movie</text>
+  <text x="341" y="75" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Hours</text>
+  <text x="341" y="95" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Long</text>
+  <text x="341" y="110" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>time</text>
+  <text x="341" y="130" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>Watch a</text>
+  <text x="341" y="145" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>movie</text>
 
   <!-- Real examples -->
   <text x="15" y="190" font-size='12' fill='currentColor'>Real examples:</text>
@@ -84,7 +84,7 @@ SECTIONS = [
 <svg viewBox="0 0 415 215" style="width:100%;max-width:415px;display:block;margin:20px auto;">
   <!-- Analog clock -->
   <rect x="15" y="15" width="180" height="185" fill='#f3f4f6' stroke='#6b7280' stroke-width="2" rx="4"/>
-  <text x="105" y="40" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Analog Clock</text>
+  <text x="105" y="40" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Analog Clock</text>
 
   <circle cx="105" cy="115" r="55" fill='#fff' stroke='#8B0000' stroke-width="3"/>
   <text x="105" y="75" text-anchor='middle' font-size='12' fill='#000'>12</text>
@@ -99,12 +99,12 @@ SECTIONS = [
 
   <!-- Digital clock -->
   <rect x="220" y="15" width="180" height="185" fill='#f3f4f6' stroke='#6b7280' stroke-width="2" rx="4"/>
-  <text x="310" y="40" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Digital Clock</text>
+  <text x="310" y="40" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Digital Clock</text>
 
   <rect x="245" y="75" width="130" height="55" fill='#1a1a2e' stroke='#374151' stroke-width="2" rx="4"/>
   <text x="310" y="115" text-anchor='middle' font-size='36' fill='#22c55e' font-family='monospace' font-weight='bold'>3:00</text>
 
-  <text x="310" y="160" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Shows numbers</text>
+  <text x="310" y="160" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>Shows numbers</text>
 </svg>
 <p>An <strong>analog clock</strong> has hands that point to numbers. A <strong>digital clock</strong> shows numbers on a screen.</p>
 <p>In this lesson, we focus on <strong>analog clocks</strong> because understanding how the hands move teaches us how time works!</p>"""
