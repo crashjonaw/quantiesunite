@@ -24,7 +24,7 @@ SECTIONS = [
 <h3>Saying Numbers is NOT the Same as Counting</h3>
 <p>Many young children can recite: "1, 2, 3, 4, 5, 6, 7, 8, 9, 10..." like singing a song. But this is just <strong>reciting</strong>. Real counting is different.</p>
 
-<div style="background: #fee2e2; padding: 15px; border-radius: 8px; margin: 20px 0;">
+<div style="background: #fee2e2; color: #1a1a2e; padding: 15px; border-radius: 8px; margin: 20px 0;">
   <p><strong>Just Reciting:</strong> "One-two-three-four-five-six-seven-eight-nine-ten" (singing it fast)</p>
   <p style="margin-top: 10px;"><strong>Real Counting:</strong> Point to each toy, say one number for each toy, and use the last number to answer "how many?"</p>
 </div>
