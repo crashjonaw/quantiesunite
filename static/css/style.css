@@ -1462,6 +1462,20 @@ html, body {
 .search-input:focus { border-color: var(--accent); }
 .search-count { color: var(--text-muted); margin-bottom: 20px; font-size: 0.9rem; }
 
+/* ── Dark theme contrast fixes ─────────────────────────────────── */
+/* Only apply when NOT in bright theme (dark is default) */
+html:not([data-theme="bright"]) .badge-free-sm,
+html:not([data-theme="bright"]) .badge-free { background: #15803d; border-color: #15803d; }
+html:not([data-theme="bright"]) .badge-admin { background: #92400e; border-color: #92400e; }
+html:not([data-theme="bright"]) .meta-chip.success { background: #15803d; }
+html:not([data-theme="bright"]) .level-sel-badge.included { background: #15803d; }
+html:not([data-theme="bright"]) .level-sel-indicator.on { background: #15803d; border-color: #15803d; }
+html:not([data-theme="bright"]) .sidebar-concept-num { color: #e6edf3; }
+html:not([data-theme="bright"]) .admin-link { color: #fbbf24; }
+html:not([data-theme="bright"]) .admin-link.active { color: #fde68a; }
+html:not([data-theme="bright"]) .footer a { color: #93c5fd; }
+html:not([data-theme="bright"]) .btn.btn-sm { color: var(--text); }
+
 /* ── Footer ─────────────────────────────────────────────────────── */
 .footer {
   text-align: center; padding: 24px;
