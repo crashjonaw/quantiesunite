@@ -7,7 +7,7 @@ SECTIONS = [
     <h3>What is Percent?</h3>
     <p>The word "percent" comes from Latin: <strong>"per centum"</strong> meaning "per hundred."</p>
     <p>A percent (%) is a fraction with denominator 100.</p>
-    <p>25% means 25 out of 100, or \\\\( \\\\frac{25}{100} \\\\)</p>
+    <p>25% means 25 out of 100, or \\( \\frac{25}{100} \\)</p>
   </div>
 
   <div class="diagram-container">
@@ -79,9 +79,9 @@ SECTIONS = [
   <div class="formula-box">
     <h4>Key Equivalences:</h4>
     <p>Percent ↔ Fraction ↔ Decimal</p>
-    <p>50% = \\\\( \\\\frac{50}{100} = \\\\frac{1}{2} \\\\) = 0.5</p>
-    <p>25% = \\\\( \\\\frac{25}{100} = \\\\frac{1}{4} \\\\) = 0.25</p>
-    <p>75% = \\\\( \\\\frac{75}{100} = \\\\frac{3}{4} \\\\) = 0.75</p>
+    <p>50% = \\( \\frac{50}{100} = \\frac{1}{2} \\) = 0.5</p>
+    <p>25% = \\( \\frac{25}{100} = \\frac{1}{4} \\) = 0.25</p>
+    <p>75% = \\( \\frac{75}{100} = \\frac{3}{4} \\) = 0.75</p>
   </div>
 </div>'''
     },
@@ -118,8 +118,8 @@ SECTIONS = [
     <h3>Method 3: Fraction to Percent</h3>
     <div class="step">
       <h4>Convert denominator to 100, or use division</h4>
-      <p>\\\\( \\\\frac{3}{5} = \\\\frac{3 \\\\times 20}{5 \\\\times 20} = \\\\frac{60}{100} = 60% \\\\)</p>
-      <p>Or: \\\\( 3 \\\\div 5 = 0.6 = 60% \\\\)</p>
+      <p>\\( \\frac{3}{5} = \\frac{3 \\times 20}{5 \\times 20} = \\frac{60}{100} = 60% \\)</p>
+      <p>Or: \\( 3 \\\\div 5 = 0.6 = 60% \\)</p>
     </div>
   </div>
 
@@ -127,8 +127,8 @@ SECTIONS = [
     <h3>Method 4: Percent to Fraction</h3>
     <div class="step">
       <h4>Write percent as fraction with 100, then simplify</h4>
-      <p>35% = \\\\( \\\\frac{35}{100} = \\\\frac{7}{20} \\\\)</p>
-      <p>80% = \\\\( \\\\frac{80}{100} = \\\\frac{4}{5} \\\\)</p>
+      <p>35% = \\( \\frac{35}{100} = \\frac{7}{20} \\)</p>
+      <p>80% = \\( \\frac{80}{100} = \\frac{4}{5} \\)</p>
     </div>
   </div>
 
@@ -224,7 +224,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Formula:</h4>
-    <p>Percent of Amount = \\\\( \\\\frac{Percent}{100} \\\\times \\\\text{Amount} \\\\)</p>
+    <p>Percent of Amount = \\( \\frac{Percent}{100} \\times \\\\text{Amount} \\)</p>
     <p>Or using fractions: Find the equivalent fraction and multiply.</p>
   </div>
 
@@ -250,7 +250,7 @@ SECTIONS = [
     <h3>Method: Finding the Percent</h3>
     <div class="step">
       <h4>Step 1: Write as a fraction</h4>
-      <p>\\\\( \\\\frac{15}{60} \\\\)</p>
+      <p>\\( \\frac{15}{60} \\)</p>
     </div>
     <div class="step">
       <h4>Step 2: Convert to decimal</h4>
@@ -267,7 +267,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Formula:</h4>
-    <p>Percent = \\\\( \\\\frac{\\\\text{Part}}{\\\\text{Whole}} \\\\times 100 \\\\)</p>
+    <p>Percent = \\( \\frac{\\\\text{Part}}{\\\\text{Whole}} \\times 100 \\)</p>
   </div>
 
   <div class="diagram-container">
@@ -293,9 +293,9 @@ SECTIONS = [
 
   <div class="example-box">
     <h4>More Examples:</h4>
-    <p>What percent of 50 is 10? → \\\\( \\\\frac{10}{50} = 0.2 = \\\\) 20%</p>
-    <p>What percent of 200 is 50? → \\\\( \\\\frac{50}{200} = 0.25 = \\\\) 25%</p>
-    <p>What percent of 80 is 100? → \\\\( \\\\frac{100}{80} = 1.25 = \\\\) 125% (more than whole!)</p>
+    <p>What percent of 50 is 10? → \\( \\frac{10}{50} = 0.2 = \\) 20%</p>
+    <p>What percent of 200 is 50? → \\( \\frac{50}{200} = 0.25 = \\) 25%</p>
+    <p>What percent of 80 is 100? → \\( \\frac{100}{80} = 1.25 = \\) 125% (more than whole!)</p>
   </div>
 </div>'''
     },
@@ -416,7 +416,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Simple Interest Formula:</h4>
-    <p>Interest = \\\\( \\\\frac{\\\\text{Principal} \\\\times \\\\text{Rate} \\\\times \\\\text{Time}}{100} \\\\)</p>
+    <p>Interest = \\( \\frac{\\\\text{Principal} \\times \\\\text{Rate} \\times \\\\text{Time}}{100} \\)</p>
     <p>Or: Interest = Principal × (Rate/100) × Time</p>
     <p>where Rate is in percent and Time is in years</p>
   </div>
@@ -496,11 +496,11 @@ SECTIONS = [
     <div class="steps-container">
       <div class="step">
         <h4>Step 1: Write as fraction</h4>
-        <p>\\\\( \\\\frac{72}{80} \\\\)</p>
+        <p>\\( \\frac{72}{80} \\)</p>
       </div>
       <div class="step">
         <h4>Step 2: Simplify and convert</h4>
-        <p>\\\\( \\\\frac{72}{80} = \\\\frac{9}{10} = 0.9 = \\\\) 90%</p>
+        <p>\\( \\frac{72}{80} = \\frac{9}{10} = 0.9 = \\) 90%</p>
       </div>
     </div>
   </div>
