@@ -881,9 +881,9 @@ html, body {
   font-size: 1.2rem; font-weight: 700; margin-bottom: 16px;
   padding-bottom: 10px; border-bottom: 1px solid var(--border);
 }
-.section-body p { margin-bottom: 12px; color: var(--text); }
+.section-body p { margin-bottom: 12px; color: inherit; }
 .section-body ul, .section-body ol {
-  margin: 12px 0 12px 20px; color: var(--text);
+  margin: 12px 0 12px 20px; color: inherit;
 }
 .section-body li { margin-bottom: 6px; }
 .section-body strong { color: inherit; font-weight: 700; }
