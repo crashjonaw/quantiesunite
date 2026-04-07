@@ -86,7 +86,7 @@ def take_exam(exam_id):
     seen_ids = db.get_exam_seen_question_ids(user["id"], exam_id)
 
     # Sample questions — prioritizes wrong, then unseen, then recycles
-    review_modules = get_review_modules(exam_id)
+    review_modules = get_review_modules(exam_id) if review_q > 0 else []
     questions = db.sample_exam_questions(
         exam["grade_modules"], grade_q,
         review_modules, review_q,

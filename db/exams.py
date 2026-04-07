@@ -58,8 +58,11 @@ def sample_exam_questions(grade_modules, grade_count, review_modules, review_cou
     questions = []
     forced_ids = set()
 
-    all_modules = list(set((grade_modules or []) + (review_modules or [])))
-    all_modules_ph = ",".join("?" * len(all_modules)) if all_modules else "''"
+    # Only use grade modules for sampling (review modules only if review_count > 0)
+    sample_modules = list(set(grade_modules or []))
+    if review_count > 0 and review_modules:
+        sample_modules = list(set(sample_modules + review_modules))
+    sample_modules_ph = ",".join("?" * len(sample_modules)) if sample_modules else "''"
 
     # 1. Force-include wrong questions first
     if must_include_ids:
@@ -73,22 +76,23 @@ def sample_exam_questions(grade_modules, grade_count, review_modules, review_cou
     total_needed = grade_count + review_count
     remaining = total_needed - len(questions)
 
-    # 2. Prefer unseen questions
+    # 2. Prefer unseen questions from grade modules only
     if remaining > 0 and seen_ids is not None:
+        grade_ph = ",".join("?" * len(grade_modules)) if grade_modules else "''"
         exclude = forced_ids | seen_ids
         if exclude:
             ph_ex = ",".join("?" * len(exclude))
             unseen = db.execute(
                 f"""SELECT * FROM exam_questions
-                    WHERE topic_id IN ({all_modules_ph}) AND id NOT IN ({ph_ex})
+                    WHERE topic_id IN ({grade_ph}) AND id NOT IN ({ph_ex})
                     ORDER BY RANDOM() LIMIT ?""",
-                (*all_modules, *exclude, remaining)).fetchall()
+                (*(grade_modules or []), *exclude, remaining)).fetchall()
         else:
             unseen = db.execute(
                 f"""SELECT * FROM exam_questions
-                    WHERE topic_id IN ({all_modules_ph})
+                    WHERE topic_id IN ({grade_ph})
                     ORDER BY RANDOM() LIMIT ?""",
-                (*all_modules, remaining)).fetchall()
+                (*(grade_modules or []), remaining)).fetchall()
         questions.extend(unseen)
         forced_ids.update(r["id"] for r in unseen)
         remaining = total_needed - len(questions)
