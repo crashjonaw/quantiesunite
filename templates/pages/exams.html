@@ -52,8 +52,8 @@
         {% if exam.passed %}
           <span class="exam-status exam-status-pass">✅ Passed{% if exam.best_score is not none %} ({{ exam.best_score }}/{{ exam.best_total }}){% endif %}</span>
           <div class="exam-mode-btns">
-            <a href="{{ url_for('exam.take_exam', exam_id=exam.id, mode='timed') }}" class="btn btn-outline btn-sm">⏱️ Retake (Timed)</a>
-            <a href="{{ url_for('exam.take_exam', exam_id=exam.id, mode='untimed') }}" class="btn btn-outline btn-sm">📝 Retake (Untimed)</a>
+            <a href="{{ url_for('exam.take_exam', exam_id=exam.id, mode='timed') }}" class="btn btn-outline btn-sm">⏱️ Retake Timed ({{ exam.time_limit_min }}min)</a>
+            <a href="{{ url_for('exam.take_exam', exam_id=exam.id, mode='untimed') }}" class="btn btn-outline btn-sm">📝 Retake Untimed</a>
           </div>
         {% elif exam.accessible %}
           <span class="exam-status">{{ exam.attempts }} attempt{{ 's' if exam.attempts != 1 else '' }}{% if exam.best_score is not none %} · Best: {{ exam.best_score }}/{{ exam.best_total }}{% endif %}</span>
