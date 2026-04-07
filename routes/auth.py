@@ -50,6 +50,7 @@ def register():
             else:
                 grade = request.form.get("grade", "").strip()
                 if grade and grade in LEVELS_ORDER:
+                    db.update_target_level(uid, grade)
                     grade_idx = LEVELS_ORDER.index(grade)
                     for tid, t in TOPICS.items():
                         topic_level = t["level"]
