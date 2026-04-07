@@ -4579,6 +4579,9 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   width: 100%;
 }
 .trophy-card-emoji { font-size: 2.2rem; margin-bottom: 4px; line-height: 1; overflow: hidden; }
+.trophy-gold .trophy-card-emoji,
+.trophy-silver .trophy-card-emoji,
+.trophy-bronze .trophy-card-emoji { color: #4169E1; text-shadow: 0 0 2px rgba(65,105,225,0.3); }
 .trophy-card-name {
   font-size: 0.8rem;
   font-weight: 700;
