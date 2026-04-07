@@ -71,7 +71,7 @@ SECTIONS = [
 <h3>Counting by 5s: Making Groups of Five</h3>
 <p>When you count by \(5\)s, you say numbers that are 5 apart. This is great for counting fingers or coins!</p>
 
-<div style="background: #ef444480; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+<div style="background: #ef444480; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
   <p style="font-size: 18px;"><strong>5, 10, 15, 20</strong></p>
 </div>
 

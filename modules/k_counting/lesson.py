@@ -35,7 +35,7 @@ SECTIONS = [
      </div>
 
      <h3>Example: Counting 3 Apples</h3>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 24px;">🍎 ← Point and say <strong>"ONE"</strong></p>
        <p style="font-size: 24px;">🍎 ← Point and say <strong>"TWO"</strong></p>
        <p style="font-size: 24px;">🍎 ← Point and say <strong>"THREE"</strong> ← This is the total!</p>
@@ -88,7 +88,7 @@ SECTIONS = [
 
      <h3>Correct One-to-One Correspondence</h3>
      <p>Watch how we match numbers to objects:</p>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; color: #1a1a2e;">
        <table style="width: 100%;">
          <tr style="text-align: center;">
            <td style="padding: 10px; font-size: 20px;"><strong>1</strong></td>
@@ -167,7 +167,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">5, 6, 7, ?</td>
          <td style="padding: 8px; border: 1px solid #ccc;"><strong>8</strong> comes next</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc;">12, 13, 14, ?</td>
          <td style="padding: 8px; border: 1px solid #ccc;"><strong>15</strong> comes next</td>
        </tr>
@@ -185,7 +185,7 @@ SECTIONS = [
        <li>You get the answer (8) much faster!</li>
      </ul>
 
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 20px;"><strong>You have 5:</strong> 🍎🍎🍎🍎🍎</p>
        <p style="font-size: 20px;"><strong>You get 3 more:</strong> 🍎🍎🍎</p>
        <p style="margin-top: 15px; font-size: 16px;">Instead of counting all 8 from 1, count on from 5:</p>
@@ -194,7 +194,7 @@ SECTIONS = [
 
      <h3>Finding Missing Numbers in a Sequence</h3>
      <p>If you know the sequence, you can find missing numbers:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 18px;"><strong>What is missing? 7, 8, ?, 10</strong></p>
        <p style="text-align: center; margin-top: 10px;">Answer: <strong>9</strong> is missing because 9 comes between 8 and 10.</p>
      </div>"""},
@@ -205,7 +205,7 @@ SECTIONS = [
 
      <h3>Ordering by Size</h3>
      <p>Here are 4 apples of different sizes. Let's put them in order from smallest to biggest:</p>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 16px; margin-bottom: 10px;"><strong>Before (random order):</strong></p>
        <p style="text-align: center; letter-spacing: 10px;">🍎 &nbsp; 🍎 &nbsp; 🍎 &nbsp; 🍎</p>
 
@@ -240,7 +240,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Shortest to Tallest</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🧒 then 👦 then 👨</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc;">Size</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Smallest to Biggest</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Pea, Apple, Watermelon</td>
@@ -250,7 +250,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Lightest to Heaviest</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Feather, Book, Backpack</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc;">Numbers</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Smallest to Biggest</td>
          <td style="padding: 8px; border: 1px solid #ccc;">3, 7, 12, 19</td>
@@ -260,7 +260,7 @@ SECTIONS = [
      <h3>Practice: Order These Numbers</h3>
      <p>Here are some mixed-up numbers: <strong>15, 8, 3, 18, 5</strong></p>
      <p>Order them from smallest to biggest:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 18px;"><strong>3, 5, 8, 15, 18</strong></p>
      </div>
 
@@ -289,14 +289,14 @@ SECTIONS = [
      </ul>
 
      <h3>Practice: Counting Backwards from 10</h3>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 20px; color: #4169E1;"><strong>10, 9, 8, 7, 6, 5, 4, 3, 2, 1</strong></p>
        <p style="margin-top: 10px; font-size: 16px;">Try it out loud! Use the same stable order, just going the opposite direction.</p>
      </div>
 
      <h3>Backward Counting Helps with Subtraction</h3>
      <p>Imagine you have 8 cookies and you eat 3 of them. One way to find out how many are left is to count backwards by pointing to each cookie you eat:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 18px;">You have: 🍪🍪🍪🍪🍪🍪🍪🍪 (8 cookies)</p>
        <p style="text-align: center; margin-top: 10px;">You eat the first: "8"</p>
        <p style="text-align: center;">You eat the second: "7"</p>
@@ -338,7 +338,7 @@ SECTIONS = [
 
      <h3>Counting With Coins</h3>
      <p>When you have money, you can count it to see how much you have:</p>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 20px;">You have 5 coins: 🪙🪙🪙🪙🪙</p>
        <p style="margin-top: 10px;">Count: 1, 2, 3, 4, 5 coins</p>
        <p style="font-size: 18px; margin-top: 10px;"><strong>You have 5 coins' worth of money!</strong></p>

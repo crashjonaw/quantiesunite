@@ -141,7 +141,7 @@ SECTIONS = [
 <p>The 2 times table is about doubling. Each answer is 2 more than the last.</p>
 
 <table style="margin: 20px auto; border-collapse: collapse; width: 100%; max-width: 500px;">
-  <tr style="background: #f0f0f0;">
+  <tr style="background: #f0f0f0; color: #1a1a2e;">
     <th style="border: 1px solid #333; padding: 10px;">Multiplication</th>
     <th style="border: 1px solid #333; padding: 10px;">Product</th>
   </tr>
@@ -149,7 +149,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">2 × 1</td>
     <td style="border: 1px solid #333; padding: 10px;">2</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">2 × 2</td>
     <td style="border: 1px solid #333; padding: 10px;">4</td>
   </tr>
@@ -157,7 +157,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">2 × 3</td>
     <td style="border: 1px solid #333; padding: 10px;">6</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">2 × 4</td>
     <td style="border: 1px solid #333; padding: 10px;">8</td>
   </tr>
@@ -165,7 +165,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">2 × 5</td>
     <td style="border: 1px solid #333; padding: 10px;">10</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">2 × 6</td>
     <td style="border: 1px solid #333; padding: 10px;">12</td>
   </tr>
@@ -246,7 +246,7 @@ SECTIONS = [
 <p>The 9 times table has a hidden pattern. Look at the digits of each product:</p>
 
 <table style="margin: 20px auto; border-collapse: collapse; width: 100%; max-width: 500px;">
-  <tr style="background: #f0f0f0;">
+  <tr style="background: #f0f0f0; color: #1a1a2e;">
     <th style="border: 1px solid #333; padding: 10px;">Multiplication</th>
     <th style="border: 1px solid #333; padding: 10px;">Product</th>
     <th style="border: 1px solid #333; padding: 10px;">Digits Add to 9</th>
@@ -256,7 +256,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">9</td>
     <td style="border: 1px solid #333; padding: 10px;">9 = 9</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">9 × 2</td>
     <td style="border: 1px solid #333; padding: 10px;">18</td>
     <td style="border: 1px solid #333; padding: 10px;">1 + 8 = 9</td>
@@ -266,7 +266,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">27</td>
     <td style="border: 1px solid #333; padding: 10px;">2 + 7 = 9</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">9 × 4</td>
     <td style="border: 1px solid #333; padding: 10px;">36</td>
     <td style="border: 1px solid #333; padding: 10px;">3 + 6 = 9</td>

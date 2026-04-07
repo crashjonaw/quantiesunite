@@ -27,8 +27,8 @@ SECTIONS = [
   <tr>
     <td style="border: 1px solid #333; padding: 10px; text-align: center">2</td>
     <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #22c55e20;">7</td>
-    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #f59e0b20;">5</td>
-    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #ef444420;">6</td>
+    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #f59e0b20; color: #1a1a2e;">5</td>
+    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #ef444420; color: #1a1a2e;">6</td>
     <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #8b5cf620;">4</td>
   </tr>
 </table>

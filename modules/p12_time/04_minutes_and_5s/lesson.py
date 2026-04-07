@@ -60,7 +60,7 @@ SECTIONS = [
   <rect x="55" y="385" width="310" height="28" fill='#f0fdf4' stroke='#16a34a' stroke-width="1" rx="4"/>
   <text x="210" y="404" text-anchor='middle' font-size='11' fill='#000' font-weight='bold'>Number on clock × 5 = minutes past the hour</text>
 </svg>
-<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
+<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">The core rule:</p>
 <p style="margin: 8px 0;">Number on clock x 5 = minutes past the hour</p>
 <p style="margin: 0">Example: The 7 = 7 x 5 = 35 minutes</p>
@@ -226,7 +226,7 @@ SECTIONS = [
 
   <text x="307" y="240" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>After noon</text>
 </svg>
-<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
+<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember:</p>
 <p style="margin: 8px 0;">AM = morning (dawn to noon)</p>
 <p style="margin: 8px 0;">PM = afternoon and evening (noon to midnight)</p>

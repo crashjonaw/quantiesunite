@@ -53,7 +53,7 @@ SECTIONS = [
 
   <text x="207" y="338" text-anchor='middle' font-size='12' fill='currentColor'>5 + 2 = 7 days in a week!</text>
 </svg>
-<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px">
+<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember the order:</p>
 <p style="margin: 8px 0;">Mon, Tue, Wed, Thu, Fri, Sat, Sun</p>
 <p style="margin: 0">Then it starts again!</p>
@@ -210,7 +210,7 @@ SECTIONS = [
   <!-- Today indicator label -->
   <text x="267" y="395" text-anchor='middle' font-size='13' fill='currentColor' opacity='0.6'>The highlighted date (13) shows today</text>
 </svg>
-<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px">
+<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">How to use a calendar:</p>
 <p style="margin: 8px 0;">Look at the month and year at the top</p>
 <p style="margin: 8px 0;">Find the date you are looking for</p>
@@ -259,7 +259,7 @@ SECTIONS = [
   <text x="420" y="393" text-anchor='middle' font-size='13' font-weight='bold' fill='white'>6 hr 30 min</text>
   <text x="30" y="416" font-size='12' font-weight='bold' fill='currentColor'>Duration: 6 hours 30 minutes</text>
 </svg>
-<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px">
+<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">How to find duration:</p>
 <p style="margin: 8px 0;">1. Note the start time</p>
 <p style="margin: 8px 0;">2. Note the end time</p>

@@ -54,8 +54,8 @@ SECTIONS = [
   <tr>
     <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #22c55e20;">3</td>
     <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #4169E120;">2</td>
-    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #f59e0b20;">4</td>
-    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #ef444420;">7</td>
+    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #f59e0b20; color: #1a1a2e;">4</td>
+    <td style="border: 1px solid #333; padding: 10px; text-align: center; background: #ef444420; color: #1a1a2e;">7</td>
   </tr>
 </table>
 
@@ -173,7 +173,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">Money saved</td>
     <td style="border: 1px solid #333; padding: 10px;">$6,750</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">People in a town</td>
     <td style="border: 1px solid #333; padding: 10px;">4,230 people</td>
   </tr>

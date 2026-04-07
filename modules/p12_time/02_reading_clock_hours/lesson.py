@@ -39,7 +39,7 @@ SECTIONS = [
   <text x="15" y="290" font-size='12' font-weight='bold' fill='currentColor'>Minute hand (long, thin)</text>
   <text x="15" y="310" font-size='12' font-weight='bold' fill='currentColor'>Hour hand (short, thick)</text>
 </svg>
-<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px">
+<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">The two hands you need to know:</p>
 <p style="margin: 8px 0;"><strong>Hour hand (short):</strong> Points to the hour number (1-12)</p>
 <p style="margin: 8px 0;"><strong>Minute hand (long):</strong> Points to the minutes</p>
@@ -97,7 +97,7 @@ SECTIONS = [
   <text x="15" y="270" font-size='11' fill='currentColor' opacity='0.6'>1. Check if the minute hand points to 12</text>
   <text x="15" y="288" font-size='11' fill='currentColor' opacity='0.6'>2. Look at where the hour hand points</text>
 </svg>
-<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
+<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember: Whole hour = Minute hand at 12</p>
 <p style="margin: 8px 0;">The time is [hour]:00</p>
 </div>"""
@@ -193,7 +193,7 @@ SECTIONS = [
   <text x="95" y="309" font-size='12' font-weight='bold' fill='currentColor'>School ends: 3:00 PM</text>
   <text x="95" y="329" font-size='11' fill='currentColor' opacity='0.6'>Afternoon -- time to play!</text>
 </svg>
-<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px">
+<div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Key times you might see:</p>
 <p style="margin: 8px 0;">7:00 or 8:00 AM = Morning time to wake up</p>
 <p style="margin: 8px 0;">12:00 PM = Lunch time (noon)</p>

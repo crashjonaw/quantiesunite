@@ -6,7 +6,7 @@ SECTIONS = [
 <h3>Which Number is Bigger?</h3>
 <p>Now that we can read large numbers, we need to compare them. We use special symbols:</p>
 
-<div class="formula-box" style="text-align: center; margin: 20px auto; padding: 15px; background: #f0f9ff">
+<div class="formula-box" style="text-align: center; margin: 20px auto; padding: 15px; background: #f0f9ff color: #1a1a2e;">
   <p style="font-size: 16px; margin: 5px;">\\( < \\) means "is less than"</p>
   <p style="font-size: 16px; margin: 5px;">\\( > \\) means "is greater than"</p>
   <p style="font-size: 16px; margin: 5px;">\\( = \\) means "is equal to"</p>

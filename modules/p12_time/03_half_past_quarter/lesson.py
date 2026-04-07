@@ -49,7 +49,7 @@ SECTIONS = [
   <text x="341" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>3:45</text>
   <text x="341" y="158" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Quarter to 4</text>
 </svg>
-<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
+<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">These times are so common they have special names!</p>
 <p style="margin: 8px 0;">:15 = Quarter past (15 minutes)</p>
 <p style="margin: 8px 0;">:30 = Half past (30 minutes, halfway!)</p>
@@ -189,7 +189,7 @@ SECTIONS = [
   <text x="35" y="285" font-size='12' font-weight='bold' fill='currentColor'>8:45 PM (Quarter to 9)</text>
   <text x="35" y="305" font-size='11' fill='currentColor' opacity='0.6'>Getting ready for bed</text>
 </svg>
-<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px;">
+<div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember the pattern:</p>
 <p style="margin: 8px 0;">Minute hand at 3 = :15 (quarter past)</p>
 <p style="margin: 8px 0;">Minute hand at 6 = :30 (half past)</p>

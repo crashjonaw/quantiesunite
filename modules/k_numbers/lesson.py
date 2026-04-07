@@ -29,7 +29,7 @@ SECTIONS = [
      "body": """<h3>Our Number System</h3>
      <p>The numbers we use come from India, invented hundreds of years ago. They are called the <strong>Hindu-Arabic numerals</strong>, and we use only <strong>ten different symbols (digits)</strong> to write every number that exists:</p>
 
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; text-align: center; font-size: 32px; letter-spacing: 8px; margin: 20px 0;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; text-align: center; font-size: 32px; letter-spacing: 8px; margin: 20px 0; color: #1a1a2e;">
        <strong>0  1  2  3  4  5  6  7  8  9</strong>
      </div>
 
@@ -70,7 +70,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Zero</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Nothing</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>1</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">One</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎</td>
@@ -80,7 +80,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Two</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>3</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">Three</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎</td>
@@ -90,7 +90,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Four</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎🍎</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>5</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">Five</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎🍎🍎</td>
@@ -100,7 +100,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Six</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎🍎🍎🍎</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>7</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">Seven</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎🍎🍎🍎🍎</td>
@@ -110,7 +110,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Eight</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎🍎🍎🍎🍎🍎</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>9</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">Nine</td>
          <td style="padding: 8px; border: 1px solid #ccc;">🍎🍎🍎🍎🍎🍎🍎🍎🍎</td>
@@ -178,7 +178,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Less than (smaller)</td>
          <td style="padding: 8px; border: 1px solid #ccc;">3 < 7 (3 is smaller)</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center; font-size: 20px;"><strong>&gt;</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">Greater than (bigger)</td>
          <td style="padding: 8px; border: 1px solid #ccc;">7 > 3 (7 is bigger)</td>
@@ -305,7 +305,7 @@ SECTIONS = [
 
      <h3>One-to-One Counting</h3>
      <p>To count a group correctly, we point to each object and say one number for each one:</p>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 20px;">🍎 <strong>ONE</strong></p>
        <p style="font-size: 20px;">🍎🍎 <strong>TWO</strong></p>
        <p style="font-size: 20px;">🍎🍎🍎 <strong>THREE</strong></p>
@@ -327,7 +327,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">Point: One, Two</td>
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>2</strong></td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">🍪🍪🍪🍪</td>
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;">One, Two, Three, Four</td>
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center;"><strong>4</strong></td>

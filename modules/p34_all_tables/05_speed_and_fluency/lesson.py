@@ -90,7 +90,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">Month 1</td>
     <td style="border: 1px solid #333; padding: 10px;">~3 minutes (using strategies)</td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">Month 2</td>
     <td style="border: 1px solid #333; padding: 10px;">~2 minutes (getting faster)</td>
   </tr>

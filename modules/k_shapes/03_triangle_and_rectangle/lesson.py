@@ -98,7 +98,7 @@ SECTIONS = [
 <td style="padding: 8px; text-align: center;">3</td>
 <td style="padding: 8px; text-align: center;">4</td>
 </tr>
-<tr style="background:#f9f9f9;">
+<tr style="background:#f9f9f9; color: #1a1a2e;">
 <td style="padding: 8px;">Corners</td>
 <td style="padding: 8px; text-align: center;">3</td>
 <td style="padding: 8px; text-align: center;">4</td>
@@ -108,7 +108,7 @@ SECTIONS = [
 <td style="padding: 8px; text-align: center;">Not always</td>
 <td style="padding: 8px; text-align: center;">Opposite sides equal</td>
 </tr>
-<tr style="background:#f9f9f9;">
+<tr style="background:#f9f9f9; color: #1a1a2e;">
 <td style="padding: 8px;">Right corners</td>
 <td style="padding: 8px; text-align: center;">Not always</td>
 <td style="padding: 8px; text-align: center;">Always (4 right angles)</td>

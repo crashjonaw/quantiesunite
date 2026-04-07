@@ -149,7 +149,7 @@ SECTIONS = [
   <text x="25" y="168" font-size="12" font-weight="bold" fill="#27ae60">1/8</text>
   <text x="210" y="168" font-size="12" fill="currentColor" opacity="0.6">SMALLEST piece</text>
 </svg>
-<div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px">
+<div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px; color: #1a1a2e;">
   <strong>Pattern:</strong> 1/2 &gt; 1/4 &gt; 1/8 (bigger denominator = smaller piece)
   <p style="margin:8px 0 0 0;font-size:13px;">The larger the denominator (bottom number), the smaller each piece is!</p>
 </div>"""

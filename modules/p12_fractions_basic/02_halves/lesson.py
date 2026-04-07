@@ -27,7 +27,7 @@ SECTIONS = [
   <!-- Labels -->
   <text x="200" y="150" font-size="12" fill="currentColor" opacity="0.6">Same size = equal halves</text>
 </svg>
-<div class="concept-box" style="background: #e8f4f8; padding: 12px; margin: 12px 0; border-radius: 4px">
+<div class="concept-box" style="background: #e8f4f8; padding: 12px; margin: 12px 0; border-radius: 4px; color: #1a1a2e;">
   <strong>Key fact:</strong> 1/2 + 1/2 = 1 whole. Two halves always equal one whole!
 </div>"""
     },
@@ -134,7 +134,7 @@ SECTIONS = [
   <!-- Equation text -->
   <text x="15" y="140" font-size="13" fill="currentColor">1/2 + 1/2 = 1 whole</text>
 </svg>
-<div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px">
+<div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px; color: #1a1a2e;">
   <strong>The equation:</strong> 1/2 + 1/2 = 1 whole
   <p style="margin:8px 0 0 0;font-size:13px;">This means if you have half of something and get another half, you have the complete thing!</p>
 </div>"""

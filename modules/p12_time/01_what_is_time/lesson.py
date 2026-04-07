@@ -36,7 +36,7 @@ SECTIONS = [
     {
         "title": "Time Units: Seconds, Minutes, Hours",
         "body": """<p>We measure time using small units that build up into bigger units.</p>
-<div style="background: #f0f8ff; padding: 16px; margin: 16px 0; border-radius: 4px">
+<div style="background: #f0f8ff; padding: 16px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Time conversions to remember:</p>
 <p style="margin: 8px 0;">60 seconds = 1 minute</p>
 <p style="margin: 8px 0;">60 minutes = 1 hour</p>

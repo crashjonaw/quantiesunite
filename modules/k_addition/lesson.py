@@ -19,7 +19,7 @@ SECTIONS = [
      </ul>
 
      <h3>The Visual Picture of Addition</h3>
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 24px;"><strong>Group 1:</strong> 🍎🍎</p>
        <p style="font-size: 24px; margin-top: 10px;"><strong>Group 2:</strong> 🍎🍎🍎</p>
        <p style="font-size: 20px; margin-top: 15px; color: #4169E1;">➕ Put them together ➕</p>
@@ -40,7 +40,7 @@ SECTIONS = [
          <td style="padding: 8px; border: 1px solid #ccc;">Plus</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Add or put together</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <td style="padding: 8px; border: 1px solid #ccc; text-align: center; font-size: 20px;"><strong>=</strong></td>
          <td style="padding: 8px; border: 1px solid #ccc;">Equals</td>
          <td style="padding: 8px; border: 1px solid #ccc;">Has the same value as, is the same as</td>
@@ -49,7 +49,7 @@ SECTIONS = [
 
      <h3>Writing an Addition Sentence</h3>
      <p>When we write addition using symbols, it looks like this:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; text-align: center;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; text-align: center; color: #1a1a2e;">
        <p style="font-size: 24px;"><strong>2 + 3 = 5</strong></p>
        <p style="margin-top: 10px; font-size: 16px;">2 (first group) plus 3 (second group) equals 5 (total)</p>
      </div>
@@ -66,7 +66,7 @@ SECTIONS = [
      <h3>All the Ways to Make Numbers Up to 5</h3>
      <p>Let's look at all the different ways we can add two numbers to get 5 or less:</p>
 
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; color: #1a1a2e;">
        <p style="font-size: 18px; margin-bottom: 15px;"><strong>Ways to make 2:</strong></p>
        <p style="font-size: 18px;">1 + 1 = 2</p>
 
@@ -82,7 +82,7 @@ SECTIONS = [
 
      <h3>Visual Addition with Objects</h3>
      <p>The best way to understand addition is to actually move objects around and count them:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 18px;"><strong>Example: 2 + 1</strong></p>
        <p style="text-align: center; font-size: 24px; margin-top: 10px;">🍎🍎 + 🍎</p>
        <p style="text-align: center; font-size: 20px; margin-top: 10px;">Put them together: 🍎🍎🍎</p>
@@ -116,7 +116,7 @@ SECTIONS = [
 
      <h4>Strategy 1: Count All</h4>
      <p>The most basic strategy is to put all objects together and count from 1:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 18px;"><strong>Problem: 4 + 3</strong></p>
        <p style="text-align: center; font-size: 24px; margin-top: 10px;">🌟🌟🌟🌟 + 🌟🌟🌟</p>
        <p style="text-align: center; font-size: 18px; margin-top: 10px;">Count all: 1, 2, 3, 4, 5, 6, 7</p>
@@ -125,7 +125,7 @@ SECTIONS = [
 
      <h4>Strategy 2: Count On</h4>
      <p>Instead of counting from 1, you can start at the first number and count on:</p>
-     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0;">
+     <div style="background: #fff3cd; padding: 15px; border-radius: 4px; margin: 20px 0; color: #1a1a2e;">
        <p style="text-align: center; font-size: 18px;"><strong>Problem: 6 + 2</strong></p>
        <p style="text-align: center; font-size: 18px; margin-top: 10px;">Start at 6, then count on 2 more: "6... 7, 8"</p>
        <p style="text-align: center; font-size: 18px; margin-top: 10px;"><strong>Answer: 6 + 2 = 8</strong></p>
@@ -158,7 +158,7 @@ SECTIONS = [
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">4</td>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">5</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <th style="padding: 6px; border: 1px solid #ccc; text-align: center; background: #4169E180;">1</th>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">1</td>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">2</td>
@@ -176,7 +176,7 @@ SECTIONS = [
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">6</td>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">7</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <th style="padding: 6px; border: 1px solid #ccc; text-align: center; background: #4169E180;">3</th>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">3</td>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">4</td>
@@ -194,7 +194,7 @@ SECTIONS = [
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">8</td>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">9</td>
        </tr>
-       <tr style="background: #f9fafb;">
+       <tr style="background: #f9fafb; color: #1a1a2e;">
          <th style="padding: 6px; border: 1px solid #ccc; text-align: center; background: #4169E180;">5</th>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">5</td>
          <td style="padding: 6px; border: 1px solid #ccc; text-align: center;">6</td>
@@ -246,7 +246,7 @@ SECTIONS = [
      <h3>All Number Bonds for 10</h3>
      <p>Learning all the ways to make 10 is very important. Here are all the number bonds for 10:</p>
 
-     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0;">
+     <div style="background: #f3f4f6; padding: 20px; border-radius: 8px; margin: 20px 0; color: #1a1a2e;">
        <table style="width: 100%;">
          <tr>
            <td style="padding: 10px; text-align: center;"><strong>0 + 10 = 10</strong></td>

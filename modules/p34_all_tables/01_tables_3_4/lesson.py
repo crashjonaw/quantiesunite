@@ -73,7 +73,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">\\(1 + 2\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>3</strong></td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">\\(3 \\times 8 = 24\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">\\(2 + 4\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>6</strong></td>
@@ -83,7 +83,7 @@ SECTIONS = [
     <td style="border: 1px solid #333; padding: 10px;">\\(2 + 7\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>9</strong></td>
   </tr>
-  <tr style="background: #f9f9f9;">
+  <tr style="background: #f9f9f9; color: #1a1a2e;">
     <td style="border: 1px solid #333; padding: 10px;">\\(3 \\times 6 = 18\\)</td>
     <td style="border: 1px solid #333; padding: 10px;">\\(1 + 8\\)</td>
     <td style="border: 1px solid #333; padding: 10px; "><strong>9</strong></td>

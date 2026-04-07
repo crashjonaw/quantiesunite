@@ -81,7 +81,7 @@ SECTIONS = [
 <td style="padding: 8px; text-align: center;">0</td>
 <td style="padding: 8px; text-align: center;">4</td>
 </tr>
-<tr style="background:#f9f9f9;">
+<tr style="background:#f9f9f9; color: #1a1a2e;">
 <td style="padding: 8px;">Corners</td>
 <td style="padding: 8px; text-align: center;">0</td>
 <td style="padding: 8px; text-align: center;">4</td>
@@ -91,7 +91,7 @@ SECTIONS = [
 <td style="padding: 8px; text-align: center;">Curved</td>
 <td style="padding: 8px; text-align: center;">Straight edges</td>
 </tr>
-<tr style="background:#f9f9f9;">
+<tr style="background:#f9f9f9; color: #1a1a2e;">
 <td style="padding: 8px;">Equal sides</td>
 <td style="padding: 8px; text-align: center;">N/A</td>
 <td style="padding: 8px; text-align: center;">Yes</td>

@@ -151,7 +151,7 @@ SECTIONS = [
   Same process, just more jumps!</p>
 </div>
 
-<div style="background: #f3e5f5; padding: 15px; border-radius: 8px; margin: 15px 0;">
+<div style="background: #f3e5f5; padding: 15px; border-radius: 8px; margin: 15px 0; color: #1a1a2e;">
   <h4>🔄 It Connects to Subtraction</h4>
   <p>Later, you'll learn that subtraction is the opposite:
   Instead of jumping forward (right), you jump backward (left).</p>

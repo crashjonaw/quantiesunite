@@ -22,7 +22,7 @@ SECTIONS = [
   <text x="300" y="125" font-size="16" font-weight="bold" fill="#8b6914">1/2</text>
   <text x="340" y="125" font-size="16" font-weight="bold" fill="#8b6914">1/2</text>
 </svg>
-<div class="concept-box" style="background: #e8f4f8; padding: 12px; margin: 12px 0; border-radius: 4px">
+<div class="concept-box" style="background: #e8f4f8; padding: 12px; margin: 12px 0; border-radius: 4px; color: #1a1a2e;">
   <strong>Key Idea:</strong> When you cut something into equal parts, each part is a fraction of the whole!
 </div>"""
     },
@@ -89,7 +89,7 @@ SECTIONS = [
   <text x="265" y="125" font-size="13" fill="#e74c3c">Different sizes!</text>
   <text x="265" y="145" font-size="13" fill="#e74c3c">These are NOT fractions.</text>
 </svg>
-<div class="warning-box" style="background:#ffe6e6;border-left:4px solid #e74c3c;padding:12px;margin:12px 0;border-radius:4px;">
+<div class="warning-box" style="background:#ffe6e6;border-left:4px solid #e74c3c;padding:12px;margin:12px 0;border-radius:4px; color: #1a1a2e;">
   <strong>Remember:</strong> If the parts are not equal in size, we cannot call them fractions. Equal parts are the foundation of all fractions!
 </div>"""
     },
@@ -101,15 +101,15 @@ SECTIONS = [
     <strong>Food and Sharing</strong><br>
     Half a pizza, a quarter of a cake, sharing treats fairly
   </div>
-  <div class="concept-box" style="background: #e8f4f8; padding: 12px; border-radius: 4px">
+  <div class="concept-box" style="background: #e8f4f8; padding: 12px; border-radius: 4px; color: #1a1a2e;">
     <strong>Telling Time</strong><br>
     Half an hour (30 minutes), a quarter hour (15 minutes)
   </div>
-  <div class="concept-box" style="background: #d4edda; padding: 12px; border-radius: 4px">
+  <div class="concept-box" style="background: #d4edda; padding: 12px; border-radius: 4px; color: #1a1a2e;">
     <strong>Measuring</strong><br>
     1/2 cup of flour, 1/4 liter of milk, 1/2 meter of fabric
   </div>
-  <div class="concept-box" style="background:#f8d7da;border-left:4px solid #dc3545;padding:12px;border-radius:4px;">
+  <div class="concept-box" style="background:#f8d7da;border-left:4px solid #dc3545;padding:12px;border-radius:4px; color: #1a1a2e;">
     <strong>Sports and Games</strong><br>
     Half-time in a game, a quarter of a year (3 months)
   </div>
@@ -149,7 +149,7 @@ SECTIONS = [
   <text x="260" y="160" font-size="13" fill="currentColor" opacity="0.6">Cut into 4 equal parts</text>
   <text x="260" y="178" font-size="13" fill="currentColor" opacity="0.6">Each part = 1/4</text>
 </svg>
-<div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px">
+<div class="success-box" style="background: #d4edda; padding: 12px; margin: 12px 0; border-radius: 4px; color: #1a1a2e;">
   <strong>Ready to learn?</strong> Next, we'll explore halves in detail, then quarters, and finally how to compare them!
 </div>"""
     }

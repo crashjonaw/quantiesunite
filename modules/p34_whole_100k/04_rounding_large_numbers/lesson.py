@@ -52,12 +52,12 @@ SECTIONS = [
 <h3>Four Steps to Round Any Number</h3>
 
 <div class="steps-container" style="margin: 20px auto;">
-  <div class="step-item" style="background: #f0f9ff; padding: 15px; margin: 10px 0; border-radius: 8px">
+  <div class="step-item" style="background: #f0f9ff; padding: 15px; margin: 10px 0; border-radius: 8px; color: #1a1a2e;">
     <div style="font-weight: bold; font-size: 14px">Step 1: Find the place value you're rounding to</div>
     <p>Are you rounding to the nearest ten, hundred, thousand, or ten thousand? Find that digit and underline it.</p>
   </div>
 
-  <div class="step-item" style="background: #f0fff0; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #22c55e;">
+  <div class="step-item" style="background: #f0fff0; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #22c55e; color: #1a1a2e;">
     <div style="font-weight: bold; font-size: 14px; color: var(--success);">Step 2: Look at the digit to the right</div>
     <p>This is the "helper digit." It tells us whether to round up or down.</p>
   </div>
@@ -67,7 +67,7 @@ SECTIONS = [
     <p>If the helper digit is 5 or more (5, 6, 7, 8, 9) → round UP<br>If the helper digit is 4 or less (0, 1, 2, 3, 4) → round DOWN</p>
   </div>
 
-  <div class="step-item" style="background: #fef2f2; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #ef4444;">
+  <div class="step-item" style="background: #fef2f2; padding: 15px; margin: 10px 0; border-radius: 8px; border-left: 4px solid #ef4444; color: #1a1a2e;">
     <div style="font-weight: bold; font-size: 14px; color: #ef4444;">Step 4: Change everything to the right to zero</div>
     <p>All digits to the right of your place become 0.</p>
   </div>

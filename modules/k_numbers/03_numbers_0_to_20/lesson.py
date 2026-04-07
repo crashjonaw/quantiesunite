@@ -171,47 +171,47 @@ SECTIONS = [
 <p>Here's a complete list so you can see the pattern clearly:</p>
 
 <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin: 20px 0;">
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">0</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Zero</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">1</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">One</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">2</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Two</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">3</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Three</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">4</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Four</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">5</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Five</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">6</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Six</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">7</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Seven</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">8</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Eight</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">9</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Nine</p>
   </div>
-  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center;">
+  <div style="background: #f0f4ff; padding: 12px; border-radius: 5px; border-left: 4px solid #4169E1; text-align: center; color: #1a1a2e;">
     <p style="font-size: 20px; color: #4169E1; margin: 0; font-weight: bold;">10</p>
     <p style="font-size: 11px; margin: 3px 0 0 0;" class="text-muted-note">Ten</p>
   </div>

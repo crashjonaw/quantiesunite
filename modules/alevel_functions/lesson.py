@@ -546,7 +546,7 @@ $$f(x) = (ax + b) + \\frac{r(x)}{q(x)}$$
 <h4>Example 14: Oblique Asymptote Derivation</h4>
 <p><strong>Find oblique asymptote of:</strong> \\( f(x) = \\frac{2x^2 + 3x - 1}{x - 1} \\)</p>
 <p><strong>Solution (Polynomial Long Division):</strong></p>
-<div style="margin: 10px; padding: 10px; background: #f5f5f5; border-left: 3px solid #2563eb;">
+<div style="margin: 10px; padding: 10px; background: #f5f5f5; border-left: 3px solid #2563eb; color: #1a1a2e;">
 <pre>
          2x + 5
         ________
