@@ -103,8 +103,8 @@ EXAMS = {
         "from_level": "Sec 3–4",
         "unlocks_level": "J1–2",
         "grade_modules": _modules_for_level("Sec 3–4"),
-        "grade_questions": 30,
-        "review_questions": 10,
+        "grade_questions": 38,
+        "review_questions": 2,
         "total_questions": 40,
         "pass_percent": 70,
         "time_limit_min": 90,       # ~2.25 min/question
@@ -118,8 +118,8 @@ EXAMS = {
         "from_level": "J1–2",
         "unlocks_level": None,
         "grade_modules": _modules_for_level("J1–2"),
-        "grade_questions": 35,
-        "review_questions": 15,
+        "grade_questions": 48,
+        "review_questions": 2,
         "total_questions": 50,
         "pass_percent": 70,
         "time_limit_min": 120,      # 2.4 min/question (A-Level is demanding)
