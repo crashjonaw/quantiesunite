@@ -64,6 +64,9 @@
         {% else %}
           <span class="exam-status exam-status-locked">🔒 Complete all {{ exam.from_level }} modules first</span>
         {% endif %}
+        {% if user.is_admin %}
+        <a href="{{ url_for('exam.exam_bank', exam_id=exam.id) }}" class="btn btn-outline btn-sm" style="margin-top:8px;">🔑 View Question Bank</a>
+        {% endif %}
       </div>
     </div>
     {% endfor %}

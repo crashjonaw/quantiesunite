@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block title %}Question Bank — {{ exam.name }} — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="main-content" style="max-width:900px;">
+
+  <a href="/exams" class="back-link">← Back to Exams</a>
+
+  <div class="topic-header" style="margin-top:16px; border-left:4px solid {{ exam.color }};">
+    <div class="topic-header-left">
+      <span class="topic-emoji">{{ exam.emoji }}</span>
+      <div>
+        <div class="topic-level-badge">ADMIN · QUESTION BANK</div>
+        <h2 style="margin:0;">{{ exam.name }}</h2>
+      </div>
+    </div>
+    <div class="topic-meta">
+      <span class="meta-chip">{{ total }} questions</span>
+    </div>
+  </div>
+
+  <div style="margin-bottom:20px;">
+    <input type="text" id="bank-search" placeholder="Search questions..." style="width:100%; padding:10px 14px; border-radius:8px; border:1px solid var(--border); background:var(--bg2); color:var(--text); font-size:0.9rem; outline:none;" oninput="filterQuestions()">
+  </div>
+
+  <div id="question-list">
+    {% for q in questions %}
+    <div class="lesson-section question-bank-item" style="margin-bottom:16px;" data-search="{{ q.question|lower }}{{ q.answer|lower }}{{ q.topic_name|lower }}">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+        <span style="font-size:0.75rem; color:var(--text-muted);">{{ q.topic_emoji }} {{ q.topic_name }}</span>
+        <span style="font-size:0.7rem; padding:2px 8px; border-radius:4px; background:var(--bg3); color:var(--text-muted);">
+          {% if q.difficulty == 1 %}Easy{% elif q.difficulty == 2 %}Medium{% elif q.difficulty == 3 %}Hard{% else %}—{% endif %}
+          · #{{ q.id }}
+        </span>
+      </div>
+
+      <div class="q-text" style="font-size:0.95rem; font-weight:600; margin-bottom:12px;">{{ q.question | safe }}</div>
+
+      {% if q.options %}
+      <div style="margin-bottom:10px;">
+        {% for opt in q.options %}
+        <div style="padding:6px 12px; margin:4px 0; border-radius:6px; font-size:0.88rem;
+          {% if loop.index0 == q.answer|int or opt == q.answer %}
+            background:rgba(34,197,94,0.15); border:1px solid rgba(34,197,94,0.4); font-weight:700;
+          {% else %}
+            background:var(--bg3); border:1px solid var(--border);
+          {% endif %}
+        ">
+          {% if loop.index0 == q.answer|int or opt == q.answer %}✅{% endif %}
+          {{ opt }}
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div style="padding:8px 14px; border-radius:8px; background:rgba(34,197,94,0.1); border:1px solid rgba(34,197,94,0.3); margin-bottom:10px;">
+        <span style="font-size:0.78rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px;">Answer:</span>
+        <div style="font-weight:700; margin-top:4px;">{{ q.answer | safe }}</div>
+      </div>
+      {% endif %}
+
+      {% if q.explanation %}
+      <div style="padding:8px 14px; border-radius:8px; background:var(--bg3); font-size:0.85rem; color:var(--text-muted); border-left:3px solid var(--accent);">
+        <strong>Explanation:</strong> {{ q.explanation | safe }}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+function filterQuestions() {
+  const query = document.getElementById('bank-search').value.toLowerCase();
+  document.querySelectorAll('.question-bank-item').forEach(item => {
+    item.style.display = item.dataset.search.includes(query) ? '' : 'none';
+  });
+}
+</script>
+{% endblock %}

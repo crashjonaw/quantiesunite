@@ -81,6 +81,11 @@ def take_exam(exam_id):
     timed = request.args.get("mode", "timed") == "timed"
     total_q, grade_q, review_q, time_limit = get_exam_params(exam_id, timed=timed)
 
+    # Admin gets no review questions — grade only
+    if is_admin:
+        grade_q = total_q
+        review_q = 0
+
     # Get wrong/seen questions for smart sampling
     wrong_ids = db.get_exam_wrong_question_ids(user["id"], exam_id)
     seen_ids = db.get_exam_seen_question_ids(user["id"], exam_id)
@@ -200,3 +205,38 @@ def submit_exam():
         "strong_modules": strong,
         "weak_modules": weak,
     })
+
+
+@exam_bp.route("/exam/<exam_id>/bank")
+@login_required
+def exam_bank(exam_id):
+    """Admin-only: view all questions in an exam's question bank."""
+    user = current_user()
+    if not user.get("is_admin"):
+        flash("Admin access required.", "warning")
+        return redirect(url_for("exam.exam_list"))
+    if exam_id not in EXAMS:
+        return render_template("404.html"), 404
+
+    exam = EXAMS[exam_id]
+    # Get all questions for grade modules
+    questions = []
+    for tid in exam["grade_modules"]:
+        qs = db.get_all_exam_questions(tid)
+        t = TOPICS.get(tid, {})
+        for q in qs:
+            questions.append({
+                "id": q["id"],
+                "question": q["question"],
+                "answer": q["answer"],
+                "options": q.get("options"),
+                "explanation": q.get("explanation", ""),
+                "difficulty": q.get("difficulty", ""),
+                "topic_id": tid,
+                "topic_name": t.get("name", tid),
+                "topic_emoji": t.get("emoji", ""),
+            })
+
+    return render_template("pages/exam_bank.html",
+                           exam=exam, exam_id=exam_id,
+                           questions=questions, total=len(questions))
