@@ -263,7 +263,8 @@
   function fillTooltipContent(d) {
     document.getElementById("tt-emoji").textContent = d.emoji;
     document.getElementById("tt-name").textContent = d.name;
-    document.getElementById("tt-level").textContent = d.level + " · " + d.sg;
+    const levelFullNames = {"P5–P6":"Primary 5–6","Sec 1–2":"Secondary 1–2","Sec 3–4":"Secondary 3–4","J1–2":"JC 1–2"};
+    document.getElementById("tt-level").textContent = levelFullNames[d.level] || d.level;
     document.getElementById("tt-tagline").textContent = d.tagline;
     document.getElementById("tt-hours").textContent = "⏱️ ~" + d.hours + "h study";
     const statusEl = document.getElementById("tt-status");
@@ -305,6 +306,7 @@
       return;
     }
     selectedNode = d;
+    window._selectedNodeId = d.id;
 
     const { nodeSet, upstreamLinks, downstreamLinks } = getConnected(d);
     nodeSel.attr("opacity", 0.12);
@@ -335,31 +337,21 @@
     // Show action buttons
     const actionsEl = document.getElementById("tt-actions");
     const targetBtn = document.getElementById("tt-target-btn");
-    const enterBtn = document.getElementById("tt-enter-btn");
     actionsEl.style.display = "block";
 
-    enterBtn.onclick = (e) => { e.stopPropagation(); window.location.href = "/topic/" + d.id + "/overview"; };
-
+    // Update target button text and expose toggle function
     if (userTargets.has(d.id)) {
       targetBtn.textContent = "✕ Remove Target";
-      targetBtn.onclick = (e) => { e.stopPropagation(); toggleTarget(d.id, false); };
+      window._toggleTarget = () => toggleTarget(d.id, false);
     } else {
       targetBtn.textContent = "🎯 Add Target";
-      targetBtn.onclick = (e) => { e.stopPropagation(); toggleTarget(d.id, true); };
-    }
-
-    const mindmapBtn = document.getElementById("tt-mindmap-btn");
-    if (d.complete || (typeof IS_ADMIN !== 'undefined' && IS_ADMIN)) {
-      mindmapBtn.style.display = "block";
-      mindmapBtn.onclick = (e) => { e.stopPropagation(); window.location.href = "/topic/" + d.id + "/mindmap"; };
-    } else {
-      mindmapBtn.style.display = "none";
+      window._toggleTarget = () => toggleTarget(d.id, true);
     }
 
     // Make tooltip clickable to enter module (but not when dragging)
     tooltip.style.cursor = "pointer";
     tooltip.onclick = (e) => {
-      if (e.target.tagName === "BUTTON") return;
+      if (e.target.closest("button")) return;
       if (e.target.closest(".tt-drag-handle")) return;
       if (_tooltipDragging) return;
       window.location.href = "/topic/" + d.id + "/overview";
@@ -435,15 +427,15 @@
       if (data.ok) {
         if (add) userTargets.add(topicId);
         else userTargets.delete(topicId);
-        // Update button text
+        // Update button text and toggle function
         const btn = document.getElementById("tt-target-btn");
         if (btn) {
           if (userTargets.has(topicId)) {
             btn.textContent = "✕ Remove Target";
-            btn.onclick = (e) => { e.stopPropagation(); toggleTarget(topicId, false); };
+            window._toggleTarget = () => toggleTarget(topicId, false);
           } else {
             btn.textContent = "🎯 Add Target";
-            btn.onclick = (e) => { e.stopPropagation(); toggleTarget(topicId, true); };
+            window._toggleTarget = () => toggleTarget(topicId, true);
           }
         }
       }

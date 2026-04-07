@@ -67,9 +67,9 @@
     <div id="tt-hours" class="tt-hours"></div>
     <div id="tt-status" class="tt-status"></div>
     <div id="tt-actions" class="tt-actions" style="display:none; margin-top:8px; padding-top:8px; border-top:1px solid rgba(255,255,255,0.15);">
-      <button id="tt-enter-btn" class="graph-btn" style="width:100%; font-size:0.85rem; margin-bottom:6px; background:#22c55e; color:#fff;">▶ Enter Module</button>
-      <button id="tt-target-btn" class="graph-btn" style="width:100%; font-size:0.85rem; margin-bottom:6px;">🎯 Add Target</button>
-      <button id="tt-mindmap-btn" class="graph-btn" style="width:100%; font-size:0.85rem; display:none; background:#9333ea; color:#fff;">🧠 View Mindmap</button>
+      <button id="tt-enter-btn" class="graph-btn" onclick="event.stopPropagation(); var n=window._selectedNodeId; if(n) window.location.href='/topic/'+n+'/overview';" style="width:100%; font-size:0.85rem; margin-bottom:6px; background:#22c55e; color:#fff;">▶ Enter Module</button>
+      <button id="tt-target-btn" class="graph-btn" onclick="event.stopPropagation(); var n=window._selectedNodeId; if(n){var btn=this; var isRemove=btn.textContent.indexOf('Remove')>=0; fetch(isRemove?'/api/targets/remove':'/api/targets/add',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic_id:n})}).then(function(r){return r.json()}).then(function(d){if(d.ok){btn.textContent=isRemove?'🎯 Add Target':'✕ Remove Target'}})}" style="width:100%; font-size:0.85rem; margin-bottom:6px;">🎯 Add Target</button>
+      <button id="tt-mindmap-btn" class="graph-btn" onclick="event.stopPropagation(); var n=window._selectedNodeId; if(n) window.location.href='/topic/'+n+'/mindmap';" style="width:100%; font-size:0.85rem; margin-bottom:6px; background:#9333ea; color:#fff;">🧠 View Mindmap</button>
     </div>
   </div>
 
@@ -83,5 +83,5 @@
 {% block scripts %}
 <script>const IS_ADMIN = {{ 'true' if current_user and current_user.is_admin else 'false' }};</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-<script src="{{ url_for('static', filename='js/graph.js') }}"></script>
+<script src="{{ url_for('static', filename='js/graph.js') }}?v=7"></script>
 {% endblock %}

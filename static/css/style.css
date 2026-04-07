@@ -1388,6 +1388,11 @@ html, body {
   backdrop-filter: blur(10px); box-shadow: 0 8px 32px #00000080;
   user-select: none;
 }
+.tt-actions { position: relative; z-index: 51; }
+.tt-actions button {
+  pointer-events: auto; cursor: pointer;
+  position: relative; z-index: 52;
+}
 .tt-drag-handle {
   text-align: center; cursor: grab; color: var(--text-muted);
   font-size: 1rem; line-height: 1; margin: -8px -8px 6px;

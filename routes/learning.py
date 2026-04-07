@@ -56,7 +56,7 @@ def api_graph():
     for node in data["nodes"]:
         tid = node["id"]
         t = TOPICS.get(tid, {})
-        node["complete"]   = bool(progress.get(tid, {}).get("complete"))
+        node["complete"]   = is_admin or bool(progress.get(tid, {}).get("complete"))
         node["unlocked"]   = is_admin or is_unlocked(tid, progress)
         node["accessible"] = is_admin or (t.get("level", "") in enabled)
         node["quiz_score"] = progress.get(tid, {}).get("quiz_score")
