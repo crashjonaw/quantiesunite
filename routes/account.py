@@ -55,6 +55,42 @@ def update_level():
     return redirect(url_for("account.account"))
 
 
+@account_bp.route("/account/setup", methods=["POST"])
+@login_required
+def account_setup():
+    """One-time setup for Google sign-up users — set username and grade."""
+    user = current_user()
+    username = request.form.get("username", "").strip()
+    grade = request.form.get("grade", "").strip()
+
+    # Validate username
+    if len(username) < 3:
+        flash("Username must be at least 3 characters.", "warning")
+        return redirect(url_for("account.account"))
+    existing = db.get_user_by_username(username)
+    if existing and existing["id"] != user["id"]:
+        flash("That username is already taken.", "warning")
+        return redirect(url_for("account.account"))
+
+    # Update username
+    db.update_username(user["id"], username)
+
+    # Set grade (one-time)
+    if grade and grade in LEVELS_ORDER and not user.get("current_level"):
+        db.set_current_level(user["id"], grade)
+        db.update_target_level(user["id"], "Deep Learning Advanced")
+        grade_idx = LEVELS_ORDER.index(grade)
+        for tid, t in TOPICS.items():
+            topic_level = t["level"]
+            if topic_level in LEVELS_ORDER:
+                if LEVELS_ORDER.index(topic_level) < grade_idx:
+                    db.mark_topic_complete(user["id"], tid)
+
+    session.pop("needs_setup", None)
+    flash(f"Welcome to QuantiesUnite, {username}!", "success")
+    return redirect(url_for("learning.index"))
+
+
 @account_bp.route("/account/username", methods=["POST"])
 @login_required
 def update_username():

@@ -227,5 +227,5 @@ def _handle_google_callback():
             return redirect(url_for("auth.login"))
 
         session["user_id"] = uid
-        flash(f"Welcome to QuantiesUnite, {username}! Please set your grade level and update your username in Account settings.", "success")
+        session["needs_setup"] = True
         return redirect(url_for("account.account"))

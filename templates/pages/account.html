@@ -9,6 +9,42 @@
   {% endfor %}
 {% endwith %}
 
+{% if session.get('needs_setup') %}
+<!-- Setup modal for new Google users -->
+<div id="setup-overlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:999; display:flex; align-items:center; justify-content:center;">
+  <div style="background:var(--bg2); border:1px solid var(--border); border-radius:16px; padding:32px; max-width:440px; width:90%; box-shadow:0 16px 48px rgba(0,0,0,0.4);">
+    <h2 style="margin:0 0 4px; font-size:1.4rem;">Welcome to QuantiesUnite! 🎉</h2>
+    <p style="color:var(--text-muted); margin:0 0 24px; font-size:0.9rem;">Let's set up your account.</p>
+
+    <form method="POST" action="/account/setup">
+      <div style="margin-bottom:16px;">
+        <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">Choose a username</label>
+        <input type="text" name="username" class="form-input" placeholder="Your username (min 3 chars)" minlength="3" required autofocus style="width:100%;"/>
+      </div>
+
+      <div style="margin-bottom:20px;">
+        <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:6px;">I'm currently in</label>
+        <select name="grade" class="form-input" required style="width:100%;">
+          <option value="" disabled selected>Select your grade level</option>
+          <option value="Kindergarten">Kindergarten</option>
+          <option value="Primary 1–2">Primary 1–2</option>
+          <option value="Primary 3–4">Primary 3–4</option>
+          <option value="Primary 5–6">Primary 5–6 (PSLE)</option>
+          <option value="Sec 1–2">Secondary 1–2</option>
+          <option value="Sec 3–4">Secondary 3–4 (O-Level)</option>
+          <option value="J1–2">JC 1–2 (A-Level)</option>
+          <option value="Linear Algebra">University — Linear Algebra</option>
+          <option value="Probability & Statistics">University — Probability & Statistics</option>
+          <option value="Deep Learning">University — Deep Learning</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-full">Get Started →</button>
+    </form>
+  </div>
+</div>
+{% endif %}
+
 <div class="page-header">
   <div class="account-header-row">
     {% if current_avatar_url %}
