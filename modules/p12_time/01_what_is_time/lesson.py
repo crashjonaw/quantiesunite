@@ -70,11 +70,11 @@ SECTIONS = [
   <text x="341" y="145" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>movie</text>
 
   <!-- Real examples -->
-  <text x="15" y="190" font-size='12' fill='#1a1a2e'>Real examples:</text>
-  <text x="15" y="212" font-size='11' fill='#1a1a2e' opacity='0.6'>Brushing teeth = 2 minutes</text>
-  <text x="15" y="232" font-size='11' fill='#1a1a2e' opacity='0.6'>Playing at recess = 15 minutes</text>
-  <text x="15" y="252" font-size='11' fill='#1a1a2e' opacity='0.6'>Math lesson = 1 hour</text>
-  <text x="15" y="272" font-size='11' fill='#1a1a2e' opacity='0.6'>Whole school day = 6 hours</text>
+  <text x="15" y="190" font-size='12' fill='currentColor'>Real examples:</text>
+  <text x="15" y="212" font-size='11' fill='currentColor' opacity='0.6'>Brushing teeth = 2 minutes</text>
+  <text x="15" y="232" font-size='11' fill='currentColor' opacity='0.6'>Playing at recess = 15 minutes</text>
+  <text x="15" y="252" font-size='11' fill='currentColor' opacity='0.6'>Math lesson = 1 hour</text>
+  <text x="15" y="272" font-size='11' fill='currentColor' opacity='0.6'>Whole school day = 6 hours</text>
 </svg>"""
     },
     {

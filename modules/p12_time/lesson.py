@@ -20,10 +20,10 @@ SECTIONS = [
   <text x="215" y="113" font-size="11" fill='#1a1a2e'>It takes about 1 minute</text>
   <text x="215" y="128" font-size="11" fill='#1a1a2e'>to tie your shoes</text>
 
-  <text x="15" y="165" font-size="13" font-weight="bold" fill='#1a1a2e'>The bigger picture:</text>
-  <text x="25" y="190" font-size="12" fill='#1a1a2e'>1 day = 24 hours</text>
-  <text x="25" y="210" font-size="12" fill='#1a1a2e'>1 week = 7 days</text>
-  <text x="25" y="230" font-size="12" fill='#1a1a2e'>1 year = 12 months (about 365 days)</text>
+  <text x="15" y="165" font-size="13" font-weight="bold" fill='currentColor'>The bigger picture:</text>
+  <text x="25" y="190" font-size="12" fill='currentColor'>1 day = 24 hours</text>
+  <text x="25" y="210" font-size="12" fill='currentColor'>1 week = 7 days</text>
+  <text x="25" y="230" font-size="12" fill='currentColor'>1 year = 12 months (about 365 days)</text>
 </svg>
 <div class='example-box'>
 <strong>Remembering the conversions:</strong><br>
@@ -214,7 +214,7 @@ Pointing at 9 = :45 (45 minutes)
         "body": """<p><strong>AM</strong> (ante meridiem) means morning, and <strong>PM</strong> (post meridiem) means afternoon/evening.</p>
 <p>This helps us distinguish between morning and evening times.</p>
 <svg viewBox="0 0 390 290" style="width:100%;max-width:390px;height:auto;display:block;margin:16px auto;">
-  <text x="15" y="25" font-size="14" font-weight="bold" fill='#1a1a2e'>Understanding AM and PM:</text>
+  <text x="15" y="25" font-size="14" font-weight="bold" fill='currentColor'>Understanding AM and PM:</text>
 
   <rect x="15" y="45" width="175" height="85" fill="#fff7ed" stroke="#ea580c" stroke-width="2" rx="4"/>
   <text x="25" y="68" font-size="12" font-weight="bold" fill='#1a1a2e'>AM (morning)</text>
@@ -228,7 +228,7 @@ Pointing at 9 = :45 (45 minutes)
   <text x="210" y="103" font-size="11" fill='#1a1a2e'>in the evening</text>
   <text x="210" y="120" font-size="11" fill='#1a1a2e'>Sunset is 6-7 PM</text>
 
-  <text x="15" y="160" font-size="13" font-weight="bold" fill='#1a1a2e'>Daily schedule example:</text>
+  <text x="15" y="160" font-size="13" font-weight="bold" fill='currentColor'>Daily schedule example:</text>
 
   <rect x="15" y="175" width="360" height="105" fill="#dcfce7" stroke="#16a34a" stroke-width="1" rx="4"/>
   <text x="25" y="198" font-size="12" fill='#1a1a2e'>Wake up: 7:00 AM</text>
