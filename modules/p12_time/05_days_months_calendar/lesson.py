@@ -40,7 +40,7 @@ SECTIONS = [
   <line x1="25" y1="220" x2="390" y2="220" stroke='currentColor' stroke-width="0.5" opacity="0.3"/>
 
   <!-- School days vs weekend -->
-  <text x="207" y="245" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>School Days vs Weekend</text>
+  <text x="207" y="245" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>School Days vs Weekend</text>
 
   <rect x="25" y="258" width="220" height="36" fill='#dcfce7' stroke='#16a34a' stroke-width="2" rx="4"/>
   <text x="135" y="281" text-anchor='middle' font-size='11' fill='#1a1a2e'>Mon, Tue, Wed, Thu, Fri</text>
@@ -48,10 +48,10 @@ SECTIONS = [
   <rect x="260" y="258" width="130" height="36" fill='#fef3c7' stroke='#d97706' stroke-width="2" rx="4"/>
   <text x="325" y="281" text-anchor='middle' font-size='11' fill='#1a1a2e'>Sat, Sun</text>
 
-  <text x="135" y="310" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.7'>5 school days</text>
-  <text x="325" y="310" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.7'>2 weekend days</text>
+  <text x="135" y="310" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.7'>5 school days</text>
+  <text x="325" y="310" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.7'>2 weekend days</text>
 
-  <text x="207" y="338" text-anchor='middle' font-size='12' fill='#1a1a2e'>5 + 2 = 7 days in a week!</text>
+  <text x="207" y="338" text-anchor='middle' font-size='12' fill='currentColor'>5 + 2 = 7 days in a week!</text>
 </svg>
 <div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember the order:</p>
@@ -63,7 +63,7 @@ SECTIONS = [
         "title": "The 12 Months of the Year",
         "body": """<p>A <strong>year</strong> has 12 months. Each month has a special name and a different number of days!</p>
 <svg viewBox="0 0 455 430" style="width:100%;max-width:455px;display:block;margin:20px auto;">
-  <text x="227" y="28" text-anchor='middle' font-size='18' font-weight='bold' fill='#1a1a2e'>The 12 Months of the Year</text>
+  <text x="227" y="28" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>The 12 Months of the Year</text>
 
   <!-- Row 1: Winter/Spring — Jan, Feb, Mar, Apr -->
   <rect x="15" y="46" width="102" height="52" fill='#bfdbfe' stroke='#3b82f6' stroke-width="1.5" rx="4"/>
@@ -118,32 +118,32 @@ SECTIONS = [
 
   <!-- Season legend -->
   <line x1="15" y1="245" x2="441" y2="245" stroke='currentColor' stroke-width="0.5" opacity="0.2"/>
-  <text x="227" y="270" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>Seasons at a Glance</text>
+  <text x="227" y="270" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Seasons at a Glance</text>
 
   <rect x="15" y="286" width="16" height="16" fill='#bfdbfe' rx="4"/>
-  <text x="37" y="299" font-size='12' fill='#1a1a2e'>Winter (Dec-Feb)</text>
+  <text x="37" y="299" font-size='12' fill='currentColor'>Winter (Dec-Feb)</text>
 
   <rect x="175" y="286" width="16" height="16" fill='#bbf7d0' rx="4"/>
-  <text x="197" y="299" font-size='12' fill='#1a1a2e'>Spring (Mar-May)</text>
+  <text x="197" y="299" font-size='12' fill='currentColor'>Spring (Mar-May)</text>
 
   <rect x="15" y="312" width="16" height="16" fill='#fed7aa' rx="4"/>
-  <text x="37" y="325" font-size='12' fill='#1a1a2e'>Summer (Jun-Aug)</text>
+  <text x="37" y="325" font-size='12' fill='currentColor'>Summer (Jun-Aug)</text>
 
   <rect x="175" y="312" width="16" height="16" fill='#fde68a' rx="4"/>
-  <text x="197" y="325" font-size='12' fill='#1a1a2e'>Autumn (Sep-Nov)</text>
+  <text x="197" y="325" font-size='12' fill='currentColor'>Autumn (Sep-Nov)</text>
 
   <!-- Fun facts -->
   <line x1="15" y1="340" x2="441" y2="340" stroke='currentColor' stroke-width="0.5" opacity="0.2"/>
-  <text x="227" y="365" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Fun Facts</text>
-  <text x="227" y="390" text-anchor='middle' font-size='12' fill='#1a1a2e'>December = Christmas time</text>
-  <text x="227" y="410" text-anchor='middle' font-size='12' fill='#1a1a2e'>Your birthday month is special!</text>
+  <text x="227" y="365" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Fun Facts</text>
+  <text x="227" y="390" text-anchor='middle' font-size='12' fill='currentColor'>December = Christmas time</text>
+  <text x="227" y="410" text-anchor='middle' font-size='12' fill='currentColor'>Your birthday month is special!</text>
 </svg>"""
     },
     {
         "title": "Reading and Using a Calendar",
         "body": """<p>A <strong>calendar</strong> shows all the days of a month so you can plan what you're doing!</p>
 <svg viewBox="0 0 535 430" style="width:100%;max-width:535px;display:block;margin:20px auto;">
-  <text x="267" y="28" text-anchor='middle' font-size='20' font-weight='bold' fill='#1a1a2e'>A Month Calendar</text>
+  <text x="267" y="28" text-anchor='middle' font-size='20' font-weight='bold' fill='currentColor'>A Month Calendar</text>
 
   <!-- Calendar frame -->
   <rect x="15" y="48" width="505" height="360" fill='#f0f4f8' stroke='currentColor' stroke-width="2" rx="4"/>
