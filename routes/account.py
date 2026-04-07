@@ -35,10 +35,22 @@ def account():
 @account_bp.route("/account/level", methods=["POST"])
 @login_required
 def update_level():
+    user = current_user()
+    # Only allow setting grade once (if not already set)
+    if user.get("target_level"):
+        flash("Your grade has already been set and cannot be changed.", "warning")
+        return redirect(url_for("account.account"))
     level = request.form.get("target_level")
     if level in LEVELS_ORDER:
         db.update_target_level(session["user_id"], level)
-        flash(f"Level access updated to: {level} (and all prerequisites).", "success")
+        # Mark lower levels as complete
+        grade_idx = LEVELS_ORDER.index(level)
+        for tid, t in TOPICS.items():
+            topic_level = t["level"]
+            if topic_level in LEVELS_ORDER:
+                if LEVELS_ORDER.index(topic_level) < grade_idx:
+                    db.mark_topic_complete(user["id"], tid)
+        flash(f"Grade set to: {level}. All lower levels marked as complete.", "success")
     return redirect(url_for("account.account"))
 
 

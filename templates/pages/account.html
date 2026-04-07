@@ -55,46 +55,65 @@
      ════════════════════════════════════ -->
 <div class="account-section">
   <h2 class="account-section-title">🎯 Learning Level</h2>
+
+  {% if user.target_level %}
+  <!-- Grade already set — show read-only -->
+  <p class="text-muted" style="margin-bottom:16px">
+    Your grade is set to <strong>{{ user.target_level }}</strong>. All levels up to and including this are enabled.
+  </p>
+  <div class="level-selector">
+    {% for level in levels_order %}
+    {% set is_enabled = level in enabled_levels %}
+    {% set is_current = level == user.target_level %}
+    <div class="level-selector-item {% if is_current %}current{% elif is_enabled %}enabled{% else %}locked{% endif %}">
+      <div class="level-sel-left">
+        <div class="level-sel-indicator {% if is_current %}active{% elif is_enabled %}on{% endif %}">
+          {% if is_current %}🎯{% elif is_enabled %}✅{% else %}🔒{% endif %}
+        </div>
+        <div>
+          <div class="level-sel-name">{{ level }}</div>
+          <div class="level-sel-desc">{{ level_descriptions.get(level, '') }}</div>
+        </div>
+      </div>
+      <div class="level-sel-right">
+        {% if is_current %}
+          <span class="level-sel-badge target">← your grade</span>
+        {% elif is_enabled %}
+          <span class="level-sel-badge included">included</span>
+        {% else %}
+          <span class="level-sel-badge above">above grade</span>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% else %}
+  <!-- Grade not yet set — show selector (one-time only) -->
   <p class="text-muted" style="margin-bottom:20px">
-    Choose your <strong>target level</strong>. All levels below it are automatically enabled —
-    so you won't see content that's too advanced. You can always raise it later.
+    Choose your <strong>current grade level</strong>. All levels below it will be marked as complete.
+    <strong>This can only be set once.</strong>
   </p>
 
   <form method="POST" action="/account/level" id="level-form">
     <div class="level-selector">
       {% for level in levels_order %}
-      {% set is_enabled = level in enabled_levels %}
-      {% set is_current = level == user.target_level %}
-      <label class="level-selector-item {% if is_current %}current{% elif is_enabled %}enabled{% else %}locked{% endif %}"
-             for="lvl-{{ loop.index }}">
+      <label class="level-selector-item" for="lvl-{{ loop.index }}">
         <div class="level-sel-left">
           <input type="radio" name="target_level" id="lvl-{{ loop.index }}"
                  value="{{ level }}"
-                 {% if is_current %}checked{% endif %}
                  onchange="document.getElementById('level-form').submit()"/>
-          <div class="level-sel-indicator {% if is_current %}active{% elif is_enabled %}on{% endif %}">
-            {% if is_current %}🎯{% elif is_enabled %}✅{% else %}🔒{% endif %}
-          </div>
+          <div class="level-sel-indicator">🔘</div>
           <div>
             <div class="level-sel-name">{{ level }}</div>
             <div class="level-sel-desc">{{ level_descriptions.get(level, '') }}</div>
           </div>
         </div>
-        <div class="level-sel-right">
-          {% set level_count = namespace(n=0) %}
-          {% for tid, t in [] %} {% endfor %}
-          {% if is_current %}
-            <span class="level-sel-badge target">← your target</span>
-          {% elif is_enabled %}
-            <span class="level-sel-badge included">included</span>
-          {% else %}
-            <span class="level-sel-badge above">above target</span>
-          {% endif %}
-        </div>
       </label>
       {% endfor %}
     </div>
   </form>
+  {% endif %}
 
   <p class="level-hint">
     💡 Selecting a higher level <strong>automatically includes all lower levels</strong>.
