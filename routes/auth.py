@@ -1,10 +1,28 @@
-"""Auth routes — register, login, logout."""
+"""Auth routes — register, login, logout, Google OAuth."""
 
+import os
+import json
+import hashlib
+import secrets
 from flask import Blueprint, render_template, request, session, redirect, url_for, flash
 from curriculum_data import TOPICS, LEVELS_ORDER
 import database as db
+import requests as http_requests
 
 auth_bp = Blueprint("auth", __name__)
+
+# ── Google OAuth config ────────────────────────────────────────────────────────
+_google_creds_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "google_api_secret.json")
+_google_creds = {}
+if os.path.exists(_google_creds_path):
+    with open(_google_creds_path) as f:
+        _google_creds = json.load(f).get("web", {})
+
+GOOGLE_CLIENT_ID = _google_creds.get("client_id", "")
+GOOGLE_CLIENT_SECRET = _google_creds.get("client_secret", "")
+GOOGLE_AUTH_URI = "https://accounts.google.com/o/oauth2/auth"
+GOOGLE_TOKEN_URI = "https://oauth2.googleapis.com/token"
+GOOGLE_USERINFO_URI = "https://www.googleapis.com/oauth2/v2/userinfo"
 
 
 @auth_bp.route("/register", methods=["GET", "POST"])
@@ -71,3 +89,127 @@ def logout():
     session.clear()
     flash("You've been logged out.", "info")
     return redirect(url_for("auth.login"))
+
+
+# ── Google OAuth ───────────────────────────────────────────────────────────────
+
+@auth_bp.route("/auth/google")
+def google_login():
+    """Redirect user to Google's OAuth consent screen."""
+    if not GOOGLE_CLIENT_ID:
+        flash("Google Sign-In is not configured.", "warning")
+        return redirect(url_for("auth.login"))
+
+    # Generate state token to prevent CSRF
+    state = secrets.token_urlsafe(32)
+    session["oauth_state"] = state
+
+    # Determine redirect URI based on request host
+    if "localhost" in request.host or "127.0.0.1" in request.host:
+        redirect_uri = "http://localhost:5001/auth/google/callback"
+    else:
+        redirect_uri = "https://quantiesunite.sg/auth/google/callback"
+
+    params = {
+        "client_id": GOOGLE_CLIENT_ID,
+        "redirect_uri": redirect_uri,
+        "response_type": "code",
+        "scope": "openid email profile",
+        "state": state,
+        "access_type": "offline",
+        "prompt": "select_account",
+    }
+    auth_url = GOOGLE_AUTH_URI + "?" + "&".join(f"{k}={v}" for k, v in params.items())
+    return redirect(auth_url)
+
+
+@auth_bp.route("/auth/google/callback")
+def google_callback():
+    """Handle Google OAuth callback — login or register the user."""
+    error = request.args.get("error")
+    if error:
+        flash(f"Google sign-in was cancelled or failed: {error}", "warning")
+        return redirect(url_for("auth.login"))
+
+    code = request.args.get("code")
+    state = request.args.get("state")
+
+    # Verify state token
+    if state != session.pop("oauth_state", None):
+        flash("Invalid OAuth state. Please try again.", "danger")
+        return redirect(url_for("auth.login"))
+
+    if not code:
+        flash("No authorization code received.", "warning")
+        return redirect(url_for("auth.login"))
+
+    # Determine redirect URI
+    if "localhost" in request.host or "127.0.0.1" in request.host:
+        redirect_uri = "http://localhost:5001/auth/google/callback"
+    else:
+        redirect_uri = "https://quantiesunite.sg/auth/google/callback"
+
+    # Exchange code for access token
+    token_resp = http_requests.post(GOOGLE_TOKEN_URI, data={
+        "code": code,
+        "client_id": GOOGLE_CLIENT_ID,
+        "client_secret": GOOGLE_CLIENT_SECRET,
+        "redirect_uri": redirect_uri,
+        "grant_type": "authorization_code",
+    })
+
+    if token_resp.status_code != 200:
+        flash("Failed to authenticate with Google.", "danger")
+        return redirect(url_for("auth.login"))
+
+    token_data = token_resp.json()
+    access_token = token_data.get("access_token")
+
+    # Get user info from Google
+    userinfo_resp = http_requests.get(GOOGLE_USERINFO_URI, headers={
+        "Authorization": f"Bearer {access_token}",
+    })
+
+    if userinfo_resp.status_code != 200:
+        flash("Failed to get user info from Google.", "danger")
+        return redirect(url_for("auth.login"))
+
+    userinfo = userinfo_resp.json()
+    google_email = userinfo.get("email", "")
+    google_name = userinfo.get("name", "")
+    google_picture = userinfo.get("picture", "")
+
+    if not google_email:
+        flash("Could not retrieve email from Google.", "danger")
+        return redirect(url_for("auth.login"))
+
+    # Check if user already exists with this email
+    user = db.get_user_by_email(google_email)
+
+    if user:
+        # Existing user — log them in
+        session["user_id"] = user["id"]
+        db.log_activity(user["id"], "login", points=1)
+        db.check_and_grant_achievements(user["id"])
+        flash(f"Welcome back, {user['username']}!", "success")
+        return redirect(url_for("learning.index"))
+    else:
+        # New user — create account
+        # Generate username from Google name (remove spaces, add random suffix)
+        base_username = google_name.replace(" ", "").lower()[:15]
+        if len(base_username) < 3:
+            base_username = google_email.split("@")[0][:15]
+        username = base_username + str(secrets.randbelow(1000))
+
+        # Generate a random password (user won't need it for Google login)
+        random_password = secrets.token_urlsafe(16)
+
+        uid, err = db.create_user(username, google_email, random_password)
+        if err:
+            # Email might already exist with different case, or username collision
+            flash(f"Could not create account: {err}", "danger")
+            return redirect(url_for("auth.login"))
+
+        session["user_id"] = uid
+        flash(f"Welcome to QuantiesUnite, {username}! Please set your grade level and update your username in Account settings.", "success")
+        return redirect(url_for("account.account"))
