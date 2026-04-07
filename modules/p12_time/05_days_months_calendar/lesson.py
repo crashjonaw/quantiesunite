@@ -11,47 +11,47 @@ SECTIONS = [
 
   <!-- Day boxes - one per day in a grid -->
   <rect x="25" y="46" width="170" height="32" fill='#e0f2fe' stroke='#0284c7' stroke-width="1.5" rx="4"/>
-  <text x="110" y="67" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Monday</text>
+  <text x="110" y="67" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Monday</text>
 
   <rect x="220" y="46" width="170" height="32" fill='#e0f2fe' stroke='#0284c7' stroke-width="1.5" rx="4"/>
-  <text x="305" y="67" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Tuesday</text>
+  <text x="305" y="67" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Tuesday</text>
 
   <rect x="25" y="88" width="170" height="32" fill='#e0f2fe' stroke='#0284c7' stroke-width="1.5" rx="4"/>
-  <text x="110" y="109" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Wednesday</text>
+  <text x="110" y="109" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Wednesday</text>
 
   <rect x="220" y="88" width="170" height="32" fill='#e0f2fe' stroke='#0284c7' stroke-width="1.5" rx="4"/>
-  <text x="305" y="109" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Thursday</text>
+  <text x="305" y="109" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Thursday</text>
 
   <rect x="25" y="130" width="170" height="32" fill='#e0f2fe' stroke='#0284c7' stroke-width="1.5" rx="4"/>
-  <text x="110" y="151" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Friday</text>
+  <text x="110" y="151" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Friday</text>
 
   <rect x="220" y="130" width="170" height="32" fill='#fef3c7' stroke='#d97706' stroke-width="1.5" rx="4"/>
-  <text x="305" y="151" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Saturday</text>
+  <text x="305" y="151" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Saturday</text>
 
   <rect x="25" y="172" width="170" height="32" fill='#fef3c7' stroke='#d97706' stroke-width="1.5" rx="4"/>
-  <text x="110" y="193" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>Sunday</text>
+  <text x="110" y="193" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>Sunday</text>
 
   <!-- Arrows showing order -->
-  <text x="200" y="67" text-anchor='middle' font-size='14' fill='currentColor'>-></text>
-  <text x="200" y="109" text-anchor='middle' font-size='14' fill='currentColor'>-></text>
-  <text x="200" y="151" text-anchor='middle' font-size='14' fill='currentColor'>-></text>
+  <text x="200" y="67" text-anchor='middle' font-size='14' fill='#1a1a2e'>-></text>
+  <text x="200" y="109" text-anchor='middle' font-size='14' fill='#1a1a2e'>-></text>
+  <text x="200" y="151" text-anchor='middle' font-size='14' fill='#1a1a2e'>-></text>
 
   <!-- Divider -->
   <line x1="25" y1="220" x2="390" y2="220" stroke='currentColor' stroke-width="0.5" opacity="0.3"/>
 
   <!-- School days vs weekend -->
-  <text x="207" y="245" text-anchor='middle' font-size='13' font-weight='bold' fill='currentColor'>School Days vs Weekend</text>
+  <text x="207" y="245" text-anchor='middle' font-size='13' font-weight='bold' fill='#1a1a2e'>School Days vs Weekend</text>
 
   <rect x="25" y="258" width="220" height="36" fill='#dcfce7' stroke='#16a34a' stroke-width="2" rx="4"/>
-  <text x="135" y="281" text-anchor='middle' font-size='11' fill='currentColor'>Mon, Tue, Wed, Thu, Fri</text>
+  <text x="135" y="281" text-anchor='middle' font-size='11' fill='#1a1a2e'>Mon, Tue, Wed, Thu, Fri</text>
 
   <rect x="260" y="258" width="130" height="36" fill='#fef3c7' stroke='#d97706' stroke-width="2" rx="4"/>
-  <text x="325" y="281" text-anchor='middle' font-size='11' fill='currentColor'>Sat, Sun</text>
+  <text x="325" y="281" text-anchor='middle' font-size='11' fill='#1a1a2e'>Sat, Sun</text>
 
-  <text x="135" y="310" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.7'>5 school days</text>
-  <text x="325" y="310" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.7'>2 weekend days</text>
+  <text x="135" y="310" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.7'>5 school days</text>
+  <text x="325" y="310" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.7'>2 weekend days</text>
 
-  <text x="207" y="338" text-anchor='middle' font-size='12' fill='currentColor'>5 + 2 = 7 days in a week!</text>
+  <text x="207" y="338" text-anchor='middle' font-size='12' fill='#1a1a2e'>5 + 2 = 7 days in a week!</text>
 </svg>
 <div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember the order:</p>
@@ -63,7 +63,7 @@ SECTIONS = [
         "title": "The 12 Months of the Year",
         "body": """<p>A <strong>year</strong> has 12 months. Each month has a special name and a different number of days!</p>
 <svg viewBox="0 0 455 430" style="width:100%;max-width:455px;display:block;margin:20px auto;">
-  <text x="227" y="28" text-anchor='middle' font-size='18' font-weight='bold' fill='currentColor'>The 12 Months of the Year</text>
+  <text x="227" y="28" text-anchor='middle' font-size='18' font-weight='bold' fill='#1a1a2e'>The 12 Months of the Year</text>
 
   <!-- Row 1: Winter/Spring — Jan, Feb, Mar, Apr -->
   <rect x="15" y="46" width="102" height="52" fill='#bfdbfe' stroke='#3b82f6' stroke-width="1.5" rx="4"/>
@@ -113,24 +113,24 @@ SECTIONS = [
   <text x="286" y="214" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>November</text>
 
   <rect x="345" y="174" width="96" height="52" fill='#dbeafe' stroke='#2563eb' stroke-width="1.5" rx="4"/>
-  <text x="393" y="195" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>12</text>
-  <text x="393" y="214" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>December</text>
+  <text x="393" y="195" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>12</text>
+  <text x="393" y="214" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>December</text>
 
   <!-- Season legend -->
   <line x1="15" y1="245" x2="441" y2="245" stroke='currentColor' stroke-width="0.5" opacity="0.2"/>
-  <text x="227" y="270" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>Seasons at a Glance</text>
+  <text x="227" y="270" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>Seasons at a Glance</text>
 
   <rect x="15" y="286" width="16" height="16" fill='#bfdbfe' rx="4"/>
-  <text x="37" y="299" font-size='12' fill='currentColor'>Winter (Dec-Feb)</text>
+  <text x="37" y="299" font-size='12' fill='#1a1a2e'>Winter (Dec-Feb)</text>
 
   <rect x="175" y="286" width="16" height="16" fill='#bbf7d0' rx="4"/>
-  <text x="197" y="299" font-size='12' fill='currentColor'>Spring (Mar-May)</text>
+  <text x="197" y="299" font-size='12' fill='#1a1a2e'>Spring (Mar-May)</text>
 
   <rect x="15" y="312" width="16" height="16" fill='#fed7aa' rx="4"/>
-  <text x="37" y="325" font-size='12' fill='currentColor'>Summer (Jun-Aug)</text>
+  <text x="37" y="325" font-size='12' fill='#1a1a2e'>Summer (Jun-Aug)</text>
 
   <rect x="175" y="312" width="16" height="16" fill='#fde68a' rx="4"/>
-  <text x="197" y="325" font-size='12' fill='currentColor'>Autumn (Sep-Nov)</text>
+  <text x="197" y="325" font-size='12' fill='#1a1a2e'>Autumn (Sep-Nov)</text>
 
   <!-- Fun facts -->
   <line x1="15" y1="340" x2="441" y2="340" stroke='currentColor' stroke-width="0.5" opacity="0.2"/>
@@ -225,39 +225,39 @@ SECTIONS = [
 
   <!-- Example 1: Brushing teeth -->
   <rect x="15" y="50" width="485" height="82" fill='#e0f2fe' stroke='#0284c7' stroke-width="2" rx="4"/>
-  <text x="30" y="75" font-size='15' font-weight='bold' fill='currentColor'>Brushing teeth</text>
-  <text x="30" y="97" font-size='13' fill='currentColor' opacity='0.7'>Start: 8:00 AM</text>
-  <text x="220" y="97" font-size='13' fill='currentColor' opacity='0.7'>End: 8:02 AM</text>
+  <text x="30" y="75" font-size='15' font-weight='bold' fill='#1a1a2e'>Brushing teeth</text>
+  <text x="30" y="97" font-size='13' fill='#1a1a2e' opacity='0.7'>Start: 8:00 AM</text>
+  <text x="220" y="97" font-size='13' fill='#1a1a2e' opacity='0.7'>End: 8:02 AM</text>
   <rect x="370" y="80" width="120" height="28" fill='#0284c7' rx="4"/>
   <text x="430" y="99" text-anchor='middle' font-size='13' font-weight='bold' fill='white'>2 minutes</text>
-  <text x="30" y="122" font-size='12' font-weight='bold' fill='currentColor'>Duration: 2 minutes</text>
+  <text x="30" y="122" font-size='12' font-weight='bold' fill='#1a1a2e'>Duration: 2 minutes</text>
 
   <!-- Example 2: Playing at recess -->
   <rect x="15" y="148" width="485" height="82" fill='#fef3c7' stroke='#d97706' stroke-width="2" rx="4"/>
-  <text x="30" y="173" font-size='15' font-weight='bold' fill='currentColor'>Playing at recess</text>
-  <text x="30" y="195" font-size='13' fill='currentColor' opacity='0.7'>Start: 10:00 AM</text>
-  <text x="220" y="195" font-size='13' fill='currentColor' opacity='0.7'>End: 10:15 AM</text>
+  <text x="30" y="173" font-size='15' font-weight='bold' fill='#1a1a2e'>Playing at recess</text>
+  <text x="30" y="195" font-size='13' fill='#1a1a2e' opacity='0.7'>Start: 10:00 AM</text>
+  <text x="220" y="195" font-size='13' fill='#1a1a2e' opacity='0.7'>End: 10:15 AM</text>
   <rect x="370" y="178" width="120" height="28" fill='#d97706' rx="4"/>
   <text x="430" y="197" text-anchor='middle' font-size='13' font-weight='bold' fill='white'>15 minutes</text>
-  <text x="30" y="220" font-size='12' font-weight='bold' fill='currentColor'>Duration: 15 minutes</text>
+  <text x="30" y="220" font-size='12' font-weight='bold' fill='#1a1a2e'>Duration: 15 minutes</text>
 
   <!-- Example 3: Watching a movie -->
   <rect x="15" y="246" width="485" height="82" fill='#fce7f3' stroke='#ec4899' stroke-width="2" rx="4"/>
-  <text x="30" y="271" font-size='15' font-weight='bold' fill='currentColor'>Watching a movie</text>
-  <text x="30" y="293" font-size='13' fill='currentColor' opacity='0.7'>Start: 2:00 PM</text>
-  <text x="220" y="293" font-size='13' fill='currentColor' opacity='0.7'>End: 3:30 PM</text>
+  <text x="30" y="271" font-size='15' font-weight='bold' fill='#1a1a2e'>Watching a movie</text>
+  <text x="30" y="293" font-size='13' fill='#1a1a2e' opacity='0.7'>Start: 2:00 PM</text>
+  <text x="220" y="293" font-size='13' fill='#1a1a2e' opacity='0.7'>End: 3:30 PM</text>
   <rect x="350" y="276" width="140" height="28" fill='#ec4899' rx="4"/>
   <text x="420" y="295" text-anchor='middle' font-size='13' font-weight='bold' fill='white'>1 hr 30 min</text>
-  <text x="30" y="318" font-size='12' font-weight='bold' fill='currentColor'>Duration: 1 hour 30 minutes</text>
+  <text x="30" y="318" font-size='12' font-weight='bold' fill='#1a1a2e'>Duration: 1 hour 30 minutes</text>
 
   <!-- Example 4: School day -->
   <rect x="15" y="344" width="485" height="82" fill='#dcfce7' stroke='#16a34a' stroke-width="2" rx="4"/>
-  <text x="30" y="369" font-size='15' font-weight='bold' fill='currentColor'>School day</text>
-  <text x="30" y="391" font-size='13' fill='currentColor' opacity='0.7'>Start: 8:30 AM</text>
-  <text x="220" y="391" font-size='13' fill='currentColor' opacity='0.7'>End: 3:00 PM</text>
+  <text x="30" y="369" font-size='15' font-weight='bold' fill='#1a1a2e'>School day</text>
+  <text x="30" y="391" font-size='13' fill='#1a1a2e' opacity='0.7'>Start: 8:30 AM</text>
+  <text x="220" y="391" font-size='13' fill='#1a1a2e' opacity='0.7'>End: 3:00 PM</text>
   <rect x="350" y="374" width="140" height="28" fill='#16a34a' rx="4"/>
   <text x="420" y="393" text-anchor='middle' font-size='13' font-weight='bold' fill='white'>6 hr 30 min</text>
-  <text x="30" y="416" font-size='12' font-weight='bold' fill='currentColor'>Duration: 6 hours 30 minutes</text>
+  <text x="30" y="416" font-size='12' font-weight='bold' fill='#1a1a2e'>Duration: 6 hours 30 minutes</text>
 </svg>
 <div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">How to find duration:</p>

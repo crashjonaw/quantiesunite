@@ -20,8 +20,8 @@ SECTIONS = [
   <line x1="75" y1="88" x2="78" y2="65" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <line x1="75" y1="88" x2="97" y2="93" stroke='#1a1a2e' stroke-width="1.5" stroke-linecap="round"/>
   <circle cx="75" cy="88" r="2" fill='#1a1a2e'/>
-  <text x="75" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>3:15</text>
-  <text x="75" y="158" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Quarter past</text>
+  <text x="75" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='#1a1a2e'>3:15</text>
+  <text x="75" y="158" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Quarter past</text>
 
   <!-- :30 = Half past -->
   <rect x="148" y="48" width="120" height="120" fill='#fef3c7' stroke='#d97706' stroke-width="2" rx="4"/>
@@ -33,8 +33,8 @@ SECTIONS = [
   <line x1="208" y1="88" x2="212" y2="65" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <line x1="208" y1="88" x2="208" y2="118" stroke='#1a1a2e' stroke-width="1.5" stroke-linecap="round"/>
   <circle cx="208" cy="88" r="2" fill='#1a1a2e'/>
-  <text x="208" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>3:30</text>
-  <text x="208" y="158" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Half past</text>
+  <text x="208" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='#1a1a2e'>3:30</text>
+  <text x="208" y="158" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Half past</text>
 
   <!-- :45 = Quarter to -->
   <rect x="281" y="48" width="120" height="120" fill='#f5d3e4' stroke='#ec4899' stroke-width="2" rx="4"/>
@@ -46,8 +46,8 @@ SECTIONS = [
   <line x1="341" y1="88" x2="337" y2="65" stroke='#1a1a2e' stroke-width="2" stroke-linecap="round"/>
   <line x1="341" y1="88" x2="319" y2="93" stroke='#1a1a2e' stroke-width="1.5" stroke-linecap="round"/>
   <circle cx="341" cy="88" r="2" fill='#1a1a2e'/>
-  <text x="341" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='currentColor'>3:45</text>
-  <text x="341" y="158" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>Quarter to 4</text>
+  <text x="341" y="140" text-anchor='middle' font-size='12' font-weight='bold' fill='#1a1a2e'>3:45</text>
+  <text x="341" y="158" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>Quarter to 4</text>
 </svg>
 <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">These times are so common they have special names!</p>
@@ -94,17 +94,17 @@ SECTIONS = [
 
   <!-- Formula box -->
   <rect x="15" y="310" width="385" height="115" fill='#f0f8ff' stroke='#4f8ef7' stroke-width="2" rx="4"/>
-  <text x="35" y="340" font-size='14' font-weight='bold' fill='currentColor'>Key pattern:</text>
-  <text x="35" y="365" font-size='13' fill='currentColor'>Every number on the clock = 5 minutes</text>
-  <text x="35" y="390" font-size='13' fill='currentColor'>So: 3 x 5 = 15,  6 x 5 = 30,  9 x 5 = 45</text>
-  <text x="35" y="415" font-size='13' fill='currentColor'>This is the 5-minute counting trick!</text>
+  <text x="35" y="340" font-size='14' font-weight='bold' fill='#1a1a2e'>Key pattern:</text>
+  <text x="35" y="365" font-size='13' fill='#1a1a2e'>Every number on the clock = 5 minutes</text>
+  <text x="35" y="390" font-size='13' fill='#1a1a2e'>So: 3 x 5 = 15,  6 x 5 = 30,  9 x 5 = 45</text>
+  <text x="35" y="415" font-size='13' fill='#1a1a2e'>This is the 5-minute counting trick!</text>
 </svg>"""
     },
     {
         "title": "Reading Half Past & Quarter Times",
         "body": """<p>Now let's practice reading these special times!</p>
 <svg viewBox="0 0 415 410" style="width:100%;max-width:415px;display:block;margin:20px auto;">
-  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>Practice: What Time Is It?</text>
+  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='#1a1a2e'>Practice: What Time Is It?</text>
 
   <!-- Example 1: 4:30 -->
   <circle cx="105" cy="100" r="50" fill='#fff' stroke='#8B0000' stroke-width="2"/>
@@ -171,23 +171,23 @@ SECTIONS = [
 
   <!-- School starts at 8:30 -->
   <rect x="15" y="48" width="385" height="58" fill='#e0f2fe' stroke='#0284c7' stroke-width="1" rx="4"/>
-  <text x="35" y="75" font-size='12' font-weight='bold' fill='currentColor'>8:30 AM (Half past 8)</text>
-  <text x="35" y="95" font-size='11' fill='currentColor' opacity='0.6'>School often starts at this time</text>
+  <text x="35" y="75" font-size='12' font-weight='bold' fill='#1a1a2e'>8:30 AM (Half past 8)</text>
+  <text x="35" y="95" font-size='11' fill='#1a1a2e' opacity='0.6'>School often starts at this time</text>
 
   <!-- Lunch at 12:15 -->
   <rect x="15" y="118" width="385" height="58" fill='#fef3c7' stroke='#d97706' stroke-width="1" rx="4"/>
-  <text x="35" y="145" font-size='12' font-weight='bold' fill='currentColor'>12:15 PM (Quarter past 12)</text>
-  <text x="35" y="165" font-size='11' fill='currentColor' opacity='0.6'>Lunch time at many schools</text>
+  <text x="35" y="145" font-size='12' font-weight='bold' fill='#1a1a2e'>12:15 PM (Quarter past 12)</text>
+  <text x="35" y="165" font-size='11' fill='#1a1a2e' opacity='0.6'>Lunch time at many schools</text>
 
   <!-- Play time at 2:30 -->
   <rect x="15" y="188" width="385" height="58" fill='#f5d3e4' stroke='#ec4899' stroke-width="1" rx="4"/>
-  <text x="35" y="215" font-size='12' font-weight='bold' fill='currentColor'>2:30 PM (Half past 2)</text>
-  <text x="35" y="235" font-size='11' fill='currentColor' opacity='0.6'>Afternoon play or activities</text>
+  <text x="35" y="215" font-size='12' font-weight='bold' fill='#1a1a2e'>2:30 PM (Half past 2)</text>
+  <text x="35" y="235" font-size='11' fill='#1a1a2e' opacity='0.6'>Afternoon play or activities</text>
 
   <!-- Bedtime at 8:45 -->
   <rect x="15" y="258" width="385" height="58" fill='#e0e7ff' stroke='#6366f1' stroke-width="1" rx="4"/>
-  <text x="35" y="285" font-size='12' font-weight='bold' fill='currentColor'>8:45 PM (Quarter to 9)</text>
-  <text x="35" y="305" font-size='11' fill='currentColor' opacity='0.6'>Getting ready for bed</text>
+  <text x="35" y="285" font-size='12' font-weight='bold' fill='#1a1a2e'>8:45 PM (Quarter to 9)</text>
+  <text x="35" y="305" font-size='11' fill='#1a1a2e' opacity='0.6'>Getting ready for bed</text>
 </svg>
 <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember the pattern:</p>

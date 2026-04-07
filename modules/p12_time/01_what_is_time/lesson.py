@@ -70,11 +70,11 @@ SECTIONS = [
   <text x="341" y="145" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>movie</text>
 
   <!-- Real examples -->
-  <text x="15" y="190" font-size='12' fill='currentColor'>Real examples:</text>
-  <text x="15" y="212" font-size='11' fill='currentColor' opacity='0.6'>Brushing teeth = 2 minutes</text>
-  <text x="15" y="232" font-size='11' fill='currentColor' opacity='0.6'>Playing at recess = 15 minutes</text>
-  <text x="15" y="252" font-size='11' fill='currentColor' opacity='0.6'>Math lesson = 1 hour</text>
-  <text x="15" y="272" font-size='11' fill='currentColor' opacity='0.6'>Whole school day = 6 hours</text>
+  <text x="15" y="190" font-size='12' fill='#1a1a2e'>Real examples:</text>
+  <text x="15" y="212" font-size='11' fill='#1a1a2e' opacity='0.6'>Brushing teeth = 2 minutes</text>
+  <text x="15" y="232" font-size='11' fill='#1a1a2e' opacity='0.6'>Playing at recess = 15 minutes</text>
+  <text x="15" y="252" font-size='11' fill='#1a1a2e' opacity='0.6'>Math lesson = 1 hour</text>
+  <text x="15" y="272" font-size='11' fill='#1a1a2e' opacity='0.6'>Whole school day = 6 hours</text>
 </svg>"""
     },
     {
@@ -113,7 +113,7 @@ SECTIONS = [
         "title": "The Big Picture: Days, Weeks, Months, Years",
         "body": """<p>Time doesn't just go in hours -- it builds up into bigger and bigger units!</p>
 <svg viewBox="0 0 415 360" style="width:100%;max-width:415px;display:block;margin:20px auto;">
-  <text x="207" y="30" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>How Time Builds Up</text>
+  <text x="207" y="30" text-anchor='middle' font-size='16' font-weight='bold' fill='#1a1a2e'>How Time Builds Up</text>
 
   <!-- 60 seconds = 1 minute -->
   <rect x="15" y="50" width="385" height="50" fill='#dbeafe' stroke='#3b82f6' stroke-width="1" rx="4"/>

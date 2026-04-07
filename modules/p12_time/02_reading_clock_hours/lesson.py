@@ -169,29 +169,29 @@ SECTIONS = [
   <rect x="15" y="48" width="385" height="65" fill='#fff7ed' stroke='#ea580c' stroke-width="1" rx="4"/>
   <circle cx="50" cy="80" r="22" fill='#fff' stroke='#8B0000' stroke-width="2"/>
   <text x="50" y="87" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>7</text>
-  <text x="95" y="78" font-size='12' font-weight='bold' fill='currentColor'>Wake up: 7:00 AM</text>
-  <text x="95" y="98" font-size='11' fill='currentColor' opacity='0.6'>In the morning</text>
+  <text x="95" y="78" font-size='12' font-weight='bold' fill='#1a1a2e'>Wake up: 7:00 AM</text>
+  <text x="95" y="98" font-size='11' fill='#1a1a2e' opacity='0.6'>In the morning</text>
 
   <!-- School starts at 8:00 -->
   <rect x="15" y="125" width="385" height="65" fill='#f0fdf4' stroke='#16a34a' stroke-width="1" rx="4"/>
   <circle cx="50" cy="157" r="22" fill='#fff' stroke='#8B0000' stroke-width="2"/>
   <text x="50" y="164" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>8</text>
-  <text x="95" y="155" font-size='12' font-weight='bold' fill='currentColor'>School starts: 8:00 AM</text>
-  <text x="95" y="175" font-size='11' fill='currentColor' opacity='0.6'>Time to learn!</text>
+  <text x="95" y="155" font-size='12' font-weight='bold' fill='#1a1a2e'>School starts: 8:00 AM</text>
+  <text x="95" y="175" font-size='11' fill='#1a1a2e' opacity='0.6'>Time to learn!</text>
 
   <!-- Lunch at 12:00 -->
   <rect x="15" y="202" width="385" height="65" fill='#fef3c7' stroke='#d97706' stroke-width="1" rx="4"/>
   <circle cx="50" cy="234" r="22" fill='#fff' stroke='#8B0000' stroke-width="2"/>
   <text x="50" y="241" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>12</text>
-  <text x="95" y="232" font-size='12' font-weight='bold' fill='currentColor'>Lunch: 12:00 PM</text>
-  <text x="95" y="252" font-size='11' fill='currentColor' opacity='0.6'>Noon -- middle of day</text>
+  <text x="95" y="232" font-size='12' font-weight='bold' fill='#1a1a2e'>Lunch: 12:00 PM</text>
+  <text x="95" y="252" font-size='11' fill='#1a1a2e' opacity='0.6'>Noon -- middle of day</text>
 
   <!-- School ends at 3:00 -->
   <rect x="15" y="279" width="385" height="65" fill='#e0f2fe' stroke='#0284c7' stroke-width="1" rx="4"/>
   <circle cx="50" cy="311" r="22" fill='#fff' stroke='#8B0000' stroke-width="2"/>
   <text x="50" y="318" text-anchor='middle' font-size='10' fill='#000' font-weight='bold'>3</text>
-  <text x="95" y="309" font-size='12' font-weight='bold' fill='currentColor'>School ends: 3:00 PM</text>
-  <text x="95" y="329" font-size='11' fill='currentColor' opacity='0.6'>Afternoon -- time to play!</text>
+  <text x="95" y="309" font-size='12' font-weight='bold' fill='#1a1a2e'>School ends: 3:00 PM</text>
+  <text x="95" y="329" font-size='11' fill='#1a1a2e' opacity='0.6'>Afternoon -- time to play!</text>
 </svg>
 <div style="background: #f0f8ff; padding: 12px; margin: 16px 0; border-radius: 4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Key times you might see:</p>

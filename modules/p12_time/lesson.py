@@ -9,21 +9,21 @@ SECTIONS = [
   <text x="15" y="30" font-size="14" font-weight="bold" fill='currentColor'>Basic time units:</text>
 
   <rect x="15" y="50" width="170" height="85" fill="#fef3c7" stroke="#d97706" stroke-width="2" rx="4"/>
-  <text x="25" y="75" font-size="12" font-weight="bold" fill='currentColor'>1 HOUR (h)</text>
-  <text x="25" y="95" font-size="11" fill='currentColor'>= 60 minutes</text>
-  <text x="25" y="113" font-size="11" fill='currentColor'>It takes about 1 hour</text>
-  <text x="25" y="128" font-size="11" fill='currentColor'>to watch a movie</text>
+  <text x="25" y="75" font-size="12" font-weight="bold" fill='#1a1a2e'>1 HOUR (h)</text>
+  <text x="25" y="95" font-size="11" fill='#1a1a2e'>= 60 minutes</text>
+  <text x="25" y="113" font-size="11" fill='#1a1a2e'>It takes about 1 hour</text>
+  <text x="25" y="128" font-size="11" fill='#1a1a2e'>to watch a movie</text>
 
   <rect x="205" y="50" width="170" height="85" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="4"/>
-  <text x="215" y="75" font-size="12" font-weight="bold" fill='currentColor'>1 MINUTE (min)</text>
-  <text x="215" y="95" font-size="11" fill='currentColor'>= 60 seconds</text>
-  <text x="215" y="113" font-size="11" fill='currentColor'>It takes about 1 minute</text>
-  <text x="215" y="128" font-size="11" fill='currentColor'>to tie your shoes</text>
+  <text x="215" y="75" font-size="12" font-weight="bold" fill='#1a1a2e'>1 MINUTE (min)</text>
+  <text x="215" y="95" font-size="11" fill='#1a1a2e'>= 60 seconds</text>
+  <text x="215" y="113" font-size="11" fill='#1a1a2e'>It takes about 1 minute</text>
+  <text x="215" y="128" font-size="11" fill='#1a1a2e'>to tie your shoes</text>
 
-  <text x="15" y="165" font-size="13" font-weight="bold" fill='currentColor'>The bigger picture:</text>
-  <text x="25" y="190" font-size="12" fill='currentColor'>1 day = 24 hours</text>
-  <text x="25" y="210" font-size="12" fill='currentColor'>1 week = 7 days</text>
-  <text x="25" y="230" font-size="12" fill='currentColor'>1 year = 12 months (about 365 days)</text>
+  <text x="15" y="165" font-size="13" font-weight="bold" fill='#1a1a2e'>The bigger picture:</text>
+  <text x="25" y="190" font-size="12" fill='#1a1a2e'>1 day = 24 hours</text>
+  <text x="25" y="210" font-size="12" fill='#1a1a2e'>1 week = 7 days</text>
+  <text x="25" y="230" font-size="12" fill='#1a1a2e'>1 year = 12 months (about 365 days)</text>
 </svg>
 <div class='example-box'>
 <strong>Remembering the conversions:</strong><br>
@@ -195,9 +195,9 @@ Answer = [hour number]:00
 
   <text x="15" y="230" font-size="13" font-weight="bold" fill='currentColor'>Key times to remember:</text>
   <rect x="15" y="245" width="360" height="75" fill="#fef3c7" stroke="#d97706" stroke-width="1" rx="4"/>
-  <text x="25" y="268" font-size="12" fill='currentColor'>:15 = Quarter past (15 minutes, long hand at 3)</text>
-  <text x="25" y="290" font-size="12" fill='currentColor'>:30 = Half past (30 minutes, long hand at 6)</text>
-  <text x="25" y="312" font-size="12" fill='currentColor'>:45 = Quarter to next hour (45 min, long hand at 9)</text>
+  <text x="25" y="268" font-size="12" fill='#1a1a2e'>:15 = Quarter past (15 minutes, long hand at 3)</text>
+  <text x="25" y="290" font-size="12" fill='#1a1a2e'>:30 = Half past (30 minutes, long hand at 6)</text>
+  <text x="25" y="312" font-size="12" fill='#1a1a2e'>:45 = Quarter to next hour (45 min, long hand at 9)</text>
 </svg>
 <div class='example-box'>
 <strong>Remembering the minute hand positions:</strong><br>
@@ -214,28 +214,28 @@ Pointing at 9 = :45 (45 minutes)
         "body": """<p><strong>AM</strong> (ante meridiem) means morning, and <strong>PM</strong> (post meridiem) means afternoon/evening.</p>
 <p>This helps us distinguish between morning and evening times.</p>
 <svg viewBox="0 0 390 290" style="width:100%;max-width:390px;height:auto;display:block;margin:16px auto;">
-  <text x="15" y="25" font-size="14" font-weight="bold" fill='currentColor'>Understanding AM and PM:</text>
+  <text x="15" y="25" font-size="14" font-weight="bold" fill='#1a1a2e'>Understanding AM and PM:</text>
 
   <rect x="15" y="45" width="175" height="85" fill="#fff7ed" stroke="#ea580c" stroke-width="2" rx="4"/>
-  <text x="25" y="68" font-size="12" font-weight="bold" fill='currentColor'>AM (morning)</text>
-  <text x="25" y="88" font-size="11" fill='currentColor'>6:00 AM = 6 o'clock</text>
-  <text x="25" y="103" font-size="11" fill='currentColor'>in the morning</text>
-  <text x="25" y="120" font-size="11" fill='currentColor'>Sunrise is 6-7 AM</text>
+  <text x="25" y="68" font-size="12" font-weight="bold" fill='#1a1a2e'>AM (morning)</text>
+  <text x="25" y="88" font-size="11" fill='#1a1a2e'>6:00 AM = 6 o'clock</text>
+  <text x="25" y="103" font-size="11" fill='#1a1a2e'>in the morning</text>
+  <text x="25" y="120" font-size="11" fill='#1a1a2e'>Sunrise is 6-7 AM</text>
 
   <rect x="200" y="45" width="175" height="85" fill="#dbeafe" stroke="#3b82f6" stroke-width="2" rx="4"/>
-  <text x="210" y="68" font-size="12" font-weight="bold" fill='currentColor'>PM (afternoon/evening)</text>
-  <text x="210" y="88" font-size="11" fill='currentColor'>6:00 PM = 6 o'clock</text>
-  <text x="210" y="103" font-size="11" fill='currentColor'>in the evening</text>
-  <text x="210" y="120" font-size="11" fill='currentColor'>Sunset is 6-7 PM</text>
+  <text x="210" y="68" font-size="12" font-weight="bold" fill='#1a1a2e'>PM (afternoon/evening)</text>
+  <text x="210" y="88" font-size="11" fill='#1a1a2e'>6:00 PM = 6 o'clock</text>
+  <text x="210" y="103" font-size="11" fill='#1a1a2e'>in the evening</text>
+  <text x="210" y="120" font-size="11" fill='#1a1a2e'>Sunset is 6-7 PM</text>
 
-  <text x="15" y="160" font-size="13" font-weight="bold" fill='currentColor'>Daily schedule example:</text>
+  <text x="15" y="160" font-size="13" font-weight="bold" fill='#1a1a2e'>Daily schedule example:</text>
 
   <rect x="15" y="175" width="360" height="105" fill="#dcfce7" stroke="#16a34a" stroke-width="1" rx="4"/>
-  <text x="25" y="198" font-size="12" fill='currentColor'>Wake up: 7:00 AM</text>
-  <text x="25" y="218" font-size="12" fill='currentColor'>School starts: 8:30 AM</text>
-  <text x="25" y="238" font-size="12" fill='currentColor'>Lunch: 12:30 PM</text>
-  <text x="25" y="258" font-size="12" fill='currentColor'>Leave school: 3:00 PM</text>
-  <text x="25" y="278" font-size="12" fill='currentColor'>Bedtime: 9:00 PM</text>
+  <text x="25" y="198" font-size="12" fill='#1a1a2e'>Wake up: 7:00 AM</text>
+  <text x="25" y="218" font-size="12" fill='#1a1a2e'>School starts: 8:30 AM</text>
+  <text x="25" y="238" font-size="12" fill='#1a1a2e'>Lunch: 12:30 PM</text>
+  <text x="25" y="258" font-size="12" fill='#1a1a2e'>Leave school: 3:00 PM</text>
+  <text x="25" y="278" font-size="12" fill='#1a1a2e'>Bedtime: 9:00 PM</text>
 </svg>
 <div class='example-box'>
 <strong>Important calendar facts:</strong><br>

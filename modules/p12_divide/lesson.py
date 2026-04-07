@@ -55,31 +55,31 @@ This means: 12 things shared among 3 people = 4 things each
   <circle cx="35" cy="70" r="8" fill="#ef4444"/>
   <circle cx="60" cy="70" r="8" fill="#ef4444"/>
   <circle cx="85" cy="70" r="8" fill="#ef4444"/>
-  <text x="60" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 1</text>
+  <text x="60" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 1</text>
 
   <!-- Group 2 -->
   <rect x="120" y="45" width="90" height="70" rx="4" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
   <circle cx="140" cy="70" r="8" fill="#ef4444"/>
   <circle cx="165" cy="70" r="8" fill="#ef4444"/>
   <circle cx="190" cy="70" r="8" fill="#ef4444"/>
-  <text x="165" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 2</text>
+  <text x="165" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 2</text>
 
   <!-- Group 3 -->
   <rect x="225" y="45" width="90" height="70" rx="4" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
   <circle cx="245" cy="70" r="8" fill="#ef4444"/>
   <circle cx="270" cy="70" r="8" fill="#ef4444"/>
   <circle cx="295" cy="70" r="8" fill="#ef4444"/>
-  <text x="270" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 3</text>
+  <text x="270" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 3</text>
 
   <!-- Group 4 -->
   <rect x="330" y="45" width="90" height="70" rx="4" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
   <circle cx="350" cy="70" r="8" fill="#ef4444"/>
   <circle cx="375" cy="70" r="8" fill="#ef4444"/>
   <circle cx="400" cy="70" r="8" fill="#ef4444"/>
-  <text x="375" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 4</text>
+  <text x="375" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 4</text>
 
-  <text x="215" y="145" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold">We made 4 groups of 3!</text>
-  <text x="215" y="170" text-anchor="middle" fill="currentColor" font-size="14">So 12 ÷ 3 = 4 groups</text>
+  <text x="215" y="145" text-anchor="middle" fill="#1a1a2e" font-size="14" font-weight="bold">We made 4 groups of 3!</text>
+  <text x="215" y="170" text-anchor="middle" fill="#1a1a2e" font-size="14">So 12 ÷ 3 = 4 groups</text>
 </svg>
 <div class='example-box'>
 <strong>Two ways to think about 12 ÷ 3:</strong><br>
@@ -100,21 +100,21 @@ Both give the same answer: 4!
 
   <!-- Multiplication box -->
   <rect x="25" y="50" width="170" height="85" rx="4" fill="#dbeafe" stroke="#4f8ef7" stroke-width="2"/>
-  <text x="110" y="75" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold">Multiplication</text>
-  <text x="110" y="100" text-anchor="middle" fill="currentColor" font-size="14">3 × 4 = 12</text>
-  <text x="110" y="120" text-anchor="middle" fill="currentColor" font-size="12">"3 groups of 4"</text>
+  <text x="110" y="75" text-anchor="middle" fill="#1a1a2e" font-size="14" font-weight="bold">Multiplication</text>
+  <text x="110" y="100" text-anchor="middle" fill="#1a1a2e" font-size="14">3 × 4 = 12</text>
+  <text x="110" y="120" text-anchor="middle" fill="#1a1a2e" font-size="12">"3 groups of 4"</text>
 
   <!-- Arrow -->
-  <text x="215" y="100" text-anchor="middle" fill="currentColor" font-size="22" font-weight="bold">↔</text>
+  <text x="215" y="100" text-anchor="middle" fill="#1a1a2e" font-size="22" font-weight="bold">↔</text>
 
   <!-- Division box -->
   <rect x="235" y="50" width="170" height="85" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
-  <text x="320" y="75" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold">Division</text>
-  <text x="320" y="100" text-anchor="middle" fill="currentColor" font-size="14">12 ÷ 3 = 4</text>
-  <text x="320" y="120" text-anchor="middle" fill="currentColor" font-size="12">"12 split into 3"</text>
+  <text x="320" y="75" text-anchor="middle" fill="#1a1a2e" font-size="14" font-weight="bold">Division</text>
+  <text x="320" y="100" text-anchor="middle" fill="#1a1a2e" font-size="14">12 ÷ 3 = 4</text>
+  <text x="320" y="120" text-anchor="middle" fill="#1a1a2e" font-size="12">"12 split into 3"</text>
 
-  <text x="215" y="165" text-anchor="middle" fill="currentColor" font-size="13">If 3 × 4 = 12, then 12 ÷ 3 = 4 and 12 ÷ 4 = 3</text>
-  <text x="215" y="190" text-anchor="middle" fill="currentColor" font-size="13">If you know your times tables, you know division!</text>
+  <text x="215" y="165" text-anchor="middle" fill="#1a1a2e" font-size="13">If 3 × 4 = 12, then 12 ÷ 3 = 4 and 12 ÷ 4 = 3</text>
+  <text x="215" y="190" text-anchor="middle" fill="#1a1a2e" font-size="13">If you know your times tables, you know division!</text>
 </svg>
 <div class='example-box'>
 <strong>Quick facts:</strong><br>
@@ -137,7 +137,7 @@ Both give the same answer: 4!
   <circle cx="55" cy="60" r="7" fill="#ef4444"/>
   <circle cx="75" cy="60" r="7" fill="#ef4444"/>
   <circle cx="55" cy="85" r="7" fill="#ef4444"/>
-  <text x="55" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 1</text>
+  <text x="55" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 1</text>
 
   <!-- Group 2 -->
   <rect x="115" y="45" width="80" height="70" rx="4" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
@@ -145,7 +145,7 @@ Both give the same answer: 4!
   <circle cx="155" cy="60" r="7" fill="#ef4444"/>
   <circle cx="175" cy="60" r="7" fill="#ef4444"/>
   <circle cx="155" cy="85" r="7" fill="#ef4444"/>
-  <text x="155" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 2</text>
+  <text x="155" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 2</text>
 
   <!-- Group 3 -->
   <rect x="215" y="45" width="80" height="70" rx="4" fill="#fef9c3" stroke="#f59e0b" stroke-width="2"/>
@@ -153,15 +153,15 @@ Both give the same answer: 4!
   <circle cx="255" cy="60" r="7" fill="#ef4444"/>
   <circle cx="275" cy="60" r="7" fill="#ef4444"/>
   <circle cx="255" cy="85" r="7" fill="#ef4444"/>
-  <text x="255" y="100" text-anchor="middle" fill="currentColor" font-size="11" font-weight="bold">Group 3</text>
+  <text x="255" y="100" text-anchor="middle" fill="#1a1a2e" font-size="11" font-weight="bold">Group 3</text>
 
   <!-- Remainder -->
   <rect x="340" y="55" width="50" height="50" rx="4" fill="#fecaca" stroke="#ef4444" stroke-width="2" stroke-dasharray="5"/>
   <circle cx="365" cy="80" r="7" fill="#ef4444"/>
   <text x="365" y="130" text-anchor="middle" fill="#ef4444" font-size="11" font-weight="bold">Left over!</text>
 
-  <text x="215" y="175" text-anchor="middle" fill="currentColor" font-size="14" font-weight="bold">13 ÷ 4 = 3 remainder 1 (or 3 R1)</text>
-  <text x="215" y="200" text-anchor="middle" fill="currentColor" font-size="13">Check: (3 × 4) + 1 = 12 + 1 = 13 ✓</text>
+  <text x="215" y="175" text-anchor="middle" fill="#1a1a2e" font-size="14" font-weight="bold">13 ÷ 4 = 3 remainder 1 (or 3 R1)</text>
+  <text x="215" y="200" text-anchor="middle" fill="#1a1a2e" font-size="13">Check: (3 × 4) + 1 = 12 + 1 = 13 ✓</text>
 </svg>
 <div class='example-box'>
 <strong>Reading the answer:</strong><br>
@@ -182,26 +182,26 @@ This means: 13 divided into groups of 4 gives us 3 complete groups with 1 left o
 
   <!-- Divide by 2 box -->
   <rect x="15" y="45" width="190" height="130" rx="4" fill="#dbeafe" stroke="#4f8ef7" stroke-width="2"/>
-  <text x="110" y="70" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold">Divide by 2:</text>
-  <text x="110" y="92" text-anchor="middle" fill="currentColor" font-size="12">4 ÷ 2 = 2</text>
-  <text x="110" y="112" text-anchor="middle" fill="currentColor" font-size="12">6 ÷ 2 = 3</text>
-  <text x="110" y="132" text-anchor="middle" fill="currentColor" font-size="12">8 ÷ 2 = 4</text>
-  <text x="110" y="152" text-anchor="middle" fill="currentColor" font-size="12">10 ÷ 2 = 5</text>
-  <text x="110" y="172" text-anchor="middle" fill="currentColor" font-size="12">12 ÷ 2 = 6</text>
+  <text x="110" y="70" text-anchor="middle" fill="#1a1a2e" font-size="13" font-weight="bold">Divide by 2:</text>
+  <text x="110" y="92" text-anchor="middle" fill="#1a1a2e" font-size="12">4 ÷ 2 = 2</text>
+  <text x="110" y="112" text-anchor="middle" fill="#1a1a2e" font-size="12">6 ÷ 2 = 3</text>
+  <text x="110" y="132" text-anchor="middle" fill="#1a1a2e" font-size="12">8 ÷ 2 = 4</text>
+  <text x="110" y="152" text-anchor="middle" fill="#1a1a2e" font-size="12">10 ÷ 2 = 5</text>
+  <text x="110" y="172" text-anchor="middle" fill="#1a1a2e" font-size="12">12 ÷ 2 = 6</text>
 
   <!-- Divide by 5 box -->
   <rect x="225" y="45" width="190" height="130" rx="4" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
-  <text x="320" y="70" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold">Divide by 5:</text>
-  <text x="320" y="92" text-anchor="middle" fill="currentColor" font-size="12">5 ÷ 5 = 1</text>
-  <text x="320" y="112" text-anchor="middle" fill="currentColor" font-size="12">10 ÷ 5 = 2</text>
-  <text x="320" y="132" text-anchor="middle" fill="currentColor" font-size="12">15 ÷ 5 = 3</text>
-  <text x="320" y="152" text-anchor="middle" fill="currentColor" font-size="12">20 ÷ 5 = 4</text>
-  <text x="320" y="172" text-anchor="middle" fill="currentColor" font-size="12">25 ÷ 5 = 5</text>
+  <text x="320" y="70" text-anchor="middle" fill="#1a1a2e" font-size="13" font-weight="bold">Divide by 5:</text>
+  <text x="320" y="92" text-anchor="middle" fill="#1a1a2e" font-size="12">5 ÷ 5 = 1</text>
+  <text x="320" y="112" text-anchor="middle" fill="#1a1a2e" font-size="12">10 ÷ 5 = 2</text>
+  <text x="320" y="132" text-anchor="middle" fill="#1a1a2e" font-size="12">15 ÷ 5 = 3</text>
+  <text x="320" y="152" text-anchor="middle" fill="#1a1a2e" font-size="12">20 ÷ 5 = 4</text>
+  <text x="320" y="172" text-anchor="middle" fill="#1a1a2e" font-size="12">25 ÷ 5 = 5</text>
 
-  <text x="215" y="210" text-anchor="middle" fill="currentColor" font-size="13" font-weight="bold">Helpful Strategies:</text>
-  <text x="215" y="232" text-anchor="middle" fill="currentColor" font-size="12">1. Use multiplication facts! If 6 × 3 = 18, then 18 ÷ 6 = 3</text>
-  <text x="215" y="252" text-anchor="middle" fill="currentColor" font-size="12">2. Draw pictures or use objects to show the division</text>
-  <text x="215" y="272" text-anchor="middle" fill="currentColor" font-size="12">3. Count in groups: For 12 ÷ 3, count "3, 6, 9, 12" = 4 groups!</text>
+  <text x="215" y="210" text-anchor="middle" fill="#1a1a2e" font-size="13" font-weight="bold">Helpful Strategies:</text>
+  <text x="215" y="232" text-anchor="middle" fill="#1a1a2e" font-size="12">1. Use multiplication facts! If 6 × 3 = 18, then 18 ÷ 6 = 3</text>
+  <text x="215" y="252" text-anchor="middle" fill="#1a1a2e" font-size="12">2. Draw pictures or use objects to show the division</text>
+  <text x="215" y="272" text-anchor="middle" fill="#1a1a2e" font-size="12">3. Count in groups: For 12 ÷ 3, count "3, 6, 9, 12" = 4 groups!</text>
 </svg>
 <p><strong>Practice tip:</strong> The more division facts you memorize, the faster and easier division becomes!</p>"""
     }

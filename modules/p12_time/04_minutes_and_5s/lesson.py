@@ -71,7 +71,7 @@ SECTIONS = [
         "body": """<p>Using the 5-minute pattern, you can read ANY time on the clock in 5-minute intervals!</p>
 <p>Start at 12 and count by 5s until you reach where the minute hand is pointing.</p>
 <svg viewBox="0 0 415 390" style="width:100%;max-width:415px;display:block;margin:20px auto;">
-  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>Counting by 5s Around the Clock</text>
+  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='#1a1a2e'>Counting by 5s Around the Clock</text>
 
   <!-- Clock with numbers -->
   <circle cx="207" cy="165" r="85" fill='#fff' stroke='#8B0000' stroke-width="3"/>
@@ -112,18 +112,18 @@ SECTIONS = [
 
   <!-- Example 1 -->
   <rect x="15" y="302" width="385" height="32" fill='#e0f2fe' stroke='#0284c7' stroke-width="1" rx="4"/>
-  <text x="25" y="323" font-size='11' fill='currentColor'>Minute hand points at 4: Count 5, 10, 15, 20 = 20 minutes (like 3:20)</text>
+  <text x="25" y="323" font-size='11' fill='#1a1a2e'>Minute hand points at 4: Count 5, 10, 15, 20 = 20 minutes (like 3:20)</text>
 
   <!-- Example 2 -->
   <rect x="15" y="346" width="385" height="32" fill='#fef3c7' stroke='#d97706' stroke-width="1" rx="4"/>
-  <text x="25" y="367" font-size='11' fill='currentColor'>Minute hand points at 8: Count 5, 10, 15, 20, 25, 30, 35, 40 = 40 minutes</text>
+  <text x="25" y="367" font-size='11' fill='#1a1a2e'>Minute hand points at 8: Count 5, 10, 15, 20, 25, 30, 35, 40 = 40 minutes</text>
 </svg>"""
     },
     {
         "title": "Reading Times: Putting It All Together",
         "body": """<p>Now you can read ANY time! Use the hour hand + the minute hand together.</p>
 <svg viewBox="0 0 395 410" style="width:100%;max-width:395px;display:block;margin:20px auto;">
-  <text x="197" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>Practice Reading Times</text>
+  <text x="197" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='#1a1a2e'>Practice Reading Times</text>
 
   <!-- Time 1: 2:15 -->
   <g>
@@ -191,40 +191,40 @@ SECTIONS = [
 
   <!-- Explanation -->
   <rect x="15" y="375" width="365" height="28" fill='#f0f8ff' stroke='#4f8ef7' stroke-width="1" rx="4"/>
-  <text x="197" y="394" text-anchor='middle' font-size='10' fill='currentColor'>Start at 12 and count by 5s where the minute hand points!</text>
+  <text x="197" y="394" text-anchor='middle' font-size='10' fill='#1a1a2e'>Start at 12 and count by 5s where the minute hand points!</text>
 </svg>"""
     },
     {
         "title": "AM and PM: Morning vs Afternoon/Evening ⏰",
         "body": """<p>The same times happen twice in a day! We use <strong>AM</strong> (morning) and <strong>PM</strong> (afternoon/evening) to tell the difference.</p>
 <svg viewBox="0 0 415 290" style="width:100%;max-width:415px;display:block;margin:20px auto;">
-  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='currentColor'>AM vs PM</text>
+  <text x="207" y="28" text-anchor='middle' font-size='16' font-weight='bold' fill='#1a1a2e'>AM vs PM</text>
 
   <!-- AM side -->
   <rect x="15" y="48" width="185" height="225" fill='#fff7ed' stroke='#ea580c' stroke-width="2" rx="4"/>
-  <text x="107" y="78" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>AM</text>
-  <text x="107" y="98" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(Ante Meridiem)</text>
-  <text x="107" y="118" text-anchor='middle' font-size='11' font-weight='bold' fill='currentColor'>Morning Time</text>
+  <text x="107" y="78" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>AM</text>
+  <text x="107" y="98" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>(Ante Meridiem)</text>
+  <text x="107" y="118" text-anchor='middle' font-size='11' font-weight='bold' fill='#1a1a2e'>Morning Time</text>
 
-  <text x="30" y="145" font-size='11' fill='currentColor'>6:00 AM = sunrise</text>
-  <text x="30" y="165" font-size='11' fill='currentColor'>7:00 AM = wake up</text>
-  <text x="30" y="185" font-size='11' fill='currentColor'>8:00 AM = school</text>
-  <text x="30" y="205" font-size='11' fill='currentColor'>12:00 PM = noon</text>
+  <text x="30" y="145" font-size='11' fill='#1a1a2e'>6:00 AM = sunrise</text>
+  <text x="30" y="165" font-size='11' fill='#1a1a2e'>7:00 AM = wake up</text>
+  <text x="30" y="185" font-size='11' fill='#1a1a2e'>8:00 AM = school</text>
+  <text x="30" y="205" font-size='11' fill='#1a1a2e'>12:00 PM = noon</text>
 
-  <text x="107" y="240" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>Before noon</text>
+  <text x="107" y="240" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>Before noon</text>
 
   <!-- PM side -->
   <rect x="215" y="48" width="185" height="225" fill='#e0e7ff' stroke='#6366f1' stroke-width="2" rx="4"/>
-  <text x="307" y="78" text-anchor='middle' font-size='14' font-weight='bold' fill='currentColor'>PM</text>
-  <text x="307" y="98" text-anchor='middle' font-size='11' fill='currentColor' opacity='0.6'>(Post Meridiem)</text>
-  <text x="307" y="118" text-anchor='middle' font-size='11' font-weight='bold' fill='currentColor'>Afternoon/Evening</text>
+  <text x="307" y="78" text-anchor='middle' font-size='14' font-weight='bold' fill='#1a1a2e'>PM</text>
+  <text x="307" y="98" text-anchor='middle' font-size='11' fill='#1a1a2e' opacity='0.6'>(Post Meridiem)</text>
+  <text x="307" y="118" text-anchor='middle' font-size='11' font-weight='bold' fill='#1a1a2e'>Afternoon/Evening</text>
 
-  <text x="230" y="145" font-size='11' fill='currentColor'>1:00 PM = afternoon</text>
-  <text x="230" y="165" font-size='11' fill='currentColor'>3:00 PM = leave school</text>
-  <text x="230" y="185" font-size='11' fill='currentColor'>6:00 PM = dinner</text>
-  <text x="230" y="205" font-size='11' fill='currentColor'>9:00 PM = bedtime</text>
+  <text x="230" y="145" font-size='11' fill='#1a1a2e'>1:00 PM = afternoon</text>
+  <text x="230" y="165" font-size='11' fill='#1a1a2e'>3:00 PM = leave school</text>
+  <text x="230" y="185" font-size='11' fill='#1a1a2e'>6:00 PM = dinner</text>
+  <text x="230" y="205" font-size='11' fill='#1a1a2e'>9:00 PM = bedtime</text>
 
-  <text x="307" y="240" text-anchor='middle' font-size='10' fill='currentColor' opacity='0.6'>After noon</text>
+  <text x="307" y="240" text-anchor='middle' font-size='10' fill='#1a1a2e' opacity='0.6'>After noon</text>
 </svg>
 <div style="background:#dcfce7;border-left:4px solid #16a34a;padding:12px;margin:16px 0;border-radius:4px; color: #1a1a2e;">
 <p style="margin: 0; font-weight: bold;">Remember:</p>
