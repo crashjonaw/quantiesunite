@@ -89,7 +89,32 @@ window.addEventListener('beforeprint', function(e) {
 /* ── User menu toggle ──────────────────────────────────────────── */
 function toggleUserMenu() {
   var dd = document.getElementById('user-dropdown');
-  if (dd) dd.classList.toggle('open');
+  var btn = document.getElementById('user-menu-btn');
+  if (!dd || !btn) return;
+
+  // Move dropdown to body on first open (escapes any overflow clipping)
+  if (dd.parentElement !== document.body) {
+    document.body.appendChild(dd);
+  }
+
+  dd.classList.toggle('open');
+
+  if (dd.classList.contains('open')) {
+    var rect = btn.getBoundingClientRect();
+    var ddWidth = 260;
+    var right = window.innerWidth - rect.right;
+    if (right < 0) right = 8;
+    dd.style.position = 'fixed';
+    dd.style.top = (rect.bottom + 6) + 'px';
+    dd.style.right = Math.max(right, 8) + 'px';
+    dd.style.left = 'auto';
+    dd.style.zIndex = '9999';
+    // On mobile, span wider
+    if (window.innerWidth < 500) {
+      dd.style.left = '8px';
+      dd.style.right = '8px';
+    }
+  }
 }
 document.addEventListener('click', function(e) {
   var btn = document.getElementById('user-menu-btn');
