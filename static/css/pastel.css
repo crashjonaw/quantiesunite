@@ -75,6 +75,7 @@
 
 [data-theme="bright"][data-pastel="blue"] body { background-color: #dbeafe; }
 [data-theme="bright"][data-pastel="blue"] .main-content { background-color: #dbeafe; }
+[data-theme="bright"][data-pastel="blue"] #graph-svg { background: #dbeafe; }
 [data-theme="bright"][data-pastel="blue"] .footer { background-color: #bfdbfe; }
 
 [data-theme="bright"][data-pastel="blue"] .dash-card,
@@ -114,6 +115,7 @@
 
 [data-theme="bright"][data-pastel="pink"] body { background-color: #fce7f3; }
 [data-theme="bright"][data-pastel="pink"] .main-content { background-color: #fce7f3; }
+[data-theme="bright"][data-pastel="pink"] #graph-svg { background: #fce7f3; }
 [data-theme="bright"][data-pastel="pink"] .footer { background-color: #fbcfe8; }
 
 [data-theme="bright"][data-pastel="pink"] .dash-card,
@@ -153,6 +155,7 @@
 
 [data-theme="bright"][data-pastel="yellow"] body { background-color: #fef9c3; }
 [data-theme="bright"][data-pastel="yellow"] .main-content { background-color: #fef9c3; }
+[data-theme="bright"][data-pastel="yellow"] #graph-svg { background: #fef9c3; }
 [data-theme="bright"][data-pastel="yellow"] .footer { background-color: #fef08a; }
 
 [data-theme="bright"][data-pastel="yellow"] .dash-card,
@@ -192,6 +195,7 @@
 
 [data-theme="bright"][data-pastel="green"] body { background-color: #dcfce7; }
 [data-theme="bright"][data-pastel="green"] .main-content { background-color: #dcfce7; }
+[data-theme="bright"][data-pastel="green"] #graph-svg { background: #dcfce7; }
 [data-theme="bright"][data-pastel="green"] .footer { background-color: #bbf7d0; }
 
 [data-theme="bright"][data-pastel="green"] .dash-card,
