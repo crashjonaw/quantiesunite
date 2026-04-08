@@ -17,7 +17,7 @@ bind = os.environ.get("GUNICORN_BIND", "127.0.0.1:5001")
 # Rule of thumb: (2 × CPU cores) + 1
 # Each worker is an independent process with its own memory.
 # Override with GUNICORN_WORKERS env var for different machines.
-workers = int(os.environ.get("GUNICORN_WORKERS", multiprocessing.cpu_count() * 2 + 1))
+workers = int(os.environ.get("GUNICORN_WORKERS", min(multiprocessing.cpu_count() + 1, 4)))
 
 # ── Threads per worker ────────────────────────────────────────────────────────
 # Each worker spawns this many threads. Total concurrency = workers × threads.
@@ -41,7 +41,7 @@ max_requests_jitter = 100  # Add random jitter to avoid all workers restarting a
 # ── Preload ───────────────────────────────────────────────────────────────────
 # Load the app before forking workers — saves memory via copy-on-write
 # and catches import errors early.
-preload_app = True
+preload_app = False
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 accesslog = "-"                    # Log to stdout (captured by systemd/supervisor)
