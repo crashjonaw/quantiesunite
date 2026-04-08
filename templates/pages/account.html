@@ -134,6 +134,7 @@
   <form method="POST" action="/account/level" id="level-form">
     <div class="level-selector">
       {% for level in levels_order %}
+      {% if level in ('Kindergarten', 'Primary 1–2', 'Primary 3–4', 'Primary 5–6', 'Sec 1–2', 'Sec 3–4', 'J1–2') %}
       <label class="level-selector-item" for="lvl-{{ loop.index }}">
         <div class="level-sel-left">
           <input type="radio" name="target_level" id="lvl-{{ loop.index }}"
@@ -146,6 +147,7 @@
           </div>
         </div>
       </label>
+      {% endif %}
       {% endfor %}
     </div>
   </form>
