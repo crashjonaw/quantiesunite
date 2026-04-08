@@ -1497,10 +1497,11 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   .hero-stats { justify-content: flex-start; }
   .path-cards { flex-direction: column; }
   .path-arrow { transform: rotate(90deg); }
-  .navbar { padding: 0 12px; }
-  .nav-links { gap: 2px; flex-wrap: wrap; }
-  .nav-link { padding: 4px 8px; font-size: 0.75rem; }
-  .user-menu-wrap { position: static; }
+  .navbar { padding: 0 12px; overflow: visible; }
+  .nav-links { gap: 2px; overflow-x: auto; flex-shrink: 1; scrollbar-width: none; -ms-overflow-style: none; }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-link { padding: 4px 8px; font-size: 0.75rem; white-space: nowrap; flex-shrink: 0; }
+  .user-menu-wrap { position: static; flex-shrink: 0; }
   .user-dropdown {
     position: fixed; right: 8px; top: 56px; left: 8px;
     min-width: auto; max-height: calc(100vh - 70px);
