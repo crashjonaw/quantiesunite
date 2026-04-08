@@ -12,7 +12,13 @@ import urllib.parse
 import ssl
 import certifi
 
-_ssl_ctx = ssl.create_default_context(cafile=certifi.where())
+_ssl_ctx = None
+
+def _get_ssl_ctx():
+    global _ssl_ctx
+    if _ssl_ctx is None:
+        _ssl_ctx = ssl.create_default_context(cafile=certifi.where())
+    return _ssl_ctx
 
 auth_bp = Blueprint("auth", __name__)
 
@@ -184,7 +190,7 @@ def _handle_google_callback():
     try:
         token_req = urllib.request.Request(GOOGLE_TOKEN_URI, data=token_data_bytes,
                                            headers={"Content-Type": "application/x-www-form-urlencoded"})
-        with urllib.request.urlopen(token_req, timeout=15, context=_ssl_ctx) as resp:
+        with urllib.request.urlopen(token_req, timeout=15, context=_get_ssl_ctx()) as resp:
             token_data = json.loads(resp.read().decode("utf-8"))
     except Exception as e:
         flash(f"Failed to authenticate with Google: {e}", "danger")
@@ -199,7 +205,7 @@ def _handle_google_callback():
     try:
         info_req = urllib.request.Request(GOOGLE_USERINFO_URI,
                                           headers={"Authorization": f"Bearer {access_token}"})
-        with urllib.request.urlopen(info_req, timeout=15, context=_ssl_ctx) as resp:
+        with urllib.request.urlopen(info_req, timeout=15, context=_get_ssl_ctx()) as resp:
             userinfo = json.loads(resp.read().decode("utf-8"))
     except Exception as e:
         flash(f"Failed to get user info from Google: {e}", "danger")
