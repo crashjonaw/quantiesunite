@@ -13,6 +13,7 @@ from db.users import (
     create_user, get_user_by_email, get_user_by_id, get_user_by_username,
     verify_credentials, update_target_level, set_current_level, update_username, update_password,
     all_users, toggle_admin, delete_user, site_stats, ensure_default_admin,
+    register_session, is_session_valid, remove_session, get_user_sessions,
 )
 
 # Progress

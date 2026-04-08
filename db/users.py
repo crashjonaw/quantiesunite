@@ -170,3 +170,62 @@ def ensure_default_admin():
         pass
     finally:
         db.close()
+
+
+# ── Session management (max 2 devices) ─────────────────────────────────────
+
+MAX_SESSIONS = 1
+
+
+def register_session(user_id, session_id, device_info=""):
+    """Register a new session. If user already has MAX_SESSIONS, remove the oldest."""
+    db = get_db()
+    # Remove this session if it already exists (re-login on same device)
+    db.execute("DELETE FROM user_sessions WHERE session_id=?", (session_id,))
+    # Count existing sessions
+    existing = db.execute(
+        "SELECT id FROM user_sessions WHERE user_id=? ORDER BY last_active ASC",
+        (user_id,)).fetchall()
+    # If at max, remove oldest
+    while len(existing) >= MAX_SESSIONS:
+        db.execute("DELETE FROM user_sessions WHERE id=?", (existing[0]["id"],))
+        existing = existing[1:]
+    # Insert new session
+    db.execute(
+        "INSERT INTO user_sessions (user_id, session_id, device_info) VALUES (?,?,?)",
+        (user_id, session_id, device_info))
+    db.commit()
+    db.close()
+
+
+def is_session_valid(user_id, session_id):
+    """Check if a session is still registered (not kicked by newer login)."""
+    db = get_db()
+    row = db.execute(
+        "SELECT id FROM user_sessions WHERE user_id=? AND session_id=?",
+        (user_id, session_id)).fetchone()
+    if row:
+        db.execute(
+            "UPDATE user_sessions SET last_active=CURRENT_TIMESTAMP WHERE user_id=? AND session_id=?",
+            (user_id, session_id))
+        db.commit()
+    db.close()
+    return row is not None
+
+
+def remove_session(session_id):
+    """Remove a session on logout."""
+    db = get_db()
+    db.execute("DELETE FROM user_sessions WHERE session_id=?", (session_id,))
+    db.commit()
+    db.close()
+
+
+def get_user_sessions(user_id):
+    """Get all active sessions for a user."""
+    db = get_db()
+    rows = db.execute(
+        "SELECT session_id, device_info, created_at, last_active FROM user_sessions WHERE user_id=? ORDER BY last_active DESC",
+        (user_id,)).fetchall()
+    db.close()
+    return [dict(r) for r in rows]

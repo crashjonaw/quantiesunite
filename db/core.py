@@ -186,6 +186,17 @@ def init_db():
             FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
         );
         CREATE INDEX IF NOT EXISTS idx_ea_user ON exam_attempts(user_id, exam_id);
+
+        CREATE TABLE IF NOT EXISTS user_sessions (
+            id           INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id      INTEGER NOT NULL,
+            session_id   TEXT NOT NULL UNIQUE,
+            device_info  TEXT,
+            created_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            last_active  TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_us_user ON user_sessions(user_id);
     """)
     db.commit()
     db.close()

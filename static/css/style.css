@@ -1497,8 +1497,9 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   .hero-stats { justify-content: flex-start; }
   .path-cards { flex-direction: column; }
   .path-arrow { transform: rotate(90deg); }
-  .navbar { padding: 0 12px; }
-  .nav-links { display: none; }
+  .navbar { padding: 0 12px; overflow-x: auto; }
+  .nav-links { gap: 2px; flex-shrink: 0; }
+  .nav-link { padding: 4px 8px; font-size: 0.75rem; }
   #graph-toolbar { flex-wrap: wrap; height: auto; padding: 8px; }
   #graph-toolbar .brand-small { display: none; }
 }

@@ -146,6 +146,19 @@ def check_content_rate_limit():
             pass
 
 
+# ── Session validation (max 1 device) ────────────────────────────────────────
+
+@app.before_request
+def check_session_valid():
+    """Kick users whose session was replaced by a newer login."""
+    if session.get("user_id") and session.get("sid"):
+        if not db.is_session_valid(session["user_id"], session["sid"]):
+            session.clear()
+            from flask import flash
+            flash("You've been logged out because your account was signed in on another device.", "warning")
+            return redirect("/login")
+
+
 # ── Context processors ───────────────────────────────────────────────────────
 
 @app.context_processor

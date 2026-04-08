@@ -75,6 +75,9 @@ def login():
         user = db.verify_credentials(identifier, password)
         if user:
             session["user_id"] = user["id"]
+            session["sid"] = secrets.token_urlsafe(16)
+            device = request.headers.get("User-Agent", "")[:100]
+            db.register_session(user["id"], session["sid"], device)
             db.log_activity(user["id"], "login", points=1)
             db.grant_achievement(user["id"], "first_login")
             db.check_and_grant_achievements(user["id"])
@@ -88,6 +91,9 @@ def login():
 
 @auth_bp.route("/logout")
 def logout():
+    sid = session.get("sid")
+    if sid:
+        db.remove_session(sid)
     session.clear()
     flash("You've been logged out.", "info")
     return redirect(url_for("auth.login"))
@@ -205,6 +211,9 @@ def _handle_google_callback():
     if user:
         # Existing user — log them in
         session["user_id"] = user["id"]
+        session["sid"] = secrets.token_urlsafe(16)
+        device = request.headers.get("User-Agent", "")[:100]
+        db.register_session(user["id"], session["sid"], device)
         db.log_activity(user["id"], "login", points=1)
         db.check_and_grant_achievements(user["id"])
         flash(f"Welcome back, {user['username']}!", "success")
@@ -227,5 +236,8 @@ def _handle_google_callback():
             return redirect(url_for("auth.login"))
 
         session["user_id"] = uid
+        session["sid"] = secrets.token_urlsafe(16)
+        device = request.headers.get("User-Agent", "")[:100]
+        db.register_session(uid, session["sid"], device)
         session["needs_setup"] = True
         return redirect(url_for("account.account"))
