@@ -1497,9 +1497,17 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   .hero-stats { justify-content: flex-start; }
   .path-cards { flex-direction: column; }
   .path-arrow { transform: rotate(90deg); }
-  .navbar { padding: 0 12px; overflow-x: auto; }
-  .nav-links { gap: 2px; flex-shrink: 0; }
+  .navbar { padding: 0 12px; }
+  .nav-links { gap: 2px; flex-wrap: wrap; }
   .nav-link { padding: 4px 8px; font-size: 0.75rem; }
+  .user-menu-wrap { position: static; }
+  .user-dropdown {
+    position: fixed; right: 8px; top: 56px; left: 8px;
+    min-width: auto; max-height: calc(100vh - 70px);
+    overflow-y: auto; border-radius: 12px;
+  }
+  .user-name-nav { display: none; }
+  .chevron { display: none; }
   #graph-toolbar { flex-wrap: wrap; height: auto; padding: 8px; }
   #graph-toolbar .brand-small { display: none; }
 }
