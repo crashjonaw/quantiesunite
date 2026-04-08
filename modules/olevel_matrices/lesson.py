@@ -8,24 +8,17 @@ SECTIONS = [
         <h4>Notation and Dimensions</h4>
         <p>A matrix with m rows and n columns is called an m × n matrix (read "m by n").</p>
 
-        <p style="text-align: center;"><strong>A = (</strong><span style="font-size: 1.2em;">
-        a₁₁  a₁₂  a₁₃<br/>
-        a₂₁  a₂₂  a₂₃<br/>
-        a₃₁  a₃₂  a₃₃
-        <strong>)</strong></span></p>
+        <p>$$\\mathbf{A} = \\begin{pmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{pmatrix}$$</p>
 
-        <p>This is a 3 × 3 matrix. Element aᵢⱼ is in row i, column j.</p>
+        <p>This is a 3 × 3 matrix. Element \\(a_{ij}\\) is in row \\(i\\), column \\(j\\).</p>
 
         <div class="example-box">
-            <p><strong>Example 1:</strong> Matrix A = <strong>(</strong>
-            <span style="font-size: 1.1em;">
-            1  2  3<br/>
-            4  5  6
-            <strong>)</strong></span></p>
+            <p><strong>Example 1:</strong></p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}$$</p>
             <p>This is a 2 × 3 matrix.</p>
             <ul>
-                <li>a₁₁ = 1, a₁₂ = 2, a₁₃ = 3</li>
-                <li>a₂₁ = 4, a₂₂ = 5, a₂₃ = 6</li>
+                <li>\\(a_{11} = 1,\\ a_{12} = 2,\\ a_{13} = 3\\)</li>
+                <li>\\(a_{21} = 4,\\ a_{22} = 5,\\ a_{23} = 6\\)</li>
             </ul>
         </div>
 
@@ -41,26 +34,22 @@ SECTIONS = [
         <h4>Matrix Addition and Subtraction</h4>
         <p>Add or subtract corresponding elements. Matrices must have the same dimensions.</p>
 
-        <p style="text-align: center;">
-        <strong>A + B = (</strong>a₁₁+b₁₁  a₁₂+b₁₂<br/>a₂₁+b₂₁  a₂₂+b₂₂<strong>)</strong>
-        </p>
+        <p>$$\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} a_{11}+b_{11} & a_{12}+b_{12} \\\\ a_{21}+b_{21} & a_{22}+b_{22} \\end{pmatrix}$$</p>
 
         <div class="example-box">
             <p><strong>Example 2:</strong> Add matrices</p>
-            <p><strong>A = (</strong><span style="font-size: 1em;">1  2<br/>3  4<strong>)</strong></span>, <strong>B = (</strong><span style="font-size: 1em;">5  6<br/>7  8<strong>)</strong></span></p>
-            <p><strong>A + B = (</strong><span style="font-size: 1em;">6  8<br/>10  12<strong>)</strong></span></p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad \\mathbf{B} = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}$$</p>
+            <p>$$\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} 6 & 8 \\\\ 10 & 12 \\end{pmatrix}$$</p>
         </div>
 
         <h4>Scalar Multiplication</h4>
         <p>Multiply each element by the scalar.</p>
 
-        <p style="text-align: center;">
-        <strong>kA = (</strong>ka₁₁  ka₁₂<br/>ka₂₁  ka₂₂<strong>)</strong>
-        </p>
+        <p>$$k\\mathbf{A} = \\begin{pmatrix} ka_{11} & ka_{12} \\\\ ka_{21} & ka_{22} \\end{pmatrix}$$</p>
 
         <div class="example-box">
             <p><strong>Example 3:</strong> Scalar multiplication</p>
-            <p><strong>3A = 3 × (</strong><span style="font-size: 1em;">1  2<br/>3  4<strong>) = (</strong><span style="font-size: 1em;">3  6<br/>9  12<strong>)</strong></span></p>
+            <p>$$3\\mathbf{A} = 3 \\times \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} = \\begin{pmatrix} 3 & 6 \\\\ 9 & 12 \\end{pmatrix}$$</p>
         </div>
         """
     },
@@ -71,42 +60,42 @@ SECTIONS = [
         <p>Matrix multiplication is more complex than element-wise multiplication.</p>
 
         <h4>Compatibility</h4>
-        <p>To multiply A (m × n) by B (n × p), the number of columns in A must equal the number of rows in B. Result is m × p.</p>
+        <p>To multiply \\(\\mathbf{A}\\) (m × n) by \\(\\mathbf{B}\\) (n × p), the number of columns in \\(\\mathbf{A}\\) must equal the number of rows in \\(\\mathbf{B}\\). Result is m × p.</p>
 
         <h4>The Multiplication Process</h4>
-        <p>To find element (i,j) in AB:</p>
+        <p>To find element (i,j) in \\(\\mathbf{AB}\\):</p>
         <ol>
-            <li>Take row i from matrix A</li>
-            <li>Take column j from matrix B</li>
+            <li>Take row i from matrix \\(\\mathbf{A}\\)</li>
+            <li>Take column j from matrix \\(\\mathbf{B}\\)</li>
             <li>Multiply corresponding elements and sum</li>
         </ol>
 
         <div class="example-box">
             <p><strong>Example 4:</strong> Multiply 2×2 matrices</p>
-            <p><strong>A = (</strong><span style="font-size: 1em;">1  2<br/>3  4<strong>)</strong></span>, <strong>B = (</strong><span style="font-size: 1em;">2  0<br/>1  2<strong>)</strong></span></p>
-            <p><strong>AB:</strong></p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad \\mathbf{B} = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}$$</p>
+            <p><strong>\\(\\mathbf{AB}\\):</strong></p>
             <ul>
                 <li>(1,1) entry: (1)(2) + (2)(1) = 2 + 2 = 4</li>
                 <li>(1,2) entry: (1)(0) + (2)(2) = 0 + 4 = 4</li>
                 <li>(2,1) entry: (3)(2) + (4)(1) = 6 + 4 = 10</li>
                 <li>(2,2) entry: (3)(0) + (4)(2) = 0 + 8 = 8</li>
             </ul>
-            <p><strong>AB = (</strong><span style="font-size: 1em;">4  4<br/>10  8<strong>)</strong></span></p>
+            <p>$$\\mathbf{AB} = \\begin{pmatrix} 4 & 4 \\\\ 10 & 8 \\end{pmatrix}$$</p>
         </div>
 
         <h4>Important Properties</h4>
         <ul>
-            <li><strong>Not commutative:</strong> AB ≠ BA (order matters!)</li>
-            <li><strong>Associative:</strong> (AB)C = A(BC)</li>
-            <li><strong>Distributive:</strong> A(B + C) = AB + AC</li>
-            <li><strong>Identity:</strong> AI = IA = A (where I is identity matrix)</li>
+            <li><strong>Not commutative:</strong> \\(\\mathbf{AB} \\neq \\mathbf{BA}\\) (order matters!)</li>
+            <li><strong>Associative:</strong> \\((\\mathbf{AB})\\mathbf{C} = \\mathbf{A}(\\mathbf{BC})\\)</li>
+            <li><strong>Distributive:</strong> \\(\\mathbf{A}(\\mathbf{B} + \\mathbf{C}) = \\mathbf{AB} + \\mathbf{AC}\\)</li>
+            <li><strong>Identity:</strong> \\(\\mathbf{AI} = \\mathbf{IA} = \\mathbf{A}\\)</li>
         </ul>
 
         <div class="example-box">
-            <p><strong>Example 5:</strong> Show AB ≠ BA</p>
+            <p><strong>Example 5:</strong> Show \\(\\mathbf{AB} \\neq \\mathbf{BA}\\)</p>
             <p>Using matrices from Example 4:</p>
-            <p><strong>BA = (</strong><span style="font-size: 1em;">2  4<br/>7  10<strong>)</strong></span></p>
-            <p>This is different from AB = <strong>(</strong><span style="font-size: 1em;">4  4<br/>10  8<strong>)</strong></span></p>
+            <p>$$\\mathbf{BA} = \\begin{pmatrix} 2 & 4 \\\\ 7 & 10 \\end{pmatrix}$$</p>
+            <p>This is different from \\(\\mathbf{AB} = \\begin{pmatrix} 4 & 4 \\\\ 10 & 8 \\end{pmatrix}\\)</p>
         </div>
         """
     },
@@ -114,47 +103,45 @@ SECTIONS = [
         "title": "Determinant and Inverse of 2×2 Matrices",
         "body": """
         <h3>The Determinant</h3>
-        <p>For a 2×2 matrix <strong>A = (</strong><span style="font-size: 1em;">a  b<br/>c  d<strong>)</strong></span>, the <strong>determinant</strong> is:</p>
+        <p>For a 2×2 matrix \\(\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}\\), the <strong>determinant</strong> is:</p>
 
-        <p style="text-align: center; font-size: 1.2em;"><strong>det(A) = |A| = ad − bc</strong></p>
+        <p>$$\\det(\\mathbf{A}) = |\\mathbf{A}| = ad - bc$$</p>
 
         <h4>Properties of Determinants</h4>
         <ul>
-            <li>If det(A) = 0, the matrix is singular (non-invertible)</li>
-            <li>If det(A) ≠ 0, the matrix is non-singular (invertible)</li>
-            <li>det(AB) = det(A) × det(B)</li>
-            <li>det(A^T) = det(A) (determinant of transpose)</li>
+            <li>If \\(\\det(\\mathbf{A}) = 0\\), the matrix is singular (non-invertible)</li>
+            <li>If \\(\\det(\\mathbf{A}) \\neq 0\\), the matrix is non-singular (invertible)</li>
+            <li>\\(\\det(\\mathbf{AB}) = \\det(\\mathbf{A}) \\times \\det(\\mathbf{B})\\)</li>
+            <li>\\(\\det(\\mathbf{A}^T) = \\det(\\mathbf{A})\\)</li>
         </ul>
 
         <div class="example-box">
             <p><strong>Example 6:</strong> Find the determinant</p>
-            <p><strong>A = (</strong><span style="font-size: 1em;">3  2<br/>1  4<strong>)</strong></span></p>
-            <p>det(A) = (3)(4) − (2)(1) = 12 − 2 = 10</p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 3 & 2 \\\\ 1 & 4 \\end{pmatrix}$$</p>
+            <p>$$\\det(\\mathbf{A}) = (3)(4) - (2)(1) = 12 - 2 = 10$$</p>
         </div>
 
         <h3>The Inverse Matrix</h3>
-        <p>For a 2×2 matrix with det(A) ≠ 0:</p>
+        <p>For a 2×2 matrix with \\(\\det(\\mathbf{A}) \\neq 0\\):</p>
 
-        <p style="text-align: center; font-size: 1.2em;">
-        <strong>A⁻¹ = (1/det(A)) × (</strong><span style="font-size: 1em;">d  −b<br/>−c  a<strong>)</strong></span>
-        </p>
+        <p>$$\\mathbf{A}^{-1} = \\frac{1}{\\det(\\mathbf{A})} \\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$$</p>
 
-        <p>Note: Swap a and d, negate b and c, then multiply by 1/det(A).</p>
+        <p>Note: Swap \\(a\\) and \\(d\\), negate \\(b\\) and \\(c\\), then multiply by \\(\\frac{1}{\\det(\\mathbf{A})}\\).</p>
 
         <div class="example-box">
             <p><strong>Example 7:</strong> Find the inverse</p>
-            <p><strong>A = (</strong><span style="font-size: 1em;">3  2<br/>1  4<strong>)</strong></span>, det(A) = 10</p>
-            <p><strong>A⁻¹ = (1/10) × (</strong><span style="font-size: 1em;">4  −2<br/>−1  3<strong>) = (</strong><span style="font-size: 1em;">0.4  −0.2<br/>−0.1  0.3<strong>)</strong></span></p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 3 & 2 \\\\ 1 & 4 \\end{pmatrix}, \\quad \\det(\\mathbf{A}) = 10$$</p>
+            <p>$$\\mathbf{A}^{-1} = \\frac{1}{10} \\begin{pmatrix} 4 & -2 \\\\ -1 & 3 \\end{pmatrix} = \\begin{pmatrix} 0.4 & -0.2 \\\\ -0.1 & 0.3 \\end{pmatrix}$$</p>
         </div>
 
         <h4>Verification</h4>
-        <p><strong>AA⁻¹ = I</strong> and <strong>A⁻¹A = I</strong></p>
+        <p>\\(\\mathbf{A}\\mathbf{A}^{-1} = \\mathbf{I}\\) and \\(\\mathbf{A}^{-1}\\mathbf{A} = \\mathbf{I}\\)</p>
 
         <h4>Properties of Inverses</h4>
         <ul>
-            <li>(A⁻¹)⁻¹ = A</li>
-            <li>(AB)⁻¹ = B⁻¹A⁻¹ (note the order!)</li>
-            <li>If A is singular (det = 0), no inverse exists</li>
+            <li>\\((\\mathbf{A}^{-1})^{-1} = \\mathbf{A}\\)</li>
+            <li>\\((\\mathbf{AB})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1}\\) (note the order!)</li>
+            <li>If \\(\\mathbf{A}\\) is singular (det = 0), no inverse exists</li>
         </ul>
         """
     },
@@ -162,7 +149,7 @@ SECTIONS = [
         "title": "Solving Systems Using Matrices",
         "body": """
         <h3>Matrix Form of Linear Equations</h3>
-        <p>A system of linear equations can be written as <strong>AX = B</strong>, where:</p>
+        <p>A system of linear equations can be written as \\(\\mathbf{AX} = \\mathbf{B}\\), where:</p>
         <ul>
             <li><strong>A:</strong> Coefficient matrix</li>
             <li><strong>X:</strong> Variable matrix (column vector)</li>
@@ -170,25 +157,25 @@ SECTIONS = [
         </ul>
 
         <div class="example-box">
-            <p><strong>Example 8:</strong> System: 2x + 3y = 7, x − y = 1</p>
-            <p>Matrix form: <strong>(</strong><span style="font-size: 1em;">2  3<br/>1  −1<strong>)(</strong><span style="font-size: 1em;">x<br/>y<strong>) = (</strong><span style="font-size: 1em;">7<br/>1<strong>)</strong></span></p>
+            <p><strong>Example 8:</strong> System: \\(2x + 3y = 7\\), \\(x - y = 1\\)</p>
+            <p>Matrix form:</p>
+            <p>$$\\begin{pmatrix} 2 & 3 \\\\ 1 & -1 \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix}$$</p>
         </div>
 
         <h4>Solving Using Matrix Inverse</h4>
-        <p>If <strong>AX = B</strong>, then <strong>X = A⁻¹B</strong></p>
+        <p>If \\(\\mathbf{AX} = \\mathbf{B}\\), then \\(\\mathbf{X} = \\mathbf{A}^{-1}\\mathbf{B}\\)</p>
 
         <div class="example-box">
             <p><strong>Example 9:</strong> Solve using matrix inverse</p>
-            <p><strong>A = (</strong><span style="font-size: 1em;">2  3<br/>1  −1<strong>)</strong></span>, <strong>B = (</strong><span style="font-size: 1em;">7<br/>1<strong>)</strong></span></p>
-            <p>det(A) = (2)(−1) − (3)(1) = −2 − 3 = −5</p>
-            <p><strong>A⁻¹ = (−1/5)(</strong><span style="font-size: 1em;">−1  −3<br/>−1  2<strong>) = (</strong><span style="font-size: 1em;">1/5  3/5<br/>1/5  −2/5<strong>)</strong></span></p>
-            <p><strong>X = A⁻¹B = (</strong><span style="font-size: 1em;">1/5  3/5<br/>1/5  −2/5<strong>)(</strong><span style="font-size: 1em;">7<br/>1<strong>)</strong></span></p>
-            <p><strong>X = (</strong><span style="font-size: 1em;">7/5 + 3/5<br/>7/5 − 2/5<strong>) = (</strong><span style="font-size: 1em;">2<br/>1<strong>)</strong></span></p>
-            <p>So x = 2, y = 1</p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 2 & 3 \\\\ 1 & -1 \\end{pmatrix}, \\quad \\mathbf{B} = \\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix}$$</p>
+            <p>$$\\det(\\mathbf{A}) = (2)(-1) - (3)(1) = -2 - 3 = -5$$</p>
+            <p>$$\\mathbf{A}^{-1} = \\frac{1}{-5} \\begin{pmatrix} -1 & -3 \\\\ -1 & 2 \\end{pmatrix} = \\begin{pmatrix} \\frac{1}{5} & \\frac{3}{5} \\\\ \\frac{1}{5} & -\\frac{2}{5} \\end{pmatrix}$$</p>
+            <p>$$\\mathbf{X} = \\mathbf{A}^{-1}\\mathbf{B} = \\begin{pmatrix} \\frac{1}{5} & \\frac{3}{5} \\\\ \\frac{1}{5} & -\\frac{2}{5} \\end{pmatrix} \\begin{pmatrix} 7 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$$</p>
+            <p>So \\(x = 2,\\ y = 1\\)</p>
         </div>
 
         <h4>When Does No Solution Exist?</h4>
-        <p>If det(A) = 0, the system either has no solution or infinite solutions. The matrix method cannot be used directly.</p>
+        <p>If \\(\\det(\\mathbf{A}) = 0\\), the system either has no solution or infinite solutions. The matrix method cannot be used directly.</p>
         """
     },
     {
@@ -199,18 +186,19 @@ SECTIONS = [
 
         <h4>Common Transformation Matrices</h4>
         <ul>
-            <li><strong>Rotation by θ (counterclockwise):</strong> <strong>(</strong>cos θ  −sin θ<br/>sin θ  cos θ<strong>)</strong></li>
-            <li><strong>Reflection across x-axis:</strong> <strong>(</strong>1  0<br/>0  −1<strong>)</strong></li>
-            <li><strong>Reflection across y-axis:</strong> <strong>(</strong>−1  0<br/>0  1<strong>)</strong></li>
-            <li><strong>Reflection across y=x:</strong> <strong>(</strong>0  1<br/>1  0<strong>)</strong></li>
-            <li><strong>Scaling by factor k:</strong> <strong>(</strong>k  0<br/>0  k<strong>)</strong></li>
-            <li><strong>Stretch horizontally by k:</strong> <strong>(</strong>k  0<br/>0  1<strong>)</strong></li>
+            <li><strong>Rotation by \\(\\theta\\) (counterclockwise):</strong> \\(\\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}\\)</li>
+            <li><strong>Reflection across x-axis:</strong> \\(\\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}\\)</li>
+            <li><strong>Reflection across y-axis:</strong> \\(\\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\)</li>
+            <li><strong>Reflection across y = x:</strong> \\(\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}\\)</li>
+            <li><strong>Scaling by factor k:</strong> \\(\\begin{pmatrix} k & 0 \\\\ 0 & k \\end{pmatrix}\\)</li>
+            <li><strong>Stretch horizontally by k:</strong> \\(\\begin{pmatrix} k & 0 \\\\ 0 & 1 \\end{pmatrix}\\)</li>
         </ul>
 
         <div class="example-box">
             <p><strong>Example 10:</strong> Rotate point (1, 0) by 90° counterclockwise</p>
-            <p>Rotation matrix: <strong>(</strong><span style="font-size: 1em;">cos 90°  −sin 90°<br/>sin 90°  cos 90°<strong>) = (</strong><span style="font-size: 1em;">0  −1<br/>1  0<strong>)</strong></span></p>
-            <p><strong>(</strong><span style="font-size: 1em;">0  −1<br/>1  0<strong>)(</strong><span style="font-size: 1em;">1<br/>0<strong>) = (</strong><span style="font-size: 1em;">0<br/>1<strong>)</strong></span></p>
+            <p>Rotation matrix:</p>
+            <p>$$\\begin{pmatrix} \\cos 90° & -\\sin 90° \\\\ \\sin 90° & \\cos 90° \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$$</p>
+            <p>$$\\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$$</p>
             <p>Point (1, 0) rotates to (0, 1) ✓</p>
         </div>
 
@@ -219,9 +207,9 @@ SECTIONS = [
 
         <div class="example-box">
             <p><strong>Example 11:</strong> Reflect across y-axis, then rotate 90°</p>
-            <p>First apply: <strong>A = (</strong><span style="font-size: 1em;">−1  0<br/>0  1<strong>)</strong></span> (reflect)</p>
-            <p>Then apply: <strong>B = (</strong><span style="font-size: 1em;">0  −1<br/>1  0<strong>)</strong></span> (rotate)</p>
-            <p>Combined: <strong>BA = (</strong><span style="font-size: 1em;">0  −1<br/>1  0<strong>)(</strong><span style="font-size: 1em;">−1  0<br/>0  1<strong>) = (</strong><span style="font-size: 1em;">0  −1<br/>−1  0<strong>)</strong></span></p>
+            <p>First apply: \\(\\mathbf{A} = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}\\) (reflect)</p>
+            <p>Then apply: \\(\\mathbf{B} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}\\) (rotate)</p>
+            <p>$$\\mathbf{BA} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix} \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 0 & -1 \\\\ -1 & 0 \\end{pmatrix}$$</p>
         </div>
 
         <h4>Inverse Transformations</h4>
@@ -229,8 +217,8 @@ SECTIONS = [
 
         <div class="example-box">
             <p><strong>Example 12:</strong> To reverse a 90° rotation, apply the inverse</p>
-            <p>Rotation 90°: <strong>(</strong><span style="font-size: 1em;">0  −1<br/>1  0<strong>)</strong></span></p>
-            <p>Rotation −90° (inverse): <strong>(</strong><span style="font-size: 1em;">0  1<br/>−1  0<strong>)</strong></span></p>
+            <p>Rotation 90°: \\(\\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}\\)</p>
+            <p>Rotation −90° (inverse): \\(\\begin{pmatrix} 0 & 1 \\\\ -1 & 0 \\end{pmatrix}\\)</p>
         </div>
         """
     }

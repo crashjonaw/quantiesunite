@@ -52,10 +52,7 @@ SECTIONS = [
                 <li><strong>Add element-by-element:</strong> Add the elements in the same positions</li>
             </ol>
 
-            <p style="text-align: center; margin: 20px 0; font-family: monospace; font-size: 1.05em; padding: 15px">
-            <strong>A + B = (</strong>a₁₁+b₁₁  a₁₂+b₁₂<br/>
-            a₂₁+b₂₁  a₂₂+b₂₂<strong>)</strong>
-            </p>
+            <p>$$\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} a_{11}+b_{11} & a_{12}+b_{12} \\\\ a_{21}+b_{21} & a_{22}+b_{22} \\end{pmatrix}$$</p>
 
             <p><strong>Why must dimensions match?</strong> You can't add a 2×3 matrix to a 3×2 matrix because there are elements in one that have no "partner" in the other.</p>
 
@@ -102,27 +99,16 @@ SECTIONS = [
 
         <div class="worked-example" style="margin-top: 25px;">
             <h4>Worked Example: Adding 2×3 Matrices</h4>
-            <p><strong>Question:</strong> Find A + B where:</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>A = (</strong>1  2  3<br/>
-            4  5  6<strong>)&nbsp;&nbsp;&nbsp;B = (</strong>10  20  30<br/>
-            40  50  60<strong>)</strong>
-            </p>
+            <p><strong>Question:</strong> Find \\(\\mathbf{A} + \\mathbf{B}\\) where:</p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 & 3 \\\\ 4 & 5 & 6 \\end{pmatrix}, \\quad \\mathbf{B} = \\begin{pmatrix} 10 & 20 & 30 \\\\ 40 & 50 & 60 \\end{pmatrix}$$</p>
             <p><strong>Solution:</strong></p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>A + B = (</strong>1+10  2+20  3+30<br/>
-            4+40  5+50  6+60<strong>) = (</strong>11  22  33<br/>
-            44  55  66<strong>)</strong>
-            </p>
+            <p>$$\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} 1+10 & 2+20 & 3+30 \\\\ 4+40 & 5+50 & 6+60 \\end{pmatrix} = \\begin{pmatrix} 11 & 22 & 33 \\\\ 44 & 55 & 66 \\end{pmatrix}$$</p>
         </div>
 
         <div class="concept-box" style="margin-top: 25px;">
             <h3>Subtraction</h3>
             <p>Subtraction works exactly the same way as addition—just subtract corresponding elements:</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>A − B = (</strong>a₁₁−b₁₁  a₁₂−b₁₂<br/>
-            a₂₁−b₂₁  a₂₂−b₂₂<strong>)</strong>
-            </p>
+            <p>$$\\mathbf{A} - \\mathbf{B} = \\begin{pmatrix} a_{11}-b_{11} & a_{12}-b_{12} \\\\ a_{21}-b_{21} & a_{22}-b_{22} \\end{pmatrix}$$</p>
         </div>
         """
     },
@@ -134,15 +120,9 @@ SECTIONS = [
             <p>A <strong>scalar</strong> is just an ordinary number (as opposed to a matrix). Scalar multiplication means multiplying every element in the matrix by that number.</p>
 
             <p><strong>Real-world example:</strong> If a store sells 3 items at certain prices, and they want to apply a 50% discount, they multiply each price by 0.5:</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            Prices: <strong>(</strong>20  30  40<strong>)</strong><br/>
-            After 50% discount: 0.5 × <strong>(</strong>20  30  40<strong>) = (</strong>10  15  20<strong>)</strong>
-            </p>
+            <p>$$\\text{Prices: } \\begin{pmatrix} 20 & 30 & 40 \\end{pmatrix} \\quad \\Rightarrow \\quad 0.5 \\times \\begin{pmatrix} 20 & 30 & 40 \\end{pmatrix} = \\begin{pmatrix} 10 & 15 & 20 \\end{pmatrix}$$</p>
 
-            <p style="text-align: center; margin: 20px 0; font-family: monospace; font-size: 1.05em; padding: 15px">
-            <strong>k·A = (</strong>ka₁₁  ka₁₂<br/>
-            ka₂₁  ka₂₂<strong>)</strong>
-            </p>
+            <p>$$k \\cdot \\mathbf{A} = \\begin{pmatrix} ka_{11} & ka_{12} \\\\ ka_{21} & ka_{22} \\end{pmatrix}$$</p>
 
             <p><strong>Key insight:</strong> A single number multiplied by every element means you're scaling the entire matrix. This is why it's called "scalar" multiplication.</p>
 
@@ -177,23 +157,19 @@ SECTIONS = [
 
         <div class="worked-example" style="margin-top: 25px;">
             <h4>Worked Example: Scalar Multiplication</h4>
-            <p><strong>Question:</strong> Find 2A where <strong>A = (</strong>5  -3<br/>1   4<strong>)</strong></p>
+            <p><strong>Question:</strong> Find \\(2\\mathbf{A}\\) where \\(\\mathbf{A} = \\begin{pmatrix} 5 & -3 \\\\ 1 & 4 \\end{pmatrix}\\)</p>
             <p><strong>Solution:</strong> Multiply each element by 2:</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            2A = 2 × <strong>(</strong>5  -3<br/>
-            1   4<strong>) = (</strong>10  -6<br/>
-            2    8<strong>)</strong>
-            </p>
+            <p>$$2\\mathbf{A} = 2 \\times \\begin{pmatrix} 5 & -3 \\\\ 1 & 4 \\end{pmatrix} = \\begin{pmatrix} 10 & -6 \\\\ 2 & 8 \\end{pmatrix}$$</p>
         </div>
 
         <div class="concept-box" style="margin-top: 25px;">
             <h3>Properties of Matrix Operations</h3>
             <ul style="margin-left: 20px;">
-                <li><strong>Commutativity of addition:</strong> A + B = B + A (order doesn't matter)</li>
-                <li><strong>Associativity:</strong> (A + B) + C = A + (B + C)</li>
-                <li><strong>Distributive law:</strong> k(A + B) = kA + kB (scalar distributes over addition)</li>
-                <li><strong>Identity:</strong> A + 0 = A (adding the zero matrix doesn't change anything)</li>
-                <li><strong>Scalar associativity:</strong> k(mA) = (km)A (order of scalar multiplication doesn't matter)</li>
+                <li><strong>Commutativity of addition:</strong> \\(\\mathbf{A} + \\mathbf{B} = \\mathbf{B} + \\mathbf{A}\\)</li>
+                <li><strong>Associativity:</strong> \\((\\mathbf{A} + \\mathbf{B}) + \\mathbf{C} = \\mathbf{A} + (\\mathbf{B} + \\mathbf{C})\\)</li>
+                <li><strong>Distributive law:</strong> \\(k(\\mathbf{A} + \\mathbf{B}) = k\\mathbf{A} + k\\mathbf{B}\\)</li>
+                <li><strong>Identity:</strong> \\(\\mathbf{A} + \\mathbf{0} = \\mathbf{A}\\)</li>
+                <li><strong>Scalar associativity:</strong> \\(k(m\\mathbf{A}) = (km)\\mathbf{A}\\)</li>
             </ul>
         </div>
         """

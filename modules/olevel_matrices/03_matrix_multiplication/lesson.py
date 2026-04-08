@@ -47,15 +47,13 @@ SECTIONS = [
         "body": """
         <div class="concept-box">
             <h3>Compatibility: When Can You Multiply?</h3>
-            <p>Matrix multiplication is more restrictive than addition. To multiply A (dimensions m × <strong>n</strong>) by B (dimensions <strong>n</strong> × p):</p>
+            <p>Matrix multiplication is more restrictive than addition. To multiply \\(\\mathbf{A}\\) (dimensions \\(m \\times n\\)) by \\(\\mathbf{B}\\) (dimensions \\(n \\times p\\)):</p>
             <ul style="margin-left: 20px;">
                 <li><strong>The inner dimensions must match:</strong> Columns of A = Rows of B</li>
-                <li><strong>Result dimensions:</strong> m × p</li>
+                <li><strong>Result dimensions:</strong> \\(m \\times p\\)</li>
             </ul>
 
-            <p style="text-align: center; margin: 15px 0; font-size: 1.1em; padding: 10px">
-            (m × <strong>n</strong>) × (<strong>n</strong> × p) = (m × p)
-            </p>
+            <p>$$(m \\times \\mathbf{n}) \\times (\\mathbf{n} \\times p) = (m \\times p)$$</p>
 
             <p><strong>Example:</strong> A 2×3 matrix times a 3×4 matrix gives a 2×4 result.</p>
             <p><strong>NOT allowed:</strong> A 2×3 matrix times a 2×4 matrix (3 ≠ 2, so they're incompatible).</p>
@@ -67,10 +65,10 @@ SECTIONS = [
 
         <div class="concept-box" style="margin-top: 25px;">
             <h3>The Multiplication Process: Dot Product</h3>
-            <p>To find element (i, j) in the result AB:</p>
+            <p>To find element \\((i, j)\\) in the result \\(\\mathbf{AB}\\):</p>
             <ol style="margin-left: 20px;">
-                <li>Take row <em>i</em> from matrix A</li>
-                <li>Take column <em>j</em> from matrix B</li>
+                <li>Take row \\(i\\) from matrix \\(\\mathbf{A}\\)</li>
+                <li>Take column \\(j\\) from matrix \\(\\mathbf{B}\\)</li>
                 <li><strong>Multiply corresponding elements and sum them</strong> (this is called the <em>dot product</em> or <em>inner product</em>)</li>
             </ol>
 
@@ -142,48 +140,36 @@ SECTIONS = [
         <div class="concept-box">
             <h3>Important Properties</h3>
 
-            <h4 style="margin-top: 15px">NOT Commutative: AB ≠ BA</h4>
+            <h4 style="margin-top: 15px">NOT Commutative: \\(\\mathbf{AB} \\neq \\mathbf{BA}\\)</h4>
             <p>This is the biggest difference from regular multiplication! Order matters.</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; color: #f85149; padding: 10px">
-            <strong>A × B ≠ B × A</strong> (in general)
+            <p style="text-align: center; margin: 15px 0; font-size: 1em; color: #f85149; padding: 10px">
+            <strong>\\(\\mathbf{A} \\times \\mathbf{B} \\neq \\mathbf{B} \\times \\mathbf{A}\\)</strong> (in general)
             </p>
 
             <div class="worked-example" style="margin-top: 15px;">
-                <h5 style="margin-top: 0;">Example: AB ≠ BA</h5>
-                <p><strong>A = (</strong>1  2<br/>3  4<strong>)&nbsp;&nbsp;&nbsp;B = (</strong>2  0<br/>1  2<strong>)</strong></p>
+                <h5 style="margin-top: 0;">Example: \\(\\mathbf{AB} \\neq \\mathbf{BA}\\)</h5>
+                <p>$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, \\quad \\mathbf{B} = \\begin{pmatrix} 2 & 0 \\\\ 1 & 2 \\end{pmatrix}$$</p>
 
-                <p style="margin-top: 10px;"><strong>AB:</strong></p>
-                <p style="font-family: monospace; margin: 5px 0">
-                (1,1): (1×2) + (2×1) = 4<br/>
-                (1,2): (1×0) + (2×2) = 4<br/>
-                (2,1): (3×2) + (4×1) = 10<br/>
-                (2,2): (3×0) + (4×2) = 8
-                </p>
-                <p style="font-family: monospace; padding: 8px; border-radius: 4px">
-                <strong>AB = (</strong>4  4<br/>10  8<strong>)</strong>
-                </p>
+                <p style="margin-top: 10px;"><strong>\\(\\mathbf{AB}\\):</strong></p>
+                <p>\\((1,1): (1 \\times 2) + (2 \\times 1) = 4\\), \\((1,2): (1 \\times 0) + (2 \\times 2) = 4\\)</p>
+                <p>\\((2,1): (3 \\times 2) + (4 \\times 1) = 10\\), \\((2,2): (3 \\times 0) + (4 \\times 2) = 8\\)</p>
+                <p>$$\\mathbf{AB} = \\begin{pmatrix} 4 & 4 \\\\ 10 & 8 \\end{pmatrix}$$</p>
 
-                <p style="margin-top: 10px;"><strong>BA:</strong></p>
-                <p style="font-family: monospace; margin: 5px 0">
-                (1,1): (2×1) + (0×3) = 2<br/>
-                (1,2): (2×2) + (0×4) = 4<br/>
-                (2,1): (1×1) + (2×3) = 7<br/>
-                (2,2): (1×2) + (2×4) = 10
-                </p>
-                <p style="font-family: monospace; padding: 8px; border-radius: 4px">
-                <strong>BA = (</strong>2  4<br/>7  10<strong>)</strong>
-                </p>
+                <p style="margin-top: 10px;"><strong>\\(\\mathbf{BA}\\):</strong></p>
+                <p>\\((1,1): (2 \\times 1) + (0 \\times 3) = 2\\), \\((1,2): (2 \\times 2) + (0 \\times 4) = 4\\)</p>
+                <p>\\((2,1): (1 \\times 1) + (2 \\times 3) = 7\\), \\((2,2): (1 \\times 2) + (2 \\times 4) = 10\\)</p>
+                <p>$$\\mathbf{BA} = \\begin{pmatrix} 2 & 4 \\\\ 7 & 10 \\end{pmatrix}$$</p>
 
-                <p style="color: #2dd4bf; margin-top: 10px;"><strong>✓ Clearly AB ≠ BA</strong></p>
+                <p style="color: #2dd4bf; margin-top: 10px;"><strong>✓ Clearly \\(\\mathbf{AB} \\neq \\mathbf{BA}\\)</strong></p>
             </div>
 
-            <h4 class="accent-heading" style="margin-top: 20px;">Associative: (AB)C = A(BC)</h4>
+            <h4 class="accent-heading" style="margin-top: 20px;">Associative: \\((\\mathbf{AB})\\mathbf{C} = \\mathbf{A}(\\mathbf{BC})\\)</h4>
             <p>The grouping doesn't matter (though you still can't change the order).</p>
 
-            <h4 style="margin-top: 15px">Distributive: A(B + C) = AB + AC</h4>
+            <h4 style="margin-top: 15px">Distributive: \\(\\mathbf{A}(\\mathbf{B} + \\mathbf{C}) = \\mathbf{AB} + \\mathbf{AC}\\)</h4>
             <p>You can distribute multiplication over addition.</p>
 
-            <h4 style="margin-top: 15px">Identity: AI = IA = A</h4>
+            <h4 style="margin-top: 15px">Identity: \\(\\mathbf{AI} = \\mathbf{IA} = \\mathbf{A}\\)</h4>
             <p>Multiplying by the identity matrix doesn't change the matrix (like multiplying by 1).</p>
         </div>
 
@@ -191,8 +177,8 @@ SECTIONS = [
             <h4 style="color: #f85149; margin-top: 0;">Common Mistakes to Avoid</h4>
             <ul style="margin-left: 20px; margin-bottom: 0;">
                 <li><strong>Forgetting to check compatibility:</strong> Always verify columns of A = rows of B</li>
-                <li><strong>Computing element-wise multiplication instead:</strong> (A)(B) ≠ just multiplying corresponding elements</li>
-                <li><strong>Assuming AB = BA:</strong> This is almost never true for matrices</li>
+                <li><strong>Computing element-wise multiplication instead:</strong> \\(\\mathbf{AB}\\) ≠ just multiplying corresponding elements</li>
+                <li><strong>Assuming \\(\\mathbf{AB} = \\mathbf{BA}\\):</strong> This is almost never true for matrices</li>
                 <li><strong>Wrong order in the dot product:</strong> Use row from first matrix, column from second matrix</li>
             </ul>
         </div>

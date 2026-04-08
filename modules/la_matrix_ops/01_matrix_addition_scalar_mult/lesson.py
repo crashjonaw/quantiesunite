@@ -5,29 +5,29 @@ SECTIONS = [
         "title": "Foundational Concepts",
         "body": """
         <div class="concept-box">
-        <p><strong>Matrix Addition:</strong> Two matrices A and B of the same dimensions (m × n) can be added element-wise to produce a matrix C of the same dimension:</p>
-        <div class="code-block">If A = [aᵢⱼ] and B = [bᵢⱼ], then C = A + B = [aᵢⱼ + bᵢⱼ]</div>
+        <p><strong>Matrix Addition:</strong> Two matrices \\(\\mathbf{A}\\) and \\(\\mathbf{B}\\) of the same dimensions (m × n) can be added element-wise to produce a matrix \\(\\mathbf{C}\\) of the same dimension:</p>
+        <p>$$\\text{If } \\mathbf{A} = [a_{ij}] \\text{ and } \\mathbf{B} = [b_{ij}], \\text{ then } \\mathbf{C} = \\mathbf{A} + \\mathbf{B} = [a_{ij} + b_{ij}]$$</p>
         </div>
 
         <p><strong>Properties of matrix addition:</strong></p>
         <ul>
-        <li><strong>Commutative:</strong> A + B = B + A</li>
-        <li><strong>Associative:</strong> (A + B) + C = A + (B + C)</li>
-        <li><strong>Identity element:</strong> A + 0 = A (where 0 is the zero matrix)</li>
-        <li><strong>Inverse element:</strong> A + (-A) = 0</li>
+        <li><strong>Commutative:</strong> \\(\\mathbf{A} + \\mathbf{B} = \\mathbf{B} + \\mathbf{A}\\)</li>
+        <li><strong>Associative:</strong> \\((\\mathbf{A} + \\mathbf{B}) + \\mathbf{C} = \\mathbf{A} + (\\mathbf{B} + \\mathbf{C})\\)</li>
+        <li><strong>Identity element:</strong> \\(\\mathbf{A} + \\mathbf{0} = \\mathbf{A}\\)</li>
+        <li><strong>Inverse element:</strong> \\(\\mathbf{A} + (-\\mathbf{A}) = \\mathbf{0}\\)</li>
         </ul>
 
         <div class="concept-box">
-        <p><strong>Scalar Multiplication:</strong> Multiplying a matrix A by a scalar c produces a matrix where every element is multiplied by c:</p>
-        <div class="code-block">cA = [caᵢⱼ]</div>
+        <p><strong>Scalar Multiplication:</strong> Multiplying a matrix \\(\\mathbf{A}\\) by a scalar \\(c\\) produces a matrix where every element is multiplied by \\(c\\):</p>
+        <p>$$c\\mathbf{A} = [c \\cdot a_{ij}]$$</p>
         </div>
 
         <p><strong>Properties of scalar multiplication:</strong></p>
         <ul>
-        <li><strong>Distributive over addition (matrices):</strong> c(A + B) = cA + cB</li>
-        <li><strong>Distributive over addition (scalars):</strong> (c + d)A = cA + dA</li>
-        <li><strong>Associative:</strong> (cd)A = c(dA)</li>
-        <li><strong>Identity:</strong> 1A = A</li>
+        <li><strong>Distributive over addition (matrices):</strong> \\(c(\\mathbf{A} + \\mathbf{B}) = c\\mathbf{A} + c\\mathbf{B}\\)</li>
+        <li><strong>Distributive over addition (scalars):</strong> \\((c + d)\\mathbf{A} = c\\mathbf{A} + d\\mathbf{A}\\)</li>
+        <li><strong>Associative:</strong> \\((cd)\\mathbf{A} = c(d\\mathbf{A})\\)</li>
+        <li><strong>Identity:</strong> \\(1\\mathbf{A} = \\mathbf{A}\\)</li>
         </ul>
         """
     },
@@ -36,27 +36,22 @@ SECTIONS = [
         "body": """
         <div class="worked-example">
         <p><strong>Example 1: Matrix Addition</strong></p>
-        <div class="code-block">A = [1  2]    B = [3  0]
-    [4  5]        [2  1]
-
-A + B = [1+3  2+0] = [4  2]
-        [4+2  5+1]   [6  6]</div>
+        <p>$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 4 & 5 \\end{pmatrix}, \\quad \\mathbf{B} = \\begin{pmatrix} 3 & 0 \\\\ 2 & 1 \\end{pmatrix}$$</p>
+        <p>$$\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} 1+3 & 2+0 \\\\ 4+2 & 5+1 \\end{pmatrix} = \\begin{pmatrix} 4 & 2 \\\\ 6 & 6 \\end{pmatrix}$$</p>
         </div>
 
         <div class="worked-example">
         <p><strong>Example 2: Scalar Multiplication</strong></p>
-        <div class="code-block">2A = [2·1  2·2] = [2  4]
-     [2·4  2·5]   [8 10]</div>
+        <p>$$2\\mathbf{A} = \\begin{pmatrix} 2 \\cdot 1 & 2 \\cdot 2 \\\\ 2 \\cdot 4 & 2 \\cdot 5 \\end{pmatrix} = \\begin{pmatrix} 2 & 4 \\\\ 8 & 10 \\end{pmatrix}$$</p>
         </div>
 
         <div class="worked-example">
         <p><strong>Example 3: Combined Operations</strong></p>
-        <div class="code-block">A + 2B = [1  2] + [6  0] = [7  2]
-         [4  5]   [4  2]   [8  7]</div>
+        <p>$$\\mathbf{A} + 2\\mathbf{B} = \\begin{pmatrix} 1 & 2 \\\\ 4 & 5 \\end{pmatrix} + \\begin{pmatrix} 6 & 0 \\\\ 4 & 2 \\end{pmatrix} = \\begin{pmatrix} 7 & 2 \\\\ 8 & 7 \\end{pmatrix}$$</p>
         </div>
 
         <div class="success-box">
-        <p><strong>Verification:</strong> You can always verify addition by checking each element individually. For 2B above: 2·3=6, 2·0=0, 2·2=4, 2·1=2 ✓</p>
+        <p><strong>Verification:</strong> You can always verify addition by checking each element individually. For \\(2\\mathbf{B}\\) above: \\(2 \\cdot 3 = 6\\), \\(2 \\cdot 0 = 0\\), \\(2 \\cdot 2 = 4\\), \\(2 \\cdot 1 = 2\\) ✓</p>
         </div>
         """
     },
@@ -64,7 +59,7 @@ A + B = [1+3  2+0] = [4  2]
         "title": "Vector Spaces and Structure",
         "body": """
         <div class="concept-box">
-        <p><strong>Vector Space of Matrices:</strong> The set of all m × n matrices with addition and scalar multiplication forms a vector space. This is fundamental to linear algebra—it allows us to apply all vector space concepts (subspaces, span, linear independence, etc.) to matrices.</p>
+        <p><strong>Vector Space of Matrices:</strong> The set of all \\(m \\times n\\) matrices with addition and scalar multiplication forms a vector space. This is fundamental to linear algebra—it allows us to apply all vector space concepts (subspaces, span, linear independence, etc.) to matrices.</p>
         </div>
 
         <p><strong>Key insight:</strong> Because matrices form a vector space under these operations, we can:</p>

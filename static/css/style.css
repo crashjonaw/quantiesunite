@@ -198,12 +198,26 @@ html, body {
 [data-theme="bright"] .section-page-indicator { color: #64748b; }
 [data-theme="bright"] .section-heading { border-color: #e2e8f0; }
 
-/* Hero sections (dashboard, trophies, admin) — white with curved border */
-[data-theme="bright"] .dash-hero-bg { background: #fff; }
-[data-theme="bright"] .dash-hero-bg::after { background: none; }
-[data-theme="bright"] .dash-hero { border-bottom: 1px solid #e2e8f0; border-radius: 0 0 24px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
+/* Hero sections (dashboard, trophies, admin) — light gradients */
+[data-theme="bright"] .dash-hero-bg {
+  background: linear-gradient(135deg, #e8f0fe 0%, #d4e4fc 40%, #c7d9f8 70%, #e8f0fe 100%);
+}
+[data-theme="bright"] .dash-hero-bg::after {
+  background: radial-gradient(ellipse at 30% 20%, rgba(65,105,225,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(99,102,241,0.04) 0%, transparent 50%);
+}
+[data-theme="bright"] .dash-hero { border-bottom: 1px solid #c7d2fe; border-radius: 0 0 24px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
 [data-theme="bright"] .dash-hero-title { color: #1e293b; background: none; -webkit-text-fill-color: #1e293b; }
-[data-theme="bright"] .dash-hero-sub { color: #64748b; }
+[data-theme="bright"] .dash-hero-sub { color: #475569; }
+/* Exam hero bright — light purple */
+[data-theme="bright"] .exam-hero-bg {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 40%, #ddd6fe 70%, #f3e8ff 100%) !important;
+}
+[data-theme="bright"] .exam-hero-bg::after {
+  background: radial-gradient(ellipse at 30% 20%, rgba(147,51,234,0.06) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(192,132,252,0.04) 0%, transparent 50%) !important;
+}
+[data-theme="bright"] .exam-hero { border-color: #c4b5fd; }
 
 /* Tables */
 [data-theme="bright"] table { border-color: #e2e8f0; }
@@ -2547,10 +2561,11 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   margin: 0 auto 0;
   max-width: 1200px;
 }
+/* Dashboard hero — deep blue */
 .dash-hero-bg {
   position: absolute; inset: 0;
-  background: var(--bg2);
-  border: 1px solid var(--border);
+  background: linear-gradient(135deg, #0c1222 0%, #131d3a 40%, #1a2744 70%, #0c1222 100%);
+  border: 1px solid rgba(65,105,225,0.2);
   border-radius: 0 0 20px 20px;
   z-index: 0;
 }
@@ -2558,7 +2573,19 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   content: '';
   position: absolute; inset: 0;
   border-radius: 0 0 20px 20px;
-  background: radial-gradient(ellipse at 30% 20%, rgba(65,105,225,0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 30% 20%, rgba(65,105,225,0.12) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(99,102,241,0.06) 0%, transparent 50%);
+}
+
+/* Exam hero — deep purple + symmetric vertical padding for centering */
+.exam-hero { padding: 80px 24px 80px; }
+.exam-hero-bg {
+  background: linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 40%, #3b2560 70%, #1a0a2e 100%) !important;
+  border-color: rgba(147,51,234,0.25) !important;
+}
+.exam-hero-bg::after {
+  background: radial-gradient(ellipse at 30% 20%, rgba(147,51,234,0.12) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(192,132,252,0.06) 0%, transparent 50%) !important;
 }
 .dash-hero-content {
   position: relative; z-index: 1;
@@ -3065,8 +3092,6 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
 }
 
 /* ── Bright theme overrides — Dashboard ──────────────────────────── */
-[data-theme="bright"] .dash-hero-bg { background: #fff; }
-[data-theme="bright"] .dash-hero-bg::after { background: none; }
 [data-theme="bright"] .dash-hero-title { color: #1e293b; }
 [data-theme="bright"] .dash-hero-sub { color: #475569; }
 [data-theme="bright"] .dash-hero-avatar {
@@ -3125,6 +3150,7 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
 }
 @media (max-width: 480px) {
   .dash-hero { padding: 72px 16px 28px; }
+  .exam-hero { padding: 72px 16px 72px; }
   .dash-hero-stats { gap: 20px; }
   .dash-hero-circle { width: 76px; height: 76px; }
   .dash-hero-num { font-size: 0.95rem; }

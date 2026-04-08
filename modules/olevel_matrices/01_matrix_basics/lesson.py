@@ -40,11 +40,7 @@ SECTIONS = [
 
             <p>A <strong>matrix</strong> is exactly this: a rectangular arrangement of numbers in rows and columns. In matrix form, we'd write the scores (without labels) as:</p>
 
-            <p style="text-align: center; margin: 20px 0; font-family: monospace; font-size: 1.05em; padding: 15px">
-            <strong>M</strong> = <span style="font-weight: bold;">(</span>85  92  88  79<br/>
-            78  85  91  87<br/>
-            92  87  85  90<span style="font-weight: bold;">)</span>
-            </p>
+            <p>$$\\mathbf{M} = \\begin{pmatrix} 85 & 92 & 88 & 79 \\\\ 78 & 85 & 91 & 87 \\\\ 92 & 87 & 85 & 90 \\end{pmatrix}$$</p>
 
             <p><strong>Why do we use matrices?</strong> Matrices allow us to:</p>
             <ul style="margin-left: 20px;">
@@ -63,13 +59,9 @@ SECTIONS = [
             <h3>Counting Rows and Columns</h3>
             <p>The <strong>dimensions</strong> of a matrix tell you its size. A matrix with <strong>m</strong> rows and <strong>n</strong> columns is called an <strong>m × n</strong> matrix (read "m by n").</p>
 
-            <p style="text-align: center; margin: 20px 0; font-family: monospace; font-size: 1.05em; padding: 15px">
-            <strong>A</strong> = <span style="font-weight: bold;">(</span>a<sub>11</sub>  a<sub>12</sub>  a<sub>13</sub><br/>
-            a<sub>21</sub>  a<sub>22</sub>  a<sub>23</sub><br/>
-            a<sub>31</sub>  a<sub>32</sub>  a<sub>33</sub><span style="font-weight: bold;">)</span>&nbsp;&nbsp;&nbsp;<strong>3 × 3 matrix</strong>
-            </p>
+            <p>$$\\mathbf{A} = \\begin{pmatrix} a_{11} & a_{12} & a_{13} \\\\ a_{21} & a_{22} & a_{23} \\\\ a_{31} & a_{32} & a_{33} \\end{pmatrix} \\quad \\text{3 × 3 matrix}$$</p>
 
-            <p><strong>Element notation:</strong> The element in row <em>i</em> and column <em>j</em> is written as a<sub>ij</sub>.</p>
+            <p><strong>Element notation:</strong> The element in row \\(i\\) and column \\(j\\) is written as \\(a_{ij}\\).</p>
 
             <svg viewBox="-35 -5 430 200" style="margin: 20px auto; display: block; max-width: 100%; height: auto;">
                 <!-- Grid -->
@@ -109,7 +101,7 @@ SECTIONS = [
                 <text x="275" y="175" font-size='12' fill='currentColor' opacity='0.6' text-anchor='middle'>Col 3</text>
             </svg>
 
-            <p><strong>Key point:</strong> When we write a<sub>ij</sub>, the first number is the row, the second is the column. So a<sub>23</sub> means "row 2, column 3".</p>
+            <p><strong>Key point:</strong> When we write \\(a_{ij}\\), the first number is the row, the second is the column. So \\(a_{23}\\) means "row 2, column 3".</p>
         </div>
         """
     },
@@ -122,54 +114,35 @@ SECTIONS = [
 
             <h4 class="accent-heading" style="margin-top: 20px;">Square Matrix</h4>
             <p>A matrix where the number of rows equals the number of columns (m = n).</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>(</strong>3  7<br/>
-            1  5<strong>)</strong>&nbsp;&nbsp;&nbsp;<strong>2 × 2</strong> square matrix
-            </p>
+            <p>$$\\begin{pmatrix} 3 & 7 \\\\ 1 & 5 \\end{pmatrix} \\quad \\text{2 × 2 square matrix}$$</p>
 
             <h4 class="accent-heading" style="margin-top: 20px;">Identity Matrix (I)</h4>
             <p>A square matrix with 1s on the main diagonal and 0s everywhere else. Think of it as the "matrix version of 1"—multiplying by I doesn't change anything.</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>I</strong> = <strong>(</strong>1  0<br/>
-            0  1<strong>)</strong>&nbsp;&nbsp;&nbsp;<strong>2 × 2</strong> identity matrix
-            </p>
+            <p>$$\\mathbf{I} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} \\quad \\text{2 × 2 identity matrix}$$</p>
 
             <h4 class="accent-heading" style="margin-top: 20px;">Zero Matrix</h4>
             <p>All elements are 0. This is the "matrix version of 0".</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>(</strong>0  0  0<br/>
-            0  0  0<strong>)</strong>&nbsp;&nbsp;&nbsp;2 × 3 zero matrix
-            </p>
+            <p>$$\\begin{pmatrix} 0 & 0 & 0 \\\\ 0 & 0 & 0 \\end{pmatrix} \\quad \\text{2 × 3 zero matrix}$$</p>
 
             <h4 class="accent-heading" style="margin-top: 20px;">Row Matrix (Row Vector)</h4>
             <p>A matrix with just one row. Useful for storing a list of values.</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>(</strong>5  -2  8  3<strong>)</strong>&nbsp;&nbsp;&nbsp;<strong>1 × 4</strong> row matrix
-            </p>
+            <p>$$\\begin{pmatrix} 5 & -2 & 8 & 3 \\end{pmatrix} \\quad \\text{1 × 4 row matrix}$$</p>
 
             <h4 class="accent-heading" style="margin-top: 20px;">Column Matrix (Column Vector)</h4>
             <p>A matrix with just one column. Often used to represent unknowns in equations.</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>(</strong>x<br/>
-            y<br/>
-            z<strong>)</strong>&nbsp;&nbsp;&nbsp;<strong>3 × 1</strong> column matrix
-            </p>
+            <p>$$\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} \\quad \\text{3 × 1 column matrix}$$</p>
         </div>
 
         <div class="worked-example" style="margin-top: 25px;">
             <h4>Worked Example: Identifying Dimensions</h4>
-            <p><strong>Question:</strong> What are the dimensions of this matrix, and what is a₂₁?</p>
-            <p style="text-align: center; margin: 15px 0; font-family: monospace; font-size: 1em; padding: 10px">
-            <strong>M</strong> = <strong>(</strong>10  -3   5<br/>
-            &nbsp;2   7   1<br/>
-            &nbsp;6   0  -4<strong>)</strong>
-            </p>
+            <p><strong>Question:</strong> What are the dimensions of this matrix, and what is \\(a_{21}\\)?</p>
+            <p>$$\\mathbf{M} = \\begin{pmatrix} 10 & -3 & 5 \\\\ 2 & 7 & 1 \\\\ 6 & 0 & -4 \\end{pmatrix}$$</p>
             <p><strong>Solution:</strong></p>
             <ul style="margin-left: 20px;">
                 <li>Count rows: 3</li>
                 <li>Count columns: 3</li>
                 <li>Dimensions: <strong>3 × 3</strong></li>
-                <li>a₂₁ is in row 2, column 1, which is <strong>2</strong></li>
+                <li>\\(a_{21}\\) is in row 2, column 1, which is <strong>2</strong></li>
             </ul>
         </div>
         """
