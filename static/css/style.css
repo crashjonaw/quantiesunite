@@ -4350,8 +4350,8 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
 }
 .trophy-hero-bg {
   position: absolute; inset: 0;
-  background: var(--bg2);
-  border: 1px solid var(--border);
+  background: linear-gradient(135deg, #1a1400 0%, #2d2200 30%, #3d2e00 60%, #1a1400 100%);
+  border: 1px solid rgba(255,215,0,0.2);
   border-radius: 0 0 20px 20px;
   z-index: 0;
 }
@@ -4359,7 +4359,8 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   content: '';
   position: absolute; inset: 0;
   border-radius: 0 0 20px 20px;
-  background: radial-gradient(ellipse at 30% 20%, rgba(255,215,0,0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,215,0,0.12) 0%, transparent 60%),
+              radial-gradient(ellipse at 70% 80%, rgba(218,165,32,0.08) 0%, transparent 50%);
 }
 .trophy-hero-content {
   position: relative; z-index: 1;
@@ -4825,8 +4826,13 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
 }
 
 /* ── Bright theme — Trophy ───────────────────────────────────────── */
-[data-theme="bright"] .trophy-hero-bg { background: #fff; }
-[data-theme="bright"] .trophy-hero-bg::after { background: none; }
+[data-theme="bright"] .trophy-hero-bg {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 30%, #fde68a 60%, #fffbeb 100%);
+  border-color: rgba(218,165,32,0.25);
+}
+[data-theme="bright"] .trophy-hero-bg::after {
+  background: radial-gradient(ellipse at 30% 20%, rgba(255,215,0,0.1) 0%, transparent 60%);
+}
 [data-theme="bright"] .trophy-hero { border-bottom: 1px solid #e2e8f0; border-radius: 0 0 24px 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); }
 [data-theme="bright"] .trophy-hero-title { color: #1e293b; }
 [data-theme="bright"] .trophy-hero-sub { color: #475569; }
