@@ -17,17 +17,17 @@ bind = os.environ.get("GUNICORN_BIND", "127.0.0.1:5001")
 # Rule of thumb: (2 × CPU cores) + 1
 # Each worker is an independent process with its own memory.
 # Override with GUNICORN_WORKERS env var for different machines.
-workers = 1
+workers = int(os.environ.get("GUNICORN_WORKERS", multiprocessing.cpu_count() * 2 + 1))
 
 # ── Threads per worker ────────────────────────────────────────────────────────
 # Each worker spawns this many threads. Total concurrency = workers × threads.
 # For a 4-core machine: 9 workers × 4 threads = 36 concurrent requests.
 # That's plenty for 1000 users (most are idle/reading at any moment).
-threads = 8
+threads = int(os.environ.get("GUNICORN_THREADS", 4))
 
 # ── Worker class ──────────────────────────────────────────────────────────────
 # gthread = threaded workers (best for I/O-bound Flask apps with SQLite)
-worker_class = "sync"
+worker_class = "gthread"
 
 # ── Timeouts ──────────────────────────────────────────────────────────────────
 timeout = 120          # Kill worker if a request takes > 120s
