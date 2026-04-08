@@ -27,7 +27,7 @@ threads = 8
 
 # ── Worker class ──────────────────────────────────────────────────────────────
 # gthread = threaded workers (best for I/O-bound Flask apps with SQLite)
-worker_class = "gthread"
+worker_class = "sync"
 
 # ── Timeouts ──────────────────────────────────────────────────────────────────
 timeout = 120          # Kill worker if a request takes > 120s
