@@ -187,6 +187,18 @@ def init_db():
         );
         CREATE INDEX IF NOT EXISTS idx_ea_user ON exam_attempts(user_id, exam_id);
 
+        CREATE TABLE IF NOT EXISTS exam_in_progress (
+            id           INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id      INTEGER NOT NULL,
+            exam_id      TEXT NOT NULL,
+            question_ids TEXT NOT NULL,
+            answers      TEXT DEFAULT '{}',
+            timed        INTEGER DEFAULT 1,
+            time_limit   INTEGER,
+            started_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            UNIQUE(user_id, exam_id)
+        );
+
         CREATE TABLE IF NOT EXISTS user_sessions (
             id           INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id      INTEGER NOT NULL,

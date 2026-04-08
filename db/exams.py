@@ -301,3 +301,56 @@ def get_all_exam_status(user_id):
         "best_score": r["best_score"],
         "total": r["total"],
     } for r in rows}
+
+
+# ── In-progress exam management ────────────────────────────────────────────
+
+def save_exam_in_progress(user_id, exam_id, question_ids, timed, time_limit):
+    """Save a new in-progress exam. Replaces any existing one for this user+exam."""
+    db = get_db()
+    db.execute("DELETE FROM exam_in_progress WHERE user_id=? AND exam_id=?",
+               (user_id, exam_id))
+    db.execute(
+        """INSERT INTO exam_in_progress (user_id, exam_id, question_ids, timed, time_limit)
+           VALUES (?,?,?,?,?)""",
+        (user_id, exam_id, json.dumps(question_ids), int(timed), time_limit))
+    db.commit()
+    db.close()
+
+
+def get_exam_in_progress(user_id, exam_id):
+    """Get in-progress exam if it exists and hasn't expired."""
+    db = get_db()
+    row = db.execute(
+        """SELECT question_ids, answers, timed, time_limit, started_at
+           FROM exam_in_progress WHERE user_id=? AND exam_id=?""",
+        (user_id, exam_id)).fetchone()
+    db.close()
+    if not row:
+        return None
+    return {
+        "question_ids": json.loads(row["question_ids"]),
+        "answers": json.loads(row["answers"]),
+        "timed": bool(row["timed"]),
+        "time_limit": row["time_limit"],
+        "started_at": row["started_at"],
+    }
+
+
+def update_exam_answers(user_id, exam_id, answers):
+    """Update saved answers for an in-progress exam."""
+    db = get_db()
+    db.execute(
+        "UPDATE exam_in_progress SET answers=? WHERE user_id=? AND exam_id=?",
+        (json.dumps(answers), user_id, exam_id))
+    db.commit()
+    db.close()
+
+
+def clear_exam_in_progress(user_id, exam_id):
+    """Remove in-progress exam after submission."""
+    db = get_db()
+    db.execute("DELETE FROM exam_in_progress WHERE user_id=? AND exam_id=?",
+               (user_id, exam_id))
+    db.commit()
+    db.close()

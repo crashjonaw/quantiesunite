@@ -77,7 +77,41 @@ def take_exam(exam_id):
             flash("Enable this level in your account settings first.", "warning")
             return redirect(url_for("exam.exam_list"))
 
-    # Determine timed or untimed mode
+    # Check for in-progress exam first
+    in_progress = db.get_exam_in_progress(user["id"], exam_id)
+
+    if in_progress:
+        # Resume existing exam
+        question_ids = in_progress["question_ids"]
+        questions = db.get_all_exam_questions_by_ids(question_ids)
+        # Reorder to match original order
+        q_map = {q["id"]: q for q in questions}
+        questions = [q_map[qid] for qid in question_ids if qid in q_map]
+        timed = in_progress["timed"]
+        time_limit = in_progress["time_limit"]
+        saved_answers = in_progress["answers"]
+        started_at = in_progress["started_at"]
+
+        # Calculate remaining time
+        remaining_min = None
+        if timed and time_limit:
+            from datetime import datetime
+            start = datetime.fromisoformat(started_at)
+            elapsed = (datetime.utcnow() - start).total_seconds() / 60
+            remaining_min = max(0, time_limit - elapsed)
+            if remaining_min <= 0:
+                # Time expired — auto-submit with saved answers
+                db.clear_exam_in_progress(user["id"], exam_id)
+                flash("Your exam time has expired. The exam was auto-submitted.", "warning")
+                return redirect(url_for("exam.exam_list"))
+
+        return render_template("pages/exam_take.html",
+                               exam_id=exam_id, exam=exam, quiz=questions,
+                               timed=timed, time_limit_min=remaining_min if timed else None,
+                               total_expected=len(questions),
+                               saved_answers=saved_answers, resuming=True)
+
+    # No in-progress exam — start a new one
     timed = request.args.get("mode", "timed") == "timed"
     total_q, grade_q, review_q, time_limit = get_exam_params(exam_id, timed=timed)
 
@@ -103,10 +137,28 @@ def take_exam(exam_id):
         flash("Not enough exam questions available yet. Please try again later.", "info")
         return redirect(url_for("exam.exam_list"))
 
+    # Save in-progress exam
+    question_ids = [q["id"] for q in questions]
+    db.save_exam_in_progress(user["id"], exam_id, question_ids, timed, time_limit)
+
     return render_template("pages/exam_take.html",
                            exam_id=exam_id, exam=exam, quiz=questions,
                            timed=timed, time_limit_min=time_limit,
-                           total_expected=total_q)
+                           total_expected=total_q,
+                           saved_answers={}, resuming=False)
+
+
+@exam_bp.route("/api/exam/save", methods=["POST"])
+@login_required
+def save_exam_progress():
+    """Auto-save answers during exam (called periodically by JS)."""
+    user = current_user()
+    data = request.get_json()
+    exam_id = data.get("exam_id")
+    answers = data.get("answers", {})
+    if exam_id:
+        db.update_exam_answers(user["id"], exam_id, answers)
+    return jsonify({"ok": True})
 
 
 @exam_bp.route("/api/exam/submit", methods=["POST"])
@@ -117,6 +169,9 @@ def submit_exam():
     exam_id = data.get("exam_id")
     answers = data.get("answers", {})
     quiz_qs = data.get("questions", [])
+
+    # Clear in-progress exam
+    db.clear_exam_in_progress(user["id"], exam_id)
 
     if exam_id not in EXAMS or not quiz_qs:
         return jsonify({"error": "Invalid exam submission"}), 400

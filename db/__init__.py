@@ -62,4 +62,5 @@ from db.exams import (
     get_exam_wrong_question_ids, get_exam_seen_question_ids,
     save_exam_attempt, has_passed_exam,
     get_exam_attempt_count, get_best_exam_score, get_all_exam_status,
+    save_exam_in_progress, get_exam_in_progress, update_exam_answers, clear_exam_in_progress,
 )
