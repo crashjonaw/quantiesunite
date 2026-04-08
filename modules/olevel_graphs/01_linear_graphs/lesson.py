@@ -22,28 +22,27 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 390 290" class="worked-example">
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill='currentColor' opacity='0.6' />
-    </marker>
-  </defs>
-  <!-- Axes -->
-  <line x1="50" y1="250" x2="360" y2="250" stroke='#30363d' stroke-width="1" />
-  <line x1="50" y1="40" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-  <!-- Line y = 2x -->
-  <line x1="50" y1="250" x2="350" y2="50" stroke='#58a6ff' stroke-width="2" />
-  <!-- Points -->
-  <circle cx="50" cy="250" r="4" fill='#79c0ff' />
-  <circle cx="150" cy="150" r="4" fill='#79c0ff' />
-  <circle cx="250" cy="50" r="4" fill='#79c0ff' />
-  <!-- Labels -->
-  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
-    <text x="365" y="254">x</text>
-    <text x="42" y="35">y</text>
-    <text x="36" y="265">O</text>
-    <text x="210" y="165" fill='#ffa657'>m = 2</text>
-    <text x="260" y="42" fill='#ffa657'>c = 0</text>
-  </g>
+  <!-- Axes: origin at (50,250), x-axis 300px = 5 units (60px/unit), y-axis 210px = 10 units (21px/unit) -->
+  <line x1="50" y1="250" x2="360" y2="250" stroke='currentColor' stroke-width="1" opacity="0.3" />
+  <line x1="50" y1="30" x2="50" y2="250" stroke='currentColor' stroke-width="1" opacity="0.3" />
+  <!-- Line y = 2x from (0,0) to (5,10): pixel (50,250) to (350,40) -->
+  <line x1="50" y1="250" x2="350" y2="40" stroke='#58a6ff' stroke-width="2.5" />
+  <!-- Point (1,2): x=50+60=110, y=250-42=208 -->
+  <circle cx="110" cy="208" r="5" fill='#79c0ff' stroke='#fff' stroke-width="1.5" />
+  <text x="118" y="202" font-size="11" fill='currentColor' font-family='sans-serif'>(1, 2)</text>
+  <!-- Point (4,8): x=50+240=290, y=250-168=82 -->
+  <circle cx="290" cy="82" r="5" fill='#79c0ff' stroke='#fff' stroke-width="1.5" />
+  <text x="298" y="76" font-size="11" fill='currentColor' font-family='sans-serif'>(4, 8)</text>
+  <!-- Rise/run annotation -->
+  <line x1="110" y1="208" x2="290" y2="208" stroke='#ffa657' stroke-width="1" stroke-dasharray="4,3" />
+  <line x1="290" y1="208" x2="290" y2="82" stroke='#ffa657' stroke-width="1" stroke-dasharray="4,3" />
+  <text x="190" y="224" font-size="11" fill='#ffa657' text-anchor="middle" font-family='sans-serif'>run = 3</text>
+  <text x="310" y="150" font-size="11" fill='#ffa657' font-family='sans-serif'>rise = 6</text>
+  <!-- Axis labels -->
+  <text x="365" y="254" font-size="12" fill='currentColor' font-family='sans-serif'>x</text>
+  <text x="42" y="25" font-size="12" fill='currentColor' font-family='sans-serif'>y</text>
+  <text x="36" y="265" font-size="12" fill='currentColor' font-family='sans-serif'>O</text>
+  <text x="200" y="50" font-size="12" fill='#58a6ff' font-family='sans-serif' font-weight="bold">y = 2x</text>
 </svg>
 
 <h3>Reading from a Graph</h3>
@@ -166,27 +165,26 @@ SECTIONS = [
 </div>
 
 <svg viewBox="0 0 390 290" class="worked-example">
-  <!-- Axes -->
-  <line x1="50" y1="250" x2="360" y2="250" stroke='#30363d' stroke-width="1" />
-  <line x1="50" y1="40" x2="50" y2="250" stroke='#30363d' stroke-width="1" />
-  <!-- Line y = -2x + 4 -->
-  <line x1="50" y1="60" x2="310" y2="250" stroke='#58a6ff' stroke-width="2" />
-  <!-- Points -->
-  <circle cx="50" cy="60" r="4" fill='#79c0ff' />
-  <circle cx="115" cy="125" r="4" fill='#79c0ff' />
-  <circle cx="310" cy="250" r="4" fill='#79c0ff' />
-  <!-- Tick marks -->
-  <line x1="310" y1="246" x2="310" y2="254" stroke='#30363d' stroke-width="1" />
-  <!-- Labels -->
-  <g font-family='Arial, sans-serif' font-size='12' fill='currentColor'>
-    <text x="365" y="254">x</text>
-    <text x="42" y="35">y</text>
-    <text x="36" y="265">O</text>
-    <text x="30" y="60">4</text>
-    <text x="303" y="272">2</text>
-    <text x="62" y="55" fill='#ffa657'>(0, 4)</text>
-    <text x="127" y="120" fill='#ffa657'>(1, 2)</text>
-  </g>
+  <!-- Axes: origin (50,250), x-scale 130px/unit, y-scale 47.5px/unit -->
+  <line x1="50" y1="250" x2="360" y2="250" stroke='currentColor' stroke-width="1" opacity="0.3" />
+  <line x1="50" y1="30" x2="50" y2="250" stroke='currentColor' stroke-width="1" opacity="0.3" />
+  <!-- Line y = -2x + 4 from (0,4) to (2,0): pixel (50,60) to (310,250) -->
+  <line x1="50" y1="60" x2="310" y2="250" stroke='#58a6ff' stroke-width="2.5" />
+  <!-- Point (0,4): x=50, y=60 -->
+  <circle cx="50" cy="60" r="5" fill='#79c0ff' stroke='#fff' stroke-width="1.5" />
+  <text x="62" y="55" font-size="11" fill='#ffa657' font-family='sans-serif'>(0, 4)</text>
+  <!-- Point (1,2): x=50+130=180, y=250-95=155 -->
+  <circle cx="180" cy="155" r="5" fill='#79c0ff' stroke='#fff' stroke-width="1.5" />
+  <text x="192" y="150" font-size="11" fill='#ffa657' font-family='sans-serif'>(1, 2)</text>
+  <!-- Point (2,0): x=310, y=250 -->
+  <circle cx="310" cy="250" r="5" fill='#79c0ff' stroke='#fff' stroke-width="1.5" />
+  <text x="298" y="272" font-size="11" fill='currentColor' font-family='sans-serif'>2</text>
+  <!-- Axis labels -->
+  <text x="365" y="254" font-size="12" fill='currentColor' font-family='sans-serif'>x</text>
+  <text x="42" y="25" font-size="12" fill='currentColor' font-family='sans-serif'>y</text>
+  <text x="36" y="265" font-size="12" fill='currentColor' font-family='sans-serif'>O</text>
+  <text x="30" y="64" font-size="11" fill='currentColor' font-family='sans-serif'>4</text>
+  <text x="150" y="100" font-size="12" fill='#58a6ff' font-family='sans-serif' font-weight="bold">y = -2x + 4</text>
 </svg>
 
 <h3>From Graph to Equation</h3>
