@@ -7,7 +7,12 @@ import secrets
 from flask import Blueprint, render_template, request, session, redirect, url_for, flash
 from curriculum_data import TOPICS, LEVELS_ORDER
 import database as db
-import requests as http_requests
+import urllib.request
+import urllib.parse
+import ssl
+import certifi
+
+_ssl_ctx = ssl.create_default_context(cafile=certifi.where())
 
 auth_bp = Blueprint("auth", __name__)
 
@@ -168,35 +173,37 @@ def _handle_google_callback():
         redirect_uri = "https://quantiesunite.sg/auth/google/callback"
 
     # Exchange code for access token
-    token_resp = http_requests.post(GOOGLE_TOKEN_URI, data={
+    token_data_bytes = urllib.parse.urlencode({
         "code": code,
         "client_id": GOOGLE_CLIENT_ID,
         "client_secret": GOOGLE_CLIENT_SECRET,
         "redirect_uri": redirect_uri,
         "grant_type": "authorization_code",
-    }, timeout=10)
+    }).encode("utf-8")
 
-    if token_resp.status_code != 200:
-        flash(f"Failed to authenticate with Google (status {token_resp.status_code}).", "danger")
+    try:
+        token_req = urllib.request.Request(GOOGLE_TOKEN_URI, data=token_data_bytes,
+                                           headers={"Content-Type": "application/x-www-form-urlencoded"})
+        with urllib.request.urlopen(token_req, timeout=15, context=_ssl_ctx) as resp:
+            token_data = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        flash(f"Failed to authenticate with Google: {e}", "danger")
         return redirect(url_for("auth.login"))
 
-    token_data = token_resp.json()
     access_token = token_data.get("access_token")
-
     if not access_token:
         flash("No access token received from Google.", "danger")
         return redirect(url_for("auth.login"))
 
     # Get user info from Google
-    userinfo_resp = http_requests.get(GOOGLE_USERINFO_URI, headers={
-        "Authorization": f"Bearer {access_token}",
-    }, timeout=10)
-
-    if userinfo_resp.status_code != 200:
-        flash("Failed to get user info from Google.", "danger")
+    try:
+        info_req = urllib.request.Request(GOOGLE_USERINFO_URI,
+                                          headers={"Authorization": f"Bearer {access_token}"})
+        with urllib.request.urlopen(info_req, timeout=15, context=_ssl_ctx) as resp:
+            userinfo = json.loads(resp.read().decode("utf-8"))
+    except Exception as e:
+        flash(f"Failed to get user info from Google: {e}", "danger")
         return redirect(url_for("auth.login"))
-
-    userinfo = userinfo_resp.json()
     google_email = userinfo.get("email", "")
     google_name = userinfo.get("name", "")
     google_picture = userinfo.get("picture", "")
