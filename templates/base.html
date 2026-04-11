@@ -176,10 +176,11 @@ function submitFeedback(e) {
   var btn = document.getElementById('fb-submit-btn');
   btn.disabled = true;
   var desc = document.getElementById('fb-desc').value.trim();
+  var category = document.getElementById('fb-category').value;
   fetch('/api/feedback', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({description: desc, page_url: window.location.pathname + (typeof currentPage !== 'undefined' ? '#page-' + currentPage : ''), theme: document.documentElement.getAttribute('data-theme') || 'dark'})
+    body: JSON.stringify({description: desc, category: category, page_url: window.location.pathname + (typeof currentPage !== 'undefined' ? '#page-' + currentPage : ''), theme: document.documentElement.getAttribute('data-theme') || 'dark'})
   }).then(function(r) { return r.json(); }).then(function(data) {
     if (data.ok) {
       document.getElementById('fb-success').style.display = 'block';

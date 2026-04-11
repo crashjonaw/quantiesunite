@@ -9,6 +9,17 @@
     <button class="feedback-close" onclick="closeFeedback()">&times;</button>
     <h3>Submit Feedback</h3>
     <form id="feedback-form" onsubmit="return submitFeedback(event)">
+      <label for="fb-category">Category</label>
+      <select id="fb-category" name="category" class="fb-select">
+        <option value="General" selected>General</option>
+        <option value="Display">Display / Layout</option>
+        <option value="Text">Text / Content</option>
+        <option value="Quiz">Quiz / Questions</option>
+        <option value="Navigation">Navigation</option>
+        <option value="Performance">Performance / Speed</option>
+        <option value="Feature Request">Feature Request</option>
+        <option value="Other">Other</option>
+      </select>
       <label for="fb-desc">What's on your mind?</label>
       <textarea id="fb-desc" name="description" placeholder="Describe the issue, error, or suggestion in detail..." required></textarea>
       <div class="feedback-success" id="fb-success">Feedback submitted — thank you!</div>

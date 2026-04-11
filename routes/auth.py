@@ -57,6 +57,7 @@ def register():
                         if topic_level in LEVELS_ORDER:
                             if LEVELS_ORDER.index(topic_level) < grade_idx:
                                 db.mark_topic_complete(uid, tid)
+                session.permanent = True
                 session["user_id"] = uid
                 flash(f"Welcome to QuantiesUnite, {username}!", "success")
                 return redirect(url_for("account.account"))
@@ -73,6 +74,7 @@ def login():
         password   = request.form.get("password", "")
         user = db.verify_credentials(identifier, password)
         if user:
+            session.permanent = True
             session["user_id"] = user["id"]
             session["sid"] = secrets.token_urlsafe(16)
             device = request.headers.get("User-Agent", "")[:100]
@@ -85,7 +87,32 @@ def login():
             return redirect(next_url)
         else:
             error = "Invalid email/username or password."
+            # Track failed login attempts for brute-force detection
+            ip = request.remote_addr or ""
+            _track_failed_login(ip, identifier)
     return render_template("auth/login.html", error=error)
+
+
+_FAILED_LOGINS = {}  # ip -> list of timestamps
+
+def _track_failed_login(ip, identifier):
+    """Detect brute-force login attempts: 5+ failures from same IP in 5 minutes."""
+    import time
+    now = time.time()
+    window = 300  # 5 minutes
+    if ip not in _FAILED_LOGINS:
+        _FAILED_LOGINS[ip] = []
+    _FAILED_LOGINS[ip] = [t for t in _FAILED_LOGINS[ip] if now - t < window]
+    _FAILED_LOGINS[ip].append(now)
+    count = len(_FAILED_LOGINS[ip])
+    if count >= 5:
+        # Try to find the user to attach violation to their account
+        user = db.get_user_by_email(identifier) or db.get_user_by_username(identifier)
+        uid = user["id"] if user else None
+        db.log_violation(uid, "brute_login", ip_address=ip,
+                         detail=f"{count} failed login attempts in {window}s for '{identifier}'",
+                         endpoint="auth.login", severity="critical")
+        _FAILED_LOGINS[ip] = []  # reset after logging
 
 
 @auth_bp.route("/logout")
@@ -209,6 +236,7 @@ def _handle_google_callback():
 
     if user:
         # Existing user — log them in
+        session.permanent = True
         session["user_id"] = user["id"]
         session["sid"] = secrets.token_urlsafe(16)
         device = request.headers.get("User-Agent", "")[:100]
@@ -234,6 +262,7 @@ def _handle_google_callback():
             flash(f"Could not create account: {err}", "danger")
             return redirect(url_for("auth.login"))
 
+        session.permanent = True
         session["user_id"] = uid
         session["sid"] = secrets.token_urlsafe(16)
         device = request.headers.get("User-Agent", "")[:100]

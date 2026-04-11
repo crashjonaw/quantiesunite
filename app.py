@@ -26,8 +26,11 @@ from routes.helpers import current_user, get_avatar_url, get_age_group
 
 # ── App creation ─────────────────────────────────────────────────────────────
 
+from datetime import timedelta
+
 app = Flask(__name__)
-app.secret_key = "quantiesunite-secret-2024-change-in-production"
+app.secret_key = os.environ.get("SECRET_KEY", "quantiesunite-dev-key-change-in-production")
+app.permanent_session_lifetime = timedelta(days=30)
 
 # Avatar upload config
 AVATAR_UPLOAD_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),

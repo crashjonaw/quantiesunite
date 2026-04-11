@@ -13,12 +13,12 @@
   </div>
   <div class="hero-stats">
     <div class="stat-card">
-      <span class="stat-num">85+</span>
+      <span class="stat-num">101</span>
       <span class="stat-label">Topics</span>
     </div>
     <div class="stat-card">
-      <span class="stat-num">13</span>
-      <span class="stat-label">Levels</span>
+      <span class="stat-num">7,300+</span>
+      <span class="stat-label">Questions</span>
     </div>
     <div class="stat-card">
       <span class="stat-num">{{ done }}/{{ total }}</span>
@@ -37,67 +37,193 @@
 </section>
 {% endif %}
 
+<!-- ═══ LEARNING PATH ═══ -->
 <section class="path-overview">
   <h2 class="section-title">Your Learning Path</h2>
+  <p class="section-sub">Every topic builds on the one before it. Master the fundamentals, then advance — no gaps, no guessing.</p>
   <div class="path-cards">
     <a href="/curriculum#Kindergarten" class="path-card" style="border-color:#7FFFD4">
       <div class="path-card-shine"></div>
       <div class="path-icon">🔢</div>
       <h3>Kindergarten</h3>
-      <p>Numbers, counting, addition, subtraction</p>
+      <p>Numbers, counting, shapes, addition &amp; subtraction — the foundations everything else is built on.</p>
+      <span class="path-count">5 topics</span>
     </a>
-    <div class="path-arrow">→</div>
     <a href="/curriculum#Primary-1–2" class="path-card" style="border-color:#3CB371">
       <div class="path-card-shine"></div>
       <div class="path-icon">🏫</div>
-      <h3>Singapore Primary</h3>
-      <p>P1–P6: MOE-aligned arithmetic, fractions, algebra</p>
+      <h3>Primary 1–6</h3>
+      <p>Whole numbers, fractions, decimals, ratio, percentage, algebra intro — MOE-aligned through PSLE.</p>
+      <span class="path-count">24 topics</span>
     </a>
-    <div class="path-arrow">→</div>
     <a href="/curriculum#Sec-1–2" class="path-card" style="border-color:#4169E1">
       <div class="path-card-shine"></div>
       <div class="path-icon">📐</div>
-      <h3>Sec 1–4 &amp; J1–2</h3>
-      <p>Geometry, algebra, calculus, vectors, statistics</p>
+      <h3>Secondary &amp; JC</h3>
+      <p>Algebra, geometry, trigonometry, calculus, vectors, statistics — E-Math, A-Math &amp; H2 Math.</p>
+      <span class="path-count">35 topics</span>
     </a>
-    <div class="path-arrow">→</div>
-    <a href="/curriculum#Linear-Algebra" class="path-card" style="border-color:#FF4500">
+    <a href="/curriculum#Linear-Algebra" class="path-card" style="border-color:#9333ea">
       <div class="path-card-shine"></div>
-      <div class="path-icon">🔢</div>
-      <h3>Linear Algebra</h3>
-      <p>Vector spaces, eigenvalues, SVD</p>
+      <div class="path-icon">🧮</div>
+      <h3>University Math</h3>
+      <p>Linear algebra, probability theory, Python programming — the bridge to machine learning.</p>
+      <span class="path-count">25 topics</span>
     </a>
-    <div class="path-arrow">→</div>
     <a href="/curriculum#Deep-Learning" class="path-card" style="border-color:#C71585">
       <div class="path-card-shine"></div>
       <div class="path-icon">🤖</div>
       <h3>Deep Learning</h3>
-      <p>LSTM &amp; Transformer models</p>
+      <p>Neural networks, backpropagation, RNNs, LSTMs, attention, transformers — built from the math up.</p>
+      <span class="path-count">12 topics</span>
     </a>
   </div>
 </section>
 
+<!-- ═══ WHY FIRST PRINCIPLES ═══ -->
+<section class="fp-section">
+  <h2 class="section-title">Why First Principles?</h2>
+  <p class="section-sub">Most students memorize formulas. We teach you <em>why</em> they work — so you never forget.</p>
+  <div class="fp-grid">
+    <div class="fp-card">
+      <div class="fp-num">1</div>
+      <h3>Start with the "Why"</h3>
+      <p>Every lesson begins with a real problem or intuition. You understand the purpose before you see the formula.</p>
+    </div>
+    <div class="fp-card">
+      <div class="fp-num">2</div>
+      <h3>Build Step by Step</h3>
+      <p>Concepts are derived, not handed to you. When you see where a formula comes from, you own it forever.</p>
+    </div>
+    <div class="fp-card">
+      <div class="fp-num">3</div>
+      <h3>Connect Everything</h3>
+      <p>Our prerequisite graph shows how every topic links together. Fractions lead to algebra, algebra leads to calculus, calculus leads to neural networks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PLATFORM FEATURES ═══ -->
 <section class="feature-grid">
-  <div class="feature-card">
+  <a href="/graph" class="feature-card feature-card-link">
     <div class="feature-icon">🕸️</div>
     <h3>Interactive Topic Graph</h3>
-    <p>See how every topic connects. Hover to highlight prerequisite chains — know exactly what to learn next.</p>
-    <a href="/graph" class="btn btn-sm btn-outline">Open Graph</a>
-  </div>
-  <div class="feature-card">
+    <p>Visualize the entire curriculum as a connected graph. See prerequisites, set learning targets, and track your path through 101 topics.</p>
+  </a>
+  <a href="/curriculum" class="feature-card feature-card-link">
+    <div class="feature-icon">📖</div>
+    <h3>Illustrated Lessons</h3>
+    <p>Each topic has multi-page lessons with diagrams, worked examples, and step-by-step derivations. Learn at your own pace.</p>
+  </a>
+  <a href="/curriculum" class="feature-card feature-card-link">
     <div class="feature-icon">🧪</div>
-    <h3>Mid-Lesson Check Questions</h3>
-    <p>Answer quick questions as you read each section. Immediate feedback keeps you on track.</p>
-  </div>
-  <div class="feature-card">
+    <h3>Concept Check Questions</h3>
+    <p>Embedded questions throughout each lesson give instant feedback while you read — catch misunderstandings before they stick.</p>
+  </a>
+  <a href="/curriculum" class="feature-card feature-card-link">
     <div class="feature-icon">🏆</div>
-    <h3>End-of-Topic Quiz</h3>
-    <p>Score 70%+ to unlock the next topics. Learn at your own pace — no time limits.</p>
+    <h3>Quizzes &amp; More Practice</h3>
+    <p>Score 70% on the module quiz to unlock the next topics. Then tackle More Practice — a bank of 7,300+ questions that prioritizes what you got wrong.</p>
+  </a>
+  <a href="/exams" class="feature-card feature-card-link">
+    <div class="feature-icon">🎓</div>
+    <h3>Grade Exams</h3>
+    <p>Pass timed or untimed grade exams (P1–2 through A-Level) to prove mastery and unlock the next curriculum level.</p>
+  </a>
+  <a href="/trophies" class="feature-card feature-card-link">
+    <div class="feature-icon">🏅</div>
+    <h3>Trophies &amp; Achievements</h3>
+    <p>Earn medals for quiz scores, unlock achievements for streaks and milestones, and track your mastery across every level.</p>
+  </a>
+  <a href="/dashboard" class="feature-card feature-card-link">
+    <div class="feature-icon">📊</div>
+    <h3>Dashboard &amp; Analytics</h3>
+    <p>Track your completion rate, quiz scores, streaks, and daily activity. See exactly where you stand and what to tackle next.</p>
+  </a>
+  <a href="/about" class="feature-card feature-card-link">
+    <div class="feature-icon"><img src="{{ url_for('static', filename='img/flag_singapore.png') }}" alt="SG" width="42" style="border-radius:3px;"/></div>
+    <h3>Singapore Curriculum</h3>
+    <p>Aligned to MOE syllabus from Kindergarten through A-Level. Topics, question styles, and difficulty match what Singapore students face.</p>
+  </a>
+</section>
+
+<!-- ═══ CURRICULUM SNAPSHOT ═══ -->
+<section class="snapshot-section">
+  <h2 class="section-title">What You'll Learn</h2>
+  <p class="section-sub">A glimpse at the breadth and depth of the curriculum — from counting to transformers.</p>
+  <div class="snapshot-grid">
+    <div class="snapshot-card snapshot-k">
+      <div class="snapshot-header">
+        <span class="snapshot-emoji">🔢</span>
+        <div>
+          <h4>Kindergarten</h4>
+          <span class="snapshot-count">5 topics</span>
+        </div>
+      </div>
+      <p>Number recognition, counting to 20, one-to-one correspondence, basic addition &amp; subtraction, shapes &amp; patterns.</p>
+    </div>
+    <div class="snapshot-card snapshot-pri">
+      <div class="snapshot-header">
+        <span class="snapshot-emoji">🏫</span>
+        <div>
+          <h4>Primary 1–6</h4>
+          <span class="snapshot-count">24 topics</span>
+        </div>
+      </div>
+      <p>Whole numbers, multiplication tables, long division, fractions, decimals, ratio, percentage, volume, data analysis, algebra intro, problem solving.</p>
+    </div>
+    <div class="snapshot-card snapshot-sec">
+      <div class="snapshot-header">
+        <span class="snapshot-emoji">📐</span>
+        <div>
+          <h4>Secondary 1–4</h4>
+          <span class="snapshot-count">24 topics</span>
+        </div>
+      </div>
+      <p>Algebra, indices, Pythagoras, coordinate geometry, simultaneous equations, quadratics, trigonometry, graphs, matrices, vectors, sets, differentiation &amp; integration.</p>
+    </div>
+    <div class="snapshot-card snapshot-jc">
+      <div class="snapshot-header">
+        <span class="snapshot-emoji">🎓</span>
+        <div>
+          <h4>JC / A-Level</h4>
+          <span class="snapshot-count">11 topics</span>
+        </div>
+      </div>
+      <p>Complex numbers, sequences &amp; series, advanced calculus, differential equations, 3D vectors, functions, distributions, hypothesis testing, regression.</p>
+    </div>
+    <div class="snapshot-card snapshot-uni">
+      <div class="snapshot-header">
+        <span class="snapshot-emoji">🧮</span>
+        <div>
+          <h4>University</h4>
+          <span class="snapshot-count">25 topics</span>
+        </div>
+      </div>
+      <p>Vector spaces, eigenvalues, SVD, matrix decompositions, probability distributions, Markov chains, hypothesis testing, Python fundamentals, NumPy, data structures.</p>
+    </div>
+    <div class="snapshot-card snapshot-dl">
+      <div class="snapshot-header">
+        <span class="snapshot-emoji">🤖</span>
+        <div>
+          <h4>Deep Learning</h4>
+          <span class="snapshot-count">12 topics</span>
+        </div>
+      </div>
+      <p>Neural networks, backpropagation, gradient descent, loss functions, activation functions, RNNs, LSTMs, attention mechanisms, self-attention, transformers.</p>
+    </div>
   </div>
-  <div class="feature-card">
-    <div class="feature-icon"><img src="{{ url_for('static', filename='img/flag_singapore.png') }}" alt="Singapore Flag" width="48" style="border-radius:3px;"/></div>
-    <h3>Singapore Curriculum Aligned</h3>
-    <p>Modules map to MOE P5–6, Sec, and JC syllabuses — so school and deep learning coexist.</p>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="home-cta">
+  <h2>Ready to begin?</h2>
+  <p>Pick up where you left off, or start fresh from Kindergarten. Every journey through mathematics starts with a single concept.</p>
+  <div class="home-cta-actions">
+    <a href="/curriculum" class="btn btn-primary btn-large">Browse Curriculum →</a>
+    {% if not user %}
+    <a href="/register" class="btn btn-outline btn-large">Create Free Account</a>
+    {% endif %}
   </div>
 </section>
 {% endblock %}

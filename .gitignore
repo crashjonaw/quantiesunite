@@ -11,3 +11,5 @@ playwright/debug_archive_*
 *.output
 /convert_*.py
 google_api_secret.json
+.env
+logs/

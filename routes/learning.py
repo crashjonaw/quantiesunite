@@ -37,6 +37,11 @@ def index():
                            user=user, accessible=accessible)
 
 
+@learning_bp.route("/about")
+def about_page():
+    return render_template("pages/about.html")
+
+
 @learning_bp.route("/graph")
 @login_required
 def graph_page():
@@ -475,10 +480,20 @@ def trophies_page():
     total_done = sum(1 for v in progress.values() if v.get("complete"))
     milestones = [
         {"name": "First Steps", "emoji": "👣", "desc": "Complete your first module", "threshold": 1},
-        {"name": "Getting Started", "emoji": "🚀", "desc": "Complete 10 modules", "threshold": 10},
+        {"name": "Warm Up", "emoji": "🔥", "desc": "Complete 3 modules", "threshold": 3},
+        {"name": "Getting Started", "emoji": "🚀", "desc": "Complete 5 modules", "threshold": 5},
+        {"name": "Double Digits", "emoji": "🔟", "desc": "Complete 10 modules", "threshold": 10},
+        {"name": "Steady Learner", "emoji": "📖", "desc": "Complete 15 modules", "threshold": 15},
+        {"name": "On a Roll", "emoji": "🎯", "desc": "Complete 20 modules", "threshold": 20},
         {"name": "Quarter Way", "emoji": "🌱", "desc": "Complete 25% of all modules", "threshold": total_topics // 4},
+        {"name": "Rising Star", "emoji": "💫", "desc": "Complete 30 modules", "threshold": 30},
+        {"name": "Knowledge Builder", "emoji": "🧱", "desc": "Complete 40 modules", "threshold": 40},
         {"name": "Halfway Hero", "emoji": "⭐", "desc": "Complete 50% of all modules", "threshold": total_topics // 2},
-        {"name": "Almost There", "emoji": "🔥", "desc": "Complete 75% of all modules", "threshold": (total_topics * 3) // 4},
+        {"name": "Momentum", "emoji": "⚡", "desc": "Complete 60 modules", "threshold": 60},
+        {"name": "Deep Thinker", "emoji": "🧠", "desc": "Complete 70 modules", "threshold": 70},
+        {"name": "Almost There", "emoji": "🏔️", "desc": "Complete 75% of all modules", "threshold": (total_topics * 3) // 4},
+        {"name": "Final Stretch", "emoji": "🏃", "desc": "Complete 85 modules", "threshold": 85},
+        {"name": "On the Doorstep", "emoji": "🚪", "desc": "Complete 95 modules", "threshold": 95},
         {"name": "QuantiesUnite Master", "emoji": "👑", "desc": "Complete every single module", "threshold": total_topics},
     ]
     for m in milestones:
@@ -555,6 +570,7 @@ def submit_feedback():
     description = (data.get("description") or "").strip()
     page_url = (data.get("page_url") or "").strip()
     theme = (data.get("theme") or "").strip()
+    category = (data.get("category") or "General").strip()
     if not description:
         return jsonify({"ok": False, "error": "Description is required."}), 400
     title = description[:60] + ("..." if len(description) > 60 else "")
@@ -562,7 +578,7 @@ def submit_feedback():
     fb_id = _next_feedback_id()
     module_id, topic_name = _extract_module_topic(page_url)
     row = [fb_id, user["username"], page_url, module_id, topic_name, title,
-           description, "", "", theme or "",
+           description, "", category, theme or "",
            datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "", "no", "", ""]
     with open(FEEDBACK_CSV, "a", newline="") as f:
         csv.writer(f).writerow(row)
