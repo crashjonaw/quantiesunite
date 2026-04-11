@@ -12,24 +12,33 @@ SECTIONS = [
     <p>Both represent the same amount!</p>
   </div>
 
+  <p style="text-align:center; font-weight:bold; margin:10px 0;">\\(\\frac{7}{3}\\) shown as wholes and parts:</p>
   <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>\\(\\frac{7}{3}\\) shown as wholes and parts:</text>
+    <svg viewBox="0 0 460 160" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:460px; display:block; margin:0 auto;">
+      <!-- First whole: 3/3 -->
+      <circle cx="70" cy="65" r="45" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <path d="M 70 20 A 45 45 0 1 1 69.99 20 Z" fill='#4169E1' opacity='0.5'/>
+      <text x="70" y="72" font-size='18' text-anchor='middle' fill='currentColor' font-weight='bold'>3/3</text>
 
-      <circle cx="80" cy="100" r="30" fill='#4169E1' opacity='0.6'/>
-      <text x="80" y="110" font-size='14' text-anchor='middle' font-weight='bold'>1</text>
+      <!-- Plus sign -->
+      <text x="140" y="72" font-size='22' text-anchor='middle' fill='currentColor' font-weight='bold'>+</text>
 
-      <circle cx="150" cy="100" r="30" fill='#4169E1' opacity='0.6'/>
-      <text x="150" y="110" font-size='14' text-anchor='middle' font-weight='bold'>2</text>
+      <!-- Second whole: 3/3 -->
+      <circle cx="210" cy="65" r="45" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <path d="M 210 20 A 45 45 0 1 1 209.99 20 Z" fill='#4169E1' opacity='0.5'/>
+      <text x="210" y="72" font-size='18' text-anchor='middle' fill='currentColor' font-weight='bold'>3/3</text>
 
-      <circle cx="220" cy="100" r="30" fill='none' stroke='#8b949e' stroke-width="2"/>
-      <path d="M 220 70 A 30 30 0 0 1 250 100" fill='#22c55e' opacity='0.6'/>
-      <line x1="220" y1="70" x2="220" y2="100" stroke='#8b949e' stroke-width="1"/>
-      <line x1="220" y1="100" x2="250" y2="100" stroke='#8b949e' stroke-width="1"/>
+      <!-- Plus sign -->
+      <text x="280" y="72" font-size='22' text-anchor='middle' fill='currentColor' font-weight='bold'>+</text>
 
-      <text x="150" y="170" font-size='16' font-weight='bold'>= \\(2\\frac{1}{3}\\)</text>
+      <!-- Third partial: 1/3 (120 degree arc) -->
+      <circle cx="350" cy="65" r="45" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <!-- 1/3 arc: from top (0,-45) sweeping 120 degrees -->
+      <path d="M 350 20 A 45 45 0 0 1 389 87.5 L 350 65 Z" fill='#22c55e' opacity='0.5'/>
+      <text x="350" y="72" font-size='18' text-anchor='middle' fill='currentColor' font-weight='bold'>1/3</text>
 
-      <text x="50" y="220" font-size='16' font-weight='bold'>Count the thirds: 1, 2, 3, 4, 5, 6, 7 = \\(\\frac{7}{3}\\) = \\(2\\frac{1}{3}\\)</text>
+      <!-- Bottom labels -->
+      <text x="230" y="140" font-size='16' text-anchor='middle' fill='currentColor' font-weight='bold'>= 7 thirds = 7/3 = 2 and 1/3</text>
     </svg>
   </div>
 
@@ -76,8 +85,8 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>The Formula:</h4>
-    <p>$$\\frac{numerator}{denominator} = whole\\frac{remainder}{denominator}$$</p>
-    <p>Where: <strong>whole</strong> = \\(numerator \\div denominator\\)</p>
+    <p>$$\\frac{\\text{numerator}}{\\text{denominator}} = \\text{whole}\\frac{\\text{remainder}}{\\text{denominator}}$$</p>
+    <p>Where: <strong>whole</strong> = \\(\\text{numerator} \\div \\text{denominator}\\)</p>
   </div>
 </div>"""
     },
@@ -105,18 +114,12 @@ SECTIONS = [
     </div>
   </div>
 
-  <div class="diagram-container">
-    <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>Converting \\(2\\frac{3}{4}\\) to improper:</text>
-
-      <text x="50" y="70" font-size='14'>Step 1: \\(2 \\times 4 = 8\\)</text>
-      <text x="50" y="100" font-size='14'>Step 2: \\(8 + 3 = 11\\)</text>
-      <text x="50" y="130" font-size='14'>Step 3: \\(\\frac{11}{4}\\)</text>
-
-      <text x="250" y="70" font-size='16' font-weight='bold'>Verify:</text>
-      <text x="250" y="100" font-size='14'>\\(11 \\div 4 = 2\\) r \\(3\\)</text>
-      <text x="250" y="130" font-size='14'>Check: \\(2\\frac{3}{4}\\) ✓</text>
-    </svg>
+  <div class="worked-example">
+    <h4>Worked Example: Converting \\(2\\frac{3}{4}\\) to improper</h4>
+    <p>Step 1: \\(2 \\times 4 = 8\\)</p>
+    <p>Step 2: \\(8 + 3 = 11\\)</p>
+    <p>Step 3: \\(\\frac{11}{4}\\)</p>
+    <p>Verify: \\(11 \\div 4 = 2\\) remainder \\(3\\) → \\(2\\frac{3}{4}\\) ✓</p>
   </div>
 
   <div class="worked-example">
@@ -144,33 +147,40 @@ SECTIONS = [
   </div>
 
   <div class="diagram-container">
-    <svg viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>The Equivalence Circle:</text>
-
-      <circle cx="150" cy="100" r="40" fill='#4169E1' opacity='0.3' stroke='#4169E1' stroke-width="2"/>
-      <text x="150" y="105" font-size='14' text-anchor='middle' font-weight='bold'>\\(2\\frac{1}{3}\\)</text>
-
-      <path d="M 190 100 L 260 100" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="225" y="85" font-size='12' text-anchor='middle'>multiply</text>
-
-      <circle cx="330" cy="100" r="40" fill='#22c55e' opacity='0.3' stroke='#22c55e' stroke-width="2"/>
-      <text x="330" y="105" font-size='14' text-anchor='middle' font-weight='bold'>\\(\\frac{7}{3}\\)</text>
-
-      <path d="M 260 130 L 190 130" stroke='#8b949e' stroke-width="2" marker-end="url(#arrowhead)"/>
-      <text x="225" y="155" font-size='12' text-anchor='middle'>divide</text>
-
+    <svg viewBox="0 0 460 150" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:460px; display:block; margin:0 auto;">
       <defs>
         <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
           <polygon points="0 0, 10 3, 0 6" fill='currentColor'/>
         </marker>
       </defs>
 
-      <text x="50" y="200" font-size='14'><strong>Same value, different forms!</strong></text>
-      <text x="50" y="225" font-size='13'>This is why we need both:</text>
-      <text x="50" y="250" font-size='13'>• Mixed numbers: easy to read</text>
-      <text x="50" y="275" font-size='13'>• Improper fractions: easy to compute</text>
+      <!-- Mixed number bubble -->
+      <circle cx="120" cy="60" r="50" fill='#4169E1' opacity='0.2' stroke='#4169E1' stroke-width="2"/>
+      <text x="120" y="55" font-size='14' text-anchor='middle' fill='currentColor'>Mixed</text>
+      <text x="120" y="75" font-size='16' text-anchor='middle' fill='currentColor' font-weight='bold'>2 1/3</text>
+
+      <!-- Arrows -->
+      <path d="M 175 45 L 255 45" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="215" y="38" font-size='11' text-anchor='middle' fill='currentColor'>multiply</text>
+
+      <path d="M 255 80 L 175 80" stroke='currentColor' opacity='0.5' stroke-width="2" marker-end="url(#arrowhead)"/>
+      <text x="215" y="98" font-size='11' text-anchor='middle' fill='currentColor'>divide</text>
+
+      <!-- Improper fraction bubble -->
+      <circle cx="340" cy="60" r="50" fill='#22c55e' opacity='0.2' stroke='#22c55e' stroke-width="2"/>
+      <text x="340" y="55" font-size='14' text-anchor='middle' fill='currentColor'>Improper</text>
+      <text x="340" y="75" font-size='16' text-anchor='middle' fill='currentColor' font-weight='bold'>7/3</text>
+
+      <!-- Bottom text -->
+      <text x="230" y="135" font-size='13' text-anchor='middle' fill='currentColor' font-weight='bold'>Same value, different forms!</text>
     </svg>
   </div>
+
+  <p><strong>This is why we need both:</strong></p>
+  <ul>
+    <li><strong>Mixed numbers:</strong> easy to read and understand</li>
+    <li><strong>Improper fractions:</strong> easy to compute with</li>
+  </ul>
 
   <div class="warning-box">
     <h4>Key Insight:</h4>

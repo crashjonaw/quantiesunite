@@ -11,25 +11,25 @@ SECTIONS = [
     <p><strong>Example:</strong> \\(\\frac{3}{4} \\div \\frac{1}{2}\\) means "How many halves fit into 3 fourths?"</p>
   </div>
 
+  <p style="text-align:center; font-weight:bold; margin:10px 0;">We have \\(\\frac{3}{4}\\). How many halves fit in it?</p>
   <div class="diagram-container">
-    <svg viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>We have \\(\\frac{3}{4}\\):</text>
-      <rect x="50" y="50" width="150" height="60" fill='none' stroke='#8b949e' stroke-width="2"/>
-      <line x1="87.5" y1="50" x2="87.5" y2="110" stroke='#8b949e' stroke-width="1"/>
-      <line x1="125" y1="50" x2="125" y2="110" stroke='#8b949e' stroke-width="1"/>
-      <line x1="162.5" y1="50" x2="162.5" y2="110" stroke='#8b949e' stroke-width="1"/>
-      <rect x="50" y="50" width="112.5" height="60" fill='#4169E1' opacity='0.6'/>
+    <svg viewBox="0 0 400 140" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; display:block; margin:0 auto;">
+      <!-- 3/4 bar -->
+      <rect x="40" y="10" width="200" height="40" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <line x1="90" y1="10" x2="90" y2="50" stroke='#8b949e' stroke-width="1"/>
+      <line x1="140" y1="10" x2="140" y2="50" stroke='#8b949e' stroke-width="1"/>
+      <line x1="190" y1="10" x2="190" y2="50" stroke='#8b949e' stroke-width="1"/>
+      <rect x="40" y="10" width="150" height="40" fill='#4169E1' opacity='0.5'/>
+      <text x="260" y="35" font-size='13' fill='currentColor'>← 3/4 shaded</text>
 
-      <text x="50" y="150" font-size='16' font-weight='bold'>We divide by \\(\\frac{1}{2}\\) (halves):</text>
-      <text x="50" y="180" font-size='15'>Question: How many halves fit in \\(\\frac{3}{4}\\)?</text>
+      <!-- Show halves fitting in -->
+      <rect x="40" y="65" width="100" height="35" fill='#4169E1' opacity='0.5' stroke='#8b949e' stroke-width="2"/>
+      <text x="90" y="88" font-size='11' text-anchor='middle' fill='currentColor'>1st half</text>
 
-      <rect x="50" y="200" width="75" height="40" fill='#4169E1' opacity='0.6' stroke='#8b949e' stroke-width="2"/>
-      <text x="87.5" y="235" font-size='12' text-anchor='middle'>\\(\\frac{1}{2}\\)</text>
+      <rect x="140" y="65" width="50" height="35" fill='#22c55e' opacity='0.5' stroke='#8b949e' stroke-width="2"/>
+      <text x="165" y="88" font-size='11' text-anchor='middle' fill='currentColor'>1/2 of a half</text>
 
-      <rect x="130" y="200" width="37.5" height="40" fill='#22c55e' opacity='0.6' stroke='#8b949e' stroke-width="2"/>
-      <text x="149" y="235" font-size='12' text-anchor='middle'>\\(\\frac{1}{4}\\)</text>
-
-      <text x="50" y="270" font-size='15' font-weight='bold'>Answer: \\(1\\frac{1}{2}\\) halves, or \\(\\frac{3}{4} \\div \\frac{1}{2} = \\frac{3}{2}\\)</text>
+      <text x="200" y="125" font-size='14' text-anchor='middle' fill='currentColor' font-weight='bold'>Answer: 1 and 1/2 halves fit → 3/4 ÷ 1/2 = 3/2</text>
     </svg>
   </div>
 
@@ -145,17 +145,12 @@ SECTIONS = [
     <p><strong>Example Problem:</strong> I have \\(\\frac{3}{4}\\) of a pizza. I want to split it equally among \\(\\frac{1}{2}\\) pizza portions. How many people can get a portion?</p>
   </div>
 
-  <div class="diagram-container">
-    <svg viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>Problem: \\(\\frac{3}{4}\\) ÷ \\(\\frac{1}{8}\\) = ?</text>
-      <text x="50" y="60" font-size='14'>I have \\(\\frac{3}{4}\\) metre of ribbon. I need \\(\\frac{1}{8}\\) metre for each bookmark.</text>
-      <text x="50" y="85" font-size='14'>How many bookmarks can I make?</text>
-
-      <text x="50" y="120" font-size='15' font-weight='bold'>Solution:</text>
-      <text x="50" y="145" font-size='14'>$$\\frac{3}{4} \\div \\frac{1}{8} = \\frac{3}{4} \\times \\frac{8}{1} = \\frac{24}{4} = 6$$</text>
-
-      <text x="50" y="180" font-size='14'>Answer: 6 bookmarks!</text>
-    </svg>
+  <div class="worked-example">
+    <h4>Ribbon Problem</h4>
+    <p><strong>Problem:</strong> I have \\(\\frac{3}{4}\\) metre of ribbon. I need \\(\\frac{1}{8}\\) metre for each bookmark. How many bookmarks can I make?</p>
+    <p><strong>Solution:</strong></p>
+    <p>$$\\frac{3}{4} \\div \\frac{1}{8} = \\frac{3}{4} \\times \\frac{8}{1} = \\frac{24}{4} = 6$$</p>
+    <p><strong>Answer: 6 bookmarks!</strong></p>
   </div>
 
   <div class="worked-example">

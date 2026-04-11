@@ -313,7 +313,7 @@ html, body {
 /* ── Navbar ─────────────────────────────────────────────────────── */
 .navbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center; gap: 8px;
   padding: 0 24px; height: 56px;
   background: rgba(13, 17, 23, 0.92);
   border-bottom: 1px solid rgba(48, 54, 61, 0.6);
@@ -324,10 +324,11 @@ html, body {
 .nav-brand {
   font-size: 1.25rem; font-weight: 800;
   color: var(--text); text-decoration: none; letter-spacing: -0.5px;
+  flex-shrink: 0;
 }
 .brand-q { color: #4169E1; }
 .brand-u { color: #FF4500; }
-.nav-links { display: flex; gap: 4px; }
+.nav-links { display: flex; gap: 4px; flex: 1; justify-content: flex-end; }
 .nav-link {
   position: relative;
   padding: 6px 14px; border-radius: 8px;
@@ -1512,12 +1513,14 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
   .path-cards { flex-direction: column; }
   .path-arrow { transform: rotate(90deg); }
   .navbar { padding: 0 12px; }
-  .nav-links { gap: 2px; overflow-x: auto; flex-shrink: 1; scrollbar-width: none; -ms-overflow-style: none; }
+  .nav-links { gap: 2px; overflow-x: auto; flex: 1 1 0; min-width: 0; scrollbar-width: none; -ms-overflow-style: none; }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-link { padding: 4px 8px; font-size: 0.75rem; white-space: nowrap; flex-shrink: 0; }
   .user-menu-wrap { flex-shrink: 0; }
   .user-name-nav { display: none; }
   .chevron { display: none; }
+  .theme-toggle-btn { width: 32px; height: 32px; min-width: 32px; margin-left: 4px; }
+  .theme-icon { font-size: 0.95rem; }
   #graph-toolbar { flex-wrap: wrap; height: auto; padding: 8px; }
   #graph-toolbar .brand-small { display: none; }
 }
@@ -4325,6 +4328,7 @@ html:not([data-theme="bright"]) .btn-sm[style*="color"] { color: inherit; }
 .theme-toggle-btn {
   background: none; border: 1.5px solid var(--border);
   border-radius: 50%; width: 36px; height: 36px;
+  min-width: 36px; flex-shrink: 0;
   display: inline-flex; align-items: center; justify-content: center;
   cursor: pointer; padding: 0; margin-left: 6px;
   transition: background 0.2s, border-color 0.2s, transform 0.2s;

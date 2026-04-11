@@ -11,27 +11,24 @@ SECTIONS = [
     <p><strong>Example:</strong> \\(\\frac{1}{2} \\times \\frac{3}{4}\\) means "take 1 half of 3 fourths."</p>
   </div>
 
+  <p style="text-align:center; font-weight:bold; margin:10px 0;">Start with \\(\\frac{3}{4}\\):</p>
   <div class="diagram-container">
-    <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>Start with \\(\\frac{3}{4}\\):</text>
-      <rect x="50" y="50" width="200" height="60" fill='none' stroke='#8b949e' stroke-width="2"/>
-      <line x1="100" y1="50" x2="100" y2="110" stroke='#8b949e' stroke-width="1"/>
-      <line x1="150" y1="50" x2="150" y2="110" stroke='#8b949e' stroke-width="1"/>
-      <line x1="200" y1="50" x2="200" y2="110" stroke='#8b949e' stroke-width="1"/>
-      <rect x="50" y="50" width="150" height="60" fill='#4169E1' opacity='0.6'/>
+    <svg viewBox="0 0 400 130" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; display:block; margin:0 auto;">
+      <!-- 3/4 bar -->
+      <rect x="50" y="10" width="200" height="50" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <line x1="100" y1="10" x2="100" y2="60" stroke='#8b949e' stroke-width="1"/>
+      <line x1="150" y1="10" x2="150" y2="60" stroke='#8b949e' stroke-width="1"/>
+      <line x1="200" y1="10" x2="200" y2="60" stroke='#8b949e' stroke-width="1"/>
+      <rect x="50" y="10" width="150" height="50" fill='#4169E1' opacity='0.5'/>
+      <text x="125" y="40" font-size='13' text-anchor='middle' fill='currentColor' font-weight='bold'>3/4 shaded</text>
 
-      <text x="50" y="150" font-size='16' font-weight='bold'>Take \\(\\frac{1}{2}\\) of that (cut in half horizontally):</text>
-      <rect x="50" y="170" width="200" height="60" fill='none' stroke='#8b949e' stroke-width="2"/>
-      <line x1="100" y1="170" x2="100" y2="230" stroke='#8b949e' stroke-width="1"/>
-      <line x1="150" y1="170" x2="150" y2="230" stroke='#8b949e' stroke-width="1"/>
-      <line x1="200" y1="170" x2="200" y2="230" stroke='#8b949e' stroke-width="1"/>
-      <line x1="125" y1="170" x2="125" y2="230" stroke='#22c55e' stroke-width="2"/>
-      <rect x="50" y="170" width="75" height="60" fill='#f59e0b' opacity='0.8'/>
-      <text x="150" y="270" font-size='16' text-anchor='middle' font-weight='bold'>Result: \\(\\frac{3}{8}\\)</text>
-
-      <text x="50" y="310" font-size='16' font-weight='bold'>$$\\frac{1}{2} \\times \\frac{3}{4} = \\frac{1 \\times 3}{2 \\times 4} = \\frac{3}{8}$$</text>
+      <!-- Label -->
+      <text x="150" y="90" font-size='13' text-anchor='middle' fill='currentColor'>Take 1/2 of the shaded part → only 3 out of 8 pieces</text>
+      <text x="150" y="115" font-size='14' text-anchor='middle' fill='currentColor' font-weight='bold'>Result: 3/8</text>
     </svg>
   </div>
+
+  <p style="text-align:center; margin:10px 0;">$$\\frac{1}{2} \\times \\frac{3}{4} = \\frac{1 \\times 3}{2 \\times 4} = \\frac{3}{8}$$</p>
 
   <div class="success-box">
     <h4>The Main Idea:</h4>
@@ -110,23 +107,28 @@ SECTIONS = [
     </div>
   </div>
 
+  <p style="text-align:center; font-weight:bold; margin:10px 0;">Visual: \\(3 \\times \\frac{2}{5}\\)</p>
   <div class="diagram-container">
-    <svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-      <text x="50" y="30" font-size='16' font-weight='bold'>Visual: \\(3 \\times \\frac{2}{5}\\)</text>
+    <svg viewBox="0 0 400 110" xmlns="http://www.w3.org/2000/svg" style="width:100%; max-width:400px; display:block; margin:0 auto;">
+      <!-- Three bars each showing 2/5 -->
+      <rect x="30" y="15" width="100" height="35" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <rect x="30" y="15" width="40" height="35" fill='#4169E1' opacity='0.5'/>
+      <text x="80" y="38" font-size='11' text-anchor='middle' fill='currentColor'>2/5</text>
 
-      <rect x="50" y="50" width="40" height="40" fill='#4169E1' opacity='0.6' stroke='#8b949e' stroke-width="1"/>
-      <line x1="70" y1="50" x2="70" y2="90" stroke='#8b949e' stroke-width="1"/>
-      <text x="60" y="75" font-size='12' text-anchor='middle'>2 fifths</text>
+      <text x="140" y="38" font-size='16' fill='currentColor' font-weight='bold'>+</text>
 
-      <rect x="100" y="50" width="40" height="40" fill='#4169E1' opacity='0.6' stroke='#8b949e' stroke-width="1"/>
-      <line x1="120" y1="50" x2="120" y2="90" stroke='#8b949e' stroke-width="1"/>
+      <rect x="155" y="15" width="100" height="35" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <rect x="155" y="15" width="40" height="35" fill='#4169E1' opacity='0.5'/>
+      <text x="205" y="38" font-size='11' text-anchor='middle' fill='currentColor'>2/5</text>
 
-      <rect x="150" y="50" width="40" height="40" fill='#4169E1' opacity='0.6' stroke='#8b949e' stroke-width="1"/>
-      <line x1="170" y1="50" x2="170" y2="90" stroke='#8b949e' stroke-width="1"/>
+      <text x="265" y="38" font-size='16' fill='currentColor' font-weight='bold'>+</text>
 
-      <text x="120" y="130" font-size='14' font-weight='bold'>= 6 fifths = \\(\\frac{6}{5} = 1\\frac{1}{5}\\)</text>
+      <rect x="280" y="15" width="100" height="35" fill='none' stroke='#8b949e' stroke-width="2"/>
+      <rect x="280" y="15" width="40" height="35" fill='#4169E1' opacity='0.5'/>
+      <text x="330" y="38" font-size='11' text-anchor='middle' fill='currentColor'>2/5</text>
 
-      <text x="50" y="170" font-size='13'>Three times two-fifths = six-fifths</text>
+      <text x="200" y="75" font-size='14' text-anchor='middle' fill='currentColor' font-weight='bold'>= 6/5 = 1 and 1/5</text>
+      <text x="200" y="98" font-size='12' text-anchor='middle' fill='currentColor'>Three groups of two-fifths = six-fifths</text>
     </svg>
   </div>
 

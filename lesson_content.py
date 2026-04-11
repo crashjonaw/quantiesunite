@@ -59,8 +59,14 @@ def get_quiz(tid, n=QUIZ_SIZE, must_include_ids=None):
     content = get_lesson_content(tid)
     if content:
         legacy = content.get("quiz", [])
-        # Add synthetic IDs for legacy questions
-        return [{"id": -(i+1), **q} for i, q in enumerate(legacy)]
+        out = []
+        for i, q in enumerate(legacy):
+            entry = {"id": -(i+1), **q}
+            # MCQ with "options" + "correct" (index) → derive "answer" text
+            if "options" in entry and "correct" in entry and "answer" not in entry:
+                entry["answer"] = entry["options"][entry["correct"]]
+            out.append(entry)
+        return out
     return []
 
 

@@ -67,12 +67,11 @@
         </div>
       </div>
 
-      <!-- Theme toggle -->
-      {% include "partials/_theme_toggle.html" %}
     {% else %}
       <a href="/login" class="nav-link">Sign In</a>
       <a href="/register" class="btn btn-primary btn-sm">Get Started Free</a>
-      {% include "partials/_theme_toggle.html" %}
     {% endif %}
   </div>
+  <!-- Theme toggle — outside nav-links so it's always visible on mobile -->
+  {% include "partials/_theme_toggle.html" %}
 </nav>

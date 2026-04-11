@@ -86,7 +86,7 @@ const TID = "{{ tid }}";
 // Build ordered list of question objects from the rendered form
 const QUIZ_QUESTIONS = [
 {% for q in quiz %}
-  {id: {{ q.id }}, question: {{ q.question | tojson }}, answer: {{ q.answer | tojson }}},
+  {id: {{ q.id }}, question: {{ q.question | tojson }}, answer: {{ q.answer | default('') | tojson }}},
 {% endfor %}
 ];
 
