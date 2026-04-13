@@ -30,7 +30,7 @@ SECTIONS = [
     <ul>
       <li><strong>3 : 2</strong> (colon notation)</li>
       <li><strong>3 to 2</strong> (words)</li>
-      <li><strong>\\\\( \\\\frac{3}{2} \\\\)</strong> (fraction)</li>
+      <li><strong>\\\\( \\\frac{3}{2} \\\\)</strong> (fraction)</li>
     </ul>
     <p>All mean: for every 3 units of the first quantity, there are 2 units of the second.</p>
   </div>
@@ -86,7 +86,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Method to Find Equivalent Ratios:</h4>
-    <p>\\\\( a : b = (a \\\\times k) : (b \\\\times k) \\\\) for any number \\\\( k \\\\)</p>
+    <p>\\\\( a : b = (a \\\times k) : (b \\\times k) \\\\) for any number \\\\( k \\\\)</p>
     <p>Example: 3:4 × 3 = 9:12</p>
   </div>
 
@@ -227,8 +227,8 @@ SECTIONS = [
   <div class="success-box">
     <h4>The Pattern:</h4>
     <p>To divide \\\\( T \\\\) in ratio \\\\( a : b \\\\):</p>
-    <p>First amount = \\\\( \\\\frac{a}{a+b} \\\\times T \\\\)</p>
-    <p>Second amount = \\\\( \\\\frac{b}{a+b} \\\\times T \\\\)</p>
+    <p>First amount = \\\\( \\\frac{a}{a+b} \\\times T \\\\)</p>
+    <p>Second amount = \\\\( \\\frac{b}{a+b} \\\times T \\\\)</p>
   </div>
 </div>'''
     },
@@ -239,7 +239,7 @@ SECTIONS = [
   <div class="concept-box">
     <h3>What is a Proportion?</h3>
     <p>A <strong>proportion</strong> is an equation that states two ratios are equal.</p>
-    <p>Example: \\\\( \\\\frac{2}{3} = \\\\frac{4}{6} \\\\) is a proportion.</p>
+    <p>Example: \\\\( \\\frac{2}{3} = \\\frac{4}{6} \\\\) is a proportion.</p>
     <p>In ratio form: 2:3 = 4:6 is a proportion.</p>
   </div>
 
@@ -269,7 +269,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Cross Multiplication for Proportions:</h4>
-    <p>If \\\\( \\\\frac{a}{b} = \\\\frac{c}{d} \\\\), then \\\\( a \\\\times d = b \\\\times c \\\\)</p>
+    <p>If \\\\( \\\frac{a}{b} = \\\frac{c}{d} \\\\), then \\\\( a \\\times d = b \\\times c \\\\)</p>
     <p>This helps us solve for unknown values.</p>
   </div>
 
@@ -280,7 +280,7 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 1: Write the proportion</h4>
-      <p>\\\\( \\\\frac{5}{2} = \\\\frac{15}{x} \\\\)</p>
+      <p>\\\\( \\\frac{5}{2} = \\\frac{15}{x} \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 2: Cross multiply</h4>
@@ -316,7 +316,7 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 2: Set up a proportion</h4>
-      <p>\\\\( \\\\frac{1}{50000} = \\\\frac{8}{x} \\\\)</p>
+      <p>\\\\( \\\frac{1}{50000} = \\\frac{8}{x} \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 3: Cross multiply</h4>
@@ -409,7 +409,7 @@ SECTIONS = [
       </div>
       <div class="step">
         <h4>Step 2: Set up a proportion</h4>
-        <p>\\\\( \\\\frac{3}{2} = \\\\frac{300}{x} \\\\)</p>
+        <p>\\\\( \\\frac{3}{2} = \\\frac{300}{x} \\\\)</p>
       </div>
       <div class="step">
         <h4>Step 3: Cross multiply</h4>
@@ -429,13 +429,13 @@ SECTIONS = [
     <div class="steps-container">
       <div class="step">
         <h4>Step 1: Convert to fractions</h4>
-        <p>Class A: Girls = \\\\( \\\\frac{4}{7} \\\\) of the class</p>
-        <p>Class B: Girls = \\\\( \\\\frac{6}{11} \\\\) of the class</p>
+        <p>Class A: Girls = \\\\( \\\frac{4}{7} \\\\) of the class</p>
+        <p>Class B: Girls = \\\\( \\\frac{6}{11} \\\\) of the class</p>
       </div>
       <div class="step">
         <h4>Step 2: Compare fractions</h4>
-        <p>\\\\( \\\\frac{4}{7} \\\\approx 0.571 = 57.1% \\\\)</p>
-        <p>\\\\( \\\\frac{6}{11} \\\\approx 0.545 = 54.5% \\\\)</p>
+        <p>\\\\( \\\frac{4}{7} \\\approx 0.571 = 57.1% \\\\)</p>
+        <p>\\\\( \\\frac{6}{11} \\\approx 0.545 = 54.5% \\\\)</p>
       </div>
       <div class="step">
         <h4>Step 3: Conclusion</h4>

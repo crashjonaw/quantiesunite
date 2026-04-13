@@ -5,11 +5,11 @@ SECTIONS = [
         "body": """<p>A <strong>times table</strong> is a list of multiplication answers you use over and over again.</p>
 <p>For example, the <strong>2 times table</strong> shows what happens when you multiply different numbers by 2:</p>
 <div class="concept-box" style="padding: 16px; border-radius: 6px; margin: 16px 0; font-family: monospace; text-align: center">
-  <p style="margin: 8px 0;"><strong>\(1 \times 2 = 2\)</strong></p>
-  <p style="margin: 8px 0;"><strong>\(2 \times 2 = 4\)</strong></p>
-  <p style="margin: 8px 0;"><strong>\(3 \times 2 = 6\)</strong></p>
-  <p style="margin: 8px 0;"><strong>\(4 \times 2 = 8\)</strong></p>
-  <p style="margin: 8px 0;"><strong>\(5 \times 2 = 10\)</strong></p>
+  <p style="margin: 8px 0;"><strong>\(1 \\times 2 = 2\)</strong></p>
+  <p style="margin: 8px 0;"><strong>\(2 \\times 2 = 4\)</strong></p>
+  <p style="margin: 8px 0;"><strong>\(3 \\times 2 = 6\)</strong></p>
+  <p style="margin: 8px 0;"><strong>\(4 \\times 2 = 8\)</strong></p>
+  <p style="margin: 8px 0;"><strong>\(5 \\times 2 = 10\)</strong></p>
 </div>
 <p>By learning these patterns, you can answer multiplication questions <strong>instantly</strong> without counting!</p>"""
     },
@@ -53,7 +53,7 @@ SECTIONS = [
 <canvas id="chart5Times" data-chart='{"type":"bar","data":{"labels":["1×5","2×5","3×5","4×5","5×5","6×5"],"datasets":[{"label":"5 Times Table","data":[5,10,15,20,25,30],"backgroundColor":["#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7"]}]},"options":{"indexAxis":"y","plugins":{"title":{"display":true,"text":"The 5 Times Table Pattern"}},"scales":{"x":{"beginAtZero":true,"max":35}}}}' height="250"></canvas>
 <div class="concept-box" style="background: rgba(34, 197, 94, 0.1); border-left: 4px solid #22c55e; padding: 16px; border-radius: 6px; margin: 16px 0;">
   <p style="margin: 0; font-weight: bold;">Key Pattern:</p>
-  <p style="margin: 8px 0 0 0;">\(1 \times 5 = \)<strong>5</strong>, \(2 \times 5 = \)<strong>10</strong>, \(3 \times 5 = \)<strong>15</strong>, \(4 \times 5 = \)<strong>20</strong>, \(5 \times 5 = \)<strong>25</strong>, ...</p>
+  <p style="margin: 8px 0 0 0;">\(1 \\times 5 = \)<strong>5</strong>, \(2 \\times 5 = \)<strong>10</strong>, \(3 \\times 5 = \)<strong>15</strong>, \(4 \\times 5 = \)<strong>20</strong>, \(5 \\times 5 = \)<strong>25</strong>, ...</p>
   <p style="margin: 8px 0 0 0;">Notice: 5, 10, 15, 20, 25 — they alternate between ending in 5 and 0!</p>
 </div>"""
     },
@@ -94,17 +94,17 @@ SECTIONS = [
     <th style="padding: 12px; text-align: left">Tip to Remember</th>
   </tr>
   <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-    <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">\(\times 2\)</td>
+    <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">\(\\times 2\)</td>
     <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">2, 4, 6, 8, 10, ...</td>
     <td style="padding: 12px; color: var(--success); font-weight: bold;">All even numbers</td>
   </tr>
   <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
-    <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">\(\times 5\)</td>
+    <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">\(\\times 5\)</td>
     <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">5, 10, 15, 20, 25, ...</td>
     <td style="padding: 12px; color: var(--success); font-weight: bold;">Ends in 5 or 0</td>
   </tr>
   <tr>
-    <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">\(\times 10\)</td>
+    <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">\(\\times 10\)</td>
     <td style="padding: 12px; border-right: 1px solid rgba(255,255,255,0.1)">10, 20, 30, 40, 50, ...</td>
     <td style="padding: 12px; color: var(--success); font-weight: bold;">Just add a zero!</td>
   </tr>

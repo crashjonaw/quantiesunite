@@ -188,11 +188,17 @@ fi
 
 # ── 9. Clean up old processes ─────────────────────────────────────
 info "Cleaning up old QuantiesUnite processes..."
+pkill -9 -f "cloudflared.*quantiesunite" 2>/dev/null || true
+# Kill anything on port 5001
 lsof -ti:5001 | xargs kill -9 2>/dev/null || true
-pkill -f "cloudflared.*quantiesunite" 2>/dev/null || true
-# Only kill gunicorn bound to port 5001 (don't kill other apps like bloomburrow on 5000)
-ps aux | grep '[g]unicorn' | grep '5001' | awk '{print $2}' | xargs kill -9 2>/dev/null || true
-sleep 2
+sleep 1
+# Double-check — force kill stragglers
+lsof -ti:5001 | xargs kill -9 2>/dev/null || true
+sleep 1
+# Verify port is free
+if lsof -ti:5001 >/dev/null 2>&1; then
+    fail "Port 5001 still in use — cannot start"
+fi
 ok "Old processes cleaned"
 
 # ── 10. Launch ──────────────────────────────────────────────────────
@@ -214,7 +220,7 @@ export SECRET_KEY
 info "Starting Gunicorn..."
 osascript -e "
 tell app \"Terminal\"
-    set w to do script \"cd '$SCRIPT_DIR' && export SECRET_KEY='$SECRET_KEY' && gunicorn -c gunicorn.conf.py app:app\"
+    set w to do script \"cd '$SCRIPT_DIR' && set -a && source .env && set +a && gunicorn --reload -c gunicorn.conf.py app:app\"
     set custom title of window 1 to \"QU-Gunicorn\"
 end tell"
 

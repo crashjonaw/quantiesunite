@@ -68,15 +68,15 @@ SECTIONS = [
     <h4>Method: Multiply by 100</h4>
     <div class="step">
       <p><strong>Example 1:</strong> Convert 0.35 to a percent</p>
-      <p>\(0.35 \times 100 = 35\%\)</p>
+      <p>\(0.35 \\times 100 = 35\%\)</p>
     </div>
     <div class="step">
       <p><strong>Example 2:</strong> Convert 0.6 to a percent</p>
-      <p>\(0.6 \times 100 = 60\%\)</p>
+      <p>\(0.6 \\times 100 = 60\%\)</p>
     </div>
     <div class="step">
       <p><strong>Example 3:</strong> Convert 1.25 to a percent</p>
-      <p>\(1.25 \times 100 = 125\%\)</p>
+      <p>\(1.25 \\times 100 = 125\%\)</p>
     </div>
   </div>
 
@@ -119,9 +119,9 @@ SECTIONS = [
     <h4>Method 1: Make Denominator 100</h4>
     <div class="step">
       <p><strong>Example:</strong> Convert \\(\\frac{3}{5}\\) to a percent</p>
-      <p>Find what to multiply 5 by to get 100: \(5 \times 20 = 100\)</p>
-      <p>Multiply numerator by the same number: \(3 \times 20 = 60\)</p>
-      <p>\(\frac{3}{5} = \frac{60}{100} = 60\%\)</p>
+      <p>Find what to multiply 5 by to get 100: \(5 \\times 20 = 100\)</p>
+      <p>Multiply numerator by the same number: \(3 \\times 20 = 60\)</p>
+      <p>\(\\frac{3}{5} = \\frac{60}{100} = 60\%\)</p>
     </div>
   </div>
 
@@ -130,21 +130,21 @@ SECTIONS = [
     <div class="step">
       <p><strong>Example:</strong> Convert \\(\\frac{3}{8}\\) to a percent</p>
       <p>Divide: \(3 \div 8 = 0.375\)</p>
-      <p>Multiply by 100: \(0.375 \times 100 = 37.5\%\)</p>
+      <p>Multiply by 100: \(0.375 \\times 100 = 37.5\%\)</p>
     </div>
   </div>
 
   <div class="formula-box">
     <h4>Formula:</h4>
-    <p>Percent = Fraction \(\div 1 \times 100\)</p>
+    <p>Percent = Fraction \(\div 1 \\times 100\)</p>
     <p>Or: Fraction → Decimal → Multiply by 100</p>
   </div>
 
   <div class="example-box">
     <h4>More Examples:</h4>
-    <p>\(\frac{1}{4} = 0.25 = 25\%\)</p>
-    <p>\(\frac{2}{5} = 0.4 = 40\%\)</p>
-    <p>\(\frac{7}{10} = 0.7 = 70\%\)</p>
+    <p>\(\\frac{1}{4} = 0.25 = 25\%\)</p>
+    <p>\(\\frac{2}{5} = 0.4 = 40\%\)</p>
+    <p>\(\\frac{7}{10} = 0.7 = 70\%\)</p>
   </div>
 </div>"""
     },

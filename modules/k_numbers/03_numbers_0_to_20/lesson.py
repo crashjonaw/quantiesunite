@@ -136,7 +136,7 @@ SECTIONS = [
   <tr style="background: #4169E180;">
     <td style="padding: 10px; text-align: center; font-size: 18px;"><strong>20</strong></td>
     <td style="padding: 10px;"><strong>Twenty</strong></td>
-    <td style="padding: 10px;">Two + ty = \(2 \times 10\) (two groups of ten)</td>
+    <td style="padding: 10px;">Two + ty = \(2 \\times 10\) (two groups of ten)</td>
   </tr>
 </table>
 

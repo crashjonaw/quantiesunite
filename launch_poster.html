@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuantiesUnite Launch Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .poster {
+    width: 1080px;
+    min-height: 1350px;
+    background: linear-gradient(160deg, #0c1222 0%, #131d3a 30%, #1a2744 60%, #0c1222 100%);
+    border-radius: 24px;
+    padding: 60px 56px;
+    position: relative;
+    overflow: hidden;
+    color: #e6edf3;
+  }
+
+  /* Subtle glow effects */
+  .poster::before {
+    content: '';
+    position: absolute;
+    top: -100px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(65,105,225,0.15) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .poster::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(123,104,238,0.1) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .brand {
+    font-size: 1.6rem; font-weight: 800; letter-spacing: -0.5px;
+    margin-bottom: 48px;
+  }
+  .brand-q { color: #4169E1; }
+  .brand-u { color: #FF4500; }
+
+  .hero-text {
+    position: relative; z-index: 1;
+    margin-bottom: 40px;
+  }
+  .hero-text h1 {
+    font-size: 3.2rem; font-weight: 900; line-height: 1.15;
+    margin-bottom: 18px; letter-spacing: -1px;
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #4169E1, #7B68EE, #a78bfa);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    font-size: 1.15rem; color: #8b949e; line-height: 1.7;
+    max-width: 580px;
+  }
+
+  /* Promo banner */
+  .promo-box {
+    position: relative; z-index: 1;
+    background: linear-gradient(135deg, #4169E1, #7B68EE);
+    border-radius: 20px;
+    padding: 36px 40px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .promo-label {
+    font-size: 0.85rem; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.1em; color: rgba(255,255,255,0.7);
+    margin-bottom: 8px;
+  }
+  .promo-title {
+    font-size: 2rem; font-weight: 900; color: #fff;
+    margin-bottom: 8px;
+  }
+  .promo-detail {
+    font-size: 1.1rem; color: rgba(255,255,255,0.85);
+    margin-bottom: 16px;
+  }
+  .promo-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 24px; border-radius: 30px;
+    font-size: 0.95rem; font-weight: 700; color: #fff;
+  }
+
+  /* Stats row */
+  .stats-row {
+    position: relative; z-index: 1;
+    display: flex; gap: 16px;
+    margin-bottom: 40px;
+  }
+  .stat-card {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 22px 18px;
+    text-align: center;
+  }
+  .stat-num {
+    font-size: 1.8rem; font-weight: 900; color: #fff;
+    display: block;
+  }
+  .stat-label {
+    font-size: 0.78rem; color: #8b949e; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+
+  /* Features */
+  .features {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  .feature {
+    display: flex; align-items: flex-start; gap: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .feature-emoji { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+  .feature h3 { font-size: 0.88rem; font-weight: 700; margin-bottom: 3px; }
+  .feature p { font-size: 0.76rem; color: #8b949e; line-height: 1.4; }
+
+  /* Levels */
+  .levels-row {
+    position: relative; z-index: 1;
+    display: flex; gap: 8px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+  }
+  .level-pill {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.78rem; font-weight: 700;
+    border: 1.5px solid rgba(255,255,255,0.1);
+    color: #e6edf3;
+  }
+
+  /* Pricing teaser */
+  .pricing-teaser {
+    position: relative; z-index: 1;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .pricing-teaser p {
+    font-size: 1rem; color: #8b949e;
+    margin-bottom: 8px;
+  }
+  .pricing-teaser .price-highlight {
+    font-size: 1.8rem; font-weight: 900; color: #fff;
+  }
+  .pricing-teaser .price-note {
+    font-size: 0.85rem; color: #8b949e;
+  }
+
+  /* CTA */
+  .cta {
+    position: relative; z-index: 1;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .cta-btn {
+    display: inline-block;
+    background: #4169E1; color: #fff;
+    padding: 16px 48px; border-radius: 14px;
+    font-size: 1.15rem; font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  .cta-url {
+    display: block;
+    margin-top: 14px;
+    font-size: 1.1rem; font-weight: 700;
+    color: #4169E1;
+  }
+
+  /* Footer */
+  .poster-footer {
+    position: relative; z-index: 1;
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .poster-footer p {
+    font-size: 0.8rem; color: #8b949e;
+  }
+  .sg-flag {
+    width: 20px; height: 14px; border-radius: 2px;
+    vertical-align: middle; margin-right: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="poster">
+
+  <!-- Brand -->
+  <div class="brand">
+    <span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero-text">
+    <h1>Learn Mathematics<br><span class="gradient-text">from First Principles</span></h1>
+    <p class="hero-sub">From Kindergarten counting to Deep Learning with Transformers — 101 topics, 7,300+ questions, aligned to the Singapore MOE curriculum.</p>
+  </div>
+
+  <!-- Promo -->
+  <div class="promo-box">
+    <div class="promo-label">Launch Promotion</div>
+    <div class="promo-title">First 30 Users Get Full Access FREE</div>
+    <div class="promo-detail">1 month of the complete programme — no payment required</div>
+    <div class="promo-badge">Limited to 30 spots only</div>
+  </div>
+
+  <!-- Stats -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <span class="stat-num">101</span>
+      <span class="stat-label">Topics</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">7,300+</span>
+      <span class="stat-label">Questions</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">12</span>
+      <span class="stat-label">Levels</span>
+    </div>
+    <div class="stat-card">
+      <span class="stat-num">6</span>
+      <span class="stat-label">Grade Exams</span>
+    </div>
+  </div>
+
+  <!-- Levels -->
+  <div class="levels-row">
+    <span class="level-pill" style="border-color:#7FFFD4;">Kindergarten</span>
+    <span class="level-pill" style="border-color:#3CB371;">Primary 1–6</span>
+    <span class="level-pill" style="border-color:#4169E1;">Sec 1–4</span>
+    <span class="level-pill" style="border-color:#1E90FF;">JC / A-Level</span>
+    <span class="level-pill" style="border-color:#9333ea;">Linear Algebra</span>
+    <span class="level-pill" style="border-color:#C71585;">Deep Learning</span>
+  </div>
+
+  <!-- Features -->
+  <div class="features">
+    <div class="feature">
+      <span class="feature-emoji">🌱</span>
+      <div>
+        <h3>First Principles</h3>
+        <p>Every topic starts with "why" — understand, don't memorize</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-emoji">🕸️</span>
+      <div>
+        <h3>Topic Graph</h3>
+        <p>See how every concept connects to the next</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-emoji">🏆</span>
+      <div>
+        <h3>Quizzes &amp; Exams</h3>
+        <p>7,300+ practice questions with instant feedback</p>
+      </div>
+    </div>
+    <div class="feature">
+      <span class="feature-emoji">🇸🇬</span>
+      <div>
+        <h3>Singapore Syllabus</h3>
+        <p>Aligned to MOE from PSLE through A-Level</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing teaser -->
+  <div class="pricing-teaser">
+    <p>Plans starting from</p>
+    <div class="price-highlight">S$7.90/month</div>
+    <div class="price-note">Primary · Secondary · JC · Full Programme</div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <a href="https://quantiesunite.sg" class="cta-btn">Sign Up Now — It's Free to Start</a>
+    <span class="cta-url">quantiesunite.sg</span>
+  </div>
+
+  <!-- Footer -->
+  <div class="poster-footer">
+    <p>Made in Singapore with love for learning</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -90,7 +90,7 @@ SECTIONS = [
 <p><strong>Setup:</strong> Let's call the numbers a and b.
 <ul>
 <li>Condition 1: \(a + b = 12\)</li>
-<li>Condition 2: \(a \times b = 35\)</li>
+<li>Condition 2: \(a \\times b = 35\)</li>
 </ul>
 
 <p><strong>Check Table:</strong></p>
@@ -160,7 +160,7 @@ SECTIONS = [
 
 <p><strong>Conditions:</strong></p>
 <ul>
-<li>Maria's age = \(2 \times\) brother's age</li>
+<li>Maria's age = \(2 \\times\) brother's age</li>
 <li>Maria's age + brother's age \(= 21\)</li>
 </ul>
 
@@ -201,7 +201,7 @@ SECTIONS = [
 <p><strong>Conditions:</strong></p>
 <ul>
 <li>Pens + Notebooks \(= 10\) items</li>
-<li>\(2 \times\) Pens \(+ 5 \times\) Notebooks \(= 35\) dollars</li>
+<li>\(2 \\times\) Pens \(+ 5 \\times\) Notebooks \(= 35\) dollars</li>
 </ul>
 
 <p><strong>Check Table:</strong></p>
@@ -277,9 +277,9 @@ SECTIONS = [
 
 <p><strong>Method 2: Guess and Check (Slower)</strong></p>
 <ul>
-<li>Guess 5: \(5 \times 3 + 7 = 22\) (too small)</li>
-<li>Guess 8: \(8 \times 3 + 7 = 31\) (too big)</li>
-<li>Guess 7: \(7 \times 3 + 7 = 28\) (correct!)</li>
+<li>Guess 5: \(5 \\times 3 + 7 = 22\) (too small)</li>
+<li>Guess 8: \(8 \\times 3 + 7 = 31\) (too big)</li>
+<li>Guess 7: \(7 \\times 3 + 7 = 28\) (correct!)</li>
 <li>Answer: 7 (three guesses)</li>
 </ul>
 

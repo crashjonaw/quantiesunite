@@ -6,19 +6,19 @@ SECTIONS = [
         "body": """
         <p><strong>Fundamental properties of determinants:</strong></p>
 
-        <p><strong>1. Multiplicativity:</strong> \(det(AB) = det(A) \cdot det(B)\). For square matrices, the determinant of a product is the product of determinants.</p>
+        <p><strong>1. Multiplicativity:</strong> \(det(AB) = det(A) \\cdot det(B)\). For square matrices, the determinant of a product is the product of determinants.</p>
 
         <p><strong>2. Transpose:</strong> \(det(A^T) = det(A)\). The determinant of the transpose equals the original.</p>
 
-        <p><strong>3. Invertibility:</strong> A is invertible iff \(det(A) \neq 0\). And \(det(A^{-1}) = 1/det(A)\).</p>
+        <p><strong>3. Invertibility:</strong> A is invertible iff \(det(A) \\neq 0\). And \(det(A^{-1}) = 1/det(A)\).</p>
 
-        <p><strong>4. Determinant of scalar multiple:</strong> \(det(cA) = c^n \cdot det(A)\) for an \(n \times n\) matrix (each of n rows is scaled).</p>
+        <p><strong>4. Determinant of scalar multiple:</strong> \(det(cA) = c^n \\cdot det(A)\) for an \(n \\times n\) matrix (each of n rows is scaled).</p>
 
         <div class='concept-box'>
         <p><strong>Special Determinants:</strong></p>
         <ul>
         <li><strong>Identity matrix I:</strong> \(det(I) = 1\)</li>
-        <li><strong>Diagonal matrix:</strong> \(det(diag(d_1, \ldots, d_n)) = d_1 \cdot d_2 \cdot \ldots \cdot d_n\) (product of diagonal entries)</li>
+        <li><strong>Diagonal matrix:</strong> \(det(diag(d_1, \ldots, d_n)) = d_1 \\cdot d_2 \\cdot \ldots \\cdot d_n\) (product of diagonal entries)</li>
         <li><strong>Triangular matrix:</strong> \(det\) = product of diagonal entries</li>
         <li><strong>Singular matrix:</strong> \(det(A) = 0\) (not invertible)</li>
         </ul>

@@ -68,8 +68,8 @@ SECTIONS = [
 <h4>Fair Coin</h4>
 <p>When you flip a fair coin:</p>
 <ul>
-<li>\(P(\text{Heads}) = \frac{1}{2} = 50\%\)</li>
-<li>\(P(\text{Tails}) = \frac{1}{2} = 50\%\)</li>
+<li>\(P(\\text{Heads}) = \\frac{1}{2} = 50\%\)</li>
+<li>\(P(\\text{Tails}) = \\frac{1}{2} = 50\%\)</li>
 <li>Both outcomes are equally likely</li>
 </ul>
 </div>
@@ -78,7 +78,7 @@ SECTIONS = [
 <h4>Fair Die</h4>
 <p>When you roll a fair die:</p>
 <ul>
-<li>Each number (1, 2, 3, 4, 5, 6) has equal chance: \(\frac{1}{6}\) each</li>
+<li>Each number (1, 2, 3, 4, 5, 6) has equal chance: \(\\frac{1}{6}\) each</li>
 <li>No number is more likely than another</li>
 </ul>
 </div>
@@ -88,7 +88,7 @@ SECTIONS = [
 <p>A spinner with 4 equal-sized sections:</p>
 <ul>
 <li>Each section has equal area</li>
-<li>Landing on any color: \(\frac{1}{4}\) each</li>
+<li>Landing on any color: \(\\frac{1}{4}\) each</li>
 </ul>
 </div>
 
@@ -152,20 +152,20 @@ SECTIONS = [
 <h4>Problem 1: Listing a Sample Space</h4>
 <p><strong>Question:</strong> You flip a coin twice. What is the complete sample space?</p>
 <p><strong>Answer:</strong> {HH, HT, TH, TT} (4 outcomes)</p>
-<p><strong>Explanation:</strong> The first flip can be H or T, and the second flip can be H or T. That gives us \(2 \times 2 = 4\) total possibilities.</p>
+<p><strong>Explanation:</strong> The first flip can be H or T, and the second flip can be H or T. That gives us \(2 \\times 2 = 4\) total possibilities.</p>
 </div>
 
 <div class="worked-example">
 <h4>Problem 2: Finding a Probability</h4>
 <p><strong>Question:</strong> A spinner has sections labeled A, B, B, C (so B appears twice). What is P(spinning B)?</p>
 <p><strong>Answer:</strong> \\(P(B) = \\frac{2}{4} = \\frac{1}{2} = 0.5 \\text{ or } 50\\%\\)</p>
-<p><strong>Explanation:</strong> There are 4 sections total. 2 of them are labeled B. So \(P(B) = \frac{2}{4}\).</p>
+<p><strong>Explanation:</strong> There are 4 sections total. 2 of them are labeled B. So \(P(B) = \\frac{2}{4}\).</p>
 </div>
 
 <div class="worked-example">
 <h4>Problem 3: Comparing Probabilities</h4>
 <p><strong>Question:</strong> In the spinner above (A, B, B, C), which is more likely: spinning A or spinning C?</p>
-<p><strong>Answer:</strong> A and C are equally likely (both \(P = \frac{1}{4}\))</p>
+<p><strong>Answer:</strong> A and C are equally likely (both \(P = \\frac{1}{4}\))</p>
 <p><strong>Explanation:</strong> \\(P(A) = \\frac{1}{4}\\) and \\(P(C) = \\frac{1}{4}\\). They're the same!</p>
 </div>"""
     }

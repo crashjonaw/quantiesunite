@@ -153,7 +153,7 @@ SECTIONS = [
 <li>Total: 4 units = 48</li>
 <li>1 unit = \(48 \div 4 = 12\)</li>
 <li>Jerry has 12 marbles</li>
-<li>Tom has \(3 \times 12 = 36\) marbles</li>
+<li>Tom has \(3 \\times 12 = 36\) marbles</li>
 </ul>
 </div>
 

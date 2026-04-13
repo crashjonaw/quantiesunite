@@ -5,7 +5,7 @@ SECTIONS = [
         "content": '''<div class="lesson-container">
   <div class="concept-box">
     <h3>What is a Fraction?</h3>
-    <p>A fraction represents <strong>equal parts of a whole</strong>. When we write \\\\( \\\\frac{3}{4} \\\\), we are saying:</p>
+    <p>A fraction represents <strong>equal parts of a whole</strong>. When we write \\\\( \\\frac{3}{4} \\\\), we are saying:</p>
     <ul>
       <li><strong>3</strong> = how many parts we have (numerator)</li>
       <li><strong>4</strong> = how many equal parts the whole is divided into (denominator)</li>
@@ -40,7 +40,7 @@ SECTIONS = [
     <h3>What Are Equivalent Fractions?</h3>
     <p>Equivalent fractions represent the same amount but use different numerators and denominators.</p>
     <p><strong>The Golden Rule:</strong> If we multiply (or divide) BOTH the numerator and denominator by the same number, we get an equivalent fraction.</p>
-    <p>$$ \\\\frac{a}{b} = \\\\frac{a \\\\times k}{b \\\\times k} $$</p>
+    <p>$$ \\\frac{a}{b} = \\\frac{a \\\times k}{b \\\times k} $$</p>
   </div>
 
   <div class="diagram-container">
@@ -72,7 +72,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Key Concept: Multiplying the numerator and denominator by the same number doesn't change the value.</h4>
-    <p>This is because we are multiplying by \\\\( \\\\frac{k}{k} \\\\), which equals 1!</p>
+    <p>This is because we are multiplying by \\\\( \\\frac{k}{k} \\\\), which equals 1!</p>
   </div>
 </div>'''
     },
@@ -90,7 +90,7 @@ SECTIONS = [
     <h3>Method: Finding the GCF</h3>
     <div class="step">
       <h4>Step 1: List the factors</h4>
-      <p>For \\\\( \\\\frac{12}{18} \\\\):</p>
+      <p>For \\\\( \\\frac{12}{18} \\\\):</p>
       <p>Factors of 12: 1, 2, 3, 4, 6, 12</p>
       <p>Factors of 18: 1, 2, 3, 6, 9, 18</p>
     </div>
@@ -101,7 +101,7 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 3: Divide both by the GCF</h4>
-      <p>$$ \\\\frac{12}{18} = \\\\frac{12 \\\\div 6}{18 \\\\div 6} = \\\\frac{2}{3} $$</p>
+      <p>$$ \\\frac{12}{18} = \\\frac{12 \\\\div 6}{18 \\\\div 6} = \\\frac{2}{3} $$</p>
     </div>
   </div>
 
@@ -140,11 +140,11 @@ SECTIONS = [
 
   <div class="example-box">
     <h4>Example:</h4>
-    <p>Simplify \\\\( \\\\frac{15}{25} \\\\)</p>
+    <p>Simplify \\\\( \\\frac{15}{25} \\\\)</p>
     <p>Factors of 15: 1, 3, 5, 15</p>
     <p>Factors of 25: 1, 5, 25</p>
     <p>GCF = 5</p>
-    <p>$$ \\\\frac{15}{25} = \\\\frac{15 \\\\div 5}{25 \\\\div 5} = \\\\frac{3}{5} $$</p>
+    <p>$$ \\\frac{15}{25} = \\\frac{15 \\\\div 5}{25 \\\\div 5} = \\\frac{3}{5} $$</p>
   </div>
 </div>'''
     },
@@ -155,7 +155,7 @@ SECTIONS = [
   <div class="concept-box">
     <h3>Why We Need Common Denominators</h3>
     <p>You can only add or subtract fractions if they represent the <strong>same size pieces</strong>.</p>
-    <p>Imagine trying to add \\\\( \\\\frac{1}{2} \\\\) pizza slice to \\\\( \\\\frac{1}{4} \\\\) pizza slice directly—the pieces are different sizes!</p>
+    <p>Imagine trying to add \\\\( \\\frac{1}{2} \\\\) pizza slice to \\\\( \\\frac{1}{4} \\\\) pizza slice directly—the pieces are different sizes!</p>
   </div>
 
   <div class="diagram-container">
@@ -203,26 +203,26 @@ SECTIONS = [
     <h3>Method: Adding Fractions</h3>
     <div class="step">
       <h4>Step 1: Find a Common Denominator</h4>
-      <p>For \\\\( \\\\frac{1}{2} + \\\\frac{1}{4} \\\\), the LCD (Least Common Denominator) is 4.</p>
+      <p>For \\\\( \\\frac{1}{2} + \\\frac{1}{4} \\\\), the LCD (Least Common Denominator) is 4.</p>
     </div>
     <div class="step">
       <h4>Step 2: Convert to Equivalent Fractions</h4>
-      <p>\\\\( \\\\frac{1}{2} = \\\\frac{2}{4} \\\\)</p>
+      <p>\\\\( \\\frac{1}{2} = \\\frac{2}{4} \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 3: Add the Numerators</h4>
-      <p>$$ \\\\frac{2}{4} + \\\\frac{1}{4} = \\\\frac{2+1}{4} = \\\\frac{3}{4} $$</p>
+      <p>$$ \\\frac{2}{4} + \\\frac{1}{4} = \\\frac{2+1}{4} = \\\frac{3}{4} $$</p>
     </div>
     <div class="step">
       <h4>Step 4: Simplify if Needed</h4>
-      <p>\\\\( \\\\frac{3}{4} \\\\) is already in lowest terms.</p>
+      <p>\\\\( \\\frac{3}{4} \\\\) is already in lowest terms.</p>
     </div>
   </div>
 
   <div class="example-box">
     <h4>More Examples:</h4>
-    <p>$$ \\\\frac{2}{5} + \\\\frac{3}{10} = \\\\frac{4}{10} + \\\\frac{3}{10} = \\\\frac{7}{10} $$</p>
-    <p>$$ \\\\frac{3}{4} - \\\\frac{1}{6} = \\\\frac{9}{12} - \\\\frac{2}{12} = \\\\frac{7}{12} $$</p>
+    <p>$$ \\\frac{2}{5} + \\\frac{3}{10} = \\\frac{4}{10} + \\\frac{3}{10} = \\\frac{7}{10} $$</p>
+    <p>$$ \\\frac{3}{4} - \\\frac{1}{6} = \\\frac{9}{12} - \\\frac{2}{12} = \\\frac{7}{12} $$</p>
   </div>
 </div>'''
     },
@@ -233,7 +233,7 @@ SECTIONS = [
   <div class="concept-box">
     <h3>Understanding Fraction Multiplication</h3>
     <p>When we multiply fractions, we are finding "a fraction OF another fraction."</p>
-    <p><strong>Key insight:</strong> \\\\( \\\\frac{1}{2} \\\\times \\\\frac{3}{4} \\\\) means "1 half of 3 fourths."</p>
+    <p><strong>Key insight:</strong> \\\\( \\\frac{1}{2} \\\times \\\frac{3}{4} \\\\) means "1 half of 3 fourths."</p>
   </div>
 
   <div class="diagram-container">
@@ -263,7 +263,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Multiplication Rule:</h4>
-    <p>$$ \\\\frac{a}{b} \\\\times \\\\frac{c}{d} = \\\\frac{a \\\\times c}{b \\\\times d} $$</p>
+    <p>$$ \\\frac{a}{b} \\\times \\\frac{c}{d} = \\\frac{a \\\times c}{b \\\times d} $$</p>
     <p><strong>In words:</strong> Multiply the numerators together, multiply the denominators together.</p>
   </div>
 
@@ -271,26 +271,26 @@ SECTIONS = [
     <h3>Method: Multiplying Fractions</h3>
     <div class="step">
       <h4>Step 1: Multiply numerators</h4>
-      <p>\\\\( \\\\frac{2}{3} \\\\times \\\\frac{5}{7} \\\\) → numerators: \\\\( 2 \\\\times 5 = 10 \\\\)</p>
+      <p>\\\\( \\\frac{2}{3} \\\times \\\frac{5}{7} \\\\) → numerators: \\\\( 2 \\\times 5 = 10 \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 2: Multiply denominators</h4>
-      <p>Denominators: \\\\( 3 \\\\times 7 = 21 \\\\)</p>
+      <p>Denominators: \\\\( 3 \\\times 7 = 21 \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 3: Write the result</h4>
-      <p>$$ \\\\frac{2}{3} \\\\times \\\\frac{5}{7} = \\\\frac{10}{21} $$</p>
+      <p>$$ \\\frac{2}{3} \\\times \\\frac{5}{7} = \\\frac{10}{21} $$</p>
     </div>
     <div class="step">
       <h4>Step 4: Simplify if possible</h4>
-      <p>\\\\( \\\\frac{10}{21} \\\\) has no common factors, so it is done.</p>
+      <p>\\\\( \\\frac{10}{21} \\\\) has no common factors, so it is done.</p>
     </div>
   </div>
 
   <div class="example-box">
     <h4>Multiplying by Whole Numbers:</h4>
-    <p>A whole number can be written as a fraction: \\\\( 3 = \\\\frac{3}{1} \\\\)</p>
-    <p>$$ 3 \\\\times \\\\frac{2}{5} = \\\\frac{3}{1} \\\\times \\\\frac{2}{5} = \\\\frac{6}{5} = 1\\\\frac{1}{5} $$</p>
+    <p>A whole number can be written as a fraction: \\\\( 3 = \\\frac{3}{1} \\\\)</p>
+    <p>$$ 3 \\\times \\\frac{2}{5} = \\\frac{3}{1} \\\times \\\frac{2}{5} = \\\frac{6}{5} = 1\\\frac{1}{5} $$</p>
   </div>
 </div>'''
     },
@@ -300,8 +300,8 @@ SECTIONS = [
         "content": '''<div class="lesson-container">
   <div class="concept-box">
     <h3>What Does Dividing by a Fraction Mean?</h3>
-    <p>\\\\( \\\\frac{3}{4} \\\\div \\\\frac{1}{2} \\\\) asks: <strong>"How many halves fit into 3 fourths?"</strong></p>
-    <p>Or: <strong>"How many \\\\( \\\\frac{1}{2} \\\\)s are in \\\\( \\\\frac{3}{4} \\\\)?"</strong></p>
+    <p>\\\\( \\\frac{3}{4} \\\\div \\\frac{1}{2} \\\\) asks: <strong>"How many halves fit into 3 fourths?"</strong></p>
+    <p>Or: <strong>"How many \\\\( \\\frac{1}{2} \\\\)s are in \\\\( \\\frac{3}{4} \\\\)?"</strong></p>
   </div>
 
   <div class="diagram-container">
@@ -334,7 +334,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>The Invert and Multiply Rule:</h4>
-    <p>$$ \\\\frac{a}{b} \\\\div \\\\frac{c}{d} = \\\\frac{a}{b} \\\\times \\\\frac{d}{c} $$</p>
+    <p>$$ \\\frac{a}{b} \\\\div \\\frac{c}{d} = \\\frac{a}{b} \\\times \\\frac{d}{c} $$</p>
     <p><strong>Steps:</strong></p>
     <ol>
       <li>Keep the first fraction as is</li>
@@ -347,31 +347,31 @@ SECTIONS = [
   <div class="steps-container">
     <h3>Method: Dividing Fractions</h3>
     <div class="step">
-      <h4>Example: \\\\( \\\\frac{2}{3} \\\\div \\\\frac{5}{7} \\\\)</h4>
+      <h4>Example: \\\\( \\\frac{2}{3} \\\\div \\\frac{5}{7} \\\\)</h4>
     </div>
     <div class="step">
       <h4>Step 1: Keep the first fraction</h4>
-      <p>\\\\( \\\\frac{2}{3} \\\\)</p>
+      <p>\\\\( \\\frac{2}{3} \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 2: Invert the second fraction</h4>
-      <p>\\\\( \\\\frac{5}{7} \\\\) becomes \\\\( \\\\frac{7}{5} \\\\)</p>
+      <p>\\\\( \\\frac{5}{7} \\\\) becomes \\\\( \\\frac{7}{5} \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 3: Multiply</h4>
-      <p>$$ \\\\frac{2}{3} \\\\times \\\\frac{7}{5} = \\\\frac{14}{15} $$</p>
+      <p>$$ \\\frac{2}{3} \\\times \\\frac{7}{5} = \\\frac{14}{15} $$</p>
     </div>
   </div>
 
   <div class="warning-box">
     <h4>Why Does Invert and Multiply Work?</h4>
     <p>Division is the opposite of multiplication. When we invert (flip) the fraction, we are finding the reciprocal—the number that, when multiplied by the original, gives 1.</p>
-    <p>\\\\( \\\\frac{2}{3} \\\\times \\\\frac{3}{2} = 1 \\\\)</p>
+    <p>\\\\( \\\frac{2}{3} \\\times \\\frac{3}{2} = 1 \\\\)</p>
   </div>
 
   <div class="example-box">
     <h4>Dividing by a Whole Number:</h4>
-    <p>$$ \\\\frac{4}{5} \\\\div 2 = \\\\frac{4}{5} \\\\div \\\\frac{2}{1} = \\\\frac{4}{5} \\\\times \\\\frac{1}{2} = \\\\frac{4}{10} = \\\\frac{2}{5} $$</p>
+    <p>$$ \\\frac{4}{5} \\\\div 2 = \\\frac{4}{5} \\\\div \\\frac{2}{1} = \\\frac{4}{5} \\\times \\\frac{1}{2} = \\\frac{4}{10} = \\\frac{2}{5} $$</p>
   </div>
 </div>'''
     },
@@ -383,7 +383,7 @@ SECTIONS = [
     <h3>Two Ways to Write the Same Amount</h3>
     <p><strong>Improper Fraction:</strong> The numerator is greater than or equal to the denominator.</p>
     <p><strong>Mixed Number:</strong> A whole number and a fraction together.</p>
-    <p>Example: \\\\( \\\\frac{7}{3} = 2\\\\frac{1}{3} \\\\) (they represent the same amount!)</p>
+    <p>Example: \\\\( \\\frac{7}{3} = 2\\\frac{1}{3} \\\\) (they represent the same amount!)</p>
   </div>
 
   <div class="diagram-container">
@@ -421,12 +421,12 @@ SECTIONS = [
     <h3>Method: Convert Improper Fraction to Mixed Number</h3>
     <div class="step">
       <h4>Step 1: Divide numerator by denominator</h4>
-      <p>\\\\( \\\\frac{11}{4} \\\\): Divide \\\\( 11 \\\\div 4 = 2 \\\\) remainder \\\\( 3 \\\\)</p>
+      <p>\\\\( \\\frac{11}{4} \\\\): Divide \\\\( 11 \\\\div 4 = 2 \\\\) remainder \\\\( 3 \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 2: Write as mixed number</h4>
       <p>Whole part = 2, numerator = remainder = 3, denominator = 4</p>
-      <p>Result: \\\\( 2\\\\frac{3}{4} \\\\)</p>
+      <p>Result: \\\\( 2\\\frac{3}{4} \\\\)</p>
     </div>
   </div>
 
@@ -434,7 +434,7 @@ SECTIONS = [
     <h3>Method: Convert Mixed Number to Improper Fraction</h3>
     <div class="step">
       <h4>Step 1: Multiply whole by denominator</h4>
-      <p>\\\\( 3\\\\frac{2}{5} \\\\): \\\\( 3 \\\\times 5 = 15 \\\\)</p>
+      <p>\\\\( 3\\\frac{2}{5} \\\\): \\\\( 3 \\\times 5 = 15 \\\\)</p>
     </div>
     <div class="step">
       <h4>Step 2: Add the numerator</h4>
@@ -442,13 +442,13 @@ SECTIONS = [
     </div>
     <div class="step">
       <h4>Step 3: Use same denominator</h4>
-      <p>Result: \\\\( \\\\frac{17}{5} \\\\)</p>
+      <p>Result: \\\\( \\\frac{17}{5} \\\\)</p>
     </div>
   </div>
 
   <div class="success-box">
     <h4>Why This Matters:</h4>
-    <p>Mixed numbers are easier to read (\\\\( 2\\\\frac{1}{3} \\\\) "two and one third"). But improper fractions are easier for calculations.</p>
+    <p>Mixed numbers are easier to read (\\\\( 2\\\frac{1}{3} \\\\) "two and one third"). But improper fractions are easier for calculations.</p>
     <p>Many problems ask you to convert between them!</p>
   </div>
 </div>'''
@@ -470,7 +470,7 @@ SECTIONS = [
 
   <div class="example-box">
     <h4>Problem 1: Finding a Fraction of a Whole</h4>
-    <p><strong>Question:</strong> Sarah has 20 apples. She gives away \\\\( \\\\frac{3}{5} \\\\) of them. How many apples does she give away?</p>
+    <p><strong>Question:</strong> Sarah has 20 apples. She gives away \\\\( \\\frac{3}{5} \\\\) of them. How many apples does she give away?</p>
 
     <div class="diagram-container">
       <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg">
@@ -498,7 +498,7 @@ SECTIONS = [
 
   <div class="example-box">
     <h4>Problem 2: Combining Fractions</h4>
-    <p><strong>Question:</strong> A recipe uses \\\\( \\\\frac{2}{3} \\\\) cup of sugar and \\\\( \\\\frac{1}{4} \\\\) cup of honey. How much sweetener total?</p>
+    <p><strong>Question:</strong> A recipe uses \\\\( \\\frac{2}{3} \\\\) cup of sugar and \\\\( \\\frac{1}{4} \\\\) cup of honey. How much sweetener total?</p>
 
     <div class="diagram-container">
       <svg viewBox="0 0 500 160" xmlns="http://www.w3.org/2000/svg">
@@ -542,9 +542,9 @@ SECTIONS = [
   <div class="warning-box">
     <h4>Key Phrases and Operations:</h4>
     <ul>
-      <li><strong>"of"</strong> usually means multiply: "\\\\( \\\\frac{1}{2} \\\\) of 10" → \\\\( \\\\frac{1}{2} \\\\times 10 \\\\)</li>
-      <li><strong>"How many... left"</strong> means subtract: "Start with 20, give away \\\\( \\\\frac{3}{4} \\\\)" → \\\\( 20 - \\\\frac{3}{4} \\\\times 20 \\\\)</li>
-      <li><strong>"How many times"</strong> means divide: "\\\\( 5 \\\\) divided into \\\\( \\\\frac{1}{4} \\\\) portions" → \\\\( 5 \\\\div \\\\frac{1}{4} \\\\)</li>
+      <li><strong>"of"</strong> usually means multiply: "\\\\( \\\frac{1}{2} \\\\) of 10" → \\\\( \\\frac{1}{2} \\\times 10 \\\\)</li>
+      <li><strong>"How many... left"</strong> means subtract: "Start with 20, give away \\\\( \\\frac{3}{4} \\\\)" → \\\\( 20 - \\\frac{3}{4} \\\times 20 \\\\)</li>
+      <li><strong>"How many times"</strong> means divide: "\\\\( 5 \\\\) divided into \\\\( \\\frac{1}{4} \\\\) portions" → \\\\( 5 \\\\div \\\frac{1}{4} \\\\)</li>
     </ul>
   </div>
 </div>'''

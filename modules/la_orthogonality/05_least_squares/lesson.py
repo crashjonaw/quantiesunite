@@ -63,8 +63,8 @@ Note: 3 equations, 2 unknowns → overdetermined
 
         <p><strong>Derivation (from First Principles):</strong> To minimize $f(\\mathbf{x}) = ||A\\mathbf{x} - \\mathbf{b}||^2 = (A\\mathbf{x} - \\mathbf{b})^T(A\\mathbf{x} - \\mathbf{b})$, take the gradient and set to zero:</p>
 
-        <pre>\(\nabla f = 2A^T(A\mathbf{x} - \mathbf{b}) = 0\)
-\(A^T A \mathbf{x} = A^T \mathbf{b}\)</pre>
+        <pre>\(\\nabla f = 2A^T(A\\mathbf{x} - \\mathbf{b}) = 0\)
+\(A^T A \\mathbf{x} = A^T \\mathbf{b}\)</pre>
 
         <p><strong>Geometric Check:</strong> The residual $\\mathbf{r} = \\mathbf{b} - A\\hat{\\mathbf{x}}$ satisfies:</p>
 

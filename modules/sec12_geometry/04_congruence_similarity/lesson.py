@@ -149,7 +149,7 @@ SECTIONS = [
 <div class="worked-example">
 <p>Check the scale factor:</p>
 <p>\(4 \div 2 = 2\) and \(6 \div 3 = 2\), so scale factor = 2</p>
-<p>\(x = 4 \times 2 = 8\) cm</p>
+<p>\(x = 4 \\times 2 = 8\) cm</p>
 <p><strong>Answer: x = 8 cm</strong></p>
 </div>
 </div>
@@ -173,7 +173,7 @@ SECTIONS = [
 <p><strong>Triangle A has area 10 cm². Triangle B is similar with linear scale factor 3.</strong></p>
 <p>What is the area of Triangle B?</p>
 
-<p>Area of B = \(10 \times 3^2 = 10 \times 9 = 90\) cm²</p>
+<p>Area of B = \(10 \\times 3^2 = 10 \\times 9 = 90\) cm²</p>
 
 <svg width="100%" height="180" viewBox="0 0 500 180" class="formula-box">
   <!-- Triangle A -->

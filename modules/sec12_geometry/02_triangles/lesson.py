@@ -222,7 +222,7 @@ SECTIONS = [
         "body": """
 <h4>The General Formula for Any Polygon</h4>
 <div class="concept-box">
-<p><strong>Sum of interior angles = \((n - 2) \times 180°\)</strong></p>
+<p><strong>Sum of interior angles = \((n - 2) \\times 180°\)</strong></p>
 <p>where <strong>n</strong> = number of sides</p>
 <p>This works because any polygon can be divided into triangles from one vertex.</p>
 </div>
@@ -234,19 +234,19 @@ SECTIONS = [
 <th>Polygon</th><th>Sides (n)</th><th>Angle Sum Formula</th><th>Total</th>
 </tr>
 <tr class="formula-box">
-<td>Triangle</td><td>3</td><td>\((3 - 2) \times 180°\)</td><td>180°</td>
+<td>Triangle</td><td>3</td><td>\((3 - 2) \\times 180°\)</td><td>180°</td>
 </tr>
 <tr class="formula-box">
-<td>Quadrilateral</td><td>4</td><td>\((4 - 2) \times 180°\)</td><td>360°</td>
+<td>Quadrilateral</td><td>4</td><td>\((4 - 2) \\times 180°\)</td><td>360°</td>
 </tr>
 <tr class="formula-box">
-<td>Pentagon</td><td>5</td><td>\((5 - 2) \times 180°\)</td><td>540°</td>
+<td>Pentagon</td><td>5</td><td>\((5 - 2) \\times 180°\)</td><td>540°</td>
 </tr>
 <tr class="formula-box">
-<td>Hexagon</td><td>6</td><td>\((6 - 2) \times 180°\)</td><td>720°</td>
+<td>Hexagon</td><td>6</td><td>\((6 - 2) \\times 180°\)</td><td>720°</td>
 </tr>
 <tr class="formula-box">
-<td>Heptagon</td><td>7</td><td>\((7 - 2) \times 180°\)</td><td>900°</td>
+<td>Heptagon</td><td>7</td><td>\((7 - 2) \\times 180°\)</td><td>900°</td>
 </tr>
 </table>
 </div>
@@ -261,8 +261,8 @@ SECTIONS = [
 <p><strong>Example: Find each interior angle in a regular hexagon</strong></p>
 <div class="worked-example">
 <p>n = 6</p>
-<p>Each angle = \((6 - 2) \times 180° \div 6\)</p>
-<p>Each angle = \(4 \times 180° \div 6 = 720° \div 6 = 120°\)</p>
+<p>Each angle = \((6 - 2) \\times 180° \div 6\)</p>
+<p>Each angle = \(4 \\times 180° \div 6 = 720° \div 6 = 120°\)</p>
 <p><strong>Answer: 120°</strong></p>
 </div>
 </div>

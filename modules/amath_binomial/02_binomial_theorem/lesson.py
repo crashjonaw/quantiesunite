@@ -32,7 +32,7 @@ SECTIONS = [
         </p>
 
         <p style="text-align: center; margin: 15px 0; padding: 15px; border-radius: 4px">
-            $$(a + b)^n = a^n + C(n,1)a^{n-1}b + C(n,2)a^{n-2}b^2 + \cdots + C(n,n-1)ab^{n-1} + b^n$$
+            $$(a + b)^n = a^n + C(n,1)a^{n-1}b + C(n,2)a^{n-2}b^2 + \\cdots + C(n,n-1)ab^{n-1} + b^n$$
         </p>
 
         <div class="worked-example">
@@ -109,7 +109,7 @@ SECTIONS = [
         <div class="concept-box">
             <ol >
                 <li><strong>Identify n:</strong> The exponent</li>
-                <li><strong>Write out the pattern:</strong> \\(C(n,0)p^n + C(n,1)p^{n-1}q + \cdots + C(n,n)q^n\\)</li>
+                <li><strong>Write out the pattern:</strong> \\(C(n,0)p^n + C(n,1)p^{n-1}q + \\cdots + C(n,n)q^n\\)</li>
                 <li><strong>Calculate binomial coefficients:</strong> Use Pascal's Triangle or the formula</li>
                 <li><strong>Substitute p and q:</strong> Apply the actual terms, paying attention to signs</li>
             </ol>

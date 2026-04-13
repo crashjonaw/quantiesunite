@@ -9,7 +9,7 @@ SECTIONS = [
     <h3 style="color: #f85149;">The Vanishing Gradient Problem</h3>
     <p>In deep networks, gradients can become exponentially small:</p>
     <p>$$\\frac{\\partial L}{\\partial w^{(1)}} = \\frac{\\partial L}{\\partial w^{(L)}} \\prod_{l=1}^{L-1} \\sigma'(z^{(l)})$$</p>
-    <p>For sigmoid: \(\sigma'(z) \leq 0.25\). Over 20 layers: \((0.25)^{20} \approx 10^{-13}\)</p>
+    <p>For sigmoid: \(\\sigma'(z) \\leq 0.25\). Over 20 layers: \((0.25)^{20} \\approx 10^{-13}\)</p>
     <p style="margin-top: 12px;"><strong>Result:</strong> Early layers receive tiny gradients and learn slowly or not at all.</p>
 </div>
 """
@@ -21,7 +21,7 @@ SECTIONS = [
 <div class="warning-box formula-box">
     <h3 style="color: #f85149;">The Exploding Gradient Problem</h3>
     <p>Conversely, gradients can explode when activation derivatives are large:</p>
-    <p>If \(\sigma'(z) > 1\) in many layers, products grow exponentially:</p>
+    <p>If \(\\sigma'(z) > 1\) in many layers, products grow exponentially:</p>
     <p>$$\\prod_{l=1}^{L} \\sigma'(z^{(l)}) \\approx 2^L \\to \\infty$$</p>
     <p style="margin-top: 12px;"><strong>Result:</strong> Parameters receive huge gradient updates, causing instability and NaN values (numerical overflow).</p>
 </div>

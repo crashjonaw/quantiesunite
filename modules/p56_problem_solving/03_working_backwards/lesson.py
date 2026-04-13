@@ -170,7 +170,7 @@ SECTIONS = [
 <li>Original number: 7</li>
 </ul>
 
-<p><strong>Check:</strong> \(7 \times 3 = 21\), then \(21 + 7 = 28\) ✓</p>
+<p><strong>Check:</strong> \(7 \\times 3 = 21\), then \(21 + 7 = 28\) ✓</p>
 </div>
 """
     },
@@ -292,7 +292,7 @@ SECTIONS = [
 <p><strong>Check:</strong>
 <ul>
 <li>Start with 20</li>
-<li>Double: \(20 \times 2 = 40\)</li>
+<li>Double: \(20 \\times 2 = 40\)</li>
 <li>Add 10: \(40 + 10 = 50\) ✓ CORRECT!</li>
 </ul>
 </div>

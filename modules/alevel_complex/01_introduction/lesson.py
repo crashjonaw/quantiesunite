@@ -78,8 +78,8 @@ SECTIONS = [
 <p>For \(z = 3 - 4i\):</p>
 <ul>
 <li>\(z^* = 3 + 4i\)</li>
-<li>\(z + z^* = (3 - 4i) + (3 + 4i) = 6 = 2 \cdot \text{Re}(z)\)</li>
-<li>\(z \cdot z^* = (3 - 4i)(3 + 4i) = 9 + 16 = 25 = |z|^2\)</li>
+<li>\(z + z^* = (3 - 4i) + (3 + 4i) = 6 = 2 \\cdot \\text{Re}(z)\)</li>
+<li>\(z \\cdot z^* = (3 - 4i)(3 + 4i) = 9 + 16 = 25 = |z|^2\)</li>
 </ul>
 </div>
 """

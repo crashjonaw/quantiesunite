@@ -46,21 +46,21 @@ SECTIONS = [
   <text x="235" y="175" text-anchor='middle' fill='#22c55e' font-size='18' font-weight='bold'>4 × 3 = 12</text>
 </svg>
 <p style="text-align: center;">Notice: each circle contains exactly 3 dots. All groups are <strong>equal</strong>.</p>
-<p>We have 4 groups, and each group has 3 items, so: <strong>\(4 \times 3 = 3 + 3 + 3 + 3 = 12\)</strong></p>"""
+<p>We have 4 groups, and each group has 3 items, so: <strong>\(4 \\times 3 = 3 + 3 + 3 + 3 = 12\)</strong></p>"""
     },
     {
         "title": "Real-World Equal Groups",
         "body": """<p>You see equal groups in real life all the time!</p>
 <div class="concept-box" style="padding: 16px; border-radius: 6px; margin: 16px 0">
-  <p style="margin: 8px 0;"><strong>🥚 Eggs in a carton:</strong> A carton has 6 eggs. If you buy 4 cartons, that's 4 groups of 6 = \(4 \times 6 = 24\) eggs</p>
-  <p style="margin: 8px 0;"><strong>🚗 Wheels on cars:</strong> Each car has 4 wheels. If there are 5 cars in a row, that's 5 groups of 4 = \(5 \times 4 = 20\) wheels</p>
-  <p style="margin: 8px 0;"><strong>🖐️ Fingers on hands:</strong> Each hand has 5 fingers. You have 2 hands, so that's 2 groups of 5 = \(2 \times 5 = 10\) fingers</p>
-  <p style="margin: 8px 0;"><strong>🍕 Slices of pizza:</strong> One pizza has 8 slices. If you buy 3 pizzas, that's 3 groups of 8 = \(3 \times 8 = 24\) slices</p>
+  <p style="margin: 8px 0;"><strong>🥚 Eggs in a carton:</strong> A carton has 6 eggs. If you buy 4 cartons, that's 4 groups of 6 = \(4 \\times 6 = 24\) eggs</p>
+  <p style="margin: 8px 0;"><strong>🚗 Wheels on cars:</strong> Each car has 4 wheels. If there are 5 cars in a row, that's 5 groups of 4 = \(5 \\times 4 = 20\) wheels</p>
+  <p style="margin: 8px 0;"><strong>🖐️ Fingers on hands:</strong> Each hand has 5 fingers. You have 2 hands, so that's 2 groups of 5 = \(2 \\times 5 = 10\) fingers</p>
+  <p style="margin: 8px 0;"><strong>🍕 Slices of pizza:</strong> One pizza has 8 slices. If you buy 3 pizzas, that's 3 groups of 8 = \(3 \\times 8 = 24\) slices</p>
 </div>"""
     },
     {
         "title": "Counting the Groups and Items",
-        "body": """<p>When you see a multiplication problem like <strong>\(5 \times 2\)</strong>, remember:</p>
+        "body": """<p>When you see a multiplication problem like <strong>\(5 \\times 2\)</strong>, remember:</p>
 <ul style="font-size: 16px; line-height: 1.8;">
   <li><strong class="accent-heading">First number</strong> = <strong>how many groups</strong> we have</li>
   <li><strong style="color: var(--success);">Second number</strong> = <strong>how many items in each group</strong></li>
@@ -81,9 +81,9 @@ SECTIONS = [
         "body": """<div class="mcq-group" style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 8px; margin: 16px 0;">
   <p style="font-size: 16px; font-weight: bold;">You have 3 baskets with 4 apples in each basket. How would you write this as multiplication?</p>
   <div class="mcq-options" style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
-    <button class="mcq-option" data-correct="true" data-explanation="Yes! 3 baskets (groups) with 4 apples in each = 3 × 4 = 12 apples." class="concept-box" style="cursor: pointer;">\(3 \times 4\)</button>
-    <button class="mcq-option" data-correct="false" class="concept-box" style="cursor: pointer;">\(4 \times 3\)</button>
-    <button class="mcq-option" data-correct="false" class="concept-box" style="cursor: pointer;">\(7 \times 12\)</button>
+    <button class="mcq-option" data-correct="true" data-explanation="Yes! 3 baskets (groups) with 4 apples in each = 3 × 4 = 12 apples." class="concept-box" style="cursor: pointer;">\(3 \\times 4\)</button>
+    <button class="mcq-option" data-correct="false" class="concept-box" style="cursor: pointer;">\(4 \\times 3\)</button>
+    <button class="mcq-option" data-correct="false" class="concept-box" style="cursor: pointer;">\(7 \\times 12\)</button>
   </div>
   <div class="mcq-feedback"></div>
 </div>"""

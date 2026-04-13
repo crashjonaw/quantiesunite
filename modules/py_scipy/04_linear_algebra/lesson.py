@@ -134,14 +134,14 @@ print(f"Reconstruction error: {np.linalg.norm(A - A_reconstructed):.2e}")
 <div class="worked-example">
     <div class="concept-box formula-box">
         <h3>Eigendecomposition: Finding Invariant Directions</h3>
-        <p>For a square matrix \(A\), eigenvalues \(\lambda\) and eigenvectors \(v\) satisfy \(Av = \lambda v\). Eigenvectors are directions that don't change direction under the transformation \(A\); eigenvalues are scaling factors.</p>
+        <p>For a square matrix \(A\), eigenvalues \(\\lambda\) and eigenvectors \(v\) satisfy \(Av = \\lambda v\). Eigenvectors are directions that don't change direction under the transformation \(A\); eigenvalues are scaling factors.</p>
 
         <h4>Geometric Interpretation</h4>
         <ul>
             <li>Eigenvectors point along principal axes of the matrix</li>
             <li>Eigenvalues indicate how much A stretches/shrinks along those axes</li>
-            <li>If \(\lambda < 0\), the vector gets flipped</li>
-            <li>If \(\lambda = 0\), the direction is in the null space</li>
+            <li>If \(\\lambda < 0\), the vector gets flipped</li>
+            <li>If \(\\lambda = 0\), the direction is in the null space</li>
         </ul>
 
         <h4>Eigenvalue Problems in SciPy</h4>

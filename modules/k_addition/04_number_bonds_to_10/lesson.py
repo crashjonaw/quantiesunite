@@ -84,7 +84,7 @@ SECTIONS = [
 <canvas id="bondChart10" data-chart='{"type":"bar","data":{"labels":["0+10","1+9","2+8","3+7","4+6","5+5","6+4","7+3","8+2","9+1","10+0"],"datasets":[{"label":"Different ways to make 10","data":[10,10,10,10,10,10,10,10,10,10,10],"backgroundColor":["#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7","#f59e0b","#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7","#4f8ef7"]}]},"options":{"plugins":{"title":{"display":true,"text":"All Ways to Make 10 (notice 5+5 is highlighted)"}},"scales":{"y":{"max":11,"title":{"display":true,"text":"Sum"}}}}}' height="250"></canvas>
 
 <h3>The 10-Frame Tool</h3>
-<p>A 10-frame is a \(2 \times 5\) grid that holds exactly 10 objects. It helps us see number bonds clearly:</p>
+<p>A 10-frame is a \(2 \\times 5\) grid that holds exactly 10 objects. It helps us see number bonds clearly:</p>
 
 <svg viewBox="0 0 300 140" style="width: 100%; max-width: 350px; height: auto; display: block; margin: 20px auto;">
   <!-- Title -->

@@ -224,7 +224,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Formula:</h4>
-    <p>Percent of Amount = \\( \\frac{Percent}{100} \\times \\\\text{Amount} \\)</p>
+    <p>Percent of Amount = \\( \\frac{Percent}{100} \\times \\\text{Amount} \\)</p>
     <p>Or using fractions: Find the equivalent fraction and multiply.</p>
   </div>
 
@@ -267,7 +267,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Formula:</h4>
-    <p>Percent = \\( \\frac{\\\\text{Part}}{\\\\text{Whole}} \\times 100 \\)</p>
+    <p>Percent = \\( \\frac{\\\text{Part}}{\\\text{Whole}} \\times 100 \\)</p>
   </div>
 
   <div class="diagram-container">
@@ -416,7 +416,7 @@ SECTIONS = [
 
   <div class="formula-box">
     <h4>Simple Interest Formula:</h4>
-    <p>Interest = \\( \\frac{\\\\text{Principal} \\times \\\\text{Rate} \\times \\\\text{Time}}{100} \\)</p>
+    <p>Interest = \\( \\frac{\\\text{Principal} \\times \\\text{Rate} \\times \\\text{Time}}{100} \\)</p>
     <p>Or: Interest = Principal × (Rate/100) × Time</p>
     <p>where Rate is in percent and Time is in years</p>
   </div>

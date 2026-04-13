@@ -207,9 +207,9 @@ SECTIONS = [
 </ul>
 <p><strong>Step 2:</strong> Find the value of each digit.</p>
 <ul>
-<li>6 hundreds = \(6 \times 100 = \)<strong>600</strong></li>
-<li>3 tens = \(3 \times 10 = \)<strong>30</strong></li>
-<li>4 ones = \(4 \times 1 = \)<strong>4</strong></li>
+<li>6 hundreds = \(6 \\times 100 = \)<strong>600</strong></li>
+<li>3 tens = \(3 \\times 10 = \)<strong>30</strong></li>
+<li>4 ones = \(4 \\times 1 = \)<strong>4</strong></li>
 </ul>
 <p><strong>Step 3:</strong> Write in expanded form.</p>
 <p>$$634 = 600 + 30 + 4$$</p>

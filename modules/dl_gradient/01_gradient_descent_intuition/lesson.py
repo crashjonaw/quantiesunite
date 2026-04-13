@@ -6,7 +6,7 @@ SECTIONS = [
         "title": "The Loss Surface & Optimization Landscape",
         "body": """
         <div class="concept-box" style="padding: 16px; margin: 12px 0; border-radius: 6px">
-            <p>Given parameters \(\theta = (w_1, \ldots, w_n, b)\), the loss function \(L(\theta)\) measures prediction error across the entire dataset.</p>
+            <p>Given parameters \(\\theta = (w_1, \ldots, w_n, b)\), the loss function \(L(\\theta)\) measures prediction error across the entire dataset.</p>
             <p>$$L(\\theta) = \\frac{1}{N} \\sum_{i=1}^{N} l(f_\\theta(x_i), y_i)$$</p>
             <p><strong>Key insight:</strong> The loss surface is high-dimensional. Our goal is to find the valley (minimum) in this landscape.</p>
         </div>
@@ -30,7 +30,7 @@ SECTIONS = [
         <div class="worked-example" style="padding: 16px; margin: 12px 0; border-radius: 6px">
             <p>To minimize loss, move opposite the gradient direction:</p>
             <p>$$\\theta \\leftarrow \\theta - \\alpha \\nabla L(\\theta)$$</p>
-            <p>where \(\alpha\) (alpha) is the learning rate—controlling step size.</p>
+            <p>where \(\\alpha\) (alpha) is the learning rate—controlling step size.</p>
             <p><strong>Intuition:</strong> Like descending a hill by always stepping downward. The gradient shows us which way is down.</p>
         </div>
         """

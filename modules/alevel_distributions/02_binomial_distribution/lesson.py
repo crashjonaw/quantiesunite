@@ -36,23 +36,23 @@ SECTIONS = [
 </ul>
 
 <p>Any specific sequence of k successes and (n-k) failures has probability:</p>
-<p style="text-align: center;">\(p^k \times (1-p)^{n-k}\)</p>
+<p style="text-align: center;">\(p^k \\times (1-p)^{n-k}\)</p>
 
 <p>The number of such sequences is the binomial coefficient (n choose k):</p>
-<p style="text-align: center; font-weight: bold;">\(\binom{n}{k} = \frac{n!}{k!(n-k)!}\)</p>
+<p style="text-align: center; font-weight: bold;">\(\binom{n}{k} = \\frac{n!}{k!(n-k)!}\)</p>
 
 <p><strong>Binomial Probability Formula:</strong></p>
-<p style="text-align: center; font-weight: bold;">\(P(X = k) = \binom{n}{k} \times p^k \times (1-p)^{n-k}\)</p>
+<p style="text-align: center; font-weight: bold;">\(P(X = k) = \binom{n}{k} \\times p^k \\times (1-p)^{n-k}\)</p>
 
-<p>where \(X \sim \text{Binomial}(n, p)\).</p>
+<p>where \(X \sim \\text{Binomial}(n, p)\).</p>
 
 <div class="worked-example">
 <h4>Example 1: Coin Flips</h4>
-<p>A fair coin is flipped 5 times. Find \(P(\text{exactly 2 heads})\).</p>
+<p>A fair coin is flipped 5 times. Find \(P(\\text{exactly 2 heads})\).</p>
 <p><strong>Solution:</strong></p>
 <p>n = 5, k = 2, p = 0.5</p>
-<p>\(\binom{5}{2} = \frac{5!}{2! \cdot 3!} = 10\)</p>
-<p>\(P(X = 2) = 10 \times (0.5)^2 \times (0.5)^3 = 10 \times 0.25 \times 0.125 = 0.3125\)</p>
+<p>\(\binom{5}{2} = \\frac{5!}{2! \\cdot 3!} = 10\)</p>
+<p>\(P(X = 2) = 10 \\times (0.5)^2 \\times (0.5)^3 = 10 \\times 0.25 \\times 0.125 = 0.3125\)</p>
 </div>
 
 <div class="warning-box">
@@ -70,34 +70,34 @@ SECTIONS = [
         "body": """
 <h3>Mean and Variance of Binomial Distribution</h3>
 <p><strong>Expected Value:</strong></p>
-<p style="text-align: center; font-weight: bold;">\(E(X) = \mu = np\)</p>
+<p style="text-align: center; font-weight: bold;">\(E(X) = \\mu = np\)</p>
 
 <p><strong>Variance:</strong></p>
-<p style="text-align: center; font-weight: bold;">\(\text{Var}(X) = \sigma^2 = np(1-p)\)</p>
+<p style="text-align: center; font-weight: bold;">\(\\text{Var}(X) = \\sigma^2 = np(1-p)\)</p>
 
 <p><strong>Standard Deviation:</strong></p>
-<p style="text-align: center; font-weight: bold;">\(\text{SD}(X) = \sigma = \sqrt{np(1-p)}\)</p>
+<p style="text-align: center; font-weight: bold;">\(\\text{SD}(X) = \\sigma = \\sqrt{np(1-p)}\)</p>
 
 <h3>Deriving the Mean from First Principles</h3>
 <p>Let \(X_1, X_2, \ldots, X_n\) be indicator variables where \(X_i = 1\) if trial i succeeds, 0 otherwise.</p>
 
-<p>Each \(X_i\) is Bernoulli(p), so \(E(X_i) = p\) and \(\text{Var}(X_i) = p(1-p)\).</p>
+<p>Each \(X_i\) is Bernoulli(p), so \(E(X_i) = p\) and \(\\text{Var}(X_i) = p(1-p)\).</p>
 
 <p>The total number of successes is:</p>
-<p style="text-align: center;">\(X = X_1 + X_2 + \cdots + X_n\)</p>
+<p style="text-align: center;">\(X = X_1 + X_2 + \\cdots + X_n\)</p>
 
 <p>By linearity of expectation:</p>
-<p style="text-align: center;">\(E(X) = E(X_1) + E(X_2) + \cdots + E(X_n) = p + p + \cdots + p = np\)</p>
+<p style="text-align: center;">\(E(X) = E(X_1) + E(X_2) + \\cdots + E(X_n) = p + p + \\cdots + p = np\)</p>
 
 <p>Since trials are independent:</p>
-<p style="text-align: center;">\(\text{Var}(X) = \text{Var}(X_1) + \text{Var}(X_2) + \cdots + \text{Var}(X_n) = p(1-p) + \cdots + p(1-p) = np(1-p)\)</p>
+<p style="text-align: center;">\(\\text{Var}(X) = \\text{Var}(X_1) + \\text{Var}(X_2) + \\cdots + \\text{Var}(X_n) = p(1-p) + \\cdots + p(1-p) = np(1-p)\)</p>
 
 <div class="worked-example">
 <h4>Example 2: Manufacturing Quality</h4>
 <p>A factory produces items; 5% are defective. In a batch of 200:</p>
-<p><strong>Expected number defective:</strong> \(\mu = 200 \times 0.05 = 10\)</p>
-<p><strong>Variance:</strong> \(\sigma^2 = 200 \times 0.05 \times 0.95 = 9.5\)</p>
-<p><strong>Standard deviation:</strong> \(\sigma = \sqrt{9.5} \approx 3.08\)</p>
+<p><strong>Expected number defective:</strong> \(\\mu = 200 \\times 0.05 = 10\)</p>
+<p><strong>Variance:</strong> \(\\sigma^2 = 200 \\times 0.05 \\times 0.95 = 9.5\)</p>
+<p><strong>Standard deviation:</strong> \(\\sigma = \\sqrt{9.5} \\approx 3.08\)</p>
 <p>We expect about 10 defective items, with a standard deviation of roughly 3 items.</p>
 </div>
 
@@ -116,7 +116,7 @@ SECTIONS = [
 <h4>Key Properties</h4>
 <ul>
 <li>The mode (most probable value) is near np</li>
-<li>The spread (standard deviation) increases with n, but more slowly (proportional to \(\sqrt{n}\))</li>
+<li>The spread (standard deviation) increases with n, but more slowly (proportional to \(\\sqrt{n}\))</li>
 <li>The probability of any single value decreases as n increases (density spreads over more values)</li>
 </ul>
 </div>

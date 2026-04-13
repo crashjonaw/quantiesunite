@@ -187,7 +187,7 @@ SECTIONS = [
 <p>Check: Does \(3^2 + 4^2 = 6^2\)?</p>
 <p>\(3^2 + 4^2 = 9 + 16 = 25\)</p>
 <p>\(6^2 = 36\)</p>
-<p><strong>NO! \(25 \neq 36\), so this is NOT a right-angled triangle.</strong></p>
+<p><strong>NO! \(25 \\neq 36\), so this is NOT a right-angled triangle.</strong></p>
 </div>
 
 <div class='info-box'>

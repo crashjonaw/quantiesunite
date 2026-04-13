@@ -5,10 +5,15 @@ cd "$(dirname "$0")"
 
 echo "Stopping QuantiesUnite..."
 
-# Kill processes
-pkill -f "cloudflared.*quantiesunite" 2>/dev/null && echo "  Cloudflare Tunnel stopped" || echo "  Tunnel was not running"
-# Only kill gunicorn on port 5001 (don't kill other apps like bloomburrow on 5000)
-lsof -ti:5001 | xargs kill -9 2>/dev/null && echo "  Gunicorn stopped" || echo "  Gunicorn was not running"
+# Kill cloudflare tunnel
+pkill -9 -f "cloudflared.*quantiesunite" 2>/dev/null && echo "  Cloudflare Tunnel stopped" || echo "  Tunnel was not running"
+
+# Kill ALL gunicorn processes in this directory
+pkill -9 -f "gunicorn.*quantiesunite" 2>/dev/null
+lsof -ti:5001 | xargs kill -9 2>/dev/null
+sleep 1
+# Double-check and force kill any remaining
+lsof -ti:5001 | xargs kill -9 2>/dev/null && echo "  Gunicorn stopped (forced)" || echo "  Gunicorn stopped"
 
 # Close the QU-Gunicorn and QU-Tunnel Terminal windows
 osascript -e '

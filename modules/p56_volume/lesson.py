@@ -30,7 +30,7 @@ SECTIONS = [
 <p><strong>1 m³ = 1,000,000 cm³</strong></p>
 
 <div class='example-box'>
-<p>A cube made of 10 smaller cubes in each direction (length, width, height) contains \(10 \times 10 \times 10 = 1000\) small cubes total.</p>
+<p>A cube made of 10 smaller cubes in each direction (length, width, height) contains \(10 \\times 10 \\times 10 = 1000\) small cubes total.</p>
 </div>
 """
     },
@@ -39,14 +39,14 @@ SECTIONS = [
         "body": """
 <h3>Volume of a Cube</h3>
 
-<p><strong>Formula: \(V = s \times s \times s = s^3\)</strong></p>
+<p><strong>Formula: \(V = s \\times s \\times s = s^3\)</strong></p>
 
 <p>Where s = length of one side</p>
 
 <div class='example-box'>
 <p><strong>Find the volume of a cube with side 5 cm.</strong></p>
 <ul>
-<li>\(V = 5 \times 5 \times 5 = 125\) cm³</li>
+<li>\(V = 5 \\times 5 \\times 5 = 125\) cm³</li>
 </ul>
 </div>
 
@@ -54,26 +54,26 @@ SECTIONS = [
 <p><strong>A cube has a volume of 64 cm³. What is the length of each side?</strong></p>
 <ul>
 <li>s³ = 64</li>
-<li>\(s = \sqrt[3]{64} = 4\) cm (because \(4 \times 4 \times 4 = 64\))</li>
+<li>\(s = \\sqrt[3]{64} = 4\) cm (because \(4 \\times 4 \\times 4 = 64\))</li>
 </ul>
 </div>
 
 <h3>Volume of a Cuboid (Rectangular Box)</h3>
 
-<p><strong>Formula: \(V = \text{length} \times \text{width} \times \text{height} = l \times w \times h\)</strong></p>
+<p><strong>Formula: \(V = \\text{length} \\times \\text{width} \\times \\text{height} = l \\times w \\times h\)</strong></p>
 
 <div class='example-box'>
 <p><strong>Find the volume of a cuboid with length 8 cm, width 5 cm, and height 3 cm.</strong></p>
 <ul>
-<li>\(V = 8 \times 5 \times 3 = 120\) cm³</li>
+<li>\(V = 8 \\times 5 \\times 3 = 120\) cm³</li>
 </ul>
 </div>
 
 <div class='example-box'>
 <p><strong>A cuboid has length 10 m, width 4 m, and volume 200 m³. What is the height?</strong></p>
 <ul>
-<li>\(V = l \times w \times h\)</li>
-<li>\(200 = 10 \times 4 \times h\)</li>
+<li>\(V = l \\times w \\times h\)</li>
+<li>\(200 = 10 \\times 4 \\times h\)</li>
 <li>\(200 = 40h\)</li>
 <li>\(h = 200 \div 40 = 5\) m</li>
 </ul>
@@ -81,12 +81,12 @@ SECTIONS = [
 
 <h3>Base Area Method</h3>
 
-<p>We can also think of volume as: <strong>\(V = \text{Base Area} \times \text{Height}\)</strong></p>
+<p>We can also think of volume as: <strong>\(V = \\text{Base Area} \\times \\text{Height}\)</strong></p>
 
 <div class='example-box'>
 <p><strong>A cuboid with a rectangular base of area 24 cm² and height 6 cm.</strong></p>
 <ul>
-<li>\(V = \text{Base Area} \times \text{Height} = 24 \times 6 = 144\) cm³</li>
+<li>\(V = \\text{Base Area} \\times \\text{Height} = 24 \\times 6 = 144\) cm³</li>
 </ul>
 </div>
 """
@@ -98,7 +98,7 @@ SECTIONS = [
 
 <p><strong>1 m = 100 cm</strong></p>
 
-<p><strong>\(1 \text{ m}^3 = 100 \times 100 \times 100 = 1{,}000{,}000 \text{ cm}^3\)</strong></p>
+<p><strong>\(1 \\text{ m}^3 = 100 \\times 100 \\times 100 = 1{,}000{,}000 \\text{ cm}^3\)</strong></p>
 
 <div class='example-box'>
 <p><strong>Convert 5,000,000 cm³ to m³.</strong></p>
@@ -110,7 +110,7 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>Convert 3 m³ to cm³.</strong></p>
 <ul>
-<li>\(3 \times 1{,}000{,}000 = 3{,}000{,}000\) cm³</li>
+<li>\(3 \\times 1{,}000{,}000 = 3{,}000{,}000\) cm³</li>
 </ul>
 </div>
 
@@ -131,7 +131,7 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>A tank can hold 50 litres. What is its volume in cm³?</strong></p>
 <ul>
-<li>\(50 \times 1000 = 50{,}000\) cm³</li>
+<li>\(50 \\times 1000 = 50{,}000\) cm³</li>
 </ul>
 </div>
 
@@ -158,10 +158,10 @@ SECTIONS = [
 
 <div class='example-box'>
 <p><strong>An L-shaped solid made of two cuboids.</strong></p>
-<p>If we can split it into a vertical cuboid (\(2 \text{ cm} \times 2 \text{ cm} \times 5 \text{ cm}\)) and a horizontal cuboid (\(4 \text{ cm} \times 2 \text{ cm} \times 2 \text{ cm}\)):</p>
+<p>If we can split it into a vertical cuboid (\(2 \\text{ cm} \\times 2 \\text{ cm} \\times 5 \\text{ cm}\)) and a horizontal cuboid (\(4 \\text{ cm} \\times 2 \\text{ cm} \\times 2 \\text{ cm}\)):</p>
 <ul>
-<li>Volume 1 \(= 2 \times 2 \times 5 = 20\) cm³</li>
-<li>Volume 2 \(= 4 \times 2 \times 2 = 16\) cm³</li>
+<li>Volume 1 \(= 2 \\times 2 \\times 5 = 20\) cm³</li>
+<li>Volume 2 \(= 4 \\times 2 \\times 2 = 16\) cm³</li>
 <li>Total volume \(= 20 + 16 = 36\) cm³</li>
 </ul>
 </div>
@@ -169,11 +169,11 @@ SECTIONS = [
 <h3>Finding Missing Dimensions</h3>
 
 <div class='example-box'>
-<p><strong>A composite solid is made of two cuboids joined together. The first cuboid is \(3 \text{ cm} \times 4 \text{ cm} \times 5 \text{ cm}\). The second cuboid is \(2 \text{ cm} \times 4 \text{ cm} \times h \text{ cm}\). The total volume is 100 cm³. Find h.</strong></p>
+<p><strong>A composite solid is made of two cuboids joined together. The first cuboid is \(3 \\text{ cm} \\times 4 \\text{ cm} \\times 5 \\text{ cm}\). The second cuboid is \(2 \\text{ cm} \\times 4 \\text{ cm} \\times h \\text{ cm}\). The total volume is 100 cm³. Find h.</strong></p>
 <ul>
-<li>Volume of first \(= 3 \times 4 \times 5 = 60\) cm³</li>
+<li>Volume of first \(= 3 \\times 4 \\times 5 = 60\) cm³</li>
 <li>Volume of second \(= 100 - 60 = 40\) cm³</li>
-<li>\(40 = 2 \times 4 \times h\)</li>
+<li>\(40 = 2 \\times 4 \\times h\)</li>
 <li>\(40 = 8h\)</li>
 <li>h = 5 cm</li>
 </ul>
@@ -186,8 +186,8 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>A cube with side 6 cm has a small cubic hole with side 2 cm drilled through it. What is the remaining volume?</strong></p>
 <ul>
-<li>Volume of outer cube \(= 6 \times 6 \times 6 = 216\) cm³</li>
-<li>Volume of hole \(= 2 \times 2 \times 2 = 8\) cm³</li>
+<li>Volume of outer cube \(= 6 \\times 6 \\times 6 = 216\) cm³</li>
+<li>Volume of hole \(= 2 \\times 2 \\times 2 = 8\) cm³</li>
 <li>Remaining volume \(= 216 - 8 = 208\) cm³</li>
 </ul>
 </div>
@@ -205,9 +205,9 @@ SECTIONS = [
 <h3>Word Problems with Volume and Capacity</h3>
 
 <div class='example-box'>
-<p><strong>A rectangular tank measures \(50 \text{ cm} \times 40 \text{ cm} \times 30 \text{ cm}\). How many litres of water can it hold?</strong></p>
+<p><strong>A rectangular tank measures \(50 \\text{ cm} \\times 40 \\text{ cm} \\times 30 \\text{ cm}\). How many litres of water can it hold?</strong></p>
 <ul>
-<li>Volume \(= 50 \times 40 \times 30 = 60{,}000\) cm³</li>
+<li>Volume \(= 50 \\times 40 \\times 30 = 60{,}000\) cm³</li>
 <li>Capacity = 60,000 mL = 60 L</li>
 </ul>
 </div>
@@ -215,8 +215,8 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>A swimming pool is 25 m long, 10 m wide, and 2 m deep. How much water does it need to fill completely?</strong></p>
 <ul>
-<li>Volume \(= 25 \times 10 \times 2 = 500\) m³</li>
-<li>In litres \(= 500 \times 1000 = 500{,}000\) L</li>
+<li>Volume \(= 25 \\times 10 \\times 2 = 500\) m³</li>
+<li>In litres \(= 500 \\times 1000 = 500{,}000\) L</li>
 </ul>
 </div>
 
@@ -225,7 +225,7 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>A tank with capacity 200 L is being filled at a rate of 50 L per minute. How long does it take to fill completely?</strong></p>
 <ul>
-<li>Time \(= \text{Capacity} \div \text{Rate} = 200 \div 50 = 4\) minutes</li>
+<li>Time \(= \\text{Capacity} \div \\text{Rate} = 200 \div 50 = 4\) minutes</li>
 </ul>
 </div>
 
@@ -240,10 +240,10 @@ SECTIONS = [
 <h3>Comparing Volumes and Capacities</h3>
 
 <div class='example-box'>
-<p><strong>Two containers: Container A is \(20 \text{ cm} \times 15 \text{ cm} \times 10 \text{ cm}\). Container B is \(25 \text{ cm} \times 12 \text{ cm} \times 8 \text{ cm}\). Which container has greater capacity?</strong></p>
+<p><strong>Two containers: Container A is \(20 \\text{ cm} \\times 15 \\text{ cm} \\times 10 \\text{ cm}\). Container B is \(25 \\text{ cm} \\times 12 \\text{ cm} \\times 8 \\text{ cm}\). Which container has greater capacity?</strong></p>
 <ul>
-<li>Container A: \(20 \times 15 \times 10 = 3000\) cm³ = 3 L</li>
-<li>Container B: \(25 \times 12 \times 8 = 2400\) cm³ = 2.4 L</li>
+<li>Container A: \(20 \\times 15 \\times 10 = 3000\) cm³ = 3 L</li>
+<li>Container B: \(25 \\times 12 \\times 8 = 2400\) cm³ = 2.4 L</li>
 <li>Container A has greater capacity.</li>
 </ul>
 </div>

@@ -72,18 +72,18 @@ Yes, this is orthonormal!</pre>
 
         <div class='worked-example'>
         <p><strong>Example:</strong> 2D rotation matrix by angle $\\theta$:</p>
-        <pre>\(Q = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}\)
+        <pre>\(Q = \\begin{bmatrix} \cos\\theta & -\sin\\theta \\ \sin\\theta & \cos\\theta \\end{bmatrix}\)
 
-Columns: \(\mathbf{u}_1 = [\cos\theta, \sin\theta]\), \(\mathbf{u}_2 = [-\sin\theta, \cos\theta]\)
+Columns: \(\\mathbf{u}_1 = [\cos\\theta, \sin\\theta]\), \(\\mathbf{u}_2 = [-\sin\\theta, \cos\\theta]\)
 
 Check orthonormality:
-\(\mathbf{u}_1 \cdot \mathbf{u}_2 = -\cos\theta\sin\theta + \sin\theta\cos\theta = 0\) ✓
-\(\|\mathbf{u}_1\| = \sqrt{\cos^2\theta + \sin^2\theta} = 1\) ✓
-\(\|\mathbf{u}_2\| = \sqrt{\sin^2\theta + \cos^2\theta} = 1\) ✓
+\(\\mathbf{u}_1 \\cdot \\mathbf{u}_2 = -\cos\\theta\sin\\theta + \sin\\theta\cos\\theta = 0\) ✓
+\(\|\\mathbf{u}_1\| = \\sqrt{\cos^2\\theta + \sin^2\\theta} = 1\) ✓
+\(\|\\mathbf{u}_2\| = \\sqrt{\sin^2\\theta + \cos^2\\theta} = 1\) ✓
 
-Inverse: \(Q^{-1} = Q^T = \begin{bmatrix} \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta \end{bmatrix}\)
+Inverse: \(Q^{-1} = Q^T = \\begin{bmatrix} \cos\\theta & \sin\\theta \\ -\sin\\theta & \cos\\theta \\end{bmatrix}\)
 
-(rotation by \(-\theta\))</pre>
+(rotation by \(-\\theta\))</pre>
         </div>
         """
     },

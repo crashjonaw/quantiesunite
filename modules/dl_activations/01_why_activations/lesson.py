@@ -29,16 +29,16 @@ SECTIONS = [
     },
     {
         "title": "Mathematical Foundation",
-        "body": """<p>An activation function \(\sigma(z)\) transforms each neuron's pre-activation value \(z\):</p>
+        "body": """<p>An activation function \(\\sigma(z)\) transforms each neuron's pre-activation value \(z\):</p>
 <div class="concept-box">
-<p><strong>\(a = \sigma(z) = \sigma(Wx + b)\)</strong></p>
+<p><strong>\(a = \\sigma(z) = \\sigma(Wx + b)\)</strong></p>
 </div>
-<p>The nonlinearity comes entirely from the function \(\sigma\). Common choices include:</p>
+<p>The nonlinearity comes entirely from the function \(\\sigma\). Common choices include:</p>
 <ul>
 <li><strong>Sigmoid:</strong> Smooth, bounded outputs</li>
 <li><strong>Tanh:</strong> Zero-centered alternative to sigmoid</li>
 <li><strong>ReLU:</strong> Modern choice, simple and effective</li>
 </ul>
-<p>Without \(\sigma\) (or if \(\sigma\) is linear), stacking layers produces only a linear transformation—no matter how deep the network.</p>"""
+<p>Without \(\\sigma\) (or if \(\\sigma\) is linear), stacking layers produces only a linear transformation—no matter how deep the network.</p>"""
     }
 ]

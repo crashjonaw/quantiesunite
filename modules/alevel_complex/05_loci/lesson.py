@@ -18,7 +18,7 @@ SECTIONS = [
 <p><strong>Example 1:</strong> Identifying a circle</p>
 <p>The equation |z - 2| = 3 represents all complex numbers at distance 3 from the point 2 (on the real axis).</p>
 <p>This is a circle with center at (2, 0) and radius 3.</p>
-<p>In parametric form: \(z = 2 + 3 \cdot \text{cis}(\theta) = 2 + 3(\cos\theta + i \cdot \sin\theta)\) for \(\theta \in [0, 2\pi)\)</p>
+<p>In parametric form: \(z = 2 + 3 \\cdot \\text{cis}(\\theta) = 2 + 3(\cos\\theta + i \\cdot \sin\\theta)\) for \(\\theta \in [0, 2\\pi)\)</p>
 </div>
 
 <div class="worked-example">
@@ -55,31 +55,31 @@ SECTIONS = [
 <h3>Rays and Sectors</h3>
 <p>Equations involving the argument arg(z) define rays and angular regions:</p>
 <div class="concept-box">
-<p><strong>arg(z) = \(\theta\):</strong> Ray from the origin at angle \(\theta\) (half-line)</p>
-<p><strong>arg(z - a) = \(\theta\):</strong> Ray from point a at angle \(\theta\)</p>
-<p><strong>\(\alpha\) &lt; arg(z) &lt; \(\beta\):</strong> Angular sector (wedge) between angles \(\alpha\) and \(\beta\)</p>
+<p><strong>arg(z) = \(\\theta\):</strong> Ray from the origin at angle \(\\theta\) (half-line)</p>
+<p><strong>arg(z - a) = \(\\theta\):</strong> Ray from point a at angle \(\\theta\)</p>
+<p><strong>\(\\alpha\) &lt; arg(z) &lt; \(\\beta\):</strong> Angular sector (wedge) between angles \(\\alpha\) and \(\\beta\)</p>
 </div>
 
-<p><strong>Note:</strong> The argument is typically taken in the principal range \((-\pi, \pi]\) or \([0, 2\pi)\).</p>
+<p><strong>Note:</strong> The argument is typically taken in the principal range \((-\\pi, \\pi]\) or \([0, 2\\pi)\).</p>
 
 <h3>Examples</h3>
 <div class="worked-example">
 <p><strong>Example 4:</strong> Identifying a ray</p>
-<p>The equation \(\arg(z) = \pi/4\) represents all non-zero complex numbers at angle \(\pi/4\) from the positive real axis.</p>
-<p>This is the ray \(z = r \cdot e^{i\pi/4} = r(\cos(\pi/4) + i \cdot \sin(\pi/4)) = r(1/\sqrt{2} + i/\sqrt{2})\) for r &gt; 0.</p>
+<p>The equation \(\arg(z) = \\pi/4\) represents all non-zero complex numbers at angle \(\\pi/4\) from the positive real axis.</p>
+<p>This is the ray \(z = r \\cdot e^{i\\pi/4} = r(\cos(\\pi/4) + i \\cdot \sin(\\pi/4)) = r(1/\\sqrt{2} + i/\\sqrt{2})\) for r &gt; 0.</p>
 <p>In rectangular form: \(z = x + yi\) where \(y = x\) and \(x > 0\) (the line \(y = x\) in the first quadrant).</p>
 </div>
 
 <div class="worked-example">
 <p><strong>Example 5:</strong> Angular sector</p>
-<p>Describe the region satisfying \(\pi/6 < \arg(z) < \pi/3\)</p>
+<p>Describe the region satisfying \(\\pi/6 < \arg(z) < \\pi/3\)</p>
 <p>This is an open angular sector (wedge) between 30° and 60° from the positive real axis, extending infinitely from the origin.</p>
 <p>Geometrically, it's a "pizza slice" shape with its vertex at the origin.</p>
 </div>
 
 <div class="worked-example">
 <p><strong>Example 6:</strong> Ray from a shifted point</p>
-<p>The equation \(\arg(z - (1 + i)) = \pi/2\) represents all complex numbers whose direction from the point \((1 + i)\) is straight up (positive imaginary direction).</p>
+<p>The equation \(\arg(z - (1 + i)) = \\pi/2\) represents all complex numbers whose direction from the point \((1 + i)\) is straight up (positive imaginary direction).</p>
 <p>This is a vertical ray: \(z = (1 + i) + ti\) for \(t > 0\), or \(z = 1 + i(1 + t)\) with \(t > 0\).</p>
 <p>In rectangular form: \(x = 1, y > 1\)</p>
 </div>
@@ -96,7 +96,7 @@ SECTIONS = [
 <ul>
 <li><strong>Disk:</strong> |z - a| ≤ r (interior of circle plus boundary)</li>
 <li><strong>Annulus (ring):</strong> \(r_1 < |z - a| < r_2\) (between two circles)</li>
-<li><strong>Sector:</strong> \(\alpha < \arg(z - a) < \beta\) and |z - a| &lt; r (wedge inside a circle)</li>
+<li><strong>Sector:</strong> \(\\alpha < \arg(z - a) < \\beta\) and |z - a| &lt; r (wedge inside a circle)</li>
 <li><strong>Half-plane:</strong> Re(z) &gt; c (right of vertical line) or Im(z) &lt; d (below horizontal line)</li>
 </ul>
 </div>
@@ -119,7 +119,7 @@ SECTIONS = [
 
 <div class="worked-example">
 <p><strong>Example 9:</strong> Sector region</p>
-<p>Describe the region: \(\pi/4 < \arg(z) < \pi/2\) and |z| &lt; 2</p>
+<p>Describe the region: \(\\pi/4 < \arg(z) < \\pi/2\) and |z| &lt; 2</p>
 <p>This is a circular sector ("pizza slice") with:</p>
 <ul>
 <li>Vertex at the origin</li>

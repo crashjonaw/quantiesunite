@@ -5,7 +5,7 @@ SECTIONS = [
 <h3>Linear Equation (First-Principles Definition)</h3>
 <p>A <strong>linear equation in n variables</strong> \\(x_1, x_2, \\ldots, x_n\\) is an equation of the form:</p>
 
-$$a_1 x_1 + a_2 x_2 + \\\cdots + a_n x_n = b$$
+$$a_1 x_1 + a_2 x_2 + \\cdots + a_n x_n = b$$
 
 <p>where \\(a_1, a_2, \\ldots, a_n, b \\in \\mathbb{R}\\) (or \\(\\mathbb{C}\\)), and "linear" means each variable appears with exponent exactly 1 (no squares, products, or transcendental functions).</p>
 
@@ -13,10 +13,10 @@ $$a_1 x_1 + a_2 x_2 + \\\cdots + a_n x_n = b$$
 <p>A <strong>system of m linear equations in n unknowns</strong> is a collection:</p>
 
 $$\\begin{align}
-a_{11}x_1 + a_{12}x_2 + \\\cdots + a_{1n}x_n &= b_1 \\\\
-a_{21}x_1 + a_{22}x_2 + \\\cdots + a_{2n}x_n &= b_2 \\\\
+a_{11}x_1 + a_{12}x_2 + \\cdots + a_{1n}x_n &= b_1 \\\\
+a_{21}x_1 + a_{22}x_2 + \\cdots + a_{2n}x_n &= b_2 \\\\
 &\\vdots \\\\
-a_{m1}x_1 + a_{m2}x_2 + \\\cdots + a_{mn}x_n &= b_m
+a_{m1}x_1 + a_{m2}x_2 + \\cdots + a_{mn}x_n &= b_m
 \\end{align}$$
 
 <p>A <strong>solution</strong> is a vector \\((x_1^*, x_2^*, \\ldots, x_n^*) \\in \\mathbb{R}^n\\) that satisfies <em>all m equations simultaneously</em>.</p>
@@ -27,7 +27,7 @@ $$\\begin{align}
 2x + 3y &= 8 \\\\
 x - y &= 1
 \\end{align}$$
-<p>A solution would be values of \\(x\\) and \\(y\\) making both equations true. By inspection or solving: \\(x = 2, y = \frac{4}{3}\\) works? Let's check: \\(2(2) + 3(\frac{4}{3}) = 4 + 4 = 8\\) ✓ and \\(2 - \frac{4}{3} = \frac{2}{3} \\neq 1\\) ✗. Solving correctly: from the second equation, \\(x = y + 1\\). Substitute: \\(2(y+1) + 3y = 8\\), so \\(5y + 2 = 8\\), thus \\(y = \frac{6}{5}\\) and \\(x = \frac{11}{5}\\).</p>
+<p>A solution would be values of \\(x\\) and \\(y\\) making both equations true. By inspection or solving: \\(x = 2, y = \\frac{4}{3}\\) works? Let's check: \\(2(2) + 3(\\frac{4}{3}) = 4 + 4 = 8\\) ✓ and \\(2 - \\frac{4}{3} = \\frac{2}{3} \\neq 1\\) ✗. Solving correctly: from the second equation, \\(x = y + 1\\). Substitute: \\(2(y+1) + 3y = 8\\), so \\(5y + 2 = 8\\), thus \\(y = \\frac{6}{5}\\) and \\(x = \\frac{11}{5}\\).</p>
 </div>
 
 <h3>Matrix Representation</h3>
@@ -38,10 +38,10 @@ $$A\\mathbf{x} = \\mathbf{b}$$
 <p>where \\(A\\) is the \\(m \\times n\\) <strong>coefficient matrix</strong>:</p>
 
 $$A = \\begin{pmatrix}
-a_{11} & a_{12} & \\\\cdots & a_{1n} \\\\
-a_{21} & a_{22} & \\\\cdots & a_{2n} \\\\
+a_{11} & a_{12} & \\\cdots & a_{1n} \\\\
+a_{21} & a_{22} & \\\cdots & a_{2n} \\\\
 \\vdots & \\vdots & \\ddots & \\vdots \\\\
-a_{m1} & a_{m2} & \\\\cdots & a_{mn}
+a_{m1} & a_{m2} & \\\cdots & a_{mn}
 \\end{pmatrix}$$
 
 <p>\\(\\mathbf{x}\\) is the \\(n \\times 1\\) <strong>unknown vector</strong> \\(= \\begin{pmatrix} x_1 \\\\ x_2 \\\\ \\vdots \\\\ x_n \\end{pmatrix}\\), and \\(\\mathbf{b}\\) is the \\(m \\times 1\\) <strong>constant vector</strong> \\(= \\begin{pmatrix} b_1 \\\\ b_2 \\\\ \\vdots \\\\ b_m \\end{pmatrix}\\).</p>
@@ -176,12 +176,12 @@ x + y &= 5
         "title": "Matrix Form and the Augmented Matrix",
         "body": """
 <h3>Matrix Notation</h3>
-<p>The system \\(a_{11}x_1 + \\\cdots + a_{1n}x_n = b_1, \\ldots\\) can be written:</p>
+<p>The system \\(a_{11}x_1 + \\cdots + a_{1n}x_n = b_1, \\ldots\\) can be written:</p>
 
 $$\\begin{pmatrix}
-a_{11} & a_{12} & \\\\cdots & a_{1n} \\\\
+a_{11} & a_{12} & \\\cdots & a_{1n} \\\\
 \\vdots & \\vdots & \\ddots & \\vdots \\\\
-a_{m1} & a_{m2} & \\\\cdots & a_{mn}
+a_{m1} & a_{m2} & \\\cdots & a_{mn}
 \\end{pmatrix}
 \\begin{pmatrix}
 x_1 \\\\ \\vdots \\\\ x_n
@@ -197,10 +197,10 @@ b_1 \\\\ \\vdots \\\\ b_m
 <p>To solve the system algorithmically, we form the <strong>augmented matrix</strong> \\([A | \\mathbf{b}]\\), combining coefficient and constant vectors:</p>
 
 $$[A | \\mathbf{b}] = \\left[\\begin{array}{cccc|c}
-a_{11} & a_{12} & \\\\cdots & a_{1n} & b_1 \\\\
-a_{21} & a_{22} & \\\\cdots & a_{2n} & b_2 \\\\
+a_{11} & a_{12} & \\\cdots & a_{1n} & b_1 \\\\
+a_{21} & a_{22} & \\\cdots & a_{2n} & b_2 \\\\
 \\vdots & \\vdots & \\ddots & \\vdots & \\vdots \\\\
-a_{m1} & a_{m2} & \\\\cdots & a_{mn} & b_m
+a_{m1} & a_{m2} & \\\cdots & a_{mn} & b_m
 \\end{array}\\right]$$
 
 <p>The vertical bar is a visual separator; the augmented matrix is still just an \\(m \\times (n+1)\\) matrix.</p>
@@ -261,7 +261,7 @@ $$\\left[\\begin{array}{ccc|c}
 
 <div class="step">
 <strong>Operation 2 (Row Scaling):</strong> Multiply a row by a non-zero constant. Notation: \\(R_i \\rightarrow c \\cdot R_i\\) for \\(c \\neq 0\\)
-<p>Justification: If \\(\\mathbf{x}\\) satisfies \\(a_1 x_1 + \\\cdots + a_n x_n = b\\), it also satisfies \\(ca_1 x_1 + \\\cdots + ca_n x_n = cb\\).</p>
+<p>Justification: If \\(\\mathbf{x}\\) satisfies \\(a_1 x_1 + \\cdots + a_n x_n = b\\), it also satisfies \\(ca_1 x_1 + \\cdots + ca_n x_n = cb\\).</p>
 </div>
 
 <div class="step">

@@ -51,16 +51,16 @@ SECTIONS = [
     <h3>Method: Scale Up a Ratio</h3>
     <div class="step">
       <h4>Example 1: Multiply 3:5 by 2</h4>
-      <p>\(3:5 \times 2 = (3 \times 2) : (5 \times 2) = 6:10\)</p>
+      <p>\(3:5 \\times 2 = (3 \\times 2) : (5 \\times 2) = 6:10\)</p>
       <p><strong>Check:</strong> Both ratios mean the same thing!</p>
     </div>
     <div class="step">
       <h4>Example 2: Multiply 2:7 by 3</h4>
-      <p>\(2:7 \times 3 = (2 \times 3) : (7 \times 3) = 6:21\)</p>
+      <p>\(2:7 \\times 3 = (2 \\times 3) : (7 \\times 3) = 6:21\)</p>
     </div>
     <div class="step">
       <h4>Example 3: Multiply 1:4 by 5</h4>
-      <p>\(1:4 \times 5 = (1 \times 5) : (4 \times 5) = 5:20\)</p>
+      <p>\(1:4 \\times 5 = (1 \\times 5) : (4 \\times 5) = 5:20\)</p>
     </div>
   </div>
 

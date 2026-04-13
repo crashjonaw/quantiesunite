@@ -181,7 +181,7 @@ SECTIONS = [
 <ul>
 <li>Did I use a variable for the unknown?</li>
 <li>Did I include all the given information?</li>
-<li>Did I use the right operations (\(+\), \(-\), \(\times\), \(\div\))?</li>
+<li>Did I use the right operations (\(+\), \(-\), \(\\times\), \(\div\))?</li>
 <li>Does the equation match the problem story?</li>
 </ul>
 

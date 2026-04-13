@@ -52,7 +52,7 @@ SECTIONS = [
     <div class="step">
       <h5>Problem: A shirt costs £20 and increases by 15%. What is the new price?</h5>
       <p><strong>Step 1:</strong> Calculate the increase amount</p>
-      <p>Increase = \(15\%\) of £20 = \(0.15 \times £20 = £3\)</p>
+      <p>Increase = \(15\%\) of £20 = \(0.15 \\times £20 = £3\)</p>
       <p><strong>Step 2:</strong> Add to original</p>
       <p>New price = \(£20 + £3 = £23\)</p>
     </div>
@@ -63,27 +63,27 @@ SECTIONS = [
     <div class="step">
       <h5>Same Problem: A shirt costs £20 and increases by 15%</h5>
       <p>New price = \(100\% + 15\% = 115\%\) of original</p>
-      <p>\(115\%\) of £20 = \(1.15 \times £20 = £23\)</p>
+      <p>\(115\%\) of £20 = \(1.15 \\times £20 = £23\)</p>
     </div>
   </div>
 
   <div class="formula-box">
     <h4>Formula for Percent Increase:</h4>
     <p>$$\\text{New Value} = \\text{Original} \\times \\left(1 + \\frac{\\text{Percent}}{100}\\right)$$</p>
-    <p>Or: New Value = Original \(\times 1.15\) for 15% increase</p>
+    <p>Or: New Value = Original \(\\times 1.15\) for 15% increase</p>
   </div>
 
   <div class="example-box">
     <h4>More Examples:</h4>
-    <p>A £50 amount increased by 20%: \(£50 \times 1.20 = £60\)</p>
-    <p>A score of 80 increased by 25%: \(80 \times 1.25 = 100\)</p>
-    <p>A population of 1000 increased by 5%: \(1000 \times 1.05 = 1050\)</p>
+    <p>A £50 amount increased by 20%: \(£50 \\times 1.20 = £60\)</p>
+    <p>A score of 80 increased by 25%: \(80 \\times 1.25 = 100\)</p>
+    <p>A population of 1000 increased by 5%: \(1000 \\times 1.05 = 1050\)</p>
   </div>
 
   <div class="success-box">
     <h4>Shortcut for Method 2:</h4>
     <p>Add the percent to 100%, convert to decimal, and multiply.</p>
-    <p>\(15\%\) increase → \((100 + 15)\% = 115\% = 1.15 \times\) original</p>
+    <p>\(15\%\) increase → \((100 + 15)\% = 115\% = 1.15 \\times\) original</p>
   </div>
 </div>"""
     },
@@ -100,7 +100,7 @@ SECTIONS = [
     <div class="step">
       <h5>Problem: A TV costs £400 and is reduced by 20%. What is the sale price?</h5>
       <p><strong>Step 1:</strong> Calculate the decrease amount</p>
-      <p>Decrease = \(20\%\) of £400 = \(0.20 \times £400 = £80\)</p>
+      <p>Decrease = \(20\%\) of £400 = \(0.20 \\times £400 = £80\)</p>
       <p><strong>Step 2:</strong> Subtract from original</p>
       <p>Sale price = \(£400 - £80 = £320\)</p>
     </div>
@@ -111,21 +111,21 @@ SECTIONS = [
     <div class="step">
       <h5>Same Problem: A TV costs £400 and is reduced by 20%</h5>
       <p>Sale price = \(100\% - 20\% = 80\%\) of original</p>
-      <p>\(80\%\) of £400 = \(0.80 \times £400 = £320\)</p>
+      <p>\(80\%\) of £400 = \(0.80 \\times £400 = £320\)</p>
     </div>
   </div>
 
   <div class="formula-box">
     <h4>Formula for Percent Decrease:</h4>
     <p>$$\\text{New Value} = \\text{Original} \\times \\left(1 - \\frac{\\text{Percent}}{100}\\right)$$</p>
-    <p>Or: New Value = Original \(\times 0.80\) for 20% decrease</p>
+    <p>Or: New Value = Original \(\\times 0.80\) for 20% decrease</p>
   </div>
 
   <div class="example-box">
     <h4>More Examples:</h4>
-    <p>A £50 amount decreased by 10%: \(£50 \times 0.90 = £45\)</p>
-    <p>A 200-page book, 25% reduced: \(200 \times 0.75 = 150\) pages</p>
-    <p>A price of £80, 15% off: \(£80 \times 0.85 = £68\)</p>
+    <p>A £50 amount decreased by 10%: \(£50 \\times 0.90 = £45\)</p>
+    <p>A 200-page book, 25% reduced: \(200 \\times 0.75 = 150\) pages</p>
+    <p>A price of £80, 15% off: \(£80 \\times 0.85 = £68\)</p>
   </div>
 
   <div class="warning-box">
@@ -146,8 +146,8 @@ SECTIONS = [
     <h4>Example: Why They're Different</h4>
     <div class="step">
       <h5>Start with £100</h5>
-      <p><strong>Step 1:</strong> Increase by 20%: \(£100 \times 1.20 = £120\)</p>
-      <p><strong>Step 2:</strong> Decrease the new amount by 20%: \(£120 \times 0.80 = £96\)</p>
+      <p><strong>Step 1:</strong> Increase by 20%: \(£100 \\times 1.20 = £120\)</p>
+      <p><strong>Step 2:</strong> Decrease the new amount by 20%: \(£120 \\times 0.80 = £96\)</p>
       <p><strong>Result:</strong> We're back to £96, not £100!</p>
     </div>
   </div>

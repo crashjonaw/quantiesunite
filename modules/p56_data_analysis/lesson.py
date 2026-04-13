@@ -67,23 +67,23 @@ SECTIONS = [
 
 <h3>Converting Percentages to Angles</h3>
 
-<p><strong>\(\text{Angle} = \text{Percentage} \times 360° \div 100\)</strong></p>
+<p><strong>\(\\text{Angle} = \\text{Percentage} \\times 360° \div 100\)</strong></p>
 
 <div class='example-box'>
 <p><strong>If a category is 25%, what angle does it represent?</strong></p>
 <ul>
-<li>Angle \(= 25 \times 360 \div 100 = 9000 \div 100 = 90°\)</li>
+<li>Angle \(= 25 \\times 360 \div 100 = 9000 \div 100 = 90°\)</li>
 </ul>
 </div>
 
 <h3>Converting Angles to Percentages</h3>
 
-<p><strong>\(\text{Percentage} = \text{Angle} \times 100 \div 360\)</strong></p>
+<p><strong>\(\\text{Percentage} = \\text{Angle} \\times 100 \div 360\)</strong></p>
 
 <div class='example-box'>
 <p><strong>If a slice has an angle of 72°, what percentage does it represent?</strong></p>
 <ul>
-<li>Percentage \(= 72 \times 100 \div 360 = 7200 \div 360 = 20\%\)</li>
+<li>Percentage \(= 72 \\times 100 \div 360 = 7200 \div 360 = 20\%\)</li>
 </ul>
 </div>
 
@@ -92,7 +92,7 @@ SECTIONS = [
 <div class='example-box'>
 <p><strong>A survey of 120 students: 30% like sports. How many students like sports?</strong></p>
 <ul>
-<li>Number \(= 30\%\) of \(120 = 0.30 \times 120 = 36\) students</li>
+<li>Number \(= 30\%\) of \(120 = 0.30 \\times 120 = 36\) students</li>
 </ul>
 </div>
 """
@@ -245,7 +245,7 @@ SECTIONS = [
 <p><strong>4. Incorrect visual representation</strong></p>
 <ul>
 <li>Using images with different sizes that don't match the data</li>
-<li>For example, doubling the width AND height of a circle to show a \(2\times\) increase makes it \(4\times\) bigger!</li>
+<li>For example, doubling the width AND height of a circle to show a \(2\\times\) increase makes it \(4\\times\) bigger!</li>
 </ul>
 </div>
 
@@ -273,9 +273,9 @@ SECTIONS = [
 <p><strong>From a pie chart showing preferences: 40% like A, 35% like B, 25% like C</strong></p>
 <p><strong>If 200 people were surveyed:</strong></p>
 <ul>
-<li>Like A \(= 40\% \times 200 = 80\) people</li>
-<li>Like B \(= 35\% \times 200 = 70\) people</li>
-<li>Like C \(= 25\% \times 200 = 50\) people</li>
+<li>Like A \(= 40\% \\times 200 = 80\) people</li>
+<li>Like B \(= 35\% \\times 200 = 70\) people</li>
+<li>Like C \(= 25\% \\times 200 = 50\) people</li>
 <li>Total \(= 80 + 70 + 50 = 200\) ✓</li>
 </ul>
 </div>

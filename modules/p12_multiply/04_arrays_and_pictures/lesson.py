@@ -49,7 +49,7 @@ SECTIONS = [
     },
     {
         "title": "The Commutative Property: Rotation Magic",
-        "body": """<p>Here's something amazing: <strong>\(3 \times 4 = 4 \times 3\)</strong></p>
+        "body": """<p>Here's something amazing: <strong>\(3 \\times 4 = 4 \\times 3\)</strong></p>
 <p>When you rotate an array, the multiplication sentence changes, but the total stays the same!</p>
 <svg viewBox="0 0 520 285" style="width:100%; max-width:550px; height:auto; display:block; margin:16px auto;">
   <rect x="0" y="0" width="520" height="285" rx="4" fill="rgba(0,0,0,0.2)"/>
@@ -99,10 +99,10 @@ SECTIONS = [
         "title": "Real-World Arrays",
         "body": """<p>You see arrays in real life all the time!</p>
 <div class="concept-box" style="padding: 16px; border-radius: 6px; margin: 16px 0">
-  <p style="margin: 8px 0;"><strong>📦 Chocolate bars:</strong> A box of chocolate is arranged \(3 \times 4 = 12\) pieces</p>
-  <p style="margin: 8px 0;"><strong>🪟 Window panes:</strong> A window with \(2 \times 3 = 6\) panes</p>
-  <p style="margin: 8px 0;"><strong>🎒 Desk arrangement:</strong> A classroom with 5 rows of 4 desks each = \(5 \times 4 = 20\) desks</p>
-  <p style="margin: 8px 0;"><strong>🍕 Pizza slices:</strong> Some pizzas are cut \(4 \times 4 = 16\) slices</p>
+  <p style="margin: 8px 0;"><strong>📦 Chocolate bars:</strong> A box of chocolate is arranged \(3 \\times 4 = 12\) pieces</p>
+  <p style="margin: 8px 0;"><strong>🪟 Window panes:</strong> A window with \(2 \\times 3 = 6\) panes</p>
+  <p style="margin: 8px 0;"><strong>🎒 Desk arrangement:</strong> A classroom with 5 rows of 4 desks each = \(5 \\times 4 = 20\) desks</p>
+  <p style="margin: 8px 0;"><strong>🍕 Pizza slices:</strong> Some pizzas are cut \(4 \\times 4 = 16\) slices</p>
 </div>"""
     },
     {

@@ -48,7 +48,7 @@ SECTIONS = [
 <ul>
 <li><strong>Unknown:</strong> Number of apples eaten = x</li>
 <li><strong>Equation:</strong> \(12 - x = 8\) (start with 12, subtract x, get 8)</li>
-<li><strong>Solve:</strong> \(12 - x = 8 \rightarrow x = 12 - 8 = 4\)</li>
+<li><strong>Solve:</strong> \(12 - x = 8 \\rightarrow x = 12 - 8 = 4\)</li>
 <li><strong>Answer:</strong> Tom ate 4 apples</li>
 <li><strong>Check:</strong> \(12 - 4 = 8\) ✓</li>
 </ul>
@@ -63,7 +63,7 @@ SECTIONS = [
 <li><strong>Equation:</strong> \(3x = 24\) (price per notebook × quantity = total)</li>
 <li><strong>Solve:</strong> \(x = 24 \div 3 = 8\)</li>
 <li><strong>Answer:</strong> I bought 8 notebooks</li>
-<li><strong>Check:</strong> \(3 \times 8 = 24\) ✓</li>
+<li><strong>Check:</strong> \(3 \\times 8 = 24\) ✓</li>
 </ul>
 </div>
 
@@ -76,7 +76,7 @@ SECTIONS = [
 <li><strong>Then:</strong> Cost of pen = x + 2</li>
 <li><strong>Equation:</strong> \(x + (x + 2) = 5\) (pencil + pen = total)</li>
 <li><strong>Simplify:</strong> \(2x + 2 = 5\)</li>
-<li><strong>Solve:</strong> \(2x = 3 \rightarrow x = 1.5\)</li>
+<li><strong>Solve:</strong> \(2x = 3 \\rightarrow x = 1.5\)</li>
 <li><strong>Answer:</strong> Pencil costs $1.50, pen costs $3.50</li>
 <li><strong>Check:</strong> \(1.5 + 3.5 = 5\) ✓</li>
 </ul>
@@ -98,7 +98,7 @@ SECTIONS = [
 <li><strong>Simplify:</strong> \(4x = 24\)</li>
 <li><strong>Solve:</strong> \(x = 6\)</li>
 <li><strong>Answer:</strong> Sarah has 6, Tom has 18</li>
-<li><strong>Check:</strong> \(6 + 18 = 24\) ✓ AND \(18 = 3 \times 6\) ✓</li>
+<li><strong>Check:</strong> \(6 + 18 = 24\) ✓ AND \(18 = 3 \\times 6\) ✓</li>
 </ul>
 </div>
 
@@ -112,7 +112,7 @@ SECTIONS = [
 <li><strong>Then:</strong> Amy's books = x + 5</li>
 <li><strong>Equation:</strong> \(x + (x + 5) = 31\)</li>
 <li><strong>Simplify:</strong> \(2x + 5 = 31\)</li>
-<li><strong>Solve:</strong> \(2x = 26 \rightarrow x = 13\)</li>
+<li><strong>Solve:</strong> \(2x = 26 \\rightarrow x = 13\)</li>
 <li><strong>Answer:</strong> Ben has 13 books, Amy has 18</li>
 <li><strong>Check:</strong> \(13 + 18 = 31\) ✓ AND \(18 = 13 + 5\) ✓</li>
 </ul>
@@ -130,7 +130,7 @@ SECTIONS = [
 <li><strong>Simplify:</strong> \(3x = 45\)</li>
 <li><strong>Solve:</strong> \(x = 15\)</li>
 <li><strong>Answer:</strong> Kate has $15, John has $60</li>
-<li><strong>Check:</strong> \(60 - 15 = 45\) ✓ AND \(60 = 4 \times 15\) ✓</li>
+<li><strong>Check:</strong> \(60 - 15 = 45\) ✓ AND \(60 = 4 \\times 15\) ✓</li>
 </ul>
 </div>
 """
@@ -145,12 +145,12 @@ SECTIONS = [
 
 <ul>
 <li><strong>Unknown:</strong> Number of oranges = x</li>
-<li><strong>Cost of apples:</strong> \(5 \times 2 = \$10\) (fixed)</li>
+<li><strong>Cost of apples:</strong> \(5 \\times 2 = \$10\) (fixed)</li>
 <li><strong>Cost of oranges:</strong> \(3x\)</li>
 <li><strong>Equation:</strong> \(10 + 3x = 19\) (apples + oranges = total)</li>
-<li><strong>Solve:</strong> \(3x = 9 \rightarrow x = 3\)</li>
+<li><strong>Solve:</strong> \(3x = 9 \\rightarrow x = 3\)</li>
 <li><strong>Answer:</strong> I bought 3 oranges</li>
-<li><strong>Check:</strong> \(10 + (3 \times 3) = 10 + 9 = 19\) ✓</li>
+<li><strong>Check:</strong> \(10 + (3 \\times 3) = 10 + 9 = 19\) ✓</li>
 </ul>
 </div>
 
@@ -161,12 +161,12 @@ SECTIONS = [
 <h4>Problem: "Tickets cost $8 for adults and $5 for children. A group buys 3 adult tickets and some child tickets for $44 total. How many child tickets?"</h4>
 
 <ul>
-<li><strong>Adult tickets:</strong> \(3 \times 8 = \$24\) (fixed)</li>
+<li><strong>Adult tickets:</strong> \(3 \\times 8 = \$24\) (fixed)</li>
 <li><strong>Child tickets:</strong> \(5x\) (unknown)</li>
 <li><strong>Equation:</strong> \(24 + 5x = 44\)</li>
-<li><strong>Solve:</strong> \(5x = 20 \rightarrow x = 4\)</li>
+<li><strong>Solve:</strong> \(5x = 20 \\rightarrow x = 4\)</li>
 <li><strong>Answer:</strong> They bought 4 child tickets</li>
-<li><strong>Check:</strong> \(24 + (5 \times 4) = 24 + 20 = 44\) ✓</li>
+<li><strong>Check:</strong> \(24 + (5 \\times 4) = 24 + 20 = 44\) ✓</li>
 </ul>
 </div>
 """
@@ -199,10 +199,10 @@ Sarah: [====][====][====]
 <ul>
 <li>Ben: 1 unit = 12 stickers</li>
 <li>Sarah: 3 units = 36 stickers</li>
-<li>Check: \(36 - 12 = 24\) ✓ and \(36 = 3 \times 12\) ✓</li>
+<li>Check: \(36 - 12 = 24\) ✓ and \(36 = 3 \\times 12\) ✓</li>
 </ul>
 
-<p><strong>Algebraically:</strong> Let \(x\) = Ben's stickers. Sarah = \(3x\). Difference: \(3x - x = 24 \rightarrow 2x = 24 \rightarrow x = 12\)</p>
+<p><strong>Algebraically:</strong> Let \(x\) = Ben's stickers. Sarah = \(3x\). Difference: \(3x - x = 24 \\rightarrow 2x = 24 \\rightarrow x = 12\)</p>
 </div>
 
 <div class='worked-example'>

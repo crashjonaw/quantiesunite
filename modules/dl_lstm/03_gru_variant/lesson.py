@@ -26,11 +26,11 @@ SECTIONS = [
         "body": """<div class="concept-box">
 <h3>Reset Gate: Selective Context</h3>
 <p>The reset gate determines how much of the previous hidden state to use when computing a candidate:</p>
-<p><strong>r<sub>t</sub> = \(\sigma\)(W<sub>r</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>r</sub>)</strong></p>
+<p><strong>r<sub>t</sub> = \(\\sigma\)(W<sub>r</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>r</sub>)</strong></p>
 <p>If r<sub>t</sub> ≈ 0, the cell "forgets" the previous context and focuses on new input.</p>
 <h3>Update Gate: Mixing Old and New</h3>
 <p>The update gate determines how much of the previous hidden state to retain versus replace:</p>
-<p><strong>z<sub>t</sub> = \(\sigma\)(W<sub>z</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>z</sub>)</strong></p>
+<p><strong>z<sub>t</sub> = \(\\sigma\)(W<sub>z</sub> [h<sub>t-1</sub>, x<sub>t</sub>] + b<sub>z</sub>)</strong></p>
 <p>If z<sub>t</sub> ≈ 0, the hidden state remains mostly unchanged. If z<sub>t</sub> ≈ 1, it's fully replaced.</p>
 <h3>Candidate Hidden State</h3>
 <p>Notice the reset gate is applied <strong>before</strong> the weight multiplication:</p>

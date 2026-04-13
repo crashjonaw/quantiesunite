@@ -53,7 +53,7 @@ SECTIONS = [
 <div class="worked-example">
 <p><strong>Example 4:</strong> Simple multiplication</p>
 <p>\((2 + i)(3 + 4i)\)</p>
-<p>\(= 2 \cdot 3 + 2 \cdot 4i + i \cdot 3 + i \cdot 4i\)</p>
+<p>\(= 2 \\cdot 3 + 2 \\cdot 4i + i \\cdot 3 + i \\cdot 4i\)</p>
 <p>\(= 6 + 8i + 3i + 4i^2\)</p>
 <p>\(= 6 + 11i - 4\)</p>
 <p>\(= 2 + 11i\)</p>
@@ -67,8 +67,8 @@ SECTIONS = [
 
 <div class="worked-example">
 <p><strong>Example 6:</strong> Multiplication involving the imaginary unit</p>
-<p>\(i \cdot i = i^2 = -1\)</p>
-<p>\(i \cdot (2 + 3i) = 2i + 3i^2 = 2i - 3 = -3 + 2i\)</p>
+<p>\(i \\cdot i = i^2 = -1\)</p>
+<p>\(i \\cdot (2 + 3i) = 2i + 3i^2 = 2i - 3 = -3 + 2i\)</p>
 </div>
 """
     },

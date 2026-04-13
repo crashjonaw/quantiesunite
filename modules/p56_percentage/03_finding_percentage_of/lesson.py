@@ -8,7 +8,7 @@ SECTIONS = [
     <h3>The Formula</h3>
     <p>To find a percent of a number, convert the percent to a decimal and multiply.</p>
     <p>$$\\text{Percent of Amount} = \\frac{\\text{Percent}}{100} \\times \\text{Amount}$$</p>
-    <p><strong>Example:</strong> \(25\%\) of \(80 = 0.25 \times 80 = 20\)</p>
+    <p><strong>Example:</strong> \(25\%\) of \(80 = 0.25 \\times 80 = 20\)</p>
   </div>
 
   <div class="steps-container">
@@ -20,7 +20,7 @@ SECTIONS = [
     </div>
     <div class="step">
       <h5>Step 2: Multiply by the quantity</h5>
-      <p>\(0.30 \times 200 = 60\)</p>
+      <p>\(0.30 \\times 200 = 60\)</p>
     </div>
     <div class="step">
       <h5>Step 3: Write your answer</h5>
@@ -30,10 +30,10 @@ SECTIONS = [
 
   <div class="example-box">
     <h4>More Examples:</h4>
-    <p>\(25\%\) of \(80 = 0.25 \times 80 = 20\)</p>
-    <p>\(15\%\) of \(200 = 0.15 \times 200 = 30\)</p>
-    <p>\(5\%\) of \(400 = 0.05 \times 400 = 20\)</p>
-    <p>\(120\%\) of \(50 = 1.20 \times 50 = 60\) (more than the original!)</p>
+    <p>\(25\%\) of \(80 = 0.25 \\times 80 = 20\)</p>
+    <p>\(15\%\) of \(200 = 0.15 \\times 200 = 30\)</p>
+    <p>\(5\%\) of \(400 = 0.05 \\times 400 = 20\)</p>
+    <p>\(120\%\) of \(50 = 1.20 \\times 50 = 60\) (more than the original!)</p>
   </div>
 
   <div class="success-box">
@@ -126,21 +126,21 @@ SECTIONS = [
   <div class="example-box">
     <h4>Example 1: Shop Discount</h4>
     <p>A shirt costs £60. It is 30% off. How much do you save?</p>
-    <p>Discount = \(30\%\) of £60 = \(0.30 \times £60 = £18\)</p>
+    <p>Discount = \(30\%\) of £60 = \(0.30 \\times £60 = £18\)</p>
     <p>Sale price = \(£60 - £18 = £42\)</p>
   </div>
 
   <div class="example-box">
     <h4>Example 2: Restaurant Tip</h4>
     <p>A meal costs £45. You want to tip 20%. How much is the tip?</p>
-    <p>Tip = \(20\%\) of £45 = \(0.20 \times £45 = £9\)</p>
+    <p>Tip = \(20\%\) of £45 = \(0.20 \\times £45 = £9\)</p>
     <p>Total to pay = \(£45 + £9 = £54\)</p>
   </div>
 
   <div class="example-box">
     <h4>Example 3: Exam Preparation</h4>
     <p>There are 120 questions in a practice test. You need to answer 75% correctly to pass.</p>
-    <p>Questions needed = \(75\%\) of \(120 = 0.75 \times 120 = 90\) questions</p>
+    <p>Questions needed = \(75\%\) of \(120 = 0.75 \\times 120 = 90\) questions</p>
   </div>
 
   <div class="warning-box">

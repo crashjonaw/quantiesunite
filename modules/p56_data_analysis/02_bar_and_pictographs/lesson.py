@@ -130,7 +130,7 @@ SECTIONS = [
 <p><strong>Q3: Total cones sold Mon-Fri?</strong></p>
 <p>A: \(24 + 32 + 28 + 35 + 30 = 149\) cones</p>
 <p><strong>Q4: Average (mean) cones per day?</strong></p>
-<p>A: \(149 \div 5 = 29.8 \approx 30\) cones per day</p>
+<p>A: \(149 \div 5 = 29.8 \\approx 30\) cones per day</p>
 </div>"""
     },
     {
@@ -162,7 +162,7 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>If 🍎 = 10 apples, but someone harvested 25 apples:</strong></p>
 <p>We show: 🍎 🍎 🍎 ½🍎 (2.5 symbols)</p>
-<p>Check: \((2 \times 10) + (0.5 \times 10) = 20 + 5 = 25\) ✓</p>
+<p>Check: \((2 \\times 10) + (0.5 \\times 10) = 20 + 5 = 25\) ✓</p>
 </div>
 
 <h3>Advantage and Limitation</h3>

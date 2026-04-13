@@ -33,19 +33,43 @@ def activate_plan(user_id, plan_tier, plan_duration, amount_paid,
     """Activate a plan for a user. Deactivates any existing plan of the same tier."""
     days = PLAN_DURATIONS.get(plan_duration, 30)
     now = datetime.now()
-    expires = now + timedelta(days=days)
 
     db = get_db()
-    # Deactivate old plans for this user
-    db.execute("UPDATE user_plans SET is_active=0 WHERE user_id=? AND is_active=1", (user_id,))
-    # Insert new plan
-    db.execute(
-        """INSERT INTO user_plans
-           (user_id, plan_tier, plan_duration, amount_paid, started_at, expires_at,
-            payment_ref, activated_by, is_active)
-           VALUES (?,?,?,?,?,?,?,?,1)""",
-        (user_id, plan_tier, plan_duration, amount_paid,
-         now.isoformat(), expires.isoformat(), payment_ref, activated_by))
+
+    # Check if user has an active plan of the same tier — extend it
+    existing = db.execute(
+        "SELECT * FROM user_plans WHERE user_id=? AND plan_tier=? AND is_active=1",
+        (user_id, plan_tier)).fetchone()
+
+    if existing:
+        # Extend from current expiry (not from now)
+        current_expiry = datetime.fromisoformat(existing["expires_at"])
+        # If already expired, extend from now instead
+        base = max(current_expiry, now)
+        new_expiry = base + timedelta(days=days)
+        db.execute("UPDATE user_plans SET expires_at=? WHERE id=?",
+                   (new_expiry.isoformat(), existing["id"]))
+        # Log the extension as a separate record
+        db.execute(
+            """INSERT INTO user_plans
+               (user_id, plan_tier, plan_duration, amount_paid, started_at, expires_at,
+                payment_ref, activated_by, is_active)
+               VALUES (?,?,?,?,?,?,?,?,0)""",
+            (user_id, plan_tier, plan_duration, amount_paid,
+             now.isoformat(), new_expiry.isoformat(), payment_ref,
+             activated_by + "_extension"))
+    else:
+        # Different tier or no active plan — deactivate old, start new
+        db.execute("UPDATE user_plans SET is_active=0 WHERE user_id=? AND is_active=1", (user_id,))
+        expires = now + timedelta(days=days)
+        db.execute(
+            """INSERT INTO user_plans
+               (user_id, plan_tier, plan_duration, amount_paid, started_at, expires_at,
+                payment_ref, activated_by, is_active)
+               VALUES (?,?,?,?,?,?,?,?,1)""",
+            (user_id, plan_tier, plan_duration, amount_paid,
+             now.isoformat(), expires.isoformat(), payment_ref, activated_by))
+
     # Update user's plan field
     db.execute("UPDATE users SET plan=? WHERE id=?", (plan_tier, user_id))
     db.commit()

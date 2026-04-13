@@ -90,7 +90,7 @@ SECTIONS = [
   <text x="320" y="97" font-size='12' fill='#79c0ff' font-family='sans-serif'>3 units = 3 x 6 = 18</text>
 </svg>
 
-<p><strong>Calculation:</strong> Ali has \(3 \times 6 = 18\) stickers</p>
+<p><strong>Calculation:</strong> Ali has \(3 \\times 6 = 18\) stickers</p>
 </div>
 
 <div class="worked-example">
@@ -125,7 +125,7 @@ SECTIONS = [
 <li>5 units total = 100 dollars</li>
 <li>1 unit = \(100 \div 5 = 20\) dollars</li>
 <li>Ben has 20 dollars</li>
-<li>Amy has \(4 \times 20 = 80\) dollars</li>
+<li>Amy has \(4 \\times 20 = 80\) dollars</li>
 </ul>
 </div>
 
@@ -255,7 +255,7 @@ SECTIONS = [
 <p><strong>Check:</strong></p>
 <ul>
 <li>6 red + 4 blue = 10 items ✓</li>
-<li>\((6 \times 3) + (4 \times 5) = 18 + 20 = 38\) dollars ✓</li>
+<li>\((6 \\times 3) + (4 \\times 5) = 18 + 20 = 38\) dollars ✓</li>
 </ul>
 </div>
 

@@ -138,7 +138,7 @@ SECTIONS = [
 <div class='info-box'>
 <p><strong>Sanity Check:</strong></p>
 <p>The hypotenuse (10 cm) must be longer than any of the shorter sides (7 cm and 7.1 cm). &#x2713;</p>
-<p>\(7^2 + 7.1^2 \approx 49 + 50.41 \approx 99.41 \approx 100 = 10^2\). &#x2713;</p>
+<p>\(7^2 + 7.1^2 \\approx 49 + 50.41 \\approx 99.41 \\approx 100 = 10^2\). &#x2713;</p>
 </div>
 """
     },

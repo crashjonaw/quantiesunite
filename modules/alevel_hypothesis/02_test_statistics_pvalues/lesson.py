@@ -11,35 +11,35 @@ SECTIONS = [
 
 <h3>P-Value Interpretation</h3>
 <p>A <strong>small p-value</strong> provides strong evidence against \(H_0\). It tells us the data would be unlikely if the null hypothesis were true.</p>
-<p><strong>Decision Rule:</strong> Reject \(H_0\) if p-value &lt; \(\alpha\)</p>
+<p><strong>Decision Rule:</strong> Reject \(H_0\) if p-value &lt; \(\\alpha\)</p>
 
 <div class="warning-box">
 <h4>Common Misinterpretations (Avoid These!)</h4>
 <ul>
 <li><strong>❌ NOT:</strong> "p-value is the probability \(H_0\) is true"</li>
-<li><strong>❌ NOT:</strong> "If p &gt; \(\alpha\), then \(H_0\) is true"</li>
-<li><strong>✓ CORRECT:</strong> "Given \(H_0\) is true, p-value is \(P(\text{data as extreme as observed})\)"</li>
-<li><strong>✓ CORRECT:</strong> "If p &lt; \(\alpha\), the data are inconsistent with \(H_0\)"</li>
+<li><strong>❌ NOT:</strong> "If p &gt; \(\\alpha\), then \(H_0\) is true"</li>
+<li><strong>✓ CORRECT:</strong> "Given \(H_0\) is true, p-value is \(P(\\text{data as extreme as observed})\)"</li>
+<li><strong>✓ CORRECT:</strong> "If p &lt; \(\\alpha\), the data are inconsistent with \(H_0\)"</li>
 </ul>
 </div>
 
 <h3>Computing P-Values for Z-Tests</h3>
-<p><strong>One-tailed right (\(H_1\): \(\mu > \mu_0\)):</strong></p>
-<p style="text-align: center;">\(\text{p-value} = P(Z > z_{\text{obs}})\)</p>
+<p><strong>One-tailed right (\(H_1\): \(\\mu > \\mu_0\)):</strong></p>
+<p style="text-align: center;">\(\\text{p-value} = P(Z > z_{\\text{obs}})\)</p>
 
-<p><strong>One-tailed left (\(H_1\): \(\mu < \mu_0\)):</strong></p>
-<p style="text-align: center;">\(\text{p-value} = P(Z < z_{\text{obs}})\)</p>
+<p><strong>One-tailed left (\(H_1\): \(\\mu < \\mu_0\)):</strong></p>
+<p style="text-align: center;">\(\\text{p-value} = P(Z < z_{\\text{obs}})\)</p>
 
-<p><strong>Two-tailed (\(H_1\): \(\mu \neq \mu_0\)):</strong></p>
-<p style="text-align: center;">\(\text{p-value} = 2 \times P(Z > |z_{\text{obs}}|)\)</p>
+<p><strong>Two-tailed (\(H_1\): \(\\mu \\neq \\mu_0\)):</strong></p>
+<p style="text-align: center;">\(\\text{p-value} = 2 \\times P(Z > |z_{\\text{obs}}|)\)</p>
 
 <div class="worked-example">
 <h4>Example: P-Value Calculation</h4>
-<p>A sample of 36 students has mean test score \(\bar{X} = 78\). Population \(\sigma = 12\), testing \(\mu_0 = 75\) vs \(H_1\): \(\mu > 75\).</p>
-<p style="text-align: center;">\(Z = \frac{78 - 75}{12/\sqrt{36}} = \frac{3}{2} = 1.5\)</p>
-<p>\(\text{p-value} = P(Z > 1.5) = 1 - \Phi(1.5) \approx 1 - 0.933 = 0.067\)</p>
-<p>At \(\alpha = 0.05\): \(0.067 > 0.05\), so <strong>fail to reject \(H_0\)</strong></p>
-<p>At \(\alpha = 0.10\): \(0.067 < 0.10\), so <strong>reject \(H_0\)</strong></p>
+<p>A sample of 36 students has mean test score \(\\bar{X} = 78\). Population \(\\sigma = 12\), testing \(\\mu_0 = 75\) vs \(H_1\): \(\\mu > 75\).</p>
+<p style="text-align: center;">\(Z = \\frac{78 - 75}{12/\\sqrt{36}} = \\frac{3}{2} = 1.5\)</p>
+<p>\(\\text{p-value} = P(Z > 1.5) = 1 - \Phi(1.5) \\approx 1 - 0.933 = 0.067\)</p>
+<p>At \(\\alpha = 0.05\): \(0.067 > 0.05\), so <strong>fail to reject \(H_0\)</strong></p>
+<p>At \(\\alpha = 0.10\): \(0.067 < 0.10\), so <strong>reject \(H_0\)</strong></p>
 </div>
 """
     },

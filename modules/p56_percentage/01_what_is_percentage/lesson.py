@@ -146,8 +146,8 @@ SECTIONS = [
   <div class="formula-box">
     <h4>Key Equivalences:</h4>
     <p>\\(25\\% = \\frac{25}{100} = 0.25\\)</p>
-    <p>\(50\% = \frac{50}{100} = \frac{1}{2} = 0.5\)</p>
-    <p>\(75\% = \frac{75}{100} = \frac{3}{4} = 0.75\)</p>
+    <p>\(50\% = \\frac{50}{100} = \\frac{1}{2} = 0.5\)</p>
+    <p>\(75\% = \\frac{75}{100} = \\frac{3}{4} = 0.75\)</p>
   </div>
 </div>"""
     },
@@ -163,9 +163,9 @@ SECTIONS = [
   <div class="example-box">
     <h4>Real-World Example: Test Scores</h4>
     <p><strong>School A:</strong> 42 students passed out of 56. What percent?</p>
-    <p>\(\frac{42}{56} = \frac{75}{100} = 75\%\)</p>
+    <p>\(\\frac{42}{56} = \\frac{75}{100} = 75\%\)</p>
     <p><strong>School B:</strong> 105 students passed out of 140. What percent?</p>
-    <p>\(\frac{105}{140} = \frac{75}{100} = 75\%\)</p>
+    <p>\(\\frac{105}{140} = \\frac{75}{100} = 75\%\)</p>
     <p><strong>Same percentage!</strong> Even though School B has more students, both schools achieved the same success rate.</p>
   </div>
 

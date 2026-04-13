@@ -51,8 +51,44 @@ def plans_page():
 
 @learning_bp.route("/payment/success")
 def payment_success():
-    status = request.args.get("status", "")
-    reference = request.args.get("reference", "")
+    # HitPay may use "status" or "payment_status", "reference" or "reference_number"
+    status = request.args.get("status", "") or request.args.get("payment_status", "")
+    reference = (request.args.get("reference", "") or
+                 request.args.get("reference_number", ""))
+
+    # Fallback activation: if webhook missed, activate from redirect params
+    user = current_user()
+    if user and reference:
+        parts = reference.split("|")
+        if len(parts) == 3:
+            try:
+                uid, tier, duration = int(parts[0]), parts[1], parts[2]
+                if uid == user["id"]:
+                    existing = db.get_active_plan(uid)
+                    if not existing or existing["plan_tier"] != tier:
+                        from routes.payments import PLAN_PRICES
+                        amount = PLAN_PRICES.get(tier, {}).get(duration, 0)
+                        db.activate_plan(uid, tier, duration, amount,
+                                         payment_ref="redirect_fallback",
+                                         activated_by="redirect_check")
+                        status = "completed"
+            except (ValueError, KeyError):
+                pass
+
+    # Second fallback: always check HitPay API for recent completed payments
+    if user and status != "completed":
+        try:
+            from routes.payments import _check_recent_completed_payment
+            import logging
+            logging.warning(f"Running API fallback for user {user['id']}")
+            activated = _check_recent_completed_payment(user["id"])
+            logging.warning(f"API fallback result: {activated}")
+            if activated:
+                status = "completed"
+        except Exception as e:
+            import logging
+            logging.error(f"API fallback FAILED: {e}", exc_info=True)
+
     return render_template("pages/payment_success.html",
                            payment_status=status, reference=reference)
 

@@ -28,7 +28,7 @@ SECTIONS = [
         <ul>
         <li>T is invertible ⟺ T is bijective (injective and surjective)</li>
         <li>If V and W have equal finite dimension, then T is invertible ⟺ T is injective ⟺ T is surjective</li>
-        <li>For matrices: \(A\) is invertible \(\iff \det(A) \neq 0 \iff A\) has full rank</li>
+        <li>For matrices: \(A\) is invertible \(\iff \det(A) \\neq 0 \iff A\) has full rank</li>
         </ul>
 
         <p><strong>Key result:</strong> If T is invertible, then T⁻¹ is also linear.</p>
@@ -39,17 +39,17 @@ SECTIONS = [
         "title": "Eigenvalues and Eigenvectors",
         "body": """
         <div class='concept-box'>
-        <p><strong>Definition:</strong> For a linear operator T: V → V, a nonzero vector \(v \in V\) is an eigenvector with eigenvalue \(\lambda \in F\) if:</p>
-        <pre class='code-block'>\(T(v) = \lambda v\)</pre>
+        <p><strong>Definition:</strong> For a linear operator T: V → V, a nonzero vector \(v \in V\) is an eigenvector with eigenvalue \(\\lambda \in F\) if:</p>
+        <pre class='code-block'>\(T(v) = \\lambda v\)</pre>
 
-        <p>For a matrix \(A\), this means: \(Av = \lambda v\), or equivalently, \((A - \lambda I)v = 0\).</p>
+        <p>For a matrix \(A\), this means: \(Av = \\lambda v\), or equivalently, \((A - \\lambda I)v = 0\).</p>
 
         <p><strong>Finding eigenvalues:</strong> Eigenvalues satisfy the characteristic equation:</p>
-        <pre class='code-block'>\(\det(A - \lambda I) = 0\)</pre>
+        <pre class='code-block'>\(\det(A - \\lambda I) = 0\)</pre>
 
-        <p>This is a polynomial of degree \(n\) (for \(n \times n\) matrices), called the characteristic polynomial.</p>
+        <p>This is a polynomial of degree \(n\) (for \(n \\times n\) matrices), called the characteristic polynomial.</p>
 
-        <p><strong>Finding eigenvectors:</strong> For each eigenvalue \(\lambda\), solve \((A - \lambda I)v = 0\). The nonzero solutions are eigenvectors (forming the eigenspace).</p>
+        <p><strong>Finding eigenvectors:</strong> For each eigenvalue \(\\lambda\), solve \((A - \\lambda I)v = 0\). The nonzero solutions are eigenvectors (forming the eigenspace).</p>
         </div>
         """
     },
@@ -64,7 +64,7 @@ SECTIONS = [
 
         <p><strong>When is A diagonalizable?</strong></p>
         <ul>
-        <li>If \(A\) has \(n\) distinct eigenvalues (\(n \times n\) matrix), then \(A\) is diagonalizable</li>
+        <li>If \(A\) has \(n\) distinct eigenvalues (\(n \\times n\) matrix), then \(A\) is diagonalizable</li>
         <li>More generally, \(A\) is diagonalizable iff geometric multiplicity equals algebraic multiplicity for each eigenvalue</li>
         <li>Symmetric matrices are always diagonalizable (with orthogonal eigenvectors)</li>
         </ul>
@@ -72,16 +72,16 @@ SECTIONS = [
 
         <div class='worked-example'>
         <p><strong>Example: Diagonalize A = [1, 2; 2, 1]</strong></p>
-        <pre class='code-block'>Characteristic polynomial: \(\det([1-\lambda, 2; 2, 1-\lambda]) = (1-\lambda)^2 - 4 = \lambda^2 - 2\lambda - 3 = (\lambda-3)(\lambda+1)\)
-Eigenvalues: \(\lambda_1 = 3\), \(\lambda_2 = -1\)
+        <pre class='code-block'>Characteristic polynomial: \(\det([1-\\lambda, 2; 2, 1-\\lambda]) = (1-\\lambda)^2 - 4 = \\lambda^2 - 2\\lambda - 3 = (\\lambda-3)(\\lambda+1)\)
+Eigenvalues: \(\\lambda_1 = 3\), \(\\lambda_2 = -1\)
 
-For \(\lambda_1 = 3\): \((A - 3I)v = 0\)
+For \(\\lambda_1 = 3\): \((A - 3I)v = 0\)
 [-2  2][v₁] = [0]  → -2v₁ + 2v₂ = 0 → v₁ = v₂
 [2  -2][v₂]   [0]
 
 Eigenvector: v₁ = [1, 1]ᵀ
 
-For \(\lambda_2 = -1\): \((A + I)v = 0\)
+For \(\\lambda_2 = -1\): \((A + I)v = 0\)
 [2  2][v₁] = [0]  → 2v₁ + 2v₂ = 0 → v₁ = -v₂
 [2  2][v₂]   [0]
 

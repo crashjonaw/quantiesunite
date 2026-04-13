@@ -24,7 +24,7 @@ SECTIONS = [
         <h4>Types of Optimization Problems</h4>
         <ul>
             <li><strong>Unconstrained:</strong> Minimize f(x) with no restrictions</li>
-            <li><strong>Constrained:</strong> Minimize \(f(x)\) subject to \(g(x) \leq 0\)</li>
+            <li><strong>Constrained:</strong> Minimize \(f(x)\) subject to \(g(x) \\leq 0\)</li>
             <li><strong>Linear:</strong> Both objective and constraints are linear</li>
             <li><strong>Nonlinear:</strong> Objective or constraints are nonlinear</li>
         </ul>
@@ -71,8 +71,8 @@ print(f"Iterations: {result.nit}")
         <p>Curve fitting finds the best parameters of a model function that match observed data. It's a constrained least-squares problem: minimize the sum of squared residuals.</p>
 
         <h4>The Least Squares Principle</h4>
-        <p>Given data points \((x_i, y_i)\) and a model \(y = f(x, \theta)\), find parameters \(\theta\) that minimize:</p>
-        <p style="text-align: center; font-family: monospace; margin: 12px 0;">\(\chi^2 = \sum_i [y_i - f(x_i, \theta)]^2\)</p>
+        <p>Given data points \((x_i, y_i)\) and a model \(y = f(x, \\theta)\), find parameters \(\\theta\) that minimize:</p>
+        <p style="text-align: center; font-family: monospace; margin: 12px 0;">\(\chi^2 = \\sum_i [y_i - f(x_i, \\theta)]^2\)</p>
 
         <h4>Key Advantages of curve_fit</h4>
         <ul>

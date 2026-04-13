@@ -32,7 +32,7 @@ SECTIONS = [
         </div>
 
         <div class='worked-example'>
-        <p><strong>ERO 2: Row Scaling (\(cR_i \to R_i\), \(c \neq 0\))</strong></p>
+        <p><strong>ERO 2: Row Scaling (\(cR_i \to R_i\), \(c \\neq 0\))</strong></p>
         <p>Multiply a row by a nonzero constant. This corresponds to multiplying an equation by a nonzero constant, which doesn't change the solution (e.g., "2x + 4y = 6" is equivalent to "x + 2y = 3").</p>
         <p>Example: Multiply row 1 by 1/2</p>
         <pre class='code-block'>[2  4 | 6]      [1  2 | 3]
@@ -110,7 +110,7 @@ Augmented matrix:
         </div>
 
         <div class='worked-example'>
-        <p><strong>Scaling Reversal:</strong> If we apply \((cR_i \to R_i)\) with \(c \neq 0\), we can undo it with \((1/c \cdot R_i \to R_i)\).</p>
+        <p><strong>Scaling Reversal:</strong> If we apply \((cR_i \to R_i)\) with \(c \\neq 0\), we can undo it with \((1/c \\cdot R_i \to R_i)\).</p>
         <p>Example: Double row 1, then halve row 1 → back to original.</p>
         <pre class='code-block'>Original:     [1  2 | 3]
 2R₁:          [2  4 | 6]

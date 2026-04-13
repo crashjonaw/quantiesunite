@@ -200,7 +200,7 @@ new Chart(document.getElementById('vol_cube_progression'), {
 </tr>
 <tr style="">
 <td style="padding:10px;"><strong>Dimensions</strong></td>
-<td style="padding:10px;">\(l \neq w \neq h\) (can be different)</td>
+<td style="padding:10px;">\(l \\neq w \\neq h\) (can be different)</td>
 <td style="padding:10px;">\(l = w = h = s\) (all equal)</td>
 </tr>
 <tr >

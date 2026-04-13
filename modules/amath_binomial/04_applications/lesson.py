@@ -17,7 +17,7 @@ SECTIONS = [
                 The \\(x^2\\) term comes from \\(k = 2\\) (since the term is \\((3x)^2\\) times a power of 1).
             </p>
             <p style="margin: 5px 0;">
-                $$T_3 = C(5, 2) \cdot (1)^{5-2} \cdot (3x)^2 = 10 \cdot 1 \cdot 9x^2 = 90x^2$$
+                $$T_3 = C(5, 2) \\cdot (1)^{5-2} \\cdot (3x)^2 = 10 \\cdot 1 \\cdot 9x^2 = 90x^2$$
             </p>
             <p style="margin: 5px 0;">
                 <strong class="accent-heading">Coefficient = 90</strong>
@@ -30,7 +30,7 @@ SECTIONS = [
                 We need \\(a^{5-k} = a^2\\), so \\(k = 3\\).
             </p>
             <p style="margin: 5px 0;">
-                $$T_4 = C(5, 3) \cdot a^2 \cdot (2b)^3 = 10 \cdot a^2 \cdot 8b^3 = 80a^2b^3$$
+                $$T_4 = C(5, 3) \\cdot a^2 \\cdot (2b)^3 = 10 \\cdot a^2 \\cdot 8b^3 = 80a^2b^3$$
             </p>
             <p style="margin: 5px 0;">
                 <strong class="accent-heading">Coefficient = 80</strong>
@@ -74,7 +74,7 @@ SECTIONS = [
                 $$\\begin{align}
                 (1.02)^3 &= 1 + 3(0.02) + 3(0.02)^2 + (0.02)^3\\
                 &= 1 + 0.06 + 0.0012 + 0.000008\\
-                &\approx 1.0612
+                &\\approx 1.0612
                 \\end{align}$$
             </p>
             <p style="margin: 5px 0; font-size: 0.95em">
@@ -88,10 +88,10 @@ SECTIONS = [
                 Write as \\((1 + 0.1)^{1/2}\\). Using the generalized binomial series (see next section):
             </p>
             <p style="margin: 5px 0;">
-                $$(1.1)^{1/2} = 1 + \\frac{1}{2}(0.1) - \\frac{1}{8}(0.1)^2 + \\frac{1}{16}(0.1)^3 - \cdots$$
+                $$(1.1)^{1/2} = 1 + \\frac{1}{2}(0.1) - \\frac{1}{8}(0.1)^2 + \\frac{1}{16}(0.1)^3 - \\cdots$$
             </p>
             <p style="margin: 5px 0;">
-                $$= 1 + 0.05 - 0.00125 + 0.0000625 - \cdots \approx 1.0488$$
+                $$= 1 + 0.05 - 0.00125 + 0.0000625 - \\cdots \\approx 1.0488$$
             </p>
             <p style="margin: 5px 0; font-size: 0.95em">
                 (Exact: 1.048809, excellent agreement!)
@@ -115,7 +115,7 @@ SECTIONS = [
         </p>
 
         <div class="worked-example">
-            <p style="margin: 0;"><strong class="accent-heading">Example 5:</strong> Prove \\(C(n,0) + C(n,1) + C(n,2) + \cdots + C(n,n) = 2^n\\)</p>
+            <p style="margin: 0;"><strong class="accent-heading">Example 5:</strong> Prove \\(C(n,0) + C(n,1) + C(n,2) + \\cdots + C(n,n) = 2^n\\)</p>
             <p style="margin: 5px 0;">
                 Start with the binomial theorem:
             </p>
@@ -126,23 +126,23 @@ SECTIONS = [
                 Set \\(a = 1, b = 1\\):
             </p>
             <p style="margin: 5px 0;">
-                $$(1 + 1)^n = \\sum_{k=0}^{n} C(n,k) \cdot 1^{n-k} \cdot 1^k = \\sum_{k=0}^{n} C(n,k)$$
+                $$(1 + 1)^n = \\sum_{k=0}^{n} C(n,k) \\cdot 1^{n-k} \\cdot 1^k = \\sum_{k=0}^{n} C(n,k)$$
             </p>
             <p style="margin: 5px 0;">
-                <strong class="accent-heading">Therefore:</strong> \\(2^n = C(n,0) + C(n,1) + \cdots + C(n,n)\\) ✓
+                <strong class="accent-heading">Therefore:</strong> \\(2^n = C(n,0) + C(n,1) + \\cdots + C(n,n)\\) ✓
             </p>
         </div>
 
         <div class="worked-example">
-            <p style="margin: 0;"><strong class="accent-heading">Example 6:</strong> Prove \\(C(n,0) - C(n,1) + C(n,2) - \cdots + (-1)^n C(n,n) = 0\\) for \\(n > 0\\)</p>
+            <p style="margin: 0;"><strong class="accent-heading">Example 6:</strong> Prove \\(C(n,0) - C(n,1) + C(n,2) - \\cdots + (-1)^n C(n,n) = 0\\) for \\(n > 0\\)</p>
             <p style="margin: 5px 0;">
                 Set \\(a = 1, b = -1\\):
             </p>
             <p style="margin: 5px 0;">
-                $$(1 - 1)^n = \\sum_{k=0}^{n} C(n,k) \cdot 1^{n-k} \cdot (-1)^k$$
+                $$(1 - 1)^n = \\sum_{k=0}^{n} C(n,k) \\cdot 1^{n-k} \\cdot (-1)^k$$
             </p>
             <p style="margin: 5px 0;">
-                <strong class="accent-heading">Therefore:</strong> \\(0 = C(n,0) - C(n,1) + C(n,2) - \cdots + (-1)^n C(n,n)\\) ✓
+                <strong class="accent-heading">Therefore:</strong> \\(0 = C(n,0) - C(n,1) + C(n,2) - \\cdots + (-1)^n C(n,n)\\) ✓
             </p>
         </div>
 
@@ -168,7 +168,7 @@ SECTIONS = [
                 For any real \\(r\\) and \\(|x| < 1\\):
             </p>
             <p style="margin: 10px 0;">
-                $$(1 + x)^r = 1 + rx + \\frac{r(r-1)}{2!}x^2 + \\frac{r(r-1)(r-2)}{3!}x^3 + \cdots$$
+                $$(1 + x)^r = 1 + rx + \\frac{r(r-1)}{2!}x^2 + \\frac{r(r-1)(r-2)}{3!}x^3 + \\cdots$$
             </p>
         </div>
 
@@ -179,8 +179,8 @@ SECTIONS = [
             </p>
             <p style="margin: 5px 0;">
                 $$\\begin{align}
-                (1 + x)^{-1} &= 1 + (-1)x + \\frac{(-1)(-2)}{2!}x^2 + \\frac{(-1)(-2)(-3)}{3!}x^3 + \cdots\\
-                &= 1 - x + x^2 - x^3 + \cdots
+                (1 + x)^{-1} &= 1 + (-1)x + \\frac{(-1)(-2)}{2!}x^2 + \\frac{(-1)(-2)(-3)}{3!}x^3 + \\cdots\\
+                &= 1 - x + x^2 - x^3 + \\cdots
                 \\end{align}$$
             </p>
             <p style="margin: 5px 0; font-size: 0.95em">
@@ -195,8 +195,8 @@ SECTIONS = [
             </p>
             <p style="margin: 5px 0;">
                 $$\\begin{align}
-                (1 + x)^{1/2} &= 1 + \\frac{1}{2}x + \\frac{(1/2)(-1/2)}{2!}x^2 + \cdots\\
-                &= 1 + \\frac{1}{2}x - \\frac{1}{8}x^2 + \cdots
+                (1 + x)^{1/2} &= 1 + \\frac{1}{2}x + \\frac{(1/2)(-1/2)}{2!}x^2 + \\cdots\\
+                &= 1 + \\frac{1}{2}x - \\frac{1}{8}x^2 + \\cdots
                 \\end{align}$$
             </p>
         </div>
