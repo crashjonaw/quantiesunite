@@ -30,7 +30,7 @@ PLAN_DURATIONS = {
 
 def activate_plan(user_id, plan_tier, plan_duration, amount_paid,
                   payment_ref="", activated_by="admin"):
-    """Activate a plan for a user. Deactivates any existing plan of the same tier."""
+    """Activate a plan for a user. Same tier = extend. Different tier = coexist."""
     days = PLAN_DURATIONS.get(plan_duration, 30)
     now = datetime.now()
 
@@ -44,7 +44,6 @@ def activate_plan(user_id, plan_tier, plan_duration, amount_paid,
     if existing:
         # Extend from current expiry (not from now)
         current_expiry = datetime.fromisoformat(existing["expires_at"])
-        # If already expired, extend from now instead
         base = max(current_expiry, now)
         new_expiry = base + timedelta(days=days)
         db.execute("UPDATE user_plans SET expires_at=? WHERE id=?",
@@ -59,8 +58,7 @@ def activate_plan(user_id, plan_tier, plan_duration, amount_paid,
              now.isoformat(), new_expiry.isoformat(), payment_ref,
              activated_by + "_extension"))
     else:
-        # Different tier or no active plan — deactivate old, start new
-        db.execute("UPDATE user_plans SET is_active=0 WHERE user_id=? AND is_active=1", (user_id,))
+        # Different tier — don't deactivate old plans, let them coexist
         expires = now + timedelta(days=days)
         db.execute(
             """INSERT INTO user_plans
@@ -70,52 +68,80 @@ def activate_plan(user_id, plan_tier, plan_duration, amount_paid,
             (user_id, plan_tier, plan_duration, amount_paid,
              now.isoformat(), expires.isoformat(), payment_ref, activated_by))
 
-    # Update user's plan field
-    db.execute("UPDATE users SET plan=? WHERE id=?", (plan_tier, user_id))
+    # Update user's plan field to the highest active tier
+    all_active = db.execute(
+        "SELECT plan_tier FROM user_plans WHERE user_id=? AND is_active=1",
+        (user_id,)).fetchall()
+    best = max([r["plan_tier"] for r in all_active], key=lambda t: TIER_RANK.get(t, 0))
+    db.execute("UPDATE users SET plan=? WHERE id=?", (best, user_id))
     db.commit()
     db.close()
 
 
-def get_active_plan(user_id):
-    """Return the user's active plan, or None if free/expired."""
+TIER_RANK = {"free": 0, "primary": 1, "secondary": 2, "jc": 3, "full": 4}
+
+
+def get_all_active_plans_for_user(user_id):
+    """Return all active (non-expired) plans for a user."""
     db = get_db()
-    row = db.execute(
-        """SELECT * FROM user_plans
-           WHERE user_id=? AND is_active=1
-           ORDER BY expires_at DESC LIMIT 1""",
-        (user_id,)).fetchone()
+    rows = db.execute(
+        "SELECT * FROM user_plans WHERE user_id=? AND is_active=1 ORDER BY expires_at DESC",
+        (user_id,)).fetchall()
     db.close()
-    if not row:
+
+    now = datetime.now()
+    active = []
+    for row in rows:
+        plan = dict(row)
+        if datetime.fromisoformat(plan["expires_at"]) < now:
+            # Expired — deactivate
+            expire_plan(user_id, plan["id"])
+        else:
+            plan["days_remaining"] = max(0, (datetime.fromisoformat(plan["expires_at"]) - now).days)
+            active.append(plan)
+    return active
+
+
+def get_active_plan(user_id):
+    """Return the user's highest-tier active plan, or None if free/expired."""
+    plans = get_all_active_plans_for_user(user_id)
+    if not plans:
         return None
-    plan = dict(row)
-    # Check if expired
-    if datetime.fromisoformat(plan["expires_at"]) < datetime.now():
-        expire_plan(user_id, plan["id"])
-        return None
-    # Add days remaining
-    remaining = (datetime.fromisoformat(plan["expires_at"]) - datetime.now()).days
-    plan["days_remaining"] = max(0, remaining)
-    return plan
+    # Return the highest tier
+    plans.sort(key=lambda p: TIER_RANK.get(p["plan_tier"], 0), reverse=True)
+    return plans[0]
 
 
 def expire_plan(user_id, plan_id=None):
-    """Mark a plan as expired and revert user to free."""
+    """Mark a plan (or all plans) as expired."""
     db = get_db()
     if plan_id:
         db.execute("UPDATE user_plans SET is_active=0 WHERE id=?", (plan_id,))
     else:
         db.execute("UPDATE user_plans SET is_active=0 WHERE user_id=? AND is_active=1", (user_id,))
-    db.execute("UPDATE users SET plan='free' WHERE id=?", (user_id,))
+    # Update user's plan field to the highest remaining active plan
+    remaining = get_db().execute(
+        "SELECT plan_tier FROM user_plans WHERE user_id=? AND is_active=1 ORDER BY id",
+        (user_id,)).fetchall()
+    if remaining:
+        best = max([r["plan_tier"] for r in remaining], key=lambda t: TIER_RANK.get(t, 0))
+        db.execute("UPDATE users SET plan=? WHERE id=?", (best, user_id))
+    else:
+        db.execute("UPDATE users SET plan='free' WHERE id=?", (user_id,))
     db.commit()
     db.close()
 
 
 def get_plan_levels(user_id):
-    """Return the set of curriculum levels this user can access based on their plan."""
-    plan = get_active_plan(user_id)
-    if plan:
-        return set(PLAN_LEVELS.get(plan["plan_tier"], PLAN_LEVELS["free"]))
-    return set(PLAN_LEVELS["free"])
+    """Return the set of curriculum levels this user can access based on ALL active plans."""
+    plans = get_all_active_plans_for_user(user_id)
+    if not plans:
+        return set(PLAN_LEVELS["free"])
+    # Combine levels from all active plans
+    levels = set(PLAN_LEVELS["free"])
+    for plan in plans:
+        levels.update(PLAN_LEVELS.get(plan["plan_tier"], []))
+    return levels
 
 
 def get_plan_history(user_id):

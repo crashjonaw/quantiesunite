@@ -27,11 +27,12 @@ def account():
     done   = sum(1 for v in progress.values() if v.get("complete"))
     enabled = get_enabled_levels(user["target_level"])
     active_plan = db.get_active_plan(user["id"])
+    all_plans = db.get_all_active_plans_for_user(user["id"])
     return render_template("pages/account.html",
                            user=user, progress=progress, total=total, done=done,
                            enabled_levels=enabled, levels_order=LEVELS_ORDER,
                            level_descriptions=LEVEL_DESCRIPTIONS,
-                           active_plan=active_plan)
+                           active_plan=active_plan, all_plans=all_plans)
 
 
 @account_bp.route("/account/level", methods=["POST"])

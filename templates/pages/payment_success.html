@@ -10,12 +10,15 @@
   <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:24px;">
     Your payment has been received and your plan is being activated. This usually happens within a few seconds.
   </p>
-  <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:32px;">
-    If your plan isn't active within a few minutes, try refreshing the page. If it still doesn't work after 24 hours, please contact us via the feedback button.
+  <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:16px;">
+    If your plan isn't active within a few minutes, go to your <strong>Account</strong> page and click <strong>Refresh Plan Status</strong>.
   </p>
+  <div style="background:var(--bg2); border:1.5px solid var(--border); border-radius:10px; padding:14px 18px; margin-bottom:28px; font-size:0.88rem; color:var(--text-muted); text-align:left;">
+    <strong style="color:var(--text);">Plan not showing?</strong> PayNow payments can take 1–3 minutes to confirm. Go to <a href="/account" style="color:var(--accent); font-weight:600;">My Account</a> and click the <strong>🔄 Refresh Plan Status</strong> button to check.
+  </div>
   <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
     <a href="/curriculum" class="btn btn-primary">Continue Learning →</a>
-    <a href="/dashboard" class="btn btn-outline">My Dashboard</a>
+    <a href="/account" class="btn btn-outline">My Account</a>
   </div>
 
   {% elif payment_status == "failed" %}

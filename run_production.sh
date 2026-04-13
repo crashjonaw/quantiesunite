@@ -220,7 +220,7 @@ export SECRET_KEY
 info "Starting Gunicorn..."
 osascript -e "
 tell app \"Terminal\"
-    set w to do script \"cd '$SCRIPT_DIR' && set -a && source .env && set +a && gunicorn --reload -c gunicorn.conf.py app:app\"
+    set w to do script \"cd '$SCRIPT_DIR' && set -a && source .env && set +a && gunicorn -c gunicorn.conf.py app:app\"
     set custom title of window 1 to \"QU-Gunicorn\"
 end tell"
 

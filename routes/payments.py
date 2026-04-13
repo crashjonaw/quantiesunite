@@ -176,6 +176,22 @@ def hitpay_webhook():
     return jsonify({"ok": True, "status": "activated"})
 
 
+@payments_bp.route("/api/payments/refresh-plan", methods=["POST"])
+@login_required
+def refresh_plan():
+    user = current_user()
+    result = _check_recent_completed_payment(user["id"])
+    if result:
+        plan = db.get_active_plan(user["id"])
+        return jsonify({"ok": True, "activated": True,
+                        "plan_tier": plan["plan_tier"] if plan else None,
+                        "days_remaining": plan["days_remaining"] if plan else 0})
+    plan = db.get_active_plan(user["id"])
+    return jsonify({"ok": True, "activated": False,
+                    "plan_tier": plan["plan_tier"] if plan else "free",
+                    "days_remaining": plan["days_remaining"] if plan else 0})
+
+
 def _check_recent_completed_payment(user_id):
     """Check HitPay API for recent completed payments for this user.
     Fallback when webhook and redirect params both miss."""
@@ -207,14 +223,9 @@ def _check_recent_completed_payment(user_id):
                 break
             page += 1
 
-        from datetime import datetime, timedelta
-        cutoff = (datetime.utcnow() - timedelta(minutes=10)).strftime("%Y-%m-%dT%H:%M:%S")
-
+        activated_any = False
         for d in all_requests:
             if d.get("status") != "completed":
-                continue
-            # Only consider recent payments (last 10 minutes)
-            if d.get("updated_at", "") < cutoff:
                 continue
             # Skip if already used this payment to activate
             if d.get("id", "") in used_refs:
@@ -237,8 +248,11 @@ def _check_recent_completed_payment(user_id):
             db.activate_plan(user_id, tier, duration, amount,
                              payment_ref=d.get("id", ""),
                              activated_by="api_fallback")
+            used_refs.add(d.get("id", ""))
             logging.warning(f"Plan activated via API fallback: user={user_id}, tier={tier}, payment={d.get('id')}")
-            return True
+            activated_any = True
+
+        return activated_any
     except Exception as e:
         logging.warning(f"API fallback check failed: {e}")
 
