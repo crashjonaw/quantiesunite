@@ -261,7 +261,62 @@
 {% block scripts %}
 <script>
 function downloadPDF() {
-  window.print();
+  // Open a new window with just the mindmap content styled for printing
+  var content = document.getElementById('mindmap-content').innerHTML;
+  var win = window.open('', '_blank');
+  win.document.write('<!DOCTYPE html><html><head>');
+  win.document.write('<title>{{ t.name }} — Mindmap</title>');
+  win.document.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">');
+  win.document.write('<style>');
+  win.document.write('* { box-sizing: border-box; margin: 0; padding: 0; }');
+  win.document.write('body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #222; background: #fff; padding: 1.5rem; line-height: 1.6; }');
+  win.document.write('.mindmap-header { text-align: center; margin-bottom: 1.5rem; padding-bottom: 1rem; border-bottom: 2px solid #ddd; }');
+  win.document.write('.mindmap-header .emoji { font-size: 2.5rem; }');
+  win.document.write('.mindmap-header h2 { margin: 0.3rem 0 0.2rem; font-size: 1.5rem; }');
+  win.document.write('.mindmap-header .tagline { color: #666; font-size: 0.95rem; }');
+  win.document.write('.mindmap-header .level-badge { display: inline-block; background: #f0f0f0; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.8rem; margin-top: 0.4rem; color: #666; }');
+  win.document.write('.mindmap-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem; }');
+  win.document.write('.mindmap-concept { background: #fafafa; border: 1px solid #ddd; border-radius: 10px; padding: 1rem 1.2rem; border-left: 4px solid #4169E1; }');
+  win.document.write('.mindmap-concept h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #4169E1; }');
+  win.document.write('.mindmap-concept ul { margin: 0; padding-left: 1.2rem; }');
+  win.document.write('.mindmap-concept li { font-size: 0.88rem; line-height: 1.5; margin-bottom: 0.25rem; }');
+  win.document.write('.mindmap-formulas { background: #fafafa; border: 1px solid #ddd; border-radius: 10px; padding: 1.2rem 1.5rem; margin-bottom: 1.2rem; }');
+  win.document.write('.mindmap-formulas h3 { margin: 0 0 0.8rem; font-size: 1.05rem; color: #4169E1; }');
+  win.document.write('.formula-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; }');
+  win.document.write('.formula-item { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 0.6rem 1rem; text-align: center; }');
+  win.document.write('.formula-item .formula-label { font-size: 0.78rem; color: #666; margin-bottom: 0.3rem; }');
+  win.document.write('.formula-item .formula-expr { font-size: 1rem; }');
+  win.document.write('.mindmap-tips { background: #fafafa; border: 1px solid #ddd; border-radius: 10px; padding: 1rem 1.2rem; }');
+  win.document.write('.mindmap-tips h3 { margin: 0 0 0.5rem; font-size: 1rem; color: #4169E1; }');
+  win.document.write('.mindmap-tips ul { margin: 0; padding-left: 1.2rem; }');
+  win.document.write('.mindmap-tips li { font-size: 0.88rem; line-height: 1.5; margin-bottom: 0.2rem; }');
+  win.document.write('@media print { @page { margin: 1cm; size: A4 landscape; } }');
+  win.document.write('</style>');
+  win.document.write('</head><body>');
+  win.document.write(content);
+  win.document.write('</body></html>');
+  win.document.close();
+
+  // Re-render KaTeX in the new window
+  var katexScript = win.document.createElement('script');
+  katexScript.src = 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js';
+  katexScript.onload = function() {
+    var autoRenderScript = win.document.createElement('script');
+    autoRenderScript.src = 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js';
+    autoRenderScript.onload = function() {
+      win.renderMathInElement(win.document.body, {
+        delimiters: [
+          {left: '$$', right: '$$', display: true},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '$', right: '$', display: false}
+        ]
+      });
+      // Give KaTeX a moment to render, then trigger print → Save as PDF
+      setTimeout(function() { win.print(); }, 500);
+    };
+    win.document.head.appendChild(autoRenderScript);
+  };
+  win.document.head.appendChild(katexScript);
 }
 </script>
 {% endblock %}

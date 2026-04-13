@@ -41,10 +41,11 @@ if [ -f "$CONFIG" ]; then
 fi
 
 # Kill only quantiesunite's processes (by port and tunnel name)
-echo "Cleaning up old processes..."
+echo "Cleaning up old QuantiesUnite processes..."
 lsof -ti:5001 | xargs kill -9 2>/dev/null
 pkill -f "cloudflared.*quantiesunite" 2>/dev/null
-pkill -f "gunicorn.*app:app" 2>/dev/null
+# Only kill gunicorn bound to port 5001 (don't kill other apps like bloomburrow on 5000)
+ps aux | grep '[g]unicorn' | grep '5001' | awk '{print $2}' | xargs kill -9 2>/dev/null
 sleep 2
 
 echo "Installing Python packages if needed..."

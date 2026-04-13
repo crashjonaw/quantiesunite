@@ -46,7 +46,7 @@ SECTIONS = [
 
 <div class='concept-box'>
 <h3>Understanding s³ (side cubed)</h3>
-<p>\(s^3\) means "\(s \times s \times s\)" — multiply the side length by itself three times.</p>
+<p>\(s^3\) means "\(s \\times s \\times s\)" — multiply the side length by itself three times.</p>
 <p>This is why we call it <em>cubic</em> units!</p>
 </div>
 
@@ -115,14 +115,14 @@ new Chart(document.getElementById('vol_cube_progression'), {
 <h3>Working Backwards: Cube Root</h3>
 <p>Sometimes you know the volume but need to find the side length. Use the <strong>cube root</strong>:</p>
 <p>\\(s = \\sqrt[3]{V}\\)</p>
-<p>Cube root asks: "What number \(\times\) itself \(\times\) itself \(= V\)?"</p>
+<p>Cube root asks: "What number \(\\times\) itself \(\\times\) itself \(= V\)?"</p>
 </div>
 
 <div class='worked-example'>
 <p><strong>Example 1:</strong> A cube has a volume of 125 cm³. Find the side length.</p>
 <p>\\(s = \\sqrt[3]{125}\\)</p>
-<p>We need: \(s \times s \times s = 125\)</p>
-<p>Try: \(5 \times 5 \times 5 = 25 \times 5 = 125\) ✓</p>
+<p>We need: \(s \\times s \\times s = 125\)</p>
+<p>Try: \(5 \\times 5 \\times 5 = 25 \\times 5 = 125\) ✓</p>
 <p>\\(s = 5 \\text{ cm}\\)</p>
 <p><strong>Answer: 5 cm</strong></p>
 </div>
@@ -130,8 +130,8 @@ new Chart(document.getElementById('vol_cube_progression'), {
 <div class='worked-example'>
 <p><strong>Example 2:</strong> A cube-shaped container has volume 64 cm³. What is its side length?</p>
 <p>\\(s = \\sqrt[3]{64}\\)</p>
-<p>We need: \(s \times s \times s = 64\)</p>
-<p>Try: \(4 \times 4 \times 4 = 16 \times 4 = 64\) ✓</p>
+<p>We need: \(s \\times s \\times s = 64\)</p>
+<p>Try: \(4 \\times 4 \\times 4 = 16 \\times 4 = 64\) ✓</p>
 <p>\\(s = 4 \\text{ cm}\\)</p>
 <p><strong>Answer: 4 cm</strong></p>
 </div>
@@ -139,7 +139,7 @@ new Chart(document.getElementById('vol_cube_progression'), {
 <div class='worked-example'>
 <p><strong>Example 3:</strong> A cube has volume 1000 cm³. Find its side.</p>
 <p>\\(s = \\sqrt[3]{1000}\\)</p>
-<p>Try: \(10 \times 10 \times 10 = 1000\) ✓</p>
+<p>Try: \(10 \\times 10 \\times 10 = 1000\) ✓</p>
 <p>\\(s = 10 \\text{ cm}\\)</p>
 <p><strong>Answer: 10 cm</strong></p>
 <p><strong>Remember:</strong> This cube holds exactly 1 litre of water!</p>
@@ -205,7 +205,7 @@ new Chart(document.getElementById('vol_cube_progression'), {
 </tr>
 <tr >
 <td style="padding:10px;"><strong>Formula</strong></td>
-<td style="padding:10px;">\(V = l \times w \times h\)</td>
+<td style="padding:10px;">\(V = l \\times w \\times h\)</td>
 <td style="padding:10px;">\(V = s^3\)</td>
 </tr>
 <tr style="">
@@ -219,7 +219,7 @@ new Chart(document.getElementById('vol_cube_progression'), {
 <div class='worked-example'>
 <p><strong>Quick Comparison:</strong> Which is bigger — a cube with side 5 cm, or a cuboid with dimensions 6 × 5 × 4 cm?</p>
 <p><strong>Cube:</strong> \(V = 5^3 = 125\) cm³</p>
-<p><strong>Cuboid:</strong> \(V = 6 \times 5 \times 4 = 120\) cm³</p>
+<p><strong>Cuboid:</strong> \(V = 6 \\times 5 \\times 4 = 120\) cm³</p>
 <p><strong>Answer:</strong> The cube is slightly bigger (125 > 120).</p>
 </div>"""
     }

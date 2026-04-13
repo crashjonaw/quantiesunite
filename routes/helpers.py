@@ -51,10 +51,21 @@ def admin_required(f):
 
 
 def get_enabled_levels(target_level):
+    """Levels enabled by target_level setting (used for display/curriculum scope)."""
     if target_level not in LEVELS_ORDER:
         return set(LEVELS_ORDER)
     idx = LEVELS_ORDER.index(target_level)
     return set(LEVELS_ORDER[: idx + 1])
+
+
+def get_accessible_levels(user):
+    """Levels the user can actually access based on their plan (or admin/free status)."""
+    if not user:
+        return set(db.PLAN_LEVELS["free"])
+    if user.get("is_admin"):
+        return set(LEVELS_ORDER)
+    plan_levels = db.get_plan_levels(user["id"])
+    return plan_levels
 
 
 def topic_level_accessible(user, topic):
@@ -62,8 +73,8 @@ def topic_level_accessible(user, topic):
         return False
     if user.get("is_admin"):
         return True
-    enabled = get_enabled_levels(user.get("target_level", "Deep Learning Advanced"))
-    return topic["level"] in enabled
+    accessible = get_accessible_levels(user)
+    return topic["level"] in accessible
 
 
 def user_progress():

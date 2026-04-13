@@ -77,8 +77,10 @@ def update_target_level(uid, level):
 
 
 def set_current_level(uid, level):
+    from datetime import datetime
     db = get_db()
-    db.execute("UPDATE users SET current_level=? WHERE id=?", (level, uid))
+    db.execute("UPDATE users SET current_level=?, current_level_changed_at=? WHERE id=?",
+               (level, datetime.now().isoformat(), uid))
     db.commit()
     db.close()
 

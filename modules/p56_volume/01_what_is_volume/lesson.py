@@ -101,7 +101,7 @@ SECTIONS = [
 <li>Width: 2 cubes deep</li>
 <li>Height: 2 cubes tall</li>
 </ul>
-<p>Total: \(3 \times 2 \times 2 =\) <strong>12 cubic units</strong></p>
+<p>Total: \(3 \\times 2 \\times 2 =\) <strong>12 cubic units</strong></p>
 </div>"""
     },
     {
@@ -116,19 +116,19 @@ SECTIONS = [
 </div>
 
 <div class='success-box'>
-<h4>A \(1 \text{ cm} \times 1 \text{ cm} \times 1 \text{ cm}\) cube = 1 cm³</h4>
+<h4>A \(1 \\text{ cm} \\times 1 \\text{ cm} \\times 1 \\text{ cm}\) cube = 1 cm³</h4>
 <p>This is roughly the size of a sugar cube or dice.</p>
 </div>
 
 <div class='success-box'>
-<h4>A \(1 \text{ m} \times 1 \text{ m} \times 1 \text{ m}\) cube = 1 m³</h4>
+<h4>A \(1 \\text{ m} \\times 1 \\text{ m} \\times 1 \\text{ m}\) cube = 1 m³</h4>
 <p>This is a huge cube — about the size of a small room corner.</p>
 </div>
 
 <div class='warning-box'>
 <h3>The Big Conversion!</h3>
 <p><strong>1 m = 100 cm</strong></p>
-<p>So in 3D: <strong>\(1 \text{ m}^3 = 100 \times 100 \times 100 = 1{,}000{,}000 \text{ cm}^3\)</strong></p>
+<p>So in 3D: <strong>\(1 \\text{ m}^3 = 100 \\times 100 \\times 100 = 1{,}000{,}000 \\text{ cm}^3\)</strong></p>
 <p>One cubic metre contains <em>one million</em> cubic centimetres!</p>
 </div>
 
@@ -173,9 +173,9 @@ SECTIONS = [
 </div>
 
 <div class='worked-example'>
-<p><strong>Example:</strong> A juice box is \(10 \text{ cm} \times 5 \text{ cm} \times 8 \text{ cm}\). What is its capacity in mL?</p>
+<p><strong>Example:</strong> A juice box is \(10 \\text{ cm} \\times 5 \\text{ cm} \\times 8 \\text{ cm}\). What is its capacity in mL?</p>
 <ul>
-<li>Volume = \(10 \times 5 \times 8 = 400\) cm³</li>
+<li>Volume = \(10 \\times 5 \\times 8 = 400\) cm³</li>
 <li>Since 1 cm³ = 1 mL: Capacity = <strong>400 mL</strong></li>
 </ul>
 </div>
@@ -183,7 +183,7 @@ SECTIONS = [
 <div class='worked-example'>
 <p><strong>Example:</strong> A water tank holds 500 L. What is its volume in cm³?</p>
 <ul>
-<li>\(500 \text{ L} = 500 \times 1000 \text{ mL} = 500{,}000 \text{ mL}\)</li>
+<li>\(500 \\text{ L} = 500 \\times 1000 \\text{ mL} = 500{,}000 \\text{ mL}\)</li>
 <li>Since 1 mL = 1 cm³: Volume = <strong>500,000 cm³</strong></li>
 </ul>
 </div>

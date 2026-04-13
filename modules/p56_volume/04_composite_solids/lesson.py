@@ -142,7 +142,7 @@ new Chart(document.getElementById('vol_composite_add'), {
 </div>
 
 <div class='worked-example'>
-<p><strong>Example 2:</strong> A rectangular block is 10 cm \(\times\) 8 cm \(\times\) 6 cm. A smaller block 4 cm \(\times\) 3 cm \(\times\) 3 cm is removed from one corner.</p>
+<p><strong>Example 2:</strong> A rectangular block is 10 cm \(\\times\) 8 cm \(\\times\) 6 cm. A smaller block 4 cm \(\\times\) 3 cm \(\\times\) 3 cm is removed from one corner.</p>
 <p>\\(V_{\\mathrm{outer}} = 10 \\times 8 \\times 6 = 480 \\mathrm{ cm}^3\\)</p>
 <p>\\(V_{\\mathrm{removed}} = 4 \\times 3 \\times 3 = 36 \\mathrm{ cm}^3\\)</p>
 <p>\\(V_{\\mathrm{final}} = 480 - 36 = 444 \\mathrm{ cm}^3\\)</p>
@@ -195,8 +195,8 @@ new Chart(document.getElementById('vol_composite_add'), {
         "body": """<div class='worked-example'>
 <p><strong>Example 1:</strong> A swimming pool has an unusual shape. It can be thought of as two cuboids joined:</p>
 <ul>
-<li>Shallow end: 20 m \(\times\) 10 m \(\times\) 1 m</li>
-<li>Deep end: 10 m \(\times\) 10 m \(\times\) 2 m</li>
+<li>Shallow end: 20 m \(\\times\) 10 m \(\\times\) 1 m</li>
+<li>Deep end: 10 m \(\\times\) 10 m \(\\times\) 2 m</li>
 </ul>
 <p>How much water is needed to fill it completely?</p>
 <p>\\(V_1 = 20 \\times 10 \\times 1 = 200 \\mathrm{ m}^3\\)</p>
@@ -208,8 +208,8 @@ new Chart(document.getElementById('vol_composite_add'), {
 <div class='worked-example'>
 <p><strong>Example 2:</strong> A shipping container is L-shaped. Calculate its internal volume:</p>
 <ul>
-<li>Vertical section: 3 m \(\times\) 2 m \(\times\) 4 m</li>
-<li>Horizontal section: 5 m \(\times\) 2 m \(\times\) 2 m</li>
+<li>Vertical section: 3 m \(\\times\) 2 m \(\\times\) 4 m</li>
+<li>Horizontal section: 5 m \(\\times\) 2 m \(\\times\) 2 m</li>
 </ul>
 <p>\\(V_1 = 3 \\times 2 \\times 4 = 24 \\mathrm{ m}^3\\)</p>
 <p>\\(V_2 = 5 \\times 2 \\times 2 = 20 \\mathrm{ m}^3\\)</p>
@@ -218,8 +218,8 @@ new Chart(document.getElementById('vol_composite_add'), {
 </div>
 
 <div class='worked-example'>
-<p><strong>Example 3:</strong> A storage box has outer dimensions 30 cm \(\times\) 25 cm \(\times\) 20 cm with walls 2 cm thick. Find the internal volume (where items can be stored).</p>
-<p>Internal dimensions: \((30 - 2 \times 2) \times (25 - 2 \times 2) \times (20 - 2) = 26 \times 21 \times 18\) cm</p>
+<p><strong>Example 3:</strong> A storage box has outer dimensions 30 cm \(\\times\) 25 cm \(\\times\) 20 cm with walls 2 cm thick. Find the internal volume (where items can be stored).</p>
+<p>Internal dimensions: \((30 - 2 \\times 2) \\times (25 - 2 \\times 2) \\times (20 - 2) = 26 \\times 21 \\times 18\) cm</p>
 <p>\\(V_{\\mathrm{internal}} = 26 \\times 21 \\times 18 = 9828 \\mathrm{ cm}^3\\)</p>
 <p><strong>Answer: 9828 cm³ ≈ 9.8 L</strong></p>
 </div>

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block title %}Payment — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div style="max-width:600px; margin:0 auto; text-align:center; padding:60px 24px;">
+
+  {% if payment_status == "completed" %}
+  <div style="font-size:3rem; margin-bottom:16px;">🎉</div>
+  <h1 style="font-size:1.8rem; font-weight:800; margin-bottom:12px;">Thank You!</h1>
+  <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:24px;">
+    Your payment has been received and your plan is being activated. This usually happens within a few seconds.
+  </p>
+  <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:32px;">
+    If your plan isn't active within a few minutes, try refreshing the page. If it still doesn't work after 24 hours, please contact us via the feedback button.
+  </p>
+  <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+    <a href="/curriculum" class="btn btn-primary">Continue Learning →</a>
+    <a href="/dashboard" class="btn btn-outline">My Dashboard</a>
+  </div>
+
+  {% elif payment_status == "failed" %}
+  <div style="font-size:3rem; margin-bottom:16px;">😔</div>
+  <h1 style="font-size:1.8rem; font-weight:800; margin-bottom:12px;">Payment Failed</h1>
+  <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:24px;">
+    Your payment could not be processed. No charges were made.
+  </p>
+  <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+    <a href="/plans" class="btn btn-primary">Try Again →</a>
+    <a href="/" class="btn btn-outline">Back to Home</a>
+  </div>
+
+  {% else %}
+  <div style="font-size:3rem; margin-bottom:16px;">🔒</div>
+  <h1 style="font-size:1.8rem; font-weight:800; margin-bottom:12px;">No Payment Detected</h1>
+  <p style="color:var(--text-muted); font-size:1rem; line-height:1.7; margin-bottom:24px;">
+    It looks like you haven't completed a payment yet. Choose a plan to get started.
+  </p>
+  <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+    <a href="/plans" class="btn btn-primary">View Plans →</a>
+    <a href="/" class="btn btn-outline">Back to Home</a>
+  </div>
+  {% endif %}
+
+</div>
+{% endblock %}

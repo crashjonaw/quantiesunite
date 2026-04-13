@@ -17,7 +17,7 @@ SECTIONS = [
 <div class='success-box'>
 <h3>The Formula</h3>
 <p>\\(V = l \\times w \\times h\\)</p>
-<p><strong>Volume \(= \text{Length} \times \text{Width} \times \text{Height}\)</strong></p>
+<p><strong>Volume \(= \\text{Length} \\times \\text{Width} \\times \\text{Height}\)</strong></p>
 </div>
 
 <svg width="100%" viewBox="0 0 380 210" class="formula-box">
@@ -113,7 +113,7 @@ SECTIONS = [
 <p>Step 3: Calculate</p>
 <p>\\(h = \\frac{200}{40} = 5 \\text{ cm}\\)</p>
 <p><strong>Answer: Height = 5 cm</strong></p>
-<p><strong>Check:</strong> \(10 \times 4 \times 5 = 200\) ✓</p>
+<p><strong>Check:</strong> \(10 \\times 4 \\times 5 = 200\) ✓</p>
 </div>
 
 <div class='worked-example'>
@@ -128,7 +128,7 @@ SECTIONS = [
 <h3>Think of Volume Differently</h3>
 <p>Volume can be thought of as <strong>stacking layers</strong>:</p>
 <p>\\(V = \\text{Base Area} \\times \\text{Height}\\)</p>
-<p>Imagine a rectangular base (\(\text{length} \times \text{width}\)). Now stack it upward by the height. That's your volume!</p>
+<p>Imagine a rectangular base (\(\\text{length} \\times \\text{width}\)). Now stack it upward by the height. That's your volume!</p>
 </div>
 
 <div class='worked-example'>

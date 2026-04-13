@@ -65,6 +65,21 @@ def flag_user(uid):
     return jsonify({"ok": True})
 
 
+@admin_bp.route("/api/admin/user/<int:uid>/activate-plan", methods=["POST"])
+@login_required
+@admin_required
+def activate_user_plan(uid):
+    data = request.get_json()
+    tier = data.get("tier", "primary")
+    duration = data.get("duration", "1_month")
+    amount = data.get("amount", 0)
+    payment_ref = data.get("payment_ref", "")
+    db.activate_plan(uid, tier, duration, amount,
+                     payment_ref=payment_ref,
+                     activated_by=current_user()["username"])
+    return jsonify({"ok": True})
+
+
 @admin_bp.route("/admin/toggle-admin/<int:uid>", methods=["POST"])
 @login_required
 @admin_required

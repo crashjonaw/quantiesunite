@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+{% block title %}Plans — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div class="plans-page">
+
+  <!-- ═══ HERO ═══ -->
+  <div class="plans-hero">
+    <h1 class="plans-hero-title">Choose Your <span class="gradient-text">Learning Plan</span></h1>
+    <p class="plans-hero-sub">Unlock the full curriculum — from kindergarten foundations to advanced AI. Pick the level that matches your goals.</p>
+  </div>
+
+  <!-- ═══ PROMO BANNER ═══ -->
+  {% if promo_slots > 0 %}
+  <div class="promo-banner">
+    <span class="promo-icon">🎁</span>
+    <div>
+      <strong>Early Bird Promo!</strong> The first 30 users get <strong>1 month of full access — free</strong>.
+      <span class="promo-slots">{{ promo_slots }} spots remaining!</span>
+    </div>
+    {% if not current_user %}
+    <a href="/register" class="btn btn-sm" style="background:#fff; color:#4169E1; font-weight:700; border:none;">Sign Up Free</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  <!-- ═══ DURATION TOGGLE ═══ -->
+  <div class="plans-toggle">
+    <button class="plans-toggle-btn active" data-duration="monthly" onclick="switchDuration('monthly')">Monthly</button>
+    <button class="plans-toggle-btn" data-duration="quarterly" onclick="switchDuration('quarterly')">3 Months <span class="save-badge">Save 11–16%</span></button>
+    <button class="plans-toggle-btn" data-duration="yearly" onclick="switchDuration('yearly')">Yearly <span class="save-badge">Save 33%</span></button>
+  </div>
+
+  <!-- ═══ PLAN CARDS ═══ -->
+  <div class="plans-grid">
+
+    <!-- TIER 1: PRIMARY -->
+    <div class="plan-card">
+      <div class="plan-header" style="border-top: 4px solid #3CB371;">
+        <div class="plan-emoji">🏫</div>
+        <h3 class="plan-name">Primary</h3>
+        <p class="plan-levels">Everything up to Primary 6</p>
+      </div>
+      <div class="plan-price-wrap">
+        <div class="plan-price" data-monthly="9.90" data-quarterly="24.90" data-yearly="79.90">
+          <span class="plan-currency">S$</span>
+          <span class="plan-amount">9.90</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <div class="plan-price-sub" data-monthly="" data-quarterly="S$8.30/mo" data-yearly="S$6.66/mo"></div>
+      </div>
+      <ul class="plan-features">
+        <li>29 topics across 4 levels</li>
+        <li>Kindergarten — Numbers, counting, shapes, addition &amp; subtraction</li>
+        <li>Primary 1–2 — Whole numbers, arithmetic, fractions, measurement, time</li>
+        <li>Primary 3–4 — Multiplication tables, long division, decimals, geometry, data</li>
+        <li>Primary 5–6 — Ratio, percentage, algebra, volume, PSLE problem solving</li>
+        <li>2,400+ practice questions</li>
+        <li>3 grade exams (P1–2, P3–4, PSLE Readiness)</li>
+        <li>Mindmaps, trophies &amp; progress tracking</li>
+      </ul>
+      <button class="plan-btn" onclick="purchasePlan('primary')">Get Started</button>
+    </div>
+
+    <!-- TIER 2: SECONDARY -->
+    <div class="plan-card plan-card--popular">
+      <div class="plan-popular-badge">Most Popular</div>
+      <div class="plan-header" style="border-top: 4px solid #4169E1;">
+        <div class="plan-emoji">📐</div>
+        <h3 class="plan-name">Secondary</h3>
+        <p class="plan-levels">Everything up to Sec 4</p>
+      </div>
+      <div class="plan-price-wrap">
+        <div class="plan-price" data-monthly="14.90" data-quarterly="39.90" data-yearly="119.90">
+          <span class="plan-currency">S$</span>
+          <span class="plan-amount">14.90</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <div class="plan-price-sub" data-monthly="" data-quarterly="S$13.30/mo" data-yearly="S$9.99/mo"></div>
+      </div>
+      <ul class="plan-features">
+        <li>53 topics across 6 levels</li>
+        <li>Everything in Primary, plus:</li>
+        <li>Sec 1–2 — Algebra, indices, Pythagoras, coordinates, probability, statistics</li>
+        <li>Sec 3–4 — E-Math &amp; A-Math (quadratics, trig, calculus, matrices, vectors, graphs)</li>
+        <li>5,200+ practice questions</li>
+        <li>5 grade exams (incl. O-Level Readiness)</li>
+        <li>Interactive topic graph &amp; targets</li>
+      </ul>
+      <button class="plan-btn plan-btn--primary" onclick="purchasePlan('secondary')">Get Started</button>
+    </div>
+
+    <!-- TIER 3: JC -->
+    <div class="plan-card">
+      <div class="plan-header" style="border-top: 4px solid #1E90FF;">
+        <div class="plan-emoji">🎓</div>
+        <h3 class="plan-name">JC / A-Level</h3>
+        <p class="plan-levels">Everything up to A-Level</p>
+      </div>
+      <div class="plan-price-wrap">
+        <div class="plan-price" data-monthly="19.90" data-quarterly="49.90" data-yearly="159.90">
+          <span class="plan-currency">S$</span>
+          <span class="plan-amount">19.90</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <div class="plan-price-sub" data-monthly="" data-quarterly="S$16.63/mo" data-yearly="S$13.33/mo"></div>
+      </div>
+      <ul class="plan-features">
+        <li>64 topics across 7 levels</li>
+        <li>Everything in Secondary, plus:</li>
+        <li>J1–2 — Complex numbers, sequences, advanced calculus, DEs, 3D vectors, distributions, hypothesis testing</li>
+        <li>6,400+ practice questions</li>
+        <li>6 grade exams (incl. A-Level Readiness)</li>
+        <li>Full mindmap library</li>
+      </ul>
+      <button class="plan-btn" onclick="purchasePlan('jc')">Get Started</button>
+    </div>
+
+    <!-- TIER 4: FULL PROGRAMME -->
+    <div class="plan-card">
+      <div class="plan-header" style="border-top: 4px solid #9333ea;">
+        <div class="plan-emoji">🤖</div>
+        <h3 class="plan-name">Full Programme</h3>
+        <p class="plan-levels">Everything up to Deep Learning</p>
+      </div>
+      <div class="plan-price-wrap">
+        <div class="plan-price" data-monthly="24.90" data-quarterly="64.90" data-yearly="199.90">
+          <span class="plan-currency">S$</span>
+          <span class="plan-amount">24.90</span>
+          <span class="plan-period">/mo</span>
+        </div>
+        <div class="plan-price-sub" data-monthly="" data-quarterly="S$21.63/mo" data-yearly="S$16.66/mo"></div>
+      </div>
+      <ul class="plan-features">
+        <li>101 topics across 12 levels</li>
+        <li>Everything in JC, plus:</li>
+        <li>Linear Algebra — Vector spaces, eigenvalues, SVD, matrix decompositions</li>
+        <li>Probability &amp; Statistics — Distributions, Markov chains, hypothesis testing</li>
+        <li>Python — Fundamentals, NumPy, data structures, comprehensions</li>
+        <li>Deep Learning — Neural networks, backpropagation, LSTM, attention, transformers</li>
+        <li>7,300+ practice questions &amp; all exams</li>
+      </ul>
+      <button class="plan-btn" onclick="purchasePlan('full')">Get Started</button>
+    </div>
+
+  </div>
+
+  <!-- ═══ UPGRADE NOTE ═══ -->
+  <div class="plans-upgrade-note">
+    <h3>Upgrade Anytime</h3>
+    <p>Start with the level you need and upgrade to a higher tier whenever you're ready. Your new plan begins immediately — no waiting.</p>
+  </div>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="plans-faq">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>What payment methods do you accept?</h4>
+        <p>We accept credit/debit cards, PayNow, GrabPay, and other methods via HitPay — a certified Singapore payment gateway.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I try before I subscribe?</h4>
+        <p>The first 5 topics (Kindergarten) are free for all registered users. Explore the curriculum, try the quizzes, and see if it's right for you.</p>
+      </div>
+      <div class="faq-item">
+        <h4>How do upgrades work?</h4>
+        <p>You can upgrade to a higher tier at any time. Simply purchase the new plan — it starts immediately. Your old plan's remaining time will continue alongside.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Can I cancel anytime?</h4>
+        <p>Yes. Your access continues until the end of your billing period. No auto-renewal — you choose when to renew.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is this aligned to the Singapore syllabus?</h4>
+        <p>Yes. Topics from Kindergarten through A-Level are mapped to the MOE syllabus. Question styles and difficulty match PSLE, O-Level, and A-Level standards.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do I get access on mobile?</h4>
+        <p>Yes. QuantiesUnite works on any device — phone, tablet, or desktop. Learn anywhere, anytime.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+var currentDuration = 'monthly';
+var DURATION_MAP = {monthly: '1_month', quarterly: '3_months', yearly: '1_year'};
+
+function switchDuration(duration) {
+  currentDuration = duration;
+  document.querySelectorAll('.plans-toggle-btn').forEach(function(btn) {
+    btn.classList.toggle('active', btn.dataset.duration === duration);
+  });
+  document.querySelectorAll('.plan-price').forEach(function(el) {
+    el.querySelector('.plan-amount').textContent = el.dataset[duration];
+    el.querySelector('.plan-period').textContent =
+      duration === 'monthly' ? '/mo' : duration === 'quarterly' ? '/3 mo' : '/yr';
+  });
+  document.querySelectorAll('.plan-price-sub').forEach(function(el) {
+    el.textContent = el.dataset[duration] || '';
+  });
+}
+
+function purchasePlan(tier) {
+  {% if not current_user %}
+    window.location.href = '/login?next=/plans';
+    return;
+  {% endif %}
+
+  var btn = event.target;
+  btn.disabled = true;
+  btn.textContent = 'Redirecting...';
+
+  fetch('/api/payments/create', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({tier: tier, duration: DURATION_MAP[currentDuration]})
+  })
+  .then(function(r) { return r.json(); })
+  .then(function(data) {
+    if (data.ok && data.url) {
+      window.location.href = data.url;
+    } else {
+      alert(data.error || 'Something went wrong. Please try again.');
+      btn.disabled = false;
+      btn.textContent = 'Get Started';
+    }
+  })
+  .catch(function() {
+    alert('Network error. Please try again.');
+    btn.disabled = false;
+    btn.textContent = 'Get Started';
+  });
+}
+</script>
+{% endblock %}

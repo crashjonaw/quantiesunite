@@ -25,12 +25,12 @@
 
 {% if not level_accessible %}
 <div class="level-locked-banner">
-  <div class="llb-icon">🎯</div>
+  <div class="llb-icon">🔒</div>
   <div class="llb-body">
-    <strong>This level is above your current target</strong>
-    <p>Your account is set to <em>{{ current_user.target_level }}</em>.
-       To access <em>{{ t.level }}</em> topics, raise your target level in your account settings.</p>
-    <a href="/account" class="btn btn-primary btn-sm" style="margin-top:12px">Go to Account Settings →</a>
+    <strong>This content requires a paid plan</strong>
+    <p><em>{{ t.level }}</em> topics are not included in your current plan.
+       Upgrade to access this level and everything below it.</p>
+    <a href="/plans" class="btn btn-primary btn-sm" style="margin-top:12px">View Plans →</a>
   </div>
 </div>
 {% elif not unlocked %}

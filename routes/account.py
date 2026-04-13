@@ -26,21 +26,32 @@ def account():
     total  = len(TOPICS)
     done   = sum(1 for v in progress.values() if v.get("complete"))
     enabled = get_enabled_levels(user["target_level"])
+    active_plan = db.get_active_plan(user["id"])
     return render_template("pages/account.html",
                            user=user, progress=progress, total=total, done=done,
                            enabled_levels=enabled, levels_order=LEVELS_ORDER,
-                           level_descriptions=LEVEL_DESCRIPTIONS)
+                           level_descriptions=LEVEL_DESCRIPTIONS,
+                           active_plan=active_plan)
 
 
 @account_bp.route("/account/level", methods=["POST"])
 @login_required
 def update_level():
     user = current_user()
-    # Only allow setting grade once (if not already set)
+    level = request.form.get("target_level") or request.form.get("new_grade")
+
+    # If grade already set, check 30-day cooldown
     if user.get("current_level"):
-        flash("Your grade has already been set and cannot be changed.", "warning")
-        return redirect(url_for("account.account"))
-    level = request.form.get("target_level")
+        from datetime import datetime, timedelta
+        changed_at = user.get("current_level_changed_at")
+        if changed_at:
+            last_change = datetime.fromisoformat(changed_at)
+            days_since = (datetime.now() - last_change).days
+            if days_since < 30:
+                remaining = 30 - days_since
+                flash(f"You can change your grade again in {remaining} days.", "warning")
+                return redirect(url_for("account.account"))
+
     if level in LEVELS_ORDER:
         db.set_current_level(session["user_id"], level)
         db.update_target_level(session["user_id"], "Deep Learning Advanced")

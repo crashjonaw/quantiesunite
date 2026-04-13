@@ -1,0 +1,13 @@
+Currency,Amount,Customer Name,Customer Email,Customer Phone Number,Reference,Expiry Date,Allow repeated payments,Redirect url,Purpose
+sgd,9.90,,,,,True,True,https://quantiesunite.sg/payment/success,Primary - 1 Month
+sgd,24.90,,,,,True,True,https://quantiesunite.sg/payment/success,Primary - 3 Months
+sgd,79.90,,,,,True,True,https://quantiesunite.sg/payment/success,Primary - 1 Year
+sgd,14.90,,,,,True,True,https://quantiesunite.sg/payment/success,Secondary - 1 Month
+sgd,39.90,,,,,True,True,https://quantiesunite.sg/payment/success,Secondary - 3 Months
+sgd,119.90,,,,,True,True,https://quantiesunite.sg/payment/success,Secondary - 1 Year
+sgd,19.90,,,,,True,True,https://quantiesunite.sg/payment/success,JC - 1 Month
+sgd,49.90,,,,,True,True,https://quantiesunite.sg/payment/success,JC - 3 Months
+sgd,159.90,,,,,True,True,https://quantiesunite.sg/payment/success,JC - 1 Year
+sgd,24.90,,,,,True,True,https://quantiesunite.sg/payment/success,Full Programme - 1 Month
+sgd,64.90,,,,,True,True,https://quantiesunite.sg/payment/success,Full Programme - 3 Months
+sgd,199.90,,,,,True,True,https://quantiesunite.sg/payment/success,Full Programme - 1 Year

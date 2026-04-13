@@ -13,6 +13,7 @@
       <a href="/trophies" class="nav-link {% if request.endpoint in ('learning.trophies_page', 'trophies_page') %}active{% endif %}">Trophies</a>
       <a href="/search" class="nav-link {% if request.endpoint in ('learning.search', 'search') %}active{% endif %}">Search</a>
       <a href="/about" class="nav-link {% if request.endpoint in ('learning.about_page', 'about_page') %}active{% endif %}">About</a>
+      <a href="/plans" class="nav-link {% if request.endpoint in ('learning.plans_page', 'plans_page') %}active{% endif %}">Plans</a>
       {% if current_user.is_admin %}
       <a href="/admin" class="nav-link admin-link {% if request.endpoint in ('admin.admin_panel', 'admin_panel') %}active{% endif %}">Admin</a>
       <a href="/admin/dashboard" class="nav-link admin-link {% if request.endpoint in ('admin.admin_dashboard', 'admin_dashboard') %}active{% endif %}">Analytics</a>
@@ -42,7 +43,7 @@
             <div>
               <div class="dropdown-name">{{ current_user.username }}</div>
               <div class="dropdown-email">{{ current_user.email }}</div>
-              <span class="badge badge-free-sm">Free Plan</span>
+              <span class="badge badge-free-sm">{{ current_user.plan | default('free') | capitalize }} Plan</span>
             </div>
           </div>
           <div class="dropdown-divider"></div>
@@ -70,6 +71,7 @@
 
     {% else %}
       <a href="/about" class="nav-link {% if request.endpoint in ('learning.about_page', 'about_page') %}active{% endif %}">About</a>
+      <a href="/plans" class="nav-link {% if request.endpoint in ('learning.plans_page', 'plans_page') %}active{% endif %}">Plans</a>
       <a href="/login" class="nav-link">Sign In</a>
       <a href="/register" class="btn btn-primary btn-sm">Get Started Free</a>
     {% endif %}

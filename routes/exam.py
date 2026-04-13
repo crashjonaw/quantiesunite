@@ -4,7 +4,7 @@ from flask import Blueprint, render_template, request, jsonify, redirect, url_fo
 from curriculum_data import TOPICS, LEVELS_ORDER
 from exam_config import EXAMS, EXAM_ORDER, get_review_modules, get_exam_params
 import database as db
-from routes.helpers import current_user, login_required, get_enabled_levels
+from routes.helpers import current_user, login_required, get_accessible_levels
 
 exam_bp = Blueprint("exam", __name__)
 
@@ -15,7 +15,7 @@ def exam_list():
     user = current_user()
     progress = db.get_progress(user["id"])
     exam_status = db.get_all_exam_status(user["id"])
-    enabled = get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     is_admin = bool(user.get("is_admin"))
 
     exams = []
@@ -62,7 +62,7 @@ def take_exam(exam_id):
     exam = EXAMS[exam_id]
     is_admin = bool(user.get("is_admin"))
     progress = db.get_progress(user["id"])
-    enabled = get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
 
     # Check access
     if not is_admin:

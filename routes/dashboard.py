@@ -3,7 +3,7 @@
 from flask import Blueprint, render_template, request, jsonify
 from curriculum_data import TOPICS, LEVELS_ORDER
 import database as db
-from routes.helpers import current_user, login_required, get_enabled_levels
+from routes.helpers import current_user, login_required, get_accessible_levels
 
 dashboard_bp = Blueprint("dashboard", __name__)
 
@@ -13,7 +13,7 @@ dashboard_bp = Blueprint("dashboard", __name__)
 def dashboard():
     user = current_user()
     data = db.get_dashboard_data(user["id"])
-    enabled = get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
 
     for lst_name in ("best_topics", "worst_topics"):
         enriched = []

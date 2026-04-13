@@ -59,7 +59,15 @@ def register():
                                 db.mark_topic_complete(uid, tid)
                 session.permanent = True
                 session["user_id"] = uid
-                flash(f"Welcome to QuantiesUnite, {username}!", "success")
+                # First 30 signups get full access for 1 month
+                total_users = db.get_db().execute("SELECT COUNT(*) AS c FROM users").fetchone()["c"]
+                if total_users <= 30:
+                    db.activate_plan(uid, "full", "1_month", 0,
+                                     payment_ref="promo_first30",
+                                     activated_by="system_promo")
+                    flash(f"Welcome to QuantiesUnite, {username}! 🎉 You're one of our first 30 users — enjoy 1 month of full access, free!", "success")
+                else:
+                    flash(f"Welcome to QuantiesUnite, {username}!", "success")
                 return redirect(url_for("account.account"))
     return render_template("auth/register.html", error=error)
 
@@ -268,4 +276,10 @@ def _handle_google_callback():
         device = request.headers.get("User-Agent", "")[:100]
         db.register_session(uid, session["sid"], device)
         session["needs_setup"] = True
+        # First 30 signups get full access for 1 month
+        total_users = db.get_db().execute("SELECT COUNT(*) AS c FROM users").fetchone()["c"]
+        if total_users <= 30:
+            db.activate_plan(uid, "full", "1_month", 0,
+                             payment_ref="promo_first30",
+                             activated_by="system_promo")
         return redirect(url_for("account.account"))

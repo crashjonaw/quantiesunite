@@ -56,7 +56,11 @@
       <h1>{{ user.username }}</h1>
       <p class="text-muted">{{ user.email }}</p>
       <div class="account-badges">
+        {% if active_plan %}
+        <span class="badge" style="background:#4169E1; border-color:#4169E1; color:#fff;">⭐ {{ active_plan.plan_tier | capitalize }} Plan</span>
+        {% else %}
         <span class="badge badge-free">🎓 Free Plan</span>
+        {% endif %}
         {% if user.is_admin %}
         <span class="badge badge-admin">👑 Admin</span>
         {% endif %}
@@ -84,6 +88,57 @@
     <span class="acc-stat-num" style="color:var(--accent)">{{ enabled_levels | length }}</span>
     <span class="acc-stat-label">Levels Enabled</span>
   </div>
+</div>
+
+<!-- ════════════════════════════════════
+     YOUR PLAN
+     ════════════════════════════════════ -->
+<div class="account-section">
+  <h2 class="account-section-title">📋 Your Plan</h2>
+  {% if active_plan %}
+  <div class="plan-info-card">
+    <div class="plan-info-row">
+      <span class="plan-info-label">Plan</span>
+      <span class="plan-info-value" style="font-weight:700;">{{ active_plan.plan_tier | capitalize }}</span>
+    </div>
+    <div class="plan-info-row">
+      <span class="plan-info-label">Duration</span>
+      <span class="plan-info-value">{{ active_plan.plan_duration | replace('_', ' ') | capitalize }}</span>
+    </div>
+    <div class="plan-info-row">
+      <span class="plan-info-label">Started</span>
+      <span class="plan-info-value">{{ active_plan.started_at[:10] }}</span>
+    </div>
+    <div class="plan-info-row">
+      <span class="plan-info-label">Expires</span>
+      <span class="plan-info-value">{{ active_plan.expires_at[:10] }}</span>
+    </div>
+    <div class="plan-info-row" style="border-bottom:none;">
+      <span class="plan-info-label">Days Remaining</span>
+      <span class="plan-info-value {% if active_plan.days_remaining <= 7 %}plan-expiring{% endif %}" style="font-weight:700; font-size:1.1rem;">
+        {{ active_plan.days_remaining }} days
+      </span>
+    </div>
+    {% if active_plan.days_remaining <= 7 %}
+    <div style="margin-top:12px; padding:10px; background:rgba(239,68,68,0.1); border-radius:8px; font-size:0.85rem; color:#ef4444;">
+      Your plan expires soon. Renew to keep access.
+    </div>
+    {% endif %}
+    <div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a href="/plans" class="btn btn-outline btn-sm">Upgrade Plan</a>
+      <a href="/plans" class="btn btn-outline btn-sm">Renew Plan</a>
+    </div>
+  </div>
+  {% else %}
+  <div class="plan-info-card" style="text-align:center;">
+    <p style="font-size:1.5rem; margin-bottom:8px;">🎓</p>
+    <p style="font-weight:700; margin-bottom:4px;">Free Plan</p>
+    <p style="color:var(--text-muted); font-size:0.88rem; margin-bottom:16px;">
+      You have access to Kindergarten topics only. Upgrade to unlock more levels.
+    </p>
+    <a href="/plans" class="btn btn-primary btn-sm">View Plans →</a>
+  </div>
+  {% endif %}
 </div>
 
 <!-- ════════════════════════════════════
@@ -124,11 +179,43 @@
     {% endfor %}
   </div>
 
+  <!-- Change grade (30-day cooldown) -->
+  <div style="margin-top:16px;">
+    {% set days_since = none %}
+    {% if user.current_level_changed_at %}
+      {% set changed_dt = user.current_level_changed_at[:19] %}
+      {% set days_since = ((now_ts - changed_dt_ts) // 86400) if changed_dt_ts is defined else 999 %}
+    {% endif %}
+
+    <button class="btn btn-outline btn-sm" onclick="document.getElementById('grade-change-form').style.display = document.getElementById('grade-change-form').style.display === 'none' ? 'block' : 'none'">
+      Change Grade
+    </button>
+
+    <div id="grade-change-form" style="display:none; margin-top:14px;">
+      <p class="text-muted" style="font-size:0.85rem; margin-bottom:12px;">
+        You can change your grade once every 30 days. All topics below your new grade will be marked as complete.
+      </p>
+      <form method="POST" action="/account/level">
+        <select name="new_grade" class="form-input" required style="max-width:300px; margin-bottom:10px;">
+          <option value="" disabled selected>Select new grade</option>
+          {% for level in ('Kindergarten', 'Primary 1–2', 'Primary 3–4', 'Primary 5–6', 'Sec 1–2', 'Sec 3–4', 'J1–2') %}
+            {% if level != user.current_level %}
+            <option value="{{ level }}">{{ level }}</option>
+            {% endif %}
+          {% endfor %}
+        </select>
+        <br/>
+        <button type="submit" class="btn btn-primary btn-sm" onclick="return confirm('Change your grade? All topics below the new grade will be marked as complete.')">
+          Confirm Change
+        </button>
+      </form>
+    </div>
+  </div>
+
   {% else %}
-  <!-- Grade not yet set — show selector (one-time only) -->
+  <!-- Grade not yet set — show selector -->
   <p class="text-muted" style="margin-bottom:20px">
     Select your <strong>current grade level</strong>. All levels below it will be marked as already learned.
-    <strong>This can only be set once.</strong>
   </p>
 
   <form method="POST" action="/account/level" id="level-form">
@@ -139,7 +226,7 @@
         <div class="level-sel-left">
           <input type="radio" name="target_level" id="lvl-{{ loop.index }}"
                  value="{{ level }}"
-                 onchange="if(confirm('Set your grade to {{ level }}? This cannot be changed later.')) document.getElementById('level-form').submit(); else this.checked=false;"/>
+                 onchange="if(confirm('Set your grade to {{ level }}? All lower levels will be marked as complete.')) document.getElementById('level-form').submit(); else this.checked=false;"/>
           <div class="level-sel-indicator">🔘</div>
           <div>
             <div class="level-sel-name">{{ level }}</div>

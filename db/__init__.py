@@ -55,6 +55,13 @@ from db.admin_analytics import (
     admin_top_users, admin_top_topics, admin_get_full_dashboard,
 )
 
+# Plans
+from db.plans import (
+    PLAN_LEVELS, PLAN_DURATIONS,
+    activate_plan, get_active_plan, expire_plan,
+    get_plan_levels, get_plan_history, get_all_active_plans,
+)
+
 # Exams
 from db.exams import (
     insert_exam_questions, get_exam_question_count, sample_exam_questions,

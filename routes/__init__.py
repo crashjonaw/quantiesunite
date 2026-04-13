@@ -10,6 +10,7 @@ from routes.dashboard import dashboard_bp
 from routes.admin import admin_bp
 from routes.learning import learning_bp
 from routes.exam import exam_bp
+from routes.payments import payments_bp
 
 
 def register_blueprints(app):
@@ -20,3 +21,4 @@ def register_blueprints(app):
     app.register_blueprint(admin_bp)
     app.register_blueprint(learning_bp)
     app.register_blueprint(exam_bp)
+    app.register_blueprint(payments_bp)

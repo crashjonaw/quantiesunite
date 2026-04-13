@@ -11,7 +11,7 @@ from curriculum_data import (TOPICS, LEVELS_ORDER, LEVEL_DESCRIPTIONS,
 from lesson_content import get_lesson_content, get_quiz, get_concept
 import database as db
 from routes.helpers import (current_user, login_required, get_enabled_levels,
-                            is_unlocked, user_progress)
+                            get_accessible_levels, is_unlocked, user_progress)
 
 learning_bp = Blueprint("learning", __name__)
 
@@ -27,7 +27,7 @@ def index():
         progress = db.get_progress(user["id"])
         total = len(TOPICS)
         done  = sum(1 for v in progress.values() if v.get("complete"))
-        enabled = get_enabled_levels(user["target_level"])
+        enabled = get_accessible_levels(user)
         accessible = sum(1 for t in TOPICS.values() if t["level"] in enabled)
     else:
         done = total = accessible = 0
@@ -40,6 +40,21 @@ def index():
 @learning_bp.route("/about")
 def about_page():
     return render_template("pages/about.html")
+
+
+@learning_bp.route("/plans")
+def plans_page():
+    total_users = db.get_db().execute("SELECT COUNT(*) AS c FROM users").fetchone()["c"]
+    promo_slots = max(0, 30 - total_users)
+    return render_template("pages/plans.html", promo_slots=promo_slots)
+
+
+@learning_bp.route("/payment/success")
+def payment_success():
+    status = request.args.get("status", "")
+    reference = request.args.get("reference", "")
+    return render_template("pages/payment_success.html",
+                           payment_status=status, reference=reference)
 
 
 @learning_bp.route("/graph")
@@ -55,7 +70,7 @@ def api_graph():
     progress = db.get_progress(user["id"]) if user else {}
     is_admin = bool(user and user.get("is_admin"))
     enabled = set(LEVELS_ORDER) if is_admin else (
-              get_enabled_levels(user["target_level"]) if user else set(LEVELS_ORDER))
+              get_accessible_levels(user) if user else set(db.PLAN_LEVELS["free"]))
     targets = db.get_targets(user["id"]) if user else []
     data = get_graph_data()
     for node in data["nodes"]:
@@ -75,7 +90,7 @@ def api_graph():
 def curriculum():
     user = current_user()
     progress = db.get_progress(user["id"]) if user else {}
-    enabled = get_enabled_levels(user["target_level"]) if user else set(LEVELS_ORDER)
+    enabled = get_accessible_levels(user) if user else set(db.PLAN_LEVELS["free"])
     levels = {}
     for level in LEVELS_ORDER:
         topics_in_level = {k: v for k, v in TOPICS.items() if v["level"] == level}
@@ -96,7 +111,7 @@ def curriculum():
 def search():
     user = current_user()
     q = request.args.get("q", "").lower()
-    enabled = get_enabled_levels(user["target_level"]) if user else set(LEVELS_ORDER)
+    enabled = get_accessible_levels(user) if user else set(db.PLAN_LEVELS["free"])
     results = []
     if q:
         for tid, t in TOPICS.items():
@@ -117,7 +132,7 @@ def topic(tid):
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = set(LEVELS_ORDER) if is_admin else get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     level_accessible = is_admin or (t["level"] in enabled)
     progress = db.get_progress(user["id"]) if user else {}
     unlocked = is_admin or is_unlocked(tid, progress)
@@ -146,7 +161,7 @@ def topic_overview(tid):
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = set(LEVELS_ORDER) if is_admin else get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     level_accessible = is_admin or (t["level"] in enabled)
     progress = db.get_progress(user["id"]) if user else {}
     unlocked = is_admin or is_unlocked(tid, progress)
@@ -173,7 +188,7 @@ def concept_page(tid, concept_id):
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = set(LEVELS_ORDER) if is_admin else get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     level_accessible = is_admin or (t["level"] in enabled)
     progress = db.get_progress(user["id"]) if user else {}
     unlocked = is_admin or is_unlocked(tid, progress)
@@ -207,10 +222,10 @@ def mindmap_page(tid):
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = set(LEVELS_ORDER) if is_admin else get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     if not is_admin and t["level"] not in enabled:
-        flash("Enable this level in your account settings first.", "warning")
-        return redirect(url_for("account.account"))
+        flash("This content requires a paid plan. Upgrade to access it.", "warning")
+        return redirect(url_for("learning.plans_page"))
     progress = db.get_progress(user["id"])
     complete = bool(progress.get(tid, {}).get("complete"))
     if not is_admin and not complete:
@@ -228,10 +243,10 @@ def quiz_page(tid):
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = set(LEVELS_ORDER) if is_admin else get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     if not is_admin and t["level"] not in enabled:
-        flash("Enable this level in your account settings first.", "warning")
-        return redirect(url_for("account.account"))
+        flash("This content requires a paid plan. Upgrade to access it.", "warning")
+        return redirect(url_for("learning.plans_page"))
     progress = db.get_progress(user["id"])
     if not is_admin and not is_unlocked(tid, progress):
         flash("Complete the prerequisite topics first to unlock this quiz.", "warning")
@@ -249,10 +264,10 @@ def practice_page(tid):
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = set(LEVELS_ORDER) if is_admin else get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     if not is_admin and t["level"] not in enabled:
-        flash("Enable this level in your account settings first.", "warning")
-        return redirect(url_for("account.account"))
+        flash("This content requires a paid plan. Upgrade to access it.", "warning")
+        return redirect(url_for("learning.plans_page"))
     # Must pass the module quiz first
     progress = db.get_progress(user["id"])
     if not is_admin and not progress.get(tid, {}).get("complete"):
@@ -391,7 +406,7 @@ def progress_page():
     progress = db.get_progress(user["id"])
     total = len(TOPICS)
     done = sum(1 for v in progress.values() if v.get("complete"))
-    enabled = get_enabled_levels(user["target_level"])
+    enabled = get_accessible_levels(user)
     level_stats = {}
     for level in LEVELS_ORDER:
         topics_in_level = [k for k, v in TOPICS.items() if v["level"] == level]

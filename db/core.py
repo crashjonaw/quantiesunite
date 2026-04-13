@@ -199,6 +199,22 @@ def init_db():
             UNIQUE(user_id, exam_id)
         );
 
+        -- ── User Plans (subscription tracking) ────────────────────────
+        CREATE TABLE IF NOT EXISTS user_plans (
+            id           INTEGER PRIMARY KEY AUTOINCREMENT,
+            user_id      INTEGER NOT NULL,
+            plan_tier    TEXT    NOT NULL,
+            plan_duration TEXT   NOT NULL,
+            amount_paid  REAL    NOT NULL,
+            started_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+            expires_at   TIMESTAMP NOT NULL,
+            payment_ref  TEXT    DEFAULT '',
+            activated_by TEXT    DEFAULT '',
+            is_active    INTEGER DEFAULT 1,
+            FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+        );
+        CREATE INDEX IF NOT EXISTS idx_up_user ON user_plans(user_id);
+
         CREATE TABLE IF NOT EXISTS user_sessions (
             id           INTEGER PRIMARY KEY AUTOINCREMENT,
             user_id      INTEGER NOT NULL,
@@ -211,4 +227,13 @@ def init_db():
         CREATE INDEX IF NOT EXISTS idx_us_user ON user_sessions(user_id);
     """)
     db.commit()
+
+    # Migrations — add columns that may not exist yet
+    for col, typ in [("current_level", "TEXT"), ("current_level_changed_at", "TIMESTAMP")]:
+        try:
+            db.execute(f"ALTER TABLE users ADD COLUMN {col} {typ}")
+            db.commit()
+        except Exception:
+            pass  # column already exists
+
     db.close()

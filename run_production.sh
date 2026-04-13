@@ -38,6 +38,31 @@ echo "  QuantiesUnite — Production Launcher"
 echo "═══════════════════════════════════════════════════════════"
 echo ""
 
+# ── 0. Close idle Terminal windows ──────────────────────────────────
+info "Closing idle terminal windows..."
+osascript -e '
+tell application "Terminal"
+    set winCount to count of windows
+    repeat with i from winCount to 1 by -1
+        try
+            set w to window i
+            set allIdle to true
+            repeat with t in (every tab of w)
+                if busy of t is true then
+                    set allIdle to false
+                    exit repeat
+                end if
+            end repeat
+            if allIdle then
+                close w saving no
+            end if
+        end try
+    end repeat
+end tell
+' 2>/dev/null
+sleep 1
+ok "Idle windows closed"
+
 # ── 1. Check Python ─────────────────────────────────────────────────
 info "Checking Python..."
 PYTHON=""
@@ -162,10 +187,11 @@ else
 fi
 
 # ── 9. Clean up old processes ─────────────────────────────────────
-info "Cleaning up old processes..."
+info "Cleaning up old QuantiesUnite processes..."
 lsof -ti:5001 | xargs kill -9 2>/dev/null || true
 pkill -f "cloudflared.*quantiesunite" 2>/dev/null || true
-pkill -f "gunicorn.*app:app" 2>/dev/null || true
+# Only kill gunicorn bound to port 5001 (don't kill other apps like bloomburrow on 5000)
+ps aux | grep '[g]unicorn' | grep '5001' | awk '{print $2}' | xargs kill -9 2>/dev/null || true
 sleep 2
 ok "Old processes cleaned"
 
