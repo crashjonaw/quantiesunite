@@ -7,6 +7,7 @@ import secrets
 from flask import Blueprint, render_template, request, session, redirect, url_for, flash
 from curriculum_data import TOPICS, LEVELS_ORDER
 import database as db
+from email_service import send_welcome_email, send_promo_email
 
 auth_bp = Blueprint("auth", __name__)
 
@@ -66,8 +67,10 @@ def register():
                                      payment_ref="promo_first30",
                                      activated_by="system_promo")
                     flash(f"Welcome to QuantiesUnite, {username}! 🎉 You're one of our first 30 users — enjoy 1 month of full access, free!", "success")
+                    send_promo_email(username, email)
                 else:
                     flash(f"Welcome to QuantiesUnite, {username}!", "success")
+                    send_welcome_email(username, email)
                 return redirect(url_for("account.account"))
     return render_template("auth/register.html", error=error)
 
@@ -282,4 +285,7 @@ def _handle_google_callback():
             db.activate_plan(uid, "full", "1_month", 0,
                              payment_ref="promo_first30",
                              activated_by="system_promo")
+            send_promo_email(username, google_email)
+        else:
+            send_welcome_email(username, google_email)
         return redirect(url_for("account.account"))
