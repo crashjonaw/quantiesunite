@@ -14,6 +14,10 @@ admin_bp = Blueprint("admin", __name__)
 def admin_panel():
     users = db.all_users()
     stats = db.site_stats()
+    # Attach plan info to each user
+    for u in users:
+        u["all_plans"] = db.get_all_active_plans_for_user(u["id"])
+        u["current_level"] = u.get("current_level") or "Not set"
     return render_template("admin/admin.html", users=users, stats=stats,
                            total_topics=len(TOPICS), levels_order=LEVELS_ORDER)
 
@@ -129,11 +133,13 @@ def admin_user_detail(uid):
         total = len(level_topics)
         level_breakdown[level] = {"topics": level_topics, "done": done, "total": total,
                                   "pct": round(done / total * 100) if total else 0}
+    all_plans = db.get_all_active_plans_for_user(uid)
     return render_template("admin/admin_user.html", u=user,
                            level_breakdown=level_breakdown, levels_order=LEVELS_ORDER,
                            total_done=sum(1 for r in progress_rows if r["complete"]),
                            total_all=len(TOPICS),
-                           enabled_levels=get_enabled_levels(user["target_level"]))
+                           enabled_levels=get_enabled_levels(user["target_level"]),
+                           all_plans=all_plans)
 
 
 @admin_bp.route("/api/admin/quiz-stats/<tid>")

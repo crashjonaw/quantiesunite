@@ -26,9 +26,17 @@
         <p class="text-muted">{{ u.email }}</p>
         <p class="text-muted" style="font-size:0.78rem">
           Joined {{ u.created_at[:10] if u.created_at else '?' }} ·
-          Target level: <strong>{{ u.target_level }}</strong> ·
-          Plan: <span class="badge badge-free">Free</span>
+          Current grade: <strong>{{ u.current_level or 'Not set' }}</strong>
         </p>
+        <div style="margin-top:6px; display:flex; gap:6px; flex-wrap:wrap;">
+          {% if all_plans %}
+            {% for plan in all_plans %}
+            <span class="badge" style="background:#4169E1; border-color:#4169E1; color:#fff; font-size:0.7rem;">{{ plan.plan_tier | capitalize }} · {{ plan.days_remaining }}d left</span>
+            {% endfor %}
+          {% else %}
+            <span class="badge badge-free">Free Plan</span>
+          {% endif %}
+        </div>
       </div>
     </div>
     <div class="aup-actions">

@@ -40,9 +40,9 @@
       <div class="asc-sub">{{ levels_order | length }} levels</div>
     </div>
     <div class="admin-stat-card">
-      <div class="asc-num">Free</div>
-      <div class="asc-label">Current Plan</div>
-      <div class="asc-sub">all users · no charge</div>
+      <div class="asc-num">{{ stats.total_users - 1 }}/30</div>
+      <div class="asc-label">Promo Used</div>
+      <div class="asc-sub">first 30 get free full access</div>
     </div>
   </div>
 
@@ -77,7 +77,8 @@
             <th>User</th>
             <th>Email</th>
             <th>Joined</th>
-            <th>Target Level</th>
+            <th>Current Grade</th>
+            <th>Plan</th>
             <th>Progress</th>
             <th>Role</th>
             <th>Actions</th>
@@ -97,7 +98,16 @@
             <td class="td-email">{{ u.email }}</td>
             <td class="td-date">{{ u.created_at[:10] if u.created_at else '—' }}</td>
             <td class="td-level">
-              <span class="level-pill">{{ u.target_level }}</span>
+              <span class="level-pill">{{ u.current_level }}</span>
+            </td>
+            <td class="td-plan">
+              {% if u.all_plans %}
+                {% for p in u.all_plans %}
+                <span class="badge" style="background:#4169E1; border-color:#4169E1; color:#fff; font-size:0.7rem; display:inline-block; margin-bottom:2px;">{{ p.plan_tier | capitalize }} · {{ p.days_remaining }}d</span>
+                {% endfor %}
+              {% else %}
+              <span class="badge badge-free-sm">Free</span>
+              {% endif %}
             </td>
             <td class="td-progress">
               <span class="progress-pill">{{ u.topics_done or 0 }}/{{ total_topics }}</span>
