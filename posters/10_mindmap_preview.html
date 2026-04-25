@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — Mindmap Preview Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #0c1222 0%, #121a30 50%, #0c1222 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -80px; right: -80px; width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(251,191,36,0.1) 0%, transparent 70%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 44px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  .hero { position: relative; z-index: 1; text-align: center; margin-bottom: 36px; }
+  .hero h1 { font-size: 2.6rem; font-weight: 900; line-height: 1.15; margin-bottom: 14px; }
+  .hero .amber { color: #fbbf24; }
+  .hero p { font-size: 1.05rem; color: #8b949e; max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+  .preview-label {
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #fbbf24; margin-bottom: 12px; position: relative; z-index: 1;
+  }
+
+  /* Mindmap mockup */
+  .mindmap-mock {
+    position: relative; z-index: 1;
+    background: rgba(255,255,255,0.03); border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 28px; margin-bottom: 28px;
+  }
+  .mm-header {
+    text-align: center; margin-bottom: 20px; padding-bottom: 14px;
+    border-bottom: 2px solid rgba(255,255,255,0.06);
+  }
+  .mm-emoji { font-size: 2rem; }
+  .mm-title { font-size: 1.2rem; font-weight: 800; margin-top: 4px; }
+  .mm-level { font-size: 0.78rem; color: #8b949e; background: rgba(255,255,255,0.06); display: inline-block; padding: 3px 12px; border-radius: 20px; margin-top: 6px; }
+
+  .mm-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;
+  }
+  .mm-concept {
+    background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px; padding: 14px 16px; border-left: 3px solid #4169E1;
+  }
+  .mm-concept h4 { font-size: 0.82rem; font-weight: 700; color: #58a6ff; margin-bottom: 6px; }
+  .mm-concept ul { list-style: disc; padding-left: 16px; }
+  .mm-concept li { font-size: 0.75rem; color: #8b949e; line-height: 1.5; margin-bottom: 2px; }
+
+  .mm-formulas {
+    background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px; padding: 14px 16px; margin-bottom: 12px;
+  }
+  .mm-formulas h4 { font-size: 0.82rem; font-weight: 700; color: #58a6ff; margin-bottom: 10px; }
+  .mm-formula-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .mm-formula-item {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px; padding: 10px; text-align: center;
+  }
+  .mm-formula-label { font-size: 0.68rem; color: #8b949e; margin-bottom: 4px; }
+  .mm-formula-expr { font-size: 0.85rem; font-weight: 700; color: #e6edf3; }
+
+  .mm-tips {
+    background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px; padding: 14px 16px;
+  }
+  .mm-tips h4 { font-size: 0.82rem; font-weight: 700; color: #58a6ff; margin-bottom: 6px; }
+  .mm-tips li { font-size: 0.75rem; color: #8b949e; line-height: 1.5; margin-bottom: 2px; }
+
+  /* Download button mockup */
+  .mm-download {
+    text-align: right; margin-top: 10px;
+  }
+  .mm-dl-btn {
+    display: inline-block; background: #4169E1; color: #fff; padding: 8px 18px;
+    border-radius: 8px; font-size: 0.78rem; font-weight: 700;
+  }
+
+  /* Features */
+  .mm-features {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin-bottom: 36px;
+  }
+  .mmf {
+    text-align: center; padding: 20px;
+    background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px;
+  }
+  .mmf-icon { font-size: 1.5rem; margin-bottom: 8px; }
+  .mmf h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 4px; }
+  .mmf p { font-size: 0.78rem; color: #8b949e; line-height: 1.4; }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn { display: inline-block; background: #fbbf24; color: #000; padding: 16px 48px; border-radius: 14px; font-size: 1.1rem; font-weight: 800; text-decoration: none; }
+  .cta-url { display: block; margin-top: 12px; font-size: 1rem; font-weight: 700; color: #fbbf24; }
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="hero">
+    <h1>Every Topic.<br>One Page. <span class="amber">Downloadable.</span></h1>
+    <p>Our mindmaps distill each module into a single-page summary — key concepts, formulas, and tips. Download as PDF for revision.</p>
+  </div>
+
+  <div class="preview-label">Mindmap Preview — Pythagoras' Theorem (Sec 1-2)</div>
+  <div class="mindmap-mock">
+    <div class="mm-header">
+      <div class="mm-emoji">📐</div>
+      <div class="mm-title">Pythagoras' Theorem</div>
+      <div class="mm-level">Sec 1-2</div>
+    </div>
+
+    <div class="mm-grid">
+      <div class="mm-concept">
+        <h4>Pythagoras' Theorem</h4>
+        <ul>
+          <li>In a right-angled triangle: c² = a² + b²</li>
+          <li>c is the hypotenuse — longest side</li>
+          <li>Only works for right-angled triangles</li>
+        </ul>
+      </div>
+      <div class="mm-concept">
+        <h4>Finding the Hypotenuse</h4>
+        <ul>
+          <li>c = √(a² + b²)</li>
+          <li>Example: a=3, b=4 → c = √25 = 5</li>
+          <li>The 3-4-5 triangle is the classic example</li>
+        </ul>
+      </div>
+      <div class="mm-concept">
+        <h4>Finding a Shorter Side</h4>
+        <ul>
+          <li>a = √(c² - b²)</li>
+          <li>Rearrange the formula to isolate the unknown</li>
+        </ul>
+      </div>
+      <div class="mm-concept">
+        <h4>Applications</h4>
+        <ul>
+          <li>Distance between two points</li>
+          <li>Ladder against a wall</li>
+          <li>Diagonal of a rectangle</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mm-formulas">
+      <h4>Key Formulas</h4>
+      <div class="mm-formula-grid">
+        <div class="mm-formula-item">
+          <div class="mm-formula-label">Theorem</div>
+          <div class="mm-formula-expr">c² = a² + b²</div>
+        </div>
+        <div class="mm-formula-item">
+          <div class="mm-formula-label">Hypotenuse</div>
+          <div class="mm-formula-expr">c = √(a²+b²)</div>
+        </div>
+        <div class="mm-formula-item">
+          <div class="mm-formula-label">Distance</div>
+          <div class="mm-formula-expr">d = √(Δx²+Δy²)</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mm-tips">
+      <h4>Remember</h4>
+      <ul style="list-style:disc; padding-left:16px;">
+        <li>Always identify the hypotenuse first — it's opposite the right angle</li>
+        <li>Common triples: 3-4-5, 5-12-13, 8-15-17</li>
+        <li>Check your answer: the hypotenuse must be the longest side</li>
+      </ul>
+    </div>
+
+    <div class="mm-download"><span class="mm-dl-btn">Download as PDF</span></div>
+  </div>
+
+  <div class="mm-features">
+    <div class="mmf">
+      <div class="mmf-icon">📋</div>
+      <h4>One-Page Summary</h4>
+      <p>Every concept, formula, and tip on a single page</p>
+    </div>
+    <div class="mmf">
+      <div class="mmf-icon">📥</div>
+      <h4>Download as PDF</h4>
+      <p>Save for offline revision before exams</p>
+    </div>
+    <div class="mmf">
+      <div class="mmf-icon">🎯</div>
+      <h4>101 Mindmaps</h4>
+      <p>One for every topic in the curriculum</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg" class="cta-btn">Start Learning</a>
+    <span class="cta-url">quantiesunite.sg</span>
+  </div>
+  <div class="footer"><p>Complete a module to unlock its mindmap</p></div>
+</div>
+</body>
+</html>

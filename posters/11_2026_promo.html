@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — 2026 Promo Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #0a0520 0%, #1a0a3a 30%, #2d1060 60%, #0a0520 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -120px; right: -120px; width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(147,51,234,0.2) 0%, transparent 60%); pointer-events: none;
+  }
+  .poster::after {
+    content: ''; position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(236,72,153,0.12) 0%, transparent 60%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 48px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  /* Big promo hero */
+  .promo-hero {
+    position: relative; z-index: 1; text-align: center; margin-bottom: 40px;
+  }
+  .promo-year {
+    font-size: 7rem; font-weight: 900; line-height: 1;
+    background: linear-gradient(135deg, #a78bfa, #ec4899, #f59e0b);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    margin-bottom: 12px;
+  }
+  .promo-hero h1 { font-size: 2.4rem; font-weight: 900; line-height: 1.2; margin-bottom: 16px; }
+  .promo-hero p { font-size: 1.1rem; color: #8b949e; max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+  /* Free access box */
+  .free-box {
+    position: relative; z-index: 1;
+    background: linear-gradient(135deg, rgba(147,51,234,0.15), rgba(236,72,153,0.15));
+    border: 2px solid rgba(167,139,250,0.3);
+    border-radius: 20px; padding: 36px; margin-bottom: 36px; text-align: center;
+  }
+  .free-icon { font-size: 3rem; margin-bottom: 12px; }
+  .free-title { font-size: 1.6rem; font-weight: 900; margin-bottom: 8px; }
+  .free-sub { font-size: 1.05rem; color: #c4b5fd; line-height: 1.6; }
+  .free-highlight {
+    display: inline-block; margin-top: 14px;
+    background: rgba(255,255,255,0.1); padding: 8px 24px; border-radius: 30px;
+    font-size: 0.95rem; font-weight: 700; color: #fff;
+  }
+
+  /* What you get */
+  .get-grid {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin-bottom: 36px;
+  }
+  .get-item {
+    text-align: center; padding: 22px 14px;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+  }
+  .get-num { font-size: 1.8rem; font-weight: 900; color: #fff; margin-bottom: 4px; }
+  .get-label { font-size: 0.78rem; color: #8b949e; font-weight: 600; }
+
+  /* Levels included */
+  .levels-box {
+    position: relative; z-index: 1;
+    margin-bottom: 36px;
+  }
+  .levels-title { font-size: 0.85rem; font-weight: 700; color: #a78bfa; text-align: center; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .levels-list {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+  }
+  .level-tag {
+    padding: 8px 18px; border-radius: 10px; font-size: 0.82rem; font-weight: 700;
+    border: 1.5px solid;
+  }
+
+  /* Steps */
+  .steps {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    margin-bottom: 40px;
+  }
+  .step {
+    text-align: center; padding: 22px;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+  }
+  .step-num {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: linear-gradient(135deg, #9333ea, #ec4899);
+    color: #fff; font-weight: 800; font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 10px;
+  }
+  .step h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+  .step p { font-size: 0.78rem; color: #8b949e; line-height: 1.4; }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #9333ea, #ec4899);
+    color: #fff; padding: 18px 56px; border-radius: 14px;
+    font-size: 1.2rem; font-weight: 800; text-decoration: none;
+    box-shadow: 0 8px 30px rgba(147,51,234,0.3);
+  }
+  .cta-url { display: block; margin-top: 14px; font-size: 1.1rem; font-weight: 700; color: #a78bfa; }
+  .cta-note { font-size: 0.82rem; color: #8b949e; margin-top: 8px; }
+
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="promo-hero">
+    <div class="promo-year">2026</div>
+    <h1>Sign Up This Year.<br>Get Full Access Free.</h1>
+    <p>Every new account created in 2026 receives one month of our complete Full Programme — no payment, no credit card, no catch.</p>
+  </div>
+
+  <div class="free-box">
+    <div class="free-icon">🎁</div>
+    <div class="free-title">1 Month Free — Full Programme</div>
+    <div class="free-sub">Access every topic, every quiz, every exam across all 12 levels.<br>From Kindergarten counting to Deep Learning with Transformers.</div>
+    <div class="free-highlight">No payment required. Starts immediately.</div>
+  </div>
+
+  <div class="get-grid">
+    <div class="get-item"><div class="get-num">101</div><div class="get-label">Topics Unlocked</div></div>
+    <div class="get-item"><div class="get-num">7,300+</div><div class="get-label">Practice Questions</div></div>
+    <div class="get-item"><div class="get-num">6</div><div class="get-label">Grade Exams</div></div>
+  </div>
+
+  <div class="levels-box">
+    <div class="levels-title">All Levels Included</div>
+    <div class="levels-list">
+      <span class="level-tag" style="border-color:#7FFFD4; color:#7FFFD4;">Kindergarten</span>
+      <span class="level-tag" style="border-color:#3CB371; color:#3CB371;">Primary 1-6</span>
+      <span class="level-tag" style="border-color:#4169E1; color:#4169E1;">Secondary 1-4</span>
+      <span class="level-tag" style="border-color:#1E90FF; color:#1E90FF;">JC / A-Level</span>
+      <span class="level-tag" style="border-color:#9333ea; color:#9333ea;">University</span>
+      <span class="level-tag" style="border-color:#C71585; color:#C71585;">Deep Learning</span>
+    </div>
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Sign Up</h4>
+      <p>Create a free account — takes 30 seconds</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Full Access</h4>
+      <p>Entire curriculum unlocked instantly for 30 days</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Keep Learning</h4>
+      <p>After 30 days, continue with plans from S$7.90/mo</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg/register" class="cta-btn">Claim Your Free Month</a>
+    <span class="cta-url">quantiesunite.sg</span>
+    <div class="cta-note">Available for all new accounts created in 2026</div>
+  </div>
+
+  <div class="footer"><p>Made in Singapore with love for learning</p></div>
+</div>
+</body>
+</html>
