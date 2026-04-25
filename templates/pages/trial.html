@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 {% block title %}Free Trial — QuantiesUnite{% endblock %}
 
+{% block head %}
+<style>
+  .trial-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+  @media (max-width: 700px) { .trial-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 420px) { .trial-grid { grid-template-columns: 1fr; } }
+</style>
+{% endblock %}
+
 {% block content %}
-<div style="max-width:800px; margin:0 auto;">
+<div style="max-width:900px; margin:0 auto;">
 
   <div style="text-align:center; margin-bottom:36px; padding-top:16px;">
     <h1 style="font-size:2rem; font-weight:800; margin-bottom:12px;">Try Before You Sign Up</h1>
@@ -11,14 +19,14 @@
     </p>
   </div>
 
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin-bottom:40px;">
+  <div class="trial-grid">
     {% for t in trials %}
-    <a href="/topic/{{ t.id }}/overview" style="text-decoration:none; color:var(--text);">
-      <div style="background:var(--bg2); border:1.5px solid var(--border); border-radius:16px; padding:24px 20px; border-left:4px solid {{ t.color }}; transition:transform 0.2s, box-shadow 0.2s;">
+    <a href="/topic/{{ t.id }}/overview" style="text-decoration:none; color:var(--text); display:flex;">
+      <div style="background:var(--bg2); border:1.5px solid var(--border); border-radius:16px; padding:24px 20px; border-left:4px solid {{ t.color }}; transition:transform 0.2s, box-shadow 0.2s; display:flex; flex-direction:column; width:100%;">
         <div style="font-size:2rem; margin-bottom:8px;">{{ t.emoji }}</div>
         <h3 style="font-size:1rem; font-weight:700; margin:0 0 4px;">{{ t.name }}</h3>
         <p style="font-size:0.78rem; color:var(--text-muted); margin:0 0 8px;">{{ t.level }}</p>
-        <p style="font-size:0.85rem; color:var(--text-muted); margin:0; line-height:1.5;">{{ t.tagline }}</p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin:0; line-height:1.5; flex:1;">{{ t.tagline }}</p>
       </div>
     </a>
     {% endfor %}
