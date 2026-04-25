@@ -16,3 +16,4 @@ logs/
 backups/
 *.numbers
 *.png
+!posters/*.png
