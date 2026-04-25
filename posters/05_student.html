@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — Student Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #0f0a1e 0%, #1a1040 40%, #0f0a1e 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(147,51,234,0.15) 0%, transparent 70%); pointer-events: none;
+  }
+  .poster::after {
+    content: ''; position: absolute; bottom: -60px; left: 30%; width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(236,72,153,0.08) 0%, transparent 70%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 48px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  .hero { position: relative; z-index: 1; text-align: center; margin-bottom: 44px; }
+  .hero h1 { font-size: 2.8rem; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+  .hero .purple { color: #a78bfa; }
+  .hero p { font-size: 1.05rem; color: #8b949e; max-width: 480px; margin: 0 auto; line-height: 1.7; }
+
+  .pain-points {
+    position: relative; z-index: 1;
+    margin-bottom: 40px;
+  }
+  .pain {
+    display: flex; align-items: center; gap: 16px;
+    padding: 16px 20px; margin-bottom: 10px;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px;
+  }
+  .pain-emoji { font-size: 1.6rem; flex-shrink: 0; }
+  .pain-text { font-size: 0.95rem; color: #8b949e; line-height: 1.5; }
+  .pain-text strong { color: #e6edf3; }
+
+  .solution {
+    position: relative; z-index: 1;
+    background: linear-gradient(135deg, rgba(147,51,234,0.1), rgba(65,105,225,0.1));
+    border: 1.5px solid rgba(147,51,234,0.2);
+    border-radius: 20px; padding: 36px; margin-bottom: 40px; text-align: center;
+  }
+  .solution h2 { font-size: 1.4rem; font-weight: 900; margin-bottom: 16px; color: #a78bfa; }
+  .solution-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center; }
+  .sol-item { padding: 12px; }
+  .sol-num { font-size: 1.8rem; font-weight: 900; color: #fff; }
+  .sol-label { font-size: 0.78rem; color: #8b949e; font-weight: 600; text-transform: uppercase; }
+
+  .promo {
+    position: relative; z-index: 1;
+    background: linear-gradient(135deg, #9333ea, #4169E1);
+    border-radius: 16px; padding: 28px; text-align: center; margin-bottom: 40px;
+  }
+  .promo h3 { font-size: 1.2rem; font-weight: 900; color: #fff; margin-bottom: 6px; }
+  .promo p { font-size: 0.95rem; color: rgba(255,255,255,0.85); }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn { display: inline-block; background: #a78bfa; color: #000; padding: 16px 48px; border-radius: 14px; font-size: 1.1rem; font-weight: 800; text-decoration: none; }
+  .cta-url { display: block; margin-top: 12px; font-size: 1rem; font-weight: 700; color: #a78bfa; }
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="hero">
+    <h1>Tired of memorizing<br>formulas you<br><span class="purple">forget after exams?</span></h1>
+    <p>There's a better way to learn math. One that sticks.</p>
+  </div>
+
+  <div class="pain-points">
+    <div class="pain">
+      <span class="pain-emoji">😮‍💨</span>
+      <div class="pain-text"><strong>Memorize, regurgitate, forget.</strong> Sound familiar?</div>
+    </div>
+    <div class="pain">
+      <span class="pain-emoji">😵</span>
+      <div class="pain-text"><strong>See a new question format</strong> and have no idea where to start?</div>
+    </div>
+    <div class="pain">
+      <span class="pain-emoji">🤷</span>
+      <div class="pain-text"><strong>"When will I ever use this?"</strong> Nobody explains WHY.</div>
+    </div>
+    <div class="pain">
+      <span class="pain-emoji">🧱</span>
+      <div class="pain-text"><strong>Gaps from earlier years</strong> that keep tripping you up?</div>
+    </div>
+  </div>
+
+  <div class="solution">
+    <h2>QuantiesUnite teaches differently</h2>
+    <div class="solution-grid">
+      <div class="sol-item"><div class="sol-num">101</div><div class="sol-label">Topics</div></div>
+      <div class="sol-item"><div class="sol-num">7,300+</div><div class="sol-label">Questions</div></div>
+      <div class="sol-item"><div class="sol-num">K to DL</div><div class="sol-label">Full Journey</div></div>
+    </div>
+  </div>
+
+  <div class="promo">
+    <h3>Sign up in 2026 and get 1 month free</h3>
+    <p>Full access to every topic, every quiz, every exam. No payment needed.</p>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg/register" class="cta-btn">Sign Up Free</a>
+    <span class="cta-url">quantiesunite.sg</span>
+  </div>
+  <div class="footer"><p>Made in Singapore for Singapore students</p></div>
+</div>
+</body>
+</html>

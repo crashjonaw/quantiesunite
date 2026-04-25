@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — For Parents Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #0c1222 0%, #131d3a 40%, #1a2744 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -100px; left: -100px; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(245,158,11,0.1) 0%, transparent 70%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 48px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  .hero { position: relative; z-index: 1; text-align: center; margin-bottom: 44px; }
+  .hero h1 { font-size: 2.8rem; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+  .hero .gold { color: #f59e0b; }
+  .hero p { font-size: 1.05rem; color: #8b949e; max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+  .price-compare {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center;
+    margin-bottom: 44px;
+  }
+  .pc-card {
+    border-radius: 16px; padding: 28px 24px; text-align: center;
+  }
+  .pc-old { background: rgba(239,68,68,0.06); border: 1.5px solid rgba(239,68,68,0.15); }
+  .pc-new { background: rgba(34,197,94,0.06); border: 1.5px solid rgba(34,197,94,0.2); }
+  .pc-card h3 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 12px; }
+  .pc-old h3 { color: #ef4444; }
+  .pc-new h3 { color: #22c55e; }
+  .pc-price { font-size: 2.4rem; font-weight: 900; margin-bottom: 4px; }
+  .pc-old .pc-price { color: #ef4444; text-decoration: line-through; opacity: 0.7; }
+  .pc-new .pc-price { color: #22c55e; }
+  .pc-sub { font-size: 0.85rem; color: #8b949e; }
+  .pc-vs { font-size: 1.4rem; font-weight: 900; color: #8b949e; }
+
+  .features {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+    margin-bottom: 44px;
+  }
+  .feat {
+    display: flex; align-items: flex-start; gap: 14px;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 12px; padding: 18px;
+  }
+  .feat-icon { font-size: 1.5rem; flex-shrink: 0; }
+  .feat h4 { font-size: 0.9rem; font-weight: 700; margin-bottom: 4px; }
+  .feat p { font-size: 0.8rem; color: #8b949e; line-height: 1.4; }
+
+  .trust {
+    position: relative; z-index: 1;
+    text-align: center; margin-bottom: 44px;
+    padding: 24px; border: 1.5px solid rgba(245,158,11,0.2); border-radius: 16px;
+    background: rgba(245,158,11,0.04);
+  }
+  .trust h3 { font-size: 1.1rem; font-weight: 800; color: #f59e0b; margin-bottom: 8px; }
+  .trust p { font-size: 0.92rem; color: #8b949e; line-height: 1.6; }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn { display: inline-block; background: #f59e0b; color: #000; padding: 16px 48px; border-radius: 14px; font-size: 1.1rem; font-weight: 800; text-decoration: none; }
+  .cta-url { display: block; margin-top: 12px; font-size: 1rem; font-weight: 700; color: #4169E1; }
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="hero">
+    <h1>Your child's tuition:<br><span class="gold">S$300/month.</span><br>Understanding math: priceless.</h1>
+    <p>QuantiesUnite gives your child what tuition centres often don't — genuine understanding of WHY mathematics works.</p>
+  </div>
+
+  <div class="price-compare">
+    <div class="pc-card pc-old">
+      <h3>Typical Tuition</h3>
+      <div class="pc-price">S$300</div>
+      <div class="pc-sub">per month · 1 subject</div>
+    </div>
+    <div class="pc-vs">vs</div>
+    <div class="pc-card pc-new">
+      <h3>QuantiesUnite</h3>
+      <div class="pc-price">S$7.90</div>
+      <div class="pc-sub">per month · entire curriculum</div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feat">
+      <span class="feat-icon">📖</span>
+      <div><h4>Self-Paced Learning</h4><p>Your child learns at their own speed. No rushing, no waiting for the class.</p></div>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🧪</span>
+      <div><h4>7,300+ Questions</h4><p>Instant feedback on every answer. The system prioritises what they got wrong.</p></div>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">📊</span>
+      <div><h4>Progress Tracking</h4><p>Dashboard shows exactly where your child stands — no guessing.</p></div>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🇸🇬</span>
+      <div><h4>MOE-Aligned</h4><p>Topics match the Singapore syllabus from Primary through A-Level.</p></div>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🎓</span>
+      <div><h4>Grade Exams</h4><p>PSLE, O-Level, A-Level readiness exams to test true mastery.</p></div>
+    </div>
+    <div class="feat">
+      <span class="feat-icon">🚀</span>
+      <div><h4>No Ceiling</h4><p>A P6 student who's ready can start algebra. No waiting for next year.</p></div>
+    </div>
+  </div>
+
+  <div class="trust">
+    <h3>Built by Singapore Parents, for Singapore Students</h3>
+    <p>We grew up in the same education system. We sat for the same exams. We built the platform we wish we had — so your child doesn't have to re-learn everything later.</p>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg/trial" class="cta-btn">Try a Free Lesson</a>
+    <span class="cta-url">quantiesunite.sg</span>
+  </div>
+  <div class="footer"><p>Plans from S$7.90/month · Cancel anytime · No auto-renewal</p></div>
+</div>
+</body>
+</html>

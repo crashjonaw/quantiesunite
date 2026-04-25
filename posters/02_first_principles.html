@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — First Principles Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #0c1222 0%, #131d3a 40%, #1a2744 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -80px; right: -80px; width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(34,197,94,0.12) 0%, transparent 70%); pointer-events: none;
+  }
+  .poster::after {
+    content: ''; position: absolute; bottom: -60px; left: -60px; width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(65,105,225,0.1) 0%, transparent 70%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 48px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  .hero { position: relative; z-index: 1; text-align: center; margin-bottom: 48px; }
+  .hero h1 { font-size: 3rem; font-weight: 900; line-height: 1.15; margin-bottom: 16px; }
+  .hero .accent { color: #22c55e; }
+  .hero p { font-size: 1.1rem; color: #8b949e; max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+  .comparison {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    margin-bottom: 48px;
+  }
+  .comp-card {
+    border-radius: 16px; padding: 32px 28px;
+  }
+  .comp-bad {
+    background: rgba(239,68,68,0.08); border: 1.5px solid rgba(239,68,68,0.2);
+  }
+  .comp-good {
+    background: rgba(34,197,94,0.08); border: 1.5px solid rgba(34,197,94,0.2);
+  }
+  .comp-card h3 { font-size: 1.1rem; font-weight: 800; margin-bottom: 16px; }
+  .comp-bad h3 { color: #ef4444; }
+  .comp-good h3 { color: #22c55e; }
+  .comp-card ul { list-style: none; padding: 0; }
+  .comp-card li { font-size: 0.92rem; color: #8b949e; padding: 8px 0; border-bottom: 1px solid rgba(128,128,128,0.1); line-height: 1.5; }
+  .comp-card li:last-child { border-bottom: none; }
+  .comp-card li::before { margin-right: 8px; }
+  .comp-bad li::before { content: '✗'; color: #ef4444; font-weight: 700; }
+  .comp-good li::before { content: '✓'; color: #22c55e; font-weight: 700; }
+
+  .quote-box {
+    position: relative; z-index: 1;
+    text-align: center; padding: 36px; margin-bottom: 48px;
+    border: 1.5px solid rgba(65,105,225,0.2); border-radius: 16px;
+    background: rgba(65,105,225,0.04);
+  }
+  .quote-box p {
+    font-size: 1.4rem; font-weight: 700; font-style: italic; line-height: 1.5; color: #e6edf3;
+  }
+  .quote-box .attr { font-size: 0.85rem; color: #8b949e; margin-top: 12px; font-style: normal; }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn {
+    display: inline-block; background: #22c55e; color: #fff;
+    padding: 16px 48px; border-radius: 14px; font-size: 1.15rem; font-weight: 800; text-decoration: none;
+  }
+  .cta-url { display: block; margin-top: 14px; font-size: 1.1rem; font-weight: 700; color: #4169E1; }
+
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 36px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="hero">
+    <h1>Don't Memorize.<br><span class="accent">Understand.</span></h1>
+    <p>Most students memorize formulas they forget after the exam. We teach you WHY they work — so you never forget.</p>
+  </div>
+
+  <div class="comparison">
+    <div class="comp-card comp-bad">
+      <h3>Traditional Learning</h3>
+      <ul>
+        <li>Memorize the formula</li>
+        <li>"Just use this method"</li>
+        <li>Forget after the exam</li>
+        <li>Can't apply to new problems</li>
+        <li>Each topic feels isolated</li>
+        <li>Learning stops at A-Levels</li>
+      </ul>
+    </div>
+    <div class="comp-card comp-good">
+      <h3>First Principles</h3>
+      <ul>
+        <li>Derive the formula yourself</li>
+        <li>"Here's WHY this works"</li>
+        <li>Understanding lasts forever</li>
+        <li>Solve problems you've never seen</li>
+        <li>Every topic connects to the next</li>
+        <li>K to Deep Learning — no ceiling</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="quote-box">
+    <p>"If you can't explain it simply, you don't understand it well enough."</p>
+    <div class="attr">— The principle behind every QuantiesUnite lesson</div>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg" class="cta-btn">Try It Free</a>
+    <span class="cta-url">quantiesunite.sg</span>
+  </div>
+
+  <div class="footer"><p>Made in Singapore with love for learning</p></div>
+</div>
+</body>
+</html>

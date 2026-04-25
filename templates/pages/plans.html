@@ -11,12 +11,11 @@
   </div>
 
   <!-- ═══ PROMO BANNER ═══ -->
-  {% if promo_slots > 0 %}
+  {% if promo_active %}
   <div class="promo-banner">
     <span class="promo-icon">🎁</span>
     <div>
-      <strong>Early Bird Promo!</strong> The first 30 users get <strong>1 month of full access — free</strong>.
-      <span class="promo-slots">{{ promo_slots }} spots remaining!</span>
+      <strong>2026 Launch Promo!</strong> Sign up this year and get <strong>1 month of full access — free</strong>.
     </div>
     {% if not current_user %}
     <a href="/register" class="btn btn-sm" style="background:#fff; color:#4169E1; font-weight:700; border:none;">Sign Up Free</a>

@@ -60,13 +60,13 @@ def register():
                                 db.mark_topic_complete(uid, tid)
                 session.permanent = True
                 session["user_id"] = uid
-                # First 30 signups get full access for 1 month
-                total_users = db.get_db().execute("SELECT COUNT(*) AS c FROM users").fetchone()["c"]
-                if total_users <= 30:
+                # 2026 promo: all signups in 2026 get full access for 1 month
+                from datetime import datetime
+                if datetime.now().year <= 2026:
                     db.activate_plan(uid, "full", "1_month", 0,
-                                     payment_ref="promo_first30",
+                                     payment_ref="promo_2026",
                                      activated_by="system_promo")
-                    flash(f"Welcome to QuantiesUnite, {username}! 🎉 You're one of our first 30 users — enjoy 1 month of full access, free!", "success")
+                    flash(f"Welcome to QuantiesUnite, {username}! 🎉 Enjoy 1 month of full access, free!", "success")
                     send_promo_email(username, email)
                 else:
                     flash(f"Welcome to QuantiesUnite, {username}!", "success")
@@ -279,11 +279,11 @@ def _handle_google_callback():
         device = request.headers.get("User-Agent", "")[:100]
         db.register_session(uid, session["sid"], device)
         session["needs_setup"] = True
-        # First 30 signups get full access for 1 month
-        total_users = db.get_db().execute("SELECT COUNT(*) AS c FROM users").fetchone()["c"]
-        if total_users <= 30:
+        # 2026 promo: all signups in 2026 get full access for 1 month
+        from datetime import datetime
+        if datetime.now().year <= 2026:
             db.activate_plan(uid, "full", "1_month", 0,
-                             payment_ref="promo_first30",
+                             payment_ref="promo_2026",
                              activated_by="system_promo")
             send_promo_email(username, google_email)
         else:

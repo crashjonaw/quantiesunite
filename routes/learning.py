@@ -57,9 +57,9 @@ def trial_page():
 
 @learning_bp.route("/plans")
 def plans_page():
-    total_users = db.get_db().execute("SELECT COUNT(*) AS c FROM users").fetchone()["c"]
-    promo_slots = max(0, 30 - total_users)
-    return render_template("pages/plans.html", promo_slots=promo_slots)
+    from datetime import datetime
+    promo_active = datetime.now().year <= 2026
+    return render_template("pages/plans.html", promo_active=promo_active)
 
 
 @learning_bp.route("/payment/success")
