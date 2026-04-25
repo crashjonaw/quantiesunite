@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — Free Trial Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #0c1222 0%, #131d3a 40%, #1a2744 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -80px; right: -80px; width: 350px; height: 350px;
+    background: radial-gradient(circle, rgba(65,105,225,0.12) 0%, transparent 70%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 44px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  .hero { position: relative; z-index: 1; text-align: center; margin-bottom: 36px; }
+  .hero h1 { font-size: 2.8rem; font-weight: 900; line-height: 1.15; margin-bottom: 14px; }
+  .hero .blue { color: #4169E1; }
+  .hero p { font-size: 1.05rem; color: #8b949e; max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+  .preview-label {
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #4169E1; margin-bottom: 10px; position: relative; z-index: 1;
+  }
+
+  /* Fake lesson preview */
+  .lesson-preview {
+    position: relative; z-index: 1;
+    background: rgba(255,255,255,0.03); border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 28px; margin-bottom: 28px;
+  }
+  .lp-header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+    padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .lp-emoji { font-size: 1.8rem; }
+  .lp-title { font-size: 1.1rem; font-weight: 800; }
+  .lp-level { font-size: 0.75rem; color: #8b949e; font-weight: 600; }
+  .lp-section {
+    background: rgba(65,105,225,0.06); border-left: 3px solid #4169E1;
+    border-radius: 0 8px 8px 0; padding: 14px 18px; margin-bottom: 12px;
+  }
+  .lp-section h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 4px; }
+  .lp-section p { font-size: 0.82rem; color: #8b949e; line-height: 1.5; }
+  .lp-formula {
+    text-align: center; padding: 12px; background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06); border-radius: 8px;
+    font-size: 1.1rem; font-weight: 700; color: #58a6ff; margin: 8px 0;
+  }
+  .lp-pages {
+    display: flex; gap: 6px; margin-top: 12px;
+  }
+  .lp-page {
+    width: 28px; height: 28px; border-radius: 50%; font-size: 0.7rem; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,0.06); color: #8b949e;
+  }
+  .lp-page.active { background: #4169E1; color: #fff; }
+
+  /* Concept cards preview */
+  .concepts-row {
+    position: relative; z-index: 1;
+    display: flex; gap: 10px; margin-bottom: 28px; overflow: hidden;
+  }
+  .concept-mini {
+    flex: 1; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px; padding: 14px; border-left: 3px solid #4169E1;
+  }
+  .concept-mini h5 { font-size: 0.78rem; font-weight: 700; margin-bottom: 4px; }
+  .concept-mini p { font-size: 0.72rem; color: #8b949e; line-height: 1.4; }
+
+  .try-free {
+    position: relative; z-index: 1;
+    display: flex; gap: 12px; margin-bottom: 36px;
+  }
+  .try-card {
+    flex: 1; background: rgba(255,255,255,0.03); border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 20px; text-align: center;
+    transition: transform 0.2s;
+  }
+  .try-card:hover { transform: translateY(-3px); }
+  .try-emoji { font-size: 1.6rem; margin-bottom: 6px; }
+  .try-card h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 3px; }
+  .try-card p { font-size: 0.75rem; color: #8b949e; }
+  .try-badge { font-size: 0.65rem; font-weight: 700; color: #22c55e; text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn { display: inline-block; background: #4169E1; color: #fff; padding: 16px 48px; border-radius: 14px; font-size: 1.1rem; font-weight: 800; text-decoration: none; }
+  .cta-url { display: block; margin-top: 12px; font-size: 1rem; font-weight: 700; color: #4169E1; }
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="hero">
+    <h1>Try a Lesson.<br><span class="blue">No Sign Up Needed.</span></h1>
+    <p>Experience our first-principles approach to learning — complete lessons and quizzes, completely free.</p>
+  </div>
+
+  <div class="preview-label">Lesson Preview — Sec 1-2 Algebra</div>
+  <div class="lesson-preview">
+    <div class="lp-header">
+      <span class="lp-emoji">🔡</span>
+      <div>
+        <div class="lp-title">Algebraic Expressions</div>
+        <div class="lp-level">Secondary 1-2</div>
+      </div>
+    </div>
+    <div class="lp-section">
+      <h4>From unknowns to variables</h4>
+      <p>In primary school, you solved: "A number plus 3 equals 7." In algebra, we use a letter to stand for the unknown: x + 3 = 7</p>
+    </div>
+    <div class="lp-section">
+      <h4>Like terms and collecting</h4>
+      <p>3x and 5x are like terms (both have x). We simplify: 3x + 5x = 8x</p>
+    </div>
+    <div class="lp-formula">4x + 3 - 2x + 1 = 2x + 4</div>
+    <div class="lp-pages">
+      <div class="lp-page active">1</div>
+      <div class="lp-page">2</div>
+      <div class="lp-page">3</div>
+      <div class="lp-page">4</div>
+    </div>
+  </div>
+
+  <div class="preview-label">4 Free Trial Modules</div>
+  <div class="try-free">
+    <div class="try-card" style="border-left: 3px solid #7FFFD4;">
+      <div class="try-emoji">🔢</div>
+      <h4>Numbers</h4>
+      <p>Kindergarten</p>
+      <div class="try-badge">Free</div>
+    </div>
+    <div class="try-card" style="border-left: 3px solid #3CB371;">
+      <div class="try-emoji">🔢</div>
+      <h4>Whole Numbers</h4>
+      <p>Primary 1-2</p>
+      <div class="try-badge">Free</div>
+    </div>
+    <div class="try-card" style="border-left: 3px solid #4169E1;">
+      <div class="try-emoji">🔡</div>
+      <h4>Algebra</h4>
+      <p>Sec 1-2</p>
+      <div class="try-badge">Free</div>
+    </div>
+    <div class="try-card" style="border-left: 3px solid #1E90FF;">
+      <div class="try-emoji">f</div>
+      <h4>Functions</h4>
+      <p>JC / A-Level</p>
+      <div class="try-badge">Free</div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg/trial" class="cta-btn">Try a Free Lesson Now</a>
+    <span class="cta-url">quantiesunite.sg/trial</span>
+  </div>
+  <div class="footer"><p>No account needed. No payment. Just start learning.</p></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>QuantiesUnite — Exam Preview Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; background: #0d1117; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+  .poster {
+    width: 1080px; min-height: 1350px;
+    background: linear-gradient(160deg, #1a0a2e 0%, #2d1b4e 40%, #1a0a2e 100%);
+    border-radius: 24px; padding: 60px 56px; position: relative; overflow: hidden; color: #e6edf3;
+  }
+  .poster::before {
+    content: ''; position: absolute; top: -80px; left: -80px; width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(147,51,234,0.15) 0%, transparent 70%); pointer-events: none;
+  }
+
+  .brand { font-size: 1.5rem; font-weight: 800; margin-bottom: 44px; position: relative; z-index: 1; }
+  .brand-q { color: #4169E1; } .brand-u { color: #FF4500; }
+
+  .hero { position: relative; z-index: 1; text-align: center; margin-bottom: 40px; }
+  .hero h1 { font-size: 2.6rem; font-weight: 900; line-height: 1.15; margin-bottom: 14px; }
+  .hero .purple { color: #a78bfa; }
+  .hero p { font-size: 1.05rem; color: #8b949e; max-width: 520px; margin: 0 auto; line-height: 1.7; }
+
+  .preview-label {
+    font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: #a78bfa; margin-bottom: 12px; position: relative; z-index: 1;
+  }
+
+  /* Exam cards */
+  .exam-grid {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+    margin-bottom: 32px;
+  }
+  .exam-card {
+    background: rgba(255,255,255,0.04); border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 14px; padding: 22px 18px; text-align: center;
+    border-top: 4px solid;
+  }
+  .exam-emoji { font-size: 1.8rem; margin-bottom: 8px; }
+  .exam-name { font-size: 0.88rem; font-weight: 800; margin-bottom: 4px; }
+  .exam-desc { font-size: 0.75rem; color: #8b949e; line-height: 1.4; margin-bottom: 10px; }
+  .exam-meta {
+    display: flex; justify-content: center; gap: 12px; font-size: 0.7rem; color: #8b949e;
+  }
+  .exam-meta span { background: rgba(255,255,255,0.06); padding: 3px 8px; border-radius: 6px; }
+
+  /* Exam detail preview */
+  .exam-detail {
+    position: relative; z-index: 1;
+    background: rgba(255,255,255,0.03); border: 1.5px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 28px; margin-bottom: 32px;
+  }
+  .ed-header {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 18px;
+    padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .ed-emoji { font-size: 2rem; }
+  .ed-title { font-size: 1.1rem; font-weight: 800; }
+  .ed-sub { font-size: 0.8rem; color: #8b949e; }
+  .ed-progress {
+    margin-bottom: 16px;
+  }
+  .ed-prog-label { display: flex; justify-content: space-between; font-size: 0.78rem; color: #8b949e; margin-bottom: 6px; }
+  .ed-bar { height: 8px; background: rgba(255,255,255,0.06); border-radius: 99px; overflow: hidden; }
+  .ed-bar-fill { height: 100%; background: #a78bfa; border-radius: 99px; width: 75%; }
+  .ed-modes {
+    display: flex; gap: 10px;
+  }
+  .ed-mode {
+    flex: 1; text-align: center; padding: 14px; border-radius: 10px;
+    border: 1.5px solid rgba(255,255,255,0.1); font-size: 0.85rem; font-weight: 700;
+  }
+  .ed-mode.timed { background: rgba(147,51,234,0.1); border-color: rgba(147,51,234,0.3); color: #a78bfa; }
+  .ed-mode.untimed { background: rgba(255,255,255,0.03); color: #8b949e; }
+
+  /* Features */
+  .exam-features {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;
+    margin-bottom: 36px;
+  }
+  .ef { display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; }
+  .ef-icon { font-size: 1.3rem; flex-shrink: 0; }
+  .ef h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 3px; }
+  .ef p { font-size: 0.78rem; color: #8b949e; line-height: 1.4; }
+
+  .cta { position: relative; z-index: 1; text-align: center; }
+  .cta-btn { display: inline-block; background: #9333ea; color: #fff; padding: 16px 48px; border-radius: 14px; font-size: 1.1rem; font-weight: 800; text-decoration: none; }
+  .cta-url { display: block; margin-top: 12px; font-size: 1rem; font-weight: 700; color: #a78bfa; }
+  .footer { position: relative; z-index: 1; text-align: center; margin-top: 28px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.06); }
+  .footer p { font-size: 0.8rem; color: #8b949e; }
+</style>
+</head>
+<body>
+<div class="poster">
+  <div class="brand"><span class="brand-q">Q</span>uanties<span class="brand-u">Unite</span></div>
+
+  <div class="hero">
+    <h1>Grade Exams.<br><span class="purple">Prove You're Ready.</span></h1>
+    <p>Pass timed or untimed exams to prove mastery at every level — from Primary to A-Level.</p>
+  </div>
+
+  <div class="preview-label">6 Grade Exams</div>
+  <div class="exam-grid">
+    <div class="exam-card" style="border-top-color: #90EE90;">
+      <div class="exam-emoji">🏫</div>
+      <div class="exam-name">P1-2 Mastery</div>
+      <div class="exam-desc">Whole numbers, operations, fractions</div>
+      <div class="exam-meta"><span>30Q</span><span>40 min</span><span>70% pass</span></div>
+    </div>
+    <div class="exam-card" style="border-top-color: #98FB98;">
+      <div class="exam-emoji">🧱</div>
+      <div class="exam-name">P3-4 Mastery</div>
+      <div class="exam-desc">Long multiplication, fractions, decimals</div>
+      <div class="exam-meta"><span>30Q</span><span>45 min</span><span>70% pass</span></div>
+    </div>
+    <div class="exam-card" style="border-top-color: #3CB371;">
+      <div class="exam-emoji">🎓</div>
+      <div class="exam-name">PSLE Readiness</div>
+      <div class="exam-desc">Ratio, percentage, algebra, volume</div>
+      <div class="exam-meta"><span>40Q</span><span>75 min</span><span>70% pass</span></div>
+    </div>
+    <div class="exam-card" style="border-top-color: #4169E1;">
+      <div class="exam-emoji">📚</div>
+      <div class="exam-name">Sec 1-2 Mastery</div>
+      <div class="exam-desc">Algebra, geometry, Pythagoras, stats</div>
+      <div class="exam-meta"><span>30Q</span><span>60 min</span><span>70% pass</span></div>
+    </div>
+    <div class="exam-card" style="border-top-color: #1E90FF;">
+      <div class="exam-emoji">🏅</div>
+      <div class="exam-name">O-Level Readiness</div>
+      <div class="exam-desc">E-Math and A-Math combined</div>
+      <div class="exam-meta"><span>40Q</span><span>90 min</span><span>70% pass</span></div>
+    </div>
+    <div class="exam-card" style="border-top-color: #9400D3;">
+      <div class="exam-emoji">🎯</div>
+      <div class="exam-name">A-Level Readiness</div>
+      <div class="exam-desc">Complex numbers, calculus, vectors</div>
+      <div class="exam-meta"><span>50Q</span><span>120 min</span><span>70% pass</span></div>
+    </div>
+  </div>
+
+  <div class="preview-label">Exam Experience</div>
+  <div class="exam-detail">
+    <div class="ed-header">
+      <span class="ed-emoji">🎓</span>
+      <div><div class="ed-title">PSLE Readiness Exam</div><div class="ed-sub">40 questions from Primary 5-6 + review from earlier grades</div></div>
+    </div>
+    <div class="ed-progress">
+      <div class="ed-prog-label"><span>Modules completed</span><span>6/8</span></div>
+      <div class="ed-bar"><div class="ed-bar-fill"></div></div>
+    </div>
+    <div class="ed-modes">
+      <div class="ed-mode timed">Timed: 40Q / 75 min</div>
+      <div class="ed-mode untimed">Untimed: 60Q / No limit</div>
+    </div>
+  </div>
+
+  <div class="exam-features">
+    <div class="ef"><span class="ef-icon">⏱️</span><div><h4>Timed or Untimed</h4><p>Practice under pressure or learn at your own pace</p></div></div>
+    <div class="ef"><span class="ef-icon">🔄</span><div><h4>Retake Anytime</h4><p>Failed? Review and try again. No limits on attempts</p></div></div>
+    <div class="ef"><span class="ef-icon">📝</span><div><h4>Review Questions</h4><p>Each exam includes questions from earlier levels</p></div></div>
+    <div class="ef"><span class="ef-icon">🔓</span><div><h4>Unlock Next Level</h4><p>Pass to unlock the next grade of the curriculum</p></div></div>
+  </div>
+
+  <div class="cta">
+    <a href="https://quantiesunite.sg/exams" class="cta-btn">View Grade Exams</a>
+    <span class="cta-url">quantiesunite.sg</span>
+  </div>
+  <div class="footer"><p>700 exam questions across 6 grade levels</p></div>
+</div>
+</body>
+</html>
