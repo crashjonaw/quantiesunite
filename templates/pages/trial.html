@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Free Trial — QuantiesUnite{% endblock %}
+
+{% block content %}
+<div style="max-width:800px; margin:0 auto;">
+
+  <div style="text-align:center; margin-bottom:36px; padding-top:16px;">
+    <h1 style="font-size:2rem; font-weight:800; margin-bottom:12px;">Try Before You Sign Up</h1>
+    <p style="color:var(--text-muted); font-size:1rem; max-width:520px; margin:0 auto; line-height:1.7;">
+      Experience our first-principles approach to learning. Explore these sample modules — lessons, quizzes, and all — no account needed.
+    </p>
+  </div>
+
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin-bottom:40px;">
+    {% for t in trials %}
+    <a href="/topic/{{ t.id }}/overview" style="text-decoration:none; color:var(--text);">
+      <div style="background:var(--bg2); border:1.5px solid var(--border); border-radius:16px; padding:24px 20px; border-left:4px solid {{ t.color }}; transition:transform 0.2s, box-shadow 0.2s;">
+        <div style="font-size:2rem; margin-bottom:8px;">{{ t.emoji }}</div>
+        <h3 style="font-size:1rem; font-weight:700; margin:0 0 4px;">{{ t.name }}</h3>
+        <p style="font-size:0.78rem; color:var(--text-muted); margin:0 0 8px;">{{ t.level }}</p>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin:0; line-height:1.5;">{{ t.tagline }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div style="text-align:center; background:var(--bg2); border:1.5px solid var(--border); border-radius:16px; padding:32px 24px; margin-bottom:40px;">
+    <h2 style="font-size:1.3rem; font-weight:800; margin-bottom:8px;">Ready for the full experience?</h2>
+    <p style="color:var(--text-muted); font-size:0.92rem; margin-bottom:20px; line-height:1.6;">
+      Sign up to unlock 101 topics, track your progress, earn trophies, and access the complete curriculum from Kindergarten to Deep Learning.
+    </p>
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+      <a href="/register" class="btn btn-primary">Create Account</a>
+      <a href="/plans" class="btn btn-outline">View Plans</a>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

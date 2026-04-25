@@ -22,16 +22,6 @@ CHECKS = [
         ]
     },
     {
-        "q": 'Find the value of 2x + 1 when x = 3',
-        "hint": 'Replace x with 3: 2(3) + 1 = ? + 1',
-        "options": [
-            {"text": '7', "correct": True},
-            {"text": '6', "correct": False},
-            {"text": '8', "correct": False},
-            {"text": '14', "correct": False},
-        ]
-    },
-    {
         "q": 'Simplify: 6a + 4b - 2a + b',
         "hint": 'Group the a terms and the b terms separately',
         "options": [
@@ -39,6 +29,16 @@ CHECKS = [
             {"text": '4a + 3b', "correct": False},
             {"text": '8a + 5b', "correct": False},
             {"text": '4a + 5', "correct": False},
+        ]
+    },
+    {
+        "q": 'Find the value of 2x + 1 when x = 3',
+        "hint": 'Replace x with 3: 2(3) + 1 = ? + 1',
+        "options": [
+            {"text": '7', "correct": True},
+            {"text": '6', "correct": False},
+            {"text": '8', "correct": False},
+            {"text": '14', "correct": False},
         ]
     },
 ]

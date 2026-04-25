@@ -37,9 +37,22 @@ def index():
                            user=user, accessible=accessible)
 
 
+TRIAL_TOPICS = ["k_numbers", "p12_whole_1000", "sec12_algebra", "alevel_functions"]
+
+
 @learning_bp.route("/about")
 def about_page():
     return render_template("pages/about.html")
+
+
+@learning_bp.route("/trial")
+def trial_page():
+    trials = []
+    for tid in TRIAL_TOPICS:
+        t = TOPICS.get(tid)
+        if t:
+            trials.append({"id": tid, **t})
+    return render_template("pages/trial.html", trials=trials)
 
 
 @learning_bp.route("/plans")
@@ -94,13 +107,11 @@ def payment_success():
 
 
 @learning_bp.route("/graph")
-@login_required
 def graph_page():
     return render_template("pages/graph.html")
 
 
 @learning_bp.route("/api/graph")
-@login_required
 def api_graph():
     user = current_user()
     progress = db.get_progress(user["id"]) if user else {}
@@ -190,17 +201,20 @@ def topic(tid):
 
 
 @learning_bp.route("/topic/<tid>/overview")
-@login_required
 def topic_overview(tid):
     user = current_user()
+    is_trial = tid in TRIAL_TOPICS
+    if not user and not is_trial:
+        flash("Please log in to access this page.", "warning")
+        return redirect(url_for("auth.login", next=request.path))
     t = get_topic(tid)
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = get_accessible_levels(user)
-    level_accessible = is_admin or (t["level"] in enabled)
+    enabled = get_accessible_levels(user) if user else set()
+    level_accessible = is_admin or is_trial or (t["level"] in enabled)
     progress = db.get_progress(user["id"]) if user else {}
-    unlocked = is_admin or is_unlocked(tid, progress)
+    unlocked = is_admin or is_trial or is_unlocked(tid, progress)
     prereq_topics  = {p: TOPICS[p] for p in t["prereqs"] if p in TOPICS}
     unlocks_topics = {u: TOPICS[u] for u in get_unlocked_by(tid) if u in TOPICS}
     content = get_lesson_content(tid)
@@ -217,17 +231,20 @@ def topic_overview(tid):
 
 
 @learning_bp.route("/topic/<tid>/learn/<concept_id>")
-@login_required
 def concept_page(tid, concept_id):
     user = current_user()
+    is_trial = tid in TRIAL_TOPICS
+    if not user and not is_trial:
+        flash("Please log in to access this page.", "warning")
+        return redirect(url_for("auth.login", next=request.path))
     t = get_topic(tid)
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = get_accessible_levels(user)
-    level_accessible = is_admin or (t["level"] in enabled)
+    enabled = get_accessible_levels(user) if user else set()
+    level_accessible = is_admin or is_trial or (t["level"] in enabled)
     progress = db.get_progress(user["id"]) if user else {}
-    unlocked = is_admin or is_unlocked(tid, progress)
+    unlocked = is_admin or is_trial or is_unlocked(tid, progress)
     complete = bool(progress.get(tid, {}).get("complete"))
     quiz_score = progress.get(tid, {}).get("quiz_score")
     quiz_total = progress.get(tid, {}).get("quiz_total")
@@ -272,24 +289,30 @@ def mindmap_page(tid):
 
 
 @learning_bp.route("/topic/<tid>/quiz")
-@login_required
 def quiz_page(tid):
     user = current_user()
+    is_trial = tid in TRIAL_TOPICS
+    if not user and not is_trial:
+        flash("Please log in to access this page.", "warning")
+        return redirect(url_for("auth.login", next=request.path))
     t = get_topic(tid)
     if not t:
         return render_template("404.html"), 404
     is_admin = bool(user and user.get("is_admin"))
-    enabled = get_accessible_levels(user)
-    if not is_admin and t["level"] not in enabled:
-        flash("This content requires a paid plan. Upgrade to access it.", "warning")
-        return redirect(url_for("learning.plans_page"))
-    progress = db.get_progress(user["id"])
-    if not is_admin and not is_unlocked(tid, progress):
-        flash("Complete the prerequisite topics first to unlock this quiz.", "warning")
-        return redirect(url_for("learning.topic_overview", tid=tid))
-    wrong_ids = db.get_wrong_question_ids(user["id"], tid)
-    quiz = get_quiz(tid, must_include_ids=wrong_ids if wrong_ids else None)
-    return render_template("quiz.html", tid=tid, t=t, quiz=quiz)
+    if user:
+        enabled = get_accessible_levels(user)
+        if not is_admin and not is_trial and t["level"] not in enabled:
+            flash("This content requires a paid plan. Upgrade to access it.", "warning")
+            return redirect(url_for("learning.plans_page"))
+        progress = db.get_progress(user["id"])
+        if not is_admin and not is_trial and not is_unlocked(tid, progress):
+            flash("Complete the prerequisite topics first to unlock this quiz.", "warning")
+            return redirect(url_for("learning.topic_overview", tid=tid))
+        wrong_ids = db.get_wrong_question_ids(user["id"], tid)
+        quiz = get_quiz(tid, must_include_ids=wrong_ids if wrong_ids else None)
+    else:
+        quiz = get_quiz(tid)
+    return render_template("quiz.html", tid=tid, t=t, quiz=quiz, is_trial=is_trial)
 
 
 @learning_bp.route("/topic/<tid>/practice")
@@ -323,13 +346,16 @@ def practice_page(tid):
 # ════════════════════════════════════════════════════════════════════
 
 @learning_bp.route("/api/quiz/submit", methods=["POST"])
-@login_required
 def submit_quiz():
     user = current_user()
     data = request.get_json()
     tid = data.get("tid")
     answers = data.get("answers", {})
     quiz_qs = data.get("questions", [])
+    is_trial = tid in TRIAL_TOPICS
+
+    if not user and not is_trial:
+        return jsonify({"error": "Login required"}), 401
     if not quiz_qs:
         return jsonify({"error": "No questions submitted"}), 400
 
@@ -355,27 +381,34 @@ def submit_quiz():
 
     total = len(quiz_qs)
     passed = score >= total * 0.7
-    db.save_quiz_score(user["id"], tid, score, total)
-    if passed:
-        db.mark_topic_complete(user["id"], tid)
-    db.save_quiz_attempt(user["id"], tid, q_ids, attempt_answers, score, total, passed)
 
-    db.log_activity(user["id"], "quiz_attempt", topic_id=tid,
-                    detail=f"{score}/{total}", points=2)
-    if passed:
-        db.log_activity(user["id"], "quiz_pass", topic_id=tid,
-                        detail=f"{score}/{total}", points=5)
-    if score == total:
-        db.log_activity(user["id"], "quiz_perfect", topic_id=tid, points=10)
-        db.grant_achievement(user["id"], "first_perfect")
-    if db.get_attempt_count(user["id"], tid) == 1:
-        db.grant_achievement(user["id"], "first_quiz")
-    if passed:
-        db.grant_achievement(user["id"], "first_pass")
-    db.check_and_grant_achievements(user["id"])
+    # Only record progress for logged-in users
+    if user:
+        db.save_quiz_score(user["id"], tid, score, total)
+        if passed:
+            db.mark_topic_complete(user["id"], tid)
+        db.save_quiz_attempt(user["id"], tid, q_ids, attempt_answers, score, total, passed)
+        db.log_activity(user["id"], "quiz_attempt", topic_id=tid,
+                        detail=f"{score}/{total}", points=2)
+        if passed:
+            db.log_activity(user["id"], "quiz_pass", topic_id=tid,
+                            detail=f"{score}/{total}", points=5)
+        if score == total:
+            db.log_activity(user["id"], "quiz_perfect", topic_id=tid, points=10)
+            db.grant_achievement(user["id"], "first_perfect")
+        if db.get_attempt_count(user["id"], tid) == 1:
+            db.grant_achievement(user["id"], "first_quiz")
+        if passed:
+            db.grant_achievement(user["id"], "first_pass")
+        db.check_and_grant_achievements(user["id"])
 
-    attempt_num = db.get_attempt_count(user["id"], tid)
-    show_answers = attempt_num >= 3
+    if user:
+        attempt_num = db.get_attempt_count(user["id"], tid)
+    else:
+        attempt_num = 1  # trial users always see attempt 1
+
+    # Trial users always see answers; logged-in users after 3 attempts
+    show_answers = (not user) or (attempt_num >= 3)
     if not show_answers:
         for r in results:
             r.pop("correct_answer", None)

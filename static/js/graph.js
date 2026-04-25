@@ -105,7 +105,11 @@
     .on("dblclick", (event, d) => {
       event.stopPropagation();
       if (clickTimer) { clearTimeout(clickTimer); clickTimer = null; }
-      window.location.href = "/topic/" + d.id + "/overview";
+      if (typeof IS_LOGGED_IN !== 'undefined' && !IS_LOGGED_IN) {
+        window.location.href = "/register";
+      } else {
+        window.location.href = "/topic/" + d.id + "/overview";
+      }
     })
     .on("mouseenter", (event, d) => { if (!selectedNode) handleHover(d, true); })
     .on("mouseleave", (event, d) => { if (!selectedNode) handleHover(d, false); });
@@ -354,7 +358,11 @@
       if (e.target.closest("button")) return;
       if (e.target.closest(".tt-drag-handle")) return;
       if (_tooltipDragging) return;
-      window.location.href = "/topic/" + d.id + "/overview";
+      if (typeof IS_LOGGED_IN !== 'undefined' && !IS_LOGGED_IN) {
+        window.location.href = "/register";
+      } else {
+        window.location.href = "/topic/" + d.id + "/overview";
+      }
     };
   }
 

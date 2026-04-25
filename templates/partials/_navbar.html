@@ -72,8 +72,10 @@
     {% else %}
       <a href="/about" class="nav-link {% if request.endpoint in ('learning.about_page', 'about_page') %}active{% endif %}">About</a>
       <a href="/plans" class="nav-link {% if request.endpoint in ('learning.plans_page', 'plans_page') %}active{% endif %}">Plans</a>
+      <a href="/graph" class="nav-link {% if request.endpoint in ('learning.graph_page', 'graph_page') %}active{% endif %}">Graph</a>
+      <a href="/trial" class="nav-link {% if request.endpoint in ('learning.trial_page',) %}active{% endif %}">Trial</a>
       <a href="/login" class="nav-link">Sign In</a>
-      <a href="/register" class="btn btn-primary btn-sm">Get Started Free</a>
+      <a href="/register" class="btn btn-primary btn-sm">Get Started</a>
     {% endif %}
   </div>
   <!-- Theme toggle — outside nav-links so it's always visible on mobile -->

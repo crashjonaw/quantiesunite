@@ -81,7 +81,10 @@
 {% endblock %}
 
 {% block scripts %}
-<script>const IS_ADMIN = {{ 'true' if current_user and current_user.is_admin else 'false' }};</script>
+<script>
+const IS_ADMIN = {{ 'true' if current_user and current_user.is_admin else 'false' }};
+const IS_LOGGED_IN = {{ 'true' if current_user else 'false' }};
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="{{ url_for('static', filename='js/graph.js') }}?v=7"></script>
 {% endblock %}
